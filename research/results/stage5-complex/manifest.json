@@ -1,0 +1,141 @@
+{
+  "schema_version": 1,
+  "run_id": "cogllm-stage5-complex-20261120T172049Z-1c86fcd8",
+  "project": "CogLLM",
+  "owner": "CogLLM Stage 5 CompLex three exposures and three nested training fractions",
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "requested_gpu": "L4",
+  "worker_timeout_seconds": 1275,
+  "input_sha256": {
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+    "research/stage5/complex_tokenization.py": "752baaf90129010a832d2e42b6f3949c148e1211563a0f7f16ab068381c9a45a",
+    "research/stage5/complex_extract.py": "e3bb733a2a53d5d67a7eda46e1b9dfae99f5f15e7c106656f23baa007fec863c",
+    "research/stage5/complex_fit.py": "533eb7ba2a86d4b33630a1aec83fedab37eea9baa6bb9f9ef613da99f834bb3f",
+    "data/stimuli.jsonl": "20d1859671ffcb6b0d577b6c9cc6b1398bb7699e46c2cfea08efedab93a7068a",
+    "data/targets.jsonl": "7d9b8be59a96c8d78573de3289aa700efde6b2d412743907e469aae776bbed50",
+    "data/design.jsonl": "7ad07ee3b5da409cff5e6525dcd28c861f4ce2675630510cf306707b85b38931"
+  },
+  "worker_sha256": "d3e458fea17702658ce77420be3305201ff28e7be565ffc566bbaa9a5bb67edb",
+  "launcher_sha256": "c7f64bdbd8d538c85d7046761be0801a65981d86908a8f46fa96c0c951be5d61",
+  "payload_sha256": "fcad562cbc9357dd5c36b56bfd97c5d9f413ca88934500da8cab4d13b5bde908",
+  "inventory_sha256": "8e528ef9c82edac1ac9df257db3535290bf6ef04dd2e9a8b2f668678c4cbad3f",
+  "eligible_counts": {
+    "train": 8667,
+    "trial": 503,
+    "test": 1094
+  },
+  "remote_test_outcomes": 0,
+  "timeline_utc": {
+    "prepared": "2026-11-20T17:20:49.390607+00:00",
+    "sessions-before-allocation": "2026-11-20T17:21:01.680751+00:00",
+    "before-allocation": "2026-11-20T17:21:03.845912+00:00",
+    "allocate": "2026-11-20T17:21:06.001344+00:00",
+    "allocated": "2026-11-20T17:21:10.681567+00:00",
+    "after-allocation": "2026-11-20T17:21:10.681962+00:00",
+    "upload": "2026-11-20T17:21:12.805462+00:00",
+    "upload-worker": "2026-11-20T17:21:14.900614+00:00",
+    "launch-1": "2026-11-20T17:21:50.590572+00:00",
+    "remote-worker-confirmed": "2026-11-20T17:21:53.171024+00:00",
+    "remote-install-transformers": "2026-11-20T17:21:58.994204+00:00",
+    "remote-extract": "2026-11-20T17:22:19.776618+00:00",
+    "remote-fit": "2026-11-20T17:26:39.695247+00:00",
+    "remote-complete": "2026-11-20T17:26:50.054971+00:00",
+    "remote-finished": "2026-11-20T17:26:50.055321+00:00",
+    "download-results.tar.gz": "2026-11-20T17:26:50.055494+00:00",
+    "download-features-000.part": "2026-11-20T17:26:50.681721+00:00",
+    "download-features-001.part": "2026-11-20T17:26:52.961642+00:00",
+    "download-features-002.part": "2026-11-20T17:26:55.724377+00:00",
+    "download-features-003.part": "2026-11-20T17:26:58.969285+00:00",
+    "download-features-004.part": "2026-11-20T17:27:01.213773+00:00",
+    "download-features-005.part": "2026-11-20T17:27:03.560838+00:00",
+    "download-features-006.part": "2026-11-20T17:27:06.130395+00:00",
+    "download-features-007.part": "2026-11-20T17:27:08.860717+00:00",
+    "local-artifacts-verified": "2026-11-20T17:27:11.002786+00:00",
+    "before-stop": "2026-11-20T17:27:11.003253+00:00",
+    "stop-1": "2026-11-20T17:27:13.355188+00:00",
+    "sessions-after-stop-1": "2026-11-20T17:27:15.480992+00:00",
+    "after-stop": "2026-11-20T17:27:17.466494+00:00",
+    "finished": "2026-11-20T17:27:18.628447+00:00"
+  },
+  "cli_version": "0.7.4",
+  "latest_worker_progress": {
+    "completed": true,
+    "phase": "complete",
+    "phase_seconds": {
+      "install-transformers": 12.645046268999977,
+      "extract": 262.5536508690001,
+      "fit": 10.43911954400005
+    },
+    "gpu": "NVIDIA L4",
+    "payload_sha256": "fcad562cbc9357dd5c36b56bfd97c5d9f413ca88934500da8cab4d13b5bde908",
+    "input_sha256": {
+      "data/design.jsonl": "7ad07ee3b5da409cff5e6525dcd28c861f4ce2675630510cf306707b85b38931",
+      "data/stimuli.jsonl": "20d1859671ffcb6b0d577b6c9cc6b1398bb7699e46c2cfea08efedab93a7068a",
+      "data/targets.jsonl": "7d9b8be59a96c8d78573de3289aa700efde6b2d412743907e469aae776bbed50",
+      "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+      "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+      "research/stage5/complex_extract.py": "e3bb733a2a53d5d67a7eda46e1b9dfae99f5f15e7c106656f23baa007fec863c",
+      "research/stage5/complex_fit.py": "533eb7ba2a86d4b33630a1aec83fedab37eea9baa6bb9f9ef613da99f834bb3f",
+      "research/stage5/complex_tokenization.py": "752baaf90129010a832d2e42b6f3949c148e1211563a0f7f16ab068381c9a45a"
+    },
+    "resumed_from_verified_features": false,
+    "worker_elapsed_s": 287.19879401900005,
+    "finished": true
+  },
+  "remote_status": {
+    "completed": true,
+    "phase": "complete",
+    "phase_seconds": {
+      "install-transformers": 12.645046268999977,
+      "extract": 262.5536508690001,
+      "fit": 10.43911954400005
+    },
+    "gpu": "NVIDIA L4",
+    "payload_sha256": "fcad562cbc9357dd5c36b56bfd97c5d9f413ca88934500da8cab4d13b5bde908",
+    "input_sha256": {
+      "data/design.jsonl": "7ad07ee3b5da409cff5e6525dcd28c861f4ce2675630510cf306707b85b38931",
+      "data/stimuli.jsonl": "20d1859671ffcb6b0d577b6c9cc6b1398bb7699e46c2cfea08efedab93a7068a",
+      "data/targets.jsonl": "7d9b8be59a96c8d78573de3289aa700efde6b2d412743907e469aae776bbed50",
+      "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+      "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+      "research/stage5/complex_extract.py": "e3bb733a2a53d5d67a7eda46e1b9dfae99f5f15e7c106656f23baa007fec863c",
+      "research/stage5/complex_fit.py": "533eb7ba2a86d4b33630a1aec83fedab37eea9baa6bb9f9ef613da99f834bb3f",
+      "research/stage5/complex_tokenization.py": "752baaf90129010a832d2e42b6f3949c148e1211563a0f7f16ab068381c9a45a"
+    },
+    "resumed_from_verified_features": false,
+    "worker_elapsed_s": 287.154706984
+  },
+  "actual_device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "results_sha256": "872c0e892a5954cf157edbfbd49ccfdedca9ae609f5b154c5756de6d8f6f1ef8",
+  "output_sha256": {
+    "feature-transfer.json": "650993ff3eb4e6bb8d13ff2212aae18c589fa731e900c9fb2eaa2d57e10183b9",
+    "features/causality.json": "2692f6490bc54608fd49a15c2dd060cea79d5e3bd587baf49de40a0f0d7f5c11",
+    "features/environment.json": "65153e97344d338cdb7f722cc43bb8383262614fd39e6cb40b0e9dc1e28a9b85",
+    "features/extraction.json": "569e5a1b262961b18ffc59e61bf5a6d189ca91dbcf481c0aa680b003d8deaffa",
+    "features/features.npz": "189565fdde90727fd66d5e69d1e107afdcfcb816813796e3a54abf551e9e197d",
+    "features/pilot.json": "78cef622a70c2741bc6b8757d287c15a956bd0f383ce7ff464223610113a42ba",
+    "features/telemetry.jsonl": "33053aaae1a5c738e15807ef0a0cd9e857a58cb450d1ebaea8865aa2771a7b3c",
+    "features/timings.json": "e0eaaa5e309714a7ad7d0ea6b6f20511afd1c018adec011c55a35fa6162cdc86",
+    "fit/fitting.json": "e1cb73cbb6973d7b73ac26768cf29f07aba7d859c2623c54d343c04df4843e0a",
+    "fit/heads.npz": "e9721f340b325015826bf1645d9814385d4d180689b652e772480f99a80f49d4",
+    "fit/predictions.npz": "5ae8cfaec976e138f51e61b5bfdbee93541478ac895251d38fbd5d73dfa80683",
+    "gpu-preflight.json": "2eee58c6376863a2eb3eaf6cd80e58df4d58187c38a8ad90ec80bb1100322ea0",
+    "remote-status.json": "ee2463847950f0f72443e523b55822f422480886900fb5e5879283138d27eb19"
+  },
+  "features_verified": true,
+  "fit_verified": true,
+  "allocated_to_stop_request_seconds": 362.6911697500036,
+  "release_verified": true
+}

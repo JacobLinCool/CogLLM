@@ -1,0 +1,390 @@
+{
+  "gpu_receipt_sha256": "b00b135ea38d08f7a0d16f57c0563780bc3a50313e3c601acb8ff2fc8c73b546",
+  "generation_format": {
+    "well_formed_clear_sentence": 1654,
+    "malformed_sentence": 2,
+    "well_formed_character_sentence": 5,
+    "matched_span": 3,
+    "unmatched_span": 2
+  },
+  "all": {
+    "movie_groups": 39,
+    "words": 22133,
+    "human_positive": 413,
+    "methods": {
+      "qwen_word": {
+        "tp_fp_fn_tn": [
+          378,
+          726,
+          35,
+          20994
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.3423913043478261,
+          "family_bootstrap_95_interval": [
+            0.30761926351419006,
+            0.3783795732071594
+          ]
+        },
+        "recall": {
+          "estimate": 0.9152542372881356,
+          "family_bootstrap_95_interval": [
+            0.8705023708306082,
+            0.9546666666666667
+          ]
+        },
+        "f1": {
+          "estimate": 0.4983520105471325,
+          "family_bootstrap_95_interval": [
+            0.4603165331553182,
+            0.5367028419859382
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 3.3425414364640886,
+          "family_bootstrap_95_interval": [
+            2.9868598908439,
+            3.7435252112633495
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 49.880269281163876,
+          "family_bootstrap_95_interval": [
+            45.066410178515746,
+            55.172421713619485
+          ]
+        }
+      },
+      "ner_control": {
+        "tp_fp_fn_tn": [
+          362,
+          474,
+          51,
+          21246
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.43301435406698563,
+          "family_bootstrap_95_interval": [
+            0.383116684417174,
+            0.4859934121776485
+          ]
+        },
+        "recall": {
+          "estimate": 0.8765133171912833,
+          "family_bootstrap_95_interval": [
+            0.815425937698665,
+            0.9314737877452745
+          ]
+        },
+        "f1": {
+          "estimate": 0.5796637309847879,
+          "family_bootstrap_95_interval": [
+            0.5320280628851662,
+            0.6282063930544594
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 2.1823204419889506,
+          "family_bootstrap_95_interval": [
+            1.8724706150121198,
+            2.5205083842298617
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 37.771653187548004,
+          "family_bootstrap_95_interval": [
+            33.878089251232595,
+            41.76513698081449
+          ]
+        }
+      },
+      "t5_span": {
+        "tp_fp_fn_tn": [
+          4,
+          0,
+          409,
+          21720
+        ],
+        "movies_with_alerts": 3,
+        "precision": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "estimate": 0.009685230024213076,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.021187283639796776
+          ]
+        },
+        "f1": {
+          "estimate": 0.019184652278177457,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.041495392574230724
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 0.18072561333755024,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.41024799499604314
+          ]
+        }
+      }
+    },
+    "paired_differences": {
+      "t5_minus_qwen_word_precision": {
+        "estimate": 0.6576086956521738,
+        "family_bootstrap_95_interval": [
+          -0.3250694769287493,
+          0.6904546758462421
+        ]
+      },
+      "t5_minus_qwen_word_recall": {
+        "estimate": -0.9055690072639225,
+        "family_bootstrap_95_interval": [
+          -0.9459492580816111,
+          -0.8624976965601966
+        ]
+      },
+      "t5_minus_qwen_word_f1": {
+        "estimate": -0.47916735826895507,
+        "family_bootstrap_95_interval": [
+          -0.5159857518627691,
+          -0.44357106045918804
+        ]
+      },
+      "t5_minus_ner_control_precision": {
+        "estimate": 0.5669856459330144,
+        "family_bootstrap_95_interval": [
+          -0.4113936984789432,
+          0.615112160566706
+        ]
+      },
+      "t5_minus_ner_control_recall": {
+        "estimate": -0.8668280871670703,
+        "family_bootstrap_95_interval": [
+          -0.9217211174242425,
+          -0.8077733012128261
+        ]
+      },
+      "t5_minus_ner_control_f1": {
+        "estimate": -0.5604790787066104,
+        "family_bootstrap_95_interval": [
+          -0.6086179618047293,
+          -0.5147474003920322
+        ]
+      }
+    },
+    "word_alert_overlap": {
+      "both_true": 4,
+      "t5_only_true": 0,
+      "qwen_only_true": 374,
+      "neither_true": 35
+    }
+  },
+  "first_person_mention": {
+    "movie_groups": 39,
+    "words": 302,
+    "human_positive": 194,
+    "methods": {
+      "qwen_word": {
+        "tp_fp_fn_tn": [
+          192,
+          67,
+          2,
+          41
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.7413127413127413,
+          "family_bootstrap_95_interval": [
+            0.6509047459893048,
+            0.8235294117647058
+          ]
+        },
+        "recall": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9744897959183674,
+            1.0
+          ]
+        },
+        "f1": {
+          "estimate": 0.847682119205298,
+          "family_bootstrap_95_interval": [
+            0.7860048238083558,
+            0.8987654320987655
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 62.03703703703704,
+          "family_bootstrap_95_interval": [
+            51.041666666666664,
+            70.63510266491917
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 857.6158940397352,
+          "family_bootstrap_95_interval": [
+            824.925566246041,
+            889.7065813017222
+          ]
+        }
+      },
+      "ner_control": {
+        "tp_fp_fn_tn": [
+          194,
+          107,
+          0,
+          1
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.6445182724252492,
+          "family_bootstrap_95_interval": [
+            0.5644133315383579,
+            0.7201525153950527
+          ]
+        },
+        "recall": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "f1": {
+          "estimate": 0.7838383838383839,
+          "family_bootstrap_95_interval": [
+            0.7215654839089944,
+            0.837312399696665
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 99.07407407407408,
+          "family_bootstrap_95_interval": [
+            97.0,
+            100.0
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 996.6887417218543,
+          "family_bootstrap_95_interval": [
+            989.3617021276597,
+            1000.0
+          ]
+        }
+      },
+      "t5_span": {
+        "tp_fp_fn_tn": [
+          2,
+          0,
+          192,
+          108
+        ],
+        "movies_with_alerts": 1,
+        "precision": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "estimate": 0.010309278350515464,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.031578947368421054
+          ]
+        },
+        "f1": {
+          "estimate": 0.02040816326530612,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.061224489795918366
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 6.622516556291391,
+          "family_bootstrap_95_interval": [
+            0.0,
+            20.54971049286821
+          ]
+        }
+      }
+    },
+    "paired_differences": {
+      "t5_minus_qwen_word_precision": {
+        "estimate": 0.2586872586872587,
+        "family_bootstrap_95_interval": [
+          -0.8059087474022294,
+          0.3343956875848387
+        ]
+      },
+      "t5_minus_qwen_word_recall": {
+        "estimate": -0.9793814432989691,
+        "family_bootstrap_95_interval": [
+          -1.0,
+          -0.955
+        ]
+      },
+      "t5_minus_qwen_word_f1": {
+        "estimate": -0.8272739559399919,
+        "family_bootstrap_95_interval": [
+          -0.8883831863744436,
+          -0.7586143301319116
+        ]
+      },
+      "t5_minus_ner_control_precision": {
+        "estimate": 0.3554817275747508,
+        "family_bootstrap_95_interval": [
+          -0.7027027027027027,
+          0.42388140817650877
+        ]
+      },
+      "t5_minus_ner_control_recall": {
+        "estimate": -0.9896907216494846,
+        "family_bootstrap_95_interval": [
+          -1.0,
+          -0.968421052631579
+        ]
+      },
+      "t5_minus_ner_control_f1": {
+        "estimate": -0.7634302205730777,
+        "family_bootstrap_95_interval": [
+          -0.8272732118627641,
+          -0.6931344205589071
+        ]
+      }
+    },
+    "word_alert_overlap": {
+      "both_true": 2,
+      "t5_only_true": 0,
+      "qwen_only_true": 190,
+      "neither_true": 2
+    }
+  },
+  "variant": "adapter",
+  "protocol_sha256": "4d212bcfc6bd0039c7d82601df0230deca700a6080e714ca69e221df4fbc0eb3"
+}

@@ -1,0 +1,307 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "effect_margin": 0.1,
+    "seed": 735972,
+    "weighting": "equal stories and conditions, crossed resampling of stories and readers"
+  },
+  "endpoints": {
+    "current": {
+      "comparisons": {
+        "contextual_target_effect": {
+          "crossed_story_reader_ci95": [
+            0.000323796391096392,
+            0.0008353646165902906
+          ],
+          "estimate": 0.0005715550226275685,
+          "fixed_story_reader_only_ci95": [
+            0.0005715550226275685,
+            0.0005715550226275685
+          ]
+        },
+        "human_target_effect": {
+          "crossed_story_reader_ci95": [
+            0.4206641853626622,
+            0.6154394716745261
+          ],
+          "estimate": 0.5206022267206478,
+          "fixed_story_reader_only_ci95": [
+            0.4679475525743838,
+            0.5722331855512801
+          ]
+        },
+        "nll_contextual_minus_standalone": {
+          "crossed_story_reader_ci95": [
+            -0.00018414578200402822,
+            -5.8997799819194786e-05
+          ],
+          "estimate": -0.00011901558462256695,
+          "fixed_story_reader_only_ci95": [
+            -0.00013944001395645064,
+            -9.8789286301174e-05
+          ]
+        },
+        "target_model_minus_human": {
+          "crossed_story_reader_ci95": [
+            -0.6148674032943493,
+            -0.4201757282225372
+          ],
+          "estimate": -0.5200306716980202,
+          "fixed_story_reader_only_ci95": [
+            -0.5716616305286525,
+            -0.4673759975517563
+          ]
+        }
+      },
+      "gates": {
+        "contextual_nll_better": true,
+        "contextual_target_effect_positive": true,
+        "model_human_effect_gap_equivalent": false
+      },
+      "human_target_probability_by_condition": {
+        "01": 0.043702429149797564,
+        "02": 0.5643046558704455
+      },
+      "methods": {
+        "contextual": {
+          "nll": 0.15754864327283008,
+          "target_effect": 0.0005715550226275685,
+          "target_probability_by_condition": {
+            "01": 0.0635928880216696,
+            "02": 0.06416444304429716
+          }
+        },
+        "standalone": {
+          "nll": 0.15766765885745265,
+          "target_effect": 0.00043044685238261167,
+          "target_probability_by_condition": {
+            "01": 0.06344439381326697,
+            "02": 0.06387484066564958
+          }
+        },
+        "surface": {
+          "nll": 0.15783287650008676,
+          "target_effect": 0.00040144970255059226,
+          "target_probability_by_condition": {
+            "01": 0.06293487268252498,
+            "02": 0.06333632238507556
+          }
+        }
+      },
+      "nll_unit": "nats_per_sentence",
+      "pass": false
+    },
+    "first": {
+      "comparisons": {
+        "contextual_target_effect": {
+          "crossed_story_reader_ci95": [
+            0.0003436494699728367,
+            0.0006873401192270252
+          ],
+          "estimate": 0.0005091372376875601,
+          "fixed_story_reader_only_ci95": [
+            0.0005091372376875601,
+            0.0005091372376875601
+          ]
+        },
+        "human_target_effect": {
+          "crossed_story_reader_ci95": [
+            0.39098023241490343,
+            0.5725665406683451
+          ],
+          "estimate": 0.48271558704453454,
+          "fixed_story_reader_only_ci95": [
+            0.4323067098559485,
+            0.5313808650107894
+          ]
+        },
+        "nll_contextual_minus_standalone": {
+          "crossed_story_reader_ci95": [
+            -0.0023217284626111403,
+            -0.0004820305497944171
+          ],
+          "estimate": -0.001359661001713544,
+          "fixed_story_reader_only_ci95": [
+            -0.0016111304461079422,
+            -0.0010967327845777084
+          ]
+        },
+        "target_model_minus_human": {
+          "crossed_story_reader_ci95": [
+            -0.5721591209884639,
+            -0.39042570227499146
+          ],
+          "estimate": -0.48220644980684696,
+          "fixed_story_reader_only_ci95": [
+            -0.5308717277731019,
+            -0.4317975726182609
+          ]
+        }
+      },
+      "gates": {
+        "contextual_nll_better": true,
+        "contextual_target_effect_positive": true,
+        "model_human_effect_gap_equivalent": false
+      },
+      "human_target_probability_by_condition": {
+        "01": 0.028735829959514174,
+        "02": 0.5114514170040487
+      },
+      "methods": {
+        "contextual": {
+          "nll": 1.7293157095681635,
+          "target_effect": 0.0005091372376875601,
+          "target_probability_by_condition": {
+            "01": 0.03827571888853333,
+            "02": 0.03878485612622089
+          }
+        },
+        "standalone": {
+          "nll": 1.7306753705698774,
+          "target_effect": 0.00041778312541100734,
+          "target_probability_by_condition": {
+            "01": 0.038150646549007496,
+            "02": 0.038568429674418495
+          }
+        },
+        "surface": {
+          "nll": 1.7331317074650716,
+          "target_effect": 0.0003931283438798446,
+          "target_probability_by_condition": {
+            "01": 0.037831818721389125,
+            "02": 0.03822494706526897
+          }
+        }
+      },
+      "nll_unit": "nats_per_story_trial",
+      "pass": false
+    }
+  },
+  "first_d_by_condition": {
+    "01": {
+      "human_counts": {
+        "after_target": 20,
+        "at_target": 28,
+        "before_target": 117,
+        "no_d": 735
+      },
+      "human_probabilities": {
+        "after_target": 0.023085020242914978,
+        "at_target": 0.028735829959514174,
+        "before_target": 0.13079352226720647,
+        "no_d": 0.8173856275303644
+      },
+      "methods": {
+        "contextual": {
+          "after_target": 0.0627447744371889,
+          "at_target": 0.03827571888853333,
+          "before_target": 0.2900019177271023,
+          "no_d": 0.6089775889471756
+        },
+        "standalone": {
+          "after_target": 0.06250391176181687,
+          "at_target": 0.038150646549007496,
+          "before_target": 0.29011811372929164,
+          "no_d": 0.6092273279598839
+        },
+        "surface": {
+          "after_target": 0.06276179965278265,
+          "at_target": 0.037831818721389125,
+          "before_target": 0.2904172716626481,
+          "no_d": 0.6089891099631802
+        }
+      }
+    },
+    "02": {
+      "human_counts": {
+        "after_target": 11,
+        "at_target": 458,
+        "before_target": 120,
+        "no_d": 311
+      },
+      "human_probabilities": {
+        "after_target": 0.012200404858299596,
+        "at_target": 0.5114514170040486,
+        "before_target": 0.13409817813765185,
+        "no_d": 0.3422499999999999
+      },
+      "methods": {
+        "contextual": {
+          "after_target": 0.06271255454553949,
+          "at_target": 0.038784856126220894,
+          "before_target": 0.2898369051794559,
+          "no_d": 0.6086656841487839
+        },
+        "standalone": {
+          "after_target": 0.06248957880759361,
+          "at_target": 0.03856842967441851,
+          "before_target": 0.2899384603295802,
+          "no_d": 0.6090035311884077
+        },
+        "surface": {
+          "after_target": 0.06274768675880889,
+          "at_target": 0.03822494706526897,
+          "before_target": 0.2902595734123765,
+          "no_d": 0.6087677927635458
+        }
+      }
+    }
+  },
+  "forecast_seal_sha256": "503c353a276e7583e9121b5d10780dc246a694e1564b383d7e4eb154a5a3ff3d",
+  "inventory": {
+    "current_judgments": 26340,
+    "first_at_risk_judgments": 23474,
+    "first_d": 754,
+    "max_trials_per_variant": 52,
+    "min_trials_per_variant": 38,
+    "readers": 180,
+    "right_censored": 1046,
+    "stories": 20,
+    "target_observations": {
+      "01": {
+        "author_filtered_d": 42,
+        "author_filtered_n": 890,
+        "uncut_d": 42,
+        "uncut_n": 900
+      },
+      "02": {
+        "author_filtered_d": 505,
+        "author_filtered_n": 889,
+        "uncut_d": 505,
+        "uncut_n": 900
+      }
+    },
+    "trials": 1800,
+    "variants": 40
+  },
+  "provenance": {
+    "anchor_heads_sha256": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+    "assay_sha256": "e294fef5e5c8f766600830253703062027fc05992427528c95ad3ab042daee96",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "content_forward_per_document": 1,
+    "extractor_causality_checks": 12,
+    "maximum_relative_l2": 2.280741965928948e-06,
+    "model": "Qwen/Qwen3.5-2B",
+    "numpy": "2.5.5",
+    "outcomes_sha256": "b26b6f225eab250788083da5456a169519a06f9b25415bec56695b0af21aeb00",
+    "preflight_sha256": "c471c331de138b8fd9377f8f2c766187083a1c8efa931866faef9997b1e451b8",
+    "projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+    "protocol_sha256": "c710ec20933df7d32865b56ca160f473f890495db0819a2bc0e751d2d3f79032",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "scipy": "1.17.1",
+    "scorer_sha256": "84e2601bf605601e8513707a6654b4b43510d8f3c7064d15ef49551798d62e1b",
+    "shared_prechange_prefixes": 81,
+    "source_audit_sha256": "18275a8edaccdac253a1cc1057debbcc11adf82af69dc6efbdd982cd7079a6e4",
+    "standardization_sha256": "205aaafdc0de505603142ae73e98570a99903a960b4524d75b420ea3e285753d",
+    "state_extraction_sha256": "36b486890b58b6b903408411f990bad6268411b254452452670f6d3384ff928f",
+    "states_dtype": "float32",
+    "states_shape": [
+      956,
+      2048
+    ],
+    "stimuli_sha256": "12851b63014a17ba9ae8d62111ed42e1cdc275c3d0a711741d712392df01c531",
+    "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "transformers": "5.17.0"
+  },
+  "schema": 1
+}

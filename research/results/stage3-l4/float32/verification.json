@@ -1,0 +1,89 @@
+{
+  "local_cpu_refit_pooled_mae_max_absolute_difference": 1.2212453270876722e-15,
+  "reader_connected_bootstrap": {
+    "groups": 25,
+    "draws": 10000,
+    "seed": 43,
+    "intervals": {
+      "processing_ease": {
+        "length": {
+          "difference": -0.03916260408293656,
+          "95_ci": [
+            -0.07182611138338157,
+            -0.005142710758314214
+          ]
+        },
+        "length_plus_variant": {
+          "difference": -0.019995600431313768,
+          "95_ci": [
+            -0.044919281344985885,
+            0.0074682096285700016
+          ]
+        }
+      },
+      "perceived_understanding": {
+        "length": {
+          "difference": -0.1162085224906399,
+          "95_ci": [
+            -0.15169357616144788,
+            -0.07990747732423728
+          ]
+        },
+        "length_plus_variant": {
+          "difference": -0.07130152042237108,
+          "95_ci": [
+            -0.1101648015644214,
+            -0.030141078513482293
+          ]
+        }
+      }
+    }
+  },
+  "paired_original_to_plain_language_contrast": {
+    "anchors": 265,
+    "outcomes": {
+      "processing_ease": {
+        "observed": 0.5368553459119496,
+        "estimated": {
+          "mean": 0.0,
+          "length": 0.16233220296389303,
+          "length_plus_variant": 0.5149715917822427,
+          "qwen": 0.4083766718322275,
+          "qwen_plus_length": 0.40890240431734876
+        },
+        "qwen_plus_length_minus_observed_95_ci": [
+          -0.2954727741214128,
+          0.00637589278051907
+        ]
+      },
+      "perceived_understanding": {
+        "observed": 0.7229559748427673,
+        "estimated": {
+          "mean": -5.02742501717052e-18,
+          "length": 0.15025137466884836,
+          "length_plus_variant": 0.7288912812210119,
+          "qwen": 0.5283371208757464,
+          "qwen_plus_length": 0.5293354803258613
+        },
+        "qwen_plus_length_minus_observed_95_ci": [
+          -0.4311289383396714,
+          0.0057151920510577795
+        ]
+      }
+    }
+  },
+  "artifact_sha256": {
+    "causality.json": "579866729f99104b28058fc556f0d66055181a887c882c2be2588f6b8bc4ac69",
+    "environment.json": "e9615cfe403c6affd1376350920dd3a9d18f0d7ab1fc710e672c2b490d9e6f1a",
+    "extraction.json": "c986672ff2ce0dd54279342484e3af5e57694a3e64285cca0492ebf209628785",
+    "head.npz": "f8241989f4b85f311309445cb0f976b77db035131ce0e7714eb383f26ae20ff2",
+    "manifest.json": "d39ea2ce0c97b393aaff0871a029b211a271bea75354e42a7885f050a370aa09",
+    "metrics.json": "bc40bfa6f17dcbf3112a61c670780032428f06de1a0973fbbc69c8015f173d23",
+    "predictions.jsonl": "ae075c6e251e391f365b1fe1ba3cf39711b9935c52b026dbfb6a84a5a7106d5b",
+    "remote-status.json": "855f69a00051a190f03a158e6392f1faeb9df214f28b8f620e2174de66b90c69",
+    "telemetry.jsonl": "541ea9b2d029d081e7931794c55f166aba19d3030071d38bc069b6b82edc9795",
+    "timings.json": "2dffacdd33a7a564adf656cfb2f516c4778d946af0db8c46a271966cfaf24a5d",
+    "usage.jsonl": "3720fcaf1915b5b30526bbbec333131b25d005d0904721e7430b32f142c23bed"
+  },
+  "cached_colab_features_sha256": "fd1edb0e06f8fc05438d93cf77805cf258077a3c7c2e33c57a3474b579538246"
+}

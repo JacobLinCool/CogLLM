@@ -1,0 +1,620 @@
+{
+  "forecast": "994729e538756d44d96de45cd1367e8f54ed2a3fbe9c232cbf1cee02d9bdae27",
+  "development": {
+    "form": {
+      "joint_threshold": 0.12775939883848508,
+      "dev_f1": 0.27218934911242604,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    }
+  },
+  "panels": {
+    "held": {
+      "eligible_essays": 480,
+      "audit": {
+        "hierarchy_total": 2653,
+        "intra_or_forward": 350,
+        "hierarchy_backward": 2144,
+        "same_sentence": 124,
+        "missing_effectiveness_position": 28,
+        "unlocalized_child": 13,
+        "unlocalized_or_ambiguous_parent": 22,
+        "essays_with_unlocalizable_children": 11
+      },
+      "models": {
+        "nearest": {
+          "all.top1": {
+            "estimate": 0.21387217788316687,
+            "interval95": [
+              0.19573408825606625,
+              0.23274203025301923
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.18304072470739138,
+              "Car-free cities": 0.135598398651496,
+              "The Face on Mars": 0.23731900283624421,
+              "Community service": 0.2939984685747398
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.37273667040576536,
+            "interval95": [
+              0.3570598975790302,
+              0.3894429956041862
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.21387217788316687,
+            "interval95": [
+              0.1958813605503166,
+              0.2336811620918764
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.37273667040576536,
+            "interval95": [
+              0.35614736167656186,
+              0.38912066685164354
+            ],
+            "essays": 455,
+            "measurements": 2079
+          }
+        },
+        "form": {
+          "all.top1": {
+            "estimate": 0.44083207695845067,
+            "interval95": [
+              0.41388161868656376,
+              0.4676215140171184
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.46148789482122815,
+              "Car-free cities": 0.39957859249894656,
+              "The Face on Mars": 0.3950160471712195,
+              "Community service": 0.5064716945013555
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6131710027329381,
+            "interval95": [
+              0.592873854900652,
+              0.6322195238211079
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6159579402486857,
+            "interval95": [
+              1.54471802194649,
+              1.6864520817414421
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.44083207695845067,
+            "interval95": [
+              0.4134144046582234,
+              0.4668194041154205
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6131710027329381,
+            "interval95": [
+              0.5932184048254333,
+              0.6340705128609405
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6159579402486857,
+            "interval95": [
+              1.5467321828872214,
+              1.6877687741962368
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5966629692663749,
+            "interval95": [
+              0.547568667330003,
+              0.6476057806890457
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.2211430080988639,
+            "interval95": [
+              0.20139093914904294,
+              0.24135809494832472
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.564981062447453,
+            "interval95": [
+              0.5509062082264029,
+              0.5794729895691221
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.4948041578002732,
+            "interval95": [
+              0.47359190361338055,
+              0.5165520031228337
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.18652422915027397,
+            "interval95": [
+              0.16830742543076346,
+              0.20464110601233826
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.1727078891257996,
+            "interval95": [
+              1.0597014925373134,
+              1.2857142857142858
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.3965884861407245,
+            "interval95": [
+              6.1705756929637525,
+              6.63544776119403
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.147068230277186,
+              4.592803837953091
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.3651589531078426,
+            "joint_average_precision": 0.09777659050858692,
+            "positives_emitted": 3000,
+            "aligned_with_own_source": 550,
+            "joint_f1": 0.21795125817317218,
+            "prevalence": 0.25488731166728923
+          }
+        }
+      },
+      "differences": {
+        "form_minus_nearest.all.top1": {
+          "estimate": 0.22695989907528366,
+          "interval95": [
+            0.1963000182814743,
+            0.25701610591789165
+          ]
+        },
+        "form_minus_nearest.hierarchy.reciprocal_rank": {
+          "estimate": 0.24043433232717268,
+          "interval95": [
+            0.2179420005163409,
+            0.2637280104803967
+          ]
+        },
+        "form_minus_nearest.all.reciprocal_rank": {
+          "estimate": 0.24043433232717268,
+          "interval95": [
+            0.21739293422204914,
+            0.2635292924238639
+          ]
+        },
+        "form_minus_nearest.hierarchy.top1": {
+          "estimate": 0.22695989907528366,
+          "interval95": [
+            0.19695193466484678,
+            0.25845586258979114
+          ]
+        }
+      }
+    },
+    "external": {
+      "eligible_essays": 399,
+      "audit": {
+        "supports_total": 3597,
+        "supports_backward": 2127,
+        "intra_or_forward": 1286,
+        "same_sentence": 265,
+        "attacks_total": 218,
+        "attacks_backward": 137
+      },
+      "models": {
+        "nearest": {
+          "all.top1": {
+            "estimate": 0.4658705394925867,
+            "interval95": [
+              0.44451974279730183,
+              0.4887654216591224
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.4658705394925867
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.5549210716653639,
+            "interval95": [
+              0.5366114700392365,
+              0.5736137067230798
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.46642563996287395,
+            "interval95": [
+              0.4434681078746903,
+              0.4919024651471459
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.5558962232320993,
+            "interval95": [
+              0.5355834943399607,
+              0.5750774975217051
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "attacks.top1": {
+            "estimate": 0.510752688172043,
+            "interval95": [
+              0.4264784946236559,
+              0.5967741935483871
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.5838405869495236,
+            "interval95": [
+              0.5049075382693486,
+              0.6597427549723814
+            ],
+            "essays": 93,
+            "measurements": 137
+          }
+        },
+        "form": {
+          "all.top1": {
+            "estimate": 0.5996554262302294,
+            "interval95": [
+              0.5671517710198813,
+              0.6310982692577181
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5996554262302294
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7442155743627221,
+            "interval95": [
+              0.7222368603070372,
+              0.766247572158649
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.3186243270844842,
+            "interval95": [
+              1.2610919816447461,
+              1.3782478252080304
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5969000562085669,
+            "interval95": [
+              0.5638771611810175,
+              0.6294595709771906
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7421449152411608,
+            "interval95": [
+              0.7194254371274991,
+              0.764639786450934
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.3221612674635532,
+            "interval95": [
+              1.2579427036632735,
+              1.3884807033568964
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6919050093232816,
+            "interval95": [
+              0.6722907250203606,
+              0.7120508976309653
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3869483196001172,
+            "interval95": [
+              0.37273775796079894,
+              0.40134346900910906
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19639315397894924,
+            "interval95": [
+              0.18029371728043397,
+              0.21206001656373924
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 1.0200501253132832,
+            "interval95": [
+              0.9046992481203008,
+              1.1478696741854637
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.7443609022556394,
+            "interval95": [
+              5.556328320802005,
+              5.934837092731829
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.340852130325815,
+              5.967418546365915
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.5170250896057348,
+            "interval95": [
+              0.42112455197132614,
+              0.6120295698924729
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6915440891247342,
+            "interval95": [
+              0.6308470069357167,
+              0.754867530915918
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.512153684160133,
+            "interval95": [
+              1.3419488006147826,
+              1.6862634890923482
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.29317433060736037,
+            "joint_average_precision": 0.10633008116780833,
+            "positives_emitted": 2292,
+            "aligned_with_own_source": 407,
+            "joint_f1": 0.1790979097909791,
+            "prevalence": 0.33561745866229703
+          }
+        }
+      },
+      "differences": {
+        "form_minus_nearest.supports.reciprocal_rank": {
+          "estimate": 0.1862486920090614,
+          "interval95": [
+            0.15479096992748032,
+            0.2175420053065502
+          ]
+        },
+        "form_minus_nearest.all.reciprocal_rank": {
+          "estimate": 0.1892945026973583,
+          "interval95": [
+            0.1559369829792814,
+            0.2198799233929144
+          ]
+        },
+        "form_minus_nearest.attacks.reciprocal_rank": {
+          "estimate": 0.10770350217521069,
+          "interval95": [
+            -0.0035821842990933603,
+            0.21352202687474708
+          ]
+        },
+        "form_minus_nearest.attacks.top1": {
+          "estimate": 0.0062724014336917626,
+          "interval95": [
+            -0.12367831541218638,
+            0.1388888888888889
+          ]
+        },
+        "form_minus_nearest.all.top1": {
+          "estimate": 0.13378488673764266,
+          "interval95": [
+            0.09090637162487557,
+            0.17564737100170175
+          ]
+        },
+        "form_minus_nearest.supports.top1": {
+          "estimate": 0.13047441624569284,
+          "interval95": [
+            0.08677224463627389,
+            0.17554966716203418
+          ]
+        }
+      }
+    }
+  },
+  "sufficiency": {
+    "published_label": {
+      "essays": 399,
+      "observations": 1022,
+      "insufficient": 346,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.34184210076273214,
+            "interval95": [
+              0.30457461390977436,
+              0.380581648433541
+            ]
+          },
+          "ap": 0.25563560225382065
+        },
+        "form": {
+          "auc": {
+            "estimate": 0.6394081130074906,
+            "interval95": [
+              0.602930316204202,
+              0.6774739616371386
+            ]
+          },
+          "ap": 0.4582998079842628
+        },
+        "form_minus_shorter_paragraph": {
+          "estimate": 0.2975660122447584,
+          "interval95": [
+            0.25232712811837577,
+            0.34416795738944184
+          ]
+        }
+      }
+    },
+    "three_reader_majority": {
+      "essays": 167,
+      "observations": 433,
+      "insufficient": 114,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.3568305560138591,
+            "interval95": [
+              0.2927718866227893,
+              0.42617052771940483
+            ]
+          },
+          "ap": 0.20047528920356972
+        },
+        "form": {
+          "auc": {
+            "estimate": 0.6427982181158225,
+            "interval95": [
+              0.5735836541293245,
+              0.7061364773297342
+            ]
+          },
+          "ap": 0.384718040925675
+        },
+        "form_minus_shorter_paragraph": {
+          "estimate": 0.2859676621019634,
+          "interval95": [
+            0.2007666678613684,
+            0.3658649693739794
+          ]
+        }
+      }
+    },
+    "individual_votes": {
+      "essays": 167,
+      "observations": 1299,
+      "insufficient": 336,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.3490255525886367,
+            "interval95": [
+              0.28928877900334177,
+              0.41431920321780236
+            ]
+          },
+          "ap": 0.19427189257134975
+        },
+        "form": {
+          "auc": {
+            "estimate": 0.6491062156950007,
+            "interval95": [
+              0.5858607914422354,
+              0.7084812327755773
+            ]
+          },
+          "ap": 0.38410913071494784
+        },
+        "form_minus_shorter_paragraph": {
+          "estimate": 0.300080663106364,
+          "interval95": [
+            0.22112927011957234,
+            0.3779113544791597
+          ]
+        }
+      }
+    },
+    "alignment_audit": {
+      "published_label_differs_from_vote_majority": 18,
+      "ineligible_article": 7
+    }
+  }
+}

@@ -1,0 +1,33 @@
+# QASPER comparisons of token interactions and ranking supervision
+
+**On the new paper, original questions better localize annotated evidence than swapped questions, yet formal candidates fail to meet the same reading stop ranking and calibration standards.** Candidates employ per-token readout and in-passage ranking supervision. In 27 unreviewed QASPER papers, the interval negative log-likelihood of original questions is 0.0830 nats lower than that of in-passage swapped questions, with a matched 95% interval of [−0.1334, −0.0299]. There are 29/49 pairs winning on reading stop. differences for position and question-only basins both have intervals crossing zero. This round retains paragraph readout as reference. [Original Score](../../research/results/qasper-factorial-run/scores.json) · [Fixed Acceptance](training-protocol.md#新-qasper-論文的固定評分)
+
+## Design
+
+Using the original 60 training papers, 151 queries, and 121 same-document ranking pairs, with Qwen3.5-2B, end-of-paragraph and average-per-paragraph readout, and a 128-dimensional projection. Each of the four groups trains 518 coefficients. The per-token version computes interaction scores within each paragraph using visible tokens at that time, replacing the average representation with local interaction via log-mean-exp. Signals from earlier paragraphs propagate into the causal end-of-paragraph state and accumulate to reach probabilities. The two groups with ranking each use 0.5× the same-document same-reading-stop ranking loss, while all groups use evidence interval likelihood. [readout, matching, and training code](../../research/semantic_tracking/qasper_factorial_fit.py) · [fitting log](../../research/results/qasper-factorial-run/fit-manifest.json)
+
+The held-out set consists of 27 papers, 65 questions, and 49 strict same-paper matches derived from the official development set. The original training, original test, and new held-out sets show no overlap in papers, question IDs, or normalized titles. The held-out evidence is selected by independent annotators after reading the full paper. The readout receives the existing question, and the reading stop score marks the end of the paragraph containing the evidence or used for comparison. This measurement covers the textual evidence reaching a specified question. however, the human's initial confusion and the detection of the question resolution still require measurement within the reading context. [Data and Alignment](../../research/results/qasper-factorial-run/audit.json) · [QASPER §2.2](https://aclanthology.org/2021.naacl-main.365.pdf#page=3)
+
+## held-out results
+
+| Readout | Tied in reading stop ordering, 49 pairs | Matched evidence interval NLL, nats / direction ↓ | Cumulative probability Brier ↓ |
+| --- | ---: | ---: | ---: |
+| Position-only | 50.0% (49 draws) | 3.1235 | 0.17310 |
+| Consider only the questions. | 44.9% (22 pairs) | 3.6363 | 0.20492 |
+| Paragraph + Span | 61.2% (30 pairs) | 2.9322 | 0.16872 |
+| Paragraph + Interval and Ordering | 59.2% (29 pairs) | 2.8977 | 0.16513 |
+| per-token + interval | 59.2% (29 pairs) | 2.9500 | 0.16852 |
+| per-token + interval and ordering (formal candidates) | 59.2% (29 pairs) | 2.9141 | 0.16464 |
+
+At a matched stop, ranking counts a win when the question with earlier evidence receives a higher arrival probability. Ties count as half a win. NLL closer to zero means more probability was assigned to the annotated interval. Brier score is the mean squared error between cumulative arrival probability and the binary annotation. It ranges from 0 to 1, with 0 best. All paired intervals use 10,000 resamples by paper. [Endpoint estimates](../../research/results/qasper-factorial-run/scores.json)
+
+- **Improvement in ranking loss per-token readout interval probability.** In the per-token group, adding ranking reduces the paired NLL difference to −0.0359 nats, 95% interval [−0.0640, −0.0045], with both groups achieving identical reading stop hits of 29/49. With ranking applied, the per-token pair's NLL difference for paragraph readout is +0.0164 nats [−0.0094, +0.0336]. The additional gain for per-token representations in held-out results remains uncertain. [Four-group pairwise comparison](../../research/results/qasper-factorial-run/scores.json)
+- **Two of the five formal candidates passed.** The original question outperformed the exchange question, with a Brier relative segment plus interval baseline difference of −0.00408 [−0.00803, −0.00062], falling within the allowable increase. The differences relative to the reading stop ranking position and the question-only view were +9.18 percentage points [−8.93, +26.19] and +14.29 percentage points [−4.44, +35.19], respectively. The mean probability bias was +5.70 percentage points [−1.70, +12.86], exceeding the predetermined ±5 percentage point interval standard. [Formal acceptance result](../../research/results/qasper-factorial-run/scores.json)
+
+## Execution and Reproducibility
+
+Using Transformers 5.17.0, PyTorch 2.14.1, and FP32 backbone on Colab NVIDIA L4, we extracted 235,523 valid tokens, of which 233,359 tokens from 87 articles were saved in projection states. All 2,280 reading stops are aligned. 12 projection causal checks passed. The maximum relative RMS difference of historical prefixes is 1.44×10⁻⁵. Extracting model forward and readout took a total of 102.78 seconds. CUDA peak retention was 9.39 GiB, and six readouts consumed 3.54 seconds within the fitting process. L4 configuration confirmation to issuing release request took approximately 206.40 seconds, and release has been confirmed. Full account activity also includes other executions, during which the balance decreased from 759.20 to 758.82 CU. [Extract](../../research/results/qasper-factorial-run/extraction.json) · [Causal Check](../../research/results/qasper-factorial-run/causality.json) · [Execution Log](../../research/results/qasper-factorial-run/manifest.json) · [Usage Snapshot](../../research/results/qasper-factorial-run/usage.jsonl)
+
+Sequentially apply `qasper_prepare --holdout dev`, `qasper_extract --dense-tokens`, `qasper_factorial_fit`, and `qasper_factorial_score`. The held-out set is retained locally. GPU-received held-out pairs contain only identifiers. Scores are rerun bit-for-bit consistent, and the 36 metrics are recalculated using the direct product of survival probability formula. [ sealed snapshot weights](../../research/results/qasper-factorial-run/heads.npz) · [ sealed snapshot predictions](../../research/results/qasper-factorial-run/predictions.jsonl) · [independent recalculation](../../research/results/qasper-factorial-run/independent-verification.json)
+
+[Original research record](../../research/qasper-factorial-run.md)

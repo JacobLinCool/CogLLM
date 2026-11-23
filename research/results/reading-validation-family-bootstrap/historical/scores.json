@@ -1,0 +1,1611 @@
+{
+  "sources": 23,
+  "endpoints": 57,
+  "roles": "historical",
+  "seed_mean": {
+    "source_macro_nll": {
+      "endpoint_map": 1.0159351180753595,
+      "midpoint": 1.0179049233650286,
+      "family_bootstrap": 1.015919139295481
+    },
+    "comparisons": {
+      "endpoint_map": {
+        "gain": 1.5978779878474427e-05,
+        "ci95": [
+          -0.002300543810309467,
+          0.0026809304934915976
+        ],
+        "ci95_simultaneous": [
+          -0.0025659076615719423,
+          0.0030804062591252195
+        ],
+        "signflip_p": 0.4966450335496645,
+        "bonferroni_p": 0.993290067099329,
+        "improving_sources": 10,
+        "losing_sources": 13
+      },
+      "midpoint": {
+        "gain": 0.0019857840695477087,
+        "ci95": [
+          -0.002275715794902171,
+          0.008450292360753816
+        ],
+        "ci95_simultaneous": [
+          -0.002564634797730492,
+          0.009756873199477822
+        ],
+        "signflip_p": 0.4026359736402636,
+        "bonferroni_p": 0.8052719472805272,
+        "improving_sources": 12,
+        "losing_sources": 11
+      }
+    }
+  },
+  "separate_seeds": {
+    "1729": {
+      "source_macro_nll": {
+        "endpoint_map": 1.015201533587489,
+        "midpoint": 1.0169257244716434,
+        "family_bootstrap": 1.0157302235617522
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": -0.0005286899742631683,
+          "ci95": [
+            -0.0037726661070081337,
+            0.002565414953599311
+          ],
+          "ci95_simultaneous": [
+            -0.0042500366577518725,
+            0.0029967353024313095
+          ],
+          "signflip_p": 0.6285937140628594,
+          "bonferroni_p": 1.0,
+          "improving_sources": 11,
+          "losing_sources": 12
+        },
+        "midpoint": {
+          "gain": 0.0011955009098908941,
+          "ci95": [
+            -0.0037804634363735818,
+            0.007868216394099561
+          ],
+          "ci95_simultaneous": [
+            -0.00421694421282172,
+            0.008925155870098228
+          ],
+          "signflip_p": 0.4211357886421136,
+          "bonferroni_p": 0.8422715772842272,
+          "improving_sources": 10,
+          "losing_sources": 13
+        }
+      }
+    },
+    "2718": {
+      "source_macro_nll": {
+        "endpoint_map": 1.0166687025632295,
+        "midpoint": 1.018884122258414,
+        "family_bootstrap": 1.0161080550292094
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.0005606475340200521,
+          "ci95": [
+            -0.0020527141859269732,
+            0.0033116992966846586
+          ],
+          "ci95_simultaneous": [
+            -0.0023839549410718153,
+            0.0036984965989659852
+          ],
+          "signflip_p": 0.3579364206357936,
+          "bonferroni_p": 0.7158728412715872,
+          "improving_sources": 14,
+          "losing_sources": 9
+        },
+        "midpoint": {
+          "gain": 0.002776067229204517,
+          "ci95": [
+            -0.0019082880823553634,
+            0.009544263555379436
+          ],
+          "ci95_simultaneous": [
+            -0.0022893139520955654,
+            0.010750435982824507
+          ],
+          "signflip_p": 0.27855721442785575,
+          "bonferroni_p": 0.5571144288557115,
+          "improving_sources": 15,
+          "losing_sources": 8
+        }
+      }
+    }
+  },
+  "per_source_nll_order_map_half_bootstrap": {
+    "ambistory": [
+      1.6711295296224362,
+      1.6712041654392948,
+      1.6714763210263466
+    ],
+    "blott": [
+      0.8455153964675193,
+      0.845491273521593,
+      0.846207034332384
+    ],
+    "clear": [
+      1.0181266581901296,
+      1.0191683089005565,
+      1.0187404241895504
+    ],
+    "complex": [
+      1.2910159665097776,
+      1.2911773122847143,
+      1.2910301713374006
+    ],
+    "context-readback": [
+      0.13122149950501885,
+      0.13123646173826448,
+      0.13012766452942545
+    ],
+    "currie": [
+      0.6258770010626606,
+      0.6256993217041276,
+      0.6345351176300607
+    ],
+    "cwi": [
+      0.3006950359078455,
+      0.30069286345268753,
+      0.3009259555942929
+    ],
+    "czech": [
+      0.44008548795193125,
+      0.44009134530767924,
+      0.4390050311382848
+    ],
+    "first-readback": [
+      0.4038031203521208,
+      0.40392064799048105,
+      0.4045542046906894
+    ],
+    "frick": [
+      1.2151540237227172,
+      1.2155222648062158,
+      1.2053928682577268
+    ],
+    "kerwer": [
+      1.3828541449123612,
+      1.3828548580525193,
+      1.3826612296778547
+    ],
+    "oliver": [
+      1.2980041640189954,
+      1.2980235018572661,
+      1.2969957544939117
+    ],
+    "onestop": [
+      1.3837344650651975,
+      1.3848015111102625,
+      1.3768045038442995
+    ],
+    "onestop-rereading": [
+      0.5085725912246442,
+      0.5085907632232414,
+      0.5072781132418147
+    ],
+    "plaba": [
+      1.4229931849493327,
+      1.4230337283984658,
+      1.4215559982797903
+    ],
+    "race": [
+      0.9676689747727862,
+      1.01175554552729,
+      0.9464374575059504
+    ],
+    "rodger": [
+      2.8599255641579893,
+      2.8597435080813374,
+      2.8705091099990536
+    ],
+    "scarecrow": [
+      0.06219003575260197,
+      0.062439383078529975,
+      0.061697565177354266
+    ],
+    "studentannotations": [
+      1.2495957275325038,
+      1.2486665558547636,
+      1.2517933072794487
+    ],
+    "textcomplexityde": [
+      1.3904549290291377,
+      1.3905315991684586,
+      1.3938464523776748
+    ],
+    "turkish": [
+      0.6798491445540696,
+      0.6793954754870876,
+      0.6861329476422305
+    ],
+    "yadav": [
+      1.3940558647418786,
+      1.3938883453862974,
+      1.4008178168359036
+    ],
+    "zhan": [
+      0.8239852057296095,
+      0.8238844970245232,
+      0.8276151547146113
+    ]
+  },
+  "source_ci": {
+    "ambistory": {
+      "over_map": [
+        -0.002137436878587984,
+        0.0014272449310097478
+      ],
+      "over_midpoint": [
+        -0.0024860538307195645,
+        0.001919684372105857
+      ]
+    },
+    "blott": {
+      "over_map": [
+        -0.004265004168787012,
+        0.0034513996785779876
+      ],
+      "over_midpoint": [
+        -0.004390749773807665,
+        0.0034929195965558864
+      ]
+    },
+    "clear": {
+      "over_map": [
+        -0.0038163152575129864,
+        0.0025567434883752137
+      ],
+      "over_midpoint": [
+        -0.00986071547915771,
+        0.010666095390278381
+      ]
+    },
+    "complex": {
+      "over_map": [
+        -9.518005339373414e-05,
+        6.845184779800674e-05
+      ],
+      "over_midpoint": [
+        -0.0014134272486821307,
+        0.0017860730617862254
+      ]
+    },
+    "context-readback": {
+      "over_map": [
+        -6.98257909309552e-05,
+        0.002293333192946584
+      ],
+      "over_midpoint": [
+        -6.551412730201878e-05,
+        0.0023172860188809263
+      ]
+    },
+    "currie": {
+      "over_map": [
+        -0.024272656036732232,
+        0.00023554227844979625
+      ],
+      "over_midpoint": [
+        -0.0249149296075174,
+        0.00033802623375656093
+      ]
+    },
+    "cwi": {
+      "over_map": [
+        -0.0006334709195973842,
+        -5.434489354468869e-05
+      ],
+      "over_midpoint": [
+        -0.0006420815258811704,
+        -5.3366372999231874e-05
+      ]
+    },
+    "czech": {
+      "over_map": [
+        0.00017599210806353154,
+        0.0027271229770468876
+      ],
+      "over_midpoint": [
+        0.00017546917331245915,
+        0.0027455399230214934
+      ]
+    },
+    "first-readback": {
+      "over_map": [
+        -0.008560501437931804,
+        0.007361005393648513
+      ],
+      "over_midpoint": [
+        -0.008623882036040056,
+        0.007751160248340155
+      ]
+    },
+    "frick": {
+      "over_map": [
+        0.006922708529576216,
+        0.012441819728575165
+      ],
+      "over_midpoint": [
+        0.007126837833520305,
+        0.012963963434135417
+      ]
+    },
+    "kerwer": {
+      "over_map": [
+        -0.00023429488284842925,
+        0.000769475230286254
+      ],
+      "over_midpoint": [
+        -0.000235143403764404,
+        0.0007722959780736005
+      ]
+    },
+    "oliver": {
+      "over_map": [
+        0.00042415055733480145,
+        0.0019025016863558565
+      ],
+      "over_midpoint": [
+        0.0004320677641062698,
+        0.001941158186911102
+      ]
+    },
+    "onestop": {
+      "over_map": [
+        -0.006520996139165902,
+        0.02328664590238283
+      ],
+      "over_midpoint": [
+        -0.00661781383461979,
+        0.0258090063029337
+      ]
+    },
+    "onestop-rereading": {
+      "over_map": [
+        0.0004538092692640827,
+        0.0020449515668077875
+      ],
+      "over_midpoint": [
+        0.0004623168571795677,
+        0.0020702615219962504
+      ]
+    },
+    "plaba": {
+      "over_map": [
+        -0.0024141683862679564,
+        0.005303972420579894
+      ],
+      "over_midpoint": [
+        -0.0024531758324080055,
+        0.00540542020522361
+      ]
+    },
+    "race": {
+      "over_map": [
+        0.0093170585000326,
+        0.03269535339853807
+      ],
+      "over_midpoint": [
+        0.03721346872605722,
+        0.09214420887485418
+      ]
+    },
+    "rodger": null,
+    "scarecrow": {
+      "over_map": [
+        -6.362682554151341e-05,
+        0.0010878861766013305
+      ],
+      "over_midpoint": [
+        4.40688120116566e-05,
+        0.0014936137666033645
+      ]
+    },
+    "studentannotations": {
+      "over_map": [
+        -0.0042342612595298425,
+        -0.0004868197980459565
+      ],
+      "over_midpoint": [
+        -0.006108920795032569,
+        -0.0006215392730729905
+      ]
+    },
+    "textcomplexityde": {
+      "over_map": [
+        -0.020667225064003647,
+        0.007483238259969882
+      ],
+      "over_midpoint": [
+        -0.021362930615045128,
+        0.008244388987920903
+      ]
+    },
+    "turkish": {
+      "over_map": [
+        -0.009655774200969813,
+        -0.001862334541027355
+      ],
+      "over_midpoint": [
+        -0.010391871790047441,
+        -0.0017023772094932887
+      ]
+    },
+    "yadav": {
+      "over_map": [
+        -0.021960319986692234,
+        0.008637794056581605
+      ],
+      "over_midpoint": [
+        -0.022513384184888574,
+        0.00886100219571584
+      ]
+    },
+    "zhan": {
+      "over_map": [
+        -0.011592140600776105,
+        0.0018053218719139563
+      ],
+      "over_midpoint": [
+        -0.011946952575606573,
+        0.0018727081230641707
+      ]
+    }
+  },
+  "endpoints_by_seed": {
+    "1729": {
+      "ambistory_joint": {
+        "source": "ambistory",
+        "rows": 804,
+        "families": 71,
+        "nll": [
+          1.6730112016384444,
+          1.67315494405627,
+          1.6737584796573186
+        ]
+      },
+      "blott_2021_sentence_end_sense": {
+        "source": "blott",
+        "rows": 48,
+        "families": 12,
+        "nll": [
+          0.6957186494910588,
+          0.6956962851921142,
+          0.6975811239225521
+        ]
+      },
+      "blott_2023_sense_response_log_milliseconds": {
+        "source": "blott",
+        "rows": 12,
+        "families": 6,
+        "nll": [
+          1.4919293728416938,
+          1.4919905775731113,
+          1.4885547192164126
+        ]
+      },
+      "blott_2023_sentence_end_sense": {
+        "source": "blott",
+        "rows": 12,
+        "families": 6,
+        "nll": [
+          0.3608458398402365,
+          0.3608445009760684,
+          0.36117118900960893
+        ]
+      },
+      "clear_excerpt_easiness": {
+        "source": "clear",
+        "rows": 204,
+        "families": 200,
+        "nll": [
+          1.0112006087783842,
+          1.0088450468135888,
+          1.0140634693901276
+        ]
+      },
+      "complex_word_difficulty": {
+        "source": "complex",
+        "rows": 2037,
+        "families": 1833,
+        "nll": [
+          1.2905445659657315,
+          1.290280475045089,
+          1.2905323102704298
+        ]
+      },
+      "context_first_readback": {
+        "source": "context-readback",
+        "rows": 494,
+        "families": 7,
+        "nll": [
+          0.1310923289150466,
+          0.13110192843105783,
+          0.1301182179254322
+        ]
+      },
+      "currie_end_coherence_report": {
+        "source": "currie",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.6282922158159551,
+          0.6281576580671897,
+          0.6343767225504933
+        ]
+      },
+      "cwi_native_marked": {
+        "source": "cwi",
+        "rows": 1548,
+        "families": 7,
+        "nll": [
+          0.3094143336118341,
+          0.30940615524955395,
+          0.3098495211432421
+        ]
+      },
+      "cwi_nonnative_marked": {
+        "source": "cwi",
+        "rows": 1548,
+        "families": 7,
+        "nll": [
+          0.29238442673010434,
+          0.2923814084317415,
+          0.2925317938322051
+        ]
+      },
+      "czech_exp2_qcor": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.3587834179781738,
+          0.3587876349127061,
+          0.35755581731754876
+        ]
+      },
+      "czech_exp2_qmis": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.5164913653836406,
+          0.516495657985276,
+          0.5149909956116032
+        ]
+      },
+      "czech_exp2_qpos": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.37902559587815354,
+          0.3790451030250873,
+          0.37598908060539854
+        ]
+      },
+      "czech_exp3_qcor": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.3886004743411063,
+          0.3886059467195989,
+          0.3870340836762207
+        ]
+      },
+      "czech_exp3_qmis": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.602116703194682,
+          0.6021181666897902,
+          0.6007560800647505
+        ]
+      },
+      "czech_exp3_qpos": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.38982517096468,
+          0.3898255195131452,
+          0.3896281261581664
+        ]
+      },
+      "first_readback_end_acceptability": {
+        "source": "first-readback",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.6342525015142091,
+          0.6345584466302117,
+          0.6309851247362296
+        ]
+      },
+      "first_readback_risk": {
+        "source": "first-readback",
+        "rows": 415,
+        "families": 16,
+        "nll": [
+          0.17609413148692232,
+          0.1760386293711489,
+          0.18124993514265564
+        ]
+      },
+      "frick_after_first_report": {
+        "source": "frick",
+        "rows": 95,
+        "families": 4,
+        "nll": [
+          0.31384133625724214,
+          0.31384086270639727,
+          0.31488984233429873
+        ]
+      },
+      "frick_first_report": {
+        "source": "frick",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.853525043711955,
+          1.8538874672461785,
+          1.8289233651604888
+        ]
+      },
+      "frick_log_keypress_seconds": {
+        "source": "frick",
+        "rows": 118,
+        "families": 4,
+        "nll": [
+          1.4340029271966785,
+          1.4340074560403295,
+          1.4334607052838555
+        ]
+      },
+      "kerwer_comprehensibility": {
+        "source": "kerwer",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.884640007129533,
+          1.8846400380014028,
+          1.884713690408766
+        ]
+      },
+      "kerwer_confusion": {
+        "source": "kerwer",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.2467083696463048,
+          1.2467030794516214,
+          1.248221890546427
+        ]
+      },
+      "kerwer_frustration": {
+        "source": "kerwer",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.0175323112535197,
+          1.0175323842314814,
+          1.0172899215657334
+        ]
+      },
+      "oliver_first_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.4070424569045368,
+          1.4070427036460194,
+          1.4067812352733964
+        ]
+      },
+      "oliver_first_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.4020846382507683,
+          1.402085076556345,
+          1.4018292187347505
+        ]
+      },
+      "oliver_first_delay_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 14,
+        "families": 8,
+        "nll": [
+          1.524365470297244,
+          1.5243660399872845,
+          1.5242090852941725
+        ]
+      },
+      "oliver_retest_initial_state": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          0.8438939386261335,
+          0.8438939381924953,
+          0.8438982535615966
+        ]
+      },
+      "oliver_retest_target_confirmation": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          0.5439408404744586,
+          0.5439408453983844,
+          0.5438861703073857
+        ]
+      },
+      "oliver_retrieval_protocol_path": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.8394592033638408,
+          1.8394592318287315,
+          1.8394179573480633
+        ]
+      },
+      "oliver_second_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.4190270583742508,
+          1.4190273159250952,
+          1.4187785949154625
+        ]
+      },
+      "oliver_second_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.3926027890332402,
+          1.3926031266994374,
+          1.3924163408934112
+        ]
+      },
+      "onestop_answer_choice": {
+        "source": "onestop",
+        "rows": 328,
+        "families": 4,
+        "nll": [
+          1.378616941621292,
+          1.3800853238408717,
+          1.3707771514723208
+        ]
+      },
+      "onestop_rereading_first_read_correct": {
+        "source": "onestop-rereading",
+        "rows": 88,
+        "families": 7,
+        "nll": [
+          0.5522996335165966,
+          0.5522996550725857,
+          0.5522990278249775
+        ]
+      },
+      "onestop_rereading_reread_correct": {
+        "source": "onestop-rereading",
+        "rows": 88,
+        "families": 7,
+        "nll": [
+          0.457591757160533,
+          0.45759106692822693,
+          0.4580431134960626
+        ]
+      },
+      "plaba_issue_set": {
+        "source": "plaba",
+        "rows": 44,
+        "families": 3,
+        "nll": [
+          1.9098845604543206,
+          1.9097894150770998,
+          1.920473329730231
+        ]
+      },
+      "plaba_open_book_accuracy": {
+        "source": "plaba",
+        "rows": 64,
+        "families": 5,
+        "nll": [
+          0.3906053411343355,
+          0.3906059891209975,
+          0.39043317793548066
+        ]
+      },
+      "plaba_overall_perceived_understanding": {
+        "source": "plaba",
+        "rows": 16,
+        "families": 5,
+        "nll": [
+          1.6208454456837675,
+          1.6208936527039182,
+          1.616847508251164
+        ]
+      },
+      "plaba_overall_processing_ease": {
+        "source": "plaba",
+        "rows": 16,
+        "families": 5,
+        "nll": [
+          1.6233871059348044,
+          1.623419150799655,
+          1.6191025362382245
+        ]
+      },
+      "plaba_perceived_understanding": {
+        "source": "plaba",
+        "rows": 133,
+        "families": 5,
+        "nll": [
+          1.3336572396095843,
+          1.3340058036465392,
+          1.3247584070594185
+        ]
+      },
+      "plaba_processing_ease": {
+        "source": "plaba",
+        "rows": 133,
+        "families": 5,
+        "nll": [
+          1.3678450466456988,
+          1.3679290798284465,
+          1.3658858146709536
+        ]
+      },
+      "plaba_quiz_confidence": {
+        "source": "plaba",
+        "rows": 64,
+        "families": 5,
+        "nll": [
+          1.4742697029520728,
+          1.4742702568409747,
+          1.4743258489878859
+        ]
+      },
+      "plaba_quiz_effort": {
+        "source": "plaba",
+        "rows": 64,
+        "families": 5,
+        "nll": [
+          1.6470300853743691,
+          1.6470245668472696,
+          1.6476419133019233
+        ]
+      },
+      "race_answer_choice": {
+        "source": "race",
+        "rows": 367,
+        "families": 43,
+        "nll": [
+          0.9617040973405235,
+          1.003264669256378,
+          0.9401182213375503
+        ]
+      },
+      "rodger_paired_effectiveness": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.85558781374968,
+          2.855288849908799,
+          2.8834373811335707
+        ]
+      },
+      "rodger_paired_support": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.8734497294230734,
+          2.8726700863847743,
+          2.8959506580878966
+        ]
+      },
+      "scarecrow_retrospective_contradiction_mark_ordinal": {
+        "source": "scarecrow",
+        "rows": 22091,
+        "families": 237,
+        "nll": [
+          0.06231974279390644,
+          0.06258689767881447,
+          0.061906615689794414
+        ]
+      },
+      "studentannotations_comprehension_difficulty": {
+        "source": "studentannotations",
+        "rows": 229,
+        "families": 226,
+        "nll": [
+          1.2437249362423375,
+          1.243706604682205,
+          1.2437560640345138
+        ]
+      },
+      "textcomplexityde_complexity": {
+        "source": "textcomplexityde",
+        "rows": 125,
+        "families": 4,
+        "nll": [
+          1.3909319554166137,
+          1.3907723745397242,
+          1.4010040060973452
+        ]
+      },
+      "textcomplexityde_lexical_difficulty": {
+        "source": "textcomplexityde",
+        "rows": 125,
+        "families": 4,
+        "nll": [
+          1.40635648868514,
+          1.4063573994047645,
+          1.4075688469059355
+        ]
+      },
+      "textcomplexityde_understandability": {
+        "source": "textcomplexityde",
+        "rows": 125,
+        "families": 4,
+        "nll": [
+          1.3682637880045923,
+          1.3680505729877381,
+          1.3812633764103635
+        ]
+      },
+      "turkish_comprehension_correct": {
+        "source": "turkish",
+        "rows": 395,
+        "families": 9,
+        "nll": [
+          0.6819460313650684,
+          0.6819776374632809,
+          0.6812808358516991
+        ]
+      },
+      "turkish_sentence_comparison": {
+        "source": "turkish",
+        "rows": 307,
+        "families": 9,
+        "nll": [
+          0.6875934019672382,
+          0.6862724407364105,
+          0.7033284744114576
+        ]
+      },
+      "yadav_full_sentence_difficulty": {
+        "source": "yadav",
+        "rows": 32,
+        "families": 4,
+        "nll": [
+          1.4343384055078126,
+          1.4343929422637876,
+          1.4322668664853357
+        ]
+      },
+      "yadav_paced_words_difficulty": {
+        "source": "yadav",
+        "rows": 32,
+        "families": 4,
+        "nll": [
+          1.3662632532624972,
+          1.3662822535280101,
+          1.3660175757671082
+        ]
+      },
+      "zhan_reference_form": {
+        "source": "zhan",
+        "rows": 7,
+        "families": 7,
+        "nll": [
+          0.8839852211780908,
+          0.8839879491555971,
+          0.8840973468245155
+        ]
+      },
+      "zhan_remention": {
+        "source": "zhan",
+        "rows": 14,
+        "families": 7,
+        "nll": [
+          0.7769264266527114,
+          0.7768049853713619,
+          0.7823535972693817
+        ]
+      }
+    },
+    "2718": {
+      "ambistory_joint": {
+        "source": "ambistory",
+        "rows": 804,
+        "families": 71,
+        "nll": [
+          1.6692478576064278,
+          1.6692533868223196,
+          1.6691941623953743
+        ]
+      },
+      "blott_2021_sentence_end_sense": {
+        "source": "blott",
+        "rows": 48,
+        "families": 12,
+        "nll": [
+          0.6750277886419379,
+          0.6747717568933379,
+          0.6834987358059702
+        ]
+      },
+      "blott_2023_sense_response_log_milliseconds": {
+        "source": "blott",
+        "rows": 12,
+        "families": 6,
+        "nll": [
+          1.4882459466725837,
+          1.4883279419359374,
+          1.483233890288215
+        ]
+      },
+      "blott_2023_sentence_end_sense": {
+        "source": "blott",
+        "rows": 12,
+        "families": 6,
+        "nll": [
+          0.36132478131760476,
+          0.3613165785589888,
+          0.3632025477515449
+        ]
+      },
+      "clear_excerpt_easiness": {
+        "source": "clear",
+        "rows": 204,
+        "families": 200,
+        "nll": [
+          1.0250527076018752,
+          1.0294915709875243,
+          1.0234173789889731
+        ]
+      },
+      "complex_word_difficulty": {
+        "source": "complex",
+        "rows": 2037,
+        "families": 1833,
+        "nll": [
+          1.2914873670538236,
+          1.2920741495243395,
+          1.2915280324043714
+        ]
+      },
+      "context_first_readback": {
+        "source": "context-readback",
+        "rows": 494,
+        "families": 7,
+        "nll": [
+          0.1313506700949911,
+          0.13137099504547115,
+          0.1301371111334187
+        ]
+      },
+      "currie_end_coherence_report": {
+        "source": "currie",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.6234617863093663,
+          0.6232409853410654,
+          0.6346935127096281
+        ]
+      },
+      "cwi_native_marked": {
+        "source": "cwi",
+        "rows": 1548,
+        "families": 7,
+        "nll": [
+          0.30953386244155623,
+          0.30953367317059116,
+          0.3097595842610124
+        ]
+      },
+      "cwi_nonnative_marked": {
+        "source": "cwi",
+        "rows": 1548,
+        "families": 7,
+        "nll": [
+          0.29144752084788744,
+          0.29145021695886353,
+          0.2915629231407122
+        ]
+      },
+      "czech_exp2_qcor": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.3617349734041946,
+          0.36173952108528884,
+          0.36138285843601164
+        ]
+      },
+      "czech_exp2_qmis": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.5205753357857511,
+          0.520564503858055,
+          0.5213783557676563
+        ]
+      },
+      "czech_exp2_qpos": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.37943199167040953,
+          0.3794436212313782,
+          0.3784433710373421
+        ]
+      },
+      "czech_exp3_qcor": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.39038659968189976,
+          0.3903889275494627,
+          0.3900389288665247
+        ]
+      },
+      "czech_exp3_qmis": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.6040881302910793,
+          0.6040939059100181,
+          0.6036097362511278
+        ]
+      },
+      "czech_exp3_qpos": {
+        "source": "czech",
+        "rows": 36,
+        "families": 9,
+        "nll": [
+          0.3899660968494041,
+          0.38998763521234464,
+          0.3872529398670671
+        ]
+      },
+      "first_readback_end_acceptability": {
+        "source": "first-readback",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.6288290743499677,
+          0.6291236186203257,
+          0.622221303036388
+        ]
+      },
+      "first_readback_risk": {
+        "source": "first-readback",
+        "rows": 415,
+        "families": 16,
+        "nll": [
+          0.17603677405738402,
+          0.17596189734023798,
+          0.18376045584748446
+        ]
+      },
+      "frick_after_first_report": {
+        "source": "frick",
+        "rows": 95,
+        "families": 4,
+        "nll": [
+          0.31409142015235225,
+          0.3140912620753376,
+          0.3154338280310347
+        ]
+      },
+      "frick_first_report": {
+        "source": "frick",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.9365003258126534,
+          1.9383547180736902,
+          1.8966097575970284
+        ]
+      },
+      "frick_log_keypress_seconds": {
+        "source": "frick",
+        "rows": 118,
+        "families": 4,
+        "nll": [
+          1.438963089205421,
+          1.4389518226953613,
+          1.4430397111396556
+        ]
+      },
+      "kerwer_comprehensibility": {
+        "source": "kerwer",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.883882299071434,
+          1.8838861468384667,
+          1.883323729833686
+        ]
+      },
+      "kerwer_confusion": {
+        "source": "kerwer",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.2479521086380496,
+          1.2479540475852613,
+          1.2477106259505144
+        ]
+      },
+      "kerwer_frustration": {
+        "source": "kerwer",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.0164097737353253,
+          1.0164134522068828,
+          1.0147075197620008
+        ]
+      },
+      "oliver_first_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.4033717286322127,
+          1.4033715332504748,
+          1.4035245397693916
+        ]
+      },
+      "oliver_first_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.3971439411315802,
+          1.3971669817168633,
+          1.3951610177131974
+        ]
+      },
+      "oliver_first_delay_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 14,
+        "families": 8,
+        "nll": [
+          1.5467697753490632,
+          1.5470312388410326,
+          1.5367513878860344
+        ]
+      },
+      "oliver_retest_initial_state": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          0.8479514319286928,
+          0.8479513772570526,
+          0.8480118409026065
+        ]
+      },
+      "oliver_retest_target_confirmation": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          0.5494705038408967,
+          0.5494761177607088,
+          0.5489158811233126
+        ]
+      },
+      "oliver_retrieval_protocol_path": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.835609872348287,
+          1.8356111584629955,
+          1.8353495687191628
+        ]
+      },
+      "oliver_second_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.4258296078932742,
+          1.4258314418782787,
+          1.4253948743392788
+        ]
+      },
+      "oliver_second_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 16,
+        "families": 8,
+        "nll": [
+          1.3895033678554458,
+          1.3895179023150588,
+          1.3876061051213664
+        ]
+      },
+      "onestop_answer_choice": {
+        "source": "onestop",
+        "rows": 328,
+        "families": 4,
+        "nll": [
+          1.3888519885091029,
+          1.3895176983796533,
+          1.382831856216278
+        ]
+      },
+      "onestop_rereading_first_read_correct": {
+        "source": "onestop-rereading",
+        "rows": 88,
+        "families": 7,
+        "nll": [
+          0.5541069877257042,
+          0.5541090167414529,
+          0.5538091839877902
+        ]
+      },
+      "onestop_rereading_reread_correct": {
+        "source": "onestop-rereading",
+        "rows": 88,
+        "families": 7,
+        "nll": [
+          0.470291986495743,
+          0.47036331415070004,
+          0.4649611276584288
+        ]
+      },
+      "plaba_issue_set": {
+        "source": "plaba",
+        "rows": 44,
+        "families": 3,
+        "nll": [
+          1.9130942123333623,
+          1.9132932373319167,
+          1.898284387184894
+        ]
+      },
+      "plaba_open_book_accuracy": {
+        "source": "plaba",
+        "rows": 64,
+        "families": 5,
+        "nll": [
+          0.3942056259157181,
+          0.39420083382441895,
+          0.39554092269576696
+        ]
+      },
+      "plaba_overall_perceived_understanding": {
+        "source": "plaba",
+        "rows": 16,
+        "families": 5,
+        "nll": [
+          1.6331144536811133,
+          1.6331127170187685,
+          1.6340614995983447
+        ]
+      },
+      "plaba_overall_processing_ease": {
+        "source": "plaba",
+        "rows": 16,
+        "families": 5,
+        "nll": [
+          1.6189110826896924,
+          1.6189650449700494,
+          1.6145775839256131
+        ]
+      },
+      "plaba_perceived_understanding": {
+        "source": "plaba",
+        "rows": 133,
+        "families": 5,
+        "nll": [
+          1.3650850243668757,
+          1.3650890201321144,
+          1.3640857280210779
+        ]
+      },
+      "plaba_processing_ease": {
+        "source": "plaba",
+        "rows": 133,
+        "families": 5,
+        "nll": [
+          1.350333668056457,
+          1.3503276856103081,
+          1.3510846386641555
+        ]
+      },
+      "plaba_quiz_confidence": {
+        "source": "plaba",
+        "rows": 64,
+        "families": 5,
+        "nll": [
+          1.4773336413318798,
+          1.4773243427160587,
+          1.4792786013800807
+        ]
+      },
+      "plaba_quiz_effort": {
+        "source": "plaba",
+        "rows": 64,
+        "families": 5,
+        "nll": [
+          1.6482887230252696,
+          1.6482888579069177,
+          1.6485140748314286
+        ]
+      },
+      "race_answer_choice": {
+        "source": "race",
+        "rows": 367,
+        "families": 43,
+        "nll": [
+          0.973633852205049,
+          1.0202464217982017,
+          0.9527566936743507
+        ]
+      },
+      "rodger_paired_effectiveness": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.850588500860383,
+          2.850605754008102,
+          2.850887695715113
+        ]
+      },
+      "rodger_paired_support": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.86007621259882,
+          2.8604093420236745,
+          2.8517607050596343
+        ]
+      },
+      "scarecrow_retrospective_contradiction_mark_ordinal": {
+        "source": "scarecrow",
+        "rows": 22091,
+        "families": 237,
+        "nll": [
+          0.06206032871129751,
+          0.062291868478245485,
+          0.061488514664914125
+        ]
+      },
+      "studentannotations_comprehension_difficulty": {
+        "source": "studentannotations",
+        "rows": 229,
+        "families": 226,
+        "nll": [
+          1.25546651882267,
+          1.2536265070273223,
+          1.2598305505243839
+        ]
+      },
+      "textcomplexityde_complexity": {
+        "source": "textcomplexityde",
+        "rows": 125,
+        "families": 4,
+        "nll": [
+          1.393307420482214,
+          1.393612334789903,
+          1.3978871572245863
+        ]
+      },
+      "textcomplexityde_lexical_difficulty": {
+        "source": "textcomplexityde",
+        "rows": 125,
+        "families": 4,
+        "nll": [
+          1.4035430304821428,
+          1.4036090085935595,
+          1.3981702878246804
+        ]
+      },
+      "textcomplexityde_understandability": {
+        "source": "textcomplexityde",
+        "rows": 125,
+        "families": 4,
+        "nll": [
+          1.3803268911041235,
+          1.380787904695062,
+          1.377185039803138
+        ]
+      },
+      "turkish_comprehension_correct": {
+        "source": "turkish",
+        "rows": 395,
+        "families": 9,
+        "nll": [
+          0.681240173268455,
+          0.6812450213829777,
+          0.6810483049380518
+        ]
+      },
+      "turkish_sentence_comparison": {
+        "source": "turkish",
+        "rows": 307,
+        "families": 9,
+        "nll": [
+          0.668616971615517,
+          0.6680868023656812,
+          0.6788741753677137
+        ]
+      },
+      "yadav_full_sentence_difficulty": {
+        "source": "yadav",
+        "rows": 32,
+        "families": 4,
+        "nll": [
+          1.4138872077501827,
+          1.4134257219724664,
+          1.4285154904769857
+        ]
+      },
+      "yadav_paced_words_difficulty": {
+        "source": "yadav",
+        "rows": 32,
+        "families": 4,
+        "nll": [
+          1.3617345924470219,
+          1.3614524637809253,
+          1.3764713346141846
+        ]
+      },
+      "zhan_reference_form": {
+        "source": "zhan",
+        "rows": 7,
+        "families": 7,
+        "nll": [
+          0.8814127932309118,
+          0.8814231878378546,
+          0.8809487346570417
+        ]
+      },
+      "zhan_remention": {
+        "source": "zhan",
+        "rows": 14,
+        "families": 7,
+        "nll": [
+          0.7536163818567239,
+          0.7533218657332788,
+          0.7630609401075064
+        ]
+      }
+    }
+  },
+  "fit": "f5b149c784f157ed884b79c9bba8ed62bd032789834dd6715bf079f4112ca2ef"
+}

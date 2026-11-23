@@ -1,0 +1,80 @@
+{
+  "n_docs": 49,
+  "boundaries": 293,
+  "results": {
+    "4": {
+      "scores": {
+        "surface": {
+          "n": 293,
+          "positives": 21,
+          "auc": 0.3786764705882353,
+          "ap": 0.06272403903557808
+        },
+        "semantic": {
+          "n": 293,
+          "positives": 21,
+          "auc": 0.602766106442577,
+          "ap": 0.11751012873724243
+        }
+      },
+      "paired_semantic_minus_surface": {
+        "ap": {
+          "estimate": 0.05478608970166435,
+          "valid_draws": 10000,
+          "interval95": [
+            -0.0024150430901209597,
+            0.20795073384430984
+          ]
+        },
+        "auc": {
+          "estimate": 0.22408963585434172,
+          "valid_draws": 10000,
+          "interval95": [
+            0.05977980714544238,
+            0.39796271694273266
+          ]
+        }
+      },
+      "prevalence": 0.07167235494880546,
+      "positive_reader_votes": 43
+    },
+    "5": {
+      "scores": {
+        "surface": {
+          "n": 293,
+          "positives": 15,
+          "auc": 0.35347721822541966,
+          "ap": 0.0402063288480352
+        },
+        "semantic": {
+          "n": 293,
+          "positives": 15,
+          "auc": 0.701199040767386,
+          "ap": 0.12281925388741138
+        }
+      },
+      "paired_semantic_minus_surface": {
+        "ap": {
+          "estimate": 0.08261292503937619,
+          "valid_draws": 9999,
+          "interval95": [
+            -0.005582645589502199,
+            0.2812499374307716
+          ]
+        },
+        "auc": {
+          "estimate": 0.3477218225419664,
+          "valid_draws": 9999,
+          "interval95": [
+            0.1087495629370629,
+            0.503791155133928
+          ]
+        }
+      },
+      "prevalence": 0.051194539249146756,
+      "positive_reader_votes": 32
+    }
+  },
+  "seal_sha256": "823310afef478558bf39e926be048edca85014ad3f7897ecebe40bc135c00651",
+  "interpretation": "At least one eligible incremental rater supplied the specified reason at this boundary"
+}

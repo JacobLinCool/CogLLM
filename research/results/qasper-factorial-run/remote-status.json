@@ -1,0 +1,44 @@
+{
+  "completed": true,
+  "phase": "complete",
+  "phase_seconds": {
+    "install": 12.79461110200009,
+    "extract": 171.84957036300057,
+    "fit": 6.1270081100001335
+  },
+  "device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "input_sha256": {
+    "data/eval.jsonl": "8e06578e5230a04fb6929b94140fadebdbd99c567d0bb730136ac797bccd23de",
+    "data/stimuli.jsonl": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+    "data/train.jsonl": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+    "research/core_features/extract.py": "db0c984a834dbdc16ac3c5bd744b53081e220004c577daf06bf84af5d0739b49",
+    "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+    "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+    "research/semantic_tracking/qasper_extract.py": "5098a26f8d9ce29239e336cafa28583b7da5dae9d486ae3e42ce06e1d4491ab7",
+    "research/semantic_tracking/qasper_factorial_fit.py": "86ea89c60846ea9ab979498c7ffb813e402a91d90cc57113d6d619b4296355bb",
+    "research/semantic_tracking/qasper_fit.py": "ee67ceeda7d77d8ee1573e0747235eb7b4c9ee6070f21f9507bbdcea7b5f7527",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+  },
+  "payload_sha256": "6f36e4ff115e02e40545c4157082a4c5183ad967c2ed0917c81a5d1b5d2fad58",
+  "worker_sha256": "1339888de9db4e0f864424648a7c289f2b9ecd28fcc0f0c748dc656f53202750",
+  "worker_elapsed_s": 195.1813617079997,
+  "output_sha256": {
+    "extract/causality.json": "1e005f05969ac60ddb36a59a9808d3ed6dcc48b75ce0be826d2732371d7c60fd",
+    "extract/extraction.json": "d6cdb93297e7f3034f99730fc2d40926804426eee7fea450315ab6e775549cbd",
+    "extract/telemetry.jsonl": "3dd02e9432baefdf3e7bcb96ab74f12880c2403a279550520242744a88617633",
+    "fit/fit-manifest.json": "4eab8b61bf83e46e830e69afc6663535981eb9b55967bdd892f1354b1002512b",
+    "fit/heads.npz": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "fit/predictions.jsonl": "8317e3182c9bdc83b5b90e670f7224da9de58509a35a517cfeeb428e29e78148",
+    "worker.log": "cb38979e365e5ddece0bfe950ba3c909d5b7826d5a9406d5e7c44d31ce6b8e3e"
+  }
+}

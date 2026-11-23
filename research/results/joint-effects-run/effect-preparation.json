@@ -1,0 +1,460 @@
+{
+  "scope": "Fold-local aggregate counts. Held-out rows are zero in all direct and effect arrays. OneStop uses all training-fold choices and no effect.",
+  "sampling": {
+    "seeds": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ],
+    "plaba": "One entire sentence trial per training sentence. Ratings and available checklist come from the same trial. Remaining understanding ratings are used only at complete orig/simp alignment positions.",
+    "zhan": "Reuses the locked Stage 4 draw seeds and four direct choices per training prompt. Remaining choices form the effect target."
+  },
+  "plaba_effect": "Mean simplified-minus-original understanding rating with equal weight to each complete alignment position and equal weight to sentences within each variant.",
+  "zhan_effect": "IC-2 minus IC-1 interaction in the pronoun-minus-free probability to choose NP1, equal weight per family within verb type.",
+  "input_sha256": {
+    "joint_design.npz": "05e41dbfac748869dd696ebd671bdb17f8da7726a18c42b01d3b48c32b5ef680",
+    "plaba_sentences.csv": "0d0f798d7e2417f5eafa93611c1e5efb26ce67ee2da2f95c598433f491fae02e",
+    "stage4_design.json": "9c08b4dd1060a4354af8236c6a7edf9579d83fa9d15c2677bc02a2d24fb3355b",
+    "plaba/stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+    "plaba/trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e",
+    "plaba/splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+    "zhan/stimuli.jsonl": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+    "zhan/trials.jsonl": "d67c0223e3628084c50136e031efe3b1f97f92b56ccf0478ebafc2ad110980f8",
+    "zhan/splits.json": "b9b3f20ff7936b5c6a8046493b1f0d226b9e27b17a866693e712fb91671b2c2f"
+  },
+  "output_sha256": "5be1e8c8e87a0ee4bb97ed7e799deb4b737a5f30873f86b8120f305b70444bf0",
+  "folds": [
+    {
+      "fold": 0,
+      "onestop_full_training_choice_trials": 1545,
+      "draws": [
+        {
+          "seed": 0,
+          "plaba": {
+            "direct_rating_trials": 490,
+            "direct_checklist_trials": 215,
+            "effect_alignment_positions": 220,
+            "effect_sentence_rows": 484,
+            "effect_disjoint_rating_trials": 967,
+            "effect_target_rating_points": 0.5945075757575755
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2565170975354522
+          }
+        },
+        {
+          "seed": 1,
+          "plaba": {
+            "direct_rating_trials": 490,
+            "direct_checklist_trials": 215,
+            "effect_alignment_positions": 220,
+            "effect_sentence_rows": 484,
+            "effect_disjoint_rating_trials": 967,
+            "effect_target_rating_points": 0.7013257575757574
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.23220481928758374
+          }
+        },
+        {
+          "seed": 2,
+          "plaba": {
+            "direct_rating_trials": 490,
+            "direct_checklist_trials": 215,
+            "effect_alignment_positions": 220,
+            "effect_sentence_rows": 484,
+            "effect_disjoint_rating_trials": 967,
+            "effect_target_rating_points": 0.7575757575757573
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2806514781443632
+          }
+        },
+        {
+          "seed": 3,
+          "plaba": {
+            "direct_rating_trials": 490,
+            "direct_checklist_trials": 215,
+            "effect_alignment_positions": 220,
+            "effect_sentence_rows": 484,
+            "effect_disjoint_rating_trials": 967,
+            "effect_target_rating_points": 0.6854166666666666
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.26443619761197595
+          }
+        },
+        {
+          "seed": 4,
+          "plaba": {
+            "direct_rating_trials": 490,
+            "direct_checklist_trials": 215,
+            "effect_alignment_positions": 220,
+            "effect_sentence_rows": 484,
+            "effect_disjoint_rating_trials": 967,
+            "effect_target_rating_points": 0.6337121212121212
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2474642450651527
+          }
+        }
+      ]
+    },
+    {
+      "fold": 1,
+      "onestop_full_training_choice_trials": 1545,
+      "draws": [
+        {
+          "seed": 0,
+          "plaba": {
+            "direct_rating_trials": 480,
+            "direct_checklist_trials": 245,
+            "effect_alignment_positions": 208,
+            "effect_sentence_rows": 473,
+            "effect_disjoint_rating_trials": 945,
+            "effect_target_rating_points": 0.7035256410256411
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.26921463444937754
+          }
+        },
+        {
+          "seed": 1,
+          "plaba": {
+            "direct_rating_trials": 480,
+            "direct_checklist_trials": 245,
+            "effect_alignment_positions": 208,
+            "effect_sentence_rows": 473,
+            "effect_disjoint_rating_trials": 945,
+            "effect_target_rating_points": 0.7525641025641026
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.252995236951376
+          }
+        },
+        {
+          "seed": 2,
+          "plaba": {
+            "direct_rating_trials": 480,
+            "direct_checklist_trials": 245,
+            "effect_alignment_positions": 208,
+            "effect_sentence_rows": 473,
+            "effect_disjoint_rating_trials": 945,
+            "effect_target_rating_points": 0.7216346153846155
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.22333429333151705
+          }
+        },
+        {
+          "seed": 3,
+          "plaba": {
+            "direct_rating_trials": 480,
+            "direct_checklist_trials": 245,
+            "effect_alignment_positions": 208,
+            "effect_sentence_rows": 473,
+            "effect_disjoint_rating_trials": 945,
+            "effect_target_rating_points": 0.730448717948718
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2504425049088489
+          }
+        },
+        {
+          "seed": 4,
+          "plaba": {
+            "direct_rating_trials": 480,
+            "direct_checklist_trials": 245,
+            "effect_alignment_positions": 208,
+            "effect_sentence_rows": 473,
+            "effect_disjoint_rating_trials": 945,
+            "effect_target_rating_points": 0.6905448717948719
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.25957390918680734
+          }
+        }
+      ]
+    },
+    {
+      "fold": 2,
+      "onestop_full_training_choice_trials": 1546,
+      "draws": [
+        {
+          "seed": 0,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 190,
+            "effect_alignment_positions": 210,
+            "effect_sentence_rows": 485,
+            "effect_disjoint_rating_trials": 969,
+            "effect_target_rating_points": 0.6165873015873016
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.23242987859766273
+          }
+        },
+        {
+          "seed": 1,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 190,
+            "effect_alignment_positions": 210,
+            "effect_sentence_rows": 485,
+            "effect_disjoint_rating_trials": 969,
+            "effect_target_rating_points": 0.6540873015873016
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2482997054376952
+          }
+        },
+        {
+          "seed": 2,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 190,
+            "effect_alignment_positions": 210,
+            "effect_sentence_rows": 485,
+            "effect_disjoint_rating_trials": 969,
+            "effect_target_rating_points": 0.6853571428571429
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.21452990460785082
+          }
+        },
+        {
+          "seed": 3,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 190,
+            "effect_alignment_positions": 210,
+            "effect_sentence_rows": 485,
+            "effect_disjoint_rating_trials": 969,
+            "effect_target_rating_points": 0.6857142857142857
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2513833217123322
+          }
+        },
+        {
+          "seed": 4,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 190,
+            "effect_alignment_positions": 210,
+            "effect_sentence_rows": 485,
+            "effect_disjoint_rating_trials": 969,
+            "effect_target_rating_points": 0.6946428571428572
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.235397140442192
+          }
+        }
+      ]
+    },
+    {
+      "fold": 3,
+      "onestop_full_training_choice_trials": 1562,
+      "draws": [
+        {
+          "seed": 0,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 241,
+            "effect_alignment_positions": 215,
+            "effect_sentence_rows": 489,
+            "effect_disjoint_rating_trials": 978,
+            "effect_target_rating_points": 0.6749612403100775
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.18579209399371843
+          }
+        },
+        {
+          "seed": 1,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 241,
+            "effect_alignment_positions": 215,
+            "effect_sentence_rows": 489,
+            "effect_disjoint_rating_trials": 978,
+            "effect_target_rating_points": 0.7644961240310078
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.19741522593986438
+          }
+        },
+        {
+          "seed": 2,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 241,
+            "effect_alignment_positions": 215,
+            "effect_sentence_rows": 489,
+            "effect_disjoint_rating_trials": 978,
+            "effect_target_rating_points": 0.67
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2289311922875713
+          }
+        },
+        {
+          "seed": 3,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 241,
+            "effect_alignment_positions": 215,
+            "effect_sentence_rows": 489,
+            "effect_disjoint_rating_trials": 978,
+            "effect_target_rating_points": 0.6567829457364341
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.22243782703903414
+          }
+        },
+        {
+          "seed": 4,
+          "plaba": {
+            "direct_rating_trials": 491,
+            "direct_checklist_trials": 241,
+            "effect_alignment_positions": 215,
+            "effect_sentence_rows": 489,
+            "effect_disjoint_rating_trials": 978,
+            "effect_target_rating_points": 0.6343410852713178
+          },
+          "zhan": {
+            "direct_choice_trials": 232,
+            "effect_disjoint_choice_trials": 1097,
+            "effect_target_probability": 0.2175024781316801
+          }
+        }
+      ]
+    },
+    {
+      "fold": 4,
+      "onestop_full_training_choice_trials": 1562,
+      "draws": [
+        {
+          "seed": 0,
+          "plaba": {
+            "direct_rating_trials": 484,
+            "direct_checklist_trials": 253,
+            "effect_alignment_positions": 207,
+            "effect_sentence_rows": 477,
+            "effect_disjoint_rating_trials": 953,
+            "effect_target_rating_points": 0.8145732689210947
+          },
+          "zhan": {
+            "direct_choice_trials": 224,
+            "effect_disjoint_choice_trials": 1064,
+            "effect_target_probability": 0.2704170575664047
+          }
+        },
+        {
+          "seed": 1,
+          "plaba": {
+            "direct_rating_trials": 484,
+            "direct_checklist_trials": 253,
+            "effect_alignment_positions": 207,
+            "effect_sentence_rows": 477,
+            "effect_disjoint_rating_trials": 953,
+            "effect_target_rating_points": 0.8552334943639289
+          },
+          "zhan": {
+            "direct_choice_trials": 224,
+            "effect_disjoint_choice_trials": 1064,
+            "effect_target_probability": 0.27151086424979276
+          }
+        },
+        {
+          "seed": 2,
+          "plaba": {
+            "direct_rating_trials": 484,
+            "direct_checklist_trials": 253,
+            "effect_alignment_positions": 207,
+            "effect_sentence_rows": 477,
+            "effect_disjoint_rating_trials": 953,
+            "effect_target_rating_points": 0.8694444444444442
+          },
+          "zhan": {
+            "direct_choice_trials": 224,
+            "effect_disjoint_choice_trials": 1064,
+            "effect_target_probability": 0.24075830516232988
+          }
+        },
+        {
+          "seed": 3,
+          "plaba": {
+            "direct_rating_trials": 484,
+            "direct_checklist_trials": 253,
+            "effect_alignment_positions": 207,
+            "effect_sentence_rows": 477,
+            "effect_disjoint_rating_trials": 953,
+            "effect_target_rating_points": 0.8483494363929145
+          },
+          "zhan": {
+            "direct_choice_trials": 224,
+            "effect_disjoint_choice_trials": 1064,
+            "effect_target_probability": 0.22785591224109197
+          }
+        },
+        {
+          "seed": 4,
+          "plaba": {
+            "direct_rating_trials": 484,
+            "direct_checklist_trials": 253,
+            "effect_alignment_positions": 207,
+            "effect_sentence_rows": 477,
+            "effect_disjoint_rating_trials": 953,
+            "effect_target_rating_points": 0.7842190016103059
+          },
+          "zhan": {
+            "direct_choice_trials": 224,
+            "effect_disjoint_choice_trials": 1064,
+            "effect_target_probability": 0.20220929826966982
+          }
+        }
+      ]
+    }
+  ]
+}

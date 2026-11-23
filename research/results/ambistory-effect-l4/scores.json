@@ -1,0 +1,149 @@
+{
+  "acceptance": {
+    "all_conditions_passed": false,
+    "conditions": {
+      "candidate_ending_improves_nll_vs_own_common_prefix": false,
+      "candidate_ending_improves_update_mae_vs_beta_zero_ending": true,
+      "candidate_ending_improves_update_mae_vs_own_common_prefix": true,
+      "candidate_nll_increase_vs_beta_zero_ending_below_margin": true,
+      "candidate_update_amplitude_equivalent_to_human": false
+    }
+  },
+  "contrasts": {
+    "candidate_ending_minus_beta_zero_ending": {
+      "signed_update_mae_grades": {
+        "ci95": [
+          -0.032753136534744605,
+          -0.01070955157130591
+        ],
+        "estimate": -0.02183299031577457
+      },
+      "vote_nll_nats": {
+        "ci95": [
+          -0.011517587222161363,
+          0.0016315925292876223
+        ],
+        "estimate": -0.004758524564328903
+      }
+    },
+    "candidate_ending_minus_own_common_prefix": {
+      "signed_update_mae_grades": {
+        "ci95": [
+          -0.06313040933282696,
+          -0.01652126531100832
+        ],
+        "estimate": -0.04073902133701823
+      },
+      "vote_nll_nats": {
+        "ci95": [
+          -0.011125391263876905,
+          0.0034167134256006754
+        ],
+        "estimate": -0.0037254610451868952
+      }
+    },
+    "candidate_minus_human_mean_absolute_update_grades": {
+      "ci90": [
+        -1.2338786931716084,
+        -0.9520295277439075
+      ],
+      "estimate": -1.0973325274443955
+    }
+  },
+  "counts": {
+    "ending_pairs": 196,
+    "families": 98,
+    "flagged_votes": 44,
+    "homonym_groups": 54,
+    "sense_items": 588,
+    "stories": 294,
+    "votes": 2952
+  },
+  "fit_seal_sha256": "8edcd17cd3ff5a0080ca4062e76ff2a35c1ad088c211e10f43ddf4b7e1512f3b",
+  "forecasts_sha256": {
+    "baseline": "06752cd203fa4c2594af3a5771518d0534b3a2283fd587d3ebca8c31efd74db6",
+    "effect": "d94c6d78e6642f96c27858d329084b3b298263f88e7b53ea7f41d29ba401bd1b"
+  },
+  "human_mean_absolute_update_grades": {
+    "ci95": [
+      1.0870886948529408,
+      1.4253829474653072
+    ],
+    "estimate": 1.2608843537414964
+  },
+  "methods": {
+    "baseline_ending": {
+      "mean_absolute_update_grades": {
+        "ci95": [
+          0.10451251518747262,
+          0.13050017134253714
+        ],
+        "estimate": 0.11753716621023122
+      },
+      "signed_update_mae_grades": {
+        "ci95": [
+          1.0791683041890814,
+          1.3996008781416924
+        ],
+        "estimate": 1.2419783227202528
+      },
+      "vote_nll_nats": {
+        "ci95": [
+          1.5674073969577011,
+          1.618148672941711
+        ],
+        "estimate": 1.5927750801101157
+      }
+    },
+    "candidate_common_prefix": {
+      "mean_absolute_update_grades": {
+        "ci95": [
+          0.0,
+          0.0
+        ],
+        "estimate": 0.0
+      },
+      "signed_update_mae_grades": {
+        "ci95": [
+          1.0870886948529408,
+          1.4253829474653072
+        ],
+        "estimate": 1.2608843537414964
+      },
+      "vote_nll_nats": {
+        "ci95": [
+          1.5645736657939895,
+          1.619325900787019
+        ],
+        "estimate": 1.5917420165909737
+      }
+    },
+    "candidate_ending": {
+      "mean_absolute_update_grades": {
+        "ci95": [
+          0.1465193846259777,
+          0.18162165531281318
+        ],
+        "estimate": 0.16355182629710102
+      },
+      "signed_update_mae_grades": {
+        "ci95": [
+          1.0621622240236188,
+          1.3733065175672319
+        ],
+        "estimate": 1.2201453324044782
+      },
+      "vote_nll_nats": {
+        "ci95": [
+          1.5613510191915236,
+          1.6143947590911134
+        ],
+        "estimate": 1.5880165555457868
+      }
+    }
+  },
+  "score_protocol_sha256": "71f83f1995f6e6d1b6afc0c3a6aa3e1d6a96c414f7beeee1f22636e4c45968df",
+  "selected_beta": 4,
+  "status": "scored_against_author_validation_after_forecast_seal",
+  "validation_outcomes_sha256": "4b8f51364de41995acc84be97dfd74f492ce75454eae22c7f5637e36cf519ba1"
+}

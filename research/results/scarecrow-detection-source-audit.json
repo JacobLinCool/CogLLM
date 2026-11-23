@@ -1,0 +1,83 @@
+{
+  "author_release": "https://yao-dou.github.io/scarecrow/",
+  "candidate": "Every Unicode non-whitespace substring with at least one alphanumeric character and an exactly certified Qwen prefix endpoint. A terminal stop may supplement the lattice and is not scored unless it equals a candidate word endpoint.",
+  "endpoint": "Retrospective annotator word coverage by a self-contradiction mark with recorded antecedent span(s) wholly in preceding continuation. Human annotators saw complete text with original news context.",
+  "excluded_human_written_continuations": 79,
+  "inventory": {
+    "test": {
+      "aligned_lexical_words": 22741,
+      "annotator_submissions": 2457,
+      "annotator_word_at_risk": 226933,
+      "annotator_word_masked": 205,
+      "annotator_word_positive": 2255,
+      "annotator_word_severity_1": 253,
+      "annotator_word_severity_2": 836,
+      "annotator_word_severity_3": 1166,
+      "documents": 246,
+      "documents_in_novel_groups": 134,
+      "documents_in_prior_pointer_groups": 112,
+      "documents_with_no_raw_contradiction_marks": 131,
+      "frozen_prompt_groups": 103,
+      "historical_documents": 107,
+      "lexical_words": 22741,
+      "mark_discontinuous_source_retained": 3,
+      "mark_retained": 235,
+      "mark_source_outside_visible_prior_continuation": 22,
+      "novel_prompt_groups": 134,
+      "prompt_groups": 237,
+      "words_unobserved_after_masking": 0,
+      "words_with_any_positive_vote": 1472
+    },
+    "train": {
+      "aligned_lexical_words": 90881,
+      "annotator_submissions": 9810,
+      "annotator_word_at_risk": 906270,
+      "annotator_word_masked": 703,
+      "annotator_word_positive": 7449,
+      "annotator_word_severity_1": 491,
+      "annotator_word_severity_2": 3386,
+      "annotator_word_severity_3": 3572,
+      "documents": 983,
+      "documents_in_novel_groups": 541,
+      "documents_in_prior_pointer_groups": 442,
+      "documents_with_no_raw_contradiction_marks": 539,
+      "frozen_prompt_groups": 412,
+      "historical_documents": 419,
+      "lexical_words": 90881,
+      "mark_discontinuous_source_retained": 5,
+      "mark_retained": 963,
+      "mark_source_missing_or_incomplete": 2,
+      "mark_source_outside_visible_prior_continuation": 76,
+      "novel_prompt_groups": 539,
+      "prompt_groups": 951,
+      "words_unobserved_after_masking": 0,
+      "words_with_any_positive_vote": 5266
+    }
+  },
+  "packet_inventory": {
+    "certified_stops": 114780,
+    "input_documents": 1229,
+    "input_tokens": 147461,
+    "max_input_tokens": 186
+  },
+  "packet_sha256": {
+    "extractor-preflight.json": "9e4eee3117b53bbc282310e9c4954caf62ce85a68584452a9cb158718217c84f",
+    "preflight.json": "c452be167ccef4ba98e2160d0bf059e71607a3dfc8acf8b64e8415f697b06440",
+    "stimuli.jsonl": "af4c5eda999b89ba0a7d5ce986c8f91668bcec93cbce508f84e7cc7634d37e6d"
+  },
+  "paper": "https://aclanthology.org/2022.acl-long.501/",
+  "prepared_sha256": {
+    "layout": "7f1f6d966f0819ac0aefb2d703d356b2bdb8aaefe6f55e3727ec06d76e0e17f2",
+    "outcomes": "fd48328099c992a5710a379cdae5fd54c8a7cabe3e77dd66660e0a8d1cc8e627",
+    "stimuli": "af4c5eda999b89ba0a7d5ce986c8f91668bcec93cbce508f84e7cc7634d37e6d"
+  },
+  "preparer_sha256": "c931a46a1bb8c3ff3fd3f3379f968bb661c4c6415acb02143ccacb292192f964",
+  "prior_audit_sha256": "c854e9899dec3f4e45cb68b9781a83ae598cd553726bc91d89dbf7dd1d717a32",
+  "projected_fp16_bytes_estimate": 29383680,
+  "release_scope": "Authors explicitly release data for research use. No separate repository license is stated. Use only released machine-generated continuation text in model input, following the historical project assay. Third-party news prompt stays out of the inference packet.",
+  "risk": "One count per eligible submitted annotator for each word. Mutually exclusive grades 0–3. Grade zero records no observed mark and does not establish absence of contradiction. A possible mark relying on unavailable text or missing/future reference masks its covered words for that annotator. A mark with no recoverable range masks that annotator for the full continuation.",
+  "severity": "Section 4.5 gives three ordinal ratings of the impact of a marked error on comprehension. Overlapping allowed marks from one annotator contribute the maximum severity, once per word.",
+  "source_sha256": "bc0867107dbefddfe43a6d8dd0ceea797ce225bb90b01c73416bf5e4e7ed054c",
+  "source_url": "https://raw.githubusercontent.com/Yao-Dou/scarecrow/f3f4fffc23596af6840b973ddb7fca8e03d992ab/data/grouped_data.csv",
+  "split": "Preserve the fit/test assignments of 515 prompt groups from the prior known-mark pointer experiment. Retain their additional rated continuations. For the remaining groups, sort sha256(\"scarecrow-detection-v1:\" + group_id) and assign the first floor(n/5) to test. No generated continuations are shared even after Unicode/case/whitespace normalization."
+}

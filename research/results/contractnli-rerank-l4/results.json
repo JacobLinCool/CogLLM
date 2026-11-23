@@ -1,0 +1,427 @@
+{
+  "average_precision": {
+    "all": {
+      "claims": 234,
+      "documents": 23,
+      "families": 23,
+      "fused_centered_minus": {
+        "bm25": {
+          "ci95": [
+            0.033601796291378286,
+            0.09270068441035577
+          ],
+          "estimate": 0.06169484989037516
+        },
+        "centered_token_rank": {
+          "ci95": [
+            0.2286419346184634,
+            0.32286902939337564
+          ],
+          "estimate": 0.2745491697790601
+        },
+        "fused_raw": {
+          "ci95": [
+            0.039966676054380305,
+            0.09667905522232303
+          ],
+          "estimate": 0.06649842953397478
+        },
+        "qwen_only": {
+          "ci95": [
+            0.212128997983975,
+            0.30332587327153365
+          ],
+          "estimate": 0.25626005476395597
+        },
+        "token_rank": {
+          "ci95": [
+            0.2514738408703108,
+            0.40236657500898615
+          ],
+          "estimate": 0.3336741933005792
+        }
+      },
+      "methods": {
+        "bm25": {
+          "ci95": [
+            0.3929074177007834,
+            0.4850523033163388
+          ],
+          "estimate": 0.4399742525986379
+        },
+        "centered_token_rank": {
+          "ci95": [
+            0.19415616715432152,
+            0.2604228540031172
+          ],
+          "estimate": 0.22711993270995298
+        },
+        "fused_centered": {
+          "ci95": [
+            0.4531558964240037,
+            0.5486291133934432
+          ],
+          "estimate": 0.5016691024890131
+        },
+        "fused_raw": {
+          "ci95": [
+            0.3881195314071729,
+            0.48136628905961526
+          ],
+          "estimate": 0.4351706729550383
+        },
+        "qwen_only": {
+          "ci95": [
+            0.20862107299350915,
+            0.2842896455912419
+          ],
+          "estimate": 0.24540904772505712
+        },
+        "token_rank": {
+          "ci95": [
+            0.0984393444695964,
+            0.2552383694840247
+          ],
+          "estimate": 0.1679949091884339
+        }
+      },
+      "valid_bootstrap_draws": 10000
+    },
+    "by_label": {
+      "Contradiction": {
+        "claims": 41,
+        "documents": 20,
+        "families": 20,
+        "fused_centered_minus": {
+          "bm25": {
+            "ci95": [
+              0.0027469588141008005,
+              0.08630168189788197
+            ],
+            "estimate": 0.04409511675528219
+          },
+          "centered_token_rank": {
+            "ci95": [
+              0.024970802284125574,
+              0.19331670764904502
+            ],
+            "estimate": 0.1150935702711596
+          },
+          "fused_raw": {
+            "ci95": [
+              0.006596657551207791,
+              0.08621055704414786
+            ],
+            "estimate": 0.046347779050264215
+          },
+          "qwen_only": {
+            "ci95": [
+              0.02689751423653335,
+              0.1820984767619342
+            ],
+            "estimate": 0.10841761237081621
+          },
+          "token_rank": {
+            "ci95": [
+              -0.007109360532449107,
+              0.23408051019588758
+            ],
+            "estimate": 0.1277705261769602
+          }
+        },
+        "methods": {
+          "bm25": {
+            "ci95": [
+              0.17585764337755075,
+              0.32094864713539106
+            ],
+            "estimate": 0.24830673360372582
+          },
+          "centered_token_rank": {
+            "ci95": [
+              0.10060041809016737,
+              0.28389433226769045
+            ],
+            "estimate": 0.1773082800878484
+          },
+          "fused_centered": {
+            "ci95": [
+              0.22001589510034944,
+              0.36519804213550816
+            ],
+            "estimate": 0.292401850359008
+          },
+          "fused_raw": {
+            "ci95": [
+              0.1764939161388379,
+              0.31647534361249
+            ],
+            "estimate": 0.2460540713087438
+          },
+          "qwen_only": {
+            "ci95": [
+              0.12748981720506197,
+              0.24506863469153226
+            ],
+            "estimate": 0.1839842379881918
+          },
+          "token_rank": {
+            "ci95": [
+              0.07967376936678358,
+              0.27883459257061083
+            ],
+            "estimate": 0.16463132418204782
+          }
+        },
+        "valid_bootstrap_draws": 10000
+      },
+      "Entailment": {
+        "claims": 193,
+        "documents": 23,
+        "families": 23,
+        "fused_centered_minus": {
+          "bm25": {
+            "ci95": [
+              0.036173051204184244,
+              0.14154086286194947
+            ],
+            "estimate": 0.08145904215917565
+          },
+          "centered_token_rank": {
+            "ci95": [
+              0.2548522531960171,
+              0.35344229247701114
+            ],
+            "estimate": 0.3038828010525638
+          },
+          "fused_raw": {
+            "ci95": [
+              0.042518972660711404,
+              0.14496134013202328
+            ],
+            "estimate": 0.08606524124342563
+          },
+          "qwen_only": {
+            "ci95": [
+              0.23915581706461383,
+              0.3289885226193652
+            ],
+            "estimate": 0.2830862823052821
+          },
+          "token_rank": {
+            "ci95": [
+              0.3488302384639313,
+              0.44617270364175743
+            ],
+            "estimate": 0.39845408950673256
+          }
+        },
+        "methods": {
+          "bm25": {
+            "ci95": [
+              0.42970072668452536,
+              0.5141320036044784
+            ],
+            "estimate": 0.47223044607622555
+          },
+          "centered_token_rank": {
+            "ci95": [
+              0.2102807092892245,
+              0.2940491101978942
+            ],
+            "estimate": 0.24980668718283738
+          },
+          "fused_centered": {
+            "ci95": [
+              0.4933444275972294,
+              0.618607468627328
+            ],
+            "estimate": 0.5536894882354012
+          },
+          "fused_raw": {
+            "ci95": [
+              0.42462099747266047,
+              0.5104136837605191
+            ],
+            "estimate": 0.4676242469919756
+          },
+          "qwen_only": {
+            "ci95": [
+              0.21967819103064207,
+              0.33252324186094256
+            ],
+            "estimate": 0.2706032059301191
+          },
+          "token_rank": {
+            "ci95": [
+              0.09648193429130301,
+              0.22505770416200355
+            ],
+            "estimate": 0.15523539872866868
+          }
+        },
+        "valid_bootstrap_draws": 10000
+      }
+    },
+    "coverage": {
+      "Contradiction": {
+        "annotated_claims": 41,
+        "claims_with_unaligned_evidence": 0,
+        "scored_claims": 41
+      },
+      "Entailment": {
+        "annotated_claims": 194,
+        "claims_with_unaligned_evidence": 1,
+        "scored_claims": 193
+      }
+    }
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "interval": "paired_percentile",
+    "sampling_unit": "document_family",
+    "seed": 735972
+  },
+  "claim_pair_ordering": {
+    "coverage": {
+      "annotated_entailment_contradiction_pairs": 351,
+      "disjoint_pairs": 308,
+      "disjoint_pairs_with_unaligned_evidence": 0,
+      "overlapping_pairs": 43,
+      "scored_pairs": 308
+    },
+    "directions": 616,
+    "documents": 20,
+    "families": 20,
+    "fused_centered_minus": {
+      "bm25": {
+        "ci95": [
+          0.06820513299655319,
+          0.15015289059730347
+        ],
+        "estimate": 0.1078499473532033
+      },
+      "centered_token_rank": {
+        "ci95": [
+          -0.11756613429445743,
+          0.012574960183972379
+        ],
+        "estimate": -0.0540186332630217
+      },
+      "fused_raw": {
+        "ci95": [
+          0.06809005777177389,
+          0.15225490326221924
+        ],
+        "estimate": 0.10869227531509651
+      },
+      "qwen_only": {
+        "ci95": [
+          -0.0983391574373105,
+          0.029311442878512995
+        ],
+        "estimate": -0.035550554573976156
+      },
+      "token_rank": {
+        "ci95": [
+          0.2083064877783423,
+          0.34235723830486087
+        ],
+        "estimate": 0.2789317035882861
+      }
+    },
+    "methods": {
+      "bm25": {
+        "ci95": [
+          0.6517381241154028,
+          0.7508049430118969
+        ],
+        "estimate": 0.7010074702437824
+      },
+      "centered_token_rank": {
+        "ci95": [
+          0.8087029048423293,
+          0.9121174793053438
+        ],
+        "estimate": 0.8628760508600074
+      },
+      "fused_centered": {
+        "ci95": [
+          0.7517800521810556,
+          0.8629901748328751
+        ],
+        "estimate": 0.8088574175969857
+      },
+      "fused_raw": {
+        "ci95": [
+          0.6519908960394365,
+          0.747479120268879
+        ],
+        "estimate": 0.7001651422818892
+      },
+      "qwen_only": {
+        "ci95": [
+          0.7864089144640484,
+          0.9002221939418054
+        ],
+        "estimate": 0.8444079721709619
+      },
+      "token_rank": {
+        "ci95": [
+          0.5025734414331514,
+          0.5632438113193562
+        ],
+        "estimate": 0.5299257140086996
+      }
+    },
+    "pairs": 308,
+    "raw_direction_counts": {
+      "bm25": {
+        "losses": 185,
+        "ties": 0,
+        "wins": 431
+      },
+      "centered_token_rank": {
+        "losses": 90,
+        "ties": 0,
+        "wins": 526
+      },
+      "fused_centered": {
+        "losses": 114,
+        "ties": 0,
+        "wins": 502
+      },
+      "fused_raw": {
+        "losses": 185,
+        "ties": 0,
+        "wins": 431
+      },
+      "qwen_only": {
+        "losses": 103,
+        "ties": 0,
+        "wins": 513
+      },
+      "token_rank": {
+        "losses": 291,
+        "ties": 0,
+        "wins": 325
+      }
+    },
+    "valid_bootstrap_draws": 10000
+  },
+  "fitted_sha256": "8dbd9e3fdc1a538f90736d55e7b793835692ef7276a4908a4562aab5516160fe",
+  "forecast_seal_sha256": "fad6fa7ad08fa78c1ea801931822646f2d7073aa6f02ec69a2f963213f9beda4",
+  "gates": {
+    "average_precision_fused_centered_over_bm25": true,
+    "average_precision_fused_centered_over_qwen_only": true,
+    "claim_pair_ordering_fused_centered_over_bm25": true
+  },
+  "pass": true,
+  "protocol_sha256": "4f52a6106891eb1337a8836e3fe750bcd3a9deabf91dcd901a7ed5f46491826b",
+  "scope": {
+    "claims": 391,
+    "documents": 23,
+    "families": 23
+  },
+  "source_audit_sha256": "725a5414111bb4a703f261e4a45b478c6ec877e1478d05d3066690609c242699"
+}

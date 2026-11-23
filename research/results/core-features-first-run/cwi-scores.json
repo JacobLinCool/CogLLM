@@ -1,0 +1,343 @@
+{
+  "scope": "CWI released candidates with exact Qwen prefix stops. Annotator background conditions prospective lexical highlight judgments.",
+  "input_sha256": {
+    "outcomes": "efd5e53a5d583f5cdbd24f8ea5495590b3db35afbc7f111fb97eb030e5cbe0d5",
+    "predictions": "923d1a392c5768b3aed012292a6c72c817506e557c792c98d41207be30d31874",
+    "seal": "e7e6a8cc5bf266f24ed93c2315fbb21c53d0e8bae9bb04b09f8f899e4b048275",
+    "extraction": "1d956d6df48baa7ad4528a63dddc121fbac02a00b70685a1d066fe6fc4dfbce4"
+  },
+  "coverage": {
+    "dev": {
+      "released": 1348,
+      "excluded_exact_stops": 0
+    },
+    "test": {
+      "released": 1788,
+      "excluded_exact_stops": 0
+    }
+  },
+  "test_candidates": 1788,
+  "test_article_families": 7,
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 43,
+    "unit": "article family"
+  },
+  "span_masks": {
+    "gold": "At least one released native or non-native annotator marked the candidate.",
+    "threshold_rule": "Choose validation F1 maximum. Break ties with the higher threshold.",
+    "positive_test_candidates": 752,
+    "methods": {
+      "length_frequency": {
+        "threshold": 0.11735770330683122,
+        "validation_f1": 0.6786833855799373,
+        "f1": 0.6500811249323959,
+        "true_positive": 601,
+        "false_positive": 496,
+        "false_negative": 151,
+        "true_negative": 540,
+        "precision": 0.5478577939835916,
+        "recall": 0.7992021276595744
+      },
+      "qwen_pooled": {
+        "threshold": 0.12226824783561992,
+        "validation_f1": 0.7001703577512777,
+        "f1": 0.6651053864168618,
+        "true_positive": 568,
+        "false_positive": 388,
+        "false_negative": 184,
+        "true_negative": 648,
+        "precision": 0.5941422594142259,
+        "recall": 0.7553191489361702
+      }
+    },
+    "qwen_minus_length_frequency": {
+      "test_f1_difference": 0.015024261484465895,
+      "article_family_bootstrap_95_interval": [
+        -0.0007137205338034747,
+        0.023989608449304423
+      ]
+    }
+  },
+  "within_excerpt_ranking": {
+    "non_overlapping_unequal_selection_rates": {
+      "pairs": 46705,
+      "excerpts": 21,
+      "article_families": 7,
+      "length_frequency": 0.7297505620383257,
+      "qwen_pooled": 0.760218392035114,
+      "qwen_minus_length_frequency": 0.03046782999678835,
+      "article_family_bootstrap_95_interval": [
+        0.017157545913468984,
+        0.039342227738132174
+      ]
+    },
+    "observed_positive_vs_zero_selection": {
+      "pairs": 36575,
+      "excerpts": 21,
+      "article_families": 7,
+      "length_frequency": 0.7520437457279563,
+      "qwen_pooled": 0.782282980177717,
+      "qwen_minus_length_frequency": 0.030239234449760767,
+      "article_family_bootstrap_95_interval": [
+        0.016943479897920763,
+        0.03945252240128664
+      ]
+    }
+  },
+  "annotator_background": {
+    "definition": "Selection NLL (nats) and Brier are per-annotator scores. Gap compares non-native minus native selection fractions per candidate.",
+    "candidate_annotator_decisions": [
+      17880,
+      17880
+    ],
+    "annotator_order": [
+      "native",
+      "nonnative"
+    ],
+    "candidates_with_unequal_observed_fractions": 650,
+    "mean_observed_nonnative_minus_native": -0.0058165548098434,
+    "methods": {
+      "length_frequency": {
+        "selection_nll": 0.2764477488582265,
+        "selection_brier": 0.0750629784143668,
+        "gap_mae": 0.05861297539149893,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.2777723572832717,
+            "selection_brier": 0.0758019842603032,
+            "observed_selection_rate": 0.0871364653243848,
+            "predicted_selection_rate": 0.15052967310320525
+          },
+          "nonnative": {
+            "selection_nll": 0.2751231404331814,
+            "selection_brier": 0.07432397256843042,
+            "observed_selection_rate": 0.08131991051454139,
+            "predicted_selection_rate": 0.15052967310320525
+          }
+        },
+        "observed_gap_direction_concordance": 0.5,
+        "mean_predicted_nonnative_minus_native": 0.0
+      },
+      "qwen_pooled": {
+        "selection_nll": 0.2651004826819641,
+        "selection_brier": 0.07213652510667352,
+        "gap_mae": 0.05861297539149893,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.2669363751943406,
+            "selection_brier": 0.07299043174440649,
+            "observed_selection_rate": 0.0871364653243848,
+            "predicted_selection_rate": 0.1452459144388443
+          },
+          "nonnative": {
+            "selection_nll": 0.26326459016958764,
+            "selection_brier": 0.0712826184689405,
+            "observed_selection_rate": 0.08131991051454139,
+            "predicted_selection_rate": 0.1452459144388443
+          }
+        },
+        "observed_gap_direction_concordance": 0.5,
+        "mean_predicted_nonnative_minus_native": 0.0
+      },
+      "background_only": {
+        "selection_nll": 0.28913201607579736,
+        "selection_brier": 0.07716036350267687,
+        "gap_mae": 0.0655436755548376,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.29624786237328504,
+            "selection_brier": 0.07960844120952736,
+            "observed_selection_rate": 0.0871364653243848,
+            "predicted_selection_rate": 0.09518254973671053
+          },
+          "nonnative": {
+            "selection_nll": 0.2820161697783082,
+            "selection_brier": 0.07471228579582574,
+            "observed_selection_rate": 0.08131991051454139,
+            "predicted_selection_rate": 0.08362276252397739
+          }
+        },
+        "observed_gap_direction_concordance": 0.5507692307692308,
+        "mean_predicted_nonnative_minus_native": -0.011559787212733126
+      },
+      "qwen_group_offset": {
+        "selection_nll": 0.26508764908263094,
+        "selection_brier": 0.07213368951463757,
+        "gap_mae": 0.06671092168949873,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.27145940992391454,
+            "selection_brier": 0.07407302667590002,
+            "observed_selection_rate": 0.0871364653243848,
+            "predicted_selection_rate": 0.1538560812739061
+          },
+          "nonnative": {
+            "selection_nll": 0.25871588824134734,
+            "selection_brier": 0.07019435235337514,
+            "observed_selection_rate": 0.08131991051454139,
+            "predicted_selection_rate": 0.13660636052996328
+          }
+        },
+        "observed_gap_direction_concordance": 0.5507692307692308,
+        "mean_predicted_nonnative_minus_native": -0.017249720743942806
+      },
+      "qwen_group_interaction": {
+        "selection_nll": 0.26440071084002237,
+        "selection_brier": 0.07193730112820018,
+        "gap_mae": 0.06355998631734519,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.2683425973749919,
+            "selection_brier": 0.0734245098819387,
+            "observed_selection_rate": 0.0871364653243848,
+            "predicted_selection_rate": 0.15143973409474637
+          },
+          "nonnative": {
+            "selection_nll": 0.26045882430505296,
+            "selection_brier": 0.07045009237446169,
+            "observed_selection_rate": 0.08131991051454139,
+            "predicted_selection_rate": 0.13901197464249326
+          }
+        },
+        "observed_gap_direction_concordance": 0.62,
+        "mean_predicted_nonnative_minus_native": -0.012427759452253117
+      }
+    },
+    "paired_differences": {
+      "qwen_pooled_minus_length_frequency": {
+        "selection_nll": {
+          "difference": -0.01134726617626236,
+          "article_family_bootstrap_95_interval": [
+            -0.01363024482080577,
+            -0.006454264158234879
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.002926453307693269,
+          "article_family_bootstrap_95_interval": [
+            -0.0036629590216519237,
+            -0.0014510551198740063
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0,
+          "article_family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "qwen_group_offset_minus_qwen_pooled": {
+        "selection_nll": {
+          "difference": -1.2833599333184065e-05,
+          "article_family_bootstrap_95_interval": [
+            -0.00025160857710432305,
+            0.00014685358525579062
+          ]
+        },
+        "selection_brier": {
+          "difference": -2.835592035954626e-06,
+          "article_family_bootstrap_95_interval": [
+            -8.881523160579607e-05,
+            4.316593325144613e-05
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0080979462979998,
+          "article_family_bootstrap_95_interval": [
+            0.007449110829296758,
+            0.00889468384941907
+          ]
+        }
+      },
+      "qwen_group_offset_minus_background_only": {
+        "selection_nll": {
+          "difference": -0.02404436699316642,
+          "article_family_bootstrap_95_interval": [
+            -0.03023683939485869,
+            -0.016326028848455187
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.0050266739880392985,
+          "article_family_bootstrap_95_interval": [
+            -0.006959325319035148,
+            -0.0027577100958546957
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0011672461346611263,
+          "article_family_bootstrap_95_interval": [
+            0.0007514510563607774,
+            0.001647475998548753
+          ]
+        }
+      },
+      "qwen_group_interaction_minus_qwen_group_offset": {
+        "selection_nll": {
+          "difference": -0.0006869382426085702,
+          "article_family_bootstrap_95_interval": [
+            -0.0007607525456367337,
+            -0.000565331400977733
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.00019638838643738776,
+          "article_family_bootstrap_95_interval": [
+            -0.0002240161220248421,
+            -0.00017505486570260076
+          ]
+        },
+        "gap_mae": {
+          "difference": -0.0031509353721535377,
+          "article_family_bootstrap_95_interval": [
+            -0.003526291823983667,
+            -0.0025534782913454158
+          ]
+        }
+      },
+      "qwen_group_interaction_minus_qwen_pooled": {
+        "selection_nll": {
+          "difference": -0.0006997718419417542,
+          "article_family_bootstrap_95_interval": [
+            -0.0008995769514601459,
+            -0.0005376417164015268
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.0001992239784733424,
+          "article_family_bootstrap_95_interval": [
+            -0.00029724639326721565,
+            -0.00014783115075527042
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0049470109258462625,
+          "article_family_bootstrap_95_interval": [
+            0.003991100833780771,
+            0.00625504118779574
+          ]
+        }
+      }
+    }
+  },
+  "lexical_unit_coverage": {
+    "definition": "Lexical units are letter spans with internal apostrophes. Coverage is measured over excerpts with certified candidates.",
+    "stimuli_sha256": "9fdb97b9e7110146b12765eb04fc005ec7739d04d30b477c2c84f6f2dd04ab59",
+    "counts": {
+      "dev": {
+        "excerpts_with_certified_candidates": 18,
+        "lexical_units": 2374,
+        "exact_word_candidates": 1134,
+        "words_enclosed_in_a_candidate": 1241
+      },
+      "test": {
+        "excerpts_with_certified_candidates": 21,
+        "lexical_units": 2761,
+        "exact_word_candidates": 1509,
+        "words_enclosed_in_a_candidate": 1618
+      }
+    }
+  }
+}

@@ -1,0 +1,2376 @@
+{
+  "definition": "For the annotated half-open token window [a,b), decompose -log(S(a)-S(b)) as -log(S(a)) - log(1-S(b)/S(a)). S is conditional on reaching the article. Match the frozen scoring probability floor. Report equal question weights, exactly two questions per article.",
+  "diagnostic_only": true,
+  "forecast_seal_sha256": "46deb528241a4d436ac2824be096799b57d70cb7813c991bc4960736440bded9",
+  "per_article": [
+    {
+      "group_id": "expmrc:6245dbf7dc34d4b8923301938494e480",
+      "id": "ae054ee48b56362546029c004228738f",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 0.6352500942881284,
+          "nll": 9.52838619738476,
+          "pre_window_nll": 8.893136103096632
+        },
+        "lora": {
+          "in_window_nll": 1.3417117058380807,
+          "nll": 9.729227638540973,
+          "pre_window_nll": 8.387515932702891
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.006596550783208421,
+              "in_window_nll": 5.021208375162016,
+              "nll": 5.021693285825943,
+              "pre_window_nll": 0.0004849106639272738,
+              "premature_event_probability": 0.0004847931137524908
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0016058025763684425,
+              "in_window_nll": 6.434131599800703,
+              "nll": 6.438572163895354,
+              "pre_window_nll": 0.0044405640946504794,
+              "premature_event_probability": 0.0044307193673494005
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1320156892226615,
+              "in_window_nll": 2.024834505711353,
+              "nll": 2.307997784964272,
+              "pre_window_nll": 0.2831632792529189,
+              "premature_event_probability": 0.24660323624438885
+            }
+          },
+          "article_relative_start_token": 52,
+          "condition": "earlier",
+          "question_id": "74b01deace0592a7922519cd3870371f",
+          "window_tokens": 26
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.999999997451921,
+              "in_window_nll": 2.548078989959012e-09,
+              "nll": 19.49021242127287,
+              "pre_window_nll": 19.49021241872479,
+              "premature_event_probability": 0.9999999965683081
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9999999989907035,
+              "in_window_nll": 1.0092965234686376e-09,
+              "nll": 18.475016425515882,
+              "pre_window_nll": 18.475016424506585,
+              "premature_event_probability": 0.9999999905288588
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1780174529132007,
+              "in_window_nll": 1.725873683422485,
+              "nll": 3.14713552736502,
+              "pre_window_nll": 1.421261843942535,
+              "premature_event_probability": 0.7585907961173382
+            }
+          },
+          "article_relative_start_token": 261,
+          "condition": "later",
+          "question_id": "04843fc27303b5cac48e23fdcbf2e14c",
+          "window_tokens": 36
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:62cb59abd646b5ca1d133698a8b48aa6",
+      "id": "8b0c3b8aebaf4541476729c33f4d6ff7",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 0.2195393446125563,
+          "nll": 20.768485236827047,
+          "pre_window_nll": 20.548945892214494
+        },
+        "lora": {
+          "in_window_nll": -0.38018115607680136,
+          "nll": 31.32070961636998,
+          "pre_window_nll": 31.700890772446787
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.011571379271573812,
+              "in_window_nll": 4.459220533855363,
+              "nll": 22.35623721183684,
+              "pre_window_nll": 17.89701667798148,
+              "premature_event_probability": 0.9999999831179799
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.03836663525204276,
+              "in_window_nll": 3.260567070722673,
+              "nll": 24.457699535871907,
+              "pre_window_nll": 21.197132465149235,
+              "premature_event_probability": 0.9999999993774097
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.09829107078551491,
+              "in_window_nll": 2.319822092317911,
+              "nll": 2.9188213368913933,
+              "pre_window_nll": 0.5989992445734822,
+              "premature_event_probability": 0.4506388627707558
+            }
+          },
+          "article_relative_start_token": 110,
+          "condition": "earlier",
+          "question_id": "cacb06edb95879718566ff5ebb30fa52",
+          "window_tokens": 19
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9992127641697934,
+              "in_window_nll": 0.0007875458630560756,
+              "nll": 25.36895082813098,
+              "pre_window_nll": 25.368163282267925,
+              "premature_event_probability": 0.9999999999903895
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9999999923829694,
+              "in_window_nll": 7.617030616654965e-09,
+              "nll": 44.371937263181785,
+              "pre_window_nll": 44.37193725556475,
+              "premature_event_probability": 1.0
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.18248135087352968,
+              "in_window_nll": 1.7011072981753954,
+              "nll": 3.2693962294223313,
+              "pre_window_nll": 1.5682889312469357,
+              "premature_event_probability": 0.7915985333056506
+            }
+          },
+          "article_relative_start_token": 288,
+          "condition": "later",
+          "question_id": "1f75e6949bb7b4d5c1c01049a97986be",
+          "window_tokens": 37
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:659594deaee08ec6c0892a97f692c59d",
+      "id": "1117297ebbd7727fd7d91858f3dfbd03",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 5.679869387316676,
+          "nll": 7.94994071165403,
+          "pre_window_nll": 2.270071324337353
+        },
+        "lora": {
+          "in_window_nll": 7.802688075999013,
+          "nll": 10.773848441917641,
+          "pre_window_nll": 2.971160365918628
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 1.0705075105810202e-05,
+              "in_window_nll": 11.444792619991125,
+              "nll": 11.444792790321932,
+              "pre_window_nll": 1.703308071988657e-07,
+              "premature_event_probability": 1.7033079269257456e-07
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 1.400155013042692e-07,
+              "in_window_nll": 15.78151269686459,
+              "nll": 15.78151286962012,
+              "pre_window_nll": 1.7275552914947635e-07,
+              "premature_event_probability": 1.7275551422724078e-07
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11290202742845123,
+              "in_window_nll": 2.1812348502512555,
+              "nll": 2.3609346236233,
+              "pre_window_nll": 0.17969977337204454,
+              "premature_event_probability": 0.16447898058198718
+            }
+          },
+          "article_relative_start_token": 33,
+          "condition": "earlier",
+          "question_id": "fdba696912a22a3fdba4d455dbe62473",
+          "window_tokens": 22
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.009023031064127496,
+              "in_window_nll": 4.707974963204172,
+              "nll": 10.663933837812666,
+              "pre_window_nll": 5.955958874608494,
+              "premature_event_probability": 0.9974096411859125
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.009883463581809915,
+              "in_window_nll": 4.616892263695381,
+              "nll": 11.975029219041701,
+              "pre_window_nll": 7.358136955346321,
+              "premature_event_probability": 0.999362615169535
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.07340274411403591,
+              "in_window_nll": 2.6117939583106886,
+              "nll": 3.847910581203238,
+              "pre_window_nll": 1.2361166228925498,
+              "premature_event_probability": 0.7094898091400454
+            }
+          },
+          "article_relative_start_token": 227,
+          "condition": "later",
+          "question_id": "88c30810ab52046ffd563ad1555bd30d",
+          "window_tokens": 14
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:65a4feb09b2fdcc609a3c8b4e0e2fce0",
+      "id": "852632a4729fff44cf7eee0f4c5366bd",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 2.372845548697473,
+          "nll": 3.4781923429304964,
+          "pre_window_nll": 1.105346794233023
+        },
+        "lora": {
+          "in_window_nll": 2.4685916176951035,
+          "nll": 6.439921593793552,
+          "pre_window_nll": 3.9713299760984486
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.00021353492135134378,
+              "in_window_nll": 8.451710172622613,
+              "nll": 8.451962128385949,
+              "pre_window_nll": 0.00025195576333569706,
+              "premature_event_probability": 0.00025192402514795376
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0001763213610473935,
+              "in_window_nll": 8.643202312840579,
+              "nll": 8.664378196658209,
+              "pre_window_nll": 0.021175883817629786,
+              "premature_event_probability": 0.020953249055085554
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.20876024237037638,
+              "in_window_nll": 1.56656885120752,
+              "nll": 2.2799224970177576,
+              "pre_window_nll": 0.7133536458102375,
+              "premature_event_probability": 0.5100018413835987
+            }
+          },
+          "article_relative_start_token": 131,
+          "condition": "earlier",
+          "question_id": "c0e7fca36ee073eaf902c7b4b6c3f294",
+          "window_tokens": 43
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9999999977764249,
+              "in_window_nll": 2.2235750538365067e-09,
+              "nll": 4.993065398354007,
+              "pre_window_nll": 4.993065396130432,
+              "premature_event_probability": 0.9932151656227809
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9999999999991299,
+              "in_window_nll": 8.700480098166171e-13,
+              "nll": 10.704107831807859,
+              "pre_window_nll": 10.704107831806988,
+              "premature_event_probability": 0.9999775474829452
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11771954435068821,
+              "in_window_nll": 2.139450226243722,
+              "nll": 4.208720343861206,
+              "pre_window_nll": 2.069270117617484,
+              "premature_event_probability": 0.8737220838964238
+            }
+          },
+          "article_relative_start_token": 380,
+          "condition": "later",
+          "question_id": "7d19cf94552e96bc9bdf9bfdf638e485",
+          "window_tokens": 23
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:68079c1d18298050b8e246efac746940",
+      "id": "020b357d726635461c3ac100f2069c81",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 11.088781822209466,
+          "nll": 10.222084920663667,
+          "pre_window_nll": -0.8666969015457983
+        },
+        "lora": {
+          "in_window_nll": 12.186921373726019,
+          "nll": 11.318428465906443,
+          "pre_window_nll": -0.868492907819576
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 4.184756849934246e-07,
+              "in_window_nll": 14.686647049078909,
+              "nll": 14.69034935907209,
+              "pre_window_nll": 0.0037023099931818523,
+              "premature_event_probability": 0.0036954648937047585
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 1.0650873560891227e-07,
+              "in_window_nll": 16.05503883066393,
+              "nll": 16.05515028608229,
+              "pre_window_nll": 0.00011145541836316611,
+              "premature_event_probability": 0.00011144920743877407
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.04782746760271683,
+              "in_window_nll": 3.040155168484693,
+              "nll": 4.428744326359583,
+              "pre_window_nll": 1.3885891578748906,
+              "premature_event_probability": 0.7505730414304683
+            }
+          },
+          "article_relative_start_token": 255,
+          "condition": "later",
+          "question_id": "991e4863db9695915cf42bb1a26ea552",
+          "window_tokens": 9
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 4.751997760177318e-06,
+              "in_window_nll": 12.2569454472472,
+              "nll": 12.256947143425519,
+              "pre_window_nll": 1.6961783200145517e-06,
+              "premature_event_probability": 1.6961768815049183e-06
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 2.076487551794237e-06,
+              "in_window_nll": 13.084832768695287,
+              "nll": 13.08483330690087,
+              "pre_window_nll": 5.382055831599871e-07,
+              "premature_event_probability": 5.382054383273882e-07
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1780174529132007,
+              "in_window_nll": 1.725873683422485,
+              "nll": 2.074382334810693,
+              "pre_window_nll": 0.3485086513882078,
+              "premature_event_probability": 0.2942601906315475
+            }
+          },
+          "article_relative_start_token": 64,
+          "condition": "earlier",
+          "question_id": "bfa7fbf9927e4e9e4c11b460eec0181d",
+          "window_tokens": 36
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:680f6ebada1fcb02f94374020d1301bf",
+      "id": "2e385f9441d55d49904c134410d887f7",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": -0.6594716964981813,
+          "nll": -1.7441503242486036,
+          "pre_window_nll": -1.0846786277504221
+        },
+        "lora": {
+          "in_window_nll": -0.7835511454048323,
+          "nll": -0.8802089239158839,
+          "pre_window_nll": -0.09665777851105134
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9833285915559586,
+              "in_window_nll": 0.016811940474490614,
+              "nll": 0.051026774575646194,
+              "pre_window_nll": 0.03421483410115558,
+              "premature_event_probability": 0.0336361255790707
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9994603423019341,
+              "in_window_nll": 0.0005398033656908566,
+              "nll": 0.0036782723233149384,
+              "pre_window_nll": 0.0031384689576240818,
+              "premature_event_probability": 0.0031335491121983194
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.3056957364288586,
+              "in_window_nll": 1.185164997095075,
+              "nll": 1.8386187184479645,
+              "pre_window_nll": 0.6534537213528895,
+              "premature_event_probability": 0.4797541139357834
+            }
+          },
+          "article_relative_start_token": 120,
+          "condition": "earlier",
+          "question_id": "40a651f82f244e2ddc314e51a8054e31",
+          "window_tokens": 67
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.1142653668889535,
+              "in_window_nll": 2.169231755942133,
+              "nll": 2.704719848344329,
+              "pre_window_nll": 0.5354880924021963,
+              "premature_event_probability": 0.4146165008340491
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.14408599138545886,
+              "in_window_nll": 1.9373449952376305,
+              "nll": 4.4799511512620995,
+              "pre_window_nll": 2.5426061560244695,
+              "premature_event_probability": 0.9213388707525524
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.09829107078551491,
+              "in_window_nll": 2.319822092317911,
+              "nll": 4.405428552969218,
+              "pre_window_nll": 2.0856064606513067,
+              "premature_event_probability": 0.87576824435616
+            }
+          },
+          "article_relative_start_token": 383,
+          "condition": "later",
+          "question_id": "f09a87aa529e7b63c7034721134d4e7e",
+          "window_tokens": 19
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:6f8e19082a421f40d196e4b5d40f3b84",
+      "id": "8bed0f2d45f302c96726b95be2ae989b",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": -0.3338874888460578,
+          "nll": -0.9376454236608984,
+          "pre_window_nll": -0.6037579348148409
+        },
+        "lora": {
+          "in_window_nll": 0.7936494086508161,
+          "nll": 0.17038776581448012,
+          "pre_window_nll": -0.623261642836336
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.8622977561164669,
+              "in_window_nll": 0.1481546432347508,
+              "nll": 0.19835983417507963,
+              "pre_window_nll": 0.05020519094032884,
+              "premature_event_probability": 0.04896573913577795
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.983927274276164,
+              "in_window_nll": 0.016203292917164262,
+              "nll": 0.02748597962154663,
+              "pre_window_nll": 0.011282686704382369,
+              "premature_event_probability": 0.011219275900217207
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1320156892226615,
+              "in_window_nll": 2.024834505711353,
+              "nll": 2.411461290845146,
+              "pre_window_nll": 0.38662678513379295,
+              "premature_event_probability": 0.3206554108802695
+            }
+          },
+          "article_relative_start_token": 71,
+          "condition": "earlier",
+          "question_id": "91f036342d3ce024c7eb48d15fedc3d3",
+          "window_tokens": 26
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.08084655803626584,
+              "in_window_nll": 2.5152022660821167,
+              "nll": 2.5153796191164184,
+              "pre_window_nll": 0.00017735303430160663,
+              "premature_event_probability": 0.00017733730818192406
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0074300149258375026,
+              "in_window_nll": 4.902227411393451,
+              "nll": 4.902319852620709,
+              "pre_window_nll": 9.244122725766502e-05,
+              "premature_event_probability": 9.24369546990711e-05
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.270820948990103,
+              "in_window_nll": 1.30629738129763,
+              "nll": 2.177569009768149,
+              "pre_window_nll": 0.8712716284705192,
+              "premature_event_probability": 0.5815808628831964
+            }
+          },
+          "article_relative_start_token": 160,
+          "condition": "later",
+          "question_id": "da810d6e77d722b325623254c2c28343",
+          "window_tokens": 58
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:70196c77b21446aa87b1698c677a9915",
+      "id": "68e6d4c84f408157e6092f9ef11a1389",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 9.768193778625935,
+          "nll": 11.54596371774256,
+          "pre_window_nll": 1.7777699391166233
+        },
+        "lora": {
+          "in_window_nll": 10.712320262297785,
+          "nll": 10.39715670896273,
+          "pre_window_nll": -0.31516355333505547
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 3.4745502641708725e-07,
+              "in_window_nll": 14.872630600699587,
+              "nll": 15.265079197363768,
+              "pre_window_nll": 0.3924485966641811,
+              "premature_event_probability": 0.32459893667203654
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 5.939615657091224e-07,
+              "in_window_nll": 14.33645122387057,
+              "nll": 14.348751880940853,
+              "pre_window_nll": 0.012300657070282772,
+              "premature_event_probability": 0.012225313230752932
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.032144699726331494,
+              "in_window_nll": 3.437507702656833,
+              "nll": 3.6389892667406403,
+              "pre_window_nll": 0.2014815640838075,
+              "premature_event_probability": 0.18248135087352968
+            }
+          },
+          "article_relative_start_token": 37,
+          "condition": "earlier",
+          "question_id": "0192c224dbc13fa247310ea4be7fc901",
+          "window_tokens": 6
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 3.5687328168498844e-05,
+              "in_window_nll": 10.240714885452839,
+              "nll": 14.138941603543906,
+              "pre_window_nll": 3.8982267180910664,
+              "premature_event_probability": 0.9797221620943702
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 3.1593405791507934e-06,
+              "in_window_nll": 12.665147229625555,
+              "nll": 12.757654902407163,
+              "pre_window_nll": 0.09250767278160692,
+              "premature_event_probability": 0.08835778389400106
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11771954435068821,
+              "in_window_nll": 2.139450226243722,
+              "nll": 2.6731040986819155,
+              "pre_window_nll": 0.5336538724381932,
+              "premature_event_probability": 0.4135417934096831
+            }
+          },
+          "article_relative_start_token": 98,
+          "condition": "later",
+          "question_id": "3c21d3b7829b05e63030dd330120bcec",
+          "window_tokens": 23
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:706bb9b60bb7c72c7648d112cd1439ea",
+      "id": "6473175e04a97943172f5407290df4f0",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 6.624749168575011,
+          "nll": 5.972821219586287,
+          "pre_window_nll": -0.6519279489887235
+        },
+        "lora": {
+          "in_window_nll": 7.374496913542647,
+          "nll": 6.6686129890843695,
+          "pre_window_nll": -0.7058839244582769
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 8.543700450891478e-06,
+              "in_window_nll": 11.670316335947708,
+              "nll": 11.787530344353092,
+              "pre_window_nll": 0.11721400840538451,
+              "premature_event_probability": 0.11060516517536245
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 1.0681565228209955e-05,
+              "in_window_nll": 11.446991178222149,
+              "nll": 11.45647060779341,
+              "pre_window_nll": 0.00947942957126157,
+              "premature_event_probability": 0.00943464141255368
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1460801846719464,
+              "in_window_nll": 1.9235995979526361,
+              "nll": 3.04536181960843,
+              "pre_window_nll": 1.121762221655794,
+              "premature_event_probability": 0.6742946763756114
+            }
+          },
+          "article_relative_start_token": 206,
+          "condition": "later",
+          "question_id": "8864be0c88dacc2fd0ccadc115643905",
+          "window_tokens": 29
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.004953038295074985,
+              "in_window_nll": 5.307754093713015,
+              "nll": 5.307946031272719,
+              "pre_window_nll": 0.00019193755970343992,
+              "premature_event_probability": 0.0001919191408684684
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0008844233198191942,
+              "in_window_nll": 7.030574741373846,
+              "nll": 7.030589306828566,
+              "pre_window_nll": 1.456545472002262e-05,
+              "premature_event_probability": 1.4565348644302034e-05
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.16447898058198718,
+              "in_window_nll": 1.804972494558065,
+              "nll": 2.104472116844806,
+              "pre_window_nll": 0.29949962228674104,
+              "premature_event_probability": 0.25881099763336735
+            }
+          },
+          "article_relative_start_token": 55,
+          "condition": "earlier",
+          "question_id": "7685f67316a404bda70d8cea17eeba65",
+          "window_tokens": 33
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:709f740520c3f5acdce0cf177225a750",
+      "id": "7ee5c9ad80dddf78bb7495741dec53a7",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": -0.9615539890433412,
+          "nll": 0.2402617552028521,
+          "pre_window_nll": 1.2018157442461934
+        },
+        "lora": {
+          "in_window_nll": -0.30876550670775027,
+          "nll": 1.1741576371892077,
+          "pre_window_nll": 1.482923143896958
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.07806001289718967,
+              "in_window_nll": 2.5502773520081896,
+              "nll": 2.9704237215011786,
+              "pre_window_nll": 0.42014636949298917,
+              "premature_event_probability": 0.3430493447568782
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.021155522070190336,
+              "in_window_nll": 3.8558543167789776,
+              "nll": 5.336784383415256,
+              "pre_window_nll": 1.4809300666362781,
+              "premature_event_probability": 0.772573931409803
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.13672940657372756,
+              "in_window_nll": 1.9897514408027412,
+              "nll": 3.122404557814417,
+              "pre_window_nll": 1.1326531170116756,
+              "premature_event_probability": 0.6778226526901205
+            }
+          },
+          "article_relative_start_token": 208,
+          "condition": "later",
+          "question_id": "523f875232f789997417753369a9519c",
+          "window_tokens": 27
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.999999999900362,
+              "in_window_nll": 9.963798385219474e-11,
+              "nll": 3.742364719073897,
+              "pre_window_nll": 3.742364718974259,
+              "premature_event_probability": 0.9763020022841712
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9999999999999681,
+              "in_window_nll": 3.186244931693722e-14,
+              "nll": 3.2437958211325313,
+              "pre_window_nll": 3.2437958211324993,
+              "premature_event_probability": 0.9609844822565549
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.08343946422495685,
+              "in_window_nll": 2.483633889391769,
+              "nll": 3.1098603723549547,
+              "pre_window_nll": 0.6262264829631858,
+              "premature_event_probability": 0.4653946580821757
+            }
+          },
+          "article_relative_start_token": 115,
+          "condition": "earlier",
+          "question_id": "fc4284ec6a830877220848cb7005a038",
+          "window_tokens": 16
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:74a5519aa6c646925a636fa533f6ced3",
+      "id": "5e2157ebe8a5058cf1ed294eb8e1627c",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": -1.1078844790503912,
+          "nll": -1.0756447539449527,
+          "pre_window_nll": 0.03223972510543888
+        },
+        "lora": {
+          "in_window_nll": -1.2452398558303777,
+          "nll": -2.182835449055947,
+          "pre_window_nll": -0.9375955932255686
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.1263180960607283,
+              "in_window_nll": 2.068951981498495,
+              "nll": 5.110564424765845,
+              "pre_window_nll": 3.0416124432673497,
+              "premature_event_probability": 0.9522421794000031
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.16600430129017962,
+              "in_window_nll": 1.7957415795746638,
+              "nll": 2.499167859781438,
+              "pre_window_nll": 0.7034262802067743,
+              "premature_event_probability": 0.5051132251262986
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.10805820541337507,
+              "in_window_nll": 2.225085258020657,
+              "nll": 4.408709776874897,
+              "pre_window_nll": 2.1836245188542396,
+              "premature_event_probability": 0.8873674488939169
+            }
+          },
+          "article_relative_start_token": 401,
+          "condition": "later",
+          "question_id": "e4ddfe636d8c192ffd96fd78fd41cf5e",
+          "window_tokens": 21
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.998241741937905,
+              "in_window_nll": 0.0017598056120622658,
+              "nll": 0.3899134775229724,
+              "pre_window_nll": 0.3881536719109101,
+              "premature_event_probability": 0.3216919016471078
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9997405796793515,
+              "in_window_nll": 0.0002594539759206419,
+              "nll": 0.7869286522853911,
+              "pre_window_nll": 0.7866691983094705,
+              "premature_event_probability": 0.5446410173772993
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.12727623355566653,
+              "in_window_nll": 2.061395487190683,
+              "nll": 3.2430576333038257,
+              "pre_window_nll": 1.1816621461131425,
+              "premature_event_probability": 0.6932315793309132
+            }
+          },
+          "article_relative_start_token": 217,
+          "condition": "earlier",
+          "question_id": "641912f2ed662f365272a26594d039e7",
+          "window_tokens": 25
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:74c9e8a583b49809be662df3b9288511",
+      "id": "b44c98191a661eb61ea9420ce254caef",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 0.8623919693857907,
+          "nll": 1.295095331941044,
+          "pre_window_nll": 0.43270336255525355
+        },
+        "lora": {
+          "in_window_nll": 1.4843552219023006,
+          "nll": 0.5205483320421946,
+          "pre_window_nll": -0.963806889860106
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9998598309020742,
+              "in_window_nll": 0.00014017892253188546,
+              "nll": 0.006611173967639203,
+              "pre_window_nll": 0.006470995045107317,
+              "premature_event_probability": 0.006450103244539762
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9990343355116496,
+              "in_window_nll": 0.0009661310426833455,
+              "nll": 0.008411415454333415,
+              "pre_window_nll": 0.007445284411650069,
+              "premature_event_probability": 0.007417636938648164
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.08343946422495685,
+              "in_window_nll": 2.483633889391769,
+              "nll": 2.9301605989829103,
+              "pre_window_nll": 0.4465267095911414,
+              "premature_event_probability": 0.3601533300859303
+            }
+          },
+          "article_relative_start_token": 82,
+          "condition": "earlier",
+          "question_id": "e81a99f8699b3d6002fb8c4c48903e7c",
+          "window_tokens": 16
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.0008646738701038048,
+              "in_window_nll": 7.053158150907344,
+              "nll": 9.856118701997591,
+              "pre_window_nll": 2.802960551090247,
+              "premature_event_probability": 0.9393697024388555
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.00024944834361684265,
+              "in_window_nll": 8.296258703820213,
+              "nll": 8.305224460713198,
+              "pre_window_nll": 0.00896575689298518,
+              "premature_event_probability": 0.008925684344321172
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.058141214102905514,
+              "in_window_nll": 2.844880501666526,
+              "nll": 4.342378613100232,
+              "pre_window_nll": 1.4974981114337058,
+              "premature_event_probability": 0.7763108941367103
+            }
+          },
+          "article_relative_start_token": 275,
+          "condition": "later",
+          "question_id": "64dd1ae786fa7efb609b527269868284",
+          "window_tokens": 11
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:75247ef68d977ca0d3fc7be36e0d3591",
+      "id": "f1f4bb3e93064eec699b82bdcf7dfc74",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 3.7022954002128485,
+          "nll": 3.8799109416183697,
+          "pre_window_nll": 0.17761554140552097
+        },
+        "lora": {
+          "in_window_nll": 4.775413383992993,
+          "nll": 5.734419827198035,
+          "pre_window_nll": 0.959006443205042
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 7.5345816291649825e-06,
+              "in_window_nll": 11.796007251094865,
+              "nll": 11.796007251094865,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 8.309238017645271e-07,
+              "in_window_nll": 14.000727740922697,
+              "nll": 14.000727740922697,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.08841698196017489,
+              "in_window_nll": 2.425691224166189,
+              "nll": 2.425691224166189,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            }
+          },
+          "article_relative_start_token": 0,
+          "condition": "earlier",
+          "question_id": "d748771d264736146c03db02100d451e",
+          "window_tokens": 17
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9426037565363095,
+              "in_window_nll": 0.059109279208373326,
+              "nll": 0.7301763273399786,
+              "pre_window_nll": 0.6710670481316053,
+              "premature_event_probability": 0.488837148685325
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9993754381791496,
+              "in_window_nll": 0.0006247569408315773,
+              "nll": 2.234473608671479,
+              "pre_window_nll": 2.2338488517306474,
+              "premature_event_probability": 0.8928846354246608
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1320156892226615,
+              "in_window_nll": 2.024834505711353,
+              "nll": 2.3406704710319164,
+              "pre_window_nll": 0.3158359653205634,
+              "premature_event_probability": 0.270820948990103
+            }
+          },
+          "article_relative_start_token": 58,
+          "condition": "later",
+          "question_id": "2fe2c4e2038e7b7ad8281549a102877a",
+          "window_tokens": 26
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:7693ef0e47c2e064d5772cefd7e2d22f",
+      "id": "dbdbd7a1e9c165e4631f563ff7aff8e8",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 6.858835455560784,
+          "nll": 6.631726023578557,
+          "pre_window_nll": -0.22710943198222652
+        },
+        "lora": {
+          "in_window_nll": 7.324918199090902,
+          "nll": 7.051182920388713,
+          "pre_window_nll": -0.27373527870218956
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 1.552722894704317e-07,
+              "in_window_nll": 15.67808555497006,
+              "nll": 15.67808555497006,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 1.700004575999614e-07,
+              "in_window_nll": 15.587464708135293,
+              "nll": 15.587464708135293,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.04782746760271683,
+              "in_window_nll": 3.040155168484693,
+              "nll": 3.040155168484693,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            }
+          },
+          "article_relative_start_token": 0,
+          "condition": "earlier",
+          "question_id": "42de126a557b7d3c6ee0f9204f5e367a",
+          "window_tokens": 9
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.021487069193336983,
+              "in_window_nll": 3.8403039576498643,
+              "nll": 3.9360753091574265,
+              "pre_window_nll": 0.09577135150756237,
+              "premature_event_probability": 0.09132824125446604
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.007726569606386846,
+              "in_window_nll": 4.863090291544868,
+              "nll": 4.865609949612504,
+              "pre_window_nll": 0.002519658067636335,
+              "premature_event_probability": 0.002516486393651318
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.0632561177321671,
+              "in_window_nll": 2.760563433013664,
+              "nll": 3.3105536484856795,
+              "pre_window_nll": 0.5499902154720154,
+              "premature_event_probability": 0.4230445444103301
+            }
+          },
+          "article_relative_start_token": 101,
+          "condition": "later",
+          "question_id": "b61aea7ccfd30ac6be05646c86f64936",
+          "window_tokens": 12
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:7a1889a631970074e0ed98bd02e9ee45",
+      "id": "186c4b6e0a8675520dcdd8f673b8ecd9",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 0.7992449462472133,
+          "nll": 0.24281043795383472,
+          "pre_window_nll": -0.5564345082933787
+        },
+        "lora": {
+          "in_window_nll": 2.6900012984758632,
+          "nll": 2.051780387736059,
+          "pre_window_nll": -0.6382209107398041
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.056101916617155245,
+              "in_window_nll": 2.8805853027384054,
+              "nll": 2.9155571418248907,
+              "pre_window_nll": 0.0349718390864853,
+              "premature_event_probability": 0.034367391028932937
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.004278981716057562,
+              "in_window_nll": 5.454040214504106,
+              "nll": 5.471465288498562,
+              "pre_window_nll": 0.017425073994456204,
+              "premature_event_probability": 0.017274135369742094
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.14141752538460128,
+              "in_window_nll": 1.9560385913002425,
+              "nll": 3.1050280513457404,
+              "pre_window_nll": 1.148989460045498,
+              "premature_event_probability": 0.6830430947866424
+            }
+          },
+          "article_relative_start_token": 211,
+          "condition": "earlier",
+          "question_id": "d4c12531ba51cf53915adc73d3694bda",
+          "window_tokens": 28
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.08844691953521022,
+              "in_window_nll": 2.4253526861709496,
+              "nll": 4.054690146247489,
+              "pre_window_nll": 1.629337460076539,
+              "premature_event_probability": 0.8039405716960066
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.02642590555701574,
+              "in_window_nll": 3.633410478862549,
+              "nll": 5.116721899138266,
+              "pre_window_nll": 1.4833114202757172,
+              "premature_event_probability": 0.7731148689685005
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.17352918072603118,
+              "in_window_nll": 1.7514095051146858,
+              "nll": 3.3795983608189695,
+              "pre_window_nll": 1.6281888557042836,
+              "premature_event_probability": 0.8037152476000863
+            }
+          },
+          "article_relative_start_token": 299,
+          "condition": "later",
+          "question_id": "98528c7769ad021fb562717d87477542",
+          "window_tokens": 35
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:7de084fedd51d5f6345ad0cfa39d48da",
+      "id": "136c8aa619ad93b735424a501a0f42a3",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": -0.7159477493576696,
+          "nll": -1.3365269127383292,
+          "pre_window_nll": -0.6205791633806599
+        },
+        "lora": {
+          "in_window_nll": 2.2102547166784046,
+          "nll": 1.4861108740599571,
+          "pre_window_nll": -0.7241438426184481
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.8312846915397779,
+              "in_window_nll": 0.18478295369972847,
+              "nll": 0.18504438767081188,
+              "pre_window_nll": 0.0002614339710834225,
+              "premature_event_probability": 0.000261399800200679
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9327772672613927,
+              "in_window_nll": 0.06958883411448455,
+              "nll": 0.07004839515311131,
+              "pre_window_nll": 0.00045956103862676833,
+              "premature_event_probability": 0.000459455456627067
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.04782746760271683,
+              "in_window_nll": 3.040155168484693,
+              "nll": 3.5520272502111228,
+              "pre_window_nll": 0.5118720817264301,
+              "premature_event_probability": 0.4006275463685497
+            }
+          },
+          "article_relative_start_token": 94,
+          "condition": "earlier",
+          "question_id": "f94916862bc950cea9031ca8bf3cac01",
+          "window_tokens": 9
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.07087995433464267,
+              "in_window_nll": 2.6467676169484613,
+              "nll": 3.0498730549541637,
+              "pre_window_nll": 0.4031054380057025,
+              "premature_event_probability": 0.33175836245663914
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.00018147971590465328,
+              "in_window_nll": 8.614366668605854,
+              "nll": 8.810144621068437,
+              "pre_window_nll": 0.19577795246258262,
+              "premature_event_probability": 0.17780521926317483
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.2942601906315475,
+              "in_window_nll": 1.223290900878836,
+              "nll": 2.3559440178905113,
+              "pre_window_nll": 1.1326531170116756,
+              "premature_event_probability": 0.6778226526901205
+            }
+          },
+          "article_relative_start_token": 208,
+          "condition": "later",
+          "question_id": "73cc6ad152524e4b0e2b430b21892c39",
+          "window_tokens": 64
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:82b70c3b51cfe3b6de241cf8da13bb1e",
+      "id": "7d9cb13767c9cc75eccea4f0d2e95c44",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 6.772761236646603,
+          "nll": 6.431790577828211,
+          "pre_window_nll": -0.34097065881839067
+        },
+        "lora": {
+          "in_window_nll": 5.712456129395009,
+          "nll": 7.29679042669456,
+          "pre_window_nll": 1.584334297299552
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 2.0458982008531024e-07,
+              "in_window_nll": 15.40225873987048,
+              "nll": 15.40225873987048,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 3.9940652440950686e-07,
+              "in_window_nll": 14.733286080571062,
+              "nll": 14.733286080571062,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.08841698196017489,
+              "in_window_nll": 2.425691224166189,
+              "nll": 2.425691224166189,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            }
+          },
+          "article_relative_start_token": 0,
+          "condition": "earlier",
+          "question_id": "5d6c930829225ebb80c4ea7aef09c081",
+          "window_tokens": 17
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.05285688744724282,
+              "in_window_nll": 2.940167254490045,
+              "nll": 2.9988068210532046,
+              "pre_window_nll": 0.058639566563160044,
+              "premature_event_probability": 0.05695338656021842
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.22570426483868844,
+              "in_window_nll": 1.4885296992862738,
+              "nll": 5.397779178085319,
+              "pre_window_nll": 3.9092494787990453,
+              "premature_event_probability": 0.9799444524717517
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.0933674685481447,
+              "in_window_nll": 2.371212296901129,
+              "nll": 3.11179318110107,
+              "pre_window_nll": 0.7405808841999414,
+              "premature_event_probability": 0.5231631519342196
+            }
+          },
+          "article_relative_start_token": 136,
+          "condition": "later",
+          "question_id": "a54c90b0aa3394cdfb46cbc034efa3d3",
+          "window_tokens": 18
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:82ded928df034ccac4e6b44185bacd43",
+      "id": "13996cafd926bc1a6ddeb64113f6008c",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 1.7425800957824753,
+          "nll": 1.2198022781496074,
+          "pre_window_nll": -0.5227778176328679
+        },
+        "lora": {
+          "in_window_nll": 1.0927262529047352,
+          "nll": 0.5684135714512196,
+          "pre_window_nll": -0.5243126814535156
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.017503139078624108,
+              "in_window_nll": 4.045375038217228,
+              "nll": 4.052696737292968,
+              "pre_window_nll": 0.00732169907573967,
+              "premature_event_probability": 0.007294960733556621
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.005340221138433909,
+              "in_window_nll": 5.232488215175731,
+              "nll": 5.23487494422981,
+              "pre_window_nll": 0.002386729054079669,
+              "premature_event_probability": 0.0023838830809300715
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.221581197579243,
+              "in_window_nll": 1.5069661761779634,
+              "nll": 2.2911106418014304,
+              "pre_window_nll": 0.7841444656234673,
+              "premature_event_probability": 0.5434899051561405
+            }
+          },
+          "article_relative_start_token": 144,
+          "condition": "later",
+          "question_id": "7130b14e26db3b055d0d18150d841e63",
+          "window_tokens": 46
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.0456751197119869,
+              "in_window_nll": 3.0862015557694074,
+              "nll": 3.0897410709484365,
+              "pre_window_nll": 0.0035395151790292858,
+              "premature_event_probability": 0.003533258479249457
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.5491516242191599,
+              "in_window_nll": 0.599380693055425,
+              "nll": 0.6047854506148187,
+              "pre_window_nll": 0.005404757559393769,
+              "premature_event_probability": 0.005390178135166179
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11771954435068821,
+              "in_window_nll": 2.139450226243722,
+              "nll": 2.4117226101407594,
+              "pre_window_nll": 0.2722723838970374,
+              "premature_event_probability": 0.23835322748321675
+            }
+          },
+          "article_relative_start_token": 50,
+          "condition": "earlier",
+          "question_id": "287c5cbc3d9c6188b75f4d32ccecad2d",
+          "window_tokens": 23
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:8360652e62f69ecfa0b63c992587283d",
+      "id": "350e67d7758b2c9fcb6db9d1a28e34ec",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 4.351050857759338,
+          "nll": 3.356678711462717,
+          "pre_window_nll": -0.9943721462966217
+        },
+        "lora": {
+          "in_window_nll": 4.583264063911099,
+          "nll": 3.580747324259317,
+          "pre_window_nll": -1.002516739651782
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.002660865874502316,
+              "in_window_nll": 5.929103692427412,
+              "nll": 5.96826308322952,
+              "pre_window_nll": 0.03915939080210807,
+              "premature_event_probability": 0.03840257285439708
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.024286751272633023,
+              "in_window_nll": 3.7178242924374247,
+              "nll": 3.7436003773886264,
+              "pre_window_nll": 0.025776084951201702,
+              "premature_event_probability": 0.025446717674710295
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.2341944067909162,
+              "in_window_nll": 1.4516037102944976,
+              "nll": 2.6604930947973435,
+              "pre_window_nll": 1.2088893845028459,
+              "premature_event_probability": 0.7014713540740465
+            }
+          },
+          "article_relative_start_token": 222,
+          "condition": "later",
+          "question_id": "534a5cd9dca651784fb81d377f875acb",
+          "window_tokens": 49
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.0012936430674413968,
+              "in_window_nll": 6.650292957551952,
+              "nll": 6.653541258028499,
+              "pre_window_nll": 0.0032483004765467313,
+              "premature_event_probability": 0.0032430304563011436
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 8.907794634926969e-05,
+              "in_window_nll": 9.32599876984546,
+              "nll": 9.326341189462592,
+              "pre_window_nll": 0.00034241961713252965,
+              "premature_event_probability": 0.00034236099822637645
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.08841698196017489,
+              "in_window_nll": 2.425691224166189,
+              "nll": 3.2479538235352416,
+              "pre_window_nll": 0.8222625993690525,
+              "premature_event_probability": 0.5605637393641776
+            }
+          },
+          "article_relative_start_token": 151,
+          "condition": "earlier",
+          "question_id": "557612b922790a5d0ebe19fcdbc8c5ce",
+          "window_tokens": 17
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:8442d8d9e8c43c263705bd9977fefeae",
+      "id": "ff87731a6d8f2f33b7a8f2dcf6fff957",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": -0.9073893608101206,
+          "nll": 1.3123147435811147,
+          "pre_window_nll": 2.219704104391235
+        },
+        "lora": {
+          "in_window_nll": 0.47444026049213905,
+          "nll": -0.5319540313647357,
+          "pre_window_nll": -1.006394291856875
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.3346136320353853,
+              "in_window_nll": 1.0947787499700605,
+              "nll": 1.0953110877377936,
+              "pre_window_nll": 0.0005323377677330727,
+              "premature_event_probability": 0.0005321961011228726
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.08362280202775185,
+              "in_window_nll": 2.4814390445532846,
+              "nll": 2.4815287417018608,
+              "pre_window_nll": 8.969714857629839e-05,
+              "premature_event_probability": 8.969312590734191e-05
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.324344692284698,
+              "in_window_nll": 1.1259484636169856,
+              "nll": 1.5289115917846008,
+              "pre_window_nll": 0.40296312816761526,
+              "premature_event_probability": 0.3316632583304313
+            }
+          },
+          "article_relative_start_token": 74,
+          "condition": "earlier",
+          "question_id": "3a4e98b4eb88dc7b7fd7afe06798edf2",
+          "window_tokens": 72
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9244128824792244,
+              "in_window_nll": 0.07859646463485404,
+              "nll": 6.918914761621461,
+              "pre_window_nll": 6.840318296986607,
+              "premature_event_probability": 0.9989302371568459
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.23326143573443348,
+              "in_window_nll": 1.4555954126561492,
+              "nll": 1.844159557765693,
+              "pre_window_nll": 0.38856414510954373,
+              "premature_event_probability": 0.3219702718062445
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.1553296769720528,
+              "in_window_nll": 1.86220547260817,
+              "nll": 3.8606847704124245,
+              "pre_window_nll": 1.9984792978042547,
+              "premature_event_probability": 0.8644587555378547
+            }
+          },
+          "article_relative_start_token": 367,
+          "condition": "later",
+          "question_id": "8d4909440070c9e3ea48008dea795fbf",
+          "window_tokens": 31
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:87af13f7f7a3f235cf53e713f9fbe85a",
+      "id": "f3d13ad0eaddefa5f51688dc3cb8cb8c",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 9.596489057054445,
+          "nll": 8.450679402605184,
+          "pre_window_nll": -1.1458096544492626
+        },
+        "lora": {
+          "in_window_nll": 10.666726927553913,
+          "nll": 9.474943384559303,
+          "pre_window_nll": -1.1917835429946084
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 1.222925187782664e-07,
+              "in_window_nll": 15.916849967193269,
+              "nll": 15.91692128944933,
+              "pre_window_nll": 7.132225606111526e-05,
+              "premature_event_probability": 7.131971268947712e-05
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 8.732246070675131e-08,
+              "in_window_nll": 16.25365812532788,
+              "nll": 16.253902408615403,
+              "pre_window_nll": 0.0002442832875234115,
+              "premature_event_probability": 0.0002442534527905549
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.07843476774428826,
+              "in_window_nll": 2.5454879838016904,
+              "nll": 4.391494746623604,
+              "pre_window_nll": 1.8460067628219137,
+              "premature_event_probability": 0.8421336930702423
+            }
+          },
+          "article_relative_start_token": 339,
+          "condition": "later",
+          "question_id": "0a1e41625e2075a078290273977eb4b1",
+          "window_tokens": 15
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.00036297688189468325,
+              "in_window_nll": 7.92117141196802,
+              "nll": 8.01458686375148,
+              "pre_window_nll": 0.093415451783461,
+              "premature_event_probability": 0.08918497804344117
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 5.9780024287192646e-05,
+              "in_window_nll": 9.724838994832341,
+              "nll": 9.726133708493649,
+              "pre_window_nll": 0.0012947136613073865,
+              "premature_event_probability": 0.0012938758811757989
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.12251089903378853,
+              "in_window_nll": 2.0995552812507063,
+              "nll": 2.63865460136684,
+              "pre_window_nll": 0.5390993201161339,
+              "premature_event_probability": 0.41672664155700057
+            }
+          },
+          "article_relative_start_token": 99,
+          "condition": "earlier",
+          "question_id": "735df914705b2696af9442c092d5ea8b",
+          "window_tokens": 24
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:893585ceb924d9845e2290735d9da23e",
+      "id": "9425307d2d308e6684e2b4cc5af7b1d2",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 4.769747838555469,
+          "nll": 4.0490275689109225,
+          "pre_window_nll": -0.7207202696445479
+        },
+        "lora": {
+          "in_window_nll": 6.4454900840236125,
+          "nll": 5.705635494171717,
+          "pre_window_nll": -0.739854589851896
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.011207177697519444,
+              "in_window_nll": 4.491200840097962,
+              "nll": 4.4913332253869225,
+              "pre_window_nll": 0.00013238528896041967,
+              "premature_event_probability": 0.00013237652641473474
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0007077110471319648,
+              "in_window_nll": 7.253474673096265,
+              "nll": 7.253543092753049,
+              "pre_window_nll": 6.841965678465719e-05,
+              "premature_event_probability": 6.841731621332059e-05
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.04782746760271683,
+              "in_window_nll": 3.040155168484693,
+              "nll": 4.156471942462546,
+              "pre_window_nll": 1.1163167739778532,
+              "premature_event_probability": 0.6725162272462261
+            }
+          },
+          "article_relative_start_token": 205,
+          "condition": "later",
+          "question_id": "4f1fd904900b53d40a2e487811a22459",
+          "window_tokens": 9
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 3.4668299218831855e-05,
+              "in_window_nll": 10.269684855748926,
+              "nll": 10.314719147248693,
+              "pre_window_nll": 0.04503429149976768,
+              "premature_event_probability": 0.04403530019225066
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 1.9232759408294164e-05,
+              "in_window_nll": 10.858895513686909,
+              "nll": 10.865725130404156,
+              "pre_window_nll": 0.006829616717247169,
+              "premature_event_probability": 0.0068063478875257655
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11290202742845123,
+              "in_window_nll": 2.1812348502512555,
+              "nll": 2.551525292351226,
+              "pre_window_nll": 0.3702904420999707,
+              "premature_event_probability": 0.30946625856097343
+            }
+          },
+          "article_relative_start_token": 68,
+          "condition": "earlier",
+          "question_id": "e6ea2d3ab8be7e953dc4965078193895",
+          "window_tokens": 22
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:89d1dfe704eda190cd29e9aa84b6f516",
+      "id": "10fca64b8d5e2e53c951df06a8c99b7f",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 1.7632675867147078,
+          "nll": 1.2386192452919347,
+          "pre_window_nll": -0.5246483414227733
+        },
+        "lora": {
+          "in_window_nll": 2.1349545145298654,
+          "nll": 1.6536939350063498,
+          "pre_window_nll": -0.4812605795235154
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.19922073816149677,
+              "in_window_nll": 1.6133418320139918,
+              "nll": 1.6133463489354487,
+              "pre_window_nll": 4.516921456855322e-06,
+              "premature_event_probability": 4.516911255580958e-06
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.3067060597232747,
+              "in_window_nll": 1.1818654502375034,
+              "nll": 1.1820248341196005,
+              "pre_window_nll": 0.00015938388209709123,
+              "premature_event_probability": 0.00015937118116093885
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11771954435068821,
+              "in_window_nll": 2.139450226243722,
+              "nll": 2.2755864181922405,
+              "pre_window_nll": 0.13613619194851853,
+              "premature_event_probability": 0.12727623355566653
+            }
+          },
+          "article_relative_start_token": 25,
+          "condition": "earlier",
+          "question_id": "bc01f772fe6a0df17b6f634703e5ca9d",
+          "window_tokens": 23
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.001275473845391395,
+              "in_window_nll": 6.664437525969835,
+              "nll": 6.693334966435099,
+              "pre_window_nll": 0.028897440465264046,
+              "premature_event_probability": 0.028483902403688255
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0003939495260374404,
+              "in_window_nll": 7.839287763376638,
+              "nll": 7.954805860679778,
+              "pre_window_nll": 0.1155180973031395,
+              "premature_event_probability": 0.10909555087669798
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.07340274411403591,
+              "in_window_nll": 2.6117939583106886,
+              "nll": 3.553856406594438,
+              "pre_window_nll": 0.942062448283749,
+              "premature_event_probability": 0.6101769841155393
+            }
+          },
+          "article_relative_start_token": 173,
+          "condition": "later",
+          "question_id": "781f444a7078b4188903a1670eafc873",
+          "window_tokens": 14
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:8dac0c5b4fa468043ae8fa0c4b973f1f",
+      "id": "1dd7c7df97a6c3dc2441f5f4055d917b",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 0.32068405633957675,
+          "nll": 2.974001981726777,
+          "pre_window_nll": 2.6533179253872
+        },
+        "lora": {
+          "in_window_nll": 0.3209728284777227,
+          "nll": 2.8486160766417346,
+          "pre_window_nll": 2.527643248164012
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.005535268549933692,
+              "in_window_nll": 5.196615195491983,
+              "nll": 12.309932919422147,
+              "pre_window_nll": 7.113317723930164,
+              "premature_event_probability": 0.9991858107490258
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.004830601107623456,
+              "in_window_nll": 5.332784366137168,
+              "nll": 12.16186941613126,
+              "pre_window_nll": 6.829085049994093,
+              "premature_event_probability": 0.9989181524987063
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.09829107078551491,
+              "in_window_nll": 2.319822092317911,
+              "nll": 3.632174982701631,
+              "pre_window_nll": 1.3123528903837203,
+              "premature_event_probability": 0.7308140543422583
+            }
+          },
+          "article_relative_start_token": 241,
+          "condition": "later",
+          "question_id": "ee7b218534640e272ea405d26d2969ca",
+          "window_tokens": 19
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.87302830026951,
+              "in_window_nll": 0.13578730640621037,
+              "nll": 0.13699406232677486,
+              "pre_window_nll": 0.0012067559205644956,
+              "premature_event_probability": 0.0012060280834419457
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9998043391067725,
+              "in_window_nll": 0.00019568003731735499,
+              "nll": 0.034285755447575963,
+              "pre_window_nll": 0.03409007541025861,
+              "premature_event_probability": 0.0335155557662582
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.0933674685481447,
+              "in_window_nll": 2.371212296901129,
+              "nll": 2.8667480355937367,
+              "pre_window_nll": 0.4955357386926079,
+              "premature_event_probability": 0.39075557596195165
+            }
+          },
+          "article_relative_start_token": 91,
+          "condition": "earlier",
+          "question_id": "74d038dfed7c2f29f3d3b57694018845",
+          "window_tokens": 18
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:8e4aaa3b40674880b325d1e7628593ff",
+      "id": "241b8704aa4cd90a40094476c9230b3a",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 7.128216642944116,
+          "nll": 6.713180304990265,
+          "pre_window_nll": -0.41503633795385086
+        },
+        "lora": {
+          "in_window_nll": 8.925559839632157,
+          "nll": 11.174656892722526,
+          "pre_window_nll": 2.2490970530903684
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 6.372795302578282e-08,
+              "in_window_nll": 16.56864254761223,
+              "nll": 16.960578043560037,
+              "pre_window_nll": 0.39193549594780436,
+              "premature_event_probability": 0.3242522989801824
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 2.3691907991008065e-08,
+              "in_window_nll": 17.55813228208608,
+              "nll": 23.18900313549517,
+              "pre_window_nll": 5.630870853409091,
+              "premature_event_probability": 0.9964145484353585
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.05299838155984815,
+              "in_window_nll": 2.9374939025029057,
+              "nll": 4.2008377637851595,
+              "pre_window_nll": 1.2633438612822536,
+              "premature_event_probability": 0.7172928891573751
+            }
+          },
+          "article_relative_start_token": 232,
+          "condition": "later",
+          "question_id": "bc3d7168caef5c4a16a3a02a4c135687",
+          "window_tokens": 10
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.060414901491773754,
+              "in_window_nll": 2.806519491030161,
+              "nll": 3.36517270986128,
+              "pre_window_nll": 0.5586532188311185,
+              "premature_event_probability": 0.4280211242727867
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.004463972787408288,
+              "in_window_nll": 5.4117161499323965,
+              "nll": 6.059700793390666,
+              "pre_window_nll": 0.6479846434582701,
+              "premature_event_probability": 0.4769010539683848
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.11290202742845123,
+              "in_window_nll": 2.1812348502512555,
+              "nll": 2.6985523796556263,
+              "pre_window_nll": 0.5173175294043709,
+              "premature_event_probability": 0.4038825272470674
+            }
+          },
+          "article_relative_start_token": 95,
+          "condition": "earlier",
+          "question_id": "9d4bc2e5c2dc2d58685a3e0d1d34ab37",
+          "window_tokens": 22
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:901566281abc37e19212bf377225ff5b",
+      "id": "cf77193e931f441077e7e0e5a2519aa1",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 0.36523141838463125,
+          "nll": 0.5358064620515648,
+          "pre_window_nll": 0.17057504366693355
+        },
+        "lora": {
+          "in_window_nll": 1.2282804692290792,
+          "nll": 0.5504384759618608,
+          "pre_window_nll": -0.6778419932672184
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.006094969150555518,
+              "in_window_nll": 5.100291577496409,
+              "nll": 5.100291577496409,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.0010837600256725644,
+              "in_window_nll": 6.827318779003371,
+              "nll": 6.827318779003371,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.12251089903378853,
+              "in_window_nll": 2.0995552812507063,
+              "nll": 2.0995552812507063,
+              "pre_window_nll": -0.0,
+              "premature_event_probability": 0.0
+            }
+          },
+          "article_relative_start_token": 0,
+          "condition": "earlier",
+          "question_id": "3c1152aa6e3446714964dc1851e1b3c7",
+          "window_tokens": 24
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9990705468208434,
+              "in_window_nll": 0.0009298853885957719,
+              "nll": 2.476695462475236,
+              "pre_window_nll": 2.4757655770866402,
+              "premature_event_probability": 0.9159014183415541
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9999992144297791,
+              "in_window_nll": 7.855705293835011e-07,
+              "nll": 0.7789322887888658,
+              "pre_window_nll": 0.7789315032183364,
+              "premature_event_probability": 0.5411039215760571
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.10318793467173304,
+              "in_window_nll": 2.2712033448650364,
+              "nll": 4.4058188346178095,
+              "pre_window_nll": 2.134615489752773,
+              "premature_event_probability": 0.8817099346244444
+            }
+          },
+          "article_relative_start_token": 392,
+          "condition": "later",
+          "question_id": "eb8b3973166aa5543a891fd390c975e6",
+          "window_tokens": 20
+        }
+      ]
+    },
+    {
+      "group_id": "expmrc:90caaee4f173821c5c6a2a7c1335fbe1",
+      "id": "40e883761127124fe094fce6f47d95ab",
+      "model_minus_position": {
+        "frozen": {
+          "in_window_nll": 6.694778157060439,
+          "nll": 6.322527151914024,
+          "pre_window_nll": -0.3722510051464157
+        },
+        "lora": {
+          "in_window_nll": 6.106776780936464,
+          "nll": 5.734219375329068,
+          "pre_window_nll": -0.372557405607396
+        },
+        "position": {
+          "in_window_nll": 0.0,
+          "nll": 0.0,
+          "pre_window_nll": 0.0
+        }
+      },
+      "questions": [
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 1.7031360544095264e-08,
+              "in_window_nll": 17.888209454441483,
+              "nll": 17.888209454646482,
+              "pre_window_nll": 2.0499868471515873e-10,
+              "premature_event_probability": 2.049986846941465e-10
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 5.5422737399446476e-08,
+              "in_window_nll": 16.708275905020717,
+              "nll": 16.70827590535892,
+              "pre_window_nll": 3.38205574714216e-10,
+              "premature_event_probability": 3.382055746570245e-10
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.07843476774428826,
+              "in_window_nll": 2.5454879838016904,
+              "nll": 2.5509334314796313,
+              "pre_window_nll": 0.005445447677940746,
+              "premature_event_probability": 0.005430648103356361
+            }
+          },
+          "article_relative_start_token": 1,
+          "condition": "earlier",
+          "question_id": "2a677f4fdd61813db7aa2ad7bb608967",
+          "window_tokens": 15
+        },
+        {
+          "arms": {
+            "frozen": {
+              "conditional_event_probability_in_window": 0.9971306895810855,
+              "in_window_nll": 0.00287343478132782,
+              "nll": 0.004397756161379872,
+              "pre_window_nll": 0.001524321380052052,
+              "premature_event_probability": 0.0015231601922999216
+            },
+            "lora": {
+              "conditional_event_probability_in_window": 0.9932188644180506,
+              "in_window_nll": 0.006804231954144892,
+              "nll": 0.007715752279029495,
+              "pre_window_nll": 0.0009115203248846022,
+              "premature_event_probability": 0.0009111050164302137
+            },
+            "position": {
+              "conditional_event_probability_in_window": 0.14141752538460128,
+              "in_window_nll": 1.9560385913002425,
+              "nll": 2.6966194755001838,
+              "pre_window_nll": 0.7405808841999414,
+              "premature_event_probability": 0.5231631519342196
+            }
+          },
+          "article_relative_start_token": 136,
+          "condition": "later",
+          "question_id": "e0722edb1f3e55c8d4c7035c2983e243",
+          "window_tokens": 28
+        }
+      ]
+    }
+  ],
+  "prepared_receipt_sha256": "e05a1ecdf3b45f2ee79d76cf5dbb96bce64850a7eb1fa2992d858acb7657fa57",
+  "protocol_sha256": "b0c8be78bcfb62a54c5033f7721e4484dd45a06a877c4360afa31bafbf8d3369",
+  "quantile_probabilities": {
+    "question_penalties": [
+      0.5,
+      0.9,
+      1
+    ],
+    "train_geometry": [
+      0.1,
+      0.5,
+      0.9
+    ]
+  },
+  "schema_version": 1,
+  "score_sha256": "0493477a742d7a47df3811403ffce833bd3586ddaa1eaf06c8f263aa8a022af9",
+  "summary": {
+    "frozen": {
+      "counts_relative_to_position": {
+        "articles_higher_in_window_penalty": 21,
+        "articles_higher_pre_window_penalty": 12,
+        "articles_larger_in_window_excess_than_pre_window": 20,
+        "articles_lower_nll": 4,
+        "questions_lower_nll": 15
+      },
+      "earlier_question": {
+        "conditional_event_probability_in_window": 0.2694522850708579,
+        "in_window_nll": 6.09218990394091,
+        "nll": 6.953400015709641,
+        "pre_window_nll": 0.8612101117687317,
+        "premature_event_probability": 0.12285053770526327,
+        "questions": 27
+      },
+      "later_question": {
+        "conditional_event_probability_in_window": 0.2793965172116352,
+        "in_window_nll": 4.7581328769273705,
+        "nll": 7.95751407452042,
+        "pre_window_nll": 3.199381197593049,
+        "premature_event_probability": 0.4748554973545225,
+        "questions": 27
+      },
+      "overall": {
+        "conditional_event_probability_in_window": 0.2744244011412466,
+        "in_window_nll": 5.425161390434141,
+        "nll": 7.45545704511503,
+        "pre_window_nll": 2.0302956546808906,
+        "premature_event_probability": 0.2988530175298929,
+        "questions": 54
+      },
+      "question_penalty_quantiles": {
+        "in_window_nll": [
+          3.942839497933546,
+          14.816835535213384,
+          17.888209454441483
+        ],
+        "nll": [
+          5.105428001131127,
+          15.84527056910555,
+          25.36895082813098
+        ],
+        "pre_window_nll": [
+          0.042096841150937876,
+          5.667090831065078,
+          25.368163282267925
+        ]
+      }
+    },
+    "lora": {
+      "counts_relative_to_position": {
+        "articles_higher_in_window_penalty": 23,
+        "articles_higher_pre_window_penalty": 9,
+        "articles_larger_in_window_excess_than_pre_window": 20,
+        "articles_lower_nll": 3,
+        "questions_lower_nll": 13
+      },
+      "earlier_question": {
+        "conditional_event_probability_in_window": 0.29278729178125995,
+        "in_window_nll": 6.724232357552672,
+        "nll": 7.687249996400406,
+        "pre_window_nll": 0.9630176388477343,
+        "premature_event_probability": 0.11508342766790712,
+        "questions": 27
+      },
+      "later_question": {
+        "conditional_event_probability_in_window": 0.25445463696185466,
+        "in_window_nll": 5.511909946692502,
+        "nll": 9.487627790160202,
+        "pre_window_nll": 3.9757178434677023,
+        "premature_event_probability": 0.4491892837236624,
+        "questions": 27
+      },
+      "overall": {
+        "conditional_event_probability_in_window": 0.2736209643715573,
+        "in_window_nll": 6.118071152122586,
+        "nll": 8.587438893280304,
+        "pre_window_nll": 2.469367741157718,
+        "premature_event_probability": 0.28213635569578477,
+        "questions": 54
+      },
+      "question_penalty_quantiles": {
+        "in_window_nll": [
+          5.067357813284591,
+          15.331211119866026,
+          17.55813228208608
+        ],
+        "nll": [
+          6.928954042915969,
+          16.19427677185547,
+          44.371937263181785
+        ],
+        "pre_window_nll": [
+          0.01038105813782197,
+          6.469620791018596,
+          44.37193725556475
+        ]
+      }
+    },
+    "position": {
+      "counts_relative_to_position": {
+        "articles_higher_in_window_penalty": 0,
+        "articles_higher_pre_window_penalty": 0,
+        "articles_larger_in_window_excess_than_pre_window": 0,
+        "articles_lower_nll": 0,
+        "questions_lower_nll": 0
+      },
+      "earlier_question": {
+        "conditional_event_probability_in_window": 0.12456340842071,
+        "in_window_nll": 2.2035566299809424,
+        "nll": 2.616200554020452,
+        "pre_window_nll": 0.41264392403950995,
+        "premature_event_probability": 0.307194566805677,
+        "questions": 27
+      },
+      "later_question": {
+        "conditional_event_probability_in_window": 0.12956973906696054,
+        "in_window_nll": 2.1704202916748994,
+        "nll": 3.4601846583575315,
+        "pre_window_nll": 1.2897643666826328,
+        "premature_event_probability": 0.6872760863525381,
+        "questions": 27
+      },
+      "overall": {
+        "conditional_event_probability_in_window": 0.1270665737438353,
+        "in_window_nll": 2.186988460827921,
+        "nll": 3.0381926061889915,
+        "pre_window_nll": 0.8512041453610714,
+        "premature_event_probability": 0.4972353265791076,
+        "questions": 54
+      },
+      "question_penalty_quantiles": {
+        "in_window_nll": [
+          2.160342538247489,
+          2.909709882251992,
+          3.437507702656833
+        ],
+        "nll": [
+          2.9851578837338018,
+          4.302281132328525,
+          4.428744326359583
+        ],
+        "pre_window_nll": [
+          0.7269672650050895,
+          1.7806613906866253,
+          2.1836245188542396
+        ]
+      }
+    }
+  },
+  "train_geometry": {
+    "questions": 128,
+    "start_quantiles": [
+      25.700000000000003,
+      135.0,
+      310.49999999999994
+    ],
+    "width_quantiles": [
+      14.0,
+      24.0,
+      41.0
+    ]
+  },
+  "training_changes": false
+}

@@ -1,0 +1,135 @@
+{
+  "allocation_to_verified_release_s": 113.730481,
+  "endpoint_absent_after_stop": true,
+  "frick_signals": {
+    "assay_sha256": "c471c331de138b8fd9377f8f2c766187083a1c8efa931866faef9997b1e451b8",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 624,
+    "combined_route_receipt_sha256": "d36762a8a0403f274a487c34d1468a35ef0a9e6028fa7f335739a84b9f89e770",
+    "combined_route_run_id": "cogllm-cuda-checks-20261121T063246Z-544ed4db",
+    "encoded_documents": 40,
+    "input_tokens": 9386,
+    "preflight_sha256": "b8656522e71e72e6287fddaab421c0758bd661a16b19d523a9b82acb6bb50bb9",
+    "protocol_sha256": "ded1537b94077bef546de999452586dc1e51454680f6f52880e96baf78b1b55f",
+    "source_code_sha256": "8079fe2d6b0ae01508264756ec71529dbb12d78a7b481795b0bce73edebd78a4",
+    "stimuli_sha256": "1f0d2ae835429088fe6569366428226082397fb69f74660ac4ddcc0dacded46c"
+  },
+  "minutes_budget": 12.0,
+  "payload_bytes": 1521061,
+  "payload_members_sha256": {
+    "bundle.json": "80ce429521205bf080be7b531d5d75b9fbae9f274ec0c1b0a553edf4d59fad2a",
+    "frick-signals-inputs.tar.gz": "4e52e775a6a3da3d00552c50b2fddd8faeef4a3c828750789c5c3edd103474f5"
+  },
+  "payload_sha256": "9906bf277020626be9a9b8ca2afcb1c8599bcb574f4ac91261aee1ef344027d0",
+  "phase": "finished",
+  "published_sha256": {
+    "axis-audit.json": "9870d232162884460f6d58464966013e943c745441b6bddc6abe4fc7252734f2",
+    "causality.json": "6a4ee94be1f64266cae468522ea9e5e6fdbd35ef544ef6fbe75b5dca48481109",
+    "coordinates.jsonl": "ce5379f8dd3d211015fb3e103fdd8a3983977bf340353583c39e612efb8f01f8",
+    "extraction.json": "352496b1a5990232da705e4aeaa02cda67862c554bfa53c01f7c9d2b76cc78ac",
+    "extractor-preflight.json": "b8656522e71e72e6287fddaab421c0758bd661a16b19d523a9b82acb6bb50bb9",
+    "fits.json": "8f4c9a01696e282eb97c8f83d1dd1c58c5a80897141e392390e84b0428dd2bae",
+    "forecast-seal.json": "ddeff5e1bc609da94edd6075676c02ec0245ea0d8ac0f305f9db5360f5b69cba",
+    "forecasts.jsonl": "8cc40892cf9dba70cb3d8506dbfdc7836123a15c98ba439c624b7d50ee2e1f25",
+    "independent-prefix-check.json": "b9ce9e235186f3781d2567c56d564a5afacfb67c8103b857945b0f5d91624373",
+    "results.json": "aa75ee4508273c8e53abefbb2e9045d02e764a9fa84569026d432925eed44a4a",
+    "runtime.json": "2864e566cc71ee681f9eecadd0f058b4aae0f921f6ad1fa8bdc746f219c387aa",
+    "states.npy": "d04cae93d1da31546c85d13f6fc0213dd6c7041bd6c1b8b7e32c710ede561310",
+    "telemetry.jsonl": "675d585aed2724b3f59d489194526cd78f825398e122da2329ac536914525302",
+    "token_features.npy": "cfd553ddd2ce0eb9681c85961884dfea1363c9e852beea46b25963861d4cc200"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T072128Z-845a9a12",
+  "schema_version": 23,
+  "scoring_verification": {
+    "cpu_scoring_runs": [
+      {
+        "elapsed_s": 6.467,
+        "peak_rss_mib": 235.406
+      },
+      {
+        "elapsed_s": 6.476,
+        "peak_rss_mib": 230.578
+      }
+    ],
+    "first_at_target_human_effect": 0.48271558704453443,
+    "independent_scalar_point_check_atol": 1e-14,
+    "independently_recomputed": {
+      "attention_only": {
+        "first_at_target_effect": 0.2000652831580021,
+        "first_event_nll_per_story": 1.5639915233042938
+      },
+      "both": {
+        "first_at_target_effect": 0.16360882628790335,
+        "first_event_nll_per_story": 1.5497468175312472
+      },
+      "global": {
+        "first_at_target_effect": 0.022184271944214268,
+        "first_event_nll_per_story": 1.6446444121154242
+      },
+      "logits_only": {
+        "first_at_target_effect": 0.15251161188558268,
+        "first_event_nll_per_story": 1.5901536206275384
+      },
+      "original_contextual": {
+        "first_at_target_effect": 0.0005091372376875639,
+        "first_event_nll_per_story": 1.7293157095681637
+      },
+      "seven_feature_conditional": {
+        "first_at_target_effect": 0.18950947565795614,
+        "first_event_nll_per_story": 1.593874767588849
+      }
+    },
+    "same_forecast_and_score_files_across_two_cpu_runs": [
+      "axis-audit.json",
+      "fits.json",
+      "forecast-seal.json",
+      "forecasts.jsonl",
+      "results.json"
+    ]
+  },
+  "stages": {
+    "frick-signals": {
+      "archive_bytes": 4938870,
+      "archive_sha256": "0fdc48417cc03958ee4206433529aab69ae4bd375bf35be5e60976131ecf96b8",
+      "elapsed_s": 52.40406731899998,
+      "members": {
+        "causality.json": "6a4ee94be1f64266cae468522ea9e5e6fdbd35ef544ef6fbe75b5dca48481109",
+        "coordinates.jsonl": "ce5379f8dd3d211015fb3e103fdd8a3983977bf340353583c39e612efb8f01f8",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "352496b1a5990232da705e4aeaa02cda67862c554bfa53c01f7c9d2b76cc78ac",
+        "states.npy": "d04cae93d1da31546c85d13f6fc0213dd6c7041bd6c1b8b7e32c710ede561310",
+        "telemetry.jsonl": "675d585aed2724b3f59d489194526cd78f825398e122da2329ac536914525302",
+        "token_features.npy": "cfd553ddd2ce0eb9681c85961884dfea1363c9e852beea46b25963861d4cc200"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 651,
+      "archive_sha256": "b891c979ceeb2b97b156c087c10990964e21ed7970778bfd7ad616b3b35ff722",
+      "elapsed_s": 38.38618252100002,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "2864e566cc71ee681f9eecadd0f058b4aae0f921f6ad1fa8bdc746f219c387aa"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T07:21:50.191185+00:00",
+    "allocating": "2026-11-21T07:21:43.799885+00:00",
+    "finished": "2026-11-21T07:23:43.921666+00:00",
+    "prepared": "2026-11-21T07:21:28.991243+00:00",
+    "releasing": "2026-11-21T07:23:35.814430+00:00",
+    "remote-frick-signals": "2026-11-21T07:22:39.093750+00:00",
+    "remote-setup": "2026-11-21T07:21:57.146094+00:00",
+    "remote-stages-finished": "2026-11-21T07:23:34.205527+00:00",
+    "retrieved-frick-signals": "2026-11-21T07:23:35.814089+00:00",
+    "retrieved-setup": "2026-11-21T07:22:39.489471+00:00",
+    "worker-running": "2026-11-21T07:21:56.752735+00:00"
+  },
+  "worker_sha256": "4593d83f1ac09e0305497a1e9bd0b7e90eb34965a820762c1c41d4459312bb34"
+}

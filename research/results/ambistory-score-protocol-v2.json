@@ -1,0 +1,59 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "paired": true,
+    "seed": 43,
+    "unit": "casefolded homonym with all families, versions and votes kept together"
+  },
+  "counts": {
+    "casefold_homonym_groups": 86,
+    "flagged_votes": 91,
+    "sense_items": 930,
+    "stories": 465,
+    "story_families": 155,
+    "votes": 4663
+  },
+  "design_protocol_sha256": "da62de6360eb313306e80b0a2ce210b86d9d36a3c1b8c44750b26cf6733ba792",
+  "direction_agreement": {
+    "tie_credit": 0.5,
+    "tie_grade_atol": 1e-12
+  },
+  "equivalence": {
+    "paired_ci": 90,
+    "statistic": "model minus human, mean absolute signed ending change in grade units",
+    "strict_margin_grades": 0.5
+  },
+  "fit_code_sha256": "f600f682e243b00c8d1520cb91c3daf05f43a4e78b19d0682e28d4c9a6fe5c46",
+  "fit_protocol_sha256": "bbe83fe0abf298bfbbb30bfd49b5bb7b46f2e198a6e4eda22f493d3fa4c60aff",
+  "fit_split": "train",
+  "forecast_split": "test",
+  "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "methods": [
+    "form_control",
+    "common_prefix",
+    "ending"
+  ],
+  "nonsensical_votes": "include all votes in primary analysis; repeat with flagged votes removed for sensitivity",
+  "preparation_sha256": "0364a1942796740435c060da2d86a26774d6c794827dfd0cecae8037fafd3253",
+  "primary": [
+    "all-variant, per-vote NLL in nats",
+    "mean absolute error of same-sense signed ending changes"
+  ],
+  "primary_contrast": "ending minus common_prefix, paired 95% upper bounds below zero for both measures",
+  "scorer_sha256": "76757458ff3f4445084210e813647d272d7fa0e4ccf49d6e0cba49e47c7d9e54",
+  "semeval_secondary": {
+    "accuracy": "strictly inside human mean \u00b1 sample SD or absolute difference < 1",
+    "point_readout": "round expected grade to nearest integer, half ties to even",
+    "rank": "Spearman with tied ranks averaged; constant input undefined",
+    "reference": "https://github.com/Janosch-Gehring/semeval26-05-scripts/blob/362fd1c51fca99bd329bdc9a84fdf509a6ff6c3b/scoring.py"
+  },
+  "sensitivity_missing": "retain each nonempty rating item; require both endings for paired update and more than one rating for within-SD accuracy",
+  "signed_update": "later-sorting opaque ending ID minus earlier-sorting opaque ending ID, identical order across human means and model expectations; ending minus base reported separately",
+  "status": "scoring_rules_locked_before_real_holdout_scoring"
+}

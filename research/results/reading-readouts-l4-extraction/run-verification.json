@@ -1,0 +1,66 @@
+{
+  "run_id": "cogllm-cuda-checks-20261120T233021Z-2372aea5",
+  "phase": "finished",
+  "timeline": {
+    "prepared": "2026-11-20T23:30:21.300682+00:00",
+    "allocating": "2026-11-20T23:48:06.683800+00:00",
+    "allocated": "2026-11-20T23:48:12.125973+00:00",
+    "worker-running": "2026-11-20T23:48:17.075515+00:00",
+    "remote-setup": "2026-11-20T23:48:40.443802+00:00",
+    "remote-student-annotations": "2026-11-20T23:49:24.313226+00:00",
+    "retrieved-setup": "2026-11-20T23:49:24.783307+00:00",
+    "remote-ambistory": "2026-11-20T23:49:49.323547+00:00",
+    "retrieved-student-annotations": "2026-11-20T23:49:50.557769+00:00",
+    "remote-stages-finished": "2026-11-20T23:51:38.959592+00:00",
+    "retrieved-ambistory": "2026-11-20T23:51:39.849990+00:00",
+    "releasing": "2026-11-20T23:51:39.850412+00:00",
+    "finished": "2026-11-20T23:51:47.592850+00:00"
+  },
+  "stages": {
+    "setup": {
+      "verified": true,
+      "state": "complete",
+      "elapsed_s": 34.91733146600018,
+      "archive_sha256": "409e7a2bf218b18e1766a50532c15b058e9ae82e313fe623f1b7397165d2e683",
+      "archive_bytes": 639,
+      "members": {
+        "runtime.json": "0a987854eb5e2f8ad3109c126375e0edffb1cd8612ffb91b05a171ce1fbae806",
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44"
+      }
+    },
+    "student-annotations": {
+      "verified": true,
+      "state": "complete",
+      "elapsed_s": 44.193836815000395,
+      "archive_sha256": "ab811fd9a14eea2d99352d3d51107ad44507ca6648738985230656e3528f17c6",
+      "archive_bytes": 8779136,
+      "members": {
+        "extraction/telemetry.jsonl": "cd9d1568d16996363d458308a959f48702acc3863f82f12d6995ac81b032317c",
+        "extraction/seal.json": "59820cf9a09d585b7340421528cf7568030c6c4612052169d57791d54d706d2c",
+        "extraction/causality.json": "b1ef51c560701e4c11021adc57d1e243c81c1e0a03494b85abb09ba65cc67c5a",
+        "extraction/extraction.json": "69f2c9bfd7cb6b51cf48c832f3d7c50ef7df2c32f2e7028b4c5f72509e601a1f",
+        "extraction/features.npz": "f6b779bcf9a891866128101daf36189392586c8790f0caa0aa1190997fa3758b",
+        "run.log": "984bd98e8f3ff46f0c7497d65ff0071aa5030cd0faa8e342e10daccd6b86ed23"
+      }
+    },
+    "ambistory": {
+      "verified": true,
+      "state": "complete",
+      "elapsed_s": 87.71104001299955,
+      "archive_sha256": "f8904340017886815ce24c794bdda12411dc93527d8a6084848e74fdf41f2cc2",
+      "archive_bytes": 4485366,
+      "members": {
+        "extraction/telemetry.jsonl": "0c92e763bb4f8ba11038f4a0fe808bb0a9b54d6f3c89da0b973c302683532a39",
+        "extraction/story-states.npz": "8b89d83d6c7ced57e5eef28d28d65d090a9e732914e57b674ccb6438b146611e",
+        "extraction/seal.json": "1fd6484f469add5fca744ce47e920591b61b4e1fd551ed2a189e69dc35d31d48",
+        "extraction/sense-states.npz": "04ce0e21a58216ad312d7c523c0a4c8e9fe6e53016f63c4d57d0d1e06164d03f",
+        "extraction/causality.json": "3b27c22ca660e74f233e694988dccd2783e19a1ee15a103d2904d2935e0b729f",
+        "extraction/extraction.json": "876b097b252bda33d7543f6ff50fe2c2114bdd5be36feca93ed119ab1894a6f8",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e"
+      }
+    }
+  },
+  "release_verified": true,
+  "release_usage_recorded": true,
+  "endpoint_absent_after_stop": true
+}

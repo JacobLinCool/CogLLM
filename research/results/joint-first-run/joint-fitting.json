@@ -1,0 +1,454 @@
+{
+  "device": "NVIDIA L4",
+  "torch": "2.14.1+cu130",
+  "dtype": "float32",
+  "optimizer": {
+    "name": "AdamW",
+    "lr": 0.006,
+    "weight_decay": 0.01,
+    "updates_per_fold": 160
+  },
+  "adapter_rank": 32,
+  "seed_base": 1729,
+  "loss": {
+    "task_weights": "Equal mean of PLABA, Zhan, OneStop; one complete training batch per task and optimizer update.",
+    "plaba": "Average of rating MSE on a [0,1] scale and checklist Bernoulli NLL. Endpoint means use observed counts.",
+    "zhan": "Bernoulli NLL on observed NP1 choices.",
+    "onestop": "Categorical NLL on observed displayed choices; no gold option given to model."
+  },
+  "input_sha256": {
+    "design": "05e41dbfac748869dd696ebd671bdb17f8da7726a18c42b01d3b48c32b5ef680",
+    "plaba": "fd1edb0e06f8fc05438d93cf77805cf258077a3c7c2e33c57a3474b579538246",
+    "zhan": "94733ed95ab87d3d81283af0a26f3682e3348d5e335e80bc6a03c3577b4a67c6",
+    "onestop": "5fc0632af94a60f1be672910a81b1378c26ffab9764d5ab86d9cb48c3982ecaa"
+  },
+  "output_sha256": {
+    "heads.npz": "112529fd03e140f1a9c94df077bb81c21dc02dd72492f7ade358e388226f9bd1",
+    "predictions.npz": "f8784480b8093bae765749ec50ef1b513b64ebb18c1a9306aae0cd140ab0fb88",
+    "metrics.json": "1209b8683190d0d8119c88e4bb49a410a6d44a29215b75367044e722a256f23d"
+  },
+  "total_s": 13.348409128999947,
+  "cuda_peak_allocated_bytes": 108658688,
+  "fits": [
+    {
+      "fold": 0,
+      "method": "linear",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1469,
+          1469
+        ],
+        "plaba_checklist_by_endpoint": [
+          645,
+          645
+        ],
+        "zhan": 1329,
+        "onestop": 1545
+      },
+      "initial_task_loss": {
+        "plaba": 0.4127219319343567,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.2642098367214203,
+        "zhan": 0.4705682396888733,
+        "onestop": 0.745917022228241
+      },
+      "seconds": 0.9252267780000238
+    },
+    {
+      "fold": 0,
+      "method": "independent_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1469,
+          1469
+        ],
+        "plaba_checklist_by_endpoint": [
+          645,
+          645
+        ],
+        "zhan": 1329,
+        "onestop": 1545
+      },
+      "initial_task_loss": {
+        "plaba": 0.4127219319343567,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.18589359521865845,
+        "zhan": 0.4452366828918457,
+        "onestop": 0.494488388299942
+      },
+      "seconds": 0.8520103010000639
+    },
+    {
+      "fold": 0,
+      "method": "shared_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1469,
+          1469
+        ],
+        "plaba_checklist_by_endpoint": [
+          645,
+          645
+        ],
+        "zhan": 1329,
+        "onestop": 1545
+      },
+      "initial_task_loss": {
+        "plaba": 0.4127219319343567,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.20810601115226746,
+        "zhan": 0.4459518790245056,
+        "onestop": 0.5165666937828064
+      },
+      "seconds": 0.8094469410000329
+    },
+    {
+      "fold": 1,
+      "method": "linear",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1439,
+          1439
+        ],
+        "plaba_checklist_by_endpoint": [
+          735,
+          735
+        ],
+        "zhan": 1329,
+        "onestop": 1545
+      },
+      "initial_task_loss": {
+        "plaba": 0.4150999188423157,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.2599896192550659,
+        "zhan": 0.4778546988964081,
+        "onestop": 0.7337261438369751
+      },
+      "seconds": 0.5077915309999526
+    },
+    {
+      "fold": 1,
+      "method": "independent_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1439,
+          1439
+        ],
+        "plaba_checklist_by_endpoint": [
+          735,
+          735
+        ],
+        "zhan": 1329,
+        "onestop": 1545
+      },
+      "initial_task_loss": {
+        "plaba": 0.4150999188423157,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.1769292950630188,
+        "zhan": 0.4525738060474396,
+        "onestop": 0.5324077010154724
+      },
+      "seconds": 0.8134045059999835
+    },
+    {
+      "fold": 1,
+      "method": "shared_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1439,
+          1439
+        ],
+        "plaba_checklist_by_endpoint": [
+          735,
+          735
+        ],
+        "zhan": 1329,
+        "onestop": 1545
+      },
+      "initial_task_loss": {
+        "plaba": 0.4150999188423157,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.1899375319480896,
+        "zhan": 0.45368483662605286,
+        "onestop": 0.4778199791908264
+      },
+      "seconds": 0.7986072759999843
+    },
+    {
+      "fold": 2,
+      "method": "linear",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1472,
+          1472
+        ],
+        "plaba_checklist_by_endpoint": [
+          570,
+          570
+        ],
+        "zhan": 1329,
+        "onestop": 1546
+      },
+      "initial_task_loss": {
+        "plaba": 0.4185844361782074,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862942457199097
+      },
+      "final_task_loss": {
+        "plaba": 0.2548845708370209,
+        "zhan": 0.4709762930870056,
+        "onestop": 0.7175801396369934
+      },
+      "seconds": 0.4998273439999821
+    },
+    {
+      "fold": 2,
+      "method": "independent_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1472,
+          1472
+        ],
+        "plaba_checklist_by_endpoint": [
+          570,
+          570
+        ],
+        "zhan": 1329,
+        "onestop": 1546
+      },
+      "initial_task_loss": {
+        "plaba": 0.4185844361782074,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862942457199097
+      },
+      "final_task_loss": {
+        "plaba": 0.17615875601768494,
+        "zhan": 0.4519042372703552,
+        "onestop": 0.37848517298698425
+      },
+      "seconds": 0.8060788540000203
+    },
+    {
+      "fold": 2,
+      "method": "shared_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1472,
+          1472
+        ],
+        "plaba_checklist_by_endpoint": [
+          570,
+          570
+        ],
+        "zhan": 1329,
+        "onestop": 1546
+      },
+      "initial_task_loss": {
+        "plaba": 0.4185844361782074,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862942457199097
+      },
+      "final_task_loss": {
+        "plaba": 0.18183432519435883,
+        "zhan": 0.45055997371673584,
+        "onestop": 0.47869205474853516
+      },
+      "seconds": 0.8086762080000653
+    },
+    {
+      "fold": 3,
+      "method": "linear",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1473,
+          1473
+        ],
+        "plaba_checklist_by_endpoint": [
+          723,
+          723
+        ],
+        "zhan": 1329,
+        "onestop": 1562
+      },
+      "initial_task_loss": {
+        "plaba": 0.41612765192985535,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.26158589124679565,
+        "zhan": 0.4951437711715698,
+        "onestop": 0.7118385434150696
+      },
+      "seconds": 0.5149500449999778
+    },
+    {
+      "fold": 3,
+      "method": "independent_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1473,
+          1473
+        ],
+        "plaba_checklist_by_endpoint": [
+          723,
+          723
+        ],
+        "zhan": 1329,
+        "onestop": 1562
+      },
+      "initial_task_loss": {
+        "plaba": 0.41612765192985535,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.1816902458667755,
+        "zhan": 0.4806806445121765,
+        "onestop": 0.4735621213912964
+      },
+      "seconds": 0.832543656000098
+    },
+    {
+      "fold": 3,
+      "method": "shared_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1473,
+          1473
+        ],
+        "plaba_checklist_by_endpoint": [
+          723,
+          723
+        ],
+        "zhan": 1329,
+        "onestop": 1562
+      },
+      "initial_task_loss": {
+        "plaba": 0.41612765192985535,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862943649291992
+      },
+      "final_task_loss": {
+        "plaba": 0.1889752745628357,
+        "zhan": 0.4815552234649658,
+        "onestop": 0.5012161135673523
+      },
+      "seconds": 0.821772949000092
+    },
+    {
+      "fold": 4,
+      "method": "linear",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1451,
+          1451
+        ],
+        "plaba_checklist_by_endpoint": [
+          759,
+          759
+        ],
+        "zhan": 1288,
+        "onestop": 1562
+      },
+      "initial_task_loss": {
+        "plaba": 0.4151577949523926,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862942457199097
+      },
+      "final_task_loss": {
+        "plaba": 0.2554606795310974,
+        "zhan": 0.4803728461265564,
+        "onestop": 0.7447392344474792
+      },
+      "seconds": 0.5075400160000072
+    },
+    {
+      "fold": 4,
+      "method": "independent_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1451,
+          1451
+        ],
+        "plaba_checklist_by_endpoint": [
+          759,
+          759
+        ],
+        "zhan": 1288,
+        "onestop": 1562
+      },
+      "initial_task_loss": {
+        "plaba": 0.4151577949523926,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862942457199097
+      },
+      "final_task_loss": {
+        "plaba": 0.17086613178253174,
+        "zhan": 0.46133166551589966,
+        "onestop": 0.49761056900024414
+      },
+      "seconds": 0.8141334939999751
+    },
+    {
+      "fold": 4,
+      "method": "shared_adapter",
+      "updates": 160,
+      "training_trials_or_counts": {
+        "plaba_ratings_by_endpoint": [
+          1451,
+          1451
+        ],
+        "plaba_checklist_by_endpoint": [
+          759,
+          759
+        ],
+        "zhan": 1288,
+        "onestop": 1562
+      },
+      "initial_task_loss": {
+        "plaba": 0.4151577949523926,
+        "zhan": 0.6931471824645996,
+        "onestop": 1.3862942457199097
+      },
+      "final_task_loss": {
+        "plaba": 0.18274344503879547,
+        "zhan": 0.46174949407577515,
+        "onestop": 0.5452754497528076
+      },
+      "seconds": 0.8184312490000138
+    }
+  ]
+}

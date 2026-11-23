@@ -1,0 +1,26 @@
+{
+  "schema": "cogllm-narrative-character-en-decisions-v1",
+  "weights_sha256": "571895011d9c618e13f2bff0a5f172e33fa5a1e7f825bd79f1ffebb18b99d22c",
+  "source_decisions_sha256": "fc493fff4c0cd4c9cc71bd7ad66b86d0167dbef38524748e641ad41337528df8",
+  "target": "An English narrative character has insufficient setup in this summary",
+  "calibration_books": 11,
+  "calibration_words": 9280,
+  "settings": {
+    "balanced": {
+      "cutoff": 0.2746196853500068,
+      "inclusive": true,
+      "criterion": "maximum F1 on measured book-development words",
+      "development_tp_fp_fn_tn": [
+        157,
+        75,
+        94,
+        8954
+      ]
+    },
+    "high_recall": {
+      "cutoff": 0.0520363396339581,
+      "inclusive": false,
+      "criterion": "historical 95th percentile of book-development negative-word scores"
+    }
+  }
+}

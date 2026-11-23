@@ -1,0 +1,2282 @@
+{
+  "registered_endpoint_schemas": 62,
+  "observed_likelihoods": [
+    "categorical",
+    "choice",
+    "first_event",
+    "gaussian",
+    "hurdle_ordinal",
+    "known_error_gaussian",
+    "ordered_choice",
+    "ordinal",
+    "ordinal_binary",
+    "paired_gaussian"
+  ],
+  "per_seed": {
+    "1729": {
+      "held_rows": 13484,
+      "evaluated_endpoints": 56,
+      "max_density_loss_error": 3.545254241288376e-08,
+      "real_hidden_projection_max_error": 0.0,
+      "endpoints": {
+        "ambistory_joint": {
+          "rows": 258,
+          "likelihood": "ordinal_binary",
+          "max_absolute_per_unit_nll_error": 7.105427357601002e-16,
+          "mean_signed_per_unit_nll_error": -1.5112084480589912e-17
+        },
+        "blott_2021_sentence_end_sense": {
+          "rows": 12,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.220446049250313e-16,
+          "mean_signed_per_unit_nll_error": 3.700743415417188e-17
+        },
+        "blott_2023_sense_response_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 3.739698609263685e-16,
+          "mean_signed_per_unit_nll_error": 0.0
+        },
+        "blott_2023_sentence_end_sense": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 9.349246523159212e-17,
+          "mean_signed_per_unit_nll_error": -9.125120750343752e-18
+        },
+        "clear_excerpt_easiness": {
+          "rows": 80,
+          "likelihood": "known_error_gaussian",
+          "max_absolute_per_unit_nll_error": 8.881784197001252e-16,
+          "mean_signed_per_unit_nll_error": 8.118505867571457e-17
+        },
+        "complex_word_difficulty": {
+          "rows": 803,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": 6.272485281452772e-17
+        },
+        "context_first_readback": {
+          "rows": 217,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 7.456317122401125e-18
+        },
+        "currie_end_coherence_report": {
+          "rows": 4,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.5967252488991015e-16,
+          "mean_signed_per_unit_nll_error": 3.991813122247754e-17
+        },
+        "cwi_native_marked": {
+          "rows": 266,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 6.8860718741889034e-18
+        },
+        "cwi_nonnative_marked": {
+          "rows": 266,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 7.760036365892098e-18
+        },
+        "czech_exp2_qcor": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.3664283380001927e-16,
+          "mean_signed_per_unit_nll_error": 1.0395346672520193e-17
+        },
+        "czech_exp2_qmis": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.0898315757650005e-16,
+          "mean_signed_per_unit_nll_error": 2.9890619893754213e-17
+        },
+        "czech_exp2_qpos": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4802973661668753e-16,
+          "mean_signed_per_unit_nll_error": -7.736745816203181e-19
+        },
+        "czech_exp3_qcor": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -1.6885521287074624e-17
+        },
+        "czech_exp3_qmis": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.3684757858670006e-16,
+          "mean_signed_per_unit_nll_error": 3.220494269905034e-17
+        },
+        "czech_exp3_qpos": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.0898315757650005e-16,
+          "mean_signed_per_unit_nll_error": 3.088590369257954e-17
+        },
+        "first_readback_end_acceptability": {
+          "rows": 2,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.5789838572446671e-16,
+          "mean_signed_per_unit_nll_error": 0.0
+        },
+        "first_readback_risk": {
+          "rows": 156,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -7.425635238112792e-18
+        },
+        "frick_after_first_report": {
+          "rows": 27,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.5376526277146434e-16,
+          "mean_signed_per_unit_nll_error": 2.169841961111321e-17
+        },
+        "frick_first_report": {
+          "rows": 2,
+          "likelihood": "first_event",
+          "max_absolute_per_unit_nll_error": 0.0,
+          "mean_signed_per_unit_nll_error": 0.0
+        },
+        "frick_log_keypress_seconds": {
+          "rows": 32,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.842170943040401e-16,
+          "mean_signed_per_unit_nll_error": 3.918434204559376e-17
+        },
+        "kerwer_comprehensibility": {
+          "rows": 3,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 5.465713352000771e-16,
+          "mean_signed_per_unit_nll_error": -1.7121511705062656e-16
+        },
+        "kerwer_confusion": {
+          "rows": 3,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 1.3664283380001927e-16,
+          "mean_signed_per_unit_nll_error": -4.280377926265664e-17
+        },
+        "kerwer_frustration": {
+          "rows": 3,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.49313240617579e-16,
+          "mean_signed_per_unit_nll_error": -8.560755852531328e-17
+        },
+        "oliver_first_confirmation_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 5.465713352000771e-16,
+          "mean_signed_per_unit_nll_error": 1.708035422500241e-16
+        },
+        "oliver_first_definition_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 5.465713352000771e-16,
+          "mean_signed_per_unit_nll_error": -2.7328566760003855e-16
+        },
+        "oliver_first_delay_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": 1.1584935909132068e-16
+        },
+        "oliver_retest_initial_state": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.3158198810372225e-16,
+          "mean_signed_per_unit_nll_error": 2.1350442781253012e-17
+        },
+        "oliver_retest_target_confirmation": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4210854715202004e-16,
+          "mean_signed_per_unit_nll_error": -2.5620531337503614e-17
+        },
+        "oliver_retrieval_protocol_path": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.7328566760003855e-16,
+          "mean_signed_per_unit_nll_error": 3.416070845000482e-17
+        },
+        "oliver_second_confirmation_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 8.526512829121202e-16,
+          "mean_signed_per_unit_nll_error": -1.1956247957501685e-16
+        },
+        "oliver_second_definition_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 5.26327952414889e-16,
+          "mean_signed_per_unit_nll_error": 1.708035422500241e-17
+        },
+        "onestop_answer_choice": {
+          "rows": 192,
+          "likelihood": "choice",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": -1.699320956058913e-18
+        },
+        "onestop_rereading_first_read_correct": {
+          "rows": 22,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -1.3457248783335231e-17
+        },
+        "onestop_rereading_reread_correct": {
+          "rows": 22,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -1.3457248783335231e-17
+        },
+        "plaba_open_book_accuracy": {
+          "rows": 24,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4802973661668753e-16,
+          "mean_signed_per_unit_nll_error": -2.3900634557902677e-17
+        },
+        "plaba_overall_perceived_understanding": {
+          "rows": 6,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 9.868649107779169e-17
+        },
+        "plaba_overall_processing_ease": {
+          "rows": 6,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 9.868649107779169e-17
+        },
+        "plaba_perceived_understanding": {
+          "rows": 45,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 5.921189464667501e-16,
+          "mean_signed_per_unit_nll_error": 2.1382073066854867e-17
+        },
+        "plaba_processing_ease": {
+          "rows": 45,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -2.1382073066854867e-17
+        },
+        "plaba_quiz_confidence": {
+          "rows": 24,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 3.0839528461809905e-17
+        },
+        "plaba_quiz_effort": {
+          "rows": 24,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 4.9343245538895844e-17
+        },
+        "race_answer_choice": {
+          "rows": 143,
+          "likelihood": "choice",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": -1.2698629366627607e-17
+        },
+        "rodger_paired_effectiveness": {
+          "rows": 301,
+          "likelihood": "paired_gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": -6.860514371437845e-17
+        },
+        "rodger_paired_support": {
+          "rows": 301,
+          "likelihood": "paired_gaussian",
+          "max_absolute_per_unit_nll_error": 8.881784197001252e-16,
+          "mean_signed_per_unit_nll_error": 1.401610462981925e-17
+        },
+        "scarecrow_retrospective_contradiction_mark_ordinal": {
+          "rows": 9553,
+          "likelihood": "hurdle_ordinal",
+          "max_absolute_per_unit_nll_error": 3.545254241288376e-08,
+          "mean_signed_per_unit_nll_error": 3.4144795099020962e-12
+        },
+        "studentannotations_comprehension_difficulty": {
+          "rows": 89,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": 7.026728003956687e-18
+        },
+        "textcomplexityde_complexity": {
+          "rows": 59,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 3.9474596431116675e-16,
+          "mean_signed_per_unit_nll_error": 4.5030024775006347e-17
+        },
+        "textcomplexityde_lexical_difficulty": {
+          "rows": 59,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 3.9474596431116675e-16,
+          "mean_signed_per_unit_nll_error": 8.759907226888027e-17
+        },
+        "textcomplexityde_understandability": {
+          "rows": 59,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 3.9474596431116675e-16,
+          "mean_signed_per_unit_nll_error": 3.105518950000438e-17
+        },
+        "turkish_comprehension_correct": {
+          "rows": 86,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -1.2665645913727275e-17
+        },
+        "turkish_sentence_comparison": {
+          "rows": 53,
+          "likelihood": "ordered_choice",
+          "max_absolute_per_unit_nll_error": 2.220446049250313e-16,
+          "mean_signed_per_unit_nll_error": -9.426421907194725e-18
+        },
+        "yadav_full_sentence_difficulty": {
+          "rows": 15,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 2.5559091214392094e-17
+        },
+        "yadav_paced_words_difficulty": {
+          "rows": 16,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.3684757858670006e-16,
+          "mean_signed_per_unit_nll_error": 7.370775267220956e-17
+        },
+        "zhan_reference_form": {
+          "rows": 2,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.8698493046318425e-16,
+          "mean_signed_per_unit_nll_error": -1.8219044506669235e-16
+        },
+        "zhan_remention": {
+          "rows": 4,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 0.0
+        }
+      },
+      "example_native_forecasts": {
+        "ambistory_joint": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "1|0",
+            "1|1",
+            "2|0",
+            "2|1",
+            "3|0",
+            "3|1",
+            "4|0",
+            "4|1",
+            "5|0",
+            "5|1"
+          ],
+          "probabilities": [
+            0.16771323186201567,
+            0.006625663038417989,
+            0.15258853432855307,
+            0.0016330890819746607,
+            0.15030597988323727,
+            0.003393299164900492,
+            0.18015934382017557,
+            0.001858281136034381,
+            0.33259079403117137,
+            0.0031317836535195574
+          ]
+        },
+        "blott_2021_sentence_end_sense": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.5342536188614485,
+            0.4657463811385513
+          ]
+        },
+        "blott_2023_sense_response_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            6.721802198201014
+          ],
+          "covariance": [
+            [
+              0.3171988833977939
+            ]
+          ]
+        },
+        "blott_2023_sentence_end_sense": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.12562780321048972,
+            0.8743721967895103
+          ]
+        },
+        "clear_excerpt_easiness": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            -0.44092639682940893
+          ],
+          "covariance": [
+            [
+              0.27818029714125236
+            ]
+          ]
+        },
+        "complex_word_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            0.2809416131604053
+          ],
+          "covariance": [
+            [
+              0.016479308352141814
+            ]
+          ]
+        },
+        "context_first_readback": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.9424802278519585,
+            0.057519772148041416
+          ]
+        },
+        "currie_end_coherence_report": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.33374443130383125,
+            0.6662555686961688
+          ]
+        },
+        "cwi_native_marked": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.9251684409447758,
+            0.07483155905522414
+          ]
+        },
+        "cwi_nonnative_marked": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.9315315119273906,
+            0.06846848807260951
+          ]
+        },
+        "czech_exp2_qcor": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.06892495198112919,
+            0.8851100996164483,
+            0.04596494840242258
+          ]
+        },
+        "czech_exp2_qmis": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.8228459893970651,
+            0.13337392021693048,
+            0.043780090386004306
+          ]
+        },
+        "czech_exp2_qpos": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.06281499368334957,
+            0.8822202924190525,
+            0.05496471389759795
+          ]
+        },
+        "czech_exp3_qcor": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.06502155370576791,
+            0.8837441471557996,
+            0.05123429913843249
+          ]
+        },
+        "czech_exp3_qmis": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.777905288317792,
+            0.17529807386102916,
+            0.04679663782117889
+          ]
+        },
+        "czech_exp3_qpos": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.06220593651339586,
+            0.8827999008504814,
+            0.05499416263612273
+          ]
+        },
+        "first_readback_end_acceptability": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.46868538415480154,
+            0.5313146158451985
+          ]
+        },
+        "first_readback_risk": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.9402595817353292,
+            0.05974041826467089
+          ]
+        },
+        "frick_after_first_report": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.8963052190476591,
+            0.10369478095234082
+          ]
+        },
+        "frick_first_report": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "first_report_at_site_1",
+            "first_report_at_site_2",
+            "first_report_at_site_3",
+            "first_report_at_site_4",
+            "first_report_at_site_5",
+            "first_report_at_site_6",
+            "first_report_at_site_7",
+            "first_report_at_site_8",
+            "first_report_at_site_9",
+            "first_report_at_site_10",
+            "first_report_at_site_11",
+            "first_report_at_site_12",
+            "first_report_at_site_13",
+            "first_report_at_site_14",
+            "first_report_at_site_15",
+            "first_report_at_site_16",
+            "no_report"
+          ],
+          "probabilities": [
+            0.06337729064898028,
+            0.06278247403640075,
+            0.05622800632083435,
+            0.052952429048636195,
+            0.04874942967935933,
+            0.0468354663408532,
+            0.042496898417163205,
+            0.040113228253222076,
+            0.03795408502276343,
+            0.037466056373173594,
+            0.04528204001048224,
+            0.029631723706606727,
+            0.028204799823823023,
+            0.02602955273380121,
+            0.024413737401220766,
+            0.02258238134830289,
+            0.3349004008343767
+          ]
+        },
+        "frick_log_keypress_seconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            0.9078702724376615
+          ],
+          "covariance": [
+            [
+              0.6037746187241628
+            ]
+          ]
+        },
+        "kerwer_comprehensibility": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "probabilities": [
+            0.0443858371799202,
+            0.051689781039230866,
+            0.09533797666090624,
+            0.11552439591240429,
+            0.15466448685271295,
+            0.19468068972242406,
+            0.15286395479262838,
+            0.1908528778397729
+          ]
+        },
+        "kerwer_confusion": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.4851664826177915,
+            0.19376387647799692,
+            0.14990100337585477,
+            0.0856355722992352,
+            0.0855330652291215
+          ]
+        },
+        "kerwer_frustration": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.647038508293649,
+            0.1495074573706219,
+            0.08864476721843761,
+            0.05361289319870704,
+            0.061196373918584505
+          ]
+        },
+        "oliver_first_confirmation_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            7.5845440748981146
+          ],
+          "covariance": [
+            [
+              0.2989009357801656
+            ]
+          ]
+        },
+        "oliver_first_definition_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            8.946019661719712
+          ],
+          "covariance": [
+            [
+              0.28102132785217626
+            ]
+          ]
+        },
+        "oliver_first_delay_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            8.677318947329415
+          ],
+          "covariance": [
+            [
+              0.33438636771770025
+            ]
+          ]
+        },
+        "oliver_retest_initial_state": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "know",
+            "dont_know",
+            "tot"
+          ],
+          "probabilities": [
+            0.7844140166823854,
+            0.10309669004809902,
+            0.11248929326951554
+          ]
+        },
+        "oliver_retest_target_confirmation": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.14562637411187415,
+            0.8543736258881258
+          ]
+        },
+        "oliver_retrieval_protocol_path": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "know|delay_None|confirmation_False",
+            "know|delay_None|confirmation_True",
+            "dont_know|delay_False|confirmation_False",
+            "dont_know|delay_False|confirmation_True",
+            "dont_know|delay_True|confirmation_False",
+            "dont_know|delay_True|confirmation_True",
+            "tot|delay_False|confirmation_False",
+            "tot|delay_False|confirmation_True",
+            "tot|delay_True|confirmation_False",
+            "tot|delay_True|confirmation_True"
+          ],
+          "probabilities": [
+            0.09692646501780947,
+            0.40495648687217606,
+            0.20379587313410938,
+            0.029909211225274016,
+            0.022942857731719363,
+            0.022097725106700196,
+            0.07835885574729806,
+            0.06902005802378225,
+            0.021567556010649684,
+            0.050424911130481594
+          ]
+        },
+        "oliver_second_confirmation_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            7.117654172297111
+          ],
+          "covariance": [
+            [
+              0.24399007197937805
+            ]
+          ]
+        },
+        "oliver_second_definition_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            8.330769115195123
+          ],
+          "covariance": [
+            [
+              0.3020850791695898
+            ]
+          ]
+        },
+        "onestop_answer_choice": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "probabilities": [
+            0.2574125848075906,
+            0.30834533734975944,
+            0.31098287342783704,
+            0.12325920441481292
+          ]
+        },
+        "onestop_rereading_first_read_correct": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.17513519125006136,
+            0.8248648087499387
+          ]
+        },
+        "onestop_rereading_reread_correct": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.11196259938894722,
+            0.8880374006110529
+          ]
+        },
+        "plaba_open_book_accuracy": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.1503532731500514,
+            0.8496467268499485
+          ]
+        },
+        "plaba_overall_perceived_understanding": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.15525900538113863,
+            0.1347712635146824,
+            0.18543197048601426,
+            0.19221696598731314,
+            0.3323207946308515
+          ]
+        },
+        "plaba_overall_processing_ease": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.23107071497751697,
+            0.16670441707187267,
+            0.19441621361480932,
+            0.16942209524328772,
+            0.23838655909251336
+          ]
+        },
+        "plaba_perceived_understanding": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.06903639144080775,
+            0.08441702342655506,
+            0.1472821534490367,
+            0.20697643899840198,
+            0.49228799268519846
+          ]
+        },
+        "plaba_processing_ease": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.09305040487092817,
+            0.1063263222832249,
+            0.17529474633618053,
+            0.21301819314998702,
+            0.4123103333596795
+          ]
+        },
+        "plaba_quiz_confidence": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.1204917456216123,
+            0.11537165205626926,
+            0.1723235210078773,
+            0.19698808559275216,
+            0.394824995721489
+          ]
+        },
+        "plaba_quiz_effort": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.22146757309536932,
+            0.16193788762515507,
+            0.19265639812517824,
+            0.172659402368434,
+            0.2512787387858634
+          ]
+        },
+        "race_answer_choice": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "probabilities": [
+            0.2776679681451509,
+            0.1610483596391065,
+            0.1381205656820645,
+            0.42316310653367806
+          ]
+        },
+        "rodger_paired_effectiveness": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            49.022720958834455,
+            43.63130828109604
+          ],
+          "covariance": [
+            [
+              739.7568426122125,
+              407.0071082015151
+            ],
+            [
+              407.00710820151505,
+              840.7143971080852
+            ]
+          ]
+        },
+        "rodger_paired_support": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            49.328839883551055,
+            41.162769150398816
+          ],
+          "covariance": [
+            [
+              757.7690277591763,
+              469.2109332136688
+            ],
+            [
+              469.21093321366885,
+              1018.3192096818444
+            ]
+          ]
+        },
+        "scarecrow_retrospective_contradiction_mark_ordinal": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "unmarked",
+            "severity_1",
+            "severity_2",
+            "severity_3"
+          ],
+          "probabilities": [
+            0.9957011468042415,
+            0.0008260242022779852,
+            0.0024381408312227626,
+            0.0010346881622577777
+          ]
+        },
+        "studentannotations_comprehension_difficulty": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.5437472274094101,
+            0.21706192251186784,
+            0.13382110840867803,
+            0.06177178232625008,
+            0.043597959343793874
+          ]
+        },
+        "textcomplexityde_complexity": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            3.4696806035169705
+          ],
+          "covariance": [
+            [
+              2.356016061626426
+            ]
+          ]
+        },
+        "textcomplexityde_lexical_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            4.216443726383599
+          ],
+          "covariance": [
+            [
+              2.500199959751138
+            ]
+          ]
+        },
+        "textcomplexityde_understandability": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            3.2760315792953687
+          ],
+          "covariance": [
+            [
+              2.6153238089508943
+            ]
+          ]
+        },
+        "turkish_comprehension_correct": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.42102614876997857,
+            0.5789738512300215
+          ]
+        },
+        "turkish_sentence_comparison": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.4674081249001033,
+            0.5325918750998967
+          ]
+        },
+        "yadav_full_sentence_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            25.47946027093591
+          ],
+          "covariance": [
+            [
+              593.3558320672677
+            ]
+          ]
+        },
+        "yadav_paced_words_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            26.21700744380604
+          ],
+          "covariance": [
+            [
+              563.1965164096532
+            ]
+          ]
+        },
+        "zhan_reference_form": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "name",
+            "overtPro",
+            "nullPro"
+          ],
+          "probabilities": [
+            0.6250529166449723,
+            0.3363937215184028,
+            0.03855336183662503
+          ]
+        },
+        "zhan_remention": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "np1",
+            "np2"
+          ],
+          "probabilities": [
+            0.25936935324468235,
+            0.7406306467553176
+          ]
+        }
+      }
+    },
+    "2718": {
+      "held_rows": 13484,
+      "evaluated_endpoints": 56,
+      "max_density_loss_error": 4.4074840577223994e-08,
+      "real_hidden_projection_max_error": 0.0,
+      "endpoints": {
+        "ambistory_joint": {
+          "rows": 258,
+          "likelihood": "ordinal_binary",
+          "max_absolute_per_unit_nll_error": 7.105427357601002e-16,
+          "mean_signed_per_unit_nll_error": -6.869129309359051e-19
+        },
+        "blott_2021_sentence_end_sense": {
+          "rows": 12,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4802973661668753e-16,
+          "mean_signed_per_unit_nll_error": 1.850371707708594e-17
+        },
+        "blott_2023_sense_response_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.0301221021717148e-16,
+          "mean_signed_per_unit_nll_error": 2.4333655334250005e-17
+        },
+        "blott_2023_sentence_end_sense": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 9.349246523159212e-17,
+          "mean_signed_per_unit_nll_error": 3.0417069167812506e-18
+        },
+        "clear_excerpt_easiness": {
+          "rows": 80,
+          "likelihood": "known_error_gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": 8.465450562766818e-17
+        },
+        "complex_word_difficulty": {
+          "rows": 803,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": 5.855121118420728e-17
+        },
+        "context_first_readback": {
+          "rows": 217,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 6.911026860116436e-18
+        },
+        "currie_end_coherence_report": {
+          "rows": 4,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.5967252488991015e-16,
+          "mean_signed_per_unit_nll_error": 7.983626244495507e-17
+        },
+        "cwi_native_marked": {
+          "rows": 266,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": -1.0228265754548372e-18
+        },
+        "cwi_nonnative_marked": {
+          "rows": 266,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": 5.176558912395842e-18
+        },
+        "czech_exp2_qcor": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.1102230246251565e-16,
+          "mean_signed_per_unit_nll_error": -1.4969299208429077e-17
+        },
+        "czech_exp2_qmis": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 4.179663151530001e-16,
+          "mean_signed_per_unit_nll_error": -5.693451408334136e-18
+        },
+        "czech_exp2_qpos": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.4223047810003414e-16,
+          "mean_signed_per_unit_nll_error": -3.0946983264812724e-17
+        },
+        "czech_exp3_qcor": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.220446049250313e-16,
+          "mean_signed_per_unit_nll_error": 8.442760643537312e-18
+        },
+        "czech_exp3_qmis": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 4.0679927619853064e-17
+        },
+        "czech_exp3_qpos": {
+          "rows": 20,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.0185873175002846e-16,
+          "mean_signed_per_unit_nll_error": 3.3390166154140044e-18
+        },
+        "first_readback_end_acceptability": {
+          "rows": 2,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.5789838572446671e-16,
+          "mean_signed_per_unit_nll_error": -7.894919286223336e-17
+        },
+        "first_readback_risk": {
+          "rows": 156,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": 1.3945705203285e-18
+        },
+        "frick_after_first_report": {
+          "rows": 27,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4802973661668753e-16,
+          "mean_signed_per_unit_nll_error": -1.8171468013547108e-17
+        },
+        "frick_first_report": {
+          "rows": 2,
+          "likelihood": "first_event",
+          "max_absolute_per_unit_nll_error": 5.684341886080802e-16,
+          "mean_signed_per_unit_nll_error": -2.7864421010200007e-16
+        },
+        "frick_log_keypress_seconds": {
+          "rows": 32,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.842170943040401e-16,
+          "mean_signed_per_unit_nll_error": 3.483052626275001e-17
+        },
+        "kerwer_comprehensibility": {
+          "rows": 3,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 0.0,
+          "mean_signed_per_unit_nll_error": 0.0
+        },
+        "kerwer_confusion": {
+          "rows": 3,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.7328566760003855e-16,
+          "mean_signed_per_unit_nll_error": 8.560755852531328e-17
+        },
+        "kerwer_frustration": {
+          "rows": 3,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.49313240617579e-16,
+          "mean_signed_per_unit_nll_error": -1.284113377879699e-16
+        },
+        "oliver_first_confirmation_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.7328566760003855e-16,
+          "mean_signed_per_unit_nll_error": -3.416070845000482e-17
+        },
+        "oliver_first_definition_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 1.6397140056002313e-15,
+          "mean_signed_per_unit_nll_error": 5.636516894250794e-16
+        },
+        "oliver_first_delay_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": 3.37893964016352e-16
+        },
+        "oliver_retest_initial_state": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4210854715202004e-16,
+          "mean_signed_per_unit_nll_error": 2.5620531337503614e-17
+        },
+        "oliver_retest_target_confirmation": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.3158198810372225e-16,
+          "mean_signed_per_unit_nll_error": -1.2810265668751807e-17
+        },
+        "oliver_retrieval_protocol_path": {
+          "rows": 8,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.7328566760003855e-16,
+          "mean_signed_per_unit_nll_error": 0.0
+        },
+        "oliver_second_confirmation_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 5.26327952414889e-16,
+          "mean_signed_per_unit_nll_error": 8.540177112501205e-17
+        },
+        "oliver_second_definition_rt_log_milliseconds": {
+          "rows": 8,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 5.26327952414889e-16,
+          "mean_signed_per_unit_nll_error": 1.3664283380001927e-16
+        },
+        "onestop_answer_choice": {
+          "rows": 192,
+          "likelihood": "choice",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": 4.5315225494904345e-18
+        },
+        "onestop_rereading_first_read_correct": {
+          "rows": 22,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 8.41078048958452e-18
+        },
+        "onestop_rereading_reread_correct": {
+          "rows": 22,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -2.186802927291975e-17
+        },
+        "plaba_open_book_accuracy": {
+          "rows": 24,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.4802973661668753e-16,
+          "mean_signed_per_unit_nll_error": 2.0045693500176437e-17
+        },
+        "plaba_overall_perceived_understanding": {
+          "rows": 6,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 0.0
+        },
+        "plaba_overall_processing_ease": {
+          "rows": 6,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 9.868649107779169e-17
+        },
+        "plaba_perceived_understanding": {
+          "rows": 45,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 1.4802973661668754e-17
+        },
+        "plaba_processing_ease": {
+          "rows": 45,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 3.2895497025930565e-18
+        },
+        "plaba_quiz_confidence": {
+          "rows": 24,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 1.850371707708594e-17
+        },
+        "plaba_quiz_effort": {
+          "rows": 24,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": -3.700743415417188e-17
+        },
+        "race_answer_choice": {
+          "rows": 143,
+          "likelihood": "choice",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": -1.0884539457109378e-17
+        },
+        "rodger_paired_effectiveness": {
+          "rows": 301,
+          "likelihood": "paired_gaussian",
+          "max_absolute_per_unit_nll_error": 1.7763568394002505e-15,
+          "mean_signed_per_unit_nll_error": 7.37689717358908e-19
+        },
+        "rodger_paired_support": {
+          "rows": 301,
+          "likelihood": "paired_gaussian",
+          "max_absolute_per_unit_nll_error": 2.6645352591003757e-15,
+          "mean_signed_per_unit_nll_error": -7.45066614532497e-17
+        },
+        "scarecrow_retrospective_contradiction_mark_ordinal": {
+          "rows": 9553,
+          "likelihood": "hurdle_ordinal",
+          "max_absolute_per_unit_nll_error": 4.4074840577223994e-08,
+          "mean_signed_per_unit_nll_error": -6.1963425302973645e-12
+        },
+        "studentannotations_comprehension_difficulty": {
+          "rows": 89,
+          "likelihood": "ordinal",
+          "max_absolute_per_unit_nll_error": 4.440892098500626e-16,
+          "mean_signed_per_unit_nll_error": 6.0898309367624624e-18
+        },
+        "textcomplexityde_complexity": {
+          "rows": 59,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 7.894919286223335e-16,
+          "mean_signed_per_unit_nll_error": 7.608521427501073e-17
+        },
+        "textcomplexityde_lexical_difficulty": {
+          "rows": 59,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 5.075305255429287e-16,
+          "mean_signed_per_unit_nll_error": 3.1992704654721495e-17
+        },
+        "textcomplexityde_understandability": {
+          "rows": 59,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 3.9474596431116675e-16,
+          "mean_signed_per_unit_nll_error": 4.347726530000613e-17
+        },
+        "turkish_comprehension_correct": {
+          "rows": 86,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 2.6645352591003756e-16,
+          "mean_signed_per_unit_nll_error": 9.10343300049148e-18
+        },
+        "turkish_sentence_comparison": {
+          "rows": 53,
+          "likelihood": "ordered_choice",
+          "max_absolute_per_unit_nll_error": 2.220446049250313e-16,
+          "mean_signed_per_unit_nll_error": -1.67580833905684e-17
+        },
+        "yadav_full_sentence_difficulty": {
+          "rows": 15,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.9605947323337506e-16,
+          "mean_signed_per_unit_nll_error": 7.667727364317628e-17
+        },
+        "yadav_paced_words_difficulty": {
+          "rows": 16,
+          "likelihood": "gaussian",
+          "max_absolute_per_unit_nll_error": 2.2920733411616134e-16,
+          "mean_signed_per_unit_nll_error": 1.4741550534441913e-17
+        },
+        "zhan_reference_form": {
+          "rows": 2,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 3.552713678800501e-16,
+          "mean_signed_per_unit_nll_error": -1.8219044506669235e-16
+        },
+        "zhan_remention": {
+          "rows": 4,
+          "likelihood": "categorical",
+          "max_absolute_per_unit_nll_error": 1.3158198810372225e-16,
+          "mean_signed_per_unit_nll_error": 0.0
+        }
+      },
+      "example_native_forecasts": {
+        "ambistory_joint": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "1|0",
+            "1|1",
+            "2|0",
+            "2|1",
+            "3|0",
+            "3|1",
+            "4|0",
+            "4|1",
+            "5|0",
+            "5|1"
+          ],
+          "probabilities": [
+            0.16007435023030006,
+            0.005860161706056041,
+            0.14758731617110082,
+            0.0014633391911528049,
+            0.14809321343278511,
+            0.0031575119144567356,
+            0.18126939931176722,
+            0.0017240403412550913,
+            0.3478378891751865,
+            0.002932778525939644
+          ]
+        },
+        "blott_2021_sentence_end_sense": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.5746647995031909,
+            0.42533520049680895
+          ]
+        },
+        "blott_2023_sense_response_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            6.689583614564332
+          ],
+          "covariance": [
+            [
+              0.2940978115879249
+            ]
+          ]
+        },
+        "blott_2023_sentence_end_sense": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.11806339180131183,
+            0.8819366081986881
+          ]
+        },
+        "clear_excerpt_easiness": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            -0.4284646573298055
+          ],
+          "covariance": [
+            [
+              0.28289837554713104
+            ]
+          ]
+        },
+        "complex_word_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            0.290268650684586
+          ],
+          "covariance": [
+            [
+              0.016587108567913976
+            ]
+          ]
+        },
+        "context_first_readback": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.9458944344312329,
+            0.054105565568766965
+          ]
+        },
+        "currie_end_coherence_report": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.39630036987740974,
+            0.6036996301225902
+          ]
+        },
+        "cwi_native_marked": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.938990618639006,
+            0.061009381360993965
+          ]
+        },
+        "cwi_nonnative_marked": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.950538328195399,
+            0.04946167180460113
+          ]
+        },
+        "czech_exp2_qcor": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.07157970642761066,
+            0.8799653066664505,
+            0.048454986905938885
+          ]
+        },
+        "czech_exp2_qmis": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.8188571387908768,
+            0.13258889804280574,
+            0.048553963166317306
+          ]
+        },
+        "czech_exp2_qpos": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.058119323129788,
+            0.8910078068448283,
+            0.05087287002538374
+          ]
+        },
+        "czech_exp3_qcor": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.06744922297043376,
+            0.8819182975107229,
+            0.05063247951884338
+          ]
+        },
+        "czech_exp3_qmis": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.7746259264925569,
+            0.17536731776803835,
+            0.05000675573940473
+          ]
+        },
+        "czech_exp3_qpos": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "no",
+            "yes",
+            "unsure"
+          ],
+          "probabilities": [
+            0.06330434994505767,
+            0.8843013412865862,
+            0.05239430876835618
+          ]
+        },
+        "first_readback_end_acceptability": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.45818855831461686,
+            0.5418114416853832
+          ]
+        },
+        "first_readback_risk": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.9481092567244052,
+            0.051890743275594745
+          ]
+        },
+        "frick_after_first_report": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.896766696908842,
+            0.10323330309115798
+          ]
+        },
+        "frick_first_report": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "first_report_at_site_1",
+            "first_report_at_site_2",
+            "first_report_at_site_3",
+            "first_report_at_site_4",
+            "first_report_at_site_5",
+            "first_report_at_site_6",
+            "first_report_at_site_7",
+            "first_report_at_site_8",
+            "first_report_at_site_9",
+            "first_report_at_site_10",
+            "first_report_at_site_11",
+            "first_report_at_site_12",
+            "first_report_at_site_13",
+            "first_report_at_site_14",
+            "first_report_at_site_15",
+            "first_report_at_site_16",
+            "no_report"
+          ],
+          "probabilities": [
+            0.0652544494279445,
+            0.06105797158383106,
+            0.05716310982758425,
+            0.053924806114148995,
+            0.04980029535888104,
+            0.04697234176429786,
+            0.043499242211443856,
+            0.040668125779959666,
+            0.038618313346699316,
+            0.03590637400583015,
+            0.03314524771533989,
+            0.03093993002591226,
+            0.02895008057526623,
+            0.027017192868735197,
+            0.025400341706055214,
+            0.02361749619047039,
+            0.33806468149760016
+          ]
+        },
+        "frick_log_keypress_seconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            0.9146590415766098
+          ],
+          "covariance": [
+            [
+              0.5873277890590094
+            ]
+          ]
+        },
+        "kerwer_comprehensibility": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5,
+            6,
+            7,
+            8
+          ],
+          "probabilities": [
+            0.04740498248490162,
+            0.05500681231312422,
+            0.10011515270121675,
+            0.11971423238926053,
+            0.1569308956647206,
+            0.19284088903445484,
+            0.1476339285955772,
+            0.18035310681674419
+          ]
+        },
+        "kerwer_confusion": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.43507469293648154,
+            0.19833621953475045,
+            0.16415903422859146,
+            0.09810497408433305,
+            0.10432507921584355
+          ]
+        },
+        "kerwer_frustration": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.6494011633208904,
+            0.14946077440841535,
+            0.0882806443409007,
+            0.05307194103633225,
+            0.0597854768934613
+          ]
+        },
+        "oliver_first_confirmation_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            7.581245527880925
+          ],
+          "covariance": [
+            [
+              0.30309577596275716
+            ]
+          ]
+        },
+        "oliver_first_definition_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            8.934673931454515
+          ],
+          "covariance": [
+            [
+              0.2828910124209341
+            ]
+          ]
+        },
+        "oliver_first_delay_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            8.664303966901267
+          ],
+          "covariance": [
+            [
+              0.3489003727141582
+            ]
+          ]
+        },
+        "oliver_retest_initial_state": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "know",
+            "dont_know",
+            "tot"
+          ],
+          "probabilities": [
+            0.7906063457903032,
+            0.09891652186136898,
+            0.1104771323483279
+          ]
+        },
+        "oliver_retest_target_confirmation": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.1398880423499341,
+            0.860111957650066
+          ]
+        },
+        "oliver_retrieval_protocol_path": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "know|delay_None|confirmation_False",
+            "know|delay_None|confirmation_True",
+            "dont_know|delay_False|confirmation_False",
+            "dont_know|delay_False|confirmation_True",
+            "dont_know|delay_True|confirmation_False",
+            "dont_know|delay_True|confirmation_True",
+            "tot|delay_False|confirmation_False",
+            "tot|delay_False|confirmation_True",
+            "tot|delay_True|confirmation_False",
+            "tot|delay_True|confirmation_True"
+          ],
+          "probabilities": [
+            0.09352021318442261,
+            0.4135022741917862,
+            0.20416813437706952,
+            0.02969502750786521,
+            0.02095303108238124,
+            0.01912092605286494,
+            0.0790204897709029,
+            0.06871455327950457,
+            0.02151804229788167,
+            0.04978730825532109
+          ]
+        },
+        "oliver_second_confirmation_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            7.1065481749076405
+          ],
+          "covariance": [
+            [
+              0.2561525973363608
+            ]
+          ]
+        },
+        "oliver_second_definition_rt_log_milliseconds": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            8.318170287908547
+          ],
+          "covariance": [
+            [
+              0.3063071188797665
+            ]
+          ]
+        },
+        "onestop_answer_choice": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "A",
+            "B",
+            "C",
+            "D"
+          ],
+          "probabilities": [
+            0.30603729488044684,
+            0.2844871742126851,
+            0.2860210937284303,
+            0.12345443717843779
+          ]
+        },
+        "onestop_rereading_first_read_correct": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.18331820198969118,
+            0.8166817980103087
+          ]
+        },
+        "onestop_rereading_reread_correct": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.14048305095517333,
+            0.8595169490448268
+          ]
+        },
+        "plaba_open_book_accuracy": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.154965022426558,
+            0.8450349775734421
+          ]
+        },
+        "plaba_overall_perceived_understanding": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.14543974727038578,
+            0.12790011692606656,
+            0.1801592621954073,
+            0.19292824503005251,
+            0.3535726285780878
+          ]
+        },
+        "plaba_overall_processing_ease": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.22714775072278431,
+            0.16510119888643177,
+            0.19410300032858802,
+            0.17063858707985585,
+            0.24300946298234
+          ]
+        },
+        "plaba_perceived_understanding": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.06125966821641362,
+            0.07623637972184015,
+            0.13843428016883289,
+            0.20186457337830105,
+            0.5222050985146124
+          ]
+        },
+        "plaba_processing_ease": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.08686549215652457,
+            0.10113090841640963,
+            0.17013449633570968,
+            0.2128063636579178,
+            0.42906273943343826
+          ]
+        },
+        "plaba_quiz_confidence": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.12023183444070648,
+            0.11448735465099462,
+            0.17156185008052666,
+            0.19687899797747327,
+            0.39683996285029915
+          ]
+        },
+        "plaba_quiz_effort": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.23625683300902595,
+            0.16888961784913625,
+            0.19470963327730717,
+            0.16821473160667108,
+            0.2319291842578595
+          ]
+        },
+        "race_answer_choice": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1,
+            2,
+            3
+          ],
+          "probabilities": [
+            0.3274515476796067,
+            0.1566203749795282,
+            0.11849915414544658,
+            0.3974289231954186
+          ]
+        },
+        "rodger_paired_effectiveness": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            50.071982557244894,
+            43.07030729729793
+          ],
+          "covariance": [
+            [
+              731.2468333937794,
+              396.33193473879936
+            ],
+            [
+              396.3319347387994,
+              831.4498223342576
+            ]
+          ]
+        },
+        "rodger_paired_support": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            50.96410438723124,
+            39.265337927526616
+          ],
+          "covariance": [
+            [
+              753.0523708056335,
+              455.31781049871756
+            ],
+            [
+              455.3178104987177,
+              971.4073674460504
+            ]
+          ]
+        },
+        "scarecrow_retrospective_contradiction_mark_ordinal": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "unmarked",
+            "severity_1",
+            "severity_2",
+            "severity_3"
+          ],
+          "probabilities": [
+            0.9931297781802876,
+            0.000804709498633943,
+            0.00361290633339672,
+            0.002452605987681631
+          ]
+        },
+        "studentannotations_comprehension_difficulty": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            1,
+            2,
+            3,
+            4,
+            5
+          ],
+          "probabilities": [
+            0.5311131088638563,
+            0.22019849396758476,
+            0.13818771523432535,
+            0.06471215253956596,
+            0.04578852939466764
+          ]
+        },
+        "textcomplexityde_complexity": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            3.322746960272307
+          ],
+          "covariance": [
+            [
+              2.344558329519536
+            ]
+          ]
+        },
+        "textcomplexityde_lexical_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            4.0961815219659945
+          ],
+          "covariance": [
+            [
+              2.466588081079783
+            ]
+          ]
+        },
+        "textcomplexityde_understandability": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            3.123150259372708
+          ],
+          "covariance": [
+            [
+              2.45584247106928
+            ]
+          ]
+        },
+        "turkish_comprehension_correct": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.4020689567380175,
+            0.5979310432619824
+          ]
+        },
+        "turkish_sentence_comparison": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            0,
+            1
+          ],
+          "probabilities": [
+            0.39937848919241586,
+            0.6006215108075841
+          ]
+        },
+        "yadav_full_sentence_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            25.106805349810962
+          ],
+          "covariance": [
+            [
+              580.5198233313089
+            ]
+          ]
+        },
+        "yadav_paced_words_difficulty": {
+          "forecast_type": "native_scale_gaussian",
+          "mean": [
+            26.697184204076365
+          ],
+          "covariance": [
+            [
+              586.6657605101062
+            ]
+          ]
+        },
+        "zhan_reference_form": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "name",
+            "overtPro",
+            "nullPro"
+          ],
+          "probabilities": [
+            0.5727895206150969,
+            0.37380108796410927,
+            0.05340939142079391
+          ]
+        },
+        "zhan_remention": {
+          "forecast_type": "finite_categories",
+          "labels": [
+            "np1",
+            "np2"
+          ],
+          "probabilities": [
+            0.2762031442456779,
+            0.7237968557543221
+          ]
+        }
+      }
+    }
+  },
+  "projection_rows_replayed_per_seed": 71,
+  "raw_Qwen_shard_sha256": "c840b104834e7b380298215bd3995d36f79f17bcf7fa0a07c7b20b34b2d869f7",
+  "projection_sha256": "b38abeb8ea5ac9bceff597b4a1617e17e79e1592d363e68a85eee799bb1f670f",
+  "inference_sha256": "9064b4061270edc597849c296880eab99eb92ea3ea48b54f3338ac544a1ec187",
+  "serving_schema_sha256": "60b62bc1a927b5e2ecb53755a456cd713cdc6b9513c0fd4c4b75e8cb0d172c00"
+}

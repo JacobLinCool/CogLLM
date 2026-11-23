@@ -1,0 +1,35 @@
+{
+  "gpu": "NVIDIA L4",
+  "torch": "2.14.1+cu130",
+  "predictions_sha256": "693d30cb1ff01fb99eae88fc485f64b51dffe0f214c38d800d0f8d019e9bf680",
+  "train_questions": 151,
+  "heldout_questions": 55,
+  "train_papers": 60,
+  "heldout_papers": 23,
+  "methods": {
+    "position": {
+      "objective": 3.12853282863588,
+      "gradient_max": 1.451931893825531e-06
+    },
+    "body": {
+      "objective": 2.7457753361992925,
+      "gradient_max": 3.846362233161926e-06
+    }
+  },
+  "fit_wall_s": 2.0316047259993866,
+  "max_lbfgs_steps": 120,
+  "penalty": 0.012,
+  "projection_seed": 43,
+  "position_features": [
+    "body paragraph index",
+    "visible characters",
+    "segment characters"
+  ],
+  "question_features": "fixed pooled question states interact only with the visible paper prefix",
+  "feature_file_sha256": "077a589373c05bb57d9cd6e8664d3cc0fed8a7b6f641a760be45c6f41afd6da0",
+  "source_sha256": {
+    "stimuli": "35a44eba37ea8d1d84ba8e443efecd06cc45d8bf3a80c0e9807bed2fe6c28c2f",
+    "train": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+    "eval": "31abe613fbab7d9c43a921770bbec0943d764ca06a896d93a00e68eaf096f0e7"
+  }
+}

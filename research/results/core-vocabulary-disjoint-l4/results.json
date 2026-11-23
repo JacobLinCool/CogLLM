@@ -1,0 +1,950 @@
+{
+  "forecast_seal_sha256": "5be18acb0422e93262ad9cdf5c3a6d477aa6855900985a1a1ce86ed65f6ff57e",
+  "holdout": {
+    "outcome_counts": [
+      153,
+      229,
+      195,
+      193,
+      200,
+      150,
+      483
+    ],
+    "readers": 195,
+    "targets": 32,
+    "trials": 1603
+  },
+  "paired_changes_from_original8": {
+    "disjoint32": {
+      "cdf_new_minus_original": {
+        "position": [
+          {
+            "exposure": 1,
+            "paired_target_95_ci": [
+              0.0,
+              0.0
+            ],
+            "point": 0.0
+          },
+          {
+            "exposure": 3,
+            "paired_target_95_ci": [
+              0.0,
+              0.0
+            ],
+            "point": 0.0
+          },
+          {
+            "exposure": 6,
+            "paired_target_95_ci": [
+              0.0,
+              0.0
+            ],
+            "point": 0.0
+          }
+        ],
+        "qwen": [
+          {
+            "exposure": 1,
+            "paired_target_95_ci": [
+              -3.323783251792287e-05,
+              0.0007387099854532953
+            ],
+            "point": 0.0003519263535258694
+          },
+          {
+            "exposure": 3,
+            "paired_target_95_ci": [
+              -0.0005038448790230827,
+              0.0014606651267313076
+            ],
+            "point": 0.0004776447420926661
+          },
+          {
+            "exposure": 6,
+            "paired_target_95_ci": [
+              4.437264579246961e-05,
+              0.0014248173577763445
+            ],
+            "point": 0.0007146590482968729
+          }
+        ],
+        "surface": [
+          {
+            "exposure": 1,
+            "paired_target_95_ci": [
+              -0.0004662569866828306,
+              6.646060617857653e-05
+            ],
+            "point": -0.00020252683976501292
+          },
+          {
+            "exposure": 3,
+            "paired_target_95_ci": [
+              -0.00012533980448400695,
+              0.0011665992543463304
+            ],
+            "point": 0.0005140263931198621
+          },
+          {
+            "exposure": 6,
+            "paired_target_95_ci": [
+              2.33560194383944e-05,
+              0.0009331930364719728
+            ],
+            "point": 0.00046104722719304825
+          }
+        ]
+      },
+      "gain_over_surface_nll_nats_new_minus_original": {
+        "paired_crossed_95_ci": [
+          -0.00012386027246405145,
+          0.0018497244385017873
+        ],
+        "paired_target_95_ci": [
+          4.234751289945511e-05,
+          0.001653722438194986
+        ],
+        "point": 0.0008636049614689577
+      },
+      "nll_nats_new_minus_original": {
+        "position": {
+          "paired_crossed_95_ci": [
+            -0.0,
+            0.0
+          ],
+          "paired_target_95_ci": [
+            0.0,
+            0.0
+          ],
+          "point": 0.0
+        },
+        "qwen": {
+          "paired_crossed_95_ci": [
+            -0.0023774453985192824,
+            0.0003714565786012143
+          ],
+          "paired_target_95_ci": [
+            -0.0020697764431853623,
+            8.522979536239997e-05
+          ],
+          "point": -0.000985687187019969
+        },
+        "surface": {
+          "paired_crossed_95_ci": [
+            -0.001141482848220967,
+            0.0008967269836177362
+          ],
+          "paired_target_95_ci": [
+            -0.000918826743540697,
+            0.0007128295040966115
+          ],
+          "point": -0.00012208222555101125
+        }
+      }
+    },
+    "pooled40": {
+      "cdf_new_minus_original": {
+        "position": [
+          {
+            "exposure": 1,
+            "paired_target_95_ci": [
+              0.0,
+              0.0
+            ],
+            "point": 0.0
+          },
+          {
+            "exposure": 3,
+            "paired_target_95_ci": [
+              0.0,
+              0.0
+            ],
+            "point": 0.0
+          },
+          {
+            "exposure": 6,
+            "paired_target_95_ci": [
+              0.0,
+              0.0
+            ],
+            "point": 0.0
+          }
+        ],
+        "qwen": [
+          {
+            "exposure": 1,
+            "paired_target_95_ci": [
+              -2.6590266014336143e-05,
+              0.0005909679883626397
+            ],
+            "point": 0.0002815410828206988
+          },
+          {
+            "exposure": 3,
+            "paired_target_95_ci": [
+              -0.0004030759032184628,
+              0.0011685321013850472
+            ],
+            "point": 0.0003821157936741322
+          },
+          {
+            "exposure": 6,
+            "paired_target_95_ci": [
+              3.5498116633992115e-05,
+              0.0011398538862210867
+            ],
+            "point": 0.0005717272386375205
+          }
+        ],
+        "surface": [
+          {
+            "exposure": 1,
+            "paired_target_95_ci": [
+              -0.0003730055893462606,
+              5.316848494286385e-05
+            ],
+            "point": -0.00016202147181200704
+          },
+          {
+            "exposure": 3,
+            "paired_target_95_ci": [
+              -0.00010027184358718501,
+              0.000933279403477082
+            ],
+            "point": 0.00041122111449590736
+          },
+          {
+            "exposure": 6,
+            "paired_target_95_ci": [
+              1.8684815550757223e-05,
+              0.0007465544291775946
+            ],
+            "point": 0.0003688377817544636
+          }
+        ]
+      },
+      "gain_over_surface_nll_nats_new_minus_original": {
+        "paired_crossed_95_ci": [
+          -9.352259538474315e-05,
+          0.0014841511487562122
+        ],
+        "paired_target_95_ci": [
+          3.929043292978347e-05,
+          0.0013297385191924462
+        ],
+        "point": 0.0006959144423674972
+      },
+      "nll_nats_new_minus_original": {
+        "position": {
+          "paired_crossed_95_ci": [
+            -0.0,
+            0.0
+          ],
+          "paired_target_95_ci": [
+            0.0,
+            0.0
+          ],
+          "point": 0.0
+        },
+        "qwen": {
+          "paired_crossed_95_ci": [
+            -0.0019143336929316394,
+            0.00028626380379242073
+          ],
+          "paired_target_95_ci": [
+            -0.0016672850135976082,
+            5.703152033038348e-05
+          ],
+          "point": -0.0008002873890183912
+        },
+        "surface": {
+          "paired_crossed_95_ci": [
+            -0.000918699640784516,
+            0.0007115006905117271
+          ],
+          "paired_target_95_ci": [
+            -0.0007422837910981237,
+            0.0005637691129966809
+          ],
+          "point": -0.00010437294665089397
+        }
+      }
+    }
+  },
+  "panels": {
+    "disjoint32": {
+      "bootstrap": {
+        "cdf_gate_interval": "crossed",
+        "crossed": "shared readers crossed with paired target resampling within condition",
+        "draws": 10000,
+        "interval": 0.95,
+        "nll_gate_interval": "target",
+        "seed": 735972,
+        "target": "paired target resampling within condition, conditional on observed readers"
+      },
+      "cdf_calibration": {
+        "position": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.0761814637844736,
+            "paired_crossed_95_ci": [
+              -0.053073088368988504,
+              0.01309525295190278
+            ],
+            "paired_target_95_ci": [
+              -0.04517495941831905,
+              0.006797910804064241
+            ],
+            "signed_model_minus_human": -0.017292564526546046,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.34500607004640305,
+            "paired_crossed_95_ci": [
+              -0.0710385415878437,
+              0.04272299093707745
+            ],
+            "paired_target_95_ci": [
+              -0.058684783911850724,
+              0.030663578379737697
+            ],
+            "signed_model_minus_human": -0.01321422055207825,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7140626905096374,
+            "paired_crossed_95_ci": [
+              -0.0403665524284684,
+              0.07231772065154392
+            ],
+            "paired_target_95_ci": [
+              -0.026530911042182158,
+              0.05931464691965421
+            ],
+            "signed_model_minus_human": 0.015130891675438095,
+            "within_margin": false
+          }
+        ],
+        "qwen": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.07551271650598942,
+            "paired_crossed_95_ci": [
+              -0.053597184471932895,
+              0.012128066257907463
+            ],
+            "paired_target_95_ci": [
+              -0.04565642149388279,
+              0.005996280963527466
+            ],
+            "signed_model_minus_human": -0.01796131180503022,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.3444763664813469,
+            "paired_crossed_95_ci": [
+              -0.07147352562300968,
+              0.042180028003684235
+            ],
+            "paired_target_95_ci": [
+              -0.05920811609356083,
+              0.030380112558221945
+            ],
+            "signed_model_minus_human": -0.013743924117134418,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7150030697419673,
+            "paired_crossed_95_ci": [
+              -0.03906812101227575,
+              0.073126015457028
+            ],
+            "paired_target_95_ci": [
+              -0.025133899068429433,
+              0.05981840517382473
+            ],
+            "signed_model_minus_human": 0.016071270907767887,
+            "within_margin": false
+          }
+        ],
+        "surface": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.07596709507400216,
+            "paired_crossed_95_ci": [
+              -0.05325189466298547,
+              0.012867774985076763
+            ],
+            "paired_target_95_ci": [
+              -0.04528470222792076,
+              0.006561602154891897
+            ],
+            "signed_model_minus_human": -0.01750693323701749,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.3455168039861514,
+            "paired_crossed_95_ci": [
+              -0.07063718205618733,
+              0.04314815129510207
+            ],
+            "paired_target_95_ci": [
+              -0.058368491766385276,
+              0.03157681898157087
+            ],
+            "signed_model_minus_human": -0.012703486612329895,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7147831887248477,
+            "paired_crossed_95_ci": [
+              -0.039707661190330444,
+              0.07325963269636397
+            ],
+            "paired_target_95_ci": [
+              -0.025711313425478673,
+              0.060023267856418386
+            ],
+            "signed_model_minus_human": 0.015851389890648306,
+            "within_margin": false
+          }
+        ]
+      },
+      "cdf_margin": 0.05,
+      "paired_nll_superiority": {
+        "position": {
+          "control_minus_qwen_nll_nats": 0.005355723002072828,
+          "paired_crossed_95_ci": [
+            0.0028392598297895255,
+            0.007900666784620302
+          ],
+          "paired_target_95_ci": [
+            0.0031936363405633272,
+            0.007568809253523517
+          ],
+          "passes": true
+        },
+        "surface": {
+          "control_minus_qwen_nll_nats": 0.004747581058222622,
+          "paired_crossed_95_ci": [
+            0.0027571515382382563,
+            0.006745761007282463
+          ],
+          "paired_target_95_ci": [
+            0.003048604391926596,
+            0.0064700656961794835
+          ],
+          "passes": true
+        }
+      },
+      "passes_nll": true,
+      "passes_qwen_cdf": false,
+      "target_macro_nll_nats": {
+        "position": 1.8676549581749364,
+        "qwen": 1.8622992351728636,
+        "surface": 1.867046816231086
+      }
+    },
+    "original8": {
+      "bootstrap": {
+        "cdf_gate_interval": "crossed",
+        "crossed": "shared readers crossed with paired target resampling within condition",
+        "draws": 10000,
+        "interval": 0.95,
+        "nll_gate_interval": "target",
+        "seed": 735972,
+        "target": "paired target resampling within condition, conditional on observed readers"
+      },
+      "cdf_calibration": {
+        "position": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.0761814637844736,
+            "paired_crossed_95_ci": [
+              -0.053073088368988504,
+              0.01309525295190278
+            ],
+            "paired_target_95_ci": [
+              -0.04517495941831905,
+              0.006797910804064241
+            ],
+            "signed_model_minus_human": -0.017292564526546046,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.34500607004640305,
+            "paired_crossed_95_ci": [
+              -0.0710385415878437,
+              0.04272299093707745
+            ],
+            "paired_target_95_ci": [
+              -0.058684783911850724,
+              0.030663578379737697
+            ],
+            "signed_model_minus_human": -0.01321422055207825,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7140626905096374,
+            "paired_crossed_95_ci": [
+              -0.0403665524284684,
+              0.07231772065154392
+            ],
+            "paired_target_95_ci": [
+              -0.026530911042182158,
+              0.05931464691965421
+            ],
+            "signed_model_minus_human": 0.015130891675438095,
+            "within_margin": false
+          }
+        ],
+        "qwen": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.07516079015246356,
+            "paired_crossed_95_ci": [
+              -0.05411454470147232,
+              0.011966538592103781
+            ],
+            "paired_target_95_ci": [
+              -0.04607472699532595,
+              0.005753142104841112
+            ],
+            "signed_model_minus_human": -0.018313238158556094,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.3439987217392542,
+            "paired_crossed_95_ci": [
+              -0.07204166778235226,
+              0.04182839838687537
+            ],
+            "paired_target_95_ci": [
+              -0.05988181458163343,
+              0.030083386337931377
+            ],
+            "signed_model_minus_human": -0.014221568859227093,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7142884106936703,
+            "paired_crossed_95_ci": [
+              -0.040039091992662354,
+              0.07258769713305131
+            ],
+            "paired_target_95_ci": [
+              -0.026222382994126624,
+              0.05952522374742538
+            ],
+            "signed_model_minus_human": 0.015356611859471018,
+            "within_margin": false
+          }
+        ],
+        "surface": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.07616962191376717,
+            "paired_crossed_95_ci": [
+              -0.05313216669321895,
+              0.01297087439615736
+            ],
+            "paired_target_95_ci": [
+              -0.045064454591131044,
+              0.0067904891643542605
+            ],
+            "signed_model_minus_human": -0.017304406397252475,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.34500277759303155,
+            "paired_crossed_95_ci": [
+              -0.07108168159509999,
+              0.0427273972338026
+            ],
+            "paired_target_95_ci": [
+              -0.05898216511242466,
+              0.031380721785359354
+            ],
+            "signed_model_minus_human": -0.013217513005449768,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7143221414976546,
+            "paired_crossed_95_ci": [
+              -0.04034776832198509,
+              0.07281333074942792
+            ],
+            "paired_target_95_ci": [
+              -0.026297481812601473,
+              0.05982111505168774
+            ],
+            "signed_model_minus_human": 0.015390342663455257,
+            "within_margin": false
+          }
+        ]
+      },
+      "cdf_margin": 0.05,
+      "paired_nll_superiority": {
+        "position": {
+          "control_minus_qwen_nll_nats": 0.004370035815052929,
+          "paired_crossed_95_ci": [
+            0.001785520623568421,
+            0.006914327792970731
+          ],
+          "paired_target_95_ci": [
+            0.0022385945901581164,
+            0.00652406018708249
+          ],
+          "passes": true
+        },
+        "surface": {
+          "control_minus_qwen_nll_nats": 0.0038839760967536927,
+          "paired_crossed_95_ci": [
+            0.0017672730930391623,
+            0.006019355891981126
+          ],
+          "paired_target_95_ci": [
+            0.0020913512205278763,
+            0.005714959011597997
+          ],
+          "passes": true
+        }
+      },
+      "passes_nll": true,
+      "passes_qwen_cdf": false,
+      "target_macro_nll_nats": {
+        "position": 1.8676549581749364,
+        "qwen": 1.8632849223598837,
+        "surface": 1.867168898456637
+      }
+    },
+    "pooled40": {
+      "bootstrap": {
+        "cdf_gate_interval": "crossed",
+        "crossed": "shared readers crossed with paired target resampling within condition",
+        "draws": 10000,
+        "interval": 0.95,
+        "nll_gate_interval": "target",
+        "seed": 735972,
+        "target": "paired target resampling within condition, conditional on observed readers"
+      },
+      "cdf_calibration": {
+        "position": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.0761814637844736,
+            "paired_crossed_95_ci": [
+              -0.053073088368988504,
+              0.01309525295190278
+            ],
+            "paired_target_95_ci": [
+              -0.04517495941831905,
+              0.006797910804064241
+            ],
+            "signed_model_minus_human": -0.017292564526546046,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.34500607004640305,
+            "paired_crossed_95_ci": [
+              -0.0710385415878437,
+              0.04272299093707745
+            ],
+            "paired_target_95_ci": [
+              -0.058684783911850724,
+              0.030663578379737697
+            ],
+            "signed_model_minus_human": -0.01321422055207825,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7140626905096374,
+            "paired_crossed_95_ci": [
+              -0.0403665524284684,
+              0.07231772065154392
+            ],
+            "paired_target_95_ci": [
+              -0.026530911042182158,
+              0.05931464691965421
+            ],
+            "signed_model_minus_human": 0.015130891675438095,
+            "within_margin": false
+          }
+        ],
+        "qwen": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.07544233123528427,
+            "paired_crossed_95_ci": [
+              -0.053656877857841116,
+              0.01208313301279826
+            ],
+            "paired_target_95_ci": [
+              -0.04573398072392788,
+              0.0059674821051249076
+            ],
+            "signed_model_minus_human": -0.01803169707573539,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.34438083753292836,
+            "paired_crossed_95_ci": [
+              -0.07158755175931146,
+              0.04210372793122999
+            ],
+            "paired_target_95_ci": [
+              -0.059379258120010575,
+              0.03034243402389689
+            ],
+            "signed_model_minus_human": -0.013839453065552948,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7148601379323078,
+            "paired_crossed_95_ci": [
+              -0.039326151626533974,
+              0.07296492439860529
+            ],
+            "paired_target_95_ci": [
+              -0.025346822902019523,
+              0.059841185275744786
+            ],
+            "signed_model_minus_human": 0.01592833909810854,
+            "within_margin": false
+          }
+        ],
+        "surface": [
+          {
+            "exposure": 1,
+            "human_cdf": 0.09347402831101964,
+            "human_crossed_95_ci": [
+              0.06308621083257078,
+              0.12925455215346204
+            ],
+            "model_cdf": 0.07600760044195518,
+            "paired_crossed_95_ci": [
+              -0.05323754179544003,
+              0.012890651374973297
+            ],
+            "paired_target_95_ci": [
+              -0.04523493660354341,
+              0.006620292483830219
+            ],
+            "signed_model_minus_human": -0.017466427869064487,
+            "within_margin": false
+          },
+          {
+            "exposure": 3,
+            "human_cdf": 0.35822029059848126,
+            "human_crossed_95_ci": [
+              0.30228307910932534,
+              0.4160446116342465
+            ],
+            "model_cdf": 0.3454139987075274,
+            "paired_crossed_95_ci": [
+              -0.07069697202469165,
+              0.04308866157395432
+            ],
+            "paired_target_95_ci": [
+              -0.058468959161889836,
+              0.03153692928710675
+            ],
+            "signed_model_minus_human": -0.012806291890953852,
+            "within_margin": false
+          },
+          {
+            "exposure": 6,
+            "human_cdf": 0.6989317988341993,
+            "human_crossed_95_ci": [
+              0.6417449698580938,
+              0.7544292429381062
+            ],
+            "model_cdf": 0.7146909792794092,
+            "paired_crossed_95_ci": [
+              -0.03982296539558035,
+              0.07315467057576945
+            ],
+            "paired_target_95_ci": [
+              -0.02583469261450881,
+              0.060018496034960775
+            ],
+            "signed_model_minus_human": 0.015759180445209724,
+            "within_margin": false
+          }
+        ]
+      },
+      "cdf_margin": 0.05,
+      "paired_nll_superiority": {
+        "position": {
+          "control_minus_qwen_nll_nats": 0.005170323204071257,
+          "paired_crossed_95_ci": [
+            0.002692932012416288,
+            0.007680951163720478
+          ],
+          "paired_target_95_ci": [
+            0.0030594729671764966,
+            0.007340655919448777
+          ],
+          "passes": true
+        },
+        "surface": {
+          "control_minus_qwen_nll_nats": 0.004579890539121154,
+          "paired_crossed_95_ci": [
+            0.00259641605503389,
+            0.006581114981746255
+          ],
+          "paired_target_95_ci": [
+            0.002895524494340129,
+            0.0062888039571363675
+          ],
+          "passes": true
+        }
+      },
+      "passes_nll": true,
+      "passes_qwen_cdf": false,
+      "target_macro_nll_nats": {
+        "position": 1.8676549581749364,
+        "qwen": 1.862484634970865,
+        "surface": 1.8670645255099863
+      }
+    }
+  },
+  "primary_panel": "disjoint32"
+}

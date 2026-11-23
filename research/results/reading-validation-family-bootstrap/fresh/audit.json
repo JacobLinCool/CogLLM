@@ -1,0 +1,655 @@
+{
+  "mode": "fresh",
+  "two_level_design": "Draw study with replacement and paired materials with replacement within each draw; single-family effects conditional. Endpoints preserved, duplicate material coordinates resampled jointly across endpoints. Resample two seeds together.",
+  "source_n": 23,
+  "endpoint_n": 57,
+  "raw_observation_count": 251270,
+  "usable_families": 2189,
+  "single_material_sources": 1,
+  "median_held_families_per_source": 6.0,
+  "resamples": {
+    "source_by_material": 20000,
+    "material_per_source": 4000
+  },
+  "max_independent_replay_error": 1.7763568394002505e-15,
+  "analytic_tangent_checks": {
+    "ordinal_binary": {
+      "rows": 17,
+      "max_abs_error": 1.6098567222127755e-11,
+      "min_direct_kl": 4.131062128215259e-05
+    },
+    "categorical": {
+      "rows": 340,
+      "max_abs_error": 1.924352517612693e-11,
+      "min_direct_kl": 1.2057170036655054e-09
+    },
+    "gaussian": {
+      "rows": 180,
+      "max_abs_error": 2.3354086026161625e-11,
+      "min_direct_kl": 4.7555626238288446e-08
+    },
+    "known_error_gaussian": {
+      "rows": 17,
+      "max_abs_error": 1.1090610634728604e-11,
+      "min_direct_kl": 7.366305059618119e-05
+    },
+    "first_event": {
+      "rows": 4,
+      "max_abs_error": 1.5351226732396132e-11,
+      "min_direct_kl": 3.077169819918008e-05
+    },
+    "ordinal": {
+      "rows": 127,
+      "max_abs_error": 1.9464657018348e-11,
+      "min_direct_kl": 2.2739983208425348e-07
+    },
+    "choice": {
+      "rows": 34,
+      "max_abs_error": 1.0043044521013123e-11,
+      "min_direct_kl": 0.0005299370888013329
+    },
+    "paired_gaussian": {
+      "rows": 34,
+      "max_abs_error": 3.2723282417101984e-11,
+      "min_direct_kl": 0.000649653391074756
+    },
+    "hurdle_ordinal": {
+      "rows": 17,
+      "max_abs_error": 3.373684795068832e-13,
+      "min_direct_kl": 9.115126880274994e-06
+    },
+    "ordered_choice": {
+      "rows": 17,
+      "max_abs_error": 7.075421411956162e-12,
+      "min_direct_kl": 7.1461092359394966e-06
+    }
+  },
+  "coefficient_numerics": {
+    "calibrated_endpoint_seed_pairs": 112,
+    "coefficient_quantiles_0_25_50_75_100": [
+      1.2042429324528247e-05,
+      0.1620289362583147,
+      0.40340509704028116,
+      0.7456568275439253,
+      1.0
+    ],
+    "median_calibration_families": 4.0,
+    "grid_refinements": 0,
+    "max_final_coarse_mean_error": 1.7332750683829445e-05,
+    "max_mc_standard_error": 0.005397288948695116,
+    "max_independent_half_mean_difference": 0.019486557517145286,
+    "max_midpoint_derivative_step_error": 3.552713678800501e-10,
+    "min_calibration_kl": 0.0
+  },
+  "effects": {
+    "over_map": {
+      "gain": 0.0009168253354554714,
+      "two_level_nominal_ci": [
+        -0.0007085066251090821,
+        0.002751473552707284
+      ],
+      "two_level_simultaneous_ci": [
+        -0.00093655925267794,
+        0.0030244963491017746
+      ],
+      "exact_source_signflip_p": 0.08022856712341309,
+      "two_comparison_adjusted_exact_p": 0.16045713424682617,
+      "leave_one_source_out_range": [
+        0.0005874761922369504,
+        0.0011855058070730162
+      ],
+      "minimum_after_removing": "yadav",
+      "maximum_after_removing": "onestop",
+      "influences": {
+        "ambistory": 0.0008815289808318965,
+        "blott": 0.0009926765587859735,
+        "clear": 0.0009637691624306538,
+        "complex": 0.0009565155988798014,
+        "context-readback": 0.000849039330651431,
+        "currie": 0.0010364962467568663,
+        "cwi": 0.0009399794867682982,
+        "czech": 0.0009410529189628262,
+        "first-readback": 0.0008392465625544843,
+        "frick": 0.0006648913870674809,
+        "kerwer": 0.0009600781223156087,
+        "oliver": 0.0009525926721458294,
+        "onestop": 0.0011855058070730162,
+        "onestop-rereading": 0.0009582505772500607,
+        "plaba": 0.0008982017944211182,
+        "race": 0.0007564742652566831,
+        "rodger": 0.0007093490147822072,
+        "scarecrow": 0.0009362781829951052,
+        "studentannotations": 0.0009818849220373448,
+        "textcomplexityde": 0.0009721996419688193,
+        "turkish": 0.001004555004572326,
+        "yadav": 0.0005874761922369504,
+        "zhan": 0.0011189402847310605
+      },
+      "median_source_gain": 0.00012994392826759515
+    },
+    "over_midpoint": {
+      "gain": 0.0017679476271251758,
+      "two_level_nominal_ci": [
+        -0.00042644569532377356,
+        0.004537817949955574
+      ],
+      "two_level_simultaneous_ci": [
+        -0.0007139542462904376,
+        0.0050147457540259495
+      ],
+      "exact_source_signflip_p": 0.03940391540527344,
+      "two_comparison_adjusted_exact_p": 0.07880783081054688,
+      "leave_one_source_out_range": [
+        0.0009947853335132138,
+        0.002076163341311134
+      ],
+      "minimum_after_removing": "race",
+      "maximum_after_removing": "onestop",
+      "influences": {
+        "ambistory": 0.0017556267468796327,
+        "blott": 0.0018824272540369313,
+        "clear": 0.0017927224544318234,
+        "complex": 0.001758756459250523,
+        "context-readback": 0.0017373383056826558,
+        "currie": 0.0019298729592138629,
+        "cwi": 0.0018289385895432183,
+        "czech": 0.0018306268440692747,
+        "first-readback": 0.0017090674550063404,
+        "frick": 0.0015433665827531177,
+        "kerwer": 0.0018499164868909172,
+        "oliver": 0.0018422014729793138,
+        "onestop": 0.002076163341311134,
+        "onestop-rereading": 0.001848065157464704,
+        "plaba": 0.0017840032751108607,
+        "race": 0.0009947853335132138,
+        "rodger": 0.001596932299254398,
+        "scarecrow": 0.0018192078613292863,
+        "studentannotations": 0.0018810340628754043,
+        "textcomplexityde": 0.0018575959192085462,
+        "turkish": 0.0019048348786576926,
+        "yadav": 0.0014305737829156306,
+        "zhan": 0.0020087379015005626
+      },
+      "median_source_gain": 0.00042614645392824446
+    }
+  },
+  "sources": {
+    "ambistory": {
+      "families": 57,
+      "endpoints": 1,
+      "raw_observations": 2796,
+      "observed_nll": {
+        "endpoint_map": 1.6574190434139942,
+        "midpoint": 1.6577647052693472,
+        "family_bootstrap": 1.65572569827682
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          0.0001718101824177976,
+          0.0032200157943942606
+        ],
+        "over_midpoint": [
+          0.00021821876096406737,
+          0.0038254274209378217
+        ]
+      }
+    },
+    "blott": {
+      "families": 15,
+      "endpoints": 3,
+      "raw_observations": 1904,
+      "observed_nll": {
+        "endpoint_map": 0.8721923829095024,
+        "midpoint": 0.8721936803223845,
+        "family_bootstrap": 0.872944284487318
+      },
+      "material_resamples_attempted": 4100,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0027498964936558926,
+          0.0011884882479338368
+        ],
+        "over_midpoint": [
+          -0.0027884000384437472,
+          0.0012232320657174038
+        ]
+      }
+    },
+    "clear": {
+      "families": 160,
+      "endpoints": 1,
+      "raw_observations": 162,
+      "observed_nll": {
+        "endpoint_map": 1.1277034253349825,
+        "midpoint": 1.12904226561936,
+        "family_bootstrap": 1.127819364192981
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.004060332857132515,
+          0.004126005343255895
+        ],
+        "over_midpoint": [
+          -0.009501422603675069,
+          0.012657457527151467
+        ]
+      }
+    },
+    "complex": {
+      "families": 1466,
+      "endpoints": 1,
+      "raw_observations": 1631,
+      "observed_nll": {
+        "endpoint_map": 1.3246987927969036,
+        "midpoint": 1.326625306577151,
+        "family_bootstrap": 1.3246551532567834
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -5.100861626693432e-05,
+          0.00015126681225236527
+        ],
+        "over_midpoint": [
+          -0.00048078883548981487,
+          0.0047614646695824
+        ]
+      }
+    },
+    "context-readback": {
+      "families": 6,
+      "endpoints": 1,
+      "raw_observations": 18455,
+      "observed_nll": {
+        "endpoint_map": 0.1270993905109511,
+        "midpoint": 0.12713262576866735,
+        "family_bootstrap": 0.12469127306980674
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.00018406829529593605,
+          0.004609767802289805
+        ],
+        "over_midpoint": [
+          -0.00017509609826138472,
+          0.004663078698441486
+        ]
+      }
+    },
+    "currie": {
+      "families": 4,
+      "endpoints": 1,
+      "raw_observations": 708,
+      "observed_nll": {
+        "endpoint_map": 0.658904693755519,
+        "midpoint": 0.6588262187898682,
+        "family_bootstrap": 0.6606206284686942
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.006356848757691713,
+          0.002374595537259272
+        ],
+        "over_midpoint": [
+          -0.006674592566860094,
+          0.0025099478379904117
+        ]
+      }
+    },
+    "cwi": {
+      "families": 6,
+      "endpoints": 2,
+      "raw_observations": 18860,
+      "observed_nll": {
+        "endpoint_map": 0.3010418603221774,
+        "midpoint": 0.30106057276953235,
+        "family_bootstrap": 0.3006344263156041
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -9.244522253409881e-05,
+          0.0007569249524839172
+        ],
+        "over_midpoint": [
+          -8.377123804148567e-05,
+          0.0007841738812524035
+        ]
+      }
+    },
+    "czech": {
+      "families": 8,
+      "endpoints": 6,
+      "raw_observations": 2654,
+      "observed_nll": {
+        "endpoint_map": 0.4582199447616322,
+        "midpoint": 0.45822513111769353,
+        "family_bootstrap": 0.4578361262633385
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -4.322047791086164e-05,
+          0.0008290320421395839
+        ],
+        "over_midpoint": [
+          -4.474796255485164e-05,
+          0.0008400352836225603
+        ]
+      }
+    },
+    "first-readback": {
+      "families": 14,
+      "endpoints": 2,
+      "raw_observations": 7971,
+      "observed_nll": {
+        "endpoint_map": 0.37547164896496,
+        "midpoint": 0.37591140203942236,
+        "family_bootstrap": 0.3728480906256828
+      },
+      "material_resamples_attempted": 4100,
+      "within_material_intervals": {
+        "over_map": [
+          -0.007962214220024692,
+          0.013135689426677392
+        ],
+        "over_midpoint": [
+          -0.008449914228405476,
+          0.01457641510915307
+        ]
+      }
+    },
+    "frick": {
+      "families": 2,
+      "endpoints": 3,
+      "raw_observations": 2614,
+      "observed_nll": {
+        "endpoint_map": 1.3664320748797067,
+        "midpoint": 1.366681433283026,
+        "family_bootstrap": 1.3599727026797155
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          0.004977694694989765,
+          0.00792351695670268
+        ],
+        "over_midpoint": [
+          0.005141963352568668,
+          0.00825794937331592
+        ]
+      }
+    },
+    "kerwer": {
+      "families": 2,
+      "endpoints": 3,
+      "raw_observations": 993,
+      "observed_nll": {
+        "endpoint_map": 1.4110216263803894,
+        "midpoint": 1.4110209950681358,
+        "family_bootstrap": 1.411056362355857
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0005461379569571267,
+          0.00047358527119389926
+        ],
+        "over_midpoint": [
+          -0.0005503305457685848,
+          0.000476493782024745
+        ]
+      }
+    },
+    "oliver": {
+      "families": 7,
+      "endpoints": 8,
+      "raw_observations": 2581,
+      "observed_nll": {
+        "endpoint_map": 1.2849544578020475,
+        "midpoint": 1.284958876892114,
+        "family_bootstrap": 1.28482451387378
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0004898719365681758,
+          0.0007116466030634427
+        ],
+        "over_midpoint": [
+          -0.0005021653316705788,
+          0.0007304468827720179
+        ]
+      }
+    },
+    "onestop": {
+      "families": 3,
+      "endpoints": 1,
+      "raw_observations": 287,
+      "observed_nll": {
+        "endpoint_map": 1.3683901230490603,
+        "midpoint": 1.3683714700042249,
+        "family_bootstrap": 1.3733842680891908
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.01478668748279377,
+          0.017134814948989607
+        ],
+        "over_midpoint": [
+          -0.015538991621131037,
+          0.018849456047584034
+        ]
+      }
+    },
+    "onestop-rereading": {
+      "families": 5,
+      "endpoints": 2,
+      "raw_observations": 648,
+      "observed_nll": {
+        "endpoint_map": 0.43983507349731354,
+        "midpoint": 0.4398349654409946,
+        "family_bootstrap": 0.43982960348133904
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0004467590947388467,
+          0.0006452845661969464
+        ],
+        "over_midpoint": [
+          -0.00045048217205845287,
+          0.0006495150041141429
+        ]
+      }
+    },
+    "plaba": {
+      "families": 4,
+      "endpoints": 8,
+      "raw_observations": 1626,
+      "observed_nll": {
+        "endpoint_map": 1.4097772538287427,
+        "midpoint": 1.4098654339619716,
+        "family_bootstrap": 1.4084507105905315
+      },
+      "material_resamples_attempted": 4100,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0025087602416915544,
+          0.003923129350625443
+        ],
+        "over_midpoint": [
+          -0.0025594660581045314,
+          0.004064171178281839
+        ]
+      }
+    },
+    "race": {
+      "families": 35,
+      "endpoints": 1,
+      "raw_observations": 315,
+      "observed_nll": {
+        "endpoint_map": 1.0655496276496872,
+        "midpoint": 1.0798825968564467,
+        "family_bootstrap": 1.0611050787698584
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.007075828080753732,
+          0.015123381496389268
+        ],
+        "over_midpoint": [
+          -0.004433931257125267,
+          0.04071713090463057
+        ]
+      }
+    },
+    "rodger": {
+      "families": 1,
+      "endpoints": 2,
+      "raw_observations": 602,
+      "observed_nll": {
+        "endpoint_map": 2.6133341016834644,
+        "midpoint": 2.6133830821334794,
+        "family_bootstrap": 2.607852797293197
+      },
+      "material_resamples_attempted": 0,
+      "within_material_intervals": null
+    },
+    "scarecrow": {
+      "families": 190,
+      "endpoints": 1,
+      "raw_observations": 173574,
+      "observed_nll": {
+        "endpoint_map": 0.04733432949715643,
+        "midpoint": 0.047485689282207644,
+        "family_bootstrap": 0.0468454668075729
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          5.2445233735154424e-05,
+          0.0009937690736800194
+        ],
+        "over_midpoint": [
+          0.00013449724513744517,
+          0.0012256041155147808
+        ]
+      }
+    },
+    "studentannotations": {
+      "families": 182,
+      "endpoints": 1,
+      "raw_observations": 510,
+      "observed_nll": {
+        "endpoint_map": 1.3122940766009148,
+        "midpoint": 1.3120886082108807,
+        "family_bootstrap": 1.3128085621702605
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0018487233578645455,
+          0.0009113980002820882
+        ],
+        "over_midpoint": [
+          -0.0027316030831700754,
+          0.0014340468766682328
+        ]
+      }
+    },
+    "textcomplexityde": {
+      "families": 4,
+      "endpoints": 3,
+      "raw_observations": 4809,
+      "observed_nll": {
+        "endpoint_map": 1.4150677826005726,
+        "midpoint": 1.4151648772097019,
+        "family_bootstrap": 1.4153691920084108
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.003675673397992796,
+          0.0024594625344567245
+        ],
+        "over_midpoint": [
+          -0.0037995623164117642,
+          0.0027250196725983056
+        ]
+      }
+    },
+    "turkish": {
+      "families": 8,
+      "endpoints": 2,
+      "raw_observations": 5895,
+      "observed_nll": {
+        "endpoint_map": 0.6790312671737107,
+        "midpoint": 0.6788009226522358,
+        "family_bootstrap": 0.680044494558826
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.0016633504142509192,
+          -0.00018937398277205558
+        ],
+        "over_midpoint": [
+          -0.0020781294770129354,
+          -0.00020551198582339174
+        ]
+      }
+    },
+    "yadav": {
+      "families": 4,
+      "endpoints": 2,
+      "raw_observations": 1266,
+      "observed_nll": {
+        "endpoint_map": 1.46820029166142,
+        "midpoint": 1.4692279573748923,
+        "family_bootstrap": 1.4600377851751571
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.006406377929015772,
+          0.023435329414914996
+        ],
+        "over_midpoint": [
+          -0.006972224626738077,
+          0.02614441435619641
+        ]
+      }
+    },
+    "zhan": {
+      "families": 6,
+      "endpoints": 2,
+      "raw_observations": 409,
+      "observed_nll": {
+        "endpoint_map": 0.7491101257527917,
+        "midpoint": 0.7491103908922658,
+        "family_bootstrap": 0.7526398293013992
+      },
+      "material_resamples_attempted": 4000,
+      "within_material_intervals": {
+        "over_map": [
+          -0.009563063082090428,
+          0.002683248888223466
+        ],
+        "over_midpoint": [
+          -0.009692652135500524,
+          0.002793884815973202
+        ]
+      }
+    }
+  },
+  "statistics_sha256": "a028bfd3952c5799f146d683bf24027442149698c43162501d0feb09e2973b2c",
+  "original_score_sha256": "6013deb25d28a68b2adf7f3904238ae17251e777d09608bb8ee1685fb000f8a8",
+  "audit_code_sha256": "10177de07325ee43b81b9415434585b3e9c63d44ed1d6490b58e58f4bc1dbff4"
+}

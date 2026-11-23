@@ -1,0 +1,384 @@
+{
+  "design": "descriptive after primary test; source reason types can overlap; fixed thresholds; whole-essay bootstrap",
+  "clean_negative_denominator": 906,
+  "reasons": {
+    "semantic connection": {
+      "positive_examples": 41,
+      "eligible_essays": 29,
+      "integration": {
+        "hits": 7,
+        "sensitivity": {
+          "estimate": 0.17073170731707318,
+          "family_bootstrap_95_interval": [
+            0.06451612903225806,
+            0.2972972972972973
+          ]
+        }
+      },
+      "student": {
+        "hits": 10,
+        "sensitivity": {
+          "estimate": 0.24390243902439024,
+          "family_bootstrap_95_interval": [
+            0.12494517543859654,
+            0.3793103448275862
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 23,
+        "sensitivity": {
+          "estimate": 0.5609756097560976,
+          "family_bootstrap_95_interval": [
+            0.3799827586206897,
+            0.7254901960784313
+          ]
+        }
+      },
+      "directed": {
+        "hits": 21,
+        "sensitivity": {
+          "estimate": 0.5121951219512195,
+          "family_bootstrap_95_interval": [
+            0.3333333333333333,
+            0.6764943074003792
+          ]
+        }
+      },
+      "display": {
+        "hits": 19,
+        "sensitivity": {
+          "estimate": 0.4634146341463415,
+          "family_bootstrap_95_interval": [
+            0.3055555555555556,
+            0.625
+          ]
+        }
+      }
+    },
+    "entity reference": {
+      "positive_examples": 32,
+      "eligible_essays": 22,
+      "integration": {
+        "hits": 6,
+        "sensitivity": {
+          "estimate": 0.1875,
+          "family_bootstrap_95_interval": [
+            0.0625,
+            0.3333333333333333
+          ]
+        }
+      },
+      "student": {
+        "hits": 10,
+        "sensitivity": {
+          "estimate": 0.3125,
+          "family_bootstrap_95_interval": [
+            0.15789473684210525,
+            0.5
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 20,
+        "sensitivity": {
+          "estimate": 0.625,
+          "family_bootstrap_95_interval": [
+            0.4722222222222222,
+            0.7916666666666666
+          ]
+        }
+      },
+      "directed": {
+        "hits": 18,
+        "sensitivity": {
+          "estimate": 0.5625,
+          "family_bootstrap_95_interval": [
+            0.4,
+            0.71875
+          ]
+        }
+      },
+      "display": {
+        "hits": 19,
+        "sensitivity": {
+          "estimate": 0.59375,
+          "family_bootstrap_95_interval": [
+            0.4,
+            0.7714285714285715
+          ]
+        }
+      }
+    },
+    "discourse relation": {
+      "positive_examples": 112,
+      "eligible_essays": 57,
+      "integration": {
+        "hits": 17,
+        "sensitivity": {
+          "estimate": 0.15178571428571427,
+          "family_bootstrap_95_interval": [
+            0.09375,
+            0.21367521367521367
+          ]
+        }
+      },
+      "student": {
+        "hits": 24,
+        "sensitivity": {
+          "estimate": 0.21428571428571427,
+          "family_bootstrap_95_interval": [
+            0.1320754716981132,
+            0.29523809523809524
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 40,
+        "sensitivity": {
+          "estimate": 0.35714285714285715,
+          "family_bootstrap_95_interval": [
+            0.26270972436226675,
+            0.46601941747572817
+          ]
+        }
+      },
+      "directed": {
+        "hits": 43,
+        "sensitivity": {
+          "estimate": 0.38392857142857145,
+          "family_bootstrap_95_interval": [
+            0.2884572072072072,
+            0.47572815533980584
+          ]
+        }
+      },
+      "display": {
+        "hits": 59,
+        "sensitivity": {
+          "estimate": 0.5267857142857143,
+          "family_bootstrap_95_interval": [
+            0.41412121212121217,
+            0.6336633663366337
+          ]
+        }
+      }
+    },
+    "consistency": {
+      "positive_examples": 18,
+      "eligible_essays": 18,
+      "integration": {
+        "hits": 1,
+        "sensitivity": {
+          "estimate": 0.05555555555555555,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.1875
+          ]
+        }
+      },
+      "student": {
+        "hits": 2,
+        "sensitivity": {
+          "estimate": 0.1111111111111111,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.2777777777777778
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 9,
+        "sensitivity": {
+          "estimate": 0.5,
+          "family_bootstrap_95_interval": [
+            0.26666666666666666,
+            0.7368421052631579
+          ]
+        }
+      },
+      "directed": {
+        "hits": 13,
+        "sensitivity": {
+          "estimate": 0.7222222222222222,
+          "family_bootstrap_95_interval": [
+            0.5,
+            0.9285714285714286
+          ]
+        }
+      },
+      "display": {
+        "hits": 8,
+        "sensitivity": {
+          "estimate": 0.4444444444444444,
+          "family_bootstrap_95_interval": [
+            0.21052631578947367,
+            0.6875
+          ]
+        }
+      }
+    },
+    "contextual relevance": {
+      "positive_examples": 7,
+      "eligible_essays": 6,
+      "integration": {
+        "hits": 0,
+        "sensitivity": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "student": {
+        "hits": 1,
+        "sensitivity": {
+          "estimate": 0.14285714285714285,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.5
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 3,
+        "sensitivity": {
+          "estimate": 0.42857142857142855,
+          "family_bootstrap_95_interval": [
+            0.0,
+            1.0
+          ]
+        }
+      },
+      "directed": {
+        "hits": 5,
+        "sensitivity": {
+          "estimate": 0.7142857142857143,
+          "family_bootstrap_95_interval": [
+            0.4,
+            1.0
+          ]
+        }
+      },
+      "display": {
+        "hits": 4,
+        "sensitivity": {
+          "estimate": 0.5714285714285714,
+          "family_bootstrap_95_interval": [
+            0.2,
+            1.0
+          ]
+        }
+      }
+    },
+    "tangential relevance": {
+      "positive_examples": 236,
+      "eligible_essays": 74,
+      "integration": {
+        "hits": 82,
+        "sensitivity": {
+          "estimate": 0.3474576271186441,
+          "family_bootstrap_95_interval": [
+            0.2635621100397051,
+            0.4319277314371667
+          ]
+        }
+      },
+      "student": {
+        "hits": 99,
+        "sensitivity": {
+          "estimate": 0.4194915254237288,
+          "family_bootstrap_95_interval": [
+            0.3257909982174688,
+            0.5114163965282861
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 149,
+        "sensitivity": {
+          "estimate": 0.6313559322033898,
+          "family_bootstrap_95_interval": [
+            0.5486725663716814,
+            0.7067316729323309
+          ]
+        }
+      },
+      "directed": {
+        "hits": 145,
+        "sensitivity": {
+          "estimate": 0.614406779661017,
+          "family_bootstrap_95_interval": [
+            0.5450231042654028,
+            0.6859903381642513
+          ]
+        }
+      },
+      "display": {
+        "hits": 132,
+        "sensitivity": {
+          "estimate": 0.559322033898305,
+          "family_bootstrap_95_interval": [
+            0.4722192417739628,
+            0.6403162055335968
+          ]
+        }
+      }
+    },
+    "other": {
+      "positive_examples": 31,
+      "eligible_essays": 22,
+      "integration": {
+        "hits": 8,
+        "sensitivity": {
+          "estimate": 0.25806451612903225,
+          "family_bootstrap_95_interval": [
+            0.09090909090909091,
+            0.4166666666666667
+          ]
+        }
+      },
+      "student": {
+        "hits": 11,
+        "sensitivity": {
+          "estimate": 0.3548387096774194,
+          "family_bootstrap_95_interval": [
+            0.15384615384615385,
+            0.5588235294117647
+          ]
+        }
+      },
+      "lexical_surprisal": {
+        "hits": 18,
+        "sensitivity": {
+          "estimate": 0.5806451612903226,
+          "family_bootstrap_95_interval": [
+            0.41935483870967744,
+            0.7307692307692307
+          ]
+        }
+      },
+      "directed": {
+        "hits": 19,
+        "sensitivity": {
+          "estimate": 0.6129032258064516,
+          "family_bootstrap_95_interval": [
+            0.4482758620689655,
+            0.8095238095238095
+          ]
+        }
+      },
+      "display": {
+        "hits": 12,
+        "sensitivity": {
+          "estimate": 0.3870967741935484,
+          "family_bootstrap_95_interval": [
+            0.20833333333333334,
+            0.5862576064908714
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,329 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "mean": "equal questions or pairs",
+    "seed": 20261121,
+    "unit": "normalized Wikipedia title family"
+  },
+  "input_sha256": {
+    "articles_sha256": "7c8bfcc152a6845c255abdfa0d2e41ac29e27991a5aa653d7fd8f1710abf87b3",
+    "assay_sha256": "c5b67463382008d9266b7196954fa9699b5b19d5a5a766fe219153015204e623",
+    "calibration_sha256": "efab56f7379a00b6b468a82c5a0ac8ad34aa8fe9d1189f434e995bd27bf1f944",
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "outcomes_sha256": "f1b87047a2fef50293dbd037a68ae59cb5e4e59608d563affa9afed27ab2333e",
+    "predictions_sha256": "47dbdecd6367f88d78d8130ff245671531d645b3437b35b76516f9d511c2aa7a",
+    "protocol_sha256": "9241d1f67cfb02000b2dbac1b237ab44ae12d8486d917175aeaac575bfcce157",
+    "queries_sha256": "82783ad331cd82b7250c6a3f4a4b4b3eee06850abd095969f484f2d8f5c15aba",
+    "raw_manifest_sha256": "70396f1836192abfceec936de5612c583639704bdba9f2a16b4adb2dc3f840e3",
+    "scorer_sha256": "8c9c9a3eca347e1cabb3e5406f0616ca0f830c16b4784e51005d5f73f2274e69",
+    "seal_sha256": "c768bd25b1dde642850f23c42fb0ebde43993958cf74d6b4332e43f7c6da9b35",
+    "span_maps_sha256": "4c90f3c791688500683dbda9c099a283ed30a32e226e023270792a4f4edbff2a"
+  },
+  "inventory": {
+    "article_families": 16,
+    "articles": 16,
+    "censored_long_answers": 79,
+    "excluded_questions": 0,
+    "exclusion_reasons": {},
+    "invalid_long_answers": 0,
+    "non_null_source_tags": {
+      "<Li>": 9,
+      "<P>": 46,
+      "<Table>": 30,
+      "<Ul>": 6
+    },
+    "observed_long_answers": 91,
+    "scored_questions": 34,
+    "unforecasted_outcomes": 119,
+    "validated_questions": 34
+  },
+  "pair_rule": "Identical article revision and certified stop. Each question has at least two non-null boxes. All earlier boxes end before or at the beginning of every later box in source coordinates. No later box has begun at the stop. Rank log cumulative intensity with half credit for ties.",
+  "per_question": {
+    "cumulative_brier": {
+      "calibrated_token_minus": {
+        "pooled_rank": {
+          "article_cluster_ci95": [
+            -0.0026386373340398033,
+            -0.0006757677830408462
+          ],
+          "articles": 16,
+          "difference": -0.0016336690971849993
+        },
+        "position": {
+          "article_cluster_ci95": [
+            0.00019069002818713208,
+            0.012446209154475299
+          ],
+          "articles": 16,
+          "difference": 0.006322822512748732
+        },
+        "question_only": {
+          "article_cluster_ci95": [
+            0.04630654079473158,
+            0.09428212259965753
+          ],
+          "articles": 16,
+          "difference": 0.06953049388461938
+        }
+      },
+      "means": {
+        "calibrated": {
+          "pooled_rank": 0.5044657987400993,
+          "position": 0.49650930713016567,
+          "question_only": 0.433301635758295,
+          "token_rank": 0.5028321296429143
+        },
+        "raw": {
+          "pooled_rank": 0.35799678137527136,
+          "position": 0.2980030246477783,
+          "question_only": 0.42572457684250226,
+          "token_rank": 0.3515301051266217
+        }
+      }
+    },
+    "first_stop": {
+      "mean_predicted": {
+        "calibrated": {
+          "pooled_rank": 0.26994336929311863,
+          "position": 0.22993708463790943,
+          "question_only": 0.04692883657004509,
+          "token_rank": 0.26422171905474867
+        },
+        "raw": {
+          "pooled_rank": 0.01788945331889327,
+          "position": 0.004280849009248717,
+          "question_only": 0.03000805306740062,
+          "token_rank": 0.01672849964164308
+        }
+      },
+      "mean_prediction_minus_observed": {
+        "calibrated": {
+          "pooled_rank": 0.2522963104695892,
+          "position": 0.21229002581438003,
+          "question_only": 0.029281777746515678,
+          "token_rank": 0.24657466023121927
+        },
+        "raw": {
+          "pooled_rank": 0.00024239449536385752,
+          "position": -0.013366209814280695,
+          "question_only": 0.012360994243871208,
+          "token_rank": -0.0009185591818863317
+        }
+      },
+      "observed_reference_fraction": 0.01764705882352941
+    },
+    "interval_nll_nats": {
+      "calibrated_token_minus": {
+        "pooled_rank": {
+          "article_cluster_ci95": [
+            -0.32355704956985404,
+            0.8239179530491523
+          ],
+          "articles": 16,
+          "difference": 0.2273196232573909
+        },
+        "position": {
+          "article_cluster_ci95": [
+            -2.0554777959492934,
+            3.835953751287071
+          ],
+          "articles": 16,
+          "difference": 0.7062849779497482
+        },
+        "question_only": {
+          "article_cluster_ci95": [
+            8.070829217650552,
+            19.538345590665813
+          ],
+          "articles": 16,
+          "difference": 13.41312949427493
+        }
+      },
+      "means": {
+        "calibrated": {
+          "pooled_rank": 26.982618824871217,
+          "position": 26.50365347017886,
+          "question_only": 13.796808953853677,
+          "token_rank": 27.20993844812861
+        },
+        "raw": {
+          "pooled_rank": 8.398625222289398,
+          "position": 4.50693056393188,
+          "question_only": 16.18977065121572,
+          "token_rank": 7.776436087738932
+        }
+      }
+    },
+    "interval_nll_nats_by_non_null_source_tag": {
+      "<Li>": {
+        "means": {
+          "calibrated": {
+            "pooled_rank": 12.074345535890735,
+            "position": 11.305918694841136,
+            "question_only": 5.757175195119489,
+            "token_rank": 11.465578283605952
+          },
+          "raw": {
+            "pooled_rank": 4.639257423239832,
+            "position": 4.760605787918758,
+            "question_only": 5.660120900183331,
+            "token_rank": 4.480447836288318
+          }
+        },
+        "references": 9
+      },
+      "<P>": {
+        "means": {
+          "calibrated": {
+            "pooled_rank": 7.555991397807299,
+            "position": 5.700856723495583,
+            "question_only": 4.010039311852104,
+            "token_rank": 7.603102907245162
+          },
+          "raw": {
+            "pooled_rank": 4.907890159875517,
+            "position": 5.068792544695376,
+            "question_only": 4.154676622726621,
+            "token_rank": 4.823902475956242
+          }
+        },
+        "references": 46
+      },
+      "<Table>": {
+        "means": {
+          "calibrated": {
+            "pooled_rank": 11.671666201988353,
+            "position": 12.905464352330716,
+            "question_only": 7.634242280108907,
+            "token_rank": 11.790957179382302
+          },
+          "raw": {
+            "pooled_rank": 3.420874089132716,
+            "position": 3.1557536211317676,
+            "question_only": 8.410022276365599,
+            "token_rank": 3.3930839018583083
+          }
+        },
+        "references": 30
+      },
+      "<Ul>": {
+        "means": {
+          "calibrated": {
+            "pooled_rank": 19.68104214453088,
+            "position": 18.55816724410481,
+            "question_only": 9.06649788551833,
+            "token_rank": 19.36138317664024
+          },
+          "raw": {
+            "pooled_rank": 5.659463708084027,
+            "position": 4.046963482102494,
+            "question_only": 9.49350707595824,
+            "token_rank": 5.32219988985815
+          }
+        },
+        "references": 6
+      }
+    }
+  },
+  "primary_superiority": false,
+  "reference_rule": "Five equally weighted original judgments per scored question. Null is right-censored after the final stop.",
+  "same_article": {
+    "article_families": 2,
+    "articles": 2,
+    "excluded_pair_reasons": {
+      "fewer_than_two_non_null_per_question": 10,
+      "overlapping_source_windows": 7
+    },
+    "pairs": 3,
+    "same_stop_accuracy": {
+      "calibrated_token_minus": {
+        "pooled_rank": {
+          "article_cluster_ci95": [
+            0.0,
+            1.0
+          ],
+          "articles": 2,
+          "difference": 0.3333333333333333
+        },
+        "position": {
+          "article_cluster_ci95": [
+            -0.5,
+            0.5
+          ],
+          "articles": 2,
+          "difference": -0.16666666666666666
+        },
+        "question_only": {
+          "article_cluster_ci95": [
+            -1.0,
+            1.0
+          ],
+          "articles": 2,
+          "difference": -0.3333333333333333
+        }
+      },
+      "means": {
+        "calibrated": {
+          "pooled_rank": 0.0,
+          "position": 0.5,
+          "question_only": 0.6666666666666666,
+          "token_rank": 0.3333333333333333
+        },
+        "raw": {
+          "pooled_rank": 0.0,
+          "position": 0.5,
+          "question_only": 0.6666666666666666,
+          "token_rank": 0.3333333333333333
+        }
+      }
+    },
+    "wins_ties_losses": {
+      "calibrated": {
+        "pooled_rank": {
+          "losses": 3,
+          "ties": 0,
+          "wins": 0
+        },
+        "position": {
+          "losses": 0,
+          "ties": 3,
+          "wins": 0
+        },
+        "question_only": {
+          "losses": 1,
+          "ties": 0,
+          "wins": 2
+        },
+        "token_rank": {
+          "losses": 2,
+          "ties": 0,
+          "wins": 1
+        }
+      },
+      "raw": {
+        "pooled_rank": {
+          "losses": 3,
+          "ties": 0,
+          "wins": 0
+        },
+        "position": {
+          "losses": 0,
+          "ties": 3,
+          "wins": 0
+        },
+        "question_only": {
+          "losses": 1,
+          "ties": 0,
+          "wins": 2
+        },
+        "token_rank": {
+          "losses": 2,
+          "ties": 0,
+          "wins": 1
+        }
+      }
+    }
+  },
+  "scope": "Arrival of the complete retrospectively annotated long-answer box for an externally supplied question.",
+  "secondary_same_stop_superiority": false
+}

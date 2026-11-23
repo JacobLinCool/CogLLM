@@ -1,0 +1,749 @@
+{
+  "bootstrap": {
+    "paired_by": "article",
+    "replicates": 10000,
+    "seed": 735972
+  },
+  "code_sha256": {
+    "arrau_bridge_rank.py": "3bb51e4daa76f29d8cc67f1376af246a78bdb4b7564f8e4319283046252450d0",
+    "bridge_interaction_fit.py": "8e6d6e80c6192154c22ad3389c97fb8516bff91c6d54d304feffcc87d5128b01",
+    "bridge_rerank.py": "7de878811ab0d981ceb25e962b50f92112d16b029ae053c759bece78533708cd",
+    "gum_bridge_rank.py": "8ed168a99113d01b4833cbc3a04a664428d04d5e13800882ca306201e6011b8e"
+  },
+  "collections": {
+    "gnome": {
+      "intake": {
+        "anchor_not_wholly_earlier": 10,
+        "cross_sentence_rows": 400,
+        "discontinuous_span": 17,
+        "documents": 5,
+        "documents_with_cross_sentence_rows": 5,
+        "documents_with_raw_html": 5,
+        "eligible_link": 549,
+        "missing_anchor": 36,
+        "multiple_anchor_markables": 81,
+        "scoring_rows": 549,
+        "source_bridge_links": 693,
+        "source_sentences": 982,
+        "source_tokens": 21458
+      },
+      "prefix_alignment": {
+        "certified_stops": 21458,
+        "documents": 5,
+        "extractable_documents": 5,
+        "model_tokens": 25594,
+        "original_stops": 21458
+      },
+      "scoring_inventory": {
+        "annotations": 549,
+        "articles": 5,
+        "articles_extracted": 5,
+        "articles_with_annotations": 5,
+        "coverage": {
+          "annotations_with_inaccessible_gold": 28,
+          "candidate_words": 1093541,
+          "exact_gold_spans": 521,
+          "gold_spans": 549,
+          "inaccessible_gold_spans": 28,
+          "uncertified_prior_words": 10328
+        },
+        "median_candidates": 1876.0,
+        "outcomes": {
+          "no_exact_gold": 28,
+          "scored": 521
+        },
+        "sentence_outcomes": {
+          "cross_sentence": {
+            "no_exact_gold": 23,
+            "scored": 377
+          },
+          "unclassified": {
+            "scored": 1
+          },
+          "within_sentence": {
+            "no_exact_gold": 5,
+            "scored": 143
+          }
+        }
+      },
+      "strata": {
+        "all": {
+          "articles": 5,
+          "cases": 521,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                0.047679190825259586,
+                0.07484120834534871
+              ],
+              "delta": 0.06333277470154469
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.5118070178180403,
+                -0.3613390143972822
+              ],
+              "delta": -0.44919398718170667
+            },
+            "top1": {
+              "ci95": [
+                0.021039337931283108,
+                0.06387006994543523
+              ],
+              "delta": 0.04245470393835917
+            },
+            "top5": {
+              "ci95": [
+                0.06768422838872169,
+                0.12634138537833947
+              ],
+              "delta": 0.09701280688353058
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.2308331451654356,
+              "nll_nats": 4.537875558007944,
+              "top1": 0.11028018079469411,
+              "top5": 0.34358310360822497
+            },
+            "distance": {
+              "mrr": 0.09797697991977934,
+              "nll_nats": 5.496168699084441,
+              "top1": 0.02159436930274424,
+              "top5": 0.1260690073060226
+            },
+            "surface": {
+              "mrr": 0.16750037046389094,
+              "nll_nats": 4.987069545189651,
+              "top1": 0.06782547685633493,
+              "top5": 0.2465702967246944
+            }
+          },
+          "paired_articles": {
+            "arrau21-gnome-betaferon": {
+              "cases": 71,
+              "cosine_minus_surface": {
+                "mrr": 0.03428088484379804,
+                "nll_nats": -0.4450120275196605,
+                "top1": 0.014084507042253523,
+                "top5": 0.05633802816901412
+              }
+            },
+            "arrau21-gnome-byzantine": {
+              "cases": 133,
+              "cosine_minus_surface": {
+                "mrr": 0.05886833553110009,
+                "nll_nats": -0.5355128512027489,
+                "top1": 0.022556390977443608,
+                "top5": 0.10526315789473684
+              }
+            },
+            "arrau21-gnome-cilest": {
+              "cases": 94,
+              "cosine_minus_surface": {
+                "mrr": 0.07282326453890703,
+                "nll_nats": -0.49210059884487656,
+                "top1": 0.03191489361702128,
+                "top5": 0.14893617021276595
+              }
+            },
+            "arrau21-gnome-dianette": {
+              "cases": 140,
+              "cosine_minus_surface": {
+                "mrr": 0.0766849640638037,
+                "nll_nats": -0.4979543939199136,
+                "top1": 0.07142857142857142,
+                "top5": 0.11428571428571432
+              }
+            },
+            "arrau21-gnome-goring": {
+              "cases": 83,
+              "cosine_minus_surface": {
+                "mrr": 0.07400642453011458,
+                "nll_nats": -0.27539006442133385,
+                "top1": 0.07228915662650603,
+                "top5": 0.060240963855421686
+              }
+            }
+          }
+        },
+        "cross_sentence": {
+          "articles": 5,
+          "cases": 377,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                0.048490746474747735,
+                0.07844764217117159
+              ],
+              "delta": 0.06367953446896822
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.7037191802996476,
+                -0.4928386003221966
+              ],
+              "delta": -0.5941978870064991
+            },
+            "top1": {
+              "ci95": [
+                0.011327539706323043,
+                0.05604038946988821
+              ],
+              "delta": 0.033399958812640455
+            },
+            "top5": {
+              "ci95": [
+                0.07368291643444906,
+                0.15522793709081245
+              ],
+              "delta": 0.11592286758252579
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.17194228333473183,
+              "nll_nats": 4.86277127249389,
+              "top1": 0.06577893921012845,
+              "top5": 0.2658357225489616
+            },
+            "distance": {
+              "mrr": 0.04525739894411519,
+              "nll_nats": 6.117791156629932,
+              "top1": 0.006784543935415265,
+              "top5": 0.032796372677440344
+            },
+            "surface": {
+              "mrr": 0.10826274886576359,
+              "nll_nats": 5.45696915950039,
+              "top1": 0.03237898039748799,
+              "top5": 0.14991285496643578
+            }
+          },
+          "paired_articles": {
+            "arrau21-gnome-betaferon": {
+              "cases": 53,
+              "cosine_minus_surface": {
+                "mrr": 0.03983648862054659,
+                "nll_nats": -0.6101057778719365,
+                "top1": 0.0,
+                "top5": 0.1132075471698113
+              }
+            },
+            "arrau21-gnome-byzantine": {
+              "cases": 88,
+              "cosine_minus_surface": {
+                "mrr": 0.07145425522718171,
+                "nll_nats": -0.7840727917996047,
+                "top1": 0.03409090909090909,
+                "top5": 0.11363636363636363
+              }
+            },
+            "arrau21-gnome-cilest": {
+              "cases": 71,
+              "cosine_minus_surface": {
+                "mrr": 0.07622931582932418,
+                "nll_nats": -0.6037650638306769,
+                "top1": 0.014084507042253516,
+                "top5": 0.18309859154929578
+              }
+            },
+            "arrau21-gnome-dianette": {
+              "cases": 118,
+              "cosine_minus_surface": {
+                "mrr": 0.08416266198501393,
+                "nll_nats": -0.5562717482274877,
+                "top1": 0.07627118644067797,
+                "top5": 0.1271186440677966
+              }
+            },
+            "arrau21-gnome-goring": {
+              "cases": 47,
+              "cosine_minus_surface": {
+                "mrr": 0.04671495068277472,
+                "nll_nats": -0.41677405330278994,
+                "top1": 0.0425531914893617,
+                "top5": 0.042553191489361694
+              }
+            }
+          }
+        },
+        "unclassified": {
+          "articles": 1,
+          "cases": 1,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                0.003386550556361877,
+                0.003386550556361877
+              ],
+              "delta": 0.003386550556361877
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.3962058378059803,
+                -0.3962058378059803
+              ],
+              "delta": -0.3962058378059803
+            },
+            "top1": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "delta": 0.0
+            },
+            "top5": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "delta": 0.0
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.01282051282051282,
+              "nll_nats": 6.393182102205571,
+              "top1": 0.0,
+              "top5": 0.0
+            },
+            "distance": {
+              "mrr": 0.011363636363636364,
+              "nll_nats": 6.54669189453125,
+              "top1": 0.0,
+              "top5": 0.0
+            },
+            "surface": {
+              "mrr": 0.009433962264150943,
+              "nll_nats": 6.789387940011551,
+              "top1": 0.0,
+              "top5": 0.0
+            }
+          },
+          "paired_articles": {
+            "arrau21-gnome-cilest": {
+              "cases": 1,
+              "cosine_minus_surface": {
+                "mrr": 0.003386550556361877,
+                "nll_nats": -0.3962058378059803,
+                "top1": 0.0,
+                "top5": 0.0
+              }
+            }
+          }
+        },
+        "within_sentence": {
+          "articles": 5,
+          "cases": 143,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                0.02818689772164946,
+                0.08237623784050795
+              ],
+              "delta": 0.052676016459434746
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.1482023565638954,
+                -0.013225107680974447
+              ],
+              "delta": -0.08407944462458543
+            },
+            "top1": {
+              "ci95": [
+                0.027272727272727275,
+                0.09191919191919193
+              ],
+              "delta": 0.06060606060606061
+            },
+            "top5": {
+              "ci95": [
+                -0.040909090909090895,
+                0.077979797979798
+              ],
+              "delta": 0.030404040404040433
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.3876082864397098,
+              "nll_nats": 3.6360472898832468,
+              "top1": 0.22838383838383836,
+              "top5": 0.5568686868686868
+            },
+            "distance": {
+              "mrr": 0.230797775605795,
+              "nll_nats": 3.943184504171815,
+              "top1": 0.05949494949494949,
+              "top5": 0.37404040404040406
+            },
+            "surface": {
+              "mrr": 0.3349322699802751,
+              "nll_nats": 3.720126734507832,
+              "top1": 0.16777777777777775,
+              "top5": 0.5264646464646464
+            }
+          },
+          "paired_articles": {
+            "arrau21-gnome-betaferon": {
+              "cases": 18,
+              "cosine_minus_surface": {
+                "mrr": 0.017922718167816265,
+                "nll_nats": 0.04109734851759583,
+                "top1": 0.05555555555555555,
+                "top5": -0.1111111111111111
+              }
+            },
+            "arrau21-gnome-byzantine": {
+              "cases": 45,
+              "cosine_minus_surface": {
+                "mrr": 0.034255870347651596,
+                "nll_nats": -0.0494400784800213,
+                "top1": 0.0,
+                "top5": 0.0888888888888889
+              }
+            },
+            "arrau21-gnome-cilest": {
+              "cases": 22,
+              "cosine_minus_surface": {
+                "mrr": 0.06498722237358612,
+                "nll_nats": -0.13608776916520204,
+                "top1": 0.09090909090909091,
+                "top5": 0.045454545454545525
+              }
+            },
+            "arrau21-gnome-dianette": {
+              "cases": 22,
+              "cosine_minus_surface": {
+                "mrr": 0.03657731157731159,
+                "nll_nats": -0.18516131172475125,
+                "top1": 0.04545454545454547,
+                "top5": 0.045454545454545525
+              }
+            },
+            "arrau21-gnome-goring": {
+              "cases": 36,
+              "cosine_minus_surface": {
+                "mrr": 0.10963695983080818,
+                "nll_nats": -0.09080541227054839,
+                "top1": 0.1111111111111111,
+                "top5": 0.08333333333333331
+              }
+            }
+          }
+        }
+      }
+    },
+    "pear": {
+      "intake": {
+        "anchor_not_wholly_earlier": 3,
+        "cross_sentence_rows": 261,
+        "discontinuous_span": 1,
+        "documents": 20,
+        "documents_with_cross_sentence_rows": 20,
+        "documents_with_raw_html": 0,
+        "eligible_link": 306,
+        "missing_anchor": 7,
+        "multiple_anchor_markables": 16,
+        "scoring_rows": 306,
+        "source_bridge_links": 333,
+        "source_sentences": 1973,
+        "source_tokens": 14059
+      },
+      "prefix_alignment": {
+        "certified_stops": 14059,
+        "documents": 20,
+        "extractable_documents": 20,
+        "model_tokens": 17345,
+        "original_stops": 14059
+      },
+      "scoring_inventory": {
+        "annotations": 306,
+        "articles": 20,
+        "articles_extracted": 20,
+        "articles_with_annotations": 20,
+        "coverage": {
+          "annotations_with_inaccessible_gold": 4,
+          "candidate_words": 124309,
+          "exact_gold_spans": 302,
+          "gold_spans": 306,
+          "inaccessible_gold_spans": 4,
+          "uncertified_prior_words": 368
+        },
+        "median_candidates": 369.0,
+        "outcomes": {
+          "no_exact_gold": 4,
+          "scored": 302
+        },
+        "sentence_outcomes": {
+          "cross_sentence": {
+            "no_exact_gold": 2,
+            "scored": 259
+          },
+          "unclassified": {
+            "no_exact_gold": 2,
+            "scored": 18
+          },
+          "within_sentence": {
+            "scored": 25
+          }
+        }
+      },
+      "strata": {
+        "all": {
+          "articles": 20,
+          "cases": 302,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                0.04375476727895813,
+                0.10475981698314553
+              ],
+              "delta": 0.07019620562591555
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.4601597386772372,
+                -0.3008329845285976
+              ],
+              "delta": -0.3790845488690709
+            },
+            "top1": {
+              "ci95": [
+                0.009285714285714286,
+                0.07859657207534965
+              ],
+              "delta": 0.03928106556714367
+            },
+            "top5": {
+              "ci95": [
+                0.058552328401649284,
+                0.16885495031062794
+              ],
+              "delta": 0.11071703293654758
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.22430959844447668,
+              "nll_nats": 4.217227448077563,
+              "top1": 0.09505013563951942,
+              "top5": 0.3440388245087137
+            },
+            "distance": {
+              "mrr": 0.11667036598523237,
+              "nll_nats": 4.801259169879273,
+              "top1": 0.024354090354090353,
+              "top5": 0.17644330803743571
+            },
+            "surface": {
+              "mrr": 0.15411339281856112,
+              "nll_nats": 4.596311996946634,
+              "top1": 0.05576907007237576,
+              "top5": 0.23332179157216615
+            }
+          }
+        },
+        "cross_sentence": {
+          "articles": 20,
+          "cases": 259,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                0.05040928070333439,
+                0.1108050778868322
+              ],
+              "delta": 0.07739306932694065
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.5281141027126068,
+                -0.3668884349454466
+              ],
+              "delta": -0.4459292024402567
+            },
+            "top1": {
+              "ci95": [
+                0.00935778230496564,
+                0.07999896073549993
+              ],
+              "delta": 0.04066592311982
+            },
+            "top5": {
+              "ci95": [
+                0.06489378848145168,
+                0.18886936274379065
+              ],
+              "delta": 0.12393358081472228
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.22845556347855975,
+              "nll_nats": 4.189769389888953,
+              "top1": 0.09633823319110706,
+              "top5": 0.35360597253735626
+            },
+            "distance": {
+              "mrr": 0.1011066653163154,
+              "nll_nats": 4.924964861001733,
+              "top1": 0.024037256603046075,
+              "top5": 0.1357384668994576
+            },
+            "surface": {
+              "mrr": 0.15106249415161913,
+              "nll_nats": 4.635698592329209,
+              "top1": 0.05567231007128705,
+              "top5": 0.22967239172263404
+            }
+          }
+        },
+        "unclassified": {
+          "articles": 10,
+          "cases": 18,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                -0.00937953988042725,
+                0.0395020439318221
+              ],
+              "delta": 0.009595105198751345
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.2950895910690843,
+                0.22307139836181572
+              ],
+              "delta": -0.01874065275995602
+            },
+            "top1": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "delta": 0.0
+            },
+            "top5": {
+              "ci95": [
+                0.0,
+                0.0
+              ],
+              "delta": 0.0
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.1912560844696462,
+              "nll_nats": 4.983474696733087,
+              "top1": 0.13333333333333333,
+              "top5": 0.26666666666666666
+            },
+            "distance": {
+              "mrr": 0.09613536305102419,
+              "nll_nats": 5.12009537855784,
+              "top1": 0.03333333333333333,
+              "top5": 0.16666666666666666
+            },
+            "surface": {
+              "mrr": 0.18166097927089486,
+              "nll_nats": 5.002215349493042,
+              "top1": 0.13333333333333333,
+              "top5": 0.26666666666666666
+            }
+          }
+        },
+        "within_sentence": {
+          "articles": 14,
+          "cases": 25,
+          "cosine_minus_surface": {
+            "mrr": {
+              "ci95": [
+                -0.0453765959518392,
+                0.08514510200013019
+              ],
+              "delta": 0.01358199380230561
+            },
+            "nll_nats": {
+              "ci95": [
+                -0.013563346149309369,
+                0.4005307380254231
+              ],
+              "delta": 0.17756712843092
+            },
+            "top1": {
+              "ci95": [
+                0.0,
+                0.14315476190475757
+              ],
+              "delta": 0.05952380952380952
+            },
+            "top5": {
+              "ci95": [
+                0.0,
+                0.07142857142857142
+              ],
+              "delta": 0.023809523809523808
+            }
+          },
+          "methods": {
+            "cosine": {
+              "mrr": 0.20039203833293834,
+              "nll_nats": 4.032573105156585,
+              "top1": 0.05952380952380952,
+              "top5": 0.3095238095238095
+            },
+            "distance": {
+              "mrr": 0.30658541194255484,
+              "nll_nats": 3.2644034113202776,
+              "top1": 0.023809523809523808,
+              "top5": 0.6785714285714286
+            },
+            "surface": {
+              "mrr": 0.1868100445306328,
+              "nll_nats": 3.8550059767256646,
+              "top1": 0.0,
+              "top5": 0.2857142857142857
+            }
+          }
+        }
+      }
+    }
+  },
+  "extraction_sha256": "96707217bbd5b27d986b52be3216ff200888888d2015088d1c608f6840daf578",
+  "fit_inventory": {
+    "annotations": 3407,
+    "articles": 177,
+    "articles_extracted": 177,
+    "articles_with_annotations": 177,
+    "coverage": {
+      "annotations_with_inaccessible_gold": 376,
+      "candidate_words": 1426103,
+      "exact_gold_spans": 14874,
+      "gold_spans": 15568,
+      "inaccessible_gold_spans": 694,
+      "uncertified_prior_words": 10032
+    },
+    "median_candidates": 381.5,
+    "outcomes": {
+      "no_exact_gold": 22,
+      "scored": 3366,
+      "uncertified_trigger": 19
+    },
+    "sentence_outcomes": {}
+  },
+  "fit_sha256": "6bc619f28f6f762f24d7dc1265a4f3fc7afb825321073c46bf55b10ef652e145",
+  "pear_primary": {
+    "gates": {
+      "articles_at_least_15": true,
+      "nll_ci95_upper_below_zero": true,
+      "top5_ci95_lower_above_zero": true
+    },
+    "pass": true
+  },
+  "protocol_sha256": "c081b2d2edf7c52e26f41a39bce526a279467f9e09835ce1c695b48c9f2a938f",
+  "schema": 1,
+  "source_audit_sha256": "cc0270e698e826ecb84242bf53ad3a3662af31ad8759de0699aacefbfaadb653"
+}

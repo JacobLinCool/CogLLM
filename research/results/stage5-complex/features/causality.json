@@ -1,0 +1,139 @@
+{
+  "tokenizer_class": "Qwen2Tokenizer",
+  "reference_sentence": "complex-sentence-e056ec4443173c0f71366510a792ef985560b3facece4fd6125028bf4b26302e",
+  "replacement_sentence": "complex-sentence-cc7a514afbe21c47162747fb711f9053d6d576f589cb9ee399647cb005e3e50b",
+  "checks": [
+    {
+      "comparison": "different_suffix_same_length",
+      "prefix_tokens": 32,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.002,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "comparison": "truncate",
+      "prefix_tokens": 32,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 1.5156437029872905e-06,
+      "max_absolute": 3.600120544433594e-05,
+      "passed": true
+    },
+    {
+      "comparison": "right_pad_in_batch",
+      "prefix_tokens": 32,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 2.1716712126362836e-06,
+      "max_absolute": 6.045401096343994e-05,
+      "passed": true
+    },
+    {
+      "comparison": "positive_control_different_suffix",
+      "prefix_tokens": 32,
+      "max_token_relative_rms": 1.3612895011901855,
+      "max_absolute": 38.964378356933594,
+      "passed": true
+    },
+    {
+      "comparison": "different_suffix_same_length",
+      "prefix_tokens": 65,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.002,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "comparison": "truncate",
+      "prefix_tokens": 65,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 2.294642854394624e-06,
+      "max_absolute": 9.72747802734375e-05,
+      "passed": true
+    },
+    {
+      "comparison": "right_pad_in_batch",
+      "prefix_tokens": 65,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 2.1716712126362836e-06,
+      "max_absolute": 6.045401096343994e-05,
+      "passed": true
+    },
+    {
+      "comparison": "positive_control_different_suffix",
+      "prefix_tokens": 65,
+      "max_token_relative_rms": 1.3401904106140137,
+      "max_absolute": 54.86101531982422,
+      "passed": true
+    },
+    {
+      "comparison": "different_suffix_same_length",
+      "prefix_tokens": 97,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.002,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "comparison": "truncate",
+      "prefix_tokens": 97,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 1.2547133110274444e-06,
+      "max_absolute": 3.337860107421875e-05,
+      "passed": true
+    },
+    {
+      "comparison": "right_pad_in_batch",
+      "prefix_tokens": 97,
+      "original_tokens": 118,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 2.1716712126362836e-06,
+      "max_absolute": 6.045401096343994e-05,
+      "passed": true
+    },
+    {
+      "comparison": "positive_control_different_suffix",
+      "prefix_tokens": 97,
+      "max_token_relative_rms": 1.3151309490203857,
+      "max_absolute": 53.629974365234375,
+      "passed": true
+    },
+    {
+      "comparison": "truncate_at_designated_target_end",
+      "sentence_id": "complex-sentence-546283b8052e4d0a4d3df960049e9365874487d3bd0c527368990d198b77baf8",
+      "prefix_tokens": 7,
+      "original_tokens": 44,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 8.5035748043083e-07,
+      "max_absolute": 1.9073486328125e-05,
+      "passed": true
+    },
+    {
+      "comparison": "truncate_at_designated_target_end",
+      "sentence_id": "complex-sentence-2fff73837e95d93b297132efe5b1c5e48645c0804976859f6774fa23776b452b",
+      "prefix_tokens": 14,
+      "original_tokens": 34,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 7.676882773921534e-07,
+      "max_absolute": 1.52587890625e-05,
+      "passed": true
+    },
+    {
+      "comparison": "truncate_at_designated_target_end",
+      "sentence_id": "complex-sentence-4ec8e79facd3e2a93e80a7ef1b5dc187d6f4357bc96f24512350e80f08233db0",
+      "prefix_tokens": 24,
+      "original_tokens": 48,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 1.0111422170666629e-06,
+      "max_absolute": 2.288818359375e-05,
+      "passed": true
+    }
+  ]
+}

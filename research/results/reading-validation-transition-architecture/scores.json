@@ -1,0 +1,2447 @@
+{
+  "all": {
+    "movie_groups": 39,
+    "words": 22133,
+    "positive_words": 413,
+    "methods": {
+      "qwen/ner": {
+        "ap": {
+          "estimate": 0.6630799051581245,
+          "family_bootstrap_95_interval": [
+            0.5833119359513212,
+            0.7434036868336846
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9746060358781587,
+          "family_bootstrap_95_interval": [
+            0.958034871802253,
+            0.9868620212844186
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8765133171912833,
+          "family_bootstrap_95_interval": [
+            0.815425937698665,
+            0.9314737877452745
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.021823204419889504,
+          "family_bootstrap_95_interval": [
+            0.018724706150121197,
+            0.025205083842298616
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9801798162900572,
+          "family_bootstrap_95_interval": [
+            0.977355603635535,
+            0.9827696838821984
+          ]
+        },
+        "precision": {
+          "estimate": 0.43301435406698563,
+          "family_bootstrap_95_interval": [
+            0.383116684417174,
+            0.4859934121776485
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04666132429784063,
+        "alert_counts": {
+          "true_positive": 362,
+          "false_positive": 474,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.010664903388636111,
+          "family_bootstrap_95_interval": [
+            0.009074556518558962,
+            0.012469103590570949
+          ]
+        }
+      },
+      "qwen/local": {
+        "ap": {
+          "estimate": 0.7930685677552571,
+          "family_bootstrap_95_interval": [
+            0.7377603701126794,
+            0.8463533808065106
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9794251289803307,
+          "family_bootstrap_95_interval": [
+            0.9653489692168962,
+            0.9900664460430195
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8983050847457628,
+          "family_bootstrap_95_interval": [
+            0.8459676493308558,
+            0.9428571428571428
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.03383977900552486,
+          "family_bootstrap_95_interval": [
+            0.029887179050656583,
+            0.038073970533417247
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9726175260483907,
+          "family_bootstrap_95_interval": [
+            0.969107995883965,
+            0.975815866409933
+          ]
+        },
+        "precision": {
+          "estimate": 0.33544303797468356,
+          "family_bootstrap_95_interval": [
+            0.30261937745075773,
+            0.3688682543871223
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04440035872918788,
+        "alert_counts": {
+          "true_positive": 371,
+          "false_positive": 735,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.007845509197386594,
+          "family_bootstrap_95_interval": [
+            0.006401568455456399,
+            0.009638158607831297
+          ]
+        }
+      },
+      "qwen/relations": {
+        "ap": {
+          "estimate": 0.8013759717682323,
+          "family_bootstrap_95_interval": [
+            0.7466685195432949,
+            0.8544193429993092
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9810090119014175,
+          "family_bootstrap_95_interval": [
+            0.9686433900585255,
+            0.9907306207340347
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8958837772397095,
+          "family_bootstrap_95_interval": [
+            0.8416814716904257,
+            0.942661745030581
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.03052486187845304,
+          "family_bootstrap_95_interval": [
+            0.02645638198012805,
+            0.034871303308893646
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9747094519649042,
+          "family_bootstrap_95_interval": [
+            0.971078434437948,
+            0.9780585355229887
+          ]
+        },
+        "precision": {
+          "estimate": 0.35818005808325265,
+          "family_bootstrap_95_interval": [
+            0.32146475235923333,
+            0.39607906799083265
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04402663600457834,
+        "alert_counts": {
+          "true_positive": 370,
+          "false_positive": 663,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.007909414431375956,
+          "family_bootstrap_95_interval": [
+            0.006477370126214367,
+            0.00967697590933138
+          ]
+        }
+      },
+      "lfm3/ner": {
+        "ap": {
+          "estimate": 0.6762489434468612,
+          "family_bootstrap_95_interval": [
+            0.5969056794201563,
+            0.7553085845704564
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9746531911762739,
+          "family_bootstrap_95_interval": [
+            0.9575527283711834,
+            0.9870298077840203
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8789346246973365,
+          "family_bootstrap_95_interval": [
+            0.8183908045977012,
+            0.9324675324675324
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.02214548802946593,
+          "family_bootstrap_95_interval": [
+            0.019024561637684848,
+            0.025513917883202238
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9800015356553603,
+          "family_bootstrap_95_interval": [
+            0.977146289131703,
+            0.9826302770382307
+          ]
+        },
+        "precision": {
+          "estimate": 0.43009478672985785,
+          "family_bootstrap_95_interval": [
+            0.381118596387326,
+            0.4833141939764266
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04546662487237661,
+        "alert_counts": {
+          "true_positive": 363,
+          "false_positive": 481,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.010623848480387995,
+          "family_bootstrap_95_interval": [
+            0.009030207813767262,
+            0.012447850328441638
+          ]
+        }
+      },
+      "lfm3/local": {
+        "ap": {
+          "estimate": 0.8000695259627759,
+          "family_bootstrap_95_interval": [
+            0.742648005611367,
+            0.8533778273712789
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9798897703102216,
+          "family_bootstrap_95_interval": [
+            0.9623806041988874,
+            0.9913937683326177
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9152542372881356,
+          "family_bootstrap_95_interval": [
+            0.8609112709832134,
+            0.9590168872210152
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.04364640883977901,
+          "family_bootstrap_95_interval": [
+            0.039496631241627514,
+            0.04808923770932493
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9667687477031877,
+          "family_bootstrap_95_interval": [
+            0.96326053051026,
+            0.9700425819991324
+          ]
+        },
+        "precision": {
+          "estimate": 0.2850678733031674,
+          "family_bootstrap_95_interval": [
+            0.2564617921123433,
+            0.3150912211031509
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.05218367421363229,
+        "alert_counts": {
+          "true_positive": 378,
+          "false_positive": 948,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.007956170101180002,
+          "family_bootstrap_95_interval": [
+            0.006582526565648014,
+            0.009694138128269905
+          ]
+        }
+      },
+      "lfm3/relations": {
+        "ap": {
+          "estimate": 0.8116920390063614,
+          "family_bootstrap_95_interval": [
+            0.7558629616952598,
+            0.8635658492676013
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9811645240547759,
+          "family_bootstrap_95_interval": [
+            0.965977694679498,
+            0.9915008448875944
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9152542372881356,
+          "family_bootstrap_95_interval": [
+            0.8609112709832134,
+            0.9590168872210152
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.039917127071823204,
+          "family_bootstrap_95_interval": [
+            0.03596537439968633,
+            0.04424839750484898
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9690737556742564,
+          "family_bootstrap_95_interval": [
+            0.9655349654575794,
+            0.9723142836063695
+          ]
+        },
+        "precision": {
+          "estimate": 0.3036144578313253,
+          "family_bootstrap_95_interval": [
+            0.27415310525537523,
+            0.33445110519027377
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.05069066824333067,
+        "alert_counts": {
+          "true_positive": 378,
+          "false_positive": 867,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.007717589085165368,
+          "family_bootstrap_95_interval": [
+            0.006350918330417882,
+            0.009435433268398716
+          ]
+        }
+      },
+      "gemma4/ner": {
+        "ap": {
+          "estimate": 0.6588076716262937,
+          "family_bootstrap_95_interval": [
+            0.580211532912293,
+            0.7368821303511504
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9716540919205027,
+          "family_bootstrap_95_interval": [
+            0.9532966521197572,
+            0.9851018929743979
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.87409200968523,
+          "family_bootstrap_95_interval": [
+            0.8125,
+            0.9297058282772568
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.02302025782688766,
+          "family_bootstrap_95_interval": [
+            0.01985783637306771,
+            0.02637735451175117
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9793149991003677,
+          "family_bootstrap_95_interval": [
+            0.9766066087433511,
+            0.9818293610403256
+          ]
+        },
+        "precision": {
+          "estimate": 0.41927990708478513,
+          "family_bootstrap_95_interval": [
+            0.37036935286935285,
+            0.47174887967923446
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04693893689992538,
+        "alert_counts": {
+          "true_positive": 361,
+          "false_positive": 500,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.011029646105370067,
+          "family_bootstrap_95_interval": [
+            0.009376365577782925,
+            0.012896646795116151
+          ]
+        }
+      },
+      "gemma4/local": {
+        "ap": {
+          "estimate": 0.5906584718444688,
+          "family_bootstrap_95_interval": [
+            0.5365578124255348,
+            0.6475036009690028
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9664314475673217,
+          "family_bootstrap_95_interval": [
+            0.9468917558915582,
+            0.9809355236934987
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8450363196125908,
+          "family_bootstrap_95_interval": [
+            0.7877358490566038,
+            0.8941184663280354
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.02430939226519337,
+          "family_bootstrap_95_interval": [
+            0.02095010489335842,
+            0.027920568591342614
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9779186005884171,
+          "family_bootstrap_95_interval": [
+            0.9749418981699343,
+            0.9806487360255693
+          ]
+        },
+        "precision": {
+          "estimate": 0.3979475484606613,
+          "family_bootstrap_95_interval": [
+            0.3523804296691234,
+            0.4457530374112835
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.055075397425173894,
+        "alert_counts": {
+          "true_positive": 349,
+          "false_positive": 528,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.01264068320976491,
+          "family_bootstrap_95_interval": [
+            0.010758873351700095,
+            0.014817324326703601
+          ]
+        }
+      },
+      "gemma4/relations": {
+        "ap": {
+          "estimate": 0.607398823915943,
+          "family_bootstrap_95_interval": [
+            0.5523739904349596,
+            0.6653837691071381
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9655982591557084,
+          "family_bootstrap_95_interval": [
+            0.9467831391281128,
+            0.9801484448978275
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8523002421307506,
+          "family_bootstrap_95_interval": [
+            0.7965353140010675,
+            0.9
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.023572744014732964,
+          "family_bootstrap_95_interval": [
+            0.01996534223103509,
+            0.027384494326037068
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9785468732668232,
+          "family_bootstrap_95_interval": [
+            0.9753707098102947,
+            0.9814705562660784
+          ]
+        },
+        "precision": {
+          "estimate": 0.4074074074074074,
+          "family_bootstrap_95_interval": [
+            0.36170112309886887,
+            0.45629993498121063
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.053315273498228864,
+        "alert_counts": {
+          "true_positive": 352,
+          "false_positive": 512,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.012336465391042623,
+          "family_bootstrap_95_interval": [
+            0.010507756734760629,
+            0.014457075838762655
+          ]
+        }
+      },
+      "gemma4/relations_full_width": {
+        "ap": {
+          "estimate": 0.6411614221362645,
+          "family_bootstrap_95_interval": [
+            0.5880957480712331,
+            0.6961735426393583
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9687848648214787,
+          "family_bootstrap_95_interval": [
+            0.9512692483564943,
+            0.9824022449755011
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8668280871670703,
+          "family_bootstrap_95_interval": [
+            0.8148126154658221,
+            0.9111675126903553
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0251841620626151,
+          "family_bootstrap_95_interval": [
+            0.021989771962757525,
+            0.028531851090482716
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9777216366232622,
+          "family_bootstrap_95_interval": [
+            0.974798997078184,
+            0.9804395989056138
+          ]
+        },
+        "precision": {
+          "estimate": 0.39558011049723757,
+          "family_bootstrap_95_interval": [
+            0.35408951778814796,
+            0.4408406232734352
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.0548796579244418,
+        "alert_counts": {
+          "true_positive": 358,
+          "false_positive": 547,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.011516069222092829,
+          "family_bootstrap_95_interval": [
+            0.009797561315448358,
+            0.013519579789950963
+          ]
+        }
+      },
+      "production/relations": {
+        "ap": {
+          "estimate": 0.7999522142492617,
+          "family_bootstrap_95_interval": [
+            0.7367566293467742,
+            0.8586139257927191
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9812130170918447,
+          "family_bootstrap_95_interval": [
+            0.967016526279917,
+            0.9918228696578703
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9152542372881356,
+          "family_bootstrap_95_interval": [
+            0.8705023708306082,
+            0.9546666666666667
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.03342541436464089,
+          "family_bootstrap_95_interval": [
+            0.029868598908438997,
+            0.037435252112633495
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9731698790219253,
+          "family_bootstrap_95_interval": [
+            0.9698982011219784,
+            0.9760582836245438
+          ]
+        },
+        "precision": {
+          "estimate": 0.3423913043478261,
+          "family_bootstrap_95_interval": [
+            0.30761926351419006,
+            0.3783795732071594
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 378,
+          "false_positive": 726,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "brier": {
+          "estimate": 0.00750091222546904,
+          "family_bootstrap_95_interval": [
+            0.006061416386271751,
+            0.009347320512096635
+          ]
+        }
+      }
+    },
+    "paired_ap_differences": {
+      "qwen/relations - qwen/ner": {
+        "estimate": 0.13829606661010774,
+        "family_bootstrap_95_interval": [
+          0.07664064139062488,
+          0.20187634887999018
+        ]
+      },
+      "qwen/relations - qwen/local": {
+        "estimate": 0.00830740401297514,
+        "family_bootstrap_95_interval": [
+          0.001255990613214042,
+          0.0175748837257494
+        ]
+      },
+      "lfm3/relations - lfm3/ner": {
+        "estimate": 0.1354430955595003,
+        "family_bootstrap_95_interval": [
+          0.07332993685435242,
+          0.19878493721751225
+        ]
+      },
+      "lfm3/relations - lfm3/local": {
+        "estimate": 0.011622513043585525,
+        "family_bootstrap_95_interval": [
+          0.002649997755755934,
+          0.021283338544130493
+        ]
+      },
+      "lfm3/relations - qwen/ner": {
+        "estimate": 0.1486121338482369,
+        "family_bootstrap_95_interval": [
+          0.08373813258688018,
+          0.2142249078197906
+        ]
+      },
+      "gemma4/relations - gemma4/ner": {
+        "estimate": -0.0514088477103507,
+        "family_bootstrap_95_interval": [
+          -0.10862550915149624,
+          0.0070121350671305
+        ]
+      },
+      "gemma4/relations - gemma4/local": {
+        "estimate": 0.016740352071474174,
+        "family_bootstrap_95_interval": [
+          0.007731768359957353,
+          0.027293584096064277
+        ]
+      },
+      "gemma4/relations - qwen/ner": {
+        "estimate": -0.05568108124218152,
+        "family_bootstrap_95_interval": [
+          -0.11561951101870434,
+          0.0031860478644374526
+        ]
+      },
+      "lfm3/relations - qwen/relations": {
+        "estimate": 0.010316067238129167,
+        "family_bootstrap_95_interval": [
+          -0.011235251516800743,
+          0.02811101541834603
+        ]
+      },
+      "gemma4/relations - qwen/relations": {
+        "estimate": -0.19397714785228926,
+        "family_bootstrap_95_interval": [
+          -0.2479047458009283,
+          -0.14351842677865695
+        ]
+      },
+      "gemma4/relations - lfm3/relations": {
+        "estimate": -0.20429321509041842,
+        "family_bootstrap_95_interval": [
+          -0.2548332809413175,
+          -0.15416635089357225
+        ]
+      },
+      "production/relations - qwen/relations": {
+        "estimate": -0.0014237575189706142,
+        "family_bootstrap_95_interval": [
+          -0.020219426671737654,
+          0.018027611565304916
+        ]
+      },
+      "gemma4/relations_full_width - gemma4/relations": {
+        "estimate": 0.03376259822032146,
+        "family_bootstrap_95_interval": [
+          0.02165621236955499,
+          0.046130791932980766
+        ]
+      }
+    }
+  },
+  "recognized_person": {
+    "movie_groups": 39,
+    "words": 764,
+    "positive_words": 198,
+    "methods": {
+      "qwen/ner": {
+        "ap": {
+          "estimate": 0.8116532957460031,
+          "family_bootstrap_95_interval": [
+            0.7044497714889879,
+            0.9099308119999343
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9517078916372202,
+          "family_bootstrap_95_interval": [
+            0.9200944946016356,
+            0.9759734218503643
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9797979797979798,
+          "family_bootstrap_95_interval": [
+            0.9595959595959596,
+            0.9952612223911294
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.20141342756183744,
+          "family_bootstrap_95_interval": [
+            0.14461036506188465,
+            0.2692307692307692
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8540259076105332,
+          "family_bootstrap_95_interval": [
+            0.8078932599834795,
+            0.8920328285324793
+          ]
+        },
+        "precision": {
+          "estimate": 0.6298701298701299,
+          "family_bootstrap_95_interval": [
+            0.5516108814808159,
+            0.705685618729097
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04666132429784063,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 114,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.09632045453554886,
+          "family_bootstrap_95_interval": [
+            0.07661107721685238,
+            0.1172622792749617
+          ]
+        }
+      },
+      "qwen/local": {
+        "ap": {
+          "estimate": 0.9099748546865019,
+          "family_bootstrap_95_interval": [
+            0.865829857105397,
+            0.9506961054880471
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9643876931862797,
+          "family_bootstrap_95_interval": [
+            0.9452580416121401,
+            0.9805296018179418
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9696969696969697,
+          "family_bootstrap_95_interval": [
+            0.9497480418854047,
+            0.9893048128342246
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.2667844522968198,
+          "family_bootstrap_95_interval": [
+            0.2167954882520553,
+            0.32563598878005184
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8069467535873469,
+          "family_bootstrap_95_interval": [
+            0.7686123189610803,
+            0.8420841114532555
+          ]
+        },
+        "precision": {
+          "estimate": 0.5597667638483965,
+          "family_bootstrap_95_interval": [
+            0.48690830787182754,
+            0.634442129388478
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04440035872918788,
+        "alert_counts": {
+          "true_positive": 192,
+          "false_positive": 151,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.08059932706466674,
+          "family_bootstrap_95_interval": [
+            0.06104361364332001,
+            0.10312696453388073
+          ]
+        }
+      },
+      "qwen/relations": {
+        "ap": {
+          "estimate": 0.9199014570980176,
+          "family_bootstrap_95_interval": [
+            0.878740448726146,
+            0.9585513937943059
+          ]
+        },
+        "auroc": {
+          "estimate": 0.968545882856837,
+          "family_bootstrap_95_interval": [
+            0.9502177312896765,
+            0.9836883862644159
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9696969696969697,
+          "family_bootstrap_95_interval": [
+            0.9497480418854047,
+            0.9893048128342246
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.24558303886925795,
+          "family_bootstrap_95_interval": [
+            0.1946881340904053,
+            0.3097170470423847
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8214340787010747,
+          "family_bootstrap_95_interval": [
+            0.7793474698101434,
+            0.8567871397152791
+          ]
+        },
+        "precision": {
+          "estimate": 0.5800604229607251,
+          "family_bootstrap_95_interval": [
+            0.5086705202312138,
+            0.6524590163934426
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04402663600457834,
+        "alert_counts": {
+          "true_positive": 192,
+          "false_positive": 139,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.08271311894407843,
+          "family_bootstrap_95_interval": [
+            0.06265905106099404,
+            0.10563661998383082
+          ]
+        }
+      },
+      "lfm3/ner": {
+        "ap": {
+          "estimate": 0.8227756078328725,
+          "family_bootstrap_95_interval": [
+            0.7191460161303189,
+            0.9165546651151323
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9527697469393582,
+          "family_bootstrap_95_interval": [
+            0.9214659050659236,
+            0.976760627620102
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9797979797979798,
+          "family_bootstrap_95_interval": [
+            0.9595959595959596,
+            0.9952612223911294
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.196113074204947,
+          "family_bootstrap_95_interval": [
+            0.1404142151174696,
+            0.2646549472364434
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8576298053842695,
+          "family_bootstrap_95_interval": [
+            0.8109854586615702,
+            0.8954252134382434
+          ]
+        },
+        "precision": {
+          "estimate": 0.6360655737704918,
+          "family_bootstrap_95_interval": [
+            0.55640625,
+            0.7127668777147905
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04546662487237661,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 111,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.09702015810689937,
+          "family_bootstrap_95_interval": [
+            0.07739010740779603,
+            0.11817418306019026
+          ]
+        }
+      },
+      "lfm3/local": {
+        "ap": {
+          "estimate": 0.9319168967945569,
+          "family_bootstrap_95_interval": [
+            0.9010992426788754,
+            0.9591382935863725
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9698754327729593,
+          "family_bootstrap_95_interval": [
+            0.9546718883570877,
+            0.9829293941967804
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9848484848484849,
+          "family_bootstrap_95_interval": [
+            0.9675925925925926,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.42579505300353354,
+          "family_bootstrap_95_interval": [
+            0.36068126520681265,
+            0.4932051929588267
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6980619895967816,
+          "family_bootstrap_95_interval": [
+            0.6514972942217462,
+            0.742262805343131
+          ]
+        },
+        "precision": {
+          "estimate": 0.44724770642201833,
+          "family_bootstrap_95_interval": [
+            0.3883051999780244,
+            0.5152228068013001
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.05218367421363229,
+        "alert_counts": {
+          "true_positive": 195,
+          "false_positive": 241,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.08328506002836548,
+          "family_bootstrap_95_interval": [
+            0.06456066504647122,
+            0.10496253644405355
+          ]
+        }
+      },
+      "lfm3/relations": {
+        "ap": {
+          "estimate": 0.9362156371387411,
+          "family_bootstrap_95_interval": [
+            0.9058693677470033,
+            0.962594689792876
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9723025306064176,
+          "family_bootstrap_95_interval": [
+            0.9570509708737864,
+            0.9849071649714513
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9848484848484849,
+          "family_bootstrap_95_interval": [
+            0.9675925925925926,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.36395759717314485,
+          "family_bootstrap_95_interval": [
+            0.3014160913061857,
+            0.4291686320754716
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7429058763461714,
+          "family_bootstrap_95_interval": [
+            0.6996167397024788,
+            0.7850835925030739
+          ]
+        },
+        "precision": {
+          "estimate": 0.486284289276808,
+          "family_bootstrap_95_interval": [
+            0.42444281414597446,
+            0.5582672764227642
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.05069066824333067,
+        "alert_counts": {
+          "true_positive": 195,
+          "false_positive": 206,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.07902892140756834,
+          "family_bootstrap_95_interval": [
+            0.060905164546227276,
+            0.10031738364730783
+          ]
+        }
+      },
+      "gemma4/ner": {
+        "ap": {
+          "estimate": 0.8168599597232782,
+          "family_bootstrap_95_interval": [
+            0.7121260827820365,
+            0.9078692648952001
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9466038476639184,
+          "family_bootstrap_95_interval": [
+            0.9145969883866975,
+            0.9718856666509196
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9797979797979798,
+          "family_bootstrap_95_interval": [
+            0.9595959595959596,
+            0.9952612223911294
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.20318021201413428,
+          "family_bootstrap_95_interval": [
+            0.14568324854532158,
+            0.27099973546973005
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8528245668071707,
+          "family_bootstrap_95_interval": [
+            0.806152876599698,
+            0.8918166210639424
+          ]
+        },
+        "precision": {
+          "estimate": 0.627831715210356,
+          "family_bootstrap_95_interval": [
+            0.5502950752950754,
+            0.7037069299264421
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04693893689992538,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 115,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.10192054110025695,
+          "family_bootstrap_95_interval": [
+            0.08144058615550517,
+            0.12366461100310126
+          ]
+        }
+      },
+      "gemma4/local": {
+        "ap": {
+          "estimate": 0.8013098098888316,
+          "family_bootstrap_95_interval": [
+            0.7375057104924323,
+            0.8639314513419187
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9175143662776172,
+          "family_bootstrap_95_interval": [
+            0.8895363238649342,
+            0.9418676807575707
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9242424242424242,
+          "family_bootstrap_95_interval": [
+            0.8894466321994589,
+            0.9556976027780889
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.25618374558303886,
+          "family_bootstrap_95_interval": [
+            0.19295294231176302,
+            0.32676535045188315
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8028699235613934,
+          "family_bootstrap_95_interval": [
+            0.7566772235752095,
+            0.8443234069950434
+          ]
+        },
+        "precision": {
+          "estimate": 0.5579268292682927,
+          "family_bootstrap_95_interval": [
+            0.4873395309642486,
+            0.6337218560213301
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.055075397425173894,
+        "alert_counts": {
+          "true_positive": 183,
+          "false_positive": 145,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.16433488942631577,
+          "family_bootstrap_95_interval": [
+            0.1312271684002019,
+            0.2029296562137314
+          ]
+        }
+      },
+      "gemma4/relations": {
+        "ap": {
+          "estimate": 0.820132956243883,
+          "family_bootstrap_95_interval": [
+            0.7542601694650557,
+            0.8825641713073009
+          ]
+        },
+        "auroc": {
+          "estimate": 0.928784309526359,
+          "family_bootstrap_95_interval": [
+            0.9007539015980469,
+            0.9523277268321461
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9343434343434344,
+          "family_bootstrap_95_interval": [
+            0.905,
+            0.9624413145539906
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.22968197879858657,
+          "family_bootstrap_95_interval": [
+            0.1691637013477768,
+            0.297031144862059
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8233836984590018,
+          "family_bootstrap_95_interval": [
+            0.7792915250254928,
+            0.86302923551629
+          ]
+        },
+        "precision": {
+          "estimate": 0.5873015873015873,
+          "family_bootstrap_95_interval": [
+            0.5139231715893108,
+            0.6643610345434284
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.053315273498228864,
+        "alert_counts": {
+          "true_positive": 185,
+          "false_positive": 130,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.15865083412428352,
+          "family_bootstrap_95_interval": [
+            0.12674128886330488,
+            0.19610878890213962
+          ]
+        }
+      },
+      "gemma4/relations_full_width": {
+        "ap": {
+          "estimate": 0.8382377145015038,
+          "family_bootstrap_95_interval": [
+            0.7797141987434958,
+            0.8937214741547396
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9353339044151765,
+          "family_bootstrap_95_interval": [
+            0.9117984769695582,
+            0.9551777543669004
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9444444444444444,
+          "family_bootstrap_95_interval": [
+            0.9141406395240751,
+            0.9720670391061452
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.2773851590106007,
+          "family_bootstrap_95_interval": [
+            0.21720082452623907,
+            0.3404255319148936
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7934413251293501,
+          "family_bootstrap_95_interval": [
+            0.7521334147992892,
+            0.8326080886809866
+          ]
+        },
+        "precision": {
+          "estimate": 0.5436046511627907,
+          "family_bootstrap_95_interval": [
+            0.47798626526082133,
+            0.6176470588235294
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.0548796579244418,
+        "alert_counts": {
+          "true_positive": 187,
+          "false_positive": 157,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.1432750529610703,
+          "family_bootstrap_95_interval": [
+            0.11446415868264681,
+            0.17696062247971014
+          ]
+        }
+      },
+      "production/relations": {
+        "ap": {
+          "estimate": 0.9260038357436933,
+          "family_bootstrap_95_interval": [
+            0.8912397675527737,
+            0.9589690242702047
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9728468429881857,
+          "family_bootstrap_95_interval": [
+            0.9592085802531565,
+            0.9844042713199551
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9848484848484849,
+          "family_bootstrap_95_interval": [
+            0.9672897196261683,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.2915194346289753,
+          "family_bootstrap_95_interval": [
+            0.23356372928428337,
+            0.3615858511422254
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7936626057523718,
+          "family_bootstrap_95_interval": [
+            0.7491708686644831,
+            0.831846509285737
+          ]
+        },
+        "precision": {
+          "estimate": 0.5416666666666666,
+          "family_bootstrap_95_interval": [
+            0.47860675061813585,
+            0.60932944606414
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 195,
+          "false_positive": 165,
+          "human_positive": 198,
+          "human_negative": 566
+        },
+        "brier": {
+          "estimate": 0.07709528636157448,
+          "family_bootstrap_95_interval": [
+            0.059161022848994736,
+            0.09723209407614088
+          ]
+        }
+      }
+    },
+    "paired_ap_differences": {
+      "qwen/relations - qwen/ner": {
+        "estimate": 0.10824816135201454,
+        "family_bootstrap_95_interval": [
+          0.032584724626177584,
+          0.19157372445651713
+        ]
+      },
+      "qwen/relations - qwen/local": {
+        "estimate": 0.009926602411515772,
+        "family_bootstrap_95_interval": [
+          0.002102764314170974,
+          0.021132580475342954
+        ]
+      },
+      "lfm3/relations - lfm3/ner": {
+        "estimate": 0.1134400293058686,
+        "family_bootstrap_95_interval": [
+          0.034831051210647244,
+          0.20007768917878177
+        ]
+      },
+      "lfm3/relations - lfm3/local": {
+        "estimate": 0.004298740344184204,
+        "family_bootstrap_95_interval": [
+          -0.0010933015813590211,
+          0.009327750510535717
+        ]
+      },
+      "lfm3/relations - qwen/ner": {
+        "estimate": 0.12456234139273803,
+        "family_bootstrap_95_interval": [
+          0.04169422466595451,
+          0.21505275401882173
+        ]
+      },
+      "gemma4/relations - gemma4/ner": {
+        "estimate": 0.003272996520604865,
+        "family_bootstrap_95_interval": [
+          -0.05665184679093112,
+          0.06701653523624196
+        ]
+      },
+      "gemma4/relations - gemma4/local": {
+        "estimate": 0.018823146355051446,
+        "family_bootstrap_95_interval": [
+          0.006931932608638902,
+          0.030930437920922645
+        ]
+      },
+      "gemma4/relations - qwen/ner": {
+        "estimate": 0.00847966049787996,
+        "family_bootstrap_95_interval": [
+          -0.0612960691285458,
+          0.07779988492841376
+        ]
+      },
+      "lfm3/relations - qwen/relations": {
+        "estimate": 0.01631418004072349,
+        "family_bootstrap_95_interval": [
+          -0.01315732946457117,
+          0.04281431637729896
+        ]
+      },
+      "gemma4/relations - qwen/relations": {
+        "estimate": -0.09976850085413458,
+        "family_bootstrap_95_interval": [
+          -0.14426623118244813,
+          -0.0598633939990539
+        ]
+      },
+      "gemma4/relations - lfm3/relations": {
+        "estimate": -0.11608268089485807,
+        "family_bootstrap_95_interval": [
+          -0.16739711995772136,
+          -0.06743473777912842
+        ]
+      },
+      "production/relations - qwen/relations": {
+        "estimate": 0.0061023786456756435,
+        "family_bootstrap_95_interval": [
+          -0.00895079990324452,
+          0.023176581402477935
+        ]
+      },
+      "gemma4/relations_full_width - gemma4/relations": {
+        "estimate": 0.0181047582576207,
+        "family_bootstrap_95_interval": [
+          -0.0011872885517020754,
+          0.03888351913589764
+        ]
+      }
+    }
+  },
+  "first_person_mention": {
+    "movie_groups": 39,
+    "words": 302,
+    "positive_words": 194,
+    "methods": {
+      "qwen/ner": {
+        "ap": {
+          "estimate": 0.8189775126771967,
+          "family_bootstrap_95_interval": [
+            0.7139365261975394,
+            0.9146261533676169
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7916666666666666,
+          "family_bootstrap_95_interval": [
+            0.7204506542917319,
+            0.868781936142055
+          ]
+        },
+        "sensitivity": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.9907407407407407,
+          "family_bootstrap_95_interval": [
+            0.97,
+            1.0
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5100870789430241,
+          "family_bootstrap_95_interval": [
+            0.41303995666465904,
+            0.6059861719570643
+          ]
+        },
+        "precision": {
+          "estimate": 0.6445182724252492,
+          "family_bootstrap_95_interval": [
+            0.5644133315383579,
+            0.7201525153950527
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04666132429784063,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 107,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.23049021984106838,
+          "family_bootstrap_95_interval": [
+            0.21250374412350026,
+            0.24976479421896886
+          ]
+        }
+      },
+      "qwen/local": {
+        "ap": {
+          "estimate": 0.9248651387237302,
+          "family_bootstrap_95_interval": [
+            0.882285309382201,
+            0.9633037355222591
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8928503245513555,
+          "family_bootstrap_95_interval": [
+            0.8455072293251757,
+            0.9338849419658838
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9742268041237113,
+          "family_bootstrap_95_interval": [
+            0.9547511312217195,
+            0.9940476190476191
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6111111111111112,
+          "family_bootstrap_95_interval": [
+            0.5106327570921986,
+            0.6929912280701753
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7346091792199809,
+          "family_bootstrap_95_interval": [
+            0.6548020687517984,
+            0.808951049895131
+          ]
+        },
+        "precision": {
+          "estimate": 0.7411764705882353,
+          "family_bootstrap_95_interval": [
+            0.656560449859419,
+            0.8174976763836078
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04440035872918788,
+        "alert_counts": {
+          "true_positive": 189,
+          "false_positive": 66,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.19052474924294374,
+          "family_bootstrap_95_interval": [
+            0.1624912432147818,
+            0.22204112245508398
+          ]
+        }
+      },
+      "qwen/relations": {
+        "ap": {
+          "estimate": 0.9339661925002027,
+          "family_bootstrap_95_interval": [
+            0.8948089707320652,
+            0.96939375824183
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9033027873234059,
+          "family_bootstrap_95_interval": [
+            0.8637390653158483,
+            0.94137256993691
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9742268041237113,
+          "family_bootstrap_95_interval": [
+            0.9547511312217195,
+            0.9940476190476191
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6111111111111112,
+          "family_bootstrap_95_interval": [
+            0.5,
+            0.7007890840568005
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7346091792199809,
+          "family_bootstrap_95_interval": [
+            0.6451883937135302,
+            0.813861175532471
+          ]
+        },
+        "precision": {
+          "estimate": 0.7411764705882353,
+          "family_bootstrap_95_interval": [
+            0.6504820422296151,
+            0.8214285714285714
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04402663600457834,
+        "alert_counts": {
+          "true_positive": 189,
+          "false_positive": 66,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.19611783837130367,
+          "family_bootstrap_95_interval": [
+            0.1686274637366748,
+            0.2267471798443338
+          ]
+        }
+      },
+      "lfm3/ner": {
+        "ap": {
+          "estimate": 0.8306386915966312,
+          "family_bootstrap_95_interval": [
+            0.7298966719376304,
+            0.9227357738659605
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7987781596029019,
+          "family_bootstrap_95_interval": [
+            0.7260266544721079,
+            0.8783803742533599
+          ]
+        },
+        "sensitivity": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.9907407407407407,
+          "family_bootstrap_95_interval": [
+            0.97,
+            1.0
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5100870789430241,
+          "family_bootstrap_95_interval": [
+            0.41303995666465904,
+            0.6059861719570643
+          ]
+        },
+        "precision": {
+          "estimate": 0.6445182724252492,
+          "family_bootstrap_95_interval": [
+            0.5644133315383579,
+            0.7201525153950527
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04546662487237661,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 107,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.23218395601289868,
+          "family_bootstrap_95_interval": [
+            0.21315129177620956,
+            0.25309575670296786
+          ]
+        }
+      },
+      "lfm3/local": {
+        "ap": {
+          "estimate": 0.9499186791310699,
+          "family_bootstrap_95_interval": [
+            0.9233992272834011,
+            0.9728098870885756
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9200076365024819,
+          "family_bootstrap_95_interval": [
+            0.8792848246386382,
+            0.9513785470706257
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9746192893401016,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.75,
+          "family_bootstrap_95_interval": [
+            0.6530612244897959,
+            0.8260869565217391
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6691711446295138,
+          "family_bootstrap_95_interval": [
+            0.5737093270066492,
+            0.7614986809435987
+          ]
+        },
+        "precision": {
+          "estimate": 0.7032967032967034,
+          "family_bootstrap_95_interval": [
+            0.6171617161716172,
+            0.7842323651452282
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.05218367421363229,
+        "alert_counts": {
+          "true_positive": 192,
+          "false_positive": 81,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.1925694621798945,
+          "family_bootstrap_95_interval": [
+            0.164135844283377,
+            0.2243991024366848
+          ]
+        }
+      },
+      "lfm3/relations": {
+        "ap": {
+          "estimate": 0.9530837487663041,
+          "family_bootstrap_95_interval": [
+            0.9270143327032722,
+            0.9749749910698984
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9240168003054601,
+          "family_bootstrap_95_interval": [
+            0.8855830861994083,
+            0.9543904535625672
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9746192893401016,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6944444444444444,
+          "family_bootstrap_95_interval": [
+            0.5977011494252874,
+            0.77
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.700141334868605,
+          "family_bootstrap_95_interval": [
+            0.6177082744241668,
+            0.7833100737406996
+          ]
+        },
+        "precision": {
+          "estimate": 0.7191011235955056,
+          "family_bootstrap_95_interval": [
+            0.637035203520352,
+            0.7974696620985459
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.05069066824333067,
+        "alert_counts": {
+          "true_positive": 192,
+          "false_positive": 75,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.18272184471734013,
+          "family_bootstrap_95_interval": [
+            0.15542657144133815,
+            0.2137095708958676
+          ]
+        }
+      },
+      "gemma4/ner": {
+        "ap": {
+          "estimate": 0.8251216183938658,
+          "family_bootstrap_95_interval": [
+            0.7216678885116273,
+            0.9137309244490244
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7744368079419626,
+          "family_bootstrap_95_interval": [
+            0.7033432132943306,
+            0.8539491117267265
+          ]
+        },
+        "sensitivity": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.9907407407407407,
+          "family_bootstrap_95_interval": [
+            0.97,
+            1.0
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5100870789430241,
+          "family_bootstrap_95_interval": [
+            0.41303995666465904,
+            0.6059861719570643
+          ]
+        },
+        "precision": {
+          "estimate": 0.6445182724252492,
+          "family_bootstrap_95_interval": [
+            0.5644133315383579,
+            0.7201525153950527
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04693893689992538,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 107,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.2445378705378283,
+          "family_bootstrap_95_interval": [
+            0.22734100290872564,
+            0.2639758541677583
+          ]
+        }
+      },
+      "gemma4/local": {
+        "ap": {
+          "estimate": 0.8579628816106726,
+          "family_bootstrap_95_interval": [
+            0.791804118360393,
+            0.9186773115397412
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7774914089347079,
+          "family_bootstrap_95_interval": [
+            0.71939959973938,
+            0.8431625136907033
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9432989690721649,
+          "family_bootstrap_95_interval": [
+            0.9119488708573663,
+            0.9707317073170731
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6018518518518519,
+          "family_bootstrap_95_interval": [
+            0.4626819029850746,
+            0.7073170731707317
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7217743949337249,
+          "family_bootstrap_95_interval": [
+            0.6297031982614383,
+            0.8063633778385219
+          ]
+        },
+        "precision": {
+          "estimate": 0.7379032258064516,
+          "family_bootstrap_95_interval": [
+            0.6438825410260027,
+            0.827433628318584
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.055075397425173894,
+        "alert_counts": {
+          "true_positive": 183,
+          "false_positive": 65,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.3993652222827138,
+          "family_bootstrap_95_interval": [
+            0.34731400198470735,
+            0.45174948408088345
+          ]
+        }
+      },
+      "gemma4/relations": {
+        "ap": {
+          "estimate": 0.867357253162385,
+          "family_bootstrap_95_interval": [
+            0.8010652281814956,
+            0.9254726517715308
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7939576174112256,
+          "family_bootstrap_95_interval": [
+            0.7353590621433759,
+            0.8582952239506798
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9536082474226805,
+          "family_bootstrap_95_interval": [
+            0.9289610551718399,
+            0.9772727272727273
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.5833333333333334,
+          "family_bootstrap_95_interval": [
+            0.4390038366675802,
+            0.6982261273209549
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7364178478319499,
+          "family_bootstrap_95_interval": [
+            0.6370261618618681,
+            0.8214935067621473
+          ]
+        },
+        "precision": {
+          "estimate": 0.7459677419354839,
+          "family_bootstrap_95_interval": [
+            0.6466367276196107,
+            0.8367368286226624
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.053315273498228864,
+        "alert_counts": {
+          "true_positive": 185,
+          "false_positive": 63,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.385292085076006,
+          "family_bootstrap_95_interval": [
+            0.33561951136971424,
+            0.43632551719705415
+          ]
+        }
+      },
+      "gemma4/relations_full_width": {
+        "ap": {
+          "estimate": 0.8835103831866384,
+          "family_bootstrap_95_interval": [
+            0.8265678442122105,
+            0.9353474931853919
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8171534936998854,
+          "family_bootstrap_95_interval": [
+            0.7631915886809268,
+            0.8724606877457226
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9639175257731959,
+          "family_bootstrap_95_interval": [
+            0.9402149505337152,
+            0.9850746268656716
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6388888888888888,
+          "family_bootstrap_95_interval": [
+            0.5227272727272727,
+            0.7289719626168224
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7150226962147491,
+          "family_bootstrap_95_interval": [
+            0.6249524541021838,
+            0.7992987370295317
+          ]
+        },
+        "precision": {
+          "estimate": 0.73046875,
+          "family_bootstrap_95_interval": [
+            0.6398598049460119,
+            0.8148148148148148
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.0548796579244418,
+        "alert_counts": {
+          "true_positive": 187,
+          "false_positive": 69,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.34523091456632804,
+          "family_bootstrap_95_interval": [
+            0.2988861436389924,
+            0.3936250409146713
+          ]
+        }
+      },
+      "production/relations": {
+        "ap": {
+          "estimate": 0.9396147459200804,
+          "family_bootstrap_95_interval": [
+            0.9065957908543262,
+            0.9702685158616545
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9096029018709431,
+          "family_bootstrap_95_interval": [
+            0.8714277056277057,
+            0.9446630150768318
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9744897959183674,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6203703703703703,
+          "family_bootstrap_95_interval": [
+            0.5104166666666666,
+            0.7063510266491918
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7387395289680277,
+          "family_bootstrap_95_interval": [
+            0.6478145672402627,
+            0.8214970520423077
+          ]
+        },
+        "precision": {
+          "estimate": 0.7413127413127413,
+          "family_bootstrap_95_interval": [
+            0.6509047459893048,
+            0.8235294117647058
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 192,
+          "false_positive": 67,
+          "human_positive": 194,
+          "human_negative": 108
+        },
+        "brier": {
+          "estimate": 0.1806379373968546,
+          "family_bootstrap_95_interval": [
+            0.15512087856900836,
+            0.20869169327921494
+          ]
+        }
+      }
+    },
+    "paired_ap_differences": {
+      "qwen/relations - qwen/ner": {
+        "estimate": 0.11498867982300609,
+        "family_bootstrap_95_interval": [
+          0.03852794553548418,
+          0.20068597955639272
+        ]
+      },
+      "qwen/relations - qwen/local": {
+        "estimate": 0.009101053776472523,
+        "family_bootstrap_95_interval": [
+          0.001505399731203841,
+          0.020304542048351668
+        ]
+      },
+      "lfm3/relations - lfm3/ner": {
+        "estimate": 0.12244505716967291,
+        "family_bootstrap_95_interval": [
+          0.04390550385477249,
+          0.21187625394112763
+        ]
+      },
+      "lfm3/relations - lfm3/local": {
+        "estimate": 0.003165069635234219,
+        "family_bootstrap_95_interval": [
+          -0.0018234487078685967,
+          0.008185272803933228
+        ]
+      },
+      "lfm3/relations - qwen/ner": {
+        "estimate": 0.13410623608910743,
+        "family_bootstrap_95_interval": [
+          0.05090237558063952,
+          0.2268225507647683
+        ]
+      },
+      "gemma4/relations - gemma4/ner": {
+        "estimate": 0.042235634768519215,
+        "family_bootstrap_95_interval": [
+          -0.0061068260250969125,
+          0.09696950740681036
+        ]
+      },
+      "gemma4/relations - gemma4/local": {
+        "estimate": 0.00939437155171241,
+        "family_bootstrap_95_interval": [
+          -9.890702840084618e-05,
+          0.01940322612182875
+        ]
+      },
+      "gemma4/relations - qwen/ner": {
+        "estimate": 0.04837974048518834,
+        "family_bootstrap_95_interval": [
+          -0.009969684512217124,
+          0.10740477490180658
+        ]
+      },
+      "lfm3/relations - qwen/relations": {
+        "estimate": 0.019117556266101343,
+        "family_bootstrap_95_interval": [
+          -0.01089905741892266,
+          0.04709860314519
+        ]
+      },
+      "gemma4/relations - qwen/relations": {
+        "estimate": -0.06660893933781775,
+        "family_bootstrap_95_interval": [
+          -0.11109604272373219,
+          -0.030067069763309976
+        ]
+      },
+      "gemma4/relations - lfm3/relations": {
+        "estimate": -0.0857264956039191,
+        "family_bootstrap_95_interval": [
+          -0.1427185308762799,
+          -0.03696561436601735
+        ]
+      },
+      "production/relations - qwen/relations": {
+        "estimate": 0.005648553419877689,
+        "family_bootstrap_95_interval": [
+          -0.009491320206793373,
+          0.022611519405767593
+        ]
+      },
+      "gemma4/relations_full_width - gemma4/relations": {
+        "estimate": 0.016153130024253448,
+        "family_bootstrap_95_interval": [
+          -0.0017490526811739819,
+          0.03705635419046973
+        ]
+      }
+    }
+  }
+}

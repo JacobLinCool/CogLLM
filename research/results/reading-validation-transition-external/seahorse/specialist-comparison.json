@@ -1,0 +1,757 @@
+{
+  "receipt": {
+    "model": "google/seahorse-large-q1",
+    "revision": "a39a2c372923817c2a857b7953cb10827ec0e810",
+    "weights_sha256": "c3cc21518164b750a34f6d0ab05291b1cf60322fe275dd57a7f5104e9a45acc0",
+    "tokenizer_sha256": "99cc999819aaabf74898a252863b10d86fbcd86e8b3f65c118ff334ff85c5ea5",
+    "source_sha256": "e759af76a71078eb2e181fcfec276dd888f8623b4c1ca87eb558c190e5d4e295",
+    "protocol_sha256": "59cb5c6ad4ba841374375f22edc4365d0765b522fd3f814ca0225d20ed0924b8",
+    "forecasts_sha256": "e1b2af6ec0821c4468205d02ea4e30ac11f6804db0b95a92b5fe8c4b19b5ddb7",
+    "label_tokens": [
+      [
+        497
+      ],
+      [
+        333
+      ]
+    ],
+    "articles_and_summaries": 4355,
+    "model_calls": 545,
+    "seen_grades": 0,
+    "input_length": 2048,
+    "seconds": 355.08074274399996,
+    "hardware": "NVIDIA L4",
+    "dtype": "bfloat16"
+  },
+  "source": "e759af76a71078eb2e181fcfec276dd888f8623b4c1ca87eb558c190e5d4e295",
+  "protocol": "59cb5c6ad4ba841374375f22edc4365d0765b522fd3f814ca0225d20ed0924b8",
+  "full_eligible_specialist": {
+    "rows": 4354,
+    "no": 211,
+    "prevalence_no": 0.04846118511713367,
+    "mean_predicted_no": 0.06018144527869882,
+    "nll": 0.13167740510168882,
+    "brier": 0.036231122279784034,
+    "AUROC": 0.9146078636608542,
+    "average_precision_no": 0.4363458304369614,
+    "pearson": 0.4975953127029027,
+    "threshold": 0.5,
+    "true_mark": 79,
+    "false_mark": 69,
+    "missed": 132,
+    "precision": 0.5337837837837838,
+    "recall": 0.3744075829383886,
+    "false_alarms_per_100_clear": 1.66545981173063,
+    "F1": 0.4401114206128134
+  },
+  "classification_token_visibility_counts": {
+    "full": 4318,
+    "absent": 33,
+    "partial": 4
+  },
+  "shared": {
+    "all_shared": {
+      "rows": 4349,
+      "no": 206,
+      "articles": 1005,
+      "informative_articles": 179,
+      "within_article_pairs": 962,
+      "scores": {
+        "native": {
+          "nll": {
+            "estimate": 0.14835078965503967,
+            "interval": [
+              0.13179062255817317,
+              0.16581837226079055
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.038474529127028735,
+            "interval": [
+              0.033733631332977576,
+              0.04358728481660897
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8421058798441166,
+            "interval": [
+              0.8103720714926435,
+              0.8711990808250203
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8531989890928439,
+            "interval": [
+              0.8133995814334782,
+              0.8911712779247501
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.30700003395656983
+        },
+        "form": {
+          "nll": {
+            "estimate": 0.15806897132959946,
+            "interval": [
+              0.1407020682307368,
+              0.17639295650080294
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.04004720703565753,
+            "interval": [
+              0.035066322692350695,
+              0.045431328319760836
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8298416559455767,
+            "interval": [
+              0.7975930550819508,
+              0.8607334286136366
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8357120688126276,
+            "interval": [
+              0.7954465827055869,
+              0.8735625850340136
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.2992403980068669
+        },
+        "character_native": {
+          "nll": {
+            "estimate": 0.14436651188413843,
+            "interval": [
+              0.12852846300302911,
+              0.16119397754081594
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03764268375574444,
+            "interval": [
+              0.03311049295190462,
+              0.04251078703081849
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8494126248743348,
+            "interval": [
+              0.8181400226610627,
+              0.8792964757627171
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8511040170258047,
+            "interval": [
+              0.8109568205735335,
+              0.8884435965922799
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.32615961504023655
+        },
+        "metadata": {
+          "nll": {
+            "estimate": 0.14836936595215186,
+            "interval": [
+              0.13277907008845574,
+              0.16542069645671287
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.039467458244555234,
+            "interval": [
+              0.03476377428500264,
+              0.04448319930278539
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8471360043493645,
+            "interval": [
+              0.8193366192722297,
+              0.8733571543032451
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8657000975436732,
+            "interval": [
+              0.827646388647111,
+              0.9003988546176048
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.21873666782144857
+        },
+        "metadata_native": {
+          "nll": {
+            "estimate": 0.13569970272418547,
+            "interval": [
+              0.1201906348514954,
+              0.15215816539055774
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.036381977030645385,
+            "interval": [
+              0.032018607611822576,
+              0.04103553567894611
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8804698063642264,
+            "interval": [
+              0.8516273918119386,
+              0.9061228525107817
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8707435488161746,
+            "interval": [
+              0.8300056223443778,
+              0.9068697583259053
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.35563022779909215
+        },
+        "published_q1": {
+          "nll": {
+            "estimate": 0.1308032547268099,
+            "interval": [
+              0.11681469928435698,
+              0.14571612589783198
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03587488623487486,
+            "interval": [
+              0.03147609388335951,
+              0.04055640654162282
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.9130630915639668,
+            "interval": [
+              0.8938883027378308,
+              0.931984345138395
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8742019154030327,
+            "interval": [
+              0.8363256897731159,
+              0.9104752061939031
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.43049024307978356
+        }
+      },
+      "paired": {
+        "native minus published_q1": {
+          "nll": {
+            "estimate": 0.017547534928229774,
+            "interval": [
+              0.007147404319119552,
+              0.02794705558215318
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.07095721171985025,
+            "interval": [
+              -0.10189230393643527,
+              -0.042110332353380825
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.021002926310188852,
+            "interval": [
+              -0.0652060098162073,
+              0.025145503116380155
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "form minus published_q1": {
+          "nll": {
+            "estimate": 0.027265716602789564,
+            "interval": [
+              0.015417091319210296,
+              0.03983808076946348
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.08322143561839013,
+            "interval": [
+              -0.11335968941421966,
+              -0.05464049729903426
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.03848984659040511,
+            "interval": [
+              -0.08015675835551606,
+              0.003602337016421543
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "character_native minus published_q1": {
+          "nll": {
+            "estimate": 0.013563257157328534,
+            "interval": [
+              0.0038871507794880464,
+              0.023722882773909756
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.06365046668963203,
+            "interval": [
+              -0.0941663111692476,
+              -0.03552616782389986
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.023097898377227977,
+            "interval": [
+              -0.06480068353342484,
+              0.019233666799082953
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "metadata minus published_q1": {
+          "nll": {
+            "estimate": 0.017566111225341963,
+            "interval": [
+              0.007077188380892154,
+              0.028668998459588202
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.06592708721460228,
+            "interval": [
+              -0.09384173991877914,
+              -0.039743220488155366
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.00850181785935955,
+            "interval": [
+              -0.045392622641973523,
+              0.026192243659916205
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "metadata_native minus published_q1": {
+          "nll": {
+            "estimate": 0.004896447997375569,
+            "interval": [
+              -0.004565539180526134,
+              0.014972741190639967
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.03259328519974036,
+            "interval": [
+              -0.0604007951212647,
+              -0.008436809461552492
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.0034583665868581637,
+            "interval": [
+              -0.03918869631185783,
+              0.031246244458952764
+            ],
+            "bootstrap_draws": 3000
+          }
+        }
+      }
+    },
+    "full_summary_visible": {
+      "rows": 4312,
+      "no": 201,
+      "articles": 998,
+      "informative_articles": 176,
+      "within_article_pairs": 928,
+      "scores": {
+        "native": {
+          "nll": {
+            "estimate": 0.14583049270698728,
+            "interval": [
+              0.12976149464340125,
+              0.16212122313173874
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03779134030619511,
+            "interval": [
+              0.03296358717868576,
+              0.04265363980189601
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8450462356183084,
+            "interval": [
+              0.8140834032824678,
+              0.8734925192867026
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8525906385281385,
+            "interval": [
+              0.8125265016119988,
+              0.8921043264057035
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.3083998397056748
+        },
+        "form": {
+          "nll": {
+            "estimate": 0.15549838762351936,
+            "interval": [
+              0.13796417279850964,
+              0.17304709949252706
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03932302471971885,
+            "interval": [
+              0.034200849834130194,
+              0.04455296615067831
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.832555781055801,
+            "interval": [
+              0.7998319789166054,
+              0.8636118118133848
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8373308982683983,
+            "interval": [
+              0.7964629087689282,
+              0.8754302641389802
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.30270025183524407
+        },
+        "character_native": {
+          "nll": {
+            "estimate": 0.14193936480319685,
+            "interval": [
+              0.12635993563148976,
+              0.15751310550470615
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03696429569315641,
+            "interval": [
+              0.032406967528849986,
+              0.04156949938084232
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8520520724037318,
+            "interval": [
+              0.8208514386248731,
+              0.8816557500734793
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8518804112554111,
+            "interval": [
+              0.8101790864601655,
+              0.8924409099960176
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.3279939864969226
+        },
+        "metadata": {
+          "nll": {
+            "estimate": 0.1455340132589061,
+            "interval": [
+              0.12964104111203467,
+              0.1617896080246758
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.038792941557278734,
+            "interval": [
+              0.034159012837805945,
+              0.04371111176141295
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8523758003947666,
+            "interval": [
+              0.8236912067735331,
+              0.8795146768763509
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8703553391053394,
+            "interval": [
+              0.8321060923139929,
+              0.9048087483265502
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.21913897105351754
+        },
+        "metadata_native": {
+          "nll": {
+            "estimate": 0.13218388847288937,
+            "interval": [
+              0.11726702173291165,
+              0.14755972202101755
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03564651229178401,
+            "interval": [
+              0.03121627680874847,
+              0.04016429454727812
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.8868017005703663,
+            "interval": [
+              0.8601864092401318,
+              0.9105611549503684
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8739853896103896,
+            "interval": [
+              0.8344551799886621,
+              0.9107831627639262
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.36000744211918495
+        },
+        "published_q1": {
+          "nll": {
+            "estimate": 0.12785698337212642,
+            "interval": [
+              0.11339803188548427,
+              0.14238309558268747
+            ],
+            "bootstrap_draws": 3000
+          },
+          "brier": {
+            "estimate": 0.03493626849323169,
+            "interval": [
+              0.030452608582243298,
+              0.039390080166894645
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": 0.9151493808021435,
+            "interval": [
+              0.8935629030846096,
+              0.933761855147064
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": 0.8805803571428572,
+            "interval": [
+              0.8407767913892885,
+              0.9160949565637065
+            ],
+            "bootstrap_draws": 3000
+          },
+          "average_precision_no": 0.43839288592223713
+        }
+      },
+      "paired": {
+        "native minus published_q1": {
+          "nll": {
+            "estimate": 0.01797350933486086,
+            "interval": [
+              0.00727087599268101,
+              0.027560897391282282
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.07010314518383509,
+            "interval": [
+              -0.09882663220921194,
+              -0.041635338968358054
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.02798971861471866,
+            "interval": [
+              -0.07227376989081095,
+              0.01615303831113256
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "form minus published_q1": {
+          "nll": {
+            "estimate": 0.027641404251392943,
+            "interval": [
+              0.015783649485303246,
+              0.04039150580932636
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.0825935997463425,
+            "interval": [
+              -0.11280289407707195,
+              -0.05350228704143735
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.04324945887445886,
+            "interval": [
+              -0.08525711424983398,
+              -0.001771298860453332
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "character_native minus published_q1": {
+          "nll": {
+            "estimate": 0.014082381431070434,
+            "interval": [
+              0.004454936997161385,
+              0.023539817209582845
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.06309730839841166,
+            "interval": [
+              -0.09191746075815736,
+              -0.03449089768202484
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.028699945887446066,
+            "interval": [
+              -0.07095630004453549,
+              0.013664344128308931
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "metadata minus published_q1": {
+          "nll": {
+            "estimate": 0.017677029886779688,
+            "interval": [
+              0.006961982435203658,
+              0.02846536938968945
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.0627735804073769,
+            "interval": [
+              -0.08995630137471257,
+              -0.03661159910446289
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.010225018037517852,
+            "interval": [
+              -0.044552920178837656,
+              0.028080458154908533
+            ],
+            "bootstrap_draws": 3000
+          }
+        },
+        "metadata_native minus published_q1": {
+          "nll": {
+            "estimate": 0.0043269051007629455,
+            "interval": [
+              -0.005334896672669255,
+              0.013634008195762451
+            ],
+            "bootstrap_draws": 3000
+          },
+          "AUROC": {
+            "estimate": -0.02834768023177714,
+            "interval": [
+              -0.05261690372670202,
+              -0.0038479759282773625
+            ],
+            "bootstrap_draws": 3000
+          },
+          "within_article": {
+            "estimate": -0.006594967532467577,
+            "interval": [
+              -0.04035609444648614,
+              0.029005292866664922
+            ],
+            "bootstrap_draws": 3000
+          }
+        }
+      }
+    }
+  },
+  "input_privileges": "mT5 uses original article plus summary. Rater and CogLLM see only the summary."
+}

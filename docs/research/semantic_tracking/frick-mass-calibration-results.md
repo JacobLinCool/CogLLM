@@ -1,0 +1,22 @@
+# The first contradiction report was less early, and the target sentence effect remained small
+
+In Frick's 20 held-out story-backs, training with four-position-mixture cross-entropy caused the target pre-first report rate to fall within a ±10 percentage-point equivalence threshold under both conditions. The target pre-first report difference for inconsistent context versus consistent context was +17.15 percentage points, with human at +48.27. Model minus human was −31.12 percentage points, with a 95% confidence interval of [−41.31, −20.75]. The model retained the effect direction, but the magnitude did not pass. [Fixed threshold](frick-mass-calibration-protocol.md) · [Full results](../../../research/results/frick-mass-calibration/results.json)
+
+The first report of the four categories is when humans press "contradict" before the target sentence, in the target sentence, after the target sentence, or do not press it after reading. Each model obtains the unconditional probability of the four categories from a per-sentence hazard. A 20-fold held-out split is applied to two versions of each story. first, loss weights are selected using only the internal training family, selecting 4 in each of the 20 folds, and then refitting using the remaining 19 folds. The model uses a causal prefix representation, seven features, and 1,800 reader-story trajectories. Each story is predicted independently from its own prefix. [Fold weights and selection scores](../../../research/results/frick-mass-calibration/fits.json) · [Source and button definitions](frick-consistency-source.md)
+
+| The preceding text | First report location | human | Original readout | Four-way calibration |
+| --- | --- | ---: | ---: | ---: |
+| Consistency | Pre-target sentence | 13.08% | 26.58% | 16.75% |
+| Consistency | Target sentence | 2.87% | 8.46% | 6.26% |
+| Consistency | Post-target sentence | 2.31% | 15.64% | 10.29% |
+| Consistency | The entire text contains no report. | 81.74% | 49.32% | 66.69% |
+| Inconsistency | Pre-target sentence | 13.41% | 26.53% | 16.68% |
+| Inconsistency | Target sentence | 51.15% | 31.76% | 23.42% |
+| Inconsistency | Post-target sentence | 1.22% | 5.76% | 4.52% |
+| Inconsistency | The entire text contains no report. | 34.23% | 35.95% | 55.38% |
+
+Calibration reduced the early-report rate under both conditions. In the consistent version, the model's difference from human targets was +3.67 percentage points, 95% CI [−1.75, +8.81]. The inconsistent version showed +3.27, CI [−2.95, +9.59]. Simultaneously, the inconsistent version reduced the probability of first reporting the target sentence from 31.76% to 23.42%, deviating from the human baseline of 51.15%. thus, the improvement in prefix distribution did not yield an improvement in the target sentence effect. The overall NLL was 1.574 nats/document, with a difference of −0.077 [−0.152, −0.005] relative to the previous readout version. The difference relative to the seven-feature equal-weighting readout was −0.071 [−0.194, +0.060], where the upper bound of the interval exceeds the non-inferiority threshold of +0.05. [Component magnitudes and intervals](../../../research/results/frick-mass-calibration/results.json)
+
+`frick_mass_calibration` Using the extracted state, the four products from two sequential runs on a single thread are bitwise identical. Each execution completes in under one second, with a peak memory usage of approximately 123 MiB, requiring no re-forwarding. After removing held-out story goals and condition information, the logits at 584 positions are fully consistent. Among the 544 cumulative reading stops truncated sequentially, the maximum score variation is approximately \(1.78\times10^{-15}\). The selection model, NLL, and four probability classes were independently recomputed. This batch of materials has been used for prior development, with results limited to experimental retrospective comparison. The human key represents the first per-sentence report, and the data lacks records of whether the same question was subsequently resolved. [Program](../../../research/semantic_tracking/frick_mass_calibration.py) · [Reproduce manifest](../../../research/results/frick-mass-calibration/run-verification.json) · [Independent verification](../../../research/results/frick-mass-calibration/independent-check.json)
+
+[Original research record](../../../research/semantic_tracking/frick-mass-calibration-results.md)

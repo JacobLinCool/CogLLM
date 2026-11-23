@@ -1,0 +1,2959 @@
+{
+  "features": [
+    "log1p_sentence_characters",
+    "log1p_sentence_words",
+    "log1p_sentence_ordinal",
+    "log1p_prior_words",
+    "prior_overlap_of_current_types",
+    "pair_direction",
+    "pair_direction_change"
+  ],
+  "folds": [
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.576077132011166,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.066196542024406,
+          "pretarget_bias_01": 0.03036734589970773,
+          "pretarget_bias_02": 0.028554794832349482,
+          "target_effect_bias": -0.3183708615219319
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.57708987155435,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0664305608050997,
+          "pretarget_bias_01": 0.0303308038641779,
+          "pretarget_bias_02": 0.02851990441514709,
+          "target_effect_bias": -0.3168811633721799
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5801177515729778,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0672754289149022,
+          "pretarget_bias_01": 0.03024886900929598,
+          "pretarget_bias_02": 0.02844364621135031,
+          "target_effect_bias": -0.31291259190209186
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5913970606606076,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0715319744061214,
+          "pretarget_bias_01": 0.030159132139139413,
+          "pretarget_bias_02": 0.028384007548029645,
+          "target_effect_bias": -0.30189038235199683
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.158506373484476,
+          2.5703412839337694,
+          2.1180624459103417,
+          4.3105285063031085,
+          0.25115154116044336,
+          -0.016143408905679897,
+          -0.0015495815268373033
+        ],
+        "coefficients": [
+          -0.6563794639789756,
+          -0.3555102082170448,
+          0.3601993315073975,
+          0.6608373591810834,
+          -0.37652782578040506,
+          0.38328706013909203,
+          0.8922141044144406
+        ],
+        "intercept": -5.040982726399276,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.412012246332981,
+        "scale": [
+          0.36282363962229874,
+          0.3384283447230592,
+          0.504871616298181,
+          0.8359262864962568,
+          0.2212693601811928,
+          0.05232686730458833,
+          0.0536264250110441
+        ],
+        "train_at_risk_decisions": 22186
+      },
+      "held_out_story": 1,
+      "inner_validation_stories": [
+        [
+          2,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          5,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6407265392566808,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.287491243558641,
+          "pretarget_bias_01": 0.14821649454667493,
+          "pretarget_bias_02": 0.14643394265474732,
+          "target_effect_bias": -0.4550818216118874
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5392141717986576,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1320531140979153,
+          "pretarget_bias_01": 0.09651888974347271,
+          "pretarget_bias_02": 0.09451143282140753,
+          "target_effect_bias": -0.3984627919568245
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5402570800063726,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0780153095904332,
+          "pretarget_bias_01": 0.05733154858708279,
+          "pretarget_bias_02": 0.055341896384780764,
+          "target_effect_bias": -0.34963187540848484
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.576077132011166,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.066196542024406,
+          "pretarget_bias_01": 0.03036734589970773,
+          "pretarget_bias_02": 0.028554794832349482,
+          "target_effect_bias": -0.3183708615219319
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5798929486189934,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.048610566506803,
+          "pretarget_bias_01": 0.028294104717445416,
+          "pretarget_bias_02": 0.023019083672471175,
+          "target_effect_bias": -0.3269550879892602
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5809912732821665,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.048805122600054,
+          "pretarget_bias_01": 0.02827361751014753,
+          "pretarget_bias_02": 0.022981275215197963,
+          "target_effect_bias": -0.32547979796721727
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5842742730660995,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.04955347382131,
+          "pretarget_bias_01": 0.028245797371753395,
+          "pretarget_bias_02": 0.02290630786528683,
+          "target_effect_bias": -0.3215686527578672
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5965923008400476,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0536608464650759,
+          "pretarget_bias_01": 0.02840478778783042,
+          "pretarget_bias_02": 0.022931132929815554,
+          "target_effect_bias": -0.3108520975346521
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.1501866679004875,
+          2.56194171103823,
+          2.125020374956219,
+          4.30510716895603,
+          0.24852324874220486,
+          -0.018268011511621503,
+          -0.0017831213125013058
+        ],
+        "coefficients": [
+          -0.6076265594081328,
+          -0.4337819926034074,
+          0.4368733795240815,
+          0.5979171492824625,
+          -0.4523374076429902,
+          0.44904128110495123,
+          0.8671273227784254
+        ],
+        "intercept": -5.090707389386784,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.329622256236129,
+        "scale": [
+          0.3562916391358973,
+          0.3317965067084851,
+          0.5067272179305309,
+          0.8421972191124937,
+          0.21782031800740562,
+          0.05133317804555386,
+          0.05281180871388568
+        ],
+        "train_at_risk_decisions": 22436
+      },
+      "held_out_story": 2,
+      "inner_validation_stories": [
+        [
+          1,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          5,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6497692340589052,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.287540256419951,
+          "pretarget_bias_01": 0.14977271870392983,
+          "pretarget_bias_02": 0.14489908337037927,
+          "target_effect_bias": -0.47534830019424607
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5425898626369434,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1221736684892218,
+          "pretarget_bias_01": 0.09775463970486123,
+          "pretarget_bias_02": 0.09225283390230996,
+          "target_effect_bias": -0.4133667406972434
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5429678952117787,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0622929808511368,
+          "pretarget_bias_01": 0.056980098191921194,
+          "pretarget_bias_02": 0.05138220292975529,
+          "target_effect_bias": -0.36048376381620084
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5798929486189934,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.048610566506803,
+          "pretarget_bias_01": 0.028294104717445416,
+          "pretarget_bias_02": 0.023019083672471175,
+          "target_effect_bias": -0.3269550879892602
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.555604518488275,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0405605059898984,
+          "pretarget_bias_01": 0.028968256673440183,
+          "pretarget_bias_02": 0.020678250262757884,
+          "target_effect_bias": -0.30317080558144965
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5565918192494441,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0407335427882711,
+          "pretarget_bias_01": 0.028910388220377982,
+          "pretarget_bias_02": 0.02060975280503772,
+          "target_effect_bias": -0.30198397916658687
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5595116331019292,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0413764963581245,
+          "pretarget_bias_01": 0.028772459453628413,
+          "pretarget_bias_02": 0.020442337429132783,
+          "target_effect_bias": -0.2988460379679802
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.570141886079742,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0447341069095408,
+          "pretarget_bias_01": 0.028522660519103783,
+          "pretarget_bias_02": 0.020103392116959114,
+          "target_effect_bias": -0.2903161421749251
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.159753720381826,
+          2.568375427959169,
+          2.120067286612617,
+          4.303223870352018,
+          0.247903041151425,
+          -0.015344743075662304,
+          -0.0016800366118027235
+        ],
+        "coefficients": [
+          -0.5602918535953375,
+          -0.3984559968914971,
+          0.3258660777629684,
+          0.6171675506689581,
+          -0.4580459389574633,
+          0.38525872085396395,
+          0.9467211686204458
+        ],
+        "intercept": -5.023537300268234,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.2704227392008605,
+        "scale": [
+          0.36059915432530787,
+          0.33636908961856926,
+          0.5054906305175455,
+          0.8448043055629124,
+          0.21588826848352546,
+          0.05103882111012571,
+          0.053495906280485415
+        ],
+        "train_at_risk_decisions": 22278
+      },
+      "held_out_story": 3,
+      "inner_validation_stories": [
+        [
+          1,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          5,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6392774240825436,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.279994881802394,
+          "pretarget_bias_01": 0.1502192248724955,
+          "pretarget_bias_02": 0.14212888242998528,
+          "target_effect_bias": -0.4556816458216683
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5303423731174834,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.115999134924972,
+          "pretarget_bias_01": 0.09677200080989815,
+          "pretarget_bias_02": 0.08822211113256012,
+          "target_effect_bias": -0.39188898894443136
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5263312706319505,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0566310094697924,
+          "pretarget_bias_01": 0.05632307075423436,
+          "pretarget_bias_02": 0.047698529448086245,
+          "target_effect_bias": -0.3375428160109367
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.555604518488275,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0405605059898984,
+          "pretarget_bias_01": 0.028968256673440183,
+          "pretarget_bias_02": 0.020678250262757884,
+          "target_effect_bias": -0.30317080558144965
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.525026856625868,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0467526855199043,
+          "pretarget_bias_01": 0.02975994187462084,
+          "pretarget_bias_02": 0.03346948698973204,
+          "target_effect_bias": -0.32976536891022445
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5262778616150472,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0472494492463977,
+          "pretarget_bias_01": 0.029825826184237295,
+          "pretarget_bias_02": 0.03354592403402617,
+          "target_effect_bias": -0.32819665227984596
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5301227079379869,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0489320010034668,
+          "pretarget_bias_01": 0.030028681818863687,
+          "pretarget_bias_02": 0.03377797792582325,
+          "target_effect_bias": -0.3240438641738972
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.545380463343598,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.056772661399885,
+          "pretarget_bias_01": 0.030821216946718716,
+          "pretarget_bias_02": 0.0346618504414713,
+          "target_effect_bias": -0.312744725739276
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.1535984404032975,
+          2.5677906603150786,
+          2.1241981615022376,
+          4.306595336604917,
+          0.2468899837153629,
+          -0.011123165917590645,
+          -0.0012955284761787898
+        ],
+        "coefficients": [
+          -0.5649078096833738,
+          -0.3840115808030268,
+          0.41526170448612154,
+          0.6759183536751654,
+          -0.43663085071439484,
+          0.3976682786993166,
+          0.9033238177011431
+        ],
+        "intercept": -5.068842531072826,
+        "iterations": 21,
+        "matched_training_pairs": 19,
+        "objective": 4.3216889167958685,
+        "scale": [
+          0.3501448687424759,
+          0.3276408897522709,
+          0.5062473819932098,
+          0.8452180298074067,
+          0.21577145342976087,
+          0.05140052182751798,
+          0.054207682864165614
+        ],
+        "train_at_risk_decisions": 22420
+      },
+      "held_out_story": 4,
+      "inner_validation_stories": [
+        [
+          1,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          5,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6215781080456706,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2853254115569246,
+          "pretarget_bias_01": 0.1493420756001579,
+          "pretarget_bias_02": 0.1526899730711188,
+          "target_effect_bias": -0.4671731643668273
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5087434724002096,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1221560261479522,
+          "pretarget_bias_01": 0.09532212305444784,
+          "pretarget_bias_02": 0.09856787197082682,
+          "target_effect_bias": -0.4097806107644255
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5006645325841035,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0641680261956532,
+          "pretarget_bias_01": 0.05581154776320909,
+          "pretarget_bias_02": 0.05920606906572782,
+          "target_effect_bias": -0.360580872199386
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.525026856625868,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0467526855199043,
+          "pretarget_bias_01": 0.02975994187462084,
+          "pretarget_bias_02": 0.03346948698973204,
+          "target_effect_bias": -0.32976536891022445
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6091305634773765,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0739534164486473,
+          "pretarget_bias_01": 0.032304095084454795,
+          "pretarget_bias_02": 0.031095166527292578,
+          "target_effect_bias": -0.32545931519772897
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.610743089404572,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.074405288204851,
+          "pretarget_bias_01": 0.032338718132418946,
+          "pretarget_bias_02": 0.03110246064790735,
+          "target_effect_bias": -0.32406608104462536
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6154878346767363,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0759279156517123,
+          "pretarget_bias_01": 0.0324581724947841,
+          "pretarget_bias_02": 0.03114616422986893,
+          "target_effect_bias": -0.3204265459918095
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6325850459036508,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0829030466032872,
+          "pretarget_bias_01": 0.0330234772227512,
+          "pretarget_bias_02": 0.03147662891336285,
+          "target_effect_bias": -0.31088207607432244
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.152024899332503,
+          2.563867004407868,
+          2.1218681589250483,
+          4.299446700077875,
+          0.24888470438995566,
+          -0.005079657468741369,
+          -0.0015718256475596897
+        ],
+        "coefficients": [
+          -0.6037313215797796,
+          -0.3660463990361634,
+          0.34180485362520985,
+          0.6519946005249504,
+          -0.3564087912499505,
+          0.40180290975366956,
+          0.8877064267169721
+        ],
+        "intercept": -4.972908056190139,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.456939259630296,
+        "scale": [
+          0.3556095271943526,
+          0.3309319069816001,
+          0.5065205843791165,
+          0.8395097473225661,
+          0.21832857806369912,
+          0.0524604155423821,
+          0.05468428970379805
+        ],
+        "train_at_risk_decisions": 22281
+      },
+      "held_out_story": 5,
+      "inner_validation_stories": [
+        [
+          1,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6716058027125678,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.3017964803706223,
+          "pretarget_bias_01": 0.14808194141757122,
+          "pretarget_bias_02": 0.14726264152555593,
+          "target_effect_bias": -0.4598273915884491
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5706679610624452,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1457874548602358,
+          "pretarget_bias_01": 0.09460101778402469,
+          "pretarget_bias_02": 0.09333149810990243,
+          "target_effect_bias": -0.40274611855198794
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5734239515080326,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.090479384057273,
+          "pretarget_bias_01": 0.056358748330383124,
+          "pretarget_bias_02": 0.054988946673369586,
+          "target_effect_bias": -0.3545595497026202
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6091305634773765,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0739534164486473,
+          "pretarget_bias_01": 0.032304095084454795,
+          "pretarget_bias_02": 0.031095166527292578,
+          "target_effect_bias": -0.32545931519772897
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5839127629549896,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.051613041331506,
+          "pretarget_bias_01": 0.03389396596810214,
+          "pretarget_bias_02": 0.02923236559457851,
+          "target_effect_bias": -0.3035198836468891
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5852753546863272,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0518323341760347,
+          "pretarget_bias_01": 0.03395620203559539,
+          "pretarget_bias_02": 0.029277996045300868,
+          "target_effect_bias": -0.3021239152861148
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5892224991494937,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0526274041395407,
+          "pretarget_bias_01": 0.03413486637062297,
+          "pretarget_bias_02": 0.029411036817168446,
+          "target_effect_bias": -0.29846473053546974
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.60292360758519,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0566079424336616,
+          "pretarget_bias_01": 0.034735914285044474,
+          "pretarget_bias_02": 0.029872979898376936,
+          "target_effect_bias": -0.2887451967230841
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.156449871221773,
+          2.571653524457736,
+          2.117834084973959,
+          4.310304180634363,
+          0.25052291212044664,
+          -0.021978870571105723,
+          -0.0013303967413382089
+        ],
+        "coefficients": [
+          -0.5723557659090928,
+          -0.4515582209676506,
+          0.43286604943990614,
+          0.6992663148009151,
+          -0.35518058056635676,
+          0.5373784886294517,
+          0.8241686724776505
+        ],
+        "intercept": -5.108000788086529,
+        "iterations": 24,
+        "matched_training_pairs": 19,
+        "objective": 4.3448371736544384,
+        "scale": [
+          0.35953142109565733,
+          0.33433770172529503,
+          0.5047499125723788,
+          0.8405701461505307,
+          0.2187208359641589,
+          0.05082771337309049,
+          0.05431350652457344
+        ],
+        "train_at_risk_decisions": 22023
+      },
+      "held_out_story": 6,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.648364309623046,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2905648062468944,
+          "pretarget_bias_01": 0.1487842034715049,
+          "pretarget_bias_02": 0.14422485486438844,
+          "target_effect_bias": -0.4553980550264753
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5433204650651993,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1287953634345418,
+          "pretarget_bias_01": 0.0967451515595551,
+          "pretarget_bias_02": 0.09169781640309686,
+          "target_effect_bias": -0.393655657010232
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.545017494594655,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0682413061967324,
+          "pretarget_bias_01": 0.05838736583257638,
+          "pretarget_bias_02": 0.05335530958336303,
+          "target_effect_bias": -0.33866331326889193
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5839127629549896,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.051613041331506,
+          "pretarget_bias_01": 0.03389396596810214,
+          "pretarget_bias_02": 0.02923236559457851,
+          "target_effect_bias": -0.3035198836468891
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5668312669923183,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.052519168163927,
+          "pretarget_bias_01": 0.03208679397175283,
+          "pretarget_bias_02": 0.0297432602536474,
+          "target_effect_bias": -0.32216001116326304
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5682335549600466,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0529104072486843,
+          "pretarget_bias_01": 0.032127054428765296,
+          "pretarget_bias_02": 0.029764694069169956,
+          "target_effect_bias": -0.32075614663792956
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5723181578979901,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0541900309391714,
+          "pretarget_bias_01": 0.03223948724644932,
+          "pretarget_bias_02": 0.029824803949901554,
+          "target_effect_bias": -0.31703449874909045
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.586672177920494,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0597726622154329,
+          "pretarget_bias_01": 0.032572658581360193,
+          "pretarget_bias_02": 0.029996709004171666,
+          "target_effect_bias": -0.3068089059116501
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.157449898320486,
+          2.570589951241714,
+          2.1162125805924696,
+          4.299806826351851,
+          0.2463619711724651,
+          -0.01602599119331358,
+          -0.0005201422972611926
+        ],
+        "coefficients": [
+          -0.6343672530580172,
+          -0.3632723062065508,
+          0.3168360746357149,
+          0.6525912146671352,
+          -0.40931668272654265,
+          0.39896940284922644,
+          0.9213548612872235
+        ],
+        "intercept": -5.000461483316383,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.35059548638636,
+        "scale": [
+          0.3612900871374052,
+          0.33871206344161936,
+          0.5043343418318875,
+          0.8441115340801111,
+          0.21808859178959814,
+          0.05108630628147422,
+          0.05513799037749882
+        ],
+        "train_at_risk_decisions": 21965
+      },
+      "held_out_story": 7,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          8,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6451191849355233,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2860536957479336,
+          "pretarget_bias_01": 0.14678709280996582,
+          "pretarget_bias_02": 0.1443441235345426,
+          "target_effect_bias": -0.46499533614457444
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5317002209701245,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.121434082894027,
+          "pretarget_bias_01": 0.09215696088301886,
+          "pretarget_bias_02": 0.08935044605017274,
+          "target_effect_bias": -0.40473529410714143
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5283853124534552,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0635222543561706,
+          "pretarget_bias_01": 0.05385653229805948,
+          "pretarget_bias_02": 0.05115951868818852,
+          "target_effect_bias": -0.35301207252677513
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5668312669923183,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.052519168163927,
+          "pretarget_bias_01": 0.03208679397175283,
+          "pretarget_bias_02": 0.0297432602536474,
+          "target_effect_bias": -0.32216001116326304
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5898442230671803,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.063145864497805,
+          "pretarget_bias_01": 0.0375165522675505,
+          "pretarget_bias_02": 0.03057531925214665,
+          "target_effect_bias": -0.31521188090467106
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5912710906280547,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0635585089421047,
+          "pretarget_bias_01": 0.037625318323098435,
+          "pretarget_bias_02": 0.030654363869717507,
+          "target_effect_bias": -0.31376431250186826
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.595409075659928,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0648995575896973,
+          "pretarget_bias_01": 0.037930976114562684,
+          "pretarget_bias_02": 0.030877586185287503,
+          "target_effect_bias": -0.3099313022821035
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.609772115353997,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0706718367305759,
+          "pretarget_bias_01": 0.0388890813897286,
+          "pretarget_bias_02": 0.03158209062653132,
+          "target_effect_bias": -0.29942780734019325
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.156011442117925,
+          2.567180267750122,
+          2.120165516420549,
+          4.310702200974574,
+          0.25290508653005256,
+          -0.0014524205302781897,
+          -0.0011897392154169865
+        ],
+        "coefficients": [
+          -0.6115751897907891,
+          -0.3811275925305991,
+          0.3550561170806443,
+          0.6668887014435884,
+          -0.3504556136585395,
+          0.4457358952991284,
+          0.8620810271888644
+        ],
+        "intercept": -4.993069335563069,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.3831515611926175,
+        "scale": [
+          0.35536994358610474,
+          0.3317642920508114,
+          0.5058935360189071,
+          0.8357100650510348,
+          0.2203915171841974,
+          0.0517995098304892,
+          0.053792959067351494
+        ],
+        "train_at_risk_decisions": 22074
+      },
+      "held_out_story": 8,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          9,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6502908815056985,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2873880956994865,
+          "pretarget_bias_01": 0.14828901568554725,
+          "pretarget_bias_02": 0.14159993610105515,
+          "target_effect_bias": -0.45597435543374093
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5411924202604876,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1234593279433251,
+          "pretarget_bias_01": 0.09535162968810122,
+          "pretarget_bias_02": 0.08816196093265041,
+          "target_effect_bias": -0.3965341192557402
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5434065552915937,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.067999577450804,
+          "pretarget_bias_01": 0.058035194166532515,
+          "pretarget_bias_02": 0.05083863268547062,
+          "target_effect_bias": -0.34545244577046774
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5898442230671803,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.063145864497805,
+          "pretarget_bias_01": 0.0375165522675505,
+          "pretarget_bias_02": 0.03057531925214665,
+          "target_effect_bias": -0.31521188090467106
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5620164639282816,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.055225665089175,
+          "pretarget_bias_01": 0.031721972400505616,
+          "pretarget_bias_02": 0.02923953322800213,
+          "target_effect_bias": -0.3255973138180859
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5636201410253945,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0557525119743205,
+          "pretarget_bias_01": 0.03189367010275244,
+          "pretarget_bias_02": 0.02937721856814074,
+          "target_effect_bias": -0.3243156321383591
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.568210764247106,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.057380369078083,
+          "pretarget_bias_01": 0.032373407198583615,
+          "pretarget_bias_02": 0.029762240951547808,
+          "target_effect_bias": -0.3209291133877268
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.583625024661646,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0637795729964974,
+          "pretarget_bias_01": 0.0338648938673509,
+          "pretarget_bias_02": 0.030958502186116826,
+          "target_effect_bias": -0.3116963076672372
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.151598316209486,
+          2.565060427585042,
+          2.123793400577732,
+          4.3043977181272455,
+          0.25247783188771306,
+          -0.021862862038391617,
+          -0.0010159738291170713
+        ],
+        "coefficients": [
+          -0.5774592671202304,
+          -0.4327329705130724,
+          0.3191600409681321,
+          0.6190039612479742,
+          -0.3555890455960742,
+          0.4121676453534778,
+          0.8930850194695268
+        ],
+        "intercept": -5.053379651879321,
+        "iterations": 24,
+        "matched_training_pairs": 19,
+        "objective": 4.2970168248431255,
+        "scale": [
+          0.3585287371249524,
+          0.33685828206179236,
+          0.506303439417978,
+          0.8445545271481666,
+          0.21880804349927982,
+          0.049344348163659534,
+          0.05310110682359209
+        ],
+        "train_at_risk_decisions": 22254
+      },
+      "held_out_story": 9,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          10,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6256446443971784,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2750098111259294,
+          "pretarget_bias_01": 0.1456797056838906,
+          "pretarget_bias_02": 0.1432065762402848,
+          "target_effect_bias": -0.4644723246548283
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5150014595115047,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1124828812877874,
+          "pretarget_bias_01": 0.09071503531526309,
+          "pretarget_bias_02": 0.08764443497684352,
+          "target_effect_bias": -0.40254562426865204
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5162870619716975,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0597493091611727,
+          "pretarget_bias_01": 0.05278470562156842,
+          "pretarget_bias_02": 0.04982249799742999,
+          "target_effect_bias": -0.352996848808963
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5620164639282816,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.055225665089175,
+          "pretarget_bias_01": 0.031721972400505616,
+          "pretarget_bias_02": 0.02923953322800213,
+          "target_effect_bias": -0.3255973138180859
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5869933158459424,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0602119021218803,
+          "pretarget_bias_01": 0.03959606936323557,
+          "pretarget_bias_02": 0.04110247117221351,
+          "target_effect_bias": -0.31417529839809893
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5884802890682144,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.060722377560194,
+          "pretarget_bias_01": 0.03990127439299452,
+          "pretarget_bias_02": 0.041378219278466744,
+          "target_effect_bias": -0.3129835714341501
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5927508110643347,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.062277978581891,
+          "pretarget_bias_01": 0.04073558446157243,
+          "pretarget_bias_02": 0.04213038938744819,
+          "target_effect_bias": -0.3098109123716154
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.607258345412551,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0682487028976593,
+          "pretarget_bias_01": 0.0431992266261961,
+          "pretarget_bias_02": 0.04433511586721347,
+          "target_effect_bias": -0.3009735264488534
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.157017290860439,
+          2.5680072720848144,
+          2.12041590669041,
+          4.302481838915777,
+          0.2519141923057258,
+          -0.010317138546469783,
+          -0.0009014629740545579
+        ],
+        "coefficients": [
+          -0.6145879421008744,
+          -0.35849149306007966,
+          0.35078100588638317,
+          0.6671891051537826,
+          -0.460958840408571,
+          0.4511866048603475,
+          0.8716825174778645
+        ],
+        "intercept": -4.991824912869474,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.314286680410497,
+        "scale": [
+          0.35850387987943844,
+          0.3335297295053115,
+          0.5058230594369271,
+          0.8418736478062584,
+          0.22022646944121307,
+          0.05129492654593283,
+          0.05495053550141353
+        ],
+        "train_at_risk_decisions": 22099
+      },
+      "held_out_story": 10,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          11,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.647110226275233,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2878382208610726,
+          "pretarget_bias_01": 0.14757757911152902,
+          "pretarget_bias_02": 0.14909470908829725,
+          "target_effect_bias": -0.4579616965507613
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5385082299217703,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1214510076709345,
+          "pretarget_bias_01": 0.09615479963253089,
+          "pretarget_bias_02": 0.09715336577318641,
+          "target_effect_bias": -0.3963524977936818
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5428387683590983,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0660061127691094,
+          "pretarget_bias_01": 0.06020301076030683,
+          "pretarget_bias_02": 0.061308674492798906,
+          "target_effect_bias": -0.34432669696103085
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5869933158459424,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0602119021218803,
+          "pretarget_bias_01": 0.03959606936323557,
+          "pretarget_bias_02": 0.04110247117221351,
+          "target_effect_bias": -0.31417529839809893
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.598265055844985,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.076159307329256,
+          "pretarget_bias_01": 0.0467416971256254,
+          "pretarget_bias_02": 0.046781873350804005,
+          "target_effect_bias": -0.3159955276068118
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5998070965912246,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0767074730992776,
+          "pretarget_bias_01": 0.047022661364533216,
+          "pretarget_bias_02": 0.04703155784980827,
+          "target_effect_bias": -0.31480966493496826
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6041964280101937,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0783587432043555,
+          "pretarget_bias_01": 0.047796587113983414,
+          "pretarget_bias_02": 0.0477180405432624,
+          "target_effect_bias": -0.3116549164413036
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.618794534692421,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0845711673736145,
+          "pretarget_bias_01": 0.05014802870654481,
+          "pretarget_bias_02": 0.049792146772367596,
+          "target_effect_bias": -0.30289202912457613
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.155644143053155,
+          2.5656139337372044,
+          2.121248755232663,
+          4.30037993687021,
+          0.2534507041294854,
+          -0.014887622091914313,
+          -0.001034009405848251
+        ],
+        "coefficients": [
+          -0.5602845057347344,
+          -0.45966093036024,
+          0.3594032966921597,
+          0.6139659209447825,
+          -0.3857638438305228,
+          0.440326653169985,
+          0.8081445629840683
+        ],
+        "intercept": -5.0033323709958815,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.3448581112554905,
+        "scale": [
+          0.3576885754410158,
+          0.3327941268440112,
+          0.5058799099325995,
+          0.8436149629043743,
+          0.2200824545070749,
+          0.04876627957094651,
+          0.05239673036875668
+        ],
+        "train_at_risk_decisions": 22301
+      },
+      "held_out_story": 11,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          12,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6402089416956662,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.280784128214689,
+          "pretarget_bias_01": 0.14346575486928856,
+          "pretarget_bias_02": 0.1434992365551656,
+          "target_effect_bias": -0.44999095739252615
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5423172964898062,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1280956585020903,
+          "pretarget_bias_01": 0.09644639895484908,
+          "pretarget_bias_02": 0.09580583301271407,
+          "target_effect_bias": -0.3898230394944067
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5521771502961554,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0802694190563937,
+          "pretarget_bias_01": 0.06426388057401791,
+          "pretarget_bias_02": 0.06375110177021853,
+          "target_effect_bias": -0.34226718744561274
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.598265055844985,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.076159307329256,
+          "pretarget_bias_01": 0.0467416971256254,
+          "pretarget_bias_02": 0.046781873350804005,
+          "target_effect_bias": -0.3159955276068118
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5990659983346445,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0698920329990362,
+          "pretarget_bias_01": 0.04975338045495069,
+          "pretarget_bias_02": 0.042771237875304964,
+          "target_effect_bias": -0.3109997023671082
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6006923522860452,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0704171117985153,
+          "pretarget_bias_01": 0.05003973089551765,
+          "pretarget_bias_02": 0.043019106439066174,
+          "target_effect_bias": -0.3097549370181474
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.605312406577301,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0719993121287803,
+          "pretarget_bias_01": 0.05081756078261615,
+          "pretarget_bias_02": 0.04368901645072072,
+          "target_effect_bias": -0.3064681436991155
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.620538687068278,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0778880289304649,
+          "pretarget_bias_01": 0.0530829643472813,
+          "pretarget_bias_02": 0.045608657175630986,
+          "target_effect_bias": -0.2975426716218584
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.1544633934135655,
+          2.5691466621192984,
+          2.1205953786048664,
+          4.305080833122731,
+          0.2490644740257223,
+          -0.019539759553451806,
+          -0.0007346636078280752
+        ],
+        "coefficients": [
+          -0.5782968460576605,
+          -0.41799840084648787,
+          0.3521715036350783,
+          0.6442085582895778,
+          -0.39472986973137847,
+          0.46140284741932924,
+          0.8694863395399597
+        ],
+        "intercept": -5.01668243004927,
+        "iterations": 24,
+        "matched_training_pairs": 19,
+        "objective": 4.318173751489245,
+        "scale": [
+          0.3556295849588795,
+          0.3305422603359438,
+          0.5058723953943567,
+          0.8399476560640627,
+          0.22057436772673375,
+          0.05155322222962923,
+          0.05551768998384668
+        ],
+        "train_at_risk_decisions": 22257
+      },
+      "held_out_story": 12,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          14,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6489884761084588,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2876126884541166,
+          "pretarget_bias_01": 0.14990160496214028,
+          "pretarget_bias_02": 0.1428858655513969,
+          "target_effect_bias": -0.4542101455524333
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5452715667323824,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1269872351220607,
+          "pretarget_bias_01": 0.10177455675599521,
+          "pretarget_bias_02": 0.09384484298189673,
+          "target_effect_bias": -0.39184260782383196
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5529955084097788,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0748319560001802,
+          "pretarget_bias_01": 0.06811927831009498,
+          "pretarget_bias_02": 0.06039236864276021,
+          "target_effect_bias": -0.3403157872457024
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5990659983346445,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0698920329990362,
+          "pretarget_bias_01": 0.04975338045495069,
+          "pretarget_bias_02": 0.042771237875304964,
+          "target_effect_bias": -0.3109997023671082
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.608709543603133,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.078429189108328,
+          "pretarget_bias_01": 0.04771537548643064,
+          "pretarget_bias_02": 0.046187055033588054,
+          "target_effect_bias": -0.32383096127217437
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6105923763070562,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0790407861767513,
+          "pretarget_bias_01": 0.04795261099975744,
+          "pretarget_bias_02": 0.04639300540581955,
+          "target_effect_bias": -0.3226271486299809
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.615957247428036,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.080884919205113,
+          "pretarget_bias_01": 0.04859192556900851,
+          "pretarget_bias_02": 0.04694653800942228,
+          "target_effect_bias": -0.3194482628062784
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6338524030813688,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.087833415320764,
+          "pretarget_bias_01": 0.05039338272683759,
+          "pretarget_bias_02": 0.048493847695221595,
+          "target_effect_bias": -0.3108261297117257
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.157828514602766,
+          2.572546892991134,
+          2.1205733141046754,
+          4.31397018214737,
+          0.24936142482372148,
+          -0.013645017268261903,
+          -0.0003804393023736115
+        ],
+        "coefficients": [
+          -0.6227438051006811,
+          -0.3956935504752361,
+          0.3653231161559339,
+          0.6661703504946913,
+          -0.3902751300769926,
+          0.44997811889727457,
+          0.8858538589629742
+        ],
+        "intercept": -5.085584241368345,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.354207621847363,
+        "scale": [
+          0.35807121251364665,
+          0.33413670941429274,
+          0.5058969321851318,
+          0.8384072706586108,
+          0.21684035659375325,
+          0.04846021360421858,
+          0.05247104538136233
+        ],
+        "train_at_risk_decisions": 22253
+      },
+      "held_out_story": 14,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          15,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6472204475724823,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2876340155915045,
+          "pretarget_bias_01": 0.14601266493981815,
+          "pretarget_bias_02": 0.14492997647669298,
+          "target_effect_bias": -0.46158208848772486
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5459755604066359,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.130887865026174,
+          "pretarget_bias_01": 0.09818077949658102,
+          "pretarget_bias_02": 0.09615106282996705,
+          "target_effect_bias": -0.40128082066253495
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5568271494211716,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.080756641840125,
+          "pretarget_bias_01": 0.06539335338898988,
+          "pretarget_bias_02": 0.06334082910705889,
+          "target_effect_bias": -0.351908574908834
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.608709543603133,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.078429189108328,
+          "pretarget_bias_01": 0.04771537548643064,
+          "pretarget_bias_02": 0.046187055033588054,
+          "target_effect_bias": -0.32383096127217437
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6074825257048988,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0708508477318133,
+          "pretarget_bias_01": 0.050028379565615955,
+          "pretarget_bias_02": 0.044937025912898776,
+          "target_effect_bias": -0.3184952132748937
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6090195741526272,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0712298043117472,
+          "pretarget_bias_01": 0.05016343628277345,
+          "pretarget_bias_02": 0.045080175453402135,
+          "target_effect_bias": -0.31690281487441957
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.613436639580399,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0724496349570665,
+          "pretarget_bias_01": 0.05052763880121326,
+          "pretarget_bias_02": 0.045468144173856896,
+          "target_effect_bias": -0.31267903341587533
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.62841809307771,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0775984214541694,
+          "pretarget_bias_01": 0.051548837751888205,
+          "pretarget_bias_02": 0.046578217259006904,
+          "target_effect_bias": -0.3010722275799317
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.1664324078189985,
+          2.579976611089353,
+          2.1215896352840127,
+          4.314051145922126,
+          0.24772041548849696,
+          -0.008044233453889552,
+          -3.789979119609945e-05
+        ],
+        "coefficients": [
+          -0.6852681139279772,
+          -0.35346369922297494,
+          0.4009094757807651,
+          0.6004235464477223,
+          -0.4142428869402534,
+          0.39921897887501806,
+          0.942785646828217
+        ],
+        "intercept": -5.087757177160561,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.393664546897526,
+        "scale": [
+          0.35501888815909005,
+          0.3315208064019978,
+          0.506054718129621,
+          0.8427171433180639,
+          0.2182812618089584,
+          0.05132269674121814,
+          0.05559512108658392
+        ],
+        "train_at_risk_decisions": 22316
+      },
+      "held_out_story": 15,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          16,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6673170178678751,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.306490522988025,
+          "pretarget_bias_01": 0.15514883168774676,
+          "pretarget_bias_02": 0.14967104772756062,
+          "target_effect_bias": -0.4793551551102585
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5571615818851063,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1371208770987393,
+          "pretarget_bias_01": 0.10448717392733388,
+          "pretarget_bias_02": 0.09877387339839018,
+          "target_effect_bias": -0.4112282879183702
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.56318301018307,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0801492368459027,
+          "pretarget_bias_01": 0.0697410743614662,
+          "pretarget_bias_02": 0.064241448895162,
+          "target_effect_bias": -0.3533792518955382
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6074825257048988,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0708508477318133,
+          "pretarget_bias_01": 0.050028379565615955,
+          "pretarget_bias_02": 0.044937025912898776,
+          "target_effect_bias": -0.3184952132748937
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6048863020429864,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0746443212643102,
+          "pretarget_bias_01": 0.04862677363295246,
+          "pretarget_bias_02": 0.0441981810933837,
+          "target_effect_bias": -0.3288905282392461
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6062218028556954,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0748245034020834,
+          "pretarget_bias_01": 0.0487576550887934,
+          "pretarget_bias_02": 0.044313500807592804,
+          "target_effect_bias": -0.32736978982926923
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.610099533761809,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.075531042850364,
+          "pretarget_bias_01": 0.04909474616562863,
+          "pretarget_bias_02": 0.044609694374691464,
+          "target_effect_bias": -0.32337837395681845
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6234527576131534,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0792701680232464,
+          "pretarget_bias_01": 0.04991160142839268,
+          "pretarget_bias_02": 0.04532046355166882,
+          "target_effect_bias": -0.3126944246841894
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.166820514718577,
+          2.5785385825286213,
+          2.123363311004185,
+          4.31056223059269,
+          0.24787366892391718,
+          -0.008944613791556415,
+          -0.0009143114487200535
+        ],
+        "coefficients": [
+          -0.5976902272265024,
+          -0.44018941884843227,
+          0.32609963849907314,
+          0.6299394448242646,
+          -0.3919664829891895,
+          0.3999747274627272,
+          0.9196466033118816
+        ],
+        "intercept": -5.062049992142554,
+        "iterations": 22,
+        "matched_training_pairs": 19,
+        "objective": 4.389689147024935,
+        "scale": [
+          0.35397160424644886,
+          0.33215925723907674,
+          0.50650870792455,
+          0.8491600696233902,
+          0.21147734375676522,
+          0.049962139937150526,
+          0.0531237803888107
+        ],
+        "train_at_risk_decisions": 22359
+      },
+      "held_out_story": 16,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          15,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          17,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6518766989167293,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2961204350556157,
+          "pretarget_bias_01": 0.1500370566259243,
+          "pretarget_bias_02": 0.1460027608207592,
+          "target_effect_bias": -0.4613745858040682
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5522527433671005,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.137700505723789,
+          "pretarget_bias_01": 0.10119081244351552,
+          "pretarget_bias_02": 0.09656533866527449,
+          "target_effect_bias": -0.4049077761715431
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5609478263649812,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0841100863921638,
+          "pretarget_bias_01": 0.06717600438205287,
+          "pretarget_bias_02": 0.06251721635859595,
+          "target_effect_bias": -0.3570612388125126
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6048863020429864,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0746443212643102,
+          "pretarget_bias_01": 0.04862677363295246,
+          "pretarget_bias_02": 0.0441981810933837,
+          "target_effect_bias": -0.3288905282392461
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5863482365082444,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0699749792976436,
+          "pretarget_bias_01": 0.05188202481703171,
+          "pretarget_bias_02": 0.04815241109465601,
+          "target_effect_bias": -0.32417283481066494
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5876041130421854,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0702554792086432,
+          "pretarget_bias_01": 0.0521009595552746,
+          "pretarget_bias_02": 0.048323384798946156,
+          "target_effect_bias": -0.32272675879373025
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5912775003781876,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0712134357540888,
+          "pretarget_bias_01": 0.05270147913060131,
+          "pretarget_bias_02": 0.048793565452154214,
+          "target_effect_bias": -0.3188975737993275
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6042206886125174,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0756198700267225,
+          "pretarget_bias_01": 0.05446328406040472,
+          "pretarget_bias_02": 0.05017770695973382,
+          "target_effect_bias": -0.30840071690209514
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.160679329682199,
+          2.572125614893368,
+          2.1231641862549266,
+          4.309653244265122,
+          0.24886354295696167,
+          -0.018943956768529252,
+          -0.0017329484182055535
+        ],
+        "coefficients": [
+          -0.6232898810044145,
+          -0.38354887198361143,
+          0.3681424279470444,
+          0.6730653447540951,
+          -0.35267714952589085,
+          0.4044940177641767,
+          0.8880866378996266
+        ],
+        "intercept": -5.059630370084243,
+        "iterations": 21,
+        "matched_training_pairs": 19,
+        "objective": 4.368501978994895,
+        "scale": [
+          0.3576584149785204,
+          0.3337183518029259,
+          0.5059651899720273,
+          0.8451870019613753,
+          0.2176619957980549,
+          0.05077396897689923,
+          0.05374029559404629
+        ],
+        "train_at_risk_decisions": 22549
+      },
+      "held_out_story": 17,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          15,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          18
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6410018663630948,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2911794095551838,
+          "pretarget_bias_01": 0.15393980049393907,
+          "pretarget_bias_02": 0.15175407158872778,
+          "target_effect_bias": -0.46560314691224247
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5369051007765124,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.128139182219236,
+          "pretarget_bias_01": 0.10471406619174911,
+          "pretarget_bias_02": 0.10135095276021418,
+          "target_effect_bias": -0.40206309649571925
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5438393246279016,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.076402138463776,
+          "pretarget_bias_01": 0.07087561577171281,
+          "pretarget_bias_02": 0.06712070302645295,
+          "target_effect_bias": -0.35249312760621904
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5863482365082444,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0699749792976436,
+          "pretarget_bias_01": 0.05188202481703171,
+          "pretarget_bias_02": 0.04815241109465601,
+          "target_effect_bias": -0.32417283481066494
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5868953846167417,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0623086817300895,
+          "pretarget_bias_01": 0.04018236044224637,
+          "pretarget_bias_02": 0.030965101767648433,
+          "target_effect_bias": -0.3163727154527939
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5881912746826359,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0624774660917833,
+          "pretarget_bias_01": 0.04026425098424365,
+          "pretarget_bias_02": 0.031059718053512018,
+          "target_effect_bias": -0.3147685330596022
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.591999485401833,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0631565659232947,
+          "pretarget_bias_01": 0.04050961587690446,
+          "pretarget_bias_02": 0.03134496752447224,
+          "target_effect_bias": -0.3105372795477837
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6055589832978474,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0669391917440239,
+          "pretarget_bias_01": 0.04137071224726713,
+          "pretarget_bias_02": 0.032371938460428726,
+          "target_effect_bias": -0.299063451920155
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.16478209072446,
+          2.578145851960868,
+          2.1206255459451486,
+          4.307812078718113,
+          0.24813877458973685,
+          -0.013314209107108212,
+          -0.000957007572496965
+        ],
+        "coefficients": [
+          -0.6655212645334412,
+          -0.45878501166508073,
+          0.2979901191698353,
+          0.6644171706073235,
+          -0.42156638283685277,
+          0.3980627884675869,
+          0.8575513568582238
+        ],
+        "intercept": -5.058169601289837,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.362330175232414,
+        "scale": [
+          0.35684299614351195,
+          0.333771855714405,
+          0.5055935021614479,
+          0.847647295103993,
+          0.21384145726791592,
+          0.05122854876845075,
+          0.053849048671039255
+        ],
+        "train_at_risk_decisions": 22442
+      },
+      "held_out_story": 18,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          19
+        ],
+        [
+          2,
+          6,
+          10,
+          15,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          17
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6414553127434357,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2830705435634566,
+          "pretarget_bias_01": 0.1506828174167094,
+          "pretarget_bias_02": 0.1419744372495868,
+          "target_effect_bias": -0.4568445101125861
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5389022529704042,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.124532623991097,
+          "pretarget_bias_01": 0.09909513938039285,
+          "pretarget_bias_02": 0.09011986206635478,
+          "target_effect_bias": -0.3945108103067781
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5443128034213025,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.0711812032490864,
+          "pretarget_bias_01": 0.062242040983345605,
+          "pretarget_bias_02": 0.05320364275353884,
+          "target_effect_bias": -0.3449707673298458
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5868953846167417,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0623086817300895,
+          "pretarget_bias_01": 0.04018236044224637,
+          "pretarget_bias_02": 0.030965101767648433,
+          "target_effect_bias": -0.3163727154527939
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6055529944357978,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0711933987563642,
+          "pretarget_bias_01": 0.03762220165721916,
+          "pretarget_bias_02": 0.030604071896028404,
+          "target_effect_bias": -0.3152994878079655
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.606632400576454,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0711845705412206,
+          "pretarget_bias_01": 0.03759789088192618,
+          "pretarget_bias_02": 0.030591682026978005,
+          "target_effect_bias": -0.3138845203945914
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6098239279066446,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.071357763365468,
+          "pretarget_bias_01": 0.037552020705706735,
+          "pretarget_bias_02": 0.03058358237011691,
+          "target_effect_bias": -0.3101369204591692
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6214461274710517,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0735616149722653,
+          "pretarget_bias_01": 0.03759283966205787,
+          "pretarget_bias_02": 0.03078820164210134,
+          "target_effect_bias": -0.29992633958141296
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.163528510752824,
+          2.5749212406753186,
+          2.12262871177105,
+          4.3136548756500055,
+          0.24942481563671726,
+          -0.01534962028988409,
+          -0.0012366698662124743
+        ],
+        "coefficients": [
+          -0.576371696119759,
+          -0.45224950288252974,
+          0.31907102073291227,
+          0.6234206658899432,
+          -0.38236991698835693,
+          0.37968381593131945,
+          0.9347527447604151
+        ],
+        "intercept": -5.025128030846387,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.401087925249673,
+        "scale": [
+          0.35880652288299403,
+          0.3331359248047029,
+          0.5065369883715384,
+          0.83827308015392,
+          0.21882124153602361,
+          0.05167725103861867,
+          0.05402149377048419
+        ],
+        "train_at_risk_decisions": 22475
+      },
+      "held_out_story": 19,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          18
+        ],
+        [
+          2,
+          6,
+          10,
+          15,
+          20
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          17
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6545919617230451,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2893699124091231,
+          "pretarget_bias_01": 0.1494347665417668,
+          "pretarget_bias_02": 0.14322960327936388,
+          "target_effect_bias": -0.4504293672408291
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.557567803026935,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1337099987811756,
+          "pretarget_bias_01": 0.09931977475401094,
+          "pretarget_bias_02": 0.09267172188007222,
+          "target_effect_bias": -0.39355031434211474
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5643651511479741,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.07963811795038,
+          "pretarget_bias_01": 0.06101526837324405,
+          "pretarget_bias_02": 0.054144377145080955,
+          "target_effect_bias": -0.34463525415529955
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.6055529944357978,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0711933987563642,
+          "pretarget_bias_01": 0.03762220165721916,
+          "pretarget_bias_02": 0.030604071896028404,
+          "target_effect_bias": -0.3152994878079655
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5287545479537723,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.0359247666273794,
+          "pretarget_bias_01": 0.0359877685892486,
+          "pretarget_bias_02": 0.027209344990304765,
+          "target_effect_bias": -0.3054608590848488
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5296501020443476,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.035954725545601,
+          "pretarget_bias_01": 0.03594476864471994,
+          "pretarget_bias_02": 0.027156268801240075,
+          "target_effect_bias": -0.3040625041263789
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5323299150709135,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.036214764968023,
+          "pretarget_bias_01": 0.0358493255637489,
+          "pretarget_bias_02": 0.027036625088717105,
+          "target_effect_bias": -0.30033698381093976
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5423327905520101,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0385067714156455,
+          "pretarget_bias_01": 0.035740657119644005,
+          "pretarget_bias_02": 0.026890032425917545,
+          "target_effect_bias": -0.28995733981188343
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.169377142809243,
+          2.5789824386243825,
+          2.123153731589105,
+          4.325783020200832,
+          0.2509599375790224,
+          -0.014548487245814382,
+          -0.0011822802957701542
+        ],
+        "coefficients": [
+          -0.6247483476398913,
+          -0.39193143699905125,
+          0.2894860152405095,
+          0.8175554133528596,
+          -0.3931129472205928,
+          0.5620996311752894,
+          0.7440154159540262
+        ],
+        "intercept": -5.115294157707155,
+        "iterations": 23,
+        "matched_training_pairs": 19,
+        "objective": 4.278922587637776,
+        "scale": [
+          0.35586480112640134,
+          0.33387818761186566,
+          0.5064475059490776,
+          0.8342035002819569,
+          0.21819698856495684,
+          0.04943452815694465,
+          0.05344523911710852
+        ],
+        "train_at_risk_decisions": 22505
+      },
+      "held_out_story": 20,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          18
+        ],
+        [
+          2,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          21
+        ],
+        [
+          4,
+          8,
+          12,
+          17
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.600434130540736,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2499168615877183,
+          "pretarget_bias_01": 0.14513376223702046,
+          "pretarget_bias_02": 0.13759399676410122,
+          "target_effect_bias": -0.4480063546749506
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.4986993304644693,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.1006138821785694,
+          "pretarget_bias_01": 0.09668413122131453,
+          "pretarget_bias_02": 0.08853150900732581,
+          "target_effect_bias": -0.38768026008738177
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.4980749156372037,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.049442992724013,
+          "pretarget_bias_01": 0.06048482881392901,
+          "pretarget_bias_02": 0.0519450848409268,
+          "target_effect_bias": -0.33823656393926277
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5287545479537723,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.0359247666273794,
+          "pretarget_bias_01": 0.0359877685892486,
+          "pretarget_bias_02": 0.027209344990304765,
+          "target_effect_bias": -0.3054608590848488
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    },
+    {
+      "conditional_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.5745995686936287,
+          "gamma": 0.0,
+          "phase_cross_entropy": 1.074107443842738,
+          "pretarget_bias_01": 0.041430936889322215,
+          "pretarget_bias_02": 0.03894852987924798,
+          "target_effect_bias": -0.31630483282005084
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5758526554317605,
+          "gamma": 0.25,
+          "phase_cross_entropy": 1.0744325064326994,
+          "pretarget_bias_01": 0.0414625133963483,
+          "pretarget_bias_02": 0.03901319811015349,
+          "target_effect_bias": -0.3150241810907192
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.57946792783488,
+          "gamma": 1.0,
+          "phase_cross_entropy": 1.0754729862608132,
+          "pretarget_bias_01": 0.04155766926989947,
+          "pretarget_bias_02": 0.0392016005981398,
+          "target_effect_bias": -0.31162490367286316
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5917920311246514,
+          "gamma": 4.0,
+          "phase_cross_entropy": 1.0797922386575458,
+          "pretarget_bias_01": 0.041876659622587326,
+          "pretarget_bias_02": 0.03982633465550945,
+          "target_effect_bias": -0.3022323168620442
+        }
+      ],
+      "fitted": {
+        "center": [
+          4.164136081505559,
+          2.574835625420037,
+          2.1230473728189283,
+          4.314058175132214,
+          0.24843229147416365,
+          -0.013573004251027075,
+          -0.0010420427960358852
+        ],
+        "coefficients": [
+          -0.5511393369088925,
+          -0.46144033197535794,
+          0.3851595937675888,
+          0.6667947206201773,
+          -0.39282592234467506,
+          0.41313499322110137,
+          0.8390128763341292
+        ],
+        "intercept": -5.053139747948048,
+        "iterations": 24,
+        "matched_training_pairs": 19,
+        "objective": 4.3585023511524,
+        "scale": [
+          0.3536820301846862,
+          0.33113030749070094,
+          0.5062205524358341,
+          0.8422850581902407,
+          0.217800391872698,
+          0.04809909824584357,
+          0.051406429171416135
+        ],
+        "train_at_risk_decisions": 22533
+      },
+      "held_out_story": 21,
+      "inner_validation_stories": [
+        [
+          1,
+          5,
+          9,
+          14,
+          18
+        ],
+        [
+          2,
+          6,
+          10,
+          15,
+          19
+        ],
+        [
+          3,
+          7,
+          11,
+          16,
+          20
+        ],
+        [
+          4,
+          8,
+          12,
+          17
+        ]
+      ],
+      "matched_training_pairs": 19,
+      "no_candidate_meets_conditional_selection_constraints": false,
+      "original_phase_max_delta": 0.0,
+      "phase_grid": [
+        {
+          "eligible": true,
+          "first_event_nll": 1.6286034101663052,
+          "lambda": 0.0,
+          "phase_cross_entropy": 1.2780428372690318,
+          "pretarget_bias_01": 0.14930576600844805,
+          "pretarget_bias_02": 0.14670616336137016,
+          "target_effect_bias": -0.4552271867061863
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5282082421542116,
+          "lambda": 0.25,
+          "phase_cross_entropy": 1.125001718986718,
+          "pretarget_bias_01": 0.09978319107326189,
+          "pretarget_bias_02": 0.09757435735523222,
+          "target_effect_bias": -0.3946242136014102
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5356371638235904,
+          "lambda": 1.0,
+          "phase_cross_entropy": 1.078809347430716,
+          "pretarget_bias_01": 0.06461638217959295,
+          "pretarget_bias_02": 0.06233643944757426,
+          "target_effect_bias": -0.34620356790363377
+        },
+        {
+          "eligible": true,
+          "first_event_nll": 1.5745995686936287,
+          "lambda": 4.0,
+          "phase_cross_entropy": 1.074107443842738,
+          "pretarget_bias_01": 0.041430936889322215,
+          "pretarget_bias_02": 0.03894852987924798,
+          "target_effect_bias": -0.31630483282005084
+        }
+      ],
+      "selected_gamma": 4.0,
+      "selected_lambda": 4.0
+    }
+  ],
+  "grid": [
+    0.0,
+    0.25,
+    1.0,
+    4.0
+  ]
+}

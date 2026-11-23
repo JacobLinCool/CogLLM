@@ -1,0 +1,172 @@
+{
+  "ai_all": {
+    "buzzes": 632,
+    "correct": 446,
+    "game_question_pairs": 533,
+    "incorrect": 186,
+    "unique_games": 32,
+    "unique_players": 9,
+    "unique_questions": 140
+  },
+  "article": "https://aclanthology.org/2026.findings-acl.422/",
+  "dataset": "qanta-challenge/qanta25-gamedata",
+  "dataset_card_license_declared": null,
+  "dataset_revision": "86abe0689c7560ccaa685723b926bbc38fa3c387",
+  "human_all": {
+    "buzzes": 195,
+    "correct": 156,
+    "game_question_pairs": 182,
+    "incorrect": 39,
+    "unique_games": 28,
+    "unique_players": 21,
+    "unique_questions": 104
+  },
+  "human_coordinate_verified": {
+    "buzzes": 193,
+    "correct": 155,
+    "game_question_pairs": 180,
+    "incorrect": 38,
+    "unique_games": 28,
+    "unique_players": 21,
+    "unique_questions": 104
+  },
+  "join": {
+    "all_coordinate_verified": 825,
+    "buzzes_matching_game": 827,
+    "buzzes_matching_source_question": 827,
+    "coordinate_mismatches": [
+      {
+        "agrees_with_event_metadata_terminal_token": true,
+        "clue_is_final": true,
+        "correct": 1,
+        "difference_from_source_token_end": 1,
+        "role": "human"
+      },
+      {
+        "agrees_with_event_metadata_terminal_token": true,
+        "clue_is_final": true,
+        "correct": 0,
+        "difference_from_source_token_end": 1,
+        "role": "human"
+      }
+    ],
+    "unique_buzz_ids": 827
+  },
+  "presentation": "Live moderator read cues aloud. The tournament interface also displayed clues progressively.",
+  "protobowl_alternative": {
+    "human_outcomes_in_mit_question_release": false,
+    "institutional_mirror_http_status": 403,
+    "mit_question_release": "https://huggingface.co/datasets/mgor/protobowl-11-13",
+    "official_log_http_status": 404,
+    "official_log_url": "https://s3-us-west-2.amazonaws.com/pinafore-us-west-2/qanta-jmlr-datasets/protobowl-042818.log"
+  },
+  "question_inventory": {
+    "exact_unicode_clue_span_bounds": 140,
+    "published_token_count_matches_whitespace_words": 0,
+    "questions": 140,
+    "questions_per_packet": {
+      "Packet 1": 20,
+      "Packet 2": 20,
+      "Packet 3": 20,
+      "Packet 4": 20,
+      "Packet 5": 20,
+      "Packet 6": 20,
+      "Packet 7": 20
+    }
+  },
+  "released_columns": {
+    "games": [
+      "game_id",
+      "tournament_id",
+      "tournament_name",
+      "round",
+      "moderator",
+      "team_a",
+      "team_b",
+      "team_a_score",
+      "team_b_score",
+      "team_a_players",
+      "team_b_players",
+      "team_mapping",
+      "player_mapping",
+      "winner"
+    ],
+    "tossup_questions": [
+      "qid",
+      "question",
+      "answer_line",
+      "normalized_answer_line",
+      "answer_primary",
+      "clean_answers",
+      "explanation",
+      "clue_spans",
+      "metadata",
+      "clue_token_indices",
+      "run_indices"
+    ],
+    "tossup_responses": [
+      "response_id",
+      "game_id",
+      "qid",
+      "question_number",
+      "buzz_number",
+      "player_id",
+      "team_id",
+      "other_team_id",
+      "buzz_pos",
+      "buzz_clue_index",
+      "correct",
+      "points",
+      "score_before",
+      "score_diff",
+      "mute_actions",
+      "muted_players",
+      "active_players",
+      "metadata"
+    ]
+  },
+  "risk_set": {
+    "events_by_ai_count_in_published_roster": {
+      "3": 147,
+      "4": 680
+    },
+    "events_with_no_ai_in_active_players": 13,
+    "games_by_observed_question_count": {
+      "17": 1,
+      "19": 1,
+      "20": 30
+    },
+    "games_with_published_question_presentation_ledger": 0,
+    "observed_game_question_pairs": 636,
+    "observed_game_question_pairs_by_buzz_count": {
+      "1": 445,
+      "2": 191
+    },
+    "potential_packet_entries_if_every_game_played_full_packet": 640,
+    "potential_packet_entries_without_a_buzz_record": 4,
+    "released_games": 32
+  },
+  "schema_version": 1,
+  "source_files": {
+    "games": {
+      "bytes": 25087,
+      "sha256": "4263f2259d691049f9dff1d558242dca7362c9c61a26bf547f6429b297b802c5",
+      "url": "https://huggingface.co/datasets/qanta-challenge/qanta25-gamedata/resolve/86abe0689c7560ccaa685723b926bbc38fa3c387/games/train-00000-of-00001.parquet"
+    },
+    "tossup_questions": {
+      "bytes": 115829,
+      "sha256": "e25101526e6d6f317cea244c9a9ee4dc8ea667668a94d68121abb87a7e83021f",
+      "url": "https://huggingface.co/datasets/qanta-challenge/qanta25-gamedata/resolve/86abe0689c7560ccaa685723b926bbc38fa3c387/tossup_questions/eval-00000-of-00001.parquet"
+    },
+    "tossup_responses": {
+      "bytes": 38967,
+      "sha256": "7f52ffc915719ac49c713d37c825a87bb0b72698aaa48638876ee42ed650577b",
+      "url": "https://huggingface.co/datasets/qanta-challenge/qanta25-gamedata/resolve/86abe0689c7560ccaa685723b926bbc38fa3c387/tossup_responses/train-00000-of-00001.parquet"
+    }
+  },
+  "viewer_canonical_rows_sha256": {
+    "games": "8cef642d70d9ba6a0181db70642e884950b573e029ed9849417d0c2092620e81",
+    "tossup_questions": "ec8a838c2cf136b21ac11769413b9ba2d956661231cf771186842e5331810ef8",
+    "tossup_responses": "f956e1299e78f5398e7e688723849c4aefb00d251f2ef25cdb4558141ff41597"
+  }
+}

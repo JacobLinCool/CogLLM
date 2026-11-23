@@ -1,0 +1,363 @@
+{
+  "paper": "https://doi.org/10.1017/langcog.2025.10057",
+  "repository": "https://osf.io/m524v/",
+  "annotation_guidelines": "https://osf.io/download/h9mxg/",
+  "guidelines_sha256": "33bf7606acdcf35cfd32dd23faee84b540081e00550ea9aa1ce60a145aa0a8d1",
+  "scope": "Native published text lines from five cached Textannotation workbooks, three stories.",
+  "annotation_observer": "Research annotators rereading the whole story; suspense ratings are a separate reader task.",
+  "same_reader_reopening_measurable": false,
+  "method": {
+    "line": "1-based ordinal of physical worksheet rows below row 2 with nonempty text in column A, excluding the importance row. Preserve physical worksheet row separately.",
+    "markers": {
+      "offen": "open",
+      "?offen": "annotator unsure whether answered",
+      "blank": "before first opening or after first confirmed close"
+    },
+    "raw_runs": "Run-length-encode complete raw marker series including blank boundaries, without imposing legal transitions.",
+    "close": "First blank after initial offen, right-censored when absent; active span uses exclusive close.",
+    "reopening": "Any offen or ?offen after that first blank in the same numbered column.",
+    "same_line_open_close": "At least one column first offen and a different column first blank following initial offen at the same line.",
+    "formulation_match": "Within one workbook only, exact NFKC, Unicode casefold and whitespace-normalized row-2 wording; count all unordered distinct-ID pairs. A pair is disjoint if half-open active intervals do not overlap."
+  },
+  "totals": {
+    "workbooks": 5,
+    "stories": 3,
+    "workbook_line_positions": 1597,
+    "question_columns": 196,
+    "observed_same_column_reopenings": 0,
+    "same_line_distinct_open_and_confirmed_close": 16,
+    "definite_open_with_uncertain_resolution_lines": 369,
+    "multiple_uncertain_resolution_lines": 262,
+    "equal_normalized_formulation_pairs": 5,
+    "disjoint_equal_normalized_formulation_pairs": 4
+  },
+  "workbooks": [
+    {
+      "workbook": "PITQ_Katze_AA_AA.xlsx",
+      "source_url": "https://osf.io/download/k5wq4/",
+      "source_sha256": "c28db8c46d7d07b0f9dc3414a00108f3d44bb9d822ff25ed601dda92488aedd6",
+      "story": "Katze",
+      "question_list_and_annotation_team": "AA",
+      "native_text_lines": 461,
+      "worksheet_rows_first_last": [
+        3,
+        463
+      ],
+      "question_columns": 99,
+      "raw_state_run_patterns": {
+        "blank / offen": 5,
+        "blank / offen / ?offen / blank": 6,
+        "blank / offen / blank": 88
+      },
+      "observed_same_column_reopenings": [],
+      "same_line_distinct_open_and_confirmed_close": [
+        {
+          "native_text_line": 38,
+          "worksheet_row": 40,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 63,
+          "worksheet_row": 65,
+          "opening_question_columns": 2,
+          "closing_question_columns": 2
+        },
+        {
+          "native_text_line": 64,
+          "worksheet_row": 66,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 67,
+          "worksheet_row": 69,
+          "opening_question_columns": 1,
+          "closing_question_columns": 4
+        },
+        {
+          "native_text_line": 262,
+          "worksheet_row": 264,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 271,
+          "worksheet_row": 273,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 274,
+          "worksheet_row": 276,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 334,
+          "worksheet_row": 336,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 375,
+          "worksheet_row": 377,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 376,
+          "worksheet_row": 378,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        }
+      ],
+      "definite_open_with_uncertain_resolution_lines": 369,
+      "first_mixed_line": {
+        "native_text_line": 76,
+        "worksheet_row": 78,
+        "definite_open": 13,
+        "uncertain_resolution": 1
+      },
+      "multiple_uncertain_resolution_lines": 262,
+      "maximum_uncertain_resolution_count": 5,
+      "equal_normalized_formulation_pairs": 4,
+      "disjoint_equal_normalized_formulation_pairs": [
+        [
+          {
+            "question_column": 38,
+            "opening": {
+              "native_text_line": 114,
+              "worksheet_row": 116
+            },
+            "first_confirmed_close": {
+              "native_text_line": 121,
+              "worksheet_row": 123
+            }
+          },
+          {
+            "question_column": 94,
+            "opening": {
+              "native_text_line": 398,
+              "worksheet_row": 400
+            },
+            "first_confirmed_close": {
+              "native_text_line": 406,
+              "worksheet_row": 408
+            }
+          }
+        ],
+        [
+          {
+            "question_column": 64,
+            "opening": {
+              "native_text_line": 254,
+              "worksheet_row": 256
+            },
+            "first_confirmed_close": {
+              "native_text_line": 262,
+              "worksheet_row": 264
+            }
+          },
+          {
+            "question_column": 72,
+            "opening": {
+              "native_text_line": 292,
+              "worksheet_row": 294
+            },
+            "first_confirmed_close": {
+              "native_text_line": 298,
+              "worksheet_row": 300
+            }
+          }
+        ],
+        [
+          {
+            "question_column": 64,
+            "opening": {
+              "native_text_line": 254,
+              "worksheet_row": 256
+            },
+            "first_confirmed_close": {
+              "native_text_line": 262,
+              "worksheet_row": 264
+            }
+          },
+          {
+            "question_column": 75,
+            "opening": {
+              "native_text_line": 300,
+              "worksheet_row": 302
+            },
+            "first_confirmed_close": {
+              "native_text_line": 331,
+              "worksheet_row": 333
+            }
+          }
+        ],
+        [
+          {
+            "question_column": 72,
+            "opening": {
+              "native_text_line": 292,
+              "worksheet_row": 294
+            },
+            "first_confirmed_close": {
+              "native_text_line": 298,
+              "worksheet_row": 300
+            }
+          },
+          {
+            "question_column": 75,
+            "opening": {
+              "native_text_line": 300,
+              "worksheet_row": 302
+            },
+            "first_confirmed_close": {
+              "native_text_line": 331,
+              "worksheet_row": 333
+            }
+          }
+        ]
+      ]
+    },
+    {
+      "workbook": "PITQ_Auftrag_AA_AA.xlsx",
+      "source_url": "https://osf.io/download/d6v5j/",
+      "source_sha256": "45cfa2e6da7a8d6ea1dce6b75418abc62e93c8337ca1d2e0db37a43d2afeb61a",
+      "story": "Auftrag",
+      "question_list_and_annotation_team": "AA",
+      "native_text_lines": 205,
+      "worksheet_rows_first_last": [
+        3,
+        207
+      ],
+      "question_columns": 34,
+      "raw_state_run_patterns": {
+        "blank / offen": 3,
+        "blank / offen / blank": 31
+      },
+      "observed_same_column_reopenings": [],
+      "same_line_distinct_open_and_confirmed_close": [
+        {
+          "native_text_line": 60,
+          "worksheet_row": 62,
+          "opening_question_columns": 1,
+          "closing_question_columns": 3
+        },
+        {
+          "native_text_line": 164,
+          "worksheet_row": 166,
+          "opening_question_columns": 1,
+          "closing_question_columns": 1
+        },
+        {
+          "native_text_line": 188,
+          "worksheet_row": 190,
+          "opening_question_columns": 1,
+          "closing_question_columns": 2
+        }
+      ],
+      "definite_open_with_uncertain_resolution_lines": 0,
+      "first_mixed_line": null,
+      "multiple_uncertain_resolution_lines": 0,
+      "maximum_uncertain_resolution_count": 0,
+      "equal_normalized_formulation_pairs": 0,
+      "disjoint_equal_normalized_formulation_pairs": []
+    },
+    {
+      "workbook": "PITQ_Auftrag_JE_JE.xlsx",
+      "source_url": "https://osf.io/download/k45vd/",
+      "source_sha256": "729aa7ee904b58e142e313796ee0e9434aaead50e9533e560ee1dba32c856e96",
+      "story": "Auftrag",
+      "question_list_and_annotation_team": "JE",
+      "native_text_lines": 205,
+      "worksheet_rows_first_last": [
+        3,
+        207
+      ],
+      "question_columns": 14,
+      "raw_state_run_patterns": {
+        "blank / offen / blank": 14
+      },
+      "observed_same_column_reopenings": [],
+      "same_line_distinct_open_and_confirmed_close": [],
+      "definite_open_with_uncertain_resolution_lines": 0,
+      "first_mixed_line": null,
+      "multiple_uncertain_resolution_lines": 0,
+      "maximum_uncertain_resolution_count": 0,
+      "equal_normalized_formulation_pairs": 1,
+      "disjoint_equal_normalized_formulation_pairs": []
+    },
+    {
+      "workbook": "PITQ_Thomas_AA_AA.xlsx",
+      "source_url": "https://osf.io/download/fza6p/",
+      "source_sha256": "79c11344e8c57a40c45853781392989056c0539c4e763733ac04444fa9124547",
+      "story": "Thomas",
+      "question_list_and_annotation_team": "AA",
+      "native_text_lines": 363,
+      "worksheet_rows_first_last": [
+        3,
+        384
+      ],
+      "question_columns": 38,
+      "raw_state_run_patterns": {
+        "blank / offen": 2,
+        "blank / offen / blank": 36
+      },
+      "observed_same_column_reopenings": [],
+      "same_line_distinct_open_and_confirmed_close": [
+        {
+          "native_text_line": 189,
+          "worksheet_row": 204,
+          "opening_question_columns": 1,
+          "closing_question_columns": 2
+        },
+        {
+          "native_text_line": 262,
+          "worksheet_row": 280,
+          "opening_question_columns": 1,
+          "closing_question_columns": 3
+        }
+      ],
+      "definite_open_with_uncertain_resolution_lines": 0,
+      "first_mixed_line": null,
+      "multiple_uncertain_resolution_lines": 0,
+      "maximum_uncertain_resolution_count": 0,
+      "equal_normalized_formulation_pairs": 0,
+      "disjoint_equal_normalized_formulation_pairs": []
+    },
+    {
+      "workbook": "PITQ_Thomas_JE_JE.xlsx",
+      "source_url": "https://osf.io/download/65f20cce852037102d880876/",
+      "source_sha256": "d758db86de461b08707aa0d13304dc57079469e647c5a1eaa3df65a3d352e8eb",
+      "story": "Thomas",
+      "question_list_and_annotation_team": "JE",
+      "native_text_lines": 363,
+      "worksheet_rows_first_last": [
+        3,
+        365
+      ],
+      "question_columns": 11,
+      "raw_state_run_patterns": {
+        "blank / offen": 3,
+        "blank / offen / blank": 8
+      },
+      "observed_same_column_reopenings": [],
+      "same_line_distinct_open_and_confirmed_close": [
+        {
+          "native_text_line": 341,
+          "worksheet_row": 343,
+          "opening_question_columns": 1,
+          "closing_question_columns": 2
+        }
+      ],
+      "definite_open_with_uncertain_resolution_lines": 0,
+      "first_mixed_line": null,
+      "multiple_uncertain_resolution_lines": 0,
+      "maximum_uncertain_resolution_count": 0,
+      "equal_normalized_formulation_pairs": 0,
+      "disjoint_equal_normalized_formulation_pairs": []
+    }
+  ]
+}

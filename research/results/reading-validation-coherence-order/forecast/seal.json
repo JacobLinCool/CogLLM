@@ -1,0 +1,114 @@
+{
+  "fit": {
+    "form.english": {
+      "objective_start": 0.9999999999999998,
+      "objective_final": 0.8858554318187559,
+      "iterations": 33,
+      "max_projected_gradient": 5.5738810841171604e-09,
+      "null_loss": {
+        "english": 0.5477546030113227
+      },
+      "gradient_check_max_abs": 7.082022468463123e-11,
+      "italian_scale": 1.0
+    },
+    "form.italian": {
+      "objective_start": 0.9999999999999999,
+      "objective_final": 0.8205936008262982,
+      "iterations": 58,
+      "max_projected_gradient": 6.738061388011918e-08,
+      "null_loss": {
+        "italian": 0.6014011261464347
+      },
+      "gradient_check_max_abs": 1.5733986336030625e-10,
+      "italian_scale": 1.0752637356521755
+    },
+    "surprisal.english": {
+      "objective_start": 0.9999999999999998,
+      "objective_final": 0.6988994568374587,
+      "iterations": 44,
+      "max_projected_gradient": 6.177814373779789e-09,
+      "null_loss": {
+        "english": 0.5477546030113227
+      },
+      "gradient_check_max_abs": 8.77302397395141e-11,
+      "italian_scale": 1.0
+    },
+    "surprisal.italian": {
+      "objective_start": 0.9999999999999999,
+      "objective_final": 0.713586136375677,
+      "iterations": 66,
+      "max_projected_gradient": 5.403907231138212e-08,
+      "null_loss": {
+        "italian": 0.6014011261464347
+      },
+      "gradient_check_max_abs": 1.83923043461931e-10,
+      "italian_scale": 1.1290350614607711
+    },
+    "representation.english": {
+      "objective_start": 0.9999999999999998,
+      "objective_final": 0.6545258432680601,
+      "iterations": 55,
+      "max_projected_gradient": 1.3063602689915776e-08,
+      "null_loss": {
+        "english": 0.5477546030113227
+      },
+      "gradient_check_max_abs": 8.647069171807686e-11,
+      "italian_scale": 1.0
+    },
+    "representation.italian": {
+      "objective_start": 0.9999999999999999,
+      "objective_final": 0.5789040039646522,
+      "iterations": 121,
+      "max_projected_gradient": 2.7040402355172494e-08,
+      "null_loss": {
+        "italian": 0.6014011261464347
+      },
+      "gradient_check_max_abs": 2.5885527055180546e-10,
+      "italian_scale": 0.9902239314917748
+    },
+    "representation.shared": {
+      "objective_start": 0.9999999999999998,
+      "objective_final": 0.693805065995114,
+      "iterations": 106,
+      "max_projected_gradient": 2.1604088382837228e-08,
+      "null_loss": {
+        "english": 0.5477546030113227,
+        "italian": 0.6014011261464347
+      },
+      "gradient_check_max_abs": 1.7686177522513447e-10,
+      "italian_scale": 0.7947334241786567
+    },
+    "english.mixture": 0.4947408226552083,
+    "italian.mixture": 0.5660992559256208
+  },
+  "native": true,
+  "official_affine": {
+    "intercept": 3.2824451467433047,
+    "slope": 1.9836281896579493
+  },
+  "source_train_and_dev_only": true,
+  "new_test_outcomes_opened": false,
+  "official_unscorable": {
+    "train": [],
+    "held": [
+      "task_2_test_108"
+    ]
+  },
+  "predictions": "a322dcae90593d6b19c4be71ea3b1cd8e5054f26a7461b22295d9f9ff36ade9a",
+  "parameters": "7ef0e485acdf796a88c60652ab161b5dec3debbae1ed7252847f1f2225274263",
+  "feature_file": "61432ca5e25cd95c69c9edcab3ffe4a06d642c520a3c8247831b0e3dea6e1fd3",
+  "protocol": "a9500c8c5d55995cccc3c9585f0c342ec3ce162ede88d1bedf3270b56d6cb73c",
+  "code": {
+    "coherence_order_score.py": "a1d0528c93b794d7d8eaca28efb701b02eee7b409d19845e9f9e1daf8f6c3acc",
+    "coherence_order_genre.py": "d0812a1c80a11c1bf259298dd2cb37ae5c5b561f4f8fa628160104ddf66fc1a5",
+    "coherence_order_estimator.py": "0ab1eafcd550e9ea544e75e685999c27c8695284a3328484a9fcc32aee49eaf1",
+    "coherence_order_features.py": "755dcabfdd9b29804e32ea242733986efaf6bef878c2003adf0881509a3d1a1d",
+    "coherence_order_genre_fit.py": "758f3fbc5178f79c3956dbfbdc815e927816660413b814908a3005ab476845c5",
+    "coherence_order_reference.py": "2f543985b01767c252bf9839acdef04a8cc19556d799f6d5ee5b2436cc12518b",
+    "coherence_order_genre_score.py": "1cb9d6b489edac9c3dbda9070fb9861003b9ec2a96789c419054723143fd1b25",
+    "coherence_order_data.py": "d01a6477d8cfd64b8f6dfe40ba7bcd30f88a9d24a7970dab2b48706406b805ff",
+    "coherence_order_reference_check.py": "6522fc5cf0e9acc33c9541a3c241d29e3b21c1b7d9d60baeee6b2e10ad1cb704",
+    "coherence_order_fit.py": "644b71e99f9497e69d4804f01795e030e31536183904155a46a46e1f29d2b30b",
+    "coherence_order_verify.py": "260f02b8971af5e69fe6e106831e38691f8a96421a904739b4d4aa46bb3ab5d0"
+  }
+}

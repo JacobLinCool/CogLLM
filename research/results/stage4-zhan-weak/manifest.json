@@ -1,0 +1,80 @@
+{
+  "schema_version": 1,
+  "project": "CogLLM",
+  "owner": "CogLLM Stage 4",
+  "run_id": "cogllm-stage4-20261120T152329Z-f22e1eaa",
+  "requested_gpu": "L4",
+  "reason": "Frozen Qwen Zhan Experiment 1 landmark extraction and three-arm weak-supervision fit",
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "compute_dtype": "float32",
+  "transformers": "5.17.0",
+  "colab_session_registry": "/Users/jacoblincool/.config/colab-cli/sessions.json",
+  "worker_timeout_seconds": 435,
+  "worker_sha256": "2599585e32b55994b44f7951dfa73c41c77f3c258cdec99adb8a11c6f89cda36",
+  "payload_sha256": "50b368d4a11726d1416e4cadee01128df3b22126438e175b848a84577c1472fb",
+  "input_sha256": {
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/zhan_landmark_features.py": "a0a2a4e271d108c86e50aa5e76dbb584a0087316a0f83fb94e13c057df48ba09",
+    "research/stage3/zhan_landmark_probe.py": "7633f0766423e92ca755a11be5c6f400dbc4c9b444e1c9c532feb1f3f80a4caf",
+    "research/stage3/issue_probe.py": "d275a33d94d6764ceabf3524e08ad404b94003d1280cc0f7e695864fe25b8b73",
+    "research/stage4/zhan_features.py": "f9bc44b0a27634322c077b9b627f9192033ca68bd901babd3c1865e133a559ca",
+    "research/stage4/zhan_weak.py": "9b03370089fd665a8a861b7786dad48fe5cf7777e10d53f1709c259ab22cbfbb",
+    "data/stimuli.jsonl": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+    "data/design.json": "9c08b4dd1060a4354af8236c6a7edf9579d83fa9d15c2677bc02a2d24fb3355b"
+  },
+  "timeline_utc": {
+    "prepared": "2026-11-20T15:23:29.132221+00:00",
+    "sessions-before-allocation": "2026-11-20T15:23:39.387801+00:00",
+    "before-allocation": "2026-11-20T15:23:41.647822+00:00",
+    "allocate": "2026-11-20T15:23:43.826552+00:00",
+    "allocated": "2026-11-20T15:23:48.640427+00:00",
+    "after-allocation": "2026-11-20T15:23:48.640907+00:00",
+    "upload": "2026-11-20T15:23:50.667316+00:00",
+    "execute": "2026-11-20T15:23:52.413572+00:00",
+    "download": "2026-11-20T15:25:39.802289+00:00",
+    "local-artifacts-verified": "2026-11-20T15:25:41.056280+00:00",
+    "before-stop": "2026-11-20T15:25:41.056585+00:00",
+    "stop-1": "2026-11-20T15:25:43.338758+00:00",
+    "sessions-after-stop-1": "2026-11-20T15:25:45.900193+00:00",
+    "after-stop": "2026-11-20T15:25:48.184410+00:00",
+    "finished": "2026-11-20T15:25:50.306832+00:00"
+  },
+  "cli_version": "0.7.4",
+  "remote_status": {
+    "phase": "complete",
+    "completed": true,
+    "phase_seconds": {
+      "install_transformers": 13.047539924000006,
+      "feature_extraction": 49.94540446900001,
+      "fit_heads": 38.716087706999986
+    },
+    "worker_elapsed_s": 101.88173539799999
+  },
+  "actual_device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "results_sha256": "9b446fecd1e30b57632995f411488df60cbfc13797273149851e0b2c3e426493",
+  "output_sha256": {
+    "causality.json": "e1418f7fed7ed62f1fb4b9a4f8ff743b4dfb80d04f257ae07d168c0e9b1bbec4",
+    "environment.json": "6938a16e62425429eaf46262191730a06dc3f4f897674252e2b3bd7576b7a260",
+    "extraction.json": "8425067deb4eb95bcfce69e48d802846ecda5b199a68a3c8b1b549517cd728b6",
+    "features.npz": "94733ed95ab87d3d81283af0a26f3682e3348d5e335e80bc6a03c3577b4a67c6",
+    "fitting.json": "0ce0bd896da62e0b7e5614ca854d9ece479f23483f1a08f7527bac990436c4d6",
+    "gpu-preflight.json": "2eee58c6376863a2eb3eaf6cd80e58df4d58187c38a8ad90ec80bb1100322ea0",
+    "heads.npz": "4ece32f81090ef3da0249410d48a9a79b22c44efb57c0796c1d6178973623648",
+    "remote-status.json": "3991bad0ee8a5b9d2476394c9162761291e53d5f41fb5d56f8077befedc68e15",
+    "telemetry.jsonl": "3f4c9bd7161beb33176c3c6c98f0691ef4ebef7a70314fbfbdd14b1165dd3c6e",
+    "timings.json": "b715c79e77782aa2afedf97493bc8575336dc9c30ad8112d26fb67b8a214d766"
+  },
+  "allocated_to_stop_request_seconds": 114.69771729200147,
+  "release_verified": true
+}

@@ -1,0 +1,177 @@
+{
+  "code_sha256": {
+    "arrau_bridge_rank.py": "3bb51e4daa76f29d8cc67f1376af246a78bdb4b7564f8e4319283046252450d0",
+    "bridge_interaction_fit.py": "8e6d6e80c6192154c22ad3389c97fb8516bff91c6d54d304feffcc87d5128b01",
+    "bridge_rerank.py": "7de878811ab0d981ceb25e962b50f92112d16b029ae053c759bece78533708cd",
+    "gum_bridge_rank.py": "8ed168a99113d01b4833cbc3a04a664428d04d5e13800882ca306201e6011b8e"
+  },
+  "features": [
+    "log_word_distance",
+    "log_word_length",
+    "capitalized",
+    "log_visible_frequency",
+    "trigger_overlap",
+    "function_word",
+    "has_digit",
+    "following_punctuation",
+    "preceding_preposition",
+    "qwen_cosine"
+  ],
+  "fit_split": "gum_train",
+  "fitted": {
+    "cosine": {
+      "center": [
+        4.719233250079414,
+        1.6452352502475491,
+        0.18335781649679467,
+        1.414483059710054,
+        0.030811015137027872,
+        0.43201767362940835,
+        0.0237553426831491,
+        0.12297732644104853,
+        0.1296319947042475,
+        0.5034860809305031
+      ],
+      "coefficients": [
+        -0.9582448736819594,
+        0.15730921355974098,
+        0.4281634990329769,
+        0.27322502927446335,
+        0.1285448986868085,
+        -0.7057925421529749,
+        0.14444597583337734,
+        0.36846284568997695,
+        0.044764361989419556,
+        1.0691535322906818
+      ],
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9
+      ],
+      "fit_articles": 177,
+      "fit_candidates": 1411877,
+      "fit_cases": 3366,
+      "input_features": 10,
+      "iterations": 17,
+      "penalty": 0.05,
+      "regularized_nll_nats": 3.393729512586753,
+      "scale": [
+        1.2886750645806673,
+        0.44769446879533786,
+        0.38695959430710886,
+        0.8575394645606313,
+        0.17280537168518123,
+        0.4953568444073857,
+        0.1522860019081046,
+        0.328411180720847,
+        0.3358981105234829,
+        0.13733830302334743
+      ]
+    },
+    "surface": {
+      "center": [
+        4.719233250079414,
+        1.6452352502475491,
+        0.18335781649679467,
+        1.414483059710054,
+        0.030811015137027872,
+        0.43201767362940835,
+        0.0237553426831491,
+        0.12297732644104853,
+        0.1296319947042475
+      ],
+      "coefficients": [
+        -1.2392386479540418,
+        0.2623596344449973,
+        0.3016365785439642,
+        0.28823274085812,
+        0.19589600317294695,
+        -0.8314736406190117,
+        0.11939640814102326,
+        0.44988220478737945,
+        0.017601416089526218
+      ],
+      "columns": [
+        0,
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "fit_articles": 177,
+      "fit_candidates": 1411877,
+      "fit_cases": 3366,
+      "input_features": 10,
+      "iterations": 16,
+      "penalty": 0.05,
+      "regularized_nll_nats": 3.647160414312875,
+      "scale": [
+        1.2886750645806673,
+        0.44769446879533786,
+        0.38695959430710886,
+        0.8575394645606313,
+        0.17280537168518123,
+        0.4953568444073857,
+        0.1522860019081046,
+        0.328411180720847,
+        0.3358981105234829
+      ]
+    }
+  },
+  "inventory": {
+    "annotations": 3407,
+    "articles": 177,
+    "articles_extracted": 177,
+    "articles_with_annotations": 177,
+    "coverage": {
+      "annotations_with_inaccessible_gold": 376,
+      "candidate_words": 1426103,
+      "exact_gold_spans": 14874,
+      "gold_spans": 15568,
+      "inaccessible_gold_spans": 694,
+      "uncertified_prior_words": 10032
+    },
+    "median_candidates": 381.5,
+    "outcomes": {
+      "no_exact_gold": 22,
+      "scored": 3366,
+      "uncertified_trigger": 19
+    },
+    "sentence_outcomes": {}
+  },
+  "projection_identity": {
+    "anchor_heads_sha256": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "model": "Qwen/Qwen3.5-2B",
+    "projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+    "projection_width": 128,
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+  },
+  "protocol_sha256": "c081b2d2edf7c52e26f41a39bce526a279467f9e09835ce1c695b48c9f2a938f",
+  "ridge_penalty": 0.05,
+  "schema": 1,
+  "sources": {
+    "coordinates.jsonl": "e684368dc3ddefd620f9e4add69a720f8bb6709673ca6843fd0e402a768c3189",
+    "extraction": "22b2e291ccc3e3bb76b1b1d50c06f0670663a2bd57b1149a55bc5f77a0943127",
+    "train_inputs": "b30e8241222a21710f282cc77172ce54c187762a3ed98b51187aa5b6fddc4251",
+    "train_labels": "dd495e8affd5d63a87cdbe26baf5472eac574392ecd73edf524563baba52e9db",
+    "vectors.npy": "51b0bf93a1c1d4d63922abae9e11af3859e4a7911be37f6ef6db7f4761312c55"
+  },
+  "versions": {
+    "numpy": "2.5.5",
+    "scipy": "1.17.1"
+  }
+}

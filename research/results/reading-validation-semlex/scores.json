@@ -1,0 +1,989 @@
+{
+  "ordinary_pair_direction": {
+    "independent_lemmas": 171,
+    "scores": {
+      "joint_native_mix": {
+        "estimate": 0.7918863342263658,
+        "ci95": [
+          0.7734274469721347,
+          0.8093688917626678
+        ]
+      },
+      "lexical_plus_surprisal": {
+        "estimate": 0.7921102270074535,
+        "ci95": [
+          0.7738796050070536,
+          0.8100162044345648
+        ]
+      },
+      "shared_contextual": {
+        "estimate": 0.7572518455169904,
+        "ci95": [
+          0.7391646603262502,
+          0.7743195750124121
+        ]
+      },
+      "learned_lexical": {
+        "estimate": 0.7581100249977907,
+        "ci95": [
+          0.7381752485597958,
+          0.7773221019642971
+        ]
+      },
+      "raw_target_surprisal": {
+        "estimate": 0.7358318610231946,
+        "ci95": [
+          0.7198636700337796,
+          0.752187895521252
+        ]
+      },
+      "word_frequency": {
+        "estimate": 0.7743382337578095,
+        "ci95": [
+          0.7542777428588907,
+          0.7932585453428428
+        ]
+      },
+      "paper_frequency": {
+        "estimate": 0.7672856894819694,
+        "ci95": [
+          0.7476035122369629,
+          0.7859270528179826
+        ]
+      },
+      "paper_adaptive_ngram": {
+        "estimate": 0.7610788434148787,
+        "ci95": [
+          0.7428515302549605,
+          0.7788179425371987
+        ]
+      },
+      "paper_psycholinguistic": {
+        "estimate": 0.7399643130773974,
+        "ci95": [
+          0.7184161229150972,
+          0.7608777539047765
+        ]
+      }
+    },
+    "contrasts": {
+      "mix_minus_lexical_plus_surprisal": {
+        "estimate": -0.00022389278108769783,
+        "ci95": [
+          -0.005601433975870226,
+          0.00502690139895886
+        ]
+      },
+      "mix_minus_shared_contextual": {
+        "estimate": 0.034634488709375355,
+        "ci95": [
+          0.022528912893252286,
+          0.04659390206144031
+        ]
+      },
+      "mix_minus_learned_lexical": {
+        "estimate": 0.03377630922857511,
+        "ci95": [
+          0.01861979845563686,
+          0.049896924911370995
+        ]
+      },
+      "mix_minus_raw_target_surprisal": {
+        "estimate": 0.05605447320317114,
+        "ci95": [
+          0.03688269042025322,
+          0.07269250905640871
+        ]
+      },
+      "mix_minus_word_frequency": {
+        "estimate": 0.01754810046855626,
+        "ci95": [
+          0.0030591016067262554,
+          0.03274857636264344
+        ]
+      },
+      "mix_minus_paper_frequency": {
+        "estimate": 0.024600644744396383,
+        "ci95": [
+          0.008846596951406252,
+          0.04070679424864947
+        ]
+      },
+      "mix_minus_paper_adaptive_ngram": {
+        "estimate": 0.030807490811487037,
+        "ci95": [
+          0.010309183322082974,
+          0.049279770865841954
+        ]
+      },
+      "mix_minus_paper_psycholinguistic": {
+        "estimate": 0.05192202114896838,
+        "ci95": [
+          0.03405350557733574,
+          0.07001074946775121
+        ]
+      }
+    }
+  },
+  "strictly_human_ordered_pairs": 10797,
+  "tied_aggregate_human_rank": 358,
+  "total_ordinary_contexts": 1192,
+  "all_shared_candidate_pairs": {
+    "relative_confidence": {
+      "independent_lemmas": 126,
+      "scores": {
+        "joint_native_mix": {
+          "estimate": 0.6274171705719325,
+          "ci95": [
+            0.5737957592097684,
+            0.6785884466220349
+          ]
+        },
+        "lexical_plus_surprisal": {
+          "estimate": 0.6354175664974984,
+          "ci95": [
+            0.5789358966139366,
+            0.6903413114584457
+          ]
+        },
+        "shared_contextual": {
+          "estimate": 0.5462770624122664,
+          "ci95": [
+            0.4873365119857466,
+            0.6068886296251305
+          ]
+        },
+        "learned_lexical": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "raw_target_surprisal": {
+          "estimate": 0.620253729798798,
+          "ci95": [
+            0.5629502556644349,
+            0.6741941283788649
+          ]
+        },
+        "word_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_adaptive_ngram": {
+          "estimate": 0.5220220661015729,
+          "ci95": [
+            0.49896997770669116,
+            0.5463387851833854
+          ]
+        },
+        "paper_psycholinguistic": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "context_invariant": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "contrasts": {
+        "mix_minus_lexical_plus_surprisal": {
+          "estimate": -0.008000395925565895,
+          "ci95": [
+            -0.049692539052658136,
+            0.031674627357556794
+          ]
+        },
+        "mix_minus_shared_contextual": {
+          "estimate": 0.0811401081596661,
+          "ci95": [
+            0.019575352958644314,
+            0.14185453166054773
+          ]
+        },
+        "mix_minus_learned_lexical": {
+          "estimate": 0.12741717057193247,
+          "ci95": [
+            0.07379575920976844,
+            0.17858844662203488
+          ]
+        },
+        "mix_minus_raw_target_surprisal": {
+          "estimate": 0.007163440773134466,
+          "ci95": [
+            -0.04381064297412093,
+            0.05745090298023952
+          ]
+        },
+        "mix_minus_word_frequency": {
+          "estimate": 0.12741717057193247,
+          "ci95": [
+            0.07379575920976844,
+            0.17858844662203488
+          ]
+        },
+        "mix_minus_paper_frequency": {
+          "estimate": 0.12741717057193247,
+          "ci95": [
+            0.07379575920976844,
+            0.17858844662203488
+          ]
+        },
+        "mix_minus_paper_adaptive_ngram": {
+          "estimate": 0.1053951044703596,
+          "ci95": [
+            0.04959585925970928,
+            0.15939154001547698
+          ]
+        },
+        "mix_minus_paper_psycholinguistic": {
+          "estimate": 0.12741717057193247,
+          "ci95": [
+            0.07379575920976844,
+            0.17858844662203488
+          ]
+        },
+        "mix_minus_context_invariant": {
+          "estimate": 0.12741717057193247,
+          "ci95": [
+            0.07379575920976844,
+            0.17858844662203488
+          ]
+        }
+      }
+    },
+    "relative_choice": {
+      "independent_lemmas": 126,
+      "scores": {
+        "joint_native_mix": {
+          "estimate": 0.5496631258323434,
+          "ci95": [
+            0.5202860112298887,
+            0.5793681387899073
+          ]
+        },
+        "lexical_plus_surprisal": {
+          "estimate": 0.5570130565453695,
+          "ci95": [
+            0.5232391294811577,
+            0.5911158774025482
+          ]
+        },
+        "shared_contextual": {
+          "estimate": 0.5091395817586295,
+          "ci95": [
+            0.48014835679642215,
+            0.5385017872889897
+          ]
+        },
+        "learned_lexical": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "raw_target_surprisal": {
+          "estimate": 0.5897576193175681,
+          "ci95": [
+            0.5511070913980672,
+            0.6272414603242091
+          ]
+        },
+        "word_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_adaptive_ngram": {
+          "estimate": 0.5220220661015729,
+          "ci95": [
+            0.49896997770669116,
+            0.5463387851833854
+          ]
+        },
+        "paper_psycholinguistic": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "context_invariant": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "contrasts": {
+        "mix_minus_lexical_plus_surprisal": {
+          "estimate": -0.007349930713026032,
+          "ci95": [
+            -0.035468769683799604,
+            0.01962394101158972
+          ]
+        },
+        "mix_minus_shared_contextual": {
+          "estimate": 0.040523544073713946,
+          "ci95": [
+            0.005574156746031848,
+            0.0762516731229529
+          ]
+        },
+        "mix_minus_learned_lexical": {
+          "estimate": 0.04966312583234345,
+          "ci95": [
+            0.020286011229888747,
+            0.07936813878990728
+          ]
+        },
+        "mix_minus_raw_target_surprisal": {
+          "estimate": -0.04009449348522465,
+          "ci95": [
+            -0.07815306909800969,
+            -0.00329824274286424
+          ]
+        },
+        "mix_minus_word_frequency": {
+          "estimate": 0.04966312583234345,
+          "ci95": [
+            0.020286011229888747,
+            0.07936813878990728
+          ]
+        },
+        "mix_minus_paper_frequency": {
+          "estimate": 0.04966312583234345,
+          "ci95": [
+            0.020286011229888747,
+            0.07936813878990728
+          ]
+        },
+        "mix_minus_paper_adaptive_ngram": {
+          "estimate": 0.02764105973077058,
+          "ci95": [
+            -0.006295215093312461,
+            0.06120079893729981
+          ]
+        },
+        "mix_minus_paper_psycholinguistic": {
+          "estimate": 0.04966312583234345,
+          "ci95": [
+            0.020286011229888747,
+            0.07936813878990728
+          ]
+        },
+        "mix_minus_context_invariant": {
+          "estimate": 0.04966312583234345,
+          "ci95": [
+            0.020286011229888747,
+            0.07936813878990728
+          ]
+        }
+      }
+    },
+    "both_correct": {
+      "independent_lemmas": 126,
+      "scores": {
+        "joint_native_mix": {
+          "estimate": 0.16546201814058956,
+          "ci95": [
+            0.12119559397833206,
+            0.21408226253464346
+          ]
+        },
+        "lexical_plus_surprisal": {
+          "estimate": 0.20060626102292767,
+          "ci95": [
+            0.14993638196019146,
+            0.2553108465608465
+          ]
+        },
+        "shared_contextual": {
+          "estimate": 0.12295524691358024,
+          "ci95": [
+            0.0848287115772235,
+            0.16468377976190476
+          ]
+        },
+        "learned_lexical": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "raw_target_surprisal": {
+          "estimate": 0.30009515711046325,
+          "ci95": [
+            0.24586407380412484,
+            0.35562566081326713
+          ]
+        },
+        "word_frequency": {
+          "estimate": 0.0006613756613756613,
+          "ci95": [
+            0.0,
+            0.001984126984126984
+          ]
+        },
+        "paper_frequency": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "paper_adaptive_ngram": {
+          "estimate": 0.13096576593600404,
+          "ci95": [
+            0.09617346938775509,
+            0.16958305776014113
+          ]
+        },
+        "paper_psycholinguistic": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "context_invariant": {
+          "estimate": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ]
+        }
+      },
+      "contrasts": {
+        "mix_minus_lexical_plus_surprisal": {
+          "estimate": -0.03514424288233811,
+          "ci95": [
+            -0.08073143030360294,
+            0.008073448129251674
+          ]
+        },
+        "mix_minus_shared_contextual": {
+          "estimate": 0.04250677122700931,
+          "ci95": [
+            -0.012204802059712761,
+            0.09950808216805238
+          ]
+        },
+        "mix_minus_learned_lexical": {
+          "estimate": 0.16546201814058956,
+          "ci95": [
+            0.12119559397833206,
+            0.21408226253464346
+          ]
+        },
+        "mix_minus_raw_target_surprisal": {
+          "estimate": -0.1346331389698737,
+          "ci95": [
+            -0.1892181173064464,
+            -0.07990271141525401
+          ]
+        },
+        "mix_minus_word_frequency": {
+          "estimate": 0.1648006424792139,
+          "ci95": [
+            0.12051130637440159,
+            0.21356615331317705
+          ]
+        },
+        "mix_minus_paper_frequency": {
+          "estimate": 0.16546201814058956,
+          "ci95": [
+            0.12119559397833206,
+            0.21408226253464346
+          ]
+        },
+        "mix_minus_paper_adaptive_ngram": {
+          "estimate": 0.03449625220458552,
+          "ci95": [
+            -0.015964604591836747,
+            0.08593450806248423
+          ]
+        },
+        "mix_minus_paper_psycholinguistic": {
+          "estimate": 0.16546201814058956,
+          "ci95": [
+            0.12119559397833206,
+            0.21408226253464346
+          ]
+        },
+        "mix_minus_context_invariant": {
+          "estimate": -0.08453798185941044,
+          "ci95": [
+            -0.12880440602166793,
+            -0.035917737465356536
+          ]
+        }
+      }
+    },
+    "ordered_context_comparisons": 907,
+    "distinct_contexts": 663,
+    "distinct_lemma_candidate_pairs": 344
+  },
+  "identical_full_candidate_lists": {
+    "relative_confidence": {
+      "independent_lemmas": 21,
+      "scores": {
+        "joint_native_mix": {
+          "estimate": 0.5759259259259258,
+          "ci95": [
+            0.3973412698412698,
+            0.7388955026455025
+          ]
+        },
+        "lexical_plus_surprisal": {
+          "estimate": 0.550705467372134,
+          "ci95": [
+            0.3650573192239859,
+            0.7253086419753086
+          ]
+        },
+        "shared_contextual": {
+          "estimate": 0.5208994708994708,
+          "ci95": [
+            0.35,
+            0.687308201058201
+          ]
+        },
+        "learned_lexical": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "raw_target_surprisal": {
+          "estimate": 0.6119929453262787,
+          "ci95": [
+            0.42459215167548503,
+            0.7905643738977072
+          ]
+        },
+        "word_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_adaptive_ngram": {
+          "estimate": 0.5448412698412698,
+          "ci95": [
+            0.4642857142857143,
+            0.6226190476190476
+          ]
+        },
+        "paper_psycholinguistic": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "context_invariant": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "contrasts": {
+        "mix_minus_lexical_plus_surprisal": {
+          "estimate": 0.025220458553791847,
+          "ci95": [
+            -0.11763668430335084,
+            0.17125220458553791
+          ]
+        },
+        "mix_minus_shared_contextual": {
+          "estimate": 0.05502645502645509,
+          "ci95": [
+            -0.16190476190476188,
+            0.2725066137566136
+          ]
+        },
+        "mix_minus_learned_lexical": {
+          "estimate": 0.07592592592592584,
+          "ci95": [
+            -0.1026587301587302,
+            0.23889550264550247
+          ]
+        },
+        "mix_minus_raw_target_surprisal": {
+          "estimate": -0.03606701940035284,
+          "ci95": [
+            -0.24197530864197525,
+            0.1698412698412698
+          ]
+        },
+        "mix_minus_word_frequency": {
+          "estimate": 0.07592592592592584,
+          "ci95": [
+            -0.1026587301587302,
+            0.23889550264550247
+          ]
+        },
+        "mix_minus_paper_frequency": {
+          "estimate": 0.07592592592592584,
+          "ci95": [
+            -0.1026587301587302,
+            0.23889550264550247
+          ]
+        },
+        "mix_minus_paper_adaptive_ngram": {
+          "estimate": 0.031084656084656048,
+          "ci95": [
+            -0.15873015873015867,
+            0.20238095238095233
+          ]
+        },
+        "mix_minus_paper_psycholinguistic": {
+          "estimate": 0.07592592592592584,
+          "ci95": [
+            -0.1026587301587302,
+            0.23889550264550247
+          ]
+        },
+        "mix_minus_context_invariant": {
+          "estimate": 0.07592592592592584,
+          "ci95": [
+            -0.1026587301587302,
+            0.23889550264550247
+          ]
+        }
+      }
+    },
+    "relative_choice": {
+      "independent_lemmas": 21,
+      "scores": {
+        "joint_native_mix": {
+          "estimate": 0.5238095238095238,
+          "ci95": [
+            0.42857142857142855,
+            0.6190476190476191
+          ]
+        },
+        "lexical_plus_surprisal": {
+          "estimate": 0.5317460317460317,
+          "ci95": [
+            0.43650793650793646,
+            0.6269841269841271
+          ]
+        },
+        "shared_contextual": {
+          "estimate": 0.49589947089947084,
+          "ci95": [
+            0.4038359788359789,
+            0.583201058201058
+          ]
+        },
+        "learned_lexical": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "raw_target_surprisal": {
+          "estimate": 0.548941798941799,
+          "ci95": [
+            0.42989417989417994,
+            0.667989417989418
+          ]
+        },
+        "word_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_frequency": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "paper_adaptive_ngram": {
+          "estimate": 0.5448412698412698,
+          "ci95": [
+            0.4642857142857143,
+            0.6226190476190476
+          ]
+        },
+        "paper_psycholinguistic": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        },
+        "context_invariant": {
+          "estimate": 0.5,
+          "ci95": [
+            0.5,
+            0.5
+          ]
+        }
+      },
+      "contrasts": {
+        "mix_minus_lexical_plus_surprisal": {
+          "estimate": -0.007936507936507908,
+          "ci95": [
+            -0.07142857142857151,
+            0.051587301587301626
+          ]
+        },
+        "mix_minus_shared_contextual": {
+          "estimate": 0.027910052910052996,
+          "ci95": [
+            -0.05396825396825394,
+            0.11309523809523825
+          ]
+        },
+        "mix_minus_learned_lexical": {
+          "estimate": 0.023809523809523836,
+          "ci95": [
+            -0.07142857142857145,
+            0.11904761904761907
+          ]
+        },
+        "mix_minus_raw_target_surprisal": {
+          "estimate": -0.025132275132275117,
+          "ci95": [
+            -0.17063492063492064,
+            0.10317460317460314
+          ]
+        },
+        "mix_minus_word_frequency": {
+          "estimate": 0.023809523809523836,
+          "ci95": [
+            -0.07142857142857145,
+            0.11904761904761907
+          ]
+        },
+        "mix_minus_paper_frequency": {
+          "estimate": 0.023809523809523836,
+          "ci95": [
+            -0.07142857142857145,
+            0.11904761904761907
+          ]
+        },
+        "mix_minus_paper_adaptive_ngram": {
+          "estimate": -0.021031746031745957,
+          "ci95": [
+            -0.13809523809523805,
+            0.10317460317460314
+          ]
+        },
+        "mix_minus_paper_psycholinguistic": {
+          "estimate": 0.023809523809523836,
+          "ci95": [
+            -0.07142857142857145,
+            0.11904761904761907
+          ]
+        },
+        "mix_minus_context_invariant": {
+          "estimate": 0.023809523809523836,
+          "ci95": [
+            -0.07142857142857145,
+            0.11904761904761907
+          ]
+        }
+      }
+    },
+    "both_correct": {
+      "independent_lemmas": 21,
+      "scores": {
+        "joint_native_mix": {
+          "estimate": 0.14638447971781304,
+          "ci95": [
+            0.03527336860670194,
+            0.28924162257495595
+          ]
+        },
+        "lexical_plus_surprisal": {
+          "estimate": 0.15432098765432098,
+          "ci95": [
+            0.015873015873015872,
+            0.30511463844797176
+          ]
+        },
+        "shared_contextual": {
+          "estimate": 0.10449735449735449,
+          "ci95": [
+            0.01455026455026455,
+            0.23148148148148143
+          ]
+        },
+        "learned_lexical": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "raw_target_surprisal": {
+          "estimate": 0.2420634920634921,
+          "ci95": [
+            0.0873015873015873,
+            0.4285714285714285
+          ]
+        },
+        "word_frequency": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "paper_frequency": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "paper_adaptive_ngram": {
+          "estimate": 0.14126984126984127,
+          "ci95": [
+            0.03968253968253968,
+            0.27142857142857146
+          ]
+        },
+        "paper_psycholinguistic": {
+          "estimate": 0.0,
+          "ci95": [
+            0.0,
+            0.0
+          ]
+        },
+        "context_invariant": {
+          "estimate": 0.25,
+          "ci95": [
+            0.25,
+            0.25
+          ]
+        }
+      },
+      "contrasts": {
+        "mix_minus_lexical_plus_surprisal": {
+          "estimate": -0.007936507936507936,
+          "ci95": [
+            -0.12698412698412698,
+            0.07936507936507936
+          ]
+        },
+        "mix_minus_shared_contextual": {
+          "estimate": 0.04188712522045855,
+          "ci95": [
+            -0.04100529100529103,
+            0.15696649029982368
+          ]
+        },
+        "mix_minus_learned_lexical": {
+          "estimate": 0.14638447971781304,
+          "ci95": [
+            0.03527336860670194,
+            0.28924162257495595
+          ]
+        },
+        "mix_minus_raw_target_surprisal": {
+          "estimate": -0.09567901234567905,
+          "ci95": [
+            -0.2980599647266313,
+            0.0947971781305115
+          ]
+        },
+        "mix_minus_word_frequency": {
+          "estimate": 0.14638447971781304,
+          "ci95": [
+            0.03527336860670194,
+            0.28924162257495595
+          ]
+        },
+        "mix_minus_paper_frequency": {
+          "estimate": 0.14638447971781304,
+          "ci95": [
+            0.03527336860670194,
+            0.28924162257495595
+          ]
+        },
+        "mix_minus_paper_adaptive_ngram": {
+          "estimate": 0.0051146384479717755,
+          "ci95": [
+            -0.173015873015873,
+            0.19276895943562608
+          ]
+        },
+        "mix_minus_paper_psycholinguistic": {
+          "estimate": 0.14638447971781304,
+          "ci95": [
+            0.03527336860670194,
+            0.28924162257495595
+          ]
+        },
+        "mix_minus_context_invariant": {
+          "estimate": -0.10361552028218696,
+          "ci95": [
+            -0.21472663139329806,
+            0.03924162257495595
+          ]
+        }
+      }
+    },
+    "ordered_context_comparisons": 67,
+    "distinct_contexts": 59,
+    "distinct_lemma_candidate_pairs": 36
+  },
+  "no_unique_consensus_rank": 0,
+  "matched_prediction_pairs": 11155,
+  "code_sha256": "4a89f4b7e5254934e0cd0cdca6e80949324b4a98beda55d9c063729929bb55fd",
+  "forecast_seal_sha256": "6d1d8437d46b0c69312e24b7db414a8dc0635e4a6b126c6b316311c18d3f5037",
+  "analysis_sha256": "7b012b83209d38d2e42f2f7474e2334933628ab8b2ff16ca2023f2d15363ad57",
+  "bootstrap_draws": 10000,
+  "primary_context_effect": true,
+  "primary_beyond_native_reference": false
+}

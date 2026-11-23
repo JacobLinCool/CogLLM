@@ -1,0 +1,124 @@
+{
+  "cohorts": {
+    "blocked_rep_thresh90.csv": {
+      "prior_probe_count_per_reader_and_cafe": [
+        106,
+        132
+      ],
+      "readers": 26,
+      "retained_by_depth": {
+        "1": 775,
+        "2": 564
+      },
+      "retained_probes": 1339,
+      "second_probe_without_first_omitted": 190,
+      "unlogged_pretest_stories": 255
+    },
+    "blocked_thresh90.csv": {
+      "prior_probe_count_per_reader_and_cafe": [
+        107,
+        129
+      ],
+      "readers": 33,
+      "retained_by_depth": {
+        "1": 994,
+        "2": 751
+      },
+      "retained_probes": 1745,
+      "second_probe_without_first_omitted": 235,
+      "unlogged_pretest_stories": 360
+    },
+    "interleaved_rep_thresh90.csv": {
+      "prior_probe_count_per_reader_and_cafe": [
+        109,
+        130
+      ],
+      "readers": 24,
+      "retained_by_depth": {
+        "1": 714,
+        "2": 536
+      },
+      "retained_probes": 1250,
+      "second_probe_without_first_omitted": 178,
+      "unlogged_pretest_stories": 238
+    },
+    "interleaved_thresh90.csv": {
+      "prior_probe_count_per_reader_and_cafe": [
+        106,
+        141
+      ],
+      "readers": 39,
+      "retained_by_depth": {
+        "1": 1119,
+        "2": 836
+      },
+      "retained_probes": 1955,
+      "second_probe_without_first_omitted": 337,
+      "unlogged_pretest_stories": 422
+    }
+  },
+  "counts": {
+    "candidate_stops": 6221,
+    "fit_probes": 3700,
+    "stimuli": 2346,
+    "test_probes": 2589
+  },
+  "file_sha256": {
+    "fit-truth.jsonl": "5efffc0af315d515d219d7346f4d9943bb972cdfc55970bf93fdd1ac3f56e6ca",
+    "fit.jsonl": "3e12df9a34c6126fe4ef8eb5264203ba2ccee58be9481188a10dda5dfe054cab",
+    "model_input/stimuli.jsonl": "e2c29e09a0ab6a100f957a8cf2b0ba139ad9c68dc8af6571fee2fb03b0cb1552",
+    "test.jsonl": "400356340902572999d7065e4de8f0d503923513c533b61c50ca8cbbe64459df"
+  },
+  "fit_reader_background": "Café-specific correct/total prior probes use only stories 0–159. Counterbalanced first café and subsequent assignment are checked against 40-story blocks or story-wise alternation in recorded trials.",
+  "fit_vs_test": "The original blocked and interleaved samples fit the readout. The independent replications test it. Probe stories are 160–199 in both cases.",
+  "matched_key": [
+    "article_id",
+    "left_id",
+    "right_id"
+  ],
+  "matched_layouts_shared_between_splits": 80,
+  "paper": "https://doi.org/10.1038/s44271-024-00079-4",
+  "prepare_sha256": "425f87417f9be7cfd02b12d48e84f739af30a87a123f271e67c6c37cade9b6e6",
+  "release": "https://doi.org/10.5281/zenodo.10695055",
+  "release_license": "CC BY 4.0",
+  "security": {
+    "model_input": "model_input/stimuli.jsonl",
+    "private_covariates_and_outcomes": [
+      "fit-truth.jsonl",
+      "test-truth.jsonl"
+    ],
+    "replication_probe_choices_opened_during_intake": false
+  },
+  "source_commit": "eb0edbe51042ffaf065bd90839f4f999de5f3ffb",
+  "source_node_reference": "https://github.com/PrincetonCompMemLab/blocked_training_facilitates_learning/blob/eb0edbe51042ffaf065bd90839f4f999de5f3ffb/humanUtils.py#L10",
+  "source_sentence_rule": "Use the author's Methods sentences and the original fictional name and café encoded in both displayed option records. Join displayed sentences with newline separators. Each actual prior node for a retained second probe is available in the earlier probe's record.",
+  "source_sentence_templates": {
+    "BEGIN": "{name} wants to go out today.",
+    "NODE11": "Today, {name} waited in line patiently.",
+    "NODE12": "{name} was impatient, and decided to cut the line.",
+    "NODE21": "While ordering tea, {name} noticed the barista’s new mustache.",
+    "NODE22": "Before ordering cake, {name} took a quarter from the tip jar.",
+    "NODE31": "{name} then sat by the window, and read a book for hours.",
+    "NODE32": "After ordering, {name} stole a salt shaker and left.",
+    "deep": "{name} decides to go to the Deep Ocean Cafe.",
+    "jungle": "{name} decides to go to the Jungle Brew House."
+  },
+  "source_sha256": {
+    "blocked_rep_thresh90.csv": "b7b9f2853a4b984b5b650bf36960e0689b14bd67e83e2de8059f2b1c505e89d8",
+    "blocked_thresh90.csv": "9e813cd0ddfbe5a3bbc68169ecb7f961f7509798a58009cf08806fd1be69a7db",
+    "interleaved_rep_thresh90.csv": "c9047a6c6ba11a15f91729e47abae874f2381e8e40747a164ae72467cc0eb510",
+    "interleaved_thresh90.csv": "c7c57447f7f0f20eeb86aa5356fa3d9f34c5d242cfb45b6214c582422ac0d642"
+  },
+  "within_split_exact_ordered_matches": {
+    "fit": {
+      "blocked_rows": 784,
+      "exact_ordered_layouts": 585,
+      "interleaved_rows": 825
+    },
+    "test": {
+      "blocked_rows": 449,
+      "exact_ordered_layouts": 347,
+      "interleaved_rows": 426
+    }
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "status": "prespecified_before_student_annotations_features_and_fitting",
+  "design_protocol_sha256": "4fdf0c7f93425b6cbdeb0ac3a154493b47af47f86cb1997be2c889f07daccb83",
+  "preparation_sha256": "e9245766647a5ae24fb5347e39bea4d167da534380e44f7419d4464d7639fe97",
+  "fit_code_sha256": "4287018ed888c6718fb13619a5d1b032c244335783dbdc3c4b7d182202a34155",
+  "softmax_implementation_sha256": "0c72ac3a18a7949ca98e1580ede5ba55a87c122c12b3ad8c27ec397204966d90",
+  "length_scaler_sha256": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+  "methods": [
+    "length_group",
+    "qwen_additive",
+    "qwen_interaction",
+    "blank_background"
+  ],
+  "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "language_codes": {
+    "german": 0,
+    "german_and_another_language": 1,
+    "another_language": 2
+  },
+  "heldout": {
+    "reader_folds": 4,
+    "normalized_sentence_folds": 4,
+    "fit": "reader fold differs AND sentence fold differs",
+    "predict": "reader fold matches AND sentence fold matches"
+  },
+  "objective": {
+    "label_encoding": "one-hot per training observation",
+    "loss": "sum of categorical negative log likelihoods",
+    "l2_non_intercept": 1.0,
+    "solver": "L-BFGS-B from zero",
+    "maxiter": 300,
+    "ftol": 1e-12,
+    "gtol": 1e-07
+  },
+  "length_transform": "log1p Unicode characters and whitespace-delimited words at the visible sentence stop; unique fit stimulus mean and population SD (replace zero SD by 1), divided by sqrt(2)",
+  "group_contrast_code": [
+    [
+      -0.7071067811865475,
+      -0.4082482904638631
+    ],
+    [
+      0.7071067811865475,
+      -0.4082482904638631
+    ],
+    [
+      0.0,
+      0.8164965809277261
+    ]
+  ],
+  "fixed_hidden_transform": "sentence-end FP32 state converted to float64 and row L2-normalized",
+  "interaction": "two centered group-code coordinates multiplied by the normalized hidden state; shared length, group, and hidden main effects as in the additive readout",
+  "blank_background": "arithmetic mixture of additive probability vectors using empirical fit-trial group frequencies",
+  "preparation_and_extraction_checks": {
+    "model": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "transformers": "5.17.0",
+    "device": "NVIDIA L4",
+    "dtype": "float32",
+    "all_planned_stops_required": true,
+    "interior_causal_controls_required": true
+  }
+}

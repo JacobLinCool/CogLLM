@@ -1,0 +1,46 @@
+{
+  "run_id": "cogllm-cuda-checks-20261121T000536Z-0d306880",
+  "phase": "finished",
+  "timeline": {
+    "prepared": "2026-11-21T00:05:37.385178+00:00",
+    "allocating": "2026-11-21T00:08:13.234954+00:00",
+    "allocated": "2026-11-21T00:08:19.474282+00:00",
+    "worker-running": "2026-11-21T00:08:24.267170+00:00",
+    "remote-setup": "2026-11-21T00:08:24.589000+00:00",
+    "remote-medreadme": "2026-11-21T00:09:08.319847+00:00",
+    "retrieved-setup": "2026-11-21T00:09:08.652749+00:00",
+    "remote-stages-finished": "2026-11-21T00:10:59.298275+00:00",
+    "retrieved-medreadme": "2026-11-21T00:10:59.810109+00:00",
+    "releasing": "2026-11-21T00:10:59.810309+00:00",
+    "finished": "2026-11-21T00:11:07.815415+00:00"
+  },
+  "stages": {
+    "setup": {
+      "verified": true,
+      "state": "complete",
+      "elapsed_s": 37.599062316999834,
+      "archive_sha256": "df175f1d1e3c5b5c449f44bdd506b450d83f9f3a72b2e0dd4dd47c87e09a8bae",
+      "archive_bytes": 663,
+      "members": {
+        "runtime.json": "3d00df22b5fdce71555ac7623ba6206cf8eb4a431967a76006ecced6739de7d6",
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44"
+      }
+    },
+    "medreadme": {
+      "verified": true,
+      "state": "complete",
+      "elapsed_s": 110.21733245299993,
+      "archive_sha256": "1274c9e3a987388f565ec589e041c9fc199e00573d4d4dce62f75ee0b392250c",
+      "archive_bytes": 136049,
+      "members": {
+        "predictions.jsonl": "d6a1c4ee5f76bd52fde47f7abaca0cc5bad3051de1db7161745e2b0e5d2653a1",
+        "seal.json": "5b266686d862f3666c12c49a8e2add560120fe31a9a613db55152b94972605c1",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e"
+      }
+    }
+  },
+  "release_verified": true,
+  "endpoint_absent_after_stop": true,
+  "release_usage_recorded": true,
+  "scores_sha256": "64719841218e91d4d94fa214b65cc73275bd19a1e10b70bdcd69e171707a9dd9"
+}

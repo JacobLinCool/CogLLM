@@ -1,0 +1,56 @@
+{
+  "schema_version": 1,
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "assay_sha256": "b136d6ec6d8fc9ed52cf378213764f5166c495171ec8108449217780a632fab9",
+  "features_sha256": "867814918645491853222ef88d9a7a1709baf6ee3bbf7fcad8170b2c6de74fb1",
+  "extraction_sha256": "5a30117770c35e4b1462d28e29c2e20d71d1d09aeea115eaaf24509ca8583611",
+  "heads_sha256": "3fa4133add15bf2d1f73871fa518ed0956da428e42022964b0f38c34b5976192",
+  "predictions_sha256": "d00b1accc36fb953bfd6ab5e0a74604d81877a26d8fd47a691477a9b0ccbdbc5",
+  "inputs_sha256": {
+    "train/stimuli.jsonl": "f81a4a6bc966eafad3bce1fb66002689a8d55446bcaa6167edcf072d680d69ca",
+    "train/queries.jsonl": "d675891ad20faef77d70f7e94767de778d18735c18f16bb1e1af86af13bf945e",
+    "dev/stimuli.jsonl": "e90cadb12e2b2a285de0dc37df06441616662613287e025eb3a386f3e396fe8b",
+    "dev/queries.jsonl": "5d9e1d4d5fe145c67dcfe660e0a75da9bf594a58c796df0298683fcdcfc2e1ae",
+    "train/intervals.jsonl": "a1038f1b4cef541c806381541277bee172677a4ed1ce1f30aa50ef601b0fe7d2"
+  },
+  "fit_paths": 3240,
+  "heldout_forecast_paths": 114,
+  "fit_opportunity_rows": 29719,
+  "fit_arrivals": 3065,
+  "fit_right_censored": 175,
+  "estimator": "Discrete conditional arrival hazards, fitted with case-mean interval NLL and L2.",
+  "geometry": [
+    "log1p(linked stop number)",
+    "log1p(visible linked characters)",
+    "log1p(newly visible linked characters)"
+  ],
+  "geometry_scaling": "Center and standard deviation over fit risk rows, with 0.1 floor; divide by sqrt(3).",
+  "path_text": "Unit stop state of the joined seed and linked text, appended to geometry.",
+  "anchor_conditioned": "Add the elementwise unit anchor-state and stop-state product times sqrt(128).",
+  "penalty": 0.012,
+  "intercept_penalized": false,
+  "fit_dtype": "float64",
+  "optimizer": {
+    "name": "L-BFGS-B",
+    "max_iterations": 250,
+    "function_tolerance": 1e-10,
+    "gradient_tolerance": 1e-07
+  },
+  "numpy": "2.4.6",
+  "scipy": "1.16.3",
+  "fits": {
+    "geometry": {
+      "iterations": 18,
+      "penalized_objective": 2.508877592696412
+    },
+    "path_text": {
+      "iterations": 25,
+      "penalized_objective": 2.4899681788040056
+    },
+    "anchor_conditioned": {
+      "iterations": 24,
+      "penalized_objective": 2.4765959771929067
+    }
+  }
+}

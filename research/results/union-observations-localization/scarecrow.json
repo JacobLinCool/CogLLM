@@ -1,0 +1,131 @@
+{
+  "scope": "Post-selection diagnostic on the joint model development split",
+  "outcome": "Retrospective self-contradiction span coverage of each continuation word",
+  "ranking": "AP uses any eligible mark as the binary label and per-annotator mark probability as the score",
+  "exposure": "Both joint heads use the word-end and full-continuation states; annotators also saw the news prompt",
+  "packet_receipt_sha256": "eb40327d95b7d292958cfd27ceb513e0ce9a5307c811ab84131212157b8f5756",
+  "forecast_seals_sha256": {
+    "round_12": "12981f26b54a7c70511360b8ddf82a5fdc0672ddfae333872cf5a070047e3676",
+    "round_31": "32965693755a21862888eb9ab5f1580fa1d61600dbcf38e010d24d4859fb81d0"
+  },
+  "baseline_fit_on_registered_training_families": {
+    "mean": [
+      1.6712534021125716,
+      3.5677749838603425
+    ],
+    "scale": [
+      0.44143995297597116,
+      0.9270952252004426
+    ],
+    "coefficients": [
+      -4.878011396163562,
+      -0.016959461506720137,
+      0.48080612759241526
+    ],
+    "optimizer": {
+      "total": 913225,
+      "positive": 7557,
+      "iterations": 7,
+      "objective": 0.04695724988467367,
+      "maximum_gradient": 1.9805066693622322e-09
+    },
+    "training_votes": 913225,
+    "training_marked_votes": 7557
+  },
+  "development_documents": 238,
+  "development_prompt_families": 237,
+  "documents_with_both_marked_and_unmarked_words": 110,
+  "development_words": 22091,
+  "eligible_annotation_votes": 219978,
+  "positive_annotation_votes": 2147,
+  "metrics": {
+    "round_12": {
+      "mean_within_document_ap": 0.17871483573541533,
+      "binary_nll_nats_per_eligible_vote": 0.05574947080308937,
+      "calibration_bias_percentage_points": -0.02203901955574879
+    },
+    "round_31": {
+      "mean_within_document_ap": 0.23822454273142854,
+      "binary_nll_nats_per_eligible_vote": 0.05486134831371088,
+      "calibration_bias_percentage_points": -0.08518744534457723
+    },
+    "length_position": {
+      "mean_within_document_ap": 0.3340227903955768,
+      "binary_nll_nats_per_eligible_vote": 0.05339727135267291,
+      "calibration_bias_percentage_points": -0.14561463738700578
+    },
+    "constant": {
+      "mean_within_document_ap": 0.13151608830213382,
+      "binary_nll_nats_per_eligible_vote": 0.05502311527093318,
+      "calibration_bias_percentage_points": -0.14849977926200808
+    }
+  },
+  "within_document_ap_comparisons": {
+    "round_31_minus_round_12": {
+      "difference": 0.059509706996013205,
+      "descriptive_paired_material_95_ci": [
+        0.030347144944681406,
+        0.08939747617351236
+      ],
+      "groups": 110
+    },
+    "round_31_minus_length_position": {
+      "difference": -0.0957982476641482,
+      "descriptive_paired_material_95_ci": [
+        -0.14526347324789277,
+        -0.047379201236280435
+      ],
+      "groups": 110
+    }
+  },
+  "examples": [
+    {
+      "id": "scarecrow-16",
+      "round_31_top_word_is_marked": true,
+      "round_31_top_word": {
+        "text": "recovery",
+        "unicode_span": [
+          286,
+          294
+        ],
+        "marks": 1,
+        "eligible_votes": 10,
+        "round_31_mark_probability": 0.03807824244722724
+      },
+      "word_with_most_positive_votes": {
+        "text": "I",
+        "unicode_span": [
+          212,
+          213
+        ],
+        "marks": 5,
+        "eligible_votes": 10,
+        "round_31_mark_probability": 0.016623652772977948
+      }
+    },
+    {
+      "id": "scarecrow-10",
+      "round_31_top_word_is_marked": false,
+      "round_31_top_word": {
+        "text": "obese",
+        "unicode_span": [
+          443,
+          448
+        ],
+        "marks": 0,
+        "eligible_votes": 10,
+        "round_31_mark_probability": 0.019406362902373075
+      },
+      "word_with_most_positive_votes": {
+        "text": "state",
+        "unicode_span": [
+          217,
+          222
+        ],
+        "marks": 4,
+        "eligible_votes": 10,
+        "round_31_mark_probability": 0.00813901808578521
+      }
+    }
+  ]
+}

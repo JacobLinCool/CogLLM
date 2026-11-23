@@ -1,0 +1,89 @@
+{
+  "scope": "Stage 2 pilot inventory; article/question/features and shared model have not been fitted in this audit. OneStop comparator uses train-fold displayed choice frequencies only.",
+  "eligible_unique_trials": 5417,
+  "exact_verbatim_passages_in_multiple_stage2_sources": 0,
+  "sources": {
+    "plaba": {
+      "data_sha256": {
+        "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+        "trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e",
+        "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420"
+      },
+      "versions_in_stage2": 78,
+      "trials_in_stage2": 2995,
+      "pilot_task": "sentence_rating",
+      "pilot_trials": 1826,
+      "observed_field_trials": {
+        "processing_ease": 1826,
+        "perceived_understanding": 1826,
+        "issue_tags": 858,
+        "no_issue": 858
+      },
+      "heldout_trials_by_fold": [
+        357,
+        387,
+        354,
+        353,
+        375
+      ],
+      "readers_across_multiple_pilot_folds": 0
+    },
+    "zhan": {
+      "data_sha256": {
+        "stimuli.jsonl": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+        "trials.jsonl": "d67c0223e3628084c50136e031efe3b1f97f92b56ccf0478ebafc2ad110980f8",
+        "splits.json": "b9b3f20ff7936b5c6a8046493b1f0d226b9e27b17a866693e712fb91671b2c2f"
+      },
+      "versions_in_stage2": 72,
+      "trials_in_stage2": 1651,
+      "pilot_task": "explanation_continuation",
+      "pilot_trials": 1651,
+      "observed_field_trials": {
+        "reMention": 1651
+      },
+      "heldout_trials_by_fold": [
+        322,
+        322,
+        322,
+        322,
+        363
+      ],
+      "readers_across_multiple_pilot_folds": 50
+    },
+    "onestop": {
+      "data_sha256": {
+        "stimuli.jsonl": "7da869f2c95ab0284d634dbb9f4e74edb747823d063d3c0b4c259bb0aad34d8c",
+        "trials.jsonl": "41d5017245048e5b6196d23aa7d72f53adb656bf0ebb17e0ae1090147fa1bfb9",
+        "splits.json": "daff171461d021dc02fe207ff5f74aa1051f46726b617a76521435a1d132474a"
+      },
+      "versions_in_stage2": 216,
+      "trials_in_stage2": 1940,
+      "pilot_task": "open_book_mcq",
+      "pilot_trials": 1940,
+      "observed_field_trials": {
+        "mcq_selected_option": 1940,
+        "mcq_correct": 1940
+      },
+      "heldout_trials_by_fold": [
+        395,
+        395,
+        394,
+        378,
+        378
+      ],
+      "readers_across_multiple_pilot_folds": 847,
+      "distinct_visible_article_question_ordered_options": 1872,
+      "visible_chars_without_formatting": 1602900,
+      "displayed_correct_positions": {
+        "A": 486,
+        "B": 469,
+        "C": 486,
+        "D": 499
+      },
+      "fixed_fold_display_position_only_choice_prior": {
+        "nll_mean_nats": 1.3867005977123428,
+        "multiclass_brier_mean_sum_over_options": 0.7502002572334334
+      }
+    }
+  }
+}

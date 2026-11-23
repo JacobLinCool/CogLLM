@@ -1,0 +1,53 @@
+{
+  "endpoint_absent_after_stop": true,
+  "extraction": {
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 114780,
+    "content_batches": 39,
+    "content_forward_per_document": 1,
+    "elapsed_s": 105.43258910800003,
+    "encoded_documents": 1229,
+    "forward_and_readout_s": 59.92739934699998,
+    "gpu": "NVIDIA L4",
+    "independent_causal_checks": 12,
+    "input_tokens": 147461,
+    "peak_gpu_reserved_bytes": 8778678272,
+    "protocol_sha256": "1740e16c5f667ddb6f7e452f11cde9b83e6fb9a198a4030786b3536afaaa5124",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "storage_dtype": "float16",
+    "vectors_shape": [
+      114780,
+      128
+    ]
+  },
+  "extraction_asset_sha256": {
+    "causality.json": "c518c53d0aed15dcc0c49b8fa8b3a6f5de13851b37515eb2b571e5c80a4478b6",
+    "coordinates.jsonl": "91fc5420fb95dde58d3444f0a66295272230efc90ec0e95536f76b671c6f3e64",
+    "telemetry.jsonl": "fcdd7fae3b5bbb1b8befd11366c779c798137b0a7833a725a63d31ebe2342955",
+    "terminal_states.npy": "b0910c583b1577fce3c416d2a04e5db7df748961173dca55f56e22a31a573994",
+    "vectors.npy": "d4e0b7e4ec7725e11446e2e1af87a66fc284a0aec36bb3d3c6ac6b153e3ad2c2"
+  },
+  "extraction_seal_sha256": "13979892d6dc625d989ac4ee70d0dc9e3b3089ca08b850d9302b0a81add1f919",
+  "phase": "finished",
+  "release_verified": true,
+  "replay_bitwise_equal_files": [
+    "forecasts.jsonl",
+    "metrics.json",
+    "parameters.json",
+    "receipt.json"
+  ],
+  "run_id": "cogllm-cuda-checks-20261121T100721Z-794a4066",
+  "timeline": {
+    "allocated": "2026-11-21T10:07:45.477481+00:00",
+    "allocating": "2026-11-21T10:07:38.992383+00:00",
+    "finished": "2026-11-21T10:10:59.619289+00:00",
+    "prepared": "2026-11-21T10:07:22.696246+00:00",
+    "releasing": "2026-11-21T10:10:50.348662+00:00",
+    "remote-projection": "2026-11-21T10:08:53.365227+00:00",
+    "remote-setup": "2026-11-21T10:07:51.563924+00:00",
+    "retrieved-projection": "2026-11-21T10:10:50.328644+00:00",
+    "retrieved-setup": "2026-11-21T10:10:47.268960+00:00",
+    "worker-running": "2026-11-21T10:07:51.250919+00:00"
+  },
+  "verified_outputs": true
+}

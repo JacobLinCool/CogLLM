@@ -1,0 +1,46 @@
+# Which changes in a news draft do people actually notice?
+
+A text-only observer trained on expert judgments ranked two versions of the same news story in the expert-preferred order **70.0%** of the time (95% interval 67.2–72.5%). The form and word-probability component alone reached **70.3%**. The observers imported directly from English reading marks and Italian coherence ratings reached **53.0%**. A decline in the news observer's score as the next sentence arrived located expert-marked problems in essays **46.4%** of the time. These results give distinct answers to whole-draft comparison and local break detection. [Complete news estimates](../results/reading-validation-summeval/scores.json) · [Ballot-trained estimates](../results/reading-validation-summeval/ballot-scores.json) · [Sentence-level transport](../results/reading-validation-summeval/prefix-scores.json)
+
+## Whole-draft judgments
+
+Fabbri and colleagues obtained three expert and five crowd coherence ratings on 1,600 outputs from 16 summarizers covering 100 CNN/DailyMail stories. We divided source stories into 40 calibration, 50 confirmation and ten ungraded future stories before inspecting the ballots. The 50 confirmation stories contain 800 official draft records, 775 distinct wordings, 2,400 expert ratings and 4,000 crowd ratings. We combined exact copies of the same wording within a story. There were 5,032 pairs with unequal mean expert grades. Estimates give equal weight to stories and compare only drafts of the same story. Ordinary intervals below use 10,000 whole-story bootstrap samples. [Original study](https://aclanthology.org/2021.tacl-1.24/) · [Original 16-model roster and annotation release](https://github.com/Yale-LILY/SummEval/blob/81b59ad53d63cb6009764240853c91235a44e238/README.md#human-annotations) · [Frozen design](summeval-protocol.md)
+
+| Forecast | Agreement with experts | Within-story Spearman |
+|---|---:|---:|
+| Previous Italian/English reading observer | 53.0% [49.8, 56.0] | 0.075 |
+| Its source-trained form and surprisal comparator | 58.3% [54.8, 61.7] | 0.211 |
+| Previous English essay observer, 753 eligible drafts | 53.6% [50.5, 56.9] | 0.089 |
+| Matched English essay lexical and surprisal comparator | 52.8% [49.5, 56.1] | 0.064 |
+| Native observer fit to 40 news stories | 65.6% [62.5, 68.3] | 0.393 |
+| Same native slopes jointly fit to news, English marks and Italian ratings | 62.9% [59.5, 66.3] | 0.323 |
+| News-calibrated form and word surprisal | 69.5% [66.7, 72.2] | 0.482 |
+| Same model with human-reference unigram and bigram overlap | 70.8% [68.0, 73.5] | 0.508 |
+| Calibration stories’ known summarizer mean grades | 72.3% [69.7, 74.9] | 0.548 |
+| Published source-aware GPT-4, 20 responses per draft | 75.5% [72.9, 78.0] | 0.607 |
+| Text-only form/native mixture fit to within-story expert ballot differences | 70.0% [67.2, 72.5] | 0.487 |
+
+The previous bilingual model lost 5.31 percentage points relative to its word-probability comparator (three-comparison simultaneous 95% interval −9.09 to −1.69 points). The previous essay model gained 0.88 points over the matched lexical comparator on 4,730 eligible pairs (−1.01 to +2.79). Training all three observation types with shared native slopes lost 2.65 points relative to the same news-only native fit (−6.52 to +1.13). Both native fits converged. The largest projected gradients were 2.45 × 10⁻⁷ and 7.73 × 10⁻⁸. Joint fitting reduced its training objective from 1.009 to 0.747. The original large-model comparator received the source news text and used 32,000 previously published rubric responses. A 5.53-point gap favored that comparator over the tested text-only ballot observer (paired interval 2.35–8.66 points). [Native fits and diagnostics](../results/reading-validation-summeval/prediction-seal.json) · [Comparator sources and alignment](../results/reading-validation-summeval/control-seal.json) · [Published G-Eval](https://aclanthology.org/2023.emnlp-main.153/)
+
+The ballot-trained observer estimates the chance that an independent expert grade is higher on one of two drafts, giving half credit for a tie. It fits 4,553 distinct draft pairs in 40 calibration stories. Eight source-validation stories selected 0.622 as the proportion of native logits in its mixture with form and word surprisal. The source fit used the empirical distribution of expert grades on both drafts. The mixture achieved cross-entropy 0.650 on held pairs, compared with 0.645 for the form model and 0.693 for chance. The order gain for the native ballot loss over absolute-grade regression on identical features was 0.27 points (simultaneous −1.32 to +1.98). A randomly held expert agreed with the remaining two expert grades on 70.8% of separately matched comparisons [68.7, 72.8]. The five-person crowd panel agreed with the three-person expert mean on 51.5% [48.3, 54.7]. The two panels gave visibly different frequencies to the five grades, so the population that supplies the target matters. [Ballot objective](summeval-ballot-objective.md) · [Fitted source weights](../results/reading-validation-summeval/ballot-forecast-seal.json) · [Observed grade histograms and peer controls](../results/reading-validation-summeval/scores.json)
+
+## When two producers exchange places
+
+For two systems A and B, some stories favor A and others favor B. We compared the differences in their predicted scores across these genuine reversals in observed mean expert grades. This comparison cancels fixed source-story and producer advantages. It yielded **40,510 reversals** across 1,225 source-story pairs. The text-only ballot mixture identified the direction in **71.1%** (two-comparison simultaneous interval 66.9–75.1%). Form and word probability reached **72.1%**, and the paired gain for adding native features was −0.95 points [−4.68, +3.08]. Fixed producer identity scored exactly 50%. The imported bilingual model reached 49.9%, the article-aware GPT-4 comparator 76.2% and crowd mean grades 52.0%. Each bootstrap draw resampled the 50 original stories, preserving dependence between every pair of comparisons sharing a story. These 40,510 reversals are derived contrasts from the same judgments. [Crossover design](summeval-crossover.md) · [Crossover estimates and 3⁴ held-expert comparison](../results/reading-validation-summeval/crossover-scores.json)
+
+The original grade-blind historical audit found one draft sharing twelve normalized words with the historical 24-dataset learning packet. Removing all 16 outputs of that article left 49 confirmation stories. The ballot mixture recovered 71.1% of the remaining reversals (simultaneous 66.7–75.2%). There was zero material overlap with the bilingual or contemporary essay source fit under the same 12-word rule. Foundation-model pretraining membership remains unknown. Exact input identity and checksum checks verified a single read of each of the 1,548 distinct drafts in 194 model batches on the L4. The joint extraction took 93.9 seconds. Fourteen independently recomputed key point estimates and held ballot losses agreed exactly. [Historical exposure](../results/reading-validation-summeval/historical-exposure.json) · [49-story estimates](../results/reading-validation-summeval/exposure-sensitivity-scores.json) · [Independent numerical replay](../results/reading-validation-summeval/public-replay.json)
+
+## Does the whole-draft observer identify the problematic sentence?
+
+We froze the news ballot mixture, reconstructed the score at each completed sentence of 100 previously analyzed English learner essays, and calculated its decline after the current sentence. The original tokenizer reproduced every token ID and offset on all 1,667 prefixes. Seventeen expert annotations covered more than one parser sentence. The other 1,335 aligned directly, including 437 marked problems. Ninety-two essays contained both a marked and an unmarked sentence, producing 3,584 within-essay comparisons. No DECOR mark contributed to the news-trained weights. [Retrospective evaluation design](news-local-boundary.md) · [Prefix checks and source hashes](../results/reading-validation-summeval/prefix-forecast-seal.json)
+
+| Risk at a completed sentence | Marked sentence ranks above an unmarked sentence |
+|---|---:|
+| Decline of the calibrated whole-news-draft score | 46.4% [42.0, 50.8] |
+| Decline of the matched form and word-probability score | 48.0% [43.6, 52.6] |
+| Relative sentence position | 60.5% [55.8, 65.0] |
+| English form and word-probability observer trained on local marks | 67.3% [63.1, 71.5] |
+| Bilingual local observer | 65.2% [61.0, 69.3] |
+| Topic-held local English essay observer | 69.0% [64.5, 73.4] |
+
+The transported score change differed from chance by −3.59 points (simultaneous interval −8.65 to +1.46) and from its matched form-only change by −1.62 points (−6.13 to +2.68). Published local judgments support evaluating a sentence-end alert at this resolution. They supply no subword onset or instantaneous load measurement. [Local scores and matched differences](../results/reading-validation-summeval/prefix-scores.json) · [Production essay observer validation](../results/reading-validation-transition-external/essay-cross-topic/runtime-replay.json) · [Reproduction commands](news-order-reproduction.md)

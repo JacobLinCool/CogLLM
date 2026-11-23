@@ -1,0 +1,879 @@
+{
+  "source": {
+    "surface": {
+      "gradient_inf": 8.732035281476536e-09,
+      "objective": 0.5925817125849442,
+      "iterations": 21,
+      "test": {
+        "en": {
+          "n": 512,
+          "positives": 167,
+          "auc": 0.6729323960774104,
+          "ap": 0.5575743165493224
+        },
+        "de": {
+          "n": 512,
+          "positives": 167,
+          "auc": 0.6844745292024647,
+          "ap": 0.5891521690206759
+        }
+      }
+    },
+    "semantic": {
+      "gradient_inf": 8.791384673346908e-09,
+      "objective": 0.2678150018358365,
+      "iterations": 197,
+      "test": {
+        "en": {
+          "n": 512,
+          "positives": 167,
+          "auc": 0.9428794584743556,
+          "ap": 0.892395498736073
+        },
+        "de": {
+          "n": 512,
+          "positives": 167,
+          "auc": 0.8771326911394602,
+          "ap": 0.8000271354453042
+        }
+      }
+    }
+  },
+  "frick_inventory": {
+    "stories": 20,
+    "variants": 40,
+    "readers": 180,
+    "trials": 1800,
+    "current_judgments": 26340,
+    "min_trials_per_variant": 38,
+    "max_trials_per_variant": 52,
+    "first_at_risk_judgments": 23474,
+    "first_d": 754,
+    "right_censored": 1046,
+    "target_observations": {
+      "01": {
+        "uncut_n": 900,
+        "uncut_d": 42,
+        "author_filtered_n": 890,
+        "author_filtered_d": 42
+      },
+      "02": {
+        "uncut_n": 900,
+        "uncut_d": 505,
+        "author_filtered_n": 889,
+        "author_filtered_d": 505
+      }
+    }
+  },
+  "frick": {
+    "methods": {
+      "position_surface": {
+        "family_results": [
+          {
+            "family": 1,
+            "01": {
+              "n": 50,
+              "nll": 0.9824336172644912,
+              "human_target": 0.0,
+              "model_target": 0.03937150952470969,
+              "human_premature": 0.14,
+              "model_premature": 0.31598792652466123
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.7207231430048457,
+              "human_target": 0.6,
+              "model_target": 0.03979959428681486,
+              "human_premature": 0.175,
+              "model_premature": 0.3161285707056272
+            }
+          },
+          {
+            "family": 2,
+            "01": {
+              "n": 50,
+              "nll": 1.3421314971088145,
+              "human_target": 0.2,
+              "model_target": 0.04161275135137219,
+              "human_premature": 0.12,
+              "model_premature": 0.20296571949317907
+            },
+            "02": {
+              "n": 40,
+              "nll": 1.8403666850086662,
+              "human_target": 0.375,
+              "model_target": 0.04252315815978233,
+              "human_premature": 0.1,
+              "model_premature": 0.20310905394088924
+            }
+          },
+          {
+            "family": 3,
+            "01": {
+              "n": 50,
+              "nll": 1.0180877772428396,
+              "human_target": 0.0,
+              "model_target": 0.03960779456176593,
+              "human_premature": 0.16,
+              "model_premature": 0.2934690601372006
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.3361138928041463,
+              "human_target": 0.525,
+              "model_target": 0.04017051261774986,
+              "human_premature": 0.075,
+              "model_premature": 0.29351639580125133
+            }
+          },
+          {
+            "family": 4,
+            "01": {
+              "n": 50,
+              "nll": 1.3754107049016469,
+              "human_target": 0.04,
+              "model_target": 0.03934537417570663,
+              "human_premature": 0.22,
+              "model_premature": 0.248110667829748
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.8712434584800897,
+              "human_target": 0.4,
+              "model_target": 0.040644106183659226,
+              "human_premature": 0.35,
+              "model_premature": 0.248110667829748
+            }
+          },
+          {
+            "family": 5,
+            "01": {
+              "n": 50,
+              "nll": 0.5171975048721056,
+              "human_target": 0.0,
+              "model_target": 0.04238485827971348,
+              "human_premature": 0.02,
+              "model_premature": 0.2541813997679146
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.041089306304123,
+              "human_target": 0.5,
+              "model_target": 0.042511038118797986,
+              "human_premature": 0.075,
+              "model_premature": 0.2537860773894697
+            }
+          },
+          {
+            "family": 6,
+            "01": {
+              "n": 52,
+              "nll": 1.0760646196361126,
+              "human_target": 0.038461538461538464,
+              "model_target": 0.03794067460152782,
+              "human_premature": 0.1346153846153846,
+              "model_premature": 0.31740469707110963
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.6025760304087244,
+              "human_target": 0.62,
+              "model_target": 0.03811603434700211,
+              "human_premature": 0.12,
+              "model_premature": 0.31770199855379594
+            }
+          },
+          {
+            "family": 7,
+            "01": {
+              "n": 52,
+              "nll": 1.1726182843547237,
+              "human_target": 0.019230769230769232,
+              "model_target": 0.037862328663056236,
+              "human_premature": 0.07692307692307693,
+              "model_premature": 0.33019248914469423
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.0798864381212145,
+              "human_target": 0.4,
+              "model_target": 0.03845094142180986,
+              "human_premature": 0.1,
+              "model_premature": 0.33019248914469423
+            }
+          },
+          {
+            "family": 8,
+            "01": {
+              "n": 52,
+              "nll": 1.0099742413545976,
+              "human_target": 0.038461538461538464,
+              "model_target": 0.038669953806230124,
+              "human_premature": 0.11538461538461539,
+              "model_premature": 0.28427397840142804
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.402117354816796,
+              "human_target": 0.62,
+              "model_target": 0.03868122700913217,
+              "human_premature": 0.06,
+              "model_premature": 0.2840653273980108
+            }
+          },
+          {
+            "family": 9,
+            "01": {
+              "n": 52,
+              "nll": 1.348232793103732,
+              "human_target": 0.11538461538461539,
+              "model_target": 0.0400730515799724,
+              "human_premature": 0.17307692307692307,
+              "model_premature": 0.24252638276758878
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.448538689161607,
+              "human_target": 0.48,
+              "model_target": 0.040038635560147494,
+              "human_premature": 0.2,
+              "model_premature": 0.24260070302706765
+            }
+          },
+          {
+            "family": 10,
+            "01": {
+              "n": 52,
+              "nll": 0.8022029131994614,
+              "human_target": 0.019230769230769232,
+              "model_target": 0.038357296694467274,
+              "human_premature": 0.07692307692307693,
+              "model_premature": 0.296962001505051
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.579810510035861,
+              "human_target": 0.54,
+              "model_target": 0.03917258467698099,
+              "human_premature": 0.18,
+              "model_premature": 0.29715922510447657
+            }
+          },
+          {
+            "family": 11,
+            "01": {
+              "n": 38,
+              "nll": 0.8468505868797566,
+              "human_target": 0.02631578947368421,
+              "model_target": 0.03870387401950028,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.28342436497660767
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.9259965503010994,
+              "human_target": 0.6923076923076923,
+              "model_target": 0.03917388609129216,
+              "human_premature": 0.15384615384615385,
+              "model_premature": 0.28355569629993194
+            }
+          },
+          {
+            "family": 12,
+            "01": {
+              "n": 38,
+              "nll": 1.0100609818545982,
+              "human_target": 0.0,
+              "model_target": 0.0404491294778915,
+              "human_premature": 0.13157894736842105,
+              "model_premature": 0.2956483347977766
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.2902967075499125,
+              "human_target": 0.5769230769230769,
+              "model_target": 0.0409144515882827,
+              "human_premature": 0.07692307692307693,
+              "model_premature": 0.29546487938131866
+            }
+          },
+          {
+            "family": 14,
+            "01": {
+              "n": 38,
+              "nll": 0.9293050137309451,
+              "human_target": 0.05263157894736842,
+              "model_target": 0.037728030601688056,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.29583831685216333
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.3512054621548355,
+              "human_target": 0.5,
+              "model_target": 0.037636740197442196,
+              "human_premature": 0.1346153846153846,
+              "model_premature": 0.2964059131684284
+            }
+          },
+          {
+            "family": 15,
+            "01": {
+              "n": 38,
+              "nll": 0.9689426625251929,
+              "human_target": 0.0,
+              "model_target": 0.035297745712250646,
+              "human_premature": 0.13157894736842105,
+              "model_premature": 0.32069358337716475
+            },
+            "02": {
+              "n": 52,
+              "nll": 1.1370672600856226,
+              "human_target": 0.057692307692307696,
+              "model_target": 0.03531426515946788,
+              "human_premature": 0.09615384615384616,
+              "model_premature": 0.3203756660068825
+            }
+          },
+          {
+            "family": 16,
+            "01": {
+              "n": 38,
+              "nll": 1.0013145639314258,
+              "human_target": 0.0,
+              "model_target": 0.03635250633021967,
+              "human_premature": 0.15789473684210525,
+              "model_premature": 0.31294390297881436
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.3960453276748273,
+              "human_target": 0.5,
+              "model_target": 0.036530554011574665,
+              "human_premature": 0.15384615384615385,
+              "model_premature": 0.3122390550079656
+            }
+          },
+          {
+            "family": 17,
+            "01": {
+              "n": 40,
+              "nll": 1.1389890154416626,
+              "human_target": 0.0,
+              "model_target": 0.03897313990900381,
+              "human_premature": 0.2,
+              "model_premature": 0.27753247357854866
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.1079421161710425,
+              "human_target": 0.34210526315789475,
+              "model_target": 0.03934224395929502,
+              "human_premature": 0.23684210526315788,
+              "model_premature": 0.2766176965423614
+            }
+          },
+          {
+            "family": 18,
+            "01": {
+              "n": 40,
+              "nll": 1.111480193136216,
+              "human_target": 0.0,
+              "model_target": 0.03233491536815744,
+              "human_premature": 0.175,
+              "model_premature": 0.3452311722562651
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.324351417004859,
+              "human_target": 0.5263157894736842,
+              "model_target": 0.03274167227335254,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.3441422653828651
+            }
+          },
+          {
+            "family": 19,
+            "01": {
+              "n": 40,
+              "nll": 0.7996791504680553,
+              "human_target": 0.0,
+              "model_target": 0.03496577682123483,
+              "human_premature": 0.1,
+              "model_premature": 0.2966436224194389
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.7005963153648227,
+              "human_target": 0.7105263157894737,
+              "model_target": 0.03496577682123483,
+              "human_premature": 0.05263157894736842,
+              "model_premature": 0.2966436224194389
+            }
+          },
+          {
+            "family": 20,
+            "01": {
+              "n": 40,
+              "nll": 2.0173321039537493,
+              "human_target": 0.025,
+              "model_target": 0.033085821910627186,
+              "human_premature": 0.15,
+              "model_premature": 0.3010151025437038
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.8649435886855286,
+              "human_target": 0.7105263157894737,
+              "model_target": 0.033623023876301686,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.3014893162407698
+            }
+          },
+          {
+            "family": 21,
+            "01": {
+              "n": 40,
+              "nll": 1.1187651371961773,
+              "human_target": 0.0,
+              "model_target": 0.033519841038687444,
+              "human_premature": 0.175,
+              "model_premature": 0.2933002368299025
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.7172846833079403,
+              "human_target": 0.5526315789473685,
+              "model_target": 0.03414849494525898,
+              "human_premature": 0.18421052631578946,
+              "model_premature": 0.29188684890253747
+            }
+          }
+        ],
+        "nll": 1.7331317074650716,
+        "target_model_delta": 0.0003931283438798446,
+        "target_human_delta": 0.4827155870445344,
+        "target_effect_signed_error": -0.48232245870065454,
+        "premature": {
+          "01": {
+            "human_premature": 0.13079352226720645,
+            "model_premature": 0.2904172716626481
+          },
+          "02": {
+            "human_premature": 0.13409817813765185,
+            "model_premature": 0.2902595734123765
+          }
+        }
+      },
+      "plus_semantic_conflict": {
+        "family_results": [
+          {
+            "family": 1,
+            "01": {
+              "n": 50,
+              "nll": 0.9965718830816259,
+              "human_target": 0.0,
+              "model_target": 0.04901596669406535,
+              "human_premature": 0.14,
+              "model_premature": 0.30876603015090176
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.5664576255269624,
+              "human_target": 0.6,
+              "model_target": 0.05104665241972783,
+              "human_premature": 0.175,
+              "model_premature": 0.3066320262804414
+            }
+          },
+          {
+            "family": 2,
+            "01": {
+              "n": 50,
+              "nll": 1.3607336565795918,
+              "human_target": 0.2,
+              "model_target": 0.03704828876813545,
+              "human_premature": 0.12,
+              "model_premature": 0.18639302914194122
+            },
+            "02": {
+              "n": 40,
+              "nll": 1.884545354291388,
+              "human_target": 0.375,
+              "model_target": 0.03660977305034192,
+              "human_premature": 0.1,
+              "model_premature": 0.18850556259212153
+            }
+          },
+          {
+            "family": 3,
+            "01": {
+              "n": 50,
+              "nll": 1.0114442840571587,
+              "human_target": 0.0,
+              "model_target": 0.043286929109735986,
+              "human_premature": 0.16,
+              "model_premature": 0.28527113652078295
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.2477010300951874,
+              "human_target": 0.525,
+              "model_target": 0.04638868422395715,
+              "human_premature": 0.075,
+              "model_premature": 0.28771368987245916
+            }
+          },
+          {
+            "family": 4,
+            "01": {
+              "n": 50,
+              "nll": 1.3571621745770943,
+              "human_target": 0.04,
+              "model_target": 0.040923449241093104,
+              "human_premature": 0.22,
+              "model_premature": 0.2285627267140244
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.792986361038361,
+              "human_target": 0.4,
+              "model_target": 0.05059134748909622,
+              "human_premature": 0.35,
+              "model_premature": 0.22657034493461906
+            }
+          },
+          {
+            "family": 5,
+            "01": {
+              "n": 50,
+              "nll": 0.541897787151032,
+              "human_target": 0.0,
+              "model_target": 0.04068033936828939,
+              "human_premature": 0.02,
+              "model_premature": 0.2667523157885264
+            },
+            "02": {
+              "n": 40,
+              "nll": 2.05317565117756,
+              "human_target": 0.5,
+              "model_target": 0.04128016996579153,
+              "human_premature": 0.075,
+              "model_premature": 0.2647136199317944
+            }
+          },
+          {
+            "family": 6,
+            "01": {
+              "n": 52,
+              "nll": 1.0577737233711368,
+              "human_target": 0.038461538461538464,
+              "model_target": 0.032976773527374124,
+              "human_premature": 0.1346153846153846,
+              "model_premature": 0.31312146773585464
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.685310481354368,
+              "human_target": 0.62,
+              "model_target": 0.0330040344302586,
+              "human_premature": 0.12,
+              "model_premature": 0.31439502299532485
+            }
+          },
+          {
+            "family": 7,
+            "01": {
+              "n": 52,
+              "nll": 1.171271633462662,
+              "human_target": 0.019230769230769232,
+              "model_target": 0.04205172321005532,
+              "human_premature": 0.07692307692307693,
+              "model_premature": 0.3373901695730736
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.0043196258201856,
+              "human_target": 0.4,
+              "model_target": 0.04815736900400138,
+              "human_premature": 0.1,
+              "model_premature": 0.3377450841332392
+            }
+          },
+          {
+            "family": 8,
+            "01": {
+              "n": 52,
+              "nll": 1.030037832358397,
+              "human_target": 0.038461538461538464,
+              "model_target": 0.0389568819771116,
+              "human_premature": 0.11538461538461539,
+              "model_premature": 0.30866525899940095
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.4457748316877628,
+              "human_target": 0.62,
+              "model_target": 0.03684880665413729,
+              "human_premature": 0.06,
+              "model_premature": 0.30952083318913903
+            }
+          },
+          {
+            "family": 9,
+            "01": {
+              "n": 52,
+              "nll": 1.3384939297843752,
+              "human_target": 0.11538461538461539,
+              "model_target": 0.05155243045538538,
+              "human_premature": 0.17307692307692307,
+              "model_premature": 0.24788897701149476
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.3188987380680657,
+              "human_target": 0.48,
+              "model_target": 0.05482030737750468,
+              "human_premature": 0.2,
+              "model_premature": 0.2489490683344367
+            }
+          },
+          {
+            "family": 10,
+            "01": {
+              "n": 52,
+              "nll": 0.8048232799081169,
+              "human_target": 0.019230769230769232,
+              "model_target": 0.04560393332146174,
+              "human_premature": 0.07692307692307693,
+              "model_premature": 0.30168801867154965
+            },
+            "02": {
+              "n": 50,
+              "nll": 2.43549285288503,
+              "human_target": 0.54,
+              "model_target": 0.05150141536785339,
+              "human_premature": 0.18,
+              "model_premature": 0.30129290861672947
+            }
+          },
+          {
+            "family": 11,
+            "01": {
+              "n": 38,
+              "nll": 0.8404286335873603,
+              "human_target": 0.02631578947368421,
+              "model_target": 0.04845141476770996,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.26862840740445465
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.741890101959143,
+              "human_target": 0.6923076923076923,
+              "model_target": 0.05202640042815542,
+              "human_premature": 0.15384615384615385,
+              "model_premature": 0.27141881367713466
+            }
+          },
+          {
+            "family": 12,
+            "01": {
+              "n": 38,
+              "nll": 1.0167763574306676,
+              "human_target": 0.0,
+              "model_target": 0.04268600861034131,
+              "human_premature": 0.13157894736842105,
+              "model_premature": 0.29919820845376377
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.260233726975852,
+              "human_target": 0.5769230769230769,
+              "model_target": 0.04331232762823956,
+              "human_premature": 0.07692307692307693,
+              "model_premature": 0.29968206153288773
+            }
+          },
+          {
+            "family": 14,
+            "01": {
+              "n": 38,
+              "nll": 0.9599432571956719,
+              "human_target": 0.05263157894736842,
+              "model_target": 0.04638912825322928,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.30657100043921254
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.198675279188199,
+              "human_target": 0.5,
+              "model_target": 0.05296469624038057,
+              "human_premature": 0.1346153846153846,
+              "model_premature": 0.303968058806607
+            }
+          },
+          {
+            "family": 15,
+            "01": {
+              "n": 38,
+              "nll": 0.9886791205644192,
+              "human_target": 0.0,
+              "model_target": 0.03722522558009035,
+              "human_premature": 0.13157894736842105,
+              "model_premature": 0.31879139864655737
+            },
+            "02": {
+              "n": 52,
+              "nll": 1.1226660733421088,
+              "human_target": 0.057692307692307696,
+              "model_target": 0.038829705507738364,
+              "human_premature": 0.09615384615384616,
+              "model_premature": 0.3095927813561653
+            }
+          },
+          {
+            "family": 16,
+            "01": {
+              "n": 38,
+              "nll": 0.9894076048399243,
+              "human_target": 0.0,
+              "model_target": 0.03554204300740644,
+              "human_premature": 0.15789473684210525,
+              "model_premature": 0.2965662035427463
+            },
+            "02": {
+              "n": 52,
+              "nll": 2.285034440790864,
+              "human_target": 0.5,
+              "model_target": 0.04537939850327755,
+              "human_premature": 0.15384615384615385,
+              "model_premature": 0.29766118301043254
+            }
+          },
+          {
+            "family": 17,
+            "01": {
+              "n": 40,
+              "nll": 1.1274275258618094,
+              "human_target": 0.0,
+              "model_target": 0.041362320512774366,
+              "human_premature": 0.2,
+              "model_premature": 0.27783744651255143
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.08044040888186,
+              "human_target": 0.34210526315789475,
+              "model_target": 0.04592108621755009,
+              "human_premature": 0.23684210526315788,
+              "model_premature": 0.27843300497640455
+            }
+          },
+          {
+            "family": 18,
+            "01": {
+              "n": 40,
+              "nll": 1.067343305332498,
+              "human_target": 0.0,
+              "model_target": 0.03128044008510721,
+              "human_premature": 0.175,
+              "model_premature": 0.2997802165591595
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.2975717949522516,
+              "human_target": 0.5263157894736842,
+              "model_target": 0.03319256488429719,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.3008137919049523
+            }
+          },
+          {
+            "family": 19,
+            "01": {
+              "n": 40,
+              "nll": 0.730694970143982,
+              "human_target": 0.0,
+              "model_target": 0.029135713393282598,
+              "human_premature": 0.1,
+              "model_premature": 0.26461490779845687
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.553745550354742,
+              "human_target": 0.7105263157894737,
+              "model_target": 0.042592202369222905,
+              "human_premature": 0.05263157894736842,
+              "model_premature": 0.26412461986385855
+            }
+          },
+          {
+            "family": 20,
+            "01": {
+              "n": 40,
+              "nll": 2.0420158903967094,
+              "human_target": 0.025,
+              "model_target": 0.03450353907759725,
+              "human_premature": 0.15,
+              "model_premature": 0.3127678555926531
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.7127976506678153,
+              "human_target": 0.7105263157894737,
+              "model_target": 0.041387455779282614,
+              "human_premature": 0.07894736842105263,
+              "model_premature": 0.31286193341390556
+            }
+          },
+          {
+            "family": 21,
+            "01": {
+              "n": 40,
+              "nll": 1.1166751172460267,
+              "human_target": 0.0,
+              "model_target": 0.03798096183321471,
+              "human_premature": 0.175,
+              "model_premature": 0.2885742193592734
+            },
+            "02": {
+              "n": 38,
+              "nll": 2.6368164493063104,
+              "human_target": 0.5526315789473685,
+              "model_target": 0.03991960979667028,
+              "human_premature": 0.18421052631578946,
+              "model_premature": 0.2903848717453875
+            }
+          }
+        ],
+        "nll": 1.696853399882357,
+        "target_model_delta": 0.003956024827201181,
+        "target_human_delta": 0.4827155870445344,
+        "target_effect_signed_error": -0.4787595622173333,
+        "premature": {
+          "01": {
+            "human_premature": 0.13079352226720645,
+            "model_premature": 0.2858914497308189
+          },
+          "02": {
+            "human_premature": 0.13409817813765185,
+            "model_premature": 0.285748964058402
+          }
+        }
+      }
+    },
+    "comparison": "plus_semantic_conflict_minus_position_surface",
+    "paired_nll": {
+      "estimate": -0.03627830758271474,
+      "interval95": [
+        -0.053690114770284424,
+        -0.018019032260808285
+      ]
+    }
+  },
+  "protocol_sha256": "41aa3a0d87e8c9c9142930c8fa9a6a4c93a2103f7c5c0a4e6a3233f103d2e382",
+  "extraction_sha256": "3473a7c4b45edcb460f82d239a73383690e2a50df353c9e34ce721a68115b1ec",
+  "validation": "retrospective Frick story-family cross-validation; XNLI official test subset"
+}

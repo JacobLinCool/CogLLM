@@ -1,0 +1,143 @@
+{
+  "schema": 1,
+  "paper": "https://arxiv.org/html/2607.04753v4",
+  "scope": "Observed changes and exact midpoint returns in repeatedly prompted probability reports about the same proposition. The release supports ordered signal categories and aggregate behavioral estimates. Exact participant-specific display strings are not verified.",
+  "release": {
+    "repository": "https://github.com/paolopin/narrative-belief-updating",
+    "commit": "9c9a68c1494c65c123c4c48e72bfda66a19c412f",
+    "tree_url": "https://api.github.com/repos/paolopin/narrative-belief-updating/git/trees/9c9a68c1494c65c123c4c48e72bfda66a19c412f?recursive=1",
+    "tree_truncated": false,
+    "file_count": 15,
+    "only_branch": "main",
+    "github_license": null,
+    "paper_license": "arXiv.org perpetual non-exclusive license",
+    "main_experiment_material_reuse_license_verified": false,
+    "files": {
+      "Stata/data_cleaned.dta": {
+        "bytes": 696635,
+        "git_blob_sha1": "fb677fb0432942e6b49ad70c8e8648bf011df432",
+        "sha256": "429bdff86aefcd3df9ec79d7ed18b51c02f4bedc890bfeef293e429c398eb80c"
+      },
+      "behavioral-calibration/data_narrative_with_followup.xls": {
+        "bytes": 1963520,
+        "git_blob_sha1": "719f66084beda0056a979598e6763bd60f150d98",
+        "sha256": "6912f509f72def9f57ae2816cbfd6bf1449a386549cb1df8a6bd05232ae01d08"
+      }
+    },
+    "exact_table_parity": {
+      "rows": 4169,
+      "columns": 30,
+      "identical_column_names_and_order": true,
+      "identical_string_values_and_numeric_missingness": true,
+      "maximum_absolute_numeric_difference": 0.0
+    }
+  },
+  "other_public_artifacts": {
+    "arxiv_source": {
+      "url": "https://arxiv.org/src/2607.04753v4",
+      "sha256": "2515e5b1ce09d2ba5744c200fd80594c8320141b2b21b4ba660822a83d294278",
+      "contents": "Manuscript, appendix, figures, analysis tables and bibliography."
+    },
+    "registry": {
+      "registration": "https://doi.org/10.1257/rct.15672-2.0",
+      "history": "https://www.socialscienceregistry.org/trials/15672/history/281371",
+      "attachments": [
+        {
+          "url": "https://www.socialscienceregistry.org/versions/281367/docs/version/document",
+          "sha256": "8e2af5e6a7db96c3e1e50569f1cdbb67161c7e0fe5c7e5dc2c9cdf6a8cf9cc8f",
+          "kind": "Original analysis plan"
+        },
+        {
+          "url": "https://www.socialscienceregistry.org/versions/281370/docs/version/document",
+          "sha256": "4fbede835612769c892b9477ee8b99d721c3bc01908a0c5dea313744f2207575",
+          "kind": "Updated analysis plan"
+        }
+      ]
+    },
+    "pilot_project": {
+      "url": "https://osf.io/b5ymf/",
+      "main_osfstorage_tree_empty": true,
+      "root_and_all_three_child_node_license_fields": null,
+      "instructions_explicitly_marked_translated_from_italian": true,
+      "pilots": [
+        {
+          "node": "4m2e7",
+          "role": "Choosing the main event. The repository also lists a pilot result Stata dataset and analysis script.",
+          "instructions": "https://osf.io/download/5jnfb/",
+          "sha256": "b422592c12d1410e27dcd66dc23740b18e1ba8601134a4f89122e8143b937e6f"
+        },
+        {
+          "node": "v4uyq",
+          "role": "Choosing informative clues from six candidate pairs.",
+          "instructions": "https://osf.io/download/rny42/",
+          "sha256": "a374771987d03bd136ba3d76c566b945d3b4e4bc84e637baec7082ef6752bef3"
+        },
+        {
+          "node": "s83he",
+          "role": "Choosing an uninformative clue from fifteen candidate facts.",
+          "instructions": "https://osf.io/download/egyjz/",
+          "sha256": "2300842a2e8416d6a5937fcda69835cf1298d0b94644a02b3ccf8fff4bdf08c7"
+        }
+      ]
+    }
+  },
+  "exposure": {
+    "implementation_reported_in_section_3_2": "oTree with AppLab distribution",
+    "common_opening": "Part 1 and prior elicitation use one published scenario for the 240 Story and Story No Info readers and one for the 139 Urn readers. Suspect names, colors and display ordering were randomized. The source does not authenticate individualized screen strings.",
+    "joinable_behavior_key": "Exported trial identity and round 0..10, with complete cohort, sign, belief and lagged belief. Analysis orientation is probability of the realized true state.",
+    "sign_semantics": {"-1": "diagnostic, favors alternative", "0": "nondiagnostic or explicit no-information turn, depending on treatment", "+1": "diagnostic, favors true state"},
+    "number_of_exact_participant_display_trajectories_verified": 0,
+    "story_nondiagnostic_length_signatures": [94, 110, 114, 124, 139, 144, 146, 150, 161, 177],
+    "appendix_a_english_nondiagnostic_codepoint_lengths_in_list_order": [116, 133, 80, 118, 97, 138, 145, 79, 127, 116],
+    "exact_length_intersection": [],
+    "length_check_method": "Count Unicode codepoints in each English HTML Appendix A clue body, stripping only outer display whitespace and omitting enumeration marks. This does not impute the units or encoding of the released length feature.",
+    "story_no_info_nondiagnostic_length_signatures": [20],
+    "story_no_info_initial_consecutive_nondiagnostic_rounds_at_least": {"1": 24, "2": 7, "3": 4, "4": 2},
+    "unresolved_artifacts": [
+      "Main oTree layout and original-language strings for opening, names, history, clue templates and no-information message",
+      "Trial-to-exact-clue key or observed message histories",
+      "Reuse terms specific to the main experiment stimuli and data"
+    ]
+  },
+  "aggregate_behavior": {
+    "method": "Sort each reader by round. Compare every nondiagnostic-round belief with the immediately preceding recorded belief. Update rate and absolute change average within reader and then equally across readers with at least one nondiagnostic event. An exact midpoint return requires current report exactly 0.5 and previous report different from 0.5, counted among nondiagnostic rounds with a non-midpoint preceding report.",
+    "complete_readers": 379,
+    "prior_and_update_reports": 4169,
+    "subsequent_update_reports": 3790,
+    "treatments": {
+      "Story": {
+        "source_label": "Narratives",
+        "readers": 128,
+        "signal_counts_minus_zero_plus": [429, 300, 551],
+        "readers_with_nondiagnostic_exposure": 119,
+        "changed_nondiagnostic_rounds": 225,
+        "reader_equal_change_rate": 0.76330532,
+        "reader_equal_absolute_change": 0.14219749,
+        "midpoint_returns_and_at_risk_rounds": [68, 254],
+        "readers_with_at_least_two_nondiagnostic_midpoint_returns": 17
+      },
+      "Story No Info": {
+        "source_label": "Followup",
+        "readers": 112,
+        "signal_counts_minus_zero_plus": [337, 275, 508],
+        "readers_with_nondiagnostic_exposure": 107,
+        "changed_nondiagnostic_rounds": 169,
+        "reader_equal_change_rate": 0.61659991,
+        "reader_equal_absolute_change": 0.05101336,
+        "midpoint_returns_and_at_risk_rounds": [14, 240],
+        "readers_with_at_least_two_nondiagnostic_midpoint_returns": 2
+      },
+      "Urn": {
+        "source_label": "Control",
+        "readers": 139,
+        "signal_counts_minus_zero_plus": [412, 377, 601],
+        "readers_with_nondiagnostic_exposure": 131,
+        "changed_nondiagnostic_rounds": 237,
+        "reader_equal_change_rate": 0.63625954,
+        "reader_equal_absolute_change": 0.10319848,
+        "midpoint_returns_and_at_risk_rounds": [63, 290],
+        "readers_with_at_least_two_nondiagnostic_midpoint_returns": 13
+      }
+    }
+  }
+}

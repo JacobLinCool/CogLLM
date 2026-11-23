@@ -1,0 +1,9 @@
+# TextComplexityDE secondary fixed readout
+
+Before generating the model predictions for this test and combining them with external scores, a sealed snapshot of PLABA `effect_calibrated_weights` was added. It was fitted using only PLABA training data, retaining the established end-of-sequence hidden states and length features, and adding a calibration term for PLABA rewrite magnitude to the original training target. The revised package followed the original 775 sentences, 23 source articles, external score hash, original `weights`, and sentence length controls. [Original sealed snapshot specification](textcomplexityde-transfer.md) · [Two sets of existing-weighted sources](../../../research/results/causal-plaba-ordinal/manifest.json)
+
+The primary analysis remains based on `weights` and reading stop length. At least 95% reading stop coverage must be retained, and the paired 95% confidence interval lower bound for the difference in agreement rates between the two endpoints relative to sentence length must be greater than zero. The secondary reading analysis additionally reports the difference in agreement rates relative to sentence length, using the same set of sentence pairs and the resampling-with-replacement setting. The secondary results describe only the ranking of this batch of German single sentences while retaining the decision criteria of the primary analysis. [Fixed cross-lingual scoring rules](textcomplexityde-transfer.md#predefined-scoring)
+
+Secondary readout names retain the original PLABA training method. The current validation metric is sentence-level average self-assessment, with group-level observation at the single-sentence level. therefore, no external rewrite baseline or per-vote distribution is available for validation. The revised package is intended solely for this independent experiment.
+
+[Original research record](../../../research/stage6/textcomplexityde-transfer-amendment.md)

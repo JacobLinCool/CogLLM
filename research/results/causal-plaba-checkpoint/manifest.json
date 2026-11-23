@@ -1,0 +1,52 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "source_feature_compute_dtype": "float32",
+  "source_feature_block": "sentence_end_final_hidden",
+  "source_feature_slice": [
+    0,
+    2048
+  ],
+  "deployment_readout": "qwen_plus_length",
+  "model_exposure": "Plain article tokens through the current sentence boundary",
+  "human_rating_exposure": "Full article shown, then sentence-level processing ease and understanding self-rating",
+  "target_scale": [
+    1,
+    5
+  ],
+  "targets": [
+    "processing_ease",
+    "perceived_understanding"
+  ],
+  "input_transform": "L2-normalized sentence-end state, then standardized log1p Unicode character and whitespace-separated word counts divided by sqrt(2)",
+  "scope": "PLABA-EVAL English biomedical source articles and aligned plain-language rewrites",
+  "data": {
+    "features_sha256": "fd1edb0e06f8fc05438d93cf77805cf258077a3c7c2e33c57a3474b579538246",
+    "current_stage2_sha256": {
+      "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+      "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+      "trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e"
+    },
+    "archived_stage3_payload_sha256": {
+      "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+      "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+      "trials.jsonl": "63b6469cda05ee12326aa3e04bc8c4147c872b51973d7f8b42202c2fd08e4932"
+    },
+    "same_evaluated_records_across_data_versions": true,
+    "source_manifest_sha256": {
+      "stage2": "ab55a77a5f43909ce2d4b48eff0b9ed28a82e66dcd8629ea6aad34958a16c838",
+      "stage3": "d39ea2ce0c97b393aaff0871a029b211a271bea75354e42a7885f050a370aa09",
+      "stage3_verification": "278c2b2036f2f5737472981d02447b1676898f82e02120de2d31e93281881748",
+      "feature_ablation": "a3ff20a4ebc04bcf2a1822910ecec8db3216af66ffd9c8e45888323f402bfec7"
+    }
+  },
+  "numpy": "2.4.6",
+  "verification": {
+    "all_data_head_separate_from_oof_fits": true,
+    "compared_mae_values": 10,
+    "maximum_absolute_mae_difference": 0.0,
+    "mae_absolute_tolerance": 1e-12
+  },
+  "head_sha256": "7b77b069d2b79303be9f7b2917c1fd71e187ab9b571879651cca98999a883678",
+  "metrics_sha256": "ce93b21b733535289cbb8a2788a59a5c2e8e40ab9d8f36e40e068856d46012e0"
+}

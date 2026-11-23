@@ -1,0 +1,49 @@
+{
+  "owner": "CogLLM",
+  "requested_gpu": "L4",
+  "job_limit_seconds": 900,
+  "allocation_target_ceiling_seconds": 1200,
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "source_release": "153082e7d58b833d5e2f481b92fdcf9248c60d11",
+  "bootstrap_seed": 43,
+  "data_sha256": {
+    "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+    "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+    "trials.jsonl": "63b6469cda05ee12326aa3e04bc8c4147c872b51973d7f8b42202c2fd08e4932"
+  },
+  "colab_session_registry": "/Users/jacoblincool/.config/colab-cli/sessions.json",
+  "run_id": "cogllm-stage3-fp32-20261120T141921Z-dd6129",
+  "prior_attempt": "cogllm-stage3-20261120T141552Z-692769",
+  "compute_dtype": "float32",
+  "reason": "Retest unchanged prefix tolerances with FP32 arithmetic on the same L4 class",
+  "code_sha256": {
+    "run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+    "probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "colab_entry.py": "7505cb3b4f869ccec6e900813a4c362c0896727a761ab68364c4254ff87573f1"
+  },
+  "payload_sha256": "6a8bdda0fca756d7a9bc2aa83182827971fce1541f9abb6f843cba40a1140177",
+  "cli_version": "0.7.4",
+  "timeline_utc": {
+    "before-allocation": "2026-11-20T14:19:30.607958+00:00",
+    "allocate": "2026-11-20T14:19:32.789044+00:00",
+    "allocated": "2026-11-20T14:19:37.566431+00:00",
+    "after-allocation": "2026-11-20T14:19:37.566695+00:00",
+    "preflight": "2026-11-20T14:19:39.746579+00:00",
+    "upload": "2026-11-20T14:19:46.115054+00:00",
+    "execute": "2026-11-20T14:19:46.621218+00:00",
+    "download": "2026-11-20T14:20:58.671805+00:00",
+    "local-artifacts-verified": "2026-11-20T14:20:59.627902+00:00",
+    "before-stop": "2026-11-20T14:20:59.628029+00:00",
+    "stop-1": "2026-11-20T14:21:00.844979+00:00",
+    "sessions-after-stop-1": "2026-11-20T14:21:03.204130+00:00",
+    "after-stop": "2026-11-20T14:21:04.423393+00:00",
+    "finished": "2026-11-20T14:21:06.392396+00:00"
+  },
+  "remote_status": {
+    "phase": "complete",
+    "completed": true,
+    "worker_elapsed_s": 71.180153279
+  },
+  "release_verified": true
+}

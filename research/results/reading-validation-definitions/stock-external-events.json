@@ -1,0 +1,1361 @@
+{
+  "inputs": {
+    "negative": 1426,
+    "single_forward": 568
+  },
+  "kind_contingencies": {
+    "negative": {
+      "joint": {
+        "detected": 0,
+        "emitted": 217,
+        "gold": 0,
+        "n_words": 36216,
+        "neither_known_source_nor_time": 217,
+        "null_distance": 0.0,
+        "opened": 425,
+        "overlap_hit": 0,
+        "stock_distance": 4554.0
+      },
+      "name": {
+        "detected": 0,
+        "emitted": 107,
+        "gold": 0,
+        "n_words": 36216,
+        "neither_known_source_nor_time": 107,
+        "null_distance": 0.0,
+        "opened": 1073,
+        "overlap_hit": 0,
+        "stock_distance": 30103.0
+      },
+      "position": {
+        "detected": 0,
+        "emitted": 1763,
+        "gold": 0,
+        "n_words": 36216,
+        "neither_known_source_nor_time": 1763,
+        "null_distance": 0.0,
+        "opened": 1911,
+        "overlap_hit": 0,
+        "stock_distance": 4347.0
+      },
+      "semantic": {
+        "detected": 0,
+        "emitted": 165,
+        "gold": 0,
+        "n_words": 36216,
+        "neither_known_source_nor_time": 165,
+        "null_distance": 0.0,
+        "opened": 426,
+        "overlap_hit": 0,
+        "stock_distance": 5048.0
+      },
+      "surface": {
+        "detected": 0,
+        "emitted": 783,
+        "gold": 0,
+        "n_words": 36216,
+        "neither_known_source_nor_time": 783,
+        "null_distance": 0.0,
+        "opened": 1073,
+        "overlap_hit": 0,
+        "stock_distance": 17528.0
+      }
+    },
+    "single_forward": {
+      "joint": {
+        "detected": 93,
+        "emitted": 187,
+        "gold": 564,
+        "hit": 55,
+        "n_words": 14169,
+        "neither_known_source_nor_time": 61,
+        "null_distance": 1497.0,
+        "opened": 252,
+        "overlap_hit": 84,
+        "stock_distance": 1875.0,
+        "wrong_source_during_definition": 46,
+        "wrong_time_for_true_term": 25
+      },
+      "name": {
+        "detected": 99,
+        "emitted": 44,
+        "gold": 564,
+        "hit": 2,
+        "n_words": 14169,
+        "neither_known_source_nor_time": 26,
+        "null_distance": 1497.0,
+        "opened": 583,
+        "overlap_hit": 10,
+        "stock_distance": 6145.0,
+        "wrong_source_during_definition": 15,
+        "wrong_time_for_true_term": 1
+      },
+      "position": {
+        "detected": 83,
+        "emitted": 733,
+        "gold": 564,
+        "hit": 13,
+        "n_words": 14169,
+        "neither_known_source_nor_time": 569,
+        "null_distance": 1497.0,
+        "opened": 794,
+        "overlap_hit": 14,
+        "stock_distance": 2385.0,
+        "wrong_source_during_definition": 88,
+        "wrong_time_for_true_term": 63
+      },
+      "semantic": {
+        "detected": 65,
+        "emitted": 128,
+        "gold": 564,
+        "hit": 26,
+        "n_words": 14169,
+        "neither_known_source_nor_time": 36,
+        "null_distance": 1497.0,
+        "opened": 248,
+        "overlap_hit": 62,
+        "stock_distance": 2161.0,
+        "wrong_source_during_definition": 65,
+        "wrong_time_for_true_term": 1
+      },
+      "surface": {
+        "detected": 99,
+        "emitted": 481,
+        "gold": 564,
+        "hit": 70,
+        "n_words": 14169,
+        "neither_known_source_nor_time": 214,
+        "null_distance": 1497.0,
+        "opened": 583,
+        "overlap_hit": 94,
+        "stock_distance": 2363.0,
+        "wrong_source_during_definition": 178,
+        "wrong_time_for_true_term": 19
+      }
+    }
+  },
+  "section_stratified": {
+    "macro_source": {
+      "joint": {
+        "closure_given_opened": {
+          "mean": 0.5632373373752685,
+          "paired_item_bootstrap_95": [
+            0.43960433244916003,
+            0.6839269925476821
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.11642508965082482,
+          "paired_item_bootstrap_95": [
+            0.08551496380640237,
+            0.16044482606175867
+          ]
+        },
+        "f1": {
+          "mean": 0.07246669088884411,
+          "paired_item_bootstrap_95": [
+            0.048939059690985956,
+            0.09941526463579962
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.13987871901767812,
+          "paired_item_bootstrap_95": [
+            0.1050894465042373,
+            0.1771384899820029
+          ]
+        },
+        "precision": {
+          "mean": 0.15574045407636739,
+          "paired_item_bootstrap_95": [
+            0.10573634223426212,
+            0.20970491486068113
+          ]
+        },
+        "recall": {
+          "mean": 0.08447315814652816,
+          "paired_item_bootstrap_95": [
+            0.056913452393156545,
+            0.11593585762370145
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.2368981391898865,
+          "paired_item_bootstrap_95": [
+            0.17882281387061402,
+            0.2994817365679824
+          ]
+        }
+      },
+      "name": {
+        "closure_given_opened": {
+          "mean": 0.026785714285714284,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.07142857142857142
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.49539662358510655,
+          "paired_item_bootstrap_95": [
+            0.33198450602238194,
+            0.7743033241463323
+          ]
+        },
+        "f1": {
+          "mean": 0.0029304029304029304,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.007326007326007326
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.14826629582259365,
+          "paired_item_bootstrap_95": [
+            0.11087655643859512,
+            0.18871860832991613
+          ]
+        },
+        "precision": {
+          "mean": 0.020833333333333332,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.05555555555555555
+          ]
+        },
+        "recall": {
+          "mean": 0.0023521505376344082,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.006048387096774193
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.08410493827160494,
+          "paired_item_bootstrap_95": [
+            0.030092592592592598,
+            0.14583333333333334
+          ]
+        }
+      },
+      "position": {
+        "closure_given_opened": {
+          "mean": 0.12149234693877552,
+          "paired_item_bootstrap_95": [
+            0.05133928571428571,
+            0.20408163265306123
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.15004477461712198,
+          "paired_item_bootstrap_95": [
+            0.12326799748369391,
+            0.18934741400998534
+          ]
+        },
+        "f1": {
+          "mean": 0.006080115140517825,
+          "paired_item_bootstrap_95": [
+            0.001979251979251979,
+            0.01119313627702889
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.13689635323101354,
+          "paired_item_bootstrap_95": [
+            0.10138559647478455,
+            0.17543198544367855
+          ]
+        },
+        "precision": {
+          "mean": 0.0050582773047326765,
+          "paired_item_bootstrap_95": [
+            0.001549424873286104,
+            0.009346308508757898
+          ]
+        },
+        "recall": {
+          "mean": 0.016575997813012572,
+          "paired_item_bootstrap_95": [
+            0.0049462365591397845,
+            0.031155913978494622
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.006097778344233716,
+          "paired_item_bootstrap_95": [
+            0.002079002079002079,
+            0.010923693483914036
+          ]
+        }
+      },
+      "semantic": {
+        "closure_given_opened": {
+          "mean": 0.47794612794612795,
+          "paired_item_bootstrap_95": [
+            0.33535353535353535,
+            0.6185185185185185
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.1194509959691698,
+          "paired_item_bootstrap_95": [
+            0.09993932519517557,
+            0.14064311198092871
+          ]
+        },
+        "f1": {
+          "mean": 0.0497812034992347,
+          "paired_item_bootstrap_95": [
+            0.029237968154555316,
+            0.07197004050825566
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.10275272803900126,
+          "paired_item_bootstrap_95": [
+            0.07200257996172772,
+            0.1357761833367505
+          ]
+        },
+        "precision": {
+          "mean": 0.12756691415856428,
+          "paired_item_bootstrap_95": [
+            0.07768481811329185,
+            0.18193022374188353
+          ]
+        },
+        "recall": {
+          "mean": 0.051880638326954616,
+          "paired_item_bootstrap_95": [
+            0.030066505205485695,
+            0.07641029222480408
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.30134834839688623,
+          "paired_item_bootstrap_95": [
+            0.23011288726016724,
+            0.37432016013259645
+          ]
+        }
+      },
+      "surface": {
+        "closure_given_opened": {
+          "mean": 0.6689495028780742,
+          "paired_item_bootstrap_95": [
+            0.5548448129251701,
+            0.7785735544217687
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.23921179376023086,
+          "paired_item_bootstrap_95": [
+            0.0876866818298744,
+            0.5012541736462645
+          ]
+        },
+        "f1": {
+          "mean": 0.054486096786621134,
+          "paired_item_bootstrap_95": [
+            0.036846690940770935,
+            0.0737032361058871
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.14826629582259365,
+          "paired_item_bootstrap_95": [
+            0.11087655643859512,
+            0.18871860832991613
+          ]
+        },
+        "precision": {
+          "mean": 0.06016775221809098,
+          "paired_item_bootstrap_95": [
+            0.03942302472656367,
+            0.08303189368606445
+          ]
+        },
+        "recall": {
+          "mean": 0.09736677927048347,
+          "paired_item_bootstrap_95": [
+            0.06836885560675883,
+            0.1297043010752688
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.08106150309967713,
+          "paired_item_bootstrap_95": [
+            0.05749968171235209,
+            0.10739940791711577
+          ]
+        }
+      }
+    },
+    "pooled": {
+      "joint": {
+        "closure_given_opened": 0.5913978494623656,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 93,
+        "distance_to_gold_count_bounds": 0.12759749925573088,
+        "emitted": 404,
+        "f1": 0.11363636363636363,
+        "gold": 564,
+        "hit": 55,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 278,
+        "null_distance": 1497.0,
+        "opened": 677,
+        "opening_recall": 0.16489361702127658,
+        "overlap_hit": 84,
+        "precision": 0.13613861386138615,
+        "recall": 0.0975177304964539,
+        "stock_distance": 6429.0,
+        "target_overlap_precision": 0.2079207920792079,
+        "wrong_source_during_definition": 46,
+        "wrong_source_on_def": 0.11386138613861387,
+        "wrong_time_for_true_term": 25,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "name": {
+        "closure_given_opened": 0.020202020202020204,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 99,
+        "distance_to_gold_count_bounds": 0.719420462439218,
+        "emitted": 151,
+        "f1": 0.005594405594405594,
+        "gold": 564,
+        "hit": 2,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 133,
+        "null_distance": 1497.0,
+        "opened": 1656,
+        "opening_recall": 0.17553191489361702,
+        "overlap_hit": 10,
+        "precision": 0.013245033112582781,
+        "recall": 0.0035460992907801418,
+        "stock_distance": 36248.0,
+        "target_overlap_precision": 0.06622516556291391,
+        "wrong_source_during_definition": 15,
+        "wrong_source_on_def": 0.09933774834437085,
+        "wrong_time_for_true_term": 1,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "position": {
+        "closure_given_opened": 0.1566265060240964,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 83,
+        "distance_to_gold_count_bounds": 0.13361119380768086,
+        "emitted": 2496,
+        "f1": 0.00849673202614379,
+        "gold": 564,
+        "hit": 13,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 2332,
+        "null_distance": 1497.0,
+        "opened": 2705,
+        "opening_recall": 0.14716312056737588,
+        "overlap_hit": 14,
+        "precision": 0.005208333333333333,
+        "recall": 0.02304964539007092,
+        "stock_distance": 6732.0,
+        "target_overlap_precision": 0.005608974358974359,
+        "wrong_source_during_definition": 88,
+        "wrong_source_on_def": 0.035256410256410256,
+        "wrong_time_for_true_term": 63,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "semantic": {
+        "closure_given_opened": 0.4,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 65,
+        "distance_to_gold_count_bounds": 0.1430782971122358,
+        "emitted": 293,
+        "f1": 0.060676779463243874,
+        "gold": 564,
+        "hit": 26,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 201,
+        "null_distance": 1497.0,
+        "opened": 674,
+        "opening_recall": 0.11524822695035461,
+        "overlap_hit": 62,
+        "precision": 0.08873720136518772,
+        "recall": 0.04609929078014184,
+        "stock_distance": 7209.0,
+        "target_overlap_precision": 0.21160409556313994,
+        "wrong_source_during_definition": 65,
+        "wrong_source_on_def": 0.22184300341296928,
+        "wrong_time_for_true_term": 1,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "surface": {
+        "closure_given_opened": 0.7070707070707071,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 99,
+        "distance_to_gold_count_bounds": 0.39478019251761437,
+        "emitted": 1264,
+        "f1": 0.07658643326039387,
+        "gold": 564,
+        "hit": 70,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 997,
+        "null_distance": 1497.0,
+        "opened": 1656,
+        "opening_recall": 0.17553191489361702,
+        "overlap_hit": 94,
+        "precision": 0.055379746835443035,
+        "recall": 0.12411347517730496,
+        "stock_distance": 19891.0,
+        "target_overlap_precision": 0.07436708860759493,
+        "wrong_source_during_definition": 178,
+        "wrong_source_on_def": 0.14082278481012658,
+        "wrong_time_for_true_term": 19,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      }
+    },
+    "semantic_minus_comparator": {
+      "joint": {
+        "closure_given_opened": {
+          "mean": -0.13314828029113743,
+          "paired_item_bootstrap_95": [
+            -0.3209238023880881,
+            0.05372074354217186
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.0030259063183449672,
+          "paired_item_bootstrap_95": [
+            -0.03947337812126915,
+            0.03420811200879522
+          ]
+        },
+        "f1": {
+          "mean": -0.028361561328423233,
+          "paired_item_bootstrap_95": [
+            -0.056314467583501525,
+            -0.0014118579024852338
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.03712599097867687,
+          "paired_item_bootstrap_95": [
+            -0.07048769250045561,
+            -0.007297631048387107
+          ]
+        },
+        "precision": {
+          "mean": 0.0005266695700029366,
+          "paired_item_bootstrap_95": [
+            -0.06718725810633074,
+            0.06778158226853495
+          ]
+        },
+        "recall": {
+          "mean": -0.03259251981957354,
+          "paired_item_bootstrap_95": [
+            -0.0635668682795699,
+            -0.003670326595817397
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.045886022707736715,
+          "paired_item_bootstrap_95": [
+            -0.029501805347409652,
+            0.12459107181145684
+          ]
+        }
+      },
+      "name": {
+        "closure_given_opened": {
+          "mean": 0.47655122655122656,
+          "paired_item_bootstrap_95": [
+            0.22655122655122656,
+            0.7110479797979796
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": -0.37594562761593675,
+          "paired_item_bootstrap_95": [
+            -0.6574986611222186,
+            -0.21132515352684075
+          ]
+        },
+        "f1": {
+          "mean": 0.05154521178288894,
+          "paired_item_bootstrap_95": [
+            0.02903498920297804,
+            0.07627657945433561
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.0455135677835924,
+          "paired_item_bootstrap_95": [
+            -0.0934195798022599,
+            0.0010455410841208842
+          ]
+        },
+        "precision": {
+          "mean": -0.001018194451846985,
+          "paired_item_bootstrap_95": [
+            -0.09192728536093789,
+            0.09181774753594178
+          ]
+        },
+        "recall": {
+          "mean": 0.04952848778932021,
+          "paired_item_bootstrap_95": [
+            0.02704894808182978,
+            0.07397606843448146
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.17243761963324206,
+          "paired_item_bootstrap_95": [
+            0.015492194763740585,
+            0.3333333333333333
+          ]
+        }
+      },
+      "position": {
+        "closure_given_opened": {
+          "mean": 0.1884708428826076,
+          "paired_item_bootstrap_95": [
+            0.0046473134708428804,
+            0.40415711739241145
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": -0.030593778647952187,
+          "paired_item_bootstrap_95": [
+            -0.07324220893276182,
+            0.00418565167915665
+          ]
+        },
+        "f1": {
+          "mean": 0.03922331403140412,
+          "paired_item_bootstrap_95": [
+            0.017619796652634506,
+            0.061798754137584566
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.03414362519201228,
+          "paired_item_bootstrap_95": [
+            -0.08308208525345621,
+            0.012625768049155136
+          ]
+        },
+        "precision": {
+          "mean": 0.12211805663793959,
+          "paired_item_bootstrap_95": [
+            0.07386167464840113,
+            0.17461510920157536
+          ]
+        },
+        "recall": {
+          "mean": 0.03530464051394205,
+          "paired_item_bootstrap_95": [
+            0.009239218835429197,
+            0.06226364589028613
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.29589949087626155,
+          "paired_item_bootstrap_95": [
+            0.22467110690687844,
+            0.36755425296392696
+          ]
+        }
+      },
+      "surface": {
+        "closure_given_opened": {
+          "mean": -0.15175855890141604,
+          "paired_item_bootstrap_95": [
+            -0.413663320806178,
+            0.11387352726638411
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": -0.11976079779106107,
+          "paired_item_bootstrap_95": [
+            -0.38709373827552507,
+            0.03618460502193055
+          ]
+        },
+        "f1": {
+          "mean": -0.022143931595032973,
+          "paired_item_bootstrap_95": [
+            -0.051547535434884904,
+            0.0073689292538957505
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.0455135677835924,
+          "paired_item_bootstrap_95": [
+            -0.0934195798022599,
+            0.0010455410841208842
+          ]
+        },
+        "precision": {
+          "mean": 0.031193094347492286,
+          "paired_item_bootstrap_95": [
+            -0.0286660841604834,
+            0.09420072075744185
+          ]
+        },
+        "recall": {
+          "mean": -0.045486140943528854,
+          "paired_item_bootstrap_95": [
+            -0.08292550431702203,
+            -0.009892361856921553
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.17608877546645949,
+          "paired_item_bootstrap_95": [
+            0.09250269165278746,
+            0.26168385062253285
+          ]
+        }
+      }
+    },
+    "source_count": 482
+  },
+  "sentence_resampled": {
+    "macro_source": {
+      "joint": {
+        "closure_given_opened": {
+          "mean": 0.5913978494623656,
+          "paired_item_bootstrap_95": [
+            0.4946236559139785,
+            0.6881720430107527
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.11954087078984736,
+          "paired_item_bootstrap_95": [
+            0.10494309734739854,
+            0.13591208624243212
+          ]
+        },
+        "f1": {
+          "mean": 0.0698496905393457,
+          "paired_item_bootstrap_95": [
+            0.05216622458001768,
+            0.08841732979664013
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.16489361702127658,
+          "paired_item_bootstrap_95": [
+            0.1347517730496454,
+            0.19680851063829788
+          ]
+        },
+        "precision": {
+          "mean": 0.14630681818181818,
+          "paired_item_bootstrap_95": [
+            0.11079545454545454,
+            0.1846590909090909
+          ]
+        },
+        "recall": {
+          "mean": 0.0975177304964539,
+          "paired_item_bootstrap_95": [
+            0.07446808510638298,
+            0.12234042553191489
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.21969696969696972,
+          "paired_item_bootstrap_95": [
+            0.17850378787878787,
+            0.262322443181818
+          ]
+        }
+      },
+      "name": {
+        "closure_given_opened": {
+          "mean": 0.020202020202020204,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.050505050505050504
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.41306121052544403,
+          "paired_item_bootstrap_95": [
+            0.36057362606029114,
+            0.4891445548831823
+          ]
+        },
+        "f1": {
+          "mean": 0.003125,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.0078125
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.17553191489361702,
+          "paired_item_bootstrap_95": [
+            0.1453900709219858,
+            0.2074468085106383
+          ]
+        },
+        "precision": {
+          "mean": 0.017543859649122806,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.043859649122807015
+          ]
+        },
+        "recall": {
+          "mean": 0.0035460992907801418,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.008865248226950355
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.07894736842105263,
+          "paired_item_bootstrap_95": [
+            0.03508771929824561,
+            0.13157894736842105
+          ]
+        }
+      },
+      "position": {
+        "closure_given_opened": {
+          "mean": 0.1566265060240964,
+          "paired_item_bootstrap_95": [
+            0.08433734939759036,
+            0.24096385542168675
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.13614862411551001,
+          "paired_item_bootstrap_95": [
+            0.12422049136772889,
+            0.1497929241103282
+          ]
+        },
+        "f1": {
+          "mean": 0.0065293822199899544,
+          "paired_item_bootstrap_95": [
+            0.0035158211953792064,
+            0.01054746358613762
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.14716312056737588,
+          "paired_item_bootstrap_95": [
+            0.11879432624113476,
+            0.17553191489361702
+          ]
+        },
+        "precision": {
+          "mean": 0.0065293822199899544,
+          "paired_item_bootstrap_95": [
+            0.0035158211953792064,
+            0.01054746358613762
+          ]
+        },
+        "recall": {
+          "mean": 0.02304964539007092,
+          "paired_item_bootstrap_95": [
+            0.012411347517730497,
+            0.03546099290780142
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.006780512305374184,
+          "paired_item_bootstrap_95": [
+            0.0035158211953792064,
+            0.01054746358613762
+          ]
+        }
+      },
+      "semantic": {
+        "closure_given_opened": {
+          "mean": 0.4,
+          "paired_item_bootstrap_95": [
+            0.27692307692307694,
+            0.5230769230769231
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.14053831847094328,
+          "paired_item_bootstrap_95": [
+            0.12687491970087042,
+            0.1547360166212884
+          ]
+        },
+        "f1": {
+          "mean": 0.03478057889822596,
+          "paired_item_bootstrap_95": [
+            0.022408963585434174,
+            0.04855275443510737
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.11524822695035461,
+          "paired_item_bootstrap_95": [
+            0.09042553191489362,
+            0.14184397163120568
+          ]
+        },
+        "precision": {
+          "mean": 0.09252217997465147,
+          "paired_item_bootstrap_95": [
+            0.060202788339670466,
+            0.12737642585551331
+          ]
+        },
+        "recall": {
+          "mean": 0.04609929078014184,
+          "paired_item_bootstrap_95": [
+            0.030141843971631204,
+            0.06382978723404255
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.22750316856780736,
+          "paired_item_bootstrap_95": [
+            0.17807351077313055,
+            0.27756653992395436
+          ]
+        }
+      },
+      "surface": {
+        "closure_given_opened": {
+          "mean": 0.7070707070707071,
+          "paired_item_bootstrap_95": [
+            0.6161616161616161,
+            0.797979797979798
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.14798861503549007,
+          "paired_item_bootstrap_95": [
+            0.10445258678712818,
+            0.2162193878795415
+          ]
+        },
+        "f1": {
+          "mean": 0.05612244897959184,
+          "paired_item_bootstrap_95": [
+            0.04325832897261469,
+            0.06924821210535496
+          ]
+        },
+        "opening_recall": {
+          "mean": 0.17553191489361702,
+          "paired_item_bootstrap_95": [
+            0.1453900709219858,
+            0.2074468085106383
+          ]
+        },
+        "precision": {
+          "mean": 0.06865079365079364,
+          "paired_item_bootstrap_95": [
+            0.05277777777777777,
+            0.0853174603174603
+          ]
+        },
+        "recall": {
+          "mean": 0.12411347517730496,
+          "paired_item_bootstrap_95": [
+            0.0975177304964539,
+            0.15070921985815602
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.08843253968253968,
+          "paired_item_bootstrap_95": [
+            0.07087301587301587,
+            0.10698412698412697
+          ]
+        }
+      }
+    },
+    "pooled": {
+      "joint": {
+        "closure_given_opened": 0.5913978494623656,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 93,
+        "distance_to_gold_count_bounds": 0.12759749925573088,
+        "emitted": 404,
+        "f1": 0.11363636363636363,
+        "gold": 564,
+        "hit": 55,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 278,
+        "null_distance": 1497.0,
+        "opened": 677,
+        "opening_recall": 0.16489361702127658,
+        "overlap_hit": 84,
+        "precision": 0.13613861386138615,
+        "recall": 0.0975177304964539,
+        "stock_distance": 6429.0,
+        "target_overlap_precision": 0.2079207920792079,
+        "wrong_source_during_definition": 46,
+        "wrong_source_on_def": 0.11386138613861387,
+        "wrong_time_for_true_term": 25,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "name": {
+        "closure_given_opened": 0.020202020202020204,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 99,
+        "distance_to_gold_count_bounds": 0.719420462439218,
+        "emitted": 151,
+        "f1": 0.005594405594405594,
+        "gold": 564,
+        "hit": 2,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 133,
+        "null_distance": 1497.0,
+        "opened": 1656,
+        "opening_recall": 0.17553191489361702,
+        "overlap_hit": 10,
+        "precision": 0.013245033112582781,
+        "recall": 0.0035460992907801418,
+        "stock_distance": 36248.0,
+        "target_overlap_precision": 0.06622516556291391,
+        "wrong_source_during_definition": 15,
+        "wrong_source_on_def": 0.09933774834437085,
+        "wrong_time_for_true_term": 1,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "position": {
+        "closure_given_opened": 0.1566265060240964,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 83,
+        "distance_to_gold_count_bounds": 0.13361119380768086,
+        "emitted": 2496,
+        "f1": 0.00849673202614379,
+        "gold": 564,
+        "hit": 13,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 2332,
+        "null_distance": 1497.0,
+        "opened": 2705,
+        "opening_recall": 0.14716312056737588,
+        "overlap_hit": 14,
+        "precision": 0.005208333333333333,
+        "recall": 0.02304964539007092,
+        "stock_distance": 6732.0,
+        "target_overlap_precision": 0.005608974358974359,
+        "wrong_source_during_definition": 88,
+        "wrong_source_on_def": 0.035256410256410256,
+        "wrong_time_for_true_term": 63,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "semantic": {
+        "closure_given_opened": 0.4,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 65,
+        "distance_to_gold_count_bounds": 0.1430782971122358,
+        "emitted": 293,
+        "f1": 0.060676779463243874,
+        "gold": 564,
+        "hit": 26,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 201,
+        "null_distance": 1497.0,
+        "opened": 674,
+        "opening_recall": 0.11524822695035461,
+        "overlap_hit": 62,
+        "precision": 0.08873720136518772,
+        "recall": 0.04609929078014184,
+        "stock_distance": 7209.0,
+        "target_overlap_precision": 0.21160409556313994,
+        "wrong_source_during_definition": 65,
+        "wrong_source_on_def": 0.22184300341296928,
+        "wrong_time_for_true_term": 1,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      },
+      "surface": {
+        "closure_given_opened": 0.7070707070707071,
+        "competition": null,
+        "competition_given_both_opened": null,
+        "detected": 99,
+        "distance_to_gold_count_bounds": 0.39478019251761437,
+        "emitted": 1264,
+        "f1": 0.07658643326039387,
+        "gold": 564,
+        "hit": 70,
+        "n_words": 50385,
+        "neither_known_source_nor_time": 997,
+        "null_distance": 1497.0,
+        "opened": 1656,
+        "opening_recall": 0.17553191489361702,
+        "overlap_hit": 94,
+        "precision": 0.055379746835443035,
+        "recall": 0.12411347517730496,
+        "stock_distance": 19891.0,
+        "target_overlap_precision": 0.07436708860759493,
+        "wrong_source_during_definition": 178,
+        "wrong_source_on_def": 0.14082278481012658,
+        "wrong_time_for_true_term": 19,
+        "zero_distance_to_gold_count_bounds": 0.029711223578445967
+      }
+    },
+    "semantic_minus_comparator": {
+      "joint": {
+        "closure_given_opened": {
+          "mean": -0.22,
+          "paired_item_bootstrap_95": [
+            -0.4,
+            -0.04
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.0209974476810959,
+          "paired_item_bootstrap_95": [
+            0.005476501049592256,
+            0.03517217342149671
+          ]
+        },
+        "f1": {
+          "mean": -0.04369440083725798,
+          "paired_item_bootstrap_95": [
+            -0.06567242281527995,
+            -0.023286237571951855
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.04964539007092199,
+          "paired_item_bootstrap_95": [
+            -0.07624113475177305,
+            -0.02304964539007092
+          ]
+        },
+        "precision": {
+          "mean": 0.026806526806526804,
+          "paired_item_bootstrap_95": [
+            -0.017482517482517484,
+            0.07226107226107226
+          ]
+        },
+        "recall": {
+          "mean": -0.051418439716312055,
+          "paired_item_bootstrap_95": [
+            -0.07624113475177305,
+            -0.026595744680851064
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.03146853146853147,
+          "paired_item_bootstrap_95": [
+            -0.01864801864801865,
+            0.08275058275058274
+          ]
+        }
+      },
+      "name": {
+        "closure_given_opened": {
+          "mean": 0.42857142857142855,
+          "paired_item_bootstrap_95": [
+            0.19047619047619047,
+            0.6666666666666666
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": -0.27252289205450075,
+          "paired_item_bootstrap_95": [
+            -0.34824952375683504,
+            -0.21936714907237748
+          ]
+        },
+        "f1": {
+          "mean": 0.03936781609195402,
+          "paired_item_bootstrap_95": [
+            0.022988505747126436,
+            0.05632183908045977
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.06028368794326241,
+          "paired_item_bootstrap_95": [
+            -0.09929078014184398,
+            -0.02127659574468085
+          ]
+        },
+        "precision": {
+          "mean": 0.014492753623188404,
+          "paired_item_bootstrap_95": [
+            0.0,
+            0.043478260869565216
+          ]
+        },
+        "recall": {
+          "mean": 0.0425531914893617,
+          "paired_item_bootstrap_95": [
+            0.024822695035460994,
+            0.06028368794326241
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": -0.028985507246376815,
+          "paired_item_bootstrap_95": [
+            -0.15942028985507248,
+            0.10144927536231883
+          ]
+        }
+      },
+      "position": {
+        "closure_given_opened": {
+          "mean": 0.14285714285714285,
+          "paired_item_bootstrap_95": [
+            -0.14285714285714285,
+            0.42857142857142855
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": 0.004389694355433244,
+          "paired_item_bootstrap_95": [
+            -0.014098316316154595,
+            0.022183550896925672
+          ]
+        },
+        "f1": {
+          "mean": 0.016573295985060688,
+          "paired_item_bootstrap_95": [
+            0.0016339869281045743,
+            0.03197945845004668
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.031914893617021274,
+          "paired_item_bootstrap_95": [
+            -0.06914893617021277,
+            0.005319148936170213
+          ]
+        },
+        "precision": {
+          "mean": 0.08111533586818759,
+          "paired_item_bootstrap_95": [
+            0.050697084917617236,
+            0.11470215462610898
+          ]
+        },
+        "recall": {
+          "mean": 0.02304964539007092,
+          "paired_item_bootstrap_95": [
+            0.0035460992907801418,
+            0.0425531914893617
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.21609632446134347,
+          "paired_item_bootstrap_95": [
+            0.16730038022813687,
+            0.26552598225602025
+          ]
+        }
+      },
+      "surface": {
+        "closure_given_opened": {
+          "mean": -0.19047619047619047,
+          "paired_item_bootstrap_95": [
+            -0.47619047619047616,
+            0.14285714285714285
+          ]
+        },
+        "competition": null,
+        "competition_given_both_opened": null,
+        "distance_to_gold_count_bounds": {
+          "mean": -0.007450296564546819,
+          "paired_item_bootstrap_95": [
+            -0.07708968364352414,
+            0.03929335221924555
+          ]
+        },
+        "f1": {
+          "mean": -0.0566030760130139,
+          "paired_item_bootstrap_95": [
+            -0.0824829931972789,
+            -0.03131469979296066
+          ]
+        },
+        "opening_recall": {
+          "mean": -0.06028368794326241,
+          "paired_item_bootstrap_95": [
+            -0.09929078014184398,
+            -0.02127659574468085
+          ]
+        },
+        "precision": {
+          "mean": 0.036666666666666674,
+          "paired_item_bootstrap_95": [
+            -0.016666666666666666,
+            0.09333333333333334
+          ]
+        },
+        "recall": {
+          "mean": -0.07801418439716312,
+          "paired_item_bootstrap_95": [
+            -0.10820035460992904,
+            -0.047872340425531915
+          ]
+        },
+        "target_overlap_precision": {
+          "mean": 0.10166666666666667,
+          "paired_item_bootstrap_95": [
+            0.03333333333333333,
+            0.17333333333333334
+          ]
+        }
+      }
+    },
+    "source_count": 1994
+  },
+  "source_lock": "e25296c293d1663ed1965ab15fbc848d3d8c22c316d35f8ce991f20c690c2cca",
+  "training_calibration": "3edfb4c23d9f7c1e78936ed0cdb2936bd3b7d85cacde05f8535b06567a5bb1d1"
+}

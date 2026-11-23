@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="zh-Hant"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>CogLLM 全文標色</title><style>
+body { margin: 0; background: #f0f2ed; color: #172b26; font: 16px/1.55 system-ui, sans-serif; }
+main { width: min(980px, calc(100% - 2rem)); margin: 2rem auto; }
+h1 { margin: 0 0 .3rem; font-size: 1.7rem; }
+p { margin: 0 0 1rem; color: #455953; }
+
+.gradio-container { max-width: 1120px !important; }
+#article-result .reading-overview {
+    --hard: #ffc4b9; --medium-hard: #ffe2b6; --middle: #f3eee5;
+    --medium-easy: #d6ecdc; --easy: #ace6d1;
+    color: #172b26; background: #fffcf7;
+    border: 1px solid #d9ddd5; border-radius: 1rem;
+}
+#article-result .heat-legend {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 0.45rem;
+    padding: 0.85rem 1.15rem; border-bottom: 1px solid #e6e9e2;
+    font-size: 0.84rem; line-height: 1.5;
+}
+#article-result .legend-key { padding: 0.2rem 0.52rem; border-radius: 0.35rem; font-weight: 650; }
+#article-result .legend-note { color: #455953; }
+#article-result .source-text {
+    white-space: pre-wrap; overflow-wrap: anywhere; line-height: 2.15;
+    padding: 1.1rem 1.25rem 1.25rem; max-width: 85ch; margin: 0 auto;
+    font-size: 1.02rem;
+}
+#article-result .tone-0 { background-color: var(--hard); }
+#article-result .tone-1 { background-color: var(--medium-hard); }
+#article-result .tone-2 { background-color: var(--middle); }
+#article-result .tone-3 { background-color: var(--medium-easy); }
+#article-result .tone-4 { background-color: var(--easy); }
+#article-result .sentence, #article-result .lexical {
+    color: #172b26; border-radius: 0.22em; padding-block: 0.17em;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+#article-result .lexical { padding-inline: 0.05em; }
+#article-result .lexical-underline {
+    background-color: transparent;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-color: var(--lexical-ink);
+    text-decoration-thickness: var(--lexical-weight);
+    text-underline-offset: 0.15em;
+}
+#article-result mark.lexical-underline { padding: 0; }
+#article-result .lexical-underline.tone-0 { --lexical-ink: #8e2d22; --lexical-weight: 0.16em; }
+#article-result .lexical-underline.tone-1 { --lexical-ink: #744608; --lexical-weight: 0.125em; }
+#article-result .lexical-underline.tone-2 { --lexical-ink: #526159; --lexical-weight: 0.09em; }
+#article-result .lexical-underline.tone-3 { --lexical-ink: #3c6550; --lexical-weight: 0.075em; }
+#article-result .lexical-underline.tone-4 { --lexical-ink: #11594a; --lexical-weight: 0.06em; }
+#article-result .sentence::after {
+    content: attr(data-score); display: inline-block; margin-inline: 0.35em 0.18em;
+    padding-inline: 0.29em; border: 1px solid #46675c65; border-radius: 0.27em;
+    background: #ffffffa8; color: #294840; vertical-align: 0.06em; line-height: 1.25;
+    font: 650 0.71em/1.3 ui-monospace, monospace; white-space: nowrap;
+}
+#article-result .selected {
+    text-decoration-line: underline;
+    text-decoration-color: #255a4e;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 0.23em;
+}
+#article-result .layered .sentence.selected { text-decoration: none; }
+#article-result .layered .sentence.selected::after { border-color: #255a4e; background: #f4fffa; }
+#article-result .anchor {
+    color: #1e3048; background: #dce9fb; border-bottom: 2px solid #516d97;
+    border-radius: 0.18em; padding-block: 0.16em;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+#article-result .anchor::after {
+    content: attr(data-rank); margin-inline: 0.36em 0.15em; color: #365777;
+    font: 650 0.72em/1.3 ui-monospace, monospace; white-space: nowrap;
+}
+#article-result .anchor.active { background: #c2d7f5; box-shadow: 0 0 0 2px #516d9780; }
+#article-result .anchor-key { background: #dce9fb; color: #1e3048; }
+#article-result .reference-query, #article-result .reference-query-key {
+    background: #ffebbd; color: #36280d;
+}
+#article-result .reference-query {
+    text-decoration: underline; text-underline-offset: 0.22em; text-decoration-thickness: 2px;
+    -webkit-box-decoration-break: clone; box-decoration-break: clone;
+}
+#article-result .reference-word { border-bottom-width: 1px; }
+</style></head><body><main><h1>CogLLM 全文標色</h1><p>Colab L4 實際 Gradio 回應。滑鼠停在原文上可查看句子或詞彙的分數。</p><section id="article-result" aria-label="閱讀容易度及詞彙難度"><div class="reading-overview layered"><div class="heat-legend" role="group" aria-label="篇內相對色階"><span class="legend-key tone-0">篇內較難 4.24</span><span class="legend-key tone-4">篇內較易 4.59</span><span class="legend-note">句底色 · 模型估計閱讀容易度 · 1–5 分 · 篇內相對色階</span><span class="legend-note">每句估計只使用讀到該句句末的文字。參照全文可見時的英語生醫摘要讀者群體自評。跨領域與其他語言的結果屬實驗性。</span></div><div class="heat-legend" role="group" aria-label="詞彙難度底線"><span class="legend-key tone-4 lexical-underline">詞較易 0.17</span><span class="legend-key tone-0 lexical-underline">詞較難 0.42</span><span class="legend-note">詞底線 · 詞末模型估計 · 0–1，1 最難 · 篇內相對色階 · 全篇標記屬實驗性</span><span class="legend-note">1 個詞未精確對齊。</span></div><div class="source-text" aria-label="已分析原文"><mark class="sentence tone-4 selected" data-score="4.59" data-start="0" data-end="50" data-token="13" title="第 1 句 · 模型估計閱讀容易度 4.59／5"><mark class="lexical tone-3 lexical-underline" data-score="0.25" data-start="0" data-end="3" data-token="0" title="模型估計詞彙難度 0.25／1 · 原文 [0, 3) · 詞末 token 0">The</mark> <mark class="lexical tone-3 lexical-underline" data-score="0.24" data-start="4" data-end="9" data-token="1" title="模型估計詞彙難度 0.24／1 · 原文 [4, 9) · 詞末 token 1">field</mark> <mark class="lexical tone-2 lexical-underline" data-score="0.27" data-start="10" data-end="14" data-token="2" title="模型估計詞彙難度 0.27／1 · 原文 [10, 14) · 詞末 token 2">crew</mark> <mark class="lexical tone-3 lexical-underline" data-score="0.23" data-start="15" data-end="19" data-token="3" title="模型估計詞彙難度 0.23／1 · 原文 [15, 19) · 詞末 token 3">went</mark> <mark class="lexical tone-2 lexical-underline" data-score="0.28" data-start="20" data-end="22" data-token="4" title="模型估計詞彙難度 0.28／1 · 原文 [20, 22) · 詞末 token 4">to</mark> <mark class="lexical tone-2 lexical-underline" data-score="0.31" data-start="23" data-end="24" data-token="5" title="模型估計詞彙難度 0.31／1 · 原文 [23, 24) · 詞末 token 5">a</mark> <mark class="lexical tone-1 lexical-underline" data-score="0.37" data-start="25" data-end="29" data-token="6" title="模型估計詞彙難度 0.37／1 · 原文 [25, 29) · 詞末 token 6">café</mark> <mark class="lexical tone-2 lexical-underline" data-score="0.29" data-start="30" data-end="33" data-token="7" title="模型估計詞彙難度 0.29／1 · 原文 [30, 33) · 詞末 token 7">and</mark> <mark class="lexical tone-1 lexical-underline" data-score="0.36" data-start="34" data-end="40" data-token="9" title="模型估計詞彙難度 0.36／1 · 原文 [34, 40) · 詞末 token 9">phoned</mark> <mark class="lexical tone-0 lexical-underline" data-score="0.42" data-start="41" data-end="45" data-token="11" title="模型估計詞彙難度 0.42／1 · 原文 [41, 45) · 詞末 token 11">Acme</mark> <mark class="lexical tone-0 lexical-underline" data-score="0.41" data-start="46" data-end="49" data-token="12" title="模型估計詞彙難度 0.41／1 · 原文 [46, 49) · 詞末 token 12">Inc</mark>.</mark>&#13;
+&#13;
+<mark class="sentence tone-0" data-score="4.24" data-start="54" data-end="110" data-token="29" title="第 2 句 · 模型估計閱讀容易度 4.24／5"><mark class="lexical tone-4 lexical-underline" data-score="0.17" data-start="54" data-end="59" data-token="15" title="模型估計詞彙難度 0.17／1 · 原文 [54, 59) · 詞末 token 15">Green</mark> <mark class="lexical tone-3 lexical-underline" data-score="0.26" data-start="60" data-end="66" data-token="16" title="模型估計詞彙難度 0.26／1 · 原文 [60, 66) · 詞末 token 16">signal</mark> <mark class="lexical tone-4 lexical-underline" data-score="0.20" data-start="67" data-end="73" data-token="17" title="模型估計詞彙難度 0.20／1 · 原文 [67, 73) · 詞末 token 17">lights</mark> 🎐 <mark class="lexical tone-3 lexical-underline" data-score="0.25" data-start="76" data-end="84" data-token="21" title="模型估計詞彙難度 0.25／1 · 原文 [76, 84) · 詞末 token 21">labelled</mark> &lt;<mark class="lexical tone-2 lexical-underline" data-score="0.29" data-start="86" data-end="92" data-token="23" title="模型估計詞彙難度 0.29／1 · 原文 [86, 92) · 詞末 token 23">active</mark>&gt; &amp; café <mark class="lexical tone-2 lexical-underline" data-score="0.28" data-start="102" data-end="106" data-token="27" title="模型估計詞彙難度 0.28／1 · 原文 [102, 106) · 詞末 token 27">came</mark> <mark class="lexical tone-3 lexical-underline" data-score="0.24" data-start="107" data-end="109" data-token="28" title="模型估計詞彙難度 0.24／1 · 原文 [107, 109) · 詞末 token 28">on</mark>.</mark></div></div></section></main></body></html>

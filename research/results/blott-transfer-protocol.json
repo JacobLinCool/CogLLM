@@ -1,0 +1,37 @@
+{
+  "bootstrap": {
+    "batch": 128,
+    "draws": 10000,
+    "quantiles": [
+      0.025,
+      0.975
+    ],
+    "seed": 43,
+    "weighting": "independent reader and family multinomial weights; equal original family weight"
+  },
+  "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "conditions": [
+    "PlausUA",
+    "PlausAmb",
+    "AnomUA",
+    "AnomAmb"
+  ],
+  "control": "negative Unicode sentence character count, no fitting",
+  "input_sha256": {
+    "design": "20c8c68285fcdb3bbc7ad610264e6caaf154e1e7ea299948ef4452b1c83f0fcf",
+    "human_trials": "9b8a517bc8c12a5189bfb339e67659a42c203da763a9c997c94f445962b7b047",
+    "stimuli": "281fb2fd37ba881ae49390c39a4204187d66a325fd722002c7e9714428c5f1fe"
+  },
+  "length_matched_coherent_pairs": 15,
+  "normalized_effect": "(PlausUA - PlausAmb) / (PlausUA - AnomUA)",
+  "per_trial_probabilities": false,
+  "primary": "understanding_minus_shorter_sentence_within_quartet_rank_agreement",
+  "primary_interval": "paired two-way percentile bootstrap 95% interval",
+  "protocol_sha256": "3a5298a612e0be72d16d01fb2a02d90501543e0d9ad5629e1ab0d2a71e494cac",
+  "ranking_pairs_per_family": 6,
+  "readout": "expected ordinal score from complete sentence (grades one to five)",
+  "scope": "Cross-study diagnostic of sentence reading scores against behavioral coherence judgments",
+  "scorer_sha256": "1f6d6f14e1f8d3fd9bfb705c2a44d14f4a15d6c79a6b87033288c68e2af95aad",
+  "secondary_readout": "ease",
+  "tie_credit": 0.5
+}

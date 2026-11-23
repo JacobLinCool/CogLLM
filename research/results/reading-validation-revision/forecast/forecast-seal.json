@@ -1,0 +1,213 @@
+{
+  "data_sha256": "0d8a2c8667268b2c8be089e01998dedf94f8cf11ceb771a66470537a11eeed69",
+  "source_sha256": "e34576fba61ee9320ffd97c87be50831f3791df14f7071291d6904223639030e",
+  "feature_code_sha256": "5d37f1d767c897f5fb9959e2fe04fba86f125e51da7880aa6db01dde255e9c62",
+  "training_design_sha256": "d94c77de3e1ab20b3b2a3f9fd5010a27665d05faac243fd3037de9c2e0827fc0",
+  "extraction": "859eb99e1fa82af47e19913d84adacfb27b01f742cc18733de96888e3dbe7a25",
+  "models": {
+    "edit": [
+      "edit"
+    ],
+    "aligned": [
+      "edit",
+      "neural"
+    ],
+    "full": [
+      "edit",
+      "neural",
+      "directions"
+    ],
+    "independent_full": [
+      "edit",
+      "neural",
+      "directions"
+    ]
+  },
+  "mixing": [
+    1.0,
+    0.8847015070358901,
+    1.0,
+    1.0
+  ],
+  "anchored": {
+    "simplicity": {
+      "coef": [
+        0.9830560337558183,
+        0.0823947489636456
+      ],
+      "center": [
+        -0.006596189309554062,
+        0.0926868057612397
+      ],
+      "scale": [
+        0.9866170873549497,
+        0.2825767336609423
+      ],
+      "gradient": 5.855095218344417e-10,
+      "iterations": 7
+    },
+    "meaning": {
+      "coef": [
+        1.0134637628479446,
+        0.057131267555127596
+      ],
+      "center": [
+        0.0029731356489316714,
+        0.8337275561908808
+      ],
+      "scale": [
+        1.025427964840285,
+        0.15007296597849112
+      ],
+      "gradient": 1.441573451322481e-10,
+      "iterations": 9
+    }
+  },
+  "sharing_protocol_sha256": "16f739dc87617ada9fe90b6f0bf94cfb9180cba1b95dd5f433e673f98fd5b132",
+  "prior_protocol_sha256": "3b30f8e73434fea4afcbc0ff04215b192acaffa8f25f726389be973f729c98b2",
+  "aspects": [
+    "simplicity",
+    "meaning",
+    "fluency",
+    "overall"
+  ],
+  "train_cases": 4196,
+  "source_families": 359,
+  "target_cases": 360,
+  "train_observations": 30780,
+  "convergence": {
+    "edit": [
+      {
+        "fold": 0,
+        "gradient": 2.526064591350532e-07,
+        "iterations": 52
+      },
+      {
+        "fold": 1,
+        "gradient": 2.4174812058502365e-07,
+        "iterations": 57
+      },
+      {
+        "fold": 2,
+        "gradient": 2.99999480532319e-07,
+        "iterations": 50
+      },
+      {
+        "fold": 3,
+        "gradient": 1.8398294149464534e-07,
+        "iterations": 62
+      },
+      {
+        "fold": 4,
+        "gradient": 2.928316567822227e-07,
+        "iterations": 56
+      },
+      {
+        "fold": "full",
+        "gradient": 1.8986382486368449e-07,
+        "iterations": 52
+      }
+    ],
+    "aligned": [
+      {
+        "fold": 0,
+        "gradient": 2.974865077250979e-07,
+        "iterations": 80
+      },
+      {
+        "fold": 1,
+        "gradient": 2.9667705339780255e-07,
+        "iterations": 88
+      },
+      {
+        "fold": 2,
+        "gradient": 2.8658881241305605e-07,
+        "iterations": 81
+      },
+      {
+        "fold": 3,
+        "gradient": 2.629414110790748e-07,
+        "iterations": 93
+      },
+      {
+        "fold": 4,
+        "gradient": 2.676450246858202e-07,
+        "iterations": 93
+      },
+      {
+        "fold": "full",
+        "gradient": 2.7772757376550166e-07,
+        "iterations": 92
+      }
+    ],
+    "full": [
+      {
+        "fold": 0,
+        "gradient": 2.9597335809847364e-07,
+        "iterations": 95
+      },
+      {
+        "fold": 1,
+        "gradient": 2.337909569073849e-07,
+        "iterations": 85
+      },
+      {
+        "fold": 2,
+        "gradient": 2.725424174806635e-07,
+        "iterations": 98
+      },
+      {
+        "fold": 3,
+        "gradient": 2.8442586775032476e-07,
+        "iterations": 94
+      },
+      {
+        "fold": 4,
+        "gradient": 2.9481006377380176e-07,
+        "iterations": 96
+      },
+      {
+        "fold": "full",
+        "gradient": 2.521343925286911e-07,
+        "iterations": 94
+      }
+    ],
+    "independent_full": [
+      {
+        "fold": 0,
+        "gradient": 2.0953539812241348e-07,
+        "iterations": 101
+      },
+      {
+        "fold": 1,
+        "gradient": 2.556105387843682e-07,
+        "iterations": 98
+      },
+      {
+        "fold": 2,
+        "gradient": 2.60433740309013e-07,
+        "iterations": 99
+      },
+      {
+        "fold": 3,
+        "gradient": 2.4307836117460696e-07,
+        "iterations": 96
+      },
+      {
+        "fold": 4,
+        "gradient": 2.6301270871860984e-07,
+        "iterations": 90
+      },
+      {
+        "fold": "full",
+        "gradient": 2.380390485464585e-07,
+        "iterations": 97
+      }
+    ]
+  },
+  "files_sha256": {
+    "forecasts.jsonl": "b2645081d7d4fd59084f2c377b8b650a59b32aaf3d5097c8516fdef64442c841",
+    "coefficients.npz": "ea90a55ce29d9a33071210dd8e811d1614efb9ff8f3a873135a92d55a809173a",
+    "development.npz": "1a76e4b5d7e9532a97d1cf337fd32296b0cd45fee20e4eade4ca27a9dab68421"
+  }
+}

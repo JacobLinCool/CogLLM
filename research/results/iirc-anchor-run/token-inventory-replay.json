@@ -1,0 +1,37 @@
+{
+  "status": "same-production-tokenizer-count-as-sealed-L4",
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "tokenizer_files_sha256": {
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4"
+  },
+  "local_preflight_native": {
+    "stimuli_sha256": "d996ec318009b905497d393cea1d75af5c54b75a5f406f5732f20e8f1995f96b",
+    "texts": 5184,
+    "stops": 5184,
+    "tokens": 1464003,
+    "max_tokens": 2027,
+    "excluded_stops": []
+  },
+  "production_replay_inventory": {
+    "stimuli_sha256": "d996ec318009b905497d393cea1d75af5c54b75a5f406f5732f20e8f1995f96b",
+    "texts": 5184,
+    "stops": 5184,
+    "tokens": 1464005,
+    "max_tokens": 2027,
+    "excluded_stops": []
+  },
+  "changed_paragraphs": [
+    {
+      "paragraph_id": "p_4172",
+      "native_tokens": 275,
+      "transformers_tokens": 277
+    }
+  ],
+  "count_note": "The earlier local inventory used tokenizers.Tokenizer.from_file directly. The sealed extraction and this replay use the pinned Transformers AutoTokenizer, yielding two extra tokens in p_4172 while all final stops remain certified.",
+  "sealed_remote_extraction_sha256": "70797fb253c379b321b863af93aa1fa761060ae20415df3eadc5cababa68819f",
+  "sealed_manifest_input_sha256": "d996ec318009b905497d393cea1d75af5c54b75a5f406f5732f20e8f1995f96b"
+}

@@ -1,0 +1,501 @@
+{
+  "protocol_sha256": "51f01015d5738cc63ee7dca413afc4934f7b4f97fdc3e54437ca37bf21ca7447",
+  "parent_protocol_sha256": "a068fdb0ae30a28678155a8da429ea79a9ca41835f70a931d223842252d86d43",
+  "candidate": "qwen",
+  "feature_width": 128,
+  "feature_sha256": "9e9bf653f819646bfb89df29cd58da439b53d638c386f79d48c9e4fdc8c77a6d",
+  "readout_sha256": "f1ea346a64a57541c2378ef8b42885fd4bc93ebfb05cecd1540d63bb84eef7f8",
+  "forecasts_sha256": "4d1107972b56b6f18384ed9e9011a142bdf3380c8eb62590a3ae313c113f987c",
+  "fits": {
+    "segment_unique": {
+      "iterations": 8,
+      "objective": 0.05448824470033704,
+      "gradient": 2.4786276663744272e-11,
+      "history": [
+        [
+          0.6931471805599461,
+          0.47897178989398675
+        ],
+        [
+          0.16439811415706537,
+          0.11031290936259108
+        ],
+        [
+          0.0871722844881744,
+          0.03759890968508608
+        ],
+        [
+          0.06297933132800397,
+          0.012999119793161103
+        ],
+        [
+          0.05593245647548226,
+          0.004037686152510471
+        ],
+        [
+          0.05457821381930301,
+          0.0008755017539313929
+        ],
+        [
+          0.05448882154472,
+          6.87318436193729e-05
+        ],
+        [
+          0.054488244729049465,
+          4.894117025685618e-07
+        ],
+        [
+          0.05448824470033704,
+          2.4786276663744272e-11
+        ]
+      ],
+      "cutoff": 0.04571666392482293,
+      "source_words": 43103,
+      "latent_source_segments": 0
+    },
+    "word_identified": {
+      "iterations": 8,
+      "objective": 0.056511226184851056,
+      "gradient": 1.668148616202486e-11,
+      "history": [
+        [
+          0.6931471805599453,
+          0.47758335368802274
+        ],
+        [
+          0.16622639663001368,
+          0.1098884725638548
+        ],
+        [
+          0.08908780228804927,
+          0.03749619601180005
+        ],
+        [
+          0.0649154935047406,
+          0.012961004600566506
+        ],
+        [
+          0.057912863813610015,
+          0.004009016064924174
+        ],
+        [
+          0.05659461182104841,
+          0.000853962887432588
+        ],
+        [
+          0.056511708713299615,
+          6.387439045537064e-05
+        ],
+        [
+          0.05651122620422524,
+          4.0876418838991077e-07
+        ],
+        [
+          0.056511226184851056,
+          1.668148616202486e-11
+        ]
+      ],
+      "cutoff": 0.04827308755688139,
+      "source_words": 50862,
+      "latent_source_segments": 0
+    },
+    "set_marginal": {
+      "iterations": 6,
+      "objective": 0.059263930478140374,
+      "gradient": 3.1201769997652107e-09,
+      "history": [
+        [
+          0.059454916210582166,
+          0.0041540660866844666
+        ],
+        [
+          0.059264285463933135,
+          0.00019681909001393154
+        ],
+        [
+          0.05926393274463436,
+          8.68928370053945e-06
+        ],
+        [
+          0.059263930519467344,
+          1.1888760790918208e-06
+        ],
+        [
+          0.05926393047892192,
+          1.6392262904329107e-07
+        ],
+        [
+          0.059263930478154946,
+          2.261763731311582e-08
+        ],
+        [
+          0.059263930478140374,
+          3.1201769997652107e-09
+        ]
+      ],
+      "cutoff": 0.051931406674821386,
+      "source_words": 51309,
+      "latent_source_segments": 134
+    }
+  },
+  "initialization_check": {
+    "maximum_external_logit_difference": 2.3688843682792816e-07,
+    "objective_difference": -6.245004513516506e-17,
+    "refit_gradient": 2.6885610842038637e-09
+  },
+  "movie_scores": {
+    "segment_unique": {
+      "all_observable_set_nll": {
+        "estimate": 0.03840867642262309,
+        "family_bootstrap_95_interval": [
+          0.03168457665314816,
+          0.0464530866248194
+        ]
+      },
+      "identified_word_nll": {
+        "estimate": 0.03495639766219467,
+        "family_bootstrap_95_interval": [
+          0.0285651771456952,
+          0.04284470713663199
+        ]
+      },
+      "ambiguous_observable_set_nll": {
+        "estimate": 0.05016550102528927,
+        "family_bootstrap_95_interval": [
+          0.0411748247874765,
+          0.06026023819582412
+        ]
+      },
+      "unique_word_ap": {
+        "estimate": 0.8005640855414928,
+        "family_bootstrap_95_interval": [
+          0.745495997745271,
+          0.8534191016899824
+        ]
+      },
+      "threshold_performance_on_all_words": {
+        "precision": [
+          {
+            "estimate": 0.340365682137834,
+            "numerator": 484,
+            "denominator": 1422
+          },
+          {
+            "estimate": 0.4085794655414909,
+            "numerator": 581,
+            "denominator": 1422
+          }
+        ],
+        "recall": [
+          {
+            "estimate": 0.7682539682539683,
+            "numerator": 484,
+            "denominator": 630
+          },
+          {
+            "estimate": 0.9193037974683544,
+            "numerator": 581,
+            "denominator": 632
+          }
+        ],
+        "f1": [
+          {
+            "estimate": 0.47173489278752434,
+            "numerator": 968,
+            "denominator": 2052
+          },
+          {
+            "estimate": 0.5657254138266796,
+            "numerator": 1162,
+            "denominator": 2054
+          }
+        ],
+        "false_alert_fraction": [
+          {
+            "estimate": 0.032615861935233664,
+            "numerator": 841,
+            "denominator": 25785
+          },
+          {
+            "estimate": 0.03637491759413658,
+            "numerator": 938,
+            "denominator": 25787
+          }
+        ]
+      }
+    },
+    "word_identified": {
+      "all_observable_set_nll": {
+        "estimate": 0.037311563544887384,
+        "family_bootstrap_95_interval": [
+          0.03067463528961128,
+          0.04525242822150649
+        ]
+      },
+      "identified_word_nll": {
+        "estimate": 0.034053621046035425,
+        "family_bootstrap_95_interval": [
+          0.027711759996552218,
+          0.041821500322206565
+        ]
+      },
+      "ambiguous_observable_set_nll": {
+        "estimate": 0.0481645429992011,
+        "family_bootstrap_95_interval": [
+          0.039662047632062,
+          0.05768715209106242
+        ]
+      },
+      "unique_word_ap": {
+        "estimate": 0.8108654956829708,
+        "family_bootstrap_95_interval": [
+          0.7546730478677904,
+          0.8651465253629292
+        ]
+      },
+      "threshold_performance_on_all_words": {
+        "precision": [
+          {
+            "estimate": 0.3511560693641618,
+            "numerator": 486,
+            "denominator": 1384
+          },
+          {
+            "estimate": 0.4190751445086705,
+            "numerator": 580,
+            "denominator": 1384
+          }
+        ],
+        "recall": [
+          {
+            "estimate": 0.7714285714285715,
+            "numerator": 486,
+            "denominator": 630
+          },
+          {
+            "estimate": 0.9177215189873418,
+            "numerator": 580,
+            "denominator": 632
+          }
+        ],
+        "f1": [
+          {
+            "estimate": 0.4826216484607746,
+            "numerator": 972,
+            "denominator": 2014
+          },
+          {
+            "estimate": 0.5753968253968254,
+            "numerator": 1160,
+            "denominator": 2016
+          }
+        ],
+        "false_alert_fraction": [
+          {
+            "estimate": 0.031180919139034324,
+            "numerator": 804,
+            "denominator": 25785
+          },
+          {
+            "estimate": 0.03482374840035677,
+            "numerator": 898,
+            "denominator": 25787
+          }
+        ]
+      }
+    },
+    "set_marginal": {
+      "all_observable_set_nll": {
+        "estimate": 0.03605013666051103,
+        "family_bootstrap_95_interval": [
+          0.029545214505987776,
+          0.043898237284884484
+        ]
+      },
+      "identified_word_nll": {
+        "estimate": 0.033234591952321056,
+        "family_bootstrap_95_interval": [
+          0.02693281991155839,
+          0.040964309959236014
+        ]
+      },
+      "ambiguous_observable_set_nll": {
+        "estimate": 0.045073499721031966,
+        "family_bootstrap_95_interval": [
+          0.037073179834434006,
+          0.05399793348073217
+        ]
+      },
+      "unique_word_ap": {
+        "estimate": 0.8161842254431023,
+        "family_bootstrap_95_interval": [
+          0.7602231557973059,
+          0.869805334835846
+        ]
+      },
+      "threshold_performance_on_all_words": {
+        "precision": [
+          {
+            "estimate": 0.3545586107091172,
+            "numerator": 490,
+            "denominator": 1382
+          },
+          {
+            "estimate": 0.4196816208393632,
+            "numerator": 580,
+            "denominator": 1382
+          }
+        ],
+        "recall": [
+          {
+            "estimate": 0.7777777777777778,
+            "numerator": 490,
+            "denominator": 630
+          },
+          {
+            "estimate": 0.9177215189873418,
+            "numerator": 580,
+            "denominator": 632
+          }
+        ],
+        "f1": [
+          {
+            "estimate": 0.4870775347912525,
+            "numerator": 980,
+            "denominator": 2012
+          },
+          {
+            "estimate": 0.5759682224428997,
+            "numerator": 1160,
+            "denominator": 2014
+          }
+        ],
+        "false_alert_fraction": [
+          {
+            "estimate": 0.03110335466356409,
+            "numerator": 802,
+            "denominator": 25785
+          },
+          {
+            "estimate": 0.034591073021289796,
+            "numerator": 892,
+            "denominator": 25787
+          }
+        ]
+      }
+    }
+  },
+  "paired_movie_differences": {
+    "set_marginal_minus_segment_unique": {
+      "all_observable_set_nll": {
+        "estimate": -0.0023585397621120607,
+        "family_bootstrap_95_interval": [
+          -0.0029354983755144975,
+          -0.0018225586730351098
+        ],
+        "movies_improved": 37,
+        "evaluable_movies": 39
+      },
+      "identified_word_nll": {
+        "estimate": -0.0017218057098736111,
+        "family_bootstrap_95_interval": [
+          -0.002228025328219072,
+          -0.001230137215725544
+        ],
+        "movies_improved": 36,
+        "evaluable_movies": 39
+      },
+      "ambiguous_observable_set_nll": {
+        "estimate": -0.005092001304257306,
+        "family_bootstrap_95_interval": [
+          -0.0066073315108771714,
+          -0.0037169615690979085
+        ],
+        "movies_improved": 36,
+        "evaluable_movies": 37
+      },
+      "unique_word_ap": {
+        "estimate": 0.015620139901609487,
+        "family_bootstrap_95_interval": [
+          0.008900029379396712,
+          0.023012454107150575
+        ]
+      }
+    },
+    "set_marginal_minus_word_identified": {
+      "all_observable_set_nll": {
+        "estimate": -0.001261426884376353,
+        "family_bootstrap_95_interval": [
+          -0.0015583702061013813,
+          -0.0009873217927389146
+        ],
+        "movies_improved": 38,
+        "evaluable_movies": 39
+      },
+      "identified_word_nll": {
+        "estimate": -0.0008190290937143685,
+        "family_bootstrap_95_interval": [
+          -0.0010728757382270613,
+          -0.000574143110713371
+        ],
+        "movies_improved": 35,
+        "evaluable_movies": 39
+      },
+      "ambiguous_observable_set_nll": {
+        "estimate": -0.003091043278169135,
+        "family_bootstrap_95_interval": [
+          -0.003984305706725264,
+          -0.0022039231615714333
+        ],
+        "movies_improved": 34,
+        "evaluable_movies": 37
+      },
+      "unique_word_ap": {
+        "estimate": 0.00531872976013148,
+        "family_bootstrap_95_interval": [
+          0.002618004021069012,
+          0.008227891082831756
+        ]
+      }
+    },
+    "word_identified_minus_segment_unique": {
+      "all_observable_set_nll": {
+        "estimate": -0.0010971128777357078,
+        "family_bootstrap_95_interval": [
+          -0.0014405233571758837,
+          -0.0007669086620349702
+        ],
+        "movies_improved": 36,
+        "evaluable_movies": 39
+      },
+      "identified_word_nll": {
+        "estimate": -0.0009027766161592427,
+        "family_bootstrap_95_interval": [
+          -0.0012225820184366394,
+          -0.00060081061152167
+        ],
+        "movies_improved": 34,
+        "evaluable_movies": 39
+      },
+      "ambiguous_observable_set_nll": {
+        "estimate": -0.0020009580260881704,
+        "family_bootstrap_95_interval": [
+          -0.002847280886989177,
+          -0.0012405265223229813
+        ],
+        "movies_improved": 32,
+        "evaluable_movies": 37
+      },
+      "unique_word_ap": {
+        "estimate": 0.010301410141478007,
+        "family_bootstrap_95_interval": [
+          0.004587742303696135,
+          0.01669349316495971
+        ]
+      }
+    }
+  },
+  "source_training_titles": 44,
+  "movie_titles": 39,
+  "reader_words": 26417
+}

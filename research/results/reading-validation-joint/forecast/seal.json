@@ -1,0 +1,205 @@
+{
+  "inputs": {
+    "exclusions": {},
+    "source_receipt_sha256": "f68234172a774cf419bdeadf4723937ec190b91bea3951a3794dedb7e13955eb",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  },
+  "extraction_sha256": "008282c7e0f6603fab452246089a167c47171775c309fe090bf5063102d1d50b",
+  "workbook_sha256": {
+    "test": "e9ee0973c754db547f12ab257d4ac2fbf15be3a81e4187454c91bda6a405a557",
+    "val": "98a8fd08ad54788c60b43137fd33896a833b5b3013fbb7543f42b651c1d536a1",
+    "train": "994f420cbf48539b28f1e12841e144e4385893f1b415c2ffb82fefbfe2274d34"
+  },
+  "material_manifest_sha256": "e40698e06c960c7d5d88364f90eb20352fba358543abb55f6eedcb415e066d10",
+  "protocol_and_code": {
+    "joint-protocol.md": "ebc1f2a778715f08b8d0735805c94d1ec01087f2a46059cd582f90c5c473726f",
+    "external_input.py": "ed5bb089d18c293df0889fe9414d8f5af5b3f4cb196227e6afeddfee5707a365",
+    "external_forecast.py": "83c8732ca359e1b8d499ab5199d30ae864837dd798258c0299b311b0ddcb16f1",
+    "joint_data.py": "8272a432aeb4218fd8ed974c53f40830d278b1d23b1a034ff03f6470a65b57d7",
+    "joint_fit.py": "c213f610353621185054f252b709912ca88a59df4e7ee0f03c23582f3a891a02",
+    "joint_forecast.py": "62c310078c2081a92d93ac407f7398685a1f6437ce0622a74bd05144cfcbe794"
+  },
+  "external_overlap_removals": {
+    "train": 1
+  },
+  "n_heldout": 296,
+  "diagnostics": {
+    "surface.plaba": {
+      "mixture_weight": 0.46374555414202207,
+      "development": {
+        "independent": 0.12643106823839073,
+        "pooled": 0.1265983558680755,
+        "adaptive": 0.1259348964368117
+      },
+      "train_rows": 476,
+      "validation_rows": 133,
+      "train_groups": 20,
+      "validation_groups": 5
+    },
+    "surface.clear": {
+      "mixture_weight": 0.6298595570390922,
+      "development": {
+        "independent": 0.4112601366827177,
+        "pooled": 0.4007182944363564,
+        "adaptive": 0.395157386811359
+      },
+      "train_rows": 806,
+      "validation_rows": 204,
+      "train_groups": 801,
+      "validation_groups": 200
+    },
+    "surface.students": {
+      "mixture_weight": 0.21576571871160918,
+      "development": {
+        "independent": 0.12608101245127756,
+        "pooled": 0.1296648156977754,
+        "adaptive": 0.12578751617555564
+      },
+      "train_rows": 914,
+      "validation_rows": 229,
+      "train_groups": 908,
+      "validation_groups": 226
+    },
+    "surface.readme": {
+      "mixture_weight": 0.0,
+      "development": {
+        "independent": 0.08003038590518392,
+        "pooled": 0.08931953157703786,
+        "adaptive": 0.08003038590518392
+      },
+      "train_rows": 2242,
+      "validation_rows": 283,
+      "train_groups": 20,
+      "validation_groups": 20
+    },
+    "qwen.plaba": {
+      "mixture_weight": 0.26314615109681283,
+      "development": {
+        "independent": 0.12551302122674185,
+        "pooled": 0.13024789834451272,
+        "adaptive": 0.1248208838307239
+      },
+      "train_rows": 476,
+      "validation_rows": 133,
+      "train_groups": 20,
+      "validation_groups": 5
+    },
+    "qwen.clear": {
+      "mixture_weight": 0.5274798890297642,
+      "development": {
+        "independent": 0.3483429297842173,
+        "pooled": 0.34484641336913185,
+        "adaptive": 0.3306417418311025
+      },
+      "train_rows": 806,
+      "validation_rows": 204,
+      "train_groups": 801,
+      "validation_groups": 200
+    },
+    "qwen.students": {
+      "mixture_weight": 0.598953485560658,
+      "development": {
+        "independent": 0.1235501816572433,
+        "pooled": 0.12253969314136617,
+        "adaptive": 0.12171847264086019
+      },
+      "train_rows": 914,
+      "validation_rows": 229,
+      "train_groups": 908,
+      "validation_groups": 226
+    },
+    "qwen.readme": {
+      "mixture_weight": 0.0,
+      "development": {
+        "independent": 0.06563035378938938,
+        "pooled": 0.07853095575909534,
+        "adaptive": 0.06563035378938938
+      },
+      "train_rows": 2242,
+      "validation_rows": 283,
+      "train_groups": 20,
+      "validation_groups": 20
+    }
+  },
+  "convergence": {
+    "zero.surface": {
+      "iterations": 99,
+      "objective": 0.36297141667737387,
+      "gradient_inf": 7.560957592661621e-09,
+      "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    "zero.qwen": {
+      "iterations": 215,
+      "objective": 0.3131960060691999,
+      "gradient_inf": 2.1131551341223298e-08,
+      "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    "pooled.surface": {
+      "iterations": 153,
+      "objective": 0.3493690531386156,
+      "gradient_inf": 1.543869666831288e-08,
+      "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    "independent.surface.plaba": {
+      "iterations": 33,
+      "objective": 0.44930587499024827,
+      "gradient_inf": 4.155283656859222e-09,
+      "solver": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    },
+    "independent.surface.clear": {
+      "iterations": 78,
+      "objective": 0.19318960864088344,
+      "gradient_inf": 1.1190653334981066e-08,
+      "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    "independent.surface.students": {
+      "iterations": 59,
+      "objective": 0.3997448786555955,
+      "gradient_inf": 4.553538794291323e-09,
+      "solver": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    },
+    "independent.surface.readme": {
+      "iterations": 48,
+      "objective": 0.26688744962593114,
+      "gradient_inf": 2.9035632726826834e-09,
+      "solver": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    },
+    "pooled.qwen": {
+      "iterations": 295,
+      "objective": 0.303951908970695,
+      "gradient_inf": 3.8119078619742314e-08,
+      "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    "independent.qwen.plaba": {
+      "iterations": 96,
+      "objective": 0.3846441369620208,
+      "gradient_inf": 3.1658263371925344e-09,
+      "solver": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    },
+    "independent.qwen.clear": {
+      "iterations": 196,
+      "objective": 0.110409934955645,
+      "gradient_inf": 1.9081852738753527e-08,
+      "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+    },
+    "independent.qwen.students": {
+      "iterations": 119,
+      "objective": 0.3873524919078429,
+      "gradient_inf": 4.8106424930009165e-09,
+      "solver": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    },
+    "independent.qwen.readme": {
+      "iterations": 111,
+      "objective": 0.21484383300082666,
+      "gradient_inf": 4.760268118108928e-09,
+      "solver": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL"
+    }
+  },
+  "existing_curve_sha256": "c1704d4436d767fa43bdb59e9216698514e1f6bd1d45cad4b60d0f018d84abb5",
+  "wall_seconds": 2.938883082999382,
+  "files": {
+    "forecasts.npz": "ae375d413804f33fd7e4301bdadff0702df687c8487e54d454d6217c55e143a3",
+    "heldout.json": "fd8ec960d1e813ca1951aaf9f41cada713e3e7a5a68dca5558a50026a426e9a3",
+    "models.npz": "c9e329c43c21e1deb3eaccd74e59ea00985d790781a4e5bf1eadbd4b9a042d16"
+  }
+}

@@ -1,0 +1,1798 @@
+{
+  "protocol_sha256": "ef8809e8c5391c0feefce61d8cd2f5a2cace788cb6fbb040a7eb56fb4469e678",
+  "receipt": {
+    "arms": [
+      "surface",
+      "steps",
+      "attention",
+      "semantic"
+    ],
+    "encoder_forwards": 2056,
+    "external_supervision": 0,
+    "fits": {
+      "attention": {
+        "coefficients": 196,
+        "evaluations": 160,
+        "gradient": 2.081328093333232e-07,
+        "initial_objective": 0.6931471805599452,
+        "objective": 0.6094596593172812,
+        "same_pair_reversal_terms": 659
+      },
+      "semantic": {
+        "coefficients": 8388,
+        "evaluations": 71,
+        "gradient": 1.6190840872220072e-08,
+        "initial_objective": 0.6931471805599452,
+        "objective": 0.279679302613272,
+        "same_pair_reversal_terms": 659
+      },
+      "steps": {
+        "coefficients": 92,
+        "evaluations": 74,
+        "gradient": 6.135037907290799e-08,
+        "initial_objective": 0.6931471805599452,
+        "objective": 0.6893621630356042,
+        "same_pair_reversal_terms": 659
+      },
+      "surface": {
+        "coefficients": 46,
+        "evaluations": 47,
+        "gradient": 1.985725085839351e-08,
+        "initial_objective": 0.6931471805599452,
+        "objective": 0.6924106752211746,
+        "same_pair_reversal_terms": 659
+      }
+    },
+    "forecast_sha256": "dd14232c7945f6dd825afae6a460155325694ecebbb3a8b68e4a5c0bf222f2ca",
+    "input_sha256": "8efcfbb0884c36adf240503b9bd05fa27d1b236dcaaa67791d183f788a095ccc",
+    "protocol_sha256": "ef8809e8c5391c0feefce61d8cd2f5a2cace788cb6fbb040a7eb56fb4469e678",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "seconds": 139.202660768,
+    "source_training_families": 659,
+    "source_training_sentences": 1318,
+    "weights_sha256": "ddda847cbaf7e0280ff74fbe13a7632d83f0f3dc26dda6a9ee74561403d9284f"
+  },
+  "jones_frozen_baseline_sha256": "d3426444d8ffa32fc8c8ba97668565713aeb40a6591fb561dc08b4e892540fb8",
+  "max_same_prefix_posterior_difference": 1.8716800439522174e-06,
+  "official_families": 279,
+  "audit": {
+    "same_prefix_pairs": 195
+  },
+  "predivergence_logodds_tie_sensitivity": 0.0001,
+  "max_predivergence_probability_difference": {
+    "surface": 0.0,
+    "steps": 0.0,
+    "attention": 3.189836105921273e-06,
+    "semantic": 3.34249797168118e-06
+  },
+  "max_predivergence_score_difference": {
+    "surface": 0.0,
+    "steps": 0.0,
+    "attention": 1.4349818229675293e-05,
+    "semantic": 1.3560056686401367e-05
+  },
+  "endpoints": {
+    "official_all/both_terminal_choices": {
+      "pairs": 279,
+      "arms": {
+        "surface": [
+          0.007168458781362007,
+          0.0,
+          0.017921146953405017
+        ],
+        "steps": [
+          0.04659498207885305,
+          0.025089605734767026,
+          0.07168458781362007
+        ],
+        "attention": [
+          0.34408602150537637,
+          0.2903225806451613,
+          0.4014336917562724
+        ],
+        "semantic": [
+          0.3906810035842294,
+          0.3333333333333333,
+          0.44802867383512546
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.3835125448028674,
+          0.3261648745519713,
+          0.44086021505376344
+        ],
+        "semantic_minus_steps": [
+          0.34408602150537637,
+          0.2795698924731183,
+          0.4050179211469534
+        ],
+        "semantic_minus_attention": [
+          0.04659498207885304,
+          -0.021505376344086002,
+          0.1111111111111111
+        ]
+      }
+    },
+    "official_all/individual_terminal_accuracy": {
+      "pairs": 279,
+      "arms": {
+        "surface": [
+          0.5017921146953405,
+          0.496415770609319,
+          0.5089605734767025
+        ],
+        "steps": [
+          0.5053763440860215,
+          0.489247311827957,
+          0.521505376344086
+        ],
+        "attention": [
+          0.6272401433691757,
+          0.5913978494623656,
+          0.6630824372759857
+        ],
+        "semantic": [
+          0.6487455197132617,
+          0.6129032258064516,
+          0.6863799283154122
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.1469534050179212,
+          0.1093189964157707,
+          0.1845878136200717
+        ],
+        "semantic_minus_steps": [
+          0.14336917562724016,
+          0.10389784946236554,
+          0.18279569892473124
+        ],
+        "semantic_minus_attention": [
+          0.021505376344086002,
+          -0.01796594982078857,
+          0.06093189964157708
+        ]
+      }
+    },
+    "official_all/terminal_logloss": {
+      "pairs": 279,
+      "arms": {
+        "surface": [
+          0.6942972361533355,
+          0.6934830106986108,
+          0.6954542830255847
+        ],
+        "steps": [
+          0.6952017072055596,
+          0.6928981124712529,
+          0.6977842282813203
+        ],
+        "attention": [
+          0.6723506466381124,
+          0.6452846572832668,
+          0.6998839536688396
+        ],
+        "semantic": [
+          0.6405766735467472,
+          0.6010825832497617,
+          0.6812725179231948
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          -0.05372056260658831,
+          -0.09290321359500724,
+          -0.012978974342560502
+        ],
+        "semantic_minus_steps": [
+          -0.05462503365881244,
+          -0.09389205218891886,
+          -0.014069778964957116
+        ],
+        "semantic_minus_attention": [
+          -0.031773973091365204,
+          -0.06236926334079561,
+          0.00042112167990317266
+        ]
+      }
+    },
+    "official_all/all_prior_word_top1": {
+      "pairs": 279,
+      "arms": {
+        "surface": [
+          0.23297491039426524,
+          0.2025089605734767,
+          0.26344086021505375
+        ],
+        "steps": [
+          0.17204301075268819,
+          0.14516129032258066,
+          0.2007168458781362
+        ],
+        "attention": [
+          0.10931899641577061,
+          0.08422939068100359,
+          0.13440860215053763
+        ],
+        "semantic": [
+          0.2114695340501792,
+          0.17562724014336917,
+          0.24731182795698925
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          -0.02150537634408603,
+          -0.05913978494623659,
+          0.016173835125448205
+        ],
+        "semantic_minus_steps": [
+          0.03942652329749102,
+          -0.0017921146953405187,
+          0.08422939068100357
+        ],
+        "semantic_minus_attention": [
+          0.1021505376344086,
+          0.06810035842293907,
+          0.13620071684587814
+        ]
+      }
+    },
+    "official_all/signed_terminal_score": {
+      "pairs": 279,
+      "arms": {
+        "surface": [
+          -0.0010630426084981025,
+          -0.0031589481343149133,
+          0.00037963556452891354
+        ],
+        "steps": [
+          0.00046265565633346454,
+          -0.004311359733000415,
+          0.004965181887091952
+        ],
+        "attention": [
+          0.19419721079885133,
+          0.14097486082744404,
+          0.2493976292302116
+        ],
+        "semantic": [
+          0.46460613515299676,
+          0.3726846513647809,
+          0.5579237293460224
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.46566917776149486,
+          0.3732419086011244,
+          0.5582587161305487
+        ],
+        "semantic_minus_steps": [
+          0.4641434794966633,
+          0.37264619559797696,
+          0.5568392378837435
+        ],
+        "semantic_minus_attention": [
+          0.27040892435414543,
+          0.19804648908772948,
+          0.34081661651929157
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/both_terminal_choices": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.041025641025641026,
+          0.015384615384615385,
+          0.07179487179487179
+        ],
+        "attention": [
+          0.3641025641025641,
+          0.29743589743589743,
+          0.4358974358974359
+        ],
+        "semantic": [
+          0.4153846153846154,
+          0.3487179487179487,
+          0.48205128205128206
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.4153846153846154,
+          0.3487179487179487,
+          0.48205128205128206
+        ],
+        "semantic_minus_steps": [
+          0.37435897435897436,
+          0.2974358974358975,
+          0.4461538461538461
+        ],
+        "semantic_minus_attention": [
+          0.05128205128205132,
+          -0.02564102564102566,
+          0.1333333333333333
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/terminal_logloss": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.6936120127450174,
+          0.6934633654139879,
+          0.6937867258749452
+        ],
+        "steps": [
+          0.6941626686464057,
+          0.6919915136756047,
+          0.696295381627283
+        ],
+        "attention": [
+          0.6506027988033158,
+          0.6213778040941467,
+          0.6807766488479793
+        ],
+        "semantic": [
+          0.6157375245844986,
+          0.571007441769863,
+          0.6628255413769203
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          -0.07787448816051878,
+          -0.12261818708312536,
+          -0.030808382802717037
+        ],
+        "semantic_minus_steps": [
+          -0.07842514406190715,
+          -0.12264162737360393,
+          -0.03204872879174229
+        ],
+        "semantic_minus_attention": [
+          -0.034865274218817244,
+          -0.0700699081891349,
+          4.4092857325614496e-07
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/pronoun_signed_preference": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          -4.504158551552845e-08,
+          -1.77226054211268e-07,
+          7.727147581527593e-08
+        ],
+        "semantic": [
+          -4.280860034447173e-08,
+          -1.5839260732385154e-07,
+          6.498879370848656e-08
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          -4.280860034447173e-08,
+          -1.5839260732385154e-07,
+          6.498879370848656e-08
+        ],
+        "semantic_minus_steps": [
+          -4.280860034447173e-08,
+          -1.5839260732385154e-07,
+          6.498879370848656e-08
+        ],
+        "semantic_minus_attention": [
+          2.2329851710567182e-09,
+          -8.029123453892617e-08,
+          8.770473137907952e-08
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/pronoun_preferred_correct_direction": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.49743589743589745,
+          0.44358974358974357,
+          0.5512820512820513
+        ],
+        "semantic": [
+          0.5051282051282051,
+          0.4512820512820513,
+          0.5564102564102564
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.00512820512820511,
+          -0.04871794871794871,
+          0.05641025641025643
+        ],
+        "semantic_minus_steps": [
+          0.00512820512820511,
+          -0.04871794871794871,
+          0.05641025641025643
+        ],
+        "semantic_minus_attention": [
+          0.007692307692307665,
+          -0.046153846153846156,
+          0.05903846153846178
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/pronoun_two_correct": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/pronoun_direction_with_numerical_ties": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "semantic": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/last_unchanged_word_signed_preference": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          9.408945011076437e-09,
+          -1.1986145912827736e-07,
+          1.3106673733001814e-07
+        ],
+        "semantic": [
+          -1.7082903725499165e-08,
+          -1.324799944620855e-07,
+          9.336344386216942e-08
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          -1.7082903725499165e-08,
+          -1.324799944620855e-07,
+          9.336344386216942e-08
+        ],
+        "semantic_minus_steps": [
+          -1.7082903725499165e-08,
+          -1.324799944620855e-07,
+          9.336344386216942e-08
+        ],
+        "semantic_minus_attention": [
+          -2.6491848736575604e-08,
+          -1.066060250232504e-07,
+          5.17728015089847e-08
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/last_unchanged_word_preferred_correct_direction": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.49743589743589745,
+          0.44358974358974357,
+          0.5512820512820513
+        ],
+        "semantic": [
+          0.517948717948718,
+          0.4641025641025641,
+          0.5717948717948718
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.017948717948717996,
+          -0.03589743589743588,
+          0.07179487179487176
+        ],
+        "semantic_minus_steps": [
+          0.017948717948717996,
+          -0.03589743589743588,
+          0.07179487179487176
+        ],
+        "semantic_minus_attention": [
+          0.02051282051282055,
+          -0.033333333333333326,
+          0.07435897435897443
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/last_unchanged_word_two_correct": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/last_unchanged_word_direction_with_numerical_ties": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "semantic": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/first_changed_word_signed_preference": {
+      "pairs": 194,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.18130285045905345,
+          0.12242193888519268,
+          0.24111883477520882
+        ],
+        "semantic": [
+          0.3415347114712827,
+          0.24560616276705952,
+          0.44366506531124006
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.3415347114712827,
+          0.24560616276705952,
+          0.44366506531124006
+        ],
+        "semantic_minus_steps": [
+          0.3415347114712827,
+          0.24560616276705952,
+          0.44366506531124006
+        ],
+        "semantic_minus_attention": [
+          0.16023186101222928,
+          0.08660729297183385,
+          0.2362561932200074
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/first_changed_word_preferred_correct_direction": {
+      "pairs": 194,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.6907216494845361,
+          0.6237113402061856,
+          0.7577319587628866
+        ],
+        "semantic": [
+          0.6804123711340206,
+          0.6134020618556701,
+          0.7474226804123711
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.18041237113402064,
+          0.11340206185567014,
+          0.24742268041237114
+        ],
+        "semantic_minus_steps": [
+          0.18041237113402064,
+          0.11340206185567014,
+          0.24742268041237114
+        ],
+        "semantic_minus_attention": [
+          -0.010309278350515427,
+          -0.08247422680412364,
+          0.05670103092783507
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/first_changed_word_two_correct": {
+      "pairs": 194,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.27835051546391754,
+          0.21649484536082475,
+          0.34536082474226804
+        ],
+        "semantic": [
+          0.32989690721649484,
+          0.26804123711340205,
+          0.39690721649484534
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.32989690721649484,
+          0.26804123711340205,
+          0.39690721649484534
+        ],
+        "semantic_minus_steps": [
+          0.32989690721649484,
+          0.26804123711340205,
+          0.39690721649484534
+        ],
+        "semantic_minus_attention": [
+          0.0515463917525773,
+          -0.020618556701030966,
+          0.12886597938144329
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/terminal_signed_preference": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0012505551427602758,
+          -0.0028611645581694232,
+          0.0056160260229888865
+        ],
+        "attention": [
+          0.22754977495632436,
+          0.1692791195216158,
+          0.2880995558122965
+        ],
+        "semantic": [
+          0.5222224859458705,
+          0.4178026332939676,
+          0.6261500229930961
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.5222224859458705,
+          0.4178026332939676,
+          0.6261500229930961
+        ],
+        "semantic_minus_steps": [
+          0.5209719308031102,
+          0.4173908468680759,
+          0.6237472059874511
+        ],
+        "semantic_minus_attention": [
+          0.29467271098954617,
+          0.21331848812076065,
+          0.3775110255686008
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/terminal_preferred_correct_direction": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5128205128205128,
+          0.4589102564102564,
+          0.5666666666666667
+        ],
+        "attention": [
+          0.7076923076923077,
+          0.6461538461538462,
+          0.7692307692307693
+        ],
+        "semantic": [
+          0.7384615384615385,
+          0.676923076923077,
+          0.8
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.2384615384615385,
+          0.17692307692307696,
+          0.30000000000000004
+        ],
+        "semantic_minus_steps": [
+          0.22564102564102573,
+          0.1461538461538462,
+          0.30256410256410254
+        ],
+        "semantic_minus_attention": [
+          0.03076923076923077,
+          -0.03589743589743588,
+          0.10256410256410264
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/terminal_two_correct": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.041025641025641026,
+          0.015384615384615385,
+          0.07179487179487179
+        ],
+        "attention": [
+          0.3641025641025641,
+          0.29743589743589743,
+          0.4358974358974359
+        ],
+        "semantic": [
+          0.4153846153846154,
+          0.3487179487179487,
+          0.48205128205128206
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.4153846153846154,
+          0.3487179487179487,
+          0.48205128205128206
+        ],
+        "semantic_minus_steps": [
+          0.37435897435897436,
+          0.2974358974358975,
+          0.4461538461538461
+        ],
+        "semantic_minus_attention": [
+          0.05128205128205132,
+          -0.02564102564102566,
+          0.1333333333333333
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/first_change_minus_unchanged": {
+      "pairs": 194,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.18130284376677266,
+          0.1224219695069429,
+          0.24111893125446676
+        ],
+        "semantic": [
+          0.34153473123458383,
+          0.2456061984286831,
+          0.44366508250793835
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.34153473123458383,
+          0.2456061984286831,
+          0.44366508250793835
+        ],
+        "semantic_minus_steps": [
+          0.34153473123458383,
+          0.2456061984286831,
+          0.44366508250793835
+        ],
+        "semantic_minus_attention": [
+          0.16023188746781117,
+          0.08660735495399657,
+          0.2362562585309482
+        ]
+      }
+    },
+    "identical_prefix_opposite_target/terminal_minus_unchanged": {
+      "pairs": 195,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0012505551427602754,
+          -0.0028611645581694237,
+          0.0056160260229888865
+        ],
+        "attention": [
+          0.22754976554737935,
+          0.16927906925302214,
+          0.28809950314134825
+        ],
+        "semantic": [
+          0.5222225030287743,
+          0.4178026427128925,
+          0.6261501169992522
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.5222225030287743,
+          0.4178026427128925,
+          0.6261501169992522
+        ],
+        "semantic_minus_steps": [
+          0.520971947886014,
+          0.4173909092956356,
+          0.6237471823954087
+        ],
+        "semantic_minus_attention": [
+          0.2946727374813949,
+          0.21331851273810626,
+          0.3775111450875103
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/both_terminal_choices": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.3235294117647059,
+          0.22058823529411764,
+          0.4264705882352941
+        ],
+        "semantic": [
+          0.4117647058823529,
+          0.29411764705882354,
+          0.5294117647058824
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.4117647058823529,
+          0.29411764705882354,
+          0.5294117647058824
+        ],
+        "semantic_minus_steps": [
+          0.4117647058823529,
+          0.29411764705882354,
+          0.5294117647058824
+        ],
+        "semantic_minus_attention": [
+          0.08823529411764702,
+          -0.04411764705882354,
+          0.22058823529411764
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/terminal_logloss": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.6933718238862389,
+          0.6932851279124688,
+          0.6934721064381811
+        ],
+        "steps": [
+          0.6939453694891441,
+          0.693530461355745,
+          0.6945442282038703
+        ],
+        "attention": [
+          0.6390666997895325,
+          0.5996915831862919,
+          0.6810043257137265
+        ],
+        "semantic": [
+          0.624477575250615,
+          0.5422565776776239,
+          0.7176938520448003
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          -0.06889424863562388,
+          -0.15103917135644496,
+          0.024378382143790307
+        ],
+        "semantic_minus_steps": [
+          -0.06946779423852911,
+          -0.1517196903595765,
+          0.023876876453982863
+        ],
+        "semantic_minus_attention": [
+          -0.014589124538917475,
+          -0.07932992556875935,
+          0.057721631321354806
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/pronoun_signed_preference": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          1.8184758065377966e-08,
+          -2.4543089025160844e-08,
+          7.843995905097793e-08
+        ],
+        "semantic": [
+          1.881819437531864e-08,
+          -1.816079020500183e-08,
+          7.402781835373715e-08
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          1.881819437531864e-08,
+          -1.816079020500183e-08,
+          7.402781835373715e-08
+        ],
+        "semantic_minus_steps": [
+          1.881819437531864e-08,
+          -1.816079020500183e-08,
+          7.402781835373715e-08
+        ],
+        "semantic_minus_attention": [
+          6.334363099406743e-10,
+          -1.481556169250432e-08,
+          1.5151111737770194e-08
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/pronoun_preferred_correct_direction": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.5,
+          0.47058823529411764,
+          0.5294117647058824
+        ],
+        "semantic": [
+          0.5147058823529411,
+          0.4852941176470588,
+          0.5441176470588235
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.014705882352941124,
+          -0.01470588235294118,
+          0.044117647058823484
+        ],
+        "semantic_minus_steps": [
+          0.014705882352941124,
+          -0.01470588235294118,
+          0.044117647058823484
+        ],
+        "semantic_minus_attention": [
+          0.014705882352941124,
+          0.0,
+          0.04411764705882354
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/pronoun_two_correct": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/pronoun_direction_with_numerical_ties": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "semantic": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/last_unchanged_word_signed_preference": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          1.8184758065377966e-08,
+          -2.4543089025160844e-08,
+          7.843995905097793e-08
+        ],
+        "semantic": [
+          1.881819437531864e-08,
+          -1.816079020500183e-08,
+          7.402781835373715e-08
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          1.881819437531864e-08,
+          -1.816079020500183e-08,
+          7.402781835373715e-08
+        ],
+        "semantic_minus_steps": [
+          1.881819437531864e-08,
+          -1.816079020500183e-08,
+          7.402781835373715e-08
+        ],
+        "semantic_minus_attention": [
+          6.334363099406743e-10,
+          -1.481556169250432e-08,
+          1.5151111737770194e-08
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/last_unchanged_word_preferred_correct_direction": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.5,
+          0.47058823529411764,
+          0.5294117647058824
+        ],
+        "semantic": [
+          0.5147058823529411,
+          0.4852941176470588,
+          0.5441176470588235
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.014705882352941124,
+          -0.01470588235294118,
+          0.044117647058823484
+        ],
+        "semantic_minus_steps": [
+          0.014705882352941124,
+          -0.01470588235294118,
+          0.044117647058823484
+        ],
+        "semantic_minus_attention": [
+          0.014705882352941124,
+          0.0,
+          0.04411764705882354
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/last_unchanged_word_two_correct": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/last_unchanged_word_direction_with_numerical_ties": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "semantic": [
+          0.5,
+          0.5,
+          0.5
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          0.0,
+          0.0
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/first_changed_word_signed_preference": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.24629297449171325,
+          0.15022096216000103,
+          0.3409432581806494
+        ],
+        "semantic": [
+          0.46231413110559944,
+          0.3011134566517998,
+          0.6311464163841034
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.46231413110559944,
+          0.3011134566517998,
+          0.6311464163841034
+        ],
+        "semantic_minus_steps": [
+          0.46231413110559944,
+          0.3011134566517998,
+          0.6311464163841034
+        ],
+        "semantic_minus_attention": [
+          0.21602115661388618,
+          0.08886740794839044,
+          0.34792355912820727
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/first_changed_word_preferred_correct_direction": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.7352941176470589,
+          0.6323529411764706,
+          0.8382352941176471
+        ],
+        "semantic": [
+          0.7352941176470589,
+          0.6323529411764706,
+          0.8382352941176471
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.23529411764705888,
+          0.13235294117647056,
+          0.3382352941176471
+        ],
+        "semantic_minus_steps": [
+          0.23529411764705888,
+          0.13235294117647056,
+          0.3382352941176471
+        ],
+        "semantic_minus_attention": [
+          0.0,
+          -0.1029411764705882,
+          0.1029411764705882
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/first_changed_word_two_correct": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.3235294117647059,
+          0.22058823529411764,
+          0.4264705882352941
+        ],
+        "semantic": [
+          0.4411764705882353,
+          0.3235294117647059,
+          0.5588235294117647
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.4411764705882353,
+          0.3235294117647059,
+          0.5588235294117647
+        ],
+        "semantic_minus_steps": [
+          0.4411764705882353,
+          0.3235294117647059,
+          0.5588235294117647
+        ],
+        "semantic_minus_attention": [
+          0.11764705882352938,
+          0.0,
+          0.23529411764705882
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/terminal_signed_preference": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.21939928466471267,
+          0.12736040333157672,
+          0.3127068716355365
+        ],
+        "semantic": [
+          0.47224161988147084,
+          0.28661527298383016,
+          0.6573129621942629
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.47224161988147084,
+          0.28661527298383016,
+          0.6573129621942629
+        ],
+        "semantic_minus_steps": [
+          0.47224161988147084,
+          0.28661527298383016,
+          0.6573129621942629
+        ],
+        "semantic_minus_attention": [
+          0.25284233521675814,
+          0.10594933266058398,
+          0.3901268388767336
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/terminal_preferred_correct_direction": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "steps": [
+          0.5,
+          0.5,
+          0.5
+        ],
+        "attention": [
+          0.75,
+          0.6470588235294118,
+          0.8382352941176471
+        ],
+        "semantic": [
+          0.7352941176470589,
+          0.6176470588235294,
+          0.8382352941176471
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.23529411764705888,
+          0.11764705882352944,
+          0.3382352941176471
+        ],
+        "semantic_minus_steps": [
+          0.23529411764705888,
+          0.11764705882352944,
+          0.3382352941176471
+        ],
+        "semantic_minus_attention": [
+          -0.014705882352941124,
+          -0.13235294117647056,
+          0.1029411764705882
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/terminal_two_correct": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.3235294117647059,
+          0.22058823529411764,
+          0.4264705882352941
+        ],
+        "semantic": [
+          0.4117647058823529,
+          0.29411764705882354,
+          0.5294117647058824
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.4117647058823529,
+          0.29411764705882354,
+          0.5294117647058824
+        ],
+        "semantic_minus_steps": [
+          0.4117647058823529,
+          0.29411764705882354,
+          0.5294117647058824
+        ],
+        "semantic_minus_attention": [
+          0.08823529411764702,
+          -0.04411764705882354,
+          0.22058823529411764
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/first_change_minus_unchanged": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.24629295630695516,
+          0.15022097272785867,
+          0.3409432337045848
+        ],
+        "semantic": [
+          0.46231411228740504,
+          0.3011134321552769,
+          0.6311464103770729
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.46231411228740504,
+          0.3011134321552769,
+          0.6311464103770729
+        ],
+        "semantic_minus_steps": [
+          0.46231411228740504,
+          0.3011134321552769,
+          0.6311464103770729
+        ],
+        "semantic_minus_attention": [
+          0.21602115598044988,
+          0.08886742470723201,
+          0.34792356558206733
+        ]
+      }
+    },
+    "identical_prefix_opposite_target_equal_length/terminal_minus_unchanged": {
+      "pairs": 68,
+      "arms": {
+        "surface": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "steps": [
+          0.0,
+          0.0,
+          0.0
+        ],
+        "attention": [
+          0.2193992664799546,
+          0.1273603505164276,
+          0.31270681803364236
+        ],
+        "semantic": [
+          0.47224160106327645,
+          0.2866152462185781,
+          0.6573129570226834
+        ]
+      },
+      "paired": {
+        "semantic_minus_surface": [
+          0.47224160106327645,
+          0.2866152462185781,
+          0.6573129570226834
+        ],
+        "semantic_minus_steps": [
+          0.47224160106327645,
+          0.2866152462185781,
+          0.6573129570226834
+        ],
+        "semantic_minus_attention": [
+          0.25284233458332184,
+          0.1059493305925,
+          0.3901268492624355
+        ]
+      }
+    }
+  }
+}

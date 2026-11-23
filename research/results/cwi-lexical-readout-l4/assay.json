@@ -1,0 +1,110 @@
+{
+  "schema": 1,
+  "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "lexical_weights_sha256": "e9721f340b325015826bf1645d9814385d4d180689b652e772480f99a80f49d4",
+  "checkpoint_manifest_sha256": "7dff4f755c9c684fd4ae215c52dabeb72314d47d4105ad2de2516ca42db9752c",
+  "protocol_sha256": "721d8a38eff82c964416a529b9a2714deadae67f14cd0ba5f4aa247f5c59dcf4",
+  "preparation_code_sha256": "b0d52558f9e2d061432c8a52504b5d55ef7141c045aba8a048f3a1362c4ae855",
+  "stimuli_sha256": "713cfc3ec5adfa0a6a911e09899115434ac31c68d8d37e270184d5d9e76174c8",
+  "layout_sha256": "09ca3f046aa84ffa4ab445d5791e6c6d1a759ea6ee9996c9470943896e9c4e6b",
+  "partition_sha256": "37c01d8f22c67a11e2953c126c65b42be36a005faf55bcd19bad17166f6c42a4",
+  "partition_sha256_format": "SHA-256 of sorted compact JSON mapping article markers to their original group and split",
+  "prior_source_audit_sha256": "83ec7c9e0aca89aa299e361b8bb71d36b3c9b3e2aef90f52fb0de432a9f6ce9a",
+  "file_sha256": {
+    "stimuli.jsonl": "713cfc3ec5adfa0a6a911e09899115434ac31c68d8d37e270184d5d9e76174c8",
+    "layout.jsonl": "09ca3f046aa84ffa4ab445d5791e6c6d1a759ea6ee9996c9470943896e9c4e6b",
+    "train.jsonl": "41a85ff2e5ea4b6a00212e1a9b8807af1a74e6a8c7c44b4625ceda55ef358392",
+    "dev.jsonl": "dd80feb326e7779a13eca3c317ba350d2fcf3e79b63f3f5bb4cdd9da93c50904",
+    "test.jsonl": "73844a579877bb6b7835a62c7cb61fff969ec661f63da0d1300f655d68732267"
+  },
+  "source_url": "https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/complex-word-identification-dataset/cwishareddataset.zip",
+  "source_sha256": "4a47b3f0b4589907e44f5cc19231dc24fee157636b65ba668ef1850224e52e3e",
+  "source_members": {
+    "traindevset/english/WikiNews_Train.tsv": {
+      "original_split": "train",
+      "rows": 7746
+    },
+    "traindevset/english/WikiNews_Dev.tsv": {
+      "original_split": "dev",
+      "rows": 870
+    },
+    "testset/english/WikiNews_Test.tsv": {
+      "original_split": "test",
+      "rows": 1287
+    }
+  },
+  "source_hits": 125,
+  "source_sentences": 843,
+  "source_anchors": 9903,
+  "rejected_source_hits": {
+    "mixed_article_hit": 33,
+    "gapped_sentence_positions": 1
+  },
+  "rejected_source_anchors": {
+    "offset_mismatch": 2,
+    "mixed_article_hit": 2849,
+    "gapped_sentence_positions": 66
+  },
+  "duplicated_normalized_sentence_classes_across_full_source": 12,
+  "sentence_normalization": "Unicode NFKC, casefold, collapse whitespace, preserving punctuation",
+  "duplication_scope": "All occurrence locations across released HITs and partitions, including excluded HITs",
+  "candidate_selection": "Exact source offsets matching one complete served word in the literal sentence",
+  "complex_stimuli_sha256": "20d1859671ffcb6b0d577b6c9cc6b1398bb7699e46c2cfea08efedab93a7068a",
+  "frequency_reference_splits": [
+    "train",
+    "trial"
+  ],
+  "frequency_forms": 17379,
+  "frequency_tokens": 215758,
+  "eligible_source_anchors_by_partition_before_filter": {
+    "test": 1788,
+    "train": 3850,
+    "dev": 1348
+  },
+  "excluded_candidate_counts_by_split": {
+    "train": {
+      "not_one_complete_served_word": 531,
+      "duplicate_normalized_sentence": 114
+    },
+    "dev": {
+      "not_one_complete_served_word": 188
+    },
+    "test": {
+      "not_one_complete_served_word": 232,
+      "duplicate_normalized_sentence": 198
+    }
+  },
+  "retained_sentences": 591,
+  "retained_counts_by_split": {
+    "train": {
+      "sentences": 338,
+      "candidates": 3205,
+      "article_groups": 21
+    },
+    "dev": {
+      "sentences": 126,
+      "candidates": 1160,
+      "article_groups": 7
+    },
+    "test": {
+      "sentences": 127,
+      "candidates": 1358,
+      "article_groups": 7
+    }
+  },
+  "grade_free_files": [
+    "stimuli.jsonl",
+    "layout.jsonl"
+  ],
+  "votes_per_group": {
+    "native": 10,
+    "nonnative": 10
+  },
+  "license": "CC BY 4.0 per author release, with WikiNews source text terms",
+  "presentation": "Literal released sentence with only the article/sentence marker stripped",
+  "split_roles": {
+    "train": "fit",
+    "dev": "validation",
+    "test": "evaluation"
+  }
+}

@@ -1,0 +1,117 @@
+{
+  "scope": "Annotated textual evidence arrival for a supplied question. At matched cutoffs the selected evidence paragraph for the comparison question has not arrived. The outcome measures the finished evidence paragraph, without a real-time observation of readers noticing an answer.",
+  "all_questions": {
+    "questions": 55,
+    "papers": 23,
+    "mean_interval_nll_nats": {
+      "position": 3.2273467501466206,
+      "body": 3.036994592914241
+    },
+    "paired_interval_nll_differences": {
+      "body_minus_position": {
+        "difference": -0.19035215723238047,
+        "descriptive_paired_material_95_ci": [
+          -0.31038427422977816,
+          -0.07521396650740517
+        ],
+        "groups": 23
+      }
+    }
+  },
+  "same_paper_swaps": {
+    "pairs": 41,
+    "papers": 23,
+    "unique_questions": 55,
+    "directional_swaps": 82,
+    "pairs_without_strict_evidence_order": 3,
+    "mean_interval_nll_nats_per_question_direction": {
+      "position": 3.2670261252281323,
+      "body": 3.1060583350190125,
+      "swapped": 3.129411090413796
+    },
+    "paired_interval_nll_differences": {
+      "body_minus_position": {
+        "difference": -0.16096779020911942,
+        "descriptive_paired_material_95_ci": [
+          -0.2869177325407305,
+          -0.04314627430036173
+        ],
+        "groups": 23
+      },
+      "body_minus_swapped": {
+        "difference": -0.02335275539478324,
+        "descriptive_paired_material_95_ci": [
+          -0.08215878494574012,
+          0.03432843837301215
+        ],
+        "groups": 23
+      }
+    },
+    "same_cutoff_ranking": {
+      "hazard_at_cutoff": {
+        "correct_question_probability_mean": 0.16238752257139022,
+        "swapped_question_probability_mean": 0.1653611723663126,
+        "position_only_agreement": 0.5,
+        "body_agreement": 0.5121951219512195,
+        "wins_ties_losses": {
+          "wins": 21,
+          "ties": 0,
+          "losses": 20
+        },
+        "body_agreement_minus_position": {
+          "difference": 0.012195121951219513,
+          "descriptive_paired_material_95_ci": [
+            -0.1129215542521994,
+            0.15625
+          ],
+          "groups": 23
+        },
+        "body_correct_minus_swapped_probability": {
+          "difference": -0.002973649794922397,
+          "descriptive_paired_material_95_ci": [
+            -0.011049169877043215,
+            0.007042741118930793
+          ],
+          "groups": 23
+        }
+      },
+      "cumulative_arrival_by_cutoff": {
+        "correct_question_probability_mean": 0.47388505741634773,
+        "swapped_question_probability_mean": 0.48119618984953594,
+        "position_only_agreement": 0.5,
+        "body_agreement": 0.5121951219512195,
+        "wins_ties_losses": {
+          "wins": 21,
+          "ties": 0,
+          "losses": 20
+        },
+        "body_agreement_minus_position": {
+          "difference": 0.012195121951219513,
+          "descriptive_paired_material_95_ci": [
+            -0.11764705882352941,
+            0.14705882352941177
+          ],
+          "groups": 23
+        },
+        "body_correct_minus_swapped_probability": {
+          "difference": -0.007311132433188174,
+          "descriptive_paired_material_95_ci": [
+            -0.02464958920519693,
+            0.01624287435576647
+          ],
+          "groups": 23
+        }
+      }
+    }
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 43,
+    "unit": "held-out paper"
+  },
+  "input_sha256": {
+    "outcomes": "826556081eae8ec786d114ceafa338bce0918ebaeae439171657b346f2f1dede",
+    "predictions": "693d30cb1ff01fb99eae88fc485f64b51dffe0f214c38d800d0f8d019e9bf680",
+    "seal": "5fc8e08db810acd9648ae1c736a9c6857a120f48aa62702d4a77ad12d5078e71"
+  }
+}

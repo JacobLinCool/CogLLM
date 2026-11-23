@@ -1,0 +1,201 @@
+{
+  "scope": "First certified stop with complete coverage of a retrospective later support within the same paragraph, conditional on a supplied anchor and the presence of an eventual annotated support.",
+  "assay_sha256": "68d8fc5398a34b7242eb32bdbd65b97c90d91db4973ca0995c7496cbdac88dd8",
+  "fit_sha256": "430f27aacc7c77b6904d80bd5fed7b2640916aca936003458868a88c5377676c",
+  "primary": {
+    "cases": 22,
+    "observed": 22,
+    "right_censored": 0,
+    "metrics": {
+      "geometry": {
+        "interval_nll_nats": 2.61610532216262,
+        "cumulative_brier": 0.16603463614744238,
+        "terminal_calibration_in_large": -0.03973980208719687,
+        "modal_exact_bin_or_censor": 0.0
+      },
+      "path_text": {
+        "interval_nll_nats": 2.5422427045766236,
+        "cumulative_brier": 0.1624341979251639,
+        "terminal_calibration_in_large": -0.026697600341657534,
+        "modal_exact_bin_or_censor": 0.045454545454545456
+      },
+      "anchor_conditioned": {
+        "interval_nll_nats": 2.6184792575296036,
+        "cumulative_brier": 0.17406051964464278,
+        "terminal_calibration_in_large": -0.026427173871766078,
+        "modal_exact_bin_or_censor": 0.09090909090909091
+      }
+    },
+    "paired_anchor_conditioned_minus_baseline": {
+      "geometry": {
+        "interval_nll_nats": {
+          "difference": 0.002373935366983634,
+          "descriptive_paired_material_95_ci": [
+            -0.09868005260961692,
+            0.09073524670784558
+          ],
+          "groups": 19
+        },
+        "cumulative_brier": {
+          "difference": 0.008025883497200407,
+          "descriptive_paired_material_95_ci": [
+            -0.009407802444529626,
+            0.025582954131881552
+          ],
+          "groups": 19
+        },
+        "terminal_calibration_in_large": {
+          "difference": 0.013312628215430793,
+          "descriptive_paired_material_95_ci": [
+            0.00219228747532504,
+            0.027831502200710685
+          ],
+          "groups": 19
+        },
+        "modal_exact_bin_or_censor": {
+          "difference": 0.09090909090909091,
+          "descriptive_paired_material_95_ci": [
+            0.0,
+            0.23809523809523808
+          ],
+          "groups": 19
+        }
+      },
+      "path_text": {
+        "interval_nll_nats": {
+          "difference": 0.07623655295297956,
+          "descriptive_paired_material_95_ci": [
+            -0.015985736840705093,
+            0.16450016894174482
+          ],
+          "groups": 19
+        },
+        "cumulative_brier": {
+          "difference": 0.011626321719478933,
+          "descriptive_paired_material_95_ci": [
+            -0.0008653863287740105,
+            0.023976234590521273
+          ],
+          "groups": 19
+        },
+        "terminal_calibration_in_large": {
+          "difference": 0.0002704264698914544,
+          "descriptive_paired_material_95_ci": [
+            -0.007387212098848162,
+            0.0073496569531086905
+          ],
+          "groups": 19
+        },
+        "modal_exact_bin_or_censor": {
+          "difference": 0.045454545454545456,
+          "descriptive_paired_material_95_ci": [
+            -0.1,
+            0.21052631578947367
+          ],
+          "groups": 19
+        }
+      }
+    },
+    "conditions": {
+      "anchor_conditioned_improves_interval_nll_vs_geometry": false,
+      "anchor_conditioned_cumulative_brier_noninferior_to_geometry": false,
+      "explicit_anchor_improves_interval_nll_vs_path_text": false
+    },
+    "all_conditions_passed": false
+  },
+  "fixed_64_token_prefix_control_descriptive": {
+    "cases": 22,
+    "observed": 8,
+    "right_censored": 14,
+    "metrics": {
+      "geometry": {
+        "interval_nll_nats": 1.2672283598595462,
+        "cumulative_brier": 0.19749603777035682,
+        "terminal_calibration_in_large": 0.24082260291276905,
+        "modal_exact_bin_or_censor": 0.6363636363636364
+      },
+      "path_text": {
+        "interval_nll_nats": 1.225287230253096,
+        "cumulative_brier": 0.19014586932891966,
+        "terminal_calibration_in_large": 0.25366840359230075,
+        "modal_exact_bin_or_censor": 0.6363636363636364
+      },
+      "anchor_conditioned": {
+        "interval_nll_nats": 1.3002410457182525,
+        "cumulative_brier": 0.208190249489373,
+        "terminal_calibration_in_large": 0.2563402304891485,
+        "modal_exact_bin_or_censor": 0.5909090909090909
+      }
+    },
+    "paired_anchor_conditioned_minus_baseline": {
+      "geometry": {
+        "interval_nll_nats": {
+          "difference": 0.03301268585870675,
+          "descriptive_paired_material_95_ci": [
+            -0.07234055679856399,
+            0.12693200835883703
+          ],
+          "groups": 19
+        },
+        "cumulative_brier": {
+          "difference": 0.01069421171901619,
+          "descriptive_paired_material_95_ci": [
+            -0.011160453515254543,
+            0.03182381169920089
+          ],
+          "groups": 19
+        },
+        "terminal_calibration_in_large": {
+          "difference": 0.015517627576379393,
+          "descriptive_paired_material_95_ci": [
+            -0.01879666377594553,
+            0.04582221036982658
+          ],
+          "groups": 19
+        },
+        "modal_exact_bin_or_censor": {
+          "difference": -0.045454545454545456,
+          "descriptive_paired_material_95_ci": [
+            -0.15,
+            0.0
+          ],
+          "groups": 19
+        }
+      },
+      "path_text": {
+        "interval_nll_nats": {
+          "difference": 0.07495381546515667,
+          "descriptive_paired_material_95_ci": [
+            0.0077986651224261384,
+            0.14178539574172747
+          ],
+          "groups": 19
+        },
+        "cumulative_brier": {
+          "difference": 0.018044380160453323,
+          "descriptive_paired_material_95_ci": [
+            0.0018111841403750367,
+            0.03424094831383481
+          ],
+          "groups": 19
+        },
+        "terminal_calibration_in_large": {
+          "difference": 0.002671826896847693,
+          "descriptive_paired_material_95_ci": [
+            -0.025552599802578152,
+            0.026486397898024597
+          ],
+          "groups": 19
+        },
+        "modal_exact_bin_or_censor": {
+          "difference": -0.045454545454545456,
+          "descriptive_paired_material_95_ci": [
+            -0.15,
+            0.0
+          ],
+          "groups": 19
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,593 @@
+{
+  "scope": "full-document-visible structured reported any issue",
+  "feature_cache_sha256": "fd1edb0e06f8fc05438d93cf77805cf258077a3c7c2e33c57a3474b579538246",
+  "objective": "individual-label binomial log-loss with L2 ridge lambda=1 and unpenalized intercept",
+  "resampling": "10,000 paired bootstrap draws over 13 reader-connected family groups with observed structured responses",
+  "scores_by_hidden_features": {
+    "sentence_end": {
+      "participants": 108,
+      "article_families": 19,
+      "sentences": 286,
+      "trials": 858,
+      "any_issue": 452,
+      "connected_reader_clusters": 13,
+      "out_of_fold_metrics": {
+        "prevalence": {
+          "auroc": 0.39962509263699375,
+          "brier": 0.25685099439092757,
+          "macro_fold_auroc": 0.5
+        },
+        "length": {
+          "auroc": 0.6762200837002484,
+          "brier": 0.2262395584377933,
+          "macro_fold_auroc": 0.6845121999905219
+        },
+        "length_plus_variant": {
+          "auroc": 0.7221407864335847,
+          "brier": 0.2124628696933835,
+          "macro_fold_auroc": 0.7214991613079612
+        },
+        "qwen": {
+          "auroc": 0.7391832686690789,
+          "brier": 0.21190949575943294,
+          "macro_fold_auroc": 0.7387485695393359
+        },
+        "qwen_plus_length": {
+          "auroc": 0.7598467675138411,
+          "brier": 0.20091308888304388,
+          "macro_fold_auroc": 0.757330368939463
+        }
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "sentences": 71,
+          "trials": 213,
+          "any_issue": 89,
+          "families": 4,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.26426039198957946
+          },
+          "length": {
+            "auroc": 0.6701703515766582,
+            "brier": 0.2243412293388604
+          },
+          "length_plus_variant": {
+            "auroc": 0.7276640086988039,
+            "brier": 0.20939802982916192
+          },
+          "qwen": {
+            "auroc": 0.7884197172888728,
+            "brier": 0.19676919381653657
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7740123233055455,
+            "brier": 0.18822533597142527
+          }
+        },
+        {
+          "fold": 1,
+          "sentences": 41,
+          "trials": 123,
+          "any_issue": 53,
+          "families": 3,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2577600796416127
+          },
+          "length": {
+            "auroc": 0.6770889487870619,
+            "brier": 0.24526586688437713
+          },
+          "length_plus_variant": {
+            "auroc": 0.7401617250673854,
+            "brier": 0.228339312648517
+          },
+          "qwen": {
+            "auroc": 0.8161725067385445,
+            "brier": 0.19942269426215045
+          },
+          "qwen_plus_length": {
+            "auroc": 0.8032345013477089,
+            "brier": 0.19734941065322117
+          }
+        },
+        {
+          "fold": 2,
+          "sentences": 96,
+          "trials": 288,
+          "any_issue": 182,
+          "families": 7,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2576369652200677
+          },
+          "length": {
+            "auroc": 0.6890939249429815,
+            "brier": 0.22514888948749098
+          },
+          "length_plus_variant": {
+            "auroc": 0.7497408252125233,
+            "brier": 0.20555967903451514
+          },
+          "qwen": {
+            "auroc": 0.7159962678830604,
+            "brier": 0.2143050756272544
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7497408252125233,
+            "brier": 0.20253007345198723
+          }
+        },
+        {
+          "fold": 3,
+          "sentences": 45,
+          "trials": 135,
+          "any_issue": 77,
+          "families": 3,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.24772071187938685
+          },
+          "length": {
+            "auroc": 0.7636587550380654,
+            "brier": 0.20274715486050385
+          },
+          "length_plus_variant": {
+            "auroc": 0.7955665024630542,
+            "brier": 0.187368087435977
+          },
+          "qwen": {
+            "auroc": 0.7371249440214958,
+            "brier": 0.2178897891126672
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7942230183609494,
+            "brier": 0.19215300208843325
+          }
+        },
+        {
+          "fold": 4,
+          "sentences": 33,
+          "trials": 99,
+          "any_issue": 51,
+          "families": 2,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2499440182890948
+          },
+          "length": {
+            "auroc": 0.6225490196078431,
+            "brier": 0.24189304631419764
+          },
+          "length_plus_variant": {
+            "auroc": 0.5943627450980392,
+            "brier": 0.2536338083004721
+          },
+          "qwen": {
+            "auroc": 0.6360294117647058,
+            "brier": 0.24487408458148793
+          },
+          "qwen_plus_length": {
+            "auroc": 0.6654411764705882,
+            "brier": 0.23988019952809164
+          }
+        }
+      ],
+      "brier_delta_qwen_plus_length_minus_baseline": {
+        "prevalence": {
+          "difference": -0.05593790550788373,
+          "95_ci": [
+            -0.0734833306735387,
+            -0.03756767808425041
+          ]
+        },
+        "length": {
+          "difference": -0.025326469554749393,
+          "95_ci": [
+            -0.03765317392624969,
+            -0.012835651888229684
+          ]
+        },
+        "length_plus_variant": {
+          "difference": -0.011549780810339635,
+          "95_ci": [
+            -0.019424657069190197,
+            -0.0026347510501151753
+          ]
+        }
+      }
+    },
+    "article_end": {
+      "participants": 108,
+      "article_families": 19,
+      "sentences": 286,
+      "trials": 858,
+      "any_issue": 452,
+      "connected_reader_clusters": 13,
+      "out_of_fold_metrics": {
+        "prevalence": {
+          "auroc": 0.39962509263699375,
+          "brier": 0.25685099439092757,
+          "macro_fold_auroc": 0.5
+        },
+        "length": {
+          "auroc": 0.6762200837002484,
+          "brier": 0.2262395584377933,
+          "macro_fold_auroc": 0.6845121999905219
+        },
+        "length_plus_variant": {
+          "auroc": 0.7221407864335847,
+          "brier": 0.2124628696933835,
+          "macro_fold_auroc": 0.7214991613079612
+        },
+        "qwen": {
+          "auroc": 0.6996626923579929,
+          "brier": 0.22453147388728623,
+          "macro_fold_auroc": 0.6711233033122292
+        },
+        "qwen_plus_length": {
+          "auroc": 0.73991891538428,
+          "brier": 0.20734992015954118,
+          "macro_fold_auroc": 0.7260037523514649
+        }
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "sentences": 71,
+          "trials": 213,
+          "any_issue": 89,
+          "families": 4,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.26426039198957946
+          },
+          "length": {
+            "auroc": 0.6701703515766582,
+            "brier": 0.2243412293388604
+          },
+          "length_plus_variant": {
+            "auroc": 0.7276640086988039,
+            "brier": 0.20939802982916192
+          },
+          "qwen": {
+            "auroc": 0.7451975353388909,
+            "brier": 0.21498633278048782
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7454693729612178,
+            "brier": 0.20014548913026975
+          }
+        },
+        {
+          "fold": 1,
+          "sentences": 41,
+          "trials": 123,
+          "any_issue": 53,
+          "families": 3,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2577600796416127
+          },
+          "length": {
+            "auroc": 0.6770889487870619,
+            "brier": 0.24526586688437713
+          },
+          "length_plus_variant": {
+            "auroc": 0.7401617250673854,
+            "brier": 0.228339312648517
+          },
+          "qwen": {
+            "auroc": 0.6637466307277629,
+            "brier": 0.22026931943687814
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7247978436657682,
+            "brier": 0.2153974774071248
+          }
+        },
+        {
+          "fold": 2,
+          "sentences": 96,
+          "trials": 288,
+          "any_issue": 182,
+          "families": 7,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2576369652200677
+          },
+          "length": {
+            "auroc": 0.6890939249429815,
+            "brier": 0.22514888948749098
+          },
+          "length_plus_variant": {
+            "auroc": 0.7497408252125233,
+            "brier": 0.20555967903451514
+          },
+          "qwen": {
+            "auroc": 0.6988129794733569,
+            "brier": 0.21957072197060354
+          },
+          "qwen_plus_length": {
+            "auroc": 0.740410532863363,
+            "brier": 0.2027785054717147
+          }
+        },
+        {
+          "fold": 3,
+          "sentences": 45,
+          "trials": 135,
+          "any_issue": 77,
+          "families": 3,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.24772071187938685
+          },
+          "length": {
+            "auroc": 0.7636587550380654,
+            "brier": 0.20274715486050385
+          },
+          "length_plus_variant": {
+            "auroc": 0.7955665024630542,
+            "brier": 0.187368087435977
+          },
+          "qwen": {
+            "auroc": 0.7337662337662337,
+            "brier": 0.22790298292050593
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7955665024630542,
+            "brier": 0.19493696280616993
+          }
+        },
+        {
+          "fold": 4,
+          "sentences": 33,
+          "trials": 99,
+          "any_issue": 51,
+          "families": 2,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2499440182890948
+          },
+          "length": {
+            "auroc": 0.6225490196078431,
+            "brier": 0.24189304631419764
+          },
+          "length_plus_variant": {
+            "auroc": 0.5943627450980392,
+            "brier": 0.2536338083004721
+          },
+          "qwen": {
+            "auroc": 0.5140931372549019,
+            "brier": 0.26019715960110673
+          },
+          "qwen_plus_length": {
+            "auroc": 0.6237745098039216,
+            "brier": 0.24307730339773495
+          }
+        }
+      ],
+      "brier_delta_qwen_plus_length_minus_baseline": {
+        "prevalence": {
+          "difference": -0.049501074231386444,
+          "95_ci": [
+            -0.0642337460004914,
+            -0.03329968958326348
+          ]
+        },
+        "length": {
+          "difference": -0.018889638278252102,
+          "95_ci": [
+            -0.027775647771546206,
+            -0.010025265583690646
+          ]
+        },
+        "length_plus_variant": {
+          "difference": -0.005112949533842344,
+          "95_ci": [
+            -0.010651861688893123,
+            0.004141715638449575
+          ]
+        }
+      }
+    },
+    "both": {
+      "participants": 108,
+      "article_families": 19,
+      "sentences": 286,
+      "trials": 858,
+      "any_issue": 452,
+      "connected_reader_clusters": 13,
+      "out_of_fold_metrics": {
+        "prevalence": {
+          "auroc": 0.39962509263699375,
+          "brier": 0.25685099439092757,
+          "macro_fold_auroc": 0.5
+        },
+        "length": {
+          "auroc": 0.6762200837002484,
+          "brier": 0.2262395584377933,
+          "macro_fold_auroc": 0.6845121999905219
+        },
+        "length_plus_variant": {
+          "auroc": 0.7221407864335847,
+          "brier": 0.2124628696933835,
+          "macro_fold_auroc": 0.7214991613079612
+        },
+        "qwen": {
+          "auroc": 0.740507432756441,
+          "brier": 0.21284506795894903,
+          "macro_fold_auroc": 0.7347325227539241
+        },
+        "qwen_plus_length": {
+          "auroc": 0.7644241248528707,
+          "brier": 0.19946266562247217,
+          "macro_fold_auroc": 0.757765055608518
+        }
+      },
+      "folds": [
+        {
+          "fold": 0,
+          "sentences": 71,
+          "trials": 213,
+          "any_issue": 89,
+          "families": 4,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.26426039198957946
+          },
+          "length": {
+            "auroc": 0.6701703515766582,
+            "brier": 0.2243412293388604
+          },
+          "length_plus_variant": {
+            "auroc": 0.7276640086988039,
+            "brier": 0.20939802982916192
+          },
+          "qwen": {
+            "auroc": 0.7808082638637187,
+            "brier": 0.1988958626875167
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7780898876404494,
+            "brier": 0.18808603674766788
+          }
+        },
+        {
+          "fold": 1,
+          "sentences": 41,
+          "trials": 123,
+          "any_issue": 53,
+          "families": 3,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2577600796416127
+          },
+          "length": {
+            "auroc": 0.6770889487870619,
+            "brier": 0.24526586688437713
+          },
+          "length_plus_variant": {
+            "auroc": 0.7401617250673854,
+            "brier": 0.228339312648517
+          },
+          "qwen": {
+            "auroc": 0.7919137466307278,
+            "brier": 0.2040072737324312
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7789757412398922,
+            "brier": 0.2008374111528598
+          }
+        },
+        {
+          "fold": 2,
+          "sentences": 96,
+          "trials": 288,
+          "any_issue": 182,
+          "families": 7,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2576369652200677
+          },
+          "length": {
+            "auroc": 0.6890939249429815,
+            "brier": 0.22514888948749098
+          },
+          "length_plus_variant": {
+            "auroc": 0.7497408252125233,
+            "brier": 0.20555967903451514
+          },
+          "qwen": {
+            "auroc": 0.7145967240306863,
+            "brier": 0.21198985585831012
+          },
+          "qwen_plus_length": {
+            "auroc": 0.7528509226622434,
+            "brier": 0.19831736034170225
+          }
+        },
+        {
+          "fold": 3,
+          "sentences": 45,
+          "trials": 135,
+          "any_issue": 77,
+          "families": 3,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.24772071187938685
+          },
+          "length": {
+            "auroc": 0.7636587550380654,
+            "brier": 0.20274715486050385
+          },
+          "length_plus_variant": {
+            "auroc": 0.7955665024630542,
+            "brier": 0.187368087435977
+          },
+          "qwen": {
+            "auroc": 0.7686968204209583,
+            "brier": 0.21773784203364638
+          },
+          "qwen_plus_length": {
+            "auroc": 0.8110165696372593,
+            "brier": 0.19001838236528873
+          }
+        },
+        {
+          "fold": 4,
+          "sentences": 33,
+          "trials": 99,
+          "any_issue": 51,
+          "families": 2,
+          "prevalence": {
+            "auroc": 0.5,
+            "brier": 0.2499440182890948
+          },
+          "length": {
+            "auroc": 0.6225490196078431,
+            "brier": 0.24189304631419764
+          },
+          "length_plus_variant": {
+            "auroc": 0.5943627450980392,
+            "brier": 0.2536338083004721
+          },
+          "qwen": {
+            "auroc": 0.6176470588235294,
+            "brier": 0.24965320934861196
+          },
+          "qwen_plus_length": {
+            "auroc": 0.6678921568627451,
+            "brier": 0.23844200310405933
+          }
+        }
+      ],
+      "brier_delta_qwen_plus_length_minus_baseline": {
+        "prevalence": {
+          "difference": -0.05738832876845546,
+          "95_ci": [
+            -0.0735254764303973,
+            -0.040142533933924814
+          ]
+        },
+        "length": {
+          "difference": -0.026776892815321113,
+          "95_ci": [
+            -0.037408986000442006,
+            -0.015817909555699873
+          ]
+        },
+        "length_plus_variant": {
+          "difference": -0.01300020407091136,
+          "95_ci": [
+            -0.019244709057819755,
+            -0.004356725675045427
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,1573 @@
+{
+  "sources": 23,
+  "endpoints": 56,
+  "roles": "third",
+  "seed_mean": {
+    "source_macro_nll": {
+      "endpoint_map": 1.0393173241331686,
+      "midpoint": 1.0414189521421902,
+      "family_bootstrap": 1.0344014447305314
+    },
+    "comparisons": {
+      "endpoint_map": {
+        "gain": 0.00491587940263725,
+        "ci95": [
+          0.001432887697698194,
+          0.009137635527423159
+        ],
+        "ci95_simultaneous": [
+          0.001080365186906494,
+          0.009800396556059366
+        ],
+        "signflip_p": 0.00938990610093899,
+        "bonferroni_p": 0.01877981220187798,
+        "improving_sources": 14,
+        "losing_sources": 9
+      },
+      "midpoint": {
+        "gain": 0.007017507411658863,
+        "ci95": [
+          0.0023151014040078627,
+          0.012403600136246123
+        ],
+        "ci95_simultaneous": [
+          0.0018529270630038887,
+          0.013384159678127975
+        ],
+        "signflip_p": 0.005919940800591994,
+        "bonferroni_p": 0.011839881601183988,
+        "improving_sources": 16,
+        "losing_sources": 7
+      }
+    }
+  },
+  "separate_seeds": {
+    "1729": {
+      "source_macro_nll": {
+        "endpoint_map": 1.0397484393412904,
+        "midpoint": 1.0415719956572247,
+        "family_bootstrap": 1.0324840974351874
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.007264341906102962,
+          "ci95": [
+            0.002846255477708712,
+            0.012165982962638993
+          ],
+          "ci95_simultaneous": [
+            0.002302718456397985,
+            0.012959974595872769
+          ],
+          "signflip_p": 0.0024599754002459975,
+          "bonferroni_p": 0.004919950800491995,
+          "improving_sources": 16,
+          "losing_sources": 7
+        },
+        "midpoint": {
+          "gain": 0.0090878982220368,
+          "ci95": [
+            0.004086877425499724,
+            0.014468148746608327
+          ],
+          "ci95_simultaneous": [
+            0.0034943877458564437,
+            0.015446253970662484
+          ],
+          "signflip_p": 0.0011299887001129988,
+          "bonferroni_p": 0.0022599774002259976,
+          "improving_sources": 16,
+          "losing_sources": 7
+        }
+      }
+    },
+    "2718": {
+      "source_macro_nll": {
+        "endpoint_map": 1.0388862089250466,
+        "midpoint": 1.0412659086271558,
+        "family_bootstrap": 1.0363187920258747
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.0025674168991715487,
+          "ci95": [
+            -0.0019558698651140002,
+            0.00752448117853361
+          ],
+          "ci95_simultaneous": [
+            -0.0025541175999004326,
+            0.008258926331565003
+          ],
+          "signflip_p": 0.16071839281607184,
+          "bonferroni_p": 0.3214367856321437,
+          "improving_sources": 12,
+          "losing_sources": 11
+        },
+        "midpoint": {
+          "gain": 0.004947116601280982,
+          "ci95": [
+            -0.0010816434635414647,
+            0.011957307308143771
+          ],
+          "ci95_simultaneous": [
+            -0.0019207897024718387,
+            0.013050945100361335
+          ],
+          "signflip_p": 0.08341916580834191,
+          "bonferroni_p": 0.16683833161668382,
+          "improving_sources": 13,
+          "losing_sources": 10
+        }
+      }
+    }
+  },
+  "per_source_nll_order_map_half_bootstrap": {
+    "ambistory": [
+      1.6913782904724592,
+      1.691150057519023,
+      1.6932575601297484
+    ],
+    "blott": [
+      0.8125919159892068,
+      0.8125324381912338,
+      0.8129262488874702
+    ],
+    "clear": [
+      1.0482601368529243,
+      1.0516508326703553,
+      1.04911955942768
+    ],
+    "complex": [
+      1.2972590233798256,
+      1.297428906505259,
+      1.2972694177052073
+    ],
+    "context-readback": [
+      0.13926139073450977,
+      0.13928961714805654,
+      0.1391054292097587
+    ],
+    "currie": [
+      0.8032029648693049,
+      0.803730241450914,
+      0.7772706771415228
+    ],
+    "cwi": [
+      0.30330078076752764,
+      0.30330157695699833,
+      0.3033372450577985
+    ],
+    "czech": [
+      0.423164955643966,
+      0.42316597361076075,
+      0.4226956549727867
+    ],
+    "first-readback": [
+      0.44296221418853454,
+      0.44880483693166706,
+      0.417346214598106
+    ],
+    "frick": [
+      1.3325245636162975,
+      1.3331302909191047,
+      1.322476210534529
+    ],
+    "kerwer": [
+      1.435091961781998,
+      1.4352786424955042,
+      1.4287584014338446
+    ],
+    "oliver": [
+      1.323433740486359,
+      1.3234281091624804,
+      1.3240844157516056
+    ],
+    "onestop": [
+      1.4493998515126365,
+      1.4555098671279203,
+      1.422875691100308
+    ],
+    "onestop-rereading": [
+      0.5818938338580032,
+      0.5818821094984612,
+      0.583354692583775
+    ],
+    "plaba": [
+      1.2890881308808135,
+      1.2890044129682405,
+      1.2914123452982547
+    ],
+    "race": [
+      1.0494690762560466,
+      1.0786337122271399,
+      1.0425512445801488
+    ],
+    "rodger": [
+      2.807181763410243,
+      2.8073336769623505,
+      2.8009072590158794
+    ],
+    "scarecrow": [
+      0.05978927613070616,
+      0.06015007114156651,
+      0.05944931153375635
+    ],
+    "studentannotations": [
+      1.331731306331513,
+      1.3324994582463157,
+      1.3315081247338059
+    ],
+    "textcomplexityde": [
+      1.3939596233971256,
+      1.394026464665776,
+      1.3926304062199546
+    ],
+    "turkish": [
+      0.6613211707674711,
+      0.6617270970752633,
+      0.6590240378804242
+    ],
+    "yadav": [
+      1.268979428935034,
+      1.2677093365678525,
+      1.2765179040363037
+    ],
+    "zhan": [
+      0.9590530548003708,
+      0.9612681692281301,
+      0.9433551769695514
+    ]
+  },
+  "source_ci": {
+    "ambistory": {
+      "over_map": [
+        -0.00593430794768175,
+        0.001855485598664753
+      ],
+      "over_midpoint": [
+        -0.006935501908717906,
+        0.0023688980875513437
+      ]
+    },
+    "blott": {
+      "over_map": [
+        -0.005249834527959685,
+        0.0036975252699756544
+      ],
+      "over_midpoint": [
+        -0.005655756017440172,
+        0.003977124861283432
+      ]
+    },
+    "clear": {
+      "over_map": [
+        -0.005989044168031354,
+        0.004692863018395544
+      ],
+      "over_midpoint": [
+        -0.01943710596593499,
+        0.027068268779570925
+      ]
+    },
+    "complex": {
+      "over_map": [
+        -7.788907080341078e-05,
+        6.930836540250396e-05
+      ],
+      "over_midpoint": [
+        -0.0016061172145087565,
+        0.0022305965116332037
+      ]
+    },
+    "context-readback": {
+      "over_map": [
+        -0.0048074274311931675,
+        0.002981809820971626
+      ],
+      "over_midpoint": [
+        -0.004853762339748907,
+        0.0030650296782457898
+      ]
+    },
+    "currie": {
+      "over_map": [
+        -0.013638067206456772,
+        0.06550264266202088
+      ],
+      "over_midpoint": [
+        -0.013819496726046654,
+        0.06673862534482922
+      ]
+    },
+    "cwi": {
+      "over_map": [
+        -0.0002895233869354419,
+        4.29042445921346e-05
+      ],
+      "over_midpoint": [
+        -0.00029610615627306824,
+        4.601474387083693e-05
+      ]
+    },
+    "czech": {
+      "over_map": [
+        0.000279880274841382,
+        0.0006280193612684393
+      ],
+      "over_midpoint": [
+        0.0002804565923431035,
+        0.0006295383419664402
+      ]
+    },
+    "first-readback": {
+      "over_map": [
+        0.02394667933551381,
+        0.027254643007194934
+      ],
+      "over_midpoint": [
+        0.02970109666236359,
+        0.03318449723579947
+      ]
+    },
+    "frick": null,
+    "kerwer": null,
+    "oliver": {
+      "over_map": [
+        -0.0021728819716912984,
+        0.00042642237859280563
+      ],
+      "over_midpoint": [
+        -0.00219089884024104,
+        0.00043404379511802205
+      ]
+    },
+    "onestop": {
+      "over_map": [
+        0.016748907821722003,
+        0.038276430380810744
+      ],
+      "over_midpoint": [
+        0.021210878465332428,
+        0.046367803433949195
+      ]
+    },
+    "onestop-rereading": {
+      "over_map": [
+        -0.002315357870860124,
+        -0.0007487761048650121
+      ],
+      "over_midpoint": [
+        -0.0023330064515345583,
+        -0.0007555636134631838
+      ]
+    },
+    "plaba": {
+      "over_map": [
+        -0.0031263151813163415,
+        -0.0007793973414174094
+      ],
+      "over_midpoint": [
+        -0.0032224970403651465,
+        -0.0008380041716677944
+      ]
+    },
+    "race": {
+      "over_map": [
+        -0.012316371158660766,
+        0.024154569236571045
+      ],
+      "over_midpoint": [
+        -0.012310492811064467,
+        0.08036672894802466
+      ]
+    },
+    "rodger": null,
+    "scarecrow": {
+      "over_map": [
+        -0.0007143730863342666,
+        0.0013591611139347818
+      ],
+      "over_midpoint": [
+        -0.0006057325723598365,
+        0.0020237731929517886
+      ]
+    },
+    "studentannotations": {
+      "over_map": [
+        -0.00296878780716166,
+        0.0031721866839594776
+      ],
+      "over_midpoint": [
+        -0.0042440703229314975,
+        0.005948308271488125
+      ]
+    },
+    "textcomplexityde": {
+      "over_map": [
+        0.0010314419268950825,
+        0.001596205086277891
+      ],
+      "over_midpoint": [
+        0.0011142536221282473,
+        0.0016449841239594143
+      ]
+    },
+    "turkish": {
+      "over_map": [
+        -0.002109686720116577,
+        0.007588678529151793
+      ],
+      "over_midpoint": [
+        -0.0017039397811248191,
+        0.008035962247137207
+      ]
+    },
+    "yadav": {
+      "over_map": [
+        -0.023946167148488406,
+        0.011683153187029616
+      ],
+      "over_midpoint": [
+        -0.027427846636884468,
+        0.013003996080759972
+      ]
+    },
+    "zhan": {
+      "over_map": [
+        -0.01635135666302112,
+        0.04708516642395777
+      ],
+      "over_midpoint": [
+        -0.018019747697653243,
+        0.0531019834956612
+      ]
+    }
+  },
+  "endpoints_by_seed": {
+    "1729": {
+      "ambistory_joint": {
+        "source": "ambistory",
+        "rows": 258,
+        "families": 28,
+        "nll": [
+          1.6910364581896924,
+          1.6907415977079765,
+          1.6932939954002018
+        ]
+      },
+      "blott_2021_sentence_end_sense": {
+        "source": "blott",
+        "rows": 12,
+        "families": 3,
+        "nll": [
+          0.6918431655680393,
+          0.6919651929975313,
+          0.6908955787429251
+        ]
+      },
+      "blott_2023_sense_response_log_milliseconds": {
+        "source": "blott",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.3327581079615072,
+          1.3327684511631082,
+          1.3323454936619303
+        ]
+      },
+      "blott_2023_sentence_end_sense": {
+        "source": "blott",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.41522931996282825,
+          0.41523691457849377,
+          0.4139727627947512
+        ]
+      },
+      "clear_excerpt_easiness": {
+        "source": "clear",
+        "rows": 80,
+        "families": 78,
+        "nll": [
+          1.0449909766318621,
+          1.0522055736013123,
+          1.0447511084166126
+        ]
+      },
+      "complex_word_difficulty": {
+        "source": "complex",
+        "rows": 803,
+        "families": 719,
+        "nll": [
+          1.3069108409485637,
+          1.3072526343928048,
+          1.3069093725998566
+        ]
+      },
+      "context_first_readback": {
+        "source": "context-readback",
+        "rows": 217,
+        "families": 3,
+        "nll": [
+          0.13926144098878238,
+          0.1392742770622143,
+          0.13960245253595477
+        ]
+      },
+      "currie_end_coherence_report": {
+        "source": "currie",
+        "rows": 4,
+        "families": 2,
+        "nll": [
+          0.8054497956564688,
+          0.80594238412098,
+          0.7746890502130752
+        ]
+      },
+      "cwi_native_marked": {
+        "source": "cwi",
+        "rows": 266,
+        "families": 2,
+        "nll": [
+          0.3367059791350342,
+          0.33671445878124945,
+          0.3364222992604626
+        ]
+      },
+      "cwi_nonnative_marked": {
+        "source": "cwi",
+        "rows": 266,
+        "families": 2,
+        "nll": [
+          0.27383452428190974,
+          0.27383667068510553,
+          0.2738819963952866
+        ]
+      },
+      "czech_exp2_qcor": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.23514226636621632,
+          0.235146021219957,
+          0.233888531972798
+        ]
+      },
+      "czech_exp2_qmis": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.6672424444698154,
+          0.6672438833862995,
+          0.6665494018145754
+        ]
+      },
+      "czech_exp2_qpos": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.33074723060785494,
+          0.3307472215001935,
+          0.3307808961784834
+        ]
+      },
+      "czech_exp3_qcor": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.3875762097283393,
+          0.387575914178068,
+          0.38766052573406123
+        ]
+      },
+      "czech_exp3_qmis": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.5998343875943991,
+          0.59983663472681,
+          0.5991198114940114
+        ]
+      },
+      "czech_exp3_qpos": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.3163329556463246,
+          0.31633277151905487,
+          0.31637912420072567
+        ]
+      },
+      "first_readback_end_acceptability": {
+        "source": "first-readback",
+        "rows": 2,
+        "families": 1,
+        "nll": [
+          0.7078161304135118,
+          0.7183166323428843,
+          0.6725346836684306
+        ]
+      },
+      "first_readback_risk": {
+        "source": "first-readback",
+        "rows": 156,
+        "families": 6,
+        "nll": [
+          0.16871454851186504,
+          0.16900178073976102,
+          0.16311556586890186
+        ]
+      },
+      "frick_after_first_report": {
+        "source": "frick",
+        "rows": 27,
+        "families": 1,
+        "nll": [
+          0.3237324663798025,
+          0.3237324393336203,
+          0.3239248328724263
+        ]
+      },
+      "frick_first_report": {
+        "source": "frick",
+        "rows": 2,
+        "families": 1,
+        "nll": [
+          2.1668051732549802,
+          2.1704630371274996,
+          2.107803046175596
+        ]
+      },
+      "frick_log_keypress_seconds": {
+        "source": "frick",
+        "rows": 32,
+        "families": 1,
+        "nll": [
+          1.4853170825267725,
+          1.4853110598503265,
+          1.4858578085552456
+        ]
+      },
+      "kerwer_comprehensibility": {
+        "source": "kerwer",
+        "rows": 3,
+        "families": 1,
+        "nll": [
+          1.9490898486522523,
+          1.949518865878395,
+          1.937709126554193
+        ]
+      },
+      "kerwer_confusion": {
+        "source": "kerwer",
+        "rows": 3,
+        "families": 1,
+        "nll": [
+          1.2790419503046948,
+          1.2794453942391737,
+          1.2669717208729616
+        ]
+      },
+      "kerwer_frustration": {
+        "source": "kerwer",
+        "rows": 3,
+        "families": 1,
+        "nll": [
+          1.0722303692349635,
+          1.0722407455687746,
+          1.0701445163911723
+        ]
+      },
+      "oliver_first_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.362522086877704,
+          1.3625060717109736,
+          1.3648403390450077
+        ]
+      },
+      "oliver_first_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.387362933390687,
+          1.3873627380524227,
+          1.387436817180323
+        ]
+      },
+      "oliver_first_delay_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.7734264204970112,
+          1.7734031480623358,
+          1.7743048005694408
+        ]
+      },
+      "oliver_retest_initial_state": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.7823221792134737,
+          0.7823222617879255,
+          0.7823556598534408
+        ]
+      },
+      "oliver_retest_target_confirmation": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.5388777374811826,
+          0.538872824253353,
+          0.5400617531710575
+        ]
+      },
+      "oliver_retrieval_protocol_path": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.8211756876714307,
+          1.821171335524853,
+          1.822070316834144
+        ]
+      },
+      "oliver_second_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.5259427999039539,
+          1.5259146893252724,
+          1.5279872543595465
+        ]
+      },
+      "oliver_second_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.3923012044227319,
+          1.3922878016194546,
+          1.3943511567233389
+        ]
+      },
+      "onestop_answer_choice": {
+        "source": "onestop",
+        "rows": 192,
+        "families": 2,
+        "nll": [
+          1.4506974909954324,
+          1.456051871397649,
+          1.4258121202098335
+        ]
+      },
+      "onestop_rereading_first_read_correct": {
+        "source": "onestop-rereading",
+        "rows": 22,
+        "families": 2,
+        "nll": [
+          0.5379777558936166,
+          0.5379753702640552,
+          0.5385782253247443
+        ]
+      },
+      "onestop_rereading_reread_correct": {
+        "source": "onestop-rereading",
+        "rows": 22,
+        "families": 2,
+        "nll": [
+          0.6260594630278026,
+          0.6260170925492824,
+          0.6311994549522633
+        ]
+      },
+      "plaba_open_book_accuracy": {
+        "source": "plaba",
+        "rows": 24,
+        "families": 2,
+        "nll": [
+          0.2848526996311398,
+          0.28484993181430357,
+          0.2857704779150843
+        ]
+      },
+      "plaba_overall_perceived_understanding": {
+        "source": "plaba",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.5781507918211268,
+          1.5782157495727693,
+          1.5732579859713505
+        ]
+      },
+      "plaba_overall_processing_ease": {
+        "source": "plaba",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.6433798399332895,
+          1.6425772833121302,
+          1.6566339486635562
+        ]
+      },
+      "plaba_perceived_understanding": {
+        "source": "plaba",
+        "rows": 45,
+        "families": 2,
+        "nll": [
+          1.1522905341482372,
+          1.1525277433533638,
+          1.1485842637586925
+        ]
+      },
+      "plaba_processing_ease": {
+        "source": "plaba",
+        "rows": 45,
+        "families": 2,
+        "nll": [
+          1.3779961999482722,
+          1.3777356020681015,
+          1.383148301991253
+        ]
+      },
+      "plaba_quiz_confidence": {
+        "source": "plaba",
+        "rows": 24,
+        "families": 2,
+        "nll": [
+          1.3511367471284284,
+          1.3511141691128024,
+          1.3530209976651486
+        ]
+      },
+      "plaba_quiz_effort": {
+        "source": "plaba",
+        "rows": 24,
+        "families": 2,
+        "nll": [
+          1.6380682307895693,
+          1.6380345958131144,
+          1.6400922065239811
+        ]
+      },
+      "race_answer_choice": {
+        "source": "race",
+        "rows": 143,
+        "families": 17,
+        "nll": [
+          1.0498757498738525,
+          1.0668237508710403,
+          1.0425969302496174
+        ]
+      },
+      "rodger_paired_effectiveness": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.835021649564986,
+          2.835294784818248,
+          2.814048784442602
+        ]
+      },
+      "rodger_paired_support": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.799790704438077,
+          2.8006884384418007,
+          2.755163053088797
+        ]
+      },
+      "scarecrow_retrospective_contradiction_mark_ordinal": {
+        "source": "scarecrow",
+        "rows": 9553,
+        "families": 95,
+        "nll": [
+          0.06017939381941157,
+          0.06069014414302581,
+          0.05931931971592842
+        ]
+      },
+      "studentannotations_comprehension_difficulty": {
+        "source": "studentannotations",
+        "rows": 89,
+        "families": 89,
+        "nll": [
+          1.3292245211268272,
+          1.328884665980033,
+          1.3302935254733104
+        ]
+      },
+      "textcomplexityde_complexity": {
+        "source": "textcomplexityde",
+        "rows": 59,
+        "families": 2,
+        "nll": [
+          1.3728482765465606,
+          1.37297641102008,
+          1.370886103905016
+        ]
+      },
+      "textcomplexityde_lexical_difficulty": {
+        "source": "textcomplexityde",
+        "rows": 59,
+        "families": 2,
+        "nll": [
+          1.4024671463384526,
+          1.4024730537734484,
+          1.402062440242023
+        ]
+      },
+      "textcomplexityde_understandability": {
+        "source": "textcomplexityde",
+        "rows": 59,
+        "families": 2,
+        "nll": [
+          1.3945515423767592,
+          1.3945565569749676,
+          1.394351997272268
+        ]
+      },
+      "turkish_comprehension_correct": {
+        "source": "turkish",
+        "rows": 86,
+        "families": 3,
+        "nll": [
+          0.6714841296632751,
+          0.671577864007278,
+          0.6685338903545973
+        ]
+      },
+      "turkish_sentence_comparison": {
+        "source": "turkish",
+        "rows": 53,
+        "families": 2,
+        "nll": [
+          0.6360860582271183,
+          0.6362586708559662,
+          0.6407179096906873
+        ]
+      },
+      "yadav_full_sentence_difficulty": {
+        "source": "yadav",
+        "rows": 15,
+        "families": 2,
+        "nll": [
+          1.2613085111167497,
+          1.2616091634164117,
+          1.2585078593491759
+        ]
+      },
+      "yadav_paced_words_difficulty": {
+        "source": "yadav",
+        "rows": 16,
+        "families": 2,
+        "nll": [
+          1.288195776587358,
+          1.2890299656661743,
+          1.2805530335026323
+        ]
+      },
+      "zhan_reference_form": {
+        "source": "zhan",
+        "rows": 2,
+        "families": 2,
+        "nll": [
+          1.0777221416330758,
+          1.0777085718258208,
+          1.0781645066094978
+        ]
+      },
+      "zhan_remention": {
+        "source": "zhan",
+        "rows": 4,
+        "families": 2,
+        "nll": [
+          0.8580851665311557,
+          0.8652482582206408,
+          0.8075473917684575
+        ]
+      }
+    },
+    "2718": {
+      "ambistory_joint": {
+        "source": "ambistory",
+        "rows": 258,
+        "families": 28,
+        "nll": [
+          1.691720122755226,
+          1.6915585173300696,
+          1.6932211248592948
+        ]
+      },
+      "blott_2021_sentence_end_sense": {
+        "source": "blott",
+        "rows": 12,
+        "families": 3,
+        "nll": [
+          0.6897863937147197,
+          0.6892857900919007,
+          0.6956404096229197
+        ]
+      },
+      "blott_2023_sense_response_log_milliseconds": {
+        "source": "blott",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.3344734196114396,
+          1.3344772025816403,
+          1.3333332403484368
+        ]
+      },
+      "blott_2023_sentence_end_sense": {
+        "source": "blott",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.4114610891167065,
+          0.4114610777347287,
+          0.41137000815385844
+        ]
+      },
+      "clear_excerpt_easiness": {
+        "source": "clear",
+        "rows": 80,
+        "families": 78,
+        "nll": [
+          1.0515292970739865,
+          1.0510960917393983,
+          1.0534880104387476
+        ]
+      },
+      "complex_word_difficulty": {
+        "source": "complex",
+        "rows": 803,
+        "families": 719,
+        "nll": [
+          1.2876072058110872,
+          1.2876051786177134,
+          1.2876294628105582
+        ]
+      },
+      "context_first_readback": {
+        "source": "context-readback",
+        "rows": 217,
+        "families": 3,
+        "nll": [
+          0.13926134048023717,
+          0.13930495723389882,
+          0.13860840588356263
+        ]
+      },
+      "currie_end_coherence_report": {
+        "source": "currie",
+        "rows": 4,
+        "families": 2,
+        "nll": [
+          0.800956134082141,
+          0.8015180987808481,
+          0.7798523040699704
+        ]
+      },
+      "cwi_native_marked": {
+        "source": "cwi",
+        "rows": 266,
+        "families": 2,
+        "nll": [
+          0.3299812679475759,
+          0.3299806862862748,
+          0.33001500991523297
+        ]
+      },
+      "cwi_nonnative_marked": {
+        "source": "cwi",
+        "rows": 266,
+        "families": 2,
+        "nll": [
+          0.2726813517055908,
+          0.2726744920753635,
+          0.2730296746602119
+        ]
+      },
+      "czech_exp2_qcor": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.23842070264300597,
+          0.2384234674699799,
+          0.2369976125344434
+        ]
+      },
+      "czech_exp2_qmis": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.6693961937800339,
+          0.6693961913715903,
+          0.6694153490248929
+        ]
+      },
+      "czech_exp2_qpos": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.3286777705921454,
+          0.32867917394312507,
+          0.32773096009251845
+        ]
+      },
+      "czech_exp3_qcor": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.38847213885515014,
+          0.38847276146408155,
+          0.38788724798693897
+        ]
+      },
+      "czech_exp3_qmis": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.6017237890703669,
+          0.601725289116466,
+          0.6008962108112328
+        ]
+      },
+      "czech_exp3_qpos": {
+        "source": "czech",
+        "rows": 20,
+        "families": 5,
+        "nll": [
+          0.31441337837393984,
+          0.31441235343350327,
+          0.3150421878287584
+        ]
+      },
+      "first_readback_end_acceptability": {
+        "source": "first-readback",
+        "rows": 2,
+        "families": 1,
+        "nll": [
+          0.7273370290857932,
+          0.7395963331227077,
+          0.6705876874727663
+        ]
+      },
+      "first_readback_risk": {
+        "source": "first-readback",
+        "rows": 156,
+        "families": 6,
+        "nll": [
+          0.16798114874296813,
+          0.16830460152131535,
+          0.1631469213823252
+        ]
+      },
+      "frick_after_first_report": {
+        "source": "frick",
+        "rows": 27,
+        "families": 1,
+        "nll": [
+          0.3239635817706861,
+          0.3239636032053625,
+          0.3239240806651712
+        ]
+      },
+      "frick_first_report": {
+        "source": "frick",
+        "rows": 2,
+        "families": 1,
+        "nll": [
+          2.196600139623707,
+          2.196640577888284,
+          2.189559605760625
+        ]
+      },
+      "frick_log_keypress_seconds": {
+        "source": "frick",
+        "rows": 32,
+        "families": 1,
+        "nll": [
+          1.4987289381418367,
+          1.4986710281095355,
+          1.50378788917811
+        ]
+      },
+      "kerwer_comprehensibility": {
+        "source": "kerwer",
+        "rows": 3,
+        "families": 1,
+        "nll": [
+          1.9566904777797751,
+          1.9567851887755567,
+          1.9527609874625165
+        ]
+      },
+      "kerwer_confusion": {
+        "source": "kerwer",
+        "rows": 3,
+        "families": 1,
+        "nll": [
+          1.2823797825143717,
+          1.2825620756690173,
+          1.2742182335793988
+        ]
+      },
+      "kerwer_frustration": {
+        "source": "kerwer",
+        "rows": 3,
+        "families": 1,
+        "nll": [
+          1.0711193422059295,
+          1.0711195848421067,
+          1.0707458237428245
+        ]
+      },
+      "oliver_first_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.3635187082583355,
+          1.363518150862353,
+          1.3638776455049724
+        ]
+      },
+      "oliver_first_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.388737889522537,
+          1.3887384667317066,
+          1.3884971992035615
+        ]
+      },
+      "oliver_first_delay_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.78759311333167,
+          1.7875950021768219,
+          1.7872406511638979
+        ]
+      },
+      "oliver_retest_initial_state": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.7832419462042426,
+          0.7832418420540628,
+          0.7833242977483644
+        ]
+      },
+      "oliver_retest_target_confirmation": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          0.5388318322893763,
+          0.5388316412780613,
+          0.5390324065061758
+        ]
+      },
+      "oliver_retrieval_protocol_path": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.822340005998322,
+          1.8223394591445277,
+          1.8227721703472304
+        ]
+      },
+      "oliver_second_confirmation_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.5193733148233795,
+          1.5193730326625372,
+          1.519528183062137
+        ]
+      },
+      "oliver_second_definition_rt_log_milliseconds": {
+        "source": "oliver",
+        "rows": 8,
+        "families": 4,
+        "nll": [
+          1.3873719878957027,
+          1.3873712813530252,
+          1.3876700007530511
+        ]
+      },
+      "onestop_answer_choice": {
+        "source": "onestop",
+        "rows": 192,
+        "families": 2,
+        "nll": [
+          1.4481022120298408,
+          1.454967862858192,
+          1.4199392619907827
+        ]
+      },
+      "onestop_rereading_first_read_correct": {
+        "source": "onestop-rereading",
+        "rows": 22,
+        "families": 2,
+        "nll": [
+          0.5393597439836245,
+          0.539367362391122,
+          0.5381388655978521
+        ]
+      },
+      "onestop_rereading_reread_correct": {
+        "source": "onestop-rereading",
+        "rows": 22,
+        "families": 2,
+        "nll": [
+          0.624178372526969,
+          0.6241686127893854,
+          0.6255022244602406
+        ]
+      },
+      "plaba_open_book_accuracy": {
+        "source": "plaba",
+        "rows": 24,
+        "families": 2,
+        "nll": [
+          0.2936137760708605,
+          0.29361401914032836,
+          0.29359546313947615
+        ]
+      },
+      "plaba_overall_perceived_understanding": {
+        "source": "plaba",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.5890560584187794,
+          1.5890286795784891,
+          1.593033016153604
+        ]
+      },
+      "plaba_overall_processing_ease": {
+        "source": "plaba",
+        "rows": 6,
+        "families": 2,
+        "nll": [
+          1.641329614268091,
+          1.6411542613110879,
+          1.6493752940276398
+        ]
+      },
+      "plaba_perceived_understanding": {
+        "source": "plaba",
+        "rows": 45,
+        "families": 2,
+        "nll": [
+          1.1573326635029595,
+          1.1573949390303961,
+          1.1556157946072416
+        ]
+      },
+      "plaba_processing_ease": {
+        "source": "plaba",
+        "rows": 45,
+        "families": 2,
+        "nll": [
+          1.35676802565474,
+          1.3564981764096662,
+          1.3716314449023588
+        ]
+      },
+      "plaba_quiz_confidence": {
+        "source": "plaba",
+        "rows": 24,
+        "families": 2,
+        "nll": [
+          1.3526821490654999,
+          1.35268524797254,
+          1.351985609197923
+        ]
+      },
+      "plaba_quiz_effort": {
+        "source": "plaba",
+        "rows": 24,
+        "families": 2,
+        "nll": [
+          1.6305765019503953,
+          1.6306313830662766,
+          1.624028029658254
+        ]
+      },
+      "race_answer_choice": {
+        "source": "race",
+        "rows": 143,
+        "families": 17,
+        "nll": [
+          1.0490624026382407,
+          1.0904436735832397,
+          1.0425055589106802
+        ]
+      },
+      "rodger_paired_effectiveness": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.837236868460363,
+          2.8371791263071575,
+          2.8422502957039684
+        ]
+      },
+      "rodger_paired_support": {
+        "source": "rodger",
+        "rows": 301,
+        "families": 1,
+        "nll": [
+          2.756677831177545,
+          2.7561723582821958,
+          2.792166902828149
+        ]
+      },
+      "scarecrow_retrospective_contradiction_mark_ordinal": {
+        "source": "scarecrow",
+        "rows": 9553,
+        "families": 95,
+        "nll": [
+          0.059399158442000735,
+          0.05960999814010721,
+          0.05957930335158428
+        ]
+      },
+      "studentannotations_comprehension_difficulty": {
+        "source": "studentannotations",
+        "rows": 89,
+        "families": 89,
+        "nll": [
+          1.3342380915361987,
+          1.3361142505125982,
+          1.3327227239943016
+        ]
+      },
+      "textcomplexityde_complexity": {
+        "source": "textcomplexityde",
+        "rows": 59,
+        "families": 2,
+        "nll": [
+          1.4056358229202093,
+          1.405722165578126,
+          1.4048890679818147
+        ]
+      },
+      "textcomplexityde_lexical_difficulty": {
+        "source": "textcomplexityde",
+        "rows": 59,
+        "families": 2,
+        "nll": [
+          1.4008842099633914,
+          1.4008900880654407,
+          1.4015127489686179
+        ]
+      },
+      "textcomplexityde_understandability": {
+        "source": "textcomplexityde",
+        "rows": 59,
+        "families": 2,
+        "nll": [
+          1.3873707422373796,
+          1.3875405125825933,
+          1.3820800789499867
+        ]
+      },
+      "turkish_comprehension_correct": {
+        "source": "turkish",
+        "rows": 86,
+        "families": 3,
+        "nll": [
+          0.6698695347879221,
+          0.669953432977088,
+          0.6676494896850884
+        ]
+      },
+      "turkish_sentence_comparison": {
+        "source": "turkish",
+        "rows": 53,
+        "families": 2,
+        "nll": [
+          0.6678449603915693,
+          0.6691184204607209,
+          0.659194861791324
+        ]
+      },
+      "yadav_full_sentence_difficulty": {
+        "source": "yadav",
+        "rows": 15,
+        "families": 2,
+        "nll": [
+          1.2482033490296625,
+          1.2448932853557173,
+          1.2673507284801964
+        ]
+      },
+      "yadav_paced_words_difficulty": {
+        "source": "yadav",
+        "rows": 16,
+        "families": 2,
+        "nll": [
+          1.2782100790063657,
+          1.2753049318331064,
+          1.2996599948132102
+        ]
+      },
+      "zhan_reference_form": {
+        "source": "zhan",
+        "rows": 2,
+        "families": 2,
+        "nll": [
+          1.0560551572077554,
+          1.0560363708859928,
+          1.0563689356096269
+        ]
+      },
+      "zhan_remention": {
+        "source": "zhan",
+        "rows": 4,
+        "families": 2,
+        "nll": [
+          0.8443497538294966,
+          0.846079475980066,
+          0.8313398738906236
+        ]
+      }
+    }
+  },
+  "fit": "faa1f2cdba6542a27bcecaa11653fb6889e34cfc3c8645b166c0d37c32b29cd8"
+}

@@ -1,0 +1,157 @@
+{
+  "articles": 165,
+  "bootstrap": {
+    "conditional_on_fixed_fold_predictions": true,
+    "draws": 10000,
+    "seed": 20261121,
+    "unit": "article"
+  },
+  "fold_assignment_sha256": "d9490ea4b2be026281e7deb97a17b6b9db2aa0a51b30f1a13c5ddd4c484079b0",
+  "folds": [
+    {
+      "a": 2.1879305689924404,
+      "b": 0.7273804096634976,
+      "fit_interval_nll_nats": 3.078954923008211,
+      "fit_iterations": 10,
+      "fit_questions": 451,
+      "fold": 0,
+      "test_articles": 33,
+      "test_questions": 104
+    },
+    {
+      "a": 2.1454337780313986,
+      "b": 0.7013573154359598,
+      "fit_interval_nll_nats": 3.0939053292101577,
+      "fit_iterations": 10,
+      "fit_questions": 439,
+      "fold": 1,
+      "test_articles": 33,
+      "test_questions": 116
+    },
+    {
+      "a": 2.2340080233647206,
+      "b": 0.7137529965566486,
+      "fit_interval_nll_nats": 3.045205244806523,
+      "fit_iterations": 10,
+      "fit_questions": 442,
+      "fold": 2,
+      "test_articles": 33,
+      "test_questions": 113
+    },
+    {
+      "a": 2.1797341747682775,
+      "b": 0.7112766355784714,
+      "fit_interval_nll_nats": 3.0937866047933755,
+      "fit_iterations": 10,
+      "fit_questions": 439,
+      "fold": 3,
+      "test_articles": 33,
+      "test_questions": 116
+    },
+    {
+      "a": 2.1754946618590756,
+      "b": 0.7000443509413209,
+      "fit_interval_nll_nats": 3.042645268880057,
+      "fit_iterations": 10,
+      "fit_questions": 449,
+      "fold": 4,
+      "test_articles": 33,
+      "test_questions": 106
+    }
+  ],
+  "input_sha256": {
+    "articles_sha256": "3f696df5c24b2b18ff1a4041c36fbe14b8823853bc1eec0078dc780efdd31fdc",
+    "assay_sha256": "0e177e3bfca4047dc48cb47cd9429daf469962b6b6d99899ce650b06fee67bb0",
+    "calibration_protocol_sha256": "82ce7b16267045ab1763ba7d55b14ec2d59f19fd3c8f8e2201bb9ae83e4e32a3",
+    "calibrator_sha256": "0abf5b1af3f68b6ea21c7ab679596e2eaece6e3eefb049b9c306d07e970028bd",
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "original_scores_sha256": "9eace8273b364126a195d9ef3abb98dbae4be4215a43bb7bb45b6e961fbc3111",
+    "outcomes_sha256": "8049bf5493202795ade880bf7fbd14bfabe7594f05a125c6803bfc4201368a84",
+    "predictions_sha256": "bdd8183ffbea53ba034c852f2e52271e2b60b61b5bd3bc293c0c59e0821b2da2",
+    "protocol_sha256": "dd2addc249bef59d51cbfcecc6017cdbd3e70129231bc5f2f8c22cfcb76a7e5f",
+    "queries_sha256": "aa9e86e80294d179a76db4780cf34918693492387fd58b52e65f8055a5fb34d9",
+    "scorer_sha256": "e1098d8cbcd79cc61f341da82c96401f13a9cb99749946393a06ac77eea1f539",
+    "seal_sha256": "62a4a1fe229a03f50152249aac974617123ddfb954b9ac22d14c04c9d0bdc91c"
+  },
+  "metrics": {
+    "cumulative_brier": {
+      "calibrated_minus_raw": {
+        "question_only": {
+          "article_cluster_ci95": [
+            -0.01878116230736166,
+            -0.0031907504928786424
+          ],
+          "articles": 165,
+          "difference": -0.010660857053695964
+        },
+        "token_rank": {
+          "article_cluster_ci95": [
+            -0.2871981076692688,
+            -0.24439139139019708
+          ],
+          "articles": 165,
+          "difference": -0.26609563882787685
+        }
+      },
+      "means": {
+        "calibrated_token_rank": 0.18356046920295782,
+        "question_only": 0.19422132625665378,
+        "token_rank": 0.4496561080308346
+      }
+    },
+    "first_stop": {
+      "mean_predicted": {
+        "calibrated_token_rank": 0.05159637819838474,
+        "question_only": 0.031860351347605495,
+        "token_rank": 0.0008643727886063206
+      },
+      "observed_reference_fraction": 0.04234234234234234
+    },
+    "interval_nll_nats": {
+      "calibrated_minus_raw": {
+        "question_only": {
+          "article_cluster_ci95": [
+            -0.1752583767567221,
+            -0.06549504523058301
+          ],
+          "articles": 165,
+          "difference": -0.12026191219608263
+        },
+        "token_rank": {
+          "article_cluster_ci95": [
+            -2.124559342653547,
+            -1.8982987041158224
+          ],
+          "articles": 165,
+          "difference": -2.014292535038904
+        }
+      },
+      "means": {
+        "calibrated_token_rank": 3.0760223946126986,
+        "question_only": 3.1962843068087814,
+        "token_rank": 5.090314929651602
+      }
+    }
+  },
+  "questions": 555,
+  "references": 1110,
+  "same_stop": {
+    "exact_intensity_order_changes": 0,
+    "outcomes": {
+      "calibrated_token_rank": {
+        "losses": 263,
+        "ties": 0,
+        "wins": 435
+      },
+      "token_rank": {
+        "losses": 263,
+        "ties": 0,
+        "wins": 435
+      }
+    },
+    "pairs": 698,
+    "tolerance_scored_cdf_order_changes": 0
+  },
+  "scope": "Retrospective article-grouped out-of-fold calibration of frozen evidence-arrival forecasts",
+  "valid_probability_laws": 555
+}

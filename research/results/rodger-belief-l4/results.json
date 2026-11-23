@@ -1,0 +1,2089 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "resampling": "crossed policy \u00d7 reader, common paired multinomial weights, no refit",
+    "seed": 735972
+  },
+  "forecast_seal_sha256": "654820d553fdbfd447fa81a2ef05120a4d72dda890b1a14bfb572d1b4950443d",
+  "modes": {
+    "known_prior": {
+      "conditions": {
+        "2": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": -0.6610436747741363,
+                "five_training_policy_effect_mean": 2.0553665774001906,
+                "form": -1.3619688669519805,
+                "qwen": -1.2034648101805066
+              },
+              "estimated_effect_rating_points": {
+                "condition": -0.5010436747741362,
+                "five_training_policy_effect_mean": 2.2153665774001907,
+                "form": -1.2019688669519804,
+                "qwen": -1.0434648101805064
+              },
+              "human_effect_rating_points": 0.16000000000000003
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -10.45594733216713,
+                "five_training_policy_effect_mean": -12.744796687905932,
+                "form": -10.067600222620854,
+                "qwen": -9.234413900183757
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.0375220555879725,
+                "five_training_policy_effect_mean": -0.25132730015082955,
+                "form": 2.425869165134248,
+                "qwen": 3.259055487571346
+              },
+              "human_effect_rating_points": 12.493469387755102
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": -0.5827851504713126,
+                "five_training_policy_effect_mean": 3.1386606950472493,
+                "form": -1.311643878368995,
+                "qwen": -1.0759734312251639
+              },
+              "estimated_effect_rating_points": {
+                "condition": -1.3255302485105283,
+                "five_training_policy_effect_mean": 2.3959155970080337,
+                "form": -2.0543889764082106,
+                "qwen": -1.8187185292643795
+              },
+              "human_effect_rating_points": -0.7427450980392156
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -1.8217837944858601,
+                "five_training_policy_effect_mean": -1.4938098931880444,
+                "form": -3.54379379557065,
+                "qwen": -3.0628219551390727
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.2958632643376693,
+                "five_training_policy_effect_mean": 1.623837165635485,
+                "form": -0.4261467367471208,
+                "qwen": 0.0548251036844567
+              },
+              "human_effect_rating_points": 3.1176470588235294
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": 1.692225912929871,
+                "five_training_policy_effect_mean": 0.5433665774001921,
+                "form": 0.3113632960291002,
+                "qwen": 1.2887976648122939
+              },
+              "estimated_effect_rating_points": {
+                "condition": 3.11222591292987,
+                "five_training_policy_effect_mean": 1.9633665774001912,
+                "form": 1.7313632960290992,
+                "qwen": 2.708797664812293
+              },
+              "human_effect_rating_points": 1.419999999999999
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 7.915242408759413,
+                "five_training_policy_effect_mean": 8.501212731246344,
+                "form": 6.638169410655771,
+                "qwen": 6.214876104297815
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.7037039472209514,
+                "five_training_policy_effect_mean": 3.2896742697078833,
+                "form": 1.4266309491173095,
+                "qwen": 1.0033376427593534
+              },
+              "human_effect_rating_points": -5.211538461538462
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -1.77435186222105,
+                4.099743873847724
+              ],
+              "estimate": 1.2204568761319665,
+              "fixed_policy_reader_only_ci95": [
+                -0.6235948363581848,
+                3.0840639569343096
+              ]
+            },
+            "form": {
+              "ci95": [
+                -2.6779196488799464,
+                3.2089779736174178
+              ],
+              "estimate": 0.31689313836222377,
+              "fixed_policy_reader_only_ci95": [
+                -1.5278116439041924,
+                2.17624976156357
+              ]
+            },
+            "human": {
+              "ci95": [
+                -4.578354380632118,
+                8.779491481043909
+              ],
+              "estimate": 1.8728054811668255,
+              "fixed_policy_reader_only_ci95": [
+                -1.5717362040651561,
+                5.3442450593395545
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -2.4107344337802905,
+                3.703978222671387
+              ],
+              "estimate": 0.6939720932304274,
+              "fixed_policy_reader_only_ci95": [
+                -1.1719794929550862,
+                2.570993178932728
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -7.310236652822463,
+                5.57628047254418
+              ],
+              "estimate": -0.652348605034859,
+              "fixed_policy_reader_only_ci95": [
+                -3.88261168204888,
+                2.5419907302906477
+              ]
+            },
+            "form": {
+              "ci95": [
+                -7.9046930461514515,
+                4.504603235862191
+              ],
+              "estimate": -1.5559123428046018,
+              "fixed_policy_reader_only_ci95": [
+                -4.7830303321840955,
+                1.641727663806403
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -7.339258433860836,
+                4.745214268183612
+              ],
+              "estimate": -1.1788333879363981,
+              "fixed_policy_reader_only_ci95": [
+                -4.404133762337189,
+                2.0241857070512506
+              ]
+            }
+          },
+          "name": "statistic",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 3.8548380455979534,
+            "five_training_policy_effect_mean": 4.746202193697992,
+            "form": 3.8724232450328917,
+            "qwen": 3.680057977639768
+          }
+        },
+        "3": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": -5.44223359931114,
+                "five_training_policy_effect_mean": -3.7514973989595832,
+                "form": -7.230210598290947,
+                "qwen": -7.90365207692304
+              },
+              "estimated_effect_rating_points": {
+                "condition": -0.43909634440917955,
+                "five_training_policy_effect_mean": 1.2516398559423771,
+                "form": -2.2270733433889864,
+                "qwen": -2.9005148220210786
+              },
+              "human_effect_rating_points": 5.003137254901961
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -5.946061163459748,
+                "five_training_policy_effect_mean": -2.667732693077231,
+                "form": -8.659556020615902,
+                "qwen": -9.517398223209316
+              },
+              "estimated_effect_rating_points": {
+                "condition": -1.8460611634597477,
+                "five_training_policy_effect_mean": 1.4322673069227692,
+                "form": -4.5595560206159025,
+                "qwen": -5.417398223209316
+              },
+              "human_effect_rating_points": 4.1000000000000005
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 0.2004945521127115,
+                "five_training_policy_effect_mean": 5.34826730692277,
+                "form": -3.3964241478451536,
+                "qwen": -4.327700584613828
+              },
+              "estimated_effect_rating_points": {
+                "condition": -2.3795054478872886,
+                "five_training_policy_effect_mean": 2.7682673069227692,
+                "form": -5.976424147845154,
+                "qwen": -6.907700584613828
+              },
+              "human_effect_rating_points": -2.58
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -3.2410572834502807,
+                "five_training_policy_effect_mean": -2.2446738695478192,
+                "form": -5.140286753655498,
+                "qwen": -6.312840116256078
+              },
+              "estimated_effect_rating_points": {
+                "condition": 0.5063936969418763,
+                "five_training_policy_effect_mean": 1.5027771108443377,
+                "form": -1.3928357732633405,
+                "qwen": -2.5653891358639216
+              },
+              "human_effect_rating_points": 3.747450980392157
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": 1.5340556711523412,
+                "five_training_policy_effect_mean": -2.936630652260903,
+                "form": -2.988028446138437,
+                "qwen": -3.800774729609058
+              },
+              "estimated_effect_rating_points": {
+                "condition": 5.858137303805401,
+                "five_training_policy_effect_mean": 1.3874509803921573,
+                "form": 1.3360531865146232,
+                "qwen": 0.5233069030440018
+              },
+              "human_effect_rating_points": 4.32408163265306
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 8.568102032469987,
+                "five_training_policy_effect_mean": 6.252267306922769,
+                "form": 4.105727255272455,
+                "qwen": 3.9375362993603673
+              },
+              "estimated_effect_rating_points": {
+                "condition": 5.234768699136653,
+                "five_training_policy_effect_mean": 2.9189339735894357,
+                "form": 0.7723939219391216,
+                "qwen": 0.6042029660270343
+              },
+              "human_effect_rating_points": -3.333333333333333
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -2.5407381012344676,
+                4.8410002523766495
+              ],
+              "estimate": 1.1557727906879527,
+              "fixed_policy_reader_only_ci95": [
+                -0.6360831700012974,
+                2.963015048370916
+              ]
+            },
+            "form": {
+              "ci95": [
+                -5.385454080308511,
+                1.2907815679569627
+              ],
+              "estimate": -2.0079070294432735,
+              "fixed_policy_reader_only_ci95": [
+                -3.786021945060377,
+                -0.19952154727276578
+              ]
+            },
+            "human": {
+              "ci95": [
+                -3.816462319048329,
+                7.817453980137473
+              ],
+              "estimate": 1.8768894224356407,
+              "fixed_policy_reader_only_ci95": [
+                -1.9620494997861924,
+                5.59244407073041
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -6.275927447465411,
+                0.6243429624416791
+              ],
+              "estimate": -2.777248816106184,
+              "fixed_policy_reader_only_ci95": [
+                -4.578144937686238,
+                -0.9499916765002258
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -6.845317530488891,
+                5.43983844345263
+              ],
+              "estimate": -0.721116631747688,
+              "fixed_policy_reader_only_ci95": [
+                -4.093822525195886,
+                2.7768035639224333
+              ]
+            },
+            "form": {
+              "ci95": [
+                -9.61432421285793,
+                1.870584820824319
+              ],
+              "estimate": -3.8847964518789144,
+              "fixed_policy_reader_only_ci95": [
+                -7.255843335382678,
+                -0.41028436609175184
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -10.470303854290762,
+                1.2418910415044582
+              ],
+              "estimate": -4.654138238541825,
+              "fixed_policy_reader_only_ci95": [
+                -8.034708147139183,
+                -1.1782709528050042
+              ]
+            }
+          },
+          "name": "anecdote_for",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 4.155334050326036,
+            "five_training_policy_effect_mean": 3.8668448712818453,
+            "form": 5.253372203636399,
+            "qwen": 5.966650338328615
+          }
+        },
+        "4": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 8.800228191740699,
+                "five_training_policy_effect_mean": 11.286193231138608,
+                "form": 12.743275396633228,
+                "qwen": 11.731013453764215
+              },
+              "estimated_effect_rating_points": {
+                "condition": -8.462848731336225,
+                "five_training_policy_effect_mean": -5.976883691938315,
+                "form": -4.519801526443695,
+                "qwen": -5.532063469312709
+              },
+              "human_effect_rating_points": -17.263076923076923
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -2.684707315551936,
+                "five_training_policy_effect_mean": -4.50580676886139,
+                "form": 2.743280133332277,
+                "qwen": 1.5546846800322829
+              },
+              "estimated_effect_rating_points": {
+                "condition": -6.787784238628859,
+                "five_training_policy_effect_mean": -8.608883691938313,
+                "form": -1.359796789744646,
+                "qwen": -2.54839224304464
+              },
+              "human_effect_rating_points": -4.103076923076923
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 1.0178624897226136,
+                "five_training_policy_effect_mean": 4.8025009234463,
+                "form": 5.766801506878949,
+                "qwen": 4.454693786745873
+              },
+              "estimated_effect_rating_points": {
+                "condition": -10.842137510277386,
+                "five_training_policy_effect_mean": -7.057499076553699,
+                "form": -6.093198493121051,
+                "qwen": -7.405306213254127
+              },
+              "human_effect_rating_points": -11.86
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -0.8376309401011528,
+                "five_training_policy_effect_mean": -6.704889232616125,
+                "form": 5.096456355384904,
+                "qwen": 3.586049569674715
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.1081391433824654,
+                "five_training_policy_effect_mean": -8.975397435897438,
+                "form": 2.8259481521035905,
+                "qwen": 1.3155413663934024
+              },
+              "human_effect_rating_points": -2.2705082032813126
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -5.294777372646327,
+                "five_training_policy_effect_mean": -8.373499076553697,
+                "form": -0.06919882811329536,
+                "qwen": -1.1610381978564748
+              },
+              "estimated_effect_rating_points": {
+                "condition": -6.174777372646328,
+                "five_training_policy_effect_mean": -9.253499076553698,
+                "form": -0.9491988281132961,
+                "qwen": -2.0410381978564756
+              },
+              "human_effect_rating_points": -0.8800000000000008
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 6.757391622084859,
+                "five_training_policy_effect_mean": 3.4955009234463015,
+                "form": 10.83129448966573,
+                "qwen": 10.287316420456323
+              },
+              "estimated_effect_rating_points": {
+                "condition": -4.013441711248475,
+                "five_training_policy_effect_mean": -7.2753324098870324,
+                "form": 0.060461156332396904,
+                "qwen": -0.48351691287701115
+              },
+              "human_effect_rating_points": -10.770833333333334
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -9.793762038706813,
+                -3.233258190025971
+              ],
+              "estimate": -6.564854784586622,
+              "fixed_policy_reader_only_ci95": [
+                -8.20649767503414,
+                -4.902988202188562
+              ]
+            },
+            "form": {
+              "ci95": [
+                -5.088087918462301,
+                1.8446590355894368
+              ],
+              "estimate": -1.6725977214977834,
+              "fixed_policy_reader_only_ci95": [
+                -3.285122094203615,
+                -0.049351747369717286
+              ]
+            },
+            "human": {
+              "ci95": [
+                -15.149880021356187,
+                -0.658066856172459
+              ],
+              "estimate": -7.857915897128082,
+              "fixed_policy_reader_only_ci95": [
+                -11.735781147715599,
+                -4.022203710423331
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -6.210420977433856,
+                0.7339367417157437
+              ],
+              "estimate": -2.7824626116585938,
+              "fixed_policy_reader_only_ci95": [
+                -4.411963382610514,
+                -1.1421125782412125
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -5.146022709686907,
+                7.646628261620152
+              ],
+              "estimate": 1.2930611125414604,
+              "fixed_policy_reader_only_ci95": [
+                -2.1669751511507154,
+                4.907428732241599
+              ]
+            },
+            "form": {
+              "ci95": [
+                -0.004641947968960108,
+                12.188285025038187
+              ],
+              "estimate": 6.185318175630298,
+              "fixed_policy_reader_only_ci95": [
+                2.713895394935323,
+                9.778944351297095
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -1.165537520221806,
+                11.183092794534838
+              ],
+              "estimate": 5.0754532854694885,
+              "fixed_policy_reader_only_ci95": [
+                1.6106610642999817,
+                8.660805301466857
+              ]
+            }
+          },
+          "name": "anecdote_against",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 4.232099655307931,
+            "five_training_policy_effect_mean": 6.528065026010403,
+            "form": 6.2083844516680635,
+            "qwen": 5.462466018088313
+          }
+        },
+        "5": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 7.342361489050723,
+                "five_training_policy_effect_mean": 9.367977591036414,
+                "form": 4.3471849283387956,
+                "qwen": 4.163296603441683
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.1298124694428804,
+                "five_training_policy_effect_mean": 3.1554285714285712,
+                "form": -1.865364091269047,
+                "qwen": -2.04925241616616
+              },
+              "human_effect_rating_points": -6.212549019607843
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -6.533649560882704,
+                "five_training_policy_effect_mean": -6.466999599839936,
+                "form": -8.559815920267418,
+                "qwen": -8.537561648131149
+              },
+              "estimated_effect_rating_points": {
+                "condition": 0.4496157452397451,
+                "five_training_policy_effect_mean": 0.5162657062825129,
+                "form": -1.5765506141449688,
+                "qwen": -1.5542963420086995
+              },
+              "human_effect_rating_points": 6.9832653061224494
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": -9.168685611106138,
+                "five_training_policy_effect_mean": -7.463734293717487,
+                "form": -11.479686029340105,
+                "qwen": -11.904207113072871
+              },
+              "estimated_effect_rating_points": {
+                "condition": -1.35480806008573,
+                "five_training_policy_effect_mean": 0.3501432573029211,
+                "form": -3.665808478319696,
+                "qwen": -4.090329562052462
+              },
+              "human_effect_rating_points": 7.813877551020409
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -2.6893872223211446,
+                "five_training_policy_effect_mean": -1.1223753501400564,
+                "form": -5.370632814887575,
+                "qwen": -5.958168891549283
+              },
+              "estimated_effect_rating_points": {
+                "condition": -0.15997545761526188,
+                "five_training_policy_effect_mean": 1.4070364145658263,
+                "form": -2.8412210501816926,
+                "qwen": -3.4287571268434
+              },
+              "human_effect_rating_points": 2.5294117647058827
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -3.2274911179711125,
+                "five_training_policy_effect_mean": -4.795787114845938,
+                "form": -6.965000449118563,
+                "qwen": -6.864389673061154
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.3630971173230044,
+                "five_training_policy_effect_mean": 0.7948011204481794,
+                "form": -1.3744122138244461,
+                "qwen": -1.273801437767037
+              },
+              "human_effect_rating_points": 5.590588235294117
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 8.493654520877783,
+                "five_training_policy_effect_mean": 10.480918767507003,
+                "form": 5.2371377610288175,
+                "qwen": 5.081043518675445
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.3536545208777824,
+                "five_training_policy_effect_mean": 3.340918767507003,
+                "form": -1.9028622389711818,
+                "qwen": -2.0589564813245547
+              },
+              "human_effect_rating_points": -7.14
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -2.1339202327119433,
+                3.3827948722698404
+              ],
+              "estimate": 0.6302327225304034,
+              "fixed_policy_reader_only_ci95": [
+                -1.1426792310072085,
+                2.391890593871135
+              ]
+            },
+            "form": {
+              "ci95": [
+                -4.869553329713719,
+                0.5163236283067145
+              ],
+              "estimate": -2.204369781118506,
+              "fixed_policy_reader_only_ci95": [
+                -3.971867551285142,
+                -0.44462642949869474
+              ]
+            },
+            "human": {
+              "ci95": [
+                -5.095076205107987,
+                8.430563920703273
+              ],
+              "estimate": 1.5940989729225028,
+              "fixed_policy_reader_only_ci95": [
+                -1.8795255760945808,
+                4.930841978159478
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -5.139295041167904,
+                0.34647919403063326
+              ],
+              "estimate": -2.4092322276937184,
+              "fixed_policy_reader_only_ci95": [
+                -4.19487396123272,
+                -0.6334919278894735
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -7.972601053149469,
+                6.022762839850137
+              ],
+              "estimate": -0.9638662503920994,
+              "fixed_policy_reader_only_ci95": [
+                -4.138717701875103,
+                2.2426151517342015
+              ]
+            },
+            "form": {
+              "ci95": [
+                -10.564164289253693,
+                2.993968458019733
+              ],
+              "estimate": -3.798468754041009,
+              "fixed_policy_reader_only_ci95": [
+                -6.967903715845041,
+                -0.5954581461419765
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -10.802629505656304,
+                2.832880113781672
+              ],
+              "estimate": -4.003331200616222,
+              "fixed_policy_reader_only_ci95": [
+                -7.171940107291527,
+                -0.789156188672887
+              ]
+            }
+          },
+          "name": "combined_congruent",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 6.242538253701601,
+            "five_training_policy_effect_mean": 6.616298786181139,
+            "form": 6.993242983830213,
+            "qwen": 7.084777907988598
+          }
+        },
+        "6": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 10.66602118078059,
+                "five_training_policy_effect_mean": 10.299652661064425,
+                "form": 12.676708202686644,
+                "qwen": 12.042449540981249
+              },
+              "estimated_effect_rating_points": {
+                "condition": -1.9086726967704308,
+                "five_training_policy_effect_mean": -2.2750412164865947,
+                "form": 0.1020143251356247,
+                "qwen": -0.5322443365697711
+              },
+              "human_effect_rating_points": -12.57469387755102
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -5.322916735079809,
+                "five_training_policy_effect_mean": -3.6092741096438585,
+                "form": -1.6954443787505982,
+                "qwen": -1.869837182628502
+              },
+              "estimated_effect_rating_points": {
+                "condition": -6.306838303707259,
+                "five_training_policy_effect_mean": -4.593195678271309,
+                "form": -2.6793659473780487,
+                "qwen": -2.8537587512559526
+              },
+              "human_effect_rating_points": -0.9839215686274505
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 0.3848795798731883,
+                "five_training_policy_effect_mean": 1.348372949179672,
+                "form": 2.8782724623182414,
+                "qwen": 2.0328558498719205
+              },
+              "estimated_effect_rating_points": {
+                "condition": -4.73041453777387,
+                "five_training_policy_effect_mean": -3.7669211684673867,
+                "form": -2.2370216553288174,
+                "qwen": -3.0824382677751383
+              },
+              "human_effect_rating_points": -5.115294117647059
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -1.0935469463128218,
+                "five_training_policy_effect_mean": -1.4776150460184079,
+                "form": 1.8756465852181947,
+                "qwen": 0.7692934835471272
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.8538510679614815,
+                "five_training_policy_effect_mean": -4.2379191676670676,
+                "form": -0.884657536430465,
+                "qwen": -1.9910106381015324
+              },
+              "human_effect_rating_points": -2.7603041216486597
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -8.619431979688745,
+                "five_training_policy_effect_mean": -10.675156462585033,
+                "form": -5.61901163511473,
+                "qwen": -5.824498708578076
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.7151182541985492,
+                "five_training_policy_effect_mean": -5.770842737094838,
+                "form": -0.7146979096245346,
+                "qwen": -0.9201849830878817
+              },
+              "human_effect_rating_points": 4.904313725490195
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 6.874708997316426,
+                "five_training_policy_effect_mean": 4.114020008003202,
+                "form": 9.712171135621759,
+                "qwen": 9.280627853861965
+              },
+              "estimated_effect_rating_points": {
+                "condition": -0.545291002683574,
+                "five_training_policy_effect_mean": -3.3059799919967987,
+                "form": 2.29217113562176,
+                "qwen": 1.860627853861966
+              },
+              "human_effect_rating_points": -7.42
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -6.507294847629303,
+                -0.5512361159650807
+              ],
+              "estimate": -3.5100309771825278,
+              "fixed_policy_reader_only_ci95": [
+                -5.277004542015871,
+                -1.696944769274364
+              ]
+            },
+            "form": {
+              "ci95": [
+                -3.5673964382583803,
+                2.1678391205311565
+              ],
+              "estimate": -0.6869262646674139,
+              "fixed_policy_reader_only_ci95": [
+                -2.442711621917811,
+                1.1115342497455436
+              ]
+            },
+            "human": {
+              "ci95": [
+                -10.618207349313346,
+                2.7536031911015026
+              ],
+              "estimate": -3.991649993330666,
+              "fixed_policy_reader_only_ci95": [
+                -7.662561106839304,
+                -0.3726338579748968
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -4.199156000532449,
+                1.6631310485271806
+              ],
+              "estimate": -1.253168187154718,
+              "fixed_policy_reader_only_ci95": [
+                -3.0266372940569557,
+                0.5610945951194257
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -6.654192107316531,
+                7.767805053260987
+              ],
+              "estimate": 0.4816190161481382,
+              "fixed_policy_reader_only_ci95": [
+                -2.882076826127684,
+                3.833327063719748
+              ]
+            },
+            "form": {
+              "ci95": [
+                -3.625152946947623,
+                10.35877409619369
+              ],
+              "estimate": 3.304723728663252,
+              "fixed_policy_reader_only_ci95": [
+                -0.05632624819595614,
+                6.667801724793972
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -4.092076762304473,
+                9.746769174584976
+              ],
+              "estimate": 2.738481806175948,
+              "fixed_policy_reader_only_ci95": [
+                -0.6134968977786832,
+                6.095350400342065
+              ]
+            }
+          },
+          "name": "combined_incongruent",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 5.493584236508596,
+            "five_training_policy_effect_mean": 5.254015206082433,
+            "form": 5.742875733285028,
+            "qwen": 5.30326043657814
+          }
+        }
+      },
+      "metrics": {
+        "posterior_mae_rating_points": {
+          "condition": {
+            "ci95": [
+              18.253150732958275,
+              21.042528419744265
+            ],
+            "estimate": 19.580152200828422,
+            "fixed_policy_reader_only_ci95": [
+              18.79771746367578,
+              20.37328733968405
+            ]
+          },
+          "form": {
+            "ci95": [
+              18.45759505854035,
+              21.17587426023935
+            ],
+            "estimate": 19.731114675468785,
+            "fixed_policy_reader_only_ci95": [
+              18.946319644767534,
+              20.534197584469506
+            ]
+          },
+          "qwen": {
+            "ci95": [
+              18.46333124989949,
+              20.894545528311397
+            ],
+            "estimate": 19.655247224006153,
+            "fixed_policy_reader_only_ci95": [
+              18.867055466828432,
+              20.46239232571029
+            ]
+          }
+        },
+        "posterior_nll_nats": {
+          "condition": {
+            "ci95": [
+              3.7598638437706984,
+              4.035145248768051
+            ],
+            "estimate": 3.8994483120759753,
+            "fixed_policy_reader_only_ci95": [
+              3.7998222021650965,
+              3.994673942792639
+            ]
+          },
+          "form": {
+            "ci95": [
+              3.762440163377379,
+              4.039829145410874
+            ],
+            "estimate": 3.9042886841556106,
+            "fixed_policy_reader_only_ci95": [
+              3.8041155841126306,
+              3.998802269092149
+            ]
+          },
+          "qwen": {
+            "ci95": [
+              3.7647488446472477,
+              4.03245755688665
+            ],
+            "estimate": 3.9019868094603725,
+            "fixed_policy_reader_only_ci95": [
+              3.8025167411139607,
+              3.9963793056176535
+            ]
+          }
+        }
+      },
+      "posterior_nll_qwen_minus_form": {
+        "ci95": [
+          -0.012939381780281745,
+          0.0047090467368307454
+        ],
+        "estimate": -0.0023018746952381264,
+        "fixed_policy_reader_only_ci95": [
+          -0.003778259476709256,
+          -0.0008255062382209219
+        ]
+      }
+    },
+    "text_only": {
+      "conditions": {
+        "2": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 1.1039767949060284,
+                "five_training_policy_effect_mean": 2.0553665774001906,
+                "form": -0.20898628557251786,
+                "qwen": 0.04923212344075634
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.2639767949060285,
+                "five_training_policy_effect_mean": 2.2153665774001907,
+                "form": -0.04898628557251783,
+                "qwen": 0.20923212344075637
+              },
+              "human_effect_rating_points": 0.16000000000000003
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -16.060320144910534,
+                "five_training_policy_effect_mean": -12.744796687905932,
+                "form": -16.79529663191694,
+                "qwen": -13.804492210273015
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.566850757155432,
+                "five_training_policy_effect_mean": -0.25132730015082955,
+                "form": -4.301827244161838,
+                "qwen": -1.3110228225179128
+              },
+              "human_effect_rating_points": 12.493469387755102
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 2.246039934643861,
+                "five_training_policy_effect_mean": 3.1386606950472493,
+                "form": 0.39513084829487033,
+                "qwen": 0.9123680431866537
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.5032948366046455,
+                "five_training_policy_effect_mean": 2.3959155970080337,
+                "form": -0.3476142497443453,
+                "qwen": 0.16962294514743803
+              },
+              "human_effect_rating_points": -0.7427450980392156
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -1.052832024591034,
+                "five_training_policy_effect_mean": -1.4938098931880444,
+                "form": -3.992712524038503,
+                "qwen": -3.4056635338913415
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.0648150342324953,
+                "five_training_policy_effect_mean": 1.623837165635485,
+                "form": -0.8750654652149734,
+                "qwen": -0.28801647506781203
+              },
+              "human_effect_rating_points": 3.1176470588235294
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -1.460533182275353,
+                "five_training_policy_effect_mean": 0.5433665774001921,
+                "form": -4.185321863982126,
+                "qwen": -1.9527694394354045
+              },
+              "estimated_effect_rating_points": {
+                "condition": -0.04053318227535385,
+                "five_training_policy_effect_mean": 1.9633665774001912,
+                "form": -2.765321863982127,
+                "qwen": -0.5327694394354054
+              },
+              "human_effect_rating_points": 1.419999999999999
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 7.653091098354535,
+                "five_training_policy_effect_mean": 8.501212731246344,
+                "form": 5.102324876181791,
+                "qwen": 5.464864096802524
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.441552636816074,
+                "five_training_policy_effect_mean": 3.2896742697078833,
+                "form": -0.10921358535667025,
+                "qwen": 0.25332563526406204
+              },
+              "human_effect_rating_points": -5.211538461538462
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -1.1954959304840833,
+                1.932537396427258
+              ],
+              "estimate": 0.6110425605214095,
+              "fixed_policy_reader_only_ci95": [
+                0.6110425605214099,
+                0.6110425605214107
+              ]
+            },
+            "form": {
+              "ci95": [
+                -2.776840443941497,
+                -0.2581094783177622
+              ],
+              "estimate": -1.4080047823387454,
+              "fixed_policy_reader_only_ci95": [
+                -1.4080047823387458,
+                -1.408004782338745
+              ]
+            },
+            "human": {
+              "ci95": [
+                -4.578354380632118,
+                8.779491481043909
+              ],
+              "estimate": 1.8728054811668255,
+              "fixed_policy_reader_only_ci95": [
+                -1.5717362040651561,
+                5.3442450593395545
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -0.7500881244654813,
+                0.13445366458154462
+              ],
+              "estimate": -0.2499380055281456,
+              "fixed_policy_reader_only_ci95": [
+                -0.24993800552814516,
+                -0.2499380055281447
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -9.322829640274316,
+                6.123302617524379
+              ],
+              "estimate": -1.261762920645416,
+              "fixed_policy_reader_only_ci95": [
+                -4.733202498818144,
+                2.1827787645865655
+              ]
+            },
+            "form": {
+              "ci95": [
+                -11.018278453014942,
+                3.8904705511761875
+              ],
+              "estimate": -3.280810263505571,
+              "fixed_policy_reader_only_ci95": [
+                -6.7522498416783,
+                0.16373142172641023
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -9.325344707558667,
+                4.584689753271415
+              ],
+              "estimate": -2.1227434866949713,
+              "fixed_policy_reader_only_ci95": [
+                -5.594183064867699,
+                1.3217981985370109
+              ]
+            }
+          },
+          "name": "statistic",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 4.929465529946891,
+            "five_training_policy_effect_mean": 4.746202193697992,
+            "form": 5.113295504997792,
+            "qwen": 4.264898241171616
+          }
+        },
+        "3": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": -2.8178462763431287,
+                "five_training_policy_effect_mean": -3.7514973989595832,
+                "form": -5.038265160203099,
+                "qwen": -5.66748874818565
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.185290978558832,
+                "five_training_policy_effect_mean": 1.2516398559423771,
+                "form": -0.035127905301138185,
+                "qwen": -0.6643514932836894
+              },
+              "human_effect_rating_points": 5.003137254901961
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -2.1963764473359637,
+                "five_training_policy_effect_mean": -2.667732693077231,
+                "form": -4.10805151171781,
+                "qwen": -5.273268186432631
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.9036235526640368,
+                "five_training_policy_effect_mean": 1.4322673069227692,
+                "form": -0.00805151171780949,
+                "qwen": -1.1732681864326309
+              },
+              "human_effect_rating_points": 4.1000000000000005
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 5.131919697456784,
+                "five_training_policy_effect_mean": 5.34826730692277,
+                "form": 2.5430861067982153,
+                "qwen": 1.1473493324820385
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.5519196974567833,
+                "five_training_policy_effect_mean": 2.7682673069227692,
+                "form": -0.03691389320178473,
+                "qwen": -1.4326506675179616
+              },
+              "human_effect_rating_points": -2.58
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -2.5422926538115225,
+                "five_training_policy_effect_mean": -2.2446738695478192,
+                "form": -4.654430501050152,
+                "qwen": -5.20136352921028
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.2051583265806345,
+                "five_training_policy_effect_mean": 1.5027771108443377,
+                "form": -0.9069795206579956,
+                "qwen": -1.4539125488181224
+              },
+              "human_effect_rating_points": 3.747450980392157
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": 0.25664917115826924,
+                "five_training_policy_effect_mean": -2.936630652260903,
+                "form": -4.325037156512108,
+                "qwen": -5.511124862847103
+              },
+              "estimated_effect_rating_points": {
+                "condition": 4.5807308038113295,
+                "five_training_policy_effect_mean": 1.3874509803921573,
+                "form": -0.0009555238590479576,
+                "qwen": -1.1870432301940426
+              },
+              "human_effect_rating_points": 4.32408163265306
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 8.388504019490451,
+                "five_training_policy_effect_mean": 6.252267306922769,
+                "form": 3.2964394111381425,
+                "qwen": 3.0351241667402933
+              },
+              "estimated_effect_rating_points": {
+                "condition": 5.055170686157119,
+                "five_training_policy_effect_mean": 2.9189339735894357,
+                "form": -0.0368939221951905,
+                "qwen": -0.29820916659303975
+              },
+              "human_effect_rating_points": -3.333333333333333
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                1.8339482147938917,
+                4.0805755897163865
+              ],
+              "estimate": 2.9136490075381225,
+              "fixed_policy_reader_only_ci95": [
+                2.913649007538124,
+                2.913649007538125
+              ]
+            },
+            "form": {
+              "ci95": [
+                -0.4671329815147929,
+                -0.014117654614222375
+              ],
+              "estimate": -0.17082037948882767,
+              "fixed_policy_reader_only_ci95": [
+                -0.17082037948882745,
+                -0.170820379488827
+              ]
+            },
+            "human": {
+              "ci95": [
+                -3.816462319048329,
+                7.817453980137473
+              ],
+              "estimate": 1.8768894224356407,
+              "fixed_policy_reader_only_ci95": [
+                -1.9620494997861924,
+                5.59244407073041
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -1.353277134256238,
+                -0.6763563335680136
+              ],
+              "estimate": -1.0349058821399146,
+              "fixed_policy_reader_only_ci95": [
+                -1.0349058821399146,
+                -1.0349058821399142
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -5.260326718325224,
+                7.109470739968699
+              ],
+              "estimate": 1.0367595851024818,
+              "fixed_policy_reader_only_ci95": [
+                -2.6787950631922866,
+                4.875698507324317
+              ]
+            },
+            "form": {
+              "ci95": [
+                -7.9854175266571366,
+                3.666570771857458
+              ],
+              "estimate": -2.0477098019244684,
+              "fixed_policy_reader_only_ci95": [
+                -5.763264450219238,
+                1.7912291202973643
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -8.853341660663276,
+                2.814746508338872
+              ],
+              "estimate": -2.9117953045755556,
+              "fixed_policy_reader_only_ci95": [
+                -6.627349952870326,
+                0.9271436176462774
+              ]
+            }
+          },
+          "name": "anecdote_for",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 3.55559804426602,
+            "five_training_policy_effect_mean": 3.8668448712818453,
+            "form": 3.9942183079032545,
+            "qwen": 4.305953137649666
+          }
+        },
+        "4": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 12.353307550694302,
+                "five_training_policy_effect_mean": 11.286193231138608,
+                "form": 17.227079836936,
+                "qwen": 16.423729677704358
+              },
+              "estimated_effect_rating_points": {
+                "condition": -4.9097693723826215,
+                "five_training_policy_effect_mean": -5.976883691938315,
+                "form": -0.035997086140923784,
+                "qwen": -0.839347245372565
+              },
+              "human_effect_rating_points": -17.263076923076923
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -0.6048283054012114,
+                "five_training_policy_effect_mean": -4.50580676886139,
+                "form": 4.093905814101571,
+                "qwen": 2.7725211577006625
+              },
+              "estimated_effect_rating_points": {
+                "condition": -4.707905228478134,
+                "five_training_policy_effect_mean": -8.608883691938313,
+                "form": -0.009171108975351672,
+                "qwen": -1.3305557653762605
+              },
+              "human_effect_rating_points": -4.103076923076923
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 5.923513314644076,
+                "five_training_policy_effect_mean": 4.8025009234463,
+                "form": 11.821813664827616,
+                "qwen": 10.233887816545474
+              },
+              "estimated_effect_rating_points": {
+                "condition": -5.9364866853559235,
+                "five_training_policy_effect_mean": -7.057499076553699,
+                "form": -0.03818633517238368,
+                "qwen": -1.6261121834545254
+              },
+              "human_effect_rating_points": -11.86
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -3.8217180476679258,
+                "five_training_policy_effect_mean": -6.704889232616125,
+                "form": 1.3635286826233175,
+                "qwen": 0.6300342509317192
+              },
+              "estimated_effect_rating_points": {
+                "condition": -6.092226250949238,
+                "five_training_policy_effect_mean": -8.975397435897438,
+                "form": -0.9069795206579951,
+                "qwen": -1.6404739523495935
+              },
+              "human_effect_rating_points": -2.2705082032813126
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -4.509467536473285,
+                "five_training_policy_effect_mean": -8.373499076553697,
+                "form": 0.8790225205934572,
+                "qwen": -0.44851927140386927
+              },
+              "estimated_effect_rating_points": {
+                "condition": -5.389467536473286,
+                "five_training_policy_effect_mean": -9.253499076553698,
+                "form": -0.00097747940654358,
+                "qwen": -1.32851927140387
+              },
+              "human_effect_rating_points": -0.8800000000000008
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 6.791007281822454,
+                "five_training_policy_effect_mean": 3.4955009234463015,
+                "form": 10.730941858332377,
+                "qwen": 10.26721314049108
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.9798260515108796,
+                "five_training_policy_effect_mean": -7.2753324098870324,
+                "form": -0.03989147500095669,
+                "qwen": -0.5036201928422539
+              },
+              "human_effect_rating_points": -10.770833333333334
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -5.7443796281247295,
+                -4.578700385561197
+              ],
+              "estimate": -5.169280187525014,
+              "fixed_policy_reader_only_ci95": [
+                -5.169280187525015,
+                -5.169280187525013
+              ]
+            },
+            "form": {
+              "ci95": [
+                -0.46774705688234963,
+                -0.01474603625662518
+              ],
+              "estimate": -0.17186716755902576,
+              "fixed_policy_reader_only_ci95": [
+                -0.17186716755902554,
+                -0.1718671675590251
+              ]
+            },
+            "human": {
+              "ci95": [
+                -15.149880021356187,
+                -0.658066856172459
+              ],
+              "estimate": -7.857915897128082,
+              "fixed_policy_reader_only_ci95": [
+                -11.735781147715599,
+                -4.022203710423331
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -1.5299870055776146,
+                -0.8649214076227311
+              ],
+              "estimate": -1.2114381017998448,
+              "fixed_policy_reader_only_ci95": [
+                -1.2114381017998452,
+                -1.2114381017998443
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -4.698698068686737,
+                10.154459392753516
+              ],
+              "estimate": 2.6886357096030684,
+              "fixed_policy_reader_only_ci95": [
+                -1.1470764771016824,
+                6.566500960190584
+              ]
+            },
+            "form": {
+              "ci95": [
+                0.39841750128238007,
+                15.091439241199783
+              ],
+              "estimate": 7.686048729569056,
+              "fixed_policy_reader_only_ci95": [
+                3.8503365428643055,
+                11.563913980156572
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -0.6988702478005526,
+                14.099889110326853
+              ],
+              "estimate": 6.646477795328238,
+              "fixed_policy_reader_only_ci95": [
+                2.8107656086234862,
+                10.524343045915753
+              ]
+            }
+          },
+          "name": "anecdote_against",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 5.667307006117209,
+            "five_training_policy_effect_mean": 6.528065026010403,
+            "form": 7.686048729569056,
+            "qwen": 6.795984219129527
+          }
+        },
+        "5": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 10.517297013738737,
+                "five_training_policy_effect_mean": 9.367977591036414,
+                "form": 6.113670424055138,
+                "qwen": 5.816931406460868
+              },
+              "estimated_effect_rating_points": {
+                "condition": 4.304747994130895,
+                "five_training_policy_effect_mean": 3.1554285714285712,
+                "form": -0.09887859555270495,
+                "qwen": -0.39561761314697486
+              },
+              "human_effect_rating_points": -6.212549019607843
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -8.578221414581217,
+                "five_training_policy_effect_mean": -6.466999599839936,
+                "form": -11.29567814578229,
+                "qwen": -9.482059515440003
+              },
+              "estimated_effect_rating_points": {
+                "condition": -1.5949561084587671,
+                "five_training_policy_effect_mean": 0.5162657062825129,
+                "form": -4.312412839659841,
+                "qwen": -2.4987942093175532
+              },
+              "human_effect_rating_points": 6.9832653061224494
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": -5.196635741237405,
+                "five_training_policy_effect_mean": -7.463734293717487,
+                "form": -8.217734132909255,
+                "qwen": -9.112449090240883
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.6172418097830032,
+                "five_training_policy_effect_mean": 0.3501432573029211,
+                "form": -0.40385658188884666,
+                "qwen": -1.2985715392204753
+              },
+              "human_effect_rating_points": 7.813877551020409
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -0.3067889687078549,
+                "five_training_policy_effect_mean": -1.1223753501400564,
+                "form": -4.34015408007895,
+                "qwen": -4.382391143502897
+              },
+              "estimated_effect_rating_points": {
+                "condition": 2.222622795998028,
+                "five_training_policy_effect_mean": 1.4070364145658263,
+                "form": -1.8107423153730675,
+                "qwen": -1.8529793787970141
+              },
+              "human_effect_rating_points": 2.5294117647058827
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -4.037524829245736,
+                "five_training_policy_effect_mean": -4.795787114845938,
+                "form": -8.35711475334928,
+                "qwen": -7.4953463441238775
+              },
+              "estimated_effect_rating_points": {
+                "condition": 1.5530634060483806,
+                "five_training_policy_effect_mean": 0.7948011204481794,
+                "form": -2.766526518055162,
+                "qwen": -1.9047581088297605
+              },
+              "human_effect_rating_points": 5.590588235294117
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 11.256514326229723,
+                "five_training_policy_effect_mean": 10.480918767507003,
+                "form": 6.97501790843666,
+                "qwen": 7.161294653884638
+              },
+              "estimated_effect_rating_points": {
+                "condition": 4.116514326229723,
+                "five_training_policy_effect_mean": 3.340918767507003,
+                "form": -0.16498209156333932,
+                "qwen": 0.021294653884638137
+              },
+              "human_effect_rating_points": -7.14
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                0.5178887004833055,
+                3.6137315410837134
+              ],
+              "estimate": 2.20320570395521,
+              "fixed_policy_reader_only_ci95": [
+                2.203205703955211,
+                2.203205703955212
+              ]
+            },
+            "form": {
+              "ci95": [
+                -2.935564324660073,
+                -0.45705337858233275
+              ],
+              "estimate": -1.5928998236821603,
+              "fixed_policy_reader_only_ci95": [
+                -1.5928998236821588,
+                -1.5928998236821574
+              ]
+            },
+            "human": {
+              "ci95": [
+                -5.095076205107987,
+                8.430563920703273
+              ],
+              "estimate": 1.5940989729225028,
+              "fixed_policy_reader_only_ci95": [
+                -1.8795255760945808,
+                4.930841978159478
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -1.9931092590520194,
+                -0.5891772165905494
+              ],
+              "estimate": -1.3215710325711898,
+              "fixed_policy_reader_only_ci95": [
+                -1.3215710325711902,
+                -1.3215710325711894
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -7.170240656394043,
+                8.339830458946345
+              ],
+              "estimate": 0.6091067310327074,
+              "fixed_policy_reader_only_ci95": [
+                -2.727636274204267,
+                4.0827312800497895
+              ]
+            },
+            "form": {
+              "ci95": [
+                -10.668449988249922,
+                4.241696432473315
+              ],
+              "estimate": -3.186998796604663,
+              "fixed_policy_reader_only_ci95": [
+                -6.523741801841636,
+                0.2866257524124213
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -10.184966151751649,
+                4.302379023620118
+              ],
+              "estimate": -2.9156700054936926,
+              "fixed_policy_reader_only_ci95": [
+                -6.252413010730669,
+                0.5579545435233885
+              ]
+            }
+          },
+          "name": "combined_congruent",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 6.648830382290112,
+            "five_training_policy_effect_mean": 6.616298786181139,
+            "form": 7.549894907435262,
+            "qwen": 7.241745358942194
+          }
+        },
+        "6": {
+          "by_policy": {
+            "ban": {
+              "effect_error_rating_points": {
+                "condition": 9.841280730137619,
+                "five_training_policy_effect_mean": 10.299652661064425,
+                "form": 12.475085942995726,
+                "qwen": 11.912143915676005
+              },
+              "estimated_effect_rating_points": {
+                "condition": -2.733413147413401,
+                "five_training_policy_effect_mean": -2.2750412164865947,
+                "form": -0.09960793455529426,
+                "qwen": -0.6625499618750155
+              },
+              "human_effect_rating_points": -12.57469387755102
+            },
+            "label": {
+              "effect_error_rating_points": {
+                "condition": -7.441125875105057,
+                "five_training_policy_effect_mean": -3.6092741096438585,
+                "form": -3.3293410437396247,
+                "qwen": -1.672953232159859
+              },
+              "estimated_effect_rating_points": {
+                "condition": -8.425047443732508,
+                "five_training_policy_effect_mean": -4.593195678271309,
+                "form": -4.313262612367075,
+                "qwen": -2.6568748007873095
+              },
+              "human_effect_rating_points": -0.9839215686274505
+            },
+            "merch": {
+              "effect_error_rating_points": {
+                "condition": 1.4725896984048186,
+                "five_training_policy_effect_mean": 1.348372949179672,
+                "form": 4.710420328439519,
+                "qwen": 3.574463542450987
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.64270441924224,
+                "five_training_policy_effect_mean": -3.7669211684673867,
+                "form": -0.40487378920753936,
+                "qwen": -1.5408305751960718
+              },
+              "human_effect_rating_points": -5.115294117647059
+            },
+            "mph": {
+              "effect_error_rating_points": {
+                "condition": -2.34174912509516,
+                "five_training_policy_effect_mean": -1.4776150460184079,
+                "form": 0.9495618062755922,
+                "qwen": 0.6845314435982486
+              },
+              "estimated_effect_rating_points": {
+                "condition": -5.10205324674382,
+                "five_training_policy_effect_mean": -4.2379191676670676,
+                "form": -1.8107423153730675,
+                "qwen": -2.075772678050411
+              },
+              "human_effect_rating_points": -2.7603041216486597
+            },
+            "quota": {
+              "effect_error_rating_points": {
+                "condition": -12.119732414859786,
+                "five_training_policy_effect_mean": -10.675156462585033,
+                "form": -7.670858500106349,
+                "qwen": -6.994940284107888
+              },
+              "estimated_effect_rating_points": {
+                "condition": -7.21541868936959,
+                "five_training_policy_effect_mean": -5.770842737094838,
+                "form": -2.766544774616154,
+                "qwen": -2.090626558617693
+              },
+              "human_effect_rating_points": 4.904313725490195
+            },
+            "tax": {
+              "effect_error_rating_points": {
+                "condition": 4.309752469856207,
+                "five_training_policy_effect_mean": 4.114020008003202,
+                "form": 7.252401683213604,
+                "qwen": 7.261723921686693
+              },
+              "estimated_effect_rating_points": {
+                "condition": -3.1102475301437935,
+                "five_training_policy_effect_mean": -3.3059799919967987,
+                "form": -0.16759831678639614,
+                "qwen": -0.1582760783133068
+              },
+              "human_effect_rating_points": -7.42
+            }
+          },
+          "difference_vs_control_rating_points": {
+            "condition": {
+              "ci95": [
+                -6.821805153379531,
+                -3.405346503516742
+              ],
+              "estimate": -5.038147412774225,
+              "fixed_policy_reader_only_ci95": [
+                -5.038147412774228,
+                -5.038147412774226
+              ]
+            },
+            "form": {
+              "ci95": [
+                -2.9361138102742883,
+                -0.4583381012106642
+              ],
+              "estimate": -1.593771623817588,
+              "fixed_policy_reader_only_ci95": [
+                -1.5937716238175874,
+                -1.5937716238175865
+              ]
+            },
+            "human": {
+              "ci95": [
+                -10.618207349313346,
+                2.7536031911015026
+              ],
+              "estimate": -3.991649993330666,
+              "fixed_policy_reader_only_ci95": [
+                -7.662561106839304,
+                -0.3726338579748968
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -2.1852676620094162,
+                -0.7948058884381174
+              ],
+              "estimate": -1.5308217754733016,
+              "fixed_policy_reader_only_ci95": [
+                -1.530821775473303,
+                -1.530821775473302
+              ]
+            }
+          },
+          "model_minus_human_rating_points": {
+            "condition": {
+              "ci95": [
+                -8.885795669442427,
+                6.688356603061612
+              ],
+              "estimate": -1.046497419443559,
+              "fixed_policy_reader_only_ci95": [
+                -4.665513554799331,
+                2.6244136940650753
+              ]
+            },
+            "form": {
+              "ci95": [
+                -5.044612248451448,
+                9.798922076916636
+              ],
+              "estimate": 2.397878369513078,
+              "fixed_policy_reader_only_ci95": [
+                -1.2211377658426914,
+                6.068789483021715
+              ]
+            },
+            "qwen": {
+              "ci95": [
+                -4.6546851645313305,
+                9.514586003034669
+              ],
+              "estimate": 2.4608282178573644,
+              "fixed_policy_reader_only_ci95": [
+                -1.1581879174984064,
+                6.131739331366
+              ]
+            }
+          },
+          "name": "combined_incongruent",
+          "per_policy_effect_mae_rating_points": {
+            "condition": 6.254371718909774,
+            "five_training_policy_effect_mean": 5.254015206082433,
+            "form": 6.064611550795068,
+            "qwen": 5.35012605661328
+          }
+        }
+      },
+      "metrics": {
+        "posterior_mae_rating_points": {
+          "condition": {
+            "ci95": [
+              27.149172483513162,
+              30.364641565606565
+            ],
+            "estimate": 28.74344468019973,
+            "fixed_policy_reader_only_ci95": [
+              27.628156083242164,
+              29.90321948703211
+            ]
+          },
+          "form": {
+            "ci95": [
+              27.310292124766548,
+              30.54869994418138
+            ],
+            "estimate": 28.92508377868543,
+            "fixed_policy_reader_only_ci95": [
+              27.796030990882038,
+              30.09937065024815
+            ]
+          },
+          "qwen": {
+            "ci95": [
+              27.198402001536635,
+              30.354686202182656
+            ],
+            "estimate": 28.773974591671152,
+            "fixed_policy_reader_only_ci95": [
+              27.64567506223051,
+              29.950658568599188
+            ]
+          }
+        },
+        "posterior_nll_nats": {
+          "condition": {
+            "ci95": [
+              4.058212928849583,
+              4.297851506022307
+            ],
+            "estimate": 4.17670802172163,
+            "fixed_policy_reader_only_ci95": [
+              4.0925450840125235,
+              4.258753300112045
+            ]
+          },
+          "form": {
+            "ci95": [
+              4.0658598836267785,
+              4.301019318644694
+            ],
+            "estimate": 4.182629963957294,
+            "fixed_policy_reader_only_ci95": [
+              4.097570273558834,
+              4.2642137626664605
+            ]
+          },
+          "qwen": {
+            "ci95": [
+              4.061739112057737,
+              4.283205478593336
+            ],
+            "estimate": 4.171732077317703,
+            "fixed_policy_reader_only_ci95": [
+              4.087240587625634,
+              4.252845991396511
+            ]
+          }
+        },
+        "prior_mae_rating_points": {
+          "condition": {
+            "ci95": [
+              24.96031803814629,
+              28.72873746552865
+            ],
+            "estimate": 26.89806557061271,
+            "fixed_policy_reader_only_ci95": [
+              25.812951244524218,
+              27.969168609493853
+            ]
+          },
+          "form": {
+            "ci95": [
+              24.963769479208093,
+              28.732924937421817
+            ],
+            "estimate": 26.89987742659591,
+            "fixed_policy_reader_only_ci95": [
+              25.815068694302077,
+              27.9699059873193
+            ]
+          },
+          "qwen": {
+            "ci95": [
+              24.868976864748216,
+              28.36253646747967
+            ],
+            "estimate": 26.666296913013195,
+            "fixed_policy_reader_only_ci95": [
+              25.583581887051025,
+              27.73281916084813
+            ]
+          }
+        },
+        "prior_nll_nats": {
+          "condition": {
+            "ci95": [
+              3.8832281109879734,
+              4.151219746623286
+            ],
+            "estimate": 4.023369739349709,
+            "fixed_policy_reader_only_ci95": [
+              3.9464072803959276,
+              4.09761961059156
+            ]
+          },
+          "form": {
+            "ci95": [
+              3.883280069987198,
+              4.151342522782305
+            ],
+            "estimate": 4.023577150263839,
+            "fixed_policy_reader_only_ci95": [
+              3.946530034866821,
+              4.0978587247856835
+            ]
+          },
+          "qwen": {
+            "ci95": [
+              3.8733120159674126,
+              4.133623187782187
+            ],
+            "estimate": 4.011147051053271,
+            "fixed_policy_reader_only_ci95": [
+              3.9341258471509577,
+              4.085379707530321
+            ]
+          }
+        }
+      },
+      "posterior_nll_qwen_minus_form": {
+        "ci95": [
+          -0.03777459982801381,
+          0.008510296537990248
+        ],
+        "estimate": -0.010897886639591015,
+        "fixed_policy_reader_only_ci95": [
+          -0.014255698299321162,
+          -0.0075530840322613835
+        ]
+      }
+    }
+  },
+  "policies": 6,
+  "primary": {
+    "condition": 4,
+    "control": 1,
+    "gates": {
+      "effect_error_within_five_points": false,
+      "lower_posterior_nll": false,
+      "negative_human_and_model_effect": true
+    },
+    "mode": "text_only",
+    "passes": false
+  },
+  "readers": 301,
+  "scope": "Study 1 internal leave-policy-out with shared readers, effectiveness ratings",
+  "trials": 1806
+}

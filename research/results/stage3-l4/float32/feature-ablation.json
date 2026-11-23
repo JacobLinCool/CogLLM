@@ -1,0 +1,191 @@
+{
+  "cached_sha256": "fd1edb0e06f8fc05438d93cf77805cf258077a3c7c2e33c57a3474b579538246",
+  "folds": "unchanged Stage 2 reader_connected_stimulus_families",
+  "readout": "L2-normalized selected hidden block(s) and fixed ridge lambda=1",
+  "scope": "full-document-visible sentence ratings; all results from cached L4 features",
+  "pooled_mae": {
+    "sentence_end": {
+      "qwen": {
+        "processing_ease": 0.636408990834147,
+        "perceived_understanding": 0.644831268376381
+      },
+      "qwen_plus_length": {
+        "processing_ease": 0.57701737141233,
+        "perceived_understanding": 0.604327791417479
+      }
+    },
+    "article_end": {
+      "qwen": {
+        "processing_ease": 0.7057850499753393,
+        "perceived_understanding": 0.7142192536311105
+      },
+      "qwen_plus_length": {
+        "processing_ease": 0.6234442213449919,
+        "perceived_understanding": 0.6638549332297087
+      }
+    },
+    "both": {
+      "qwen": {
+        "processing_ease": 0.6599492727584036,
+        "perceived_understanding": 0.6582021599575169
+      },
+      "qwen_plus_length": {
+        "processing_ease": 0.5931923164251535,
+        "perceived_understanding": 0.6155841119586032
+      }
+    },
+    "controls": {
+      "length": {
+        "processing_ease": 0.6323549205080884,
+        "perceived_understanding": 0.7317926344492433
+      },
+      "length_plus_variant": {
+        "processing_ease": 0.6131879168564667,
+        "perceived_understanding": 0.6868856323809739
+      },
+      "mean": {
+        "processing_ease": 0.7368345255938655,
+        "perceived_understanding": 0.8125855058149876
+      }
+    }
+  },
+  "within_article_rank": {
+    "sentence_end": {
+      "qwen": {
+        "processing_ease": {
+          "concordance": 0.646070460704607,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.6399671951886277,
+          "unequal_target_pairs": 1829
+        }
+      },
+      "qwen_plus_length": {
+        "processing_ease": {
+          "concordance": 0.7379403794037941,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.6902679059595407,
+          "unequal_target_pairs": 1829
+        }
+      }
+    },
+    "article_end": {
+      "qwen": {
+        "processing_ease": {
+          "concordance": 0.5,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.5,
+          "unequal_target_pairs": 1829
+        }
+      },
+      "qwen_plus_length": {
+        "processing_ease": {
+          "concordance": 0.7138211382113822,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.6377802077638054,
+          "unequal_target_pairs": 1829
+        }
+      }
+    },
+    "both": {
+      "qwen": {
+        "processing_ease": {
+          "concordance": 0.6444444444444445,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.643521049753964,
+          "unequal_target_pairs": 1829
+        }
+      },
+      "qwen_plus_length": {
+        "processing_ease": {
+          "concordance": 0.7379403794037941,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.6883542919628212,
+          "unequal_target_pairs": 1829
+        }
+      }
+    },
+    "controls": {
+      "length": {
+        "processing_ease": {
+          "concordance": 0.715989159891599,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.6298523783488245,
+          "unequal_target_pairs": 1829
+        }
+      },
+      "length_plus_variant": {
+        "processing_ease": {
+          "concordance": 0.7116531165311654,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.6375068343357025,
+          "unequal_target_pairs": 1829
+        }
+      },
+      "mean": {
+        "processing_ease": {
+          "concordance": 0.5,
+          "unequal_target_pairs": 1845
+        },
+        "perceived_understanding": {
+          "concordance": 0.5,
+          "unequal_target_pairs": 1829
+        }
+      }
+    }
+  },
+  "paired_mae_bootstrap": {
+    "groups": 25,
+    "draws": 10000,
+    "seed": 43,
+    "contrasts": {
+      "sentence_end_minus_both": {
+        "processing_ease": {
+          "mae_difference": -0.01617494501282281,
+          "95_ci": [
+            -0.03190918353596465,
+            0.0023340078393440577
+          ]
+        },
+        "perceived_understanding": {
+          "mae_difference": -0.011256320541124505,
+          "95_ci": [
+            -0.02663144595669656,
+            0.0016545706766996962
+          ]
+        }
+      },
+      "article_end_minus_both": {
+        "processing_ease": {
+          "mae_difference": 0.0302519049198389,
+          "95_ci": [
+            0.008217412625264828,
+            0.04790903430858082
+          ]
+        },
+        "perceived_understanding": {
+          "mae_difference": 0.04827082127110591,
+          "95_ci": [
+            0.035076801517495274,
+            0.06367590112590486
+          ]
+        }
+      }
+    }
+  }
+}

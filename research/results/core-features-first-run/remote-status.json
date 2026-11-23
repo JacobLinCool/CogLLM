@@ -1,0 +1,42 @@
+{
+  "completed": true,
+  "phase": "complete",
+  "phase_seconds": {
+    "install": 12.745536944000008,
+    "extract": 57.963283148000016,
+    "fit": 6.179213124
+  },
+  "device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "input_sha256": {
+    "data/cwi-eval.jsonl": "173404ee1915b7cd22dfef449509fb63f5766d1e7d88b7f0ba8d2ed152fba894",
+    "data/cwi-train.jsonl": "a77bde72c2c1b2cf8a9ac52098d627d4957ece415bcfbc736a3283aa30f492ff",
+    "data/readback-eval.jsonl": "18fa2d1a5c3508117deb72bc0222c5fa2434d742d7c088ad074492b5646d9d28",
+    "data/readback-train.jsonl": "d955b9ac34967977af7bcdba3bf39d0e70abed89d317aae587eba0b7c9859dfd",
+    "data/stimuli.jsonl": "68793949ee4955347aa8fcdc5ee65aaf22e62bca932178337e2f4f59c33919c9",
+    "research/core_features/extract.py": "e7d151311c3684191e2e01ca33265f0bbdbbf3bdf6f4491e87232265ee42360e",
+    "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+  },
+  "payload_sha256": "19d4d90e38c45bae44597dd684c1c0dac4294b8681735d94a40dfd0753a81226",
+  "worker_sha256": "9babd565719a1439d69b3e920ac6f6b916725568dab7f95b4e564cf8b30e6d2a",
+  "worker_elapsed_s": 80.81509082599999,
+  "output_sha256": {
+    "extract/causality.json": "e125a88ef69c1324f5868bbcf7ab4d7048aaae3628c61baf410ef16ce0f0c0b2",
+    "extract/extraction.json": "1d956d6df48baa7ad4528a63dddc121fbac02a00b70685a1d066fe6fc4dfbce4",
+    "extract/telemetry.jsonl": "3a7d3fb3f955f963ac110d61d3d0f36ddadfed71dc96006fa135dbc5689ce5df",
+    "fit/cwi-predictions.jsonl": "923d1a392c5768b3aed012292a6c72c817506e557c792c98d41207be30d31874",
+    "fit/fitting.json": "8bc15f4ec4eb4542ad8cb6e8f707494f694469558a8457d433c18d269d7e0497",
+    "fit/readback-predictions.jsonl": "930797f134b1fe11f83f1cc5cc7576df10bf72c7a29488aed6a356d96e7533d1",
+    "worker.log": "279418972d80509180bda561da97294dd662476c51eeb2ee8241236892d5ba80"
+  }
+}

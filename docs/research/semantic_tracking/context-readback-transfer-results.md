@@ -1,0 +1,26 @@
+# The first independent English readout effect relative to the preceding text
+
+Fixing the English-German readout on the next batch of English data shifts the readout position earlier but overestimates the readout probability and fails to replicate the prior effect. Across 108,791 valid keystroke observations, the human readout rate was 3.67%, while Qwen's readout average probability was 11.16%. When only the prior reference cue was modified in both text versions, the human readout rate at the relative clause disambiguation reading stop decreased by an average of 4.58 percentage points, whereas the model estimate increased by 0.05 percentage points. None of the four model validation thresholds were met. [pre-fixed scheme](context-readback-transfer.md) · [full score](../../../research/results/context-readback-transfer-l4/scores.json)
+
+| Predictive endpoint | Event priors | Positional Baseline | Qwen + position |
+| --- | ---: | ---: | ---: |
+| Overall Brier, lower is better | 0.03543 | 0.03708 | 0.03857 |
+| Overall average precision, higher is better. | 0.03669 | 0.08898 | 0.23513 |
+| Word display section Brier | 0.01100 | 0.01446 | 0.01517 |
+| word display segment average precision | 0.00980 | 0.02078 | 0.19347 |
+
+Qwen with position yields a Brier score 0.00149 higher than position alone, 95% paired family interval [+0.00092, +0.00204]. The average probability bias is +7.49 percentage points, 90% interval [+7.23, +7.74]. For the word segment, there are 43,866 reads and 430 no-issues, with a Brier difference of +0.00071 [+0.00021, +0.00112]. Brier measures the squared difference between probability and sequential keying results. Average precision measures the extent to which reads are ranked ahead based on predicted scores. [Overall and word segment scores](../../../research/results/context-readback-transfer-l4/scores.json)
+
+## The effect of prior context
+
+36 material sets each had single-reference and dual-reference prefixes, with identical text in the disambiguation reading stop. There were 3,198 valid keypress observations for the disambiguation reading stop. First, the readout difference between the two versions was calculated for each participant within each material set, then equal weighting averaged. The human dual-reference minus single-reference difference was −4.58 percentage points, with a 95% material family interval [−6.85, −2.42]. The Qwen prediction difference was +0.05 [−0.03, +0.15]. The model effect minus human effect was +4.63 percentage points, with a 90% interval [+2.78, +6.54], exceeding the pre-specified ±1 percentage point threshold. In the next segment, the human difference remained −3.69 percentage points, while the model was −0.08. the direction was the same, but the magnitude remained smaller. [Condition difference and intervals](../../../research/results/context-readback-transfer-l4/scores.json) · [Original study and methods](https://doi.org/10.1016/j.jml.2026.104748)
+
+The results cover the next keypress during forward reading, before any backward reading. Backward reading at an earlier reading stop may also affect readers still in the risk set at this time. The scope is limited to this set of English materials presented segment-by-segment. independent validation currently does not support using the probability of a readout or the prefix effect for general texts. Consequently, the interface continues to use validated sentence-level, lexical, and question-word readouts.
+
+## Source and rerun
+
+Using the same Gradio candidate Qwen3.5-2B FP32 backbone and original English-German merged weights, we performed a forward pass on each of the 216 full texts in L4. All 2,758 original reading stops passed prefix alignment, and 12 causal checks passed. Of the 2,542 predicted reading stops, 2,541 could be attached to human observations. The previous conditions and human keypresses were reconnected locally. No overlaps were found when comparing the full texts and five-word fragments of the current batch with the previous two batches. L4 stage took 46.0 seconds. model forward and extraction took 6.25 seconds, and release has been verified. [English material audit](../../../research/results/context-readback-transfer-l4/assay.json) · [German overlap check](../../../research/results/context-readback-transfer-l4/german-overlap.json) · [Extraction and release manifest](../../../research/results/context-readback-transfer-l4/run-verification.json)
+
+The native key reconstruction took 9.21 seconds with a peak of 581 MiB. The scoring completed in under 1 second with a peak of approximately 82 MiB, showing consistent per-bit re-runs, alongside independent recalculations of six Brier score point estimates and four disambiguation reading stop pair differences. The original materials are licensed under CC BY-NC 4.0, and shared results retain anonymous reading stop predictions, hashes, and reconstruction code. [Data and Annotation Reconstruction](../../../research/semantic_tracking/context_readback_prepare.py) · [Scoring Script](../../../research/semantic_tracking/context_readback_score.py) · [Sealed Snapshot Predictions](../../../research/results/context-readback-transfer-l4/predictions.jsonl) · [Author Data](https://osf.io/6uv37/)
+
+[Original research record](../../../research/semantic_tracking/context-readback-transfer-results.md)

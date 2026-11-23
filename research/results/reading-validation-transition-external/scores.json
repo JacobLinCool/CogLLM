@@ -1,0 +1,4042 @@
+{
+  "cohesentia_per_rater": {
+    "families": 49,
+    "sentences": 293,
+    "reader_judgments": 770,
+    "positive": 123,
+    "negative": 647,
+    "models": {
+      "lexical": {
+        "ap": {
+          "estimate": 0.4223610784475846,
+          "family_bootstrap_95_interval": [
+            0.22456265347053195,
+            0.5969653467628014
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6691044344755658,
+          "family_bootstrap_95_interval": [
+            0.5641974526750051,
+            0.7616031666978808
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.2601626016260163,
+          "family_bootstrap_95_interval": [
+            0.08749696601941748,
+            0.4328396676411755
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.04173106646058733,
+          "family_bootstrap_95_interval": [
+            0.019017282001530553,
+            0.06880018348623854
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8234198790899822,
+          "family_bootstrap_95_interval": [
+            0.7424224633405818,
+            0.889741359594849
+          ]
+        },
+        "precision": {
+          "estimate": 0.5423728813559322,
+          "family_bootstrap_95_interval": [
+            0.2222222222222222,
+            0.7808219178082192
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.3218569599680546,
+        "alert_counts": {
+          "true_positive": 32,
+          "false_positive": 27,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.7080681182365826,
+          "family_bootstrap_95_interval": [
+            0.5725565249974894,
+            0.8341247815853394
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "display": {
+        "ap": {
+          "estimate": 0.1741451000669728,
+          "family_bootstrap_95_interval": [
+            0.09750126571187702,
+            0.30711034738692555
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5410210980007791,
+          "family_bootstrap_95_interval": [
+            0.4239701147604863,
+            0.6394719588809852
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.08943089430894309,
+          "family_bootstrap_95_interval": [
+            0.020616791413642144,
+            0.16666666666666666
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0633693972179289,
+          "family_bootstrap_95_interval": [
+            0.02205766740658528,
+            0.11198769716088328
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7661584130155559,
+          "family_bootstrap_95_interval": [
+            0.6756763216102484,
+            0.8472466826444377
+          ]
+        },
+        "precision": {
+          "estimate": 0.21153846153846154,
+          "family_bootstrap_95_interval": [
+            0.041666666666666664,
+            0.5
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.24845454722356008,
+        "alert_counts": {
+          "true_positive": 11,
+          "false_positive": 41,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.7734022333877778,
+          "family_bootstrap_95_interval": [
+            0.6600317576354867,
+            0.8785142764704783
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "lexical_surprisal": {
+        "ap": {
+          "estimate": 0.6298456564348357,
+          "family_bootstrap_95_interval": [
+            0.45843391871431105,
+            0.770947176910677
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8800844422663701,
+          "family_bootstrap_95_interval": [
+            0.8277675297368708,
+            0.9264472633837499
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.5609756097560976,
+          "family_bootstrap_95_interval": [
+            0.3893682399213373,
+            0.723404255319149
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.05100463678516229,
+          "family_bootstrap_95_interval": [
+            0.022865853658536585,
+            0.08838865445959862
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8826424374104983,
+          "family_bootstrap_95_interval": [
+            0.8292540652547133,
+            0.9268438388363077
+          ]
+        },
+        "precision": {
+          "estimate": 0.6764705882352942,
+          "family_bootstrap_95_interval": [
+            0.4875,
+            0.8307692307692308
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.3185741438729292,
+        "alert_counts": {
+          "true_positive": 69,
+          "false_positive": 33,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.8345884121798722,
+          "family_bootstrap_95_interval": [
+            0.7214124065607443,
+            0.9293235028748342
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "local_state": {
+        "ap": {
+          "estimate": 0.6573509836982571,
+          "family_bootstrap_95_interval": [
+            0.5059523223937863,
+            0.8015133208598476
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8719417951521091,
+          "family_bootstrap_95_interval": [
+            0.8002980141682116,
+            0.9373129498634399
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6260162601626016,
+          "family_bootstrap_95_interval": [
+            0.43199545454545457,
+            0.8125
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.06491499227202473,
+          "family_bootstrap_95_interval": [
+            0.027471139971139973,
+            0.11356993951978378
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8849458707702158,
+          "family_bootstrap_95_interval": [
+            0.8261020045762232,
+            0.9330391004918557
+          ]
+        },
+        "precision": {
+          "estimate": 0.6470588235294118,
+          "family_bootstrap_95_interval": [
+            0.4561368421052631,
+            0.8209892787524367
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.3636133611937725,
+        "alert_counts": {
+          "true_positive": 77,
+          "false_positive": 42,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.8314139096603235,
+          "family_bootstrap_95_interval": [
+            0.7166293740743365,
+            0.9300832318315361
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "integration": {
+        "ap": {
+          "estimate": 0.61793508873742,
+          "family_bootstrap_95_interval": [
+            0.47041476119519304,
+            0.7735227631700088
+          ]
+        },
+        "auroc": {
+          "estimate": 0.855706764177379,
+          "family_bootstrap_95_interval": [
+            0.7759117857792368,
+            0.9349888563427685
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6260162601626016,
+          "family_bootstrap_95_interval": [
+            0.3863580108010801,
+            0.845360824742268
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.07418856259659969,
+          "family_bootstrap_95_interval": [
+            0.032533634234105845,
+            0.13065441187701424
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8783198400520882,
+          "family_bootstrap_95_interval": [
+            0.8085492594917973,
+            0.9322713057405941
+          ]
+        },
+        "precision": {
+          "estimate": 0.616,
+          "family_bootstrap_95_interval": [
+            0.43884892086330934,
+            0.7809541188738269
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.39221974817295097,
+        "alert_counts": {
+          "true_positive": 77,
+          "false_positive": 48,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.840446749588304,
+          "family_bootstrap_95_interval": [
+            0.729195094219506,
+            0.9349693316061602
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "directed": {
+        "ap": {
+          "estimate": 0.6784329232516992,
+          "family_bootstrap_95_interval": [
+            0.5316589577682999,
+            0.7975740022399855
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8767796333295635,
+          "family_bootstrap_95_interval": [
+            0.8125176833764058,
+            0.9311483601532228
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6829268292682927,
+          "family_bootstrap_95_interval": [
+            0.5060240963855421,
+            0.820901589612911
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.08191653786707882,
+          "family_bootstrap_95_interval": [
+            0.043123786337419936,
+            0.12950921087169207
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8830828546453547,
+          "family_bootstrap_95_interval": [
+            0.8357633571589351,
+            0.9237251522588162
+          ]
+        },
+        "precision": {
+          "estimate": 0.6131386861313869,
+          "family_bootstrap_95_interval": [
+            0.4337163085331015,
+            0.7610619469026548
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.36922122928567014,
+        "alert_counts": {
+          "true_positive": 84,
+          "false_positive": 53,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.9028854541186354,
+          "family_bootstrap_95_interval": [
+            0.8280011196980367,
+            0.965588768115942
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "student": {
+        "ap": {
+          "estimate": 0.6160682736665022,
+          "family_bootstrap_95_interval": [
+            0.4718899191690285,
+            0.7721370818005207
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8538595896005328,
+          "family_bootstrap_95_interval": [
+            0.770491114191644,
+            0.9346425133386094
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6016260162601627,
+          "family_bootstrap_95_interval": [
+            0.3980557757083416,
+            0.7952880669845845
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.07264296754250386,
+          "family_bootstrap_95_interval": [
+            0.031818024644788126,
+            0.1281219335295874
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8749099109754847,
+          "family_bootstrap_95_interval": [
+            0.8113221224919311,
+            0.9259015904445492
+          ]
+        },
+        "precision": {
+          "estimate": 0.6115702479338843,
+          "family_bootstrap_95_interval": [
+            0.43243243243243246,
+            0.7798179562633432
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.36002558417865094,
+        "alert_counts": {
+          "true_positive": 74,
+          "false_positive": 47,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.8448091902167293,
+          "family_bootstrap_95_interval": [
+            0.7313980778039004,
+            0.9386369470025507
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "carter_lexical": {
+        "ap": {
+          "estimate": 0.3980217881921694,
+          "family_bootstrap_95_interval": [
+            0.2115037933669232,
+            0.5656018943216895
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6536107864942637,
+          "family_bootstrap_95_interval": [
+            0.5579204551689841,
+            0.7418910733244674
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.959349593495935,
+          "family_bootstrap_95_interval": [
+            0.8974358974358975,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.8856259659969088,
+          "family_bootstrap_95_interval": [
+            0.8409457556782393,
+            0.9261083743842364
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.21760552008485892,
+          "family_bootstrap_95_interval": [
+            0.15606487516497936,
+            0.28468176902945486
+          ]
+        },
+        "precision": {
+          "estimate": 0.170767004341534,
+          "family_bootstrap_95_interval": [
+            0.1019330951308903,
+            0.2520603463790788
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 118,
+          "false_positive": 573,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.706113658494955,
+          "family_bootstrap_95_interval": [
+            0.5640938998562268,
+            0.838905264371265
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "carter_display": {
+        "ap": {
+          "estimate": 0.16982023005768082,
+          "family_bootstrap_95_interval": [
+            0.10239420249443269,
+            0.29507309884758964
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5529711865897639,
+          "family_bootstrap_95_interval": [
+            0.433188370128368,
+            0.667743369891582
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.34146341463414637,
+          "family_bootstrap_95_interval": [
+            0.19318181818181818,
+            0.4845360824742268
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.34930448222565685,
+          "family_bootstrap_95_interval": [
+            0.231429984576237,
+            0.47536476393704985
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6500692988162354,
+          "family_bootstrap_95_interval": [
+            0.5549165140386318,
+            0.7384431233368246
+          ]
+        },
+        "precision": {
+          "estimate": 0.15671641791044777,
+          "family_bootstrap_95_interval": [
+            0.06956219806763285,
+            0.2675471823498139
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 42,
+          "false_positive": 226,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.6830889094683158,
+          "family_bootstrap_95_interval": [
+            0.5743158000516919,
+            0.7819158409272444
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "carter_integration": {
+        "ap": {
+          "estimate": 0.45024132595786,
+          "family_bootstrap_95_interval": [
+            0.25037274406833016,
+            0.6185801510178226
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6928286902652643,
+          "family_bootstrap_95_interval": [
+            0.6090485780472288,
+            0.774296748128077
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9105691056910569,
+          "family_bootstrap_95_interval": [
+            0.8315789473684211,
+            0.98
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.80370942812983,
+          "family_bootstrap_95_interval": [
+            0.7421648301193756,
+            0.8600957748525779
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.3192733583537987,
+          "family_bootstrap_95_interval": [
+            0.24845079530326517,
+            0.39271442603046725
+          ]
+        },
+        "precision": {
+          "estimate": 0.17721518987341772,
+          "family_bootstrap_95_interval": [
+            0.1058627419197143,
+            0.2593209463383873
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 112,
+          "false_positive": 520,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.7294249054379156,
+          "family_bootstrap_95_interval": [
+            0.5889040659184521,
+            0.8596927535311509
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "carter_lexical_surprisal": {
+        "ap": {
+          "estimate": 0.4856425184356412,
+          "family_bootstrap_95_interval": [
+            0.2879896609567659,
+            0.6452570822360173
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7252610547743809,
+          "family_bootstrap_95_interval": [
+            0.6517378008604785,
+            0.7996612931607852
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8699186991869918,
+          "family_bootstrap_95_interval": [
+            0.7943210262828536,
+            0.9465674300254453
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6800618238021638,
+          "family_bootstrap_95_interval": [
+            0.6112030748915299,
+            0.7441870059098933
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.45086925426606334,
+          "family_bootstrap_95_interval": [
+            0.38663827001162765,
+            0.5184882201786654
+          ]
+        },
+        "precision": {
+          "estimate": 0.1956124314442413,
+          "family_bootstrap_95_interval": [
+            0.12046144395461444,
+            0.2811946012246423
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 107,
+          "false_positive": 440,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.7403090851967755,
+          "family_bootstrap_95_interval": [
+            0.6004916785737865,
+            0.8664840863881785
+          ],
+          "eligible_documents": 23
+        }
+      },
+      "static": {
+        "ap": {
+          "estimate": 0.26758188818075634,
+          "family_bootstrap_95_interval": [
+            0.15187172071414456,
+            0.4753129077485392
+          ]
+        },
+        "auroc": {
+          "estimate": 0.681356102587301,
+          "family_bootstrap_95_interval": [
+            0.5760173235254461,
+            0.7740088975233281
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.21951219512195122,
+          "family_bootstrap_95_interval": [
+            0.07142857142857142,
+            0.3728813559322034
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.11591962905718702,
+          "family_bootstrap_95_interval": [
+            0.060957399764150946,
+            0.1750422191313648
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7693316873240827,
+          "family_bootstrap_95_interval": [
+            0.688471351748483,
+            0.8396470204606533
+          ]
+        },
+        "precision": {
+          "estimate": 0.2647058823529412,
+          "family_bootstrap_95_interval": [
+            0.0825664428260664,
+            0.4925478242589866
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "cutoff": 0.4417680292562578,
+        "alert_counts": {
+          "true_positive": 27,
+          "false_positive": 75,
+          "human_positive": 123,
+          "human_negative": 647
+        },
+        "within_document_concordance": {
+          "estimate": 0.7042281796657421,
+          "family_bootstrap_95_interval": [
+            0.550761851225018,
+            0.8457067567434086
+          ],
+          "eligible_documents": 23
+        }
+      }
+    },
+    "predeclared_raw_head_gate": true,
+    "comparisons": {
+      "integration": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.1955740102898354,
+            "family_bootstrap_95_interval": [
+              0.055774636179534605,
+              0.4094270449619694
+            ]
+          },
+          "auroc": {
+            "estimate": 0.18660232970181323,
+            "family_bootstrap_95_interval": [
+              0.07535691590551553,
+              0.3218726434761567
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.44378998867044717,
+            "family_bootstrap_95_interval": [
+              0.27500760217649234,
+              0.6066088024967919
+            ]
+          },
+          "auroc": {
+            "estimate": 0.3146856661765999,
+            "family_bootstrap_95_interval": [
+              0.17767618069848654,
+              0.47741469029081307
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": -0.01191056769741572,
+            "family_bootstrap_95_interval": [
+              -0.1065498710959081,
+              0.11308730201588064
+            ]
+          },
+          "auroc": {
+            "estimate": -0.02437767808899105,
+            "family_bootstrap_95_interval": [
+              -0.0852628913037248,
+              0.03940915202190967
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": -0.03941589496083708,
+            "family_bootstrap_95_interval": [
+              -0.09057976551658808,
+              0.02405941209624576
+            ]
+          },
+          "auroc": {
+            "estimate": -0.016235030974730114,
+            "family_bootstrap_95_interval": [
+              -0.04558922078815664,
+              0.008732133633995316
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.35035320055666364,
+            "family_bootstrap_95_interval": [
+              0.16634637431784666,
+              0.5020973041704108
+            ]
+          },
+          "auroc": {
+            "estimate": 0.17435066159007806,
+            "family_bootstrap_95_interval": [
+              0.06856855978521642,
+              0.3015073352642815
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.16769376277956,
+            "family_bootstrap_95_interval": [
+              0.0193581209949406,
+              0.38387019265189376
+            ]
+          },
+          "auroc": {
+            "estimate": 0.16287807391211473,
+            "family_bootstrap_95_interval": [
+              0.052454011298215676,
+              0.27998116043346005
+            ]
+          }
+        }
+      },
+      "directed": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.25607184480411466,
+            "family_bootstrap_95_interval": [
+              0.08328267740244366,
+              0.45647425312224615
+            ]
+          },
+          "auroc": {
+            "estimate": 0.20767519885399777,
+            "family_bootstrap_95_interval": [
+              0.10144244224896845,
+              0.3286896144510334
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.5042878231847264,
+            "family_bootstrap_95_interval": [
+              0.36769397664243697,
+              0.615288897799757
+            ]
+          },
+          "auroc": {
+            "estimate": 0.3357585353287844,
+            "family_bootstrap_95_interval": [
+              0.24574311197724955,
+              0.43543961590909397
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": 0.04858726681686354,
+            "family_bootstrap_95_interval": [
+              -0.09740423936193997,
+              0.20361881608287444
+            ]
+          },
+          "auroc": {
+            "estimate": -0.0033048089368065137,
+            "family_bootstrap_95_interval": [
+              -0.07161016054325071,
+              0.05570009243603928
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": 0.021081939553442175,
+            "family_bootstrap_95_interval": [
+              -0.13186271544550848,
+              0.1690147393481405
+            ]
+          },
+          "auroc": {
+            "estimate": 0.004837838177454423,
+            "family_bootstrap_95_interval": [
+              -0.07194865591397849,
+              0.07250543806532839
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.4108510350709429,
+            "family_bootstrap_95_interval": [
+              0.21726188392148701,
+              0.5413113595435948
+            ]
+          },
+          "auroc": {
+            "estimate": 0.1954235307422626,
+            "family_bootstrap_95_interval": [
+              0.09140657066773371,
+              0.31105139868263176
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.22819159729383925,
+            "family_bootstrap_95_interval": [
+              0.05522622652100811,
+              0.4309813504765569
+            ]
+          },
+          "auroc": {
+            "estimate": 0.18395094306429927,
+            "family_bootstrap_95_interval": [
+              0.08190956651791384,
+              0.28699579398539216
+            ]
+          }
+        },
+        "integration": {
+          "ap": {
+            "estimate": 0.06049783451427926,
+            "family_bootstrap_95_interval": [
+              -0.10666263440809824,
+              0.2088846902560653
+            ]
+          },
+          "auroc": {
+            "estimate": 0.021072869152184537,
+            "family_bootstrap_95_interval": [
+              -0.06955409670776364,
+              0.10602480803524578
+            ]
+          }
+        }
+      },
+      "student": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.1937071952189176,
+            "family_bootstrap_95_interval": [
+              0.05718040873074008,
+              0.400219439181531
+            ]
+          },
+          "auroc": {
+            "estimate": 0.18475515512496699,
+            "family_bootstrap_95_interval": [
+              0.0724557726277377,
+              0.3236489969110911
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.4419231735995294,
+            "family_bootstrap_95_interval": [
+              0.28049393977447523,
+              0.60033792330756
+            ]
+          },
+          "auroc": {
+            "estimate": 0.31283849159975363,
+            "family_bootstrap_95_interval": [
+              0.17530884008885256,
+              0.4746587680513926
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": -0.013777382768333513,
+            "family_bootstrap_95_interval": [
+              -0.09972680772251204,
+              0.09849820723227316
+            ]
+          },
+          "auroc": {
+            "estimate": -0.026224852665837295,
+            "family_bootstrap_95_interval": [
+              -0.08955305338039504,
+              0.03900248982702098
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": -0.04128271003175488,
+            "family_bootstrap_95_interval": [
+              -0.0897353498459326,
+              0.018829260474980614
+            ]
+          },
+          "auroc": {
+            "estimate": -0.018082205551576358,
+            "family_bootstrap_95_interval": [
+              -0.05059445959471192,
+              0.010426505438184871
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.34848638548574584,
+            "family_bootstrap_95_interval": [
+              0.16835704150814543,
+              0.4960953371875489
+            ]
+          },
+          "auroc": {
+            "estimate": 0.17250348701323182,
+            "family_bootstrap_95_interval": [
+              0.06495987011971464,
+              0.2999921861891097
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.1658269477086422,
+            "family_bootstrap_95_interval": [
+              0.022683294842896204,
+              0.3753053413404362
+            ]
+          },
+          "auroc": {
+            "estimate": 0.16103089933526848,
+            "family_bootstrap_95_interval": [
+              0.050294013220198594,
+              0.28154800930938284
+            ]
+          }
+        },
+        "integration": {
+          "ap": {
+            "estimate": -0.0018668150709177933,
+            "family_bootstrap_95_interval": [
+              -0.028797226907288833,
+              0.022420314944452128
+            ]
+          },
+          "auroc": {
+            "estimate": -0.0018471745768462444,
+            "family_bootstrap_95_interval": [
+              -0.011616955686060512,
+              0.008635540550887309
+            ]
+          }
+        }
+      }
+    }
+  },
+  "cohesentia_other_readers": {
+    "stories": 49,
+    "boundaries": 293,
+    "reader_judgments": 770,
+    "ap": {
+      "estimate": 0.9060323167953142,
+      "family_bootstrap_95_interval": [
+        0.8488186529635429,
+        0.9577474189476047
+      ]
+    },
+    "auroc": {
+      "estimate": 0.9557117905027582,
+      "family_bootstrap_95_interval": [
+        0.9302819050000154,
+        0.979104758006856
+      ]
+    }
+  },
+  "cohesentia_consensus": {
+    "families": 49,
+    "sentences": 293,
+    "reader_judgments": 293,
+    "positive": 45,
+    "negative": 248,
+    "models": {
+      "lexical": {
+        "ap": {
+          "estimate": 0.40608610951073043,
+          "family_bootstrap_95_interval": [
+            0.22824703521088602,
+            0.5782441516097456
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6662186379928315,
+          "family_bootstrap_95_interval": [
+            0.5480630261978214,
+            0.7753876396375351
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.24444444444444444,
+          "family_bootstrap_95_interval": [
+            0.09090909090909091,
+            0.40540540540540543
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.04435483870967742,
+          "family_bootstrap_95_interval": [
+            0.0205761316872428,
+            0.07142857142857142
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8234581202374562,
+          "family_bootstrap_95_interval": [
+            0.7500697446041513,
+            0.8868696737227157
+          ]
+        },
+        "precision": {
+          "estimate": 0.5,
+          "family_bootstrap_95_interval": [
+            0.21428571428571427,
+            0.7391706924315614
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.3218569599680546,
+        "alert_counts": {
+          "true_positive": 11,
+          "false_positive": 11,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.752437641723356,
+          "family_bootstrap_95_interval": [
+            0.626110527544351,
+            0.8669474206349206
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "display": {
+        "ap": {
+          "estimate": 0.16415904424295671,
+          "family_bootstrap_95_interval": [
+            0.09663627199373838,
+            0.2823295318492286
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5472222222222223,
+          "family_bootstrap_95_interval": [
+            0.4364784506992761,
+            0.6463138469852578
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.08888888888888889,
+          "family_bootstrap_95_interval": [
+            0.022222222222222223,
+            0.16363636363636364
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.06854838709677419,
+          "family_bootstrap_95_interval": [
+            0.024387775254270765,
+            0.11764705882352941
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7706245972457577,
+          "family_bootstrap_95_interval": [
+            0.6923781719775418,
+            0.8434118628863674
+          ]
+        },
+        "precision": {
+          "estimate": 0.19047619047619047,
+          "family_bootstrap_95_interval": [
+            0.04,
+            0.45454545454545453
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.24845454722356008,
+        "alert_counts": {
+          "true_positive": 4,
+          "false_positive": 17,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.771504157218443,
+          "family_bootstrap_95_interval": [
+            0.648237865194387,
+            0.8830334047199127
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "lexical_surprisal": {
+        "ap": {
+          "estimate": 0.5971085745546499,
+          "family_bootstrap_95_interval": [
+            0.4441807394223956,
+            0.7544381559649757
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8847670250896057,
+          "family_bootstrap_95_interval": [
+            0.8308604284493899,
+            0.9287776023634501
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.5777777777777777,
+          "family_bootstrap_95_interval": [
+            0.4,
+            0.7435897435897436
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.06048387096774194,
+          "family_bootstrap_95_interval": [
+            0.02702702702702703,
+            0.102880658436214
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8817245813159774,
+          "family_bootstrap_95_interval": [
+            0.8324966053582743,
+            0.9243753902416366
+          ]
+        },
+        "precision": {
+          "estimate": 0.6341463414634146,
+          "family_bootstrap_95_interval": [
+            0.45,
+            0.8
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.3185741438729292,
+        "alert_counts": {
+          "true_positive": 26,
+          "false_positive": 15,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.8302721088435373,
+          "family_bootstrap_95_interval": [
+            0.7093984962406016,
+            0.9282142857142857
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "local_state": {
+        "ap": {
+          "estimate": 0.6447525280604545,
+          "family_bootstrap_95_interval": [
+            0.5028686401376542,
+            0.7801829946743621
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8810035842293907,
+          "family_bootstrap_95_interval": [
+            0.8214994835645977,
+            0.9370628080359575
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6222222222222222,
+          "family_bootstrap_95_interval": [
+            0.4477513747054203,
+            0.8
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.07661290322580645,
+          "family_bootstrap_95_interval": [
+            0.03272727272727273,
+            0.13200578512396685
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8782198971122832,
+          "family_bootstrap_95_interval": [
+            0.822001933850249,
+            0.9273321787540165
+          ]
+        },
+        "precision": {
+          "estimate": 0.5957446808510638,
+          "family_bootstrap_95_interval": [
+            0.4230769230769231,
+            0.7796694915254236
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.3636133611937725,
+        "alert_counts": {
+          "true_positive": 28,
+          "false_positive": 19,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.8385487528344672,
+          "family_bootstrap_95_interval": [
+            0.7151220488195277,
+            0.9418005952380952
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "integration": {
+        "ap": {
+          "estimate": 0.6055528114502392,
+          "family_bootstrap_95_interval": [
+            0.4625133449489991,
+            0.7652014887843619
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8618279569892473,
+          "family_bootstrap_95_interval": [
+            0.7924802016646565,
+            0.9338267448098613
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6222222222222222,
+          "family_bootstrap_95_interval": [
+            0.4,
+            0.8378378378378378
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0846774193548387,
+          "family_bootstrap_95_interval": [
+            0.03745222808224414,
+            0.14718952922077919
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8725393825719536,
+          "family_bootstrap_95_interval": [
+            0.8083017785379135,
+            0.9261763680547472
+          ]
+        },
+        "precision": {
+          "estimate": 0.5714285714285714,
+          "family_bootstrap_95_interval": [
+            0.40816326530612246,
+            0.7428571428571429
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.39221974817295097,
+        "alert_counts": {
+          "true_positive": 28,
+          "false_positive": 21,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.8313303099017384,
+          "family_bootstrap_95_interval": [
+            0.7124003518411413,
+            0.9300738536155202
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "directed": {
+        "ap": {
+          "estimate": 0.7140399888156987,
+          "family_bootstrap_95_interval": [
+            0.5651982352485326,
+            0.8323763105016612
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9040322580645161,
+          "family_bootstrap_95_interval": [
+            0.8483911488059086,
+            0.9492453473495539
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.7111111111111111,
+          "family_bootstrap_95_interval": [
+            0.5384615384615384,
+            0.8548963133640545
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0846774193548387,
+          "family_bootstrap_95_interval": [
+            0.045454545454545456,
+            0.1297100491815312
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8877442545305484,
+          "family_bootstrap_95_interval": [
+            0.8424032348394992,
+            0.9265184821703416
+          ]
+        },
+        "precision": {
+          "estimate": 0.6037735849056604,
+          "family_bootstrap_95_interval": [
+            0.43747159090909093,
+            0.7538461538461538
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.36922122928567014,
+        "alert_counts": {
+          "true_positive": 32,
+          "false_positive": 21,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.9153439153439153,
+          "family_bootstrap_95_interval": [
+            0.8333333333333334,
+            0.9833333333333334
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "student": {
+        "ap": {
+          "estimate": 0.6080955674503108,
+          "family_bootstrap_95_interval": [
+            0.4688512977008395,
+            0.7631861502531718
+          ]
+        },
+        "auroc": {
+          "estimate": 0.8634408602150537,
+          "family_bootstrap_95_interval": [
+            0.7936193010532857,
+            0.9336490585591745
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6,
+          "family_bootstrap_95_interval": [
+            0.40425531914893614,
+            0.7924528301886793
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0846774193548387,
+          "family_bootstrap_95_interval": [
+            0.03703362033620336,
+            0.14741035856573706
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8686360784998567,
+          "family_bootstrap_95_interval": [
+            0.8077203838858206,
+            0.9199071977818343
+          ]
+        },
+        "precision": {
+          "estimate": 0.5625,
+          "family_bootstrap_95_interval": [
+            0.39622641509433965,
+            0.7391304347826086
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.36002558417865094,
+        "alert_counts": {
+          "true_positive": 27,
+          "false_positive": 21,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.8374527588813301,
+          "family_bootstrap_95_interval": [
+            0.7161103347135956,
+            0.9362917493386241
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "carter_lexical": {
+        "ap": {
+          "estimate": 0.38158928464971276,
+          "family_bootstrap_95_interval": [
+            0.21428657557394107,
+            0.5449882399952048
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6560931899641577,
+          "family_bootstrap_95_interval": [
+            0.5519885641389719,
+            0.756359495637058
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9555555555555556,
+          "family_bootstrap_95_interval": [
+            0.8857142857142857,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.875,
+          "family_bootstrap_95_interval": [
+            0.8291624070631971,
+            0.91701244813278
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.23005933720180324,
+          "family_bootstrap_95_interval": [
+            0.1679713144596998,
+            0.2972835186157284
+          ]
+        },
+        "precision": {
+          "estimate": 0.16538461538461538,
+          "family_bootstrap_95_interval": [
+            0.10357142857142858,
+            0.23643611888449287
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 43,
+          "false_positive": 217,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.7459372637944066,
+          "family_bootstrap_95_interval": [
+            0.60875052213868,
+            0.8686538461538461
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "carter_display": {
+        "ap": {
+          "estimate": 0.1564052023053254,
+          "family_bootstrap_95_interval": [
+            0.09909727175459675,
+            0.2656457052944648
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5378136200716845,
+          "family_bootstrap_95_interval": [
+            0.43570668366622134,
+            0.6413473504359453
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.3111111111111111,
+          "family_bootstrap_95_interval": [
+            0.1689553990610329,
+            0.4594594594594595
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.36693548387096775,
+          "family_bootstrap_95_interval": [
+            0.2581967213114754,
+            0.47706707525981196
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6382440429595767,
+          "family_bootstrap_95_interval": [
+            0.5584927825048241,
+            0.7155441717088037
+          ]
+        },
+        "precision": {
+          "estimate": 0.13333333333333333,
+          "family_bootstrap_95_interval": [
+            0.06097295864262991,
+            0.22727272727272727
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 14,
+          "false_positive": 91,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.6924792139077853,
+          "family_bootstrap_95_interval": [
+            0.5697417091836733,
+            0.8042621600297039
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "carter_integration": {
+        "ap": {
+          "estimate": 0.42343488321029477,
+          "family_bootstrap_95_interval": [
+            0.24396066424037438,
+            0.5945657926411569
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6901881720430108,
+          "family_bootstrap_95_interval": [
+            0.5986903392089353,
+            0.7827884502089167
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9111111111111111,
+          "family_bootstrap_95_interval": [
+            0.822202380952381,
+            0.9795918367346939
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.7943548387096774,
+          "family_bootstrap_95_interval": [
+            0.7363958871183122,
+            0.8475181280412174
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.3294335077570035,
+          "family_bootstrap_95_interval": [
+            0.2633517584250707,
+            0.39763065601210096
+          ]
+        },
+        "precision": {
+          "estimate": 0.1722689075630252,
+          "family_bootstrap_95_interval": [
+            0.10743725130088767,
+            0.24553571428571427
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 41,
+          "false_positive": 197,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.7682350718065003,
+          "family_bootstrap_95_interval": [
+            0.6323913586413586,
+            0.8920464276220855
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "carter_lexical_surprisal": {
+        "ap": {
+          "estimate": 0.465771392416737,
+          "family_bootstrap_95_interval": [
+            0.2785694339355612,
+            0.6344884332451807
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7274641577060932,
+          "family_bootstrap_95_interval": [
+            0.6442513358393824,
+            0.8137329089074143
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8666666666666667,
+          "family_bootstrap_95_interval": [
+            0.7755102040816326,
+            0.95
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6774193548387096,
+          "family_bootstrap_95_interval": [
+            0.608,
+            0.7434968067867695
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.453006712075605,
+          "family_bootstrap_95_interval": [
+            0.38512738682021197,
+            0.5213345172158329
+          ]
+        },
+        "precision": {
+          "estimate": 0.18840579710144928,
+          "family_bootstrap_95_interval": [
+            0.11926605504587157,
+            0.26563177384393055
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 39,
+          "false_positive": 168,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.7875850340136052,
+          "family_bootstrap_95_interval": [
+            0.6550459355459356,
+            0.9042257936507935
+          ],
+          "eligible_documents": 21
+        }
+      },
+      "static": {
+        "ap": {
+          "estimate": 0.25943568686405455,
+          "family_bootstrap_95_interval": [
+            0.15787135659982268,
+            0.4461889543176119
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6758064516129032,
+          "family_bootstrap_95_interval": [
+            0.5724341245270038,
+            0.7716288096318713
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.2,
+          "family_bootstrap_95_interval": [
+            0.0625,
+            0.35185185185185186
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.11290322580645161,
+          "family_bootstrap_95_interval": [
+            0.0625,
+            0.16742189698846044
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7726484139536666,
+          "family_bootstrap_95_interval": [
+            0.6971726463905774,
+            0.8396831540084841
+          ]
+        },
+        "precision": {
+          "estimate": 0.24324324324324326,
+          "family_bootstrap_95_interval": [
+            0.07692307692307693,
+            0.4473684210526316
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.15358361774744028,
+          "family_bootstrap_95_interval": [
+            0.09712142907033597,
+            0.21807136788445194
+          ]
+        },
+        "cutoff": 0.4417680292562578,
+        "alert_counts": {
+          "true_positive": 9,
+          "false_positive": 28,
+          "human_positive": 45,
+          "human_negative": 248
+        },
+        "within_document_concordance": {
+          "estimate": 0.6839002267573695,
+          "family_bootstrap_95_interval": [
+            0.5220211385836386,
+            0.8364769404572036
+          ],
+          "eligible_documents": 21
+        }
+      }
+    },
+    "predeclared_raw_head_gate": true,
+    "comparisons": {
+      "integration": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.19946670193950877,
+            "family_bootstrap_95_interval": [
+              0.06056806767495108,
+              0.39679621755529926
+            ]
+          },
+          "auroc": {
+            "estimate": 0.19560931899641576,
+            "family_bootstrap_95_interval": [
+              0.07826308818100883,
+              0.3267741501043025
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.4413937672072825,
+            "family_bootstrap_95_interval": [
+              0.290381451528501,
+              0.6029369495008656
+            ]
+          },
+          "auroc": {
+            "estimate": 0.314605734767025,
+            "family_bootstrap_95_interval": [
+              0.1866353368521431,
+              0.4605913773555399
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": 0.008444236895589263,
+            "family_bootstrap_95_interval": [
+              -0.11044127016315577,
+              0.14422414463035282
+            ]
+          },
+          "auroc": {
+            "estimate": -0.022939068100358395,
+            "family_bootstrap_95_interval": [
+              -0.08195644460136563,
+              0.0438369967422706
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": -0.03919971661021526,
+            "family_bootstrap_95_interval": [
+              -0.10084386439360819,
+              0.03618753271289149
+            ]
+          },
+          "auroc": {
+            "estimate": -0.019175627240143434,
+            "family_bootstrap_95_interval": [
+              -0.05043665567430039,
+              0.00920549336186605
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.34611712458618465,
+            "family_bootstrap_95_interval": [
+              0.18617768028205423,
+              0.4903419710307869
+            ]
+          },
+          "auroc": {
+            "estimate": 0.1860215053763441,
+            "family_bootstrap_95_interval": [
+              0.0859943965235171,
+              0.3002374094755196
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.18211792823994444,
+            "family_bootstrap_95_interval": [
+              0.029334498742237997,
+              0.3836861210489021
+            ]
+          },
+          "auroc": {
+            "estimate": 0.17163978494623655,
+            "family_bootstrap_95_interval": [
+              0.06941957902775066,
+              0.28458859539188275
+            ]
+          }
+        }
+      },
+      "directed": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.3079538793049683,
+            "family_bootstrap_95_interval": [
+              0.13179946047599864,
+              0.48547271827355004
+            ]
+          },
+          "auroc": {
+            "estimate": 0.2378136200716846,
+            "family_bootstrap_95_interval": [
+              0.11666917059973536,
+              0.3671494249726177
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.5498809445727421,
+            "family_bootstrap_95_interval": [
+              0.41961168246776176,
+              0.6511809082046934
+            ]
+          },
+          "auroc": {
+            "estimate": 0.35681003584229387,
+            "family_bootstrap_95_interval": [
+              0.27416945463058884,
+              0.44664272956146017
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": 0.1169314142610488,
+            "family_bootstrap_95_interval": [
+              -0.05823643019337745,
+              0.26537599913741666
+            ]
+          },
+          "auroc": {
+            "estimate": 0.01926523297491045,
+            "family_bootstrap_95_interval": [
+              -0.04618107041179981,
+              0.07938347085655038
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": 0.06928746075524428,
+            "family_bootstrap_95_interval": [
+              -0.09244128468408955,
+              0.21497583763660097
+            ]
+          },
+          "auroc": {
+            "estimate": 0.023028673835125413,
+            "family_bootstrap_95_interval": [
+              -0.05212813360762259,
+              0.09226281850996645
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.4546043019516442,
+            "family_bootstrap_95_interval": [
+              0.2730978279384191,
+              0.5778405632690943
+            ]
+          },
+          "auroc": {
+            "estimate": 0.22822580645161294,
+            "family_bootstrap_95_interval": [
+              0.12183736722424694,
+              0.33992413074598643
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.290605105605404,
+            "family_bootstrap_95_interval": [
+              0.10491934751068183,
+              0.4728359450094974
+            ]
+          },
+          "auroc": {
+            "estimate": 0.2138440860215054,
+            "family_bootstrap_95_interval": [
+              0.10628692957948285,
+              0.3183601489796411
+            ]
+          }
+        },
+        "integration": {
+          "ap": {
+            "estimate": 0.10848717736545954,
+            "family_bootstrap_95_interval": [
+              -0.06395148114601852,
+              0.25139738189776334
+            ]
+          },
+          "auroc": {
+            "estimate": 0.042204301075268846,
+            "family_bootstrap_95_interval": [
+              -0.04942947924682659,
+              0.1281525311737598
+            ]
+          }
+        }
+      },
+      "student": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.20200945793958036,
+            "family_bootstrap_95_interval": [
+              0.0655691871432517,
+              0.3923232314902821
+            ]
+          },
+          "auroc": {
+            "estimate": 0.1972222222222222,
+            "family_bootstrap_95_interval": [
+              0.07812204201178416,
+              0.3315110828635655
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.4439365232073541,
+            "family_bootstrap_95_interval": [
+              0.2976180444019399,
+              0.5977084213518072
+            ]
+          },
+          "auroc": {
+            "estimate": 0.31621863799283145,
+            "family_bootstrap_95_interval": [
+              0.1896166727367179,
+              0.4592520951424835
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": 0.010986992895660852,
+            "family_bootstrap_95_interval": [
+              -0.0991176193881789,
+              0.13609698287021835
+            ]
+          },
+          "auroc": {
+            "estimate": -0.021326164874551967,
+            "family_bootstrap_95_interval": [
+              -0.08157618289954005,
+              0.044280767098742055
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": -0.036656960610143674,
+            "family_bootstrap_95_interval": [
+              -0.09405324928534366,
+              0.032018669137430886
+            ]
+          },
+          "auroc": {
+            "estimate": -0.017562724014337006,
+            "family_bootstrap_95_interval": [
+              -0.05106421245981945,
+              0.012517566974088663
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.34865988058625624,
+            "family_bootstrap_95_interval": [
+              0.18959181349179824,
+              0.490286319719279
+            ]
+          },
+          "auroc": {
+            "estimate": 0.18763440860215053,
+            "family_bootstrap_95_interval": [
+              0.08733994476617149,
+              0.3025309456417934
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.18466068424001603,
+            "family_bootstrap_95_interval": [
+              0.035251045516970655,
+              0.3774131361267851
+            ]
+          },
+          "auroc": {
+            "estimate": 0.17325268817204298,
+            "family_bootstrap_95_interval": [
+              0.06984482748486116,
+              0.28627915393399367
+            ]
+          }
+        },
+        "integration": {
+          "ap": {
+            "estimate": 0.0025427560000715888,
+            "family_bootstrap_95_interval": [
+              -0.025916873477772783,
+              0.029255484715613258
+            ]
+          },
+          "auroc": {
+            "estimate": 0.001612903225806428,
+            "family_bootstrap_95_interval": [
+              -0.010304814761196138,
+              0.014214215531667481
+            ]
+          }
+        }
+      }
+    }
+  },
+  "decor": {
+    "families": 100,
+    "sentences": 1352,
+    "reader_judgments": 1352,
+    "positive": 446,
+    "negative": 906,
+    "models": {
+      "lexical": {
+        "ap": {
+          "estimate": 0.38549072246364696,
+          "family_bootstrap_95_interval": [
+            0.32816628348996396,
+            0.4515038049935479
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5373815816826537,
+          "family_bootstrap_95_interval": [
+            0.49936983189834044,
+            0.5764656578683464
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.17040358744394618,
+          "family_bootstrap_95_interval": [
+            0.12382648487993583,
+            0.22294484251380803
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.11258278145695365,
+          "family_bootstrap_95_interval": [
+            0.08297364811912226,
+            0.1460941684575155
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5984088150508269,
+          "family_bootstrap_95_interval": [
+            0.5526250715140985,
+            0.6439611458495974
+          ]
+        },
+        "precision": {
+          "estimate": 0.42696629213483145,
+          "family_bootstrap_95_interval": [
+            0.3333333333333333,
+            0.5200116959064326
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.3218569599680546,
+        "alert_counts": {
+          "true_positive": 76,
+          "false_positive": 102,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.5587660654624448,
+          "family_bootstrap_95_interval": [
+            0.5118275644960668,
+            0.6044063166828201
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "display": {
+        "ap": {
+          "estimate": 0.3710122407331111,
+          "family_bootstrap_95_interval": [
+            0.3180022662425116,
+            0.4315512886120179
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5694250586523327,
+          "family_bootstrap_95_interval": [
+            0.527410004580832,
+            0.611069640718061
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.5381165919282511,
+          "family_bootstrap_95_interval": [
+            0.4743269142883258,
+            0.5986097966784711
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.4359823399558499,
+          "family_bootstrap_95_interval": [
+            0.39443067945435634,
+            0.4773243306869287
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5684506822595361,
+          "family_bootstrap_95_interval": [
+            0.5362514275167195,
+            0.6004793067949601
+          ]
+        },
+        "precision": {
+          "estimate": 0.3779527559055118,
+          "family_bootstrap_95_interval": [
+            0.3228458716650185,
+            0.43396443454103484
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.24845454722356008,
+        "alert_counts": {
+          "true_positive": 240,
+          "false_positive": 395,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.5979676379101548,
+          "family_bootstrap_95_interval": [
+            0.5506902940061739,
+            0.6438868667286872
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "lexical_surprisal": {
+        "ap": {
+          "estimate": 0.5026176749351001,
+          "family_bootstrap_95_interval": [
+            0.4381373930465025,
+            0.5670920288402064
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6494619823993506,
+          "family_bootstrap_95_interval": [
+            0.6080966164979692,
+            0.6885862863733792
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.5515695067264574,
+          "family_bootstrap_95_interval": [
+            0.4875512791561991,
+            0.6155508759299255
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.31788079470198677,
+          "family_bootstrap_95_interval": [
+            0.27870520893938877,
+            0.36086542814996564
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6460469287730194,
+          "family_bootstrap_95_interval": [
+            0.6186310858134764,
+            0.6726683903832528
+          ]
+        },
+        "precision": {
+          "estimate": 0.4606741573033708,
+          "family_bootstrap_95_interval": [
+            0.40038684719535783,
+            0.5189400470219435
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.3185741438729292,
+        "alert_counts": {
+          "true_positive": 246,
+          "false_positive": 288,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.6425857572511307,
+          "family_bootstrap_95_interval": [
+            0.5964966381469679,
+            0.6881461769428996
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "local_state": {
+        "ap": {
+          "estimate": 0.4721407449124997,
+          "family_bootstrap_95_interval": [
+            0.4057884655536897,
+            0.5397128302016737
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6481726209920906,
+          "family_bootstrap_95_interval": [
+            0.6091488777704153,
+            0.6863802277081932
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.6704035874439462,
+          "family_bootstrap_95_interval": [
+            0.6068357998590557,
+            0.7325876352715787
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.45695364238410596,
+          "family_bootstrap_95_interval": [
+            0.4143465653632464,
+            0.5
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5970002299413132,
+          "family_bootstrap_95_interval": [
+            0.5667224003280995,
+            0.627760683801337
+          ]
+        },
+        "precision": {
+          "estimate": 0.41935483870967744,
+          "family_bootstrap_95_interval": [
+            0.36005349914070217,
+            0.47902725397078566
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.3636133611937725,
+        "alert_counts": {
+          "true_positive": 299,
+          "false_positive": 414,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.608992608853155,
+          "family_bootstrap_95_interval": [
+            0.564536158889541,
+            0.6531935500529171
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "integration": {
+        "ap": {
+          "estimate": 0.4505950784435129,
+          "family_bootstrap_95_interval": [
+            0.38235816449310106,
+            0.519307984142218
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6157678258545423,
+          "family_bootstrap_95_interval": [
+            0.5742074387989555,
+            0.6579643488298085
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.2556053811659193,
+          "family_bootstrap_95_interval": [
+            0.1979161184210526,
+            0.3179826855318212
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.1445916114790287,
+          "family_bootstrap_95_interval": [
+            0.11551066713814238,
+            0.17659810962907688
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6248344201280804,
+          "family_bootstrap_95_interval": [
+            0.5858078558414729,
+            0.663089773824411
+          ]
+        },
+        "precision": {
+          "estimate": 0.46530612244897956,
+          "family_bootstrap_95_interval": [
+            0.3812147858432252,
+            0.545787895310796
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.39221974817295097,
+        "alert_counts": {
+          "true_positive": 114,
+          "false_positive": 131,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.6204229558440904,
+          "family_bootstrap_95_interval": [
+            0.5769496434834754,
+            0.6625141606185495
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "directed": {
+        "ap": {
+          "estimate": 0.47545248097979886,
+          "family_bootstrap_95_interval": [
+            0.4208930663171562,
+            0.5372169810384511
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6470366960670765,
+          "family_bootstrap_95_interval": [
+            0.6172296104958637,
+            0.6771294490991272
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.5515695067264574,
+          "family_bootstrap_95_interval": [
+            0.49769531668631445,
+            0.6058713342215728
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.34216335540838855,
+          "family_bootstrap_95_interval": [
+            0.3062637906355448,
+            0.37756233661401284
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6312968941791564,
+          "family_bootstrap_95_interval": [
+            0.6074633957323803,
+            0.656044673251274
+          ]
+        },
+        "precision": {
+          "estimate": 0.44244604316546765,
+          "family_bootstrap_95_interval": [
+            0.38433880078339583,
+            0.5009174311926605
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.36922122928567014,
+        "alert_counts": {
+          "true_positive": 246,
+          "false_positive": 310,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.6480885120119696,
+          "family_bootstrap_95_interval": [
+            0.6069246148084841,
+            0.6893441621427127
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "student": {
+        "ap": {
+          "estimate": 0.47394455589080364,
+          "family_bootstrap_95_interval": [
+            0.4041483298259789,
+            0.5444781305927316
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6376424237024718,
+          "family_bootstrap_95_interval": [
+            0.5972963759242235,
+            0.6789798969664692
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.3251121076233184,
+          "family_bootstrap_95_interval": [
+            0.25747065297138666,
+            0.39495846283718966
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.17770419426048564,
+          "family_bootstrap_95_interval": [
+            0.1432934324604286,
+            0.21581982525443186
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.6387295146463635,
+          "family_bootstrap_95_interval": [
+            0.6010657074320785,
+            0.6750850615617037
+          ]
+        },
+        "precision": {
+          "estimate": 0.4738562091503268,
+          "family_bootstrap_95_interval": [
+            0.3918908328391087,
+            0.5542177507684698
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.36002558417865094,
+        "alert_counts": {
+          "true_positive": 145,
+          "false_positive": 161,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.6371104027218789,
+          "family_bootstrap_95_interval": [
+            0.595619795355913,
+            0.6775285088453045
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "carter_lexical": {
+        "ap": {
+          "estimate": 0.4090309363397478,
+          "family_bootstrap_95_interval": [
+            0.3480113477879207,
+            0.4722536058636556
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5480998624021224,
+          "family_bootstrap_95_interval": [
+            0.511302462998109,
+            0.5847946150707453
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9125560538116592,
+          "family_bootstrap_95_interval": [
+            0.880172075968146,
+            0.9438202247191011
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.8973509933774835,
+          "family_bootstrap_95_interval": [
+            0.870389475052196,
+            0.9215897190215799
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.2812576821267892,
+          "family_bootstrap_95_interval": [
+            0.2388176248546015,
+            0.3254408717365381
+          ]
+        },
+        "precision": {
+          "estimate": 0.3336065573770492,
+          "family_bootstrap_95_interval": [
+            0.2899407102482182,
+            0.37828784987277353
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 407,
+          "false_positive": 813,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.575046628113955,
+          "family_bootstrap_95_interval": [
+            0.5298011024011032,
+            0.6203907226594592
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "carter_display": {
+        "ap": {
+          "estimate": 0.3606462380663606,
+          "family_bootstrap_95_interval": [
+            0.30074455699298397,
+            0.4336113337543672
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5510052564369079,
+          "family_bootstrap_95_interval": [
+            0.500990237946023,
+            0.6008448473487805
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.5,
+          "family_bootstrap_95_interval": [
+            0.4255801583374567,
+            0.5770065075921909
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.44260485651214126,
+          "family_bootstrap_95_interval": [
+            0.3842839381227746,
+            0.5029174948462493
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5517123103849101,
+          "family_bootstrap_95_interval": [
+            0.5122263198832471,
+            0.5895891055681026
+          ]
+        },
+        "precision": {
+          "estimate": 0.3573717948717949,
+          "family_bootstrap_95_interval": [
+            0.2993596010467585,
+            0.41652079593058045
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 223,
+          "false_positive": 401,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.5817884649392642,
+          "family_bootstrap_95_interval": [
+            0.5335810946039079,
+            0.6291624492683348
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "carter_integration": {
+        "ap": {
+          "estimate": 0.41859366995246616,
+          "family_bootstrap_95_interval": [
+            0.35778569432697277,
+            0.48073495658987325
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5681653946287332,
+          "family_bootstrap_95_interval": [
+            0.5308440303692072,
+            0.6058021182779726
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8340807174887892,
+          "family_bootstrap_95_interval": [
+            0.7893633067991686,
+            0.8777777777777778
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.7649006622516556,
+          "family_bootstrap_95_interval": [
+            0.726834840891951,
+            0.8025855758626341
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.4017180050318982,
+          "family_bootstrap_95_interval": [
+            0.3619675571872272,
+            0.4417355541918745
+          ]
+        },
+        "precision": {
+          "estimate": 0.3492957746478873,
+          "family_bootstrap_95_interval": [
+            0.3032291133939623,
+            0.3958333333333333
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 372,
+          "false_positive": 693,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.5966571776283455,
+          "family_bootstrap_95_interval": [
+            0.5491532483639102,
+            0.6444773253779769
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "carter_lexical_surprisal": {
+        "ap": {
+          "estimate": 0.41951353345203646,
+          "family_bootstrap_95_interval": [
+            0.3576643291975563,
+            0.48279449501500515
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5679228659955058,
+          "family_bootstrap_95_interval": [
+            0.5284988407564899,
+            0.6066745390580549
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8497757847533632,
+          "family_bootstrap_95_interval": [
+            0.8072562358276644,
+            0.8914030005941771
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.8200883002207505,
+          "family_bootstrap_95_interval": [
+            0.7807372707696582,
+            0.8571464719491034
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.3517759398742412,
+          "family_bootstrap_95_interval": [
+            0.3070204104313473,
+            0.3965753243312561
+          ]
+        },
+        "precision": {
+          "estimate": 0.33778966131907306,
+          "family_bootstrap_95_interval": [
+            0.2920662598081953,
+            0.38419130169097615
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 2.0,
+        "alert_counts": {
+          "true_positive": 379,
+          "false_positive": 743,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.5880378895938938,
+          "family_bootstrap_95_interval": [
+            0.5404665534422142,
+            0.6356918535531627
+          ],
+          "eligible_documents": 92
+        }
+      },
+      "static": {
+        "ap": {
+          "estimate": 0.3875021171935999,
+          "family_bootstrap_95_interval": [
+            0.33306544607954525,
+            0.449988954913222
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5489635613102486,
+          "family_bootstrap_95_interval": [
+            0.5096976684242505,
+            0.5888930425794552
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.07847533632286996,
+          "family_bootstrap_95_interval": [
+            0.048978878264592546,
+            0.11165078657640512
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.04083885209713024,
+          "family_bootstrap_95_interval": [
+            0.022610192717496706,
+            0.06221198156682028
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5773625366137155,
+          "family_bootstrap_95_interval": [
+            0.5271869637492377,
+            0.6275608167072158
+          ]
+        },
+        "precision": {
+          "estimate": 0.4861111111111111,
+          "family_bootstrap_95_interval": [
+            0.35135135135135137,
+            0.6379310344827587
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "cutoff": 0.4417680292562578,
+        "alert_counts": {
+          "true_positive": 35,
+          "false_positive": 37,
+          "human_positive": 446,
+          "human_negative": 906
+        },
+        "within_document_concordance": {
+          "estimate": 0.5588439472204756,
+          "family_bootstrap_95_interval": [
+            0.5127787899272427,
+            0.6041389662102499
+          ],
+          "eligible_documents": 92
+        }
+      }
+    },
+    "predeclared_raw_head_gate": true,
+    "comparisons": {
+      "integration": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.06510435597986591,
+            "family_bootstrap_95_interval": [
+              0.003984018228276533,
+              0.1203013975522011
+            ]
+          },
+          "auroc": {
+            "estimate": 0.07838624417188855,
+            "family_bootstrap_95_interval": [
+              0.0267624887620952,
+              0.12984425928865514
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.07958283771040175,
+            "family_bootstrap_95_interval": [
+              0.013056449802832885,
+              0.14222096505500706
+            ]
+          },
+          "auroc": {
+            "estimate": 0.046342767202209534,
+            "family_bootstrap_95_interval": [
+              -0.020874282616911658,
+              0.11279581366161587
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": -0.05202259649158725,
+            "family_bootstrap_95_interval": [
+              -0.10048760231621608,
+              -0.005840071745556034
+            ]
+          },
+          "auroc": {
+            "estimate": -0.03369415654480834,
+            "family_bootstrap_95_interval": [
+              -0.07699465964386917,
+              0.008275165227701045
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": -0.021545666468986813,
+            "family_bootstrap_95_interval": [
+              -0.04905991191481106,
+              0.005606099575339763
+            ]
+          },
+          "auroc": {
+            "estimate": -0.03240479513754835,
+            "family_bootstrap_95_interval": [
+              -0.0558891279022964,
+              -0.009019859501822004
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.06309296124991298,
+            "family_bootstrap_95_interval": [
+              0.009475698742313762,
+              0.11206090034217428
+            ]
+          },
+          "auroc": {
+            "estimate": 0.06680426454429367,
+            "family_bootstrap_95_interval": [
+              0.022127538538310558,
+              0.11164489017177068
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.03200140849104671,
+            "family_bootstrap_95_interval": [
+              -0.02800202112971276,
+              0.09042890849723752
+            ]
+          },
+          "auroc": {
+            "estimate": 0.047602431225809094,
+            "family_bootstrap_95_interval": [
+              -0.0034274849616339888,
+              0.09946928079249415
+            ]
+          }
+        }
+      },
+      "directed": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.0899617585161519,
+            "family_bootstrap_95_interval": [
+              0.034201663138901925,
+              0.14409799337487453
+            ]
+          },
+          "auroc": {
+            "estimate": 0.10965511438442277,
+            "family_bootstrap_95_interval": [
+              0.06355241113843889,
+              0.15579347801445495
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.10444024024668774,
+            "family_bootstrap_95_interval": [
+              0.050644884507366095,
+              0.15983748507513668
+            ]
+          },
+          "auroc": {
+            "estimate": 0.07761163741474375,
+            "family_bootstrap_95_interval": [
+              0.026159281720184977,
+              0.1307414516398202
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": -0.02716519395530126,
+            "family_bootstrap_95_interval": [
+              -0.08061307711554128,
+              0.031132848096731214
+            ]
+          },
+          "auroc": {
+            "estimate": -0.0024252863322741236,
+            "family_bootstrap_95_interval": [
+              -0.04736767138437517,
+              0.043983893446456694
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": 0.003311736067299176,
+            "family_bootstrap_95_interval": [
+              -0.04407224140498305,
+              0.056311322206617914
+            ]
+          },
+          "auroc": {
+            "estimate": -0.0011359249250141312,
+            "family_bootstrap_95_interval": [
+              -0.04041332091212983,
+              0.039718264507649356
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.08795036378619897,
+            "family_bootstrap_95_interval": [
+              0.03794422281208061,
+              0.13917294914059777
+            ]
+          },
+          "auroc": {
+            "estimate": 0.09807313475682788,
+            "family_bootstrap_95_interval": [
+              0.05312057087061756,
+              0.14434563821860538
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.0568588110273327,
+            "family_bootstrap_95_interval": [
+              0.005846101257700015,
+              0.11155618874839295
+            ]
+          },
+          "auroc": {
+            "estimate": 0.07887130143834331,
+            "family_bootstrap_95_interval": [
+              0.0332228089080267,
+              0.12450353819892261
+            ]
+          }
+        },
+        "integration": {
+          "ap": {
+            "estimate": 0.02485740253628599,
+            "family_bootstrap_95_interval": [
+              -0.027160261610549435,
+              0.081659197190219
+            ]
+          },
+          "auroc": {
+            "estimate": 0.03126887021253422,
+            "family_bootstrap_95_interval": [
+              -0.014274105007242577,
+              0.07653223080415582
+            ]
+          }
+        }
+      },
+      "student": {
+        "lexical": {
+          "ap": {
+            "estimate": 0.08845383342715668,
+            "family_bootstrap_95_interval": [
+              0.02502264941646335,
+              0.1469166315213514
+            ]
+          },
+          "auroc": {
+            "estimate": 0.10026084201981811,
+            "family_bootstrap_95_interval": [
+              0.05031754945418019,
+              0.1506166964423841
+            ]
+          }
+        },
+        "display": {
+          "ap": {
+            "estimate": 0.10293231515769252,
+            "family_bootstrap_95_interval": [
+              0.03604600224596808,
+              0.1662379435385971
+            ]
+          },
+          "auroc": {
+            "estimate": 0.06821736505013909,
+            "family_bootstrap_95_interval": [
+              0.0036940204610115155,
+              0.13242962505037373
+            ]
+          }
+        },
+        "lexical_surprisal": {
+          "ap": {
+            "estimate": -0.02867311904429648,
+            "family_bootstrap_95_interval": [
+              -0.07557349281266885,
+              0.01778433292172955
+            ]
+          },
+          "auroc": {
+            "estimate": -0.011819558696878785,
+            "family_bootstrap_95_interval": [
+              -0.052515373759395495,
+              0.02889171178526323
+            ]
+          }
+        },
+        "local_state": {
+          "ap": {
+            "estimate": 0.0018038109783039546,
+            "family_bootstrap_95_interval": [
+              -0.027060270768378865,
+              0.02963089951600141
+            ]
+          },
+          "auroc": {
+            "estimate": -0.010530197289618792,
+            "family_bootstrap_95_interval": [
+              -0.033355062637790533,
+              0.012454347069031133
+            ]
+          }
+        },
+        "static": {
+          "ap": {
+            "estimate": 0.08644243869720375,
+            "family_bootstrap_95_interval": [
+              0.03150180039929722,
+              0.13729310362156305
+            ]
+          },
+          "auroc": {
+            "estimate": 0.08867886239222322,
+            "family_bootstrap_95_interval": [
+              0.04515107290004674,
+              0.13353086679939277
+            ]
+          }
+        },
+        "carter_integration": {
+          "ap": {
+            "estimate": 0.05535088593833748,
+            "family_bootstrap_95_interval": [
+              -0.006562105790857903,
+              0.11678879358825285
+            ]
+          },
+          "auroc": {
+            "estimate": 0.06947702907373865,
+            "family_bootstrap_95_interval": [
+              0.019832212303687237,
+              0.12054065667653353
+            ]
+          }
+        },
+        "integration": {
+          "ap": {
+            "estimate": 0.023349477447290767,
+            "family_bootstrap_95_interval": [
+              0.01219260745137382,
+              0.03527330041802249
+            ]
+          },
+          "auroc": {
+            "estimate": 0.021874597847929556,
+            "family_bootstrap_95_interval": [
+              0.013861254967252544,
+              0.030392179893926983
+            ]
+          }
+        }
+      }
+    }
+  },
+  "expert_edit_preference": {
+    "pairs": 213,
+    "essays": 75,
+    "models": {
+      "lexical": {
+        "new_minus_old": {
+          "estimate": 0.0002637962535266641,
+          "family_bootstrap_95_interval": [
+            -0.007078636156467664,
+            0.010094304044926686
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.3615023474178404,
+          "family_bootstrap_95_interval": [
+            0.29694323144104806,
+            0.4264705882352941
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.4671361502347418,
+          "family_bootstrap_95_interval": [
+            0.40384414225941423,
+            0.5295363846105879
+          ]
+        },
+        "lower_count": 77,
+        "tie_count": 45,
+        "old_alarms": 21,
+        "new_alarms": 24,
+        "identical_input_max_abs_difference": 0.0
+      },
+      "display": {
+        "new_minus_old": {
+          "estimate": 9.512016276690824e-05,
+          "family_bootstrap_95_interval": [
+            -0.00033859583578640744,
+            0.0005313301524927473
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.4835680751173709,
+          "family_bootstrap_95_interval": [
+            0.39545454545454545,
+            0.5735294117647058
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5046948356807511,
+          "family_bootstrap_95_interval": [
+            0.41980915700190413,
+            0.5911260666395773
+          ]
+        },
+        "lower_count": 103,
+        "tie_count": 9,
+        "old_alarms": 110,
+        "new_alarms": 111,
+        "identical_input_max_abs_difference": 1.2594664977605419e-08
+      },
+      "lexical_surprisal": {
+        "new_minus_old": {
+          "estimate": -0.032698633579497455,
+          "family_bootstrap_95_interval": [
+            -0.04959723041698755,
+            -0.01715130724271176
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5774647887323944,
+          "family_bootstrap_95_interval": [
+            0.5057408109132248,
+            0.6507936507936508
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5985915492957746,
+          "family_bootstrap_95_interval": [
+            0.5282599929873772,
+            0.6704558546292416
+          ]
+        },
+        "lower_count": 123,
+        "tie_count": 9,
+        "old_alarms": 97,
+        "new_alarms": 82,
+        "identical_input_max_abs_difference": 4.54779111008774e-07
+      },
+      "local_state": {
+        "new_minus_old": {
+          "estimate": -0.02178515625779729,
+          "family_bootstrap_95_interval": [
+            -0.03917592806112487,
+            -0.004925584241266247
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5211267605633803,
+          "family_bootstrap_95_interval": [
+            0.44036697247706424,
+            0.6041694518716577
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5422535211267606,
+          "family_bootstrap_95_interval": [
+            0.46216113841113843,
+            0.6221761576971213
+          ]
+        },
+        "lower_count": 111,
+        "tie_count": 9,
+        "old_alarms": 112,
+        "new_alarms": 107,
+        "identical_input_max_abs_difference": 2.760951400004874e-07
+      },
+      "integration": {
+        "new_minus_old": {
+          "estimate": -0.014205406152245382,
+          "family_bootstrap_95_interval": [
+            -0.028398453543034802,
+            -0.0008692838537205673
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5539906103286385,
+          "family_bootstrap_95_interval": [
+            0.4884765834315722,
+            0.6257100715292642
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5751173708920188,
+          "family_bootstrap_95_interval": [
+            0.51010101010101,
+            0.6460713907144371
+          ]
+        },
+        "lower_count": 118,
+        "tie_count": 9,
+        "old_alarms": 34,
+        "new_alarms": 27,
+        "identical_input_max_abs_difference": 5.004674659692121e-07
+      },
+      "student": {
+        "new_minus_old": {
+          "estimate": -0.011232565153545065,
+          "family_bootstrap_95_interval": [
+            -0.02422645632318066,
+            0.001350069952915873
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5352112676056338,
+          "family_bootstrap_95_interval": [
+            0.4573982340876699,
+            0.6169180692283264
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5563380281690141,
+          "family_bootstrap_95_interval": [
+            0.4778725233778797,
+            0.6373902027027027
+          ]
+        },
+        "lower_count": 114,
+        "tie_count": 9,
+        "old_alarms": 48,
+        "new_alarms": 42,
+        "identical_input_max_abs_difference": 3.70447238995375e-07
+      },
+      "carter_lexical": {
+        "new_minus_old": {
+          "estimate": -0.027116047355582342,
+          "family_bootstrap_95_interval": [
+            -0.05527115191630677,
+            -0.001568995635136392
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.38028169014084506,
+          "family_bootstrap_95_interval": [
+            0.3192488262910798,
+            0.4427860696517413
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.48826291079812206,
+          "family_bootstrap_95_interval": [
+            0.4299054848395145,
+            0.5480782085561497
+          ]
+        },
+        "lower_count": 81,
+        "tie_count": 46,
+        "old_alarms": 194,
+        "new_alarms": 196,
+        "identical_input_max_abs_difference": 0.0
+      },
+      "carter_display": {
+        "new_minus_old": {
+          "estimate": 0.0001913582734134782,
+          "family_bootstrap_95_interval": [
+            -0.0009743260653264417,
+            0.0013410376303795107
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.4835680751173709,
+          "family_bootstrap_95_interval": [
+            0.39545454545454545,
+            0.5735294117647058
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5046948356807511,
+          "family_bootstrap_95_interval": [
+            0.41980915700190413,
+            0.5911260666395773
+          ]
+        },
+        "lower_count": 103,
+        "tie_count": 9,
+        "old_alarms": 88,
+        "new_alarms": 88,
+        "identical_input_max_abs_difference": 3.347006005682829e-08
+      },
+      "carter_integration": {
+        "new_minus_old": {
+          "estimate": -0.07230854717334541,
+          "family_bootstrap_95_interval": [
+            -0.11215969098817666,
+            -0.03670382342021761
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5446009389671361,
+          "family_bootstrap_95_interval": [
+            0.4642819469559976,
+            0.6230404431292207
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5704225352112676,
+          "family_bootstrap_95_interval": [
+            0.49082248773202475,
+            0.6463428367391783
+          ]
+        },
+        "lower_count": 116,
+        "tie_count": 11,
+        "old_alarms": 175,
+        "new_alarms": 163,
+        "identical_input_max_abs_difference": 4.5307929985582973e-07
+      },
+      "carter_lexical_surprisal": {
+        "new_minus_old": {
+          "estimate": -0.07006287976065184,
+          "family_bootstrap_95_interval": [
+            -0.11016966594647458,
+            -0.03406690114801283
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5164319248826291,
+          "family_bootstrap_95_interval": [
+            0.42913348115968264,
+            0.6018957345971564
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5422535211267606,
+          "family_bootstrap_95_interval": [
+            0.4545411337711718,
+            0.6256291484158761
+          ]
+        },
+        "lower_count": 110,
+        "tie_count": 11,
+        "old_alarms": 179,
+        "new_alarms": 175,
+        "identical_input_max_abs_difference": 6.115259800765216e-07
+      },
+      "static": {
+        "new_minus_old": {
+          "estimate": 0.0009544946322301006,
+          "family_bootstrap_95_interval": [
+            -0.007470617762072246,
+            0.01092185955007116
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.45539906103286387,
+          "family_bootstrap_95_interval": [
+            0.39603960396039606,
+            0.5175879396984925
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.4812206572769953,
+          "family_bootstrap_95_interval": [
+            0.42477822407423316,
+            0.5402010050251256
+          ]
+        },
+        "lower_count": 97,
+        "tie_count": 11,
+        "old_alarms": 8,
+        "new_alarms": 9,
+        "identical_input_max_abs_difference": 0.0
+      }
+    },
+    "change_units": "probability for binary trained arms, predicted rating deficit for Carter transfers"
+  },
+  "expert_changed_edit_preference": {
+    "pairs": 203,
+    "essays": 75,
+    "models": {
+      "lexical": {
+        "new_minus_old": {
+          "estimate": 0.0005437858907071544,
+          "family_bootstrap_95_interval": [
+            -0.007102037430138649,
+            0.010864344536173456
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.37438423645320196,
+          "family_bootstrap_95_interval": [
+            0.30666666666666664,
+            0.44339622641509435
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.4630541871921182,
+          "family_bootstrap_95_interval": [
+            0.3974342105263158,
+            0.5283505154639175
+          ]
+        },
+        "lower_count": 76,
+        "tie_count": 36,
+        "old_alarms": 20,
+        "new_alarms": 23,
+        "identical_input_max_abs_difference": null
+      },
+      "display": {
+        "new_minus_old": {
+          "estimate": 0.00015149340071769201,
+          "family_bootstrap_95_interval": [
+            -0.0002821343070270017,
+            0.0005980231015881358
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5024630541871922,
+          "family_bootstrap_95_interval": [
+            0.41394947874899757,
+            0.5922782376990826
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5024630541871922,
+          "family_bootstrap_95_interval": [
+            0.41394947874899757,
+            0.5922782376990826
+          ]
+        },
+        "lower_count": 102,
+        "tie_count": 0,
+        "old_alarms": 103,
+        "new_alarms": 104,
+        "identical_input_max_abs_difference": null
+      },
+      "lexical_surprisal": {
+        "new_minus_old": {
+          "estimate": -0.03606461420753137,
+          "family_bootstrap_95_interval": [
+            -0.05340634161299482,
+            -0.020147178314027396
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.6059113300492611,
+          "family_bootstrap_95_interval": [
+            0.5321078320603787,
+            0.6815642458100558
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.6059113300492611,
+          "family_bootstrap_95_interval": [
+            0.5321078320603787,
+            0.6815642458100558
+          ]
+        },
+        "lower_count": 123,
+        "tie_count": 0,
+        "old_alarms": 91,
+        "new_alarms": 75,
+        "identical_input_max_abs_difference": null
+      },
+      "local_state": {
+        "new_minus_old": {
+          "estimate": -0.024429586389687345,
+          "family_bootstrap_95_interval": [
+            -0.04258127858664413,
+            -0.0067797448543652165
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5467980295566502,
+          "family_bootstrap_95_interval": [
+            0.462310372617806,
+            0.6310160427807486
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5467980295566502,
+          "family_bootstrap_95_interval": [
+            0.462310372617806,
+            0.6310160427807486
+          ]
+        },
+        "lower_count": 111,
+        "tie_count": 0,
+        "old_alarms": 105,
+        "new_alarms": 100,
+        "identical_input_max_abs_difference": null
+      },
+      "integration": {
+        "new_minus_old": {
+          "estimate": -0.016453862170527,
+          "family_bootstrap_95_interval": [
+            -0.03136719715506162,
+            -0.002613693638730849
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5812807881773399,
+          "family_bootstrap_95_interval": [
+            0.5129310344827587,
+            0.6559182454343744
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5812807881773399,
+          "family_bootstrap_95_interval": [
+            0.5129310344827587,
+            0.6559182454343744
+          ]
+        },
+        "lower_count": 118,
+        "tie_count": 0,
+        "old_alarms": 31,
+        "new_alarms": 24,
+        "identical_input_max_abs_difference": null
+      },
+      "student": {
+        "new_minus_old": {
+          "estimate": -0.013845878167578506,
+          "family_bootstrap_95_interval": [
+            -0.027190719969198328,
+            -0.001187856077103441
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5615763546798029,
+          "family_bootstrap_95_interval": [
+            0.4788732394366197,
+            0.6479591836734694
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5615763546798029,
+          "family_bootstrap_95_interval": [
+            0.4788732394366197,
+            0.6479591836734694
+          ]
+        },
+        "lower_count": 114,
+        "tie_count": 0,
+        "old_alarms": 45,
+        "new_alarms": 39,
+        "identical_input_max_abs_difference": null
+      },
+      "carter_lexical": {
+        "new_minus_old": {
+          "estimate": -0.024313960660998616,
+          "family_bootstrap_95_interval": [
+            -0.05122002410355704,
+            0.0010186816684161495
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.39408866995073893,
+          "family_bootstrap_95_interval": [
+            0.33018755078089734,
+            0.45918367346938777
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.4852216748768473,
+          "family_bootstrap_95_interval": [
+            0.42462206282810705,
+            0.5475
+          ]
+        },
+        "lower_count": 80,
+        "tie_count": 37,
+        "old_alarms": 184,
+        "new_alarms": 186,
+        "identical_input_max_abs_difference": null
+      },
+      "carter_display": {
+        "new_minus_old": {
+          "estimate": 0.0003538104970737977,
+          "family_bootstrap_95_interval": [
+            -0.0007867723249658981,
+            0.0015195021501595294
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5024630541871922,
+          "family_bootstrap_95_interval": [
+            0.41394947874899757,
+            0.5922782376990826
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5024630541871922,
+          "family_bootstrap_95_interval": [
+            0.41394947874899757,
+            0.5922782376990826
+          ]
+        },
+        "lower_count": 102,
+        "tie_count": 0,
+        "old_alarms": 79,
+        "new_alarms": 80,
+        "identical_input_max_abs_difference": null
+      },
+      "carter_integration": {
+        "new_minus_old": {
+          "estimate": -0.06997928965520567,
+          "family_bootstrap_95_interval": [
+            -0.10762985473325454,
+            -0.03530056485492664
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5665024630541872,
+          "family_bootstrap_95_interval": [
+            0.4834123222748815,
+            0.6465564092953523
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.5714285714285714,
+          "family_bootstrap_95_interval": [
+            0.48878923766816146,
+            0.6512210756722951
+          ]
+        },
+        "lower_count": 115,
+        "tie_count": 2,
+        "old_alarms": 166,
+        "new_alarms": 155,
+        "identical_input_max_abs_difference": null
+      },
+      "carter_lexical_surprisal": {
+        "new_minus_old": {
+          "estimate": -0.06790162803877342,
+          "family_bootstrap_95_interval": [
+            -0.10611419494193469,
+            -0.03269709152511306
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.5369458128078818,
+          "family_bootstrap_95_interval": [
+            0.445495560752499,
+            0.624366101275226
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.541871921182266,
+          "family_bootstrap_95_interval": [
+            0.450261780104712,
+            0.62963474524248
+          ]
+        },
+        "lower_count": 109,
+        "tie_count": 2,
+        "old_alarms": 169,
+        "new_alarms": 166,
+        "identical_input_max_abs_difference": null
+      },
+      "static": {
+        "new_minus_old": {
+          "estimate": 0.0008545744513019598,
+          "family_bootstrap_95_interval": [
+            -0.008030033284256437,
+            0.011313347262443168
+          ]
+        },
+        "strict_improvement": {
+          "estimate": 0.47783251231527096,
+          "family_bootstrap_95_interval": [
+            0.4174757281553398,
+            0.5424553392211963
+          ]
+        },
+        "half_tie_preference": {
+          "estimate": 0.4827586206896552,
+          "family_bootstrap_95_interval": [
+            0.4240821655887486,
+            0.5452131000748424
+          ]
+        },
+        "lower_count": 97,
+        "tie_count": 2,
+        "old_alarms": 8,
+        "new_alarms": 9,
+        "identical_input_max_abs_difference": null
+      }
+    },
+    "change_units": "probability for binary trained arms, predicted rating deficit for Carter transfers"
+  },
+  "cohesentia_ambiguous_worker_story_records": 0
+}

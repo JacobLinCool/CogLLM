@@ -1,0 +1,33 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "gpu": "NVIDIA L4",
+  "cuda": "13.0",
+  "torch": "2.14.1+cu130",
+  "dtype": "float32",
+  "input_sha256": "5f6e8d658a84e94b4481258124011fce7d043e53293e9737396bdb6ad1e5b46b",
+  "input_texts": 207,
+  "encoded_texts": 207,
+  "unique_certified_stops": 4836,
+  "excluded_stops": [],
+  "tokens": 136234,
+  "forward_and_readout_s": 58.75673606000038,
+  "throughput_tokens_s": 2318.6107523209334,
+  "load_tokenize_setup_s": 19.910200310999983,
+  "approx_total_s": 97.33580765800002,
+  "batches": 49,
+  "max_batch_tokens": 6144,
+  "segment_means": true,
+  "peak_gpu_reserved_bytes": 9934209024,
+  "projected_tokens": {
+    "file": "token-features.npz",
+    "sha256": "63d75a1d2cf09c722188de6f42e6ed2d929219e98f8f9bfd3299001e79e960f3",
+    "documents": 53,
+    "tokens": 134826,
+    "components": 128,
+    "normalization": "float32 row-wise L2 after fixed projection",
+    "offset_units": "half-open Unicode character indices in the original rendered stimulus",
+    "stop_counts": "aligned with features.npz rows, exclusive upper token indices per document"
+  }
+}

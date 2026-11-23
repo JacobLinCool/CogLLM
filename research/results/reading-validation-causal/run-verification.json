@@ -1,0 +1,53 @@
+{
+  "run": "cogllm-reading-causal-20261122T161238Z-d9166f",
+  "verified_outputs": true,
+  "release_verified": true,
+  "payload_sha256": "dadce942fe9340573a7a38367142eecf1508ca4068386cebc7666b79de26088a",
+  "archive_sha256": "253e21f9170b358c74fdb5db4c4865ed09a26b0d631e9caf4708f0e0e9858e66",
+  "timeline": {
+    "prepared": "2026-11-22T16:12:39.052029+00:00",
+    "allocating": "2026-11-22T16:12:53.603656+00:00",
+    "allocated": "2026-11-22T16:13:17.499997+00:00",
+    "worker-running": "2026-11-22T16:13:41.473703+00:00",
+    "remote-dependencies": "2026-11-22T16:13:41.826939+00:00",
+    "remote-model-download": "2026-11-22T16:14:06.564939+00:00",
+    "remote-extraction": "2026-11-22T16:15:01.855878+00:00",
+    "releasing": "2026-11-22T16:25:06.552931+00:00",
+    "finished": "2026-11-22T16:25:14.289297+00:00"
+  },
+  "geometry": {
+    "passages": 29973,
+    "validation": {
+      "native_attention": 2.4437904357910156e-06,
+      "native_final": 9.394109952154395e-07,
+      "native_middle": 9.942085625880281e-07,
+      "truncated_projected": 1.0222729542874731e-06
+    },
+    "batched_forwards": 1249,
+    "validation_forwards": 3,
+    "total_tokens": 742620,
+    "seconds": 373.65769732
+  },
+  "studies": {
+    "causal": {
+      "completed": true,
+      "input_sha256": "f5a5a6ca297e388f106b82349b7428c531a3ec52bd23a26e6647557fac99115e",
+      "seconds": 377.146909218
+    },
+    "cohesion-matched": {
+      "completed": true,
+      "input_sha256": "4fa1096dc2658692f0bd6ca4333cce9017800d72dd29b69241203255a04a06d3",
+      "seconds": 94.13167133699997
+    },
+    "prior": {
+      "completed": true,
+      "input_sha256": "9bd8d6eccfffee31d5ba9264f828a8d11307e72d4368190e208dcaa055a6074c",
+      "seconds": 95.20404878400001
+    },
+    "writer": {
+      "completed": true,
+      "input_sha256": "9bd8d6eccfffee31d5ba9264f828a8d11307e72d4368190e208dcaa055a6074c",
+      "seconds": 5.789341104999977
+    }
+  }
+}

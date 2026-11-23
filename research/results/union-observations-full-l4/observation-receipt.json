@@ -1,0 +1,845 @@
+{
+  "base_receipt_sha256": "acf3d087a0b21a29bf25418040af8c20e3c0b9c0f6e6a7ee586b57b6fee8020d",
+  "documents": 27167,
+  "endpoints": {
+    "ambistory_joint": {
+      "coordinates": "point",
+      "development_rows": 804,
+      "likelihood": "ordinal_binary",
+      "source": "ambistory",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 2982
+    },
+    "blott_2021_sentence_end_sense": {
+      "coordinates": "point",
+      "development_rows": 48,
+      "likelihood": "categorical",
+      "source": "blott",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 140
+    },
+    "blott_2023_sense_response_log_milliseconds": {
+      "coordinates": "point",
+      "development_rows": 12,
+      "likelihood": "gaussian",
+      "source": "blott",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "train_rows": 76
+    },
+    "blott_2023_sentence_end_sense": {
+      "coordinates": "point",
+      "development_rows": 12,
+      "likelihood": "categorical",
+      "source": "blott",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 76
+    },
+    "clear_excerpt_easiness": {
+      "coordinates": "point",
+      "development_rows": 204,
+      "likelihood": "known_error_gaussian",
+      "source": "clear",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 806
+    },
+    "complex_word_difficulty": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 2037,
+      "likelihood": "gaussian",
+      "source": "complex",
+      "states": [
+        "lexical"
+      ],
+      "train_rows": 8164
+    },
+    "context_first_readback": {
+      "coordinates": "point",
+      "development_rows": 494,
+      "likelihood": "categorical",
+      "source": "context-readback",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "train_rows": 2047
+    },
+    "currie_end_coherence_report": {
+      "coordinates": "point",
+      "development_rows": 8,
+      "likelihood": "categorical",
+      "source": "currie",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 40
+    },
+    "cwi_native_marked": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 1548,
+      "likelihood": "categorical",
+      "source": "cwi",
+      "states": [
+        "lexical"
+      ],
+      "train_rows": 4615
+    },
+    "cwi_nonnative_marked": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 1548,
+      "likelihood": "categorical",
+      "source": "cwi",
+      "states": [
+        "lexical"
+      ],
+      "train_rows": 4615
+    },
+    "czech_exp2_qcor": {
+      "coordinates": "point",
+      "development_rows": 36,
+      "likelihood": "categorical",
+      "source": "czech",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 156
+    },
+    "czech_exp2_qmis": {
+      "coordinates": "point",
+      "development_rows": 36,
+      "likelihood": "categorical",
+      "source": "czech",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 156
+    },
+    "czech_exp2_qpos": {
+      "coordinates": "point",
+      "development_rows": 36,
+      "likelihood": "categorical",
+      "source": "czech",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 156
+    },
+    "czech_exp3_qcor": {
+      "coordinates": "point",
+      "development_rows": 36,
+      "likelihood": "categorical",
+      "source": "czech",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 156
+    },
+    "czech_exp3_qmis": {
+      "coordinates": "point",
+      "development_rows": 36,
+      "likelihood": "categorical",
+      "source": "czech",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 156
+    },
+    "czech_exp3_qpos": {
+      "coordinates": "point",
+      "development_rows": 36,
+      "likelihood": "categorical",
+      "source": "czech",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 156
+    },
+    "first_readback_end_acceptability": {
+      "coordinates": "point",
+      "development_rows": 8,
+      "likelihood": "categorical",
+      "source": "first-readback",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 32
+    },
+    "first_readback_risk": {
+      "coordinates": "point",
+      "development_rows": 415,
+      "likelihood": "categorical",
+      "source": "first-readback",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "train_rows": 1741
+    },
+    "frick_after_first_report": {
+      "coordinates": "point",
+      "development_rows": 91,
+      "likelihood": "categorical",
+      "source": "frick",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 372
+    },
+    "frick_first_report": {
+      "coordinates": "trajectory",
+      "development_rows": 8,
+      "likelihood": "first_event",
+      "source": "frick",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 32
+    },
+    "frick_log_keypress_seconds": {
+      "coordinates": "point",
+      "development_rows": 120,
+      "likelihood": "gaussian",
+      "source": "frick",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 464
+    },
+    "kerwer_comprehensibility": {
+      "coordinates": "point",
+      "development_rows": 6,
+      "likelihood": "ordinal",
+      "source": "kerwer",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 30
+    },
+    "kerwer_confusion": {
+      "coordinates": "point",
+      "development_rows": 6,
+      "likelihood": "ordinal",
+      "source": "kerwer",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 30
+    },
+    "kerwer_frustration": {
+      "coordinates": "point",
+      "development_rows": 6,
+      "likelihood": "ordinal",
+      "source": "kerwer",
+      "states": [
+        "appraisal"
+      ],
+      "train_rows": 30
+    },
+    "oliver_first_confirmation_rt_log_milliseconds": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "gaussian",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "oliver_first_definition_rt_log_milliseconds": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "gaussian",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "oliver_first_delay_rt_log_milliseconds": {
+      "coordinates": "point",
+      "development_rows": 14,
+      "likelihood": "gaussian",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 68
+    },
+    "oliver_retest_initial_state": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "categorical",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "oliver_retest_target_confirmation": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "categorical",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "oliver_retrieval_protocol_path": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "categorical",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "oliver_second_confirmation_rt_log_milliseconds": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "gaussian",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "oliver_second_definition_rt_log_milliseconds": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "gaussian",
+      "source": "oliver",
+      "states": [
+        "retrieval"
+      ],
+      "train_rows": 70
+    },
+    "onestop_answer_choice": {
+      "coordinates": "point",
+      "development_rows": 328,
+      "likelihood": "choice",
+      "source": "onestop",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 1544
+    },
+    "onestop_rereading_first_read_correct": {
+      "coordinates": "point",
+      "development_rows": 88,
+      "likelihood": "categorical",
+      "source": "onestop-rereading",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 283
+    },
+    "onestop_rereading_reread_correct": {
+      "coordinates": "point",
+      "development_rows": 88,
+      "likelihood": "categorical",
+      "source": "onestop-rereading",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 283
+    },
+    "plaba_issue_set": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 44,
+      "likelihood": "categorical",
+      "source": "plaba",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "train_rows": 242
+    },
+    "plaba_open_book_accuracy": {
+      "coordinates": "point",
+      "development_rows": 64,
+      "likelihood": "categorical",
+      "source": "plaba",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 248
+    },
+    "plaba_overall_perceived_understanding": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "ordinal",
+      "source": "plaba",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 62
+    },
+    "plaba_overall_processing_ease": {
+      "coordinates": "point",
+      "development_rows": 16,
+      "likelihood": "ordinal",
+      "source": "plaba",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 62
+    },
+    "plaba_perceived_understanding": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 133,
+      "likelihood": "ordinal",
+      "source": "plaba",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 476
+    },
+    "plaba_processing_ease": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 133,
+      "likelihood": "ordinal",
+      "source": "plaba",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 476
+    },
+    "plaba_quiz_confidence": {
+      "coordinates": "point",
+      "development_rows": 64,
+      "likelihood": "ordinal",
+      "source": "plaba",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 248
+    },
+    "plaba_quiz_effort": {
+      "coordinates": "point",
+      "development_rows": 64,
+      "likelihood": "ordinal",
+      "source": "plaba",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 248
+    },
+    "qiao_confidence": {
+      "coordinates": "point",
+      "development_rows": 0,
+      "likelihood": "gaussian",
+      "source": "qiao",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 16
+    },
+    "qiao_evidence_likelihood_if_guilty": {
+      "coordinates": "point",
+      "development_rows": 0,
+      "likelihood": "gaussian",
+      "source": "qiao",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 16
+    },
+    "qiao_evidence_likelihood_if_not_guilty": {
+      "coordinates": "point",
+      "development_rows": 0,
+      "likelihood": "gaussian",
+      "source": "qiao",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 16
+    },
+    "qiao_final_verdict": {
+      "coordinates": "point",
+      "development_rows": 0,
+      "likelihood": "categorical",
+      "source": "qiao",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 2
+    },
+    "qiao_guilt_rating": {
+      "coordinates": "point",
+      "development_rows": 0,
+      "likelihood": "gaussian",
+      "source": "qiao",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 16
+    },
+    "race_answer_choice": {
+      "coordinates": "point",
+      "development_rows": 367,
+      "likelihood": "choice",
+      "source": "race",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 1484
+    },
+    "rodger_paired_effectiveness": {
+      "coordinates": "pair",
+      "development_rows": 301,
+      "likelihood": "paired_gaussian",
+      "source": "rodger",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 1505
+    },
+    "rodger_paired_support": {
+      "coordinates": "pair",
+      "development_rows": 301,
+      "likelihood": "paired_gaussian",
+      "source": "rodger",
+      "states": [
+        "belief"
+      ],
+      "train_rows": 1505
+    },
+    "scarecrow_retrospective_contradiction_mark_ordinal": {
+      "coordinates": "target_and_document_end",
+      "development_rows": 22091,
+      "likelihood": "hurdle_ordinal",
+      "source": "scarecrow",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 91531
+    },
+    "studentannotations_comprehension_difficulty": {
+      "coordinates": "point",
+      "development_rows": 229,
+      "likelihood": "ordinal",
+      "source": "studentannotations",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 914
+    },
+    "textcomplexityde_complexity": {
+      "coordinates": "point",
+      "development_rows": 125,
+      "likelihood": "gaussian",
+      "source": "textcomplexityde",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 650
+    },
+    "textcomplexityde_lexical_difficulty": {
+      "coordinates": "point",
+      "development_rows": 125,
+      "likelihood": "gaussian",
+      "source": "textcomplexityde",
+      "states": [
+        "lexical"
+      ],
+      "train_rows": 650
+    },
+    "textcomplexityde_understandability": {
+      "coordinates": "point",
+      "development_rows": 125,
+      "likelihood": "gaussian",
+      "source": "textcomplexityde",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 650
+    },
+    "turkish_comprehension_correct": {
+      "coordinates": "point",
+      "development_rows": 395,
+      "likelihood": "categorical",
+      "source": "turkish",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 2627
+    },
+    "turkish_sentence_comparison": {
+      "coordinates": "pair",
+      "development_rows": 307,
+      "likelihood": "ordered_choice",
+      "source": "turkish",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 1876
+    },
+    "yadav_full_sentence_difficulty": {
+      "coordinates": "point",
+      "development_rows": 32,
+      "likelihood": "gaussian",
+      "source": "yadav",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 157
+    },
+    "yadav_paced_words_difficulty": {
+      "coordinates": "point",
+      "development_rows": 32,
+      "likelihood": "gaussian",
+      "source": "yadav",
+      "states": [
+        "processing"
+      ],
+      "train_rows": 159
+    },
+    "zhan_reference_form": {
+      "coordinates": "point",
+      "development_rows": 7,
+      "likelihood": "categorical",
+      "source": "zhan",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 29
+    },
+    "zhan_remention": {
+      "coordinates": "point",
+      "development_rows": 14,
+      "likelihood": "categorical",
+      "source": "zhan",
+      "states": [
+        "interpretation"
+      ],
+      "train_rows": 58
+    }
+  },
+  "formal_holdout_sha256": "c46099aa8b0c095ec983046a310b0bf3f822ec5c0a9d53f5e42377ef10710b84",
+  "input_tokens": 2598224,
+  "packet_sha256": {
+    "ambistory_joint.jsonl": "88e8415ba26c53b87eedf1d5cb37672e9cad53fa1b88901965eb851b38f5a859",
+    "blott_2021_sentence_end_sense.jsonl": "b1683e4967826920ebc72769280ac4f65b40b3df8d894cd2ee6490db74069261",
+    "blott_2023_sense_response_log_milliseconds.jsonl": "cd58d0fd04ee59507415dfb5bdc2d043ec9b137d8acd1642f702219f38f54894",
+    "blott_2023_sentence_end_sense.jsonl": "11239fa1dfb9e091be585a763c2fd3c92f534e1347f993f4e9bdf634747906ce",
+    "clear_excerpt_easiness.jsonl": "9a380df43b5285d34fb016266e4fe1be4604e71e3bd58d3267c950afaf1a5714",
+    "complex_word_difficulty.jsonl": "47c823e71d41f648cbdc1b45efe3b4478ca3b46dd3c90a6150962445bd9aadc3",
+    "context_first_readback.jsonl": "955eea63804a388d9e11e9a1eda269348228ba4fc6adaac74edbade56babe057",
+    "currie_end_coherence_report.jsonl": "54b5f7b4dcc30adc58b61168ae83abd93cc1c16880dcc83726b0e8ecd02b12e6",
+    "cwi_native_marked.jsonl": "00c354305d333637da4047e3bd149faaf588c52795769c5d259c1ca5384d7c25",
+    "cwi_nonnative_marked.jsonl": "ba9a4545d8ca1d0b5a37469555eca8f3cbf280c9226c1ae9de308b35bce9f3df",
+    "czech_exp2_qcor.jsonl": "218605b0aa32e273dda308e23117bcdc1019cdc57cdc1e1eda9643296ffa9e7f",
+    "czech_exp2_qmis.jsonl": "868d39d691c3580df157315fd48a8b1a0d84e4d7bffc0fb6762a95aa8689b40f",
+    "czech_exp2_qpos.jsonl": "08d05dc073829144ed84695e84e699f1bc5c756ecdc42fcbd2781c9fbf729153",
+    "czech_exp3_qcor.jsonl": "1e0b2649a0a2ba08f710bf8aea016ef6cba92114bdb928d3c0b3c3300f61bd03",
+    "czech_exp3_qmis.jsonl": "8eac5b755abfaeb0adf81899349920a79e4d80e0976d794c1ca89ca26ac05d67",
+    "czech_exp3_qpos.jsonl": "8c9b0be9c22c50f3713c83c0aecbe79997ae09c50a9ab5eeb02857460ed2e792",
+    "first_readback_end_acceptability.jsonl": "b2e5d22d6c42cacc3e5f9f8257590795745640c9e89d9ad6f9754454d1cbb322",
+    "first_readback_risk.jsonl": "66daa3b0bcbb0261d6dc8dee0b042e20b3596b023308879f63b62d5ce52a60b8",
+    "frick_after_first_report.jsonl": "abd607c544324efa8bacb56572a0f61dcc7202a42a5ac6df2889f749579371d8",
+    "frick_first_report.jsonl": "781af7380e795e63843d7970e5aa5023e0b7282cc85fd176919fa815dec2a79e",
+    "frick_log_keypress_seconds.jsonl": "4877989da380c691729b837630f7e930839e64b653878bf4eea03671e543cfb8",
+    "index.json": "67dfe1912d6544a010caf9262564f1c1a6a38526bc1093ed7fe0b9911fb35d78",
+    "kerwer_comprehensibility.jsonl": "4b0560f392c58d5ea6ab71cfad4678c551f86c799c661350163f71f826c24caa",
+    "kerwer_confusion.jsonl": "15a6bdaf4548e89b72969c83ce697f661a743ad0d7d8ba084651179403252216",
+    "kerwer_frustration.jsonl": "68f815010ce9634055a5dcc7a5e135ec7e5b88e16093a4d354c2b1f5cdb345ac",
+    "oliver_first_confirmation_rt_log_milliseconds.jsonl": "a36a0cf9ae0e971b27444af1b910ff9201fe8c4a82f8e4ec069ffea12ebdc229",
+    "oliver_first_definition_rt_log_milliseconds.jsonl": "998af2a6ef1d15c06e9e66ba4c50e06d4a928336eec0dc1471aacd06ebec1a9a",
+    "oliver_first_delay_rt_log_milliseconds.jsonl": "c7681e4da7e09a90f928c91229478ed009ab475a4b49a651bd50b209e922e19f",
+    "oliver_retest_initial_state.jsonl": "39cf36148d0250b00f42add94194e63b6ada7823fe9db353dd9244de169b9dce",
+    "oliver_retest_target_confirmation.jsonl": "f0486fec7c207bf5662e53cc016b68453bd7fe9982f60ade14b7b2025db272ee",
+    "oliver_retrieval_protocol_path.jsonl": "cf93b90971662d0a68bc79e8829dcae74c593e5b30ea92ccac7290492ca389c7",
+    "oliver_second_confirmation_rt_log_milliseconds.jsonl": "522d2ed5d28e0c50bbe9e49078d9e96845b672a978d8aef5861c09eb2583d114",
+    "oliver_second_definition_rt_log_milliseconds.jsonl": "59da3ce9fe8d3985d67ebcf5e9d08cf86d8034a2c7272b01e9a66faf18dbe59d",
+    "onestop_answer_choice.jsonl": "097a95d2b21ea4d1a69eb5a95080c1b33ed6295c88f3deae65c64188f5f32ad9",
+    "onestop_rereading_first_read_correct.jsonl": "13a3591596dff2caf732d776236a8974ee4d2c7c6b828011da7468a219c4dcc2",
+    "onestop_rereading_reread_correct.jsonl": "1f334fcdc4aa99582f85e205642ad3cd786aa9693cd457ff21f43f35e6873216",
+    "plaba_issue_set.jsonl": "31db39e1c8d720f3a55e1afb7ae8b2136d1752fc8752016a7e7a05176c73d9b0",
+    "plaba_open_book_accuracy.jsonl": "3bd1981fe3ee5b2ffe659f00e84895f460062ba56bbcba91b9badac44dcc7299",
+    "plaba_overall_perceived_understanding.jsonl": "c612644236277301a9aabc0669167d431427184c5e10545b011c18c9f2a932d2",
+    "plaba_overall_processing_ease.jsonl": "14f206182afa24b64c7593e853e8f62e53d3eb80ea93c1f9f92fcfe78819c6c2",
+    "plaba_perceived_understanding.jsonl": "778cb13f2c85ff0fc259aa088403798d98e3edb2c245198f624e6d5fd89fe5c8",
+    "plaba_processing_ease.jsonl": "11908f3bae7604cd21eb3f9c021c64765e0cbf02141a4eccf15705b402792cc9",
+    "plaba_quiz_confidence.jsonl": "5a2686cf3c8c1ee90450925fb2442c0783621919996687bf77693040ba061e94",
+    "plaba_quiz_effort.jsonl": "82434f17d593f0b492e943778926534919d052a7db88c544f6d388291c1562e4",
+    "qiao_confidence.jsonl": "e3334cc1097623de8b642e04c9e60a04947ae86947814f2349b57444962b93af",
+    "qiao_evidence_likelihood_if_guilty.jsonl": "7a46498bb6190515c3d4d8bf4e3a3b5a840265988a574b797e6688e0f635755c",
+    "qiao_evidence_likelihood_if_not_guilty.jsonl": "bb646ffa2feb3175b91f35a2e2eabf9e9403d8b2b39910af56a339bd1f8e8438",
+    "qiao_final_verdict.jsonl": "8a6919eebe085403b1b88612c82837f7bc7a20a4fd899c88e7f86d68dd5db59c",
+    "qiao_guilt_rating.jsonl": "6c38761de66f207e00b2175a74ff830844e7c86043339232c25fc4c873507253",
+    "race_answer_choice.jsonl": "f05becfaf3d25278ec2a439744ec365ec6c181c66e902737400fb7aa0c0cfc54",
+    "rodger_paired_effectiveness.jsonl": "6d400c587149436902cec5e06a0cb6e1235d0497244fc0179db4e968ce5f9587",
+    "rodger_paired_support.jsonl": "fed095187c35575b7532453925b6ca2552f19e4d2e8a866fe89b6aac8593bcdb",
+    "scarecrow_retrospective_contradiction_mark_ordinal.jsonl": "59d17226e457762978e6a44eb13f62188406e7bec6d0fb854040255ee8b51f30",
+    "stimuli.jsonl": "498b2caf6cb53173edd4a473b8e9c20ca21830fc066ba52760cecc08c88e0e40",
+    "studentannotations_comprehension_difficulty.jsonl": "ed437f4cf5751dc11c6bc6166c85d476d70ec624c7e57317932e585e35511099",
+    "textcomplexityde_complexity.jsonl": "9bfb8457e64d07355f4ee7d92af83f764a1e301afd09c7fc19b944ede78738ac",
+    "textcomplexityde_lexical_difficulty.jsonl": "d0eb7cec4a89fc8feaa888729a3b662af46839ad5d95eb605744a72112184b6e",
+    "textcomplexityde_understandability.jsonl": "fad3d5a58ab5302599fcf09ca2d2ad323ff4618bc7c66a5d2d069f4fb9a0082a",
+    "turkish_comprehension_correct.jsonl": "b525f612c207122e74c912d6b2e899334d111a335b644d336450296bd67a6563",
+    "turkish_sentence_comparison.jsonl": "3eab2db9527b00a6fef30b8df25960ad98660df7ba442c3ccf83f73323a67049",
+    "yadav_full_sentence_difficulty.jsonl": "0427fe55a24cfa7c6bd12c9352d44f1707ddedebe345b54203c761b18f996f5e",
+    "yadav_paced_words_difficulty.jsonl": "bcaeae680f14a8d3c0e636713ac18f616fc60b446835fa01515360495fd76bf9",
+    "zhan_reference_form.jsonl": "eefcbee1ad1d7182fc7cc97a7919f5a80ff4e56963f8852bc621907215c4a63d",
+    "zhan_remention.jsonl": "1fda4d6ae3c3267b6040ff7894ae3fc6730e84197c0600daa7d35e6158b8fc63"
+  },
+  "positions": 164220,
+  "source_files_sha256": {
+    "ambistory": {
+      "ambistory/causal-v3/dev/design/stops.jsonl": "f5a4f02330e815e0f6e4e8ec571ecc07a2e9995d8a1a9e7068918bc35381df69",
+      "ambistory/causal-v3/dev/model_input/stimuli.jsonl": "139e3e068326f8c88b145dd131e51d6544fb42ebebea5dd8e31cc7dbaf892588",
+      "ambistory/causal-v3/dev/scoring/ordinal-ratings.jsonl": "4b8f51364de41995acc84be97dfd74f492ce75454eae22c7f5637e36cf519ba1",
+      "ambistory/causal-v3/manifest.json": "1dc888446f40c876c21b77f890bffb161cfb71394b1d96ca63623194c77aef6c",
+      "ambistory/causal-v3/test/design/stops.jsonl": "d46391ff6f5713b784df7dedd619790f6cfe82d538c0be832a385232103eac70",
+      "ambistory/causal-v3/test/model_input/stimuli.jsonl": "ba24280b10b5015721ad6a78ede79103efe80986e9ae0c7b372b5716dfa6c47b",
+      "ambistory/causal-v3/test/scoring/ordinal-ratings.jsonl": "ef6f04cedbfa2cb964dd43be458c9fcbd59a988da2088d1da043bc371c50e229",
+      "ambistory/causal-v3/train/design/stops.jsonl": "a3299e585742d2348882adb6d7c8edb373ced81191c411f0c9a6281ca5df83a9",
+      "ambistory/causal-v3/train/model_input/stimuli.jsonl": "089178c26651b2d401a1d7ea186169bd247d3e24827e715422a6f784d68713cd",
+      "ambistory/causal-v3/train/scoring/ordinal-ratings.jsonl": "532fdaec53fc27cb2469ef96fe48949f93445e1cf9f1cb57d4e258636a9fc762"
+    },
+    "blott": {
+      "reading-trace-source-audit/blott-holdout/model_input/stimuli.jsonl": "281fb2fd37ba881ae49390c39a4204187d66a325fd722002c7e9714428c5f1fe",
+      "reading-trace-source-audit/blott-holdout/scoring/design.jsonl": "20c8c68285fcdb3bbc7ad610264e6caaf154e1e7ea299948ef4452b1c83f0fcf",
+      "reading-trace-source-audit/blott-holdout/scoring/human_trials.jsonl": "9b8a517bc8c12a5189bfb339e67659a42c203da763a9c997c94f445962b7b047",
+      "semantic-tracking/blott-ambiguity/prepared/layout.jsonl": "c18e3a2b41d2f873a498909f8ba402cda82bad0670d3842c2e930683bbb7b47e",
+      "semantic-tracking/blott-ambiguity/prepared/outcomes.jsonl": "507abfd54a325cc7c05301b9d26dd97d384b9c8561ed86c6e584bc34abfad3b9",
+      "semantic-tracking/blott-ambiguity/prepared/stimuli.jsonl": "a191df40dcd3cc77c33b1e5f096fb2778f2fd2ec6a9ee3c134c683b524a2dbf1"
+    },
+    "clear": {
+      "clear-reading-ease/prepared-v1/materials.jsonl": "4ae369d471bc164d516dff6eb9c3b49f623bf37da2a6a16d50d7333652acf4e9",
+      "clear-reading-ease/prepared-v1/outcomes.jsonl": "a8805ee92d6c00ff6fd39704cbf5b213b311839caa4ca5496db33e1445de3e81",
+      "clear-reading-ease/prepared-v1/stimuli.jsonl": "1d53420572ccc0b117b7ec8141c888c06536c45a76689b18f8ea5ff2831089b2"
+    },
+    "complex": {
+      "backbone-transfer/prepared/complex/layout.jsonl": "8aaa5680012f2d378cc1e0e4965b69b2057c67f4ce4de76505bd9c8f050d96ab",
+      "backbone-transfer/prepared/complex/outcomes.jsonl": "0df33e9ca01e5c418064fd694f1cba5fdc7b78c9081c96c126ef5e47e256b5e5",
+      "backbone-transfer/prepared/complex/stimuli.jsonl": "f38a7a9180d16cd8610eb93231592e82c353e5acbe62bf734d84c82bfc131c42"
+    },
+    "context-readback": {
+      "semantic-tracking/context-6uv37-source/alt_stim.txt": "7e7cf3581de3f7ec988253ba6adf175390c7ca5b6583ab79597880ed19de3f22",
+      "semantic-tracking/context-6uv37-source/fixations.Rda": "e7bde8f75569f98942671e3d1344ca5bd0b7348c23cda206d2dc7aacd6cfdbab",
+      "semantic-tracking/context-readback-v1/assay.json": "fde1e4a77d0aab2e985f5d60c305d96da3cbd276eafe1968eb88b9a3920022e5",
+      "semantic-tracking/context-readback-v1/stimuli.jsonl": "517e0ed0117e73af93d8772974e239af12115c7a17e784a0d9d7f2e0d905dc0b"
+    },
+    "currie": {
+      "semantic-tracking/larrc-consistency/prepared/layout.jsonl": "8ea0713ac8799a5663eac4625151ad8bef007eb6ee6c81bac14bc3afa732f908",
+      "semantic-tracking/larrc-consistency/prepared/outcomes.jsonl": "1b68a2ea23d33ca07c7bdef1e9816809526579993db9369e5d03209a561fdb85",
+      "semantic-tracking/larrc-consistency/prepared/stimuli.jsonl": "17ea1b4f66b01510fa23f4dd8290c4c15d437d8bfca547b64e4a1eb9ec4ef0a8"
+    },
+    "cwi": {
+      "core-features/cwi/outcomes.jsonl": "efd5e53a5d583f5cdbd24f8ea5495590b3db35afbc7f111fb97eb030e5cbe0d5",
+      "core-features/cwi/stimuli.jsonl": "9fdb97b9e7110146b12765eb04fc005ec7739d04d30b477c2c84f6f2dd04ab59"
+    },
+    "czech": {
+      "semantic-tracking/czech-garden-path/prepared/layout.jsonl": "3ecf1997400120ddcdae2bd54184c1238d4a42f5840479f2babce892dc800840",
+      "semantic-tracking/czech-garden-path/prepared/outcomes.jsonl": "775e24c64a4fa54bf41f22fae60dc697c78f9b1ea970455fc6ce04289e7d8eee",
+      "semantic-tracking/czech-garden-path/prepared/stimuli.jsonl": "120719720d2e6ab6ceb2f003edfff142beb6735f05ca639dc73b8f1b12ff2098"
+    },
+    "first-readback": {
+      "core-features/readback/trials.jsonl": "5ed0d60c90d776d81b73a3b1c4a7603784f7bf14ab95dbac460c5cd6a33f021f",
+      "semantic-tracking/first-readback-v1/stimuli.jsonl": "5c8776dc439599565fe249c981cc3f002289747a171184201801a0cbdece7fbf",
+      "semantic-tracking/first-readback-v1/test.jsonl": "aad0ce17e1d9d9f97c6ff4578c5d2d076e7146b541ca7aa8d03059173b7438db",
+      "semantic-tracking/first-readback-v1/train.jsonl": "fe89c67a29e781cd53014b809a552e59dab890a2495a4f454b7f439c81b4535a"
+    },
+    "frick": {
+      "semantic-tracking/frick-consistency/prepared/metadata.jsonl": "96f85c4197600299efc3ce56686df1a26857bee69622efdd8d47323e5729c1ce",
+      "semantic-tracking/frick-consistency/prepared/outcomes.jsonl": "b26b6f225eab250788083da5456a169519a06f9b25415bec56695b0af21aeb00",
+      "semantic-tracking/frick-consistency/prepared/stimuli.jsonl": "12851b63014a17ba9ae8d62111ed42e1cdc275c3d0a711741d712392df01c531"
+    },
+    "kerwer": {
+      "kerwer-2021/holdout/model_input/stimuli.jsonl": "fd43d9d5768ec1dfb66b9025d9ad777639346e458161fd2f0a918e3487264b58",
+      "kerwer-2021/holdout/scoring/design.jsonl": "05357eb388007ca1d831385029f5e9e905f52c46f16a185451ed58462a72c72c",
+      "kerwer-2021/holdout/scoring/public-study-ratings.jsonl": "78503ca22bfa1fb8b06dab91919864eb667202629effdf164ff609539648f5a2"
+    },
+    "oliver": {
+      "semantic-tracking/oliver-retrieval/prepared/layout.jsonl": "dacad20e9e9aebd4a76ca82f63de43db836d5df00e6b83c75ea16d9261681b47",
+      "semantic-tracking/oliver-retrieval/prepared/outcomes.jsonl": "eb8843124705de37d0e0c6147e52c2c2b2d2796327afc6d57a1f0c35c23bef09",
+      "semantic-tracking/oliver-retrieval/prepared/stimuli.jsonl": "95ec69434b6e21ce89fc52b22d7d85628a57491631425f5210cf43436fb30fb8"
+    },
+    "onestop": {
+      "stage2/onestop/stimuli.jsonl": "7da869f2c95ab0284d634dbb9f4e74edb747823d063d3c0b4c259bb0aad34d8c",
+      "stage2/onestop/trials.jsonl": "41d5017245048e5b6196d23aa7d72f53adb656bf0ebb17e0ae1090147fa1bfb9"
+    },
+    "onestop-rereading": {
+      "onestop-rereading/assay-v1/assay.json": "3ec7d5f2d070f50138d87878b2ee4bf302176ff7b94da8673b8cfee570425815",
+      "onestop-rereading/assay-v1/development.jsonl": "c74af444571bf5df5952099df08921380035762fc36c056fdb10df52d6e57dbd",
+      "onestop-rereading/assay-v1/holdout.jsonl": "38f35f16bd2af00daed9a5acbcde5e7b3dc313ae14426dd410f8c2b7696e889f",
+      "onestop-rereading/assay-v1/stimuli.jsonl": "98ae9e04723229e66823ba8cc501108fb029313fd46ca340e367a00e1b354436"
+    },
+    "plaba": {
+      "expository-lora/prepared/plaba/pairs.jsonl": "a52a767ce497914e3f6f8eb333f87036dbc4bc7c2c109b1b3e0c74e44c914123",
+      "expository-lora/prepared/plaba/ratings.jsonl": "18301f69bf32583ade3474dc379abb015c83b0b519d0876c0a5a28b148b52510",
+      "stage2/plaba/stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+      "stage2/plaba/trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e"
+    },
+    "qiao": {
+      "semantic-tracking/qiao-evidence/prepared-v2/layout.jsonl": "df21f3495f657155cb9a6c818b8a74cbb3d10120ae3e7567d61cd32bc8f3c0c1",
+      "semantic-tracking/qiao-evidence/prepared-v2/outcomes.jsonl": "c2ce53d70b57112130b8f02e81f00f9715db29bf32c95d283c693008c8d7f2f1",
+      "semantic-tracking/qiao-evidence/prepared-v2/source-audit.json": "93bb116addb096a3a56653bc784d77f7c554237bc755ddc6a1d5fc416e324f6d",
+      "semantic-tracking/qiao-evidence/prepared-v2/stimuli.jsonl": "46e057b8a06585cc3b65d50326b6a18e2e54f55f1504cf461e6b96415eb29b18"
+    },
+    "race": {
+      "stage6/race-runs/cogllm-stage6-race-20261120T181401Z-d6e92f78/local-outcomes/outcomes.jsonl": "41a6afdb2f8c0a27194eac93d36881032e0204bae04a24e65e11216bcf1981e0",
+      "stage6/race/design.jsonl": "28a6388d0504ac5ba55a2eab68e32a573177008cfb3a5efadc5c8a11e34f3f39",
+      "stage6/race/inputs.jsonl": "2e06392984fdf13b065c39c9260d97e012bb802dbe7f4f33a9309eaa36ecec68"
+    },
+    "rodger": {
+      "semantic-tracking/rodger-belief/prepared/outcomes.jsonl": "39e9d14df3440b6938c48a8c0f590151335f880b466a01566cf6ae92c37706f5",
+      "semantic-tracking/rodger-belief/prepared/stimuli.jsonl": "5cdac9d52d848ff9e83ac39a160c28e9a43aeb5c12d0ffa0ec587b9bb22a62cd",
+      "semantic-tracking/rodger-belief/prepared/stimulus_metadata.jsonl": "df3ee6f2ea39276c4ed2d607aa3f38476d4b887b3a99a1be7c57a406653ccafd"
+    },
+    "scarecrow": {
+      "semantic-tracking/scarecrow-detection/prepared/layout.jsonl": "7f1f6d966f0819ac0aefb2d703d356b2bdb8aaefe6f55e3727ec06d76e0e17f2",
+      "semantic-tracking/scarecrow-detection/prepared/outcomes.jsonl": "fd48328099c992a5710a379cdae5fd54c8a7cabe3e77dd66660e0a8d1cc8e627",
+      "semantic-tracking/scarecrow-detection/prepared/stimuli.jsonl": "af4c5eda999b89ba0a7d5ce986c8f91668bcec93cbce508f84e7cc7634d37e6d"
+    },
+    "studentannotations": {
+      "studentannotations/guide-v1/local/outcomes.jsonl": "261a3505c3fa7ccbee5576f5cb3b19d198396cae8083395b32ff67f527a86ff1",
+      "studentannotations/guide-v1/local/sentences.jsonl": "910786ab7e549ee96c7b100573a9a171c0f922c8472ffd7393a14df0d6bea771",
+      "studentannotations/guide-v1/local/trial-design.jsonl": "457e3f8d441a1e348128a6bc05a79eef4df4bab9c88b13a9b18579ca40a80cdd",
+      "studentannotations/guide-v1/model_input/stimuli.jsonl": "64c6c197bbd7c316361a277a963e53c1a6be734b9dd39386d19de135e224a70b",
+      "studentannotations/guide-v1/preparation-receipt.json": "e9245766647a5ae24fb5347e39bea4d167da534380e44f7419d4464d7639fe97"
+    },
+    "textcomplexityde": {
+      "textcomplexityde/raw/LICENSE": "634f134375e113150bde4669d280b71f50e294353bfff7c365fa7912ed3d638e",
+      "textcomplexityde/raw/ratings.csv": "191da27ff56f6c1f26a9db6939f400c53ef902a5d2e0e358364ce70bc284d75c",
+      "textcomplexityde/raw/source.csv": "08881ded42eef46183b2e89845ad4b07ee128e3caa77e606a39ac059e13102f5",
+      "textcomplexityde/transfer-v2/assay.json": "667f1f059eb6045f050bd75dce7653b3970e4ee302014f45d08bc24789f16a0d",
+      "textcomplexityde/transfer-v2/stimuli.jsonl": "2260aa40ce3adf9c0227fa8f1a7eaabc997462064b621d8ef8949704880544ba"
+    },
+    "turkish": {
+      "turkish-v5/assay-v1/assay.json": "1807fa6c1487cc402291982cdae825de2031b0c8952c1b1df3ec36c5167e74b3",
+      "turkish-v5/assay-v1/fit-truth.jsonl": "4e9703032a86676a43a8e7e004ee9415310717d23b647f74e91f5353519b942e",
+      "turkish-v5/assay-v1/fit.jsonl": "7d573c59736497ad2ab4eb5ff20e225170039ea0797e1ded0f7aec5df8ad05fe",
+      "turkish-v5/assay-v1/model_input/stimuli.jsonl": "29c4308f9630beea56d27eafa0f7b0a91d3c7790b48dcbfe0212c6da39824640",
+      "turkish-v5/assay-v1/sentence-metadata.jsonl": "c7423e6b9a9a43c561eb04fb0fd8d88ddfe3c49d1896476d2e15a09748afcf51",
+      "turkish-v5/assay-v1/test-truth.jsonl": "5398c1b0639aa10650b85f843ef760b2e81b14eb070571afc7e46503ca6340cd",
+      "turkish-v5/assay-v1/test.jsonl": "1c09aa2d26552f8d7ddc5d820d5805f55d9a58a6c8fbba0c6a50709ecf43092f",
+      "turkish-v5/source/2_soru_yanitlari-11.csv": "bd9f57888ed1cb602b142d1dff11ec8ced4a8440dcc9f713b5fc70a79dbd0c76",
+      "turkish-v5/source/saha_calismasi_veri_seti_800.xlsx": "333c2089173f94e9e0afde45fc3e3ddcafcbfcb70ffd963537d03f91aa3f2f7b"
+    },
+    "yadav": {
+      "yadav/raw/experiment1-slider.rda": "36548e061607eaf43f32b3c68ef57fa410e63f805bcb18564f4dccc2a5f9a601",
+      "yadav/raw/experiment1-stimuli.txt": "ad8ffb2e0601d15f76b3e6ec6ae7b09c1f16cf3ddb86a60acf3bf067187795ec",
+      "yadav/raw/experiment2-all-slider.rda": "fddff9dedf8c8b5c7b3a1c609d3ba9dc22225f4849eaf7f5b326d53c1e364363",
+      "yadav/raw/experiment2-stimuli.txt": "08527bc48fe583e63f6347064cb837f28c3ec061799a4a15611341ba54cc93ba"
+    },
+    "zhan": {
+      "stage2/zhan/stimuli.jsonl": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+      "stage2/zhan/trials.jsonl": "d67c0223e3628084c50136e031efe3b1f97f92b56ccf0478ebafc2ad110980f8"
+    }
+  },
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+}

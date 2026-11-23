@@ -1,0 +1,68 @@
+{
+  "analysis": "https://osf.io/download/j5q6v/",
+  "article": "https://doi.org/10.5070/G601139",
+  "data_project": "https://osf.io/j8cbh/",
+  "event_log_rows": 69561,
+  "families": {
+    "coordination": 31,
+    "subject_object": 33
+  },
+  "key_actions": {
+    "backward": 9585,
+    "next_region": 56813,
+    "terminal": 3163
+  },
+  "license": "CC BY 4.0 per OSF",
+  "observations": {
+    "destination": "Earliest region reached in the contiguous sequence of backward presses, conditional on readback.",
+    "first_visit": "Explicit one-region forward or backward/restart action, excluding terminal and jump-to-question.",
+    "initial_risk": "The trial has no preceding backward movement at this anchor.",
+    "interpretation": "Action endpoints. Comprehension was rated only after the full trial.",
+    "words": "A single-word region has exactly one whitespace-delimited orthographic word."
+  },
+  "output_sha256": {
+    "outcomes.jsonl": "57436ea3a1944c99a74f0eb82514fd93f74cd589400c27fce6f3f1d5ce7fe397",
+    "stimuli.jsonl": "69a2ccaccb1977e1088abe22db26d00cd488ad9867baafc54d24b77d308cb231"
+  },
+  "rdata_version": "1.1.0",
+  "readers": 100,
+  "separate_stop_and_reread_registration": "https://osf.io/p56j8/",
+  "skipped": {
+    "first_visit_terminal": 2598
+  },
+  "sources": {
+    "events": {
+      "sha256": "16231d0c3eef7be7a07b9bdbe4bbeebb0d0d61b7f70bf30540357fa3bfbc6dcb",
+      "url": "https://osf.io/download/r5zwc/"
+    }
+  },
+  "split": {
+    "heldout": [
+      "gpa 1",
+      "gpa 11",
+      "gpa 12",
+      "gpa 14",
+      "gpa 21",
+      "gpa 24",
+      "gpa 9",
+      "gpc 16",
+      "gpc 22",
+      "gpc 23",
+      "gpc 26",
+      "gpc 28",
+      "gpc 29",
+      "gpc 3",
+      "gpc 30",
+      "gpc 6"
+    ],
+    "method": "First 8 families by SHA-256 in each construction, both versions held together.",
+    "seed": 43,
+    "test_critical_single_word_rows": 346,
+    "test_positive": 564,
+    "test_rows": 10830,
+    "test_single_word_rows": 4337,
+    "train_rows": 32606
+  },
+  "stimuli": 128,
+  "trial_count": 3163
+}

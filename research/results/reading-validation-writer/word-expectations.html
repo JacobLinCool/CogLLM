@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Where readers’ next guesses change</title><style>body{max-width:54rem;margin:6vh auto;padding:0 1rem;font:17px/1.5 system-ui;color:#23352f}
+.writing-review .term-review { border-top:1px solid #cbd7cf; padding-top:.9rem; margin-top:.65rem; }
+.writing-review .term-review h3,.writing-review .term-review p,.writing-review .term-review li { color:#23352f!important; }
+.writing-review .term-review h3 { font-size:1.1rem; margin:.2rem 0; }
+.writing-review .term-source { border-bottom:3px solid #3d685a; }
+.writing-review .term-cue { border-bottom:3px dotted #3d685a; }
+.writing-review .term-chart { display:grid; grid-template-columns:1.5em minmax(0,1fr); margin-top:.6rem; }
+.writing-review .term-chart svg { display:block; width:100%; height:4.1rem; }
+.writing-review .term-chart span { display:flex; flex-direction:column; justify-content:space-between; font-size:.8rem; }
+.writing-review .term-x { display:flex; justify-content:space-between; flex-wrap:wrap; padding-left:1.5em; font-size:.8rem; }
+.writing-review .term-scope { font-size:.83rem; }
+.writing-review { --ink: #182b24; color: var(--ink)!important; background: #fcfcf8;
+ border: 1px solid #cbd7cf; border-radius: .65rem; padding: 1.1rem 1.25rem; }
+.writing-review .summary-understanding { margin-top:.8rem; padding-top:.65rem; border-top:1px solid #c4d1cc; }
+.writing-review .summary-understanding h3,.writing-review .summary-understanding p,
+.writing-review .summary-understanding strong { color:#23352f!important; }
+.writing-review .reading-key,.writing-review .reading-caption { color: #394c42!important; font-size: .87rem; }
+.writing-review .reading-key { display: flex; flex-wrap: wrap; gap: .35rem .72rem; align-items: center; }
+.writing-review .key-swatch { display: inline-block; width: 1.3em; height: .82em; border: 1px solid #b2b0a3;
+ border-radius: .15em; vertical-align: middle; margin-right: .18em; }
+.writing-review .draft { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.1rem;
+ line-height: 2.1; max-width: 85ch; padding: 1.05rem 0; }
+.writing-review .draft mark { color: var(--ink)!important; padding: .14em 0; box-decoration-break: clone;
+ -webkit-box-decoration-break: clone; border-radius: .16rem; }
+.writing-review .phrase { text-decoration: underline solid #6e4218; text-underline-offset: .23em; }
+.writing-review .character { box-shadow: inset 0 3px 0 #624a8b; padding-top: .11em; }
+.writing-review .connection { outline: 2px dashed #28568c; outline-offset: .08em; }
+.writing-review .review-list { margin: .6rem 0 0; padding-left: 1.5rem; }
+.writing-review .review-list li { margin-bottom: .4rem; }
+
+.learner-result {background:#f8faf7;border:1px solid #cbd7cf;border-radius:.65rem;padding:1rem 1.2rem;}
+.learner-result p,.learner-result .learner-draft {color:#24372e!important;}
+.learner-result p {margin:0 0 .45rem;font-size:.9rem;}
+.learner-result .learner-draft {white-space:pre-wrap;overflow-wrap:anywhere;line-height:3.1;font-size:1.13rem;margin-top:.8rem}
+.learner-result .learner-word {display:inline-block;position:relative;line-height:1.45;min-width:1.35em;
+ background:var(--learner-word-color);border-bottom:2px solid #889c8a;border-radius:.16rem;color:#20352a!important;}
+.learner-result .learner-word::before {content:attr(data-rate);position:absolute;left:0;bottom:100%;white-space:nowrap;
+ color:#3c5749;font-size:.62em;line-height:1.2;font-weight:650;font-variant-numeric:tabular-nums;}
+.learner-result .high-word {border-bottom:3px solid #ac5f28;}
+
+.writing-review .ref-review { color:#23352f!important; border-top:1px solid #cbd7cf; padding-top:.8rem; }
+.writing-review .ref-review h3 { font-size:1.08rem; color:#23352f!important; }
+.writing-review .ref-review details { margin:.35rem 0; }
+.writing-review .ref-review summary { cursor:pointer; padding:.25rem 0; color:#273d36!important; }
+.writing-review .ref-review p { color:#273d36!important; }
+.writing-review .ref-answer { border-left:3px solid #356591; padding-left:.65rem; }
+
+.physical-review {background:#f8faf7; border:1px solid #b4c4bb; border-radius:.6rem; padding:1rem; color:#23352f!important;}
+.physical-review p,.physical-review strong,.physical-review .physical-draft {color:#23352f!important;}
+.physical-draft {white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;}
+.physical-draft mark {color:#1d302a!important;padding:.08em 0;box-decoration-break:clone;}
+.physical-earlier {background:#c7e3df!important;box-shadow:inset 0 -.12em #347065;}
+.physical-conflict {background:#f7d9b9!important;outline:1px dashed #8a4726;}
+
+.writing-review .expectation-panel {border-top:1px solid #c4d1cc;padding-top:.75rem;color:#23352f;}
+.writing-review .expectation-panel h3,.writing-review .expectation-panel p,
+.writing-review .expectation-panel summary {color:#23352f!important;}
+.writing-review .expectation-increase {border-bottom:3px solid #974814;}
+.writing-review .expectation-decrease {border-bottom:3px dotted #14596a;}
+.writing-review .expectation-chart {display:block;width:100%;height:8.5rem;}
+.writing-review .expectation-axis {display:flex;justify-content:space-between;font-size:.85rem;}
+.writing-review .expectation-table {max-height:18rem;overflow:auto;}
+.writing-review .expectation-table table {width:100%;border-collapse:collapse;color:#23352f;}
+.writing-review .expectation-table th,.writing-review .expectation-table td {padding:.2rem .35rem;text-align:left;background:#fcfcf8;}
+
+:is(.writing-review,.physical-review,.learner-result) {
+  --reading-surface-ink:#182b24;
+  --body-text-color:var(--reading-surface-ink);
+  --body-text-color-subdued:var(--reading-surface-ink);
+  color-scheme:light;
+  color:var(--reading-surface-ink)!important;
+}
+:is(.writing-review,.physical-review,.learner-result) :where(*) {
+  color:var(--reading-surface-ink)!important;
+}
+:is(.writing-review,.physical-review,.learner-result) a:any-link {
+  color:#183b45!important;
+  text-decoration:underline;
+}
+:is(.writing-review,.physical-review,.learner-result) :is(a,summary):focus-visible {
+  outline:2px solid #284e62; outline-offset:2px;
+}
+</style></head><body><main><h1>Where readers’ next guesses change</h1><section class="writing-review" data-model="c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e"><div class="reading-key" aria-label="Estimated sentence ease"><span><i class="key-swatch" style="background:#d78353" aria-hidden="true"></i>Harder · 1</span><span><i class="key-swatch" style="background:#f0c796" aria-hidden="true"></i>3</span><span><i class="key-swatch" style="background:#e8f3e7" aria-hidden="true"></i>Easier · 5</span></div><p class="reading-caption"><span class="phrase">Underline</span> · wording to review. <span class="connection">Dashed outline</span> · check the connection to earlier sentences. <span class="expectation-increase">Solid brown</span> · next guesses spread out. <span class="expectation-decrease">Dotted blue</span> · guesses narrow. These marks show changes of at least 20 percentage points.</p><div class="draft" aria-label="Original passage"><mark style="background:#e8efdd" data-start="0" data-end="44" title="Sentence 1. Estimated ease 4.79 of 5.">The lights <span class="expectation-decrease" data-start="11" data-end="15" title="">went</span> <span class="expectation-increase" data-start="16" data-end="19" title="">out</span> in the <span class="expectation-decrease" data-start="27" data-end="33" title="">middle</span> <span class="expectation-increase" data-start="34" data-end="36" title="">of</span> <span class="phrase" data-start="37" data-end="43" title="Top wording candidate within this sentence">dinner</span>.</mark> <mark style="background:#e8ecd6" data-start="45" data-end="106" title="Sentence 2. Estimated ease 4.63 of 5.">Maya <span class="expectation-decrease" data-start="50" data-end="56" title="">opened</span> <span class="expectation-increase" data-start="57" data-end="58" title="">a</span> <span class="phrase" data-start="59" data-end="65" title="Top wording candidate within this sentence">drawer</span> and felt around <span class="expectation-decrease" data-start="82" data-end="87" title="">until</span> <span class="expectation-increase" data-start="88" data-end="91" title="">she</span> found <span class="expectation-increase" data-start="98" data-end="99" title="">a</span> match.</mark> <mark style="background:#e8eedb" data-start="107" data-end="158" title="Sentence 3. Estimated ease 4.75 of 5.">A <span class="expectation-decrease" data-start="109" data-end="115" title="">moment</span> <span class="expectation-increase" data-start="116" data-end="121" title="">later</span> the <span class="phrase" data-start="126" data-end="132" title="Top wording candidate within this sentence">candle</span> <span class="expectation-decrease" data-start="133" data-end="135" title="">on</span> <span class="expectation-increase" data-start="136" data-end="139" title="">the</span> table was burning.</mark></div><section class="expectation-panel"><h3>Where do readers’ next guesses change?</h3><p>After each word, how often would two readers guess different next words? A narrow band gives a more precise estimate. A wide band means many possible answers fall outside the model’s 8,192 named words. The underlines show only changes of at least 20 percentage points in the same direction across the whole range.</p><div class="expectation-axis"><span>100% disagree</span></div><svg class="expectation-chart" viewBox="0 0 400 100" preserveAspectRatio="none" role="img" aria-label="Estimated range for the chance that two readers give different next-word answers"><path d="M0 1H400 M0 50H400 M0 99H400" stroke="#c6d1ce" fill="none" vector-effect="non-scaling-stroke"/><path class="expectation-band" d="M2.00 2.39 L15.20 7.11 L28.40 53.99 L41.60 6.48 L54.80 23.16 L68.00 4.79 L81.20 82.73 L94.40 45.18 L107.60 85.00 L120.80 3.65 L134.00 34.58 L147.20 4.57 L160.40 16.93 L173.60 7.54 L186.80 6.92 L200.00 12.24 L213.20 85.51 L226.40 21.28 L239.60 24.89 L252.80 3.42 L266.00 90.59 L279.20 2.70 L292.40 58.08 L305.60 31.35 L318.80 9.23 L332.00 6.57 L345.20 49.56 L358.40 17.58 L371.60 8.37 L384.80 7.48 L398.00 90.76 L398.00 1.01 L384.80 6.05 L371.60 7.44 L358.40 17.13 L345.20 49.56 L332.00 4.96 L318.80 9.11 L305.60 25.69 L292.40 58.06 L279.20 2.53 L266.00 1.03 L252.80 1.76 L239.60 24.86 L226.40 21.00 L213.20 85.51 L200.00 10.57 L186.80 6.63 L173.60 6.31 L160.40 15.16 L147.20 3.67 L134.00 34.53 L120.80 2.92 L107.60 1.01 L94.40 45.18 L81.20 82.72 L68.00 4.70 L54.80 22.59 L41.60 5.92 L28.40 53.98 L15.20 7.06 L2.00 1.19 Z" fill="#b8d5cf"/><path class="expectation-upper" d="M2.00 1.19 L15.20 7.06 L28.40 53.98 L41.60 5.92 L54.80 22.59 L68.00 4.70 L81.20 82.72 L94.40 45.18 L107.60 1.01 L120.80 2.92 L134.00 34.53 L147.20 3.67 L160.40 15.16 L173.60 6.31 L186.80 6.63 L200.00 10.57 L213.20 85.51 L226.40 21.00 L239.60 24.86 L252.80 1.76 L266.00 1.03 L279.20 2.53 L292.40 58.06 L305.60 25.69 L318.80 9.11 L332.00 4.96 L345.20 49.56 L358.40 17.13 L371.60 7.44 L384.80 6.05 L398.00 1.01" stroke="#47847e" stroke-width="1" fill="none" vector-effect="non-scaling-stroke"/><path class="expectation-lower" d="M2.00 2.39 L15.20 7.11 L28.40 53.99 L41.60 6.48 L54.80 23.16 L68.00 4.79 L81.20 82.73 L94.40 45.18 L107.60 85.00 L120.80 3.65 L134.00 34.58 L147.20 4.57 L160.40 16.93 L173.60 7.54 L186.80 6.92 L200.00 12.24 L213.20 85.51 L226.40 21.28 L239.60 24.89 L252.80 3.42 L266.00 90.59 L279.20 2.70 L292.40 58.08 L305.60 31.35 L318.80 9.23 L332.00 6.57 L345.20 49.56 L358.40 17.58 L371.60 8.37 L384.80 7.48 L398.00 90.76" stroke="#175c59" stroke-width="2" fill="none" vector-effect="non-scaling-stroke"/></svg><div class="expectation-axis"><span>0% · First measured word</span><span>Last measured word</span></div><p>After <strong>“middle”</strong> the guesses narrow (96% → 17%). The leading next word is <strong>“of”</strong>. After <strong>“she”</strong> the guesses spread out (14% → 79 to 80%).</p><details><summary>Values at each word</summary><div class="expectation-table"><table><thead><tr><th>Position</th><th>Word</th><th>Before</th><th>After</th><th>Change (points)</th></tr></thead><tbody><tr><td>1</td><td>The</td><td>—</td><td>99 to 100%</td><td>—</td></tr><tr><td>2</td><td>lights</td><td>99 to 100%</td><td>94%</td><td>-6.0 to -4.8</td></tr><tr><td>3</td><td>went</td><td>94%</td><td>46%</td><td>-47.9 to -47.8</td></tr><tr><td>4</td><td>out</td><td>46%</td><td>94 to 95%</td><td>+48.5 to +49.1</td></tr><tr><td>5</td><td>in</td><td>94 to 95%</td><td>77 to 78%</td><td>-17.6 to -16.4</td></tr><tr><td>6</td><td>the</td><td>77 to 78%</td><td>96%</td><td>+18.2 to +18.8</td></tr><tr><td>7</td><td>middle</td><td>96%</td><td>17%</td><td>-79.6 to -79.5</td></tr><tr><td>8</td><td>of</td><td>17%</td><td>55%</td><td>+38.3</td></tr><tr><td>9</td><td>dinner.</td><td>55%</td><td>14 to 100%</td><td>-40.6 to +45.1</td></tr><tr><td>10</td><td>Maya</td><td>14 to 100%</td><td>97 to 98%</td><td>-2.7 to +83.8</td></tr><tr><td>11</td><td>opened</td><td>97 to 98%</td><td>66%</td><td>-32.3 to -31.5</td></tr><tr><td>12</td><td>a</td><td>66%</td><td>96 to 97%</td><td>+30.6 to +31.5</td></tr><tr><td>13</td><td>drawer</td><td>96 to 97%</td><td>84 to 86%</td><td>-13.5 to -10.8</td></tr><tr><td>14</td><td>and</td><td>84 to 86%</td><td>93 to 95%</td><td>+7.8 to +10.8</td></tr><tr><td>15</td><td>felt</td><td>93 to 95%</td><td>94%</td><td>-0.6 to +0.9</td></tr><tr><td>16</td><td>around</td><td>94%</td><td>89 to 90%</td><td>-5.7 to -3.7</td></tr><tr><td>17</td><td>until</td><td>89 to 90%</td><td>14%</td><td>-76.5 to -74.8</td></tr><tr><td>18</td><td>she</td><td>14%</td><td>79 to 80%</td><td>+65.5 to +65.8</td></tr><tr><td>19</td><td>found</td><td>79 to 80%</td><td>76%</td><td>-4.0 to -3.7</td></tr><tr><td>20</td><td>a</td><td>76%</td><td>98 to 99%</td><td>+21.9 to +23.6</td></tr><tr><td>21</td><td>match.</td><td>98 to 99%</td><td>9 to 100%</td><td>-90.6 to +2.4</td></tr><tr><td>22</td><td>A</td><td>9 to 100%</td><td>98%</td><td>-1.7 to +89.9</td></tr><tr><td>23</td><td>moment</td><td>98%</td><td>42%</td><td>-56.7 to -56.5</td></tr><tr><td>24</td><td>later</td><td>42%</td><td>69 to 75%</td><td>+27.3 to +33.1</td></tr><tr><td>25</td><td>the</td><td>69 to 75%</td><td>92%</td><td>+16.8 to +22.7</td></tr><tr><td>26</td><td>candle</td><td>92%</td><td>94 to 96%</td><td>+2.6 to +4.3</td></tr><tr><td>27</td><td>on</td><td>94 to 96%</td><td>50%</td><td>-45.5 to -43.9</td></tr><tr><td>28</td><td>the</td><td>50%</td><td>83 to 84%</td><td>+32.6 to +33.1</td></tr><tr><td>29</td><td>table</td><td>83 to 84%</td><td>92 to 93%</td><td>+8.9 to +10.4</td></tr><tr><td>30</td><td>was</td><td>92 to 93%</td><td>93 to 95%</td><td>-0.0 to +2.4</td></tr><tr><td>31</td><td>burning.</td><td>93 to 95%</td><td>8 to 100%</td><td>-86.4 to +6.6</td></tr></tbody></table></div></details><p class="reading-caption">31 of 31 word endings received an estimate. An estimate at the very end assumes the text continues.</p></section><details><summary>Lowest estimated ease (3 of 3 rated sentences)</summary><ol class="review-list"><li>Sentence 2 · <strong>4.63/5</strong> ease · “drawer”</li><li>Sentence 3 · <strong>4.75/5</strong> ease · “candle”</li><li>Sentence 1 · <strong>4.79/5</strong> ease · “dinner”</li></ol></details></section></main></body></html>

@@ -1,0 +1,186 @@
+{
+  "bootstrap": {
+    "crossed_clusters": [
+      "word_list",
+      "reader"
+    ],
+    "draws": 10000,
+    "interval": 0.95,
+    "primary_clusters": "word_list",
+    "seed": 735972
+  },
+  "cdf_calibration": {
+    "position": [
+      {
+        "exposure": 1,
+        "human_cdf": 0.004,
+        "model_cdf": 0.004309961352279838,
+        "paired_crossed_95_ci": [
+          -0.00781575046327246,
+          0.004591025909099799
+        ],
+        "paired_list_95_ci": [
+          -0.005814960522720163,
+          0.004403643096599794
+        ],
+        "signed_model_minus_human": 0.000309961352279838
+      },
+      {
+        "exposure": 3,
+        "human_cdf": 0.039510101010101016,
+        "model_cdf": 0.04132600315546199,
+        "paired_crossed_95_ci": [
+          -0.030412596882557447,
+          0.025754695795722978
+        ],
+        "paired_list_95_ci": [
+          -0.027513888626414587,
+          0.02315252837068274
+        ],
+        "signed_model_minus_human": 0.0018159021453609842
+      },
+      {
+        "exposure": 6,
+        "human_cdf": 0.17756060606060606,
+        "model_cdf": 0.18799531467742409,
+        "paired_crossed_95_ci": [
+          -0.06935325262065825,
+          0.08182367222723426
+        ],
+        "paired_list_95_ci": [
+          -0.06275874563059781,
+          0.07654574450287707
+        ],
+        "signed_model_minus_human": 0.010434708616818035
+      }
+    ],
+    "qwen": [
+      {
+        "exposure": 1,
+        "human_cdf": 0.004,
+        "model_cdf": 0.00431517875084368,
+        "paired_crossed_95_ci": [
+          -0.007823623252583442,
+          0.004595224925499322
+        ],
+        "paired_list_95_ci": [
+          -0.00580541020189318,
+          0.004400453391839284
+        ],
+        "signed_model_minus_human": 0.00031517875084367965
+      },
+      {
+        "exposure": 3,
+        "human_cdf": 0.039510101010101016,
+        "model_cdf": 0.04135054379872915,
+        "paired_crossed_95_ci": [
+          -0.030365447108043567,
+          0.025852346003043036
+        ],
+        "paired_list_95_ci": [
+          -0.02761919147346491,
+          0.023190195102449514
+        ],
+        "signed_model_minus_human": 0.0018404427886281368
+      },
+      {
+        "exposure": 6,
+        "human_cdf": 0.17756060606060606,
+        "model_cdf": 0.18796000635486526,
+        "paired_crossed_95_ci": [
+          -0.06965355337424231,
+          0.08159280147745504
+        ],
+        "paired_list_95_ci": [
+          -0.06267523547781602,
+          0.07676747382887997
+        ],
+        "signed_model_minus_human": 0.010399400294259186
+      }
+    ],
+    "surface": [
+      {
+        "exposure": 1,
+        "human_cdf": 0.004,
+        "model_cdf": 0.004310397944186966,
+        "paired_crossed_95_ci": [
+          -0.007815326625232448,
+          0.004591490874925554
+        ],
+        "paired_list_95_ci": [
+          -0.005814536537870892,
+          0.0044040891500064135
+        ],
+        "signed_model_minus_human": 0.00031039794418696593
+      },
+      {
+        "exposure": 3,
+        "human_cdf": 0.039510101010101016,
+        "model_cdf": 0.04133079813959677,
+        "paired_crossed_95_ci": [
+          -0.030408108077504863,
+          0.02575970718955544
+        ],
+        "paired_list_95_ci": [
+          -0.027509079474843004,
+          0.02315753027391803
+        ],
+        "signed_model_minus_human": 0.0018206971294957553
+      },
+      {
+        "exposure": 6,
+        "human_cdf": 0.17756060606060606,
+        "model_cdf": 0.1880190526458662,
+        "paired_crossed_95_ci": [
+          -0.06933010377574092,
+          0.08184780891216338
+        ],
+        "paired_list_95_ci": [
+          -0.06273544462420451,
+          0.07656951360711944
+        ],
+        "signed_model_minus_human": 0.010458446585260125
+      }
+    ]
+  },
+  "list_macro_nll_nats": {
+    "position": 0.760010280546765,
+    "qwen": 0.7598404813281299,
+    "surface": 0.7600120382346829
+  },
+  "observed_list_macro_outcome_probabilities": [
+    0.004,
+    0.01351010101010101,
+    0.022000000000000006,
+    0.03351515151515152,
+    0.06201515151515154,
+    0.042520202020202034,
+    0.8224393939393939
+  ],
+  "paired_nll_superiority": {
+    "position": {
+      "control_minus_qwen_nll_nats": 0.0001697992186352068,
+      "paired_crossed_95_ci": [
+        -0.000965992757525655,
+        0.0014382262121396129
+      ],
+      "paired_list_95_ci": [
+        -0.0008249833796887234,
+        0.0012655682254409217
+      ]
+    },
+    "surface": {
+      "control_minus_qwen_nll_nats": 0.00017155690655302897,
+      "paired_crossed_95_ci": [
+        -0.0009633726945080606,
+        0.001446414212600188
+      ],
+      "paired_list_95_ci": [
+        -0.000822253298400516,
+        0.0012674234322273433
+      ]
+    }
+  },
+  "scope": "Post hoc matched six-step evaluation of the existing fifteen-step out-of-fold forecast. Steps later than six are included in the right-censoring mass. No refitting.",
+  "source_results_sha256": "c467f9463f224a8fe9f7f1ac857a03d9ac8c9a736cb645b3097592f7cada6bdb"
+}

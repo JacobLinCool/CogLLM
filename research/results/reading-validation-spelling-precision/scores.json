@@ -1,0 +1,198 @@
+{
+  "all_stems_full_panel_mae": {
+    "conditional": 0.19148459982325133,
+    "constant": 0.18123377830871215,
+    "direct": 0.1880854348806525
+  },
+  "estimator_sha256": "38a71e992c111d752f8b911d911e4fcc4106cce130aa3bee90e64626da7c6ce7",
+  "forecast_and_source_lock_sha256": "c49b8984a7083ad2fef76d73deacb44e6cbd61093a9603973af00b6511beecb8",
+  "half_results": {
+    "conditional": {
+      "mae": {
+        "estimate": 0.19288319638874243,
+        "stem_ci95": [
+          0.18619669642286021,
+          0.19974976564996466
+        ]
+      },
+      "mae_across_partitions_middle95": [
+        0.19248663777870956,
+        0.19343054339923219
+      ],
+      "rmse": {
+        "estimate": 0.2720848979777272,
+        "stem_ci95": [
+          0.2634534163673838,
+          0.28053307254557647
+        ]
+      },
+      "signed_prediction_minus_observed": {
+        "estimate": 0.1672520366520612,
+        "stem_ci95": [
+          0.15976655406750803,
+          0.17462018466252388
+        ]
+      }
+    },
+    "constant": {
+      "mae": {
+        "estimate": 0.18350268902402034,
+        "stem_ci95": [
+          0.17713688277382866,
+          0.19004253971908408
+        ]
+      },
+      "mae_across_partitions_middle95": [
+        0.1831497341974083,
+        0.1839577270769788
+      ],
+      "rmse": {
+        "estimate": 0.2614862420023838,
+        "stem_ci95": [
+          0.2531393577951847,
+          0.26991415554535797
+        ]
+      },
+      "signed_prediction_minus_observed": {
+        "estimate": 0.12154642142867737,
+        "stem_ci95": [
+          0.11346758308816757,
+          0.12982140699958453
+        ]
+      }
+    },
+    "direct": {
+      "mae": {
+        "estimate": 0.18958602912667785,
+        "stem_ci95": [
+          0.1831443237505504,
+          0.19615363285508355
+        ]
+      },
+      "mae_across_partitions_middle95": [
+        0.18921172053514898,
+        0.19011759806897813
+      ],
+      "rmse": {
+        "estimate": 0.2669543980532966,
+        "stem_ci95": [
+          0.25871938984773407,
+          0.2751523704647141
+        ]
+      },
+      "signed_prediction_minus_observed": {
+        "estimate": 0.16059461455380925,
+        "stem_ci95": [
+          0.15323207274376946,
+          0.16810923098766223
+        ]
+      }
+    },
+    "peer": {
+      "mae": {
+        "estimate": 0.05712614476897584,
+        "stem_ci95": [
+          0.056127232890619744,
+          0.058087391716773726
+        ]
+      },
+      "mae_across_partitions_middle95": [
+        0.05497896491368216,
+        0.059932337227454474
+      ],
+      "rmse": {
+        "estimate": 0.0791120844964175,
+        "stem_ci95": [
+          0.07787939085027998,
+          0.08026211886169593
+        ]
+      },
+      "signed_prediction_minus_observed": {
+        "estimate": 0.0,
+        "stem_ci95": [
+          0.0,
+          0.0
+        ]
+      }
+    }
+  },
+  "minimum_median_maximum_half_people": [
+    20.0,
+    48.0,
+    65.0
+  ],
+  "minimum_median_maximum_people_per_stem": [
+    65.0,
+    97.0,
+    101.0
+  ],
+  "observations_on_eligible_stems": 297927,
+  "paired_mae_differences": {
+    "conditional_minus_peer": {
+      "estimate": 0.1357570516197666,
+      "stem_ci95": [
+        0.12974441396301045,
+        0.14205158768216478
+      ]
+    },
+    "constant_minus_conditional": {
+      "estimate": -0.009380507364722096,
+      "stem_ci95": [
+        -0.012481308381009389,
+        -0.006218684837015223
+      ]
+    },
+    "constant_minus_direct": {
+      "estimate": -0.006083340102657514,
+      "stem_ci95": [
+        -0.009145347937964114,
+        -0.002801085845478255
+      ]
+    },
+    "constant_minus_peer": {
+      "estimate": 0.1263765442550445,
+      "stem_ci95": [
+        0.12035594786665846,
+        0.13243044326286965
+      ]
+    },
+    "direct_minus_conditional": {
+      "estimate": -0.003297167262064582,
+      "stem_ci95": [
+        -0.00428928009016568,
+        -0.0023746316482414604
+      ]
+    },
+    "direct_minus_peer": {
+      "estimate": 0.132459884357702,
+      "stem_ci95": [
+        0.12660197544086946,
+        0.13846790718761337
+      ]
+    }
+  },
+  "partitions": 256,
+  "people": 233,
+  "people_in_each_half": [
+    116,
+    117
+  ],
+  "per_stem_sha256": "f54d3ab860e641c5fd4e263f916ffb45caf788198629ac1200241202002381b2",
+  "provo_source_columns": [
+    "Word_Unique_ID",
+    "Text_ID",
+    "Text",
+    "Word_Number",
+    "Sentence_Number",
+    "Word_In_Sentence_Number",
+    "Word",
+    "Response",
+    "Response_Count",
+    "Total_Response_Count",
+    "Response_Proportion"
+  ],
+  "reader_stem_observations": 297927,
+  "stem_bootstrap_draws": 4000,
+  "stems": 3085,
+  "stems_eligible_in_every_partition": 3085
+}

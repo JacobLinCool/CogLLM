@@ -1,0 +1,146 @@
+{
+  "sources": {
+    "paper_methods": "https://aclanthology.org/2020.lrec-1.141.pdf#page=3",
+    "paper_results_table_1": "https://aclanthology.org/2020.lrec-1.141.pdf#page=5",
+    "earlier_mandatory_elicitation_protocol": "https://mwestera.nl/files/westera_rohde_asking_between_the_lines_ac2019.pdf#page=4",
+    "elicitation_csv": "https://github.com/amore-upf/ted-q/blob/10fb7e1a2b2d756f8ea190ee2ac223fecaec0f20/TED-Q_elicitation.csv",
+    "raw_immutable_csv": "https://raw.githubusercontent.com/amore-upf/ted-q/10fb7e1a2b2d756f8ea190ee2ac223fecaec0f20/TED-Q_elicitation.csv",
+    "csv_sha256": "992a324ed452876c7364f7304cee24a58a1109fb3204a73adbc88e0937d18131",
+    "question_form": "https://github.com/amore-upf/ted-q/blob/10fb7e1a2b2d756f8ea190ee2ac223fecaec0f20/data_gathering/elicitation/chunk_includes/fragment_question.html#L163-L186",
+    "followup_retirement_rule": "https://github.com/amore-upf/ted-q/blob/10fb7e1a2b2d756f8ea190ee2ac223fecaec0f20/data_gathering/elicitation/chunk_includes/fragment_answer.html#L126-L139",
+    "followup_scale": "https://github.com/amore-upf/ted-q/blob/10fb7e1a2b2d756f8ea190ee2ac223fecaec0f20/data_gathering/elicitation/chunk_includes/fragment_answer.html#L209-L236",
+    "ted_mdb_license_declaration": "https://github.com/MurathanKurfali/Ted-MDB-Annotations#license",
+    "ted_transcript_usage_policy": "https://www.ted.com/about/our-organization/our-policies-terms/ted-talks-usage-policy",
+    "ted_ml_terms": "https://www.ted.com/about/our-organization/our-policies-terms/ted-com-terms-of-use"
+  },
+  "scope": {
+    "stimuli": "English TED-MDB transcript excerpts incrementally revealed a chunk at a time.",
+    "model_use": "Methods reference and aggregate literature audit. Separate TED permission for transcript use in machine learning could not be verified. TED-Q annotations have no explicit data license in the author release.",
+    "elicitation": "A question was required at every pre-terminal probe. Stop means the end of a newly shown chunk, ordinarily two sentence segments. A highlight designates the selected words in that chunk.",
+    "followup": "The same reader rated answeredness in the new chunk from 1 to 5. Retesting stopped at 3 or above, at the excerpt end, or after two follow-ups. Only a visited follow-up below 3 is an observed below-threshold rating."
+  },
+  "rows_by_kind": {
+    "answer": 1107,
+    "evaluation": 356,
+    "non-answer": 2562,
+    "question": 2412
+  },
+  "readers": 111,
+  "source_talks": 6,
+  "reader_excerpts": 356,
+  "reader_probes": 2768,
+  "source_probe_positions": 460,
+  "source_probe_positions_with_valid_chunk_bounds": 456,
+  "source_probe_positions_with_questions": 452,
+  "invalid_terminal_chunk_bounds": {
+    "answer": 12,
+    "non-answer": 54,
+    "probes": 40
+  },
+  "required_question_responses": 2412,
+  "terminal_probes_without_a_question_request": 356,
+  "explicit_no_question_responses": 0,
+  "followup_scores": {
+    "1": {
+      "1": 1230,
+      "2": 272,
+      "3": 283,
+      "4": 310,
+      "5": 317
+    },
+    "2": {
+      "1": 912,
+      "2": 148,
+      "3": 84,
+      "4": 71,
+      "5": 42
+    }
+  },
+  "answered_threshold": 3,
+  "first_followup_at_or_above_threshold": {
+    "n": 910,
+    "rated": 2412
+  },
+  "second_followup_at_or_above_threshold": {
+    "n": 197,
+    "rated": 1257
+  },
+  "first_followup_below_threshold_without_second_followup": 245,
+  "below_threshold_after_second_followup": 1060,
+  "questions_with_observed_rating_at_or_above_threshold": {
+    "n": 1107,
+    "total_questions": 2412
+  },
+  "two_followup_rating_transitions": [
+    {
+      "first": 1,
+      "second": 1,
+      "n": 803
+    },
+    {
+      "first": 1,
+      "second": 2,
+      "n": 77
+    },
+    {
+      "first": 1,
+      "second": 3,
+      "n": 64
+    },
+    {
+      "first": 1,
+      "second": 4,
+      "n": 51
+    },
+    {
+      "first": 1,
+      "second": 5,
+      "n": 33
+    },
+    {
+      "first": 2,
+      "second": 1,
+      "n": 109
+    },
+    {
+      "first": 2,
+      "second": 2,
+      "n": 71
+    },
+    {
+      "first": 2,
+      "second": 3,
+      "n": 20
+    },
+    {
+      "first": 2,
+      "second": 4,
+      "n": 20
+    },
+    {
+      "first": 2,
+      "second": 5,
+      "n": 9
+    }
+  ],
+  "probes_with_two_prior_questions_revisited": 1257,
+  "two_question_threshold_outcomes": {
+    "neither": 743,
+    "newer_only": 317,
+    "older_only": 88,
+    "both": 109
+  },
+  "newer_question_after_older_only_threshold": {
+    "next_probe_at_or_above": 14,
+    "next_probe_below": 52,
+    "no_next_probe": 22
+  },
+  "out_of_chunk_highlight_offsets": {
+    "question": 0,
+    "answer": 12
+  },
+  "score_5_question_count": {
+    "author_csv": 359,
+    "reported_in_paper_section_4": 367
+  }
+}

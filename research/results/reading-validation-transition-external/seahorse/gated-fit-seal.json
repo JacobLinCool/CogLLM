@@ -1,0 +1,375 @@
+{
+  "source": "0a39d585e36b5f7d9282da2605f8ff8fa35bef35327b2b46509ae285a1add60b",
+  "protocol": "12f634df48b88cbd335de0e6f266cc36d671516c1553f8aa547384aa83df0460",
+  "uninspected_test_questions": [
+    "Q2",
+    "Q3"
+  ],
+  "previously_evaluated_test_question": "Q1",
+  "fit_rows": {
+    "train": 14485,
+    "validation": 2156,
+    "test": 4350
+  },
+  "source_definitive_masks": {
+    "train": [
+      14482,
+      13860,
+      13859
+    ],
+    "validation": [
+      2156,
+      2060,
+      2059
+    ]
+  },
+  "questions": [
+    "comprehension",
+    "repetition",
+    "grammar"
+  ],
+  "Q1_independent_original_max_difference": {
+    "form": 6.106226635438361e-16,
+    "native": 9.992007221626409e-16
+  },
+  "optimizer": {
+    "form": {
+      "covariance": {
+        "reproducibility": [
+          0.9756998432605583,
+          0.9778709010048561,
+          0.8747685472943845
+        ],
+        "mean_pattern_cosines": [
+          [
+            1.0,
+            0.8011212907808264,
+            0.9196862345519263
+          ],
+          [
+            0.8011212907808264,
+            1.0,
+            0.600298816297071
+          ],
+          [
+            0.9196862345519263,
+            0.600298816297071,
+            1.0
+          ]
+        ],
+        "coefficient_correlation": [
+          [
+            1.0,
+            0.7817405518359489,
+            0.8488087966580483
+          ],
+          [
+            0.7817405518359488,
+            1.0,
+            0.5546516589757046
+          ],
+          [
+            0.8488087966580483,
+            0.5546516589757046,
+            0.9999999999999999
+          ]
+        ],
+        "source_half_convergence": [
+          [
+            {
+              "initial": 0.1699450319916164,
+              "converged": 0.1395017987018474,
+              "projected_max_gradient": 1.164478687367093e-08,
+              "iterations": 47,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.34368013312984497,
+              "converged": 0.16476920606967824,
+              "projected_max_gradient": 7.977196642452086e-09,
+              "iterations": 34,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.2247575718037879,
+              "converged": 0.2158372551976573,
+              "projected_max_gradient": 6.6352472182038685e-09,
+              "iterations": 33,
+              "penalty": 0.002
+            }
+          ],
+          [
+            {
+              "initial": 0.15661328394807913,
+              "converged": 0.13377134976033944,
+              "projected_max_gradient": 1.2365232060767162e-08,
+              "iterations": 44,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.33226425470557963,
+              "converged": 0.16610927494312683,
+              "projected_max_gradient": 1.3970582936708754e-08,
+              "iterations": 38,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.21435408092714137,
+              "converged": 0.204587182540058,
+              "projected_max_gradient": 1.7197329312825752e-08,
+              "iterations": 38,
+              "penalty": 0.002
+            }
+          ]
+        ]
+      },
+      "independent": [
+        {
+          "initial": 0.16340085205184107,
+          "converged": 0.13719460734671302,
+          "projected_max_gradient": 5.071031024484135e-09,
+          "iterations": 41,
+          "penalty": 0.002
+        },
+        {
+          "initial": 0.3380660104506626,
+          "converged": 0.1660595422320708,
+          "projected_max_gradient": 8.281711976355216e-09,
+          "iterations": 33,
+          "penalty": 0.002
+        },
+        {
+          "initial": 0.2196388011485546,
+          "converged": 0.2106085077592619,
+          "projected_max_gradient": 7.30037680177556e-09,
+          "iterations": 36,
+          "penalty": 0.002
+        }
+      ],
+      "joint": {
+        "initial": 0.5147374976859695,
+        "objective": 0.5119862833893776,
+        "max_gradient": 7.175220714458752e-09,
+        "updates": 69
+      },
+      "calibration": {
+        "independent": [
+          {
+            "initial": 0.1631879194367817,
+            "converged": 0.14439197178424823,
+            "projected_max_gradient": 4.011408047799376e-10,
+            "iterations": 13,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.34558895717482263,
+            "converged": 0.16602743638214404,
+            "projected_max_gradient": 6.864798732440435e-10,
+            "iterations": 12,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.24709866735311342,
+            "converged": 0.23742841501674133,
+            "projected_max_gradient": 1.52580099596622e-10,
+            "iterations": 12,
+            "penalty": 1e-08
+          }
+        ],
+        "adaptive": [
+          {
+            "initial": 0.1631879194367817,
+            "converged": 0.14304926599650608,
+            "projected_max_gradient": 5.470840211891183e-09,
+            "iterations": 13,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.34558895717482263,
+            "converged": 0.16638306813194276,
+            "projected_max_gradient": 2.807727418548058e-09,
+            "iterations": 12,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.24709866735311342,
+            "converged": 0.2383969227242622,
+            "projected_max_gradient": 1.4055406144519722e-11,
+            "iterations": 13,
+            "penalty": 1e-08
+          }
+        ]
+      }
+    },
+    "native": {
+      "covariance": {
+        "reproducibility": [
+          0.34131036057965763,
+          0.6951671782796311,
+          0.29995393056782993
+        ],
+        "mean_pattern_cosines": [
+          [
+            1.0,
+            0.3846882788943306,
+            0.291886356304501
+          ],
+          [
+            0.3846882788943306,
+            0.9999999999999989,
+            0.21712423801987651
+          ],
+          [
+            0.291886356304501,
+            0.21712423801987651,
+            1.0000000000000002
+          ]
+        ],
+        "coefficient_correlation": [
+          [
+            1.0,
+            0.18719481164879953,
+            0.0932999256856885
+          ],
+          [
+            0.1871948116487995,
+            0.9999999999999992,
+            0.09904799843715786
+          ],
+          [
+            0.09329992568568848,
+            0.09904799843715788,
+            1.0
+          ]
+        ],
+        "source_half_convergence": [
+          [
+            {
+              "initial": 0.1699450319916164,
+              "converged": 0.12135221052983658,
+              "projected_max_gradient": 8.09342178689841e-09,
+              "iterations": 126,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.34368013312984497,
+              "converged": 0.1378546266191636,
+              "projected_max_gradient": 1.2356128530500304e-08,
+              "iterations": 132,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.2247575718037879,
+              "converged": 0.19989727035955962,
+              "projected_max_gradient": 2.814968594778023e-08,
+              "iterations": 140,
+              "penalty": 0.002
+            }
+          ],
+          [
+            {
+              "initial": 0.15661328394807913,
+              "converged": 0.11973724671727903,
+              "projected_max_gradient": 9.484723793526124e-09,
+              "iterations": 112,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.33226425470557963,
+              "converged": 0.13911199590218537,
+              "projected_max_gradient": 6.46552975459673e-08,
+              "iterations": 130,
+              "penalty": 0.002
+            },
+            {
+              "initial": 0.21435408092714137,
+              "converged": 0.18825773598926934,
+              "projected_max_gradient": 2.364666916486974e-08,
+              "iterations": 141,
+              "penalty": 0.002
+            }
+          ]
+        ]
+      },
+      "independent": [
+        {
+          "initial": 0.16340085205184107,
+          "converged": 0.12440349445831231,
+          "projected_max_gradient": 9.799444012948159e-09,
+          "iterations": 119,
+          "penalty": 0.002
+        },
+        {
+          "initial": 0.3380660104506626,
+          "converged": 0.14259322478177455,
+          "projected_max_gradient": 9.766736434216967e-09,
+          "iterations": 123,
+          "penalty": 0.002
+        },
+        {
+          "initial": 0.2196388011485546,
+          "converged": 0.199404662564754,
+          "projected_max_gradient": 1.7019314392882233e-08,
+          "iterations": 145,
+          "penalty": 0.002
+        }
+      ],
+      "joint": {
+        "initial": 0.46609618740060754,
+        "objective": 0.46596314784373283,
+        "max_gradient": 2.1889859849277913e-08,
+        "updates": 197
+      },
+      "calibration": {
+        "independent": [
+          {
+            "initial": 0.1631879194367817,
+            "converged": 0.13588895485536756,
+            "projected_max_gradient": 8.285210256515865e-09,
+            "iterations": 13,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.34558895717482263,
+            "converged": 0.1459523308421129,
+            "projected_max_gradient": 3.46535257433822e-09,
+            "iterations": 13,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.24709866735311342,
+            "converged": 0.22854083926966318,
+            "projected_max_gradient": 4.619301717487846e-09,
+            "iterations": 12,
+            "penalty": 1e-08
+          }
+        ],
+        "adaptive": [
+          {
+            "initial": 0.1631879194367817,
+            "converged": 0.13586485567068596,
+            "projected_max_gradient": 4.13879351150257e-09,
+            "iterations": 13,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.34558895717482263,
+            "converged": 0.14585577272060718,
+            "projected_max_gradient": 3.873306530342513e-09,
+            "iterations": 13,
+            "penalty": 1e-08
+          },
+          {
+            "initial": 0.24709866735311342,
+            "converged": 0.22845116384931397,
+            "projected_max_gradient": 4.2767344490732e-09,
+            "iterations": 12,
+            "penalty": 1e-08
+          }
+        ]
+      }
+    }
+  },
+  "forecast_sha256": "56887f0ad0b22c4d3f5118af5d4829c9ba0edd09bf1e5a66c5d407493fa57183",
+  "weights_sha256": "68e3e1b1cb6934b2dfa25dc7af1b8eed0770ef2e5f3a97610a749407b26bcf28"
+}

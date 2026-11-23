@@ -1,0 +1,153 @@
+{
+  "native": {
+    "observed_word_ends": 10782,
+    "total_words": 10782,
+    "remote_extraction": {
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "packet_sha256": "4c3418806dbd27612e97e3cdeaa83ffa720e06135015e758c8d07ac72424182f",
+      "lexical_sha256": "caef04fb8b90154e208e528fee39fc2ccba96cd34a6945fac836771427784254",
+      "extraction_code_sha256": "6c813630d8979239642349d5dbcf9c7a1378693ffb90c4388c643269829922ca",
+      "files_sha256": {
+        "ids.json": "7d55a48846e50908bffa59799196db38e0f756de65eca8a414126068f900cbf7",
+        "states.npy": "a24d2c3e05890dd21ce8769df90c8a9b9eaddae55ff6263e59f056c40959f514",
+        "words.npz": "62756494066b6efd220753715254f4873ba3faabb0594ca3d4209a1ec4dae632"
+      },
+      "unique_passages": 360,
+      "words": 10782,
+      "words_with_exact_token_end": 10782,
+      "tokens": 14827,
+      "word_projection": 96,
+      "projection_seed": 611934,
+      "inference_batches": 23,
+      "one_forward_for_each_passage": true,
+      "validation_forwards": 6,
+      "checks": {
+        "7249a92c80473060b93c410757736a0d1504bcc365906c83e414b26b0aceccb5": [
+          8.684658041602233e-07,
+          8.884484259397141e-07
+        ],
+        "8513065afd274a090e26bad5f20a06b1189c0c21fc391ab32150d07636d18748": [
+          1.787372298167611e-06,
+          9.169211239168362e-07
+        ],
+        "83219e6cfa24a8778540034f8796ffae0336bd9ecd135e76c8bb41c0c5f06355": [
+          8.33845831493818e-07,
+          1.0185780183746829e-06
+        ]
+      },
+      "elapsed_seconds": 8.328236534999974,
+      "device": "NVIDIA L4"
+    }
+  },
+  "arms": [
+    "mean",
+    "condition",
+    "surface",
+    "extended",
+    "surface_condition",
+    "extended_condition"
+  ],
+  "fixed_controls": [
+    "readme",
+    "readme_surface",
+    "mean_complex"
+  ],
+  "families": 90,
+  "rows": 360,
+  "endpoint_order": [
+    "difficulty",
+    "error"
+  ],
+  "fold_diagnostics": {
+    "mean": {
+      "normal_equations_max_abs_residual": 0.0,
+      "features": 0,
+      "heldout_range": [
+        [
+          2.4390411467617366,
+          2.5317590293693213
+        ],
+        [
+          0.10052282276546963,
+          0.11428394590159281
+        ]
+      ]
+    },
+    "condition": {
+      "normal_equations_max_abs_residual": 2.7755575615628914e-17,
+      "features": 12,
+      "heldout_range": [
+        [
+          2.171692195906576,
+          2.7479227194495226
+        ],
+        [
+          0.060895428846429386,
+          0.1844481572648165
+        ]
+      ]
+    },
+    "surface": {
+      "normal_equations_max_abs_residual": 4.163336342344337e-17,
+      "features": 12,
+      "heldout_range": [
+        [
+          1.1449583624824267,
+          3.1492396532918177
+        ],
+        [
+          -0.0887529924543294,
+          0.20745014996494315
+        ]
+      ]
+    },
+    "extended": {
+      "normal_equations_max_abs_residual": 8.326672684688674e-17,
+      "features": 39,
+      "heldout_range": [
+        [
+          1.3692800973162678,
+          3.864629711213575
+        ],
+        [
+          -0.10589525363723014,
+          0.2287132102244784
+        ]
+      ]
+    },
+    "surface_condition": {
+      "normal_equations_max_abs_residual": 5.551115123125783e-17,
+      "features": 24,
+      "heldout_range": [
+        [
+          1.1105505317654676,
+          3.1752697630778934
+        ],
+        [
+          -0.10931833524906708,
+          0.26565882334481644
+        ]
+      ]
+    },
+    "extended_condition": {
+      "normal_equations_max_abs_residual": 8.326672684688674e-17,
+      "features": 51,
+      "heldout_range": [
+        [
+          1.325850965465984,
+          3.973853259129964
+        ],
+        [
+          -0.11715636523034008,
+          0.26156229784007257
+        ]
+      ]
+    }
+  },
+  "ridge": 0.05,
+  "material_audit_sha256": "5f6bd2e9c0d769c3bfffac8b1c7757be979ad4848347de9c45d74b0db748ebb6",
+  "score_script_sha256": "2a1b265612b822ff3d6417a848bd2969e17deb12bccdfd5b6d6dddabe9466980",
+  "fit_script_sha256": "cf96ad8e2b3f74775b79d77ab06206ef15bb396a13043dc81498ad6534306161",
+  "predictions_sha256": "de5ba31cc1c28f421dc19daf85a42825a020472fee59bb730db6de7acaf968f8",
+  "weights_sha256": "1372923c818e231f2ccfbb4d6dabc1a5424c721b4bf3ab53f165619e451c1f93"
+}

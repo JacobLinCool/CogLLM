@@ -1,0 +1,1335 @@
+{
+  "archives": {
+    "qasper-train-dev-v0.3.tgz": {
+      "url": "https://qasper-dataset.s3.us-west-2.amazonaws.com/qasper-train-dev-v0.3.tgz",
+      "sha256": "a28fdf966db827bcee3d873107d6b6669864fb7ca8fbf73a192f5e39191bdb5a"
+    },
+    "qasper-test-and-evaluator-v0.3.tgz": {
+      "url": "https://qasper-dataset.s3.us-west-2.amazonaws.com/qasper-test-and-evaluator-v0.3.tgz",
+      "sha256": "72a52a41193e2838b8074f80ac074b94f956b84886c36a61c58a7df4171bdd72"
+    }
+  },
+  "official_release": "https://huggingface.co/datasets/allenai/qasper/blob/main/qasper.py#L149",
+  "public_dataset_license": "CC BY 4.0",
+  "underlying_paper_provenance": {
+    "source": "https://aclanthology.org/2021.naacl-main.365.pdf#page=9",
+    "scope": "The authors report filtering to CC-BY-* arXiv papers verified via Unpaywall and S2ORC. Each selected paper keeps its arXiv provenance. Individual CC variants were not re-audited."
+  },
+  "prefix": {
+    "maximum_unicode_characters": 14000,
+    "maximum_body_paragraphs": 32,
+    "maximum_native_qwen_tokens": 6000,
+    "rendering": "Title and abstract, then original source sections and body paragraphs in order. Heading and paragraph delimiters are two newlines. Each stop includes its trailing delimiter. Prefix cap precedes any inspection of evidence positions."
+  },
+  "selection_rule": "New-to-paper writer; all published answer annotations agree on one uniquely matched visible text paragraph; at least two distinct evidence positions per selected paper. First two questions under seeded hash order with distinct positions retained, then fill to four.",
+  "seed": 43,
+  "paper_limits": {
+    "train": 60,
+    "dev": null
+  },
+  "splits": {
+    "train": {
+      "official_papers": 888,
+      "paper_disposition": {
+        "eligible_for_paired_comparison": 106,
+        "no_two_eligible_questions_with_distinct_positions": 781,
+        "fewer_than_two_visible_body_paragraphs": 1
+      },
+      "question_disposition_for_papers_with_two_paragraphs": {
+        "eligible_before_pair_filter": 546,
+        "any_annotation_unanswerable_or_not_single_text_paragraph": 963,
+        "evidence_beyond_fixed_prefix": 408,
+        "question_writer_not_documented_as_new_to_paper": 661,
+        "annotations_select_different_paragraphs": 8,
+        "duplicate_question_text_within_paper": 2,
+        "any_evidence_not_uniquely_aligned_to_body": 2
+      },
+      "selected_papers": 60,
+      "selected_questions": 151,
+      "selected_same_paper_ordered_pairs": 121
+    },
+    "dev": {
+      "official_papers": 281,
+      "paper_disposition": {
+        "no_two_eligible_questions_with_distinct_positions": 254,
+        "eligible_for_paired_comparison": 27
+      },
+      "question_disposition_for_papers_with_two_paragraphs": {
+        "question_writer_not_documented_as_new_to_paper": 394,
+        "any_annotation_unanswerable_or_not_single_text_paragraph": 366,
+        "eligible_before_pair_filter": 138,
+        "annotations_select_different_paragraphs": 41,
+        "evidence_beyond_fixed_prefix": 66
+      },
+      "selected_papers": 27,
+      "selected_questions": 65,
+      "selected_same_paper_ordered_pairs": 49
+    }
+  },
+  "official_unused_test_papers": 416,
+  "paper_metadata": {
+    "paper-1909.00153": {
+      "arxiv": "https://arxiv.org/abs/1909.00153",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-3b7798a6bce1a5faf411bb12e2e011dbab1e279d": {
+          "unanimous_annotations": 1
+        },
+        "question-ef07ec34433221d4da79d5923fb00d8ac446b92c": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.00694": {
+      "arxiv": "https://arxiv.org/abs/1909.00694",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-39f8db10d949c6b477fa4b51e7c184016505884f": {
+          "unanimous_annotations": 1
+        },
+        "question-86abeff85f3db79cf87a8c993e5e5aa61226dc98": {
+          "unanimous_annotations": 1
+        },
+        "question-d0bc782961567dc1dd7e074b621a6d6be44bb5b4": {
+          "unanimous_annotations": 1
+        },
+        "question-753990d0b621d390ed58f20c4d9e4f065f0dc672": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1904.12087": {
+      "arxiv": "https://arxiv.org/abs/1904.12087",
+      "official_split": "train",
+      "body_paragraphs": 26,
+      "questions": {
+        "question-0c3924214572579ddbc1b4a87c7f7842ef20ff1b": {
+          "unanimous_annotations": 1
+        },
+        "question-edc43e1b75c0970b7003deeabfe3ad247cb1ed83": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1802.05574": {
+      "arxiv": "https://arxiv.org/abs/1802.05574",
+      "official_split": "train",
+      "body_paragraphs": 31,
+      "questions": {
+        "question-372fbf2d120ca7a101f70d226057f9639bf1f9f2": {
+          "unanimous_annotations": 1
+        },
+        "question-9c68d6d5451395199ca08757157fbfea27f00f69": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.10869": {
+      "arxiv": "https://arxiv.org/abs/1910.10869",
+      "official_split": "train",
+      "body_paragraphs": 24,
+      "questions": {
+        "question-3786164eaf3965c11c9969c4463b8c3223627067": {
+          "unanimous_annotations": 1
+        },
+        "question-bdc1f37c8b5e96e3c29cc02dae4ce80087d83284": {
+          "unanimous_annotations": 1
+        },
+        "question-fdd9dea06550a2fd0df7a1e6a5109facf3601d76": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1702.06589": {
+      "arxiv": "https://arxiv.org/abs/1702.06589",
+      "official_split": "train",
+      "body_paragraphs": 22,
+      "questions": {
+        "question-a6419207d2299f25e2688517d1580b7ba07c8e4b": {
+          "unanimous_annotations": 1
+        },
+        "question-07c9863e1e86c31b740b5b5a77fe8000be00c273": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1809.08652": {
+      "arxiv": "https://arxiv.org/abs/1809.08652",
+      "official_split": "train",
+      "body_paragraphs": 8,
+      "questions": {
+        "question-790ed4458a23aa23e2b5399259e50083c86d9e14": {
+          "unanimous_annotations": 1
+        },
+        "question-562a2feeba9580f5435a94396f2a8751f79a4d5c": {
+          "unanimous_annotations": 1
+        },
+        "question-8b51db1f7a6293b5bd8be49386cce45989b8079f": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.00547": {
+      "arxiv": "https://arxiv.org/abs/1911.00547",
+      "official_split": "train",
+      "body_paragraphs": 21,
+      "questions": {
+        "question-8c78b21ec966a5e8405e8b9d3d6e7099e95ea5fb": {
+          "unanimous_annotations": 1
+        },
+        "question-acd05f31e25856b9986daa1651843b8dc92c2d99": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.03681": {
+      "arxiv": "https://arxiv.org/abs/1911.03681",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-83f14af3ccca4ab9deb4c6d208f624d1e79dc7eb": {
+          "unanimous_annotations": 1
+        },
+        "question-0154d8be772193bfd70194110f125813057413a4": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1907.08501": {
+      "arxiv": "https://arxiv.org/abs/1907.08501",
+      "official_split": "train",
+      "body_paragraphs": 25,
+      "questions": {
+        "question-9653c89a93ac5c717a0a26cf80e9aa98a5ccf910": {
+          "unanimous_annotations": 1
+        },
+        "question-bdc6664cec2b94b0b3769bc70a60914795f39574": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.05456": {
+      "arxiv": "https://arxiv.org/abs/1910.05456",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-587885bc86543b8f8b134c20e2c62f6251195571": {
+          "unanimous_annotations": 1
+        },
+        "question-f3e96c5487d87557a661a65395b0162033dc05b3": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.01013": {
+      "arxiv": "https://arxiv.org/abs/1909.01013",
+      "official_split": "train",
+      "body_paragraphs": 24,
+      "questions": {
+        "question-ebeedbb8eecdf118d543fdb5224ae610eef212c8": {
+          "unanimous_annotations": 1
+        },
+        "question-3a8d65eb8e1dbb995981a0e02d86ebf3feab107a": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1912.03234": {
+      "arxiv": "https://arxiv.org/abs/1912.03234",
+      "official_split": "train",
+      "body_paragraphs": 19,
+      "questions": {
+        "question-57e783f00f594e08e43a31939aedb235c9d5a102": {
+          "unanimous_annotations": 1
+        },
+        "question-29983f4bc8a5513a198755e474361deee93d4ab6": {
+          "unanimous_annotations": 1
+        },
+        "question-9646fa1abbe3102a0364f84e0a55d107d45c97f0": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.11933": {
+      "arxiv": "https://arxiv.org/abs/1911.11933",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-046ff04d1018447b22e00acb125125cae5a23fb7": {
+          "unanimous_annotations": 1
+        },
+        "question-ffbd6f583692db66b719a846ba2b7f6474df481a": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.06434": {
+      "arxiv": "https://arxiv.org/abs/1909.06434",
+      "official_split": "train",
+      "body_paragraphs": 25,
+      "questions": {
+        "question-82a28c1ed7988513d5984f6dcacecb7e90f64792": {
+          "unanimous_annotations": 1
+        },
+        "question-a997fc1a62442fd80d1873cd29a9092043f025ad": {
+          "unanimous_annotations": 1
+        },
+        "question-d4a6f5034345036dbc2d4e634a8504f79d42ca69": {
+          "unanimous_annotations": 1
+        },
+        "question-54fa5196d0e6d5e84955548f4ef51bfd9b707a32": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.11189": {
+      "arxiv": "https://arxiv.org/abs/1909.11189",
+      "official_split": "train",
+      "body_paragraphs": 18,
+      "questions": {
+        "question-a2a66726a5dca53af58aafd8494c4de833a06f14": {
+          "unanimous_annotations": 1
+        },
+        "question-bfa3776c30cb30e0088e185a5908e5172df79236": {
+          "unanimous_annotations": 1
+        },
+        "question-ee87608419e4807b9b566681631a8cd72197a71a": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1606.08495": {
+      "arxiv": "https://arxiv.org/abs/1606.08495",
+      "official_split": "train",
+      "body_paragraphs": 21,
+      "questions": {
+        "question-5efed109940bf74ed0a9d4a5e97a535502b23d27": {
+          "unanimous_annotations": 1
+        },
+        "question-b8137eb0fa0b41f871c899a54154f640f0e9aca1": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1901.03860": {
+      "arxiv": "https://arxiv.org/abs/1901.03860",
+      "official_split": "train",
+      "body_paragraphs": 18,
+      "questions": {
+        "question-518d0847b02b4f23a8f441faa38b935c9b892e1e": {
+          "unanimous_annotations": 1
+        },
+        "question-4e379d6d5f87554fabf6f7f7b6ed92d2025e7280": {
+          "unanimous_annotations": 1
+        },
+        "question-8112d18681e266426cf7432ac4928b87f5ce8311": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1607.05408": {
+      "arxiv": "https://arxiv.org/abs/1607.05408",
+      "official_split": "train",
+      "body_paragraphs": 11,
+      "questions": {
+        "question-df9d16a2c4983a0ff46081e3ff4d6e7ef3338264": {
+          "unanimous_annotations": 1
+        },
+        "question-8c35caf3772637e6297009ceab38f7f5be38ea9d": {
+          "unanimous_annotations": 1
+        },
+        "question-7d300176afa04947ac847135ac6ea2929908c0b0": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1611.00514": {
+      "arxiv": "https://arxiv.org/abs/1611.00514",
+      "official_split": "train",
+      "body_paragraphs": 19,
+      "questions": {
+        "question-21a96b328b43a568f9ba74cbc6d4689dbc4a3d7b": {
+          "unanimous_annotations": 1
+        },
+        "question-442f8da2c988530e62e4d1d52c6ec913e3ec5bf1": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1709.02271": {
+      "arxiv": "https://arxiv.org/abs/1709.02271",
+      "official_split": "train",
+      "body_paragraphs": 25,
+      "questions": {
+        "question-f10325d022e3f95223f79ab00f8b42e3bb7ca040": {
+          "unanimous_annotations": 1
+        },
+        "question-feb4e92ff1609f3a5e22588da66532ff689f3bcc": {
+          "unanimous_annotations": 1
+        },
+        "question-5e65bb0481f3f5826291c7cc3e30436ab4314c61": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1603.01417": {
+      "arxiv": "https://arxiv.org/abs/1603.01417",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-129c03acb0963ede3915415953317556a55f34ee": {
+          "unanimous_annotations": 1
+        },
+        "question-141dab98d19a070f1ce7e7dc384001d49125d545": {
+          "unanimous_annotations": 1
+        },
+        "question-58b3b630a31fcb9bffb510390e1ec30efe87bfbf": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1606.01433": {
+      "arxiv": "https://arxiv.org/abs/1606.01433",
+      "official_split": "train",
+      "body_paragraphs": 31,
+      "questions": {
+        "question-0cfaca6f3f33ebdb338c5f991f6a7a33ff33844d": {
+          "unanimous_annotations": 1
+        },
+        "question-4519afe91b1042876d7c021487d98e2d72a09861": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1902.09314": {
+      "arxiv": "https://arxiv.org/abs/1902.09314",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-9bffc9a9c527e938b2a95ba60c483a916dbd1f6b": {
+          "unanimous_annotations": 1
+        },
+        "question-b67420da975689e47d3ea1c12b601851018c4071": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1912.05066": {
+      "arxiv": "https://arxiv.org/abs/1912.05066",
+      "official_split": "train",
+      "body_paragraphs": 19,
+      "questions": {
+        "question-38e11663b03ac585863742044fd15a0e875ae9ab": {
+          "unanimous_annotations": 1
+        },
+        "question-5b029ad0d20b516ec11967baaf7d2006e8d7199f": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.03042": {
+      "arxiv": "https://arxiv.org/abs/1910.03042",
+      "official_split": "train",
+      "body_paragraphs": 16,
+      "questions": {
+        "question-516626825e51ca1e8a3e0ac896c538c9d8a747c8": {
+          "unanimous_annotations": 1
+        },
+        "question-77af93200138f46bb178c02f710944a01ed86481": {
+          "unanimous_annotations": 1
+        },
+        "question-a725246bac4625e6fe99ea236a96ccb21b5f30c6": {
+          "unanimous_annotations": 1
+        },
+        "question-3e0c9469821cb01a75e1818f2acb668d071fcf40": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-2004.03744": {
+      "arxiv": "https://arxiv.org/abs/2004.03744",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-f33236ebd6f5a9ccb9b9dbf05ac17c3724f93f91": {
+          "unanimous_annotations": 1
+        },
+        "question-a08b5018943d4428f067c08077bfff1af3de9703": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.04887": {
+      "arxiv": "https://arxiv.org/abs/1910.04887",
+      "official_split": "train",
+      "body_paragraphs": 14,
+      "questions": {
+        "question-a130aa735de3b65c71f27018f20d3c068bafb826": {
+          "unanimous_annotations": 1
+        },
+        "question-0c1663a7f7750b399f40ef7b4bf19d5c598890ff": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1907.01413": {
+      "arxiv": "https://arxiv.org/abs/1907.01413",
+      "official_split": "train",
+      "body_paragraphs": 15,
+      "questions": {
+        "question-fffbd6cafef96eeeee2f9fa5d8ab2b325ec528e6": {
+          "unanimous_annotations": 1
+        },
+        "question-2d62a75af409835e4c123a615b06235a352a67fe": {
+          "unanimous_annotations": 1
+        },
+        "question-d24acc567ebaec1efee52826b7eaadddc0a89e8b": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2001.05493": {
+      "arxiv": "https://arxiv.org/abs/2001.05493",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-fbe5e513745d723aad711ceb91ce0c3c2ceb669e": {
+          "unanimous_annotations": 1
+        },
+        "question-54fe8f05595f2d1d4a4fd77f4562eac519711fa6": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1904.05584": {
+      "arxiv": "https://arxiv.org/abs/1904.05584",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-65ad17f614b7345f0077424c04c94971c831585b": {
+          "unanimous_annotations": 1
+        },
+        "question-7fe48939ce341212c1d801095517dc552b98e7b3": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2002.02427": {
+      "arxiv": "https://arxiv.org/abs/2002.02427",
+      "official_split": "train",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-212977344f4bf2ae8f060bdac0317db2d1801724": {
+          "unanimous_annotations": 1
+        },
+        "question-3d7ab856a5cade7ab374fc2f2713a4d0a30bbd56": {
+          "unanimous_annotations": 1
+        },
+        "question-c9ee70c481c801892556eb6b9fd8ee38197923be": {
+          "unanimous_annotations": 1
+        },
+        "question-a24a7a460fd5e60d71a7e787401c68caa4702df6": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1907.00758": {
+      "arxiv": "https://arxiv.org/abs/1907.00758",
+      "official_split": "train",
+      "body_paragraphs": 20,
+      "questions": {
+        "question-9ef182b61461d0d8b6feb1d6174796ccde290a15": {
+          "unanimous_annotations": 1
+        },
+        "question-f6f8054f327a2c084a73faca16cf24a180c094ae": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.05343": {
+      "arxiv": "https://arxiv.org/abs/1911.05343",
+      "official_split": "train",
+      "body_paragraphs": 22,
+      "questions": {
+        "question-a93196fb0fb5f8202912971e14552fd7828976db": {
+          "unanimous_annotations": 1
+        },
+        "question-a5418e4af99a2cbd6b7a2b8041388a2d01b8efb2": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1707.02377": {
+      "arxiv": "https://arxiv.org/abs/1707.02377",
+      "official_split": "train",
+      "body_paragraphs": 27,
+      "questions": {
+        "question-52f1a91f546b8a25a5d72325c503ec8f9c72de23": {
+          "unanimous_annotations": 1
+        },
+        "question-bb5697cf352dd608edf119ca9b82a6b7e51c8d21": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1904.07342": {
+      "arxiv": "https://arxiv.org/abs/1904.07342",
+      "official_split": "train",
+      "body_paragraphs": 14,
+      "questions": {
+        "question-279b633b90fa2fd69e84726090fadb42ebdf4c02": {
+          "unanimous_annotations": 1
+        },
+        "question-16fa6896cf4597154363a6c9a98deb49fffef15f": {
+          "unanimous_annotations": 1
+        },
+        "question-fe578842021ccfc295209a28cf2275ca18f8d155": {
+          "unanimous_annotations": 1
+        },
+        "question-0f60864503ecfd5b048258e21d548ab5e5e81772": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2001.05970": {
+      "arxiv": "https://arxiv.org/abs/2001.05970",
+      "official_split": "train",
+      "body_paragraphs": 21,
+      "questions": {
+        "question-39c78924df095c92e058ffa5a779de597e8c43f4": {
+          "unanimous_annotations": 1
+        },
+        "question-5dc1aca619323ea0d4717d1f825606b2b7c21f01": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.04519": {
+      "arxiv": "https://arxiv.org/abs/1910.04519",
+      "official_split": "train",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-13149342ccbb7a6df9b4b1bed890cfbdc1331c1f": {
+          "unanimous_annotations": 1
+        },
+        "question-fbe149bd76863575b98fafb3679f411d3d21b4a3": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.13375": {
+      "arxiv": "https://arxiv.org/abs/1909.13375",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-5a02a3dd26485a4e4a77411b50b902d2bda3731b": {
+          "unanimous_annotations": 1
+        },
+        "question-9ab43f941c11a4b09a0e4aea61b4a5b4612e7933": {
+          "unanimous_annotations": 1
+        },
+        "question-a9def7958eac7b9a780403d4f136927f756bab83": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.08772": {
+      "arxiv": "https://arxiv.org/abs/1910.08772",
+      "official_split": "train",
+      "body_paragraphs": 20,
+      "questions": {
+        "question-ee27e5b56e439546d710ce113c9be76e1bfa1a3d": {
+          "unanimous_annotations": 1
+        },
+        "question-45893f31ef07f0cca5783bd39c4e60630d6b93b3": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1806.04535": {
+      "arxiv": "https://arxiv.org/abs/1806.04535",
+      "official_split": "train",
+      "body_paragraphs": 25,
+      "questions": {
+        "question-479fc9e6d6d80e69f425d9e82e618e6b7cd12764": {
+          "unanimous_annotations": 1
+        },
+        "question-bcd6befa65cab3ffa6334c8ecedd065a4161028b": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.03842": {
+      "arxiv": "https://arxiv.org/abs/1911.03842",
+      "official_split": "train",
+      "body_paragraphs": 19,
+      "questions": {
+        "question-415f35adb0ef746883fb9c33aa53b79cc4e723c3": {
+          "unanimous_annotations": 1
+        },
+        "question-9d9b11f86a96c6d3dd862453bf240d6e018e75af": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2001.06286": {
+      "arxiv": "https://arxiv.org/abs/2001.06286",
+      "official_split": "train",
+      "body_paragraphs": 16,
+      "questions": {
+        "question-594a6bf37eab64a16c6a05c365acc100e38fcff1": {
+          "unanimous_annotations": 1
+        },
+        "question-589be705a5cc73a23f30decba23ce58ec39d313b": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1706.07179": {
+      "arxiv": "https://arxiv.org/abs/1706.07179",
+      "official_split": "train",
+      "body_paragraphs": 14,
+      "questions": {
+        "question-a75861e6dd72d69fdf77ebd81c78d26c6f7d0864": {
+          "unanimous_annotations": 1
+        },
+        "question-082c88e132b4f1bf68abdc3a21ac4af180de1113": {
+          "unanimous_annotations": 1
+        },
+        "question-74091e10f596428135b0ab06008608e09c051565": {
+          "unanimous_annotations": 1
+        },
+        "question-43b4f7eade7a9bcfaf9cc0edba921a41d6036e9c": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.00458": {
+      "arxiv": "https://arxiv.org/abs/1910.00458",
+      "official_split": "train",
+      "body_paragraphs": 19,
+      "questions": {
+        "question-9dc844f82f520daf986e83466de0c84d93953754": {
+          "unanimous_annotations": 1
+        },
+        "question-36d892460eb863220cd0881d5823d73bbfda172c": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1908.01060": {
+      "arxiv": "https://arxiv.org/abs/1908.01060",
+      "official_split": "train",
+      "body_paragraphs": 22,
+      "questions": {
+        "question-e6c163f80a11bd057bbd0b6e1451ac82edddc78d": {
+          "unanimous_annotations": 1
+        },
+        "question-6adfa9eee76b96953a76c03356bf41d8a9378851": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1701.03214": {
+      "arxiv": "https://arxiv.org/abs/1701.03214",
+      "official_split": "train",
+      "body_paragraphs": 28,
+      "questions": {
+        "question-46ee1cbbfbf0067747b28bdf4c8c2f7dc8955650": {
+          "unanimous_annotations": 1
+        },
+        "question-4f12b41bd3bb2610abf7d7835291496aa69fb78c": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.06191": {
+      "arxiv": "https://arxiv.org/abs/1911.06191",
+      "official_split": "train",
+      "body_paragraphs": 30,
+      "questions": {
+        "question-42af0472e6895eaf7b9392674b0d956e64e86b03": {
+          "unanimous_annotations": 1
+        },
+        "question-eecf62e18a790bcfdd8a56f0c4f498927ff2fb47": {
+          "unanimous_annotations": 1
+        },
+        "question-acda028a21a465c984036dcbb124b7f03c490b41": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.04181": {
+      "arxiv": "https://arxiv.org/abs/1909.04181",
+      "official_split": "train",
+      "body_paragraphs": 12,
+      "questions": {
+        "question-2c576072e494ab5598667cd6b40bc97fdd7d92d7": {
+          "unanimous_annotations": 1
+        },
+        "question-52ed2eb6f4d1f74ebdc4dcddcae201786d4c0463": {
+          "unanimous_annotations": 1
+        },
+        "question-8602160e98e4b2c9c702440da395df5261f55b1f": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1704.00177": {
+      "arxiv": "https://arxiv.org/abs/1704.00177",
+      "official_split": "train",
+      "body_paragraphs": 19,
+      "questions": {
+        "question-4e4d377b140c149338446ba69737ea191c4328d9": {
+          "unanimous_annotations": 1
+        },
+        "question-828ce5faed7783297cf9ce202364f999b8d4a1f6": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.11471": {
+      "arxiv": "https://arxiv.org/abs/1910.11471",
+      "official_split": "train",
+      "body_paragraphs": 27,
+      "questions": {
+        "question-1eeabfde99594b8d9c6a007f50b97f7f527b0a17": {
+          "unanimous_annotations": 1
+        },
+        "question-4196d329061f5a9d147e1e77aeed6a6bd9b35d18": {
+          "unanimous_annotations": 1
+        },
+        "question-321429282557e79061fe2fe02a9467f3d0118cdd": {
+          "unanimous_annotations": 1
+        },
+        "question-891cab2e41d6ba962778bda297592c916b432226": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1801.02243": {
+      "arxiv": "https://arxiv.org/abs/1801.02243",
+      "official_split": "train",
+      "body_paragraphs": 28,
+      "questions": {
+        "question-20df24165b881f97dc1ac32f343939554dd68011": {
+          "unanimous_annotations": 1
+        },
+        "question-3d39e57e90903b776389f1b01ca238a6feb877f3": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.03894": {
+      "arxiv": "https://arxiv.org/abs/1911.03894",
+      "official_split": "train",
+      "body_paragraphs": 31,
+      "questions": {
+        "question-71f2b368228a748fd348f1abf540236568a61b07": {
+          "unanimous_annotations": 1
+        },
+        "question-dc49746fc98647445599da9d17bc004bafdc4579": {
+          "unanimous_annotations": 1
+        },
+        "question-b573b36936ffdf1d70e66f9b5567511c989b46b2": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1707.07554": {
+      "arxiv": "https://arxiv.org/abs/1707.07554",
+      "official_split": "train",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-1024f22110c436aa7a62a1022819bfe62dc0d336": {
+          "unanimous_annotations": 1
+        },
+        "question-f062723bda695716aa7cb0f27675b7fc0d302d4d": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1808.03815": {
+      "arxiv": "https://arxiv.org/abs/1808.03815",
+      "official_split": "train",
+      "body_paragraphs": 20,
+      "questions": {
+        "question-06c340c7c2ad57d7621c3e8baba6a3d0ed9f4696": {
+          "unanimous_annotations": 1
+        },
+        "question-4c88441f8a1b5fce0ca55a6fced34f97260206ae": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.03243": {
+      "arxiv": "https://arxiv.org/abs/1911.03243",
+      "official_split": "train",
+      "body_paragraphs": 21,
+      "questions": {
+        "question-96526a14820b7debfd6f7c5beeade0a854b93d1a": {
+          "unanimous_annotations": 1
+        },
+        "question-a69af5937cab861977989efd72ad1677484b5c8c": {
+          "unanimous_annotations": 1
+        },
+        "question-04f72eddb1fc73dd11135a80ca1cf31e9db75578": {
+          "unanimous_annotations": 1
+        },
+        "question-32ba4d2d15194e889cbc9aa1d21ff1aa6fa27679": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.02334": {
+      "arxiv": "https://arxiv.org/abs/1910.02334",
+      "official_split": "train",
+      "body_paragraphs": 21,
+      "questions": {
+        "question-5e997d4499b18f1ee1ef6fa145cadbc018b8dd87": {
+          "unanimous_annotations": 1
+        },
+        "question-12c7d79d2a26af2d445229d0c8ba3ba1aab3f5b5": {
+          "unanimous_annotations": 1
+        },
+        "question-98daaa9eaa1e1e574be336b8933b861bfd242e5e": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.04006": {
+      "arxiv": "https://arxiv.org/abs/1910.04006",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-345f65eaff1610deecb02ff785198aa531648e75": {
+          "unanimous_annotations": 1
+        },
+        "question-fd5412e2784acefb50afc3bfae1e087580b90ab9": {
+          "unanimous_annotations": 1
+        },
+        "question-82596190560dc2e2ced2131779730f40a3f3eb8c": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.00100": {
+      "arxiv": "https://arxiv.org/abs/1909.00100",
+      "official_split": "train",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-63eb31f613a41a3ddd86f599e743ed10e1cd07ba": {
+          "unanimous_annotations": 1
+        },
+        "question-e24fbcc8be922c43f6b6037cdf2bfd4c0a926c08": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1709.05413": {
+      "arxiv": "https://arxiv.org/abs/1709.05413",
+      "official_split": "train",
+      "body_paragraphs": 14,
+      "questions": {
+        "question-b24767fe7e6620369063e646fd3048dc645a8348": {
+          "unanimous_annotations": 1
+        },
+        "question-e26e7e9bcd7e2cea561af596c59b98e823653a4b": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2002.02070": {
+      "arxiv": "https://arxiv.org/abs/2002.02070",
+      "official_split": "dev",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-899ed05c460bf2aa0aa65101cad1986d4f622652": {
+          "unanimous_annotations": 2
+        },
+        "question-6bf93968110c6e3e3640360440607744007a5228": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1605.03481": {
+      "arxiv": "https://arxiv.org/abs/1605.03481",
+      "official_split": "dev",
+      "body_paragraphs": 25,
+      "questions": {
+        "question-b85fc420eb2f77f6f14f375cc1fcc5155eb5c0a8": {
+          "unanimous_annotations": 1
+        },
+        "question-127d5ddfabec5c58832e5865cbd8ed0978c25a13": {
+          "unanimous_annotations": 2
+        },
+        "question-b91671715ad4fad56c67c28ce6f29e180fe08595": {
+          "unanimous_annotations": 1
+        },
+        "question-792f6d76d2befba2af07198584aac1b189583ae4": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1712.05999": {
+      "arxiv": "https://arxiv.org/abs/1712.05999",
+      "official_split": "dev",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-dca86fbe1d57b44986055b282a03c15ef7882e51": {
+          "unanimous_annotations": 1
+        },
+        "question-a8f51b4e334a917702422782329d97304a2fe139": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1903.09722": {
+      "arxiv": "https://arxiv.org/abs/1903.09722",
+      "official_split": "dev",
+      "body_paragraphs": 21,
+      "questions": {
+        "question-4d47bef19afd70c10bbceafd1846516546641a2f": {
+          "unanimous_annotations": 2
+        },
+        "question-4fa6fbb9df1a4c32583d4ef70d2b29ece4b3d802": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1910.06592": {
+      "arxiv": "https://arxiv.org/abs/1910.06592",
+      "official_split": "dev",
+      "body_paragraphs": 29,
+      "questions": {
+        "question-c00ce1e3be14610fb4e1f0614005911bb5ff0302": {
+          "unanimous_annotations": 2
+        },
+        "question-d3ff2986ca8cb85a9a5cec039c266df756947b43": {
+          "unanimous_annotations": 2
+        },
+        "question-483a699563efcb8804e1861b18809279f21c7610": {
+          "unanimous_annotations": 1
+        },
+        "question-e35c2fa99d5c84d8cb5d83fca2b434dcd83f3851": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1908.05828": {
+      "arxiv": "https://arxiv.org/abs/1908.05828",
+      "official_split": "dev",
+      "body_paragraphs": 31,
+      "questions": {
+        "question-6d1217b3d9cfb04be7fcd2238666fa02855ce9c5": {
+          "unanimous_annotations": 2
+        },
+        "question-bb2de20ee5937da7e3e6230e942bec7b6e8f61ee": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1910.03634": {
+      "arxiv": "https://arxiv.org/abs/1910.03634",
+      "official_split": "dev",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-54e945ea4b014e11ed4e1e61abc2aa9e68fea310": {
+          "unanimous_annotations": 2
+        },
+        "question-58ee0cbf1d8e3711c617b1cd3d7aca8620e26187": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1603.01514": {
+      "arxiv": "https://arxiv.org/abs/1603.01514",
+      "official_split": "dev",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-50cc6c5f2dcf5fb87b56007f6a825fa7c90b64ed": {
+          "unanimous_annotations": 1
+        },
+        "question-6568a31241167f618ef5ede939053feaa2fb0d7e": {
+          "unanimous_annotations": 1
+        },
+        "question-6bf5620f295b5243230bc97b340fae6e92304595": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1705.05437": {
+      "arxiv": "https://arxiv.org/abs/1705.05437",
+      "official_split": "dev",
+      "body_paragraphs": 20,
+      "questions": {
+        "question-cf874cd9023d901e10aa8664b813d32501e7e4d2": {
+          "unanimous_annotations": 2
+        },
+        "question-42084c41343e5a6ae58a22e5bfc5ce987b5173de": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.06964": {
+      "arxiv": "https://arxiv.org/abs/1911.06964",
+      "official_split": "dev",
+      "body_paragraphs": 29,
+      "questions": {
+        "question-3d7d865e905295d11f1e85af5fa89b210e3e9fdf": {
+          "unanimous_annotations": 2
+        },
+        "question-3fad42be0fb2052bb404b989cc7d58b440cd23a0": {
+          "unanimous_annotations": 2
+        },
+        "question-1ff0fccf0dca95a6630380c84b0422bed854269a": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-2004.04721": {
+      "arxiv": "https://arxiv.org/abs/2004.04721",
+      "official_split": "dev",
+      "body_paragraphs": 18,
+      "questions": {
+        "question-bfc1de5fa4da2f0e301fd22aea19cf01e2bb5b31": {
+          "unanimous_annotations": 1
+        },
+        "question-b3307d5b68c57a074c483636affee41054be06d1": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1911.00841": {
+      "arxiv": "https://arxiv.org/abs/1911.00841",
+      "official_split": "dev",
+      "body_paragraphs": 24,
+      "questions": {
+        "question-c70bafc35e27be9d1efae60596bc0dd390c124c0": {
+          "unanimous_annotations": 1
+        },
+        "question-3c3807f226ba72fc41f59f0338f12a49a0c35605": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1909.00105": {
+      "arxiv": "https://arxiv.org/abs/1909.00105",
+      "official_split": "dev",
+      "body_paragraphs": 31,
+      "questions": {
+        "question-1bdc990c7e948724ab04e70867675a334fdd3051": {
+          "unanimous_annotations": 1
+        },
+        "question-34dc0838632d643f33c8dbfe7bd4b656586582a2": {
+          "unanimous_annotations": 1
+        },
+        "question-c77359fb9d3ef96965a9af0396b101f82a0a9de6": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2002.01320": {
+      "arxiv": "https://arxiv.org/abs/2002.01320",
+      "official_split": "dev",
+      "body_paragraphs": 18,
+      "questions": {
+        "question-cee8cfaf26e49d98e7d34fa1b414f8f31d6502ad": {
+          "unanimous_annotations": 1
+        },
+        "question-8dc707a0daf7bff61a97d9d854283e65c0c85064": {
+          "unanimous_annotations": 2
+        },
+        "question-6a219d7c58451842aa5d6819a7cdf51c55e9fc0f": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2004.02192": {
+      "arxiv": "https://arxiv.org/abs/2004.02192",
+      "official_split": "dev",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-8dda1ef371933811e2a25a286529c31623cca0c6": {
+          "unanimous_annotations": 2
+        },
+        "question-b3de9357c569fb1454be8f2ac5fcecaea295b967": {
+          "unanimous_annotations": 2
+        },
+        "question-59e58c6fc63cf5b54b632462465bfbd85b1bf3dd": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1910.08293": {
+      "arxiv": "https://arxiv.org/abs/1910.08293",
+      "official_split": "dev",
+      "body_paragraphs": 22,
+      "questions": {
+        "question-36ae003c7cb2a1bbfa90b89c671bc286bd3b3dfd": {
+          "unanimous_annotations": 1
+        },
+        "question-808f0ad46ca4eb4ea5492f9e14ca043fe1e206cc": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1911.07555": {
+      "arxiv": "https://arxiv.org/abs/1911.07555",
+      "official_split": "dev",
+      "body_paragraphs": 28,
+      "questions": {
+        "question-c598028815066089cc1e131b96d6966d2610467a": {
+          "unanimous_annotations": 2
+        },
+        "question-92dfacbbfa732ecea006e251be415a6f89fb4ec6": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-2001.01269": {
+      "arxiv": "https://arxiv.org/abs/2001.01269",
+      "official_split": "dev",
+      "body_paragraphs": 25,
+      "questions": {
+        "question-81d193672090295e687bc4f4ac1b7a9c76ea35df": {
+          "unanimous_annotations": 2
+        },
+        "question-3355918bbdccac644afe441f085d0ffbbad565d7": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1912.08904": {
+      "arxiv": "https://arxiv.org/abs/1912.08904",
+      "official_split": "dev",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-6ecb69360449bb9915ac73c0a816c8ac479cbbfc": {
+          "unanimous_annotations": 1
+        },
+        "question-375b281e7441547ba284068326dd834216e55c07": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1909.13104": {
+      "arxiv": "https://arxiv.org/abs/1909.13104",
+      "official_split": "dev",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-21548433abd21346659505296fb0576e78287a74": {
+          "unanimous_annotations": 2
+        },
+        "question-1e775cf30784e6b1c2b573294a82e145a3f959bb": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1610.09225": {
+      "arxiv": "https://arxiv.org/abs/1610.09225",
+      "official_split": "dev",
+      "body_paragraphs": 20,
+      "questions": {
+        "question-b1ce129678e37070e69f01332f1a8587e18e06b0": {
+          "unanimous_annotations": 2
+        },
+        "question-4c07c33dfaf4f3e6db55e377da6fa69825d0ba15": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-2001.07820": {
+      "arxiv": "https://arxiv.org/abs/2001.07820",
+      "official_split": "dev",
+      "body_paragraphs": 27,
+      "questions": {
+        "question-92bb41cf7bd1f7886784796a8220ed5aa07bc49b": {
+          "unanimous_annotations": 1
+        },
+        "question-4ef11518b40cc55d86c485f14e24732123b0d907": {
+          "unanimous_annotations": 2
+        }
+      }
+    },
+    "paper-1605.07333": {
+      "arxiv": "https://arxiv.org/abs/1605.07333",
+      "official_split": "dev",
+      "body_paragraphs": 29,
+      "questions": {
+        "question-30eacb4595014c9c0e5ee9669103d003cfdfe1e5": {
+          "unanimous_annotations": 2
+        },
+        "question-e2e977d7222654ee8d983fd8ba63b930e9a5a691": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1908.08717": {
+      "arxiv": "https://arxiv.org/abs/1908.08717",
+      "official_split": "dev",
+      "body_paragraphs": 17,
+      "questions": {
+        "question-a253749e3b4c4f340778235f640ce694642a4555": {
+          "unanimous_annotations": 2
+        },
+        "question-2da4c3679111dd92a1d0869dae353ebe5989dfd2": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-2002.07306": {
+      "arxiv": "https://arxiv.org/abs/2002.07306",
+      "official_split": "dev",
+      "body_paragraphs": 24,
+      "questions": {
+        "question-2275b0e195cd9cb25f50c5c570da97a4cce5dca8": {
+          "unanimous_annotations": 1
+        },
+        "question-d571e0b0f402a3d36fb30d70cdcd2911df883bc7": {
+          "unanimous_annotations": 2
+        },
+        "question-f9aa055bf73185ba939dfb03454384810eb17ad1": {
+          "unanimous_annotations": 1
+        },
+        "question-d01c51155e4719bf587d114bcd403b273c77246f": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1908.07245": {
+      "arxiv": "https://arxiv.org/abs/1908.07245",
+      "official_split": "dev",
+      "body_paragraphs": 32,
+      "questions": {
+        "question-c5b0ed5db65051eebd858beaf303809aa815e8e5": {
+          "unanimous_annotations": 2
+        },
+        "question-10fb7dc031075946153baf0a0599e126de29e3a4": {
+          "unanimous_annotations": 1
+        }
+      }
+    },
+    "paper-1709.10367": {
+      "arxiv": "https://arxiv.org/abs/1709.10367",
+      "official_split": "dev",
+      "body_paragraphs": 26,
+      "questions": {
+        "question-de830c534c23f103288c198eb19174c76bfd38a1": {
+          "unanimous_annotations": 1
+        },
+        "question-2dbf6fe095cd879a9bf40f110b7b72c8bdde9475": {
+          "unanimous_annotations": 1
+        }
+      }
+    }
+  },
+  "sha256": {
+    "stimuli.jsonl": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+    "train.jsonl": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+    "eval.jsonl": "8e06578e5230a04fb6929b94140fadebdbd99c567d0bb730136ac797bccd23de",
+    "dev-truth.jsonl": "c5cead2740cbd365827bffa89f04795f8537f3daa3dd2c910b1581268dbf44dc"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "protocol_sha256": "6e3837a1f382dd254a0ae8f607ca763106d377b5391b54ec71eed1b7d104a768",
+  "scorer_sha256": "c8a37f4a42b2752a660c03fb33505dd37773d83fbcd95332502090f6f982a1e1",
+  "stage2_sha256": {
+    "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+    "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+    "trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e"
+  },
+  "oof_predictions_sha256": "9f9384d9a4dceee84940876dc0a9482d5a787c9562bbfc4236c7cb16c5092240",
+  "ordinal_manifest_sha256": "d8641d32e02889b34ac0d4d9187027bbbe69bc60de9d83c9f1000abec66e1782",
+  "methods": [
+    "candidate_evidence",
+    "length_evidence",
+    "candidate_article"
+  ],
+  "ordinal_method": "qwen_and_rewrite_effect",
+  "folds": 5,
+  "bootstrap_groups": 25,
+  "bootstrap_draws": 10000,
+  "bootstrap_seed": 43,
+  "primary": "AUROC",
+  "secondary": "average_precision"
+}

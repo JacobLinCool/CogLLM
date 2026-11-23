@@ -1,0 +1,406 @@
+{
+  "source_thresholds_sha256": "fc493fff4c0cd4c9cc71bd7ad66b86d0167dbef38524748e641ad41337528df8",
+  "t5_source_decision_sha256": null,
+  "sentence_visibility": {},
+  "conditional_generation_format": {},
+  "scores": {
+    "words": {
+      "complete_groups": 39,
+      "locations": 22133,
+      "human_positives": 413,
+      "methods": {
+        "served_marginal": {
+          "threshold": 0.2746196853500068,
+          "tp_fp_fn_tn": [
+            337,
+            94,
+            76,
+            21626
+          ],
+          "average_precision": {
+            "estimate": 0.8160165269298513,
+            "family_bootstrap_95_interval": [
+              0.7530816347364829,
+              0.873888332063636
+            ]
+          },
+          "auroc": {
+            "estimate": 0.9816001810406717,
+            "family_bootstrap_95_interval": [
+              0.9687921552492651,
+              0.9915786406671243
+            ]
+          },
+          "precision": {
+            "estimate": 0.7819025522041764,
+            "family_bootstrap_95_interval": [
+              0.7257730740172065,
+              0.8372108282976256
+            ]
+          },
+          "recall": {
+            "estimate": 0.8159806295399515,
+            "family_bootstrap_95_interval": [
+              0.7594306077370877,
+              0.8698979591836735
+            ]
+          },
+          "f1": {
+            "estimate": 0.7985781990521327,
+            "family_bootstrap_95_interval": [
+              0.7557603686635944,
+              0.8404384896467723
+            ]
+          },
+          "false_alarms_per_100_negatives": {
+            "estimate": 0.43278084714548803,
+            "family_bootstrap_95_interval": [
+              0.31690982627647746,
+              0.5565608181486105
+            ]
+          }
+        },
+        "ner_surprisal": {
+          "threshold": 0.15076164797137248,
+          "tp_fp_fn_tn": [
+            310,
+            179,
+            103,
+            21541
+          ],
+          "average_precision": {
+            "estimate": 0.6630799051581245,
+            "family_bootstrap_95_interval": [
+              0.5833119359513212,
+              0.7434036868336846
+            ]
+          },
+          "auroc": {
+            "estimate": 0.9746060358781587,
+            "family_bootstrap_95_interval": [
+              0.958034871802253,
+              0.9868620212844186
+            ]
+          },
+          "precision": {
+            "estimate": 0.6339468302658486,
+            "family_bootstrap_95_interval": [
+              0.5700782111928907,
+              0.703625978288311
+            ]
+          },
+          "recall": {
+            "estimate": 0.7506053268765133,
+            "family_bootstrap_95_interval": [
+              0.6924939467312349,
+              0.8074082178458547
+            ]
+          },
+          "f1": {
+            "estimate": 0.6873614190687362,
+            "family_bootstrap_95_interval": [
+              0.6403594005245842,
+              0.7352964618365944
+            ]
+          },
+          "false_alarms_per_100_negatives": {
+            "estimate": 0.8241252302025782,
+            "family_bootstrap_95_interval": [
+              0.6281272312393802,
+              1.0343270822379702
+            ]
+          }
+        },
+        "direct_fixed": {
+          "threshold": 0.039763849212109216,
+          "tp_fp_fn_tn": [
+            382,
+            589,
+            31,
+            21131
+          ],
+          "average_precision": {
+            "estimate": 0.8457700570157008,
+            "family_bootstrap_95_interval": [
+              0.7883595793791428,
+              0.8961792687704068
+            ]
+          },
+          "auroc": {
+            "estimate": 0.9863628661502994,
+            "family_bootstrap_95_interval": [
+              0.9734550971523469,
+              0.9947949178091592
+            ]
+          },
+          "precision": {
+            "estimate": 0.39340885684860966,
+            "family_bootstrap_95_interval": [
+              0.35480854383378724,
+              0.43536170917760947
+            ]
+          },
+          "recall": {
+            "estimate": 0.9249394673123487,
+            "family_bootstrap_95_interval": [
+              0.8804591454272863,
+              0.9619289340101523
+            ]
+          },
+          "f1": {
+            "estimate": 0.5520231213872833,
+            "family_bootstrap_95_interval": [
+              0.5122655122655123,
+              0.5929465882144079
+            ]
+          },
+          "false_alarms_per_100_negatives": {
+            "estimate": 2.7117863720073667,
+            "family_bootstrap_95_interval": [
+              2.3981954398441983,
+              3.029259583142525
+            ]
+          }
+        }
+      },
+      "paired": {
+        "served_marginal_minus_ner_surprisal": {
+          "average_precision": {
+            "estimate": 0.15293662177172673,
+            "family_bootstrap_95_interval": [
+              0.08455352295662454,
+              0.2257593628658
+            ]
+          },
+          "auroc": {
+            "estimate": 0.006994145162512955,
+            "family_bootstrap_95_interval": [
+              0.0024021157628493356,
+              0.012364221875867373
+            ]
+          },
+          "precision": {
+            "estimate": 0.14795572193832773,
+            "family_bootstrap_95_interval": [
+              0.10350327946937286,
+              0.19260037291349277
+            ]
+          },
+          "recall": {
+            "estimate": 0.06537530266343827,
+            "family_bootstrap_95_interval": [
+              0.028276576440344727,
+              0.1005294599723948
+            ]
+          },
+          "f1": {
+            "estimate": 0.11121677998339652,
+            "family_bootstrap_95_interval": [
+              0.07975933050224203,
+              0.14530921888433315
+            ]
+          }
+        }
+      }
+    },
+    "sentences": {
+      "complete_groups": 39,
+      "locations": 1416,
+      "human_positives": 250,
+      "methods": {
+        "served_marginal": {
+          "threshold": 0.27478511569843733,
+          "tp_fp_fn_tn": [
+            234,
+            50,
+            16,
+            1116
+          ],
+          "average_precision": {
+            "estimate": 0.9258278905214717,
+            "family_bootstrap_95_interval": [
+              0.8962657768723743,
+              0.9552538405371077
+            ]
+          },
+          "auroc": {
+            "estimate": 0.982802744425386,
+            "family_bootstrap_95_interval": [
+              0.9760126947489416,
+              0.9889478513632649
+            ]
+          },
+          "precision": {
+            "estimate": 0.823943661971831,
+            "family_bootstrap_95_interval": [
+              0.7777777777777778,
+              0.8704322299487538
+            ]
+          },
+          "recall": {
+            "estimate": 0.936,
+            "family_bootstrap_95_interval": [
+              0.9052132701421801,
+              0.9644273166447079
+            ]
+          },
+          "f1": {
+            "estimate": 0.8764044943820225,
+            "family_bootstrap_95_interval": [
+              0.8443633580947404,
+              0.9076313110990128
+            ]
+          },
+          "false_alarms_per_100_negatives": {
+            "estimate": 4.288164665523156,
+            "family_bootstrap_95_interval": [
+              3.1397101776998886,
+              5.4730983302411875
+            ]
+          }
+        },
+        "ner_surprisal": {
+          "threshold": 0.207137618496932,
+          "tp_fp_fn_tn": [
+            210,
+            69,
+            40,
+            1097
+          ],
+          "average_precision": {
+            "estimate": 0.803972126079297,
+            "family_bootstrap_95_interval": [
+              0.7348403781122925,
+              0.8681212813496412
+            ]
+          },
+          "auroc": {
+            "estimate": 0.9589571183533447,
+            "family_bootstrap_95_interval": [
+              0.945795779340471,
+              0.9698820125653345
+            ]
+          },
+          "precision": {
+            "estimate": 0.7526881720430108,
+            "family_bootstrap_95_interval": [
+              0.7009033708399743,
+              0.8072727272727273
+            ]
+          },
+          "recall": {
+            "estimate": 0.84,
+            "family_bootstrap_95_interval": [
+              0.7962962962962963,
+              0.8852459016393442
+            ]
+          },
+          "f1": {
+            "estimate": 0.7939508506616257,
+            "family_bootstrap_95_interval": [
+              0.7609933116482445,
+              0.8266666666666667
+            ]
+          },
+          "false_alarms_per_100_negatives": {
+            "estimate": 5.917667238421955,
+            "family_bootstrap_95_interval": [
+              4.356234977889067,
+              7.666406461516894
+            ]
+          }
+        },
+        "direct_fixed": {
+          "threshold": 0.039763849212109216,
+          "tp_fp_fn_tn": [
+            248,
+            283,
+            2,
+            883
+          ],
+          "average_precision": {
+            "estimate": 0.9359213076429784,
+            "family_bootstrap_95_interval": [
+              0.9038568129670372,
+              0.9632867787593902
+            ]
+          },
+          "auroc": {
+            "estimate": 0.9865626072041166,
+            "family_bootstrap_95_interval": [
+              0.9807448668106045,
+              0.991489779451317
+            ]
+          },
+          "precision": {
+            "estimate": 0.4670433145009416,
+            "family_bootstrap_95_interval": [
+              0.42886139774859283,
+              0.5085481099656357
+            ]
+          },
+          "recall": {
+            "estimate": 0.992,
+            "family_bootstrap_95_interval": [
+              0.980544747081712,
+              1.0
+            ]
+          },
+          "f1": {
+            "estimate": 0.6350832266325224,
+            "family_bootstrap_95_interval": [
+              0.5989844453433899,
+              0.672515263930752
+            ]
+          },
+          "false_alarms_per_100_negatives": {
+            "estimate": 24.271012006861064,
+            "family_bootstrap_95_interval": [
+              21.66114138078085,
+              27.195806680881308
+            ]
+          }
+        }
+      },
+      "paired": {
+        "served_marginal_minus_ner_surprisal": {
+          "average_precision": {
+            "estimate": 0.12185576444217472,
+            "family_bootstrap_95_interval": [
+              0.06085426123943797,
+              0.1877610518693024
+            ]
+          },
+          "auroc": {
+            "estimate": 0.023845626072041215,
+            "family_bootstrap_95_interval": [
+              0.015158081592388972,
+              0.033210952097761766
+            ]
+          },
+          "precision": {
+            "estimate": 0.07125548992882025,
+            "family_bootstrap_95_interval": [
+              0.03410699968181104,
+              0.10799049052520596
+            ]
+          },
+          "recall": {
+            "estimate": 0.09600000000000009,
+            "family_bootstrap_95_interval": [
+              0.05599534883720936,
+              0.13513753967490624
+            ]
+          },
+          "f1": {
+            "estimate": 0.08245364372039676,
+            "family_bootstrap_95_interval": [
+              0.055297443553774306,
+              0.11050218621657915
+            ]
+          }
+        }
+      }
+    }
+  }
+}

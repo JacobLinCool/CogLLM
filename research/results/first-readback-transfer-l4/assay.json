@@ -1,0 +1,127 @@
+{
+  "counts": {
+    "english": {
+      "test": {
+        "designed_stops": 74,
+        "families": 5,
+        "negative": 2603,
+        "observed_stops": 74,
+        "positive": 114,
+        "single_word_negative": 852,
+        "single_word_observed_stops": 20,
+        "single_word_positive": 15,
+        "stimuli": 10
+      },
+      "train": {
+        "designed_stops": 240,
+        "families": 15,
+        "negative": 8389,
+        "observed_stops": 239,
+        "positive": 389,
+        "single_word_negative": 3425,
+        "single_word_observed_stops": 84,
+        "single_word_positive": 84,
+        "stimuli": 30
+      }
+    },
+    "german": {
+      "test": {
+        "designed_stops": 464,
+        "families": 16,
+        "negative": 7845,
+        "observed_stops": 460,
+        "positive": 381,
+        "single_word_negative": 3169,
+        "single_word_observed_stops": 180,
+        "single_word_positive": 144,
+        "stimuli": 32
+      },
+      "train": {
+        "designed_stops": 1398,
+        "families": 48,
+        "negative": 23314,
+        "observed_stops": 1383,
+        "positive": 1159,
+        "single_word_negative": 9036,
+        "single_word_observed_stops": 514,
+        "single_word_positive": 372,
+        "stimuli": 96
+      }
+    }
+  },
+  "endpoint": {
+    "excluded": "Terminal actions, forward skips and opportunities following an earlier backward action",
+    "negative": "Next event is a one-region advance",
+    "positive": "Next event is a one-region backward action or restart at region one",
+    "risk_set": "First visit to a recorded region after all earlier regions were displayed, from region two until and including the trial's first explicit backward keypress",
+    "unit": "One trial opportunity at a displayed region; a region may span multiple words"
+  },
+  "english": {
+    "article": "https://doi.org/10.5070/g6011182",
+    "heldout_items": [
+      51,
+      55,
+      58,
+      62,
+      68
+    ],
+    "license": "CC BY 4.0 (OSF project)",
+    "prepared_source_sha256": {
+      "audit.json": "017698e9d91b46cd03e563e7ee685067d37cd287b9cae4ed24d822f6fb1729f6",
+      "outcomes.jsonl": "22f6286f44b6dc38f1beb0146fae5ba96c18964a18a0f749fa34f9cece100af6",
+      "stimuli.jsonl": "0f7bc8575532af166b7ff53dfc03205a1757ad2a487283daf710c5bc581d1f31",
+      "trials.jsonl": "5ed0d60c90d776d81b73a3b1c4a7603784f7bf14ab95dbac460c5cd6a33f021f"
+    },
+    "project": "https://osf.io/54bda/",
+    "raw_replay": {
+      "aligned_trials": 1786,
+      "excluded_incomplete_displays": 7,
+      "raw_events_sha256": "59865b8468cad2bae33a29b5605d02cd21dadd1d136849942391cfddc447fb7a",
+      "raw_events_url": "https://osf.io/download/zrtgf/",
+      "verified_first_visit_rows": 12498
+    }
+  },
+  "file_sha256": {
+    "stimuli.jsonl": "5c8776dc439599565fe249c981cc3f002289747a171184201801a0cbdece7fbf",
+    "targets.jsonl": "cd57b7b4ff921e639ae6896c15bf1c84e813f366eb983069091314a5089ac465",
+    "test.jsonl": "aad0ce17e1d9d9f97c6ff4578c5d2d076e7146b541ca7aa8d03059173b7438db",
+    "train.jsonl": "fe89c67a29e781cd53014b809a552e59dab890a2495a4f454b7f439c81b4535a"
+  },
+  "german": {
+    "article": "https://doi.org/10.5070/G601139",
+    "events": {
+      "sha256": "16231d0c3eef7be7a07b9bdbe4bbeebb0d0d61b7f70bf30540357fa3bfbc6dcb",
+      "url": "https://osf.io/download/r5zwc/"
+    },
+    "heldout_items": [
+      "gpa 1",
+      "gpa 11",
+      "gpa 12",
+      "gpa 14",
+      "gpa 21",
+      "gpa 24",
+      "gpa 9",
+      "gpc 16",
+      "gpc 22",
+      "gpc 23",
+      "gpc 26",
+      "gpc 28",
+      "gpc 29",
+      "gpc 3",
+      "gpc 30",
+      "gpc 6"
+    ],
+    "license": "CC BY 4.0 per OSF",
+    "prepared_source_sha256": {
+      "audit.json": "28c245b4199ed36ca2074a0429c9ed68437f1b34e85ba782dd198d749077c7a2",
+      "outcomes.jsonl": "57436ea3a1944c99a74f0eb82514fd93f74cd589400c27fce6f3f1d5ce7fe397",
+      "stimuli.jsonl": "69a2ccaccb1977e1088abe22db26d00cd488ad9867baafc54d24b77d308cb231"
+    },
+    "project": "https://osf.io/j8cbh/"
+  },
+  "overlap": {
+    "five_word_shingle_matches": 0,
+    "normalized_document_matches": 0,
+    "reader_overlap": "Study-local pseudonyms do not identify readers across studies."
+  }
+}

@@ -1,0 +1,123 @@
+{
+  "constant_train_logits": {
+    "evidence": -4.349565340541575,
+    "issue": -4.756344127291144,
+    "sense": 2.0010931343026925
+  },
+  "excluded_observations": {
+    "test": {
+      "evidence_no_exact_geometry": 1,
+      "evidence_no_prior_proxy": 62
+    },
+    "train": {
+      "evidence_no_exact_geometry": 1,
+      "evidence_no_prior_proxy": 163
+    }
+  },
+  "heldout": {
+    "evidence": {
+      "groups": 20,
+      "minus_independent": {
+        "joint": {
+          "ci95": [
+            -0.6879739186123977,
+            0.45717442873599784
+          ],
+          "groups": 20,
+          "mean": -0.18095386277617753
+        },
+        "joint_semantic": {
+          "ci95": [
+            -0.3733549063428685,
+            0.5094246743791814
+          ],
+          "groups": 20,
+          "mean": -0.010621032319845687
+        }
+      },
+      "nll_by_mode": {
+        "constant_train_rate": 2.4022132178395883,
+        "independent": 6.669850607283968,
+        "joint": 6.48889674450779,
+        "joint_semantic": 6.659229574964123
+      },
+      "observation_weight": 29,
+      "observed_rows": 29
+    },
+    "issue": {
+      "groups": 79,
+      "minus_independent": {
+        "joint": {
+          "ci95": [
+            -3.3887547524867434e-05,
+            0.0002801585143246715
+          ],
+          "groups": 79,
+          "mean": 0.00010403233111887708
+        },
+        "joint_semantic": {
+          "ci95": [
+            -5.8161694990002154e-05,
+            0.00015098719856180057
+          ],
+          "groups": 79,
+          "mean": 3.74591465692171e-05
+        }
+      },
+      "nll_by_mode": {
+        "constant_train_rate": 0.06195366406646751,
+        "independent": 0.062089451824559584,
+        "joint": 0.06219348415567846,
+        "joint_semantic": 0.0621269109711288
+      },
+      "observation_weight": 79104,
+      "observed_rows": 7918
+    },
+    "sense": {
+      "groups": 11,
+      "minus_independent": {
+        "joint": {
+          "ci95": [
+            -0.05241197351099741,
+            0.002721570587983828
+          ],
+          "groups": 11,
+          "mean": -0.02356443379001579
+        }
+      },
+      "nll_by_mode": {
+        "constant_train_rate": 0.36147830046660767,
+        "independent": 0.4123597891220851,
+        "joint": 0.3887953553320693
+      },
+      "observation_weight": 793,
+      "observed_rows": 22
+    }
+  },
+  "nll_unit": "nats per observed vote or evidence interval; average across seeds",
+  "seeds": [
+    21,
+    47,
+    101
+  ],
+  "train": {
+    "evidence": {
+      "fit_rows": 6823,
+      "groups": 51,
+      "observation_weight": 75,
+      "observed_rows": 75
+    },
+    "issue": {
+      "fit_rows": 25111,
+      "groups": 267,
+      "observation_weight": 250301,
+      "observed_rows": 25111
+    },
+    "sense": {
+      "fit_rows": 66,
+      "groups": 33,
+      "observation_weight": 2346,
+      "observed_rows": 66
+    }
+  }
+}

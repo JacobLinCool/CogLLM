@@ -1,0 +1,90 @@
+{
+  "repository_revision": "7c52205d18f16b80e3ffccb4e9da88b1942df310",
+  "files_sha256": {
+    "readability.csv": "54082bb202d8916f296b37c9b304fd9f2c102920587ea6c346ea626be3d44ab1",
+    "jargon.json": "426e43f8fa5b9d4fbba2c7b3fabad93f23d0ea7ccd4a45fb906e23f927ed1e1d"
+  },
+  "matching": "unique source, side, split and original text after removing only whitespace",
+  "split_counts": {
+    "train": {
+      "sentences": 2587,
+      "spans": 5305,
+      "exact_unique_sentences": 2559,
+      "exact_spans": 5223,
+      "ambiguous": 21,
+      "unmatched": 7
+    },
+    "dev": {
+      "sentences": 784,
+      "spans": 1830,
+      "exact_unique_sentences": 780,
+      "exact_spans": 1830,
+      "ambiguous": 4
+    },
+    "test": {
+      "sentences": 1140,
+      "spans": 2130,
+      "exact_unique_sentences": 1131,
+      "exact_spans": 2130,
+      "ambiguous": 9
+    }
+  },
+  "all_annotations_by_category": {
+    "general-complex": 943,
+    "medical-jargon-google-easy": 5270,
+    "abbr-medical": 1537,
+    "general-medical-multisense": 47,
+    "medical-jargon-google-hard": 699,
+    "medical-name-entity": 383,
+    "abbr-general": 386
+  },
+  "aligned_test_sentences_by_source": {
+    "cochrane_all": 131,
+    "nhir_Efficaacy_and_Mechanism_Evaluation": 110,
+    "nhir_Health_Services_and_Delivery_Research": 117,
+    "nhir_Health_Technology_Assessment": 119,
+    "nhir_Programme_Grants_for_Applied_Research": 115,
+    "nhir_Public_Health_Research": 120,
+    "plos_biology": 55,
+    "plos_computational_biology": 42,
+    "plos_genetics": 49,
+    "plos_neglected_tropical_diseases": 61,
+    "plos_pathogens": 46,
+    "pnas": 48,
+    "MSD": 26,
+    "wiki": 32,
+    "elife": 60
+  },
+  "aligned_test_span_coverage_by_app_word_boundaries": {
+    "medical-jargon-google-easy": {
+      "multiple_full_app_words": 677,
+      "one_full_app_word": 444,
+      "partial_word_boundary": 2
+    },
+    "abbr-medical": {
+      "one_full_app_word": 410,
+      "partial_word_boundary": 22
+    },
+    "medical-name-entity": {
+      "multiple_full_app_words": 50,
+      "one_full_app_word": 50,
+      "partial_word_boundary": 2
+    },
+    "general-complex": {
+      "multiple_full_app_words": 116,
+      "one_full_app_word": 72
+    },
+    "abbr-general": {
+      "one_full_app_word": 79,
+      "multiple_full_app_words": 3
+    },
+    "medical-jargon-google-hard": {
+      "one_full_app_word": 49,
+      "multiple_full_app_words": 145
+    },
+    "general-medical-multisense": {
+      "one_full_app_word": 9
+    }
+  },
+  "scope": "Author span annotations, individually published sentences, no reader-by-reader response or article keys."
+}

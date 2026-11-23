@@ -1,0 +1,197 @@
+{
+  "experiment": "Zhan et al. (2020), Experiment 1, eligible continuation choices",
+  "observed_trials": 1651,
+  "stimulus_families": 36,
+  "folds": 5,
+  "reader_scope": "Overlapping readers; held-out stimulus families.",
+  "ridge_penalty": 1.0,
+  "bootstrap": "10,000 paired family draws stratified by verb; fixed reader panel and fitted out-of-fold predictions.",
+  "input_sha256": {
+    "stimuli.jsonl": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+    "trials.jsonl": "d67c0223e3628084c50136e031efe3b1f97f92b56ccf0478ebafc2ad110980f8",
+    "splits.json": "b9b3f20ff7936b5c6a8046493b1f0d226b9e27b17a866693e712fb91671b2c2f",
+    "features.npz": "08f3552ea1c1487a373b1ee55a8df505c2bb2ebe3069530d5bdd18c7ed4c6d04"
+  },
+  "human_by_verb_type": {
+    "IC-1": {
+      "families": 16,
+      "total_trials": [
+        350,
+        390
+      ],
+      "subject_choices": [
+        277,
+        343
+      ],
+      "item_mean_shift": 0.08676217137172516,
+      "item_mean_shift_95_ci": [
+        0.02601777743958093,
+        0.15365469623657552
+      ]
+    },
+    "IC-2": {
+      "families": 20,
+      "total_trials": [
+        430,
+        481
+      ],
+      "subject_choices": [
+        51,
+        216
+      ],
+      "item_mean_shift": 0.33135690718299415,
+      "item_mean_shift_95_ci": [
+        0.2798678308205482,
+        0.3764270902205684
+      ]
+    }
+  },
+  "methods": {
+    "prompt_type": {
+      "brier": 0.24709795939431922,
+      "condition_brier": {
+        "free": 0.2600599719441503,
+        "pronoun": 0.23549018696163473
+      },
+      "mean_absolute_item_shift_error": 0.15566776415200195,
+      "shift_by_verb_type": {
+        "IC-1": {
+          "mean": 0.2275256208521416,
+          "error_vs_human": 0.1407634494804164,
+          "error_vs_human_95_ci": [
+            0.07103198513201393,
+            0.20791951556655913
+          ]
+        },
+        "IC-2": {
+          "mean": 0.21050600453653687,
+          "error_vs_human": -0.1208509026464573,
+          "error_vs_human_95_ci": [
+            -0.16639557557649576,
+            -0.06899123213827908
+          ]
+        }
+      }
+    },
+    "before_pronoun_plus_prompt_type": {
+      "brier": 0.21494390961855414,
+      "condition_brier": {
+        "free": 0.21748541703747226,
+        "pronoun": 0.212667932825493
+      },
+      "mean_absolute_item_shift_error": 0.14703691163697485,
+      "shift_by_verb_type": {
+        "IC-1": {
+          "mean": 0.2474689099374573,
+          "error_vs_human": 0.16070673856573212,
+          "error_vs_human_95_ci": [
+            0.09081815728809933,
+            0.2301376712529966
+          ]
+        },
+        "IC-2": {
+          "mean": 0.24036106834138732,
+          "error_vs_human": -0.09099583884160684,
+          "error_vs_human_95_ci": [
+            -0.13602156567123808,
+            -0.040483565939280965
+          ]
+        }
+      }
+    },
+    "observed_stop_hidden": {
+      "brier": 0.2071900734514856,
+      "condition_brier": {
+        "free": 0.21390833726661287,
+        "pronoun": 0.20117371779614768
+      },
+      "mean_absolute_item_shift_error": 0.16060056689258728,
+      "shift_by_verb_type": {
+        "IC-1": {
+          "mean": 0.2527373790405829,
+          "error_vs_human": 0.16597520766885776,
+          "error_vs_human_95_ci": [
+            0.08518660082134152,
+            0.24633865812711936
+          ]
+        },
+        "IC-2": {
+          "mean": 0.2106484283324405,
+          "error_vs_human": -0.12070847885055365,
+          "error_vs_human_95_ci": [
+            -0.16223072113839138,
+            -0.07532391530962247
+          ]
+        }
+      }
+    },
+    "observed_stop_hidden_plus_prompt_type": {
+      "brier": 0.20740605518583716,
+      "condition_brier": {
+        "free": 0.21434377938752136,
+        "pronoun": 0.20119316784104535
+      },
+      "mean_absolute_item_shift_error": 0.16068671546369437,
+      "shift_by_verb_type": {
+        "IC-1": {
+          "mean": 0.25548872756753294,
+          "error_vs_human": 0.1687265561958078,
+          "error_vs_human_95_ci": [
+            0.08782133760649714,
+            0.2492839921186098
+          ]
+        },
+        "IC-2": {
+          "mean": 0.212986306678781,
+          "error_vs_human": -0.11837060050421318,
+          "error_vs_human_95_ci": [
+            -0.16027842622011926,
+            -0.07251555409115724
+          ]
+        }
+      }
+    },
+    "author_verb_type_plus_prompt_interaction": {
+      "brier": 0.16058328023177207,
+      "condition_brier": {
+        "free": 0.13348395420244402,
+        "pronoun": 0.18485133339236431
+      },
+      "mean_absolute_item_shift_error": 0.09579809061314477,
+      "shift_by_verb_type": {
+        "IC-1": {
+          "mean": 0.1086750567541219,
+          "error_vs_human": 0.02191288538239674,
+          "error_vs_human_95_ci": [
+            -0.04736381132492793,
+            0.08786289245553136
+          ]
+        },
+        "IC-2": {
+          "mean": 0.3150751495356615,
+          "error_vs_human": -0.016281757647332598,
+          "error_vs_human_95_ci": [
+            -0.06131990451952581,
+            0.03529799703260197
+          ]
+        }
+      }
+    }
+  },
+  "brier_differences_vs_before_pronoun_plus_prompt_type": {
+    "observed_stop_hidden": {
+      "difference": -0.007753836167068506,
+      "95_ci": [
+        -0.012704274888456388,
+        -0.0030691348588873747
+      ]
+    },
+    "observed_stop_hidden_plus_prompt_type": {
+      "difference": -0.007537854432716914,
+      "95_ci": [
+        -0.012355615700588561,
+        -0.00301266218284877
+      ]
+    }
+  }
+}

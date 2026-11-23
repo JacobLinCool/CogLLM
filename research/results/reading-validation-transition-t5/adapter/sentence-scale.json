@@ -1,0 +1,179 @@
+{
+  "protocol_sha256": "3e1a5e63bdc1848469a6ece110879182173a6ddb99f62ba5c24dc9e21a14e168",
+  "input_sha256": "6acf4a262716687a591fbd0522b743bd820c4fa99bd7b3ea1c3be00309f759bb",
+  "variant": "adapter",
+  "movie_groups": 39,
+  "sentences": 1416,
+  "eligible_words": 22133,
+  "unusable_sentences": 245,
+  "methods": {
+    "qwen": {
+      "tp_fp_fn_tn": [
+        249,
+        299,
+        1,
+        867
+      ],
+      "precision": {
+        "estimate": 0.4543795620437956,
+        "family_bootstrap_95_interval": [
+          0.4118736046036288,
+          0.49686880151389545
+        ]
+      },
+      "recall": {
+        "estimate": 0.996,
+        "family_bootstrap_95_interval": [
+          0.9875518672199171,
+          1.0
+        ]
+      },
+      "f1": {
+        "estimate": 0.6240601503759399,
+        "family_bootstrap_95_interval": [
+          0.582798459563543,
+          0.6632662711995264
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 25.643224699828473,
+        "family_bootstrap_95_interval": [
+          22.57478434521236,
+          29.279740081659213
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 247,
+        "evaluated": 249,
+        "fraction": 0.9919678714859438
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 247,
+        "evaluated": 548,
+        "fraction": 0.45072992700729925
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 296,
+        "evaluated": 405,
+        "fraction": 0.7308641975308642
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 296,
+        "evaluated": 799,
+        "fraction": 0.3704630788485607
+      }
+    },
+    "ner_surprisal": {
+      "tp_fp_fn_tn": [
+        243,
+        248,
+        7,
+        918
+      ],
+      "precision": {
+        "estimate": 0.49490835030549896,
+        "family_bootstrap_95_interval": [
+          0.4498869451030167,
+          0.5411528685548294
+        ]
+      },
+      "recall": {
+        "estimate": 0.972,
+        "family_bootstrap_95_interval": [
+          0.9517523478771277,
+          0.9889705882352942
+        ]
+      },
+      "f1": {
+        "estimate": 0.6558704453441295,
+        "family_bootstrap_95_interval": [
+          0.6132922167882359,
+          0.6963199498273763
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 21.269296740994854,
+        "family_bootstrap_95_interval": [
+          18.499106552543644,
+          24.375067060085836
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 240,
+        "evaluated": 243,
+        "fraction": 0.9876543209876543
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 240,
+        "evaluated": 491,
+        "fraction": 0.48879837067209775
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 325,
+        "evaluated": 400,
+        "fraction": 0.8125
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 325,
+        "evaluated": 698,
+        "fraction": 0.4656160458452722
+      }
+    },
+    "t5_adapter": {
+      "tp_fp_fn_tn": [
+        3,
+        2,
+        247,
+        1164
+      ],
+      "precision": {
+        "estimate": 0.6,
+        "family_bootstrap_95_interval": [
+          0.0,
+          1.0
+        ]
+      },
+      "recall": {
+        "estimate": 0.012,
+        "family_bootstrap_95_interval": [
+          0.0,
+          0.024390243902439025
+        ]
+      },
+      "f1": {
+        "estimate": 0.023529411764705882,
+        "family_bootstrap_95_interval": [
+          0.0,
+          0.046822742474916385
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 0.17152658662092624,
+        "family_bootstrap_95_interval": [
+          0.0,
+          0.43327556325823224
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 3,
+        "evaluated": 3,
+        "fraction": 1.0
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 3,
+        "evaluated": 5,
+        "fraction": 0.6
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 3,
+        "evaluated": 3,
+        "fraction": 1.0
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 3,
+        "evaluated": 3,
+        "fraction": 1.0
+      }
+    }
+  }
+}

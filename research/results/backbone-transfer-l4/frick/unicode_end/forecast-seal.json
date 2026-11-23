@@ -1,0 +1,107 @@
+{
+  "file_sha256": {
+    "fit_weights.npz": "c238b387dac8ec4368bfa296913dce2280c098cd4e4f8446c069604924fb8adc",
+    "fits.json": "75e64838a941063dc34f800c2ecd17fb4de47c826c79ed0160d36d8f0e10a40b",
+    "forecasts.jsonl": "b450420e14be07d2f8e24554075516a896e27cbac82f6e6ec467506d7883a553"
+  },
+  "inputs": {
+    "combined_stimuli_sha256": "bff452ca9455d1dfb71972394ce56f236a3c1ae408f60f39db7693633dc731a2",
+    "extractions": {
+      "gemma4": {
+        "compute_dtype": "float32",
+        "gpu": "NVIDIA L4",
+        "independent_causal_checks": 10,
+        "model": "google/gemma-4-E2B",
+        "model_manifest_sha256": "bd9985a0fffda34cf3e4169cf6efcd899d229bdef3ff5300ce5c56ad15a0f893",
+        "revision": "433813a669639fd7eaa83155828e9000ed357d53",
+        "seal_sha256": "6915a683707a8d3f253bb2fe72b776ae21f70c5efd11eead88543448806784ef",
+        "states_shape": [
+          12018,
+          1536
+        ],
+        "transformers": "5.17.0",
+        "views": {
+          "separator_end": {
+            "maximum_relative_l2": 1.7260293913511964e-05,
+            "rejected_stops": 0,
+            "shared_prechange_prefixes": 81,
+            "status": "scored"
+          },
+          "unicode_end": {
+            "maximum_relative_l2": 2.4870384350339466e-05,
+            "rejected_stops": 0,
+            "shared_prechange_prefixes": 81,
+            "status": "scored"
+          }
+        }
+      },
+      "lfm3": {
+        "compute_dtype": "float32",
+        "gpu": "NVIDIA L4",
+        "independent_causal_checks": 10,
+        "model": "LiquidAI/LFM3-1.7B-Base",
+        "model_manifest_sha256": "61fa27e774796c62d9270e19b9db5fa675e1aac3bf44c1a52ce79449cb62e83e",
+        "revision": "7bca5038823c0d0f14efe06439109354a10e014c",
+        "seal_sha256": "846aa517c06ecef197b7a8f28a71d7ba6c6dbe8a20b1d7c3397879fb917c2da2",
+        "states_shape": [
+          11434,
+          2048
+        ],
+        "transformers": "5.17.0",
+        "views": {
+          "separator_end": {
+            "maximum_relative_l2": 1.5823947273789034e-06,
+            "rejected_stops": 0,
+            "shared_prechange_prefixes": 81,
+            "status": "scored"
+          },
+          "unicode_end": {
+            "incomplete_documents": 40,
+            "rejected_stops": 584,
+            "status": "unavailable",
+            "unavailable_stops_by_reason": {
+              "no_token_end": 584
+            }
+          }
+        }
+      },
+      "qwen": {
+        "compute_dtype": "float32",
+        "gpu": "NVIDIA L4",
+        "independent_causal_checks": 10,
+        "model": "Qwen/Qwen3.5-2B",
+        "model_manifest_sha256": "bd9985a0fffda34cf3e4169cf6efcd899d229bdef3ff5300ce5c56ad15a0f893",
+        "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+        "seal_sha256": "ee86586b297f474674b4c7d6d16f5cada37a91a8092d003ef63be9f1bc02a5ec",
+        "states_shape": [
+          12018,
+          2048
+        ],
+        "transformers": "5.17.0",
+        "views": {
+          "separator_end": {
+            "maximum_relative_l2": 1.9899819637647068e-06,
+            "rejected_stops": 0,
+            "shared_prechange_prefixes": 81,
+            "status": "scored"
+          },
+          "unicode_end": {
+            "maximum_relative_l2": 1.2501080310615337e-06,
+            "rejected_stops": 0,
+            "shared_prechange_prefixes": 81,
+            "status": "scored"
+          }
+        }
+      }
+    },
+    "model_pins_sha256": "61fa27e774796c62d9270e19b9db5fa675e1aac3bf44c1a52ce79449cb62e83e",
+    "original_scorer_sha256": "84e2601bf605601e8513707a6654b4b43510d8f3c7064d15ef49551798d62e1b",
+    "outcomes_sha256": "b26b6f225eab250788083da5456a169519a06f9b25415bec56695b0af21aeb00",
+    "prepared_manifest_sha256": "9684f3223ff72eebeb1ae6bdbf1723fecaae3f76e5c25df42a97dc07629f1684",
+    "protocol_sha256": "edfb38bf8a35a04e3c4966c33d2128067cc27e54fa424141308917629d9901a9",
+    "scorer_sha256": "d1d269198a656b0eac9a24d05429b5df150473e60cd5cc58302451546df3d9af",
+    "source_audit_sha256": "18275a8edaccdac253a1cc1057debbcc11adf82af69dc6efbdd982cd7079a6e4",
+    "views_sha256": "6578a2fe2a614edeb35ff97be063c0e121af02edf77f9b7ae3995eb50e3d93d6"
+  },
+  "view": "unicode_end"
+}

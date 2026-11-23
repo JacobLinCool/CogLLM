@@ -1,0 +1,120 @@
+{
+  "data": "BSPR Experiment 1 discourse stimuli",
+  "scope": "First-visit movement within subsequently alignable displays, with five held-out material families.",
+  "first_visit_target": "Observed backward keypress or restart versus observed advance by one region.",
+  "destination_target": "Furthest region reached in the contiguous backward movement, conditional on readback.",
+  "coverage": {
+    "holdout_material_families": [
+      "bspr-item-51",
+      "bspr-item-55",
+      "bspr-item-58",
+      "bspr-item-62",
+      "bspr-item-68"
+    ],
+    "scored_material_families": [
+      "bspr-item-51",
+      "bspr-item-55",
+      "bspr-item-58",
+      "bspr-item-62",
+      "bspr-item-68"
+    ],
+    "scored_readers": 96,
+    "intended_first_visits": 2912,
+    "scored_first_visits": 2912,
+    "scored_backward_episodes": 134,
+    "scored_unique_stimulus_stops": 74,
+    "scored_backward_episodes_with_two_or_more_earlier_regions": 123,
+    "positive_followed_by_progress_beyond_origin": 84,
+    "rejected_holdout_stimuli": []
+  },
+  "events": {
+    "metrics": {
+      "event_prior": {
+        "brier": 0.04394064516099315,
+        "nll_nats": 0.18705106718763473,
+        "average_precision": 0.04601648351648352
+      },
+      "event_position": {
+        "brier": 0.040868812744094374,
+        "nll_nats": 0.16972529244101808,
+        "average_precision": 0.3298272136761442
+      },
+      "event_qwen": {
+        "brier": 0.03694136724111727,
+        "nll_nats": 0.15753008905532312,
+        "average_precision": 0.4600580598907807
+      }
+    },
+    "brier_qwen_minus_position": {
+      "difference": -0.003927445502977108,
+      "descriptive_paired_material_95_ci": [
+        -0.005011349562290582,
+        -0.0028535010603752214
+      ],
+      "groups": 5
+    }
+  },
+  "destinations": {
+    "metrics": {
+      "source_distance": {
+        "top_1_fractional_ties": 0.6044776119402985,
+        "expected_destination_mae_regions": 1.6563779782669692,
+        "nll_nats": 1.178399451270022
+      },
+      "source_qwen": {
+        "top_1_fractional_ties": 0.6044776119402985,
+        "expected_destination_mae_regions": 1.5802533358281061,
+        "nll_nats": 1.1761970156408574
+      },
+      "previous_region": {
+        "top_1_fractional_ties": 0.48507462686567165,
+        "expected_destination_mae_regions": 1.9402985074626866
+      }
+    },
+    "nll_qwen_minus_distance": {
+      "difference": -0.0022024356291646327,
+      "descriptive_paired_material_95_ci": [
+        -0.02376910186520211,
+        0.023236242305415104
+      ],
+      "groups": 5
+    }
+  },
+  "destinations_with_multiple_sources": {
+    "metrics": {
+      "source_distance": {
+        "top_1_fractional_ties": 0.5691056910569106,
+        "expected_destination_mae_regions": 1.8045093421770229,
+        "nll_nats": 1.2837847680502685
+      },
+      "source_qwen": {
+        "top_1_fractional_ties": 0.5691056910569106,
+        "expected_destination_mae_regions": 1.7215768048859041,
+        "nll_nats": 1.2813853666331296
+      },
+      "previous_region": {
+        "top_1_fractional_ties": 0.43902439024390244,
+        "expected_destination_mae_regions": 2.113821138211382
+      }
+    },
+    "nll_qwen_minus_distance": {
+      "difference": -0.0023994014171387053,
+      "descriptive_paired_material_95_ci": [
+        -0.02617930687892464,
+        0.024996563692188976
+      ],
+      "groups": 5
+    }
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 43,
+    "resampled": "paired item families; predictions and readers held fixed"
+  },
+  "input_sha256": {
+    "outcomes": "22f6286f44b6dc38f1beb0146fae5ba96c18964a18a0f749fa34f9cece100af6",
+    "forecast": "930797f134b1fe11f83f1cc5cc7576df10bf72c7a29488aed6a356d96e7533d1",
+    "seal": "98ee836c9bd5ca4a2024a1e695766344511cd26c9485146429396695d78da6ae",
+    "extraction": "1d956d6df48baa7ad4528a63dddc121fbac02a00b70685a1d066fe6fc4dfbce4"
+  }
+}

@@ -1,0 +1,360 @@
+{
+  "articles": 165,
+  "calibrated_token_minus_calibrated": {
+    "pooled_rank": {
+      "cumulative_brier": {
+        "article_cluster_ci95": [
+          -0.0015808689297950108,
+          -0.00011088515442353375
+        ],
+        "articles": 165,
+        "difference": -0.0008248997811556479
+      },
+      "interval_nll_nats": {
+        "article_cluster_ci95": [
+          -0.020693210476195205,
+          -0.009737458992451358
+        ],
+        "articles": 165,
+        "difference": -0.015078117570154212
+      }
+    },
+    "position": {
+      "cumulative_brier": {
+        "article_cluster_ci95": [
+          -0.0028277360303781613,
+          0.007080730498132346
+        ],
+        "articles": 165,
+        "difference": 0.001919832756884427
+      },
+      "interval_nll_nats": {
+        "article_cluster_ci95": [
+          -0.003436008174558631,
+          0.05867264665012374
+        ],
+        "articles": 165,
+        "difference": 0.027390694509788996
+      }
+    },
+    "question_only": {
+      "cumulative_brier": {
+        "article_cluster_ci95": [
+          -0.015787265546260826,
+          -0.0009399556248504653
+        ],
+        "articles": 165,
+        "difference": -0.008177493485545292
+      },
+      "interval_nll_nats": {
+        "article_cluster_ci95": [
+          -0.16997384958243344,
+          -0.0631164298999115
+        ],
+        "articles": 165,
+        "difference": -0.11711382822799367
+      }
+    }
+  },
+  "fold_assignment_sha256": "d9490ea4b2be026281e7deb97a17b6b9db2aa0a51b30f1a13c5ddd4c484079b0",
+  "frozen_exp_mrc_transfer_weights": {
+    "methods": {
+      "pooled_rank": {
+        "a": 2.14687961810315,
+        "b": 0.6948125054343336,
+        "fit_questions": 555,
+        "iterations": 10,
+        "training_nll_nats": 3.0859831055563256
+      },
+      "position": {
+        "a": 2.8124643527857613,
+        "b": 0.7047901858526343,
+        "fit_questions": 555,
+        "iterations": 11,
+        "training_nll_nats": 3.04486352556745
+      },
+      "question_only": {
+        "a": 0.14431701430514113,
+        "b": 0.9104591242465657,
+        "fit_questions": 555,
+        "iterations": 5,
+        "training_nll_nats": 3.1828585210164575
+      },
+      "token_rank": {
+        "a": 2.183121710748096,
+        "b": 0.7103439182603112,
+        "fit_questions": 555,
+        "iterations": 10,
+        "training_nll_nats": 3.071303095243664
+      }
+    },
+    "use": "new wholly held-out corpora only"
+  },
+  "input_sha256": {
+    "articles_sha256": "3f696df5c24b2b18ff1a4041c36fbe14b8823853bc1eec0078dc780efdd31fdc",
+    "assay_sha256": "0e177e3bfca4047dc48cb47cd9429daf469962b6b6d99899ce650b06fee67bb0",
+    "comparison_code_sha256": "483a3ce86bbfe51b1102e7ca3e703d66063d1ae34648e60310e2bd33f5cd714c",
+    "comparison_protocol_sha256": "b8b8fba12a51b080c306e01f784550db586a89e9bcbf731ff0c7746aa7415f6b",
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "outcomes_sha256": "8049bf5493202795ade880bf7fbd14bfabe7594f05a125c6803bfc4201368a84",
+    "predictions_sha256": "bdd8183ffbea53ba034c852f2e52271e2b60b61b5bd3bc293c0c59e0821b2da2",
+    "protocol_sha256": "dd2addc249bef59d51cbfcecc6017cdbd3e70129231bc5f2f8c22cfcb76a7e5f",
+    "queries_sha256": "aa9e86e80294d179a76db4780cf34918693492387fd58b52e65f8055a5fb34d9",
+    "scorer_sha256": "e1098d8cbcd79cc61f341da82c96401f13a9cb99749946393a06ac77eea1f539",
+    "seal_sha256": "62a4a1fe229a03f50152249aac974617123ddfb954b9ac22d14c04c9d0bdc91c"
+  },
+  "methods": {
+    "pooled_rank": {
+      "folds": [
+        {
+          "a": 2.1518414336770912,
+          "b": 0.7119532788665829,
+          "fit_questions": 451,
+          "iterations": 10,
+          "training_nll_nats": 3.0917062069957937
+        },
+        {
+          "a": 2.1043979176960703,
+          "b": 0.6844775912711079,
+          "fit_questions": 439,
+          "iterations": 10,
+          "training_nll_nats": 3.111976348911632
+        },
+        {
+          "a": 2.2027328122228793,
+          "b": 0.6991276228192659,
+          "fit_questions": 442,
+          "iterations": 10,
+          "training_nll_nats": 3.058443268089652
+        },
+        {
+          "a": 2.146894852526929,
+          "b": 0.6966837634445661,
+          "fit_questions": 439,
+          "iterations": 10,
+          "training_nll_nats": 3.1082893813523227
+        },
+        {
+          "a": 2.136398752204074,
+          "b": 0.6841377735539208,
+          "fit_questions": 449,
+          "iterations": 10,
+          "training_nll_nats": 3.0573250967441203
+        }
+      ],
+      "means": {
+        "cumulative_brier": {
+          "calibrated": 0.18438536898411348,
+          "raw": 0.4493832194019136
+        },
+        "first_stop_probability": {
+          "calibrated": 0.053682962887655214,
+          "raw": 0.000834371633878605
+        },
+        "interval_nll_nats": {
+          "calibrated": 3.091100512182853,
+          "raw": 5.116135225897273
+        }
+      },
+      "same_stop": {
+        "calibrated_intensity_order_changes": 0,
+        "raw_intensity_order": {
+          "loss": 261,
+          "tie": 0,
+          "win": 437
+        }
+      }
+    },
+    "position": {
+      "folds": [
+        {
+          "a": 2.8171488114054006,
+          "b": 0.7155286051544427,
+          "fit_questions": 451,
+          "iterations": 12,
+          "training_nll_nats": 3.0559951805314816
+        },
+        {
+          "a": 2.787901499070481,
+          "b": 0.7044769242705781,
+          "fit_questions": 439,
+          "iterations": 11,
+          "training_nll_nats": 3.0538966709360147
+        },
+        {
+          "a": 2.8654720520171746,
+          "b": 0.7079663823942663,
+          "fit_questions": 442,
+          "iterations": 11,
+          "training_nll_nats": 3.0147550302103165
+        },
+        {
+          "a": 2.816074202157653,
+          "b": 0.7039002271069544,
+          "fit_questions": 439,
+          "iterations": 11,
+          "training_nll_nats": 3.06193933730311
+        },
+        {
+          "a": 2.783109061471547,
+          "b": 0.6937228213952438,
+          "fit_questions": 449,
+          "iterations": 11,
+          "training_nll_nats": 3.035736947116203
+        }
+      ],
+      "means": {
+        "cumulative_brier": {
+          "calibrated": 0.1816406364460734,
+          "raw": 0.49590277554463175
+        },
+        "first_stop_probability": {
+          "calibrated": 0.04452494245411138,
+          "raw": 0.0002785893401343128
+        },
+        "interval_nll_nats": {
+          "calibrated": 3.0486317001029097,
+          "raw": 5.948891883324333
+        }
+      },
+      "same_stop": {
+        "calibrated_intensity_order_changes": 0,
+        "raw_intensity_order": {
+          "loss": 0,
+          "tie": 698,
+          "win": 0
+        }
+      }
+    },
+    "question_only": {
+      "folds": [
+        {
+          "a": 0.09268733218819926,
+          "b": 0.9195420196636013,
+          "fit_questions": 451,
+          "iterations": 6,
+          "training_nll_nats": 3.2136642875518096
+        },
+        {
+          "a": 0.12571133820735064,
+          "b": 0.9066573762974565,
+          "fit_questions": 439,
+          "iterations": 5,
+          "training_nll_nats": 3.19537245904916
+        },
+        {
+          "a": 0.2029718067607309,
+          "b": 0.9459002442737544,
+          "fit_questions": 442,
+          "iterations": 6,
+          "training_nll_nats": 3.129092766595924
+        },
+        {
+          "a": 0.14552202456380042,
+          "b": 0.9046825432900597,
+          "fit_questions": 439,
+          "iterations": 5,
+          "training_nll_nats": 3.186388670190184
+        },
+        {
+          "a": 0.15939738656929936,
+          "b": 0.8832888842982742,
+          "fit_questions": 449,
+          "iterations": 5,
+          "training_nll_nats": 3.183701966272317
+        }
+      ],
+      "means": {
+        "cumulative_brier": {
+          "calibrated": 0.1917379626885031,
+          "raw": 0.19422132625665378
+        },
+        "first_stop_probability": {
+          "calibrated": 0.04938828794414477,
+          "raw": 0.031860351347605495
+        },
+        "interval_nll_nats": {
+          "calibrated": 3.1931362228406925,
+          "raw": 3.1962843068087814
+        }
+      },
+      "same_stop": {
+        "calibrated_intensity_order_changes": 0,
+        "raw_intensity_order": {
+          "loss": 321,
+          "tie": 0,
+          "win": 377
+        }
+      }
+    },
+    "token_rank": {
+      "folds": [
+        {
+          "a": 2.1879305689924404,
+          "b": 0.7273804096634976,
+          "fit_questions": 451,
+          "iterations": 10,
+          "training_nll_nats": 3.078954923008211
+        },
+        {
+          "a": 2.1454337780313986,
+          "b": 0.7013573154359598,
+          "fit_questions": 439,
+          "iterations": 10,
+          "training_nll_nats": 3.0939053292101577
+        },
+        {
+          "a": 2.2340080233647206,
+          "b": 0.7137529965566486,
+          "fit_questions": 442,
+          "iterations": 10,
+          "training_nll_nats": 3.045205244806523
+        },
+        {
+          "a": 2.1797341747682775,
+          "b": 0.7112766355784714,
+          "fit_questions": 439,
+          "iterations": 10,
+          "training_nll_nats": 3.0937866047933755
+        },
+        {
+          "a": 2.1754946618590756,
+          "b": 0.7000443509413209,
+          "fit_questions": 449,
+          "iterations": 10,
+          "training_nll_nats": 3.042645268880057
+        }
+      ],
+      "means": {
+        "cumulative_brier": {
+          "calibrated": 0.18356046920295782,
+          "raw": 0.4496561080308346
+        },
+        "first_stop_probability": {
+          "calibrated": 0.05159637819838474,
+          "raw": 0.0008643727886063206
+        },
+        "interval_nll_nats": {
+          "calibrated": 3.0760223946126986,
+          "raw": 5.090314929651602
+        }
+      },
+      "same_stop": {
+        "calibrated_intensity_order_changes": 0,
+        "raw_intensity_order": {
+          "loss": 263,
+          "tie": 0,
+          "win": 435
+        }
+      }
+    }
+  },
+  "questions": 555,
+  "references": 1110,
+  "resampling": {
+    "draws": 10000,
+    "group": "article",
+    "seed": 20261121
+  },
+  "scope": "retrospective article-grouped out-of-fold, with identical calibration models in every arm"
+}

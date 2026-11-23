@@ -1,0 +1,1494 @@
+{
+  "metrics": {
+    "ease": {
+      "nll": {
+        "registered_form": {
+          "mean": 1.342936206978286,
+          "interval": [
+            1.2627716058158727,
+            1.4343759151465652
+          ]
+        },
+        "text_form": {
+          "mean": 1.355701058461103,
+          "interval": [
+            1.2827507608748578,
+            1.4427526792700496
+          ]
+        },
+        "medical": {
+          "mean": 1.3397797623286885,
+          "interval": [
+            1.2654839645928775,
+            1.4225554838142644
+          ]
+        },
+        "sentence_state": {
+          "mean": 1.3279517397788638,
+          "interval": [
+            1.247694830034598,
+            1.4162541842718186
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 1.3254484535754527,
+          "interval": [
+            1.2443795905031918,
+            1.4130666907997063
+          ]
+        },
+        "local": {
+          "mean": 1.3482489297385196,
+          "interval": [
+            1.2482610256199294,
+            1.4562336049329465
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 1.3521180237621548,
+          "interval": [
+            1.2511000439510689,
+            1.46199447642412
+          ]
+        },
+        "full_state_local": {
+          "mean": 1.3239741224397934,
+          "interval": [
+            1.2332583265958874,
+            1.4217032872415478
+          ]
+        },
+        "historical_frozen": {
+          "mean": 1.3285688545892806,
+          "interval": [
+            1.2454107073495744,
+            1.4176896032745547
+          ]
+        },
+        "local minus registered_form": {
+          "mean": 0.005312722760233646,
+          "interval": [
+            -0.03420238450748457,
+            0.047603525057925165
+          ]
+        },
+        "local minus text_form": {
+          "mean": -0.007452128722583273,
+          "interval": [
+            -0.057429451643852075,
+            0.044092678361842226
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": -0.004594732149487246,
+          "interval": [
+            -0.02664511117439508,
+            0.019270260900306577
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.014984467199422147,
+          "interval": [
+            -0.031215205202104024,
+            0.0026102299872918762
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": -0.0031204010138279337,
+          "interval": [
+            -0.02098509535136109,
+            0.01631033346053608
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.0038690940236352223,
+          "interval": [
+            -0.013422053302641767,
+            0.022324106798292297
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": -0.003156444649597523,
+          "interval": [
+            -0.020490510955650725,
+            0.01279511031186692
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": -0.0025032862034111147,
+          "interval": [
+            -0.01227720392523453,
+            0.005350912763827637
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": -0.0014743311356593125,
+          "interval": [
+            -0.013646614854729771,
+            0.011691382369060019
+          ]
+        }
+      },
+      "mae": {
+        "registered_form": {
+          "mean": 0.6061466901251717,
+          "interval": [
+            0.5553009354732359,
+            0.6619521908316469
+          ]
+        },
+        "text_form": {
+          "mean": 0.6243554549855673,
+          "interval": [
+            0.570219021354986,
+            0.6839155653426902
+          ]
+        },
+        "medical": {
+          "mean": 0.6001697735203579,
+          "interval": [
+            0.5517084351369195,
+            0.6511887136041089
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.583152048385253,
+          "interval": [
+            0.5331710217712762,
+            0.6400662267114455
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.5741247571982776,
+          "interval": [
+            0.5263909521840723,
+            0.6297351035971717
+          ]
+        },
+        "local": {
+          "mean": 0.601621751844316,
+          "interval": [
+            0.5403162049353963,
+            0.6753195018817535
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.6118246191558462,
+          "interval": [
+            0.5492870514112117,
+            0.6897929683395432
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.5672008648092554,
+          "interval": [
+            0.5137158188689993,
+            0.6292425566502745
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.5921276937965814,
+          "interval": [
+            0.5475856205393604,
+            0.642962269944438
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.0045249382808557614,
+          "interval": [
+            -0.059208222577339466,
+            0.05315266355204184
+          ]
+        },
+        "local minus text_form": {
+          "mean": -0.022733703141251338,
+          "interval": [
+            -0.0914949807666473,
+            0.04755315870183968
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": -0.02492682898732601,
+          "interval": [
+            -0.05505393015583611,
+            0.007813676922423164
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.02299464173991872,
+          "interval": [
+            -0.049069664889192476,
+            0.007883221511997728
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": -0.018002936598303765,
+          "interval": [
+            -0.034118422202201494,
+            0.0017271269374135188
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.010202867311530195,
+          "interval": [
+            -0.014371187357176315,
+            0.03741070491789171
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": -0.005976916604813809,
+          "interval": [
+            -0.02878569639393328,
+            0.018686544535625786
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": -0.009027291186975428,
+          "interval": [
+            -0.02345459677217141,
+            0.0033111019747207415
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": -0.006923892389022246,
+          "interval": [
+            -0.026204035497232298,
+            0.012841576136642366
+          ]
+        }
+      },
+      "rewrite_mae": {
+        "registered_form": {
+          "mean": 0.6932477486923233,
+          "interval": [
+            0.6211812611932914,
+            0.7767413161302301
+          ]
+        },
+        "text_form": {
+          "mean": 0.7346830191436668,
+          "interval": [
+            0.6517817213618143,
+            0.8337515763101088
+          ]
+        },
+        "medical": {
+          "mean": 0.7133490823745242,
+          "interval": [
+            0.6354638154646429,
+            0.8066719874089259
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.6649710915406298,
+          "interval": [
+            0.5913753159861987,
+            0.762008855561371
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.6587809717014046,
+          "interval": [
+            0.5822542461657847,
+            0.7581040711547657
+          ]
+        },
+        "local": {
+          "mean": 0.6671192720884747,
+          "interval": [
+            0.582885311571014,
+            0.7720677637901191
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.6835236304835489,
+          "interval": [
+            0.5972191208692607,
+            0.7923496077846413
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.6587744067530013,
+          "interval": [
+            0.5739361067281386,
+            0.7645146319726416
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.6860222681708998,
+          "interval": [
+            0.6087152530784858,
+            0.7801853214168818
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.02612847660384865,
+          "interval": [
+            -0.06440469597784906,
+            0.01813077078485019
+          ]
+        },
+        "local minus text_form": {
+          "mean": -0.06756374705519219,
+          "interval": [
+            -0.12715599045373874,
+            -0.00559891263247711
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": -0.02724786141789859,
+          "interval": [
+            -0.059623210457454334,
+            0.007908153381550152
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.028276657151693474,
+          "interval": [
+            -0.05517026981660103,
+            0.0031958749852423864
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": -0.027241296469495246,
+          "interval": [
+            -0.051071884556971564,
+            -0.003309019946308559
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.01640435839507426,
+          "interval": [
+            -0.004743780139758918,
+            0.03612381838852811
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": 0.020101333682200906,
+          "interval": [
+            -0.01720251918234093,
+            0.06276783319042177
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": -0.006190119839225239,
+          "interval": [
+            -0.019774101155591164,
+            0.00758705265570962
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": -6.564948403342541e-06,
+          "interval": [
+            -0.01917203730871562,
+            0.02092156775539147
+          ]
+        }
+      },
+      "rewrite_effect": {
+        "registered_form": {
+          "mean": 0.523436311815762,
+          "interval": [
+            0.45775678229155553,
+            0.5960796277766274
+          ]
+        },
+        "text_form": {
+          "mean": 0.22172865551431842,
+          "interval": [
+            0.15118941809632114,
+            0.30111570218208084
+          ]
+        },
+        "medical": {
+          "mean": 0.2708388290875874,
+          "interval": [
+            0.19949255220137074,
+            0.35475042421445924
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.4693294793779337,
+          "interval": [
+            0.394426489716996,
+            0.5466570304040795
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.48154640937763316,
+          "interval": [
+            0.40469583570465795,
+            0.5653687257730685
+          ]
+        },
+        "local": {
+          "mean": 0.4616427131910467,
+          "interval": [
+            0.37736724122778625,
+            0.5556727482346796
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.5078622709938381,
+          "interval": [
+            0.4182210112835063,
+            0.5996104333641982
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.49658793637697984,
+          "interval": [
+            0.41160778148267324,
+            0.5803162656072854
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.41497055536365673,
+          "interval": [
+            0.3407656194407721,
+            0.4861265291484134
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.061793598624715285,
+          "interval": [
+            -0.12851070068309725,
+            0.009720054226004879
+          ]
+        },
+        "local minus text_form": {
+          "mean": 0.2399140576767283,
+          "interval": [
+            0.1683592791216192,
+            0.3168909507119293
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": 0.08161738101332311,
+          "interval": [
+            0.012664719714634063,
+            0.15387415564876525
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.05410683243782832,
+          "interval": [
+            -0.10699680321410272,
+            -0.00020132170427436687
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": 0.06657585401397642,
+          "interval": [
+            0.017827946561545325,
+            0.11643221757636474
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.046219557802791356,
+          "interval": [
+            0.007512190292368895,
+            0.07615476622027198
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": -0.2525974827281746,
+          "interval": [
+            -0.28160647720834914,
+            -0.2257824304445831
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": 0.012216929999699477,
+          "interval": [
+            -0.005047414624979585,
+            0.03091258833737202
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": 0.015041526999346688,
+          "interval": [
+            -0.015877865106204134,
+            0.04874664557171884
+          ]
+        }
+      },
+      "human_effect": {
+        "registered_form": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "text_form": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "medical": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "local": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.5368553459119497,
+          "interval": [
+            0.39137250866179546,
+            0.7032303099593497
+          ]
+        },
+        "local minus registered_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "local minus text_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    },
+    "understanding": {
+      "nll": {
+        "registered_form": {
+          "mean": 1.3464053636734714,
+          "interval": [
+            1.2605430691692703,
+            1.4495168347121605
+          ]
+        },
+        "text_form": {
+          "mean": 1.377154750040343,
+          "interval": [
+            1.2881816384638116,
+            1.4747973852132379
+          ]
+        },
+        "medical": {
+          "mean": 1.3589011826233623,
+          "interval": [
+            1.2587634602985915,
+            1.4706314601823969
+          ]
+        },
+        "sentence_state": {
+          "mean": 1.2997448539800194,
+          "interval": [
+            1.2115762081568142,
+            1.399840729511641
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 1.299660163501229,
+          "interval": [
+            1.205989238200858,
+            1.4058062791363557
+          ]
+        },
+        "local": {
+          "mean": 1.3293424866168861,
+          "interval": [
+            1.2201801357391802,
+            1.4534962087906251
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 1.3284741883037692,
+          "interval": [
+            1.22082294093181,
+            1.451528585887662
+          ]
+        },
+        "full_state_local": {
+          "mean": 1.2920096195256754,
+          "interval": [
+            1.1906784062229487,
+            1.4063403221536137
+          ]
+        },
+        "historical_frozen": {
+          "mean": 1.3047178104269832,
+          "interval": [
+            1.2190226670228101,
+            1.4074697402604477
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.01706287705658527,
+          "interval": [
+            -0.053639846078873364,
+            0.02532153712927802
+          ]
+        },
+        "local minus text_form": {
+          "mean": -0.04781226342345679,
+          "interval": [
+            -0.08584145486665105,
+            -0.0027132847008735877
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": -0.012708190901307814,
+          "interval": [
+            -0.03763191825386445,
+            0.007486834045801742
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.046660509693452035,
+          "interval": [
+            -0.0686382632589216,
+            -0.023016380953290543
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": -0.005057646925754167,
+          "interval": [
+            -0.025882625033749218,
+            0.015264783130913302
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": -0.0008682983131169664,
+          "interval": [
+            -0.015127723262399185,
+            0.010518795479962073
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": 0.012495818949890936,
+          "interval": [
+            -0.017381519983234065,
+            0.04503873323176485
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": -8.469047879033909e-05,
+          "interval": [
+            -0.009618573566505561,
+            0.011169813714182915
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": -0.0076505439755536475,
+          "interval": [
+            -0.02010373978722607,
+            0.00558153419756846
+          ]
+        }
+      },
+      "mae": {
+        "registered_form": {
+          "mean": 0.6838984178753856,
+          "interval": [
+            0.639884223040503,
+            0.7256381351363548
+          ]
+        },
+        "text_form": {
+          "mean": 0.7271619666417883,
+          "interval": [
+            0.6821827524503737,
+            0.7713430185650177
+          ]
+        },
+        "medical": {
+          "mean": 0.6981024506632224,
+          "interval": [
+            0.6461040013784881,
+            0.7507545457240777
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.6134190814186529,
+          "interval": [
+            0.5680452157142603,
+            0.6569516635707301
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.606581491238606,
+          "interval": [
+            0.5563771051191274,
+            0.6557475659589457
+          ]
+        },
+        "local": {
+          "mean": 0.6477795954690239,
+          "interval": [
+            0.5879590074406168,
+            0.7131064126044028
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.6374224068705027,
+          "interval": [
+            0.5727806317935372,
+            0.7074100276174761
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.5949576599140092,
+          "interval": [
+            0.5409940068848543,
+            0.6492788905115721
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.629808522051668,
+          "interval": [
+            0.5857082732562373,
+            0.6703763378355886
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.03611882240636177,
+          "interval": [
+            -0.08987769016128505,
+            0.023618481322834832
+          ]
+        },
+        "local minus text_form": {
+          "mean": -0.07938237117276448,
+          "interval": [
+            -0.13634943979952727,
+            -0.013799871088090616
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": -0.03485086213765887,
+          "interval": [
+            -0.06839454175808368,
+            -0.0026232249327486443
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.07047933645673277,
+          "interval": [
+            -0.10514295979245404,
+            -0.0348593125601925
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": -0.02322703081306199,
+          "interval": [
+            -0.04196544146735666,
+            -0.0015953798996573934
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": -0.010357188598521194,
+          "interval": [
+            -0.03149264858569488,
+            0.009437582431213301
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": 0.014204032787836773,
+          "interval": [
+            -0.02533116655793959,
+            0.0564613824823886
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": -0.006837590180046815,
+          "interval": [
+            -0.01871649510164166,
+            0.005869922886830945
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": -0.011623831324596878,
+          "interval": [
+            -0.033909220079282654,
+            0.01007507145689188
+          ]
+        }
+      },
+      "rewrite_mae": {
+        "registered_form": {
+          "mean": 0.7873509747649668,
+          "interval": [
+            0.6985957973737401,
+            0.8617015144729657
+          ]
+        },
+        "text_form": {
+          "mean": 0.8536309749603979,
+          "interval": [
+            0.7471682913833687,
+            0.9686237736725157
+          ]
+        },
+        "medical": {
+          "mean": 0.8089291072174459,
+          "interval": [
+            0.7082212772120108,
+            0.9158694237436096
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.7336321120263776,
+          "interval": [
+            0.6457371762754481,
+            0.8077114885360612
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.7203417896607203,
+          "interval": [
+            0.6307590933401915,
+            0.7968051748441276
+          ]
+        },
+        "local": {
+          "mean": 0.7433246118048605,
+          "interval": [
+            0.6426502662500285,
+            0.8306961775229726
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.741961472419362,
+          "interval": [
+            0.6410885088618861,
+            0.8289824658270893
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.7262329302239593,
+          "interval": [
+            0.6232724376038067,
+            0.817238070518422
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.7549854073308934,
+          "interval": [
+            0.6618431788573557,
+            0.8273323366852159
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.04402636296010631,
+          "interval": [
+            -0.09957207286203096,
+            0.010324855696263874
+          ]
+        },
+        "local minus text_form": {
+          "mean": -0.11030636315553732,
+          "interval": [
+            -0.20354943397224523,
+            -0.03294734248989195
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": -0.02875247710693407,
+          "interval": [
+            -0.07605300096375382,
+            0.020927914108440835
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.05371886273858928,
+          "interval": [
+            -0.09725707826359019,
+            -0.008760717881280284
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": -0.0346436176701731,
+          "interval": [
+            -0.0671656984690558,
+            0.002130625085300903
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": -0.0013631393854985907,
+          "interval": [
+            -0.0347400572547405,
+            0.030036927398832982
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": 0.021578132452479082,
+          "interval": [
+            -0.05640273947986618,
+            0.10639280127885634
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": -0.013290322365657303,
+          "interval": [
+            -0.026828838597151374,
+            -0.0010506646961590878
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": 0.005891140563239028,
+          "interval": [
+            -0.023452573192723706,
+            0.03447307581798183
+          ]
+        }
+      },
+      "rewrite_effect": {
+        "registered_form": {
+          "mean": 0.7179496088866489,
+          "interval": [
+            0.670345224062527,
+            0.769349500322049
+          ]
+        },
+        "text_form": {
+          "mean": 0.2387123632003939,
+          "interval": [
+            0.17567949294092083,
+            0.3068513362241073
+          ]
+        },
+        "medical": {
+          "mean": 0.2995708148897923,
+          "interval": [
+            0.23527965981362972,
+            0.3749945360814739
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.6019636290051024,
+          "interval": [
+            0.5041518544176478,
+            0.6990952572201832
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.6146322277546722,
+          "interval": [
+            0.5166731705815462,
+            0.7152322264397823
+          ]
+        },
+        "local": {
+          "mean": 0.555256167077134,
+          "interval": [
+            0.46250667053674654,
+            0.6543366644969981
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.6358691378353694,
+          "interval": [
+            0.5212018443365695,
+            0.7500776784653611
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.6264178400075823,
+          "interval": [
+            0.5187897911293615,
+            0.7320494889949866
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.5575165356054433,
+          "interval": [
+            0.4784988793604798,
+            0.6298782394428749
+          ]
+        },
+        "local minus registered_form": {
+          "mean": -0.16269344180951495,
+          "interval": [
+            -0.2499314476356136,
+            -0.06868132609467147
+          ]
+        },
+        "local minus text_form": {
+          "mean": 0.3165438038767401,
+          "interval": [
+            0.2270961229962139,
+            0.41292609417304404
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": 0.06890130440213893,
+          "interval": [
+            -0.021336474248658494,
+            0.1632178379225813
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": -0.11598597988154657,
+          "interval": [
+            -0.20200298046264706,
+            -0.03101960337918418
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": 0.05711569214922885,
+          "interval": [
+            -0.009724172379390977,
+            0.1230330166080462
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.08061297075823537,
+          "interval": [
+            0.037604154295349024,
+            0.11808485695259494
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": -0.4183787939968566,
+          "interval": [
+            -0.4576092754413164,
+            -0.37989803073589623
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": 0.012668598749569826,
+          "interval": [
+            -0.00844334809196278,
+            0.03547555008215968
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": 0.011785612252910083,
+          "interval": [
+            -0.030164928316258614,
+            0.056744495734132795
+          ]
+        }
+      },
+      "human_effect": {
+        "registered_form": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "text_form": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "medical": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "sentence_state": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "sentence_state_local": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "local": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "local_and_persistent": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "full_state_local": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "historical_frozen": {
+          "mean": 0.7229559748427677,
+          "interval": [
+            0.5354980853303759,
+            0.9362659373135125
+          ]
+        },
+        "local minus registered_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "local minus text_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "full_state_local minus historical_frozen": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "sentence_state minus registered_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "sentence_state_local minus historical_frozen": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "local_and_persistent minus local": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "medical minus registered_form": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "sentence_state_local minus sentence_state": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "full_state_local minus sentence_state_local": {
+          "mean": 0.0,
+          "interval": [
+            0.0,
+            0.0
+          ]
+        }
+      }
+    }
+  },
+  "source": {
+    "medreadme_training": {
+      "used_sentences": 2559,
+      "ambiguous_or_unaligned": 28
+    },
+    "complex_unique_sentences": 8078,
+    "overlapping_complex_sentences": 0,
+    "lexical_checkpoint_overlap_qualification": "The immutable CompLex head used its published original fit.",
+    "word_end_coverage": {
+      "plaba": {
+        "total": 12768,
+        "certified": 12741
+      },
+      "kerwer": {
+        "total": 9962,
+        "certified": 9920
+      }
+    }
+  },
+  "convergence": {
+    "registered_form": {
+      "0": {
+        "max_abs_gradient": 2.815077726233252e-07,
+        "updates": 46
+      },
+      "1": {
+        "max_abs_gradient": 3.7250816577313536e-07,
+        "updates": 43
+      },
+      "2": {
+        "max_abs_gradient": 3.9007439023487243e-07,
+        "updates": 49
+      },
+      "3": {
+        "max_abs_gradient": 6.860404804571616e-07,
+        "updates": 50
+      },
+      "4": {
+        "max_abs_gradient": 5.007439918862312e-07,
+        "updates": 50
+      }
+    },
+    "text_form": {
+      "0": {
+        "max_abs_gradient": 9.759761940732526e-07,
+        "updates": 41
+      },
+      "1": {
+        "max_abs_gradient": 3.6349477656365606e-07,
+        "updates": 44
+      },
+      "2": {
+        "max_abs_gradient": 1.0384509374134432e-06,
+        "updates": 40
+      },
+      "3": {
+        "max_abs_gradient": 2.39855964451549e-07,
+        "updates": 41
+      },
+      "4": {
+        "max_abs_gradient": 3.223843394463107e-07,
+        "updates": 42
+      }
+    },
+    "medical": {
+      "0": {
+        "max_abs_gradient": 8.964210962831274e-07,
+        "updates": 50
+      },
+      "1": {
+        "max_abs_gradient": 2.2421552705495745e-06,
+        "updates": 49
+      },
+      "2": {
+        "max_abs_gradient": 3.360211342758393e-07,
+        "updates": 60
+      },
+      "3": {
+        "max_abs_gradient": 8.470464905145636e-07,
+        "updates": 57
+      },
+      "4": {
+        "max_abs_gradient": 5.857589469710465e-07,
+        "updates": 54
+      }
+    },
+    "sentence_state": {
+      "0": {
+        "max_abs_gradient": 1.5132947752110465e-07,
+        "updates": 53
+      },
+      "1": {
+        "max_abs_gradient": 3.754823843979925e-07,
+        "updates": 54
+      },
+      "2": {
+        "max_abs_gradient": 1.8316172615016673e-07,
+        "updates": 56
+      },
+      "3": {
+        "max_abs_gradient": 1.9987293518687935e-07,
+        "updates": 56
+      },
+      "4": {
+        "max_abs_gradient": 1.7599392947739538e-07,
+        "updates": 55
+      }
+    },
+    "sentence_state_local": {
+      "0": {
+        "max_abs_gradient": 6.105411932000185e-07,
+        "updates": 64
+      },
+      "1": {
+        "max_abs_gradient": 1.865760096489015e-07,
+        "updates": 63
+      },
+      "2": {
+        "max_abs_gradient": 1.8956244342182758e-07,
+        "updates": 63
+      },
+      "3": {
+        "max_abs_gradient": 1.667038160520001e-07,
+        "updates": 66
+      },
+      "4": {
+        "max_abs_gradient": 4.669522101968327e-07,
+        "updates": 65
+      }
+    },
+    "local": {
+      "0": {
+        "max_abs_gradient": 2.7272036588360023e-07,
+        "updates": 58
+      },
+      "1": {
+        "max_abs_gradient": 2.0247272615963154e-07,
+        "updates": 65
+      },
+      "2": {
+        "max_abs_gradient": 2.1331991035913493e-07,
+        "updates": 67
+      },
+      "3": {
+        "max_abs_gradient": 3.177335996919835e-07,
+        "updates": 63
+      },
+      "4": {
+        "max_abs_gradient": 5.136069379087043e-07,
+        "updates": 67
+      }
+    },
+    "local_and_persistent": {
+      "0": {
+        "max_abs_gradient": 2.759317525168097e-07,
+        "updates": 91
+      },
+      "1": {
+        "max_abs_gradient": 1.1400661041483927e-06,
+        "updates": 89
+      },
+      "2": {
+        "max_abs_gradient": 2.9726394797476496e-07,
+        "updates": 88
+      },
+      "3": {
+        "max_abs_gradient": 2.028385377940336e-07,
+        "updates": 90
+      },
+      "4": {
+        "max_abs_gradient": 4.56340799477611e-07,
+        "updates": 91
+      }
+    },
+    "full_state_local": {
+      "0": {
+        "max_abs_gradient": 2.0305878499406876e-07,
+        "updates": 65
+      },
+      "1": {
+        "max_abs_gradient": 2.855577968054505e-07,
+        "updates": 67
+      },
+      "2": {
+        "max_abs_gradient": 1.6912310863066195e-07,
+        "updates": 70
+      },
+      "3": {
+        "max_abs_gradient": 3.30615726524473e-07,
+        "updates": 67
+      },
+      "4": {
+        "max_abs_gradient": 1.7920108545866243e-06,
+        "updates": 67
+      }
+    }
+  },
+  "bootstrap_seed": 83103,
+  "draws": 10000,
+  "reader_connected_groups": 25,
+  "folds": 5,
+  "sentences": 609,
+  "rewrite_pairs": 265,
+  "gpu_sha256": "d98c1bb113dcd87cab6b94e210522d1f6af60dd95c667517357242cc26c0c37a",
+  "predictions_sha256": "4abf0c293c7fb1fe0b8780ce700c822f7053c4e0ed7634045a7c4cd1cf8f4062",
+  "historical_exposure": true
+}

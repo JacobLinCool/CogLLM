@@ -1,0 +1,522 @@
+{
+  "gpu": "NVIDIA L4",
+  "torch": "2.14.1+cu130",
+  "modes": [
+    "independent",
+    "shared_two",
+    "shared_three"
+  ],
+  "story_folds": [
+    "Auftrag",
+    "Katze",
+    "Thomas"
+  ],
+  "seeds": [
+    43,
+    71,
+    109
+  ],
+  "steps_per_fit": 180,
+  "fit_records": [
+    {
+      "condition": "independent",
+      "held_out_story": "Auftrag",
+      "steps": 180,
+      "seed": 43,
+      "tasks": [
+        "onset"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.22193469107151031
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.20167207717895508
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.21342428028583527
+          }
+        }
+      ],
+      "seconds": 0.712163400999998
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Auftrag",
+      "steps": 180,
+      "seed": 43,
+      "tasks": [
+        "source"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "source": 2.2310070991516113
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "source": 2.039614677429199
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "source": 2.032926559448242
+          }
+        }
+      ],
+      "seconds": 0.5117470449999928
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Auftrag",
+      "steps": 180,
+      "seed": 43,
+      "tasks": [
+        "closure"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "closure": 4.425411706692467
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "closure": 4.529891695784487
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "closure": 4.369317483931918
+          }
+        }
+      ],
+      "seconds": 0.518781325999953
+    },
+    {
+      "condition": "shared_two",
+      "held_out_story": "Auftrag",
+      "steps": 180,
+      "seed": 43,
+      "tasks": [
+        "onset",
+        "source"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.22193469107151031,
+            "source": 2.2310070991516113
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.1989678144454956,
+            "source": 2.040217399597168
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.21332556009292603,
+            "source": 2.0586602687835693
+          }
+        }
+      ],
+      "seconds": 0.5860110499997973
+    },
+    {
+      "condition": "shared_three",
+      "held_out_story": "Auftrag",
+      "steps": 180,
+      "seed": 43,
+      "tasks": [
+        "onset",
+        "source",
+        "closure"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.22193469107151031,
+            "source": 2.2310070991516113,
+            "closure": 4.425411706692467
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.20398953557014465,
+            "source": 2.0609612464904785,
+            "closure": 4.601889287720982
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.2172335684299469,
+            "source": 2.0845680236816406,
+            "closure": 4.39580258989682
+          }
+        }
+      ],
+      "seconds": 0.917489437000313
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Katze",
+      "steps": 180,
+      "seed": 71,
+      "tasks": [
+        "onset"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.16100603342056274
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.1711593121290207
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.1722184419631958
+          }
+        }
+      ],
+      "seconds": 0.32899390200009293
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Katze",
+      "steps": 180,
+      "seed": 71,
+      "tasks": [
+        "source"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "source": 2.2226037979125977
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "source": 2.0536067485809326
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "source": 1.9547996520996094
+          }
+        }
+      ],
+      "seconds": 0.3615434710000045
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Katze",
+      "steps": 180,
+      "seed": 71,
+      "tasks": [
+        "closure"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "closure": 4.943580626053372
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "closure": 4.3613627400645845
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "closure": 4.784379159551932
+          }
+        }
+      ],
+      "seconds": 0.45755897200024265
+    },
+    {
+      "condition": "shared_two",
+      "held_out_story": "Katze",
+      "steps": 180,
+      "seed": 71,
+      "tasks": [
+        "onset",
+        "source"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.16100603342056274,
+            "source": 2.2226037979125977
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.17478664219379425,
+            "source": 2.054830551147461
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.1768251657485962,
+            "source": 1.9688916206359863
+          }
+        }
+      ],
+      "seconds": 0.59128975800013
+    },
+    {
+      "condition": "shared_three",
+      "held_out_story": "Katze",
+      "steps": 180,
+      "seed": 71,
+      "tasks": [
+        "onset",
+        "source",
+        "closure"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.16100603342056274,
+            "source": 2.2226037979125977,
+            "closure": 4.943580626053372
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.17540517449378967,
+            "source": 2.0685667991638184,
+            "closure": 4.35567556632003
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.17638170719146729,
+            "source": 1.9425805807113647,
+            "closure": 4.810672752765687
+          }
+        }
+      ],
+      "seconds": 0.9102587860002131
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Thomas",
+      "steps": 180,
+      "seed": 109,
+      "tasks": [
+        "onset"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.1899031102657318
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.19559571146965027
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.15323540568351746
+          }
+        }
+      ],
+      "seconds": 0.33006456700013587
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Thomas",
+      "steps": 180,
+      "seed": 109,
+      "tasks": [
+        "source"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "source": 2.2944889068603516
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "source": 1.9588327407836914
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "source": 2.1305665969848633
+          }
+        }
+      ],
+      "seconds": 0.36324233000004824
+    },
+    {
+      "condition": "independent",
+      "held_out_story": "Thomas",
+      "steps": 180,
+      "seed": 109,
+      "tasks": [
+        "closure"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "closure": 4.908745146267501
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "closure": 4.630341901136488
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "closure": 4.941093391571781
+          }
+        }
+      ],
+      "seconds": 0.4447461109998585
+    },
+    {
+      "condition": "shared_two",
+      "held_out_story": "Thomas",
+      "steps": 180,
+      "seed": 109,
+      "tasks": [
+        "onset",
+        "source"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.1899031102657318,
+            "source": 2.2944889068603516
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.19473561644554138,
+            "source": 1.9666017293930054
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.16140277683734894,
+            "source": 2.1298999786376953
+          }
+        }
+      ],
+      "seconds": 0.5839264269998239
+    },
+    {
+      "condition": "shared_three",
+      "held_out_story": "Thomas",
+      "steps": 180,
+      "seed": 109,
+      "tasks": [
+        "onset",
+        "source",
+        "closure"
+      ],
+      "train_log": [
+        {
+          "step": 1,
+          "loss": {
+            "onset": 0.1899031102657318,
+            "source": 2.2944889068603516,
+            "closure": 4.908745146267501
+          }
+        },
+        {
+          "step": 91,
+          "loss": {
+            "onset": 0.19566130638122559,
+            "source": 1.9681661128997803,
+            "closure": 4.698208246591278
+          }
+        },
+        {
+          "step": 180,
+          "loss": {
+            "onset": 0.16198325157165527,
+            "source": 2.1203525066375732,
+            "closure": 4.941933784807552
+          }
+        }
+      ],
+      "seconds": 0.9177586129999327
+    }
+  ],
+  "fit_wall_s": 11.64347348199999,
+  "batch_sizes": {
+    "onset": 96,
+    "source": 48,
+    "closure": 20
+  },
+  "learning_rate": 0.003,
+  "weight_decay": 0.015,
+  "peak_gpu_reserved_bytes": 287309824,
+  "forecast_sha256": {
+    "onset-predictions.jsonl": "fcf23e030903e61e5d42f67f6cead71052dba4b57cc830ca4c65f426b1477956",
+    "source-predictions.jsonl": "d4efe96c84dd59cf95c4fd9d9fcfafbd56e3817e9025693f57a285dd943ae9c4",
+    "closure-predictions.jsonl": "893eae5664c017c181a80e4998f4b105903a004406142f1c1231a3e85458eee1"
+  }
+}

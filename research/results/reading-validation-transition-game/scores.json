@@ -1,0 +1,2091 @@
+{
+  "external_human_sha256": "3e2114b3a4c64050324081d8636692709fd233b4d0eee170682ccfca19e5783c",
+  "primary_protocol_sha256": "373bb5cf8cd007f08613d1b7846bd3e9fe47bde2977a815d366bf3086bcb89b6",
+  "evaluations": {
+    "development": {
+      "mentions": 96,
+      "documents": 12,
+      "observed_disputes": 19,
+      "estimates": {
+        "surface": {
+          "expected_pair_brier": {
+            "estimate": 0.0745070893396506,
+            "family_bootstrap_95_interval": [
+              0.048408622091124356,
+              0.13540891690199391
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350138,
+            "family_bootstrap_95_interval": [
+              0.07050427710333836,
+              0.09033342803453481
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0797093837535014,
+            "family_bootstrap_95_interval": [
+              0.046795597264062856,
+              0.156543286897878
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -9.25185853854297e-18,
+            "family_bootstrap_95_interval": [
+              -0.07558955339593504,
+              0.032835273229347144
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.024316430664187306
+        },
+        "direct": {
+          "expected_pair_brier": {
+            "estimate": 0.07506116661811048,
+            "family_bootstrap_95_interval": [
+              0.04884492452865905,
+              0.13721051613716323
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350138,
+            "family_bootstrap_95_interval": [
+              0.06528512474526992,
+              0.09282789739245914
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0797093837535014,
+            "family_bootstrap_95_interval": [
+              0.046795597264062856,
+              0.156543286897878
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -9.830099697201907e-18,
+            "family_bootstrap_95_interval": [
+              -0.08363786953736428,
+              0.03961075823889368
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04052701936469224
+        },
+        "shared": {
+          "expected_pair_brier": {
+            "estimate": 0.07474661624255628,
+            "family_bootstrap_95_interval": [
+              0.048760368972176685,
+              0.13615837542078255
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350138,
+            "family_bootstrap_95_interval": [
+              0.065777047143262,
+              0.0925392127080276
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0797093837535014,
+            "family_bootstrap_95_interval": [
+              0.046795597264062856,
+              0.156543286897878
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -2.1973164029039556e-17,
+            "family_bootstrap_95_interval": [
+              -0.08231836819401883,
+              0.039260987204394325
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04795547983479348
+        },
+        "constant": {
+          "expected_pair_brier": {
+            "estimate": 0.07335579789513845,
+            "family_bootstrap_95_interval": [
+              0.04568908668183484,
+              0.1379409348974861
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350141,
+            "family_bootstrap_95_interval": [
+              0.0797093837535014,
+              0.07970938375350142
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0797093837535014,
+            "family_bootstrap_95_interval": [
+              0.046795597264062856,
+              0.156543286897878
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -1.1564823173178713e-18,
+            "family_bootstrap_95_interval": [
+              -0.07683390314437664,
+              0.03291378648943854
+            ]
+          },
+          "weighted_absolute_calibration_error": 1.3877787807814457e-17
+        }
+      },
+      "paired_brier_differences": {
+        "direct_minus_surface": {
+          "estimate": 0.0005540772784598802,
+          "family_bootstrap_95_interval": [
+            -0.0034799249552212694,
+            0.003459439194443859
+          ]
+        },
+        "shared_minus_surface": {
+          "estimate": 0.00023952690290568457,
+          "family_bootstrap_95_interval": [
+            -0.003614091283979277,
+            0.002881903755705651
+          ]
+        },
+        "shared_minus_direct": {
+          "estimate": -0.0003145503755541956,
+          "family_bootstrap_95_interval": [
+            -0.0014286238503083421,
+            0.0003608391638113932
+          ]
+        },
+        "direct_minus_constant": {
+          "estimate": 0.0017053687229720282,
+          "family_bootstrap_95_interval": [
+            -0.0044334520368072465,
+            0.005125719081285399
+          ]
+        },
+        "shared_minus_constant": {
+          "estimate": 0.0013908183474178326,
+          "family_bootstrap_95_interval": [
+            -0.004696012989900859,
+            0.004819040068872758
+          ]
+        }
+      },
+      "source_quintile_reliability": {
+        "surface": [
+          {
+            "n": 19,
+            "predicted": 0.03183303393123955,
+            "observed": 0.053634085213032576
+          },
+          {
+            "n": 19,
+            "predicted": 0.05217448834964178,
+            "observed": 0.05913312693498452
+          },
+          {
+            "n": 19,
+            "predicted": 0.07219261415848786,
+            "observed": 0.09340016708437761
+          },
+          {
+            "n": 19,
+            "predicted": 0.0943842132788213,
+            "observed": 0.10584795321637426
+          },
+          {
+            "n": 20,
+            "predicted": 0.1445499097845257,
+            "observed": 0.08619047619047619
+          }
+        ],
+        "direct": [
+          {
+            "n": 19,
+            "predicted": 0.020467332253442837,
+            "observed": 0.03007518796992481
+          },
+          {
+            "n": 19,
+            "predicted": 0.03776529256845057,
+            "observed": 0.02579979360165118
+          },
+          {
+            "n": 19,
+            "predicted": 0.06153742158771571,
+            "observed": 0.13918128654970763
+          },
+          {
+            "n": 19,
+            "predicted": 0.09313834844887542,
+            "observed": 0.10827067669172931
+          },
+          {
+            "n": 20,
+            "predicted": 0.18034206690124638,
+            "observed": 0.09444444444444444
+          }
+        ],
+        "shared": [
+          {
+            "n": 19,
+            "predicted": 0.02111578619572314,
+            "observed": 0.03007518796992481
+          },
+          {
+            "n": 19,
+            "predicted": 0.03876574372740199,
+            "observed": 0.032817337461300305
+          },
+          {
+            "n": 19,
+            "predicted": 0.06456066184356113,
+            "observed": 0.0935672514619883
+          },
+          {
+            "n": 19,
+            "predicted": 0.09187796213580715,
+            "observed": 0.175062656641604
+          },
+          {
+            "n": 20,
+            "predicted": 0.17710089580943786,
+            "observed": 0.06765873015873017
+          }
+        ],
+        "constant": [
+          {
+            "n": 96,
+            "predicted": 0.07970938375350141,
+            "observed": 0.0797093837535014
+          }
+        ]
+      },
+      "within_document": {
+        "documents": 9,
+        "unequal_disagreement_pairs": 195,
+        "models": {
+          "surface": {
+            "estimate": 0.676254114047945,
+            "family_bootstrap_95_interval": [
+              0.5267813519003176,
+              0.8245196324143692
+            ]
+          },
+          "direct": {
+            "estimate": 0.7267851210059671,
+            "family_bootstrap_95_interval": [
+              0.5892479701432229,
+              0.8678785954327749
+            ]
+          },
+          "shared": {
+            "estimate": 0.7026619348027442,
+            "family_bootstrap_95_interval": [
+              0.5605770811681832,
+              0.8466345602568512
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": 0.05053100695802215,
+            "family_bootstrap_95_interval": [
+              -0.04940754396092084,
+              0.15097232308561281
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": 0.026407820754799194,
+            "family_bootstrap_95_interval": [
+              -0.05664088997422345,
+              0.11484908853329912
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": -0.024123186203222957,
+            "family_bootstrap_95_interval": [
+              -0.061458862297355636,
+              0.011463844797178102
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": 0.22678512100596715,
+            "family_bootstrap_95_interval": [
+              0.08924797014322296,
+              0.3678785954327749
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.2026619348027442,
+            "family_bootstrap_95_interval": [
+              0.06057708116818311,
+              0.34663456025685124
+            ]
+          }
+        }
+      },
+      "within_document_and_form": {
+        "documents": 9,
+        "unequal_disagreement_pairs": 58,
+        "models": {
+          "surface": {
+            "estimate": 0.6770385850845622,
+            "family_bootstrap_95_interval": [
+              0.4171988080034057,
+              0.9003831417624522
+            ]
+          },
+          "direct": {
+            "estimate": 0.7920585161964472,
+            "family_bootstrap_95_interval": [
+              0.5294322535701846,
+              1.0
+            ]
+          },
+          "shared": {
+            "estimate": 0.7657804094585704,
+            "family_bootstrap_95_interval": [
+              0.5060954371299199,
+              0.9696969696969696
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": 0.11501993111188502,
+            "family_bootstrap_95_interval": [
+              0.030303030303030387,
+              0.20534850419907902
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": 0.08874182437400824,
+            "family_bootstrap_95_interval": [
+              0.02020202020202022,
+              0.1696273075583421
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": -0.026278106737876783,
+            "family_bootstrap_95_interval": [
+              -0.057045551298424924,
+              -0.003831417624520883
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": 0.2920585161964472,
+            "family_bootstrap_95_interval": [
+              0.02943225357018464,
+              0.5
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.2657804094585704,
+            "family_bootstrap_95_interval": [
+              0.0060954371299198895,
+              0.4696969696969696
+            ]
+          }
+        }
+      }
+    },
+    "gold": {
+      "mentions": 373,
+      "documents": 37,
+      "observed_disputes": 38,
+      "estimates": {
+        "surface": {
+          "expected_pair_brier": {
+            "estimate": 0.04110123511357001,
+            "family_bootstrap_95_interval": [
+              0.030021426714708685,
+              0.05995947438312863
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07585571450521901,
+            "family_bootstrap_95_interval": [
+              0.06695777880708707,
+              0.08512942533748451
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0404505274760672,
+            "family_bootstrap_95_interval": [
+              0.027399541801824745,
+              0.06462110076184484
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.03540518702915181,
+            "family_bootstrap_95_interval": [
+              0.00811116055225308,
+              0.04995559815318558
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.036716952680221335
+        },
+        "direct": {
+          "expected_pair_brier": {
+            "estimate": 0.04311234771270411,
+            "family_bootstrap_95_interval": [
+              0.03189114348998763,
+              0.0627797290870445
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.08026404767218717,
+            "family_bootstrap_95_interval": [
+              0.07092407573441582,
+              0.08567014221779112
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0404505274760672,
+            "family_bootstrap_95_interval": [
+              0.027399541801824745,
+              0.06462110076184484
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.03981352019611997,
+            "family_bootstrap_95_interval": [
+              0.009446495283284348,
+              0.053944909643366436
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04509798498727621
+        },
+        "shared": {
+          "expected_pair_brier": {
+            "estimate": 0.04282808715463988,
+            "family_bootstrap_95_interval": [
+              0.03149988836642874,
+              0.06259104510314828
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07904300612221396,
+            "family_bootstrap_95_interval": [
+              0.070884477749034,
+              0.08446457424180147
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0404505274760672,
+            "family_bootstrap_95_interval": [
+              0.027399541801824745,
+              0.06462110076184484
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.038592478646146754,
+            "family_bootstrap_95_interval": [
+              0.009454577338089541,
+              0.05246567086515951
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04154093406742726
+        },
+        "constant": {
+          "expected_pair_brier": {
+            "estimate": 0.040355540099187355,
+            "family_bootstrap_95_interval": [
+              0.029385126475884225,
+              0.06067287038180865
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350141,
+            "family_bootstrap_95_interval": [
+              0.0797093837535013,
+              0.0797093837535014
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.0404505274760672,
+            "family_bootstrap_95_interval": [
+              0.027399541801824745,
+              0.06462110076184484
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.0392588562774342,
+            "family_bootstrap_95_interval": [
+              0.015088282991656538,
+              0.05230984195167659
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.03925885627743421
+        }
+      },
+      "paired_brier_differences": {
+        "direct_minus_surface": {
+          "estimate": 0.002011112599134106,
+          "family_bootstrap_95_interval": [
+            0.0001537745332157195,
+            0.004414429718459665
+          ]
+        },
+        "shared_minus_surface": {
+          "estimate": 0.0017268520410698707,
+          "family_bootstrap_95_interval": [
+            1.799098892733091e-05,
+            0.004205228631771749
+          ]
+        },
+        "shared_minus_direct": {
+          "estimate": -0.00028426055806423517,
+          "family_bootstrap_95_interval": [
+            -0.0005287406967032224,
+            6.138510013818368e-05
+          ]
+        },
+        "direct_minus_constant": {
+          "estimate": 0.0027568076135167582,
+          "family_bootstrap_95_interval": [
+            0.0008011247181293284,
+            0.0037408719532460444
+          ]
+        },
+        "shared_minus_constant": {
+          "estimate": 0.002472547055452523,
+          "family_bootstrap_95_interval": [
+            0.0006727537440918722,
+            0.0035321377242794553
+          ]
+        }
+      },
+      "source_quintile_reliability": {
+        "surface": [
+          {
+            "n": 94,
+            "predicted": 0.031324259913640476,
+            "observed": 0.027977301409552246
+          },
+          {
+            "n": 86,
+            "predicted": 0.052147916109774574,
+            "observed": 0.05499261720191954
+          },
+          {
+            "n": 73,
+            "predicted": 0.0717575844337801,
+            "observed": 0.03664075250232424
+          },
+          {
+            "n": 55,
+            "predicted": 0.09585941976698177,
+            "observed": 0.032525252525252527
+          },
+          {
+            "n": 65,
+            "predicted": 0.15929859295806043,
+            "observed": 0.050233100233100236
+          }
+        ],
+        "direct": [
+          {
+            "n": 61,
+            "predicted": 0.02117100726940145,
+            "observed": 0.03732760863908405
+          },
+          {
+            "n": 66,
+            "predicted": 0.038278192114276334,
+            "observed": 0.029076479076479075
+          },
+          {
+            "n": 87,
+            "predicted": 0.061541767084957046,
+            "observed": 0.03520823130623494
+          },
+          {
+            "n": 78,
+            "predicted": 0.09087211970463784,
+            "observed": 0.04239236546928855
+          },
+          {
+            "n": 81,
+            "predicted": 0.1688708467332972,
+            "observed": 0.055830794719683614
+          }
+        ],
+        "shared": [
+          {
+            "n": 63,
+            "predicted": 0.02177050214856761,
+            "observed": 0.030498866213151926
+          },
+          {
+            "n": 76,
+            "predicted": 0.04085042143569587,
+            "observed": 0.03650793650793651
+          },
+          {
+            "n": 88,
+            "predicted": 0.06400928187867101,
+            "observed": 0.029126319586845906
+          },
+          {
+            "n": 77,
+            "predicted": 0.09674087174175235,
+            "observed": 0.05376542649269922
+          },
+          {
+            "n": 69,
+            "predicted": 0.1728261404300751,
+            "observed": 0.05346320346320347
+          }
+        ],
+        "constant": [
+          {
+            "n": 373,
+            "predicted": 0.07970938375350141,
+            "observed": 0.0404505274760672
+          }
+        ]
+      },
+      "within_document": {
+        "documents": 13,
+        "unequal_disagreement_pairs": 1554,
+        "models": {
+          "surface": {
+            "estimate": 0.5730683187938654,
+            "family_bootstrap_95_interval": [
+              0.36280880365992013,
+              0.770996385344288
+            ]
+          },
+          "direct": {
+            "estimate": 0.46039569343662323,
+            "family_bootstrap_95_interval": [
+              0.2852077073042712,
+              0.6377373725346
+            ]
+          },
+          "shared": {
+            "estimate": 0.4994413486465285,
+            "family_bootstrap_95_interval": [
+              0.3153784723161076,
+              0.6721380772053259
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.5626072681505264,
+            "family_bootstrap_95_interval": [
+              0.4051240605658709,
+              0.7222399206587248
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": -0.1126726253572422,
+            "family_bootstrap_95_interval": [
+              -0.32609058514351014,
+              0.07553527527968373
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": -0.07362697014733693,
+            "family_bootstrap_95_interval": [
+              -0.2820297493657698,
+              0.11611661959625269
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": 0.03904565520990527,
+            "family_bootstrap_95_interval": [
+              -0.002174503941288375,
+              0.1003895986228141
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": -0.03960430656337677,
+            "family_bootstrap_95_interval": [
+              -0.2147922926957288,
+              0.1377373725346
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": -0.0005586513534714954,
+            "family_bootstrap_95_interval": [
+              -0.1846215276838924,
+              0.17213807720532592
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": -0.10221157471390319,
+            "family_bootstrap_95_interval": [
+              -0.3505762494351952,
+              0.10166814068413677
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": -0.06316591950399791,
+            "family_bootstrap_95_interval": [
+              -0.32469735090537194,
+              0.15248163745956964
+            ]
+          }
+        }
+      },
+      "within_document_and_form": {
+        "documents": 9,
+        "unequal_disagreement_pairs": 262,
+        "models": {
+          "surface": {
+            "estimate": 0.6626883705535391,
+            "family_bootstrap_95_interval": [
+              0.42509363295880154,
+              0.8809523809523809
+            ]
+          },
+          "direct": {
+            "estimate": 0.4676683103649396,
+            "family_bootstrap_95_interval": [
+              0.2184769038701623,
+              0.7182182182182183
+            ]
+          },
+          "shared": {
+            "estimate": 0.6884934693923458,
+            "family_bootstrap_95_interval": [
+              0.45238095238095233,
+              0.8954668954668955
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.38404054134391213,
+            "family_bootstrap_95_interval": [
+              0.14472980203317282,
+              0.628870744741531
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": -0.19502006018859952,
+            "family_bootstrap_95_interval": [
+              -0.5274953926639319,
+              0.05723219206365271
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": 0.02580509883880666,
+            "family_bootstrap_95_interval": [
+              -0.3066702336365258,
+              0.351201924235632
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": 0.22082515902740618,
+            "family_bootstrap_95_interval": [
+              -0.002970245526425344,
+              0.5529100529100529
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": -0.03233168963506039,
+            "family_bootstrap_95_interval": [
+              -0.2815230961298377,
+              0.2182182182182183
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.1884934693923458,
+            "family_bootstrap_95_interval": [
+              -0.04761904761904767,
+              0.3954668954668955
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": 0.08362776902102748,
+            "family_bootstrap_95_interval": [
+              -0.1186075320906781,
+              0.3493493493493493
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": 0.30445292804843366,
+            "family_bootstrap_95_interval": [
+              -0.020646649860133037,
+              0.6666666666666667
+            ]
+          }
+        }
+      }
+    },
+    "gold_gnome": {
+      "mentions": 13,
+      "documents": 5,
+      "observed_disputes": 4,
+      "estimates": {
+        "surface": {
+          "expected_pair_brier": {
+            "estimate": 0.09036765168408994,
+            "family_bootstrap_95_interval": [
+              0.026364568279559686,
+              0.2736121608932059
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.06848105825098348,
+            "family_bootstrap_95_interval": [
+              0.04312446107263252,
+              0.09183397600886173
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.09794393640547486,
+            "family_bootstrap_95_interval": [
+              0.025589225589225585,
+              0.3045584045584046
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -0.029462878154491376,
+            "family_bootstrap_95_interval": [
+              -0.256716736642988,
+              0.05069686373211849
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.10694736096099314
+        },
+        "direct": {
+          "expected_pair_brier": {
+            "estimate": 0.09335037486431304,
+            "family_bootstrap_95_interval": [
+              0.029094142890495105,
+              0.2573260363856786
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07943709768804517,
+            "family_bootstrap_95_interval": [
+              0.049524231617675045,
+              0.11749195845170472
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.09794393640547486,
+            "family_bootstrap_95_interval": [
+              0.025589225589225585,
+              0.3045584045584046
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -0.0185068387174297,
+            "family_bootstrap_95_interval": [
+              -0.23050468605967114,
+              0.05959763135602767
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.09981396615266024
+        },
+        "shared": {
+          "expected_pair_brier": {
+            "estimate": 0.09288715870434583,
+            "family_bootstrap_95_interval": [
+              0.029303758200106292,
+              0.257931109422245
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.0811246139133243,
+            "family_bootstrap_95_interval": [
+              0.0518279472421235,
+              0.11725819320944168
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.09794393640547486,
+            "family_bootstrap_95_interval": [
+              0.025589225589225585,
+              0.3045584045584046
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -0.016819322492150547,
+            "family_bootstrap_95_interval": [
+              -0.2294691885515632,
+              0.06152536500342253
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.0696379612547142
+        },
+        "constant": {
+          "expected_pair_brier": {
+            "estimate": 0.08868342063729276,
+            "family_bootstrap_95_interval": [
+              0.02786340864269553,
+              0.2623596649281675
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350142,
+            "family_bootstrap_95_interval": [
+              0.07970938375350138,
+              0.07970938375350141
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.09794393640547486,
+            "family_bootstrap_95_interval": [
+              0.025589225589225585,
+              0.3045584045584046
+            ]
+          },
+          "calibration_bias": {
+            "estimate": -0.018234552651973466,
+            "family_bootstrap_95_interval": [
+              -0.22484902080490313,
+              0.05412015816427581
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.018234552651973435
+        }
+      },
+      "paired_brier_differences": {
+        "direct_minus_surface": {
+          "estimate": 0.002982723180223093,
+          "family_bootstrap_95_interval": [
+            -0.01628612450752731,
+            0.013727950011550694
+          ]
+        },
+        "shared_minus_surface": {
+          "estimate": 0.0025195070202558845,
+          "family_bootstrap_95_interval": [
+            -0.015681051470960883,
+            0.012085083569500568
+          ]
+        },
+        "shared_minus_direct": {
+          "estimate": -0.00046321615996720855,
+          "family_bootstrap_95_interval": [
+            -0.0016471896980473355,
+            0.0008667686913324812
+          ]
+        },
+        "direct_minus_constant": {
+          "estimate": 0.0046669542270202785,
+          "family_bootstrap_95_interval": [
+            -0.007408299066193821,
+            0.014806902828599533
+          ]
+        },
+        "shared_minus_constant": {
+          "estimate": 0.00420373806705307,
+          "family_bootstrap_95_interval": [
+            -0.006614942883405278,
+            0.013222914987811654
+          ]
+        }
+      },
+      "source_quintile_reliability": {
+        "surface": [
+          {
+            "n": 4,
+            "predicted": 0.03776737840651561,
+            "observed": 0.1222222222222222
+          },
+          {
+            "n": 4,
+            "predicted": 0.05561143227124445,
+            "observed": 0.0
+          },
+          {
+            "n": 1,
+            "predicted": 0.061816229150192074,
+            "observed": 0.6025641025641026
+          },
+          {
+            "n": 3,
+            "predicted": 0.09373446971909451,
+            "observed": 0.0
+          },
+          {
+            "n": 1,
+            "predicted": 0.17371887624426932,
+            "observed": 0.18181818181818177
+          }
+        ],
+        "direct": [
+          {
+            "n": 3,
+            "predicted": 0.022172135236633753,
+            "observed": 0.11851851851851851
+          },
+          {
+            "n": 2,
+            "predicted": 0.035224958202253846,
+            "observed": 0.0
+          },
+          {
+            "n": 1,
+            "predicted": 0.053163765461009,
+            "observed": 0.0
+          },
+          {
+            "n": 5,
+            "predicted": 0.08753390718113747,
+            "observed": 0.18354312354312355
+          },
+          {
+            "n": 2,
+            "predicted": 0.20244132323174088,
+            "observed": 0.0
+          }
+        ],
+        "shared": [
+          {
+            "n": 1,
+            "predicted": 0.013148498750529578,
+            "observed": 0.0
+          },
+          {
+            "n": 4,
+            "predicted": 0.03579433106435035,
+            "observed": 0.08888888888888888
+          },
+          {
+            "n": 1,
+            "predicted": 0.060743164378918656,
+            "observed": 0.0
+          },
+          {
+            "n": 6,
+            "predicted": 0.09468691744319181,
+            "observed": 0.15295260295260296
+          },
+          {
+            "n": 1,
+            "predicted": 0.26942948882721546,
+            "observed": 0.0
+          }
+        ],
+        "constant": [
+          {
+            "n": 13,
+            "predicted": 0.07970938375350142,
+            "observed": 0.09794393640547486
+          }
+        ]
+      },
+      "within_document": {
+        "documents": 2,
+        "unequal_disagreement_pairs": 4,
+        "models": {
+          "surface": {
+            "estimate": 1.0,
+            "family_bootstrap_95_interval": [
+              1.0,
+              1.0
+            ]
+          },
+          "direct": {
+            "estimate": 0.16666666666666666,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.3333333333333333
+            ]
+          },
+          "shared": {
+            "estimate": 0.3333333333333333,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.6666666666666666
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.6666666666666666,
+            "family_bootstrap_95_interval": [
+              0.3333333333333333,
+              1.0
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": -0.8333333333333334,
+            "family_bootstrap_95_interval": [
+              -1.0,
+              -0.6666666666666667
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": -0.6666666666666667,
+            "family_bootstrap_95_interval": [
+              -1.0,
+              -0.33333333333333337
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": 0.16666666666666666,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.3333333333333333
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": -0.33333333333333337,
+            "family_bootstrap_95_interval": [
+              -0.5,
+              -0.16666666666666669
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": -0.16666666666666669,
+            "family_bootstrap_95_interval": [
+              -0.5,
+              0.16666666666666663
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": -0.5,
+            "family_bootstrap_95_interval": [
+              -1.0,
+              0.0
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": -0.3333333333333333,
+            "family_bootstrap_95_interval": [
+              -1.0,
+              0.3333333333333333
+            ]
+          }
+        }
+      },
+      "within_document_and_form": {
+        "documents": 1,
+        "unequal_disagreement_pairs": 1,
+        "models": {}
+      }
+    },
+    "gold_gutenberg": {
+      "mentions": 242,
+      "documents": 4,
+      "observed_disputes": 20,
+      "estimates": {
+        "surface": {
+          "expected_pair_brier": {
+            "estimate": 0.03539064494348304,
+            "family_bootstrap_95_interval": [
+              0.024099021838881986,
+              0.05521428901388628
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07346397574283899,
+            "family_bootstrap_95_interval": [
+              0.05788210774796681,
+              0.08238956183795525
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.032638367142499375,
+            "family_bootstrap_95_interval": [
+              0.02066115702479339,
+              0.055259852410111485
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.04082560860033963,
+            "family_bootstrap_95_interval": [
+              0.0041406111493273515,
+              0.0526064083889933
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04129204252996614
+        },
+        "direct": {
+          "expected_pair_brier": {
+            "estimate": 0.037256998318047525,
+            "family_bootstrap_95_interval": [
+              0.026199180216405663,
+              0.057425924744853
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.08163524691206495,
+            "family_bootstrap_95_interval": [
+              0.06687286235161582,
+              0.08730499371667903
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.032638367142499375,
+            "family_bootstrap_95_interval": [
+              0.02066115702479339,
+              0.055259852410111485
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.04899687976956557,
+            "family_bootstrap_95_interval": [
+              0.01313136575297636,
+              0.059083789945548026
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.05185052268196859
+        },
+        "shared": {
+          "expected_pair_brier": {
+            "estimate": 0.03689223892029023,
+            "family_bootstrap_95_interval": [
+              0.025549336888626047,
+              0.05739662754888814
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.0792430094802985,
+            "family_bootstrap_95_interval": [
+              0.064926124514735,
+              0.08471539831122255
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.032638367142499375,
+            "family_bootstrap_95_interval": [
+              0.02066115702479339,
+              0.055259852410111485
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.04660464233779913,
+            "family_bootstrap_95_interval": [
+              0.011184627916095567,
+              0.05689516496578079
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04875420980939547
+        },
+        "constant": {
+          "expected_pair_brier": {
+            "estimate": 0.033788784737564026,
+            "family_bootstrap_95_interval": [
+              0.023720966694995155,
+              0.05280398070463558
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350142,
+            "family_bootstrap_95_interval": [
+              0.07970938375350128,
+              0.0797093837535014
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.032638367142499375,
+            "family_bootstrap_95_interval": [
+              0.02066115702479339,
+              0.055259852410111485
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.047071016611002034,
+            "family_bootstrap_95_interval": [
+              0.024449531343389914,
+              0.05904822672870795
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.04707101661100205
+        }
+      },
+      "paired_brier_differences": {
+        "direct_minus_surface": {
+          "estimate": 0.0018663533745644847,
+          "family_bootstrap_95_interval": [
+            0.0010747438907552018,
+            0.0027978345192266538
+          ]
+        },
+        "shared_minus_surface": {
+          "estimate": 0.0015015939768071862,
+          "family_bootstrap_95_interval": [
+            0.0009455877307781371,
+            0.0028176263701020082
+          ]
+        },
+        "shared_minus_direct": {
+          "estimate": -0.00036475939775729854,
+          "family_bootstrap_95_interval": [
+            -0.0006498433277796166,
+            1.9791850875354455e-05
+          ]
+        },
+        "direct_minus_constant": {
+          "estimate": 0.0034682135804834993,
+          "family_bootstrap_95_interval": [
+            0.001721004527954196,
+            0.00445821363955648
+          ]
+        },
+        "shared_minus_constant": {
+          "estimate": 0.0031034541827262008,
+          "family_bootstrap_95_interval": [
+            0.0013987259769289856,
+            0.004378538171821503
+          ]
+        }
+      },
+      "source_quintile_reliability": {
+        "surface": [
+          {
+            "n": 64,
+            "predicted": 0.0309261840660856,
+            "observed": 0.03180803571428571
+          },
+          {
+            "n": 58,
+            "predicted": 0.051967457171005454,
+            "observed": 0.04794745484400657
+          },
+          {
+            "n": 45,
+            "predicted": 0.07254273948047774,
+            "observed": 0.02626262626262626
+          },
+          {
+            "n": 34,
+            "predicted": 0.09650777803037049,
+            "observed": 0.021568627450980395
+          },
+          {
+            "n": 41,
+            "predicted": 0.15217575863329635,
+            "observed": 0.02845528455284553
+          }
+        ],
+        "direct": [
+          {
+            "n": 36,
+            "predicted": 0.021956208147597828,
+            "observed": 0.03154761904761905
+          },
+          {
+            "n": 44,
+            "predicted": 0.03876636193229557,
+            "observed": 0.03712121212121212
+          },
+          {
+            "n": 58,
+            "predicted": 0.061865317064159035,
+            "observed": 0.03214285714285715
+          },
+          {
+            "n": 55,
+            "predicted": 0.09144500759545231,
+            "observed": 0.0196969696969697
+          },
+          {
+            "n": 49,
+            "predicted": 0.1763657658553896,
+            "observed": 0.04452690166975881
+          }
+        ],
+        "shared": [
+          {
+            "n": 40,
+            "predicted": 0.022331613775201115,
+            "observed": 0.028392857142857143
+          },
+          {
+            "n": 51,
+            "predicted": 0.04148402752894936,
+            "observed": 0.04183006535947712
+          },
+          {
+            "n": 59,
+            "predicted": 0.06407142037231574,
+            "observed": 0.023123486682808718
+          },
+          {
+            "n": 51,
+            "predicted": 0.09771640999923144,
+            "observed": 0.02124183006535948
+          },
+          {
+            "n": 41,
+            "predicted": 0.1805879909102523,
+            "observed": 0.0532150776053215
+          }
+        ],
+        "constant": [
+          {
+            "n": 242,
+            "predicted": 0.07970938375350142,
+            "observed": 0.032638367142499375
+          }
+        ]
+      },
+      "within_document": {
+        "documents": 3,
+        "unequal_disagreement_pairs": 1482,
+        "models": {
+          "surface": {
+            "estimate": 0.4659349369956393,
+            "family_bootstrap_95_interval": [
+              0.42931937172774876,
+              0.5229681978798587
+            ]
+          },
+          "direct": {
+            "estimate": 0.5506035604475896,
+            "family_bootstrap_95_interval": [
+              0.45241379310344826,
+              0.607773851590106
+            ]
+          },
+          "shared": {
+            "estimate": 0.5531347330238457,
+            "family_bootstrap_95_interval": [
+              0.4882758620689655,
+              0.5916230366492147
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.5643537175411703,
+            "family_bootstrap_95_interval": [
+              0.5078534031413613,
+              0.6551724137931034
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": 0.08466862345195031,
+            "family_bootstrap_95_interval": [
+              0.006896551724137945,
+              0.16230366492146592
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": 0.08719979602820643,
+            "family_bootstrap_95_interval": [
+              0.04275862068965519,
+              0.16230366492146592
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": 0.0025311725762561244,
+            "family_bootstrap_95_interval": [
+              -0.028268551236749095,
+              0.035862068965517246
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": 0.050603560447589624,
+            "family_bootstrap_95_interval": [
+              -0.04758620689655174,
+              0.107773851590106
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.05313473302384575,
+            "family_bootstrap_95_interval": [
+              -0.011724137931034495,
+              0.09162303664921467
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": -0.013750157093580628,
+            "family_bootstrap_95_interval": [
+              -0.20275862068965517,
+              0.08376963350785338
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": -0.011218984517324504,
+            "family_bootstrap_95_interval": [
+              -0.16689655172413792,
+              0.08376963350785338
+            ]
+          }
+        }
+      },
+      "within_document_and_form": {
+        "documents": 3,
+        "unequal_disagreement_pairs": 242,
+        "models": {
+          "surface": {
+            "estimate": 0.4880651116606172,
+            "family_bootstrap_95_interval": [
+              0.3258426966292135,
+              0.6428571428571429
+            ]
+          },
+          "direct": {
+            "estimate": 0.617290645380533,
+            "family_bootstrap_95_interval": [
+              0.48314606741573035,
+              0.7380952380952381
+            ]
+          },
+          "shared": {
+            "estimate": 0.6130994557960849,
+            "family_bootstrap_95_interval": [
+              0.49438202247191015,
+              0.7142857142857143
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.5568835287936412,
+            "family_bootstrap_95_interval": [
+              0.5168539325842697,
+              0.5952380952380952
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": 0.1292255337199158,
+            "family_bootstrap_95_interval": [
+              0.09523809523809523,
+              0.15730337078651685
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": 0.1250343441354677,
+            "family_bootstrap_95_interval": [
+              0.0714285714285714,
+              0.16853932584269665
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": -0.004191189584448085,
+            "family_bootstrap_95_interval": [
+              -0.023809523809523836,
+              0.011235955056179803
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": 0.11729064538053302,
+            "family_bootstrap_95_interval": [
+              -0.01685393258426965,
+              0.23809523809523814
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.11309945579608494,
+            "family_bootstrap_95_interval": [
+              -0.005617977528089846,
+              0.2142857142857143
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": 0.060407116586891796,
+            "family_bootstrap_95_interval": [
+              -0.03370786516853935,
+              0.1428571428571429
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": 0.05621592700244371,
+            "family_bootstrap_95_interval": [
+              -0.02247191011235955,
+              0.11904761904761907
+            ]
+          }
+        }
+      }
+    },
+    "gold_wikipedia": {
+      "mentions": 118,
+      "documents": 28,
+      "observed_disputes": 14,
+      "estimates": {
+        "surface": {
+          "expected_pair_brier": {
+            "estimate": 0.0473851283825894,
+            "family_bootstrap_95_interval": [
+              0.02469053229241806,
+              0.07327424431853974
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.08157326799505818,
+            "family_bootstrap_95_interval": [
+              0.06585110152636436,
+              0.09706243775269732
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.050138057006924086,
+            "family_bootstrap_95_interval": [
+              0.020984742058128943,
+              0.08234496007629824
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.03143521098813409,
+            "family_bootstrap_95_interval": [
+              -0.002591548804136794,
+              0.06321876610816014
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.043303857733479514
+        },
+        "direct": {
+          "expected_pair_brier": {
+            "estimate": 0.0495860782257209,
+            "family_bootstrap_95_interval": [
+              0.025559515206172664,
+              0.07628305859395662
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07754303185645348,
+            "family_bootstrap_95_interval": [
+              0.06598865371871708,
+              0.08827651390109445
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.050138057006924086,
+            "family_bootstrap_95_interval": [
+              0.020984742058128943,
+              0.08234496007629824
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.02740497484952938,
+            "family_bootstrap_95_interval": [
+              -0.006202244030871247,
+              0.05698326259545288
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.03335790266824498
+        },
+        "shared": {
+          "expected_pair_brier": {
+            "estimate": 0.04948662395605037,
+            "family_bootstrap_95_interval": [
+              0.025553873606031903,
+              0.0760406923789417
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07840350007186737,
+            "family_bootstrap_95_interval": [
+              0.0673152185264935,
+              0.08893238184220105
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.050138057006924086,
+            "family_bootstrap_95_interval": [
+              0.020984742058128943,
+              0.08234496007629824
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.028265443064943288,
+            "family_bootstrap_95_interval": [
+              -0.00531324471282358,
+              0.0575584925302464
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.037792322378621464
+        },
+        "constant": {
+          "expected_pair_brier": {
+            "estimate": 0.048498695612047345,
+            "family_bootstrap_95_interval": [
+              0.023992966201132608,
+              0.07557121388888437
+            ]
+          },
+          "mean_risk": {
+            "estimate": 0.07970938375350141,
+            "family_bootstrap_95_interval": [
+              0.07970938375350138,
+              0.07970938375350141
+            ]
+          },
+          "observed_pair_disagreement": {
+            "estimate": 0.050138057006924086,
+            "family_bootstrap_95_interval": [
+              0.020984742058128943,
+              0.08234496007629824
+            ]
+          },
+          "calibration_bias": {
+            "estimate": 0.02957132674657731,
+            "family_bootstrap_95_interval": [
+              -0.0026355763227968337,
+              0.05872464169537245
+            ]
+          },
+          "weighted_absolute_calibration_error": 0.029571326746577323
+        }
+      },
+      "paired_brier_differences": {
+        "direct_minus_surface": {
+          "estimate": 0.002200949843131496,
+          "family_bootstrap_95_interval": [
+            -0.002246040316182822,
+            0.0074200987466842535
+          ]
+        },
+        "shared_minus_surface": {
+          "estimate": 0.002101495573460968,
+          "family_bootstrap_95_interval": [
+            -0.0021913761440628733,
+            0.007293921491626005
+          ]
+        },
+        "shared_minus_direct": {
+          "estimate": -9.945426967052778e-05,
+          "family_bootstrap_95_interval": [
+            -0.00047762994100199153,
+            0.0003351841562121793
+          ]
+        },
+        "direct_minus_constant": {
+          "estimate": 0.0010873826136735543,
+          "family_bootstrap_95_interval": [
+            -0.000950639410601748,
+            0.003126099840772545
+          ]
+        },
+        "shared_minus_constant": {
+          "estimate": 0.0009879283440030265,
+          "family_bootstrap_95_interval": [
+            -0.0008595315304959072,
+            0.002912836073715342
+          ]
+        }
+      },
+      "source_quintile_reliability": {
+        "surface": [
+          {
+            "n": 26,
+            "predicted": 0.03131288992410247,
+            "observed": 0.004048582995951417
+          },
+          {
+            "n": 24,
+            "predicted": 0.052006772518221604,
+            "observed": 0.08118386243386244
+          },
+          {
+            "n": 27,
+            "predicted": 0.07081719103312066,
+            "observed": 0.03297750549212538
+          },
+          {
+            "n": 18,
+            "predicted": 0.09498890138856203,
+            "observed": 0.05864197530864198
+          },
+          {
+            "n": 23,
+            "predicted": 0.17136885052454384,
+            "observed": 0.08333333333333334
+          }
+        ],
+        "direct": [
+          {
+            "n": 22,
+            "predicted": 0.01974961565500297,
+            "observed": 0.03571428571428571
+          },
+          {
+            "n": 20,
+            "predicted": 0.037509541905836254,
+            "observed": 0.014285714285714285
+          },
+          {
+            "n": 28,
+            "predicted": 0.0611707707574654,
+            "observed": 0.04281537176274019
+          },
+          {
+            "n": 18,
+            "predicted": 0.09004891018367703,
+            "observed": 0.07253086419753087
+          },
+          {
+            "n": 30,
+            "predicted": 0.1543911137339834,
+            "observed": 0.07801587301587302
+          }
+        ],
+        "shared": [
+          {
+            "n": 22,
+            "predicted": 0.02114220843641752,
+            "observed": 0.03571428571428571
+          },
+          {
+            "n": 21,
+            "predicted": 0.04027472861328885,
+            "observed": 0.013605442176870748
+          },
+          {
+            "n": 28,
+            "predicted": 0.06399499424919651,
+            "observed": 0.04281537176274019
+          },
+          {
+            "n": 20,
+            "predicted": 0.09486943547474883,
+            "observed": 0.10694444444444447
+          },
+          {
+            "n": 27,
+            "predicted": 0.15746172494546742,
+            "observed": 0.05582010582010582
+          }
+        ],
+        "constant": [
+          {
+            "n": 118,
+            "predicted": 0.07970938375350141,
+            "observed": 0.050138057006924086
+          }
+        ]
+      },
+      "within_document": {
+        "documents": 8,
+        "unequal_disagreement_pairs": 68,
+        "models": {
+          "surface": {
+            "estimate": 0.5065104166666666,
+            "family_bootstrap_95_interval": [
+              0.21484375,
+              0.78984375
+            ]
+          },
+          "direct": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.25,
+              0.75
+            ]
+          },
+          "shared": {
+            "estimate": 0.5208333333333333,
+            "family_bootstrap_95_interval": [
+              0.2625,
+              0.7667708333333317
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.5359375,
+            "family_bootstrap_95_interval": [
+              0.30833333333333335,
+              0.7609374999999999
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": -0.00651041666666663,
+            "family_bootstrap_95_interval": [
+              -0.16901041666666666,
+              0.16249999999999992
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": 0.01432291666666663,
+            "family_bootstrap_95_interval": [
+              -0.16901041666666666,
+              0.2309895833333333
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": 0.02083333333333326,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.0625
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": 0.0,
+            "family_bootstrap_95_interval": [
+              -0.25,
+              0.25
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.02083333333333326,
+            "family_bootstrap_95_interval": [
+              -0.2375,
+              0.26677083333333174
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": -0.035937499999999956,
+            "family_bootstrap_95_interval": [
+              -0.35677083333333337,
+              0.20156249999999998
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": -0.015104166666666696,
+            "family_bootstrap_95_interval": [
+              -0.3484375,
+              0.23333333333333328
+            ]
+          }
+        }
+      },
+      "within_document_and_form": {
+        "documents": 5,
+        "unequal_disagreement_pairs": 19,
+        "models": {
+          "surface": {
+            "estimate": 0.7,
+            "family_bootstrap_95_interval": [
+              0.3,
+              1.0
+            ]
+          },
+          "direct": {
+            "estimate": 0.4714285714285714,
+            "family_bootstrap_95_interval": [
+              0.07142857142857142,
+              0.8714285714285716
+            ]
+          },
+          "shared": {
+            "estimate": 0.6714285714285715,
+            "family_bootstrap_95_interval": [
+              0.27142857142857146,
+              1.0
+            ]
+          },
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "book_only": {
+            "estimate": 0.3571428571428571,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.7571428571428571
+            ]
+          }
+        },
+        "paired_differences": {
+          "direct_minus_surface": {
+            "estimate": -0.22857142857142854,
+            "family_bootstrap_95_interval": [
+              -0.6285714285714286,
+              0.0
+            ]
+          },
+          "shared_minus_surface": {
+            "estimate": -0.02857142857142847,
+            "family_bootstrap_95_interval": [
+              -0.6,
+              0.5714285714285716
+            ]
+          },
+          "shared_minus_direct": {
+            "estimate": 0.20000000000000007,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.6000000000000001
+            ]
+          },
+          "direct_minus_constant": {
+            "estimate": -0.02857142857142858,
+            "family_bootstrap_95_interval": [
+              -0.4285714285714286,
+              0.37142857142857155
+            ]
+          },
+          "shared_minus_constant": {
+            "estimate": 0.17142857142857149,
+            "family_bootstrap_95_interval": [
+              -0.22857142857142854,
+              0.5
+            ]
+          },
+          "direct_minus_book_only": {
+            "estimate": 0.11428571428571432,
+            "family_bootstrap_95_interval": [
+              -0.2571428571428571,
+              0.6
+            ]
+          },
+          "shared_minus_book_only": {
+            "estimate": 0.3142857142857144,
+            "family_bootstrap_95_interval": [
+              -0.17142857142857137,
+              0.8
+            ]
+          }
+        }
+      }
+    },
+    "new_reader_gold": {
+      "mentions": 0,
+      "documents": 0
+    }
+  }
+}

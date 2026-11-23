@@ -1,0 +1,39 @@
+{
+  "article": "https://doi.org/10.1016/j.jml.2026.104748",
+  "file_sha256": {
+    "stimuli.jsonl": "517e0ed0117e73af93d8772974e239af12115c7a17e784a0d9d7f2e0d905dc0b",
+    "targets.jsonl": "435c932616c7fa20054e31e469aa026cff99332fb4c02dee634633e58d348ff3"
+  },
+  "geometry": {
+    "design_fields": "Source condition, context, disamb and crit, with phase=critical at author crit, spill at the next original display region, and other elsewhere",
+    "families": 36,
+    "item_4": "The source marks display 10 as critical. The complement and relative-clause versions first differ in display 11, which is retained as spill.",
+    "original_stops": 2758,
+    "raw_stimulus_variants": 216,
+    "stimulus_variants": 216,
+    "targets": 2542,
+    "targets_by_phase": {
+      "critical": 216,
+      "other": 2110,
+      "spill": 216
+    },
+    "text": "Exact UTF-8 source display strings joined by one ASCII space, with offsets in Unicode characters"
+  },
+  "material_overlap": {
+    "excluded_items": [],
+    "exclusion_rule": "Exclude all six variants of any family with an exact normalized document match or an identical span of 12 consecutive word tokens shared with a prior text",
+    "five_word_shingle_matches": 0,
+    "normalization": "Unicode NFKC, casefold, then Unicode word tokens",
+    "normalized_document_matches": 0,
+    "prior_documents": 40,
+    "prior_stimuli_sha256": "0f7bc8575532af166b7ff53dfc03205a1757ad2a487283daf710c5bc581d1f31",
+    "twelve_word_shingle_matches": 0
+  },
+  "project": "https://osf.io/6uv37/",
+  "source_sha256": {
+    "alt_stim.txt": "7e7cf3581de3f7ec988253ba6adf175390c7ca5b6583ab79597880ed19de3f22",
+    "analyses.Rmd": "9fe165881881c9887f67372048a91c72397c6ae49f4a9daabbabbb1d36dd71c8",
+    "fixations.Rda": "e7bde8f75569f98942671e3d1344ca5bd0b7348c23cda206d2dc7aacd6cfdbab",
+    "scanpaths.R": "876cb5bc46c0f4faa36c49be0298644755426a9918fe71cdec4725e69f4eb60b"
+  }
+}

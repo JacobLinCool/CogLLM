@@ -1,0 +1,24 @@
+{
+  "entry": "research.reading_validation.local_help_l4.run(runtime, reader, checkpoint, input_path, output_dir)",
+  "runtime": "pinned Qwen3.5-2B Backbone(native_attention=True)",
+  "worker_sha256": "01fa8b496d84260d48de092efd2dc00655f47d9769454ef6f6c524745088932b",
+  "converter_sha256": "74dc3b3434099a822be64fbf5c13536f38648764af760507951c26f4f47a7390",
+  "worker_source": "research/reading_validation/local_help_l4.py",
+  "converter_source": "research/reading_validation/local_help_article.py",
+  "resource_sha256": {
+    "research/results/reading-validation-local/serving/manifest.json": "c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e",
+    "research/results/reading-validation-local/serving/lexicon.json.gz": "8788398962c1b7c09678e4243ceb992696a52b4fae999dc20ff51b5fd05a04c6",
+    "research/results/reading-validation-local/serving/weights.npz": "2f72b3b28ec5bc4f47bfe084ae76ccf2f9fdc01e4f4d61bfd4a7a38bda99bfa3",
+    "research/results/reading-validation-local/localization/deployment-weights.json": "c4430b62590f53752b67ef5e7e9a1fb9a5d90299285a7e3abcdd6a1809d61860",
+    "research/results/reading-validation-local/jargon/prediction-lock.json": "5e899f6eed6c37fb18ca27306d69ce34110d95a482c0f26914f94264c363c432",
+    "research/results/reading-validation-local/help-choice/geometry.json": "5ca204cd10b492ab2b1a02d415ecef90b6130a719d369c65071a9a9c45bf88f2",
+    "research/results/reading-validation-definitions/weights.json": "3a9aa5aa4fc966c59e83340bc59027783a6de46045e5e5c566b5c4a5ef868bb6",
+    "research/results/reading-validation-definitions/forecast-seal.json": "aecef657d9cd892164559f90edc94aff5bd38b49ffb336f37488fee1db65e852"
+  },
+  "controls": ".cache/cogllm/reading-validation/guo-help-controls.jsonl",
+  "controls_sha256": "0203b6665caf4e83627d37b4b89e5441c7187758f65203fce0e30da2e93ff67d",
+  "reference_sha256": "4bc7ec388c4e4a17136083d210635a539e786e147447d5b37d08389699274f06",
+  "external_input": ".cache/cogllm/reading-validation/relay/local-stimuli.jsonl",
+  "controls_papers": 3,
+  "controls_terms": 22
+}

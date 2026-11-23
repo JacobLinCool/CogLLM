@@ -1,0 +1,129 @@
+{
+  "protocol_sha256": "04c699fff92f75640dbd01c47a8993192e308e0bed8fc20c19b08312a9512dbd",
+  "known_marked_movie_words": 413,
+  "movie_word_max_votes": {
+    "1": 111,
+    "2": 134,
+    "3": 168
+  },
+  "movie_segments_with_votes_above_three": 0,
+  "within_segment": {
+    "all_extreme": {
+      "movies": 18,
+      "segments": 18,
+      "word_pairs": 51,
+      "ordering": {
+        "qwen": {
+          "estimate": 0.7453703703703703,
+          "family_bootstrap_95_interval": [
+            0.5648148148148148,
+            0.9075231481481466
+          ]
+        },
+        "ner": {
+          "estimate": 0.6574074074074073,
+          "family_bootstrap_95_interval": [
+            0.4537037037037038,
+            0.8425925925925926
+          ]
+        },
+        "qwen_minus_ner": {
+          "estimate": 0.08796296296296302,
+          "family_bootstrap_95_interval": [
+            -0.10648148148148129,
+            0.2777777777777779
+          ]
+        }
+      }
+    },
+    "all_ordered": {
+      "movies": 29,
+      "segments": 41,
+      "word_pairs": 117,
+      "ordering": {
+        "qwen": {
+          "estimate": 0.6607553366174057,
+          "family_bootstrap_95_interval": [
+            0.5331670771756979,
+            0.7824404761904761
+          ]
+        },
+        "ner": {
+          "estimate": 0.601231527093596,
+          "family_bootstrap_95_interval": [
+            0.46806034482758613,
+            0.7295587027914614
+          ]
+        },
+        "qwen_minus_ner": {
+          "estimate": 0.059523809523809756,
+          "family_bootstrap_95_interval": [
+            -0.061500410509031225,
+            0.19294334975369445
+          ]
+        }
+      }
+    },
+    "first_person_extreme": {
+      "movies": 5,
+      "segments": 5,
+      "word_pairs": 6,
+      "ordering": {
+        "qwen": {
+          "estimate": 0.5,
+          "family_bootstrap_95_interval": [
+            0.1,
+            0.9
+          ]
+        },
+        "ner": {
+          "estimate": 0.5,
+          "family_bootstrap_95_interval": [
+            0.1,
+            0.9
+          ]
+        },
+        "qwen_minus_ner": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            -0.6,
+            0.6
+          ]
+        }
+      }
+    },
+    "first_person_ordered": {
+      "movies": 17,
+      "segments": 19,
+      "word_pairs": 26,
+      "ordering": {
+        "qwen": {
+          "estimate": 0.4509803921568627,
+          "family_bootstrap_95_interval": [
+            0.23529411764705882,
+            0.6666666666666666
+          ]
+        },
+        "ner": {
+          "estimate": 0.6078431372549019,
+          "family_bootstrap_95_interval": [
+            0.4117647058823529,
+            0.7941176470588235
+          ]
+        },
+        "qwen_minus_ner": {
+          "estimate": -0.1568627450980392,
+          "family_bootstrap_95_interval": [
+            -0.4411764705882352,
+            0.10784313725490213
+          ]
+        }
+      }
+    }
+  },
+  "pooled_descriptive_rank_probability": {
+    "qwen": 0.8340840840840841,
+    "ner": 0.7498927498927499
+  },
+  "source_has_rater_ids_or_registered_denominators": false
+}

@@ -1,0 +1,268 @@
+{
+  "calibrated_stock_errors": {
+    "joint": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.2878183200304067,
+      "certain_words": 21048,
+      "interval_mae": 0.1591109746266938,
+      "interval_mse": 0.24839737438102183,
+      "mean_count": 0.1772292810256804,
+      "mean_on_certain_empty": 0.15905919872433724,
+      "mean_on_certain_positive": 0.3800813008130081,
+      "nwords": 26051,
+      "positive_words": 984
+    },
+    "native": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.04637556640262897,
+      "certain_words": 21048,
+      "interval_mae": 0.07154174294878543,
+      "interval_mse": 0.03760839288052885,
+      "mean_count": 0.045032256416145625,
+      "mean_on_certain_empty": 0.0454659975311975,
+      "mean_on_certain_positive": 0.037274078147624054,
+      "nwords": 26051,
+      "positive_words": 984
+    },
+    "position": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.10979665526415812,
+      "certain_words": 21048,
+      "interval_mae": 0.08840351617980116,
+      "interval_mse": 0.08886415108824997,
+      "mean_count": 0.05746420482898929,
+      "mean_on_certain_empty": 0.06926450069762806,
+      "mean_on_certain_positive": 0.07621951219512195,
+      "nwords": 26051,
+      "positive_words": 984
+    },
+    "semantic": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.38692512352717595,
+      "certain_words": 21048,
+      "interval_mae": 0.2258646501094008,
+      "interval_mse": 0.33434417104909603,
+      "mean_count": 0.26874208283751105,
+      "mean_on_certain_empty": 0.24302371935419573,
+      "mean_on_certain_positive": 0.568089430894309,
+      "nwords": 26051,
+      "positive_words": 984
+    },
+    "semantic_probability": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.04289026777898688,
+      "certain_words": 21048,
+      "interval_mae": 0.07938682655442414,
+      "interval_mse": 0.0347829895042789,
+      "mean_count": 0.0641804472204009,
+      "mean_on_certain_empty": 0.06073514646450836,
+      "mean_on_certain_positive": 0.14098241939070255,
+      "nwords": 26051,
+      "positive_words": 984
+    },
+    "surface": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.1316514633219308,
+      "certain_words": 21048,
+      "interval_mae": 0.09354727265747956,
+      "interval_mse": 0.10989981190741238,
+      "mean_count": 0.08360523588345938,
+      "mean_on_certain_empty": 0.07614112019134942,
+      "mean_on_certain_positive": 0.17378048780487804,
+      "nwords": 26051,
+      "positive_words": 984
+    },
+    "zero": {
+      "certain_empty_words": 20068,
+      "certain_mse": 0.04713036868110984,
+      "certain_words": 21048,
+      "interval_mae": 0.037925607462285515,
+      "interval_mse": 0.03823269740125139,
+      "mean_count": 0.0,
+      "mean_on_certain_empty": 0.0,
+      "mean_on_certain_positive": 0.0,
+      "nwords": 26051,
+      "positive_words": 984
+    }
+  },
+  "calibration_passages": 250,
+  "exact_source_interval_pooled": {
+    "joint": {
+      "detected": 92,
+      "emitted": 221,
+      "f1": 0.23089430894308943,
+      "gold": 394,
+      "hit": 71,
+      "overlap_hit": 83,
+      "precision": 0.3212669683257919,
+      "recall": 0.1802030456852792,
+      "target_overlap_precision": 0.3755656108597285
+    },
+    "native": {
+      "detected": 102,
+      "emitted": 2467,
+      "f1": 0.023068857042991962,
+      "gold": 394,
+      "hit": 33,
+      "native_source_representable": 134,
+      "overlap_hit": 111,
+      "precision": 0.013376570733684636,
+      "recall": 0.08375634517766498,
+      "target_overlap_precision": 0.0449939197405756
+    },
+    "position": {
+      "detected": 65,
+      "emitted": 1033,
+      "f1": 0.011212333566923615,
+      "gold": 394,
+      "hit": 8,
+      "overlap_hit": 8,
+      "precision": 0.007744433688286544,
+      "recall": 0.02030456852791878,
+      "target_overlap_precision": 0.007744433688286544
+    },
+    "semantic": {
+      "detected": 111,
+      "emitted": 319,
+      "f1": 0.2776998597475456,
+      "gold": 394,
+      "hit": 99,
+      "overlap_hit": 115,
+      "precision": 0.3103448275862069,
+      "recall": 0.2512690355329949,
+      "target_overlap_precision": 0.3605015673981191
+    },
+    "surface": {
+      "detected": 67,
+      "emitted": 477,
+      "f1": 0.11710677382319173,
+      "gold": 394,
+      "hit": 51,
+      "overlap_hit": 53,
+      "precision": 0.1069182389937107,
+      "recall": 0.12944162436548223,
+      "target_overlap_precision": 0.1111111111111111
+    }
+  },
+  "file_macro_f1": {
+    "joint": {
+      "mean": 0.2715986237327145,
+      "paired_item_bootstrap_95": [
+        0.19474353090177857,
+        0.3651785866579169
+      ]
+    },
+    "native": {
+      "mean": 0.021842176470542592,
+      "paired_item_bootstrap_95": [
+        0.015347672273240956,
+        0.02876135425890871
+      ]
+    },
+    "position": {
+      "mean": 0.011268554973570245,
+      "paired_item_bootstrap_95": [
+        0.004334605680274309,
+        0.019550211787828533
+      ]
+    },
+    "semantic": {
+      "mean": 0.2899229432792527,
+      "paired_item_bootstrap_95": [
+        0.23696470091889943,
+        0.3472734418878483
+      ]
+    },
+    "surface": {
+      "mean": 0.12866520407815368,
+      "paired_item_bootstrap_95": [
+        0.08667756274541122,
+        0.1754706796905345
+      ]
+    }
+  },
+  "file_macro_f1_gain_semantic_vs_native": {
+    "mean": 0.2680807668087101,
+    "paired_item_bootstrap_95": [
+      0.21597781827298274,
+      0.3255119315664242
+    ]
+  },
+  "forecast": "1528c0a19c664ed6e811cc72c299938391e466415320a2e4d9a82064fa9fea7b",
+  "native_span_width": 4,
+  "protocol": "c3fa9e9a19697ed3c5f6e09ffee1336918685c7a87893baea1b8192071f7545f",
+  "psychology": {
+    "f1": 0.023222060957910014,
+    "native_mass_to_count": 0.4716570745999759,
+    "opening_threshold": 0.00332999206148088,
+    "resolution_threshold": 0.0003608212573453784
+  },
+  "test_files": 29,
+  "test_passages": 500,
+  "within_document_rank_correlation": {
+    "joint": {
+      "mean": {
+        "mean": 0.241663753155244,
+        "paired_item_bootstrap_95": [
+          0.17437525910792262,
+          0.30898623811577125
+        ]
+      },
+      "passages": 160
+    },
+    "native": {
+      "mean": {
+        "mean": -0.11361477003643551,
+        "paired_item_bootstrap_95": [
+          -0.20101811150588253,
+          -0.03365005080134411
+        ]
+      },
+      "passages": 315
+    },
+    "position": {
+      "mean": {
+        "mean": -0.08370564305895263,
+        "paired_item_bootstrap_95": [
+          -0.10920899982989377,
+          -0.05317505309098819
+        ]
+      },
+      "passages": 315
+    },
+    "semantic": {
+      "mean": {
+        "mean": 0.275479523593906,
+        "paired_item_bootstrap_95": [
+          0.19208633066200248,
+          0.36233376810230455
+        ]
+      },
+      "passages": 200
+    },
+    "semantic_probability": {
+      "mean": {
+        "mean": 0.22155599273841,
+        "paired_item_bootstrap_95": [
+          0.17407622159883818,
+          0.2748610101672689
+        ]
+      },
+      "passages": 315
+    },
+    "surface": {
+      "mean": {
+        "mean": 0.11539900797245295,
+        "paired_item_bootstrap_95": [
+          0.05331072168599514,
+          0.19059911688843587
+        ]
+      },
+      "passages": 189
+    },
+    "zero": {
+      "mean": null,
+      "passages": 0
+    }
+  }
+}

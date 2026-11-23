@@ -1,0 +1,9 @@
+# Which responses follow a transferred word score?
+
+A readout trained on Spanish 300–500 ms EEG negativity correlated with English N400 negativity at 0.333 across 1,726 originally displayed word positions in 205 sentences. The closest association occurred for the earlier LAN at 0.304. The difference of 0.029 had a 95% sentence-bootstrap interval of −0.014 to 0.072. The result supports a transferable word association and leaves its physiological specificity unresolved. The same group has previously measured relations among these language-model and human-reading variables. Our analysis fixed its predictor in another language and used six signed physiological windows on exact English displays. [Registered contrasts](word-selectivity-protocol.md) · [Original word measurements](https://doi.org/10.1016/j.bandl.2014.10.006) · [Earlier multi-response analysis](https://doi.org/10.1016/j.jml.2025.104715)
+
+| Signed measure | ELAN | LAN | N400 | EPNP | P600 | PNP |
+| --- | ---: | ---: | ---: | ---: | ---: | ---: |
+| Spanish N400 readout, English Spearman ρ | 0.006 | 0.304 | 0.333 | −0.219 | −0.156 | −0.134 |
+
+The raw whole-word surprisal comparator showed a larger N400 advantage over other signed measurements, 0.093 (0.036–0.130). The previously trained baseline combining the surface variables with surprisal gave 0.061 (0.020–0.105), or 0.033 (−0.014–0.074) when competitor magnitude ignored sign. The Spanish early-window readout favored the ELAN over the N400. Against the measured English reading times, the transferred Spanish N400 readout correlated at 0.083 for first fixation, 0.088 for first pass, 0.068 for right-bounded time, −0.045 for go-past time and −0.120 for self-paced reading. All eleven outcomes contained 1,726 measurements. Repeated words in a sentence entered the same bootstrap cluster. [Endpoint estimates, comparator curves and simultaneous intervals](../results/reading-validation-convergent/word-selectivity.json)

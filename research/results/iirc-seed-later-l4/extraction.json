@@ -1,0 +1,45 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "assay_sha256": "68d8fc5398a34b7242eb32bdbd65b97c90d91db4973ca0995c7496cbdac88dd8",
+  "inputs_sha256": {
+    "assay": "68d8fc5398a34b7242eb32bdbd65b97c90d91db4973ca0995c7496cbdac88dd8",
+    "train/stimuli.jsonl": "10645b590140cb151a8d628f17d447680aaae9102cd00b1d32c9506bb472b0e5",
+    "dev/stimuli.jsonl": "1e9706ec36e168988fddca2225f13df1c096f82999733f12ccd047ca4bce8fd5"
+  },
+  "code_sha256": {
+    "iirc_linked_extract.py": "c6c0ed799844aef4d90f329e88e8a10f790b803900e475d6bd963134e74d31ff",
+    "extract.py": "9f9445fcfa89b556a05568a49589c2e7fde48d1db1e92b881ff3452734f4dbb1"
+  },
+  "transformers": "5.17.0",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA L4",
+  "dtype": "float32",
+  "batches": 14,
+  "shards": 1,
+  "batches_per_shard": 48,
+  "max_batch_tokens": 6144,
+  "max_batch_examples": 24,
+  "tokens": 74088,
+  "projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+  "features_sha256": "62c0c740f0697e14797909943ac6482fe435d18f2dba3605c5fcd770a0f6928d",
+  "plan_sha256": "7a9a29f09379c29cbb318b093fb922cd99c2a9e9664e31daec38a70572ec38e3",
+  "causality_sha256": "1b8fb517e299835fe2af172008e625568883dd3ee109b94ef507ef905e11d79d",
+  "input_paths": 258,
+  "certified_character_stops": 3710,
+  "feature_width": 128,
+  "state_normalization": "row L2 normalization after fixed float32 projection",
+  "forward_and_readout_s": 31.099528137000107,
+  "total_this_invocation_s": 43.79451591299994,
+  "throughput_tokens_s": 2382.2869489731943,
+  "per_shard": [
+    {
+      "number": 0,
+      "sha256": "efa3c4f4c05f72eea512f4d0ea25b257f384517cc7ef34fbbb2e3552b660cdf6",
+      "forward_s": 31.099528137000107,
+      "peak_reserved_bytes": 8938061824,
+      "tokens_completed": 74088
+    }
+  ]
+}

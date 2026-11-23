@@ -1,0 +1,264 @@
+{
+  "schema_version": 1,
+  "families": [
+    {
+      "id": "sap-garden-path",
+      "aliases": [
+        "sap",
+        "sap-benchmark",
+        "sap-gardenpath",
+        "syntactic-ambiguity-processing-benchmark",
+        "huang-sap",
+        "huang-et-al-2024-spr",
+        "timkey",
+        "timkey-et-al-2025-eyetracking",
+        "timkey-et-al-2026-eyetracking",
+        "b6rqh"
+      ],
+      "status": "sealed",
+      "reason": "同一套暫時性句法歧義材料的 SAP 自定步速與 Timkey 眼動整組保留。逐位置操弄反應與可對齊的篇末解讀。",
+      "source_pins": [
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/huang-material.csv",
+          "sha256": "86b10d44a0489cee0e20ea49a19d05937d91aff06504d7a22d82f74b2b3e7308",
+          "url": "https://osf.io/download/5evhg/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/huang-pcibex.txt",
+          "sha256": "fecdd9312403a7b46033ff87c71b6c86b0e1706c54edc8bf0b7f4a5e0fb3353c",
+          "url": "https://osf.io/download/k39ws/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/timkey-valid-N368.rds",
+          "sha256": "adb5cdca5ba11ec27ee478a6d4459ee5be159cd6b34139e27421782e9006839f",
+          "url": "https://osf.io/download/q7yfx/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/timkey-process.Rmd",
+          "sha256": "b8cbf73d1cfa4216b18e709f0a8323380d6be92f2de834d8d5a168699b9c3ca9",
+          "url": "https://osf.io/download/bc2wk/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/sap-github-license.txt",
+          "sha256": "43e8c6ddd8961b25ccd8942bf0e81fb92d320da15249ce994b81ff8db9fd8e96",
+          "url": "https://raw.githubusercontent.com/caplabnyu/sapbenchmark/15e61066d510b5349e17740e6488c976abc3e1ac/LICENSE"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/sap-github-readme.txt",
+          "sha256": "830ddddde9a90ff2352297866936bf7146b88cd96f78d2843cdacb1407f840e9",
+          "url": "https://raw.githubusercontent.com/caplabnyu/sapbenchmark/15e61066d510b5349e17740e6488c976abc3e1ac/readme_SAP.txt"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/huang-preprocessing.R",
+          "sha256": "820d2e4d9368ed4157bb27a2d06157069cf4b45b947a68c60146ad755751d89d",
+          "url": "https://drive.google.com/file/d/1grTOMSdPc26KuyDflihadw3oKfbWlWyz/view"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/sap/huang-ClassicGardenPathSet.csv",
+          "sha256": "9ab7695431703b8f45171786aa4e686f07f7172154435db776a06da7d57742e8",
+          "url": "https://drive.google.com/file/d/1TanAUeI1x_G0mkFsFnpru0udi8oRvxNH/view"
+        },
+        {
+          "url": "https://drive.google.com/drive/folders/1g-oyH-XuB2oolo1d8KZfuFtiimuNyhjc"
+        },
+        {
+          "kind": "normalized_text_hashes",
+          "path": ".cache/cogllm/union-training/heldout/sap/normalized-text-hashes.jsonl",
+          "sha256": "c7120baee78efb81933b1b2deeb3774d09ef5137e6640b104e375dc8df981886"
+        }
+      ]
+    },
+    {
+      "id": "anglin-belief",
+      "aliases": [
+        "anglin",
+        "anglin-2019",
+        "anglin-2025",
+        "anglin-study1",
+        "anglin-belief-update",
+        "anglin-study-1",
+        "anglin-study-4",
+        "gfp48",
+        "2w5uy",
+        "133914"
+      ],
+      "status": "sealed",
+      "reason": "同一證據材料的多次信念與確定程度報告。2025 Study 1 與 Anglin 2019 Study 4 刺激共同保留。主評分前需核對刺激內的光柵數值。",
+      "source_pins": [
+        {
+          "path": ".cache/cogllm/anglin/study1.sav",
+          "sha256": "5e637de7a479315ea46286400c0003cb213d3aa2a419a1b1467c4ba632dea4aa",
+          "url": "https://osf.io/download/v6nkd/"
+        },
+        {
+          "path": ".cache/cogllm/anglin/study1.sps",
+          "sha256": "208452a0038f256d1438fc1181201311d89e6fbd1875015813d6c6a0f3cb75b5",
+          "url": "https://osf.io/download/zwfqc/"
+        },
+        {
+          "path": ".cache/cogllm/anglin/stimulus.pdf",
+          "sha256": "ce8bf04b616ae86b0bf471b7b66162d01e2405b1b0319f62cf9dfb011b0ca850",
+          "url": "https://osf.io/download/juam5/"
+        },
+        {
+          "path": ".cache/cogllm/anglin/followup.pdf",
+          "sha256": "de28284153116f1a383ed3a9ec58f67f73374d9ed5e4a615f6246ba1a77b0e3a",
+          "url": "https://osf.io/download/nyrgb/"
+        }
+      ]
+    },
+    {
+      "id": "traditional-chinese-meco",
+      "aliases": [
+        "d08",
+        "traditional-chinese-meco",
+        "bidirectional-meco",
+        "bidirectional-chinese-meco",
+        "chinese-meco",
+        "chinese-meco-hk",
+        "meco-hk",
+        "meco-hong-kong",
+        "meco",
+        "meco-l1",
+        "meco-l2",
+        "meco-taiwan",
+        "meco-traditional-chinese",
+        "jyn8s",
+        "pan-tan-xi-bao",
+        "pan-tan-xi-bao-kupperman-yan",
+        "s41597-026-06989-8",
+        "PMC13096406"
+      ],
+      "status": "sealed",
+      "reason": "D08 整個 12 篇繁中 MECO 刺激家族保留，含橫／直排、五篇 MECO-L1 翻譯與另七篇同題改寫。首個純文本版本只評橫排篇後是非反應。作者主文 Data Records 對資料採 CC BY 4.0。",
+      "source_pins": [
+        {
+          "path": ".cache/cogllm/union-training/heldout/chinese-meco/meco-hk-wordinfo.xlsx",
+          "sha256": "cdf60550dd1fffe04596105935ace4b688f0282fde86fdc820d30f85417f8ec0",
+          "url": "https://osf.io/download/98zd6/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/chinese-meco/ch_t_bi_all_acc.rda",
+          "sha256": "7ed2a73a193b3df6417d86bf18a095905dcf70db6662b9bd0d4656d5a5f52e55",
+          "url": "https://osf.io/download/3sfc7/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/chinese-meco/readme-primary-data.txt",
+          "sha256": "6e4bfa71556150ad624e52a557d058034f6ac55d407d5d24e50d1d4620b8b786",
+          "url": "https://osf.io/download/z573f/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/chinese-meco/pin-receipt.json",
+          "sha256": "0eb21602d0772506cb469117fbc0a258981fd89aae51023f5a58222fa0673111",
+          "url": "https://osf.io/jyn8s/"
+        },
+        {
+          "path": ".cache/cogllm/union-training/heldout/chinese-meco/normalized-stimulus-sha256.json",
+          "sha256": "b00c8cf9aa3111e885031d52569f25e50ee0315741f07a957faa1c357c332f24"
+        },
+        {
+          "kind": "normalized_text_hashes",
+          "path": ".cache/cogllm/union-training/heldout/chinese-meco/normalized-text-hashes.jsonl",
+          "sha256": "c4d0773223cef76c9825d9df6d1d3541deb8045fc737908f6c3120363a5d23ab"
+        }
+      ]
+    },
+    {
+      "id": "duff-salt-event-order",
+      "aliases": [
+        "duff",
+        "salt-discourse",
+        "duff-event-order",
+        "sasaki-duff-altshuler",
+        "c32k6"
+      ],
+      "status": "candidate",
+      "reason": "兩項實驗共享時序線索材料。反應與刺激已對齊，資料單獨再利用條件仍待確認。",
+      "source_pins": [
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e1-key.csv",
+          "sha256": "110f3a9ce3e527436d254ce8bb48097acd6fa4fef01de86887d1d4261c3e0a1a",
+          "url": "https://osf.io/download/6756ecf2791cce30eef73c33/"
+        },
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e1-materials.csv",
+          "sha256": "b046354b6397ad3afdc73cb795666d0ce0f1a15a94a3558d5a15d7d55ba22e00",
+          "url": "https://osf.io/download/ued98/"
+        },
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e1-ratings.csv",
+          "sha256": "5c422c534cce1547e88a861895eb2eb01a134d7a3ec621442634e05b55bb862d",
+          "url": "https://osf.io/download/6756ed091426ab8053563bbb/"
+        },
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e2-all-critical.csv",
+          "sha256": "ee78e3510cf7ac3427fe12583e1b78a6a1912a92d226479080e1a34aa4e2f9ce",
+          "url": "https://osf.io/download/6756ed673430cda16f661498/"
+        },
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e2-correct-critical.csv",
+          "sha256": "e6c3a09574048332ce526e5c2435e6a25fe28c2b2101ed533de95268acb96858",
+          "url": "https://osf.io/download/kv2ay/"
+        },
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e2-materials.csv",
+          "sha256": "4cb87a5f6a071b6c33c4e779667514a22f5b0a6a970be2b0d72862993b891dd4",
+          "url": "https://osf.io/download/9ef4x/"
+        },
+        {
+          "path": ".cache/cogllm/salt-discourse-audit/e2-regions.csv",
+          "sha256": "c04c38dc4d6fa1e60f6ff241bb6c0ddd794354ebed6585a9f002802b8e7a5dd4",
+          "url": "https://osf.io/download/6756ed3f0eb8dba7d7f73a57/"
+        }
+      ]
+    },
+    {
+      "id": "abel-interleaving",
+      "aliases": [
+        "abel",
+        "abel-expository-order",
+        "abel-interleaving-audit",
+        "3761"
+      ],
+      "status": "candidate",
+      "reason": "已封存英文譯本和原研究讀者彙總，逐段反應及原德文呈現材料待取得。",
+      "source_pins": [
+        {
+          "path": ".cache/cogllm/abel-interleaving/raw/ratings.sav",
+          "sha256": "e64eace00774c951579b31c612da3f365b115c472a514edaf6033ad0cf358adb",
+          "url": "https://osf.io/g4hxd/"
+        },
+        {
+          "path": ".cache/cogllm/abel-interleaving/raw/blocked.docx",
+          "sha256": "d1bbf84bf650f29ebee8ae918b55d1b31caf46049c35a67faedd2f4a94c2a5e7",
+          "url": "https://osf.io/mr6a4/"
+        },
+        {
+          "path": ".cache/cogllm/abel-interleaving/raw/interleaved.docx",
+          "sha256": "4ce8baf3ce70d8770b21933802a7f7ba64b4303d132d6d4c166602bbc297021d",
+          "url": "https://osf.io/gzu8c/"
+        }
+      ]
+    },
+    {
+      "id": "christianson-gaze-mask",
+      "aliases": [
+        "christianson-retracing",
+        "retracing-the-garden-path",
+        "christianson-2024",
+        "wk3xj",
+        "104515"
+      ],
+      "status": "candidate",
+      "reason": "回看遮罩操弄與解讀作答資料待取得確切可讀的原檔和使用條件。",
+      "source_pins": [
+        {
+          "url": "https://osf.io/wk3xj/"
+        },
+        {
+          "url": "https://doi.org/10.1016/j.jml.2024.104515"
+        }
+      ]
+    }
+  ]
+}

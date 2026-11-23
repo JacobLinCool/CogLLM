@@ -1,0 +1,74 @@
+{
+  "article_count": 16,
+  "candidate_index_sha256": "6a4a3921b7fa142eaf34db148e0f93a44fd0da6313a2e9c2b63b8853cad247b5",
+  "checkpoint": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "coordinates": "Zero-based, half-open spans in source token indices, source UTF-8 bytes and visible Unicode code points. Original long-answer candidates carry no selections.",
+  "dataset": "https://huggingface.co/datasets/google-research-datasets/natural_questions",
+  "file_sha256": {
+    "articles.jsonl": "7c8bfcc152a6845c255abdfa0d2e41ac29e27991a5aa653d7fd8f1710abf87b3",
+    "preflight.json": "5e4adcd223b025ff99b849b5a076e1cc73c5d87e36274f0c15f8a29fa7572892",
+    "queries.jsonl": "82783ad331cd82b7250c6a3f4a4b4b3eee06850abd095969f484f2d8f5c15aba",
+    "span-maps.jsonl": "4c90f3c791688500683dbda9c099a283ed30a32e226e023270792a4f4edbff2a"
+  },
+  "grade_free_sha256": "1c35576a14366846ff6ebbb11fb86def078cec4121612aec8a66341e0ddaf698",
+  "license_reference": "https://ai.google.com/research/NaturalQuestions/download",
+  "limits": {
+    "article_characters": 16000,
+    "article_tokens": 6144,
+    "question_tokens": 6144,
+    "total_tokens": 120000
+  },
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "positions_code_sha256": "0a0e3d107f92f02a5371d4cca3dc7201a2be3543f508a5ddae5eb02d187d35db",
+  "prepare_sha256": "a20fbe84097c3380cd3d1ea35537e238e42a3d9b3d98a67de2e7b7d2ae903543",
+  "query_count": 34,
+  "question_rule": "Emit original question text and ID. Distinctness uses NFKC, casefold and whitespace.",
+  "raw_manifest_sha256": "70396f1836192abfceec936de5612c583639704bdba9f2a16b4adb2dc3f840e3",
+  "schema_version": 1,
+  "security": {
+    "local_geometry_only": [
+      "span-maps.jsonl"
+    ],
+    "reference_escrow_opened": false,
+    "remote_inputs": [
+      "articles.jsonl",
+      "queries.jsonl"
+    ]
+  },
+  "segmentation_code_sha256": "d495b8bc5cc6c01cb16c0e7a39644c19c070524e3942c22c3d8125e81eae3c58",
+  "selection": {
+    "budget": "Stop before the first eligible whole group that would exceed the total token budget.",
+    "export_order": "Original validation source row order for questions and articles' first source rows.",
+    "first_over_budget": null,
+    "rejected_revision_groups": {
+      "article_exceeds_production_characters": 51,
+      "physical_visible_body_mismatch": 4,
+      "uncertified_visible_token_geometry": 1
+    },
+    "retained_revisions": [
+      "833837016",
+      "802828548",
+      "837988173",
+      "821255595",
+      "819567392",
+      "819039878",
+      "836056079",
+      "832305086",
+      "835456319",
+      "818652023",
+      "836791366",
+      "818220921",
+      "808935333",
+      "819233975",
+      "838264773",
+      "832428135"
+    ],
+    "revision_groups_inspected": 72,
+    "revision_order": "Fixed grade-free intake hash priority. Process complete eligible groups in order.",
+    "uninspected_revision_groups": 0
+  },
+  "source_license": "CC BY-SA 3.0",
+  "source_revision": "e8103d566bef4154c2c12b17c6095ec5275840cc",
+  "source_view": "Exact upstream visible tokens joined with single ASCII spaces, excluding HTML tokens.",
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+}

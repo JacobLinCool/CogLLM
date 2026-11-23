@@ -1,0 +1,174 @@
+{
+  "scope": "RACE materials in the same Prolific QA experiment and cohort as the OneStopQA training trials.",
+  "trials": 1940,
+  "articles": 216,
+  "readers": 970,
+  "human_correct": 1514,
+  "primary_metric": "choice_nll",
+  "primary_contrast": "passage_question_options_minus_question_options",
+  "methods": {
+    "display_position_prior": {
+      "choice_nll": 1.3848644032445796,
+      "choice_brier": 0.7492704008219075,
+      "correctness_brier": 0.45213810555143175
+    },
+    "question_options": {
+      "choice_nll": 1.3519071237047349,
+      "choice_brier": 0.7322840083110209,
+      "correctness_brier": 0.4394742123071909
+    },
+    "passage_question_options": {
+      "choice_nll": 1.0686207264736158,
+      "choice_brier": 0.565860339793097,
+      "correctness_brier": 0.3169014420216292
+    }
+  },
+  "paired_contrasts": {
+    "question_options_minus_display_position_prior": {
+      "choice_nll": {
+        "difference": -0.03295727953984473,
+        "crossed_bootstrap_95_ci": [
+          -0.040403311594102924,
+          -0.025863821274134904
+        ]
+      },
+      "choice_brier": {
+        "difference": -0.016986392510886628,
+        "crossed_bootstrap_95_ci": [
+          -0.020842799953188697,
+          -0.013309137087634386
+        ]
+      },
+      "correctness_brier": {
+        "difference": -0.012663893244240831,
+        "crossed_bootstrap_95_ci": [
+          -0.01547838784047204,
+          -0.010004183587626685
+        ]
+      }
+    },
+    "passage_question_options_minus_display_position_prior": {
+      "choice_nll": {
+        "difference": -0.31624367677096377,
+        "crossed_bootstrap_95_ci": [
+          -0.3513662202854661,
+          -0.28122016845522024
+        ]
+      },
+      "choice_brier": {
+        "difference": -0.18341006102881052,
+        "crossed_bootstrap_95_ci": [
+          -0.20439196531354398,
+          -0.16248493451428825
+        ]
+      },
+      "correctness_brier": {
+        "difference": -0.13523666352980257,
+        "crossed_bootstrap_95_ci": [
+          -0.1509305860697229,
+          -0.1195330156074864
+        ]
+      }
+    },
+    "passage_question_options_minus_question_options": {
+      "choice_nll": {
+        "difference": -0.28328639723111904,
+        "crossed_bootstrap_95_ci": [
+          -0.31591884200052756,
+          -0.25114426860339445
+        ]
+      },
+      "choice_brier": {
+        "difference": -0.1664236685179239,
+        "crossed_bootstrap_95_ci": [
+          -0.18602685502052807,
+          -0.1469989208387774
+        ]
+      },
+      "correctness_brier": {
+        "difference": -0.12257277028556174,
+        "crossed_bootstrap_95_ci": [
+          -0.13711376270777462,
+          -0.10802043371417548
+        ]
+      }
+    }
+  },
+  "by_school_level": {
+    "Middle": {
+      "trials": 970,
+      "human_correct": 832,
+      "methods": {
+        "display_position_prior": {
+          "choice_nll": 1.3854626616436714,
+          "choice_brier": 0.7495744920875673,
+          "correctness_brier": 0.4908753447276775
+        },
+        "question_options": {
+          "choice_nll": 1.3510000661722186,
+          "choice_brier": 0.7318191190994496,
+          "correctness_brier": 0.47785202437170093
+        },
+        "passage_question_options": {
+          "choice_nll": 1.0105958080390338,
+          "choice_brier": 0.5310914070758571,
+          "correctness_brier": 0.3278806133304575
+        }
+      }
+    },
+    "High": {
+      "trials": 970,
+      "human_correct": 682,
+      "methods": {
+        "display_position_prior": {
+          "choice_nll": 1.3842661448454874,
+          "choice_brier": 0.7489663095562479,
+          "correctness_brier": 0.4134008663751859
+        },
+        "question_options": {
+          "choice_nll": 1.3528141812372512,
+          "choice_brier": 0.7327488975225922,
+          "correctness_brier": 0.4010964002426809
+        },
+        "passage_question_options": {
+          "choice_nll": 1.126645644908198,
+          "choice_brier": 0.6006292725103368,
+          "correctness_brier": 0.3059222707128009
+        }
+      }
+    }
+  },
+  "by_human_response_correctness": {
+    "correct": {
+      "trials": 1514,
+      "choice_nll": {
+        "display_position_prior": 1.3850895999381792,
+        "question_options": 1.3404608476986761,
+        "passage_question_options": 0.9628261023424083
+      }
+    },
+    "incorrect": {
+      "trials": 426,
+      "choice_nll": {
+        "display_position_prior": 1.3840640563100486,
+        "question_options": 1.3925870811534982,
+        "passage_question_options": 1.4446138272591749
+      }
+    }
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 43,
+    "independent_cluster_weights": [
+      "article",
+      "reader"
+    ],
+    "trial_weight": "article multiplicity times reader multiplicity",
+    "fitted_readouts_fixed": true
+  },
+  "input_sha256": {
+    "outcomes": "41a6afdb2f8c0a27194eac93d36881032e0204bae04a24e65e11216bcf1981e0",
+    "predictions": "e43eedbab5b54391c1acecfeb8c7300652bd401ce0d53b8a053cb43550f38f4d",
+    "seal": "db5f321a64480a96f7722406adb8c5739cfa06f02fba9b9fe5c2ae3f42d3612b"
+  }
+}

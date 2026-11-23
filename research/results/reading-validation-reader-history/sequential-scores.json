@@ -1,0 +1,177 @@
+{
+  "comparison_keys": {
+    "other_history": "One matched stranger, same number of responses.",
+    "same_history": "Own earlier non-evaluation-fold responses from submitted questionnaires.",
+    "single_head": "Original fitted peer-population prior with no individual responses.",
+    "unknown_reader": "Distribution marginalized over every other eligible peer at the same history length."
+  },
+  "excluded_under20_matching": 13542,
+  "history_size_percentiles": [
+    20.0,
+    90.0,
+    180.0,
+    412.0,
+    846.0,
+    1218.0,
+    2404.0
+  ],
+  "maximum_time_violations": 0,
+  "mode": "time-respecting observational reanalysis",
+  "offered_nonempty": 297927,
+  "other_peer_counts": [
+    17.0,
+    168.0,
+    232.0
+  ],
+  "registration": "522b5644e8333cffb52111cecf4d611cc54e32f78db7b3dd63ec6ac99df0b163",
+  "scored_arrays": "3de9fbe0baf3638ca540f7f9af693db237300ca83a44766628bc44488b91aff4",
+  "studies": {
+    "all": {
+      "NLL": {
+        "other_history": 3.30574000110507,
+        "same_history": 3.293711810900803,
+        "single_head": 3.2860133465166323,
+        "unknown_reader": 3.286719942606259
+      },
+      "choice_content": {
+        "named_responses": 212395,
+        "other_responses": 71990,
+        "paired": {
+          "same_over_other_history": {
+            "class_interval": [
+              0.0039026426713690836,
+              0.007972204164701261
+            ],
+            "class_nats_per_answer": 0.005742688330789726,
+            "named_identity_contribution_per_answer": 0.0062855018734770665,
+            "named_identity_nats_per_named_choice": 0.008415934698504086,
+            "named_interval": [
+              0.004679076600116443,
+              0.012282703965397568
+            ]
+          },
+          "same_over_single_head": {
+            "class_interval": [
+              0.0006415533751140596,
+              0.002916460836235747
+            ],
+            "class_nats_per_answer": 0.001637891117796945,
+            "named_identity_contribution_per_answer": -0.00933635550196768,
+            "named_identity_nats_per_named_choice": -0.012500856702968896,
+            "named_interval": [
+              -0.01569560863161849,
+              -0.00945463696505871
+            ]
+          },
+          "same_over_unknown_reader": {
+            "class_interval": [
+              0.00017124375907176786,
+              0.0022966913662775717
+            ],
+            "class_nats_per_answer": 0.0011498441466571369,
+            "named_identity_contribution_per_answer": -0.008141712441201232,
+            "named_identity_nats_per_named_choice": -0.010901296605809989,
+            "named_interval": [
+              -0.013312005395271352,
+              -0.008702864135128118
+            ]
+          }
+        }
+      },
+      "crossed_bootstraps": 1800,
+      "observed_outside": 0.25314274662868996,
+      "outside_Brier": {
+        "other_history": 0.18066776465172277,
+        "same_history": 0.17858062303872305,
+        "single_head": 0.17915615303008242,
+        "unknown_reader": 0.17897270335694995
+      },
+      "outside_accuracy": {
+        "other_history": 0.7458515744501292,
+        "same_history": 0.7468713188107671,
+        "single_head": 0.7469170314890026,
+        "unknown_reader": 0.7468924169699527
+      },
+      "paired": {
+        "same_over_other_history": {
+          "fraction_readers_better": 0.7123287671232876,
+          "nats_per_response": 0.012028190204266792,
+          "reader_sentence_interval": [
+            0.008427496108298165,
+            0.01588308343777006
+          ]
+        },
+        "same_over_single_head": {
+          "fraction_readers_better": 0.2374429223744292,
+          "nats_per_response": -0.007698464384170736,
+          "reader_sentence_interval": [
+            -0.01056084099120732,
+            -0.005041143351397797
+          ]
+        },
+        "same_over_unknown_reader": {
+          "fraction_readers_better": 0.1735159817351598,
+          "nats_per_response": -0.0069918682945440975,
+          "reader_sentence_interval": [
+            -0.009239410325548293,
+            -0.004921615138815598
+          ]
+        }
+      },
+      "positions": 3085,
+      "readers": 219,
+      "scored_responses": 284385,
+      "source_sentence_groups": 3085
+    },
+    "bands_by_minimum": {
+      "20": {
+        "n": 4973,
+        "new_over_experience_matched": {
+          "fraction_readers_better": 0.4225352112676056,
+          "nats_per_response": -0.008667570736081784,
+          "reader_sentence_interval": [
+            -0.018377363133782437,
+            0.004044900207856305
+          ]
+        },
+        "people": 71
+      },
+      "200": {
+        "n": 130357,
+        "new_over_experience_matched": {
+          "fraction_readers_better": 0.1901840490797546,
+          "nats_per_response": -0.008540081445684715,
+          "reader_sentence_interval": [
+            -0.011076284285019037,
+            -0.005889067069400769
+          ]
+        },
+        "people": 163
+      },
+      "50": {
+        "n": 71990,
+        "new_over_experience_matched": {
+          "fraction_readers_better": 0.2688679245283019,
+          "nats_per_response": -0.006356909958160462,
+          "reader_sentence_interval": [
+            -0.010707427231656056,
+            -0.0016361003099775305
+          ]
+        },
+        "people": 212
+      },
+      "800": {
+        "n": 77065,
+        "new_over_experience_matched": {
+          "fraction_readers_better": 0.14473684210526316,
+          "nats_per_response": -0.004858045685723666,
+          "reader_sentence_interval": [
+            -0.007900955150519515,
+            -0.001157828601143232
+          ]
+        },
+        "people": 76
+      }
+    }
+  }
+}

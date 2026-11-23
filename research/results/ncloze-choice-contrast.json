@@ -1,0 +1,125 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "interval": 0.95,
+    "paired": true,
+    "quantile_interpolation": "linear",
+    "seed": 735972,
+    "unit": "article bundle"
+  },
+  "input_sha256": {
+    "Data/exp-data.json": "bc1c13bb489cf30b2ecfe031bbb9d665111c7c7be4a26fade064950541aacfb8",
+    "Data/parseResults.py": "fe6455be8d8f3e7ac376b6214cea344255b848b2df58826f68559dfe8adc9adc",
+    "Data/results.json": "937ac08ea6e3482fb5fba2ac64c1efb9a3884b5151064648875cafbf21f02090"
+  },
+  "protocol_prefix_sha256": "47ac91982a4ec36e6f69fa10c649362057a1ee7d9301781facc6aaa68a09d18f",
+  "released_parser_sensitivity": {
+    "bundle_macro_accuracy": {
+      "cdgp-m": 0.7272907101316192,
+      "ncloze-m": 0.6427813228137903,
+      "t5multi-m": 0.693211334120425
+    },
+    "bundles_losing_all_gaps": 1,
+    "bundles_missing_at_least_one_gap": 1,
+    "candidate_gaps": 92,
+    "complete_bundles": 11,
+    "complete_gaps": 87,
+    "contrasts": {
+      "cdgp-m": {
+        "ncloze_m_minus_control": -0.08450938731782887,
+        "paired_bundle_95_ci": [
+          -0.23851436051923064,
+          0.05986702249770433
+        ]
+      },
+      "t5multi-m": {
+        "ncloze_m_minus_control": -0.05043001130663469,
+        "paired_bundle_95_ci": [
+          -0.1419900828788816,
+          0.04950057938694283
+        ]
+      }
+    },
+    "gaps_missing_by_condition": {
+      "cdgp-m": 0,
+      "ncloze-m": 5,
+      "t5multi-m": 0
+    },
+    "responses_at_complete_gaps_by_condition": {
+      "cdgp-m": 265,
+      "ncloze-m": 279,
+      "t5multi-m": 200
+    },
+    "responses_available_by_condition": {
+      "cdgp-m": 275,
+      "ncloze-m": 279,
+      "t5multi-m": 225
+    },
+    "selection_by_condition": {
+      "cdgp-m": {
+        "all_submissions": 47,
+        "failed_experimental_slot_9": 9,
+        "kept_by_released_parser_rule": 36,
+        "teacher_below_quarter": 6
+      },
+      "ncloze-m": {
+        "all_submissions": 53,
+        "failed_experimental_slot_9": 13,
+        "kept_by_released_parser_rule": 37,
+        "teacher_below_quarter": 11
+      },
+      "t5multi-m": {
+        "all_submissions": 51,
+        "failed_experimental_slot_9": 13,
+        "kept_by_released_parser_rule": 32,
+        "teacher_below_quarter": 10
+      }
+    }
+  },
+  "schema_version": 1,
+  "script_sha256": "454e5d336a7b984ae38c4f9dbbe358f630901adc0ff5944dfd00417a82b3651e",
+  "source_audit_sha256": "df029ac1674d977222ab91f28b846a98664bd86e6df41b38e3b2f948d2c8e9aa",
+  "unfiltered_submissions": {
+    "bundle_macro_accuracy": {
+      "cdgp-m": 0.6441540404040405,
+      "ncloze-m": 0.5376533189033189,
+      "t5multi-m": 0.5694935465768799
+    },
+    "bundles_losing_all_gaps": 0,
+    "bundles_missing_at_least_one_gap": 0,
+    "candidate_gaps": 92,
+    "complete_bundles": 12,
+    "complete_gaps": 92,
+    "contrasts": {
+      "cdgp-m": {
+        "ncloze_m_minus_control": -0.10650072150072151,
+        "paired_bundle_95_ci": [
+          -0.2556082100769601,
+          0.043239049723424676
+        ]
+      },
+      "t5multi-m": {
+        "ncloze_m_minus_control": -0.031840227673561004,
+        "paired_bundle_95_ci": [
+          -0.14667728876062208,
+          0.08038434944684947
+        ]
+      }
+    },
+    "gaps_missing_by_condition": {
+      "cdgp-m": 0,
+      "ncloze-m": 0,
+      "t5multi-m": 0
+    },
+    "responses_at_complete_gaps_by_condition": {
+      "cdgp-m": 373,
+      "ncloze-m": 387,
+      "t5multi-m": 399
+    },
+    "responses_available_by_condition": {
+      "cdgp-m": 373,
+      "ncloze-m": 387,
+      "t5multi-m": 399
+    }
+  }
+}

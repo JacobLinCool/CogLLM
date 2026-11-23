@@ -1,0 +1,1775 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "effect_margin": 0.1,
+    "nll_margins": {
+      "current": 0.005,
+      "first": 0.05
+    },
+    "seed": 735972
+  },
+  "endpoints": {
+    "current": {
+      "gates": {
+        "nll_noninferior_to_global": false,
+        "nll_noninferior_to_original_contextual": false,
+        "target_effect_equivalent_to_human": false,
+        "target_effect_positive": true
+      },
+      "human_target_effect": {
+        "crossed_story_reader_ci95": [
+          0.42066418536266215,
+          0.6154394716745261
+        ],
+        "estimate": 0.5206022267206479,
+        "fixed_story_reader_only_ci95": [
+          0.46794755257438375,
+          0.57223318555128
+        ]
+      },
+      "human_target_probability_by_condition": {
+        "01": {
+          "crossed_story_reader_ci95": [
+            0.015788880569861177,
+            0.08110024218020541
+          ],
+          "estimate": 0.04370242914979758,
+          "fixed_story_reader_only_ci95": [
+            0.030605002205314577,
+            0.057705977416609336
+          ]
+        },
+        "02": {
+          "crossed_story_reader_ci95": [
+            0.47429560782696845,
+            0.6499937307035706
+          ],
+          "estimate": 0.5643046558704455,
+          "fixed_story_reader_only_ci95": [
+            0.5153478763012288,
+            0.612403754866184
+          ]
+        }
+      },
+      "methods": {
+        "global": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              0.1330181969955192,
+              0.17620193418232652
+            ],
+            "estimate": 0.15268630879308595,
+            "fixed_story_reader_only_ci95": [
+              0.13853328057167208,
+              0.16864995189260154
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.3941863977817887,
+              0.5843170318755658
+            ],
+            "estimate": 0.4913689100201027,
+            "fixed_story_reader_only_ci95": [
+              0.4387142358738385,
+              0.5429998688507348
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.020893820607614952,
+              0.03837606470907674
+            ],
+            "estimate": 0.029233316700545235,
+            "fixed_story_reader_only_ci95": [
+              0.029233316700545235,
+              0.029233316700545235
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.5843170318755659,
+              -0.3941863977817887
+            ],
+            "estimate": -0.4913689100201027,
+            "fixed_story_reader_only_ci95": [
+              -0.5429998688507349,
+              -0.43871423587383857
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.054665353170776,
+                0.06779567025773536
+              ],
+              "estimate": 0.06051491921827926,
+              "fixed_story_reader_only_ci95": [
+                0.06051491921827926,
+                0.06051491921827926
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.08079850318663559,
+                0.09947630086079556
+              ],
+              "estimate": 0.0897482359188245,
+              "fixed_story_reader_only_ci95": [
+                0.0897482359188245,
+                0.0897482359188245
+              ]
+            }
+          }
+        },
+        "original_contextual": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              0.1382434954286881,
+              0.18073420060267878
+            ],
+            "estimate": 0.15754864327283008,
+            "fixed_story_reader_only_ci95": [
+              0.14374303129373175,
+              0.17294609056454466
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.42017572822253724,
+              0.6148674032943493
+            ],
+            "estimate": 0.5200306716980204,
+            "fixed_story_reader_only_ci95": [
+              0.4673759975517562,
+              0.5716616305286525
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.00032379639109638076,
+              0.0008353646165902964
+            ],
+            "estimate": 0.000571555022627554,
+            "fixed_story_reader_only_ci95": [
+              0.000571555022627554,
+              0.000571555022627554
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.6148674032943493,
+              -0.42017572822253724
+            ],
+            "estimate": -0.5200306716980204,
+            "fixed_story_reader_only_ci95": [
+              -0.5716616305286526,
+              -0.46737599755175624
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.06215377531241425,
+                0.06503268592680465
+              ],
+              "estimate": 0.06359288802166961,
+              "fixed_story_reader_only_ci95": [
+                0.06359288802166961,
+                0.06359288802166961
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.06268850820086018,
+                0.06564524295522943
+              ],
+              "estimate": 0.06416444304429716,
+              "fixed_story_reader_only_ci95": [
+                0.06416444304429716,
+                0.06416444304429716
+              ]
+            }
+          }
+        },
+        "paired_effect": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              0.16496461516623817,
+              0.20938210989942957
+            ],
+            "estimate": 0.18595214179808456,
+            "fixed_story_reader_only_ci95": [
+              0.17349306221040794,
+              0.2003530968467673
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.07413311439745628,
+              0.3017644419783025
+            ],
+            "estimate": 0.18766461018608416,
+            "fixed_story_reader_only_ci95": [
+              0.13500993603981998,
+              0.23929556901671623
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.25233637392924607,
+              0.4208682755476098
+            ],
+            "estimate": 0.3329376165345638,
+            "fixed_story_reader_only_ci95": [
+              0.3329376165345638,
+              0.3329376165345638
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.30176444197830254,
+              -0.07413311439745629
+            ],
+            "estimate": -0.18766461018608416,
+            "fixed_story_reader_only_ci95": [
+              -0.23929556901671628,
+              -0.13500993603982
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.1284087612149055,
+                0.2782181668239272
+              ],
+              "estimate": 0.19524784018397315,
+              "fixed_story_reader_only_ci95": [
+                0.19524784018397315,
+                0.19524784018397315
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.44065981937437726,
+                0.621249181364213
+              ],
+              "estimate": 0.5281854567185369,
+              "fixed_story_reader_only_ci95": [
+                0.5281854567185369,
+                0.5281854567185369
+              ]
+            }
+          }
+        },
+        "target_weighted": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              0.14974613606287146,
+              0.18604934746519813
+            ],
+            "estimate": 0.16635052067289688,
+            "fixed_story_reader_only_ci95": [
+              0.15497112242893854,
+              0.17938740529457906
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.261568696533434,
+              0.45179256275129426
+            ],
+            "estimate": 0.3573784623493035,
+            "fixed_story_reader_only_ci95": [
+              0.3047237882030393,
+              0.40900942117993555
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.11942652768148829,
+              0.212817981956521
+            ],
+            "estimate": 0.16322376437134448,
+            "fixed_story_reader_only_ci95": [
+              0.16322376437134448,
+              0.16322376437134448
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.45179256275129426,
+              -0.261568696533434
+            ],
+            "estimate": -0.3573784623493035,
+            "fixed_story_reader_only_ci95": [
+              -0.4090094211799356,
+              -0.30472378820303936
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.11647795290120483,
+                0.19362995884546932
+              ],
+              "estimate": 0.14985273833178156,
+              "fixed_story_reader_only_ci95": [
+                0.14985273833178156,
+                0.14985273833178156
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.2620467703837972,
+                0.3689640841352443
+              ],
+              "estimate": 0.31307650270312604,
+              "fixed_story_reader_only_ci95": [
+                0.31307650270312604,
+                0.31307650270312604
+              ]
+            }
+          }
+        }
+      },
+      "nll_unit": "nats_per_sentence",
+      "paired_effect_vs": {
+        "global": {
+          "nll_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.02031340001174488,
+              0.0467586421986051
+            ],
+            "estimate": 0.03326583300499861,
+            "fixed_story_reader_only_ci95": [
+              0.02862477658681812,
+              0.03794363402863299
+            ]
+          },
+          "target_absolute_error_reduction": {
+            "crossed_story_reader_ci95": [
+              0.2305688804127012,
+              0.38261581297630665
+            ],
+            "estimate": 0.30370429983401853,
+            "fixed_story_reader_only_ci95": [
+              0.30370429983401853,
+              0.3037042998340186
+            ]
+          },
+          "target_effect_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.2305688804127012,
+              0.3827417915165931
+            ],
+            "estimate": 0.30370429983401853,
+            "fixed_story_reader_only_ci95": [
+              0.30370429983401853,
+              0.30370429983401853
+            ]
+          }
+        },
+        "original_contextual": {
+          "nll_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.015259401439409421,
+              0.042154646990283824
+            ],
+            "estimate": 0.028403498525254478,
+            "fixed_story_reader_only_ci95": [
+              0.02326967862942247,
+              0.03361139664626573
+            ]
+          },
+          "target_absolute_error_reduction": {
+            "crossed_story_reader_ci95": [
+              0.25162861842689127,
+              0.4202186615805614
+            ],
+            "estimate": 0.33236606151193626,
+            "fixed_story_reader_only_ci95": [
+              0.3323660615119362,
+              0.33236606151193626
+            ]
+          },
+          "target_effect_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.25162861842689127,
+              0.42043469167893444
+            ],
+            "estimate": 0.3323660615119362,
+            "fixed_story_reader_only_ci95": [
+              0.3323660615119362,
+              0.3323660615119362
+            ]
+          }
+        },
+        "target_weighted": {
+          "nll_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.01239679065838161,
+              0.026997449025572523
+            ],
+            "estimate": 0.01960162112518768,
+            "fixed_story_reader_only_ci95": [
+              0.017392797608429964,
+              0.021988048602610923
+            ]
+          },
+          "target_absolute_error_reduction": {
+            "crossed_story_reader_ci95": [
+              0.1291181289899133,
+              0.21208805337784856
+            ],
+            "estimate": 0.16971385216321933,
+            "fixed_story_reader_only_ci95": [
+              0.16971385216321927,
+              0.16971385216321933
+            ]
+          },
+          "target_effect_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.1291181289899133,
+              0.2121325156919291
+            ],
+            "estimate": 0.1697138521632193,
+            "fixed_story_reader_only_ci95": [
+              0.1697138521632193,
+              0.1697138521632193
+            ]
+          }
+        }
+      },
+      "pass": false
+    },
+    "first": {
+      "gates": {
+        "nll_noninferior_to_global": false,
+        "nll_noninferior_to_original_contextual": false,
+        "target_effect_equivalent_to_human": false,
+        "target_effect_positive": true
+      },
+      "human_target_effect": {
+        "crossed_story_reader_ci95": [
+          0.3909802324149035,
+          0.572566540668345
+        ],
+        "estimate": 0.48271558704453443,
+        "fixed_story_reader_only_ci95": [
+          0.43230670985594855,
+          0.5313808650107894
+        ]
+      },
+      "human_target_probability_by_condition": {
+        "01": {
+          "crossed_story_reader_ci95": [
+            0.007606440904470461,
+            0.058152076730505126
+          ],
+          "estimate": 0.028735829959514177,
+          "fixed_story_reader_only_ci95": [
+            0.01850521562575938,
+            0.04010448388874705
+          ]
+        },
+        "02": {
+          "crossed_story_reader_ci95": [
+            0.42523053927344545,
+            0.5955366765435313
+          ],
+          "estimate": 0.5114514170040486,
+          "fixed_story_reader_only_ci95": [
+            0.4634879592721742,
+            0.558476100241707
+          ]
+        }
+      },
+      "methods": {
+        "global": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              1.4937245704155304,
+              1.803507583986788
+            ],
+            "estimate": 1.644644412115424,
+            "fixed_story_reader_only_ci95": [
+              1.5563533522020212,
+              1.7342841142946233
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.3701528941243591,
+              0.5503374948301042
+            ],
+            "estimate": 0.4605313151003202,
+            "fixed_story_reader_only_ci95": [
+              0.41012243791173425,
+              0.5091965930665752
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.015558494593563354,
+              0.029524018624951198
+            ],
+            "estimate": 0.022184271944214268,
+            "fixed_story_reader_only_ci95": [
+              0.022184271944214268,
+              0.022184271944214268
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.5503374948301042,
+              -0.3701528941243591
+            ],
+            "estimate": -0.4605313151003202,
+            "fixed_story_reader_only_ci95": [
+              -0.5091965930665752,
+              -0.41012243791173425
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.03195716515179012,
+                0.040840199123963715
+              ],
+              "estimate": 0.036009077162820015,
+              "fixed_story_reader_only_ci95": [
+                0.036009077162820015,
+                0.036009077162820015
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.05117197667242063,
+                0.06588524277819638
+              ],
+              "estimate": 0.05819334910703428,
+              "fixed_story_reader_only_ci95": [
+                0.05819334910703428,
+                0.05819334910703428
+              ]
+            }
+          }
+        },
+        "original_contextual": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              1.5754846516005152,
+              1.88906083617387
+            ],
+            "estimate": 1.7293157095681642,
+            "fixed_story_reader_only_ci95": [
+              1.6417479094806728,
+              1.8170246268024726
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.39042570227499146,
+              0.5721591209884638
+            ],
+            "estimate": 0.4822064498068469,
+            "fixed_story_reader_only_ci95": [
+              0.43179757261826096,
+              0.5308717277731019
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.0003436494699728426,
+              0.0006873401192270219
+            ],
+            "estimate": 0.0005091372376875569,
+            "fixed_story_reader_only_ci95": [
+              0.0005091372376875569,
+              0.0005091372376875569
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.5721591209884638,
+              -0.39042570227499146
+            ],
+            "estimate": -0.4822064498068469,
+            "fixed_story_reader_only_ci95": [
+              -0.5308717277731019,
+              -0.43179757261826096
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.037105534432398286,
+                0.039404508991259274
+              ],
+              "estimate": 0.03827571888853333,
+              "fixed_story_reader_only_ci95": [
+                0.03827571888853333,
+                0.03827571888853333
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.037589357042985036,
+                0.03995218262970743
+              ],
+              "estimate": 0.03878485612622089,
+              "fixed_story_reader_only_ci95": [
+                0.03878485612622089,
+                0.03878485612622089
+              ]
+            }
+          }
+        },
+        "paired_effect": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              1.4448384110542216,
+              1.8726352201265701
+            ],
+            "estimate": 1.650991447318902,
+            "fixed_story_reader_only_ci95": [
+              1.5300701830673098,
+              1.7833576504740087
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.137045788693583,
+              0.35898769409076275
+            ],
+            "estimate": 0.24972661640679106,
+            "fixed_story_reader_only_ci95": [
+              0.19931773921820517,
+              0.298391894373046
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.16329944174326946,
+              0.31180547065281006
+            ],
+            "estimate": 0.23298897063774338,
+            "fixed_story_reader_only_ci95": [
+              0.23298897063774338,
+              0.23298897063774338
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.3589876940907628,
+              -0.137045788693583
+            ],
+            "estimate": -0.24972661640679106,
+            "fixed_story_reader_only_ci95": [
+              -0.29839189437304603,
+              -0.19931773921820517
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.04674133935676286,
+                0.13443476503934693
+              ],
+              "estimate": 0.08461690806860238,
+              "fixed_story_reader_only_ci95": [
+                0.08461690806860238,
+                0.08461690806860238
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.24341066500616115,
+                0.3983291662085092
+              ],
+              "estimate": 0.31760587870634577,
+              "fixed_story_reader_only_ci95": [
+                0.31760587870634577,
+                0.31760587870634577
+              ]
+            }
+          }
+        },
+        "target_weighted": {
+          "nll": {
+            "crossed_story_reader_ci95": [
+              1.7280679397374894,
+              1.9678910830170322
+            ],
+            "estimate": 1.8470932144060954,
+            "fixed_story_reader_only_ci95": [
+              1.789521711105409,
+              1.908779452065836
+            ]
+          },
+          "target_absolute_effect_error": {
+            "crossed_story_reader_ci95": [
+              0.31056176173723293,
+              0.4924289328331253
+            ],
+            "estimate": 0.40152917314669956,
+            "fixed_story_reader_only_ci95": [
+              0.3511202959581137,
+              0.4501944511129545
+            ]
+          },
+          "target_effect": {
+            "crossed_story_reader_ci95": [
+              0.05869514061082432,
+              0.10599896652501305
+            ],
+            "estimate": 0.08118641389783485,
+            "fixed_story_reader_only_ci95": [
+              0.08118641389783485,
+              0.08118641389783485
+            ]
+          },
+          "target_model_minus_human": {
+            "crossed_story_reader_ci95": [
+              -0.4924289328331253,
+              -0.31056176173723293
+            ],
+            "estimate": -0.40152917314669956,
+            "fixed_story_reader_only_ci95": [
+              -0.45019445111295453,
+              -0.3511202959581137
+            ]
+          },
+          "target_probability_by_condition": {
+            "01": {
+              "crossed_story_reader_ci95": [
+                0.05091070117092737,
+                0.07756719313301301
+              ],
+              "estimate": 0.06354507280900129,
+              "fixed_story_reader_only_ci95": [
+                0.06354507280900129,
+                0.06354507280900129
+              ]
+            },
+            "02": {
+              "crossed_story_reader_ci95": [
+                0.12168421519505143,
+                0.16883016610339371
+              ],
+              "estimate": 0.14473148670683614,
+              "fixed_story_reader_only_ci95": [
+                0.14473148670683614,
+                0.14473148670683614
+              ]
+            }
+          }
+        }
+      },
+      "nll_unit": "nats_per_story_trial",
+      "paired_effect_vs": {
+        "global": {
+          "nll_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              -0.13554959772009129,
+              0.15384778279051134
+            ],
+            "estimate": 0.006347035203478013,
+            "fixed_story_reader_only_ci95": [
+              -0.06614515327041723,
+              0.08327472714424039
+            ]
+          },
+          "target_absolute_error_reduction": {
+            "crossed_story_reader_ci95": [
+              0.14709315633177192,
+              0.28240953460061874
+            ],
+            "estimate": 0.21080469869352914,
+            "fixed_story_reader_only_ci95": [
+              0.21080469869352908,
+              0.21080469869352914
+            ]
+          },
+          "target_effect_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.14709315633177195,
+              0.28240953460061874
+            ],
+            "estimate": 0.2108046986935291,
+            "fixed_story_reader_only_ci95": [
+              0.2108046986935291,
+              0.2108046986935291
+            ]
+          }
+        },
+        "original_contextual": {
+          "nll_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              -0.23963464817130947,
+              0.08364868893502872
+            ],
+            "estimate": -0.07832426224926214,
+            "fixed_story_reader_only_ci95": [
+              -0.16179629245245933,
+              0.011084591653218456
+            ]
+          },
+          "target_absolute_error_reduction": {
+            "crossed_story_reader_ci95": [
+              0.1627581589289827,
+              0.3113527202766148
+            ],
+            "estimate": 0.23247983340005585,
+            "fixed_story_reader_only_ci95": [
+              0.2324798334000558,
+              0.23247983340005585
+            ]
+          },
+          "target_effect_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.1627581589289827,
+              0.31135272027661476
+            ],
+            "estimate": 0.23247983340005582,
+            "fixed_story_reader_only_ci95": [
+              0.23247983340005582,
+              0.23247983340005582
+            ]
+          }
+        },
+        "target_weighted": {
+          "nll_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              -0.30004792726096075,
+              -0.07698791251880947
+            ],
+            "estimate": -0.1961017670871934,
+            "fixed_story_reader_only_ci95": [
+              -0.2629675951989877,
+              -0.12242198522354138
+            ]
+          },
+          "target_absolute_error_reduction": {
+            "crossed_story_reader_ci95": [
+              0.10378484129314083,
+              0.2062978634758013
+            ],
+            "estimate": 0.1518025567399085,
+            "fixed_story_reader_only_ci95": [
+              0.1518025567399085,
+              0.15180255673990856
+            ]
+          },
+          "target_effect_paired_minus_comparator": {
+            "crossed_story_reader_ci95": [
+              0.10378484129314085,
+              0.2062978634758013
+            ],
+            "estimate": 0.15180255673990853,
+            "fixed_story_reader_only_ci95": [
+              0.15180255673990853,
+              0.15180255673990853
+            ]
+          }
+        }
+      },
+      "pass": false
+    }
+  },
+  "first_d_by_condition": {
+    "01": {
+      "human_counts": {
+        "after_target": 20,
+        "at_target": 28,
+        "before_target": 117,
+        "no_d": 735
+      },
+      "human_probabilities": {
+        "after_target": {
+          "crossed_story_reader_ci95": [
+            0.0008768148820326682,
+            0.062164283486090266
+          ],
+          "estimate": 0.02308502024291498,
+          "fixed_story_reader_only_ci95": [
+            0.014258451476515808,
+            0.03261057902479742
+          ]
+        },
+        "at_target": {
+          "crossed_story_reader_ci95": [
+            0.007606440904470461,
+            0.058152076730505126
+          ],
+          "estimate": 0.028735829959514177,
+          "fixed_story_reader_only_ci95": [
+            0.01850521562575938,
+            0.04010448388874705
+          ]
+        },
+        "before_target": {
+          "crossed_story_reader_ci95": [
+            0.09047628380143992,
+            0.1763957115250941
+          ],
+          "estimate": 0.13079352226720647,
+          "fixed_story_reader_only_ci95": [
+            0.10211968462868658,
+            0.1634613198315556
+          ]
+        },
+        "no_d": {
+          "crossed_story_reader_ci95": [
+            0.7555708056622691,
+            0.871922836018787
+          ],
+          "estimate": 0.8173856275303645,
+          "fixed_story_reader_only_ci95": [
+            0.7827792852303523,
+            0.8489796202938922
+          ]
+        }
+      },
+      "methods": {
+        "global": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.003654943329809251,
+                0.06576703081966419
+              ],
+              "estimate": 0.042853116171704994,
+              "fixed_story_reader_only_ci95": [
+                0.03332755738982255,
+                0.05167968493810417
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.021965352186206634,
+                0.028866722429301096
+              ],
+              "estimate": 0.0072732472033058375,
+              "fixed_story_reader_only_ci95": [
+                -0.004095406725927043,
+                0.01750386153706063
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.10241764348541936,
+                0.19123516352726655
+              ],
+              "estimate": 0.14958912365451338,
+              "fixed_story_reader_only_ci95": [
+                0.11692132609016426,
+                0.17826296129303326
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.2586712787947107,
+                -0.13247559615231908
+              ],
+              "estimate": -0.19971548702952424,
+              "fixed_story_reader_only_ci95": [
+                -0.23130947979305194,
+                -0.16510914472951213
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.06231536097146833,
+                0.06935759212349375
+              ],
+              "estimate": 0.06593813641461997,
+              "fixed_story_reader_only_ci95": [
+                0.06593813641461997,
+                0.06593813641461997
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.03195716515179012,
+                0.040840199123963715
+              ],
+              "estimate": 0.036009077162820015,
+              "fixed_story_reader_only_ci95": [
+                0.036009077162820015,
+                0.036009077162820015
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.2657460296986926,
+                0.2940078173421376
+              ],
+              "estimate": 0.28038264592171985,
+              "fixed_story_reader_only_ci95": [
+                0.28038264592171985,
+                0.28038264592171985
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.6032928887107795,
+                0.6323114668085107
+              ],
+              "estimate": 0.6176701405008402,
+              "fixed_story_reader_only_ci95": [
+                0.6176701405008402,
+                0.6176701405008402
+              ]
+            }
+          }
+        },
+        "original_contextual": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                -0.00024051032636901107,
+                0.06287081195318403
+              ],
+              "estimate": 0.03965975419427392,
+              "fixed_story_reader_only_ci95": [
+                0.030134195412391478,
+                0.048486322960673095
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.019589739009731343,
+                0.030435847042169225
+              ],
+              "estimate": 0.009539888929019153,
+              "fixed_story_reader_only_ci95": [
+                -0.001828765000213727,
+                0.019770503262773947
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.1115362508892912,
+                0.20134937250666382
+              ],
+              "estimate": 0.1592083954598958,
+              "fixed_story_reader_only_ci95": [
+                0.12654059789554667,
+                0.18788223309841567
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.2668904948096786,
+                -0.1420811070587796
+              ],
+              "estimate": -0.2084080385831888,
+              "fixed_story_reader_only_ci95": [
+                -0.2400020313467165,
+                -0.17380169628317668
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.060833650928006494,
+                0.06457733445122804
+              ],
+              "estimate": 0.0627447744371889,
+              "fixed_story_reader_only_ci95": [
+                0.0627447744371889,
+                0.0627447744371889
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.037105534432398286,
+                0.039404508991259274
+              ],
+              "estimate": 0.03827571888853333,
+              "fixed_story_reader_only_ci95": [
+                0.03827571888853333,
+                0.03827571888853333
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.27534939388317314,
+                0.30328978881754903
+              ],
+              "estimate": 0.29000191772710227,
+              "fixed_story_reader_only_ci95": [
+                0.29000191772710227,
+                0.29000191772710227
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.5969739954951017,
+                0.6222980511801897
+              ],
+              "estimate": 0.6089775889471757,
+              "fixed_story_reader_only_ci95": [
+                0.6089775889471757,
+                0.6089775889471757
+              ]
+            }
+          }
+        },
+        "paired_effect": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.08767458373530418,
+                0.17669594623110316
+              ],
+              "estimate": 0.13330359707463535,
+              "fixed_story_reader_only_ci95": [
+                0.12377803829275291,
+                0.14213016584103452
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.007907796458527684,
+                0.11036177335238448
+              ],
+              "estimate": 0.0558810781090882,
+              "fixed_story_reader_only_ci95": [
+                0.04451242417985532,
+                0.06611169244284298
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.06902098084601901,
+                0.20075369220920436
+              ],
+              "estimate": 0.13498112466246204,
+              "fixed_story_reader_only_ci95": [
+                0.10231332709811292,
+                0.16365496230098192
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.41454754163021407,
+                -0.2273103740758788
+              ],
+              "estimate": -0.3241657998461857,
+              "fixed_story_reader_only_ci95": [
+                -0.3557597926097134,
+                -0.2895594575461736
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.11730094818241835,
+                0.1969642200366407
+              ],
+              "estimate": 0.15638861731755033,
+              "fixed_story_reader_only_ci95": [
+                0.15638861731755033,
+                0.15638861731755033
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.04674133935676286,
+                0.13443476503934693
+              ],
+              "estimate": 0.08461690806860238,
+              "fixed_story_reader_only_ci95": [
+                0.08461690806860238,
+                0.08461690806860238
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.21270684314389668,
+                0.32445394211738954
+              ],
+              "estimate": 0.2657746469296685,
+              "fixed_story_reader_only_ci95": [
+                0.2657746469296685,
+                0.2657746469296685
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.4265594586282092,
+                0.5628264587075433
+              ],
+              "estimate": 0.49321982768417877,
+              "fixed_story_reader_only_ci95": [
+                0.49321982768417877,
+                0.49321982768417877
+              ]
+            }
+          }
+        },
+        "target_weighted": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.045455637497766724,
+                0.1095016669010708
+              ],
+              "estimate": 0.08330923526834519,
+              "fixed_story_reader_only_ci95": [
+                0.07378367648646275,
+                0.09213580403474436
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.005128962277272697,
+                0.05964388109181788
+              ],
+              "estimate": 0.03480924284948711,
+              "fixed_story_reader_only_ci95": [
+                0.023440588920254232,
+                0.0450398571832419
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.35733723996211975,
+                0.46407957763736085
+              ],
+              "estimate": 0.4132630803220974,
+              "fixed_story_reader_only_ci95": [
+                0.38059528275774834,
+                0.4419369179606173
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.5978793062133386,
+                -0.45673502727226656
+              ],
+              "estimate": -0.5313815584399298,
+              "fixed_story_reader_only_ci95": [
+                -0.5629755512034575,
+                -0.49677521613991776
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.09260430051311454,
+                0.11981507382845595
+              ],
+              "estimate": 0.10639425551126017,
+              "fixed_story_reader_only_ci95": [
+                0.10639425551126017,
+                0.10639425551126017
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.05091070117092737,
+                0.07756719313301301
+              ],
+              "estimate": 0.06354507280900129,
+              "fixed_story_reader_only_ci95": [
+                0.06354507280900129,
+                0.06354507280900129
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.506078466097723,
+                0.5796777698308406
+              ],
+              "estimate": 0.5440566025893039,
+              "fixed_story_reader_only_ci95": [
+                0.5440566025893039,
+                0.5440566025893039
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.25488774008099874,
+                0.31715650696573505
+              ],
+              "estimate": 0.28600406909043463,
+              "fixed_story_reader_only_ci95": [
+                0.28600406909043463,
+                0.28600406909043463
+              ]
+            }
+          }
+        }
+      }
+    },
+    "02": {
+      "human_counts": {
+        "after_target": 11,
+        "at_target": 458,
+        "before_target": 120,
+        "no_d": 311
+      },
+      "human_probabilities": {
+        "after_target": {
+          "crossed_story_reader_ci95": [
+            0.002259185700099305,
+            0.027146750087657785
+          ],
+          "estimate": 0.012200404858299598,
+          "fixed_story_reader_only_ci95": [
+            0.005188359109514431,
+            0.020780410462846642
+          ]
+        },
+        "at_target": {
+          "crossed_story_reader_ci95": [
+            0.42523053927344545,
+            0.5955366765435313
+          ],
+          "estimate": 0.5114514170040486,
+          "fixed_story_reader_only_ci95": [
+            0.4634879592721742,
+            0.558476100241707
+          ]
+        },
+        "before_target": {
+          "crossed_story_reader_ci95": [
+            0.08940511770879336,
+            0.18600611728108565
+          ],
+          "estimate": 0.1340981781376518,
+          "fixed_story_reader_only_ci95": [
+            0.10626704899701818,
+            0.1643339687290733
+          ]
+        },
+        "no_d": {
+          "crossed_story_reader_ci95": [
+            0.2643771843145413,
+            0.4243020991759328
+          ],
+          "estimate": 0.34225,
+          "fixed_story_reader_only_ci95": [
+            0.29938076951546855,
+            0.3867578840732911
+          ]
+        }
+      },
+      "methods": {
+        "global": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.027778236364530706,
+                0.05315012684412695
+              ],
+              "estimate": 0.04264375241123343,
+              "fixed_story_reader_only_ci95": [
+                0.03406374680668638,
+                0.0496557981600186
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.537236244972166,
+                -0.36661678965651373
+              ],
+              "estimate": -0.45325806789701434,
+              "fixed_story_reader_only_ci95": [
+                -0.5002827511346727,
+                -0.4052946101651399
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.09090251336444545,
+                0.19526196391081932
+              ],
+              "estimate": 0.1460228653366188,
+              "fixed_story_reader_only_ci95": [
+                0.11578707474519723,
+                0.1738539944772524
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.1803495190892508,
+                0.34362414489071147
+              ],
+              "estimate": 0.26459145014916213,
+              "fixed_story_reader_only_ci95": [
+                0.22008356607587104,
+                0.3074606806336936
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.05122478871973681,
+                0.05844612058147384
+              ],
+              "estimate": 0.054844157269533025,
+              "fixed_story_reader_only_ci95": [
+                0.054844157269533025,
+                0.054844157269533025
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.05117197667242063,
+                0.06588524277819638
+              ],
+              "estimate": 0.05819334910703428,
+              "fixed_story_reader_only_ci95": [
+                0.05819334910703428,
+                0.05819334910703428
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.26582420432539594,
+                0.29375090092719314
+              ],
+              "estimate": 0.2801210434742706,
+              "fixed_story_reader_only_ci95": [
+                0.2801210434742706,
+                0.2801210434742706
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.592410893303527,
+                0.6218029408151986
+              ],
+              "estimate": 0.6068414501491621,
+              "fixed_story_reader_only_ci95": [
+                0.6068414501491621,
+                0.6068414501491621
+              ]
+            }
+          }
+        },
+        "original_contextual": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.03534433130868536,
+                0.06074336324860582
+              ],
+              "estimate": 0.05051214968723991,
+              "fixed_story_reader_only_ci95": [
+                0.041932144082692864,
+                0.05752419543602508
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.5568719539613038,
+                -0.3863645803340859
+              ],
+              "estimate": -0.4726665608778277,
+              "fixed_story_reader_only_ci95": [
+                -0.5196912441154862,
+                -0.4247031031459533
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.10067334547156977,
+                0.20481410921138052
+              ],
+              "estimate": 0.15573872704180408,
+              "fixed_story_reader_only_ci95": [
+                0.12550293645038252,
+                0.18356985618243768
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.18173530132600202,
+                0.34537651445165374
+              ],
+              "estimate": 0.26641568414878375,
+              "fixed_story_reader_only_ci95": [
+                0.22190780007549266,
+                0.3092849146333152
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.060797121933880906,
+                0.06455524891831801
+              ],
+              "estimate": 0.0627125545455395,
+              "fixed_story_reader_only_ci95": [
+                0.0627125545455395,
+                0.0627125545455395
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.037589357042985036,
+                0.03995218262970743
+              ],
+              "estimate": 0.03878485612622089,
+              "fixed_story_reader_only_ci95": [
+                0.03878485612622089,
+                0.03878485612622089
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.2752133221104993,
+                0.30309099173199433
+              ],
+              "estimate": 0.2898369051794559,
+              "fixed_story_reader_only_ci95": [
+                0.2898369051794559,
+                0.2898369051794559
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.596695515602731,
+                0.6218956740685975
+              ],
+              "estimate": 0.6086656841487837,
+              "fixed_story_reader_only_ci95": [
+                0.6086656841487837,
+                0.6086656841487837
+              ]
+            }
+          }
+        },
+        "paired_effect": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.025348474713836205,
+                0.064754021407051
+              ],
+              "estimate": 0.04541057005966782,
+              "fixed_story_reader_only_ci95": [
+                0.036830564455120764,
+                0.052422615808452984
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.304017157847375,
+                -0.08023151919919248
+              ],
+              "estimate": -0.19384553829770285,
+              "fixed_story_reader_only_ci95": [
+                -0.24087022153536128,
+                -0.14588208056582844
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.057158167437108144,
+                0.20933712345563657
+              ],
+              "estimate": 0.1311938541302432,
+              "fixed_story_reader_only_ci95": [
+                0.10095806353882164,
+                0.1590249832708768
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.08945482949766807,
+                0.12146121080622838
+              ],
+              "estimate": 0.01724111410779189,
+              "fixed_story_reader_only_ci95": [
+                -0.027266769965499198,
+                0.06011034459232333
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.041163940088907114,
+                0.0742610143354386
+              ],
+              "estimate": 0.05761097491796741,
+              "fixed_story_reader_only_ci95": [
+                0.05761097491796741,
+                0.05761097491796741
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.24341066500616115,
+                0.3983291662085092
+              ],
+              "estimate": 0.31760587870634577,
+              "fixed_story_reader_only_ci95": [
+                0.31760587870634577,
+                0.31760587870634577
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.21195147206780768,
+                0.3239591016820068
+              ],
+              "estimate": 0.265292032267895,
+              "fixed_story_reader_only_ci95": [
+                0.265292032267895,
+                0.265292032267895
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.28322985880059526,
+                0.43484471853574985
+              ],
+              "estimate": 0.3594911141077919,
+              "fixed_story_reader_only_ci95": [
+                0.3594911141077919,
+                0.3594911141077919
+              ]
+            }
+          }
+        },
+        "target_weighted": {
+          "model_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.03845496576647819,
+                0.07022575723318175
+              ],
+              "estimate": 0.05522397740159428,
+              "fixed_story_reader_only_ci95": [
+                0.04664397179704723,
+                0.062236023150379446
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.4534543299073344,
+                -0.27809109583809666
+              ],
+              "estimate": -0.3667199302972125,
+              "fixed_story_reader_only_ci95": [
+                -0.4137446135348709,
+                -0.318756472565338
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.34577005461873217,
+                0.46979795778359995
+              ],
+              "estimate": 0.4093163059766024,
+              "fixed_story_reader_only_ci95": [
+                0.37908051538518084,
+                0.437147435117236
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.18583102773302837,
+                -0.01526202380172247
+              ],
+              "estimate": -0.09782035308098433,
+              "fixed_story_reader_only_ci95": [
+                -0.14232823715427542,
+                -0.054951122596452885
+              ]
+            }
+          },
+          "probabilities": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.05604867208240214,
+                0.07851111211472489
+              ],
+              "estimate": 0.06742438225989388,
+              "fixed_story_reader_only_ci95": [
+                0.06742438225989388,
+                0.06742438225989388
+              ]
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.12168421519505143,
+                0.16883016610339371
+              ],
+              "estimate": 0.14473148670683614,
+              "fixed_story_reader_only_ci95": [
+                0.14473148670683614,
+                0.14473148670683614
+              ]
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.506651770994014,
+                0.5781241234288116
+              ],
+              "estimate": 0.5434144841142542,
+              "fixed_story_reader_only_ci95": [
+                0.5434144841142542,
+                0.5434144841142542
+              ]
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.21330455610743665,
+                0.2756349227553577
+              ],
+              "estimate": 0.24442964691901567,
+              "fixed_story_reader_only_ci95": [
+                0.24442964691901567,
+                0.24442964691901567
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "forecast_seal_sha256": "11639d39ffcab1cd413fc47eb451b6cca038d515c336951b204dae66cc030d08",
+  "inventory": {
+    "current_judgments": 26340,
+    "first_at_risk_judgments": 23474,
+    "first_d": 754,
+    "max_trials_per_variant": 52,
+    "min_trials_per_variant": 38,
+    "readers": 180,
+    "right_censored": 1046,
+    "stories": 20,
+    "target_observations": {
+      "01": {
+        "author_filtered_d": 42,
+        "author_filtered_n": 890,
+        "uncut_d": 42,
+        "uncut_n": 900
+      },
+      "02": {
+        "author_filtered_d": 505,
+        "author_filtered_n": 889,
+        "uncut_d": 505,
+        "uncut_n": 900
+      }
+    },
+    "trials": 1800,
+    "variants": 40
+  },
+  "retrospective": true
+}

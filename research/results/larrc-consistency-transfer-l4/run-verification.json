@@ -1,0 +1,106 @@
+{
+  "cli_version": "0.7.4",
+  "endpoint_absent_after_stop": true,
+  "expected_projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+  "local_elapsed_s": {
+    "forecast": 0.213,
+    "score": 0.269
+  },
+  "local_peak_rss_bytes": {
+    "forecast": 78561280,
+    "score": 81674240
+  },
+  "operation": "larrc-consistency-protocol",
+  "payload_members_sha256": {
+    "bundle.json": "94ce3418c83e71cdffd71298a59615d4cecd5475e909169f25b4b345acc1fd61",
+    "projection-inputs.tar.gz": "8c1e271315ea64e963772e9c0692d21bc8bd4d3cb25f4247e100008d27d8a38a"
+  },
+  "payload_sha256": "d000773506c514de63b00bb8c394cd247477fac31a30e45e06ac53e58f95eefe",
+  "phase": "finished",
+  "projection": {
+    "assay_sha256": "e8dcc8e41cd08ee601e2accb1e1f696856119c85ce73333b14c8e8c64a810ae3",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 384,
+    "encoded_documents": 48,
+    "input_tokens": 6258,
+    "preflight_sha256": "914780fe96dd92ed7789ffc45ce8fb8432d5869b3bdc72b04ec077addc5c3b06",
+    "protocol_sha256": "c98d2586c1924cc3392cedbef0a3aecb5d181a3ee882034c0618e9d743aa91ae",
+    "raw_stops": true,
+    "source_code_sha256": "e5f3f8c94c3ae42162be741fdf79173672fdfc1d197e326ccec39764900d6960",
+    "stimuli_sha256": "17ea1b4f66b01510fa23f4dd8290c4c15d437d8bfca547b64e4a1eb9ec4ef0a8",
+    "verified_gradio_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "verified_gradio_sha256": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "published_sha256": {
+    "extractor-preflight.json": "914780fe96dd92ed7789ffc45ce8fb8432d5869b3bdc72b04ec077addc5c3b06",
+    "forecast-seal.json": "ebbc8174002436e125c59baf214eb63632c5beb03fece3a914be9eb0e630c0de",
+    "forecasts.jsonl": "f3a72170a2a6380dcaaa148f1c6dd900783c11a75180f4b1d23c77a65282ea03",
+    "independent-check.json": "40d54b1c721ab8c0aa0f18413a05d818b6f480989d871ffa6c638e81deca1c52",
+    "packet.json": "e8dcc8e41cd08ee601e2accb1e1f696856119c85ce73333b14c8e8c64a810ae3",
+    "projection/causality.json": "049d5f5949e54e3080fef9e4021e40ffa1f9b85ec79fabdfede455e14c37e826",
+    "projection/coordinates.jsonl": "0b06e5b31e2b478777c60b0f24615fc7429ab3b01d73a18747f88d79a90e5c3f",
+    "projection/seal.json": "f0d880c259d75e8f1d37536c8b76c7bece763fa661465d0c99dbf56ef3c34f06",
+    "projection/states.npy": "b4189d72dc550bd0e4a576a2a533896771fbdb0b7fa1b355709630331683e2a4",
+    "projection/telemetry.jsonl": "3fba8264197c7d0391cf8bf36248b8f830c46f881f58d6c221dfe66bf5cc5bdf",
+    "projection/terminal_states.npy": "e04bf9066d4b9139eecc02766109a20fbdb054c2c27568c523f9c4ddefdebda4",
+    "projection/vectors.npy": "2f6309a157019d687f67e797a676a294e065cb3d9f22f354089aa55f57c22bcc",
+    "results.json": "b988d912f6c4542f4f6b3f0b8970327e91dbbbc4ecda4232252b32b37c0a5689",
+    "runtime.json": "0e757441e7bb69b2e795376457dbc3c0990ccbaddb6ca7cc51c31d808c02cb58",
+    "source-audit.json": "89480b61bf51031b9fafe1d79e01b40197928f7bc082b5f66b27424b2b88c3be"
+  },
+  "raw_states_verification": {
+    "dtype": "float32",
+    "max_projection_replay_l2": 0.0002514418156351894,
+    "rows": 384,
+    "width": 2048
+  },
+  "reference_run_id": "cogllm-cuda-checks-20261121T031119Z-5bc72d1f",
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "requested_hardware": "NVIDIA L4",
+  "results_byte_identical_repeat": true,
+  "run_id": "cogllm-cuda-checks-20261121T044320Z-d58a83ef",
+  "stages": {
+    "projection": {
+      "archive_bytes": 3380169,
+      "archive_sha256": "d070e4898d7c75c7ae246f055ff63347ecb7d4a50dda5969db0c39832b1e33bf",
+      "elapsed_s": 44.973065184000006,
+      "members": {
+        "causality.json": "049d5f5949e54e3080fef9e4021e40ffa1f9b85ec79fabdfede455e14c37e826",
+        "coordinates.jsonl": "0b06e5b31e2b478777c60b0f24615fc7429ab3b01d73a18747f88d79a90e5c3f",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "f0d880c259d75e8f1d37536c8b76c7bece763fa661465d0c99dbf56ef3c34f06",
+        "states.npy": "b4189d72dc550bd0e4a576a2a533896771fbdb0b7fa1b355709630331683e2a4",
+        "telemetry.jsonl": "3fba8264197c7d0391cf8bf36248b8f830c46f881f58d6c221dfe66bf5cc5bdf",
+        "terminal_states.npy": "e04bf9066d4b9139eecc02766109a20fbdb054c2c27568c523f9c4ddefdebda4",
+        "vectors.npy": "2f6309a157019d687f67e797a676a294e065cb3d9f22f354089aa55f57c22bcc"
+      },
+      "state": "complete"
+    },
+    "setup": {
+      "archive_bytes": 649,
+      "archive_sha256": "9878142c92aacf9e5fc04d0f49e77759751cb988170d43f4936e5ed76748b61d",
+      "elapsed_s": 36.64183119200004,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "0e757441e7bb69b2e795376457dbc3c0990ccbaddb6ca7cc51c31d808c02cb58"
+      },
+      "state": "complete"
+    }
+  },
+  "time_budget_s": 720,
+  "timeline": {
+    "allocated": "2026-11-21T04:44:35.470505+00:00",
+    "allocating": "2026-11-21T04:44:29.234269+00:00",
+    "finished": "2026-11-21T04:46:38.913130+00:00",
+    "prepared": "2026-11-21T04:43:20.890161+00:00",
+    "releasing": "2026-11-21T04:46:28.695813+00:00",
+    "remote-projection": "2026-11-21T04:45:35.375037+00:00",
+    "remote-setup": "2026-11-21T04:44:57.902386+00:00",
+    "retrieved-projection": "2026-11-21T04:46:28.660504+00:00",
+    "retrieved-setup": "2026-11-21T04:46:27.860403+00:00",
+    "worker-running": "2026-11-21T04:44:57.582710+00:00"
+  },
+  "verified_outputs": true,
+  "worker_sha256": "9635ada3154f9fd5bf7f0e2b61ab10e3d52e764e4aa8257dbb04135c4ecf2010"
+}

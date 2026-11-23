@@ -1,0 +1,2157 @@
+{
+  "seal": "19e7e90829cb5255e4319edaff92fad904fcea0cbfb86c368afd7e6f9f5c96c2",
+  "source_test": {
+    "sufficiency": {
+      "source_units": 80,
+      "observations": 406,
+      "unique_record_opportunities": 218,
+      "nll": {
+        "form.isolated": {
+          "estimate": 0.46138893231646144,
+          "interval95": [
+            0.37712544762964884,
+            0.5510100360068025
+          ]
+        },
+        "form.joint": {
+          "estimate": 0.4700136171195119,
+          "interval95": [
+            0.41043861937299325,
+            0.5320236548233384
+          ]
+        },
+        "form.adaptive": {
+          "estimate": 0.45362729012872877,
+          "interval95": [
+            0.38426871243755395,
+            0.526116614665434
+          ]
+        },
+        "surprisal.isolated": {
+          "estimate": 0.4569911648108708,
+          "interval95": [
+            0.3737369264091327,
+            0.545690849461135
+          ]
+        },
+        "surprisal.joint": {
+          "estimate": 0.4695290267454422,
+          "interval95": [
+            0.40933595062554207,
+            0.5301941185874839
+          ]
+        },
+        "surprisal.adaptive": {
+          "estimate": 0.4515022527934004,
+          "interval95": [
+            0.3826939918105077,
+            0.5228535481795368
+          ]
+        },
+        "native.isolated": {
+          "estimate": 0.3807994851820439,
+          "interval95": [
+            0.308318618377857,
+            0.455032787742077
+          ]
+        },
+        "native.joint": {
+          "estimate": 0.4066178772910308,
+          "interval95": [
+            0.3537149649498167,
+            0.4593584638284352
+          ]
+        },
+        "native.adaptive": {
+          "estimate": 0.380435678648519,
+          "interval95": [
+            0.3201342498826546,
+            0.44215307572718643
+          ]
+        }
+      },
+      "contrasts": {
+        "form.joint minus form.isolated": {
+          "estimate": 0.008624684803050453,
+          "interval95": [
+            -0.03448738177651098,
+            0.048530313383080295
+          ]
+        },
+        "form.adaptive minus form.isolated": {
+          "estimate": -0.007761642187732676,
+          "interval95": [
+            -0.02976567047145175,
+            0.011760805260550431
+          ]
+        },
+        "surprisal.joint minus surprisal.isolated": {
+          "estimate": 0.012537861934571404,
+          "interval95": [
+            -0.02859997661819393,
+            0.05111166198791138
+          ]
+        },
+        "surprisal.adaptive minus surprisal.isolated": {
+          "estimate": -0.0054889120174704265,
+          "interval95": [
+            -0.026771626246252303,
+            0.013473549143663513
+          ]
+        },
+        "surprisal.isolated minus form.isolated": {
+          "estimate": -0.004397767505590622,
+          "interval95": [
+            -0.017033569765661068,
+            0.007697011115419412
+          ]
+        },
+        "native.joint minus native.isolated": {
+          "estimate": 0.025818392108986954,
+          "interval95": [
+            -0.013397648057072555,
+            0.06266205049626453
+          ]
+        },
+        "native.adaptive minus native.isolated": {
+          "estimate": -0.0003638065335248575,
+          "interval95": [
+            -0.018879270004295835,
+            0.016492449837756256
+          ]
+        },
+        "native.isolated minus form.isolated": {
+          "estimate": -0.08058944713441757,
+          "interval95": [
+            -0.1313290315708356,
+            -0.02933748963383595
+          ]
+        }
+      }
+    },
+    "comparison": {
+      "source_units": 4,
+      "observations": 2445,
+      "unique_record_opportunities": 2384,
+      "nll": {
+        "form.isolated": {
+          "estimate": 0.9341019876736448,
+          "interval95": [
+            0.8967699937910274,
+            0.9714339815562621
+          ]
+        },
+        "form.joint": {
+          "estimate": 0.9377740765257178,
+          "interval95": [
+            0.8932133941133038,
+            0.9823347589381317
+          ]
+        },
+        "surprisal.isolated": {
+          "estimate": 0.9270553570872492,
+          "interval95": [
+            0.8829618293146815,
+            0.9711488848598167
+          ]
+        },
+        "surprisal.joint": {
+          "estimate": 0.9289176865070199,
+          "interval95": [
+            0.8790606837921684,
+            0.9787746892218714
+          ]
+        },
+        "native.isolated": {
+          "estimate": 0.9336594460045544,
+          "interval95": [
+            0.8887213529975592,
+            0.97859753901155
+          ]
+        },
+        "native.joint": {
+          "estimate": 0.9412309761077164,
+          "interval95": [
+            0.8846814818875586,
+            0.9977804703278741
+          ]
+        }
+      },
+      "contrasts": {
+        "form.joint minus form.isolated": {
+          "estimate": 0.00367208885207293,
+          "interval95": [
+            -0.011731073234897416,
+            0.019075250939043276
+          ]
+        },
+        "surprisal.joint minus surprisal.isolated": {
+          "estimate": 0.001862329419770714,
+          "interval95": [
+            -0.012288961167078338,
+            0.01601362000661999
+          ]
+        },
+        "surprisal.isolated minus form.isolated": {
+          "estimate": -0.007046630586395652,
+          "interval95": [
+            -0.013808164476345919,
+            -0.00028509669644549707
+          ]
+        },
+        "native.joint minus native.isolated": {
+          "estimate": 0.0075715301031620275,
+          "interval95": [
+            -0.010137160723471927,
+            0.021277894095591443
+          ]
+        },
+        "native.isolated minus form.isolated": {
+          "estimate": -0.0004425416690904127,
+          "interval95": [
+            -0.008048640793468342,
+            0.009075566315270067
+          ]
+        }
+      }
+    }
+  },
+  "expert": {
+    "LocalSufficiency": {
+      "votes": 906,
+      "unique_passages": 302,
+      "direct_transfer": {
+        "models": {
+          "form.isolated": {
+            "primary": {
+              "estimate": 0.38092130813950725,
+              "interval95": [
+                0.33097315887847273,
+                0.4295743843531213
+              ]
+            },
+            "spearman_all_unique_arguments": -0.3089878044953402,
+            "debate_side_sensitivity": {
+              "estimate": 0.36141729001916534,
+              "interval95": [
+                0.3116792575825859,
+                0.4072964556223324
+              ]
+            }
+          },
+          "form.joint": {
+            "primary": {
+              "estimate": 0.4730560454328532,
+              "interval95": [
+                0.4220550759429046,
+                0.5224714336477417
+              ]
+            },
+            "spearman_all_unique_arguments": -0.12583338100857397,
+            "debate_side_sensitivity": {
+              "estimate": 0.44875020057436743,
+              "interval95": [
+                0.39641720773302497,
+                0.49542189249479746
+              ]
+            }
+          },
+          "form.paired-isolated": {
+            "primary": {
+              "estimate": 0.6864609352387268,
+              "interval95": [
+                0.6404496732914641,
+                0.7307311309821801
+              ]
+            },
+            "spearman_all_unique_arguments": 0.39562807593645144,
+            "debate_side_sensitivity": {
+              "estimate": 0.6963945425436469,
+              "interval95": [
+                0.647969953221029,
+                0.7454918035802112
+              ]
+            }
+          },
+          "form.paired-joint": {
+            "primary": {
+              "estimate": 0.6621713220557024,
+              "interval95": [
+                0.6196030343530342,
+                0.6994623622201487
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3220842790561736,
+            "debate_side_sensitivity": {
+              "estimate": 0.6744281751854242,
+              "interval95": [
+                0.6238338621292343,
+                0.7223985984262958
+              ]
+            }
+          },
+          "form.adaptive": {
+            "primary": {
+              "estimate": 0.4193696654331563,
+              "interval95": [
+                0.36865071270063265,
+                0.4677252414940266
+              ]
+            },
+            "spearman_all_unique_arguments": -0.23476576765811993,
+            "debate_side_sensitivity": {
+              "estimate": 0.396340521203193,
+              "interval95": [
+                0.3501094378972193,
+                0.440379712204732
+              ]
+            }
+          },
+          "surprisal.isolated": {
+            "primary": {
+              "estimate": 0.41237847672125333,
+              "interval95": [
+                0.3594512121013237,
+                0.4651603780550154
+              ]
+            },
+            "spearman_all_unique_arguments": -0.22967032440662552,
+            "debate_side_sensitivity": {
+              "estimate": 0.3928597374786557,
+              "interval95": [
+                0.33487759334377787,
+                0.4485990636426899
+              ]
+            }
+          },
+          "surprisal.joint": {
+            "primary": {
+              "estimate": 0.5030223325814676,
+              "interval95": [
+                0.4514432064205153,
+                0.5527316643761271
+              ]
+            },
+            "spearman_all_unique_arguments": -0.06441416171011478,
+            "debate_side_sensitivity": {
+              "estimate": 0.4874109815338602,
+              "interval95": [
+                0.42685713225140826,
+                0.5427643913040845
+              ]
+            }
+          },
+          "surprisal.paired-isolated": {
+            "primary": {
+              "estimate": 0.694253771583052,
+              "interval95": [
+                0.6519843800124604,
+                0.7355698538622012
+              ]
+            },
+            "spearman_all_unique_arguments": 0.43656516696221553,
+            "debate_side_sensitivity": {
+              "estimate": 0.7021659014408519,
+              "interval95": [
+                0.6542944575303301,
+                0.7497387435683308
+              ]
+            }
+          },
+          "surprisal.paired-joint": {
+            "primary": {
+              "estimate": 0.6708870430535725,
+              "interval95": [
+                0.6277716293919321,
+                0.7079823069809145
+              ]
+            },
+            "spearman_all_unique_arguments": 0.36273242773682524,
+            "debate_side_sensitivity": {
+              "estimate": 0.7041301859870943,
+              "interval95": [
+                0.6548466488991546,
+                0.7504935629710038
+              ]
+            }
+          },
+          "surprisal.adaptive": {
+            "primary": {
+              "estimate": 0.4478167787242067,
+              "interval95": [
+                0.3953886012384256,
+                0.4989615979881921
+              ]
+            },
+            "spearman_all_unique_arguments": -0.16146960357244905,
+            "debate_side_sensitivity": {
+              "estimate": 0.4328959036200567,
+              "interval95": [
+                0.37857200672014757,
+                0.48319762714685277
+              ]
+            }
+          },
+          "native.isolated": {
+            "primary": {
+              "estimate": 0.4378720341586526,
+              "interval95": [
+                0.3922142859565764,
+                0.4841188459293981
+              ]
+            },
+            "spearman_all_unique_arguments": -0.21698043460647493,
+            "debate_side_sensitivity": {
+              "estimate": 0.4097017388423273,
+              "interval95": [
+                0.3610187665683707,
+                0.45844141210858147
+              ]
+            }
+          },
+          "native.joint": {
+            "primary": {
+              "estimate": 0.4782063072503922,
+              "interval95": [
+                0.4315712972337853,
+                0.5230542893321268
+              ]
+            },
+            "spearman_all_unique_arguments": -0.11562207683224539,
+            "debate_side_sensitivity": {
+              "estimate": 0.44716346078990654,
+              "interval95": [
+                0.39905459355326617,
+                0.4923425559083471
+              ]
+            }
+          },
+          "native.paired-isolated": {
+            "primary": {
+              "estimate": 0.7103951463222187,
+              "interval95": [
+                0.6678664616417938,
+                0.752410537055841
+              ]
+            },
+            "spearman_all_unique_arguments": 0.4459965414578107,
+            "debate_side_sensitivity": {
+              "estimate": 0.6892396030421171,
+              "interval95": [
+                0.6315591064081552,
+                0.7420490407949554
+              ]
+            }
+          },
+          "native.paired-joint": {
+            "primary": {
+              "estimate": 0.6809191839857827,
+              "interval95": [
+                0.6435400907622387,
+                0.7193256493799111
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3410123599995223,
+            "debate_side_sensitivity": {
+              "estimate": 0.6638352416559014,
+              "interval95": [
+                0.6163605245296592,
+                0.707396272267168
+              ]
+            }
+          },
+          "native.adaptive": {
+            "primary": {
+              "estimate": 0.4558478023655608,
+              "interval95": [
+                0.4099951697444016,
+                0.5024111423587331
+              ]
+            },
+            "spearman_all_unique_arguments": -0.18468220333019322,
+            "debate_side_sensitivity": {
+              "estimate": 0.4323423031219363,
+              "interval95": [
+                0.3868475481683091,
+                0.47680050581751854
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "native.isolated minus form.isolated": {
+            "estimate": 0.05695072601914536,
+            "interval95": [
+              0.013947449400247818,
+              0.09877800786207568
+            ]
+          },
+          "native.isolated minus surprisal.isolated": {
+            "estimate": 0.025493557437399283,
+            "interval95": [
+              -0.015901028322205725,
+              0.06801574855626202
+            ]
+          },
+          "native.joint minus form.joint": {
+            "estimate": 0.005150261817539026,
+            "interval95": [
+              -0.034358800011043286,
+              0.04485835316937268
+            ]
+          },
+          "native.joint minus surprisal.joint": {
+            "estimate": -0.024816025331075353,
+            "interval95": [
+              -0.06426609236259431,
+              0.015585769059440506
+            ]
+          },
+          "native.adaptive minus form.adaptive": {
+            "estimate": 0.03647813693240448,
+            "interval95": [
+              -0.005571167398461189,
+              0.07781557583652207
+            ]
+          },
+          "native.adaptive minus surprisal.adaptive": {
+            "estimate": 0.008031023641354051,
+            "interval95": [
+              -0.03280409836043715,
+              0.048676872085500186
+            ]
+          },
+          "native.paired-isolated minus form.paired-isolated": {
+            "estimate": 0.02393421108349192,
+            "interval95": [
+              -0.011117854929705403,
+              0.05889096138394739
+            ]
+          },
+          "native.paired-isolated minus surprisal.paired-isolated": {
+            "estimate": 0.01614137473916666,
+            "interval95": [
+              -0.011236168584453698,
+              0.04299832294620741
+            ]
+          },
+          "form.joint minus form.isolated": {
+            "estimate": 0.09213473729334593,
+            "interval95": [
+              0.06265041218529359,
+              0.12051237796748467
+            ]
+          },
+          "form.adaptive minus form.isolated": {
+            "estimate": 0.03844835729364904,
+            "interval95": [
+              0.023254300277465507,
+              0.054079355497868895
+            ]
+          },
+          "form.adaptive minus form.paired-isolated": {
+            "estimate": -0.26709126980557046,
+            "interval95": [
+              -0.3458115746814404,
+              -0.19057231888764065
+            ]
+          },
+          "surprisal.joint minus surprisal.isolated": {
+            "estimate": 0.09064385586021423,
+            "interval95": [
+              0.06972715933889821,
+              0.11153032575908256
+            ]
+          },
+          "surprisal.adaptive minus surprisal.isolated": {
+            "estimate": 0.03543830200295339,
+            "interval95": [
+              0.025129894452163896,
+              0.046743508531499244
+            ]
+          },
+          "surprisal.adaptive minus surprisal.paired-isolated": {
+            "estimate": -0.2464369928588453,
+            "interval95": [
+              -0.3128102218392568,
+              -0.18020607250004378
+            ]
+          },
+          "native.joint minus native.isolated": {
+            "estimate": 0.04033427309173959,
+            "interval95": [
+              0.020191551241813776,
+              0.060985083279229566
+            ]
+          },
+          "native.adaptive minus native.isolated": {
+            "estimate": 0.01797576820690816,
+            "interval95": [
+              0.007391813321864621,
+              0.029484363921177006
+            ]
+          },
+          "native.adaptive minus native.paired-isolated": {
+            "estimate": -0.2545473439566579,
+            "interval95": [
+              -0.30839313857558615,
+              -0.2025814176870552
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "ordinal_topic_holdout": {
+        "models": {
+          "form.source_only": {
+            "primary": {
+              "estimate": 0.8645608259339091,
+              "interval95": [
+                0.8126701152957314,
+                0.917753965233612
+              ]
+            },
+            "spearman_all_unique_arguments": 0.2023326068174151,
+            "debate_side_sensitivity": {
+              "estimate": 0.8634540930989811,
+              "interval95": [
+                0.8068225908850766,
+                0.923849824224265
+              ]
+            }
+          },
+          "form.expert_only": {
+            "primary": {
+              "estimate": 0.9332779802401834,
+              "interval95": [
+                0.8376163436496772,
+                1.0260536631173598
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3960000863994284,
+            "debate_side_sensitivity": {
+              "estimate": 0.929978746010478,
+              "interval95": [
+                0.8440445422746417,
+                1.0193655590926751
+              ]
+            }
+          },
+          "form.expert_plus_source": {
+            "primary": {
+              "estimate": 0.9318702210056549,
+              "interval95": [
+                0.8351027900041188,
+                1.0250595394613244
+              ]
+            },
+            "spearman_all_unique_arguments": 0.39964183758829386,
+            "debate_side_sensitivity": {
+              "estimate": 0.9286557027019094,
+              "interval95": [
+                0.8433523311060219,
+                1.0183439876694862
+              ]
+            }
+          },
+          "surprisal.source_only": {
+            "primary": {
+              "estimate": 0.872511894236197,
+              "interval95": [
+                0.8214346655246341,
+                0.9255381835730604
+              ]
+            },
+            "spearman_all_unique_arguments": 0.10896157274501189,
+            "debate_side_sensitivity": {
+              "estimate": 0.8710773220403766,
+              "interval95": [
+                0.8152779867872291,
+                0.9303732132324332
+              ]
+            }
+          },
+          "surprisal.expert_only": {
+            "primary": {
+              "estimate": 0.9043932179924101,
+              "interval95": [
+                0.8170133433103438,
+                0.9912451243912684
+              ]
+            },
+            "spearman_all_unique_arguments": 0.43643921773485883,
+            "debate_side_sensitivity": {
+              "estimate": 0.9019838803192178,
+              "interval95": [
+                0.8203117951039484,
+                0.9899792851681498
+              ]
+            }
+          },
+          "surprisal.expert_plus_source": {
+            "primary": {
+              "estimate": 0.9033727411611383,
+              "interval95": [
+                0.8160671184295128,
+                0.9901114942098144
+              ]
+            },
+            "spearman_all_unique_arguments": 0.43735970228416826,
+            "debate_side_sensitivity": {
+              "estimate": 0.901026699222498,
+              "interval95": [
+                0.8194893680629465,
+                0.9886267986178217
+              ]
+            }
+          },
+          "native.source_only": {
+            "primary": {
+              "estimate": 0.8710663833925454,
+              "interval95": [
+                0.819769026098694,
+                0.9232618112140143
+              ]
+            },
+            "spearman_all_unique_arguments": 0.12308809196736523,
+            "debate_side_sensitivity": {
+              "estimate": 0.8693039412356172,
+              "interval95": [
+                0.8129857282978402,
+                0.9279498185617125
+              ]
+            }
+          },
+          "native.expert_only": {
+            "primary": {
+              "estimate": 0.9245216286993498,
+              "interval95": [
+                0.8240535671999139,
+                1.0216434318413308
+              ]
+            },
+            "spearman_all_unique_arguments": 0.4593265047823714,
+            "debate_side_sensitivity": {
+              "estimate": 0.9218802657321736,
+              "interval95": [
+                0.8311178590871143,
+                1.0186345599429092
+              ]
+            }
+          },
+          "native.expert_plus_source": {
+            "primary": {
+              "estimate": 0.9231743461885533,
+              "interval95": [
+                0.8233470064052261,
+                1.0196349445497148
+              ]
+            },
+            "spearman_all_unique_arguments": 0.46110753013107186,
+            "debate_side_sensitivity": {
+              "estimate": 0.9205207863402749,
+              "interval95": [
+                0.8302020039086315,
+                1.0163685823508157
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "native.source_only minus form.source_only": {
+            "estimate": 0.006505557458636235,
+            "interval95": [
+              -0.0014836855700082557,
+              0.014400029698031778
+            ]
+          },
+          "native.source_only minus surprisal.source_only": {
+            "estimate": -0.0014455108436516317,
+            "interval95": [
+              -0.007466772673791508,
+              0.005173316735716964
+            ]
+          },
+          "native.expert_only minus form.expert_only": {
+            "estimate": -0.00875635154083354,
+            "interval95": [
+              -0.0579135437609134,
+              0.044744828513313274
+            ]
+          },
+          "native.expert_only minus surprisal.expert_only": {
+            "estimate": 0.020128410706939714,
+            "interval95": [
+              -0.026532084729633233,
+              0.06984096096589558
+            ]
+          },
+          "native.expert_plus_source minus form.expert_plus_source": {
+            "estimate": -0.008695874817101545,
+            "interval95": [
+              -0.05701280510291054,
+              0.044181893036053035
+            ]
+          },
+          "native.expert_plus_source minus surprisal.expert_plus_source": {
+            "estimate": 0.019801605027415015,
+            "interval95": [
+              -0.026212494742670206,
+              0.06857104386274364
+            ]
+          },
+          "form.expert_plus_source minus form.expert_only": {
+            "estimate": -0.0014077592345285161,
+            "interval95": [
+              -0.0032847434622850003,
+              0.0005004608886322113
+            ]
+          },
+          "form.expert_plus_source minus form.source_only": {
+            "estimate": 0.06730939507174571,
+            "interval95": [
+              0.0014589251419125898,
+              0.1287844438883997
+            ]
+          },
+          "surprisal.expert_plus_source minus surprisal.expert_only": {
+            "estimate": -0.0010204768312718215,
+            "interval95": [
+              -0.0022406324621612574,
+              0.00018019572853159003
+            ]
+          },
+          "surprisal.expert_plus_source minus surprisal.source_only": {
+            "estimate": 0.030860846924941288,
+            "interval95": [
+              -0.03153408193587456,
+              0.08864670518757992
+            ]
+          },
+          "native.expert_plus_source minus native.expert_only": {
+            "estimate": -0.0013472825107965214,
+            "interval95": [
+              -0.002790038082182805,
+              -9.786705573051337e-05
+            ]
+          },
+          "native.expert_plus_source minus native.source_only": {
+            "estimate": 0.052107962796007934,
+            "interval95": [
+              -0.027218619252090674,
+              0.13274240437364554
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "expert_vs_other_two": {
+        "1": {
+          "correlation": 0.42139806151734255,
+          "within_topic_ordering": 0.6793134352540751
+        },
+        "2": {
+          "correlation": 0.31255733527244567,
+          "within_topic_ordering": 0.634400094255762
+        },
+        "3": {
+          "correlation": 0.5335725279879349,
+          "within_topic_ordering": 0.7158549937314772
+        }
+      }
+    },
+    "Arrangement": {
+      "votes": 906,
+      "unique_passages": 302,
+      "direct_transfer": {
+        "models": {
+          "form.isolated": {
+            "primary": {
+              "estimate": 0.4104774391640799,
+              "interval95": [
+                0.36901073866795125,
+                0.4605985891280878
+              ]
+            },
+            "spearman_all_unique_arguments": -0.2903081905097,
+            "debate_side_sensitivity": {
+              "estimate": 0.38588453199428085,
+              "interval95": [
+                0.3294273032553528,
+                0.44111070682915215
+              ]
+            }
+          },
+          "form.joint": {
+            "primary": {
+              "estimate": 0.46980281729030776,
+              "interval95": [
+                0.426700270205338,
+                0.5211448553717491
+              ]
+            },
+            "spearman_all_unique_arguments": -0.16086675570754574,
+            "debate_side_sensitivity": {
+              "estimate": 0.43357626270597627,
+              "interval95": [
+                0.3789634214059262,
+                0.48521116718518276
+              ]
+            }
+          },
+          "form.paired-isolated": {
+            "primary": {
+              "estimate": 0.6540881292311438,
+              "interval95": [
+                0.6183602215852104,
+                0.6935116753105014
+              ]
+            },
+            "spearman_all_unique_arguments": 0.37686699167415655,
+            "debate_side_sensitivity": {
+              "estimate": 0.6773238389691965,
+              "interval95": [
+                0.6283330072682269,
+                0.7231461971052403
+              ]
+            }
+          },
+          "form.paired-joint": {
+            "primary": {
+              "estimate": 0.6358476683520511,
+              "interval95": [
+                0.5920377032206174,
+                0.6773677286441608
+              ]
+            },
+            "spearman_all_unique_arguments": 0.24006134887463979,
+            "debate_side_sensitivity": {
+              "estimate": 0.6408444575858969,
+              "interval95": [
+                0.5931755007854401,
+                0.684178137680876
+              ]
+            }
+          },
+          "form.adaptive": {
+            "primary": {
+              "estimate": 0.43382726679084566,
+              "interval95": [
+                0.39324275646852386,
+                0.481306707429529
+              ]
+            },
+            "spearman_all_unique_arguments": -0.241116428686777,
+            "debate_side_sensitivity": {
+              "estimate": 0.3939781281627507,
+              "interval95": [
+                0.3399557191375072,
+                0.4449742216871625
+              ]
+            }
+          },
+          "surprisal.isolated": {
+            "primary": {
+              "estimate": 0.4528443825410846,
+              "interval95": [
+                0.40963232203311667,
+                0.506045213497643
+              ]
+            },
+            "spearman_all_unique_arguments": -0.20019561187514637,
+            "debate_side_sensitivity": {
+              "estimate": 0.4235181693397556,
+              "interval95": [
+                0.3654870073349198,
+                0.4799360764847378
+              ]
+            }
+          },
+          "surprisal.joint": {
+            "primary": {
+              "estimate": 0.5125647556564563,
+              "interval95": [
+                0.4678772613469505,
+                0.5629209334716977
+              ]
+            },
+            "spearman_all_unique_arguments": -0.08108234979555541,
+            "debate_side_sensitivity": {
+              "estimate": 0.4755991412104111,
+              "interval95": [
+                0.42218716648368204,
+                0.5282352243600035
+              ]
+            }
+          },
+          "surprisal.paired-isolated": {
+            "primary": {
+              "estimate": 0.6791823443650551,
+              "interval95": [
+                0.6512252605910903,
+                0.7108271597950689
+              ]
+            },
+            "spearman_all_unique_arguments": 0.42137072074833576,
+            "debate_side_sensitivity": {
+              "estimate": 0.7022692688314799,
+              "interval95": [
+                0.6580088813427009,
+                0.7446395447783443
+              ]
+            }
+          },
+          "surprisal.paired-joint": {
+            "primary": {
+              "estimate": 0.659160283971707,
+              "interval95": [
+                0.6226719888410871,
+                0.6933543918495125
+              ]
+            },
+            "spearman_all_unique_arguments": 0.2925922692767003,
+            "debate_side_sensitivity": {
+              "estimate": 0.677367350858254,
+              "interval95": [
+                0.6380897168697947,
+                0.7168155010581158
+              ]
+            }
+          },
+          "surprisal.adaptive": {
+            "primary": {
+              "estimate": 0.473376921157893,
+              "interval95": [
+                0.42854591322274815,
+                0.5289852474516901
+              ]
+            },
+            "spearman_all_unique_arguments": -0.15361196998412327,
+            "debate_side_sensitivity": {
+              "estimate": 0.4470505744018577,
+              "interval95": [
+                0.39173857811673374,
+                0.5003761053794388
+              ]
+            }
+          },
+          "native.isolated": {
+            "primary": {
+              "estimate": 0.46209611289467056,
+              "interval95": [
+                0.41953456670020833,
+                0.5077216287140754
+              ]
+            },
+            "spearman_all_unique_arguments": -0.17786012381163105,
+            "debate_side_sensitivity": {
+              "estimate": 0.43072964633349187,
+              "interval95": [
+                0.3745625913626861,
+                0.4857433919808925
+              ]
+            }
+          },
+          "native.joint": {
+            "primary": {
+              "estimate": 0.49141355299787903,
+              "interval95": [
+                0.44952028017514706,
+                0.5362709678791521
+              ]
+            },
+            "spearman_all_unique_arguments": -0.10833028702985897,
+            "debate_side_sensitivity": {
+              "estimate": 0.45562677189144407,
+              "interval95": [
+                0.3977515422901734,
+                0.5107225589261994
+              ]
+            }
+          },
+          "native.paired-isolated": {
+            "primary": {
+              "estimate": 0.693644926452383,
+              "interval95": [
+                0.6515644723683388,
+                0.729295098884273
+              ]
+            },
+            "spearman_all_unique_arguments": 0.46108700293464283,
+            "debate_side_sensitivity": {
+              "estimate": 0.7104822670660673,
+              "interval95": [
+                0.6505222851489998,
+                0.767520437617416
+              ]
+            }
+          },
+          "native.paired-joint": {
+            "primary": {
+              "estimate": 0.6582707694513671,
+              "interval95": [
+                0.6137695213002917,
+                0.70101667344381
+              ]
+            },
+            "spearman_all_unique_arguments": 0.30654205238308363,
+            "debate_side_sensitivity": {
+              "estimate": 0.6648666735708875,
+              "interval95": [
+                0.6169314344093811,
+                0.7091604982240584
+              ]
+            }
+          },
+          "native.adaptive": {
+            "primary": {
+              "estimate": 0.4789857739899077,
+              "interval95": [
+                0.43543011694293915,
+                0.5262531886218366
+              ]
+            },
+            "spearman_all_unique_arguments": -0.15524796642132427,
+            "debate_side_sensitivity": {
+              "estimate": 0.4566210360925198,
+              "interval95": [
+                0.3982769376183838,
+                0.5137934984556758
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "native.isolated minus form.isolated": {
+            "estimate": 0.05161867373059065,
+            "interval95": [
+              0.01885342971016924,
+              0.08493046577406697
+            ]
+          },
+          "native.isolated minus surprisal.isolated": {
+            "estimate": 0.009251730353585952,
+            "interval95": [
+              -0.023213711286617145,
+              0.04298635953508624
+            ]
+          },
+          "native.joint minus form.joint": {
+            "estimate": 0.02161073570757127,
+            "interval95": [
+              -0.01355310382705901,
+              0.057896990891354874
+            ]
+          },
+          "native.joint minus surprisal.joint": {
+            "estimate": -0.021151202658577284,
+            "interval95": [
+              -0.058285331320219166,
+              0.019720600491199895
+            ]
+          },
+          "native.adaptive minus form.adaptive": {
+            "estimate": 0.04515850719906206,
+            "interval95": [
+              0.014478754021654187,
+              0.07920294450298655
+            ]
+          },
+          "native.adaptive minus surprisal.adaptive": {
+            "estimate": 0.005608852832014732,
+            "interval95": [
+              -0.029009030689502103,
+              0.044422685699929396
+            ]
+          },
+          "native.paired-isolated minus form.paired-isolated": {
+            "estimate": 0.03955679722123917,
+            "interval95": [
+              -0.005336835124184134,
+              0.08221301989562241
+            ]
+          },
+          "native.paired-isolated minus surprisal.paired-isolated": {
+            "estimate": 0.014462582087327869,
+            "interval95": [
+              -0.02268611765140257,
+              0.049641981623852395
+            ]
+          },
+          "form.joint minus form.isolated": {
+            "estimate": 0.059325378126227846,
+            "interval95": [
+              0.043037615555691085,
+              0.0763145879815727
+            ]
+          },
+          "form.adaptive minus form.isolated": {
+            "estimate": 0.02334982762676574,
+            "interval95": [
+              0.01267685178977161,
+              0.033801113668518276
+            ]
+          },
+          "form.adaptive minus form.paired-isolated": {
+            "estimate": -0.22026086244029813,
+            "interval95": [
+              -0.2730432129088097,
+              -0.16596581814462413
+            ]
+          },
+          "surprisal.joint minus surprisal.isolated": {
+            "estimate": 0.059720373115371705,
+            "interval95": [
+              0.0451114939349704,
+              0.07523471148167116
+            ]
+          },
+          "surprisal.adaptive minus surprisal.isolated": {
+            "estimate": 0.02053253861680837,
+            "interval95": [
+              0.013998973002862045,
+              0.027061907041366684
+            ]
+          },
+          "surprisal.adaptive minus surprisal.paired-isolated": {
+            "estimate": -0.2058054232071621,
+            "interval95": [
+              -0.2541510064024616,
+              -0.1514147786581972
+            ]
+          },
+          "native.joint minus native.isolated": {
+            "estimate": 0.02931744010320847,
+            "interval95": [
+              0.009874612523737135,
+              0.04886019150228832
+            ]
+          },
+          "native.adaptive minus native.isolated": {
+            "estimate": 0.016889661095237152,
+            "interval95": [
+              0.0038785780850769933,
+              0.030011667377935678
+            ]
+          },
+          "native.adaptive minus native.paired-isolated": {
+            "estimate": -0.21465915246247524,
+            "interval95": [
+              -0.257138320960592,
+              -0.1699295916063774
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "ordinal_topic_holdout": {
+        "models": {
+          "form.source_only": {
+            "primary": {
+              "estimate": 0.9974272885878732,
+              "interval95": [
+                0.9555452917051672,
+                1.0385231840218208
+              ]
+            },
+            "spearman_all_unique_arguments": 0.14628134483912858,
+            "debate_side_sensitivity": {
+              "estimate": 1.0004985182506514,
+              "interval95": [
+                0.957254575862836,
+                1.0479933529190297
+              ]
+            }
+          },
+          "form.expert_only": {
+            "primary": {
+              "estimate": 1.2082013261115663,
+              "interval95": [
+                1.1241026446854039,
+                1.2937823628116092
+              ]
+            },
+            "spearman_all_unique_arguments": 0.18766653910601686,
+            "debate_side_sensitivity": {
+              "estimate": 1.2109988323474499,
+              "interval95": [
+                1.1382043994984878,
+                1.2882869849941814
+              ]
+            }
+          },
+          "form.expert_plus_source": {
+            "primary": {
+              "estimate": 1.2065154476747386,
+              "interval95": [
+                1.1225690429011201,
+                1.291414451722171
+              ]
+            },
+            "spearman_all_unique_arguments": 0.1898403059870939,
+            "debate_side_sensitivity": {
+              "estimate": 1.2093153265541048,
+              "interval95": [
+                1.1365992503735867,
+                1.2868566470615075
+              ]
+            }
+          },
+          "surprisal.source_only": {
+            "primary": {
+              "estimate": 1.0062809120094032,
+              "interval95": [
+                0.9627102773553645,
+                1.0496566899120763
+              ]
+            },
+            "spearman_all_unique_arguments": 0.013865492370970246,
+            "debate_side_sensitivity": {
+              "estimate": 1.0091276337632888,
+              "interval95": [
+                0.9658162288272628,
+                1.0566048270019155
+              ]
+            }
+          },
+          "surprisal.expert_only": {
+            "primary": {
+              "estimate": 1.1615015998174216,
+              "interval95": [
+                1.0962051492211535,
+                1.2268898104598633
+              ]
+            },
+            "spearman_all_unique_arguments": 0.24355040707295528,
+            "debate_side_sensitivity": {
+              "estimate": 1.1679832986520302,
+              "interval95": [
+                1.1044455667660489,
+                1.2353699865611205
+              ]
+            }
+          },
+          "surprisal.expert_plus_source": {
+            "primary": {
+              "estimate": 1.1605670577446303,
+              "interval95": [
+                1.0955254273148534,
+                1.2253126372364338
+              ]
+            },
+            "spearman_all_unique_arguments": 0.24563699197967354,
+            "debate_side_sensitivity": {
+              "estimate": 1.1670368565144782,
+              "interval95": [
+                1.1035417860336503,
+                1.2341769918499466
+              ]
+            }
+          },
+          "native.source_only": {
+            "primary": {
+              "estimate": 1.0087111402238556,
+              "interval95": [
+                0.963689608869116,
+                1.052177874281079
+              ]
+            },
+            "spearman_all_unique_arguments": 0.013534111907208768,
+            "debate_side_sensitivity": {
+              "estimate": 1.011166077213129,
+              "interval95": [
+                0.9675821137004498,
+                1.058930587651576
+              ]
+            }
+          },
+          "native.expert_only": {
+            "primary": {
+              "estimate": 1.137144543174192,
+              "interval95": [
+                1.0620458059606437,
+                1.2177809566450448
+              ]
+            },
+            "spearman_all_unique_arguments": 0.337257240522844,
+            "debate_side_sensitivity": {
+              "estimate": 1.1419516147192392,
+              "interval95": [
+                1.0786876981844058,
+                1.2098955334347643
+              ]
+            }
+          },
+          "native.expert_plus_source": {
+            "primary": {
+              "estimate": 1.13570747572319,
+              "interval95": [
+                1.0609126491371264,
+                1.215958426567516
+              ]
+            },
+            "spearman_all_unique_arguments": 0.33709866718682924,
+            "debate_side_sensitivity": {
+              "estimate": 1.1405223844497319,
+              "interval95": [
+                1.0772608307548408,
+                1.208602242803376
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "native.source_only minus form.source_only": {
+            "estimate": 0.011283851635982334,
+            "interval95": [
+              0.002512986849590787,
+              0.019811716003731158
+            ]
+          },
+          "native.source_only minus surprisal.source_only": {
+            "estimate": 0.002430228214452379,
+            "interval95": [
+              -0.0022426852353477967,
+              0.006975818985053261
+            ]
+          },
+          "native.expert_only minus form.expert_only": {
+            "estimate": -0.07105678293737427,
+            "interval95": [
+              -0.1363153880065305,
+              -0.010611483170557068
+            ]
+          },
+          "native.expert_only minus surprisal.expert_only": {
+            "estimate": -0.024357056643229624,
+            "interval95": [
+              -0.0770759637170193,
+              0.028534919901487547
+            ]
+          },
+          "native.expert_plus_source minus form.expert_plus_source": {
+            "estimate": -0.07080797195154864,
+            "interval95": [
+              -0.13596865075498388,
+              -0.010459321817694356
+            ]
+          },
+          "native.expert_plus_source minus surprisal.expert_plus_source": {
+            "estimate": -0.02485958202144034,
+            "interval95": [
+              -0.07768355337819219,
+              0.027981155146305902
+            ]
+          },
+          "form.expert_plus_source minus form.expert_only": {
+            "estimate": -0.0016858784368276591,
+            "interval95": [
+              -0.0033412283195917215,
+              9.408384214925807e-06
+            ]
+          },
+          "form.expert_plus_source minus form.source_only": {
+            "estimate": 0.2090881590868654,
+            "interval95": [
+              0.14389005954393336,
+              0.27504514780833
+            ]
+          },
+          "surprisal.expert_plus_source minus surprisal.expert_only": {
+            "estimate": -0.0009345420727913112,
+            "interval95": [
+              -0.0022436302832501806,
+              0.0002011592304713815
+            ]
+          },
+          "surprisal.expert_plus_source minus surprisal.source_only": {
+            "estimate": 0.15428614573522714,
+            "interval95": [
+              0.1071840403604691,
+              0.20084872572623824
+            ]
+          },
+          "native.expert_plus_source minus native.expert_only": {
+            "estimate": -0.0014370674510020276,
+            "interval95": [
+              -0.0027522050167610003,
+              -1.7632859056327237e-05
+            ]
+          },
+          "native.expert_plus_source minus native.source_only": {
+            "estimate": 0.12699633549933442,
+            "interval95": [
+              0.0742194272000828,
+              0.18530551656834088
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "expert_vs_other_two": {
+        "1": {
+          "correlation": 0.37293902332510104,
+          "within_topic_ordering": 0.6576090593201688
+        },
+        "2": {
+          "correlation": 0.21960811186407156,
+          "within_topic_ordering": 0.5943428362376043
+        },
+        "3": {
+          "correlation": 0.3685534425077856,
+          "within_topic_ordering": 0.6473210911221327
+        }
+      }
+    },
+    "Clarity": {
+      "votes": 906,
+      "unique_passages": 302,
+      "direct_transfer": {
+        "models": {
+          "form.isolated": {
+            "primary": {
+              "estimate": 0.46199127725995687,
+              "interval95": [
+                0.41557700438390477,
+                0.5101587179625191
+              ]
+            },
+            "spearman_all_unique_arguments": -0.1367031749340845,
+            "debate_side_sensitivity": {
+              "estimate": 0.45021032113752557,
+              "interval95": [
+                0.40736083967348646,
+                0.49281254008330067
+              ]
+            }
+          },
+          "form.joint": {
+            "primary": {
+              "estimate": 0.5067647976762018,
+              "interval95": [
+                0.46414578298734016,
+                0.5496294287805381
+              ]
+            },
+            "spearman_all_unique_arguments": -0.06547225040159015,
+            "debate_side_sensitivity": {
+              "estimate": 0.47153775239424994,
+              "interval95": [
+                0.42268731343202176,
+                0.5190596996618098
+              ]
+            }
+          },
+          "form.paired-isolated": {
+            "primary": {
+              "estimate": 0.6000593692596494,
+              "interval95": [
+                0.5568474284307212,
+                0.6370907653097038
+              ]
+            },
+            "spearman_all_unique_arguments": 0.22863074800281957,
+            "debate_side_sensitivity": {
+              "estimate": 0.604718783483076,
+              "interval95": [
+                0.5470327703532553,
+                0.6604901975808755
+              ]
+            }
+          },
+          "form.paired-joint": {
+            "primary": {
+              "estimate": 0.5914900016737418,
+              "interval95": [
+                0.5480883711251424,
+                0.6350396342297856
+              ]
+            },
+            "spearman_all_unique_arguments": 0.14465596918883847,
+            "debate_side_sensitivity": {
+              "estimate": 0.5873505076162268,
+              "interval95": [
+                0.5331463245931578,
+                0.6370896387573327
+              ]
+            }
+          },
+          "form.adaptive": {
+            "primary": {
+              "estimate": 0.47766498955073033,
+              "interval95": [
+                0.4356855478838689,
+                0.5205126300295779
+              ]
+            },
+            "spearman_all_unique_arguments": -0.10657813734411975,
+            "debate_side_sensitivity": {
+              "estimate": 0.4492965246642826,
+              "interval95": [
+                0.4066401190788717,
+                0.4906984612852592
+              ]
+            }
+          },
+          "surprisal.isolated": {
+            "primary": {
+              "estimate": 0.5028973817496456,
+              "interval95": [
+                0.4551938921988272,
+                0.5532430904426615
+              ]
+            },
+            "spearman_all_unique_arguments": -0.04299744663500365,
+            "debate_side_sensitivity": {
+              "estimate": 0.4926656767050911,
+              "interval95": [
+                0.4450876795584288,
+                0.5404103577654902
+              ]
+            }
+          },
+          "surprisal.joint": {
+            "primary": {
+              "estimate": 0.5450106405645314,
+              "interval95": [
+                0.5003463183749812,
+                0.5954361643605027
+              ]
+            },
+            "spearman_all_unique_arguments": 0.027072697450165623,
+            "debate_side_sensitivity": {
+              "estimate": 0.5156038592837644,
+              "interval95": [
+                0.4658677334383883,
+                0.5638839637175392
+              ]
+            }
+          },
+          "surprisal.paired-isolated": {
+            "primary": {
+              "estimate": 0.6267614084573025,
+              "interval95": [
+                0.5880485664723075,
+                0.6596829524781455
+              ]
+            },
+            "spearman_all_unique_arguments": 0.28943314078906746,
+            "debate_side_sensitivity": {
+              "estimate": 0.6500548652835373,
+              "interval95": [
+                0.5907815098872461,
+                0.7083892230202499
+              ]
+            }
+          },
+          "surprisal.paired-joint": {
+            "primary": {
+              "estimate": 0.6328419573888941,
+              "interval95": [
+                0.591211224402115,
+                0.6764189955472937
+              ]
+            },
+            "spearman_all_unique_arguments": 0.22573748602797059,
+            "debate_side_sensitivity": {
+              "estimate": 0.6369006675061674,
+              "interval95": [
+                0.5882537085179579,
+                0.6833650372874462
+              ]
+            }
+          },
+          "surprisal.adaptive": {
+            "primary": {
+              "estimate": 0.5182125651012547,
+              "interval95": [
+                0.47585214056787445,
+                0.5652086759970681
+              ]
+            },
+            "spearman_all_unique_arguments": -0.009685944177928934,
+            "debate_side_sensitivity": {
+              "estimate": 0.5011283154175846,
+              "interval95": [
+                0.455542647523315,
+                0.5458745999198248
+              ]
+            }
+          },
+          "native.isolated": {
+            "primary": {
+              "estimate": 0.5257326822075971,
+              "interval95": [
+                0.4819471880129385,
+                0.5693146539070905
+              ]
+            },
+            "spearman_all_unique_arguments": 0.006946636001371997,
+            "debate_side_sensitivity": {
+              "estimate": 0.5083704412764245,
+              "interval95": [
+                0.45743677336805644,
+                0.555026053402461
+              ]
+            }
+          },
+          "native.joint": {
+            "primary": {
+              "estimate": 0.5396309373263821,
+              "interval95": [
+                0.5011147834039297,
+                0.5769748277245651
+              ]
+            },
+            "spearman_all_unique_arguments": 0.052347973297089664,
+            "debate_side_sensitivity": {
+              "estimate": 0.5222505979013682,
+              "interval95": [
+                0.47652394725225,
+                0.5656255114933072
+              ]
+            }
+          },
+          "native.paired-isolated": {
+            "primary": {
+              "estimate": 0.661663006396805,
+              "interval95": [
+                0.6354872696748571,
+                0.6877975559883331
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3968679385592841,
+            "debate_side_sensitivity": {
+              "estimate": 0.6557317936005549,
+              "interval95": [
+                0.6114213664026064,
+                0.6993448857163513
+              ]
+            }
+          },
+          "native.paired-joint": {
+            "primary": {
+              "estimate": 0.6423339772770394,
+              "interval95": [
+                0.610198458030658,
+                0.6784629477549374
+              ]
+            },
+            "spearman_all_unique_arguments": 0.2855357257477896,
+            "debate_side_sensitivity": {
+              "estimate": 0.6384391883172336,
+              "interval95": [
+                0.5949994101192382,
+                0.6833546351627489
+              ]
+            }
+          },
+          "native.adaptive": {
+            "primary": {
+              "estimate": 0.5374497922417374,
+              "interval95": [
+                0.49595807273565795,
+                0.5789902128859957
+              ]
+            },
+            "spearman_all_unique_arguments": 0.023834320520824022,
+            "debate_side_sensitivity": {
+              "estimate": 0.531032959716951,
+              "interval95": [
+                0.4814520984287903,
+                0.5789474211967678
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "native.isolated minus form.isolated": {
+            "estimate": 0.06374140494764019,
+            "interval95": [
+              0.03174669663266868,
+              0.09348313195156568
+            ]
+          },
+          "native.isolated minus surprisal.isolated": {
+            "estimate": 0.022835300457951457,
+            "interval95": [
+              -0.009828571329564677,
+              0.05227676217259408
+            ]
+          },
+          "native.joint minus form.joint": {
+            "estimate": 0.03286613965018037,
+            "interval95": [
+              0.001089303834089377,
+              0.06568139870019175
+            ]
+          },
+          "native.joint minus surprisal.joint": {
+            "estimate": -0.0053797032381492915,
+            "interval95": [
+              -0.04126050160395742,
+              0.02939102008752804
+            ]
+          },
+          "native.adaptive minus form.adaptive": {
+            "estimate": 0.059784802691007055,
+            "interval95": [
+              0.031717712928670386,
+              0.08882627966478394
+            ]
+          },
+          "native.adaptive minus surprisal.adaptive": {
+            "estimate": 0.019237227140482704,
+            "interval95": [
+              -0.011897022201603175,
+              0.050506493643507115
+            ]
+          },
+          "native.paired-isolated minus form.paired-isolated": {
+            "estimate": 0.061603637137155554,
+            "interval95": [
+              0.026599378548870335,
+              0.09594768282679554
+            ]
+          },
+          "native.paired-isolated minus surprisal.paired-isolated": {
+            "estimate": 0.03490159793950243,
+            "interval95": [
+              0.009324685993888424,
+              0.060512419415491084
+            ]
+          },
+          "form.joint minus form.isolated": {
+            "estimate": 0.04477352041624488,
+            "interval95": [
+              0.013761853253532916,
+              0.0769586830132545
+            ]
+          },
+          "form.adaptive minus form.isolated": {
+            "estimate": 0.015673712290773467,
+            "interval95": [
+              0.002219236048722634,
+              0.029382836930963115
+            ]
+          },
+          "form.adaptive minus form.paired-isolated": {
+            "estimate": -0.12239437970891909,
+            "interval95": [
+              -0.18537733141831345,
+              -0.05502076481526201
+            ]
+          },
+          "surprisal.joint minus surprisal.isolated": {
+            "estimate": 0.04211325881488581,
+            "interval95": [
+              0.009722734183495447,
+              0.07441690855187731
+            ]
+          },
+          "surprisal.adaptive minus surprisal.isolated": {
+            "estimate": 0.015315183351609085,
+            "interval95": [
+              -0.0009557245707821294,
+              0.032258042935132306
+            ]
+          },
+          "surprisal.adaptive minus surprisal.paired-isolated": {
+            "estimate": -0.10854884335604786,
+            "interval95": [
+              -0.1659590063340693,
+              -0.0449387681332229
+            ]
+          },
+          "native.joint minus native.isolated": {
+            "estimate": 0.013898255118785063,
+            "interval95": [
+              -0.008918867761928921,
+              0.03752706570415419
+            ]
+          },
+          "native.adaptive minus native.isolated": {
+            "estimate": 0.011717110034140332,
+            "interval95": [
+              0.003088079294373733,
+              0.019835558426371663
+            ]
+          },
+          "native.adaptive minus native.paired-isolated": {
+            "estimate": -0.12421321415506759,
+            "interval95": [
+              -0.16483298607274863,
+              -0.08205988865014074
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "ordinal_topic_holdout": {
+        "models": {
+          "form.source_only": {
+            "primary": {
+              "estimate": 1.0285961823744803,
+              "interval95": [
+                0.9877414537236365,
+                1.0741992020955335
+              ]
+            },
+            "spearman_all_unique_arguments": -0.0077511615666869295,
+            "debate_side_sensitivity": {
+              "estimate": 1.025899353838332,
+              "interval95": [
+                0.9906910388678464,
+                1.0635864978174174
+              ]
+            }
+          },
+          "form.expert_only": {
+            "primary": {
+              "estimate": 1.3416851186974192,
+              "interval95": [
+                1.266562711722587,
+                1.4182096838032283
+              ]
+            },
+            "spearman_all_unique_arguments": -0.0008989921506634596,
+            "debate_side_sensitivity": {
+              "estimate": 1.3409183519835932,
+              "interval95": [
+                1.2674378805741087,
+                1.4172095688350093
+              ]
+            }
+          },
+          "form.expert_plus_source": {
+            "primary": {
+              "estimate": 1.3410918954724576,
+              "interval95": [
+                1.2661247409841268,
+                1.4173664404704358
+              ]
+            },
+            "spearman_all_unique_arguments": 0.0006140328047654262,
+            "debate_side_sensitivity": {
+              "estimate": 1.3402765464821975,
+              "interval95": [
+                1.26584367376912,
+                1.4168563259335198
+              ]
+            }
+          },
+          "surprisal.source_only": {
+            "primary": {
+              "estimate": 1.0327644007144494,
+              "interval95": [
+                0.9927261960568728,
+                1.077808662892789
+              ]
+            },
+            "spearman_all_unique_arguments": -0.19603598848222178,
+            "debate_side_sensitivity": {
+              "estimate": 1.0295266717905949,
+              "interval95": [
+                0.9942905256008182,
+                1.0669837966465128
+              ]
+            }
+          },
+          "surprisal.expert_only": {
+            "primary": {
+              "estimate": 1.2541901606523096,
+              "interval95": [
+                1.1819737086527646,
+                1.3235199255452825
+              ]
+            },
+            "spearman_all_unique_arguments": 0.15266535427538136,
+            "debate_side_sensitivity": {
+              "estimate": 1.2573580126480186,
+              "interval95": [
+                1.1918236117645435,
+                1.3283889625085592
+              ]
+            }
+          },
+          "surprisal.expert_plus_source": {
+            "primary": {
+              "estimate": 1.2542244443264294,
+              "interval95": [
+                1.1824011838543016,
+                1.3233999713124878
+              ]
+            },
+            "spearman_all_unique_arguments": 0.15275425089697112,
+            "debate_side_sensitivity": {
+              "estimate": 1.257380931059759,
+              "interval95": [
+                1.1918006532802201,
+                1.328232178899618
+              ]
+            }
+          },
+          "native.source_only": {
+            "primary": {
+              "estimate": 1.0344903677299322,
+              "interval95": [
+                0.9941025798016129,
+                1.0791333349554353
+              ]
+            },
+            "spearman_all_unique_arguments": -0.18795330267261356,
+            "debate_side_sensitivity": {
+              "estimate": 1.0309561499776976,
+              "interval95": [
+                0.9953526246473627,
+                1.0689131813568307
+              ]
+            }
+          },
+          "native.expert_only": {
+            "primary": {
+              "estimate": 1.1562066282153336,
+              "interval95": [
+                1.0977285074586078,
+                1.2135982850982188
+              ]
+            },
+            "spearman_all_unique_arguments": 0.32146956714248737,
+            "debate_side_sensitivity": {
+              "estimate": 1.158827059519235,
+              "interval95": [
+                1.0936033322051029,
+                1.228473184349766
+              ]
+            }
+          },
+          "native.expert_plus_source": {
+            "primary": {
+              "estimate": 1.1566678564476596,
+              "interval95": [
+                1.0983264987002568,
+                1.2137837193906929
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3209381925999019,
+            "debate_side_sensitivity": {
+              "estimate": 1.1593151849959296,
+              "interval95": [
+                1.0942844242734726,
+                1.2289298007470675
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "native.source_only minus form.source_only": {
+            "estimate": 0.005894185355451942,
+            "interval95": [
+              -0.0006097299651337485,
+              0.01299409075567353
+            ]
+          },
+          "native.source_only minus surprisal.source_only": {
+            "estimate": 0.0017259670154827766,
+            "interval95": [
+              -0.0006242053145449622,
+              0.004571504187189226
+            ]
+          },
+          "native.expert_only minus form.expert_only": {
+            "estimate": -0.18547849048208565,
+            "interval95": [
+              -0.24484519167589,
+              -0.11919940471999747
+            ]
+          },
+          "native.expert_only minus surprisal.expert_only": {
+            "estimate": -0.097983532436976,
+            "interval95": [
+              -0.1587490710695626,
+              -0.03396574292523711
+            ]
+          },
+          "native.expert_plus_source minus form.expert_plus_source": {
+            "estimate": -0.18442403902479798,
+            "interval95": [
+              -0.2435551714485227,
+              -0.11851160831977665
+            ]
+          },
+          "native.expert_plus_source minus surprisal.expert_plus_source": {
+            "estimate": -0.09755658787876986,
+            "interval95": [
+              -0.1581446010695851,
+              -0.033834663348087976
+            ]
+          },
+          "form.expert_plus_source minus form.expert_only": {
+            "estimate": -0.000593223224961692,
+            "interval95": [
+              -0.0016666986658031458,
+              0.000569114839401813
+            ]
+          },
+          "form.expert_plus_source minus form.source_only": {
+            "estimate": 0.3124957130979773,
+            "interval95": [
+              0.25085634150557273,
+              0.3727453107552829
+            ]
+          },
+          "surprisal.expert_plus_source minus surprisal.expert_only": {
+            "estimate": 3.428367411983935e-05,
+            "interval95": [
+              -0.0003619034840926294,
+              0.00039506402076647717
+            ]
+          },
+          "surprisal.expert_plus_source minus surprisal.source_only": {
+            "estimate": 0.22146004361198002,
+            "interval95": [
+              0.16663951789650255,
+              0.2745130411304127
+            ]
+          },
+          "native.expert_plus_source minus native.expert_only": {
+            "estimate": 0.000461228232325972,
+            "interval95": [
+              0.00011251204678037197,
+              0.0009055576628393011
+            ]
+          },
+          "native.expert_plus_source minus native.source_only": {
+            "estimate": 0.12217748871772738,
+            "interval95": [
+              0.07424605194998421,
+              0.17582900554913095
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "expert_vs_other_two": {
+        "1": {
+          "correlation": 0.27607099094922405,
+          "within_topic_ordering": 0.6092530127620984
+        },
+        "2": {
+          "correlation": 0.3181018064220784,
+          "within_topic_ordering": 0.6233793786251284
+        },
+        "3": {
+          "correlation": 0.4106909391337983,
+          "within_topic_ordering": 0.6560292896819788
+        }
+      }
+    }
+  },
+  "excluded_source_repeats": 2
+}

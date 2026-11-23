@@ -1,0 +1,73 @@
+{
+  "forecast_sha256": "8467a8458a3bdb2ecd64f56566c4539d8797233bc2cd829e7eaceb5fc7cbb39d",
+  "held_out_literal_definitions": 28,
+  "held_out_reader_item_pairs": 728,
+  "held_out_readers_per_family": 52,
+  "held_out_target_families": 14,
+  "maximum_absolute_discrepancy": 7.327471962526033e-15,
+  "method": "Independent stdlib recomputation of held-out probabilities, per-trial natural-log loss, and aggregate joint path mixtures from sealed predictions. No model fit or scorer imports.",
+  "metrics_sha256": "92e5dcac225c86c12da8a3b12386892ed033bd04853410523487492252748c91",
+  "model_endpoints": {
+    "constant": {
+      "confirmation_marginal": 0.48010610090248657,
+      "confirmation_tot_minus_dont_know": 0.39734311241918513,
+      "delay_marginal": 0.18971428558776451,
+      "delay_tot_minus_dont_know": 0.20884085600046354,
+      "initial_dont_know": 0.34018567644255565,
+      "initial_know": 0.41976127315277323,
+      "initial_tot": 0.24005305040467112
+    },
+    "qwen": {
+      "confirmation_marginal": 0.542600744262757,
+      "confirmation_tot_minus_dont_know": 0.4274431781394965,
+      "delay_marginal": 0.23439782179474125,
+      "delay_tot_minus_dont_know": 0.238916404067091,
+      "initial_dont_know": 0.3161210996848689,
+      "initial_know": 0.46930183714263507,
+      "initial_tot": 0.21457706317249597
+    },
+    "surface": {
+      "confirmation_marginal": 0.5296257071770054,
+      "confirmation_tot_minus_dont_know": 0.4248945039449713,
+      "delay_marginal": 0.23030590884499108,
+      "delay_tot_minus_dont_know": 0.24348564804591188,
+      "initial_dont_know": 0.3298532499734208,
+      "initial_know": 0.45501189939982295,
+      "initial_tot": 0.21513485062675625
+    }
+  },
+  "observed_endpoints": {
+    "confirmation_marginal": 0.5453296703296703,
+    "confirmation_tot_minus_dont_know": 0.3861063950198076,
+    "delay_marginal": 0.1984334203655353,
+    "delay_tot_minus_dont_know": 0.1760328239954726,
+    "initial_dont_know": 0.31318681318681313,
+    "initial_know": 0.4739010989010989,
+    "initial_tot": 0.2129120879120879
+  },
+  "observed_path_counts": [
+    70,
+    275,
+    177,
+    22,
+    14,
+    15,
+    64,
+    44,
+    6,
+    41
+  ],
+  "path_count": 10,
+  "path_nll_nats_per_trial": {
+    "constant": 1.8016002418881503,
+    "qwen": 1.818084100854602,
+    "surface": 1.8147727581510444
+  },
+  "prepared_files_sha256": {
+    "layout.jsonl": "dacad20e9e9aebd4a76ca82f63de43db836d5df00e6b83c75ea16d9261681b47",
+    "outcomes.jsonl": "eb8843124705de37d0e0c6147e52c2c2b2d2796327afc6d57a1f0c35c23bef09",
+    "stimuli.jsonl": "95ec69434b6e21ce89fc52b22d7d85628a57491631425f5210cf43436fb30fb8",
+    "targets.jsonl": "b042cef23d72964905daf1a37aa96c1e8ba1288396eb1e9141dc6cc7d90f7db2"
+  },
+  "published_receipt_sha256": "0162b96321ce2c4118d1a6c66e696316f18fcdc9a3ef4c0af604568669c52c6b"
+}

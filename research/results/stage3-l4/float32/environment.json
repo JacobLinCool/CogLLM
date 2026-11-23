@@ -1,0 +1,28 @@
+{
+  "gpu": "NVIDIA L4",
+  "vram_bytes": 23659151360,
+  "compute_capability": [
+    8,
+    9
+  ],
+  "cuda": "13.0",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.17.0",
+  "numpy": "2.4.6",
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "checkpoint_load_dtype": "bfloat16",
+  "compute_dtype": "float32",
+  "float32_matmul_precision": "highest",
+  "cudnn_allow_tf32": false,
+  "attention": "sdpa",
+  "causal_conv1d": null,
+  "flash_linear_attention": null,
+  "readout_features": [
+    "sentence_end_final_hidden",
+    "article_end_final_hidden"
+  ],
+  "full_text_sentence_rating": true,
+  "visible_input": "article_only",
+  "torch_cpu_threads": 2
+}

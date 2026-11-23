@@ -1,0 +1,9 @@
+# IIRC supervision for locating cues in the original text
+
+This experiment retains the text, splits, training objectives, development selection procedure, calibration, and final scoring of the [three-backbone comparison](transfer-protocol.md). We choose one backbone using the equally weighted mean of Frick and ExpMRC development NLL and test the addition of in-text supervision on the same backbone. Final holdout annotations remain isolated until all new forecasts are sealed.
+
+The additional material comes from the official IIRC training split. We include only cases with one unique human-annotated anchor for the question in the original passage and a complete textual support window after that anchor. The model reads the original passage. The anchor from the human annotations defines the candidate whose later textual support is scored. Paired ranking applies only where separate questions have independent annotated anchors and nonoverlapping evidence that appears later in the passage. The supervision marks textual evidence. The reader's subjective moment of forming or resolving an issue remains unmeasured. [IIRC sources and inclusion criteria](../iirc-seed-later-protocol.md)
+
+We deduplicate source documents and audit textual overlap with other splits. The IIRC interval loss receives a weight of 0.5 in the evidence update. We retain the same number of updates for the other endpoints and use the same random seed. The backbone stays frozen and the readout follows the same architecture. Early stopping, probability calibration, and checkpoint selection use only the existing Frick and ExpMRC development splits. We report paired held-out results with and without the added supervision at the same backbone, readout, and calibration stage.
+
+[Original research record](../../../research/token_readout/transfer-iirc-protocol.md)

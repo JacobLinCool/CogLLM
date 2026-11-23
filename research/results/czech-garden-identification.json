@@ -1,0 +1,242 @@
+{
+  "aggregation": "Compute max(0, p_qcor + p_qmis - 1) and min(p_qcor, p_qmis) separately within each stratum; then weight 48 families equally and both animacy levels equally within family. Missing excluded per marginal; explicit unsure remains in the denominator as nonyes.",
+  "analysis_code_sha256": "4094296d7e55b92717272f7c267cb459f817f135e0606abc747855061acbc1e7",
+  "estimand": "Probability that one reader would endorse both qcor and qmis at the sentence end under the same item, object animacy and ambiguity condition.",
+  "experiments": {
+    "2": {
+      "bootstrap_draws": 10000,
+      "bootstrap_draws_rejected_empty_sampled_stratum": 5,
+      "by_condition": {
+        "gp": {
+          "lower": 0.1274783061777547,
+          "lower_endpoint_ci95": [
+            0.10324836181851949,
+            0.18707231327665444
+          ],
+          "marginals": {
+            "qcor": {
+              "condition_family_animacy_macro_endorsement": 0.8889869202828758,
+              "counts": {
+                "missing": 15,
+                "no": 109,
+                "unsure": 41,
+                "yes": 1227
+              },
+              "nonmissing_answers": 1377,
+              "observed_answers_per_stratum_min_max": [
+                8,
+                21
+              ]
+            },
+            "qmis": {
+              "condition_family_animacy_macro_endorsement": 0.2223381534043297,
+              "counts": {
+                "missing": 9,
+                "no": 1041,
+                "unsure": 34,
+                "yes": 308
+              },
+              "nonmissing_answers": 1383,
+              "observed_answers_per_stratum_min_max": [
+                8,
+                21
+              ]
+            }
+          },
+          "strata": 96,
+          "upper": 0.22207105938723568,
+          "upper_endpoint_ci95": [
+            0.17196523709792946,
+            0.27122583651938886
+          ],
+          "width": 0.09459275320948096,
+          "width_ci95": [
+            0.052417723759665746,
+            0.10619498685197455
+          ]
+        },
+        "nongp": {
+          "lower": 0.0354673580776522,
+          "lower_endpoint_ci95": [
+            0.02517338566227159,
+            0.07543334247076021
+          ],
+          "marginals": {
+            "qcor": {
+              "condition_family_animacy_macro_endorsement": 0.9318647608859001,
+              "counts": {
+                "missing": 9,
+                "no": 74,
+                "unsure": 18,
+                "yes": 1291
+              },
+              "nonmissing_answers": 1383,
+              "observed_answers_per_stratum_min_max": [
+                8,
+                21
+              ]
+            },
+            "qmis": {
+              "condition_family_animacy_macro_endorsement": 0.07145579094108502,
+              "counts": {
+                "missing": 5,
+                "no": 1256,
+                "unsure": 32,
+                "yes": 99
+              },
+              "nonmissing_answers": 1387,
+              "observed_answers_per_stratum_min_max": [
+                9,
+                21
+              ]
+            }
+          },
+          "strata": 96,
+          "upper": 0.07145579094108502,
+          "upper_endpoint_ci95": [
+            0.04441092417216653,
+            0.10370222544510227
+          ],
+          "width": 0.03598843286343282,
+          "width_ci95": [
+            0.011974682181235739,
+            0.03896020369889614
+          ]
+        }
+      },
+      "item_families": 48,
+      "readers": 174,
+      "verb_clusters": 24
+    },
+    "3": {
+      "bootstrap_draws": 10000,
+      "bootstrap_draws_rejected_empty_sampled_stratum": 1,
+      "by_condition": {
+        "gp": {
+          "lower": 0.17611762896689365,
+          "lower_endpoint_ci95": [
+            0.14575595927626137,
+            0.24435232809174612
+          ],
+          "marginals": {
+            "qcor": {
+              "condition_family_animacy_macro_endorsement": 0.8836187573319921,
+              "counts": {
+                "missing": 5,
+                "no": 104,
+                "unsure": 48,
+                "yes": 1115
+              },
+              "nonmissing_answers": 1267,
+              "observed_answers_per_stratum_min_max": [
+                10,
+                18
+              ]
+            },
+            "qmis": {
+              "condition_family_animacy_macro_endorsement": 0.28011987926969534,
+              "counts": {
+                "missing": 6,
+                "no": 876,
+                "unsure": 33,
+                "yes": 357
+              },
+              "nonmissing_answers": 1266,
+              "observed_answers_per_stratum_min_max": [
+                10,
+                18
+              ]
+            }
+          },
+          "strata": 96,
+          "upper": 0.28011987926969534,
+          "upper_endpoint_ci95": [
+            0.22665978841760093,
+            0.33529575131404904
+          ],
+          "width": 0.10400225030280169,
+          "width_ci95": [
+            0.05919501122855903,
+            0.11525679667764974
+          ]
+        },
+        "nongp": {
+          "lower": 0.05693366665333576,
+          "lower_endpoint_ci95": [
+            0.04109823747159272,
+            0.09460964852566417
+          ],
+          "marginals": {
+            "qcor": {
+              "condition_family_animacy_macro_endorsement": 0.9267452582480153,
+              "counts": {
+                "missing": 3,
+                "no": 72,
+                "unsure": 22,
+                "yes": 1175
+              },
+              "nonmissing_answers": 1269,
+              "observed_answers_per_stratum_min_max": [
+                10,
+                18
+              ]
+            },
+            "qmis": {
+              "condition_family_animacy_macro_endorsement": 0.0879233630612307,
+              "counts": {
+                "missing": 5,
+                "no": 1128,
+                "unsure": 29,
+                "yes": 110
+              },
+              "nonmissing_answers": 1267,
+              "observed_answers_per_stratum_min_max": [
+                10,
+                18
+              ]
+            }
+          },
+          "strata": 96,
+          "upper": 0.0879233630612307,
+          "upper_endpoint_ci95": [
+            0.06032637440284127,
+            0.11829169560605797
+          ],
+          "width": 0.030989696407894944,
+          "width_ci95": [
+            0.010645245405125906,
+            0.03561057318047448
+          ]
+        }
+      },
+      "item_families": 48,
+      "readers": 159,
+      "verb_clusters": 24
+    }
+  },
+  "identification_assumptions": [
+    "Potential response invariance: choosing which single probe to ask does not alter its respective counterfactual endorsement marginal in the joint endpoint interpretation.",
+    "Within each item, animacy and condition, the separately prompted nonmissing marginals represent a common reader population. Selective missing responses could violate this assumption."
+  ],
+  "interpretation": "Potential joint endpoint co-endorsement remains partially identified. Each reader saw one probe per item; co-endorsement under the assumptions does not establish simultaneous representations during reading.",
+  "paper": "https://doi.org/10.1371/journal.pone.0288817",
+  "prepared_artifact_sha256": {
+    "prepared/layout.jsonl": "3ecf1997400120ddcdae2bd54184c1238d4a42f5840479f2babce892dc800840",
+    "prepared/outcomes.jsonl": "775e24c64a4fa54bf41f22fae60dc697c78f9b1ea970455fc6ce04289e7d8eee",
+    "prepared/stimuli.jsonl": "120719720d2e6ab6ceb2f003edfff142beb6735f05ca639dc73b8f1b12ff2098"
+  },
+  "prepared_source_sha256": "f74718a86ebe511511b6661013dd5d3855f22e2fb86a7e980313966531822929",
+  "probes": {
+    "qcor": "Yes endorses the intended direct object.",
+    "qmis": "Yes endorses the initially plausible but incorrect direct object."
+  },
+  "source": "https://osf.io/98g26/",
+  "study_type": "Exploratory partial identification from separate text comprehension probes",
+  "uncertainty": {
+    "draws_per_experiment": 10000,
+    "empty_cell_rule": "Discard and replace a draw if any resampled verb cluster has a stratum with no sampled answer to either probe.",
+    "interval_scope": "Separate percentile intervals for identified endpoints and their width, without claiming simultaneous coverage of the full joint identified set.",
+    "seed": 735972,
+    "unit": "Independently resample original word-3 verb clusters and experiment-scoped readers with replacement; use identical weights across conditions and probes."
+  }
+}

@@ -1,0 +1,73 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "paired": true,
+    "seed": 43,
+    "unit": "casefolded homonym"
+  },
+  "counts": {
+    "ending_pairs": 196,
+    "families": 98,
+    "flagged_votes": 44,
+    "homonym_groups": 54,
+    "sense_items": 588,
+    "stories": 294,
+    "votes": 2952
+  },
+  "design_sha256": "4a8d10a4c3387e8684fe23fcda9434acadab8a1c12076ad9f310290302025266",
+  "file_contract": {
+    "forecast_methods": [
+      "form_control",
+      "common_prefix",
+      "ending"
+    ],
+    "grades": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ],
+    "no_candidate": "validation responses remain unopened",
+    "staged_members": [
+      "preparation.json",
+      "prepared/dev/design/stops.jsonl",
+      "prepared/dev/model_input/stimuli.jsonl",
+      "prepared/test/design/stops.jsonl",
+      "prepared/test/model_input/stimuli.jsonl",
+      "prepared/train/design/stops.jsonl",
+      "prepared/train/model_input/stimuli.jsonl",
+      "prepared/train/scoring/ordinal-ratings.jsonl"
+    ],
+    "successful_fit_files": [
+      "baseline-predictions.jsonl",
+      "effect-predictions.jsonl",
+      "heads.npz",
+      "train-diagnostics.json"
+    ]
+  },
+  "fit_code_sha256": "4c24756bb8696ce13eee249bd29399d7ae152c59aa111c0c8bf486ee2aeb14a9",
+  "fit_protocol_sha256": "128c1a212c6570c4f21f54ad595eeefc2e204658e338492acb0ef93e6b885393",
+  "fit_split": "train",
+  "forecast_split": "dev",
+  "gates": {
+    "bootstrap": {
+      "draws": 10000,
+      "seed": 43,
+      "unit": "casefolded homonym"
+    },
+    "effect_amplitude_minus_human": "paired 90% CI entirely inside the open equivalence bounds",
+    "effect_ending_minus_baseline_ending": "paired 95% CI upper below zero for update MAE and below NLL margin",
+    "effect_ending_minus_effect_prefix": "paired 95% CI upper bounds below zero for NLL and update MAE",
+    "equivalence_margin_grades": 0.5,
+    "nll_margin_nats_per_vote": 0.01,
+    "nll_subset": "all variants, per vote"
+  },
+  "holdout_scope": "author-public validation split held out by this project until forecast sealing",
+  "preparation_sha256": "0364a1942796740435c060da2d86a26774d6c794827dfd0cecae8037fafd3253",
+  "primary_nll": "all validation votes across all three story variants, in nats",
+  "scorer_sha256": "23536d58d2e7a5697582064d375b47d92aa6f2eadd192895ec3a3e3fcec4c1cd",
+  "signed_update": "later minus earlier ending by opaque story ID, matched family and sense",
+  "status": "scoring_rules_locked_before_author_validation_scoring",
+  "update_pools": "equal weight per family-sense pair"
+}

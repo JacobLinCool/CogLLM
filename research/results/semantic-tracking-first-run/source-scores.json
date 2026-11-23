@@ -1,0 +1,58 @@
+{
+  "annotation_rows": 226,
+  "excluded_alignment_rows": 0,
+  "held_out_families": 103,
+  "unique_texts": 107,
+  "candidate_words_median": 59.0,
+  "gold_source_candidate_words_median": 6.0,
+  "methods": {
+    "uniform": {
+      "source_span_nll": 2.135284715949675,
+      "top_word_in_source": 0.17984994719768183,
+      "reciprocal_rank": 0.34310186336925963
+    },
+    "distance_word": {
+      "source_span_nll": 2.0769578239469,
+      "top_word_in_source": 0.2743362831858407,
+      "reciprocal_rank": 0.3999666702626488
+    },
+    "qwen": {
+      "source_span_nll": 2.027337463507294,
+      "top_word_in_source": 0.30973451327433627,
+      "reciprocal_rank": 0.4430623173661088
+    }
+  },
+  "qwen_minus_distance_word": {
+    "source_span_nll": {
+      "difference": -0.04962036043960616,
+      "paired_family_95_interval": [
+        -0.07134056656824174,
+        -0.028391199626685595
+      ]
+    },
+    "top_word_in_source": {
+      "difference": 0.035398230088495575,
+      "paired_family_95_interval": [
+        -0.017097701149425285,
+        0.08755760368663594
+      ]
+    },
+    "reciprocal_rank": {
+      "difference": 0.04309564710345998,
+      "paired_family_95_interval": [
+        0.0032391360405561,
+        0.08355578338385143
+      ]
+    }
+  },
+  "bootstrap": {
+    "seed": 43,
+    "draws": 10000,
+    "unit": "original shared prompt family"
+  },
+  "input_sha256": {
+    "outcomes": "58c49943b0488e64f2a067fa7344bf86f2a6e4c884b7681f23df9cd99fc0c2eb",
+    "forecasts": "538250402ae3ceef71e97e2576ff4a82fbaf139b0ac3204cb66c72029ac18013",
+    "seal": "8936dcb3c1a3a7b48c343977e14ee39dcf83178023eca93957d04b6502b11915"
+  }
+}

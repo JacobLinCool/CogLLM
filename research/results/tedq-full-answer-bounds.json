@@ -1,0 +1,66 @@
+{
+  "all_available_windows": {
+    "counts": {
+      "below_full_in_both_observed_ratings": 1215,
+      "below_partial_at_first_end_of_excerpt": 245,
+      "full_at_first": 317,
+      "full_at_second": 42,
+      "partial_at_first_end_of_excerpt": 76,
+      "partial_at_first_no_second_rating": 517
+    },
+    "full_count_lower": 359,
+    "full_count_upper": 876,
+    "full_fraction_lower": 0.14883913764510778,
+    "full_fraction_upper": 0.36318407960199006,
+    "observed_full": 359,
+    "questions": 2412,
+    "unobserved_eligible_second_ratings": 517
+  },
+  "bound_assumption": "Keep observed ratings fixed and complete only the protocol-missing second ratings on already displayed chunks. Excerpt-end absences are outside the window.",
+  "by_available_followup_count": {
+    "1": {
+      "counts": {
+        "below_partial_at_first_end_of_excerpt": 245,
+        "full_at_first": 35,
+        "partial_at_first_end_of_excerpt": 76
+      },
+      "full_count_lower": 35,
+      "full_count_upper": 35,
+      "full_fraction_lower": 0.09831460674157304,
+      "full_fraction_upper": 0.09831460674157304,
+      "observed_full": 35,
+      "questions": 356,
+      "unobserved_eligible_second_ratings": 0
+    },
+    "2": {
+      "counts": {
+        "below_full_in_both_observed_ratings": 1215,
+        "full_at_first": 282,
+        "full_at_second": 42,
+        "partial_at_first_no_second_rating": 517
+      },
+      "full_count_lower": 324,
+      "full_count_upper": 841,
+      "full_fraction_lower": 0.1575875486381323,
+      "full_fraction_upper": 0.4090466926070039,
+      "observed_full": 324,
+      "questions": 2056,
+      "unobserved_eligible_second_ratings": 517
+    }
+  },
+  "estimand": "At least one rating of 5 by the last available probe, capped at two probes after the question",
+  "full_answer_rating": 5,
+  "readers": 111,
+  "retirement_rating_threshold": 3,
+  "simultaneously_rated_older_and_newer_questions": {
+    "older_score_5_newer_below_3": 13,
+    "probes": 1257
+  },
+  "source_revision": "10fb7e1a2b2d756f8ea190ee2ac223fecaec0f20",
+  "source_sha256": "992a324ed452876c7364f7304cee24a58a1109fb3204a73adbc88e0937d18131",
+  "talk_range_of_bound_width_pp": [
+    10.526315789473683,
+    28.57142857142857
+  ],
+  "talks": 6
+}

@@ -1,0 +1,70 @@
+{
+  "version": 1,
+  "scope": "CWI annotator-group lexical selection on isolated English Wikipedia sentences.",
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "source_archive_sha256": "4a47b3f0b4589907e44f5cc19231dc24fee157636b65ba668ef1850224e52e3e",
+  "prior_audit_sha256": "83ec7c9e0aca89aa299e361b8bb71d36b3c9b3e2aef90f52fb0de432a9f6ce9a",
+  "protocol_sha256": "3b60ce87d3932515a6d47e555613b21821392eaf6243f9122780922190c58ad9",
+  "candidate_method": "qwen_group_interaction",
+  "comparator_methods": [
+    "qwen_pooled",
+    "qwen_group_offset"
+  ],
+  "forecast_methods": [
+    "length_frequency",
+    "qwen_pooled",
+    "background_only",
+    "qwen_group_offset",
+    "qwen_group_interaction"
+  ],
+  "inputs_sha256": {
+    "stimuli.jsonl": "73f9a418f8afa1e94cc43991bb8cec2a0d7a14dfd5fee48a324ef9b2942ac22e",
+    "cwi-train.jsonl": "19550adda0581947b42a0ea849ec344da5aac9afe293f539ef772d8b5068fc2a",
+    "cwi-eval.jsonl": "e3a4eb55d1bc457f7dce61056571f9f24f01d08a5ff29db5cc37d23157570ff9"
+  },
+  "heldout_outcomes_sha256": "304eb1ff613bbf5b76f17950cc1a9957d1ce8af2693e5c7993b2aad540b168b5",
+  "counts": {
+    "wikinews_train": {
+      "candidates": 3850,
+      "documents": 52,
+      "material_groups": 21
+    },
+    "wikinews_dev": {
+      "candidates": 1348,
+      "documents": 18,
+      "material_groups": 7
+    },
+    "wikipedia_test": {
+      "candidates": 7115,
+      "documents": 501,
+      "material_groups": 102
+    }
+  },
+  "wikipedia_source_rows": {
+    "traindevset/english/Wikipedia_Train.tsv": 5551,
+    "traindevset/english/Wikipedia_Dev.tsv": 694,
+    "testset/english/Wikipedia_Test.tsv": 870
+  },
+  "wikipedia_hits": 102,
+  "wikipedia_unique_normalized_sentences": 501,
+  "wikipedia_overlap_with_all_wikinews": {
+    "exact_normalized_sentences": 0,
+    "hit_ids": 0
+  },
+  "acceptance": {
+    "minimum_certified_test_coverage": 0.95,
+    "gap_mae_delta_ci_upper_below": 0,
+    "group_brier_delta_ci_upper_maximum": 0.001,
+    "group_absolute_calibration_error_ci_upper_maximum": 0.01,
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 43
+  },
+  "model_inputs_archive_sha256": "7111028c99e55c8d2c657ec01e359ea78b6cfd9f533593a3231e512dbf99d002",
+  "archive_members_sha256": {
+    "assay.json": "6877d33e6c148ef871695b21131219b7836ddbc52b60b91b4e948bfec8e22fa7",
+    "cwi-eval.jsonl": "e3a4eb55d1bc457f7dce61056571f9f24f01d08a5ff29db5cc37d23157570ff9",
+    "cwi-train.jsonl": "19550adda0581947b42a0ea849ec344da5aac9afe293f539ef772d8b5068fc2a",
+    "stimuli.jsonl": "73f9a418f8afa1e94cc43991bb8cec2a0d7a14dfd5fee48a324ef9b2942ac22e"
+  }
+}

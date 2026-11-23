@@ -1,0 +1,598 @@
+{
+  "locks": {
+    "gemma4": "e9ed2c1fca38bb4c52d9830b92c8816da3216cc9fec3bc16fe010eeb313790c2",
+    "lfm3": "d97eba8d7a09bc57804fcbbd1118054d34042dc394312141f9a71095dbd19b01",
+    "qwen": "b9030f32e5c236f3c21c3d1e355389cb443aea0eddc79dd437f6e6b44205c9af"
+  },
+  "nine_lab_outcomes_opened": false,
+  "source": {
+    "N400": {
+      "group_bootstraps": 1600,
+      "independent_groups": 186,
+      "paired": {
+        "gemma4_context__over__gemma4_raw": {
+          "interval": [
+            0.2576045445824249,
+            0.34997917192530775
+          ],
+          "rho_difference": 0.3045792509726474
+        },
+        "gemma4_context__over__gemma4_surface": {
+          "interval": [
+            0.022384684114940823,
+            0.07422009110879459
+          ],
+          "rho_difference": 0.04779316736650574
+        },
+        "lfm3_context__over__gemma4_context": {
+          "interval": [
+            0.023824322862620387,
+            0.0863557252403925
+          ],
+          "rho_difference": 0.0556871528942568,
+          "simultaneous_architecture_ci": [
+            0.01812068930776574,
+            0.09325361648074786
+          ]
+        },
+        "lfm3_context__over__lfm3_raw": {
+          "interval": [
+            0.17186809531663144,
+            0.266404182144745
+          ],
+          "rho_difference": 0.2194063660893541
+        },
+        "lfm3_context__over__lfm3_surface": {
+          "interval": [
+            0.03219153240778757,
+            0.08245365288371417
+          ],
+          "rho_difference": 0.05771943249783057
+        },
+        "qwen_context__over__gemma4_context": {
+          "interval": [
+            0.009230952316815606,
+            0.07864460700231593
+          ],
+          "rho_difference": 0.04442456487970309,
+          "simultaneous_architecture_ci": [
+            0.003052978232340374,
+            0.0857961515270658
+          ]
+        },
+        "qwen_context__over__lfm3_context": {
+          "interval": [
+            -0.038443663439398104,
+            0.017521673137895304
+          ],
+          "rho_difference": -0.01126258801455371,
+          "simultaneous_architecture_ci": [
+            -0.04531479722971363,
+            0.022789621200606208
+          ]
+        },
+        "qwen_context__over__qwen_raw": {
+          "interval": [
+            0.1392306770103603,
+            0.22600715702000146
+          ],
+          "rho_difference": 0.18206788287089815
+        },
+        "qwen_context__over__qwen_surface": {
+          "interval": [
+            0.02499058152215963,
+            0.06823787862546364
+          ],
+          "rho_difference": 0.04674673898284831
+        }
+      },
+      "rho": {
+        "gemma4_context": {
+          "interval": [
+            0.3484174512199183,
+            0.4315056532388655
+          ],
+          "point": 0.38898564529928015
+        },
+        "gemma4_raw": {
+          "interval": [
+            0.03885715285577707,
+            0.13326268130068114
+          ],
+          "point": 0.08440639432663279
+        },
+        "gemma4_surface": {
+          "interval": [
+            0.2968351133156522,
+            0.3865615816251969
+          ],
+          "point": 0.3411924779327744
+        },
+        "lfm3_context": {
+          "interval": [
+            0.40447222058271987,
+            0.48632293693168044
+          ],
+          "point": 0.44467279819353694
+        },
+        "lfm3_raw": {
+          "interval": [
+            0.18142203522260494,
+            0.269595324891943
+          ],
+          "point": 0.22526643210418285
+        },
+        "lfm3_surface": {
+          "interval": [
+            0.34707731671861475,
+            0.4276479577873785
+          ],
+          "point": 0.3869533656957064
+        },
+        "qwen_context": {
+          "interval": [
+            0.3917251317010087,
+            0.47422148108155504
+          ],
+          "point": 0.43341021017898324
+        },
+        "qwen_raw": {
+          "interval": [
+            0.2055581161119379,
+            0.2964212691750972
+          ],
+          "point": 0.2513423273080851
+        },
+        "qwen_surface": {
+          "interval": [
+            0.3443010750002553,
+            0.4288352580399386
+          ],
+          "point": 0.3866634711961349
+        }
+      },
+      "words": 1546
+    },
+    "cloze_miss": {
+      "group_bootstraps": 1600,
+      "independent_groups": 186,
+      "paired": {
+        "gemma4_context__over__gemma4_raw": {
+          "interval": [
+            0.08620473471726775,
+            0.15136186440218902
+          ],
+          "rho_difference": 0.11959465943951247
+        },
+        "gemma4_context__over__gemma4_surface": {
+          "interval": [
+            0.009348541900188995,
+            0.04292558841285395
+          ],
+          "rho_difference": 0.02574565237230919
+        },
+        "lfm3_context__over__gemma4_context": {
+          "interval": [
+            0.15161892355514006,
+            0.21583332618121562
+          ],
+          "rho_difference": 0.18343449146556878,
+          "simultaneous_architecture_ci": [
+            0.1457506804979231,
+            0.22111830243321445
+          ]
+        },
+        "lfm3_context__over__lfm3_raw": {
+          "interval": [
+            0.004811286202545781,
+            0.04213038586497605
+          ],
+          "rho_difference": 0.02352457778746886
+        },
+        "lfm3_context__over__lfm3_surface": {
+          "interval": [
+            -0.0045791133839960555,
+            0.018600941866217642
+          ],
+          "rho_difference": 0.006891336548879523
+        },
+        "qwen_context__over__gemma4_context": {
+          "interval": [
+            0.2081637398126694,
+            0.2733653327857546
+          ],
+          "rho_difference": 0.24037843715952578,
+          "simultaneous_architecture_ci": [
+            0.20145920092266376,
+            0.2792976733963878
+          ]
+        },
+        "qwen_context__over__lfm3_context": {
+          "interval": [
+            0.042203229988538794,
+            0.07381745905646601
+          ],
+          "rho_difference": 0.056943945693957,
+          "simultaneous_architecture_ci": [
+            0.038101299757250934,
+            0.07578659163066306
+          ]
+        },
+        "qwen_context__over__qwen_raw": {
+          "interval": [
+            0.017577727423254155,
+            0.040447133806044464
+          ],
+          "rho_difference": 0.028869666248344528
+        },
+        "qwen_context__over__qwen_surface": {
+          "interval": [
+            0.0022048445206443363,
+            0.015911763647600708
+          ],
+          "rho_difference": 0.008946023205418263
+        }
+      },
+      "rho": {
+        "gemma4_context": {
+          "interval": [
+            0.5305626300574987,
+            0.5976138049750104
+          ],
+          "point": 0.5668549144530226
+        },
+        "gemma4_raw": {
+          "interval": [
+            0.4074541783465459,
+            0.4880233997551106
+          ],
+          "point": 0.44726025501351013
+        },
+        "gemma4_surface": {
+          "interval": [
+            0.5024629395700193,
+            0.5765991379211629
+          ],
+          "point": 0.5411092620807134
+        },
+        "lfm3_context": {
+          "interval": [
+            0.7267352906174078,
+            0.7733652324579292
+          ],
+          "point": 0.7502894059185914
+        },
+        "lfm3_raw": {
+          "interval": [
+            0.6973027893384418,
+            0.7539808433951383
+          ],
+          "point": 0.7267648281311225
+        },
+        "lfm3_surface": {
+          "interval": [
+            0.7180766043983309,
+            0.7674339112200488
+          ],
+          "point": 0.7433980693697119
+        },
+        "qwen_context": {
+          "interval": [
+            0.7879106285220766,
+            0.8262917069561656
+          ],
+          "point": 0.8072333516125484
+        },
+        "qwen_raw": {
+          "interval": [
+            0.7542853579308201,
+            0.801101271473616
+          ],
+          "point": 0.7783636853642039
+        },
+        "qwen_surface": {
+          "interval": [
+            0.7773385654132462,
+            0.8186814634875437
+          ],
+          "point": 0.7982873284071301
+        }
+      },
+      "words": 1546
+    },
+    "unpredictability": {
+      "group_bootstraps": 1600,
+      "independent_groups": 186,
+      "paired": {
+        "gemma4_context__over__gemma4_raw": {
+          "interval": [
+            0.07766006942034939,
+            0.1536798192253009
+          ],
+          "rho_difference": 0.11660184162958215
+        },
+        "gemma4_context__over__gemma4_surface": {
+          "interval": [
+            0.011473051572840023,
+            0.05965184208925897
+          ],
+          "rho_difference": 0.03608024049921943
+        },
+        "lfm3_context__over__gemma4_context": {
+          "interval": [
+            0.1958574811120357,
+            0.27477962673704376
+          ],
+          "rho_difference": 0.23478346198137773,
+          "simultaneous_architecture_ci": [
+            0.1867246924046018,
+            0.2828422315581537
+          ]
+        },
+        "lfm3_context__over__lfm3_raw": {
+          "interval": [
+            0.0213730813436945,
+            0.08517882765788569
+          ],
+          "rho_difference": 0.0539761109916731
+        },
+        "lfm3_context__over__lfm3_surface": {
+          "interval": [
+            0.049240851741520694,
+            0.09365965669541347
+          ],
+          "rho_difference": 0.07053676531757369
+        },
+        "qwen_context__over__gemma4_context": {
+          "interval": [
+            0.26994444306423493,
+            0.35398649829767476
+          ],
+          "rho_difference": 0.31028334835737953,
+          "simultaneous_architecture_ci": [
+            0.26108480719625743,
+            0.35948188951850163
+          ]
+        },
+        "qwen_context__over__lfm3_context": {
+          "interval": [
+            0.05604908579689055,
+            0.09594189976292697
+          ],
+          "rho_difference": 0.0754998863760018,
+          "simultaneous_architecture_ci": [
+            0.05219371520005224,
+            0.09880605755195136
+          ]
+        },
+        "qwen_context__over__qwen_raw": {
+          "interval": [
+            0.029479230721765975,
+            0.06390640971131192
+          ],
+          "rho_difference": 0.04690615997785763
+        },
+        "qwen_context__over__qwen_surface": {
+          "interval": [
+            0.008937458172266103,
+            0.03496057375948315
+          ],
+          "rho_difference": 0.02167275165480309
+        }
+      },
+      "rho": {
+        "gemma4_context": {
+          "interval": [
+            0.4154139088664418,
+            0.49920208182825804
+          ],
+          "point": 0.460244636489711
+        },
+        "gemma4_raw": {
+          "interval": [
+            0.2979478764304236,
+            0.3863347838410683
+          ],
+          "point": 0.34364279486012883
+        },
+        "gemma4_surface": {
+          "interval": [
+            0.37603634183738266,
+            0.46690854583038877
+          ],
+          "point": 0.42416439599049155
+        },
+        "lfm3_context": {
+          "interval": [
+            0.665567378214922,
+            0.7229793925819294
+          ],
+          "point": 0.6950280984710887
+        },
+        "lfm3_raw": {
+          "interval": [
+            0.605846909534948,
+            0.6752221179325353
+          ],
+          "point": 0.6410519874794156
+        },
+        "lfm3_surface": {
+          "interval": [
+            0.5919357483954721,
+            0.6567554482938671
+          ],
+          "point": 0.624491333153515
+        },
+        "qwen_context": {
+          "interval": [
+            0.74875050399599,
+            0.7916865894432419
+          ],
+          "point": 0.7705279848470905
+        },
+        "qwen_raw": {
+          "interval": [
+            0.6956616179698811,
+            0.7497502116488565
+          ],
+          "point": 0.7236218248692329
+        },
+        "qwen_surface": {
+          "interval": [
+            0.7247823839131325,
+            0.7737832033336907
+          ],
+          "point": 0.7488552331922874
+        }
+      },
+      "words": 1546
+    }
+  },
+  "spanish": {
+    "group_bootstraps": 1600,
+    "independent_groups": 299,
+    "paired": {
+      "gemma4_context__over__gemma4_raw": {
+        "interval": [
+          0.07587071800911473,
+          0.11665881559589013
+        ],
+        "rho_difference": 0.09602185018517204
+      },
+      "gemma4_context__over__gemma4_surface": {
+        "interval": [
+          -0.026244832402111447,
+          -0.005882262927844113
+        ],
+        "rho_difference": -0.015863920212940336
+      },
+      "lfm3_context__over__gemma4_context": {
+        "interval": [
+          0.008215441072657679,
+          0.03950620414525192
+        ],
+        "rho_difference": 0.023344122954099628,
+        "simultaneous_architecture_ci": [
+          0.005133954756770167,
+          0.041554291151429085
+        ]
+      },
+      "lfm3_context__over__lfm3_raw": {
+        "interval": [
+          0.08459641532243496,
+          0.12100975558488028
+        ],
+        "rho_difference": 0.102193537570443
+      },
+      "lfm3_context__over__lfm3_surface": {
+        "interval": [
+          0.020105618876906275,
+          0.04333735174581046
+        ],
+        "rho_difference": 0.03150509046774119
+      },
+      "qwen_context__over__gemma4_context": {
+        "interval": [
+          -0.010513606528130626,
+          0.024639450191750487
+        ],
+        "rho_difference": 0.00684579768269758,
+        "simultaneous_architecture_ci": [
+          -0.013569613131101634,
+          0.027261208496496794
+        ]
+      },
+      "qwen_context__over__lfm3_context": {
+        "interval": [
+          -0.027565571869762464,
+          -0.005567531606400231
+        ],
+        "rho_difference": -0.016498325271402048,
+        "simultaneous_architecture_ci": [
+          -0.029503140615670213,
+          -0.003493509927133884
+        ]
+      },
+      "qwen_context__over__qwen_raw": {
+        "interval": [
+          0.07180805107776156,
+          0.10457668916682852
+        ],
+        "rho_difference": 0.08713841516364314
+      },
+      "qwen_context__over__qwen_surface": {
+        "interval": [
+          0.0009001253390203565,
+          0.018390443202213003
+        ],
+        "rho_difference": 0.009538132602337435
+      }
+    },
+    "rho": {
+      "gemma4_context": {
+        "interval": [
+          0.15481520465685042,
+          0.19452136727948413
+        ],
+        "point": 0.17552791802549367
+      },
+      "gemma4_raw": {
+        "interval": [
+          0.057964012318176966,
+          0.09961552090106025
+        ],
+        "point": 0.07950606784032163
+      },
+      "gemma4_surface": {
+        "interval": [
+          0.17195435783507348,
+          0.20972880083739354
+        ],
+        "point": 0.191391838238434
+      },
+      "lfm3_context": {
+        "interval": [
+          0.18000706539200528,
+          0.21798795784318836
+        ],
+        "point": 0.1988720409795933
+      },
+      "lfm3_raw": {
+        "interval": [
+          0.0762135859652864,
+          0.11769739755901465
+        ],
+        "point": 0.0966785034091503
+      },
+      "lfm3_surface": {
+        "interval": [
+          0.1479655939667822,
+          0.18625284344359813
+        ],
+        "point": 0.1673669505118521
+      },
+      "qwen_context": {
+        "interval": [
+          0.1631444978036624,
+          0.20175545579779167
+        ],
+        "point": 0.18237371570819125
+      },
+      "qwen_raw": {
+        "interval": [
+          0.07340081823706851,
+          0.11676140712283974
+        ],
+        "point": 0.09523530054454811
+      },
+      "qwen_surface": {
+        "interval": [
+          0.15251547041759042,
+          0.19220210471313262
+        ],
+        "point": 0.1728355831058538
+      }
+    },
+    "words": 8640
+  }
+}

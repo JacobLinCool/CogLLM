@@ -1,0 +1,45 @@
+{
+  "plaba": {
+    "name": "PLABA-EVAL",
+    "role": "development",
+    "revision": "153082e7d58b833d5e2f481b92fdcf9248c60d11",
+    "source": "https://github.com/SDS-NLP/PLABA-EVAL/tree/153082e7d58b833d5e2f481b92fdcf9248c60d11",
+    "license": "CC-BY-4.0",
+    "download_base": "https://raw.githubusercontent.com/SDS-NLP/PLABA-EVAL/153082e7d58b833d5e2f481b92fdcf9248c60d11/dataset/",
+    "files": {
+      "annotations.csv": {"path": "annotations.csv", "sha256": "fb71cdd8b742c10da443c5de8a468605820b45a9ad1abe9cc50b1f7298f2bf29"},
+      "document_ratings.csv": {"path": "document_ratings.csv", "sha256": "88e1e859e5984327eab892c9deaac3826c1ec34fe6d5a145ef2a1dc4d44deaed"},
+      "documents.csv": {"path": "documents.csv", "sha256": "26c5d4516e8a3039f0fc2e8b645bfd25fa5edd6e77b041dff441fea609d39a94"},
+      "mcq_items.csv": {"path": "mcq_items.csv", "sha256": "c12f2773edb6f85e91e9083f4a030f1e361aecf647a51ae002410104611b2bc7"},
+      "mcq_responses.csv": {"path": "mcq_responses.csv", "sha256": "92b6e16bb6be332ee1526d9579e19d776df10aa8a1bb881ae6980a31c07860c7"},
+      "sentences.csv": {"path": "sentences.csv", "sha256": "0d0f798d7e2417f5eafa93611c1e5efb26ce67ee2da2f95c598433f491fae02e"}
+    }
+  },
+  "zhan": {
+    "name": "Zhan, Levy & Kehler, Experiment 1",
+    "role": "development_diagnostic",
+    "revision": "OSF:8zk57",
+    "source": "https://osf.io/t87my/",
+    "license": "CC-BY-4.0",
+    "download_base": "https://osf.io/download/",
+    "files": {
+      "experiment-1.csv": {"path": "8zk57/", "sha256": "cd04e554aea959fd075564ea432a6ccf3bbd6e88bf2fbdabc3f8abeb6b3ff4ef"}
+    }
+  },
+  "onestop": {
+    "name": "OneStopQA Prolific open-book comprehension",
+    "role": "development_benchmark",
+    "revision": "7a058755e1ff0d3f835a67109c669c7e294d4239",
+    "source": "https://github.com/berzak/onestop-qa/tree/7a058755e1ff0d3f835a67109c669c7e294d4239",
+    "license": "CC-BY-SA-4.0",
+    "material_reference": {
+      "url": "https://huggingface.co/datasets/malmaud/onestop_qa/resolve/1df9aea8c9532045bc55c001d7c588372de2d723/data/train-00000-of-00001.parquet",
+      "sha256": "fe10e4a2bd7488614df3d2084436b2050e6b8bed8ff23aed53da1da785baa48e",
+      "role": "material_comparison_only"
+    },
+    "download_base": "https://raw.githubusercontent.com/berzak/onestop-qa/7a058755e1ff0d3f835a67109c669c7e294d4239/",
+    "files": {
+      "qa.tsv": {"path": "human_experiments/prolific/qa.tsv", "sha256": "bc8af0a78819b918eb0ce97935bf8fcd82eeec2d9f99111762034817c1e56e0d"}
+    }
+  }
+}

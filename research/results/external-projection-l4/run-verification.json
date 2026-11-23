@@ -1,0 +1,98 @@
+{
+  "endpoint_absent_after_stop": true,
+  "first_attempt": {
+    "endpoint_absent_after_stop": true,
+    "failure": "The owned runtime did not confirm the detached worker",
+    "phase": "incomplete",
+    "release_verified": true,
+    "run_id": "cogllm-cuda-checks-20261121T030818Z-bbfc0d06",
+    "same_payload_and_worker": true,
+    "timeline": {
+      "allocated": "2026-11-21T03:09:06.365672+00:00",
+      "allocating": "2026-11-21T03:09:00.197513+00:00",
+      "incomplete": "2026-11-21T03:10:29.517188+00:00",
+      "prepared": "2026-11-21T03:08:19.626833+00:00",
+      "releasing": "2026-11-21T03:10:20.672350+00:00"
+    }
+  },
+  "minutes_budget": 18.0,
+  "payload_members_sha256": {
+    "bundle.json": "6c638e3b2e4752fc8ea65477ea9760442616930415a801fb436268fb4b3521f9",
+    "projection-inputs.tar.gz": "b2bf265aa6f571c34a154bd47c43086954b89f4b36d96fbb4f9955c11001322b"
+  },
+  "payload_sha256": "12950b826dd9a9add0baa5c4d3e82af4313a908731ff0f44cececbcd1c719544",
+  "phase": "finished",
+  "projection": {
+    "assay_sha256": "8bb53ffb2166f044eda2d46674952a61a6f8d4c50cdd083b921d72e62de1d688",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 18199,
+    "encoded_documents": 805,
+    "input_tokens": 46501,
+    "preflight_sha256": "483a545dfc8e2aab0ad25d5c9931974fb8658da1460b9dcf843daf0c2f7c0832",
+    "protocol_sha256": "5abc6ddc0443834db46e544c5dc1164f5710054ebbbb992887068902379c8825",
+    "source_code_sha256": "f7dea945b4fb6e5fc083f127db35bcd13e16c6064f0676459fab3df58d00fe3c",
+    "stimuli_sha256": "2faf0d7dcfcb9f8796f6bf58196a17b45f83cd4ec59677a7a342c3470d78ebe1",
+    "verified_gradio_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "verified_gradio_sha256": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "published_sha256": {
+    "assay.json": "8bb53ffb2166f044eda2d46674952a61a6f8d4c50cdd083b921d72e62de1d688",
+    "causality.json": "551972625ed4968a74dfac5eba6294d517345c7629afe6510f0c7e2293a2fb3c",
+    "extraction.json": "a176104588edcea4790c24bd327703817223aefedfb77ef83e62fa354fc3a6bb",
+    "gentle.json": "f0a3cd9eaebfffd266db5475e091f5d67f68dbf12bbb1bc79f56628d10ac6571",
+    "local-verification.json": "651cd5b4d1f663492a939854b180c604f96193af9fd2de50419293a15bfbf709",
+    "preflight.json": "483a545dfc8e2aab0ad25d5c9931974fb8658da1460b9dcf843daf0c2f7c0832",
+    "runtime.json": "08a35af119e4596386889eebc42e40b60ec4e83e1e07dbe70ae209ad0e6d27f0",
+    "telemetry.jsonl": "5a5827f76062831437d8ba9708e8b694b4c8a516472c05d4c40cace193a9d4d2",
+    "turkish-assay.json": "1807fa6c1487cc402291982cdae825de2031b0c8952c1b1df3ec36c5167e74b3",
+    "turkish-fit.json": "0e4d210ae1c9e67110ffce6c9488df3dd8bc8a4539cc1ce1ece35c78119b7bc8",
+    "turkish-scores.json": "3faa77ae04565cef924637c7238907a249483053853241d30793f98a0c6ae123"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T031119Z-5bc72d1f",
+  "schema_version": 22,
+  "stages": {
+    "projection": {
+      "archive_bytes": 10638172,
+      "archive_sha256": "e21f1427eb056e4b39c5340a6029ec0cf17e9f4682cc3e4b58fd8592be5b42e7",
+      "elapsed_s": 70.9218880820008,
+      "members": {
+        "causality.json": "551972625ed4968a74dfac5eba6294d517345c7629afe6510f0c7e2293a2fb3c",
+        "coordinates.jsonl": "7ded1eabc7539649d3d4584494472b06aca659d62d93ea7027687f5da29dde97",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "a176104588edcea4790c24bd327703817223aefedfb77ef83e62fa354fc3a6bb",
+        "telemetry.jsonl": "5a5827f76062831437d8ba9708e8b694b4c8a516472c05d4c40cace193a9d4d2",
+        "terminal_states.npy": "07cec574bea3e857a76a9ed8e77da5aa0f991e3b3e1f3d531ae1ad30d7721172",
+        "vectors.npy": "c4dbae171297bb77caded1bc38bdaf667f2bde307025ea052e67f583256a851b"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 665,
+      "archive_sha256": "db8ab12f6677ae061826350819009f47cca08ef402b66bbfda2bbdc280a6823e",
+      "elapsed_s": 35.809654228998625,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "08a35af119e4596386889eebc42e40b60ec4e83e1e07dbe70ae209ad0e6d27f0"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T03:11:48.972073+00:00",
+    "allocating": "2026-11-21T03:11:43.438185+00:00",
+    "finished": "2026-11-21T03:13:55.205343+00:00",
+    "prepared": "2026-11-21T03:11:19.729986+00:00",
+    "releasing": "2026-11-21T03:13:47.040219+00:00",
+    "remote-projection": "2026-11-21T03:12:38.899876+00:00",
+    "remote-setup": "2026-11-21T03:12:18.151743+00:00",
+    "remote-stages-finished": "2026-11-21T03:13:45.690174+00:00",
+    "retrieved-projection": "2026-11-21T03:13:47.039912+00:00",
+    "retrieved-setup": "2026-11-21T03:12:50.331117+00:00",
+    "worker-running": "2026-11-21T03:11:54.761757+00:00"
+  },
+  "worker_sha256": "5aabf0f45ea21ac51d8844d585f980fd2a7478ecae4b62b80e777bc5656d77d3"
+}

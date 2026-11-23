@@ -1,0 +1,81 @@
+{
+  "fit_sha256": "6cbfeb90ad9643557f012b9cc37d69a583022d29f46ba19e30f218207ea7d587",
+  "splits": {
+    "dev": {
+      "inputs_sha256": "1e69d86060fdebd064f850dc2626340e2df09664dda525a7dd0f0da7742f9391",
+      "inventory": {
+        "annotations": {
+          "same_paragraph_target": 373,
+          "scored": 72,
+          "target_tokenization_or_nonword": 1,
+          "unknown_paragraph": 198
+        },
+        "articles_available": 28,
+        "articles_scored": 18,
+        "median_candidates": 368.0
+      },
+      "labels_sha256": "29ec2988fe277a7e7545639ba17fc428f4811c033e52d47bd26d2fac6cffa254",
+      "metrics": {
+        "distance": {
+          "mrr": 0.05923002038133988,
+          "nll_nats": 5.385926391442178,
+          "top1": 0.011111111111111112
+        },
+        "form": {
+          "mrr": 0.1387518692074847,
+          "nll_nats": 4.824556498952728,
+          "top1": 0.08518518518518518
+        },
+        "qwen_form": {
+          "mrr": 0.23215684584871316,
+          "nll_nats": 4.158713065657319,
+          "top1": 0.1643097643097643
+        }
+      },
+      "passes": false,
+      "qwen_minus_form_ci95": [
+        -1.0254249865421172,
+        -0.3603890446283491
+      ],
+      "qwen_minus_form_nll": -0.6658434332954095
+    },
+    "test": {
+      "inputs_sha256": "b59b96e23db16027d449d973f1888da6ce0c02ae6c00f0ee08f2101c62ae3520",
+      "inventory": {
+        "annotations": {
+          "same_paragraph_target": 227,
+          "scored": 89,
+          "target_tokenization_or_nonword": 1,
+          "unknown_paragraph": 201
+        },
+        "articles_available": 30,
+        "articles_scored": 19,
+        "median_candidates": 380.0
+      },
+      "labels_sha256": "698e87dcde9ec3f89e80c79f17523eb4dcc4258dfb805ea00af065f05eb5da84",
+      "metrics": {
+        "distance": {
+          "mrr": 0.036469958926619465,
+          "nll_nats": 5.21196239252067,
+          "top1": 0.005263157894736842
+        },
+        "form": {
+          "mrr": 0.07554527183614898,
+          "nll_nats": 4.732225425636158,
+          "top1": 0.0362123256860099
+        },
+        "qwen_form": {
+          "mrr": 0.17226578624907626,
+          "nll_nats": 4.197455448431184,
+          "top1": 0.06900584795321638
+        }
+      },
+      "passes": false,
+      "qwen_minus_form_ci95": [
+        -0.7593643184012221,
+        -0.31731296362334094
+      ],
+      "qwen_minus_form_nll": -0.5347699772049729
+    }
+  }
+}

@@ -1,0 +1,568 @@
+{
+  "archived_paths_per_target": 8,
+  "bootstrap": {
+    "ci": 0.95,
+    "draws": 10000,
+    "seed": 735972,
+    "stratification": "original target condition; fixed observed readers"
+  },
+  "experiment_2": {
+    "cross_experiment_subject_key_overlap": 0,
+    "experiment_1_unique_subject_keys": 195,
+    "experiment_2_unique_subject_keys": 664,
+    "exposures_per_trial": 1,
+    "sets": {
+      "MatchedPred": {
+        "bert_attributed_responses": 9157,
+        "bert_response_type_rows": 5255,
+        "exact_target_response_rows": 0,
+        "failures": 12154,
+        "stimuli_with_bert_response_rows": 903,
+        "successes": 10593,
+        "sum_stimulus_ntrials_over_bert_rows_support": 21545,
+        "trials": 22747
+      },
+      "Original": {
+        "bert_attributed_responses": 24327,
+        "bert_response_type_rows": 15517,
+        "exact_target_response_rows": 0,
+        "failures": 31191,
+        "stimuli_with_bert_response_rows": 3295,
+        "successes": 9806,
+        "sum_stimulus_ntrials_over_bert_rows_support": 39136,
+        "trials": 40997
+      }
+    }
+  },
+  "heldout_targets": 32,
+  "heldout_trials": 1603,
+  "input_sha256": {
+    "bert_response_release": "74de33f3b46dd76c250839b8ac5c0af7c48c6cadeffb33ab78fd3211867c33a6",
+    "fit": "b18f5d5beda601eb725621d7299331678de33dbeae68b18b9c9db01bcbd5cd91",
+    "forecasts": "3a5269b946fa8aed03b0359c09684f2bbabe05c790af4d50f426c01045551520",
+    "mixture": "dc0a53802f5b18f2121908b99920af63ee141d0b035b63a6a9c55fc4bd98f7ce",
+    "official_scores": "f4086a94f2533e956ecc78661d6af3c7b4ac763d3c5ca5a8a5a3d256f1e8cf6b",
+    "packet_preflight": "4fa6258798bc3f76410276491b985031f4c7e8a0d156063fd0908b1bb4451bdd",
+    "split": "2af0ba7e968d2fa3acfb2b6f774a09cd68819986232b82d5273724af36f3894b",
+    "trial_release": "c1743cc61a320830b24450d0f2b6067042e5e46e8ff75c59cc55ff2cfed07966"
+  },
+  "nll_gain_direction": "control minus qwen, positive favors Qwen",
+  "prefix_coverage": [
+    {
+      "archived_unique_prefixes_max": 6,
+      "archived_unique_prefixes_mean": 4.59375,
+      "archived_unique_prefixes_min": 3,
+      "author_possible_prefixes_per_target": 6,
+      "exposure": 1,
+      "heldout_targets_with_full_prefix_support": 1
+    },
+    {
+      "archived_unique_prefixes_max": 8,
+      "archived_unique_prefixes_mean": 7.34375,
+      "archived_unique_prefixes_min": 6,
+      "author_possible_prefixes_per_target": 36,
+      "exposure": 2,
+      "heldout_targets_with_full_prefix_support": 0
+    },
+    {
+      "archived_unique_prefixes_max": 8,
+      "archived_unique_prefixes_mean": 7.90625,
+      "archived_unique_prefixes_min": 7,
+      "author_possible_prefixes_per_target": 216,
+      "exposure": 3,
+      "heldout_targets_with_full_prefix_support": 0
+    },
+    {
+      "archived_unique_prefixes_max": 8,
+      "archived_unique_prefixes_mean": 8.0,
+      "archived_unique_prefixes_min": 8,
+      "author_possible_prefixes_per_target": 1296,
+      "exposure": 4,
+      "heldout_targets_with_full_prefix_support": 0
+    },
+    {
+      "archived_unique_prefixes_max": 8,
+      "archived_unique_prefixes_mean": 8.0,
+      "archived_unique_prefixes_min": 8,
+      "author_possible_prefixes_per_target": 7776,
+      "exposure": 5,
+      "heldout_targets_with_full_prefix_support": 0
+    },
+    {
+      "archived_unique_prefixes_max": 8,
+      "archived_unique_prefixes_mean": 8.0,
+      "archived_unique_prefixes_min": 8,
+      "author_possible_prefixes_per_target": 46656,
+      "exposure": 6,
+      "heldout_targets_with_full_prefix_support": 0
+    }
+  ],
+  "schema_version": 1,
+  "scope": "post hoc fixed-head stress test conditional on archived held-out paths",
+  "subset_sensitivity": [
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.013061925204438047,
+            0.01977280812329106
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.010733960901888242,
+            -0.005407802692454055
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0011831889341550814,
+            0.005504496567605967
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.008068125373068391,
+            0.016218183835975383
+          ],
+          "mean_over_uniform_archived_subsets": 0.0038540819343656435
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.010294791048313776,
+            0.01590474517018074
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.007274687316132738,
+            -0.0035385923117970753
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0024713486880656235,
+            0.005533251076693009
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.005329431820551983,
+            0.012943708097430853
+          ],
+          "mean_over_uniform_archived_subsets": 0.003686390709011637
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.021481507262262042,
+          -0.014584670434823243
+        ],
+        "3": [
+          -0.02375952552994887,
+          -0.004867220048706107
+        ],
+        "6": [
+          0.006948839251208018,
+          0.02456549721012182
+        ]
+      },
+      "retained_paths": 1,
+      "subsets_per_target": 8
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.011338319944144342,
+            0.016726664017632953
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.008252872524147645,
+            -0.003342390129583644
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0017982728523843472,
+            0.005657972309817884
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.00579205009349628,
+            0.01400105196282489
+          ],
+          "mean_over_uniform_archived_subsets": 0.004148116117516936
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.00895078135488255,
+            0.014279076157607415
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.005505323325692643,
+            -0.0020518934541668655
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.00280045928508562,
+            0.0050686337914127785
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.0037541023794972414,
+            0.011438724406123556
+          ],
+          "mean_over_uniform_archived_subsets": 0.0037993103636040832
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.021124369276654474,
+          -0.015233078238305858
+        ],
+        "3": [
+          -0.022116926384305784,
+          -0.006323777353286354
+        ],
+        "6": [
+          0.008663214880710968,
+          0.0227315143077259
+        ]
+      },
+      "retained_paths": 2,
+      "subsets_per_target": 28
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.009710919864389326,
+            0.014475112879331412
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.0061638492406208695,
+            -0.0014833541920799636
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.002604101022432838,
+            0.005556222312987184
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.0038213097924876815,
+            0.012081479973540948
+          ],
+          "mean_over_uniform_archived_subsets": 0.0042466073367260415
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.007629615405359273,
+            0.012314676092317754
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.003951271140459566,
+            -0.0005784595593733574
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0030019803795893474,
+            0.004748802820016572
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.002238558478469245,
+            0.00986663561634997
+          ],
+          "mean_over_uniform_archived_subsets": 0.0038369494103260245
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.020666726090345422,
+          -0.01586102942677465
+        ],
+        "3": [
+          -0.020783502643304405,
+          -0.007668037957526925
+        ],
+        "6": [
+          0.009876121139569437,
+          0.021137115411352995
+        ]
+      },
+      "retained_paths": 3,
+      "subsets_per_target": 56
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.008245467915255765,
+            0.012831144728411244
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.004393151062847125,
+            0.00024188460117454002
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.003115961271862054,
+            0.005470530792592181
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.002067103449191643,
+            0.010515022262112199
+          ],
+          "mean_over_uniform_archived_subsets": 0.004295937730109152
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.006554335342093751,
+            0.010857787113947134
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.002699639682309896,
+            0.0007798563731218743
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.003116612238288907,
+            0.0045774192662573834
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.0009498838122855499,
+            0.008605987181826334
+          ],
+          "mean_over_uniform_archived_subsets": 0.0038557639006188676
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.02025180327656402,
+          -0.0163746730405482
+        ],
+        "3": [
+          -0.019426080309701353,
+          -0.00901705740875296
+        ],
+        "6": [
+          0.010874666154699213,
+          0.019838557564242538
+        ]
+      },
+      "retained_paths": 4,
+      "subsets_per_target": 70
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.006775133045319438,
+            0.011326105806578609
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.002749463664317657,
+            0.0017805619354320547
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0035357370162235405,
+            0.00531495554912375
+          ],
+          "exact_point_range_targetwise_choices": [
+            -0.0004908000448623148,
+            0.009044909834006562
+          ],
+          "mean_over_uniform_archived_subsets": 0.004325562388164664
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.005454469274128097,
+            0.009651684565286638
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.001517333430923966,
+            0.0019106948779429042
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0033209647473077114,
+            0.004361852805926693
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.0002037392656040124,
+            0.007468794389287284
+          ],
+          "mean_over_uniform_archived_subsets": 0.003867050323411344
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.01978456339762499,
+          -0.01690114539948252
+        ],
+        "3": [
+          -0.0181536874002473,
+          -0.010284408588780805
+        ],
+        "6": [
+          0.011888309728341605,
+          0.018644906291411783
+        ]
+      },
+      "retained_paths": 5,
+      "subsets_per_target": 56
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.005335739686274918,
+            0.009847644934480754
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.0011924156493415112,
+            0.00319263256231378
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0038410936935817097,
+            0.005137396754843496
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.0009916088551431418,
+            0.0075859349371234855
+          ],
+          "mean_over_uniform_archived_subsets": 0.004345323000282018
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.0044064791780188736,
+            0.008451183207276225
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            -0.00046070875082980083,
+            0.003024296377298446
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0034614803815916084,
+            0.004211955236399972
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.0012830384046373655,
+            0.00636855308626532
+          ],
+          "mean_over_uniform_archived_subsets": 0.0038745735014401833
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.01933995813197286,
+          -0.017376194452523322
+        ],
+        "3": [
+          -0.01685416602787409,
+          -0.011589783017534284
+        ],
+        "6": [
+          0.01289831104338588,
+          0.01758774418572416
+        ]
+      },
+      "retained_paths": 6,
+      "subsets_per_target": 28
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.0038475361259311413,
+            0.00823215347005161
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            0.0004227917153233034,
+            0.004748466317556709
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0041175389574185026,
+            0.004725765647630442
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.002567047829515161,
+            0.006038908975553731
+          ],
+          "mean_over_uniform_archived_subsets": 0.0043594429784569715
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.0032752341330972387,
+            0.007157459726946679
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            0.0007733250226597191,
+            0.004307476001728153
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.0036179379192859476,
+            0.004058807961917481
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.0025311861755284923,
+            0.005163934008293451
+          ],
+          "mean_over_uniform_archived_subsets": 0.0038799466089340755
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.018845890690517945,
+          -0.01786062828659811
+        ],
+        "3": [
+          -0.015557904403587307,
+          -0.01285900362055262
+        ],
+        "6": [
+          0.014041056809377887,
+          0.016557722232079866
+        ]
+      },
+      "retained_paths": 7,
+      "subsets_per_target": 8
+    },
+    {
+      "comparisons": {
+        "position": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.0022385945901589105,
+            0.006524060187082154
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            0.0022385945901589105,
+            0.006524060187082154
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.004370035815052707,
+            0.004370035815052707
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.004370035815052707,
+            0.004370035815052707
+          ],
+          "mean_over_uniform_archived_subsets": 0.004370035815052707
+        },
+        "surface": {
+          "ci_for_maximizing_targetwise_choices": [
+            0.0020913512205282614,
+            0.005714959011598094
+          ],
+          "ci_for_minimizing_targetwise_choices": [
+            0.0020913512205282614,
+            0.005714959011598094
+          ],
+          "exact_point_range_common_draw_indices": [
+            0.003883976096753665,
+            0.003883976096753665
+          ],
+          "exact_point_range_targetwise_choices": [
+            0.003883976096753665,
+            0.003883976096753665
+          ],
+          "mean_over_uniform_archived_subsets": 0.003883976096753665
+        }
+      },
+      "qwen_cdf_bias_point_range_targetwise_choices": {
+        "1": [
+          -0.018313238158556108,
+          -0.018313238158556108
+        ],
+        "3": [
+          -0.014221568859227159,
+          -0.014221568859227159
+        ],
+        "6": [
+          0.01535661185947089,
+          0.01535661185947089
+        ]
+      },
+      "retained_paths": 8,
+      "subsets_per_target": 1
+    }
+  ]
+}

@@ -1,0 +1,91 @@
+{
+  "allocation_to_verified_release_s": 195.678721,
+  "beukers": {
+    "assay_sha256": "4fa6258798bc3f76410276491b985031f4c7e8a0d156063fd0908b1bb4451bdd",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 4608,
+    "combined_route_receipt_sha256": "a942786e54082df67952d22025af7289f35093ef6b6fabeae3ae24c88b65026f",
+    "combined_route_run_id": "cogllm-cuda-checks-20261121T045601Z-ffdd1014",
+    "encoded_documents": 768,
+    "input_tokens": 69810,
+    "preflight_sha256": "e0ac2654b530b64e94b2d0cedcc12b7c692472b9e5074e570b5b3f09f7bc3537",
+    "protocol_sha256": "8acc588ee962a9749d85a7c7fed4c0fbe9db38bdf02a968e9262dc7871e59f6f",
+    "source_code_sha256": "e5f3f8c94c3ae42162be741fdf79173672fdfc1d197e326ccec39764900d6960",
+    "stimuli_sha256": "1bd42062f0baa8193f5ee9cde64fdce9e327aa6b68277204bc6b74490d318929"
+  },
+  "endpoint_absent_after_stop": true,
+  "local_verification": {
+    "baseline_replay_max_nll_difference": 1e-14,
+    "byte_identical_fit_and_score_replay": true,
+    "fit_elapsed_s": 0.096,
+    "replay_and_independent_score_peak_rss_mib": 133.38,
+    "score_elapsed_s": 0.148
+  },
+  "minutes_budget": 18.0,
+  "payload_bytes": 1675164,
+  "payload_members_sha256": {
+    "beukers-inputs.tar.gz": "9f8e15e296c328866a2ad93636a092cd1f134fcf353f5889aeda1ac2735c2fc5",
+    "bundle.json": "b71fc8b497896a49c269fb588493ab5fa3e18290ede6bc6b720540ccee61c0a1"
+  },
+  "payload_sha256": "17ef0c95bf6a78e321823191b8d83c34a49ea25fad725a7c563e6dafafa807f7",
+  "phase": "finished",
+  "published_sha256": {
+    "causal-preflight.json": "e0ac2654b530b64e94b2d0cedcc12b7c692472b9e5074e570b5b3f09f7bc3537",
+    "causality.json": "68567ed6b077988c1d443e59fd6268fa776628bb69edc3076b00b79bff912fdc",
+    "coordinates.jsonl": "354f0df77c1b1aa983dff3d086d7c009ac5c3c95fc496759480eb7513220ed7e",
+    "extraction-seal.json": "d3ff741efc862d3fd1bdcd8cf769268ff9a5469b782fea60b74bcbde923e986c",
+    "fit.json": "b18f5d5beda601eb725621d7299331678de33dbeae68b18b9c9db01bcbd5cd91",
+    "forecast-seal.json": "56466f6d2a282184205142ac30df71482248268f5b3ff08ab81575f157dac06c",
+    "forecasts.jsonl": "3a5269b946fa8aed03b0359c09684f2bbabe05c790af4d50f426c01045551520",
+    "results.json": "f4086a94f2533e956ecc78661d6af3c7b4ac763d3c5ca5a8a5a3d256f1e8cf6b",
+    "runtime.json": "1c4bf30ea9ea8425511f3b6aecd4c210201a00026f8209e7304093afa5f52ed5",
+    "telemetry.jsonl": "7bc7a2315d975ba430b7258529d6498f692d342e6e7ed922ac67871aadd3380a",
+    "vectors.npy": "64cf0d5b93cbb93de0c335a383fb5b6da4ebdfab1312ef139c0c9ee41489a0bf"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T061829Z-e3a6181d",
+  "schema_version": 21,
+  "stages": {
+    "beukers": {
+      "archive_bytes": 1097901,
+      "archive_sha256": "64efcc70ca7d4c29692349e3be26053be67351a4217e61132932aad2e4e5d510",
+      "elapsed_s": 77.36305183799993,
+      "members": {
+        "causality.json": "68567ed6b077988c1d443e59fd6268fa776628bb69edc3076b00b79bff912fdc",
+        "coordinates.jsonl": "354f0df77c1b1aa983dff3d086d7c009ac5c3c95fc496759480eb7513220ed7e",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "d3ff741efc862d3fd1bdcd8cf769268ff9a5469b782fea60b74bcbde923e986c",
+        "telemetry.jsonl": "7bc7a2315d975ba430b7258529d6498f692d342e6e7ed922ac67871aadd3380a",
+        "vectors.npy": "64cf0d5b93cbb93de0c335a383fb5b6da4ebdfab1312ef139c0c9ee41489a0bf"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 663,
+      "archive_sha256": "c6eb5111b6d0443c0372874dfc8cf4ed890b43268d5b2f73c1df33f92715b484",
+      "elapsed_s": 43.046806801,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "1c4bf30ea9ea8425511f3b6aecd4c210201a00026f8209e7304093afa5f52ed5"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T06:19:09.034508+00:00",
+    "allocating": "2026-11-21T06:19:02.364598+00:00",
+    "finished": "2026-11-21T06:22:24.713229+00:00",
+    "prepared": "2026-11-21T06:18:29.905698+00:00",
+    "releasing": "2026-11-21T06:22:15.221925+00:00",
+    "remote-beukers": "2026-11-21T06:21:01.400857+00:00",
+    "remote-setup": "2026-11-21T06:20:09.869183+00:00",
+    "remote-stages-finished": "2026-11-21T06:22:14.558381+00:00",
+    "retrieved-beukers": "2026-11-21T06:22:15.221603+00:00",
+    "retrieved-setup": "2026-11-21T06:21:01.745612+00:00",
+    "worker-running": "2026-11-21T06:20:09.555094+00:00"
+  },
+  "worker_sha256": "d18b85e1c7efe726ff0b579607b2dd628034495393b59db0f3a727fe3feedd93"
+}

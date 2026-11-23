@@ -1,0 +1,246 @@
+{
+  "author_assigned_final_ratings": {
+    "cells": [
+      {
+        "mean_final_guilt_rating": 67.32558139534883,
+        "mode": "SBS",
+        "order": "DP",
+        "records": 43,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 48.28947368421053,
+        "mode": "SBS",
+        "order": "PD",
+        "records": 38,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 54.94736842105263,
+        "mode": "EOS",
+        "order": "DP",
+        "records": 38,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 49.975,
+        "mode": "EOS",
+        "order": "PD",
+        "records": 40,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 60.666666666666664,
+        "mode": "MIXED",
+        "order": "DP",
+        "records": 45,
+        "study": 2
+      },
+      {
+        "mean_final_guilt_rating": 55.354166666666664,
+        "mode": "MIXED",
+        "order": "PD",
+        "records": 48,
+        "study": 2
+      }
+    ],
+    "minimax_absolute_error_lower_bound": 7.031869645042839,
+    "minimax_optimal_shared_order_contrast": 12.004238066095468,
+    "order_contrasts": {
+      "study1_eos_DP_minus_PD": 4.972368421052629,
+      "study1_sbs_DP_minus_PD": 19.036107711138307,
+      "study2_mixed_DP_minus_PD": 5.3125
+    },
+    "study1_sbs_minus_eos": 14.063739290085678
+  },
+  "case_families": 1,
+  "cluster_uncertainty": {
+    "absolute_half_gap_image_of_signed_95_interval": [
+      0.0,
+      14.371972080099974
+    ],
+    "chunk": 512,
+    "clusters_by_study": [
+      157,
+      93
+    ],
+    "draws": 20000,
+    "method": "Within each study resample the full local platform-account clusters jointly from that study's pool. A repeat group keeps all of its records, including across Study 1 modes. Ratios use each draw's cell-specific record counts. Studies resampled independently.",
+    "percentile_95_interval_for_sbs_minus_eos": [
+      -0.7346131947762338,
+      28.74394416019995
+    ],
+    "percentile_95_intervals_for_order_contrasts": {
+      "study1_eos_DP_minus_PD": [
+        -5.1888991330227725,
+        15.24461722488035
+      ],
+      "study1_sbs_DP_minus_PD": [
+        8.565874999999998,
+        29.523841580695926
+      ],
+      "study2_mixed_DP_minus_PD": [
+        -4.103357119807241,
+        14.780572193956209
+      ]
+    },
+    "seed": 735972
+  },
+  "code_sha256": "597702bf0d36833370fa9bb9805102e97134b9b1b8900967242c934cfbad82a1",
+  "content_identity_by_order": {
+    "DP": {
+      "checked_condition_ids": [
+        "qiao-s1-sbs-dp",
+        "qiao-s1-eos-dp",
+        "qiao-s2-mixed-dp"
+      ],
+      "identical_stops": [
+        {
+          "content_stop_id": "b711850e6c2fb4db3cb2a2626cac98d495e3074d2131a1146016f297c3e860f9:2239",
+          "evidence_items_seen": 4,
+          "unicode_exclusive_end": 2239
+        },
+        {
+          "content_stop_id": "b79b23934bb5b676915f4ffaa0f4f996a476de6dd6cf91652ad4068979310aeb:2937",
+          "evidence_items_seen": 8,
+          "unicode_exclusive_end": 2937
+        }
+      ]
+    },
+    "PD": {
+      "checked_condition_ids": [
+        "qiao-s1-sbs-pd",
+        "qiao-s1-eos-pd",
+        "qiao-s2-mixed-pd"
+      ],
+      "identical_stops": [
+        {
+          "content_stop_id": "6543b77d18202ef19ef77a3f379c955e676c2b06aa30a75f466bcae2405c628f:2323",
+          "evidence_items_seen": 4,
+          "unicode_exclusive_end": 2323
+        },
+        {
+          "content_stop_id": "c43693a39041d767fef44a9392d5369178900be4d66d26b3fe54f17921b351ca:2937",
+          "evidence_items_seen": 8,
+          "unicode_exclusive_end": 2937
+        }
+      ]
+    }
+  },
+  "scale_and_unit": "0–100 final guilt rating. Means and contrasts in rating points.",
+  "scope": "One case. Deterministic article-only readout at identical terminal text with fixed prior state.",
+  "sensitivity_omit_all_records_from_repeated_platform_groups": {
+    "cells": [
+      {
+        "mean_final_guilt_rating": 67.0,
+        "mode": "SBS",
+        "order": "DP",
+        "records": 42,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 48.28947368421053,
+        "mode": "SBS",
+        "order": "PD",
+        "records": 38,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 54.94736842105263,
+        "mode": "EOS",
+        "order": "DP",
+        "records": 38,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 49.567567567567565,
+        "mode": "EOS",
+        "order": "PD",
+        "records": 37,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 60.666666666666664,
+        "mode": "MIXED",
+        "order": "DP",
+        "records": 45,
+        "study": 2
+      },
+      {
+        "mean_final_guilt_rating": 55.354166666666664,
+        "mode": "MIXED",
+        "order": "PD",
+        "records": 48,
+        "study": 2
+      }
+    ],
+    "minimax_absolute_error_lower_bound": 6.665362731152204,
+    "minimax_optimal_shared_order_contrast": 12.045163584637269,
+    "order_contrasts": {
+      "study1_eos_DP_minus_PD": 5.379800853485065,
+      "study1_sbs_DP_minus_PD": 18.710526315789473,
+      "study2_mixed_DP_minus_PD": 5.3125
+    },
+    "study1_sbs_minus_eos": 13.330725462304407
+  },
+  "sensitivity_omit_one_final_rating_from_unaligned_trajectory": {
+    "cells": [
+      {
+        "mean_final_guilt_rating": 66.66666666666667,
+        "mode": "SBS",
+        "order": "DP",
+        "records": 42,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 48.28947368421053,
+        "mode": "SBS",
+        "order": "PD",
+        "records": 38,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 54.94736842105263,
+        "mode": "EOS",
+        "order": "DP",
+        "records": 38,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 49.975,
+        "mode": "EOS",
+        "order": "PD",
+        "records": 40,
+        "study": 1
+      },
+      {
+        "mean_final_guilt_rating": 60.666666666666664,
+        "mode": "MIXED",
+        "order": "DP",
+        "records": 45,
+        "study": 2
+      },
+      {
+        "mean_final_guilt_rating": 55.354166666666664,
+        "mode": "MIXED",
+        "order": "PD",
+        "records": 48,
+        "study": 2
+      }
+    ],
+    "minimax_absolute_error_lower_bound": 6.702412280701758,
+    "minimax_optimal_shared_order_contrast": 11.674780701754386,
+    "order_contrasts": {
+      "study1_eos_DP_minus_PD": 4.972368421052629,
+      "study1_sbs_DP_minus_PD": 18.377192982456144,
+      "study2_mixed_DP_minus_PD": 5.3125
+    },
+    "study1_sbs_minus_eos": 13.404824561403515
+  },
+  "source_audit_sha256": "93bb116addb096a3a56653bc784d77f7c554237bc755ddc6a1d5fc416e324f6d",
+  "source_output_sha256": {
+    "layout.jsonl": "df21f3495f657155cb9a6c818b8a74cbb3d10120ae3e7567d61cd32bc8f3c0c1",
+    "outcomes.jsonl": "c2ce53d70b57112130b8f02e81f00f9715db29bf32c95d283c693008c8d7f2f1",
+    "stimuli.jsonl": "46e057b8a06585cc3b65d50326b6a18e2e54f55f1504cf461e6b96415eb29b18"
+  }
+}

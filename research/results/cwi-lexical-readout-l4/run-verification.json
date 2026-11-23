@@ -1,0 +1,85 @@
+{
+  "allocation_to_verified_release_s": 140.317673,
+  "endpoint_absent_after_stop": true,
+  "medreadme": {
+    "assay_sha256": "6626df0c80dd473305fce985fa199ed70354075d9f405bc659c8559a60fd1a4f",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "combined_route_receipt_sha256": "a942786e54082df67952d22025af7289f35093ef6b6fabeae3ae24c88b65026f",
+    "combined_route_run_id": "cogllm-cuda-checks-20261121T045601Z-ffdd1014",
+    "forecast_code_sha256": "c7590ca516f0d5e2ae0e98f14e71a7ce6a5de63e8057c9ffef3e774c8fbf331d",
+    "lexical_weights_sha256": "e9721f340b325015826bf1645d9814385d4d180689b652e772480f99a80f49d4",
+    "protocol_sha256": "721d8a38eff82c964416a529b9a2714deadae67f14cd0ba5f4aa247f5c59dcf4",
+    "retained_sentences": 591,
+    "stimuli_sha256": "713cfc3ec5adfa0a6a911e09899115434ac31c68d8d37e270184d5d9e76174c8"
+  },
+  "minutes_budget": 14.0,
+  "payload_bytes": 1545422,
+  "payload_members_sha256": {
+    "bundle.json": "7d30a51e0b491b8ec68cd2116dfea65395c6d7a39662c02d755041bde772a7f0",
+    "medreadme-inputs.tar.gz": "281e7e40885945d0ccbab6ad3dc0f582dbb4c098afeb0b6f40d1237aa34c5061"
+  },
+  "payload_sha256": "0eafa98293cdb781c75866fbbee9f4d6e276d4d6eef405730752d6ca37776ed1",
+  "phase": "finished",
+  "published_sha256": {
+    "assay.json": "6626df0c80dd473305fce985fa199ed70354075d9f405bc659c8559a60fd1a4f",
+    "fit.json": "3f68e900fcbea83dbeb05e545b3eaba71ca42eb264a1065362aaf8435f9869f0",
+    "independent-check.json": "c2e3b4ef458c18a850a0ec03ac979955b64117b0519773ab980e0816cf50c460",
+    "local-verification.json": "06f0c4f37300415452cfce308580cfd93496c456828d89a1d8085b34dc946a06",
+    "news.jsonl": "22a723a2596b4e242b3eaece3610cfe6f635b21363d16644cb318c66cda18c90",
+    "original-predictions.jsonl": "ab829f08df7ad4bc991aa25ecc7b8803d3820d5faa9efd8d8d80e685f76089d1",
+    "original-seal.json": "db7f6b03e965ca4beb622167e7880cf1b8f112a85ed1013bf48f417d2995d7ff",
+    "results.json": "f8ae287f7ec7dc28d738b50ed9da612764835274a2dfc8c42627eb724e67c37b",
+    "runtime.json": "e1f7fa79b55f1a82eb31cf91c6dbe0e701aa1fb8528fca4da30660dfff02b238",
+    "seal.json": "a4245ee18614fbc07581b5f8c996926cf1b98636f9bd65cd56195eef19809355",
+    "wikinews.jsonl": "46ab8da5985c6e9512d6d90b1ac2ffba1c68c37f0a4b6591e11e148466742182"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T060847Z-6f6f7a42",
+  "schema_version": 12,
+  "source_overlap_audit": {
+    "rule": "NFKC/casefold normalized complete-word sequences, exact or one train sentence shares at least 25% of distinct held-out five-word windows",
+    "train_vs_dev_substantial_or_exact": 0,
+    "train_vs_professional_news_substantial_or_exact": 0,
+    "train_vs_test_substantial_or_exact": 0
+  },
+  "stages": {
+    "medreadme": {
+      "archive_bytes": 95792,
+      "archive_sha256": "c669c93ba039c55f69ac83f1a8757668da399df7e47dc6ffc1e40793b8606e9e",
+      "elapsed_s": 78.259321925,
+      "members": {
+        "predictions.jsonl": "ab829f08df7ad4bc991aa25ecc7b8803d3820d5faa9efd8d8d80e685f76089d1",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "db7f6b03e965ca4beb622167e7880cf1b8f112a85ed1013bf48f417d2995d7ff"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 647,
+      "archive_sha256": "7c2eeec2103f228a421f7f233f7bf4189be6478d88df1122bdb7c76f05a70db1",
+      "elapsed_s": 36.26664935400001,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "e1f7fa79b55f1a82eb31cf91c6dbe0e701aa1fb8528fca4da30660dfff02b238"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T06:09:14.420330+00:00",
+    "allocating": "2026-11-21T06:09:08.564702+00:00",
+    "finished": "2026-11-21T06:11:34.738003+00:00",
+    "prepared": "2026-11-21T06:08:47.783397+00:00",
+    "releasing": "2026-11-21T06:11:25.485984+00:00",
+    "remote-medreadme": "2026-11-21T06:10:02.068884+00:00",
+    "remote-setup": "2026-11-21T06:09:20.646649+00:00",
+    "remote-stages-finished": "2026-11-21T06:11:24.912467+00:00",
+    "retrieved-medreadme": "2026-11-21T06:11:25.485789+00:00",
+    "retrieved-setup": "2026-11-21T06:10:02.418580+00:00",
+    "worker-running": "2026-11-21T06:09:20.323070+00:00"
+  },
+  "worker_sha256": "d18b85e1c7efe726ff0b579607b2dd628034495393b59db0f3a727fe3feedd93"
+}

@@ -1,0 +1,79 @@
+{
+  "study": "Yazbec, Borovsky, and Kaschak (2019), Examining the impact of text style and epistemic beliefs on conceptual change",
+  "paper": "https://doi.org/10.1371/journal.pone.0220766",
+  "source_project": "https://osf.io/etpr7/",
+  "license_scope": {
+    "article": "Creative Commons Attribution",
+    "osf_project_license_selected": false,
+    "question_materials": "The article and questionnaire PDF identify third-party inventories for some topics. The public questionnaire PDF does not reproduce the complete original item bank. Reuse terms for third-party assessment items have not been verified."
+  },
+  "source_files": {
+    "Reading Passages.pdf": {"id": "6qsra", "bytes": 183998, "sha256": "7deb0b93efbcebfbdc56608c37c753e0d0809877a65de21c0de4e189e8feb6d7"},
+    "Pretest Posttest Questions.pdf": {"id": "8kxwa", "bytes": 192947, "sha256": "b41f8fec34eeea69a59dd4b2a40ba60f80d1be994bd0acca9f1fd38667168e1f"},
+    "Astronomy.csv": {"id": "vm3q4", "bytes": 1659813, "sha256": "22b9a2f29ab5e8661daf371b0f59b364c4247218f668cd3e965ef040dd86b9ce"},
+    "Genetics.csv": {"id": "skfjr", "bytes": 1626184, "sha256": "e1c42a358446421c1456cd06bebebdf9a859164799af1d41726470dd0c50ffb2"},
+    "Economics.csv": {"id": "wjuzx", "bytes": 1416607, "sha256": "c041898704417e8ff9c82e476358ee49c283c26c92ef5e036b88ccb7c83cd877"},
+    "Geography.csv": {"id": "fvca2", "bytes": 2484904, "sha256": "654b79b11ee8cde7ab89753fc41757a04ca386a99b4de536fe5f1f5deb855617"},
+    "Physics.csv": {"id": "49r65", "bytes": 1804501, "sha256": "e85be57123e97c9d61cfa228795c12df7cc5f2f55d12dabd74b652eb2f5ff89f"}
+  },
+  "passage_geometry": {
+    "discipline_count": 5,
+    "topics_per_discipline": 2,
+    "pages": 20,
+    "variants_per_family": ["refutation", "expository"],
+    "paragraphs_per_variant": 4,
+    "paragraph_roles_in_author_order": ["introduction", "premise", "explanation", "conclusion"],
+    "extraction_check": "pdftotext -layout. Within each PDF page, blank lines delimit the archive title and four prose blocks. The archive title names the design arm and should be outside the model body. For equality testing only, whitespace was collapsed within each block.",
+    "families_differing_in_second_paragraph": 10,
+    "families_differing_only_in_second_paragraph": 8,
+    "other_nonmatching_paragraphs": [
+      {"family": "Newton's first law of motion", "additional_paragraph_number": 1},
+      {"family": "Star formation", "additional_paragraph_number": 4}
+    ]
+  },
+  "response_geometry": {
+    "fields": ["ID", "Week", "TextType", "Content", "PrePost", "Item", "Score"],
+    "reader_count_published": 157,
+    "stage_codes": {"-1": "before reading the assigned passage", "1": "immediately after reading the entire passage"},
+    "text_codes": {"-1": "expository", "1": "refutation"},
+    "score_codes": {"0": "incorrect", "1": "correct"},
+    "item_partitions_observed_in_csv": {
+      "physics": [[1, 9], [34, 37]],
+      "astronomy": [[10, 14], [38, 44]],
+      "genetics": [[15, 19], [45, 50]],
+      "economics": [[20, 23], [51, 56]],
+      "geography": [[24, 33], [57, 64]]
+    },
+    "pairing_unit": "Within discipline, the same reader ID and item number. Require a single Week, TextType, and Content combination across both stages.",
+    "physical_crosswalk_limit": "The score files preserve both stages, item numbers, study week, the discipline code, and assigned text type without needing score to infer design. Item groups cross Week levels. The article lists the topic names but does not explicitly link the CSV item-number partitions to those titles for all five disciplines, and the partial questionnaire cannot validate all links. Do not infer a title from PDF page order or Week alone."
+  },
+  "source_integrity": {
+    "counts_by_domain": {
+      "astronomy": {"readers": 157, "unique_pre_post_pairs": 1594, "pairs_with_exact_duplicate_pre_row": 170, "pairs_with_conflicting_duplicate_pre_score": 110, "keys_with_conflicting_design": 5, "keys_with_only_one_phase": 0},
+      "genetics": {"readers": 157, "unique_pre_post_pairs": 1477, "pairs_with_exact_duplicate_pre_row": 204, "pairs_with_conflicting_duplicate_pre_score": 36, "keys_with_conflicting_design": 5, "keys_with_only_one_phase": 0},
+      "economics": {"readers": 157, "unique_pre_post_pairs": 1322, "pairs_with_exact_duplicate_pre_row": 168, "pairs_with_conflicting_duplicate_pre_score": 72, "keys_with_conflicting_design": 4, "keys_with_only_one_phase": 0},
+      "geography": {"readers": 156, "unique_pre_post_pairs": 2428, "pairs_with_exact_duplicate_pre_row": 208, "pairs_with_conflicting_duplicate_pre_score": 103, "keys_with_conflicting_design": 10, "keys_with_only_one_phase": 35},
+      "physics": {"readers": 157, "unique_pre_post_pairs": 1863, "pairs_with_exact_duplicate_pre_row": 110, "pairs_with_conflicting_duplicate_pre_score": 50, "keys_with_conflicting_design": 9, "keys_with_only_one_phase": 0}
+    },
+    "duplicate_cluster": {"Item_at_least": 34, "Week": 1, "TextType": -1, "PrePost": -1},
+    "duplicated_pre_keys": 1231,
+    "duplicated_pre_keys_with_different_scores": 371,
+    "reuse_rule_proposed_before_any_model_evaluation": "Exclude the entire Week=1 and Item>=34 cell from both style arms and require a single grade-free design assignment and exactly one row per stage for each remaining reader-item pair. The restrictions use design coordinates and stage availability. Selecting only duplicate cases whose pretest scores agree would condition on outcomes. Remaining pair counts under this proposed rule were not measured in this audit."
+  },
+  "evidence_scope": "Each endpoint brackets an entire assigned passage with repeated correctness on the same test item. A correct/incorrect score cannot identify the specific wrong interpretation. The manipulated paragraph is a material coordinate. Reader verification within that paragraph, spontaneous doubt onset, and resolution in ordinary prose are unobserved. The paper did not establish a main effect of text style on pre-to-post change.",
+  "secondary_source": {
+    "study": "Ferrero et al., The effectiveness of refutation texts to correct misconceptions among educators",
+    "project": "https://osf.io/73a9y/",
+    "experiment_1": "https://osf.io/5d6nz/",
+    "experiment_2": "https://osf.io/he49q/",
+    "license": "CC BY 4.0",
+    "verified_files": {
+      "experiment_1_data.csv": {"id": "sg6jy", "bytes": 2493, "sha256": "2c414139c9d119691876e32c7f132c0b3b6c3057e8e7a2c787c5bf8dc2e2712e"},
+      "experiment_1_Materials_-_Phase_2.pdf": {"id": "5sehn", "bytes": 221870, "sha256": "eb71d26fb433ac4ea642f02df69b587b255deb735e566d4caae838261c184679"},
+      "experiment_2_data.csv": {"id": "uy3vz", "bytes": 3785, "sha256": "34aafa58e67cc32b59959f2b582eacd56b7a8615c0d21a893bf0145c39501b5a"},
+      "experiment_2_Materials_-_Phase_2.pdf": {"id": "2cvg3", "bytes": 275928, "sha256": "3c2e57986352d6b9482cecd89edd741f2f5cad81ba1a10a9f13ed452466ad905"}
+    },
+    "scope": "Experiments 1 and 2 contain repeated ratings by arm and misconception popularity. Spanish prose is recoverable from the Phase 2 PDFs. Full counterbalance code-to-title mapping for the same misconception across every reader arm remains unverified."
+  },
+  "privacy": "No participant identifiers, raw responses, question stems, or passage text are included."
+}

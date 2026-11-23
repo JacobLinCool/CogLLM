@@ -1,0 +1,94 @@
+{
+  "endpoint_absent_after_stop": true,
+  "nq_evidence": {
+    "articles_sha256": "7c8bfcc152a6845c255abdfa0d2e41ac29e27991a5aa653d7fd8f1710abf87b3",
+    "assay_sha256": "c5b67463382008d9266b7196954fa9699b5b19d5a5a766fe219153015204e623",
+    "calibration_sha256": "efab56f7379a00b6b468a82c5a0ac8ad34aa8fe9d1189f434e995bd27bf1f944",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "candidate_stops": 1403,
+    "certified_stops": 1403,
+    "coalesced_stops": 0,
+    "documents": 16,
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "input_tokens": 47605,
+    "protocol_sha256": "9241d1f67cfb02000b2dbac1b237ab44ae12d8486d917175aeaac575bfcce157",
+    "queries": 34,
+    "queries_sha256": "82783ad331cd82b7250c6a3f4a4b4b3eee06850abd095969f484f2d8f5c15aba",
+    "source_code_sha256": "d495b8bc5cc6c01cb16c0e7a39644c19c070524e3942c22c3d8125e81eae3c58",
+    "verified_gradio_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "verified_gradio_sha256": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "payload_members_sha256": {
+    "bundle.json": "fd6e41bc3b748d7a9a23a414d601dcaf211aaf0c770f4f2a79cbbfc11f9a8bd8",
+    "nq-evidence-inputs.tar.gz": "b62364d844939c0fb24d4e82c74e99709e4934b1b21a29a77dc8c51acb58156c"
+  },
+  "payload_sha256": "653113d600691d195f45b85e2fe793d5cf35852d55c107c830331da049068687",
+  "phase": "incomplete",
+  "published_sha256": {
+    "assay.json": "c5b67463382008d9266b7196954fa9699b5b19d5a5a766fe219153015204e623",
+    "causality.json": "a14c30abfadb9bf07a4ec155ed8a56da45d15393699aab7b99f28fd01b1af3e6",
+    "extraction.json": "6a8d342b4dffaeebdb8d15cfa7d02614ceacf0c923760f2966bc0c3e6b50520f",
+    "predictions.jsonl": "47dbdecd6367f88d78d8130ff245671531d645b3437b35b76516f9d511c2aa7a",
+    "preflight.json": "5e4adcd223b025ff99b849b5a076e1cc73c5d87e36274f0c15f8a29fa7572892",
+    "reference-nll-breakdown.json": "b28a758e4c91c7c7aaa227e910547926cf212990f0671b1e668e4a3b7f7aeba8",
+    "runtime-verification.json": "87f3c105d99268ddbf0ea37399e036a14f84f52e5be3652e45366c930df0b027",
+    "scores.json": "b7cf0c9967a351b9106288fa75e9fa1ed1460b12400eeaf9b279d245fa0ff2bf",
+    "seal.json": "c768bd25b1dde642850f23c42fb0ebde43993958cf74d6b4332e43f7c6da9b35",
+    "telemetry.jsonl": "4a75f4e2c974e71dd9660c5dc04f1aee4dafd8c37444b1067bff665a11d948a0"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T020344Z-2f152c6c",
+  "schema_version": 18,
+  "stages": {
+    "nq-evidence": {
+      "archive_bytes": 131128,
+      "archive_sha256": "ce9b65551fccd78b405f076ab84f3a14f6bf1545055ddc36cb1db2652aa84ad0",
+      "elapsed_s": 86.0251300380005,
+      "error": "The L4 evidence forecasts differ from the sealed candidate and stop inventory",
+      "members": {
+        "causality.json": "a14c30abfadb9bf07a4ec155ed8a56da45d15393699aab7b99f28fd01b1af3e6",
+        "extraction.json": "6a8d342b4dffaeebdb8d15cfa7d02614ceacf0c923760f2966bc0c3e6b50520f",
+        "predictions.jsonl": "47dbdecd6367f88d78d8130ff245671531d645b3437b35b76516f9d511c2aa7a",
+        "run.log": "3a74bc94806cbe3500b13e99a8efb42aacaa425bed40a0b2278bac437f914820",
+        "seal.json": "c768bd25b1dde642850f23c42fb0ebde43993958cf74d6b4332e43f7c6da9b35",
+        "telemetry.jsonl": "4a75f4e2c974e71dd9660c5dc04f1aee4dafd8c37444b1067bff665a11d948a0"
+      },
+      "state": "complete",
+      "verified": false
+    },
+    "setup": {
+      "archive_bytes": 649,
+      "archive_sha256": "283a04321006c209b1559f447feba19ad01be6c94938f171992c7ef326366536",
+      "elapsed_s": 38.57579312799953,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "9120c837bab5476d1247f6b79544aad98e17515314db659b71b8e9140bca330b"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T02:04:20.941853+00:00",
+    "allocating": "2026-11-21T02:04:14.506301+00:00",
+    "incomplete": "2026-11-21T02:06:50.738196+00:00",
+    "prepared": "2026-11-21T02:03:46.251620+00:00",
+    "releasing": "2026-11-21T02:06:41.473372+00:00",
+    "remote-nq-evidence": "2026-11-21T02:06:19.948493+00:00",
+    "remote-setup": "2026-11-21T02:04:27.063723+00:00",
+    "remote-stages-finished": "2026-11-21T02:06:41.014071+00:00",
+    "retrieved-nq-evidence": "2026-11-21T02:06:41.473149+00:00",
+    "retrieved-setup": "2026-11-21T02:06:20.282495+00:00",
+    "worker-running": "2026-11-21T02:04:26.750337+00:00"
+  },
+  "verification": {
+    "eight_nll_point_estimates_independently_verified": true,
+    "independent_runtime_token_inventory": true,
+    "score_replay_byte_identical": true,
+    "score_replay_peak_rss_mib": 34.25,
+    "score_replay_s": 0.12022162499852129,
+    "sealing_and_source_rebuild": true
+  },
+  "worker_sha256": "1b1e5f811506da1496dd96bb991d5d3e0b1ef78c474ad593f06953b26346ff43"
+}

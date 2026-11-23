@@ -1,0 +1,35 @@
+# The evidence fusion readout of the contract did not pass the held-out paper
+
+In the English paper for Evidence Inference 2.0, the contracted fit fusion readout failed to meet all three predetermined thresholds. The overall evidence AP is **0.215**, lower than BM25 with equal weights per matching term at **0.306**. The difference is −0.092, with a 95% confidence interval [−0.177, −0.014]. For the same evidence, the paired values are 0.737 and 0.840, with a difference interval containing zero. This held-out result is limited to ranking document positions following the pre-specified question. [Predetermined Thresholds](evidence-inference-transfer-protocol.md) · [Full Results](../../../research/results/evidence-inference-transfer-l4/results.json) · [Original Study](https://aclanthology.org/2020.bionlp-1.13/)
+
+## Materials and Observations
+
+From the official test set, 24 full papers and 89 distinct questions were included in fixed order, totaling 134,158 tokens. The longest article contained 8,001 tokens. Before reaching the quota, 116 papers were screened out: 37 had fewer than two valid questions, 35 were excluded due to copyright statement conditions, and 20 exceeded length limits or lacked usable text. Sampling used only the original text, source, and query, without adjustment based on evidence results. Frozen Punkt readouts yielded 3,395 candidate sentence ends, with 3,378 precisely matching the causal prefix. [Source Audit and Exclusion](../../../research/results/evidence-inference-transfer-l4/source-audit.json) · [Token Pre-check](../../../research/results/evidence-inference-transfer-l4/preflight.json)
+
+The raw data comprises 80 items containing 148 approved and verbatim-matched human evidence, with 9 items remaining unknown. 3 evidence items contain non-blank characters that are misaligned. AP incorporates 23 papers' 79 items and 145 evidence items, sequentially equal-weighted averaged for annotation, question, and article. Matching incorporates 17 papers' 97 item pairs, requiring that both items have qualifying evidence that can be aligned and that their sentence unions do not overlap. All rankings were sealed before combining with human annotation. [ sealed snapshot ranking](../../../research/results/evidence-inference-transfer-l4/rankings-seal.json) · [scoreable denominator](../../../research/results/evidence-inference-transfer-l4/results.json)
+
+## Ranking comparison
+
+| Readout | Evidence AP | Same-document evidence matching |
+| --- | ---: | ---: |
+| BM25, contract IDF | 0.202 | 0.639 |
+| BM25, unit IDF | **0.306** | **0.840** |
+| Original Qwen score | 0.073 | 0.510 |
+| Qwen minus the shared score within the same paper. | 0.097 | 0.824 |
+| Fit using only Qwen | 0.081 | 0.713 |
+| Vocabulary addition to Qwen's baseline score | 0.201 | 0.626 |
+| Vocabulary addition Qwen minus shared score | 0.215 | 0.737 |
+
+The AP difference for the fused readout relative contract IDF is +0.013, with a 95% confidence interval [−0.030, +0.061]. The AP difference for the relative unit IDF within the same document pairing is −0.102, with a confidence interval [−0.217, +0.017]. After accounting for shared scores from the same document, Qwen achieves an evidence pairing score of 0.824, yet the overall AP remains only 0.097. The pairing comparison considers only the two sets of evidence manually selected, while the overall AP also incorporates other aligned sentences. These results indicate that Qwen exhibits a ranking signal between the two known evidence sets, but high-scoring sentences are not concentrated within the manually selected evidence in the full document. [Two endpoints, difference, and interval](../../../research/results/evidence-inference-transfer-l4/results.json)
+
+Supplementary checks revealed that 89 items each contain at least one word appearing simultaneously in the candidate sentences and the question stem but lacking a contracted IDF. Calculating based on the question and identical words yielded 713/1,629 pairs. There were 767 pairs of questions and candidate sentences matching only this type of word, resulting in zero scores for all contracted BM25 models. This check highlights the coverage gap in the original vocabulary readout for the new style. The contributions of the contracted coefficient ratio, vocabulary coverage, and varying question sets remain to be independently validated. [Fixed Vocabulary Statistics](../../../research/results/contractnli-rerank-l4/fitted.json) · [Independent Recalculation](../../../research/results/evidence-inference-transfer-l4/independent-check.json)
+
+## Reproducibility and scope of application
+
+Reconstruct the body and source annotations using `evidence_inference_transfer_prepare`, and verify the original coordinates using `evidence_inference_transfer_forecast preflight`. L4 was executed with the same Qwen3.5-2B snapshot and QASPER head, performing a single causal forward pass for each body and a single independent encoding for each external prompt. `evidence_inference_transfer predict` reads the contract model in its original form, ranking and scoring programs via sealed snapshot, which are then combined with `score` annotations. Two sequential runs yield predictions and results that are bitwise consistent. [Data Preparation](../../../research/semantic_tracking/evidence_inference_transfer_prepare.py) · [Forward and sealed snapshot](../../../research/semantic_tracking/evidence_inference_transfer_forecast.py) · [Ranking and scoring entry](../../../research/semantic_tracking/evidence_inference_transfer.py)
+
+12 causal checks passed. Independent scripts performed verbatim evidence coverage. all scoreable mothers were fully consistent, with the maximum difference in point estimates at approximately \(1.11\times10^{-16}\). L4 forward and readout were 57.85 seconds, the remote stage was 140.72 seconds, and peak retention was 8.67 GiB. Resource allocation to verification release was approximately 215 seconds, and the account showed consumption of approximately 0.11 CU. Both local scores and one prediction replay were below 0.10 seconds, the merged process had a maximum RSS of approximately 90 MiB, and Qwen was not loaded. [Execute and release manifest ](../../../research/results/evidence-inference-transfer-l4/run-verification.json) · [Retrieve manifest ](../../../research/results/evidence-inference-transfer-l4/extraction.json) · [Local rerun](../../../research/results/evidence-inference-transfer-l4/local-verification.json)
+
+The fused readout passed the held-out contract, yet the held-out corpus does not support cross-domain adoption. Gradio's evidence indicates the need for additional valid readouts and practical interface validation. The authors' released annotations were selected after reading the full text, precluding verification of where readers first stall at a token or where they resolve the same query along the text. [held-out contract](contractnli-rerank-results.md) · [human observation scope](evidence-inference-source.md)
+
+[Original research record](../../../research/semantic_tracking/evidence-inference-transfer-results.md)

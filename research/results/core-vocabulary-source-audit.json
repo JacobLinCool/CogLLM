@@ -1,0 +1,452 @@
+{
+  "schema_version": 1,
+  "result": "explicit_prefix_alignment_unidentified_group_survival_observed",
+  "paper_doi": "10.1525/collabra.160142",
+  "osf_project": "https://osf.io/5t9kw/",
+  "preregistration": "https://aspredicted.org/FS2_DTR",
+  "author_release": {
+    "analysis.Rmd": {
+      "bytes": 12128,
+      "sha256": "b6cb19af83397a8538d044157bc5907f81fe25dd1dfac435570a0728c0ff4b6f",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1d4a150efc167413e13/versions/1/",
+      "download_url": "https://osf.io/download/9wm7d/?revision=1"
+    },
+    "data_BERT_modelling.csv": {
+      "bytes": 3859346,
+      "sha256": "74de33f3b46dd76c250839b8ac5c0af7c48c6cadeffb33ab78fd3211867c33a6",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1d44d7976dfd174ebf2/versions/1/",
+      "download_url": "https://osf.io/download/ajbkt/?revision=1"
+    },
+    "data_targets.csv": {
+      "bytes": 20492,
+      "sha256": "e2b0ba01b7fef943d9754847fafaba87313f42094cd1a09475229743352c6319",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1d7c40885ce6e74ea47/versions/1/",
+      "download_url": "https://osf.io/download/3mah2/?revision=1"
+    },
+    "data_trials.csv": {
+      "bytes": 3370344,
+      "sha256": "c1743cc61a320830b24450d0f2b6067042e5e46e8ff75c59cc55ff2cfed07966",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1d89141552d3c53d86f/versions/1/",
+      "download_url": "https://osf.io/download/pbcx6/?revision=1"
+    },
+    "sentences_corpus_matched.csv": {
+      "bytes": 348783,
+      "sha256": "9ce7733fed38e2e1e97300621a6001c03927597aab375260374f1749ca86d3b3",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1dacb359e1f344140ad/versions/1/",
+      "download_url": "https://osf.io/download/rp2zg/?revision=1"
+    },
+    "sentences_matched_pred.csv": {
+      "bytes": 97225,
+      "sha256": "b157e9f0e878a276ae19fb17b9c99051f3bb7a98cc0ab50e519fcf484c3797c8",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1da68655f853953da69/versions/1/",
+      "download_url": "https://osf.io/download/e5bwt/?revision=1"
+    },
+    "target_words.csv": {
+      "bytes": 9340,
+      "sha256": "de963d23c2fb9a118a30f76ac3acfe6d4121c3554f010695f06bae8d4525ae49",
+      "version": 1,
+      "version_url": "https://api.osf.io/v2/files/68cba1ddc92818eb0a74ea5f/versions/1/",
+      "download_url": "https://osf.io/download/rqz6h/?revision=1"
+    }
+  },
+  "author_demo_code": {
+    "commit": "bf8c249a688211f4085db2905a1e8e09804a9d8a",
+    "main.js": {
+      "bytes": 18720,
+      "sha256": "0f2e5744b2c93c3caf473327175df0484b5a3b2c1040b85686bff7a9f5066c63",
+      "url": "https://github.com/andreww3/codewords/blob/bf8c249a688211f4085db2905a1e8e09804a9d8a/main.js"
+    },
+    "csv/stim.js": {
+      "bytes": 429138,
+      "sha256": "a82a510df7512795946cdf416a16f2d74a05a6abdec348a0a248724e0dc209f3",
+      "url": "https://github.com/andreww3/codewords/blob/bf8c249a688211f4085db2905a1e8e09804a9d8a/csv/stim.js"
+    }
+  },
+  "experimental_trial_inventory": {
+    "release_total_trial_rows": 68424,
+    "analyzed_participants": 195,
+    "targets": 96,
+    "trials_per_participant_min": 24,
+    "trials_per_participant_max": 24,
+    "trials_per_target_min": 31,
+    "trials_per_target_max": 59,
+    "unique_subject_trial_keys": 4680,
+    "unique_subject_target_keys": 4680,
+    "trial_ordinals_absent_between_1_and_26": [
+      10,
+      20
+    ],
+    "trial_columns": [
+      "subject",
+      "exp",
+      "stim_set",
+      "trial_num",
+      "target",
+      "targetWordCondition",
+      "guesses",
+      "correct",
+      "targetpos",
+      "targetlength"
+    ],
+    "available_realized_stimulus_paths": 0,
+    "available_attempt_response_rows_linked_to_subject": 0,
+    "published_bert_response_summary_rows": 20772,
+    "published_bert_response_summary_columns": [
+      "stim_set",
+      "stimulus",
+      "target",
+      "targetWordCondition",
+      "response",
+      "n",
+      "nTrials",
+      "sentence",
+      "Response_Predictability",
+      "response.AoA",
+      "response.Ins",
+      "response.Freq"
+    ]
+  },
+  "released_target_summary": {
+    "experiment_1_rows": 96,
+    "columns": [
+      "exp",
+      "stim_set",
+      "target",
+      "targetWordCondition",
+      "meanGuesses",
+      "accuracy",
+      "predictability"
+    ],
+    "mean_guesses_matches_all_trials": 96,
+    "mean_guesses_matches_successful_trials_only": 0
+  },
+  "stimulus_inventory": {
+    "columns": [
+      "index",
+      "target",
+      "sentence",
+      "Log10_Predictability"
+    ],
+    "source_sentences": 3456,
+    "targets": 96,
+    "bins": 576,
+    "bins_per_target": 6,
+    "candidates_per_bin": 6,
+    "exact_duplicate_excess_within_target": 0,
+    "normalized_duplicate_excess_within_target": 0,
+    "exact_duplicate_excess_across_pool": 0,
+    "normalized_duplicate_excess_across_pool": 0,
+    "bins_with_six_distinct_masked_strings": 576,
+    "masked_sentences_with_exactly_one_five_block_mask": 3456,
+    "potential_full_paths_per_target": 46656,
+    "source_stimulus_ids_match_demo_inventory": true
+  },
+  "nonidentifiability_witness": {
+    "deterministic_choice": "For the lexicographically first target, choose the lexicographically first two stimulus keys in bin 1.",
+    "ordinal": 1,
+    "candidates_in_bin": 6,
+    "two_distinct_masked_string_lengths": [
+      80,
+      65
+    ],
+    "matches_to_actual_participant_attempts": 0
+  },
+  "pooled": {
+    "trials": 4680,
+    "solved": 3324,
+    "right_censored": 1356,
+    "observed_attempt_positions": 19943,
+    "mean_terminal_ordinal_all_trials": 4.261324786324787,
+    "mean_first_correct_ordinal_solved_trials": 3.552045728038508,
+    "ordinal_curve": [
+      {
+        "ordinal": 1,
+        "at_risk": 4680,
+        "first_correct": 387,
+        "right_censored": 0,
+        "hazard": 0.08269230769230769,
+        "survival_probability": 0.9173076923076923
+      },
+      {
+        "ordinal": 2,
+        "at_risk": 4293,
+        "first_correct": 591,
+        "right_censored": 0,
+        "hazard": 0.1376659678546471,
+        "survival_probability": 0.791025641025641
+      },
+      {
+        "ordinal": 3,
+        "at_risk": 3702,
+        "first_correct": 673,
+        "right_censored": 0,
+        "hazard": 0.18179362506753105,
+        "survival_probability": 0.6472222222222223
+      },
+      {
+        "ordinal": 4,
+        "at_risk": 3029,
+        "first_correct": 632,
+        "right_censored": 0,
+        "hazard": 0.2086497193793331,
+        "survival_probability": 0.5121794871794872
+      },
+      {
+        "ordinal": 5,
+        "at_risk": 2397,
+        "first_correct": 555,
+        "right_censored": 0,
+        "hazard": 0.23153942428035043,
+        "survival_probability": 0.39358974358974363
+      },
+      {
+        "ordinal": 6,
+        "at_risk": 1842,
+        "first_correct": 486,
+        "right_censored": 1356,
+        "hazard": 0.26384364820846906,
+        "survival_probability": 0.28974358974358977
+      }
+    ]
+  },
+  "by_target_condition": {
+    "AoA": {
+      "trials": 1170,
+      "solved": 853,
+      "right_censored": 317,
+      "observed_attempt_positions": 5049,
+      "mean_terminal_ordinal_all_trials": 4.315384615384615,
+      "mean_first_correct_ordinal_solved_trials": 3.689331770222743,
+      "ordinal_curve": [
+        {
+          "ordinal": 1,
+          "at_risk": 1170,
+          "first_correct": 72,
+          "right_censored": 0,
+          "hazard": 0.06153846153846154,
+          "survival_probability": 0.9384615384615385
+        },
+        {
+          "ordinal": 2,
+          "at_risk": 1098,
+          "first_correct": 144,
+          "right_censored": 0,
+          "hazard": 0.13114754098360656,
+          "survival_probability": 0.8153846153846154
+        },
+        {
+          "ordinal": 3,
+          "at_risk": 954,
+          "first_correct": 186,
+          "right_censored": 0,
+          "hazard": 0.1949685534591195,
+          "survival_probability": 0.6564102564102564
+        },
+        {
+          "ordinal": 4,
+          "at_risk": 768,
+          "first_correct": 164,
+          "right_censored": 0,
+          "hazard": 0.21354166666666666,
+          "survival_probability": 0.5162393162393163
+        },
+        {
+          "ordinal": 5,
+          "at_risk": 604,
+          "first_correct": 149,
+          "right_censored": 0,
+          "hazard": 0.24668874172185432,
+          "survival_probability": 0.38888888888888895
+        },
+        {
+          "ordinal": 6,
+          "at_risk": 455,
+          "first_correct": 138,
+          "right_censored": 317,
+          "hazard": 0.3032967032967033,
+          "survival_probability": 0.270940170940171
+        }
+      ]
+    },
+    "Freq": {
+      "trials": 1170,
+      "solved": 965,
+      "right_censored": 205,
+      "observed_attempt_positions": 4264,
+      "mean_terminal_ordinal_all_trials": 3.6444444444444444,
+      "mean_first_correct_ordinal_solved_trials": 3.144041450777202,
+      "ordinal_curve": [
+        {
+          "ordinal": 1,
+          "at_risk": 1170,
+          "first_correct": 167,
+          "right_censored": 0,
+          "hazard": 0.14273504273504273,
+          "survival_probability": 0.8572649572649573
+        },
+        {
+          "ordinal": 2,
+          "at_risk": 1003,
+          "first_correct": 225,
+          "right_censored": 0,
+          "hazard": 0.22432701894317048,
+          "survival_probability": 0.6649572649572649
+        },
+        {
+          "ordinal": 3,
+          "at_risk": 778,
+          "first_correct": 194,
+          "right_censored": 0,
+          "hazard": 0.2493573264781491,
+          "survival_probability": 0.4991452991452991
+        },
+        {
+          "ordinal": 4,
+          "at_risk": 584,
+          "first_correct": 153,
+          "right_censored": 0,
+          "hazard": 0.261986301369863,
+          "survival_probability": 0.36837606837606834
+        },
+        {
+          "ordinal": 5,
+          "at_risk": 431,
+          "first_correct": 133,
+          "right_censored": 0,
+          "hazard": 0.308584686774942,
+          "survival_probability": 0.2547008547008547
+        },
+        {
+          "ordinal": 6,
+          "at_risk": 298,
+          "first_correct": 93,
+          "right_censored": 205,
+          "hazard": 0.31208053691275167,
+          "survival_probability": 0.1752136752136752
+        }
+      ]
+    },
+    "Instrength": {
+      "trials": 1170,
+      "solved": 938,
+      "right_censored": 232,
+      "observed_attempt_positions": 4716,
+      "mean_terminal_ordinal_all_trials": 4.030769230769231,
+      "mean_first_correct_ordinal_solved_trials": 3.5437100213219614,
+      "ordinal_curve": [
+        {
+          "ordinal": 1,
+          "at_risk": 1170,
+          "first_correct": 115,
+          "right_censored": 0,
+          "hazard": 0.09829059829059829,
+          "survival_probability": 0.9017094017094017
+        },
+        {
+          "ordinal": 2,
+          "at_risk": 1055,
+          "first_correct": 147,
+          "right_censored": 0,
+          "hazard": 0.13933649289099526,
+          "survival_probability": 0.7760683760683761
+        },
+        {
+          "ordinal": 3,
+          "at_risk": 908,
+          "first_correct": 194,
+          "right_censored": 0,
+          "hazard": 0.21365638766519823,
+          "survival_probability": 0.6102564102564103
+        },
+        {
+          "ordinal": 4,
+          "at_risk": 714,
+          "first_correct": 199,
+          "right_censored": 0,
+          "hazard": 0.27871148459383754,
+          "survival_probability": 0.4401709401709402
+        },
+        {
+          "ordinal": 5,
+          "at_risk": 515,
+          "first_correct": 161,
+          "right_censored": 0,
+          "hazard": 0.312621359223301,
+          "survival_probability": 0.3025641025641026
+        },
+        {
+          "ordinal": 6,
+          "at_risk": 354,
+          "first_correct": 122,
+          "right_censored": 232,
+          "hazard": 0.3446327683615819,
+          "survival_probability": 0.1982905982905983
+        }
+      ]
+    },
+    "NonCore": {
+      "trials": 1170,
+      "solved": 568,
+      "right_censored": 602,
+      "observed_attempt_positions": 5914,
+      "mean_terminal_ordinal_all_trials": 5.0547008547008545,
+      "mean_first_correct_ordinal_solved_trials": 4.052816901408451,
+      "ordinal_curve": [
+        {
+          "ordinal": 1,
+          "at_risk": 1170,
+          "first_correct": 33,
+          "right_censored": 0,
+          "hazard": 0.028205128205128206,
+          "survival_probability": 0.9717948717948718
+        },
+        {
+          "ordinal": 2,
+          "at_risk": 1137,
+          "first_correct": 75,
+          "right_censored": 0,
+          "hazard": 0.06596306068601583,
+          "survival_probability": 0.9076923076923077
+        },
+        {
+          "ordinal": 3,
+          "at_risk": 1062,
+          "first_correct": 99,
+          "right_censored": 0,
+          "hazard": 0.09322033898305085,
+          "survival_probability": 0.8230769230769232
+        },
+        {
+          "ordinal": 4,
+          "at_risk": 963,
+          "first_correct": 116,
+          "right_censored": 0,
+          "hazard": 0.12045690550363447,
+          "survival_probability": 0.723931623931624
+        },
+        {
+          "ordinal": 5,
+          "at_risk": 847,
+          "first_correct": 112,
+          "right_censored": 0,
+          "hazard": 0.1322314049586777,
+          "survival_probability": 0.6282051282051283
+        },
+        {
+          "ordinal": 6,
+          "at_risk": 735,
+          "first_correct": 133,
+          "right_censored": 602,
+          "hazard": 0.18095238095238095,
+          "survival_probability": 0.5145299145299146
+        }
+      ]
+    }
+  }
+}

@@ -1,0 +1,139 @@
+{
+  "forecast_sha256": "db7d1f179cc5324bcee2049632cf71016201aa57c8405a977c3146fc18434abe",
+  "grade_counts_by_phase": {
+    "test": [
+      224678,
+      253,
+      836,
+      1166
+    ],
+    "train": [
+      898821,
+      491,
+      3386,
+      3572
+    ]
+  },
+  "max_error": 1.587618925213974e-14,
+  "metrics_sha256": "21b9eed7d8071cd02ac3bf87e9cf8b0f6a1f9f749ff2d4631dff263c20bcb4fa",
+  "mode": "independent stdlib lexical-severity scoring, threshold-grouped AP and exact vote counts",
+  "strata": {
+    "all": {
+      "documents": 246,
+      "families": 237,
+      "methods": {
+        "constant": {
+          "coverage_bias": -0.0017174487956391682,
+          "joint_nll": 0.06559326629056335,
+          "mark_positive_severity_nll": 0.9774236519540122,
+          "severity_bias": 0.008734516664521828,
+          "within_document_ap": 0.1414883783053621,
+          "zero_document_mark_rate": 0.008219404813135236
+        },
+        "qwen": {
+          "coverage_bias": -0.001735942396914844,
+          "joint_nll": 0.06399247939662264,
+          "mark_positive_severity_nll": 0.9906360287605172,
+          "severity_bias": 0.017433241148942905,
+          "within_document_ap": 0.32558789420017653,
+          "zero_document_mark_rate": 0.008138235284062639
+        },
+        "surface": {
+          "coverage_bias": -0.0017374108720933329,
+          "joint_nll": 0.06405518977656327,
+          "mark_positive_severity_nll": 0.9945833245754716,
+          "severity_bias": 0.00959965077466385,
+          "within_document_ap": 0.32566248225581135,
+          "zero_document_mark_rate": 0.00814451446174744
+        }
+      },
+      "units": {
+        "coverage_bias": 226933,
+        "joint_nll": 226933,
+        "mark_positive_severity_nll": 2255,
+        "severity_bias": 2255,
+        "within_document_ap": 109,
+        "zero_document_mark_rate": 124757
+      },
+      "with_any_mark": 109
+    },
+    "new_groups": {
+      "documents": 134,
+      "families": 134,
+      "methods": {
+        "constant": {
+          "coverage_bias": 0.008145443355272721,
+          "joint_nll": 0.008662226217220912,
+          "mark_positive_severity_nll": 0.7349541321798934,
+          "severity_bias": -0.5863874345549904,
+          "within_document_ap": 0.05163398692810457,
+          "zero_document_mark_rate": 0.008219404813135236
+        },
+        "qwen": {
+          "coverage_bias": 0.008053582798619643,
+          "joint_nll": 0.008602661014486734,
+          "mark_positive_severity_nll": 0.6055262114817457,
+          "severity_bias": -0.4978613869255558,
+          "within_document_ap": 0.0381086059793358,
+          "zero_document_mark_rate": 0.008130079826060479
+        },
+        "surface": {
+          "coverage_bias": 0.008062061993262168,
+          "joint_nll": 0.008619944878217408,
+          "mark_positive_severity_nll": 0.7224652010075249,
+          "severity_bias": -0.5630495365029612,
+          "within_document_ap": 0.03805758557117253,
+          "zero_document_mark_rate": 0.00813830070775347
+        }
+      },
+      "units": {
+        "coverage_bias": 121685,
+        "joint_nll": 121685,
+        "mark_positive_severity_nll": 9,
+        "severity_bias": 9,
+        "within_document_ap": 2,
+        "zero_document_mark_rate": 120117
+      },
+      "with_any_mark": 2
+    },
+    "previous_pointer_groups": {
+      "documents": 112,
+      "families": 103,
+      "methods": {
+        "constant": {
+          "coverage_bias": -0.013120668157372528,
+          "joint_nll": 0.13141545399317694,
+          "mark_positive_severity_nll": 0.9783952573315577,
+          "severity_bias": 0.011119243984635627,
+          "within_document_ap": 0.14316789963951645,
+          "zero_document_mark_rate": 0.008219404813135232
+        },
+        "qwen": {
+          "coverage_bias": -0.013054336793184736,
+          "joint_nll": 0.12803274666849682,
+          "mark_positive_severity_nll": 0.9921792114655523,
+          "severity_bias": 0.019498090504539746,
+          "within_document_ap": 0.33096133883981843,
+          "zero_document_mark_rate": 0.008349357945451746
+        },
+        "surface": {
+          "coverage_bias": -0.013067306505461984,
+          "joint_nll": 0.12814797800489267,
+          "mark_positive_severity_nll": 0.9956737355781929,
+          "severity_bias": 0.01189432694808266,
+          "within_document_ap": 0.3310382747172064,
+          "zero_document_mark_rate": 0.008305371679095215
+        }
+      },
+      "units": {
+        "coverage_bias": 105248,
+        "joint_nll": 105248,
+        "mark_positive_severity_nll": 2246,
+        "severity_bias": 2246,
+        "within_document_ap": 107,
+        "zero_document_mark_rate": 4640
+      },
+      "with_any_mark": 107
+    }
+  }
+}

@@ -1,0 +1,67 @@
+{
+  "cwi": {
+    "rows_train": 3850,
+    "rows_evaluated": 3136,
+    "train_char_boundary_exclusions": 0,
+    "evaluation_char_boundary_exclusions": 0,
+    "methods": {
+      "length_frequency": {
+        "objective": 0.2750625277080802,
+        "gradient_max": 7.655828553946014e-07
+      },
+      "qwen_pooled": {
+        "objective": 0.2684987284689467,
+        "gradient_max": 5.359760989358036e-07
+      },
+      "background_only": {
+        "objective": 0.30094310470718144,
+        "gradient_max": 5.872774656428279e-08
+      },
+      "qwen_group_offset": {
+        "objective": 0.2682784125902912,
+        "gradient_max": 7.498174070966288e-07
+      },
+      "qwen_group_interaction": {
+        "objective": 0.26751229133195953,
+        "gradient_max": 7.591977585233401e-07
+      }
+    }
+  },
+  "readback": {
+    "fit_rows": 9586,
+    "fit_events": 9586,
+    "fit_backwards": 503,
+    "test_landmarks": 74,
+    "excluded_stimuli": [],
+    "methods": {
+      "event_prior": {
+        "objective": 0.20573158126341473,
+        "gradient_max": 9.017092909369487e-09
+      },
+      "event_position": {
+        "objective": 0.18823202861378788,
+        "gradient_max": 4.507520760350589e-07
+      },
+      "event_qwen": {
+        "objective": 0.1759002367672814,
+        "gradient_max": 4.3652863773702665e-07
+      },
+      "source_distance": {
+        "objective": 1.3733615099948198,
+        "gradient_max": 1.212913809309473e-06
+      },
+      "source_qwen": {
+        "objective": 1.3218847609407138,
+        "gradient_max": 9.918092145552726e-07
+      }
+    }
+  },
+  "gpu": "NVIDIA L4",
+  "fit_wall_s": 3.669084503000022,
+  "penalty": 0.002,
+  "max_lbfgs_iterations": 110,
+  "forecast_sha256": {
+    "cwi-predictions.jsonl": "923d1a392c5768b3aed012292a6c72c817506e557c792c98d41207be30d31874",
+    "readback-predictions.jsonl": "930797f134b1fe11f83f1cc5cc7576df10bf72c7a29488aed6a356d96e7533d1"
+  }
+}

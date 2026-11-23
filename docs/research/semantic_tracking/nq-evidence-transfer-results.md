@@ -1,0 +1,26 @@
+# Results from the independent hold-out interval of Natural Questions
+
+**Probabilistic calibration of ExpMRC failed to transfer to this batch of Natural Questions texts.** With fixed parameters, the per-token readout interval NLL was 27.210 nats, while the calibrated question stem readout was 13.797 nats. The difference was +13.413 nats, with a 95% paired article group interval of [8.071, 19.538]. Smaller values indicate a higher probability that the model assigns to the human-annotated result. Among the four groups, the uncalibrated position baseline yielded the lowest NLL for this material. [Pre-specified scheme](nq-evidence-transfer.md) · [Full results and resources](../../../research/results/nq-evidence-l4/scores.json)
+
+| Readout | Original interval NLL | Calibrated interval NLL | Original cumulative Brier | Calibrated cumulative Brier |
+| --- | ---: | ---: | ---: | ---: |
+| Position | 4.507 | 26.504 | 0.298 | 0.497 |
+| Stem | 16.190 | 13.797 | 0.426 | 0.433 |
+| Paragraph interaction | 8.399 | 26.983 | 0.358 | 0.504 |
+| per-token interaction | 7.776 | 27.210 | 0.352 | 0.503 |
+
+## Why does the error in the arrival rate increase?
+
+Each of the 34 questions has five reference documents. among these, 79 documents lack sufficient segments to answer the question, while 91 contain alignable segments. The calibration of ExpMRC utilizes data with annotated evidence, yet on this question-answer set, it underestimates the remaining probability for the endpoint of unannotated observation windows. The per-token readout NLL for the 79 unannotated documents averages 11.72 nats before calibration and rises to 46.87 after calibration. The average NLL for non-empty segments also increases from 4.35 to 10.14. Unannotated segments may correspond to full-page searches yielding insufficient evidence, or to an inability to select a single appropriate block. The scoring metric evaluates given question stems and published human segments. however, the point at which readers spontaneously doubt or achieve resolution remains unobserved directly. [Recalculated by reference type](../../../research/results/nq-evidence-l4/reference-nll-breakdown.json) · [Original data annotation method](https://aclanthology.org/Q19-1026/)
+
+Among the 20 possible pairs sharing the same text and reading stop, 10 pairs had at least one question with fewer than two non-empty references, and 7 reference segments overlapped. Of the remaining 2 articles, 3 pairs achieved a per-token rank hit on 1 pair and a stem hit on 2 pairs. The confidence interval for the difference in matching between the two article families crossed zero. these pairs remain insufficient to distinguish ranking capability. Of the 91 locatable references, there were 46 paragraphs, 30 tables, 9 list items, and 6 lists. [Pair and source label denominator](../../../research/results/nq-evidence-l4/scores.json)
+
+## held-out and technical validation
+
+Retrieved 153 records from the 72 pre-fixed page versions. Upon grouping by original text, 16 articles and 34 items met the acceptance size and same-text conditions. 51 versions exceeded 16,000 characters. 4 had identical versions with visible body inconsistencies, and 1 contained source tokens with whitespace characters, with both groups exceeding 16,000 characters. The inference package includes only the body, stem, and sealed snapshot weights. Five manually annotated responses were retained on this machine until verification completion. [extract, license, and original annotation manifest](nq-evidence-intake.md) · [sealed snapshot held-out](../../../research/results/nq-evidence-l4/assay.json)
+
+L4 fully extracted 1,403 predetermined reading stops. all 12 causal prefix checks passed. The original transfer verifier halted when comparing the total counts of the two tokenizers. Directly reading the tokenizer file yielded 47,605 tokens, while Transformers loaded the same version configuration with Qwen2Tokenizer to obtain 47,662. The token sequences of six articles differed, but all prompts were consistent. L4 independently reconstructed two sets of reading stops. the Transformers path reproduced the remote token total and verified causal prefixes at each position, the full article, and the sealed snapshot output. The original transfer state was retained in the manifest. retrieved predictions were independently verified before scoring, without re-running on GPU. L4 has been released. [Independent Tokenization Verification](../../../research/results/nq-evidence-l4/runtime-verification.json) · [Release and Score Re-run](../../../research/results/nq-evidence-l4/run-verification.json)
+
+The packaging pipeline for the new experiment has been corrected. Prior to initiating L4, the two tokenizer sets were cross-checked using a fixed snapshot, comparing the token counts from the sealed snapshot reading stop construction, the actual model tokenizer's token count, and the expected stimulus file hash. Repackaging with the same corpus yielded consistent values across both groups and the current sealed snapshot results. [Verification Script](../../../research/semantic_tracking/nq_tokenizer_verification.py) · [Packaging and Validation](../../../research/gradio_app/cuda_verification_batch.py)
+
+[Original research record](../../../research/semantic_tracking/nq-evidence-transfer-results.md)

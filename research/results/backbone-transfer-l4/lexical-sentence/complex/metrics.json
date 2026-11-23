@@ -1,0 +1,103 @@
+{
+  "alternatives_minus_qwen": {
+    "gemma4": {
+      "ci95": [
+        0.0032257228709509623,
+        0.009701315296800048
+      ],
+      "estimate": 0.006519180886667821,
+      "groups": 1066
+    },
+    "lfm3": {
+      "ci95": [
+        0.002379183266504697,
+        0.007464234504805588
+      ],
+      "estimate": 0.004939320607499522,
+      "groups": 1066
+    }
+  },
+  "cohort": {
+    "by_model": {
+      "gemma4": {
+        "test": 1094,
+        "train": 8667,
+        "trial": 503
+      },
+      "lfm3": {
+        "test": 1093,
+        "train": 8666,
+        "trial": 503
+      },
+      "qwen": {
+        "test": 1094,
+        "train": 8667,
+        "trial": 503
+      }
+    },
+    "common": {
+      "test": 1093,
+      "train": 8666,
+      "trial": 503
+    },
+    "excluded_from_common": [
+      "complex-multi-train-3T5ZXGO9DEOYRKNPENLOGDE7P9WQZA",
+      "complex-single-test-3CVBMEMMXBG2UHIGC26BGFT7OTMH7C"
+    ],
+    "original": {
+      "test": 1094,
+      "train": 8667,
+      "trial": 503
+    }
+  },
+  "mae": {
+    "gemma4": 0.08716112981979819,
+    "lfm3": 0.08558126954062988,
+    "qwen": 0.08064194893313036,
+    "surface": 0.10959396518319174
+  },
+  "models_minus_surface": {
+    "gemma4": {
+      "ci95": [
+        -0.02696830065425536,
+        -0.018039771369868996
+      ],
+      "estimate": -0.022432835363393577,
+      "groups": 1066
+    },
+    "lfm3": {
+      "ci95": [
+        -0.028414017891359177,
+        -0.019665406479782297
+      ],
+      "estimate": -0.02401269564256188,
+      "groups": 1066
+    },
+    "qwen": {
+      "ci95": [
+        -0.03345161673762758,
+        -0.02439787853783583
+      ],
+      "estimate": -0.028952016250061396,
+      "groups": 1066
+    }
+  },
+  "same_raw_target_different_sentences": {
+    "gemma4": {
+      "concordance": 0.5176190476190476,
+      "pairs": 1050
+    },
+    "lfm3": {
+      "concordance": 0.5009523809523809,
+      "pairs": 1050
+    },
+    "qwen": {
+      "concordance": 0.5085714285714286,
+      "pairs": 1050
+    },
+    "surface": {
+      "concordance": 0.51,
+      "pairs": 1050
+    }
+  }
+}

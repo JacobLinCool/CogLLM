@@ -1,0 +1,145 @@
+{
+  "arms": [
+    "surface",
+    "ner",
+    "historic",
+    "direct",
+    "shared"
+  ],
+  "candidate": "lfm3",
+  "checkpoint_sha256": "1e37db7f0ce9d4ab2f5a3248ce3790c043db0f038cbc6730754ac5f63f52ce41",
+  "cutoffs": {
+    "direct": [
+      0.04120885716151981,
+      0.1609456211466561,
+      0.022997854517105364
+    ],
+    "historic": [
+      0.048354228522623895,
+      0.1565797624264876,
+      0.027274899936381835
+    ],
+    "ner": [
+      0.04419427991563845,
+      0.11714346569144861,
+      0.0188119600995963
+    ],
+    "shared": [
+      0.04201699340697677,
+      0.1549356440274926,
+      0.01933245408929583
+    ],
+    "surface": [
+      0.048803036205548024,
+      0.10654663795839718,
+      0.015411285056199672
+    ]
+  },
+  "elapsed_seconds": 139.509420756,
+  "extraction_seconds": 119.39126500200001,
+  "feature_metadata": {
+    "forwards": 193,
+    "global_layers": 6,
+    "historic_width": 96,
+    "native_width": 2048,
+    "ner_width": 24,
+    "official_logits": {
+      "absolute_error": 0.0,
+      "final_softcapping": null,
+      "official_forward": "Lfm3ForCausalLM",
+      "source_sha256": "e8cd5254ea99ce6bd731b57b10908c2e8b5010ce8315341f895a38484885eeab",
+      "technical_forwards": 2,
+      "vocabulary": 128000
+    },
+    "revision": "7bca5038823c0d0f14efe06439109354a10e014c",
+    "words": 108040
+  },
+  "input_sha256": "5ba394da96bd18b4859aed77d5c0b154980f18bd0eed5908855ff12ef0ce4467",
+  "ner_sha256": "9f906e30f9f998385c4fb4a76c67be95c2c98e7822a7f191a4920362400d64be",
+  "optimizers": {
+    "direct": {
+      "evaluations": 52,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 4.415219889702818e-09,
+      "objective": 0.11095371510492309
+    },
+    "historic": {
+      "evaluations": 126,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 1.048964812832621e-08,
+      "objective": 0.11792446278810077
+    },
+    "ner": {
+      "evaluations": 47,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 7.2330444479988196e-09,
+      "objective": 0.1250075677249415
+    },
+    "shared": {
+      "evaluations": 57,
+      "initial_objective": 0.14052745409145012,
+      "max_abs_gradient": 9.638841893457609e-09,
+      "objective": 0.11495628290999897
+    },
+    "surface": {
+      "evaluations": 46,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 3.0620436849962185e-08,
+      "objective": 0.12828455495637317
+    }
+  },
+  "predictions_sha256": "810350245029a41f48925a3a30a579ec6a1ca2a4c333d31ac02962cd28a6842a",
+  "protocol_sha256": "7701cbe2cea263e635aeeab518314e108dd5be2560e256137bcff79e0ca1dcb4",
+  "tasks": [
+    "CharE",
+    "RefE",
+    "CorefE"
+  ],
+  "training_titles": [
+    "book-0",
+    "book-1",
+    "book-10",
+    "book-105",
+    "book-108",
+    "book-11",
+    "book-12",
+    "book-124",
+    "book-13",
+    "book-137",
+    "book-14",
+    "book-15",
+    "book-16",
+    "book-161",
+    "book-167",
+    "book-168",
+    "book-183",
+    "book-19",
+    "book-2",
+    "book-20",
+    "book-21",
+    "book-216",
+    "book-22",
+    "book-222",
+    "book-224",
+    "book-233",
+    "book-235",
+    "book-24",
+    "book-256",
+    "book-32",
+    "book-4",
+    "book-40",
+    "book-44",
+    "book-5",
+    "book-6",
+    "book-7",
+    "book-76",
+    "book-8",
+    "book-80",
+    "book-83",
+    "book-86",
+    "book-9",
+    "book-91",
+    "book-96"
+  ],
+  "weights_sha256": "dc74c36e74c14fe357f043a906f2a01b5dd55c01711fc8360a5ee4f448b11c80"
+}

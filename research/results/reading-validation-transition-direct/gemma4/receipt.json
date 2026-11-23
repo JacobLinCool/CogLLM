@@ -1,0 +1,145 @@
+{
+  "arms": [
+    "surface",
+    "ner",
+    "historic",
+    "direct",
+    "shared"
+  ],
+  "candidate": "gemma4",
+  "checkpoint_sha256": "198741728ec5b9f222c0dccf8f722aac4848424f85aeac54d3ec49d57b372933",
+  "cutoffs": {
+    "direct": [
+      0.048679253940456246,
+      0.14338798789960328,
+      0.018660591228151925
+    ],
+    "historic": [
+      0.052554596958978725,
+      0.14947705849087065,
+      0.02383611523261278
+    ],
+    "ner": [
+      0.046163836076029086,
+      0.11615955820822063,
+      0.018764506556006998
+    ],
+    "shared": [
+      0.04972446889616097,
+      0.13924097408378258,
+      0.01655544951235867
+    ],
+    "surface": [
+      0.04994708431017927,
+      0.10468948202492681,
+      0.015465486907482999
+    ]
+  },
+  "elapsed_seconds": 192.577822293,
+  "extraction_seconds": 176.48042128499998,
+  "feature_metadata": {
+    "forwards": 193,
+    "global_layers": 7,
+    "historic_width": 128,
+    "native_width": 1536,
+    "ner_width": 24,
+    "official_logits": {
+      "absolute_error": 0.0,
+      "final_softcapping": 30.0,
+      "official_forward": "Gemma4ForCausalLM",
+      "source_sha256": "299f43aa238020eee25c1c1acf9ffcf717c135320fc8e7b0dc7e9716688385b7",
+      "technical_forwards": 2,
+      "vocabulary": 262144
+    },
+    "revision": "433813a669639fd7eaa83155828e9000ed357d53",
+    "words": 108040
+  },
+  "input_sha256": "5ba394da96bd18b4859aed77d5c0b154980f18bd0eed5908855ff12ef0ce4467",
+  "ner_sha256": "9f906e30f9f998385c4fb4a76c67be95c2c98e7822a7f191a4920362400d64be",
+  "optimizers": {
+    "direct": {
+      "evaluations": 58,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 3.941411338796719e-09,
+      "objective": 0.11035190841530286
+    },
+    "historic": {
+      "evaluations": 91,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 1.136115716646657e-08,
+      "objective": 0.11927319537193606
+    },
+    "ner": {
+      "evaluations": 48,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 1.025474879921232e-08,
+      "objective": 0.1253950102508679
+    },
+    "shared": {
+      "evaluations": 56,
+      "initial_objective": 0.14052745409145012,
+      "max_abs_gradient": 7.966077964003375e-09,
+      "objective": 0.1152363301764278
+    },
+    "surface": {
+      "evaluations": 41,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 1.0750677508061037e-08,
+      "objective": 0.1287879570369316
+    }
+  },
+  "predictions_sha256": "c9d67678383ddbf8c8e47d1c6a3e0c951f48adb8e32c1f53c52a9fcaf127a5df",
+  "protocol_sha256": "7701cbe2cea263e635aeeab518314e108dd5be2560e256137bcff79e0ca1dcb4",
+  "tasks": [
+    "CharE",
+    "RefE",
+    "CorefE"
+  ],
+  "training_titles": [
+    "book-0",
+    "book-1",
+    "book-10",
+    "book-105",
+    "book-108",
+    "book-11",
+    "book-12",
+    "book-124",
+    "book-13",
+    "book-137",
+    "book-14",
+    "book-15",
+    "book-16",
+    "book-161",
+    "book-167",
+    "book-168",
+    "book-183",
+    "book-19",
+    "book-2",
+    "book-20",
+    "book-21",
+    "book-216",
+    "book-22",
+    "book-222",
+    "book-224",
+    "book-233",
+    "book-235",
+    "book-24",
+    "book-256",
+    "book-32",
+    "book-4",
+    "book-40",
+    "book-44",
+    "book-5",
+    "book-6",
+    "book-7",
+    "book-76",
+    "book-8",
+    "book-80",
+    "book-83",
+    "book-86",
+    "book-9",
+    "book-91",
+    "book-96"
+  ],
+  "weights_sha256": "db0bb6e1ec914c4f2cdddebc47c26e127a4e6370c04bcf5c19fc3faac70b4df7"
+}

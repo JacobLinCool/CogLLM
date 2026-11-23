@@ -1,0 +1,345 @@
+{
+  "status": "prepared_before_kerwer_reader_background_fitting_or_scoring",
+  "source": {
+    "holdout_manifest_sha256": "96df4807f6f63cac5d7ae0d49bc0a3353489ccd21e474f8de727eb81577365ee",
+    "holdout_files_sha256": {
+      "model_input/stimuli.jsonl": "fd43d9d5768ec1dfb66b9025d9ad777639346e458161fd2f0a918e3487264b58",
+      "scoring/design.jsonl": "05357eb388007ca1d831385029f5e9e905f52c46f16a185451ed58462a72c72c",
+      "scoring/public-study-ratings.jsonl": "78503ca22bfa1fb8b06dab91919864eb667202629effdf164ff609539648f5a2",
+      "scoring/prereading-profiles.jsonl": "0a7d5a2fb911272fa0d9d74cefdeae684b2a91218c02cb0f6141c50ac240bebd"
+    },
+    "original_transfer_protocol_sha256": "2fe2448c31ef0273bda16582b8b50eb727a1d4a47c04c59424160e800d035bd7",
+    "v8_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "v8_release_receipt_sha256": "615264254e06e6bfe0408e8abfbc137c73cadd3f46f7a3c1122cd5982d7ccdf1",
+    "forecasts_sha256": "d5d4866de1283c704c9b1745d9f7b87de347c0558191ab1566e27176c02c5a9e",
+    "forecast_seal_sha256": "7bbb0d2bdb952f6a30fb560167447073961fbdd8d1e00c53f2834b1382cf9699",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0"
+  },
+  "prior_use": "same readers and DOI families used for published and project rewrite effects",
+  "protocol_sha256": "d71fc079e33bced83d43bdacac710ca57d419389c0484d2bab28961e30919e02",
+  "preparation_code_sha256": "b55355497a2dcbb76cced89cdf751bd60c6201d66a3b7d540c41af11e10741ad",
+  "counts": {
+    "readers": 166,
+    "doi_families": 12,
+    "variants": 36,
+    "served_body_sentences": 458,
+    "trials": 1947
+  },
+  "fold_design": {
+    "reader_folds": 5,
+    "doi_folds": 4,
+    "reader_namespace": "kerwer-background-audit-reader",
+    "doi_namespace": "kerwer-background-audit-doi",
+    "fit": "both folds differ",
+    "test": "both folds match",
+    "cells": [
+      {
+        "reader_fold": 0,
+        "doi_fold": 0,
+        "fit_trials": 1153,
+        "test_trials": 102,
+        "fit_readers": 132,
+        "test_readers": 34,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 0,
+        "doi_fold": 1,
+        "fit_trials": 1153,
+        "test_trials": 102,
+        "fit_readers": 132,
+        "test_readers": 34,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 0,
+        "doi_fold": 2,
+        "fit_trials": 1152,
+        "test_trials": 102,
+        "fit_readers": 132,
+        "test_readers": 34,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 0,
+        "doi_fold": 3,
+        "fit_trials": 1186,
+        "test_trials": 93,
+        "fit_readers": 132,
+        "test_readers": 34,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 1,
+        "doi_fold": 0,
+        "fit_trials": 1161,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 1,
+        "doi_fold": 1,
+        "fit_trials": 1161,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 1,
+        "doi_fold": 2,
+        "fit_trials": 1160,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 1,
+        "doi_fold": 3,
+        "fit_trials": 1195,
+        "test_trials": 91,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 2,
+        "doi_fold": 0,
+        "fit_trials": 1165,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 2,
+        "doi_fold": 1,
+        "fit_trials": 1165,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 2,
+        "doi_fold": 2,
+        "fit_trials": 1164,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 2,
+        "doi_fold": 3,
+        "fit_trials": 1195,
+        "test_trials": 87,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 3,
+        "doi_fold": 0,
+        "fit_trials": 1160,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 3,
+        "doi_fold": 1,
+        "fit_trials": 1160,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 3,
+        "doi_fold": 2,
+        "fit_trials": 1159,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 3,
+        "doi_fold": 3,
+        "fit_trials": 1195,
+        "test_trials": 92,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 4,
+        "doi_fold": 0,
+        "fit_trials": 1161,
+        "test_trials": 98,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 4,
+        "doi_fold": 1,
+        "fit_trials": 1161,
+        "test_trials": 98,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 4,
+        "doi_fold": 2,
+        "fit_trials": 1161,
+        "test_trials": 99,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      },
+      {
+        "reader_fold": 4,
+        "doi_fold": 3,
+        "fit_trials": 1197,
+        "test_trials": 92,
+        "fit_readers": 133,
+        "test_readers": 33,
+        "fit_doi_families": 9,
+        "test_doi_families": 3
+      }
+    ]
+  },
+  "fit_and_score": {
+    "grades": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8
+    ],
+    "primary": "normalized_ranked_probability_score",
+    "models": {
+      "L": [
+        "log_body_characters",
+        "log_body_words",
+        "arm"
+      ],
+      "LP": [
+        "L",
+        "epa_z"
+      ],
+      "T": [
+        "L",
+        "served_understanding_z"
+      ],
+      "TP": [
+        "T",
+        "epa_z"
+      ],
+      "TPI": [
+        "TP",
+        "epa_z * served_understanding_z"
+      ]
+    },
+    "solver": {
+      "family": "proportional_odds_logit",
+      "optimizer": "L-BFGS-B",
+      "maxiter": 400,
+      "ftol": 1e-12,
+      "gtol": 1e-07,
+      "mean_trial_nll": true,
+      "squared_slope_penalty": 0.01,
+      "penalize_thresholds": false
+    },
+    "blank_background": {
+      "models": [
+        "TP",
+        "TPI"
+      ],
+      "marginal_over": "unique fit readers with equal weights",
+      "reference": "T",
+      "rps_increase_ci95_upper_below": 0.01,
+      "calibration_increase_ci95_upper_below": 0.01
+    },
+    "calibration": {
+      "measure": "cumulative_probability_ece",
+      "cuts": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7
+      ],
+      "bin_edges": [
+        0,
+        0.2,
+        0.4,
+        0.6,
+        0.8,
+        1
+      ],
+      "increase_ci95_upper_below": 0.01
+    },
+    "gains": {
+      "reader": [
+        "T",
+        "TP"
+      ],
+      "joint_vs_length_arm_and_reader": [
+        "LP",
+        "TP"
+      ],
+      "interaction": [
+        "TP",
+        "TPI"
+      ],
+      "rps_reduction_ci95_lower_above": 0
+    },
+    "interval": {
+      "reader_doi_paired_bootstrap_draws": 10000,
+      "seed": 20261121,
+      "quantiles": [
+        0.025,
+        0.975
+      ],
+      "oof_refit": false
+    }
+  },
+  "outcomes": "Original frozen outcomes remain local, referenced by checksum only",
+  "prepared_sha256": {
+    "local/articles.jsonl": "7016be4d73be8eaed6299d7120729581a282a3ed9fa1392c2b27e5b6fbe39c42",
+    "local/readers.jsonl": "f8faa3cf3360a5b603c52334159c68ee8c9dd52480b473d6900f18d9b0e15676",
+    "local/trial-keys.jsonl": "7155cb05058b3766cad2d8257aa22701473b8f93f84bdeb2b06ee25d967dfb1a"
+  }
+}

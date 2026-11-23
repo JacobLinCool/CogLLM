@@ -1,0 +1,277 @@
+{
+  "n_sentences": 296,
+  "n_domains": 20,
+  "bootstrap_domain_draws": 10000,
+  "forecast_seal_sha256": "2fca743c57ad04c55676ff51e77119b3c5accdee47d45b8815db90257813ad91",
+  "mean_human_level": 3.233108108108108,
+  "no_target_study_training_spearman": {
+    "qwen": {
+      "estimate": 0.8075961373321396,
+      "interval95": [
+        0.7157752565006379,
+        0.8632998305943637
+      ]
+    },
+    "surface": {
+      "estimate": 0.7214815747822032,
+      "interval95": [
+        0.6257660175519728,
+        0.7901137201498748
+      ]
+    },
+    "qwen_minus_surface": {
+      "estimate": 0.08611456254993644,
+      "interval95": [
+        0.036874483715432026,
+        0.13929585077155385
+      ]
+    }
+  },
+  "test_spearman": {
+    "zero.surface": 0.7214815747822032,
+    "zero.qwen": 0.8075961373321396,
+    "independent.surface": 0.8082115993158344,
+    "pooled.surface": 0.7697720727459827,
+    "adaptive.surface": 0.8082115993158344,
+    "independent.qwen": 0.8638339462617995,
+    "pooled.qwen": 0.854028794449442,
+    "adaptive.qwen": 0.8638339462617995,
+    "constant": null
+  },
+  "test_ordinal": {
+    "independent.surface": {
+      "rps": 0.06976273272688849,
+      "mae_levels": 0.5333738918926519,
+      "mean_predicted_level": 3.2184513490116053,
+      "modal_accuracy": 0.5608108108108109
+    },
+    "pooled.surface": {
+      "rps": 0.08088039814471366,
+      "mae_levels": 0.6162285945166803,
+      "mean_predicted_level": 3.2369875918392172,
+      "modal_accuracy": 0.48986486486486486
+    },
+    "adaptive.surface": {
+      "rps": 0.06976273272688849,
+      "mae_levels": 0.5333738918926519,
+      "mean_predicted_level": 3.2184513490116053,
+      "modal_accuracy": 0.5608108108108109
+    },
+    "independent.qwen": {
+      "rps": 0.05966217364129043,
+      "mae_levels": 0.4707361290243019,
+      "mean_predicted_level": 3.237634322113915,
+      "modal_accuracy": 0.597972972972973
+    },
+    "pooled.qwen": {
+      "rps": 0.06897986334215406,
+      "mae_levels": 0.5280953524126749,
+      "mean_predicted_level": 3.2710343046092856,
+      "modal_accuracy": 0.527027027027027
+    },
+    "adaptive.qwen": {
+      "rps": 0.05966217364129043,
+      "mae_levels": 0.4707361290243019,
+      "mean_predicted_level": 3.237634322113915,
+      "modal_accuracy": 0.597972972972973
+    },
+    "constant": {
+      "rps": 0.13241348337525372,
+      "mae_levels": 1.001274802902811,
+      "mean_predicted_level": 3.2930419268509996,
+      "modal_accuracy": 0.3108108108108108
+    }
+  },
+  "paired_test_rps_differences": {
+    "adaptive.qwen_minus_independent.surface": {
+      "estimate": -0.010100559085598076,
+      "interval95": [
+        -0.015723729687020512,
+        -0.005078060768325877
+      ]
+    },
+    "adaptive.qwen_minus_independent.qwen": {
+      "estimate": 0.0,
+      "interval95": [
+        0.0,
+        0.0
+      ]
+    },
+    "adaptive.qwen_minus_pooled.qwen": {
+      "estimate": -0.009317689700863635,
+      "interval95": [
+        -0.013039003231430282,
+        -0.005137341322859819
+      ]
+    },
+    "adaptive.qwen_minus_constant": {
+      "estimate": -0.07275130973396329,
+      "interval95": [
+        -0.08796759512023403,
+        -0.05977120745927305
+      ]
+    }
+  },
+  "test_domains": {
+    "Books": {
+      "n": 20,
+      "adaptive_rps": 0.058869706270898395,
+      "independent_rps": 0.058869706270898395,
+      "surface_rps": 0.09407458805175267,
+      "human_mean": 4.0,
+      "adaptive_mean": 4.009199750943939
+    },
+    "Captions": {
+      "n": 21,
+      "adaptive_rps": 0.06243779284450811,
+      "independent_rps": 0.06243779284450811,
+      "surface_rps": 0.058051985635588235,
+      "human_mean": 2.0,
+      "adaptive_mean": 1.9962181355601372
+    },
+    "Community Websites": {
+      "n": 15,
+      "adaptive_rps": 0.06259847539102018,
+      "independent_rps": 0.06259847539102018,
+      "surface_rps": 0.06658911474566281,
+      "human_mean": 2.8,
+      "adaptive_mean": 2.7376354594998142
+    },
+    "Dialogue": {
+      "n": 15,
+      "adaptive_rps": 0.05378707463559965,
+      "independent_rps": 0.05378707463559965,
+      "surface_rps": 0.0714496069148487,
+      "human_mean": 1.8,
+      "adaptive_mean": 1.7976399901563371
+    },
+    "Educational Resources": {
+      "n": 4,
+      "adaptive_rps": 0.07770377223656598,
+      "independent_rps": 0.07770377223656598,
+      "surface_rps": 0.08992339315040009,
+      "human_mean": 3.25,
+      "adaptive_mean": 3.7138348773201244
+    },
+    "Entertainment": {
+      "n": 5,
+      "adaptive_rps": 0.04995485016031324,
+      "independent_rps": 0.04995485016031324,
+      "surface_rps": 0.05801460187957421,
+      "human_mean": 2.6,
+      "adaptive_mean": 2.4098572385140207
+    },
+    "Finance": {
+      "n": 5,
+      "adaptive_rps": 0.10239400007833932,
+      "independent_rps": 0.10239400007833932,
+      "surface_rps": 0.1687374943414906,
+      "human_mean": 4.4,
+      "adaptive_mean": 3.7229558630459416
+    },
+    "Guides": {
+      "n": 20,
+      "adaptive_rps": 0.05275926073475318,
+      "independent_rps": 0.05275926073475318,
+      "surface_rps": 0.05818351062262974,
+      "human_mean": 2.95,
+      "adaptive_mean": 2.979144433261058
+    },
+    "Legal": {
+      "n": 11,
+      "adaptive_rps": 0.056012548150643736,
+      "independent_rps": 0.056012548150643736,
+      "surface_rps": 0.06398187538728924,
+      "human_mean": 3.8181818181818183,
+      "adaptive_mean": 3.968249410505928
+    },
+    "Letters": {
+      "n": 3,
+      "adaptive_rps": 0.042095326684115635,
+      "independent_rps": 0.042095326684115635,
+      "surface_rps": 0.029397999793387284,
+      "human_mean": 3.3333333333333335,
+      "adaptive_mean": 3.2305389223891177
+    },
+    "News Articles": {
+      "n": 25,
+      "adaptive_rps": 0.07035282733815142,
+      "independent_rps": 0.07035282733815142,
+      "surface_rps": 0.08499010946661972,
+      "human_mean": 3.32,
+      "adaptive_mean": 3.122899853509649
+    },
+    "Poetry": {
+      "n": 5,
+      "adaptive_rps": 0.033921643738435474,
+      "independent_rps": 0.033921643738435474,
+      "surface_rps": 0.06816698853499384,
+      "human_mean": 2.2,
+      "adaptive_mean": 2.1259484502070554
+    },
+    "Policies": {
+      "n": 14,
+      "adaptive_rps": 0.05581095314898936,
+      "independent_rps": 0.05581095314898936,
+      "surface_rps": 0.0541335543697485,
+      "human_mean": 3.7857142857142856,
+      "adaptive_mean": 3.7291715846831823
+    },
+    "Research and Innovation": {
+      "n": 20,
+      "adaptive_rps": 0.04513600616487429,
+      "independent_rps": 0.04513600616487429,
+      "surface_rps": 0.05893705070660247,
+      "human_mean": 4.3,
+      "adaptive_mean": 4.2356380496619135
+    },
+    "Social Media": {
+      "n": 5,
+      "adaptive_rps": 0.0607897716968361,
+      "independent_rps": 0.0607897716968361,
+      "surface_rps": 0.0350007299167842,
+      "human_mean": 2.6,
+      "adaptive_mean": 3.1087729486368967
+    },
+    "Speech": {
+      "n": 10,
+      "adaptive_rps": 0.04286420553318582,
+      "independent_rps": 0.04286420553318582,
+      "surface_rps": 0.05950890418056679,
+      "human_mean": 2.7,
+      "adaptive_mean": 2.947135759102367
+    },
+    "Statements": {
+      "n": 9,
+      "adaptive_rps": 0.08115483982229796,
+      "independent_rps": 0.08115483982229796,
+      "surface_rps": 0.07634488752261193,
+      "human_mean": 2.0,
+      "adaptive_mean": 2.5492362611720853
+    },
+    "Textbooks": {
+      "n": 20,
+      "adaptive_rps": 0.055727453666333394,
+      "independent_rps": 0.055727453666333394,
+      "surface_rps": 0.06305545368628968,
+      "human_mean": 4.0,
+      "adaptive_mean": 4.0273324578607665
+    },
+    "User Reviews": {
+      "n": 24,
+      "adaptive_rps": 0.05593603815870651,
+      "independent_rps": 0.05593603815870651,
+      "surface_rps": 0.05825987144965052,
+      "human_mean": 2.6666666666666665,
+      "adaptive_mean": 2.6756812457084966
+    },
+    "Wikipedia": {
+      "n": 45,
+      "adaptive_rps": 0.0671769550409859,
+      "independent_rps": 0.0671769550409859,
+      "surface_rps": 0.07801654635132356,
+      "human_mean": 3.8222222222222224,
+      "adaptive_mean": 3.809258850303231
+    }
+  }
+}

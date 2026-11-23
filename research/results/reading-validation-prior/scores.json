@@ -1,0 +1,442 @@
+{
+  "domains": {
+    "SCoRE": {
+      "n_test": 698,
+      "n_groups": 698,
+      "mean_human_score": 2.5501432664756445,
+      "educator_mae": 0.6189111747851003,
+      "agreement": 0.38108882521489973,
+      "methods": {
+        "SCoRE.64.qwen.matched": {
+          "rps": 0.08394919612312869,
+          "mae_vs_educator": 0.6094005782601346,
+          "mean_predicted": 2.3227406322915396
+        },
+        "SCoRE.64.qwen.source_prior": {
+          "rps": 0.0797092784854706,
+          "mae_vs_educator": 0.5896180853768072,
+          "mean_predicted": 2.3710003888170657
+        },
+        "SCoRE.64.qwen.standard": {
+          "rps": 0.09081408799951843,
+          "mae_vs_educator": 0.6509289754672631,
+          "mean_predicted": 2.356011012615061
+        },
+        "SCoRE.64.qwen.source_only": {
+          "rps": 0.08307547453177241,
+          "mae_vs_educator": 0.6098564881059146,
+          "mean_predicted": 2.351897498392577
+        },
+        "SCoRE.256.qwen.matched": {
+          "rps": 0.0752014822079419,
+          "mae_vs_educator": 0.5748935020242413,
+          "mean_predicted": 2.353726496777662
+        },
+        "SCoRE.256.qwen.source_prior": {
+          "rps": 0.07230370855987399,
+          "mae_vs_educator": 0.5574655433989565,
+          "mean_predicted": 2.3877890097874084
+        },
+        "SCoRE.256.qwen.standard": {
+          "rps": 0.07464902397605015,
+          "mae_vs_educator": 0.5694483608032824,
+          "mean_predicted": 2.3774716647263343
+        },
+        "SCoRE.256.qwen.source_only": {
+          "rps": 0.07856278267536829,
+          "mae_vs_educator": 0.6006083045217921,
+          "mean_predicted": 2.384876825185706
+        },
+        "SCoRE.1188.qwen.matched": {
+          "rps": 0.07450595866627008,
+          "mae_vs_educator": 0.5745084692726212,
+          "mean_predicted": 2.330746653310029
+        },
+        "SCoRE.1188.qwen.source_prior": {
+          "rps": 0.07215737824884964,
+          "mae_vs_educator": 0.558118808874827,
+          "mean_predicted": 2.352408176102767
+        },
+        "SCoRE.1188.qwen.standard": {
+          "rps": 0.0738991978556228,
+          "mae_vs_educator": 0.5697527604940044,
+          "mean_predicted": 2.3378935299203056
+        },
+        "SCoRE.1188.qwen.source_only": {
+          "rps": 0.08082590398144464,
+          "mae_vs_educator": 0.6148336867219553,
+          "mean_predicted": 2.3303802422078816
+        },
+        "SCoRE.64.surface.matched": {
+          "rps": 0.09312533878849458,
+          "mae_vs_educator": 0.66161495057154,
+          "mean_predicted": 2.2471965611285802
+        },
+        "SCoRE.64.surface.source_prior": {
+          "rps": 0.08733556165257544,
+          "mae_vs_educator": 0.6326454606517004,
+          "mean_predicted": 2.28737371829107
+        },
+        "SCoRE.64.surface.standard": {
+          "rps": 0.08861028876255553,
+          "mae_vs_educator": 0.6405110661916623,
+          "mean_predicted": 2.2666548040542613
+        },
+        "SCoRE.64.surface.source_only": {
+          "rps": 0.08695191243928363,
+          "mae_vs_educator": 0.6291472360635065,
+          "mean_predicted": 2.2964526087189525
+        },
+        "SCoRE.256.surface.matched": {
+          "rps": 0.08194785571715717,
+          "mae_vs_educator": 0.6219644722462763,
+          "mean_predicted": 2.288284940610103
+        },
+        "SCoRE.256.surface.source_prior": {
+          "rps": 0.07872630765181025,
+          "mae_vs_educator": 0.6015105531629242,
+          "mean_predicted": 2.3096303607397126
+        },
+        "SCoRE.256.surface.standard": {
+          "rps": 0.07776765277353109,
+          "mae_vs_educator": 0.5962257882589292,
+          "mean_predicted": 2.319303644022884
+        },
+        "SCoRE.256.surface.source_only": {
+          "rps": 0.08412068050259618,
+          "mae_vs_educator": 0.6320438285599718,
+          "mean_predicted": 2.2723397689289895
+        },
+        "SCoRE.1188.surface.matched": {
+          "rps": 0.07990166138998041,
+          "mae_vs_educator": 0.6156400460043623,
+          "mean_predicted": 2.288795293205531
+        },
+        "SCoRE.1188.surface.source_prior": {
+          "rps": 0.07735539272479403,
+          "mae_vs_educator": 0.5986333452720042,
+          "mean_predicted": 2.305571596734262
+        },
+        "SCoRE.1188.surface.standard": {
+          "rps": 0.07832823447927043,
+          "mae_vs_educator": 0.6058536299184215,
+          "mean_predicted": 2.299860279418629
+        },
+        "SCoRE.1188.surface.source_only": {
+          "rps": 0.08625457316940209,
+          "mae_vs_educator": 0.6460699126727896,
+          "mean_predicted": 2.241399259427808
+        }
+      },
+      "paired_rps_difference": {
+        "64.qwen.matched": {
+          "estimate": -0.004239917637658098,
+          "interval95": [
+            -0.005591737465654958,
+            -0.002930379280283316
+          ]
+        },
+        "64.qwen.standard": {
+          "estimate": -0.011104809514047824,
+          "interval95": [
+            -0.013685318560626051,
+            -0.008594935485089378
+          ]
+        },
+        "64.qwen.source_only": {
+          "estimate": -0.003366196046301803,
+          "interval95": [
+            -0.00535788823828042,
+            -0.0013882642641585897
+          ]
+        },
+        "64.surface.source_prior": {
+          "estimate": -0.007626283167104837,
+          "interval95": [
+            -0.010081832932543191,
+            -0.005140827766481808
+          ]
+        },
+        "256.qwen.matched": {
+          "estimate": -0.0028977736480679138,
+          "interval95": [
+            -0.0038782862684871716,
+            -0.0019427720851451532
+          ]
+        },
+        "256.qwen.standard": {
+          "estimate": -0.002345315416176173,
+          "interval95": [
+            -0.0033808741035105893,
+            -0.001313297719224816
+          ]
+        },
+        "256.qwen.source_only": {
+          "estimate": -0.0062590741154943,
+          "interval95": [
+            -0.008255236244548117,
+            -0.0042656549036270575
+          ]
+        },
+        "256.surface.source_prior": {
+          "estimate": -0.006422599091936278,
+          "interval95": [
+            -0.008523962145199716,
+            -0.004378299350057805
+          ]
+        },
+        "1188.qwen.matched": {
+          "estimate": -0.0023485804174204236,
+          "interval95": [
+            -0.0030541547429917873,
+            -0.001675029279179766
+          ]
+        },
+        "1188.qwen.standard": {
+          "estimate": -0.0017418196067731592,
+          "interval95": [
+            -0.0023946106246833135,
+            -0.0011229288316591801
+          ]
+        },
+        "1188.qwen.source_only": {
+          "estimate": -0.00866852573259499,
+          "interval95": [
+            -0.010598783960220483,
+            -0.006803794131357863
+          ]
+        },
+        "1188.surface.source_prior": {
+          "estimate": -0.005198014475944394,
+          "interval95": [
+            -0.0068978473723514495,
+            -0.003522061429010029
+          ]
+        }
+      }
+    },
+    "Wikiauto": {
+      "n_test": 762,
+      "n_groups": 762,
+      "mean_human_score": 3.8832020997375327,
+      "educator_mae": 0.6351706036745407,
+      "agreement": 0.3648293963254593,
+      "methods": {
+        "Wikiauto.64.qwen.matched": {
+          "rps": 0.0845966757174009,
+          "mae_vs_educator": 0.6373392207986024,
+          "mean_predicted": 3.631593466049734
+        },
+        "Wikiauto.64.qwen.source_prior": {
+          "rps": 0.08011504747023203,
+          "mae_vs_educator": 0.6089647176533602,
+          "mean_predicted": 3.678498716947614
+        },
+        "Wikiauto.64.qwen.standard": {
+          "rps": 0.09582661147728126,
+          "mae_vs_educator": 0.6885471963038124,
+          "mean_predicted": 3.589326579972537
+        },
+        "Wikiauto.64.qwen.source_only": {
+          "rps": 0.08988245745500154,
+          "mae_vs_educator": 0.674404666687894,
+          "mean_predicted": 3.7287306613645947
+        },
+        "Wikiauto.256.qwen.matched": {
+          "rps": 0.07543343890205123,
+          "mae_vs_educator": 0.5805791516081816,
+          "mean_predicted": 3.7066050404000377
+        },
+        "Wikiauto.256.qwen.source_prior": {
+          "rps": 0.07390215861290506,
+          "mae_vs_educator": 0.5694855630992813,
+          "mean_predicted": 3.7191128893865875
+        },
+        "Wikiauto.256.qwen.standard": {
+          "rps": 0.07659624546731975,
+          "mae_vs_educator": 0.584907123605413,
+          "mean_predicted": 3.705553161089272
+        },
+        "Wikiauto.256.qwen.source_only": {
+          "rps": 0.0900351484186612,
+          "mae_vs_educator": 0.6777871047090627,
+          "mean_predicted": 3.714657620906079
+        },
+        "Wikiauto.5988.qwen.matched": {
+          "rps": 0.0699747499570857,
+          "mae_vs_educator": 0.5393495906548317,
+          "mean_predicted": 3.744837731964041
+        },
+        "Wikiauto.5988.qwen.source_prior": {
+          "rps": 0.06905131182951285,
+          "mae_vs_educator": 0.5346179054896143,
+          "mean_predicted": 3.747276308346794
+        },
+        "Wikiauto.5988.qwen.standard": {
+          "rps": 0.06987437177896876,
+          "mae_vs_educator": 0.538699660249769,
+          "mean_predicted": 3.745202542211464
+        },
+        "Wikiauto.5988.qwen.source_only": {
+          "rps": 0.09229721450013803,
+          "mae_vs_educator": 0.6953827702262004,
+          "mean_predicted": 3.6534267726842184
+        },
+        "Wikiauto.64.surface.matched": {
+          "rps": 0.08467325912624454,
+          "mae_vs_educator": 0.6395577984937717,
+          "mean_predicted": 3.6507657471022297
+        },
+        "Wikiauto.64.surface.source_prior": {
+          "rps": 0.08156994308236891,
+          "mae_vs_educator": 0.6169193709735891,
+          "mean_predicted": 3.6647315257231843
+        },
+        "Wikiauto.64.surface.standard": {
+          "rps": 0.08000181130224801,
+          "mae_vs_educator": 0.6048664375205903,
+          "mean_predicted": 3.6850507262797727
+        },
+        "Wikiauto.64.surface.source_only": {
+          "rps": 0.09452270123447627,
+          "mae_vs_educator": 0.7079249605790491,
+          "mean_predicted": 3.6614391328801705
+        },
+        "Wikiauto.256.surface.matched": {
+          "rps": 0.07833612753671534,
+          "mae_vs_educator": 0.5946337596050773,
+          "mean_predicted": 3.7415501028296605
+        },
+        "Wikiauto.256.surface.source_prior": {
+          "rps": 0.07620000517117846,
+          "mae_vs_educator": 0.5797983308327324,
+          "mean_predicted": 3.744955086519532
+        },
+        "Wikiauto.256.surface.standard": {
+          "rps": 0.07614341647230599,
+          "mae_vs_educator": 0.579080716515915,
+          "mean_predicted": 3.7508828334872977
+        },
+        "Wikiauto.256.surface.source_only": {
+          "rps": 0.09553822003324938,
+          "mae_vs_educator": 0.7170856423645854,
+          "mean_predicted": 3.6369911696476582
+        },
+        "Wikiauto.5988.surface.matched": {
+          "rps": 0.07650552680463059,
+          "mae_vs_educator": 0.5831392325705035,
+          "mean_predicted": 3.750275198215368
+        },
+        "Wikiauto.5988.surface.source_prior": {
+          "rps": 0.07542683235814512,
+          "mae_vs_educator": 0.575699923054472,
+          "mean_predicted": 3.7544719833929934
+        },
+        "Wikiauto.5988.surface.standard": {
+          "rps": 0.07638313380766973,
+          "mae_vs_educator": 0.5822405390651794,
+          "mean_predicted": 3.7509509789754922
+        },
+        "Wikiauto.5988.surface.source_only": {
+          "rps": 0.09781157876004236,
+          "mae_vs_educator": 0.7391053743716781,
+          "mean_predicted": 3.5948776810894283
+        }
+      },
+      "paired_rps_difference": {
+        "64.qwen.matched": {
+          "estimate": -0.004481628247168868,
+          "interval95": [
+            -0.00598542622939871,
+            -0.002970057358633448
+          ]
+        },
+        "64.qwen.standard": {
+          "estimate": -0.015711564007049237,
+          "interval95": [
+            -0.018521543196058615,
+            -0.012953293022105093
+          ]
+        },
+        "64.qwen.source_only": {
+          "estimate": -0.009767409984769519,
+          "interval95": [
+            -0.012515245384078288,
+            -0.007210289377743799
+          ]
+        },
+        "64.surface.source_prior": {
+          "estimate": -0.0014548956121368825,
+          "interval95": [
+            -0.0038301314734611853,
+            0.001018484846816409
+          ]
+        },
+        "256.qwen.matched": {
+          "estimate": -0.0015312802891461759,
+          "interval95": [
+            -0.002502481213493318,
+            -0.0005425322013159012
+          ]
+        },
+        "256.qwen.standard": {
+          "estimate": -0.002694086854414678,
+          "interval95": [
+            -0.0037287525250006104,
+            -0.0016607631523977973
+          ]
+        },
+        "256.qwen.source_only": {
+          "estimate": -0.016132989805756136,
+          "interval95": [
+            -0.019567663836365542,
+            -0.012808685172016285
+          ]
+        },
+        "256.surface.source_prior": {
+          "estimate": -0.002297846558273407,
+          "interval95": [
+            -0.004605850740801763,
+            7.233459526325762e-05
+          ]
+        },
+        "5988.qwen.matched": {
+          "estimate": -0.000923438127572856,
+          "interval95": [
+            -0.001349741275909343,
+            -0.0004889362019715618
+          ]
+        },
+        "5988.qwen.standard": {
+          "estimate": -0.0008230599494559102,
+          "interval95": [
+            -0.0012380541589434276,
+            -0.0003976326482450151
+          ]
+        },
+        "5988.qwen.source_only": {
+          "estimate": -0.023245902670625176,
+          "interval95": [
+            -0.026582217398660332,
+            -0.020068145575119618
+          ]
+        },
+        "5988.surface.source_prior": {
+          "estimate": -0.006375520528632263,
+          "interval95": [
+            -0.008275534930679443,
+            -0.00447538750750422
+          ]
+        }
+      }
+    }
+  },
+  "primary_equal_corpus_64_sentences": {
+    "estimate": -0.004360772942413483,
+    "interval95": [
+      -0.0053739136085475805,
+      -0.003348819455028615
+    ]
+  },
+  "seal_sha256": "3edb523e8f5ae3d89aaeb25fa8d2d94c1d03c3c2b0ea1ec4ab96d6b03e68fc7a"
+}

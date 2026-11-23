@@ -1,0 +1,83 @@
+{
+  "schema_version": 1,
+  "project": "CogLLM",
+  "owner": "CogLLM joint direct and literature-effect matched pilot",
+  "run_id": "cogllm-effects-20261120T163837Z-975e3ec5",
+  "requested_gpu": "L4",
+  "reason": "Matched limited-label shared and linear algorithms with and without two effect losses; reuse extracted features",
+  "model": "Qwen/Qwen3.5-2B",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "compute_dtype": "float32",
+  "worker_timeout_seconds": 370,
+  "colab_session_registry": "/Users/jacoblincool/.config/colab-cli/sessions.json",
+  "prior_feature_run": "cogllm-joint-20261120T162205Z-e984cdd0",
+  "method_order": [
+    "linear_trial",
+    "linear_effect",
+    "shared_trial",
+    "shared_effect"
+  ],
+  "label_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "worker_sha256": "644dc9fd422bf75656adcf738936039be55056a0fb70343a7f7180cb6c616769",
+  "payload_sha256": "1a241b22752ac0a785ef3237c244cd5135fb9da7e4448a7b85134db7796707bf",
+  "input_sha256": {
+    "research/joint/train.py": "7629d3abf17e996ec045c3d4677a892a47c176187a1e1bf6b8096dc493d575d3",
+    "research/joint/effect_fit.py": "35607189e0ecf7ba0b60f8bcff8ced01b16fe60841fa56bc3b05bb1c7c895979",
+    "data/design.npz": "05e41dbfac748869dd696ebd671bdb17f8da7726a18c42b01d3b48c32b5ef680",
+    "data/effect-design.npz": "5be1e8c8e87a0ee4bb97ed7e799deb4b737a5f30873f86b8120f305b70444bf0",
+    "data/plaba_features.npz": "fd1edb0e06f8fc05438d93cf77805cf258077a3c7c2e33c57a3474b579538246",
+    "data/zhan_features.npz": "94733ed95ab87d3d81283af0a26f3682e3348d5e335e80bc6a03c3577b4a67c6",
+    "data/onestop_features.npz": "5fc0632af94a60f1be672910a81b1378c26ffab9764d5ab86d9cb48c3982ecaa"
+  },
+  "timeline_utc": {
+    "prepared": "2026-11-20T16:38:37.785672+00:00",
+    "sessions-before-allocation": "2026-11-20T16:38:57.322122+00:00",
+    "before-allocation": "2026-11-20T16:38:58.503593+00:00",
+    "allocate": "2026-11-20T16:39:00.569594+00:00",
+    "allocated": "2026-11-20T16:39:05.124286+00:00",
+    "after-allocation": "2026-11-20T16:39:05.124734+00:00",
+    "upload": "2026-11-20T16:39:06.450807+00:00",
+    "execute": "2026-11-20T16:39:11.151637+00:00",
+    "download": "2026-11-20T16:41:00.802259+00:00",
+    "local-artifacts-verified": "2026-11-20T16:41:04.163334+00:00",
+    "before-stop": "2026-11-20T16:41:04.163706+00:00",
+    "stop-1": "2026-11-20T16:41:06.300125+00:00",
+    "sessions-after-stop-1": "2026-11-20T16:41:08.866802+00:00",
+    "after-stop": "2026-11-20T16:41:10.843246+00:00",
+    "finished": "2026-11-20T16:41:12.932261+00:00"
+  },
+  "cli_version": "0.7.4",
+  "remote_status": {
+    "phase": "complete",
+    "completed": true,
+    "fit_s": 91.076639089,
+    "worker_elapsed_s": 91.488155767
+  },
+  "actual_device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "results_sha256": "afe17bff5f8f9c9c89737d361994a52a89d3fded6676be7a2943c63dbe5b8b96",
+  "output_sha256": {
+    "fitting.json": "bd722c5dc0229fef764280f819f6876308fd7299d07846e9bb38e21e61fee73a",
+    "gpu-preflight.json": "2eee58c6376863a2eb3eaf6cd80e58df4d58187c38a8ad90ec80bb1100322ea0",
+    "heads.npz": "9c34c3c74f7361d781c63a11b3f1b1a8c2738cfdb07518c7c9f5d962c0a5d21d",
+    "predictions.npz": "1ddbb238a37a648231f0320bfdce686f7289f5817965342c4503548c6eb468ae",
+    "remote-status.json": "0c9424f797ed0d1566e615f3dd0cbed0bca881615f733688e4730891ff10416d",
+    "telemetry.jsonl": "1d65bd1f745a66ee8b766a391639bb0d04125172f54f5ebd0f98747fe20715d6"
+  },
+  "allocated_to_stop_request_seconds": 121.17684591695433,
+  "release_verified": true
+}

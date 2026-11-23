@@ -1,0 +1,349 @@
+{
+  "comparisons": {
+    "known__over__design_surface": {
+      "endorsement_log_loss_reduction": {
+        "reader": {
+          "mean": -0.03229134765657065,
+          "paired_item_bootstrap_95": [
+            -0.041090085011955255,
+            -0.023801870859670837
+          ]
+        },
+        "word": {
+          "mean": -0.032725344316758186,
+          "paired_item_bootstrap_95": [
+            -0.07113136806364981,
+            0.0029563485667186144
+          ]
+        }
+      },
+      "six_point_rps_reduction": {
+        "reader": {
+          "mean": -0.006683816509965135,
+          "paired_item_bootstrap_95": [
+            -0.009868078191040118,
+            -0.003549862877626548
+          ]
+        },
+        "word": {
+          "mean": -0.006935706570997197,
+          "paired_item_bootstrap_95": [
+            -0.018293906852160723,
+            0.003935769143018819
+          ]
+        }
+      }
+    },
+    "known__over__raw": {
+      "endorsement_log_loss_reduction": {
+        "reader": {
+          "mean": 0.03937238263448731,
+          "paired_item_bootstrap_95": [
+            0.03058983547980048,
+            0.04769643283766913
+          ]
+        },
+        "word": {
+          "mean": 0.03751216872741006,
+          "paired_item_bootstrap_95": [
+            -0.010287865778752785,
+            0.0841906717456986
+          ]
+        }
+      },
+      "six_point_rps_reduction": {
+        "reader": {
+          "mean": 0.015192862435385014,
+          "paired_item_bootstrap_95": [
+            0.012531227704431427,
+            0.017761149091254053
+          ]
+        },
+        "word": {
+          "mean": 0.014346287835457413,
+          "paired_item_bootstrap_95": [
+            -0.0010398816099383684,
+            0.029517039954648924
+          ]
+        }
+      }
+    },
+    "known__over__surface": {
+      "endorsement_log_loss_reduction": {
+        "reader": {
+          "mean": -0.0316194670745039,
+          "paired_item_bootstrap_95": [
+            -0.04033922823468881,
+            -0.023205937660077558
+          ]
+        },
+        "word": {
+          "mean": -0.031918779053891656,
+          "paired_item_bootstrap_95": [
+            -0.07016533758855038,
+            0.0038110559913433787
+          ]
+        }
+      },
+      "six_point_rps_reduction": {
+        "reader": {
+          "mean": -0.006179707092523182,
+          "paired_item_bootstrap_95": [
+            -0.009393367276657015,
+            -0.003034372464023504
+          ]
+        },
+        "word": {
+          "mean": -0.006418665643226065,
+          "paired_item_bootstrap_95": [
+            -0.017814931508576555,
+            0.004469427710734656
+          ]
+        }
+      }
+    },
+    "native__over__raw": {
+      "endorsement_log_loss_reduction": {
+        "reader": {
+          "mean": 0.1277398401056668,
+          "paired_item_bootstrap_95": [
+            0.11203673295893617,
+            0.14228209918632842
+          ]
+        },
+        "word": {
+          "mean": 0.11831556453415143,
+          "paired_item_bootstrap_95": [
+            0.07028907495716917,
+            0.16281455971257225
+          ]
+        }
+      },
+      "six_point_rps_reduction": {
+        "reader": {
+          "mean": 0.04565651729184797,
+          "paired_item_bootstrap_95": [
+            0.04008760493073973,
+            0.05105722775360914
+          ]
+        },
+        "word": {
+          "mean": 0.04236880624604643,
+          "paired_item_bootstrap_95": [
+            0.02632631020236326,
+            0.05701653022818712
+          ]
+        }
+      }
+    },
+    "oracle_with_known__over__oracle": {
+      "endorsement_log_loss_reduction": {
+        "reader": {
+          "mean": -0.01872406528967832,
+          "paired_item_bootstrap_95": [
+            -0.021176252488680002,
+            -0.01626701092748355
+          ]
+        },
+        "word": {
+          "mean": -0.018581234602315064,
+          "paired_item_bootstrap_95": [
+            -0.02565051276938602,
+            -0.011815028162946384
+          ]
+        }
+      },
+      "six_point_rps_reduction": {
+        "reader": {
+          "mean": -0.0068593647167233115,
+          "paired_item_bootstrap_95": [
+            -0.008025680768864748,
+            -0.005658721585379943
+          ]
+        },
+        "word": {
+          "mean": -0.006801057149629856,
+          "paired_item_bootstrap_95": [
+            -0.009052198127979482,
+            -0.004690076383579821
+          ]
+        }
+      }
+    },
+    "raw__over__surface": {
+      "endorsement_log_loss_reduction": {
+        "reader": {
+          "mean": -0.07099184970899121,
+          "paired_item_bootstrap_95": [
+            -0.07598206683352166,
+            -0.06626257352842616
+          ]
+        },
+        "word": {
+          "mean": -0.06943094778130171,
+          "paired_item_bootstrap_95": [
+            -0.11016633119212912,
+            -0.030392781962448535
+          ]
+        }
+      },
+      "six_point_rps_reduction": {
+        "reader": {
+          "mean": -0.021372569527908197,
+          "paired_item_bootstrap_95": [
+            -0.02293439340253321,
+            -0.019783363946307104
+          ]
+        },
+        "word": {
+          "mean": -0.020764953478683474,
+          "paired_item_bootstrap_95": [
+            -0.03354442827191865,
+            -0.008214576898499465
+          ]
+        }
+      }
+    }
+  },
+  "exclusions": {
+    "unregistered_sentence": 123
+  },
+  "fitted_arms": {
+    "constant": {
+      "endorsement_accuracy": 0.5336364194876205,
+      "endorsement_nll": 0.6914404657735157,
+      "item_endorsement_rho": -0.05067816500960163,
+      "mean_ordinal_prediction": 3.4137585507189225,
+      "rho_within_fit": -0.2555393460462848,
+      "rho_within_nofit": 0.06320305834445045,
+      "six_point_rps": 0.23507125466577908
+    },
+    "design_surface": {
+      "endorsement_accuracy": 0.524973889537384,
+      "endorsement_nll": 0.6954486764463662,
+      "item_endorsement_rho": 0.03816286980378865,
+      "mean_ordinal_prediction": 3.417353225293806,
+      "rho_within_fit": 0.24120550698924956,
+      "rho_within_nofit": 0.1389681983013072,
+      "six_point_rps": 0.2363019701776299
+    },
+    "known": {
+      "endorsement_accuracy": 0.5806352521963507,
+      "endorsement_nll": 0.7277400241029369,
+      "item_endorsement_rho": 0.2963962343789661,
+      "mean_ordinal_prediction": 3.4424417473917033,
+      "rho_within_fit": 0.22609795083902465,
+      "rho_within_nofit": 0.08166233310384247,
+      "six_point_rps": 0.24298578668759502
+    },
+    "native": {
+      "endorsement_accuracy": 0.6676291699944708,
+      "endorsement_nll": 0.6393725666317573,
+      "item_endorsement_rho": 0.483854853645765,
+      "mean_ordinal_prediction": 3.4338599593259165,
+      "rho_within_fit": 0.23521224111382302,
+      "rho_within_nofit": 0.015729819722691676,
+      "six_point_rps": 0.2125221318311321
+    },
+    "oracle": {
+      "endorsement_accuracy": 0.8614609571788413,
+      "endorsement_nll": 0.40292673984535693,
+      "item_endorsement_rho": 0.7795713019462035,
+      "mean_ordinal_prediction": 3.431910594448511,
+      "rho_within_fit": 0.2843162549939825,
+      "rho_within_nofit": -0.05048930344976217,
+      "six_point_rps": 0.12718992665783638
+    },
+    "oracle_with_known": {
+      "endorsement_accuracy": 0.8533513546722369,
+      "endorsement_nll": 0.4216508051350352,
+      "item_endorsement_rho": 0.783134490774142,
+      "mean_ordinal_prediction": 3.4239881004001242,
+      "rho_within_fit": 0.22012793570409508,
+      "rho_within_nofit": 0.041356873281423644,
+      "six_point_rps": 0.13404929137455973
+    },
+    "raw": {
+      "endorsement_accuracy": 0.5501628064139583,
+      "endorsement_nll": 0.7671124067374242,
+      "item_endorsement_rho": 0.1381519042440454,
+      "mean_ordinal_prediction": 3.430701870115563,
+      "rho_within_fit": 0.1718818741482725,
+      "rho_within_nofit": 0.08259343175740723,
+      "six_point_rps": 0.25817864912298005
+    },
+    "surface": {
+      "endorsement_accuracy": 0.534680837992259,
+      "endorsement_nll": 0.6961205570284329,
+      "item_endorsement_rho": 0.006578306791758545,
+      "mean_ordinal_prediction": 3.4131202980174007,
+      "rho_within_fit": 0.12779924519076766,
+      "rho_within_nofit": 0.17525697291443476,
+      "six_point_rps": 0.23680607959507188
+    }
+  },
+  "forecasts": "5df40357452bbf7d826c8a1f64c16973f01c349d66985546625bdf0278f2da0a",
+  "human_endorsement_by_experimental_condition": {
+    "fit=False, familiar=False": {
+      "endorsement": 0.10536585365853658,
+      "ordinal_mean": 1.903170731707317,
+      "trials": 4100
+    },
+    "fit=False, familiar=True": {
+      "endorsement": 0.10643015521064302,
+      "ordinal_mean": 1.687361419068736,
+      "trials": 4059
+    },
+    "fit=True, familiar=False": {
+      "endorsement": 0.7849223946784922,
+      "ordinal_mean": 4.91919191919192,
+      "trials": 4059
+    },
+    "fit=True, familiar=True": {
+      "endorsement": 0.8723823601872382,
+      "ordinal_mean": 5.235033259423504,
+      "trials": 4059
+    }
+  },
+  "pre_noun_independent_scores": {
+    "familiar": {
+      "fit_minus_no_fit_true_meaning_log_probability": {
+        "mean": 3.536771130188479,
+        "paired_item_bootstrap_95": [
+          2.925100715862538,
+          4.157315965037626
+        ]
+      },
+      "paired_concordance": {
+        "mean": 0.898989898989899,
+        "paired_item_bootstrap_95": [
+          0.8383838383838383,
+          0.9494949494949495
+        ]
+      },
+      "paired_words": 99
+    },
+    "unfamiliar": {
+      "fit_minus_no_fit_true_meaning_log_probability": {
+        "mean": 2.252433136187547,
+        "paired_item_bootstrap_95": [
+          1.7759468477164393,
+          2.746420857243702
+        ]
+      },
+      "paired_concordance": {
+        "mean": 0.8315789473684211,
+        "paired_item_bootstrap_95": [
+          0.7578947368421053,
+          0.9052631578947369
+        ]
+      },
+      "paired_words": 95
+    }
+  },
+  "readers": 41,
+  "scored_trials": 16277,
+  "sentences": 397,
+  "unavailable_first_word": 4,
+  "words": 100
+}

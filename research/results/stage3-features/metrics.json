@@ -1,0 +1,780 @@
+{
+  "task": "full_text_sentence_checklist",
+  "sentences": 286,
+  "article_families": 19,
+  "participants": 108,
+  "ridge_penalty": 1.0,
+  "intercept_penalized": false,
+  "feature_widths": {
+    "sentence_hidden": 2048,
+    "surprisal": 2,
+    "intermediate": 2,
+    "attention": 3
+  },
+  "feature_scaling": "Sentence-end hidden state L2-normalized per sentence; extra blocks train-fold z-scored and divided by square root of block width. Length uses log1p character and whitespace-word counts, standardized in each train fold, then divided by square root of two in the hidden-state baselines only. Known variant is supplied only to its named control.",
+  "label_definition": "Checklist endorsements only; an unchecked category is no endorsement.",
+  "concordance": "Pooled within-document sentence pairs with differing empirical reader-positive rates; prediction ties receive half credit.",
+  "folds": [
+    {
+      "fold": 0,
+      "observed_trials": 213,
+      "sentences": 71,
+      "positives": {
+        "any_issue": 89,
+        "unclear_term": 72
+      }
+    },
+    {
+      "fold": 1,
+      "observed_trials": 123,
+      "sentences": 41,
+      "positives": {
+        "any_issue": 53,
+        "unclear_term": 36
+      }
+    },
+    {
+      "fold": 2,
+      "observed_trials": 288,
+      "sentences": 96,
+      "positives": {
+        "any_issue": 182,
+        "unclear_term": 125
+      }
+    },
+    {
+      "fold": 3,
+      "observed_trials": 135,
+      "sentences": 45,
+      "positives": {
+        "any_issue": 77,
+        "unclear_term": 61
+      }
+    },
+    {
+      "fold": 4,
+      "observed_trials": 99,
+      "sentences": 33,
+      "positives": {
+        "any_issue": 51,
+        "unclear_term": 41
+      }
+    }
+  ],
+  "bootstrap": {
+    "unit": "reader_connected_article_family_group",
+    "groups_with_observations": 13,
+    "draws": 10000,
+    "seed": 43,
+    "reference": "sentence_hidden_plus_length",
+    "scope": "Paired Brier-loss differences on fixed out-of-fold predictions, without refitting."
+  },
+  "endpoints": {
+    "any_issue": {
+      "observed_trials": 858,
+      "positives": 452,
+      "within_document_comparable_sentence_pairs": 702,
+      "methods": {
+        "prevalence": {
+          "pooled_brier": 0.25685099439092757,
+          "within_fold_macro_auroc": 0.5,
+          "within_document_concordance": 0.5,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.5,
+              "brier": 0.26426039198957946
+            },
+            {
+              "fold": 1,
+              "auroc": 0.5,
+              "brier": 0.2577600796416127
+            },
+            {
+              "fold": 2,
+              "auroc": 0.5,
+              "brier": 0.2576369652200677
+            },
+            {
+              "fold": 3,
+              "auroc": 0.5,
+              "brier": 0.24772071187938685
+            },
+            {
+              "fold": 4,
+              "auroc": 0.5,
+              "brier": 0.2499440182890948
+            }
+          ]
+        },
+        "length": {
+          "pooled_brier": 0.2262395584377933,
+          "within_fold_macro_auroc": 0.6845121999905219,
+          "within_document_concordance": 0.6794871794871795,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.6701703515766582,
+              "brier": 0.2243412293388604
+            },
+            {
+              "fold": 1,
+              "auroc": 0.6770889487870619,
+              "brier": 0.24526586688437713
+            },
+            {
+              "fold": 2,
+              "auroc": 0.6890939249429815,
+              "brier": 0.22514888948749098
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7636587550380654,
+              "brier": 0.20274715486050385
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6225490196078431,
+              "brier": 0.24189304631419764
+            }
+          ]
+        },
+        "length_plus_variant": {
+          "pooled_brier": 0.2124628696933835,
+          "within_fold_macro_auroc": 0.7214991613079612,
+          "within_document_concordance": 0.6866096866096866,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7276640086988039,
+              "brier": 0.20939802982916192
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7401617250673854,
+              "brier": 0.228339312648517
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7497408252125233,
+              "brier": 0.20555967903451514
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7955665024630542,
+              "brier": 0.187368087435977
+            },
+            {
+              "fold": 4,
+              "auroc": 0.5943627450980392,
+              "brier": 0.2536338083004721
+            }
+          ]
+        },
+        "sentence_hidden_plus_length": {
+          "pooled_brier": 0.2009130940874994,
+          "within_fold_macro_auroc": 0.757330368939463,
+          "within_document_concordance": 0.7279202279202279,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7740123233055455,
+              "brier": 0.18822535066802262
+            },
+            {
+              "fold": 1,
+              "auroc": 0.8032345013477089,
+              "brier": 0.19734941414381116
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7497408252125233,
+              "brier": 0.20253008070082423
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7942230183609494,
+              "brier": 0.19215300208952327
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6654411764705882,
+              "brier": 0.23988018758761512
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal": {
+          "pooled_brier": 0.1986217163120813,
+          "within_fold_macro_auroc": 0.763237982287056,
+          "within_document_concordance": 0.7492877492877493,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7881478796665459,
+              "brier": 0.18518814629282546
+            },
+            {
+              "fold": 1,
+              "auroc": 0.807277628032345,
+              "brier": 0.19908073355776537
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7489633008500933,
+              "brier": 0.1978602513360531
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7928795342588446,
+              "brier": 0.19062190110951552
+            },
+            {
+              "fold": 4,
+              "auroc": 0.678921568627451,
+              "brier": 0.24007796134566584
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_intermediate": {
+          "pooled_brier": 0.2028347956812899,
+          "within_fold_macro_auroc": 0.7529923952310279,
+          "within_document_concordance": 0.707977207977208,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7612359550561798,
+              "brier": 0.19290990371822667
+            },
+            {
+              "fold": 1,
+              "auroc": 0.807277628032345,
+              "brier": 0.19878655704885828
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7374559402861289,
+              "brier": 0.20458040687101567
+            },
+            {
+              "fold": 3,
+              "auroc": 0.793551276309897,
+              "brier": 0.19179394329783891
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6654411764705882,
+              "brier": 0.23919554708579893
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal_intermediate": {
+          "pooled_brier": 0.20078073481267916,
+          "within_fold_macro_auroc": 0.7584722439934817,
+          "within_document_concordance": 0.7279202279202279,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7615077926785067,
+              "brier": 0.191184680941503
+            },
+            {
+              "fold": 1,
+              "auroc": 0.8016172506738545,
+              "brier": 0.20074745594253893
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7456976985278873,
+              "brier": 0.19978452258525659
+            },
+            {
+              "fold": 3,
+              "auroc": 0.8009404388714734,
+              "brier": 0.19042828916008986
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6825980392156863,
+              "brier": 0.23848317986505319
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_attention": {
+          "pooled_brier": 0.20164703638479162,
+          "within_fold_macro_auroc": 0.7559397285343473,
+          "within_document_concordance": 0.7193732193732194,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7598767669445451,
+              "brier": 0.19270272992413576
+            },
+            {
+              "fold": 1,
+              "auroc": 0.8266846361185984,
+              "brier": 0.19411570769088274
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7341903379639229,
+              "brier": 0.2054727915324092
+            },
+            {
+              "fold": 3,
+              "auroc": 0.8069861173309449,
+              "brier": 0.18412976215145385
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6519607843137255,
+              "brier": 0.2430056752176925
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_all": {
+          "pooled_brier": 0.20189388498073949,
+          "within_fold_macro_auroc": 0.7518602505001521,
+          "within_document_concordance": 0.7122507122507122,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7557992026096412,
+              "brier": 0.19417354789673874
+            },
+            {
+              "fold": 1,
+              "auroc": 0.8088948787061995,
+              "brier": 0.197630041869238
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7317022600041468,
+              "brier": 0.2042234152536405
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7962382445141066,
+              "brier": 0.18432030143694167
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6666666666666666,
+              "brier": 0.24098897145977058
+            }
+          ]
+        }
+      },
+      "paired_brier_differences_minus_sentence_hidden_plus_length": {
+        "prevalence": {
+          "difference": 0.0559379003034282,
+          "95_ci": [
+            0.037567684656329335,
+            0.07348332427127796
+          ]
+        },
+        "length": {
+          "difference": 0.025326464350293856,
+          "95_ci": [
+            0.012835649703300634,
+            0.037653166012500704
+          ]
+        },
+        "length_plus_variant": {
+          "difference": 0.011549775605884103,
+          "95_ci": [
+            0.0026347445259478556,
+            0.019424656345469953
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal": {
+          "difference": -0.0022913777754181167,
+          "95_ci": [
+            -0.005423764103384589,
+            0.001961893240607644
+          ]
+        },
+        "sentence_hidden_plus_length_plus_intermediate": {
+          "difference": 0.0019217015937904695,
+          "95_ci": [
+            -0.00023739516716304735,
+            0.003813625712765564
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal_intermediate": {
+          "difference": -0.000132359274820261,
+          "95_ci": [
+            -0.00477213117982357,
+            0.00453339097164142
+          ]
+        },
+        "sentence_hidden_plus_length_plus_attention": {
+          "difference": 0.0007339422972921581,
+          "95_ci": [
+            -0.004750018876964749,
+            0.00549132164370269
+          ]
+        },
+        "sentence_hidden_plus_length_plus_all": {
+          "difference": 0.0009807908932400835,
+          "95_ci": [
+            -0.006318984997293881,
+            0.008651582914178111
+          ]
+        }
+      }
+    },
+    "unclear_term": {
+      "observed_trials": 858,
+      "positives": 335,
+      "within_document_comparable_sentence_pairs": 640,
+      "methods": {
+        "prevalence": {
+          "pooled_brier": 0.24008640412469365,
+          "within_fold_macro_auroc": 0.5,
+          "within_document_concordance": 0.5,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.5,
+              "brier": 0.22862652992650934
+            },
+            {
+              "fold": 1,
+              "auroc": 0.5,
+              "brier": 0.22004295861367607
+            },
+            {
+              "fold": 2,
+              "auroc": 0.5,
+              "brier": 0.24995190827947056
+            },
+            {
+              "fold": 3,
+              "auroc": 0.5,
+              "brier": 0.25299257465255526
+            },
+            {
+              "fold": 4,
+              "auroc": 0.5,
+              "brier": 0.24334598780379849
+            }
+          ]
+        },
+        "length": {
+          "pooled_brier": 0.22126487337592574,
+          "within_fold_macro_auroc": 0.65943918383594,
+          "within_document_concordance": 0.6640625,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.6733156028368794,
+              "brier": 0.20265686735570498
+            },
+            {
+              "fold": 1,
+              "auroc": 0.6704980842911877,
+              "brier": 0.2096558445936253
+            },
+            {
+              "fold": 2,
+              "auroc": 0.6275828220858896,
+              "brier": 0.23423039153695605
+            },
+            {
+              "fold": 3,
+              "auroc": 0.66116526362428,
+              "brier": 0.23395932563945365
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6646341463414634,
+              "brier": 0.22069513132114804
+            }
+          ]
+        },
+        "length_plus_variant": {
+          "pooled_brier": 0.200833140197787,
+          "within_fold_macro_auroc": 0.7258868469841757,
+          "within_document_concordance": 0.6484375,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7547281323877069,
+              "brier": 0.1862505632186306
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7155172413793104,
+              "brier": 0.19730325706029506
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7422085889570552,
+              "brier": 0.20496440280477296
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7857775808595481,
+              "brier": 0.19341651933381615
+            },
+            {
+              "fold": 4,
+              "auroc": 0.6312026913372581,
+              "brier": 0.23468874331188722
+            }
+          ]
+        },
+        "sentence_hidden_plus_length": {
+          "pooled_brier": 0.19869841979623254,
+          "within_fold_macro_auroc": 0.7546069888037308,
+          "within_document_concordance": 0.7015625,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7960992907801419,
+              "brier": 0.18274021673847393
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7768199233716475,
+              "brier": 0.17535345579877376
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7216687116564418,
+              "brier": 0.21094762189702085
+            },
+            {
+              "fold": 3,
+              "auroc": 0.76650420912716,
+              "brier": 0.2068691037281733
+            },
+            {
+              "fold": 4,
+              "auroc": 0.7119428090832632,
+              "brier": 0.2152612004745252
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal": {
+          "pooled_brier": 0.19645325328753424,
+          "within_fold_macro_auroc": 0.7502049542116718,
+          "within_document_concordance": 0.7078125,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.775709219858156,
+              "brier": 0.1794265993172791
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7586206896551724,
+              "brier": 0.17497988002393836
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7254969325153374,
+              "brier": 0.20917785713721646
+            },
+            {
+              "fold": 3,
+              "auroc": 0.769162605228179,
+              "brier": 0.2050884956147328
+            },
+            {
+              "fold": 4,
+              "auroc": 0.7220353238015139,
+              "brier": 0.21097303696638645
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_intermediate": {
+          "pooled_brier": 0.20324109826911266,
+          "within_fold_macro_auroc": 0.7392146359475466,
+          "within_document_concordance": 0.6703125,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7538416075650118,
+              "brier": 0.19119453906832207
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7816091954022989,
+              "brier": 0.1751077836185667
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7028220858895705,
+              "brier": 0.2176152517397589
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7698272042534338,
+              "brier": 0.205831906499618
+            },
+            {
+              "fold": 4,
+              "auroc": 0.687973086627418,
+              "brier": 0.21876432555316522
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal_intermediate": {
+          "pooled_brier": 0.20107606706836476,
+          "within_fold_macro_auroc": 0.7378100766871813,
+          "within_document_concordance": 0.671875,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7532505910165485,
+              "brier": 0.18775921583926997
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7576628352490421,
+              "brier": 0.1750614561141673
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7047361963190184,
+              "brier": 0.21592299890783262
+            },
+            {
+              "fold": 3,
+              "auroc": 0.76650420912716,
+              "brier": 0.20428717117040363
+            },
+            {
+              "fold": 4,
+              "auroc": 0.7068965517241379,
+              "brier": 0.21447880480191495
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_attention": {
+          "pooled_brier": 0.20000345463316854,
+          "within_fold_macro_auroc": 0.7502896796935129,
+          "within_document_concordance": 0.69375,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7887115839243499,
+              "brier": 0.1848065267312477
+            },
+            {
+              "fold": 1,
+              "auroc": 0.789272030651341,
+              "brier": 0.1734615454204356
+            },
+            {
+              "fold": 2,
+              "auroc": 0.7051779141104294,
+              "brier": 0.21570820736454577
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7651750110766504,
+              "brier": 0.20230535105420533
+            },
+            {
+              "fold": 4,
+              "auroc": 0.703111858704794,
+              "brier": 0.21685068365133683
+            }
+          ]
+        },
+        "sentence_hidden_plus_length_plus_all": {
+          "pooled_brier": 0.20226255753998196,
+          "within_fold_macro_auroc": 0.7403694956073483,
+          "within_document_concordance": 0.6890625,
+          "folds": [
+            {
+              "fold": 0,
+              "auroc": 0.7547281323877069,
+              "brier": 0.18853420816679686
+            },
+            {
+              "fold": 1,
+              "auroc": 0.7634099616858238,
+              "brier": 0.1733929850255536
+            },
+            {
+              "fold": 2,
+              "auroc": 0.689717791411043,
+              "brier": 0.22123321482653813
+            },
+            {
+              "fold": 3,
+              "auroc": 0.7744793974302171,
+              "brier": 0.199984611848908
+            },
+            {
+              "fold": 4,
+              "auroc": 0.7195121951219512,
+              "brier": 0.21558648890897103
+            }
+          ]
+        }
+      },
+      "paired_brier_differences_minus_sentence_hidden_plus_length": {
+        "prevalence": {
+          "difference": 0.04138798432846115,
+          "95_ci": [
+            0.028979870025824347,
+            0.05148894603841585
+          ]
+        },
+        "length": {
+          "difference": 0.022566453579693214,
+          "95_ci": [
+            0.01563301340830568,
+            0.030230326661992105
+          ]
+        },
+        "length_plus_variant": {
+          "difference": 0.002134720401554451,
+          "95_ci": [
+            -0.011950347690823846,
+            0.012520755493964418
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal": {
+          "difference": -0.002245166508698294,
+          "95_ci": [
+            -0.004911957838662719,
+            0.001163628359763439
+          ]
+        },
+        "sentence_hidden_plus_length_plus_intermediate": {
+          "difference": 0.004542678472880101,
+          "95_ci": [
+            0.0007190909770077013,
+            0.006628339410294698
+          ]
+        },
+        "sentence_hidden_plus_length_plus_surprisal_intermediate": {
+          "difference": 0.0023776472721322,
+          "95_ci": [
+            -0.0018053639426635632,
+            0.005242406116753123
+          ]
+        },
+        "sentence_hidden_plus_length_plus_attention": {
+          "difference": 0.0013050348369359826,
+          "95_ci": [
+            -0.003426201838382798,
+            0.004580592168645549
+          ]
+        },
+        "sentence_hidden_plus_length_plus_all": {
+          "difference": 0.003564137743749405,
+          "95_ci": [
+            -0.0044587388518997385,
+            0.009336189947393558
+          ]
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CogLLM Writing Review</title><style>body{max-width:54rem;margin:6vh auto;padding:0 1rem;font:17px/1.5 system-ui;color:#23352f}
+.writing-review .term-review { border-top:1px solid #cbd7cf; padding-top:.9rem; margin-top:.65rem; }
+.writing-review .term-review h3,.writing-review .term-review p,.writing-review .term-review li { color:#23352f!important; }
+.writing-review .term-review h3 { font-size:1.1rem; margin:.2rem 0; }
+.writing-review .term-source { border-bottom:3px solid #3d685a; }
+.writing-review .term-cue { border-bottom:3px dotted #3d685a; }
+.writing-review .term-chart { display:grid; grid-template-columns:1.5em minmax(0,1fr); margin-top:.6rem; }
+.writing-review .term-chart svg { display:block; width:100%; height:4.1rem; }
+.writing-review .term-chart span { display:flex; flex-direction:column; justify-content:space-between; font-size:.8rem; }
+.writing-review .term-x { display:flex; justify-content:space-between; flex-wrap:wrap; padding-left:1.5em; font-size:.8rem; }
+.writing-review .term-scope { font-size:.83rem; }
+.writing-review { --ink: #182b24; color: var(--ink)!important; background: #fcfcf8;
+ border: 1px solid #cbd7cf; border-radius: .65rem; padding: 1.1rem 1.25rem; }
+.writing-review .summary-understanding { margin-top:.8rem; padding-top:.65rem; border-top:1px solid #c4d1cc; }
+.writing-review .summary-understanding h3,.writing-review .summary-understanding p,
+.writing-review .summary-understanding strong { color:#23352f!important; }
+.writing-review .reading-key,.writing-review .reading-caption { color: #394c42!important; font-size: .87rem; }
+.writing-review .reading-key { display: flex; flex-wrap: wrap; gap: .35rem .72rem; align-items: center; }
+.writing-review .key-swatch { display: inline-block; width: 1.3em; height: .82em; border: 1px solid #b2b0a3;
+ border-radius: .15em; vertical-align: middle; margin-right: .18em; }
+.writing-review .draft { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.1rem;
+ line-height: 2.1; max-width: 85ch; padding: 1.05rem 0; }
+.writing-review .draft mark { color: var(--ink)!important; padding: .14em 0; box-decoration-break: clone;
+ -webkit-box-decoration-break: clone; border-radius: .16rem; }
+.writing-review .phrase { text-decoration: underline solid #6e4218; text-underline-offset: .23em; }
+.writing-review .character { box-shadow: inset 0 3px 0 #624a8b; padding-top: .11em; }
+.writing-review .connection { outline: 2px dashed #28568c; outline-offset: .08em; }
+.writing-review .review-list { margin: .6rem 0 0; padding-left: 1.5rem; }
+.writing-review .review-list li { margin-bottom: .4rem; }
+
+.learner-result {background:#f8faf7;border:1px solid #cbd7cf;border-radius:.65rem;padding:1rem 1.2rem;}
+.learner-result p,.learner-result .learner-draft {color:#24372e!important;}
+.learner-result p {margin:0 0 .45rem;font-size:.9rem;}
+.learner-result .learner-draft {white-space:pre-wrap;overflow-wrap:anywhere;line-height:3.1;font-size:1.13rem;margin-top:.8rem}
+.learner-result .learner-word {display:inline-block;position:relative;line-height:1.45;min-width:1.35em;
+ background:var(--learner-word-color);border-bottom:2px solid #889c8a;border-radius:.16rem;color:#20352a!important;}
+.learner-result .learner-word::before {content:attr(data-rate);position:absolute;left:0;bottom:100%;white-space:nowrap;
+ color:#3c5749;font-size:.62em;line-height:1.2;font-weight:650;font-variant-numeric:tabular-nums;}
+.learner-result .high-word {border-bottom:3px solid #ac5f28;}
+
+.writing-review .ref-review { color:#23352f!important; border-top:1px solid #cbd7cf; padding-top:.8rem; }
+.writing-review .ref-review h3 { font-size:1.08rem; color:#23352f!important; }
+.writing-review .ref-review details { margin:.35rem 0; }
+.writing-review .ref-review summary { cursor:pointer; padding:.25rem 0; color:#273d36!important; }
+.writing-review .ref-review p { color:#273d36!important; }
+.writing-review .ref-answer { border-left:3px solid #356591; padding-left:.65rem; }
+
+.physical-review {background:#f8faf7; border:1px solid #b4c4bb; border-radius:.6rem; padding:1rem; color:#23352f!important;}
+.physical-review p,.physical-review strong,.physical-review .physical-draft {color:#23352f!important;}
+.physical-draft {white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;}
+.physical-draft mark {color:#1d302a!important;padding:.08em 0;box-decoration-break:clone;}
+.physical-earlier {background:#c7e3df!important;box-shadow:inset 0 -.12em #347065;}
+.physical-conflict {background:#f7d9b9!important;outline:1px dashed #8a4726;}
+
+.writing-review .expectation-panel {border-top:1px solid #c4d1cc;padding-top:.75rem;color:#23352f;}
+.writing-review .expectation-panel h3,.writing-review .expectation-panel p,
+.writing-review .expectation-panel summary {color:#23352f!important;}
+.writing-review .expectation-increase {border-bottom:3px solid #974814;}
+.writing-review .expectation-decrease {border-bottom:3px dotted #14596a;}
+.writing-review .expectation-chart {display:block;width:100%;height:8.5rem;}
+.writing-review .expectation-axis {display:flex;justify-content:space-between;font-size:.85rem;}
+.writing-review .expectation-table {max-height:18rem;overflow:auto;}
+.writing-review .expectation-table table {width:100%;border-collapse:collapse;color:#23352f;}
+.writing-review .expectation-table th,.writing-review .expectation-table td {padding:.2rem .35rem;text-align:left;background:#fcfcf8;}
+
+:is(.writing-review,.physical-review,.learner-result) {
+  --reading-surface-ink:#182b24;
+  --body-text-color:var(--reading-surface-ink);
+  --body-text-color-subdued:var(--reading-surface-ink);
+  color-scheme:light;
+  color:var(--reading-surface-ink)!important;
+}
+:is(.writing-review,.physical-review,.learner-result) :where(*) {
+  color:var(--reading-surface-ink)!important;
+}
+:is(.writing-review,.physical-review,.learner-result) a:any-link {
+  color:#183b45!important;
+  text-decoration:underline;
+}
+:is(.writing-review,.physical-review,.learner-result) :is(a,summary):focus-visible {
+  outline:2px solid #284e62; outline-offset:2px;
+}
+</style></head><body><main><h1>CogLLM Writing Review</h1><section class="writing-review" data-model="c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e"><div class="reading-key" aria-label="Estimated sentence ease"><span><i class="key-swatch" style="background:#d78353" aria-hidden="true"></i>Harder · 1</span><span><i class="key-swatch" style="background:#f0c796" aria-hidden="true"></i>3</span><span><i class="key-swatch" style="background:#e8f3e7" aria-hidden="true"></i>Easier · 5</span></div><p class="reading-caption"><span class="phrase">Underline</span> · wording to review. <span class="connection">Dashed outline</span> · check the connection to earlier sentences.</p><div class="draft" aria-label="Original passage"><mark style="background:#e7eacf" data-start="0" data-end="49" title="Sentence 1. Estimated ease 4.48 of 5.">A <span class="phrase" data-start="2" data-end="8" title="Top wording candidate within this sentence">sensor</span> measures how much light a leaf reflects.</mark> <mark style="background:#eadaae" data-start="50" data-end="154" title="Sentence 2. Estimated ease 3.72 of 5.">The resulting <span class="phrase" data-start="64" data-end="77" title="Top wording candidate within this sentence">hyperspectral</span> reflectance signature varies with the concentration of pigments in the leaf.</mark> <mark style="background:#e7e6c4" data-start="155" data-end="255" title="Sentence 3. Estimated ease 4.26 of 5.">This means that two <span class="phrase" data-start="175" data-end="181" title="Top wording candidate within this sentence">leaves</span> can reflect different amounts of light even when they look equally green.</mark></div><details><summary>Lowest estimated ease (3 of 3 rated sentences)</summary><ol class="review-list"><li>Sentence 2 · <strong>3.72/5</strong> ease · “hyperspectral”</li><li>Sentence 3 · <strong>4.26/5</strong> ease · “leaves”</li><li>Sentence 1 · <strong>4.48/5</strong> ease · “sensor”</li></ol></details></section></main></body></html>

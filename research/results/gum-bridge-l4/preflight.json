@@ -1,0 +1,2639 @@
+{
+  "schema": 1,
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+  "max_document_tokens": 8192,
+  "input_sha256": {
+    "train.jsonl": "b30e8241222a21710f282cc77172ce54c187762a3ed98b51187aa5b6fddc4251",
+    "dev.jsonl": "1e69d86060fdebd064f850dc2626340e2df09664dda525a7dd0f0da7742f9391",
+    "test.jsonl": "b59b96e23db16027d449d973f1888da6ce0c02ae6c00f0ee08f2101c62ae3520"
+  },
+  "splits": {
+    "train": {
+      "input_documents": 177,
+      "encoded_documents": 177,
+      "input_tokens": 195241,
+      "encoded_tokens": 195241,
+      "max_document_tokens": 2189,
+      "source_stops": 175721,
+      "certified_stops": 173030,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 2691
+      }
+    },
+    "dev": {
+      "input_documents": 28,
+      "encoded_documents": 28,
+      "input_tokens": 27858,
+      "encoded_tokens": 27858,
+      "max_document_tokens": 1306,
+      "source_stops": 25661,
+      "certified_stops": 25299,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 362
+      }
+    },
+    "test": {
+      "input_documents": 30,
+      "encoded_documents": 30,
+      "input_tokens": 31587,
+      "encoded_tokens": 31587,
+      "max_document_tokens": 1444,
+      "source_stops": 28397,
+      "certified_stops": 28067,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 330
+      }
+    }
+  },
+  "documents": [
+    {
+      "id": "GUM_academic_art",
+      "split": "train",
+      "input_tokens": 872,
+      "source_stops": 752,
+      "certified_stops": 739,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "f09548e5ff12ec684372996ecde2669746db9c2971abdad7620179069174eeb3"
+    },
+    {
+      "id": "GUM_academic_census",
+      "split": "train",
+      "input_tokens": 1110,
+      "source_stops": 1056,
+      "certified_stops": 1032,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 24
+      },
+      "certificate_sha256": "6eaf0c9b4cc6109b56967dda8d4056a01a13ad5fc36770bb384b073eb0975401"
+    },
+    {
+      "id": "GUM_academic_economics",
+      "split": "train",
+      "input_tokens": 920,
+      "source_stops": 873,
+      "certified_stops": 861,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "3e8ee19d6c533c172df15e724f9432279910821d0965578cf9683c23b17d1771"
+    },
+    {
+      "id": "GUM_academic_enjambment",
+      "split": "train",
+      "input_tokens": 1193,
+      "source_stops": 887,
+      "certified_stops": 857,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 30
+      },
+      "certificate_sha256": "607bae20054b0980686d9c3db0095e1d4d004884fa2b184c319518cd6e80d022"
+    },
+    {
+      "id": "GUM_academic_epistemic",
+      "split": "train",
+      "input_tokens": 1121,
+      "source_stops": 1063,
+      "certified_stops": 1050,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "bf000baf7c2dc3f8ba6f76e336487e1e2f89df282c9050197321edaceb2fb56d"
+    },
+    {
+      "id": "GUM_academic_games",
+      "split": "train",
+      "input_tokens": 1065,
+      "source_stops": 936,
+      "certified_stops": 923,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "24f378bb959c1442c986f5845059fd2195ece519f3e7c83ec19b34998be7c3f7"
+    },
+    {
+      "id": "GUM_academic_huh",
+      "split": "train",
+      "input_tokens": 1183,
+      "source_stops": 1097,
+      "certified_stops": 1062,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 35
+      },
+      "certificate_sha256": "cf28665f23538276a007c90e5dd6493a7e038ca28744835c572f32fb068476a0"
+    },
+    {
+      "id": "GUM_academic_implicature",
+      "split": "train",
+      "input_tokens": 874,
+      "source_stops": 827,
+      "certified_stops": 812,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 15
+      },
+      "certificate_sha256": "7ac4a7f4cd7af0b4b5b00e9017abf37b1c5f82edbee1f6b9af835a7f880ce8f0"
+    },
+    {
+      "id": "GUM_academic_lighting",
+      "split": "train",
+      "input_tokens": 856,
+      "source_stops": 785,
+      "certified_stops": 777,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "b32bb872baf1ca9c4e9395505df696eb9b8a488cd1fb790fad6cbf8f72e8ddbc"
+    },
+    {
+      "id": "GUM_academic_mutation",
+      "split": "train",
+      "input_tokens": 1004,
+      "source_stops": 912,
+      "certified_stops": 901,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "d932198672be5ff7bdeb3bd4355dbbcbe3cde57215b44be1c1ccb5d67ecbfabe"
+    },
+    {
+      "id": "GUM_academic_replication",
+      "split": "train",
+      "input_tokens": 1305,
+      "source_stops": 1054,
+      "certified_stops": 1031,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 23
+      },
+      "certificate_sha256": "b1d3af88e373624aeb7916716fe1d8eff6b83901c9768bb927b0ce6867c87756"
+    },
+    {
+      "id": "GUM_academic_salinity",
+      "split": "train",
+      "input_tokens": 1102,
+      "source_stops": 983,
+      "certified_stops": 946,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 37
+      },
+      "certificate_sha256": "3bec746a97a8e372553f6c6dd887f61fd4457cf2d4d391402b4e9d541b9458fd"
+    },
+    {
+      "id": "GUM_academic_theropod",
+      "split": "train",
+      "input_tokens": 1476,
+      "source_stops": 1304,
+      "certified_stops": 1272,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 32
+      },
+      "certificate_sha256": "6f2360b63153ed23eaf6e22430eac76bebfe70d529136348863fe50c38372c24"
+    },
+    {
+      "id": "GUM_academic_thrones",
+      "split": "train",
+      "input_tokens": 1013,
+      "source_stops": 910,
+      "certified_stops": 887,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 23
+      },
+      "certificate_sha256": "ae61ce54e7e62dcc2e8e6ed7d3aa719af18a7c8c55349b8b44cf049e4ae2adcd"
+    },
+    {
+      "id": "GUM_bio_bernoulli",
+      "split": "train",
+      "input_tokens": 1217,
+      "source_stops": 1038,
+      "certified_stops": 1031,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "594f70c8a712812415f3e94c119883f7be49483cff52d2edad62bc35214ac33e"
+    },
+    {
+      "id": "GUM_bio_chao",
+      "split": "train",
+      "input_tokens": 780,
+      "source_stops": 628,
+      "certified_stops": 623,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "459665067e04b1d589b9f76c09e65b15dbf8c65ec21de7f7e0e137e743a692ca"
+    },
+    {
+      "id": "GUM_bio_enfant",
+      "split": "train",
+      "input_tokens": 888,
+      "source_stops": 676,
+      "certified_stops": 668,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "39165b8c20064adcaaff31e6071b20550a0a76536c3f6fd8fcba17320f30bc0d"
+    },
+    {
+      "id": "GUM_bio_fillmore",
+      "split": "train",
+      "input_tokens": 1272,
+      "source_stops": 1083,
+      "certified_stops": 1073,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "12da1d34923865a7216990268e1b17a91e80427d6b88149dbcfaffaba87b566e"
+    },
+    {
+      "id": "GUM_bio_galois",
+      "split": "train",
+      "input_tokens": 1415,
+      "source_stops": 1243,
+      "certified_stops": 1217,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 26
+      },
+      "certificate_sha256": "a2f95c1a060c110c7742b4697eede7ec9a8effe8dd66f52f49b36d7185803152"
+    },
+    {
+      "id": "GUM_bio_goode",
+      "split": "train",
+      "input_tokens": 845,
+      "source_stops": 678,
+      "certified_stops": 659,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "dc1fb467462241281fe8d2fc8e7e10ff866b2e9e6bbf9b069bd91d90a8a58923"
+    },
+    {
+      "id": "GUM_bio_gordon",
+      "split": "train",
+      "input_tokens": 1216,
+      "source_stops": 1000,
+      "certified_stops": 992,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "2afcc57a487a6b0e2ff130420a014f68a1f289820619445dc6d409f3e0f3219a"
+    },
+    {
+      "id": "GUM_bio_hadid",
+      "split": "train",
+      "input_tokens": 716,
+      "source_stops": 567,
+      "certified_stops": 552,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 15
+      },
+      "certificate_sha256": "0feb53d0a49389c7cd2f3918c70543948d7e6c1ff035c3ff8295706575b11c2c"
+    },
+    {
+      "id": "GUM_bio_higuchi",
+      "split": "train",
+      "input_tokens": 1124,
+      "source_stops": 962,
+      "certified_stops": 927,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 35
+      },
+      "certificate_sha256": "f0a5815b141edbbec81c110519e4955340196d54846e7aad3b3dbaa8c0c4e679"
+    },
+    {
+      "id": "GUM_bio_holt",
+      "split": "train",
+      "input_tokens": 1424,
+      "source_stops": 1078,
+      "certified_stops": 1053,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 25
+      },
+      "certificate_sha256": "25425929931f4a4f839c13690b6165be0543feb35408f3c54d19b33ed6e351ed"
+    },
+    {
+      "id": "GUM_bio_jerome",
+      "split": "train",
+      "input_tokens": 1283,
+      "source_stops": 1066,
+      "certified_stops": 1060,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "a3669dfa7d3ca14ae91cce57a24fd352af46acff45ced289417100e1076dcbdd"
+    },
+    {
+      "id": "GUM_bio_marbles",
+      "split": "train",
+      "input_tokens": 1141,
+      "source_stops": 940,
+      "certified_stops": 920,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 20
+      },
+      "certificate_sha256": "3cb62689cdd89cbce58e18911f31c407278e87e6c55e1ac2b71f47358b53c6f4"
+    },
+    {
+      "id": "GUM_bio_moreau",
+      "split": "train",
+      "input_tokens": 1319,
+      "source_stops": 1016,
+      "certified_stops": 982,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 34
+      },
+      "certificate_sha256": "f1d5b9f2ed6b81acb9dc8d489ce5434d646041d51158daf650e685a539bf172a"
+    },
+    {
+      "id": "GUM_bio_nida",
+      "split": "train",
+      "input_tokens": 1137,
+      "source_stops": 987,
+      "certified_stops": 970,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 17
+      },
+      "certificate_sha256": "6d0ac523c9e9abf4e2cfa6bbf9aaa6d4f64c0798d00087991c99ccad4c834eb3"
+    },
+    {
+      "id": "GUM_bio_padalecki",
+      "split": "train",
+      "input_tokens": 1330,
+      "source_stops": 1050,
+      "certified_stops": 1039,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "98638c7b8984d51ec2c5457b68d4eba1a2ed6cae788b23f407ca3024cbbf847f"
+    },
+    {
+      "id": "GUM_bio_theodorus",
+      "split": "train",
+      "input_tokens": 999,
+      "source_stops": 798,
+      "certified_stops": 795,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "ff23177ff3228d15a14025c07481ef8db68102dfbd95af2b25c80ca2009f69b3"
+    },
+    {
+      "id": "GUM_conversation_family",
+      "split": "train",
+      "input_tokens": 1481,
+      "source_stops": 1290,
+      "certified_stops": 1253,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 37
+      },
+      "certificate_sha256": "6e34be5b230bb22480e77e9326d7b8fde0719e4290bb2ddaeed452611b33ae11"
+    },
+    {
+      "id": "GUM_conversation_gossip",
+      "split": "train",
+      "input_tokens": 1257,
+      "source_stops": 1089,
+      "certified_stops": 1070,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "2d62635e407551d564432a9c57612e1346ed88aafa5f5bf9fc91f099493caa88"
+    },
+    {
+      "id": "GUM_court_crash",
+      "split": "train",
+      "input_tokens": 1402,
+      "source_stops": 1334,
+      "certified_stops": 1327,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "a255661d04ce74322a4f0e4af3b06657a6430a5edea90bec9bcf31ff5dab62ab"
+    },
+    {
+      "id": "GUM_court_equality",
+      "split": "train",
+      "input_tokens": 1220,
+      "source_stops": 1175,
+      "certified_stops": 1161,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "af6dee11c0b52debfef3f98456af49a6c484d923535323ced23c4e48cd104edc"
+    },
+    {
+      "id": "GUM_court_fire",
+      "split": "train",
+      "input_tokens": 1311,
+      "source_stops": 1255,
+      "certified_stops": 1241,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "450f3915527cad368981183f5b2632ffd7a3fea13cd6874c90cbdc2b97059751"
+    },
+    {
+      "id": "GUM_court_mental",
+      "split": "train",
+      "input_tokens": 1174,
+      "source_stops": 1064,
+      "certified_stops": 1050,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "c22fa12a648c46d632873261b8eebf24557346c5ede5766ccfd6cd81537a8fb7"
+    },
+    {
+      "id": "GUM_court_mountain",
+      "split": "train",
+      "input_tokens": 1408,
+      "source_stops": 1292,
+      "certified_stops": 1283,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "e098408821fce7aff4b0c1f48b7cde6d36acdb56959f3ae11969d4d736f1772a"
+    },
+    {
+      "id": "GUM_court_nullification",
+      "split": "train",
+      "input_tokens": 1247,
+      "source_stops": 1183,
+      "certified_stops": 1165,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "fc3885ed49d25e5ef1ca0faaef2b9b6d42e298109aadd7a613c2519a6ad5333c"
+    },
+    {
+      "id": "GUM_court_prince",
+      "split": "train",
+      "input_tokens": 1348,
+      "source_stops": 1264,
+      "certified_stops": 1248,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "ac5ad6341f6ff8576f8f400a5901f3c3fab71f9c40705d7461ba4bd648c0f378"
+    },
+    {
+      "id": "GUM_court_property",
+      "split": "train",
+      "input_tokens": 1855,
+      "source_stops": 1744,
+      "certified_stops": 1735,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "9a1d486af130c06e3e30266280a3083309980b2eaaa18479eabc49865b2821e4"
+    },
+    {
+      "id": "GUM_court_way",
+      "split": "train",
+      "input_tokens": 1208,
+      "source_stops": 1068,
+      "certified_stops": 1064,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "7ae3ea1efa27ed5562923da320839dfaedbf890083ba67676cae8a2cb6b4e809"
+    },
+    {
+      "id": "GUM_essay_food",
+      "split": "train",
+      "input_tokens": 1451,
+      "source_stops": 1320,
+      "certified_stops": 1305,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 15
+      },
+      "certificate_sha256": "6f69014fd4131331ec56fda9b0d28eeaa4d37927f27a3861fc6a244f82fe6c03"
+    },
+    {
+      "id": "GUM_essay_fracking",
+      "split": "train",
+      "input_tokens": 1344,
+      "source_stops": 1193,
+      "certified_stops": 1168,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 25
+      },
+      "certificate_sha256": "01afe84a55846d3474908eb5a3df6f91e909e6b6013aab1f5d0b759eb4f73e91"
+    },
+    {
+      "id": "GUM_essay_privatization",
+      "split": "train",
+      "input_tokens": 1454,
+      "source_stops": 1294,
+      "certified_stops": 1274,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 20
+      },
+      "certificate_sha256": "ae5ab8fb6c7160aad1b53d7872f84f81472a8a07a2acf7baa17f1aa354e9eaa0"
+    },
+    {
+      "id": "GUM_fiction_claus",
+      "split": "train",
+      "input_tokens": 948,
+      "source_stops": 901,
+      "certified_stops": 856,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 45
+      },
+      "certificate_sha256": "2709be9b8acfb6694a3813136e86347288472d7e1442ba94e6753c2174d1548e"
+    },
+    {
+      "id": "GUM_fiction_error",
+      "split": "train",
+      "input_tokens": 825,
+      "source_stops": 809,
+      "certified_stops": 806,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "c1eda369aa2372c91c780aa49aa374b1f494e2c79c8b418c79439ea14060c3b1"
+    },
+    {
+      "id": "GUM_fiction_frankenstein",
+      "split": "train",
+      "input_tokens": 1206,
+      "source_stops": 1159,
+      "certified_stops": 1098,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 61
+      },
+      "certificate_sha256": "a86e1b947422e1a6d432c2b5b6b8cda0fbfeff5251a4a1e1efed3fcab688bf23"
+    },
+    {
+      "id": "GUM_fiction_garden",
+      "split": "train",
+      "input_tokens": 1131,
+      "source_stops": 1007,
+      "certified_stops": 999,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "b8fdd15362df79b1180a688da35017f5dc335ceaa30256f08133678b198b464c"
+    },
+    {
+      "id": "GUM_fiction_honour",
+      "split": "train",
+      "input_tokens": 1067,
+      "source_stops": 998,
+      "certified_stops": 985,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "52774e915acbcf5cabd3d0de72fa10cad4bce44a83cc1429bdc0229c3e32c609"
+    },
+    {
+      "id": "GUM_fiction_moon",
+      "split": "train",
+      "input_tokens": 915,
+      "source_stops": 812,
+      "certified_stops": 801,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "6e86e23163672ade205301ca4e02667164c1cee2d58568d18768c2be8a728709"
+    },
+    {
+      "id": "GUM_fiction_oversite",
+      "split": "train",
+      "input_tokens": 949,
+      "source_stops": 920,
+      "certified_stops": 874,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 46
+      },
+      "certificate_sha256": "d8a2480afdf86b30e7785f286ab47636627f51aee9d22af789faec5117a574e2"
+    },
+    {
+      "id": "GUM_fiction_pag",
+      "split": "train",
+      "input_tokens": 1431,
+      "source_stops": 1366,
+      "certified_stops": 1301,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 65
+      },
+      "certificate_sha256": "b2054952667bf5a25657ebaeb8c53e1a0fdf5e1a77042afb65c3f1fc7bfcecb4"
+    },
+    {
+      "id": "GUM_fiction_pixies",
+      "split": "train",
+      "input_tokens": 821,
+      "source_stops": 775,
+      "certified_stops": 738,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 37
+      },
+      "certificate_sha256": "99740da8348bf35b0b3a51526ba0afc66204244c70c7bbca639ac4a14249988d"
+    },
+    {
+      "id": "GUM_fiction_rose",
+      "split": "train",
+      "input_tokens": 732,
+      "source_stops": 713,
+      "certified_stops": 679,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 34
+      },
+      "certificate_sha256": "46796a5fbbbce1c29f63cb9d34652b3e8fc4cf42e00a655f745c7c855c286c95"
+    },
+    {
+      "id": "GUM_fiction_sneeze",
+      "split": "train",
+      "input_tokens": 950,
+      "source_stops": 914,
+      "certified_stops": 847,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 67
+      },
+      "certificate_sha256": "7532096a05d8be21dd59bbd804c49bb5284784691ee41e38ea18d2c654bb96b1"
+    },
+    {
+      "id": "GUM_fiction_time",
+      "split": "train",
+      "input_tokens": 1078,
+      "source_stops": 1007,
+      "certified_stops": 996,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "83f97ce06f4f3cc231820482fe0949e980f7132793d6aaf2a9d9ba7ed693ff9a"
+    },
+    {
+      "id": "GUM_fiction_veronique",
+      "split": "train",
+      "input_tokens": 725,
+      "source_stops": 727,
+      "certified_stops": 685,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 42
+      },
+      "certificate_sha256": "4e092c17f6627a772f67302f1399bc7ba24de901512a0b88448fe723cb661f01"
+    },
+    {
+      "id": "GUM_fiction_wedding",
+      "split": "train",
+      "input_tokens": 950,
+      "source_stops": 875,
+      "certified_stops": 867,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "280811fda2e7e9f3a245a05b0bf504e11637af9df6706ec67e57f4a623e6dc7d"
+    },
+    {
+      "id": "GUM_interview_ants",
+      "split": "train",
+      "input_tokens": 1172,
+      "source_stops": 1068,
+      "certified_stops": 1040,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 28
+      },
+      "certificate_sha256": "ce9a712c364780481fc6b9fc2179d401427081233ddca736570284216606e8de"
+    },
+    {
+      "id": "GUM_interview_brotherhood",
+      "split": "train",
+      "input_tokens": 569,
+      "source_stops": 523,
+      "certified_stops": 519,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "248a084b1796913b0ab64f355631c8b39e465d3d7a98fd685d7d3d0b9f3e2d11"
+    },
+    {
+      "id": "GUM_interview_chomsky",
+      "split": "train",
+      "input_tokens": 1193,
+      "source_stops": 1109,
+      "certified_stops": 1104,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "3dac60a68189d31ff3b2f95438406d4ac376a1a3245aa8ed9cb6dd3d8aefbcc6"
+    },
+    {
+      "id": "GUM_interview_cocktail",
+      "split": "train",
+      "input_tokens": 1176,
+      "source_stops": 1035,
+      "certified_stops": 1019,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "ef55e5a5809ec92f709f9dc41d4747723056cdea1d5eec4f86b65e49bf61c6a9"
+    },
+    {
+      "id": "GUM_interview_daly",
+      "split": "train",
+      "input_tokens": 1243,
+      "source_stops": 1135,
+      "certified_stops": 1122,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "56c53c03f4a543d3f0525acfe48cde606c78c22f001f1730152debda3f7651d5"
+    },
+    {
+      "id": "GUM_interview_dungeon",
+      "split": "train",
+      "input_tokens": 1125,
+      "source_stops": 1038,
+      "certified_stops": 1020,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "671b3db4c6ed07293d14a823bcaf3250415519f61420006ba6db1274c3a3c932"
+    },
+    {
+      "id": "GUM_interview_herrick",
+      "split": "train",
+      "input_tokens": 1496,
+      "source_stops": 1321,
+      "certified_stops": 1295,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 26
+      },
+      "certificate_sha256": "a506d4b0affe332c2306729cfc29bc3faf4b66234688a430548d1b6e5f1b33fc"
+    },
+    {
+      "id": "GUM_interview_licen",
+      "split": "train",
+      "input_tokens": 736,
+      "source_stops": 663,
+      "certified_stops": 660,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "e8cfb453e2fbbb987927c599e5f0719a89a677a636d1ef9e1552fdd14a0bf566"
+    },
+    {
+      "id": "GUM_interview_mcguire",
+      "split": "train",
+      "input_tokens": 976,
+      "source_stops": 877,
+      "certified_stops": 865,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "6ecccdd3a02fda394a6c5d5e539a78fc80bc41ecb4e88922993bbe04e9a270f9"
+    },
+    {
+      "id": "GUM_interview_mckenzie",
+      "split": "train",
+      "input_tokens": 664,
+      "source_stops": 570,
+      "certified_stops": 567,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "0d259e7f7d35b0d11bb08a7a5db695330e16e5f0ae1421c881378d35eea62a5f"
+    },
+    {
+      "id": "GUM_interview_messina",
+      "split": "train",
+      "input_tokens": 1224,
+      "source_stops": 1161,
+      "certified_stops": 1139,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 22
+      },
+      "certificate_sha256": "4ea48c435f07849ebaab61d9c2f9c5c3add641ab59971ea1bd1405407a388567"
+    },
+    {
+      "id": "GUM_interview_onion",
+      "split": "train",
+      "input_tokens": 1261,
+      "source_stops": 1194,
+      "certified_stops": 1181,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "0974e3bbc72fe98b9f350dc0faff07a488bebd7d802a302cb4993789990d8c05"
+    },
+    {
+      "id": "GUM_interview_peres",
+      "split": "train",
+      "input_tokens": 1063,
+      "source_stops": 1026,
+      "certified_stops": 1002,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 24
+      },
+      "certificate_sha256": "7957e57503e293ab1e9804d4ba736dd5b46376869e31aed080c269cf51916d62"
+    },
+    {
+      "id": "GUM_interview_shalev",
+      "split": "train",
+      "input_tokens": 1225,
+      "source_stops": 1155,
+      "certified_stops": 1149,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "859d9290ea56bca9192e7fbf9fa755a920e586b71ecbdb68ad02065b9b2adab8"
+    },
+    {
+      "id": "GUM_interview_stardust",
+      "split": "train",
+      "input_tokens": 1189,
+      "source_stops": 1062,
+      "certified_stops": 1048,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "134e5f2ea2751e0b7e14619276f57ae24e16bcbd60c231d09735df5630089fae"
+    },
+    {
+      "id": "GUM_letter_conference",
+      "split": "train",
+      "input_tokens": 1002,
+      "source_stops": 925,
+      "certified_stops": 918,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "1d23e1cad3ee2f206c9308fe6b6b07e34f883c861e8b6a38a1626082ae2def85"
+    },
+    {
+      "id": "GUM_letter_cricket",
+      "split": "train",
+      "input_tokens": 1358,
+      "source_stops": 1260,
+      "certified_stops": 1247,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "a839d44a121c86ae27296a7074905d2adedacdfce5ca212d4e22b2423d1bb31d"
+    },
+    {
+      "id": "GUM_letter_critique",
+      "split": "train",
+      "input_tokens": 1052,
+      "source_stops": 956,
+      "certified_stops": 947,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "7c3d2f103c9950fdd94cbfad31c1da746c21ed219d983180495794296741195e"
+    },
+    {
+      "id": "GUM_letter_flood",
+      "split": "train",
+      "input_tokens": 1449,
+      "source_stops": 1279,
+      "certified_stops": 1274,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "0923fce9638ad2f64995ac2ce796685cb15acab7993a6a8861f32e723ce73a3f"
+    },
+    {
+      "id": "GUM_letter_gorbachev",
+      "split": "train",
+      "input_tokens": 1112,
+      "source_stops": 1055,
+      "certified_stops": 1054,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 1
+      },
+      "certificate_sha256": "cefa076a5a6f46551cf7b9d1853e1213da7e42a0de5aecfd99448765ff2f5b4d"
+    },
+    {
+      "id": "GUM_letter_marcie",
+      "split": "train",
+      "input_tokens": 420,
+      "source_stops": 364,
+      "certified_stops": 355,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "14ea8b963cf70a4947ad94eeeffdbddb4942376862a98497b76ae27bf17cd43a"
+    },
+    {
+      "id": "GUM_letter_marcie2",
+      "split": "train",
+      "input_tokens": 550,
+      "source_stops": 483,
+      "certified_stops": 473,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "2fd5cd286b683708c773a8920588b8faef1450580f82c09aa661c18b4a85493b"
+    },
+    {
+      "id": "GUM_letter_marcie3",
+      "split": "train",
+      "input_tokens": 388,
+      "source_stops": 338,
+      "certified_stops": 329,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "b53a0046e5f59b26997bbc5e9a1811ad662863893c4cdb19b4537527ae9f7cc0"
+    },
+    {
+      "id": "GUM_letter_roomers",
+      "split": "train",
+      "input_tokens": 828,
+      "source_stops": 663,
+      "certified_stops": 649,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "6b201e1b16efde3eb904d6f9fc530af3148f6d1b8e19d7a644abcdcbc02e5ba3"
+    },
+    {
+      "id": "GUM_letter_sacco",
+      "split": "train",
+      "input_tokens": 1284,
+      "source_stops": 1049,
+      "certified_stops": 1038,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "3384dcd443ebfc0169eee37ee3ee8c8f3c2e17df4026b0fd1c0812c94e98035a"
+    },
+    {
+      "id": "GUM_letter_srilanka",
+      "split": "train",
+      "input_tokens": 1048,
+      "source_stops": 943,
+      "certified_stops": 939,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "92a856a09ccec5bdf7c34bce15258d85602a4d0066af4ecf04945ddb27d7c5ca"
+    },
+    {
+      "id": "GUM_letter_trade",
+      "split": "train",
+      "input_tokens": 1237,
+      "source_stops": 1132,
+      "certified_stops": 1131,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 1
+      },
+      "certificate_sha256": "5049b1757753e195456a26cc234e20b46c73683f97a9b782f831758fea363992"
+    },
+    {
+      "id": "GUM_letter_travel",
+      "split": "train",
+      "input_tokens": 1075,
+      "source_stops": 1023,
+      "certified_stops": 1015,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "e683688605772b4160aa326f0b5d8e952b7dd3ae843b563f4cb74b43935415d0"
+    },
+    {
+      "id": "GUM_letter_zora",
+      "split": "train",
+      "input_tokens": 1208,
+      "source_stops": 1141,
+      "certified_stops": 1130,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "ff5516110b89203d0aea75a3cb789fb592b17f2108c82643239e587a2bf62a41"
+    },
+    {
+      "id": "GUM_news_afghan",
+      "split": "train",
+      "input_tokens": 1003,
+      "source_stops": 940,
+      "certified_stops": 928,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "9cd5b5f66908917a9b9ffe17de8b438280fb8f37e56aa0f8b410f96fa69301d3"
+    },
+    {
+      "id": "GUM_news_asylum",
+      "split": "train",
+      "input_tokens": 420,
+      "source_stops": 373,
+      "certified_stops": 370,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "4d730e684c04c7ceccd35d730c5987eacdbbc8fc78ad69ca9d9949ef88c6e862"
+    },
+    {
+      "id": "GUM_news_clock",
+      "split": "train",
+      "input_tokens": 744,
+      "source_stops": 679,
+      "certified_stops": 671,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "4a3cbab32cf4187423ad18e944d9e6b294510a71d910285afbcf1b58d1de0d7d"
+    },
+    {
+      "id": "GUM_news_crane",
+      "split": "train",
+      "input_tokens": 336,
+      "source_stops": 289,
+      "certified_stops": 283,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "6e0d661429eb45707de031f271c8626045bcb8c72f88302d9c697d647e7fab64"
+    },
+    {
+      "id": "GUM_news_defector",
+      "split": "train",
+      "input_tokens": 1049,
+      "source_stops": 905,
+      "certified_stops": 894,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "bec5d689d402bc39ebc2223b11b81b5716cf61f97e6915f8fae8249e11fa4084"
+    },
+    {
+      "id": "GUM_news_election",
+      "split": "train",
+      "input_tokens": 1328,
+      "source_stops": 1037,
+      "certified_stops": 1019,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "183816d6fdf36e69ea9d0c137eefcc60d0d069f453edba30e8b65b41ea8da316"
+    },
+    {
+      "id": "GUM_news_expo",
+      "split": "train",
+      "input_tokens": 895,
+      "source_stops": 773,
+      "certified_stops": 762,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "062ae6da64555f572f2a236dbe3c80804c69aa73ada25ef15f2ab723ae667b51"
+    },
+    {
+      "id": "GUM_news_flag",
+      "split": "train",
+      "input_tokens": 459,
+      "source_stops": 419,
+      "certified_stops": 415,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "d3bb3ecb3b4897bd070bfa070ec375d3ec601337aeeddd1b97564b9c50d838f8"
+    },
+    {
+      "id": "GUM_news_hackers",
+      "split": "train",
+      "input_tokens": 775,
+      "source_stops": 708,
+      "certified_stops": 689,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "9fa97aa91f161bda6cc2de9a31fb6bef8849f8843e7908457004b5edabc374c2"
+    },
+    {
+      "id": "GUM_news_ie9",
+      "split": "train",
+      "input_tokens": 537,
+      "source_stops": 487,
+      "certified_stops": 476,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "2dccc0822125fd338988f2a9d4ca0c1873054c5f0606955326e280ca6509ca89"
+    },
+    {
+      "id": "GUM_news_imprisoned",
+      "split": "train",
+      "input_tokens": 517,
+      "source_stops": 454,
+      "certified_stops": 453,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 1
+      },
+      "certificate_sha256": "5e96c4028476c9a22e7cdda95fabeffe129bf60bb2a5990a57395b86958725f4"
+    },
+    {
+      "id": "GUM_news_korea",
+      "split": "train",
+      "input_tokens": 492,
+      "source_stops": 428,
+      "certified_stops": 416,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "f85d5bc6dd3d843e36787a1b46bdf119a9c16ed5a7c963589daddc8fd04170a6"
+    },
+    {
+      "id": "GUM_news_lanterns",
+      "split": "train",
+      "input_tokens": 634,
+      "source_stops": 572,
+      "certified_stops": 568,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "d5a0d6f68838a15e3be6dd7ce25dc2c6204748861c29705ec01a162782db2578"
+    },
+    {
+      "id": "GUM_news_questionnaire",
+      "split": "train",
+      "input_tokens": 1155,
+      "source_stops": 1040,
+      "certified_stops": 1005,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 35
+      },
+      "certificate_sha256": "5ec71506545ed5ffcb6db60a1733dc8338dfd0114e90fdc79a1de24ae0e691cd"
+    },
+    {
+      "id": "GUM_news_soccer",
+      "split": "train",
+      "input_tokens": 1069,
+      "source_stops": 903,
+      "certified_stops": 898,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "2ec74eb58426ac39b8bf1d991a2b162456e323b4982c4d79a2478c5a098bf982"
+    },
+    {
+      "id": "GUM_news_stampede",
+      "split": "train",
+      "input_tokens": 320,
+      "source_stops": 254,
+      "certified_stops": 252,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 2
+      },
+      "certificate_sha256": "c40a442a99697a8b9664f713c7bd589ddd19770eac977cbc5bcedf04d53280f0"
+    },
+    {
+      "id": "GUM_news_taxes",
+      "split": "train",
+      "input_tokens": 750,
+      "source_stops": 647,
+      "certified_stops": 625,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 22
+      },
+      "certificate_sha256": "d474030721906260d8272c7a480f1607aa05ee73ace1f7bd107cb75e0b812d7b"
+    },
+    {
+      "id": "GUM_news_warhol",
+      "split": "train",
+      "input_tokens": 2189,
+      "source_stops": 1878,
+      "certified_stops": 1851,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 27
+      },
+      "certificate_sha256": "975f42b6c41c0a2365b8212f6ac93a9cd30cfa8b017f678e8d44c87759244644"
+    },
+    {
+      "id": "GUM_news_warming",
+      "split": "train",
+      "input_tokens": 710,
+      "source_stops": 618,
+      "certified_stops": 608,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "584bd2c4997d745597deabcaf671cb67961d199799c316377c026696b9f4a8bf"
+    },
+    {
+      "id": "GUM_news_worship",
+      "split": "train",
+      "input_tokens": 203,
+      "source_stops": 167,
+      "certified_stops": 166,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 1
+      },
+      "certificate_sha256": "e34843961e2be3de2e6f55620847f42423a9bb8b030b1e80417ecf28519ebc11"
+    },
+    {
+      "id": "GUM_podcast_addiction",
+      "split": "train",
+      "input_tokens": 1310,
+      "source_stops": 1215,
+      "certified_stops": 1205,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "663f9e937934746a7b105c0501e8a2e8aee09736b4c18fffb7f86112933ef595"
+    },
+    {
+      "id": "GUM_podcast_blackholes",
+      "split": "train",
+      "input_tokens": 1010,
+      "source_stops": 884,
+      "certified_stops": 877,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "dbab3e5e2916e15185c42c325c3e01df591bd058757e2acbff4b72bad4103e05"
+    },
+    {
+      "id": "GUM_podcast_brave",
+      "split": "train",
+      "input_tokens": 1328,
+      "source_stops": 1278,
+      "certified_stops": 1264,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "4213c8c4e6d6df6daa743d05a232f6ff8dadca292e8aea19b6565d3598053e40"
+    },
+    {
+      "id": "GUM_podcast_collaboration",
+      "split": "train",
+      "input_tokens": 1196,
+      "source_stops": 1160,
+      "certified_stops": 1155,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "52514f50648a1f4e20e17b51dfbd7021af5beec3e75f37ea376fd519478e6999"
+    },
+    {
+      "id": "GUM_podcast_library",
+      "split": "train",
+      "input_tokens": 1253,
+      "source_stops": 1172,
+      "certified_stops": 1164,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "7ec886490850ee1ba839723162a886dbd6b528f2fb380a2b036f4dc8b0465303"
+    },
+    {
+      "id": "GUM_podcast_llms",
+      "split": "train",
+      "input_tokens": 1542,
+      "source_stops": 1469,
+      "certified_stops": 1449,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 20
+      },
+      "certificate_sha256": "4fc3bb78813fa8fb60fdeddfe3470e80397090dab8b3cc37d18304a50332d7ee"
+    },
+    {
+      "id": "GUM_podcast_mealprep",
+      "split": "train",
+      "input_tokens": 1023,
+      "source_stops": 997,
+      "certified_stops": 987,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "ba01e648ac561dbb2a396aee15a4b070894567938f96e18c156cc248667aac5b"
+    },
+    {
+      "id": "GUM_podcast_movie",
+      "split": "train",
+      "input_tokens": 1679,
+      "source_stops": 1589,
+      "certified_stops": 1580,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "5ef8ccc8aadbfa829341ebf3b8642f5eee5168541681ccbaefd8614ed7b8d4b3"
+    },
+    {
+      "id": "GUM_podcast_muskoka",
+      "split": "train",
+      "input_tokens": 1185,
+      "source_stops": 1130,
+      "certified_stops": 1114,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "73cd740dd5cfea2158aea1a02df962b0ffee2a7c9d7870eb3ef33e6285fa85ba"
+    },
+    {
+      "id": "GUM_podcast_pandemic",
+      "split": "train",
+      "input_tokens": 1247,
+      "source_stops": 1177,
+      "certified_stops": 1169,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "9272f50c01938cb899b0296d9b4fbf2bb59c695d09345ee49f5e5c568866c255"
+    },
+    {
+      "id": "GUM_speech_data",
+      "split": "train",
+      "input_tokens": 1077,
+      "source_stops": 1023,
+      "certified_stops": 1011,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "9e5044bb9488db69396ac250402e0a7fe8bd25c9377224580433c2cbc8765b7f"
+    },
+    {
+      "id": "GUM_speech_destiny",
+      "split": "train",
+      "input_tokens": 1306,
+      "source_stops": 1239,
+      "certified_stops": 1238,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 1
+      },
+      "certificate_sha256": "7a96d887a6d185293220e40b54f00af9955fd907367231544e1573d926e79669"
+    },
+    {
+      "id": "GUM_speech_floyd",
+      "split": "train",
+      "input_tokens": 1322,
+      "source_stops": 1244,
+      "certified_stops": 1226,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "ea6ed0f111bf9dfdb40fd93f1cc80bb0482e50f4d4ed4c628107b3e173c63ba5"
+    },
+    {
+      "id": "GUM_speech_maiden",
+      "split": "train",
+      "input_tokens": 1349,
+      "source_stops": 1254,
+      "certified_stops": 1233,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 21
+      },
+      "certificate_sha256": "a31aef9c67efc1fdeec64962e80c7d0d1f1ec7fdd2b3151400c122c128f22482"
+    },
+    {
+      "id": "GUM_speech_nixon",
+      "split": "train",
+      "input_tokens": 1228,
+      "source_stops": 1172,
+      "certified_stops": 1169,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "909d4cbd8808f954a82cd5563e0fe9b8a963b98637a3b787dcfd6d2e7d970c32"
+    },
+    {
+      "id": "GUM_speech_open",
+      "split": "train",
+      "input_tokens": 1276,
+      "source_stops": 1190,
+      "certified_stops": 1181,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "6468c8a29269033aa8d09778a502daef03352159b63aa65ae06d78a158f53e14"
+    },
+    {
+      "id": "GUM_speech_remarks",
+      "split": "train",
+      "input_tokens": 1228,
+      "source_stops": 1153,
+      "certified_stops": 1152,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 1
+      },
+      "certificate_sha256": "e70ba96e881fffc52dfe6bcc0073fb62685f01fa1dadc012e3d86faf48b1d7ff"
+    },
+    {
+      "id": "GUM_speech_telescope",
+      "split": "train",
+      "input_tokens": 1249,
+      "source_stops": 1167,
+      "certified_stops": 1156,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "ecbbed5a8c0297ab275de140acd49e6401e31f34e06e386ba174808b529b2c72"
+    },
+    {
+      "id": "GUM_speech_trump",
+      "split": "train",
+      "input_tokens": 1246,
+      "source_stops": 1177,
+      "certified_stops": 1150,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 27
+      },
+      "certificate_sha256": "c24e9c80d606ff1d1bbf535ef53ca449d76c1bca28957efdfb10381196b1cea7"
+    },
+    {
+      "id": "GUM_textbook_alamo",
+      "split": "train",
+      "input_tokens": 1308,
+      "source_stops": 1161,
+      "certified_stops": 1153,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "5618e67f7425584b7ccad26272a98a092d30d9a6c8f4a5d6269ecb3938d98210"
+    },
+    {
+      "id": "GUM_textbook_anthropology",
+      "split": "train",
+      "input_tokens": 1094,
+      "source_stops": 1039,
+      "certified_stops": 1030,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "026ecc5f3250aa1b5dd7464e09fb573cd2a62c86674a31935f1fb25fbebd7481"
+    },
+    {
+      "id": "GUM_textbook_artwork",
+      "split": "train",
+      "input_tokens": 1279,
+      "source_stops": 1106,
+      "certified_stops": 1090,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "5e10506d69f6457bf5c5e9dc88631d79fd2fd2055db8d7662f13d8f99494aec4"
+    },
+    {
+      "id": "GUM_textbook_cognition",
+      "split": "train",
+      "input_tokens": 1212,
+      "source_stops": 1141,
+      "certified_stops": 1133,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "55350283beaad5e05659eaf5577861f913c1be00d873c97c4b70d1a46af54560"
+    },
+    {
+      "id": "GUM_textbook_entrepreneurship",
+      "split": "train",
+      "input_tokens": 1127,
+      "source_stops": 967,
+      "certified_stops": 955,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "9f220a4a780098ef5fd9af991374e5736da00a8c83e553b23fa53dd02c667a27"
+    },
+    {
+      "id": "GUM_textbook_evoethics",
+      "split": "train",
+      "input_tokens": 1338,
+      "source_stops": 1238,
+      "certified_stops": 1230,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "053001a9c78cf6a84a0489fcabf634f7faed31c921cf12248b0e9d8251dd66ce"
+    },
+    {
+      "id": "GUM_textbook_grit",
+      "split": "train",
+      "input_tokens": 1234,
+      "source_stops": 1115,
+      "certified_stops": 1103,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "9a2fbeb3ab8aefd69aec80bba5834ec6d17e6cc44aa6b30cb3b34e5a7beb9ad8"
+    },
+    {
+      "id": "GUM_textbook_history",
+      "split": "train",
+      "input_tokens": 1638,
+      "source_stops": 1407,
+      "certified_stops": 1395,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "73a3e253c9956df62d544bd611aa47b119c3b27a24cbb380fd057831b0ef7955"
+    },
+    {
+      "id": "GUM_textbook_sociology",
+      "split": "train",
+      "input_tokens": 1302,
+      "source_stops": 1209,
+      "certified_stops": 1199,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "d3506c1085980fda7469a4e53314dcf64ae8574b2b4e5deb0953c093911a00b3"
+    },
+    {
+      "id": "GUM_textbook_spacetime",
+      "split": "train",
+      "input_tokens": 1510,
+      "source_stops": 1420,
+      "certified_stops": 1402,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "37dfe78320e701cb9690147b3bfab650beac7075b6be87d7e75e3b27c3d10cb2"
+    },
+    {
+      "id": "GUM_textbook_stats",
+      "split": "train",
+      "input_tokens": 1610,
+      "source_stops": 1230,
+      "certified_stops": 1221,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "05adfb5378193fc4983e7a0870d8a9b07cde689d974f87af469c33b22e48d385"
+    },
+    {
+      "id": "GUM_vlog_appearance",
+      "split": "train",
+      "input_tokens": 1232,
+      "source_stops": 1211,
+      "certified_stops": 1192,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "8f50b4a5bfade34803e53288a7f1e1445968c11d311d42237bd3b85b4e05d8d1"
+    },
+    {
+      "id": "GUM_vlog_college",
+      "split": "train",
+      "input_tokens": 1305,
+      "source_stops": 1222,
+      "certified_stops": 1201,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 21
+      },
+      "certificate_sha256": "3ca00679b82f42b88fca67d69b858f7bfa7f042391a213f5b0560f6dcf466b75"
+    },
+    {
+      "id": "GUM_vlog_covid",
+      "split": "train",
+      "input_tokens": 1242,
+      "source_stops": 1191,
+      "certified_stops": 1173,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "c4f3f825aa8cae9db6abaaa110260525942e6e7c0efbe90d75f7b84261209791"
+    },
+    {
+      "id": "GUM_vlog_exams",
+      "split": "train",
+      "input_tokens": 1423,
+      "source_stops": 1276,
+      "certified_stops": 1264,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "042e504222acc4973e14ba88ce7cf0af10b8747d0b7744aa6b042ffbd7567b5d"
+    },
+    {
+      "id": "GUM_vlog_hair",
+      "split": "train",
+      "input_tokens": 1247,
+      "source_stops": 1225,
+      "certified_stops": 1192,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 33
+      },
+      "certificate_sha256": "446d030839ad156e00e1626bd5a3c9b48e9bbaf7a60493203e2c2036d04c6979"
+    },
+    {
+      "id": "GUM_vlog_hiking",
+      "split": "train",
+      "input_tokens": 1304,
+      "source_stops": 1260,
+      "certified_stops": 1240,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 20
+      },
+      "certificate_sha256": "7960bd024d70489f6834acbcbaf2457ec2c12c80932b9a518a63e0e1eb4dc158"
+    },
+    {
+      "id": "GUM_vlog_lipstick",
+      "split": "train",
+      "input_tokens": 1311,
+      "source_stops": 1269,
+      "certified_stops": 1248,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 21
+      },
+      "certificate_sha256": "4c366727271379e1a3ce7a523ba2aaa64355069782be6033b9b864cb40c83101"
+    },
+    {
+      "id": "GUM_vlog_mermaid",
+      "split": "train",
+      "input_tokens": 1144,
+      "source_stops": 1063,
+      "certified_stops": 1049,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "59587d2851df95529777e97e096e180b449ef3336907f057b3c4c6ebede1919d"
+    },
+    {
+      "id": "GUM_vlog_pizzeria",
+      "split": "train",
+      "input_tokens": 970,
+      "source_stops": 870,
+      "certified_stops": 853,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 17
+      },
+      "certificate_sha256": "940049d665fb032b8f28cbd53677f453092a8c0bbe8f78e27a374655906dfbc0"
+    },
+    {
+      "id": "GUM_vlog_pregnant",
+      "split": "train",
+      "input_tokens": 1327,
+      "source_stops": 1313,
+      "certified_stops": 1287,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 26
+      },
+      "certificate_sha256": "6233b10b980c854debd8900befb0a24432348bc4f927d64203ab86ff5051baff"
+    },
+    {
+      "id": "GUM_vlog_wine",
+      "split": "train",
+      "input_tokens": 1409,
+      "source_stops": 1239,
+      "certified_stops": 1230,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "16cee9a6751d093ae5b8c030d49fb912d4f7745b46f4e48171d12f5af3f027ce"
+    },
+    {
+      "id": "GUM_voyage_chatham",
+      "split": "train",
+      "input_tokens": 1308,
+      "source_stops": 1118,
+      "certified_stops": 1104,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "4235ea62b7fc9eb1d0fb8c29546234c6a043c6c5c70d1ad2684af232a90a9006"
+    },
+    {
+      "id": "GUM_voyage_cleveland",
+      "split": "train",
+      "input_tokens": 719,
+      "source_stops": 649,
+      "certified_stops": 630,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "49933710dca0301ede0cc54764ee5e3b79b246adf6ffc2b302c15dced90615cd"
+    },
+    {
+      "id": "GUM_voyage_cuba",
+      "split": "train",
+      "input_tokens": 910,
+      "source_stops": 813,
+      "certified_stops": 792,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 21
+      },
+      "certificate_sha256": "98710777167193f652fc3781d657bdee2e7bfc27aebb8cd5a93ff6405c52a8d1"
+    },
+    {
+      "id": "GUM_voyage_fortlee",
+      "split": "train",
+      "input_tokens": 1370,
+      "source_stops": 1144,
+      "certified_stops": 1139,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "46dbbd6959a762dc5cde4eb3e087124b7a74a4c977979975c3bbb8386d104cf6"
+    },
+    {
+      "id": "GUM_voyage_guadeloupe",
+      "split": "train",
+      "input_tokens": 996,
+      "source_stops": 804,
+      "certified_stops": 793,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "98243458e8bbdaf28695f6dc1036355ab272e68d2d982377d2aedeb9f87e1a78"
+    },
+    {
+      "id": "GUM_voyage_isfahan",
+      "split": "train",
+      "input_tokens": 1237,
+      "source_stops": 1007,
+      "certified_stops": 988,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "3aeb9ad509b784072bb5099bffe3271c0bc567814ac00634ca967ad90287419f"
+    },
+    {
+      "id": "GUM_voyage_lodz",
+      "split": "train",
+      "input_tokens": 1099,
+      "source_stops": 880,
+      "certified_stops": 870,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "d75a4deb0b49fa5647f29e09bf6d668cb2ae425b94cc982e9cfb707ea64c0c76"
+    },
+    {
+      "id": "GUM_voyage_merida",
+      "split": "train",
+      "input_tokens": 835,
+      "source_stops": 639,
+      "certified_stops": 631,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "bc61cf1e573c6b0da8d706002c28ec4d8b5f62e344a63abccd3d059fd92ba3d7"
+    },
+    {
+      "id": "GUM_voyage_phoenix",
+      "split": "train",
+      "input_tokens": 1041,
+      "source_stops": 896,
+      "certified_stops": 878,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "23462f88891790835be743a849af11d983fd584c1797bce9217a56f5ab365c60"
+    },
+    {
+      "id": "GUM_voyage_socotra",
+      "split": "train",
+      "input_tokens": 1011,
+      "source_stops": 906,
+      "certified_stops": 900,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "7faf566a615d7a961d8a04266e745da339d5968f6f9d0f69f3dc89cb027b81ef"
+    },
+    {
+      "id": "GUM_voyage_sydfynske",
+      "split": "train",
+      "input_tokens": 1656,
+      "source_stops": 1338,
+      "certified_stops": 1333,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "e57c7c04dc75754161fc71609a219fcbb15089bf05ec5c7ba3e4558a7e09daa5"
+    },
+    {
+      "id": "GUM_voyage_thailand",
+      "split": "train",
+      "input_tokens": 989,
+      "source_stops": 920,
+      "certified_stops": 909,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "699b9a04983a61808a541b291a0d323d8dd878bf5efe09e373e1d24e42bdd75b"
+    },
+    {
+      "id": "GUM_voyage_tulsa",
+      "split": "train",
+      "input_tokens": 1566,
+      "source_stops": 1339,
+      "certified_stops": 1307,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 32
+      },
+      "certificate_sha256": "901969755ca92a36acd11242d4a372620e4a4aa1c5edd27857e66a8d7ca48e15"
+    },
+    {
+      "id": "GUM_voyage_york",
+      "split": "train",
+      "input_tokens": 824,
+      "source_stops": 725,
+      "certified_stops": 719,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "62f318bcd9015498d2558c19393bd7d5c957beb2fab00e7a2ad6c20227b1dd9a"
+    },
+    {
+      "id": "GUM_whow_arrogant",
+      "split": "train",
+      "input_tokens": 1188,
+      "source_stops": 1131,
+      "certified_stops": 1100,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 31
+      },
+      "certificate_sha256": "264e8cf94a6bb6d63dd3f4bec75b573f4e07a23b33fd466565ca8d5e893b80e5"
+    },
+    {
+      "id": "GUM_whow_ballet",
+      "split": "train",
+      "input_tokens": 741,
+      "source_stops": 695,
+      "certified_stops": 690,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "4c7a9ad0ef7e71bf42d610daf4f8bfc9cb300dd5211f2f5783b031a82f6232c8"
+    },
+    {
+      "id": "GUM_whow_basil",
+      "split": "train",
+      "input_tokens": 1255,
+      "source_stops": 1174,
+      "certified_stops": 1167,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "db5706bcc708b79ca7745d8ce5fefd96005878e7e6033bccc617f0c85a4d7b87"
+    },
+    {
+      "id": "GUM_whow_chicken",
+      "split": "train",
+      "input_tokens": 719,
+      "source_stops": 660,
+      "certified_stops": 652,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "5627a0d7ecb587b1bc3f0223f7b4283a021d8cf71645331bbe57bcaef149d439"
+    },
+    {
+      "id": "GUM_whow_cupcakes",
+      "split": "train",
+      "input_tokens": 1159,
+      "source_stops": 976,
+      "certified_stops": 966,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "e34b81d49bbc69c60f0ad0bd36c3ae80b5a2f9c914fa91910e38892ab5aa2f24"
+    },
+    {
+      "id": "GUM_whow_elevator",
+      "split": "train",
+      "input_tokens": 754,
+      "source_stops": 710,
+      "certified_stops": 701,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "468b1afd11ae8994fb3bbe7c4dc363e8814f2a7e669be8586e0ec685d3463b19"
+    },
+    {
+      "id": "GUM_whow_flirt",
+      "split": "train",
+      "input_tokens": 1180,
+      "source_stops": 1140,
+      "certified_stops": 1108,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 32
+      },
+      "certificate_sha256": "0a4f85f607b56a80c6c6eb2c8ef94cc1eadef6c7b362677f9f4beb9cf1dfd445"
+    },
+    {
+      "id": "GUM_whow_glowstick",
+      "split": "train",
+      "input_tokens": 740,
+      "source_stops": 685,
+      "certified_stops": 669,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "4872e601f62f5f3280f649947493f7fbbd2288f73adb1d81e051db804a309267"
+    },
+    {
+      "id": "GUM_whow_languages",
+      "split": "train",
+      "input_tokens": 1275,
+      "source_stops": 1159,
+      "certified_stops": 1140,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 19
+      },
+      "certificate_sha256": "095c6048d37975c6e63dc4945514719c7420a15c05c4138743af87bc0e0ff422"
+    },
+    {
+      "id": "GUM_whow_packing",
+      "split": "train",
+      "input_tokens": 753,
+      "source_stops": 705,
+      "certified_stops": 693,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "acd356c55da43f1f1f8da4e844700dac298a4deb898d7418523e6b15477cabc4"
+    },
+    {
+      "id": "GUM_whow_parachute",
+      "split": "train",
+      "input_tokens": 955,
+      "source_stops": 902,
+      "certified_stops": 895,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "2f10ab38323f6968a00b2fb22ca6f97aa6ba5bd420f85bdc2ab75cb7548fc983"
+    },
+    {
+      "id": "GUM_whow_procrastinating",
+      "split": "train",
+      "input_tokens": 968,
+      "source_stops": 936,
+      "certified_stops": 915,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 21
+      },
+      "certificate_sha256": "1d4b4476fccc6992004305b0351e71a7fb7da70d42a1c20383d0006fbdf3f5c1"
+    },
+    {
+      "id": "GUM_whow_quidditch",
+      "split": "train",
+      "input_tokens": 1263,
+      "source_stops": 1083,
+      "certified_stops": 1070,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "8596536acc9542f3de0b098fd3078130fed8633c2e607f98f76ff5eea7879eae"
+    },
+    {
+      "id": "GUM_whow_quinoa",
+      "split": "train",
+      "input_tokens": 976,
+      "source_stops": 847,
+      "certified_stops": 835,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "b8b3b31908f888cc3e126535ccf2931bc1271563566f3ad3b79d83ea1b9b0ec2"
+    },
+    {
+      "id": "GUM_whow_skittles",
+      "split": "train",
+      "input_tokens": 1138,
+      "source_stops": 962,
+      "certified_stops": 951,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "55c02fd98fc6a4490438019594afc13f8f13250fed05e9baa28edad6b569e54a"
+    },
+    {
+      "id": "GUM_academic_exposure",
+      "split": "dev",
+      "input_tokens": 1007,
+      "source_stops": 963,
+      "certified_stops": 902,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 61
+      },
+      "certificate_sha256": "1820a5ed373466da7402a61c89d1b9257ff6e151acab1cecc18aec00eb578201"
+    },
+    {
+      "id": "GUM_academic_librarians",
+      "split": "dev",
+      "input_tokens": 906,
+      "source_stops": 810,
+      "certified_stops": 799,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 11
+      },
+      "certificate_sha256": "6de7e61c7caee766b7342ec48b813b97e3f356e97c2959cd756411ad668e6c19"
+    },
+    {
+      "id": "GUM_bio_byron",
+      "split": "dev",
+      "input_tokens": 859,
+      "source_stops": 746,
+      "certified_stops": 736,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "bf66aa1c1e8af8ab6bdc4e647edbc1dd6cc69d0df3c0181425db0b955580bc93"
+    },
+    {
+      "id": "GUM_bio_emperor",
+      "split": "dev",
+      "input_tokens": 1118,
+      "source_stops": 959,
+      "certified_stops": 946,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "de62dd1f3845fff7d5f8220a5a03d2074146bbcaff71b3af4c4ef11462bdb331"
+    },
+    {
+      "id": "GUM_conversation_risk",
+      "split": "dev",
+      "input_tokens": 1043,
+      "source_stops": 944,
+      "certified_stops": 923,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 21
+      },
+      "certificate_sha256": "aff701a3c41587818c26c8536d9feeded56d4277288971ee11980ef53f148fd6"
+    },
+    {
+      "id": "GUM_court_loan",
+      "split": "dev",
+      "input_tokens": 1190,
+      "source_stops": 1114,
+      "certified_stops": 1102,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "debf570fad934b032cbccf6796eb5f6ef56150f4725354686ad78250e5fb709a"
+    },
+    {
+      "id": "GUM_court_negligence",
+      "split": "dev",
+      "input_tokens": 1210,
+      "source_stops": 1134,
+      "certified_stops": 1122,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "e2223f5156bc0bcc76bbecd0a92585271168ccbb519bf3d129ea3315d5b62fc0"
+    },
+    {
+      "id": "GUM_essay_tools",
+      "split": "dev",
+      "input_tokens": 1306,
+      "source_stops": 1242,
+      "certified_stops": 1219,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 23
+      },
+      "certificate_sha256": "f3d2465805d61422a71469452e73d1a726417d18357579832650ce1cb666096e"
+    },
+    {
+      "id": "GUM_fiction_beast",
+      "split": "dev",
+      "input_tokens": 1070,
+      "source_stops": 1030,
+      "certified_stops": 1023,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "9c094d49bb9a304741169b831d72cfca609e12b9c44a7616f5f822ea08ddd85d"
+    },
+    {
+      "id": "GUM_fiction_lunre",
+      "split": "dev",
+      "input_tokens": 818,
+      "source_stops": 760,
+      "certified_stops": 745,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 15
+      },
+      "certificate_sha256": "b3abc2eb56ca11a43a7a04242d589b54392fe165fb8d7c066255a053ef549126"
+    },
+    {
+      "id": "GUM_interview_cyclone",
+      "split": "dev",
+      "input_tokens": 993,
+      "source_stops": 863,
+      "certified_stops": 856,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "0e67151aa7bda30e78e52da1f390749e8a7b7f3a3adb11a091d6f8789940d9d5"
+    },
+    {
+      "id": "GUM_interview_gaming",
+      "split": "dev",
+      "input_tokens": 764,
+      "source_stops": 719,
+      "certified_stops": 715,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "25e7f2fbbda3731949aeec8928eba7d24df61e6f651ca4f7d5548c9b91f74b3b"
+    },
+    {
+      "id": "GUM_letter_arendt",
+      "split": "dev",
+      "input_tokens": 891,
+      "source_stops": 818,
+      "certified_stops": 809,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "44a30089374fc148fb49f4c568b358534d9ba7519f8fe8561cae49208f1b2ba1"
+    },
+    {
+      "id": "GUM_letter_wiki",
+      "split": "dev",
+      "input_tokens": 1136,
+      "source_stops": 980,
+      "certified_stops": 964,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "41b7710e6462cbe4a27f51a5e4f0f5041649e78ded9bb5ff66d45bacb1771647"
+    },
+    {
+      "id": "GUM_news_homeopathic",
+      "split": "dev",
+      "input_tokens": 727,
+      "source_stops": 649,
+      "certified_stops": 641,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "9b1d1100e64023c81cda57b1027f498e7c9d155aeac3d442b59a1141cfcc634a"
+    },
+    {
+      "id": "GUM_news_iodine",
+      "split": "dev",
+      "input_tokens": 1184,
+      "source_stops": 1071,
+      "certified_stops": 1046,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 25
+      },
+      "certificate_sha256": "d519eca00269f8727d4c8d1d2d1355f3dca64f17798e5e506b8b5d2cea3c8b4c"
+    },
+    {
+      "id": "GUM_podcast_bangladesh",
+      "split": "dev",
+      "input_tokens": 979,
+      "source_stops": 854,
+      "certified_stops": 850,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "ccf9f743f02b3d6c01920858fed7bcf0294ad44ab85de48a471a1d2a0c05a766"
+    },
+    {
+      "id": "GUM_podcast_wrestling",
+      "split": "dev",
+      "input_tokens": 1204,
+      "source_stops": 1124,
+      "certified_stops": 1101,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 23
+      },
+      "certificate_sha256": "bf94ae362c7789cd7643900d355fb7be526f1dd8bb3c4754fc2679c439489360"
+    },
+    {
+      "id": "GUM_speech_impeachment",
+      "split": "dev",
+      "input_tokens": 1143,
+      "source_stops": 1100,
+      "certified_stops": 1093,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "ba66a5ea3b51629dc12ef4bb779bc3963704745532964ae54b795a6a0f5885ce"
+    },
+    {
+      "id": "GUM_speech_inauguration",
+      "split": "dev",
+      "input_tokens": 923,
+      "source_stops": 885,
+      "certified_stops": 880,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "fabc69a7cd9106ec07336256f1603d997c4a82602eaaf6a16447510d46321fcc"
+    },
+    {
+      "id": "GUM_textbook_governments",
+      "split": "dev",
+      "input_tokens": 992,
+      "source_stops": 945,
+      "certified_stops": 939,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "746efb2c1687f5af343f06b542c7d1471f2499557d21aa88e27c4a9728a43403"
+    },
+    {
+      "id": "GUM_textbook_labor",
+      "split": "dev",
+      "input_tokens": 667,
+      "source_stops": 640,
+      "certified_stops": 636,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "c94b0df26001eb01a0c253b848ffce0df9dffff5e08f981524f09e29d90d44b0"
+    },
+    {
+      "id": "GUM_vlog_portland",
+      "split": "dev",
+      "input_tokens": 1111,
+      "source_stops": 1097,
+      "certified_stops": 1087,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "8cc3b96b91d6ad030ed49e206aa23c51f08de9ec2a0bc852a070c6993e60e202"
+    },
+    {
+      "id": "GUM_vlog_radiology",
+      "split": "dev",
+      "input_tokens": 970,
+      "source_stops": 943,
+      "certified_stops": 933,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "62fc391e6f5d8d64988763492f349e24f1c8fb94cd4bab82b97e860c7ab21036"
+    },
+    {
+      "id": "GUM_voyage_athens",
+      "split": "dev",
+      "input_tokens": 1191,
+      "source_stops": 1021,
+      "certified_stops": 1012,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "75536fc9a9ca8a2db460e2bb9b2424552cd433651d0f4355e4600e2310c5e5a4"
+    },
+    {
+      "id": "GUM_voyage_coron",
+      "split": "dev",
+      "input_tokens": 685,
+      "source_stops": 582,
+      "certified_stops": 580,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 2
+      },
+      "certificate_sha256": "67e7d3ba923c76d37516dac0b24f9447010300609ebdc82d3d852820d6798267"
+    },
+    {
+      "id": "GUM_whow_joke",
+      "split": "dev",
+      "input_tokens": 1087,
+      "source_stops": 1021,
+      "certified_stops": 1003,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "ee64ca1cdffaf49f1f8e1fec8386eb1a748c48e30d0cfc79a9d2864c5fe5ce39"
+    },
+    {
+      "id": "GUM_whow_overalls",
+      "split": "dev",
+      "input_tokens": 684,
+      "source_stops": 647,
+      "certified_stops": 637,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "16fda64d557a49fbf3c48737a0b82bf309d391f496173d4852681542bfc55e25"
+    },
+    {
+      "id": "GUM_academic_discrimination",
+      "split": "test",
+      "input_tokens": 1127,
+      "source_stops": 1051,
+      "certified_stops": 1026,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 25
+      },
+      "certificate_sha256": "f7389ebdc9708927bddfe9339969984a1f6f6c1392a72d22dea375d4063a7a46"
+    },
+    {
+      "id": "GUM_academic_eegimaa",
+      "split": "test",
+      "input_tokens": 1262,
+      "source_stops": 901,
+      "certified_stops": 884,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 17
+      },
+      "certificate_sha256": "c303b67ba0e7cf8d77952aae52801f8074043e72b889cd340ca9d4b1bd23747f"
+    },
+    {
+      "id": "GUM_bio_dvorak",
+      "split": "test",
+      "input_tokens": 926,
+      "source_stops": 696,
+      "certified_stops": 690,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 6
+      },
+      "certificate_sha256": "7bc41c8608e1f9d8434931bebe4124ef0e0c65d3df20ef9dacc0ed6ed0e5f255"
+    },
+    {
+      "id": "GUM_bio_jespersen",
+      "split": "test",
+      "input_tokens": 1233,
+      "source_stops": 983,
+      "certified_stops": 967,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "08d2c7b1374481b905ec890ed20098b7f3f79f56b4a14da3a2f2e7090d2f401c"
+    },
+    {
+      "id": "GUM_conversation_lambada",
+      "split": "test",
+      "input_tokens": 1080,
+      "source_stops": 1008,
+      "certified_stops": 992,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "fb1e7f29407a4d5746db46da28244a5a170aa9d38204e10b4224442dc0cf04b6"
+    },
+    {
+      "id": "GUM_conversation_retirement",
+      "split": "test",
+      "input_tokens": 960,
+      "source_stops": 860,
+      "certified_stops": 842,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 18
+      },
+      "certificate_sha256": "4eaab8bf40a762d921fbcfd810e231787fbc309829855a0ddea7024a0e7bb2ba"
+    },
+    {
+      "id": "GUM_court_insanity",
+      "split": "test",
+      "input_tokens": 1275,
+      "source_stops": 1201,
+      "certified_stops": 1192,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "23eb9af23378b92d7a50572d1ad621f4e5982bcf3a9a88ed9a99160d35abcca3"
+    },
+    {
+      "id": "GUM_court_mitigation",
+      "split": "test",
+      "input_tokens": 942,
+      "source_stops": 874,
+      "certified_stops": 867,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "034297bab3b9a26c8097ccabe68168a44bfc577501d5b988abc75af4f9e22d86"
+    },
+    {
+      "id": "GUM_essay_fear",
+      "split": "test",
+      "input_tokens": 1326,
+      "source_stops": 1228,
+      "certified_stops": 1219,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "8a96b6d7f85308780d01db3a595a99e93c00a713e0dc6b620ea82a9ceb91d5b3"
+    },
+    {
+      "id": "GUM_essay_system",
+      "split": "test",
+      "input_tokens": 1198,
+      "source_stops": 1131,
+      "certified_stops": 1106,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 25
+      },
+      "certificate_sha256": "0359ae9855c44e4e2f7f65a1d40bdd7c88dc6f8942ecbc523450f6eaa5396e87"
+    },
+    {
+      "id": "GUM_fiction_falling",
+      "split": "test",
+      "input_tokens": 1172,
+      "source_stops": 1014,
+      "certified_stops": 981,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 33
+      },
+      "certificate_sha256": "b057c29daada865f48e855294e16933a2dedff50abdf8fd583048419874eb0cc"
+    },
+    {
+      "id": "GUM_fiction_teeth",
+      "split": "test",
+      "input_tokens": 1077,
+      "source_stops": 1015,
+      "certified_stops": 1003,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "709b597c27a9c535d946db2e7af00cb95a9b4cd11a2633e4e87246500d23cd39"
+    },
+    {
+      "id": "GUM_interview_hill",
+      "split": "test",
+      "input_tokens": 900,
+      "source_stops": 807,
+      "certified_stops": 803,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 4
+      },
+      "certificate_sha256": "edbcf71874af417a9d335aae548a44e46f1db2c28c1b831bb5ce443ab4750679"
+    },
+    {
+      "id": "GUM_interview_libertarian",
+      "split": "test",
+      "input_tokens": 935,
+      "source_stops": 846,
+      "certified_stops": 837,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "4167b66f7d7e8a7c3d8b38b22c32fae39edd7e926acaf45548d70cf06ec23b33"
+    },
+    {
+      "id": "GUM_letter_attorney",
+      "split": "test",
+      "input_tokens": 1002,
+      "source_stops": 915,
+      "certified_stops": 910,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "5e0a9490a36e3e35a88233aa455f130b587744d2a091be62ea08ec7af7d5412b"
+    },
+    {
+      "id": "GUM_letter_mandela",
+      "split": "test",
+      "input_tokens": 1094,
+      "source_stops": 1024,
+      "certified_stops": 1016,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 8
+      },
+      "certificate_sha256": "b30ce29dd65cc7c983c88fe3d6bbd17d5f4534dde90e1d8d447747da999027a3"
+    },
+    {
+      "id": "GUM_news_nasa",
+      "split": "test",
+      "input_tokens": 1444,
+      "source_stops": 1266,
+      "certified_stops": 1253,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 13
+      },
+      "certificate_sha256": "a85d750a97a1e2af5ddd8cc988d98f99d0c7bae0be71eaff2e625a771480770e"
+    },
+    {
+      "id": "GUM_news_sensitive",
+      "split": "test",
+      "input_tokens": 714,
+      "source_stops": 625,
+      "certified_stops": 609,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 16
+      },
+      "certificate_sha256": "4f30f60bc694a82c79fc7917d093a07adeabd62fca69485dcf74e684a25d63a1"
+    },
+    {
+      "id": "GUM_podcast_bezos",
+      "split": "test",
+      "input_tokens": 1007,
+      "source_stops": 960,
+      "certified_stops": 955,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 5
+      },
+      "certificate_sha256": "024eb07672ae2abfa1f549ae4ce879979ecf7aaefdeda2712020664b87a34900"
+    },
+    {
+      "id": "GUM_podcast_multitasking",
+      "split": "test",
+      "input_tokens": 1207,
+      "source_stops": 1159,
+      "certified_stops": 1147,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "b04b972b3fe80556474b927472522a78760c661a3e201d541e30d18fc57aacfc"
+    },
+    {
+      "id": "GUM_speech_austria",
+      "split": "test",
+      "input_tokens": 981,
+      "source_stops": 915,
+      "certified_stops": 912,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "565cefeaa7b9b24b52433d642d89e4b7972038b63af6f22ef9d10b3b1eb4d233"
+    },
+    {
+      "id": "GUM_speech_newzealand",
+      "split": "test",
+      "input_tokens": 849,
+      "source_stops": 813,
+      "certified_stops": 806,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 7
+      },
+      "certificate_sha256": "0c2a807d8880ea39c899284c4738211cc4cb1511a31eee39f0a97eb03c82c638"
+    },
+    {
+      "id": "GUM_textbook_chemistry",
+      "split": "test",
+      "input_tokens": 1078,
+      "source_stops": 974,
+      "certified_stops": 960,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 14
+      },
+      "certificate_sha256": "3d58e96efbf9865241a9c7e5fefb7c49264aefc035733f50357224d09dc3ee7f"
+    },
+    {
+      "id": "GUM_textbook_union",
+      "split": "test",
+      "input_tokens": 1274,
+      "source_stops": 1098,
+      "certified_stops": 1095,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "7127da2d385ce5f0a64c70df9f5a2d41ca6b6a2d3385bff5b54bc4847372ce99"
+    },
+    {
+      "id": "GUM_vlog_london",
+      "split": "test",
+      "input_tokens": 781,
+      "source_stops": 769,
+      "certified_stops": 759,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 10
+      },
+      "certificate_sha256": "505bcdbf3d10279e7133f66164bbdbeae87aca7402f2f551d54fb094f2730e44"
+    },
+    {
+      "id": "GUM_vlog_studying",
+      "split": "test",
+      "input_tokens": 926,
+      "source_stops": 900,
+      "certified_stops": 888,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 12
+      },
+      "certificate_sha256": "adaefe8ade67912221bc15734e29b371bb2601688c33dcd693b00fd47285a4f7"
+    },
+    {
+      "id": "GUM_voyage_oakland",
+      "split": "test",
+      "input_tokens": 1221,
+      "source_stops": 1097,
+      "certified_stops": 1088,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 9
+      },
+      "certificate_sha256": "f33aec5789a2d35a737be6fbb8daee85c82c08250288377c1bf33265e012ff9e"
+    },
+    {
+      "id": "GUM_voyage_vavau",
+      "split": "test",
+      "input_tokens": 754,
+      "source_stops": 625,
+      "certified_stops": 623,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 2
+      },
+      "certificate_sha256": "2f2fa036176e719b13ce534c33230069a75a3003f40b896af6d11fbf423aa547"
+    },
+    {
+      "id": "GUM_whow_cactus",
+      "split": "test",
+      "input_tokens": 768,
+      "source_stops": 647,
+      "certified_stops": 644,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 3
+      },
+      "certificate_sha256": "fd8b32ae62fd5f5f7f04781985b8d3b6c7518913333cde7994a059b526af44a4"
+    },
+    {
+      "id": "GUM_whow_mice",
+      "split": "test",
+      "input_tokens": 1074,
+      "source_stops": 995,
+      "certified_stops": 993,
+      "excluded_stops_by_reason": {
+        "no_token_ends_at_stop": 2
+      },
+      "certificate_sha256": "9c87b87b686493163977c2774b313734400f6212658dfff2b201690cd616e3b3"
+    }
+  ],
+  "input_documents": 235,
+  "encoded_documents": 235,
+  "encoded_tokens": 254686,
+  "certified_stops": 226396
+}

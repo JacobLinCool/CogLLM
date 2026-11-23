@@ -1,0 +1,79 @@
+{
+  "cli_version": "0.7.4",
+  "endpoint_absent_after_stop": true,
+  "expected_projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+  "operation": "ARRAU frozen candidate projection",
+  "payload_members_sha256": {
+    "bundle.json": "37f3fab3ef48457413e6fba652d87733de86eb8c583bf2aa34fa25191f5f80ba",
+    "projection-inputs.tar.gz": "b7ffa678343a4fdf97585264530b62ca19b313a450d84617759abe7da7e30936"
+  },
+  "payload_sha256": "ab49bf896234a09a64326000f3919ce7b24e7c0b35cfa7e177680763d189b577",
+  "phase": "finished",
+  "projection": {
+    "assay_sha256": "d321feadcc927cb4882df04b5b920b40398bc3d0f52cb2b244c999cfb1850945",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 35517,
+    "encoded_documents": 25,
+    "input_tokens": 42939,
+    "preflight_sha256": "81777cb9e763db0d006378e624cc30fed1fb3be30d83c250ed637dd0fdae3638",
+    "protocol_sha256": "c081b2d2edf7c52e26f41a39bce526a279467f9e09835ce1c695b48c9f2a938f",
+    "source_code_sha256": "f7dea945b4fb6e5fc083f127db35bcd13e16c6064f0676459fab3df58d00fe3c",
+    "stimuli_sha256": "5a22f21843e59afe91d5efe4b22643b064da7b9eb33d9b5832ad35bb13dac7f3",
+    "verified_gradio_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "verified_gradio_sha256": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "published_sha256": {
+    "causality.json": "d0e3065a45709389da00536ff359845cf7d3a39cab5526cafb809d180a370c87",
+    "extraction.json": "96707217bbd5b27d986b52be3216ff200888888d2015088d1c608f6840daf578",
+    "runtime.json": "61cddd6c2c61b7678d83c9fce3ba1ad5df4bafd47f2f82fe01442e06d0abe03a",
+    "telemetry.jsonl": "bffc712d14d7b4b64c3c4184d5c5d3351bc84537ba6ee68ea87781b4a240c471",
+    "usage.jsonl": "f63e44b4ebaa5126444bca510ad0a715de4b0f5675463ebc6e3768bcd2fa0c81"
+  },
+  "reference_run_id": "cogllm-cuda-checks-20261121T031119Z-5bc72d1f",
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "requested_hardware": "NVIDIA L4",
+  "run_id": "cogllm-cuda-checks-20261121T034127Z-3a51b5c6",
+  "stages": {
+    "projection": {
+      "archive_bytes": 8799289,
+      "archive_sha256": "fad572fe7cdd4270c9b5ea878e9aee11eadae6ad55eae2034cdbf6676180645d",
+      "elapsed_s": 94.30478766799999,
+      "members": {
+        "causality.json": "d0e3065a45709389da00536ff359845cf7d3a39cab5526cafb809d180a370c87",
+        "coordinates.jsonl": "5661f7a0bf28e3a3cc13d55c90c4de73d97f860f8cfbe39482952d6d5c79feb2",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "96707217bbd5b27d986b52be3216ff200888888d2015088d1c608f6840daf578",
+        "telemetry.jsonl": "bffc712d14d7b4b64c3c4184d5c5d3351bc84537ba6ee68ea87781b4a240c471",
+        "terminal_states.npy": "20e7bc41f1de093d8d822c3953e7c48c448e99d115a7d983cf93dca341fbff21",
+        "vectors.npy": "f0c8f428f36e71379003b13dbba32d26b5ba51a6cc109241a8477a8c5598f985"
+      },
+      "state": "complete"
+    },
+    "setup": {
+      "archive_bytes": 647,
+      "archive_sha256": "d5c729ef970740ba1315d8effba6f4bb0d610addf06b811e66d3d6d5c17ae351",
+      "elapsed_s": 38.877777777999995,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "61cddd6c2c61b7678d83c9fce3ba1ad5df4bafd47f2f82fe01442e06d0abe03a"
+      },
+      "state": "complete"
+    }
+  },
+  "time_budget_s": 720,
+  "timeline": {
+    "allocated": "2026-11-21T03:41:48.236884+00:00",
+    "allocating": "2026-11-21T03:41:42.795692+00:00",
+    "finished": "2026-11-21T03:44:20.938287+00:00",
+    "prepared": "2026-11-21T03:41:28.208474+00:00",
+    "releasing": "2026-11-21T03:44:10.701728+00:00",
+    "remote-projection": "2026-11-21T03:42:43.101051+00:00",
+    "remote-setup": "2026-11-21T03:41:55.643945+00:00",
+    "retrieved-projection": "2026-11-21T03:44:10.696806+00:00",
+    "retrieved-setup": "2026-11-21T03:44:08.744999+00:00",
+    "worker-running": "2026-11-21T03:41:55.264404+00:00"
+  },
+  "verified_outputs": true,
+  "worker_sha256": "5aabf0f45ea21ac51d8844d585f980fd2a7478ecae4b62b80e777bc5656d77d3"
+}

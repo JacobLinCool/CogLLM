@@ -1,0 +1,559 @@
+{
+  "protocol_sha256": "447b4535900b296a282274b38462fa6d838d264ab0c08cbda50b119eadfb38f4",
+  "variant": "adapter",
+  "direct_source_cut": 0.039763849212109216,
+  "marginal_source_cut": 0.0520363396339581,
+  "direct_forecasts_sha256": "a68ccca20261eebfcae48da0c701c4b9df9680e47294c6bf8f15dd265a8707d3",
+  "marginal_forecasts_sha256": "50f36f2aecfbe3fc3d8aaf9729bd2dae9bc689e15a2b8c9a6cdd8ec7df34b6ea",
+  "t5_forecasts_sha256": "3d4335bb09dcbce9ba316b23198584e1a432e04fa0a5c6f20b284b2ab2835d76",
+  "all_words": {
+    "movie_groups": 39,
+    "words": 22133,
+    "human_positive": 413,
+    "methods": {
+      "t5_span": {
+        "tp_fp_fn_tn": [
+          4,
+          0,
+          409,
+          21720
+        ],
+        "movies_with_alerts": 3,
+        "precision": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "estimate": 0.009685230024213076,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.021187283639796776
+          ]
+        },
+        "f1": {
+          "estimate": 0.019184652278177457,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.041495392574230724
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 0.18072561333755024,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.41024799499604314
+          ]
+        }
+      },
+      "served_marginal": {
+        "tp_fp_fn_tn": [
+          375,
+          666,
+          38,
+          21054
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.36023054755043227,
+          "family_bootstrap_95_interval": [
+            0.3243237139578603,
+            0.39780092918718496
+          ]
+        },
+        "recall": {
+          "estimate": 0.9079903147699758,
+          "family_bootstrap_95_interval": [
+            0.8590901464307505,
+            0.9511657722122838
+          ]
+        },
+        "f1": {
+          "estimate": 0.515818431911967,
+          "family_bootstrap_95_interval": [
+            0.4767516105450724,
+            0.554427423874463
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 3.0662983425414363,
+          "family_bootstrap_95_interval": [
+            2.7294525782556236,
+            3.4480936348341205
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 47.03384087109746,
+          "family_bootstrap_95_interval": [
+            42.41108350829937,
+            52.14629813550161
+          ]
+        }
+      },
+      "direct_native": {
+        "tp_fp_fn_tn": [
+          382,
+          589,
+          31,
+          21131
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.39340885684860966,
+          "family_bootstrap_95_interval": [
+            0.35480854383378724,
+            0.43536170917760947
+          ]
+        },
+        "recall": {
+          "estimate": 0.9249394673123487,
+          "family_bootstrap_95_interval": [
+            0.8804591454272863,
+            0.9619289340101523
+          ]
+        },
+        "f1": {
+          "estimate": 0.5520231213872833,
+          "family_bootstrap_95_interval": [
+            0.5122655122655123,
+            0.5929465882144079
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 2.7117863720073667,
+          "family_bootstrap_95_interval": [
+            2.3981954398441983,
+            3.029259583142525
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 43.871142637690326,
+          "family_bootstrap_95_interval": [
+            39.64502973364053,
+            48.3311960117386
+          ]
+        }
+      }
+    },
+    "paired_differences": {
+      "t5_minus_served_marginal_precision": {
+        "estimate": 0.6397694524495677,
+        "family_bootstrap_95_interval": [
+          -0.3408757047122647,
+          0.6737726306294698
+        ]
+      },
+      "t5_minus_served_marginal_recall": {
+        "estimate": -0.8983050847457628,
+        "family_bootstrap_95_interval": [
+          -0.9417728216462393,
+          -0.8508149422960114
+        ]
+      },
+      "t5_minus_served_marginal_f1": {
+        "estimate": -0.4966337796337895,
+        "family_bootstrap_95_interval": [
+          -0.5336652805616885,
+          -0.46109938970736514
+        ]
+      },
+      "t5_minus_direct_native_precision": {
+        "estimate": 0.6065911431513904,
+        "family_bootstrap_95_interval": [
+          -0.3756918336656968,
+          0.6437775927886453
+        ]
+      },
+      "t5_minus_direct_native_recall": {
+        "estimate": -0.9152542372881356,
+        "family_bootstrap_95_interval": [
+          -0.9528535980148883,
+          -0.8724371232786824
+        ]
+      },
+      "t5_minus_direct_native_f1": {
+        "estimate": -0.5328384691091058,
+        "family_bootstrap_95_interval": [
+          -0.5733128326257717,
+          -0.49321729321820873
+        ]
+      }
+    },
+    "word_alert_overlap": {
+      "both_true": 4,
+      "t5_only_true": 0,
+      "qwen_only_true": 371,
+      "neither_true": 38
+    }
+  },
+  "first_person_mention": {
+    "movie_groups": 39,
+    "words": 302,
+    "human_positive": 194,
+    "methods": {
+      "t5_span": {
+        "tp_fp_fn_tn": [
+          2,
+          0,
+          192,
+          108
+        ],
+        "movies_with_alerts": 1,
+        "precision": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            1.0
+          ]
+        },
+        "recall": {
+          "estimate": 0.010309278350515464,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.031578947368421054
+          ]
+        },
+        "f1": {
+          "estimate": 0.02040816326530612,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.061224489795918366
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 6.622516556291391,
+          "family_bootstrap_95_interval": [
+            0.0,
+            20.54971049286821
+          ]
+        }
+      },
+      "served_marginal": {
+        "tp_fp_fn_tn": [
+          192,
+          69,
+          2,
+          39
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.735632183908046,
+          "family_bootstrap_95_interval": [
+            0.6459123702983139,
+            0.8164802597670343
+          ]
+        },
+        "recall": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9749968592964824,
+            1.0
+          ]
+        },
+        "f1": {
+          "estimate": 0.843956043956044,
+          "family_bootstrap_95_interval": [
+            0.782098401165471,
+            0.8950012376237624
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 63.888888888888886,
+          "family_bootstrap_95_interval": [
+            53.086419753086425,
+            72.22222222222221
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 864.2384105960265,
+          "family_bootstrap_95_interval": [
+            831.8042813455658,
+            896.551724137931
+          ]
+        }
+      },
+      "direct_native": {
+        "tp_fp_fn_tn": [
+          193,
+          75,
+          1,
+          33
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.7201492537313433,
+          "family_bootstrap_95_interval": [
+            0.6354147086466165,
+            0.7991807393508461
+          ]
+        },
+        "recall": {
+          "estimate": 0.9948453608247423,
+          "family_bootstrap_95_interval": [
+            0.9833333333333333,
+            1.0
+          ]
+        },
+        "f1": {
+          "estimate": 0.8354978354978355,
+          "family_bootstrap_95_interval": [
+            0.7756813417190775,
+            0.8863636363636364
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 69.44444444444444,
+          "family_bootstrap_95_interval": [
+            59.63302752293578,
+            76.97856000913555
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 887.4172185430464,
+          "family_bootstrap_95_interval": [
+            854.4061302681993,
+            919.0944460308394
+          ]
+        }
+      }
+    },
+    "paired_differences": {
+      "t5_minus_served_marginal_precision": {
+        "estimate": 0.26436781609195403,
+        "family_bootstrap_95_interval": [
+          -0.7983539094650206,
+          0.33866208802757686
+        ]
+      },
+      "t5_minus_served_marginal_recall": {
+        "estimate": -0.9793814432989691,
+        "family_bootstrap_95_interval": [
+          -1.0,
+          -0.9552238805970149
+        ]
+      },
+      "t5_minus_served_marginal_f1": {
+        "estimate": -0.8235478806907378,
+        "family_bootstrap_95_interval": [
+          -0.884911617590476,
+          -0.7559769168909258
+        ]
+      },
+      "t5_minus_direct_native_precision": {
+        "estimate": 0.2798507462686567,
+        "family_bootstrap_95_interval": [
+          -0.7868870277975766,
+          0.351975840232604
+        ]
+      },
+      "t5_minus_direct_native_recall": {
+        "estimate": -0.9845360824742269,
+        "family_bootstrap_95_interval": [
+          -1.0,
+          -0.9609735658809102
+        ]
+      },
+      "t5_minus_direct_native_f1": {
+        "estimate": -0.8150896722325294,
+        "family_bootstrap_95_interval": [
+          -0.8791208791208791,
+          -0.7449583594353756
+        ]
+      }
+    },
+    "word_alert_overlap": {
+      "both_true": 2,
+      "t5_only_true": 0,
+      "qwen_only_true": 190,
+      "neither_true": 2
+    }
+  },
+  "sentence_metrics": {
+    "served_marginal": {
+      "tp_fp_fn_tn": [
+        248,
+        293,
+        2,
+        873
+      ],
+      "precision": {
+        "estimate": 0.4584103512014787,
+        "family_bootstrap_95_interval": [
+          0.4164904240175991,
+          0.5
+        ]
+      },
+      "recall": {
+        "estimate": 0.992,
+        "family_bootstrap_95_interval": [
+          0.9798387096774194,
+          1.0
+        ]
+      },
+      "f1": {
+        "estimate": 0.6270543615676359,
+        "family_bootstrap_95_interval": [
+          0.5865623687956335,
+          0.6649683145268195
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 25.128644939965696,
+        "family_bootstrap_95_interval": [
+          21.913724012314262,
+          28.955986005372353
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 247,
+        "evaluated": 248,
+        "fraction": 0.9959677419354839
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 247,
+        "evaluated": 541,
+        "fraction": 0.4565619223659889
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 306,
+        "evaluated": 409,
+        "fraction": 0.7481662591687042
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 306,
+        "evaluated": 782,
+        "fraction": 0.391304347826087
+      }
+    },
+    "direct_native": {
+      "tp_fp_fn_tn": [
+        248,
+        283,
+        2,
+        883
+      ],
+      "precision": {
+        "estimate": 0.4670433145009416,
+        "family_bootstrap_95_interval": [
+          0.42886139774859283,
+          0.5085481099656357
+        ]
+      },
+      "recall": {
+        "estimate": 0.992,
+        "family_bootstrap_95_interval": [
+          0.980544747081712,
+          1.0
+        ]
+      },
+      "f1": {
+        "estimate": 0.6350832266325224,
+        "family_bootstrap_95_interval": [
+          0.5989844453433899,
+          0.672515263930752
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 24.271012006861064,
+        "family_bootstrap_95_interval": [
+          21.66114138078085,
+          27.195806680881308
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 247,
+        "evaluated": 248,
+        "fraction": 0.9959677419354839
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 247,
+        "evaluated": 531,
+        "fraction": 0.4651600753295669
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 325,
+        "evaluated": 429,
+        "fraction": 0.7575757575757576
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 325,
+        "evaluated": 785,
+        "fraction": 0.4140127388535032
+      }
+    },
+    "t5_span": {
+      "tp_fp_fn_tn": [
+        3,
+        2,
+        247,
+        1164
+      ],
+      "precision": {
+        "estimate": 0.6,
+        "family_bootstrap_95_interval": [
+          0.0,
+          1.0
+        ]
+      },
+      "recall": {
+        "estimate": 0.012,
+        "family_bootstrap_95_interval": [
+          0.0,
+          0.024390243902439025
+        ]
+      },
+      "f1": {
+        "estimate": 0.023529411764705882,
+        "family_bootstrap_95_interval": [
+          0.0,
+          0.046822742474916385
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 0.17152658662092624,
+        "family_bootstrap_95_interval": [
+          0.0,
+          0.43327556325823224
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 3,
+        "evaluated": 3,
+        "fraction": 1.0
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 3,
+        "evaluated": 5,
+        "fraction": 0.6
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 3,
+        "evaluated": 3,
+        "fraction": 1.0
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 3,
+        "evaluated": 3,
+        "fraction": 1.0
+      }
+    }
+  },
+  "fully_measured_sentences": 1416,
+  "movie_groups": 39
+}

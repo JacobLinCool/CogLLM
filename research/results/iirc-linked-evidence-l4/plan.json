@@ -1,0 +1,26 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "assay_sha256": "a358a9f72c231a225d94aeca98e5d3bd2b3a1379359c86d9e1706b1b7ca24bf6",
+  "inputs_sha256": {
+    "assay": "a358a9f72c231a225d94aeca98e5d3bd2b3a1379359c86d9e1706b1b7ca24bf6",
+    "train/stimuli.jsonl": "1b6cebe855c50977352ae0ce10e9a287bea3e7699274410fa2bd6799d8dae79b",
+    "dev/stimuli.jsonl": "55761282923e72600636dd91609df6dbc729226b989bc0315b37f029840a59f5"
+  },
+  "code_sha256": {
+    "iirc_linked_extract.py": "c6c0ed799844aef4d90f329e88e8a10f790b803900e475d6bd963134e74d31ff",
+    "extract.py": "9f9445fcfa89b556a05568a49589c2e7fde48d1db1e92b881ff3452734f4dbb1"
+  },
+  "transformers": "5.17.0",
+  "torch": "2.14.1+cu130",
+  "cuda": "13.0",
+  "gpu": "NVIDIA L4",
+  "dtype": "float32",
+  "batches": 1360,
+  "shards": 29,
+  "batches_per_shard": 48,
+  "max_batch_tokens": 6144,
+  "max_batch_examples": 24,
+  "tokens": 6704880,
+  "projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91"
+}

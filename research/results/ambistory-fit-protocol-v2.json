@@ -1,0 +1,80 @@
+{
+  "status": "prespecified_before_ambistory_feature_extraction_and_fitting",
+  "input_preparation_sha256": "0364a1942796740435c060da2d86a26774d6c794827dfd0cecae8037fafd3253",
+  "design_protocol_sha256": "da62de6360eb313306e80b0a2ce210b86d9d36a3c1b8c44750b26cf6733ba792",
+  "fit_code_sha256": "f600f682e243b00c8d1520cb91c3daf05f43a4e78b19d0682e28d4c9a6fe5c46",
+  "softmax_implementation_sha256": "0c72ac3a18a7949ca98e1580ede5ba55a87c122c12b3ad8c27ec397204966d90",
+  "numerical_amendment_sha256": "db4f06269d261aedfe701c703818cb87f6e9b6d59c1c5aab6b98b02750772ec9",
+  "length_scaler_sha256": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+  "fit_split": "train",
+  "forecast_split": "test",
+  "methods": [
+    "form_control",
+    "common_prefix",
+    "ending"
+  ],
+  "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "feature_contract": {
+    "model": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "transformers": "5.17.0",
+    "device": "NVIDIA L4",
+    "dtype": "float32",
+    "projected_width": 128,
+    "projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+    "one_forward_per_story": true,
+    "complete_certified_coordinates": true,
+    "packed_inputs_sha256": {
+      "train/stimuli.jsonl": "089178c26651b2d401a1d7ea186169bd247d3e24827e715422a6f784d68713cd",
+      "dev/stimuli.jsonl": "139e3e068326f8c88b145dd131e51d6544fb42ebebea5dd8e31cc7dbaf892588",
+      "test/stimuli.jsonl": "ba24280b10b5015721ad6a78ede79103efe80986e9ae0c7b372b5716dfa6c47b",
+      "senses.jsonl": "439f8d59b0609c1e12d9fbd211af46dccd6a706e55f4b0ae153b47e1ff0fdb58",
+      "shared-prefixes.jsonl": "860221cdd2574aea9c8f43a48752b85c3796d481e90658b0e348c7ab66894fd8"
+    }
+  },
+  "common_prefix": {
+    "reference": "no-ending first four sentences",
+    "validated_stops": [
+      "before_target",
+      "target_end",
+      "setup_end"
+    ],
+    "alternative_vs_reference_maximum_relative_rms": 0.002,
+    "same_forecast_reused_across_all_versions": true
+  },
+  "form_features": [
+    "log1p_target_characters",
+    "log1p_common_prefix_words",
+    "log1p_definition_words",
+    "log1p_example_words",
+    "non_target_definition_type_coverage_by_common_prefix",
+    "non_target_example_type_coverage_by_common_prefix",
+    "target_word_appears_in_definition",
+    "target_word_appears_in_example"
+  ],
+  "form_scaling": "official training item mean and population SD; replace zero SD by 1 and divide by sqrt(8)",
+  "sense_vector": "L2-normalized sum of projected unit states of the standalone definition and standalone example",
+  "form_head": "softmax([1,z,v] @ W_form)",
+  "shared_context_head": "softmax([1,z,v,h,sqrt(128)*(v*h)] @ W_context)",
+  "context_fit_stop": "setup for the base; final published ending stop for both suffixed versions",
+  "prediction_stops": {
+    "common_prefix": "canonical setup",
+    "ending": "actual final stop, or setup for base"
+  },
+  "objective": {
+    "loss": "summed ordinal-distribution cross-entropy, each training item equally weighted",
+    "votes": "all released 1\u20135 judgments including votes flagged nonsensical",
+    "l2_non_intercept": 1.0,
+    "solver": "L-BFGS-B from zero",
+    "form_maxiter": 300,
+    "context_maxiter": 3000,
+    "ftol": 1e-12,
+    "gtol": 1e-07
+  }
+}

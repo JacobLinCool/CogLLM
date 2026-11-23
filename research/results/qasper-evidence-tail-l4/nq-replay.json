@@ -1,0 +1,196 @@
+{
+  "input_sha256": {
+    "articles_sha256": "7c8bfcc152a6845c255abdfa0d2e41ac29e27991a5aa653d7fd8f1710abf87b3",
+    "assay_sha256": "c5b67463382008d9266b7196954fa9699b5b19d5a5a766fe219153015204e623",
+    "calibration_sha256": "efab56f7379a00b6b468a82c5a0ac8ad34aa8fe9d1189f434e995bd27bf1f944",
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "outcomes_sha256": "f1b87047a2fef50293dbd037a68ae59cb5e4e59608d563affa9afed27ab2333e",
+    "predictions_sha256": "47dbdecd6367f88d78d8130ff245671531d645b3437b35b76516f9d511c2aa7a",
+    "protocol_sha256": "9241d1f67cfb02000b2dbac1b237ab44ae12d8486d917175aeaac575bfcce157",
+    "qasper_fit_sha256": "1f38624d2059ab8dcee585c007b0efea72bb443471174aaa46546c9da4345f4a",
+    "qasper_scores_sha256": "fbcc5e9ffb036d6ba850b55ab67a2d1cce3682cc4dceda1eba8e4cb23459d647",
+    "queries_sha256": "82783ad331cd82b7250c6a3f4a4b4b3eee06850abd095969f484f2d8f5c15aba",
+    "raw_manifest_sha256": "70396f1836192abfceec936de5612c583639704bdba9f2a16b4adb2dc3f840e3",
+    "scorer_sha256": "8c9c9a3eca347e1cabb3e5406f0616ca0f830c16b4784e51005d5f73f2274e69",
+    "seal_sha256": "c768bd25b1dde642850f23c42fb0ebde43993958cf74d6b4332e43f7c6da9b35",
+    "span_maps_sha256": "4c90f3c791688500683dbda9c099a283ed30a32e226e023270792a4f4edbff2a"
+  },
+  "inventory": {
+    "censored_long_answers": 79,
+    "excluded_questions": 0,
+    "exclusion_reasons": {},
+    "invalid_long_answers": 0,
+    "non_null_source_tags": {
+      "<Li>": 9,
+      "<P>": 46,
+      "<Table>": 30,
+      "<Ul>": 6
+    },
+    "observed_long_answers": 91,
+    "scored_questions": 34,
+    "validated_questions": 34
+  },
+  "methods": {
+    "pooled_rank": {
+      "clock": {
+        "brier": 0.2726082229588963,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.118513924735502,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 0.9110617629301473,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.1632861554259546,
+        "mean_terminal_survival": 0.4809692940561576
+      },
+      "clock_plateau": {
+        "brier": 0.27657514355783375,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.360283673741857,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 0.9113311755715621,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.2928292775333086,
+        "mean_terminal_survival": 0.47838888219465425
+      },
+      "plateau_minus_clock_nll": {
+        "article_cluster_ci95": [
+          0.05458465515009676,
+          0.2268084946209714
+        ],
+        "articles": 16,
+        "difference": 0.12954312210735364
+      }
+    },
+    "position": {
+      "clock": {
+        "brier": 0.2755275467763798,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 4.99472781460122,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 1.0543628220343615,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.163617023937798,
+        "mean_terminal_survival": 0.43272744786951983
+      },
+      "clock_plateau": {
+        "brier": 0.27664804152856215,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.123582877116598,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 1.026468496022119,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.219629723549164,
+        "mean_terminal_survival": 0.4316038351438543
+      },
+      "plateau_minus_clock_nll": {
+        "article_cluster_ci95": [
+          0.01252022131809177,
+          0.11012446058587586
+        ],
+        "articles": 16,
+        "difference": 0.05601269961136603
+      }
+    },
+    "question_only": {
+      "clock": {
+        "brier": 0.287764779379652,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.464532706414815,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 1.300986089885884,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.5297081022631356,
+        "mean_terminal_survival": 0.428025988884006
+      },
+      "clock_plateau": {
+        "brier": 0.28752124686885394,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.688602926851916,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 1.0109048189620262,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.5148491002442612,
+        "mean_terminal_survival": 0.43695029076422204
+      },
+      "plateau_minus_clock_nll": {
+        "article_cluster_ci95": [
+          -0.2163159766567493,
+          0.1614010516083243
+        ],
+        "articles": 16,
+        "difference": -0.014859002018874148
+      }
+    },
+    "token_rank": {
+      "clock": {
+        "brier": 0.27342400230381375,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.121935268062246,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 0.8858774177026421,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.1534142670127827,
+        "mean_terminal_survival": 0.4883495203776112
+      },
+      "clock_plateau": {
+        "brier": 0.2766127834920231,
+        "by_reference_type": {
+          "event": {
+            "nll_nats": 5.323540317176283,
+            "reference_count": 91
+          },
+          "null": {
+            "nll_nats": 0.8889534912189964,
+            "reference_count": 79
+          }
+        },
+        "mean_question_nll_nats": 3.2627617333490733,
+        "mean_terminal_survival": 0.4846721741723818
+      },
+      "plateau_minus_clock_nll": {
+        "article_cluster_ci95": [
+          0.0480624575863243,
+          0.18816344340121444
+        ],
+        "articles": 16,
+        "difference": 0.10934746633629058
+      }
+    }
+  },
+  "scope": "Previously scored Natural Questions material; apply parameters fitted on QASPER only."
+}

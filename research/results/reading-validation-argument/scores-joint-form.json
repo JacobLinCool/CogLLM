@@ -1,0 +1,3172 @@
+{
+  "forecast": "c90c9abec7708541ecd63889dc6ac683483a4e77e0c866225de11d03ca8f0f0a",
+  "development": {
+    "isolated": {
+      "joint_threshold": 0.12775939883848508,
+      "dev_f1": 0.27218934911242604,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    },
+    "fixed": {
+      "joint_threshold": 0.12775939883848508,
+      "dev_f1": 0.27218934911242604,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    },
+    "joint": {
+      "joint_threshold": 0.13288985128631126,
+      "dev_f1": 0.27393113885735904,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    },
+    "half": {
+      "joint_threshold": 0.13042048258312455,
+      "dev_f1": 0.27269331341053415,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    },
+    "adaptive": {
+      "joint_threshold": 0.1317507573841752,
+      "dev_f1": 0.2730015082956259,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    }
+  },
+  "panels": {
+    "held": {
+      "eligible_essays": 480,
+      "audit": {
+        "hierarchy_total": 2653,
+        "intra_or_forward": 350,
+        "hierarchy_backward": 2144,
+        "same_sentence": 124,
+        "missing_effectiveness_position": 28,
+        "unlocalized_child": 13,
+        "unlocalized_or_ambiguous_parent": 22,
+        "essays_with_unlocalizable_children": 11
+      },
+      "models": {
+        "nearest": {
+          "all.top1": {
+            "estimate": 0.21387217788316687,
+            "interval95": [
+              0.19573408825606625,
+              0.23274203025301923
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.18304072470739138,
+              "Car-free cities": 0.135598398651496,
+              "The Face on Mars": 0.23731900283624421,
+              "Community service": 0.2939984685747398
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.37273667040576536,
+            "interval95": [
+              0.3570598975790302,
+              0.3894429956041862
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.21387217788316687,
+            "interval95": [
+              0.1958813605503166,
+              0.2336811620918764
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.37273667040576536,
+            "interval95": [
+              0.35614736167656186,
+              0.38912066685164354
+            ],
+            "essays": 455,
+            "measurements": 2079
+          }
+        },
+        "isolated": {
+          "all.top1": {
+            "estimate": 0.44083207695845067,
+            "interval95": [
+              0.41388161868656376,
+              0.4676215140171184
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.46148789482122815,
+              "Car-free cities": 0.39957859249894656,
+              "The Face on Mars": 0.3950160471712195,
+              "Community service": 0.5064716945013555
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6131710027329381,
+            "interval95": [
+              0.592873854900652,
+              0.6322195238211079
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6159579402486857,
+            "interval95": [
+              1.54471802194649,
+              1.6864520817414421
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.44083207695845067,
+            "interval95": [
+              0.4134144046582234,
+              0.4668194041154205
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6131710027329381,
+            "interval95": [
+              0.5932184048254333,
+              0.6340705128609405
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6159579402486857,
+            "interval95": [
+              1.5467321828872214,
+              1.6877687741962368
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5966629692663749,
+            "interval95": [
+              0.547568667330003,
+              0.6476057806890457
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.2211430080988639,
+            "interval95": [
+              0.20139093914904294,
+              0.24135809494832472
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.564981062447453,
+            "interval95": [
+              0.5509062082264029,
+              0.5794729895691221
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.4948041578002732,
+            "interval95": [
+              0.47359190361338055,
+              0.5165520031228337
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.18652422915027397,
+            "interval95": [
+              0.16830742543076346,
+              0.20464110601233826
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.1727078891257996,
+            "interval95": [
+              1.0597014925373134,
+              1.2857142857142858
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.3965884861407245,
+            "interval95": [
+              6.1705756929637525,
+              6.63544776119403
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.147068230277186,
+              4.592803837953091
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.3651589531078426,
+            "joint_average_precision": 0.09777659050858692,
+            "positives_emitted": 3000,
+            "aligned_with_own_source": 550,
+            "joint_f1": 0.21795125817317218,
+            "prevalence": 0.25488731166728923
+          }
+        },
+        "fixed": {
+          "all.top1": {
+            "estimate": 0.44083207695845067,
+            "interval95": [
+              0.41368575662737755,
+              0.4667459101490694
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.46148789482122815,
+              "Car-free cities": 0.39957859249894656,
+              "The Face on Mars": 0.3950160471712195,
+              "Community service": 0.5064716945013555
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6131710027329381,
+            "interval95": [
+              0.5912584453704802,
+              0.6327123491794613
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6159579402486857,
+            "interval95": [
+              1.5468212344948769,
+              1.6845532344420862
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.44083207695845067,
+            "interval95": [
+              0.4140539360669855,
+              0.4682935490181369
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6131710027329381,
+            "interval95": [
+              0.5922226955606416,
+              0.6336419949011953
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6159579402486857,
+            "interval95": [
+              1.5479515979366403,
+              1.6892470362494105
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5971725512916843,
+            "interval95": [
+              0.5505214332214867,
+              0.6453691474449199
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.2234257321190384,
+            "interval95": [
+              0.20440386477093728,
+              0.2441699162818575
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.564981062447453,
+            "interval95": [
+              0.5506754714059524,
+              0.5788517669746513
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.4948041578002732,
+            "interval95": [
+              0.4721967173298665,
+              0.5172932384293206
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.18652422915027397,
+            "interval95": [
+              0.1681491277336973,
+              0.20568244642939856
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.1727078891257996,
+            "interval95": [
+              1.0596481876332622,
+              1.2878997867803836
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.3965884861407245,
+            "interval95": [
+              6.174840085287847,
+              6.624786780383795
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.144989339019189,
+              4.588539445628998
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.3651589531078426,
+            "joint_average_precision": 0.09777659050858692,
+            "positives_emitted": 3000,
+            "aligned_with_own_source": 550,
+            "joint_f1": 0.21795125817317218,
+            "prevalence": 0.25488731166728923
+          }
+        },
+        "joint": {
+          "all.top1": {
+            "estimate": 0.4383041683591134,
+            "interval95": [
+              0.4123069988619439,
+              0.4657036303135204
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.46281064614397943,
+              "Car-free cities": 0.40134850400337135,
+              "The Face on Mars": 0.39202275215206245,
+              "Community service": 0.49676124252395437
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6124820741835846,
+            "interval95": [
+              0.5911113700980289,
+              0.6326112855403204
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6204713310265442,
+            "interval95": [
+              1.549257185025201,
+              1.687838626952724
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.4383041683591134,
+            "interval95": [
+              0.41164344812696463,
+              0.4644046336752381
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6124820741835846,
+            "interval95": [
+              0.5934421835850541,
+              0.6336177492956256
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6204713310265442,
+            "interval95": [
+              1.549610671065467,
+              1.6903856090468978
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5972185817547142,
+            "interval95": [
+              0.5520379656118651,
+              0.646278340544086
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.2234159379261289,
+            "interval95": [
+              0.2029287307920652,
+              0.24436731505961795
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.5656499456168544,
+            "interval95": [
+              0.551259985185054,
+              0.5798200955905142
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.4976882932839,
+            "interval95": [
+              0.47563411161951547,
+              0.5204597401698734
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.18601709368541153,
+            "interval95": [
+              0.16742720257857688,
+              0.2046807433262208
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.1321961620469083,
+            "interval95": [
+              1.023454157782516,
+              1.2473347547974414
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.108742004264393,
+            "interval95": [
+              5.889125799573561,
+              6.3369402985074625
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.144989339019189,
+              4.5799573560767595
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.36329136567262227,
+            "joint_average_precision": 0.09750066800116614,
+            "positives_emitted": 2865,
+            "aligned_with_own_source": 531,
+            "joint_f1": 0.21620521172638438,
+            "prevalence": 0.25488731166728923
+          }
+        },
+        "half": {
+          "all.top1": {
+            "estimate": 0.44023901922253567,
+            "interval95": [
+              0.41311861154718293,
+              0.46783098052740896
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.46589706589706587,
+              "Car-free cities": 0.40084281500210706,
+              "The Face on Mars": 0.39597390157734985,
+              "Community service": 0.49799711823016907
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.613055481189684,
+            "interval95": [
+              0.5921163201606324,
+              0.6335042203991887
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6180266124210079,
+            "interval95": [
+              1.5501662651706738,
+              1.686234874076799
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.44023901922253567,
+            "interval95": [
+              0.41224859961467103,
+              0.4661059393140437
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.613055481189684,
+            "interval95": [
+              0.5930490238622028,
+              0.6338542221540205
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6180266124210079,
+            "interval95": [
+              1.5505697758130004,
+              1.6864646607286262
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5966892213560641,
+            "interval95": [
+              0.5464618223703777,
+              0.6476164459755334
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.22188843220963564,
+            "interval95": [
+              0.20150871977747348,
+              0.24250325800290218
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.5652840743920899,
+            "interval95": [
+              0.5518945409928713,
+              0.5801299688983653
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.49647201656079876,
+            "interval95": [
+              0.4752383130194474,
+              0.5181998531775451
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.18616935979247448,
+            "interval95": [
+              0.16853771447005436,
+              0.20494582766354183
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.1577825159914712,
+            "interval95": [
+              1.046908315565032,
+              1.2729211087420043
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.2388059701492535,
+            "interval95": [
+              6.0106609808102345,
+              6.475479744136461
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.144936034115139,
+              4.597014925373134
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.36431373130341654,
+            "joint_average_precision": 0.09794920287300897,
+            "positives_emitted": 2926,
+            "aligned_with_own_source": 543,
+            "joint_f1": 0.2183792479388699,
+            "prevalence": 0.25488731166728923
+          }
+        },
+        "adaptive": {
+          "all.top1": {
+            "estimate": 0.43992504747999256,
+            "interval95": [
+              0.41387855032635246,
+              0.46920183052600634
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.46589706589706587,
+              "Car-free cities": 0.39957859249894656,
+              "The Face on Mars": 0.39597390157734985,
+              "Community service": 0.49799711823016907
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6127780140931431,
+            "interval95": [
+              0.5924605506176597,
+              0.6335092695052306
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6173017322480645,
+            "interval95": [
+              1.548890101267144,
+              1.6878253194474415
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.43992504747999256,
+            "interval95": [
+              0.4126927351494659,
+              0.4667137772178981
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6127780140931431,
+            "interval95": [
+              0.5932673065087211,
+              0.6326201298255205
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6173017322480645,
+            "interval95": [
+              1.5483145453070464,
+              1.6872355073686913
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5966865110521515,
+            "interval95": [
+              0.5501435800672819,
+              0.6485229847285275
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.22187733024994047,
+            "interval95": [
+              0.20234258958365547,
+              0.24149848060092838
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.5652793089949756,
+            "interval95": [
+              0.5515408544661516,
+              0.5805074777786428
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.49646409155287363,
+            "interval95": [
+              0.47590091952235997,
+              0.5184741252801152
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.18620236392870546,
+            "interval95": [
+              0.16847545762641827,
+              0.20561809427574348
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.138592750533049,
+            "interval95": [
+              1.0276652452025585,
+              1.2452558635394455
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.1257995735607675,
+            "interval95": [
+              5.906183368869936,
+              6.343283582089552
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.138486140724947,
+              4.590618336886994
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.3643328630700864,
+            "joint_average_precision": 0.09788115518876651,
+            "positives_emitted": 2873,
+            "aligned_with_own_source": 534,
+            "joint_f1": 0.21707317073170732,
+            "prevalence": 0.25488731166728923
+          }
+        }
+      },
+      "differences": {
+        "fixed_minus_isolated.all.top1": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.emitted": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.event.nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.hierarchy.reciprocal_rank": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.all.choice_nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.effectiveness.ordinal_nll": {
+          "estimate": 0.0005095820253094037,
+          "interval95": [
+            -0.0015685849427245556,
+            0.0026044491026550533
+          ]
+        },
+        "fixed_minus_isolated.event.average_precision": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.hierarchy.choice_nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.retrieval_average_precision": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.tp": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.hierarchy.top1": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.all.reciprocal_rank": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.effectiveness.absolute_level_error": {
+          "estimate": 0.0022827240201745203,
+          "interval95": [
+            0.0014372589851154945,
+            0.0031817723132615563
+          ]
+        },
+        "joint_minus_isolated.all.top1": {
+          "estimate": -0.00252790859933717,
+          "interval95": [
+            -0.008764324960753531,
+            0.002370083289726147
+          ]
+        },
+        "joint_minus_isolated.joint.emitted": {
+          "estimate": -0.2878464818763326,
+          "interval95": [
+            -0.34328358208955223,
+            -0.2345415778251599
+          ]
+        },
+        "joint_minus_isolated.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_minus_isolated.event.nll": {
+          "estimate": 0.0006688831694014722,
+          "interval95": [
+            0.00020227360506736,
+            0.001135778115956793
+          ]
+        },
+        "joint_minus_isolated.hierarchy.reciprocal_rank": {
+          "estimate": -0.0006889285493534886,
+          "interval95": [
+            -0.003970060058765829,
+            0.00216984764705026
+          ]
+        },
+        "joint_minus_isolated.all.choice_nll": {
+          "estimate": 0.004513390777858233,
+          "interval95": [
+            0.002393642644850933,
+            0.006772239316196771
+          ]
+        },
+        "joint_minus_isolated.effectiveness.ordinal_nll": {
+          "estimate": 0.0005556124883393447,
+          "interval95": [
+            -0.0017364108593513569,
+            0.0025730226887390037
+          ]
+        },
+        "joint_minus_isolated.event.average_precision": {
+          "estimate": 0.002884135483626863,
+          "interval95": [
+            0.000989890170161415,
+            0.00485615042202154
+          ]
+        },
+        "joint_minus_isolated.hierarchy.choice_nll": {
+          "estimate": 0.004513390777858233,
+          "interval95": [
+            0.0022136085490310335,
+            0.006825689441322065
+          ]
+        },
+        "joint_minus_isolated.joint.retrieval_average_precision": {
+          "estimate": -0.0005071354648624289,
+          "interval95": [
+            -0.0029083650303531024,
+            0.001567800179877501
+          ]
+        },
+        "joint_minus_isolated.joint.tp": {
+          "estimate": -0.04051172707889126,
+          "interval95": [
+            -0.06183368869936034,
+            -0.021321961620469083
+          ]
+        },
+        "joint_minus_isolated.hierarchy.top1": {
+          "estimate": -0.00252790859933717,
+          "interval95": [
+            -0.008757500436071862,
+            0.0023365820687249266
+          ]
+        },
+        "joint_minus_isolated.all.reciprocal_rank": {
+          "estimate": -0.0006889285493534886,
+          "interval95": [
+            -0.004048333277885099,
+            0.0020588765974070087
+          ]
+        },
+        "joint_minus_isolated.effectiveness.absolute_level_error": {
+          "estimate": 0.0022729298272649925,
+          "interval95": [
+            0.0013979606956524835,
+            0.0031752312032841956
+          ]
+        },
+        "joint_minus_fixed.all.top1": {
+          "estimate": -0.00252790859933717,
+          "interval95": [
+            -0.008579147043432758,
+            0.0026056929181929186
+          ]
+        },
+        "joint_minus_fixed.joint.emitted": {
+          "estimate": -0.2878464818763326,
+          "interval95": [
+            -0.34328358208955223,
+            -0.232409381663113
+          ]
+        },
+        "joint_minus_fixed.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_minus_fixed.event.nll": {
+          "estimate": 0.0006688831694014722,
+          "interval95": [
+            0.00019859618997990526,
+            0.0011295753053925117
+          ]
+        },
+        "joint_minus_fixed.hierarchy.reciprocal_rank": {
+          "estimate": -0.0006889285493534886,
+          "interval95": [
+            -0.004207565686470519,
+            0.002108834974785586
+          ]
+        },
+        "joint_minus_fixed.all.choice_nll": {
+          "estimate": 0.004513390777858233,
+          "interval95": [
+            0.0022734984164213463,
+            0.0067879997030394585
+          ]
+        },
+        "joint_minus_fixed.effectiveness.ordinal_nll": {
+          "estimate": 4.6030463029940925e-05,
+          "interval95": [
+            -2.699143098046382e-05,
+            0.00012282244007413588
+          ]
+        },
+        "joint_minus_fixed.event.average_precision": {
+          "estimate": 0.002884135483626863,
+          "interval95": [
+            0.00095781637595927,
+            0.004938726422149873
+          ]
+        },
+        "joint_minus_fixed.hierarchy.choice_nll": {
+          "estimate": 0.004513390777858233,
+          "interval95": [
+            0.0022850019847725426,
+            0.00681010244606726
+          ]
+        },
+        "joint_minus_fixed.joint.retrieval_average_precision": {
+          "estimate": -0.0005071354648624289,
+          "interval95": [
+            -0.0029214236799810275,
+            0.0014487886465496338
+          ]
+        },
+        "joint_minus_fixed.joint.tp": {
+          "estimate": -0.04051172707889126,
+          "interval95": [
+            -0.06183368869936034,
+            -0.019189765458422176
+          ]
+        },
+        "joint_minus_fixed.hierarchy.top1": {
+          "estimate": -0.00252790859933717,
+          "interval95": [
+            -0.008685297837083552,
+            0.0022864556078841802
+          ]
+        },
+        "joint_minus_fixed.all.reciprocal_rank": {
+          "estimate": -0.0006889285493534886,
+          "interval95": [
+            -0.004338414096063984,
+            0.0020297728527808078
+          ]
+        },
+        "joint_minus_fixed.effectiveness.absolute_level_error": {
+          "estimate": -9.794192909527536e-06,
+          "interval95": [
+            -4.36490982032497e-05,
+            2.633642734664485e-05
+          ]
+        },
+        "adaptive_minus_isolated.all.top1": {
+          "estimate": -0.0009070294784580496,
+          "interval95": [
+            -0.00610718646432932,
+            0.0022326879469736615
+          ]
+        },
+        "adaptive_minus_isolated.joint.emitted": {
+          "estimate": -0.27078891257995735,
+          "interval95": [
+            -0.32196162046908317,
+            -0.22388059701492538
+          ]
+        },
+        "adaptive_minus_isolated.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "adaptive_minus_isolated.event.nll": {
+          "estimate": 0.00029824654752254846,
+          "interval95": [
+            7.405527107468509e-05,
+            0.0005373523668872622
+          ]
+        },
+        "adaptive_minus_isolated.hierarchy.reciprocal_rank": {
+          "estimate": -0.00039298863979505465,
+          "interval95": [
+            -0.0028880988964074122,
+            0.0014716378401177306
+          ]
+        },
+        "adaptive_minus_isolated.all.choice_nll": {
+          "estimate": 0.0013437919993785855,
+          "interval95": [
+            0.000608593362560385,
+            0.0021020501746263623
+          ]
+        },
+        "adaptive_minus_isolated.effectiveness.ordinal_nll": {
+          "estimate": 2.3541785776615142e-05,
+          "interval95": [
+            -0.0011075609239439169,
+            0.0010614605108276013
+          ]
+        },
+        "adaptive_minus_isolated.event.average_precision": {
+          "estimate": 0.0016599337526004823,
+          "interval95": [
+            0.0001193936084048106,
+            0.0034309204453994322
+          ]
+        },
+        "adaptive_minus_isolated.hierarchy.choice_nll": {
+          "estimate": 0.0013437919993785855,
+          "interval95": [
+            0.0006154508518356488,
+            0.0021244039284533736
+          ]
+        },
+        "adaptive_minus_isolated.joint.retrieval_average_precision": {
+          "estimate": -0.0003218652215685239,
+          "interval95": [
+            -0.0024601959207637,
+            0.0013326187110233618
+          ]
+        },
+        "adaptive_minus_isolated.joint.tp": {
+          "estimate": -0.03411513859275053,
+          "interval95": [
+            -0.053304904051172705,
+            -0.017057569296375266
+          ]
+        },
+        "adaptive_minus_isolated.hierarchy.top1": {
+          "estimate": -0.0009070294784580496,
+          "interval95": [
+            -0.0060352346066631785,
+            0.002337345194488052
+          ]
+        },
+        "adaptive_minus_isolated.all.reciprocal_rank": {
+          "estimate": -0.00039298863979505465,
+          "interval95": [
+            -0.0031163321657056656,
+            0.0014293523018412972
+          ]
+        },
+        "adaptive_minus_isolated.effectiveness.absolute_level_error": {
+          "estimate": 0.0007343221510765896,
+          "interval95": [
+            0.00033354503361137484,
+            0.0011395287313130673
+          ]
+        },
+        "adaptive_minus_joint.all.top1": {
+          "estimate": 0.001620879120879121,
+          "interval95": [
+            -0.0016171180010465724,
+            0.005317765567765571
+          ]
+        },
+        "adaptive_minus_joint.joint.emitted": {
+          "estimate": 0.017057569296375266,
+          "interval95": [
+            -0.019189765458422176,
+            0.053304904051172705
+          ]
+        },
+        "adaptive_minus_joint.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "adaptive_minus_joint.event.nll": {
+          "estimate": -0.0003706366218789239,
+          "interval95": [
+            -0.0006047692162634467,
+            -0.00012403949058021891
+          ]
+        },
+        "adaptive_minus_joint.hierarchy.reciprocal_rank": {
+          "estimate": 0.00029593990955843383,
+          "interval95": [
+            -0.001492244546836383,
+            0.0022011734756681783
+          ]
+        },
+        "adaptive_minus_joint.all.choice_nll": {
+          "estimate": -0.003169598778479647,
+          "interval95": [
+            -0.004728699966199575,
+            -0.0016388953695056232
+          ]
+        },
+        "adaptive_minus_joint.effectiveness.ordinal_nll": {
+          "estimate": -0.0005320707025627295,
+          "interval95": [
+            -0.0015695566311478614,
+            0.0005573276523500683
+          ]
+        },
+        "adaptive_minus_joint.event.average_precision": {
+          "estimate": -0.0012242017310263801,
+          "interval95": [
+            -0.0021707632700811094,
+            -0.00030851813048139465
+          ]
+        },
+        "adaptive_minus_joint.hierarchy.choice_nll": {
+          "estimate": -0.003169598778479647,
+          "interval95": [
+            -0.004717873743257295,
+            -0.001605313891469276
+          ]
+        },
+        "adaptive_minus_joint.joint.retrieval_average_precision": {
+          "estimate": 0.00018527024329390485,
+          "interval95": [
+            -0.0009189784463679045,
+            0.0013496060378581113
+          ]
+        },
+        "adaptive_minus_joint.joint.tp": {
+          "estimate": 0.006396588486140725,
+          "interval95": [
+            -0.008528784648187633,
+            0.021321961620469083
+          ]
+        },
+        "adaptive_minus_joint.hierarchy.top1": {
+          "estimate": 0.001620879120879121,
+          "interval95": [
+            -0.001486165620094191,
+            0.005375490580847724
+          ]
+        },
+        "adaptive_minus_joint.all.reciprocal_rank": {
+          "estimate": 0.00029593990955843383,
+          "interval95": [
+            -0.0014915981358239992,
+            0.002157996213515247
+          ]
+        },
+        "adaptive_minus_joint.effectiveness.absolute_level_error": {
+          "estimate": -0.0015386076761884028,
+          "interval95": [
+            -0.00212979940839606,
+            -0.0010110357722321424
+          ]
+        },
+        "adaptive_minus_half.all.top1": {
+          "estimate": -0.0003139717425431711,
+          "interval95": [
+            -0.0009419152276295133,
+            0.0
+          ]
+        },
+        "adaptive_minus_half.joint.emitted": {
+          "estimate": -0.11300639658848614,
+          "interval95": [
+            -0.14712153518123666,
+            -0.08315565031982942
+          ]
+        },
+        "adaptive_minus_half.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "adaptive_minus_half.event.nll": {
+          "estimate": -4.765397114425246e-06,
+          "interval95": [
+            -8.221877991854948e-06,
+            -1.486869105302409e-06
+          ]
+        },
+        "adaptive_minus_half.hierarchy.reciprocal_rank": {
+          "estimate": -0.0002774670965408802,
+          "interval95": [
+            -0.0007151363539216758,
+            6.900571701395854e-05
+          ]
+        },
+        "adaptive_minus_half.all.choice_nll": {
+          "estimate": -0.0007248801729431639,
+          "interval95": [
+            -0.0011005470382676333,
+            -0.0003537946477694534
+          ]
+        },
+        "adaptive_minus_half.effectiveness.ordinal_nll": {
+          "estimate": -2.710303912560145e-06,
+          "interval95": [
+            -1.2903793249279261e-05,
+            7.437652287383877e-06
+          ]
+        },
+        "adaptive_minus_half.event.average_precision": {
+          "estimate": -7.92500792500784e-06,
+          "interval95": [
+            -5.2650052650052665e-05,
+            2.887502887502915e-05
+          ]
+        },
+        "adaptive_minus_half.hierarchy.choice_nll": {
+          "estimate": -0.0007248801729431639,
+          "interval95": [
+            -0.0010992661634189487,
+            -0.00035221239887703814
+          ]
+        },
+        "adaptive_minus_half.joint.retrieval_average_precision": {
+          "estimate": 3.3004136230953714e-05,
+          "interval95": [
+            -0.00017027237081278384,
+            0.00032969528272238236
+          ]
+        },
+        "adaptive_minus_half.joint.tp": {
+          "estimate": -0.019189765458422176,
+          "interval95": [
+            -0.031982942430703626,
+            -0.008528784648187633
+          ]
+        },
+        "adaptive_minus_half.hierarchy.top1": {
+          "estimate": -0.0003139717425431711,
+          "interval95": [
+            -0.0009419152276295133,
+            0.0
+          ]
+        },
+        "adaptive_minus_half.all.reciprocal_rank": {
+          "estimate": -0.0002774670965408802,
+          "interval95": [
+            -0.0007262242797466507,
+            6.351205011919278e-05
+          ]
+        },
+        "adaptive_minus_half.effectiveness.absolute_level_error": {
+          "estimate": -1.110195969517776e-05,
+          "interval95": [
+            -1.667495438807e-05,
+            -6.218395993233618e-06
+          ]
+        }
+      }
+    },
+    "external": {
+      "eligible_essays": 399,
+      "audit": {
+        "supports_total": 3597,
+        "supports_backward": 2127,
+        "intra_or_forward": 1286,
+        "same_sentence": 265,
+        "attacks_total": 218,
+        "attacks_backward": 137
+      },
+      "models": {
+        "nearest": {
+          "all.top1": {
+            "estimate": 0.4658705394925867,
+            "interval95": [
+              0.44451974279730183,
+              0.4887654216591224
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.4658705394925867
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.5549210716653639,
+            "interval95": [
+              0.5366114700392365,
+              0.5736137067230798
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.46642563996287395,
+            "interval95": [
+              0.4434681078746903,
+              0.4919024651471459
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.5558962232320993,
+            "interval95": [
+              0.5355834943399607,
+              0.5750774975217051
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "attacks.top1": {
+            "estimate": 0.510752688172043,
+            "interval95": [
+              0.4264784946236559,
+              0.5967741935483871
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.5838405869495236,
+            "interval95": [
+              0.5049075382693486,
+              0.6597427549723814
+            ],
+            "essays": 93,
+            "measurements": 137
+          }
+        },
+        "isolated": {
+          "all.top1": {
+            "estimate": 0.5996554262302294,
+            "interval95": [
+              0.5671517710198813,
+              0.6310982692577181
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5996554262302294
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7442155743627221,
+            "interval95": [
+              0.7222368603070372,
+              0.766247572158649
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.3186243270844842,
+            "interval95": [
+              1.2610919816447461,
+              1.3782478252080304
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5969000562085669,
+            "interval95": [
+              0.5638771611810175,
+              0.6294595709771906
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7421449152411608,
+            "interval95": [
+              0.7194254371274991,
+              0.764639786450934
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.3221612674635532,
+            "interval95": [
+              1.2579427036632735,
+              1.3884807033568964
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6919050093232816,
+            "interval95": [
+              0.6722907250203606,
+              0.7120508976309653
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3869483196001172,
+            "interval95": [
+              0.37273775796079894,
+              0.40134346900910906
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19639315397894924,
+            "interval95": [
+              0.18029371728043397,
+              0.21206001656373924
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 1.0200501253132832,
+            "interval95": [
+              0.9046992481203008,
+              1.1478696741854637
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.7443609022556394,
+            "interval95": [
+              5.556328320802005,
+              5.934837092731829
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.340852130325815,
+              5.967418546365915
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.5170250896057348,
+            "interval95": [
+              0.42112455197132614,
+              0.6120295698924729
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6915440891247342,
+            "interval95": [
+              0.6308470069357167,
+              0.754867530915918
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.512153684160133,
+            "interval95": [
+              1.3419488006147826,
+              1.6862634890923482
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.29317433060736037,
+            "joint_average_precision": 0.10633008116780833,
+            "positives_emitted": 2292,
+            "aligned_with_own_source": 407,
+            "joint_f1": 0.1790979097909791,
+            "prevalence": 0.33561745866229703
+          }
+        },
+        "fixed": {
+          "all.top1": {
+            "estimate": 0.5996554262302294,
+            "interval95": [
+              0.56722299190311,
+              0.6307607509871289
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5996554262302294
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7442155743627221,
+            "interval95": [
+              0.7213231558994924,
+              0.765971031316165
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.3186243270844842,
+            "interval95": [
+              1.2581595010577156,
+              1.3806789619247988
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5969000562085669,
+            "interval95": [
+              0.561942902140708,
+              0.6308423528303847
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7421449152411608,
+            "interval95": [
+              0.7193751173706546,
+              0.7643587686675367
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.3221612674635532,
+            "interval95": [
+              1.2624865681123112,
+              1.3840566910088388
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6919050093232816,
+            "interval95": [
+              0.6709611955424101,
+              0.7109928522010938
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3869483196001172,
+            "interval95": [
+              0.3732802335414962,
+              0.4010523266760498
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19639315397894924,
+            "interval95": [
+              0.1801443670130002,
+              0.21284655005236183
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 1.0200501253132832,
+            "interval95": [
+              0.9022556390977443,
+              1.1428571428571428
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.7443609022556394,
+            "interval95": [
+              5.553884711779449,
+              5.9448621553884715
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.345864661654136,
+              5.954887218045113
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.5170250896057348,
+            "interval95": [
+              0.42473118279569894,
+              0.6093189964157706
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6915440891247342,
+            "interval95": [
+              0.6301341176744402,
+              0.7557870661298081
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.512153684160133,
+            "interval95": [
+              1.3424935280509043,
+              1.6921078707325083
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.29317433060736037,
+            "joint_average_precision": 0.10633008116780833,
+            "positives_emitted": 2292,
+            "aligned_with_own_source": 407,
+            "joint_f1": 0.1790979097909791,
+            "prevalence": 0.33561745866229703
+          }
+        },
+        "joint": {
+          "all.top1": {
+            "estimate": 0.5975517483391499,
+            "interval95": [
+              0.5638586324363883,
+              0.6291806693233858
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5975517483391499
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7423392876189189,
+            "interval95": [
+              0.7195584814947923,
+              0.763249804720746
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.3242652365359668,
+            "interval95": [
+              1.263907326126962,
+              1.3872341713094778
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5956676892847105,
+            "interval95": [
+              0.5643360890734561,
+              0.630487907113572
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7407718544084841,
+            "interval95": [
+              0.7175875732450603,
+              0.7644009255438449
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.327527809808661,
+            "interval95": [
+              1.2658198288703393,
+              1.3898035908745678
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6972108325712301,
+            "interval95": [
+              0.6771819718009933,
+              0.7174383517118771
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3846118393053032,
+            "interval95": [
+              0.37071814146236837,
+              0.3981744700332201
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19604508940636592,
+            "interval95": [
+              0.1799814795391107,
+              0.21250432596140828
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 0.9323308270676691,
+            "interval95": [
+              0.8220551378446115,
+              1.0451127819548873
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.4035087719298245,
+            "interval95": [
+              5.205513784461153,
+              5.5890350877192985
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.333333333333333,
+              5.977443609022556
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.49820788530465954,
+            "interval95": [
+              0.40676523297491035,
+              0.5878136200716846
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6797417337739918,
+            "interval95": [
+              0.6175238754674239,
+              0.740694289282999
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.5255615764577517,
+            "interval95": [
+              1.348798278048679,
+              1.7052124257286236
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.2920697173480909,
+            "joint_average_precision": 0.10508572277523334,
+            "positives_emitted": 2156,
+            "aligned_with_own_source": 372,
+            "joint_f1": 0.1687457473349966,
+            "prevalence": 0.33561745866229703
+          }
+        },
+        "half": {
+          "all.top1": {
+            "estimate": 0.5992462626320894,
+            "interval95": [
+              0.567973505242206,
+              0.6313233139709518
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5992462626320894
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7438217097405578,
+            "interval95": [
+              0.7207570302912351,
+              0.7659591849216506
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.3213457924393754,
+            "interval95": [
+              1.2599397887981891,
+              1.3859023096505436
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5972537731181349,
+            "interval95": [
+              0.5646855659854331,
+              0.6299809475025566
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7421149713322749,
+            "interval95": [
+              0.7186902358155974,
+              0.7656030543556303
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.3247479805814777,
+            "interval95": [
+              1.264512212581339,
+              1.386142240706238
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6945146755535077,
+            "interval95": [
+              0.6731000522606487,
+              0.7139517914653083
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3864247083774296,
+            "interval95": [
+              0.37234662824455217,
+              0.4001825363394201
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19608312350344018,
+            "interval95": [
+              0.1805372168894621,
+              0.21190507457336233
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 0.9674185463659147,
+            "interval95": [
+              0.8471177944862155,
+              1.0852130325814537
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.5588972431077694,
+            "interval95": [
+              5.3734335839598995,
+              5.7443609022556394
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.328320802005012,
+              5.957456140350877
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.49820788530465954,
+            "interval95": [
+              0.4032258064516129,
+              0.5949820788530465
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6822378935282161,
+            "interval95": [
+              0.6215866809415197,
+              0.7376501186985057
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.5187108523890602,
+            "interval95": [
+              1.3390355442829196,
+              1.701404287328608
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.29259907709989175,
+            "joint_average_precision": 0.10574271559866635,
+            "positives_emitted": 2218,
+            "aligned_with_own_source": 386,
+            "joint_f1": 0.17266830686647283,
+            "prevalence": 0.33561745866229703
+          }
+        },
+        "adaptive": {
+          "all.top1": {
+            "estimate": 0.5991441920575779,
+            "interval95": [
+              0.5667059469766162,
+              0.6333723660052399
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5991441920575779
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7437439698638867,
+            "interval95": [
+              0.7215397101067564,
+              0.7650836831041756
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.320423366824661,
+            "interval95": [
+              1.2608269698057575,
+              1.3824500037770755
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5968548369479221,
+            "interval95": [
+              0.5634200060430113,
+              0.6293899508809747
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7419318902957556,
+            "interval95": [
+              0.7193234504490225,
+              0.7649033792603519
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.3238706716573567,
+            "interval95": [
+              1.2641118329588448,
+              1.383144326698123
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6944768047836022,
+            "interval95": [
+              0.6741369269838319,
+              0.7151924338542227
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3864012738067508,
+            "interval95": [
+              0.37253648232483194,
+              0.40022543768594865
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19594602182413784,
+            "interval95": [
+              0.18040100344233945,
+              0.21220772659595313
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 0.9423558897243107,
+            "interval95": [
+              0.8270676691729323,
+              1.0501879699248118
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.461152882205514,
+            "interval95": [
+              5.268107769423559,
+              5.656641604010025
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.345802005012532,
+              5.967418546365915
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.503584229390681,
+            "interval95": [
+              0.41039426523297495,
+              0.5949820788530467
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6845676426321587,
+            "interval95": [
+              0.6194657597480179,
+              0.7465006342224083
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.5165085292003224,
+            "interval95": [
+              1.342186040404667,
+              1.692855945149901
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.29260642228583184,
+            "joint_average_precision": 0.10589676241933639,
+            "positives_emitted": 2179,
+            "aligned_with_own_source": 376,
+            "joint_f1": 0.16967509025270758,
+            "prevalence": 0.33561745866229703
+          }
+        }
+      },
+      "differences": {
+        "fixed_minus_isolated.all.top1": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.emitted": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.attacks.choice_nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.attacks.reciprocal_rank": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.attacks.top1": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.event.nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.all.choice_nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.supports.top1": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.event.average_precision": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.tp": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.joint.retrieval_average_precision": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.all.reciprocal_rank": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.supports.choice_nll": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "fixed_minus_isolated.supports.reciprocal_rank": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_minus_isolated.all.top1": {
+          "estimate": -0.002103677891079465,
+          "interval95": [
+            -0.0056596695080947034,
+            0.001324279030971946
+          ]
+        },
+        "joint_minus_isolated.joint.emitted": {
+          "estimate": -0.3408521303258145,
+          "interval95": [
+            -0.40350877192982454,
+            -0.2781954887218045
+          ]
+        },
+        "joint_minus_isolated.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_minus_isolated.attacks.choice_nll": {
+          "estimate": 0.013407892297618523,
+          "interval95": [
+            0.007591696074538455,
+            0.01939951784895761
+          ]
+        },
+        "joint_minus_isolated.attacks.reciprocal_rank": {
+          "estimate": -0.011802355350742446,
+          "interval95": [
+            -0.026971966205837174,
+            -0.0003056195596518117
+          ]
+        },
+        "joint_minus_isolated.attacks.top1": {
+          "estimate": -0.01881720430107527,
+          "interval95": [
+            -0.04838709677419355,
+            0.002688172043010753
+          ]
+        },
+        "joint_minus_isolated.event.nll": {
+          "estimate": 0.0053058232479483245,
+          "interval95": [
+            0.00479390723561567,
+            0.005794847200112378
+          ]
+        },
+        "joint_minus_isolated.all.choice_nll": {
+          "estimate": 0.005640909451482565,
+          "interval95": [
+            0.0037759515628108713,
+            0.007552692506769244
+          ]
+        },
+        "joint_minus_isolated.supports.top1": {
+          "estimate": -0.0012323669238562852,
+          "interval95": [
+            -0.004586692857969453,
+            0.0021717955876865455
+          ]
+        },
+        "joint_minus_isolated.event.average_precision": {
+          "estimate": -0.0023364802948140327,
+          "interval95": [
+            -0.0039719549188278695,
+            -0.0008150538549176535
+          ]
+        },
+        "joint_minus_isolated.joint.tp": {
+          "estimate": -0.08771929824561403,
+          "interval95": [
+            -0.11779448621553884,
+            -0.05764411027568922
+          ]
+        },
+        "joint_minus_isolated.joint.retrieval_average_precision": {
+          "estimate": -0.0003480645725833469,
+          "interval95": [
+            -0.00204801554332552,
+            0.0014329927032971867
+          ]
+        },
+        "joint_minus_isolated.all.reciprocal_rank": {
+          "estimate": -0.0018762867438033052,
+          "interval95": [
+            -0.0038832027604524806,
+            0.00012791897735967207
+          ]
+        },
+        "joint_minus_isolated.supports.choice_nll": {
+          "estimate": 0.005366542345107725,
+          "interval95": [
+            0.003476520418569082,
+            0.0072455915869060385
+          ]
+        },
+        "joint_minus_isolated.supports.reciprocal_rank": {
+          "estimate": -0.001373060832676461,
+          "interval95": [
+            -0.003210112112176843,
+            0.00042751903911035147
+          ]
+        },
+        "joint_minus_fixed.all.top1": {
+          "estimate": -0.002103677891079465,
+          "interval95": [
+            -0.005545742169757915,
+            0.0011835539788295703
+          ]
+        },
+        "joint_minus_fixed.joint.emitted": {
+          "estimate": -0.3408521303258145,
+          "interval95": [
+            -0.40350877192982454,
+            -0.2807017543859649
+          ]
+        },
+        "joint_minus_fixed.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "joint_minus_fixed.attacks.choice_nll": {
+          "estimate": 0.013407892297618523,
+          "interval95": [
+            0.0075867924732030585,
+            0.01937917153588745
+          ]
+        },
+        "joint_minus_fixed.attacks.reciprocal_rank": {
+          "estimate": -0.011802355350742446,
+          "interval95": [
+            -0.027587045570916537,
+            -8.92857142857128e-05
+          ]
+        },
+        "joint_minus_fixed.attacks.top1": {
+          "estimate": -0.01881720430107527,
+          "interval95": [
+            -0.04838709677419355,
+            0.002688172043010753
+          ]
+        },
+        "joint_minus_fixed.event.nll": {
+          "estimate": 0.0053058232479483245,
+          "interval95": [
+            0.004816514935830002,
+            0.005831038133255161
+          ]
+        },
+        "joint_minus_fixed.all.choice_nll": {
+          "estimate": 0.005640909451482565,
+          "interval95": [
+            0.0037526154261862013,
+            0.0075311438742418045
+          ]
+        },
+        "joint_minus_fixed.supports.top1": {
+          "estimate": -0.0012323669238562852,
+          "interval95": [
+            -0.0047508285523578065,
+            0.0019300384160756507
+          ]
+        },
+        "joint_minus_fixed.event.average_precision": {
+          "estimate": -0.0023364802948140327,
+          "interval95": [
+            -0.0040063320673254885,
+            -0.0008390537560710722
+          ]
+        },
+        "joint_minus_fixed.joint.tp": {
+          "estimate": -0.08771929824561403,
+          "interval95": [
+            -0.11779448621553884,
+            -0.06015037593984962
+          ]
+        },
+        "joint_minus_fixed.joint.retrieval_average_precision": {
+          "estimate": -0.0003480645725833469,
+          "interval95": [
+            -0.0021039160997471835,
+            0.0014321051555371272
+          ]
+        },
+        "joint_minus_fixed.all.reciprocal_rank": {
+          "estimate": -0.0018762867438033052,
+          "interval95": [
+            -0.0038539455117753917,
+            1.1148743162710375e-05
+          ]
+        },
+        "joint_minus_fixed.supports.choice_nll": {
+          "estimate": 0.005366542345107725,
+          "interval95": [
+            0.0034695755246476685,
+            0.007369261717027886
+          ]
+        },
+        "joint_minus_fixed.supports.reciprocal_rank": {
+          "estimate": -0.001373060832676461,
+          "interval95": [
+            -0.003224172436459515,
+            0.0004553523531863051
+          ]
+        },
+        "adaptive_minus_isolated.all.top1": {
+          "estimate": -0.0005112341726514952,
+          "interval95": [
+            -0.002990972282310864,
+            0.0019197119590820375
+          ]
+        },
+        "adaptive_minus_isolated.joint.emitted": {
+          "estimate": -0.2832080200501253,
+          "interval95": [
+            -0.3383458646616541,
+            -0.23057644110275688
+          ]
+        },
+        "adaptive_minus_isolated.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "adaptive_minus_isolated.attacks.choice_nll": {
+          "estimate": 0.004354845040189403,
+          "interval95": [
+            0.002322286901184835,
+            0.006319740216091545
+          ]
+        },
+        "adaptive_minus_isolated.attacks.reciprocal_rank": {
+          "estimate": -0.006976446492575525,
+          "interval95": [
+            -0.020161290322580645,
+            0.00243215565796211
+          ]
+        },
+        "adaptive_minus_isolated.attacks.top1": {
+          "estimate": -0.013440860215053764,
+          "interval95": [
+            -0.04032258064516129,
+            0.005376344086021506
+          ]
+        },
+        "adaptive_minus_isolated.event.nll": {
+          "estimate": 0.0025717954603206223,
+          "interval95": [
+            0.0023205942945320884,
+            0.0028118773571404725
+          ]
+        },
+        "adaptive_minus_isolated.all.choice_nll": {
+          "estimate": 0.0017990397401770049,
+          "interval95": [
+            0.001176659723436855,
+            0.0024243221840058544
+          ]
+        },
+        "adaptive_minus_isolated.supports.top1": {
+          "estimate": -4.52192606447924e-05,
+          "interval95": [
+            -0.0021489215571662374,
+            0.002070009076325566
+          ]
+        },
+        "adaptive_minus_isolated.event.average_precision": {
+          "estimate": -0.0005470457933663881,
+          "interval95": [
+            -0.0016356161325591413,
+            0.00043771053877020863
+          ]
+        },
+        "adaptive_minus_isolated.joint.tp": {
+          "estimate": -0.07769423558897243,
+          "interval95": [
+            -0.10526315789473684,
+            -0.05012531328320802
+          ]
+        },
+        "adaptive_minus_isolated.joint.retrieval_average_precision": {
+          "estimate": -0.00044713215481142555,
+          "interval95": [
+            -0.0014409939323198877,
+            0.0005852283439260447
+          ]
+        },
+        "adaptive_minus_isolated.all.reciprocal_rank": {
+          "estimate": -0.00047160449883547036,
+          "interval95": [
+            -0.0017981777248099453,
+            0.0007938893425277936
+          ]
+        },
+        "adaptive_minus_isolated.supports.choice_nll": {
+          "estimate": 0.0017094041938032626,
+          "interval95": [
+            0.0010756055701804568,
+            0.0023263653972874247
+          ]
+        },
+        "adaptive_minus_isolated.supports.reciprocal_rank": {
+          "estimate": -0.00021302494540526484,
+          "interval95": [
+            -0.0013285783872968068,
+            0.0009500853556289066
+          ]
+        },
+        "adaptive_minus_joint.all.top1": {
+          "estimate": 0.0015924437184279701,
+          "interval95": [
+            -0.000945064158646836,
+            0.004166405372114034
+          ]
+        },
+        "adaptive_minus_joint.joint.emitted": {
+          "estimate": 0.05764411027568922,
+          "interval95": [
+            0.020050125313283207,
+            0.09273182957393483
+          ]
+        },
+        "adaptive_minus_joint.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "adaptive_minus_joint.attacks.choice_nll": {
+          "estimate": -0.009053047257429121,
+          "interval95": [
+            -0.01314565703763815,
+            -0.005197986866193169
+          ]
+        },
+        "adaptive_minus_joint.attacks.reciprocal_rank": {
+          "estimate": 0.004825908858166922,
+          "interval95": [
+            -0.0002688172043010758,
+            0.01218637992831541
+          ]
+        },
+        "adaptive_minus_joint.attacks.top1": {
+          "estimate": 0.005376344086021506,
+          "interval95": [
+            0.0,
+            0.016129032258064516
+          ]
+        },
+        "adaptive_minus_joint.event.nll": {
+          "estimate": -0.0027340277876277018,
+          "interval95": [
+            -0.0029978059215957456,
+            -0.0024704234432659333
+          ]
+        },
+        "adaptive_minus_joint.all.choice_nll": {
+          "estimate": -0.0038418697113055604,
+          "interval95": [
+            -0.005136502037883158,
+            -0.00260333156669627
+          ]
+        },
+        "adaptive_minus_joint.supports.top1": {
+          "estimate": 0.0011871476632114928,
+          "interval95": [
+            -0.001457980738233398,
+            0.003687497675197143
+          ]
+        },
+        "adaptive_minus_joint.event.average_precision": {
+          "estimate": 0.0017894345014476446,
+          "interval95": [
+            0.0006706390384161928,
+            0.0030626253160037434
+          ]
+        },
+        "adaptive_minus_joint.joint.tp": {
+          "estimate": 0.010025062656641603,
+          "interval95": [
+            -0.010025062656641603,
+            0.03007518796992481
+          ]
+        },
+        "adaptive_minus_joint.joint.retrieval_average_precision": {
+          "estimate": -9.906758222807863e-05,
+          "interval95": [
+            -0.001551370914771685,
+            0.0013077742850823373
+          ]
+        },
+        "adaptive_minus_joint.all.reciprocal_rank": {
+          "estimate": 0.0014046822449678348,
+          "interval95": [
+            -8.210519698341547e-05,
+            0.0028961437343104496
+          ]
+        },
+        "adaptive_minus_joint.supports.choice_nll": {
+          "estimate": -0.0036571381513044623,
+          "interval95": [
+            -0.004970131526558171,
+            -0.002437074830148822
+          ]
+        },
+        "adaptive_minus_joint.supports.reciprocal_rank": {
+          "estimate": 0.0011600358872711962,
+          "interval95": [
+            -0.00029528289092071373,
+            0.002597797401673574
+          ]
+        },
+        "adaptive_minus_half.all.top1": {
+          "estimate": -0.00010207057451151932,
+          "interval95": [
+            -0.001706036745406824,
+            0.0011373578302712162
+          ]
+        },
+        "adaptive_minus_half.joint.emitted": {
+          "estimate": -0.09774436090225563,
+          "interval95": [
+            -0.13032581453634084,
+            -0.06766917293233082
+          ]
+        },
+        "adaptive_minus_half.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "adaptive_minus_half.attacks.choice_nll": {
+          "estimate": -0.0022023231887375655,
+          "interval95": [
+            -0.0031831684727688003,
+            -0.0011980611778112716
+          ]
+        },
+        "adaptive_minus_half.attacks.reciprocal_rank": {
+          "estimate": 0.002329749103942652,
+          "interval95": [
+            -0.0010752688172043017,
+            0.008064516129032258
+          ]
+        },
+        "adaptive_minus_half.attacks.top1": {
+          "estimate": 0.005376344086021506,
+          "interval95": [
+            0.0,
+            0.016129032258064516
+          ]
+        },
+        "adaptive_minus_half.event.nll": {
+          "estimate": -3.787076990545698e-05,
+          "interval95": [
+            -4.1374462329063e-05,
+            -3.4380026248982344e-05
+          ]
+        },
+        "adaptive_minus_half.all.choice_nll": {
+          "estimate": -0.0009224256147142585,
+          "interval95": [
+            -0.001233088626422542,
+            -0.0006212328240698744
+          ]
+        },
+        "adaptive_minus_half.supports.top1": {
+          "estimate": -0.0003989361702127659,
+          "interval95": [
+            -0.0019946808510638296,
+            0.0007978723404255322
+          ]
+        },
+        "adaptive_minus_half.event.average_precision": {
+          "estimate": -2.3434570678665375e-05,
+          "interval95": [
+            -7.030371203599613e-05,
+            0.0
+          ]
+        },
+        "adaptive_minus_half.joint.tp": {
+          "estimate": -0.02506265664160401,
+          "interval95": [
+            -0.040100250626566414,
+            -0.010025062656641603
+          ]
+        },
+        "adaptive_minus_half.joint.retrieval_average_precision": {
+          "estimate": -0.00013710167930235825,
+          "interval95": [
+            -0.0007406279390062099,
+            0.0002867780946042865
+          ]
+        },
+        "adaptive_minus_half.all.reciprocal_rank": {
+          "estimate": -7.773987667126005e-05,
+          "interval95": [
+            -0.000961682667778,
+            0.000666837810046472
+          ]
+        },
+        "adaptive_minus_half.supports.choice_nll": {
+          "estimate": -0.0008773089241211311,
+          "interval95": [
+            -0.0011894703331111506,
+            -0.0005711046444037339
+          ]
+        },
+        "adaptive_minus_half.supports.reciprocal_rank": {
+          "estimate": -0.00018308103651948636,
+          "interval95": [
+            -0.0009952765962929339,
+            0.00046391201145190515
+          ]
+        }
+      }
+    }
+  },
+  "sufficiency": {
+    "published_label": {
+      "essays": 399,
+      "observations": 1022,
+      "insufficient": 346,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.34184210076273214,
+            "interval95": [
+              0.30457461390977436,
+              0.380581648433541
+            ]
+          },
+          "ap": 0.25563560225382065
+        },
+        "isolated": {
+          "auc": {
+            "estimate": 0.6394081130074906,
+            "interval95": [
+              0.602930316204202,
+              0.6774739616371386
+            ]
+          },
+          "ap": 0.4582998079842628
+        },
+        "fixed": {
+          "auc": {
+            "estimate": 0.6389677463488046,
+            "interval95": [
+              0.6009564954276355,
+              0.6773995719255282
+            ]
+          },
+          "ap": 0.4406402195202505
+        },
+        "joint": {
+          "auc": {
+            "estimate": 0.6381425932893252,
+            "interval95": [
+              0.5999665942369431,
+              0.6766649586725915
+            ]
+          },
+          "ap": 0.43990159256609057
+        },
+        "half": {
+          "auc": {
+            "estimate": 0.641379074460444,
+            "interval95": [
+              0.6035512791416028,
+              0.6800519993368362
+            ]
+          },
+          "ap": 0.4489743541353065
+        },
+        "adaptive": {
+          "auc": {
+            "estimate": 0.641396176078257,
+            "interval95": [
+              0.6035749750140484,
+              0.679986208379802
+            ]
+          },
+          "ap": 0.4491012514905573
+        },
+        "fixed_minus_isolated": {
+          "estimate": -0.0004403666586859645,
+          "interval95": [
+            -0.01736104554354215,
+            0.015970609554908914
+          ]
+        },
+        "joint_minus_fixed": {
+          "estimate": -0.0008251530594793888,
+          "interval95": [
+            -0.0014343072539498292,
+            -0.00027243417858076313
+          ]
+        },
+        "joint_minus_isolated": {
+          "estimate": -0.0012655197181653532,
+          "interval95": [
+            -0.018163588741782935,
+            0.015292143264286058
+          ]
+        },
+        "adaptive_minus_half": {
+          "estimate": 1.7101617813097825e-05,
+          "interval95": [
+            -0.00015778978567055347,
+            0.0002156310744203361
+          ]
+        },
+        "adaptive_minus_isolated": {
+          "estimate": 0.001988063070766488,
+          "interval95": [
+            -0.008057196326835398,
+            0.011839741861145113
+          ]
+        }
+      }
+    },
+    "three_reader_majority": {
+      "essays": 167,
+      "observations": 433,
+      "insufficient": 114,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.3568305560138591,
+            "interval95": [
+              0.2927718866227893,
+              0.42617052771940483
+            ]
+          },
+          "ap": 0.20047528920356972
+        },
+        "isolated": {
+          "auc": {
+            "estimate": 0.6427982181158225,
+            "interval95": [
+              0.5735836541293245,
+              0.7061364773297342
+            ]
+          },
+          "ap": 0.384718040925675
+        },
+        "fixed": {
+          "auc": {
+            "estimate": 0.6416157949733268,
+            "interval95": [
+              0.5761842507183637,
+              0.7040960702396635
+            ]
+          },
+          "ap": 0.36121997692202606
+        },
+        "joint": {
+          "auc": {
+            "estimate": 0.6411483253588517,
+            "interval95": [
+              0.5757715387724647,
+              0.7034299637969332
+            ]
+          },
+          "ap": 0.36129485308463466
+        },
+        "half": {
+          "auc": {
+            "estimate": 0.6431006984546005,
+            "interval95": [
+              0.5775183478480435,
+              0.7045076089294662
+            ]
+          },
+          "ap": 0.3699817845198441
+        },
+        "adaptive": {
+          "auc": {
+            "estimate": 0.6430732002419842,
+            "interval95": [
+              0.5773743220692532,
+              0.7045338574213333
+            ]
+          },
+          "ap": 0.36993069366555587
+        },
+        "fixed_minus_isolated": {
+          "estimate": -0.0011824231424957254,
+          "interval95": [
+            -0.03327772864370845,
+            0.02985723145202379
+          ]
+        },
+        "joint_minus_fixed": {
+          "estimate": -0.00046746961447508006,
+          "interval95": [
+            -0.0018516676966053385,
+            0.0007527123607643518
+          ]
+        },
+        "joint_minus_isolated": {
+          "estimate": -0.0016498927569708055,
+          "interval95": [
+            -0.03343003880728744,
+            0.02915755055345531
+          ]
+        },
+        "adaptive_minus_half": {
+          "estimate": -2.749821261627261e-05,
+          "interval95": [
+            -0.00044927993364109187,
+            0.0003871777182644893
+          ]
+        },
+        "adaptive_minus_isolated": {
+          "estimate": 0.0002749821261617269,
+          "interval95": [
+            -0.01820034660494129,
+            0.018357135643854165
+          ]
+        }
+      }
+    },
+    "individual_votes": {
+      "essays": 167,
+      "observations": 1299,
+      "insufficient": 336,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.3490255525886367,
+            "interval95": [
+              0.28928877900334177,
+              0.41431920321780236
+            ]
+          },
+          "ap": 0.19427189257134975
+        },
+        "isolated": {
+          "auc": {
+            "estimate": 0.6491062156950007,
+            "interval95": [
+              0.5858607914422354,
+              0.7084812327755773
+            ]
+          },
+          "ap": 0.38410913071494784
+        },
+        "fixed": {
+          "auc": {
+            "estimate": 0.6458518765761756,
+            "interval95": [
+              0.5852562414309354,
+              0.7048200416874245
+            ]
+          },
+          "ap": 0.36122408306505627
+        },
+        "joint": {
+          "auc": {
+            "estimate": 0.6452306779409583,
+            "interval95": [
+              0.5844387503667862,
+              0.7045433264000842
+            ]
+          },
+          "ap": 0.3612260509044228
+        },
+        "half": {
+          "auc": {
+            "estimate": 0.6481605103100431,
+            "interval95": [
+              0.5862415031520586,
+              0.7073251756838196
+            ]
+          },
+          "ap": 0.3696366397711794
+        },
+        "adaptive": {
+          "auc": {
+            "estimate": 0.6481419670672007,
+            "interval95": [
+              0.5859918392935294,
+              0.7073635530570287
+            ]
+          },
+          "ap": 0.36958576561906
+        },
+        "fixed_minus_isolated": {
+          "estimate": -0.0032543391188251114,
+          "interval95": [
+            -0.0332223226593228,
+            0.024365232240651877
+          ]
+        },
+        "joint_minus_fixed": {
+          "estimate": -0.0006211986352172572,
+          "interval95": [
+            -0.0019573188933311282,
+            0.0005109135938735717
+          ]
+        },
+        "joint_minus_isolated": {
+          "estimate": -0.0038755377540423686,
+          "interval95": [
+            -0.03353470205118679,
+            0.023644350809123298
+          ]
+        },
+        "adaptive_minus_half": {
+          "estimate": -1.8543242842339325e-05,
+          "interval95": [
+            -0.0003777452024038341,
+            0.0003327859578186182
+          ]
+        },
+        "adaptive_minus_isolated": {
+          "estimate": -0.0009642486277999796,
+          "interval95": [
+            -0.017576478168819618,
+            0.014369999427899564
+          ]
+        }
+      }
+    },
+    "alignment_audit": {
+      "published_label_differs_from_vote_majority": 18,
+      "ineligible_article": 7
+    }
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "article_source_audit": {
+    "2021": {
+      "article": "https://doi.org/10.1037/xlm0000936",
+      "author_cue_coverage_by_condition": {
+        "AnomAmb": {
+          "eligible": 46,
+          "source_cue_undefined": 1
+        },
+        "AnomUA": {
+          "eligible": 46,
+          "source_cue_undefined": 1
+        },
+        "PlausAmb": {
+          "eligible": 46,
+          "source_cue_undefined": 1
+        },
+        "PlausUA": {
+          "eligible": 46,
+          "source_cue_undefined": 1
+        }
+      },
+      "certified_word_ends": 3096,
+      "eligible_word_updates": 2908,
+      "orthographic_words": 3096,
+      "public_data": "https://osf.io/hn3bu/",
+      "stimuli": 188
+    },
+    "2023": {
+      "article": "https://doi.org/10.1080/23273798.2022.2159992",
+      "author_cue_coverage_by_condition": {
+        "Amb": {
+          "eligible": 44
+        },
+        "UA": {
+          "eligible": 44
+        }
+      },
+      "certified_word_ends": 1161,
+      "eligible_word_updates": 1073,
+      "orthographic_words": 1161,
+      "public_data": "https://osf.io/m87vg/",
+      "stimuli": 88
+    }
+  },
+  "certificate": {
+    "certified_stops": 4533,
+    "input_documents": 276,
+    "input_tokens": 4646,
+    "max_input_tokens": 21,
+    "requested_stops": 4533
+  },
+  "coordinates": "Zero-based half-open Unicode character spans. Stops are exclusive prefix lengths.",
+  "eligible_update": "Both the word endpoint and the immediately preceding lexical word endpoint are certified. The first word has no prior word. Sentence end alone never fills this role.",
+  "evidence_scope": "Candidate packet created from the unchanged literal text and IDs before reading local author condition or cue positions. The subsequent audit counts syntactic alignment of that stimulus cue, not a localized human report.",
+  "frozen_source_sha256": {
+    "2021": {
+      "design": "6698c694bfae671d47e7b35fd691d3a326ae62f4ba4ff9d670232350fe826372",
+      "stimuli": "02b0537c8ee7d0348d24c97251bce4ac4692f82e34d7c8c14bc56ef9586887f2"
+    },
+    "2023": {
+      "design": "c18e3a2b41d2f873a498909f8ba402cda82bad0670d3842c2e930683bbb7b47e",
+      "stimuli": "a191df40dcd3cc77c33b1e5f096fb2778f2fd2ec6a9ee3c134c683b524a2dbf1"
+    }
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "omitted_offsets": 0,
+  "packet_sha256": {
+    "packet/extractor-preflight.json": "9e08c022409278c68268f46f16fbada5efad62c6d464b256dd9e1d9672da9fab",
+    "packet/preflight.json": "3a40ab41189562fd241f26fd545ab5e331b89173233e850c85b778dc228cb3c4",
+    "packet/stimuli.jsonl": "a6a74dd160ff51591047e81c77db26b52edf6e95d9c9fd9425dca2d0a7d60b86",
+    "prepared/layout.jsonl": "6bb7c93d9abc9264da2bba2c8908a0052492bf79b35ba8dae8945964a89ca1fb",
+    "prepared/stimuli.jsonl": "a6a74dd160ff51591047e81c77db26b52edf6e95d9c9fd9425dca2d0a7d60b86"
+  },
+  "pinned_tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+  "word_definition": "Unicode alphanumeric spans with internal straight or curly apostrophes."
+}

@@ -1,0 +1,509 @@
+{
+  "calibration": "ce9004eecb6a7c52623928934e96e3c84251b0a5212c7c58c28fe842d8d275e2",
+  "counts_order": [
+    "hits",
+    "alerts",
+    "annotated_forward",
+    "proposed_gold",
+    "first_properly_released",
+    "other_retained",
+    "both_correct",
+    "dual_pairs"
+  ],
+  "forecasts": "892d5695a5add83d48a9b99684669be5a0dc31f5436856c1f3f8bede67ac82fe",
+  "models": {
+    "first": {
+      "F1": {
+        "estimate": 0.0029917726252804786,
+        "paper_bootstrap_95": [
+          0.0,
+          0.009227486674604634
+        ]
+      },
+      "both_sources_and_timings": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_first_release": {
+        "estimate": 0.009174311926605505,
+        "paper_bootstrap_95": [
+          0.0,
+          0.028778707802988385
+        ]
+      },
+      "counts": [
+        2,
+        945,
+        392,
+        317,
+        1,
+        1,
+        0,
+        109
+      ],
+      "precision": {
+        "estimate": 0.0021164021164021165,
+        "paper_bootstrap_95": [
+          0.0,
+          0.007160763036348967
+        ]
+      },
+      "recall": {
+        "estimate": 0.00510204081632653,
+        "paper_bootstrap_95": [
+          0.0,
+          0.013378299689440995
+        ]
+      },
+      "retain_other_at_correct_first": {
+        "estimate": 0.009174311926605505,
+        "paper_bootstrap_95": [
+          0.0,
+          0.028778707802988385
+        ]
+      },
+      "same_evidence_identity": {
+        "estimate": 0.5,
+        "paper_bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "source_proposal_coverage": {
+        "estimate": 0.8086734693877551,
+        "paper_bootstrap_95": [
+          0.6796495171495172,
+          0.8906265814777328
+        ]
+      }
+    },
+    "literal": {
+      "F1": {
+        "estimate": 0.04935370152761457,
+        "paper_bootstrap_95": [
+          0.0027021592638214625,
+          0.11384831066872288
+        ]
+      },
+      "both_sources_and_timings": {
+        "estimate": 0.027522935779816515,
+        "paper_bootstrap_95": [
+          0.0,
+          0.11764705882352941
+        ]
+      },
+      "correct_first_release": {
+        "estimate": 0.07339449541284404,
+        "paper_bootstrap_95": [
+          0.0,
+          0.1929966044142615
+        ]
+      },
+      "counts": [
+        21,
+        459,
+        392,
+        317,
+        8,
+        4,
+        3,
+        109
+      ],
+      "precision": {
+        "estimate": 0.0457516339869281,
+        "paper_bootstrap_95": [
+          0.0024090634614831645,
+          0.1188367969814899
+        ]
+      },
+      "recall": {
+        "estimate": 0.05357142857142857,
+        "paper_bootstrap_95": [
+          0.0030485488175550452,
+          0.1129097444684497
+        ]
+      },
+      "retain_other_at_correct_first": {
+        "estimate": 0.03669724770642202,
+        "paper_bootstrap_95": [
+          0.0,
+          0.125
+        ]
+      },
+      "same_evidence_identity": {
+        "estimate": 0.6720183486238532,
+        "paper_bootstrap_95": [
+          0.6119402985074627,
+          0.7582036676854682
+        ]
+      },
+      "source_proposal_coverage": {
+        "estimate": 0.8086734693877551,
+        "paper_bootstrap_95": [
+          0.6796495171495172,
+          0.8906265814777328
+        ]
+      }
+    },
+    "native": {
+      "F1": {
+        "estimate": 0.08114961961115807,
+        "paper_bootstrap_95": [
+          0.031160112381391755,
+          0.14774802503334364
+        ]
+      },
+      "both_sources_and_timings": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_first_release": {
+        "estimate": 0.10091743119266056,
+        "paper_bootstrap_95": [
+          0.023255813953488372,
+          0.22034998899405683
+        ]
+      },
+      "counts": [
+        48,
+        791,
+        392,
+        317,
+        11,
+        5,
+        0,
+        109
+      ],
+      "precision": {
+        "estimate": 0.0606826801517067,
+        "paper_bootstrap_95": [
+          0.021147504361516533,
+          0.13027504105090312
+        ]
+      },
+      "recall": {
+        "estimate": 0.12244897959183673,
+        "paper_bootstrap_95": [
+          0.058656701394131566,
+          0.18690169251881733
+        ]
+      },
+      "retain_other_at_correct_first": {
+        "estimate": 0.045871559633027525,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0980472516875603
+        ]
+      },
+      "same_evidence_identity": {
+        "estimate": 0.7844036697247706,
+        "paper_bootstrap_95": [
+          0.7380894590846048,
+          0.8536632270168856
+        ]
+      },
+      "source_proposal_coverage": {
+        "estimate": 0.8086734693877551,
+        "paper_bootstrap_95": [
+          0.6796495171495172,
+          0.8906265814777328
+        ]
+      }
+    },
+    "nearest": {
+      "F1": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "both_sources_and_timings": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_first_release": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "counts": [
+        0,
+        3889,
+        392,
+        317,
+        0,
+        0,
+        0,
+        109
+      ],
+      "precision": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "recall": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "retain_other_at_correct_first": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "same_evidence_identity": {
+        "estimate": 0.5,
+        "paper_bootstrap_95": [
+          0.5,
+          0.5
+        ]
+      },
+      "source_proposal_coverage": {
+        "estimate": 0.8086734693877551,
+        "paper_bootstrap_95": [
+          0.6796495171495172,
+          0.8906265814777328
+        ]
+      }
+    },
+    "position": {
+      "F1": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "both_sources_and_timings": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_first_release": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "counts": [
+        0,
+        7089,
+        392,
+        317,
+        0,
+        0,
+        0,
+        109
+      ],
+      "precision": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "recall": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "retain_other_at_correct_first": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "same_evidence_identity": {
+        "estimate": 0.6788990825688074,
+        "paper_bootstrap_95": [
+          0.6235275962236747,
+          0.7589553571428572
+        ]
+      },
+      "source_proposal_coverage": {
+        "estimate": 0.8086734693877551,
+        "paper_bootstrap_95": [
+          0.6796495171495172,
+          0.8906265814777328
+        ]
+      }
+    },
+    "surface": {
+      "F1": {
+        "estimate": 0.04291845493562232,
+        "paper_bootstrap_95": [
+          0.009959911597391529,
+          0.09295416333578942
+        ]
+      },
+      "both_sources_and_timings": {
+        "estimate": 0.0,
+        "paper_bootstrap_95": [
+          0.0,
+          0.0
+        ]
+      },
+      "correct_first_release": {
+        "estimate": 0.06422018348623854,
+        "paper_bootstrap_95": [
+          0.0,
+          0.15151515151515152
+        ]
+      },
+      "counts": [
+        25,
+        773,
+        392,
+        317,
+        7,
+        3,
+        0,
+        109
+      ],
+      "precision": {
+        "estimate": 0.03234152652005175,
+        "paper_bootstrap_95": [
+          0.006915390522913276,
+          0.08134171070112176
+        ]
+      },
+      "recall": {
+        "estimate": 0.06377551020408163,
+        "paper_bootstrap_95": [
+          0.016085575373050696,
+          0.11656575864350999
+        ]
+      },
+      "retain_other_at_correct_first": {
+        "estimate": 0.027522935779816515,
+        "paper_bootstrap_95": [
+          0.0,
+          0.05454545454545454
+        ]
+      },
+      "same_evidence_identity": {
+        "estimate": 0.6743119266055045,
+        "paper_bootstrap_95": [
+          0.6166569767441861,
+          0.7560975609756098
+        ]
+      },
+      "source_proposal_coverage": {
+        "estimate": 0.8086734693877551,
+        "paper_bootstrap_95": [
+          0.6796495171495172,
+          0.8906265814777328
+        ]
+      }
+    }
+  },
+  "native_minus": {
+    "first": {
+      "F1": {
+        "estimate": 0.07815784698587759,
+        "paper_bootstrap_95": [
+          0.03110628324937322,
+          0.13949912104156567
+        ]
+      },
+      "identity": {
+        "estimate": 0.2844036697247706,
+        "paper_bootstrap_95": [
+          0.23808945908460477,
+          0.3536632270168856
+        ]
+      }
+    },
+    "literal": {
+      "F1": {
+        "estimate": 0.031795918083543505,
+        "paper_bootstrap_95": [
+          -0.006140427992565266,
+          0.06972998139450669
+        ]
+      },
+      "identity": {
+        "estimate": 0.11238532110091737,
+        "paper_bootstrap_95": [
+          0.0792682926829269,
+          0.13461538461538458
+        ]
+      }
+    },
+    "nearest": {
+      "F1": {
+        "estimate": 0.08114961961115807,
+        "paper_bootstrap_95": [
+          0.031160112381391755,
+          0.14774802503334364
+        ]
+      },
+      "identity": {
+        "estimate": 0.2844036697247706,
+        "paper_bootstrap_95": [
+          0.23808945908460477,
+          0.3536632270168856
+        ]
+      }
+    },
+    "position": {
+      "F1": {
+        "estimate": 0.08114961961115807,
+        "paper_bootstrap_95": [
+          0.031160112381391755,
+          0.14774802503334364
+        ]
+      },
+      "identity": {
+        "estimate": 0.10550458715596323,
+        "paper_bootstrap_95": [
+          0.06999418604651159,
+          0.13421174463937618
+        ]
+      }
+    },
+    "surface": {
+      "F1": {
+        "estimate": 0.03823116467553576,
+        "paper_bootstrap_95": [
+          0.014262924510508519,
+          0.06932028864883452
+        ]
+      },
+      "identity": {
+        "estimate": 0.11009174311926606,
+        "paper_bootstrap_95": [
+          0.039059963474025974,
+          0.15517241379310343
+        ]
+      }
+    }
+  },
+  "paired_sources": 109,
+  "papers": 24,
+  "papers_with_competition": 9
+}

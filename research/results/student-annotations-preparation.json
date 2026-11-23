@@ -1,0 +1,96 @@
+{
+  "status": "prepared_before_any_model_extraction_or_fitting",
+  "scope": "German standalone guide sentence difficulty",
+  "source": {
+    "revision": "db164a0365d1398473ec7c8be4a211e03c7b9286",
+    "annotations_sha256": "8ca024c962f11e93b09b4b954f3951ef310d2fe32cea87c311996845e891b800"
+  },
+  "comparison_source_sha256": {
+    "source.csv": "08881ded42eef46183b2e89845ad4b07ee128e3caa77e606a39ac059e13102f5",
+    "ratings.csv": "191da27ff56f6c1f26a9db6939f400c53ef902a5d2e0e358364ce70bc284d75c"
+  },
+  "source_audit_sha256": "c7433848b52f329dd1387e5865cf976f918b251a61db8aa527fdaf0bfc8d3067",
+  "protocol_sha256": "4fdf0c7f93425b6cbdeb0ac3a154493b47af47f86cb1997be2c889f07daccb83",
+  "source_selection_code_sha256": "5f74a4072ddcd562cbd8c354217ed284d5894a93ed06f41de5e7fe3c6a8a8a66",
+  "prep_code_sha256": "535c7c6e21fc3f8ca50185748990b0346788d2282e75bf8906f696d09a5a6fe7",
+  "counts": {
+    "sentences": 1143,
+    "normalized_sentence_groups": 1134,
+    "readers": 192,
+    "trials": 3160,
+    "exact_causal_stops": 1143
+  },
+  "crossed_four_fold": {
+    "test_counts": [
+      [
+        214,
+        247,
+        203,
+        195
+      ],
+      [
+        181,
+        218,
+        191,
+        177
+      ],
+      [
+        228,
+        228,
+        184,
+        181
+      ],
+      [
+        201,
+        182,
+        152,
+        178
+      ]
+    ],
+    "fit_counts": [
+      [
+        1691,
+        1673,
+        1774,
+        1765
+      ],
+      [
+        1750,
+        1736,
+        1854,
+        1839
+      ],
+      [
+        1743,
+        1692,
+        1793,
+        1789
+      ],
+      [
+        1824,
+        1754,
+        1869,
+        1894
+      ]
+    ]
+  },
+  "language_code": {
+    "german": 0,
+    "german_and_another_language": 1,
+    "another_language": 2
+  },
+  "grade_meaning": {
+    "1": "very easy to understand",
+    "5": "very difficult to understand"
+  },
+  "sha256": {
+    "local/outcomes.jsonl": "261a3505c3fa7ccbee5576f5cb3b19d198396cae8083395b32ff67f527a86ff1",
+    "local/readers.jsonl": "757bcd74778a90e713c48d893d39c0c522dd0515cb735e5272a48cc68bd94537",
+    "local/sentences.jsonl": "910786ab7e549ee96c7b100573a9a171c0f922c8472ffd7393a14df0d6bea771",
+    "local/trial-design.jsonl": "457e3f8d441a1e348128a6bc05a79eef4df4bab9c88b13a9b18579ca40a80cdd",
+    "model-inputs.tar.gz": "523f1b44f9f8dc84e6d133fc40934123866cf43f86a6ff32f9fb022d312e0ed9",
+    "model_input/certified-stops.jsonl": "890ccbfb7017d00ca0a0b7cb19465fa397b3af0140051cff1d7b2c4d133daf2f",
+    "model_input/extraction-plan.json": "9e098ccd30523ac0f7d61e5e1ce191839021d2db62adebcd750775289e0f6f8d",
+    "model_input/stimuli.jsonl": "64c6c197bbd7c316361a277a963e53c1a6be734b9dd39386d19de135e224a70b"
+  }
+}

@@ -1,0 +1,81 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "dtype": "float32",
+  "device": "Device(gpu, 0)",
+  "tokenizer_wrapper": "5.17.0",
+  "ordinary_paragraph_forwards": 489,
+  "ordinary_nonpadding_tokens": 135576,
+  "separate_truncated_replays": [
+    {
+      "question_id": "q_4",
+      "prefix_tokens": 140,
+      "max_projected_absolute_difference": 0.0
+    },
+    {
+      "question_id": "q_17",
+      "prefix_tokens": 209,
+      "max_projected_absolute_difference": 0.0
+    },
+    {
+      "question_id": "q_21",
+      "prefix_tokens": 170,
+      "max_projected_absolute_difference": 0.0
+    }
+  ],
+  "elapsed_s": 98.04313379200002,
+  "source_sha256": {
+    "stimuli.jsonl": "889377c3400337ec2dace74ffa745984fbacd2795c561f6afda2965e79e751cd",
+    "train.jsonl": "38bc02fe9902595bc60547b08c03e36313163fae363946a72c3e0347b3ac36c2",
+    "queries.jsonl": "c9efb96902c4dbb6c2060029f37d0566905263d4d6268bcec16a4b1305d4c1b4"
+  },
+  "source_projection_sha256": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+  "predictions_sha256": "b36e1666c371f3eca4eb339e156adad2bcbd3aedf2d46aee62b23ff3ed4bf59f",
+  "heads_sha256": "ab0e58e27728bd484ef793a368ceec8ae0c6406e20b275f818eef03e65705777",
+  "training_disposition": {
+    "scored": 531,
+    "uncertified_anchor_end": 1,
+    "no_compatible_training_span": 1
+  },
+  "held_out_disposition": {
+    "scored": 65
+  },
+  "treatments": {
+    "form": {
+      "loss": 2.7673901903296576,
+      "iterations": 11,
+      "converged": true,
+      "max_abs_gradient": 0.00018599771213854928
+    },
+    "qwen": {
+      "loss": 2.328377324317489,
+      "iterations": 20,
+      "converged": true,
+      "max_abs_gradient": 0.000284869448254111
+    }
+  },
+  "preregistered": {
+    "max_lexical_runs_per_span": 28,
+    "top_spans": 5,
+    "min_iou": 0.5,
+    "ridge": 0.005,
+    "optimizer_max_iterations": 60,
+    "form_features": [
+      "log_words",
+      "log_characters",
+      "log_gap",
+      "relative_end",
+      "relative_end_squared",
+      "initial_uppercase",
+      "uppercase_word_share",
+      "digit_share",
+      "punctuation_share",
+      "anchor_word_share",
+      "anchor_word_count_ratio",
+      "touches_anchor"
+    ],
+    "unit_weight": "authored question",
+    "primary": "Top-one exact-character IoU\u22650.5, qwen minus form; include unscored cases as misses",
+    "superiority_gate": "Lower 95% paired article bootstrap endpoint above zero"
+  }
+}

@@ -1,0 +1,475 @@
+{
+  "source_calibration_sha256": "0a0b6b2736900bcded5808555eee76cbdacb27a9f69fe61158186bcd81987b46",
+  "gold_sha256": "26ee10ead50048dea044f22b04f10b3e0f4c9918c7bd17ba1654664c5f80ffc0",
+  "distinct_eligible_players": 120,
+  "evaluations": {
+    "literal": {
+      "queries": 366,
+      "clicks": 2196,
+      "nonunanimous_queries": 110,
+      "unequal_within_text_pairs": 3958,
+      "expected_pair_brier": {
+        "works": 35,
+        "texts": 37,
+        "methods": {
+          "constant": {
+            "estimate": 0.13503495806207044,
+            "family_bootstrap_95_interval": [
+              0.10456758917585754,
+              0.16820266371779544
+            ]
+          },
+          "recency": {
+            "estimate": 0.1352831761751302,
+            "family_bootstrap_95_interval": [
+              0.10679745761481407,
+              0.1650966988987211
+            ]
+          },
+          "lexical": {
+            "estimate": 0.13503495806207044,
+            "family_bootstrap_95_interval": [
+              0.1045675891758576,
+              0.16820266371779544
+            ]
+          },
+          "headwise": {
+            "estimate": 0.13515880262760743,
+            "family_bootstrap_95_interval": [
+              0.10554893788030485,
+              0.16676977816413138
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": 0.0001238445655369902,
+            "family_bootstrap_95_interval": [
+              -0.0024589991615442614,
+              0.002564959517895441
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": -0.0001243735475227603,
+            "family_bootstrap_95_interval": [
+              -0.005063672752116345,
+              0.005024904439747269
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.0001238445655369902,
+            "family_bootstrap_95_interval": [
+              -0.0024589991615442614,
+              0.0025649595178954135
+            ]
+          }
+        }
+      },
+      "forecast_bias": {
+        "works": 35,
+        "texts": 37,
+        "methods": {
+          "constant": {
+            "estimate": -0.00840940254563591,
+            "family_bootstrap_95_interval": [
+              -0.056121924946408865,
+              0.035418622086665595
+            ]
+          },
+          "recency": {
+            "estimate": -0.018112345634223943,
+            "family_bootstrap_95_interval": [
+              -0.06724864128641027,
+              0.029797595233819807
+            ]
+          },
+          "lexical": {
+            "estimate": -0.008409402545635885,
+            "family_bootstrap_95_interval": [
+              -0.056121924946408844,
+              0.035418622086665616
+            ]
+          },
+          "headwise": {
+            "estimate": -0.006630886102255197,
+            "family_bootstrap_95_interval": [
+              -0.05397904181075857,
+              0.037651456550711074
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": 0.0017785164433807123,
+            "family_bootstrap_95_interval": [
+              -0.004031639738913041,
+              0.00799791734950133
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": 0.011481459531968746,
+            "family_bootstrap_95_interval": [
+              -0.0019901661710089932,
+              0.025090239035746652
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.001778516443380688,
+            "family_bootstrap_95_interval": [
+              -0.004031639738913076,
+              0.007997917349501327
+            ]
+          }
+        }
+      },
+      "raw_concordance": {
+        "works": 23,
+        "texts": 25,
+        "methods": {
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "recency": {
+            "estimate": 0.634504922951385,
+            "family_bootstrap_95_interval": [
+              0.511304393348835,
+              0.7551252311922902
+            ]
+          },
+          "lexical": {
+            "estimate": 0.3599091294810052,
+            "family_bootstrap_95_interval": [
+              0.23489621898507318,
+              0.49331185160728636
+            ]
+          },
+          "headwise": {
+            "estimate": 0.5090301005580664,
+            "family_bootstrap_95_interval": [
+              0.37910957364111936,
+              0.6401916513195174
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": 0.009030100558066412,
+            "family_bootstrap_95_interval": [
+              -0.12089042635888061,
+              0.14019165131951733
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": -0.12547482239331864,
+            "family_bootstrap_95_interval": [
+              -0.2737677026572784,
+              0.006348722064224067
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.14912097107706124,
+            "family_bootstrap_95_interval": [
+              -0.02683089103062569,
+              0.31862887825949276
+            ]
+          }
+        }
+      },
+      "calibrated_concordance": {
+        "works": 23,
+        "texts": 25,
+        "methods": {
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "recency": {
+            "estimate": 0.634504922951385,
+            "family_bootstrap_95_interval": [
+              0.511304393348835,
+              0.7551252311922902
+            ]
+          },
+          "lexical": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "headwise": {
+            "estimate": 0.5090301005580664,
+            "family_bootstrap_95_interval": [
+              0.37910957364111936,
+              0.6401916513195174
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": 0.009030100558066412,
+            "family_bootstrap_95_interval": [
+              -0.12089042635888061,
+              0.14019165131951733
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": -0.12547482239331864,
+            "family_bootstrap_95_interval": [
+              -0.2737677026572784,
+              0.006348722064224067
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.009030100558066412,
+            "family_bootstrap_95_interval": [
+              -0.12089042635888061,
+              0.14019165131951733
+            ]
+          }
+        }
+      }
+    },
+    "entity": {
+      "queries": 366,
+      "clicks": 2196,
+      "nonunanimous_queries": 38,
+      "unequal_within_text_pairs": 1526,
+      "expected_pair_brier": {
+        "works": 35,
+        "texts": 37,
+        "methods": {
+          "constant": {
+            "estimate": 0.06560446392084279,
+            "family_bootstrap_95_interval": [
+              0.03504417384929132,
+              0.10310585251794563
+            ]
+          },
+          "recency": {
+            "estimate": 0.06554881238343437,
+            "family_bootstrap_95_interval": [
+              0.03668395957719027,
+              0.10034170103028298
+            ]
+          },
+          "lexical": {
+            "estimate": 0.06506710644010555,
+            "family_bootstrap_95_interval": [
+              0.03537359475288154,
+              0.10156176692494358
+            ]
+          },
+          "headwise": {
+            "estimate": 0.06695551310970164,
+            "family_bootstrap_95_interval": [
+              0.03728516762173925,
+              0.10286325402264865
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": 0.0013510491888588522,
+            "family_bootstrap_95_interval": [
+              -0.001814295348677843,
+              0.0043480740291432654
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": 0.0014067007262672793,
+            "family_bootstrap_95_interval": [
+              -0.0029599693899085545,
+              0.005843286071157838
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.001888406669596096,
+            "family_bootstrap_95_interval": [
+              -0.0008189602310456377,
+              0.004533481581344514
+            ]
+          }
+        }
+      },
+      "forecast_bias": {
+        "works": 35,
+        "texts": 37,
+        "methods": {
+          "constant": {
+            "estimate": 0.03017964173170649,
+            "family_bootstrap_95_interval": [
+              -0.01666282929763152,
+              0.06835208162998281
+            ]
+          },
+          "recency": {
+            "estimate": 0.024182565073681574,
+            "family_bootstrap_95_interval": [
+              -0.02362520292201714,
+              0.0648370994558315
+            ]
+          },
+          "lexical": {
+            "estimate": 0.03218358089973835,
+            "family_bootstrap_95_interval": [
+              -0.013594789858585433,
+              0.06938162618951291
+            ]
+          },
+          "headwise": {
+            "estimate": 0.03500037499677586,
+            "family_bootstrap_95_interval": [
+              -0.010843913747483183,
+              0.0728909628692021
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": 0.004820733265069366,
+            "family_bootstrap_95_interval": [
+              -0.004494474510585564,
+              0.014892225705149387
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": 0.010817809923094283,
+            "family_bootstrap_95_interval": [
+              -0.0042516812493047906,
+              0.025783466430296234
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.0028167940970375074,
+            "family_bootstrap_95_interval": [
+              -0.006123087701176037,
+              0.011917548960364555
+            ]
+          }
+        }
+      },
+      "raw_concordance": {
+        "works": 11,
+        "texts": 13,
+        "methods": {
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "recency": {
+            "estimate": 0.6599774524453277,
+            "family_bootstrap_95_interval": [
+              0.44690927062714586,
+              0.8578124999999993
+            ]
+          },
+          "lexical": {
+            "estimate": 0.3693282611078137,
+            "family_bootstrap_95_interval": [
+              0.16325843733247872,
+              0.5895833333333333
+            ]
+          },
+          "headwise": {
+            "estimate": 0.39587020828772435,
+            "family_bootstrap_95_interval": [
+              0.2,
+              0.5988636363636364
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": -0.10412979171227565,
+            "family_bootstrap_95_interval": [
+              -0.3,
+              0.09886363636363638
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": -0.26410724415760334,
+            "family_bootstrap_95_interval": [
+              -0.5553899142909917,
+              0.023490057139338938
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.026541947179910652,
+            "family_bootstrap_95_interval": [
+              -0.25245832989816736,
+              0.2850378787878788
+            ]
+          }
+        }
+      },
+      "calibrated_concordance": {
+        "works": 11,
+        "texts": 13,
+        "methods": {
+          "constant": {
+            "estimate": 0.5,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.5
+            ]
+          },
+          "recency": {
+            "estimate": 0.6599774524453277,
+            "family_bootstrap_95_interval": [
+              0.44690927062714586,
+              0.8578124999999993
+            ]
+          },
+          "lexical": {
+            "estimate": 0.3693282611078137,
+            "family_bootstrap_95_interval": [
+              0.16325843733247872,
+              0.5895833333333333
+            ]
+          },
+          "headwise": {
+            "estimate": 0.39587020828772435,
+            "family_bootstrap_95_interval": [
+              0.2,
+              0.5988636363636364
+            ]
+          }
+        },
+        "paired": {
+          "headwise_minus_constant": {
+            "estimate": -0.10412979171227565,
+            "family_bootstrap_95_interval": [
+              -0.3,
+              0.09886363636363638
+            ]
+          },
+          "headwise_minus_recency": {
+            "estimate": -0.26410724415760334,
+            "family_bootstrap_95_interval": [
+              -0.5553899142909917,
+              0.023490057139338938
+            ]
+          },
+          "headwise_minus_lexical": {
+            "estimate": 0.026541947179910652,
+            "family_bootstrap_95_interval": [
+              -0.25245832989816736,
+              0.2850378787878788
+            ]
+          }
+        }
+      }
+    }
+  }
+}

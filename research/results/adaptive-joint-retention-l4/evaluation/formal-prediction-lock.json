@@ -1,0 +1,69 @@
+{
+  "all_formal_forecast_seals_sha256": {
+    "seed-1729/fixed/anglin/seal.json": "b32e8016f80fc98b79c27a6696b66b5c8b60bd375bad35b07ab4589ed045599a",
+    "seed-1729/fixed/meco/forecast-seal.json": "d2449f5f828e1264051cc590f012942b9cfbc47d1b46be4219e66f536581b7ec",
+    "seed-1729/fixed/sap/seal.json": "c6bb50889cea70f82ac27d975e1da29b3cb500c81188d2ccfb8f5d165932b01d",
+    "seed-1729/guarded/anglin/seal.json": "765138de7d14fc41f805c000d8c498134975112b5a90d258fad9cbe69274205a",
+    "seed-1729/guarded/meco/forecast-seal.json": "5e631fe09f20e42b3a5ea3255e42f0df21730f0842c477a14c5d5b6d1dc159d0",
+    "seed-1729/guarded/sap/seal.json": "fd7df20e5b94ef049f838eb836b29a4cf9a61f3e92c42ac1f9ae4977948625fd",
+    "seed-2718/fixed/anglin/seal.json": "a0a2d50f241e21ac2de0de57de63f66d601f56646dd74b2cc9c236eb36b08140",
+    "seed-2718/fixed/meco/forecast-seal.json": "1ba5f27c3d9bcea71f94f84b9884acd81d9cd44e6c4ec4cd3aa3c5db9e8e0bb7",
+    "seed-2718/fixed/sap/seal.json": "2bbe39d574f20e073076cee4133cfe738e1e227f6c6f15ce56063f36de2abb98",
+    "seed-2718/guarded/anglin/seal.json": "7f8cdf6371307a1b295c4c8769e0d57e2f9939331a36639533489e47c0861056",
+    "seed-2718/guarded/meco/forecast-seal.json": "f737890079fac5f188f17f0cde33ec978d5e0c41e5849abbf02762ed36e5d360",
+    "seed-2718/guarded/sap/seal.json": "08633e6b437737e2a12aac3f507cdee9eeecfd70973eab5a3eef057b18c28040"
+  },
+  "forecast_code_sha256": "b8d24232464f5b9575f8ac07d92fbd83dd6de5e89ac9adf4058e8d15307bf88b",
+  "formal_participant_outcomes_used": false,
+  "formal_text_overlap_audit": {
+    "observation_packet": {
+      "documents": 27167,
+      "matched_document_ids": {
+        "anglin": [],
+        "meco": [],
+        "sap": []
+      },
+      "overlap_counts": {
+        "anglin": 0,
+        "meco": 0,
+        "sap": 0
+      },
+      "sha256": "498b2caf6cb53173edd4a473b8e9c20ca21830fc066ba52760cecc08c88e0e40"
+    },
+    "portable_token_packet": {
+      "documents": 351,
+      "matched_document_ids": {
+        "anglin": [],
+        "meco": [],
+        "sap": []
+      },
+      "overlap_counts": {
+        "anglin": 0,
+        "meco": 0,
+        "sap": 0
+      },
+      "sha256": "f6dd2749a85a5c07dbe3f6a73cb7174c640fdd85ec27d01d99a976649acb114b"
+    }
+  },
+  "overlap_scope": "Exact text, exact 12-word windows or 24-character MECO windows",
+  "retrospective_followup_after_original_comparison": true,
+  "source_runs": {
+    "fixed": {
+      "initial_checkpoint_sha256": "b38abeb8ea5ac9bceff597b4a1617e17e79e1592d363e68a85eee799bb1f670f",
+      "input_receipt_sha256": "f68234172a774cf419bdeadf4723937ec190b91bea3951a3794dedb7e13955eb",
+      "mode": "guarded-fixed",
+      "protocol_sha256": "84ea59d73eca5e6fc48b87ecd8731d6b805aa231086a6fe040a555a735b5b7dd",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "run_seal_sha256": "61a01c74ef7cb2c7c0913d4378d2d4e1d4489451468d9e8a27a46bcf79822db3"
+    },
+    "guarded": {
+      "initial_checkpoint_sha256": "b38abeb8ea5ac9bceff597b4a1617e17e79e1592d363e68a85eee799bb1f670f",
+      "input_receipt_sha256": "f68234172a774cf419bdeadf4723937ec190b91bea3951a3794dedb7e13955eb",
+      "mode": "guarded",
+      "protocol_sha256": "14ad9d0d729da882f6e51b3a05d933f912771390bd8bca9623e60f206d9d6e00",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "run_seal_sha256": "a3105b4e4646aada2fda6031edfff99480203955f2c8b93678f7a844551d1626"
+    }
+  },
+  "treatment": "guarded"
+}

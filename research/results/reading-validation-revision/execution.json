@@ -1,0 +1,53 @@
+{
+  "l4_run": "cogllm-reading-review-20261122T162525Z-2074ea",
+  "checkpoint_sha256": "c1704d4436d767fa43bdb59e9216698514e1f6bd1d45cad4b60d0f018d84abb5",
+  "qwen_model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "l4_seal_sha256": "a9039104e5b5c4f827dc6fe25bbc142a60fc9bf3be8d9f777111c156bcdaaa74",
+  "l4_extraction": {
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "packet_sha256": "aa540b84c4730b128d992dbe00484e92b670d75f0e76b577bc448acb31198f28",
+    "lexical_sha256": "caef04fb8b90154e208e528fee39fc2ccba96cd34a6945fac836771427784254",
+    "extraction_code_sha256": "6c813630d8979239642349d5dbcf9c7a1378693ffb90c4388c643269829922ca",
+    "files_sha256": {
+      "ids.json": "6db0d3e38b3b92430b27c18bdaf2e19869c63e8dfd8020a1db3263592b6cde08",
+      "states.npy": "e31ef6145e66a5fa01738f6f027b91582befa09b19e09c453a2bd057381ce39a",
+      "words.npz": "2a7009980b0386a9e05601f9d87ccd165da13ba8ce8ec3f64a841e9449609ba5"
+    },
+    "unique_passages": 4968,
+    "words": 103901,
+    "words_with_exact_token_end": 103901,
+    "tokens": 141936,
+    "word_projection": 96,
+    "projection_seed": 611934,
+    "inference_batches": 311,
+    "one_forward_for_each_passage": true,
+    "validation_forwards": 6,
+    "checks": {
+      "cf6dbef29aa6248a3549e70e7bb768a140e2729e15312a5378b5a7cac8710263": [
+        9.876231388261658e-07,
+        9.61432306212373e-07
+      ],
+      "0620fec03112ae8498304eff73e23558b8fb7f22b1c05b9b0feae6e640c875d8": [
+        9.611519544705516e-07,
+        1.019482510855596e-06
+      ],
+      "2f418d315d293a3dfd59a7a50aa9cfc5f6bc698c6ea017b894f09c98fc36bf55": [
+        1.1834666793220094e-06,
+        8.140596037264913e-07
+      ]
+    },
+    "elapsed_seconds": 70.73701364499999,
+    "device": "NVIDIA L4"
+  },
+  "analysis_code_files_verified": 13,
+  "fit_and_forecasts_sha256": {
+    "forecasts.jsonl": "b2645081d7d4fd59084f2c377b8b650a59b32aaf3d5097c8516fdef64442c841",
+    "coefficients.npz": "ea90a55ce29d9a33071210dd8e811d1614efb9ff8f3a873135a92d55a809173a",
+    "development.npz": "1a76e4b5d7e9532a97d1cf337fd32296b0cd45fee20e4eade4ca27a9dab68421"
+  },
+  "score_refers_to_forecast_seal_sha256": "a7baeec43d590824ad977461bcfe3199e9c60b2918baadc9cb88d20f6405585a",
+  "max_absolute_fold_or_refit_gradient": 2.99999480532319e-07,
+  "independent_optimization_runs": 24,
+  "largest_iterations": 101,
+  "verified_utc": "2026-11-22T16:50:11.450313+00:00"
+}

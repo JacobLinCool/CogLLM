@@ -1,0 +1,53 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "stimuli_sha256": "d996ec318009b905497d393cea1d75af5c54b75a5f406f5732f20e8f1995f96b",
+  "token_features_sha256": "4597e576e0e7eaa88b6e7af65132a47548c6cb1fb44a92dff0f79bc4c1459361",
+  "train_spans_sha256": "af0136f064233eccbfc40f8effa733455a7825dc8e3efbdb01c976a927f26e9e",
+  "evaluation_sha256": "e73474c2415a35238504d321f6a6e61a468ddd2295c38dae345b21ba1058f6de",
+  "heads_sha256": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+  "predictions_sha256": "0768169249a700f16ef3eac8ce60d5e400d7d5b698927f034dc19a0f985609d2",
+  "fit": {
+    "form": {
+      "loss": 5.232726573944092,
+      "gradient_max": 3.69104091078043e-05,
+      "function_evaluations": 20
+    },
+    "qwen": {
+      "loss": 4.279484272003174,
+      "gradient_max": 4.592817276716232e-05,
+      "function_evaluations": 21
+    }
+  },
+  "torch": "2.14.1+cu130",
+  "device": "cuda",
+  "ridge": 0.002,
+  "maximum_iterations": 50,
+  "methods": [
+    "form",
+    "qwen"
+  ],
+  "max_words": 8,
+  "form_features": [
+    "log_words",
+    "log_characters",
+    "relative_start",
+    "relative_start_squared",
+    "initial_uppercase",
+    "uppercase_word_share",
+    "digit_character_share",
+    "punctuation_character_share"
+  ],
+  "top_spans": 5,
+  "suppression": "greedy exact character nonoverlap, ties ascending source offsets",
+  "probability_scope": "One selected lexical span conditional on an observed authored question and in-support target",
+  "training": {
+    "observed_reports": 7195,
+    "used_reports": 7017,
+    "excluded_span_out_of_support": 178,
+    "used_paragraphs": 3822,
+    "excluded_paragraphs_without_supported_reports": 58
+  },
+  "evaluation_paragraphs": 430,
+  "elapsed_s": 17.938956959999814
+}

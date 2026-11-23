@@ -1,0 +1,242 @@
+{
+  "input_sha256": {
+    "stimuli": "f2d4d5c6f2cda2894da17bb24ee1022e5cc222466115f1274ea9680bba472e5e",
+    "observations": "82bb38198e7fa5f41afff9437571441e0a7cea435a710c36d20689a0b523e2cb",
+    "features": "0b910a8a87f1a7d9423a5321c5f3525c31d5d6bff54d01edb7d33980fae7f1f3"
+  },
+  "primary": {
+    "scope": "Estimation of a recorded yes vote after a complete passage for source-ID-aligned near/far materials.",
+    "human_votes": 4248,
+    "stimuli": 48,
+    "family_to_fold": {
+      "currie/expository/10": 0,
+      "currie/expository/03": 1,
+      "currie/expository/08": 2,
+      "currie/expository/05": 3,
+      "currie/expository/06": 4,
+      "currie/expository/12": 5,
+      "currie/expository/01": 0,
+      "currie/expository/04": 1,
+      "currie/expository/07": 2,
+      "currie/expository/11": 3,
+      "currie/expository/09": 4,
+      "currie/expository/02": 5,
+      "currie/narrative/11": 0,
+      "currie/narrative/10": 1,
+      "currie/narrative/06": 2,
+      "currie/narrative/05": 3,
+      "currie/narrative/03": 4,
+      "currie/narrative/08": 5,
+      "currie/narrative/07": 0,
+      "currie/narrative/02": 1,
+      "currie/narrative/04": 2,
+      "currie/narrative/12": 3,
+      "currie/narrative/09": 4,
+      "currie/narrative/01": 5
+    },
+    "metrics": {
+      "brier": {
+        "by_method": {
+          "prevalence": 0.25283271888665454,
+          "last_only": 0.2383266554676585,
+          "full": 0.2379723911553415
+        },
+        "paired_family_differences": {
+          "last_only_minus_prevalence": {
+            "difference": -0.014506063418996046,
+            "family_bootstrap_95_ci": [
+              -0.024133989991284088,
+              -0.004830151472528634
+            ]
+          },
+          "full_minus_prevalence": {
+            "difference": -0.014860327731313044,
+            "family_bootstrap_95_ci": [
+              -0.025309370519869315,
+              -0.0045157183315573226
+            ]
+          },
+          "full_minus_last_only": {
+            "difference": -0.0003542643123169986,
+            "family_bootstrap_95_ci": [
+              -0.003492785057437167,
+              0.0026536944669237252
+            ]
+          }
+        }
+      },
+      "cross_entropy_nats": {
+        "by_method": {
+          "prevalence": 0.698848518149573,
+          "last_only": 0.6696211369400837,
+          "full": 0.6689004835105006
+        },
+        "paired_family_differences": {
+          "last_only_minus_prevalence": {
+            "difference": -0.02922738120948931,
+            "family_bootstrap_95_ci": [
+              -0.048664864628924734,
+              -0.009638515787917705
+            ]
+          },
+          "full_minus_prevalence": {
+            "difference": -0.029948034639072474,
+            "family_bootstrap_95_ci": [
+              -0.05110151834007597,
+              -0.008853756862626228
+            ]
+          },
+          "full_minus_last_only": {
+            "difference": -0.0007206534295831624,
+            "family_bootstrap_95_ci": [
+              -0.007131065599060257,
+              0.0054501458193022346
+            ]
+          }
+        }
+      }
+    },
+    "condition_probabilities": {
+      "far": {
+        "stimuli": 24,
+        "human_votes": 2124,
+        "human_p_yes": 0.4708097928436911,
+        "predicted_p_yes": {
+          "prevalence": 0.47201315075489164,
+          "last_only": 0.47428228432241093,
+          "full": 0.4698317735505662
+        }
+      },
+      "near": {
+        "stimuli": 24,
+        "human_votes": 2124,
+        "human_p_yes": 0.4731638418079096,
+        "predicted_p_yes": {
+          "prevalence": 0.4719604838967091,
+          "last_only": 0.47354360621844754,
+          "full": 0.4708642041677103
+        }
+      }
+    },
+    "near_far": {
+      "contrast": "near minus far, equal weight per material family",
+      "families": 24,
+      "non_tied_human_families": 23,
+      "human_difference": 0.0022870119247492466,
+      "predicted_difference": {
+        "prevalence": 0.0,
+        "last_only": -0.0007682877728254442,
+        "full": 0.0010751496411272113
+      },
+      "direction_concordance_model_ties_half_credit": {
+        "prevalence": 0.5,
+        "last_only": 0.4782608695652174,
+        "full": 0.4782608695652174
+      }
+    }
+  },
+  "secondary": {
+    "scope": "Critical-sentence end readouts of the eventual whole-passage sense judgment in exact sentence reorder pairs.",
+    "eligible_families": 20,
+    "excluded_families": {
+      "currie/expository/06": [
+        "sentence_multiset_not_exact_reorder"
+      ],
+      "currie/expository/11": [
+        "sentence_multiset_not_exact_reorder",
+        "support_differs_or_distance_not_near_before_far"
+      ],
+      "currie/narrative/10": [
+        "sentence_multiset_not_exact_reorder",
+        "critical_sentence_differs"
+      ],
+      "currie/narrative/12": [
+        "sentence_multiset_not_exact_reorder"
+      ]
+    },
+    "status": "evaluated",
+    "family_to_fold": {
+      "currie/expository/05": 0,
+      "currie/expository/08": 1,
+      "currie/expository/03": 2,
+      "currie/expository/09": 3,
+      "currie/expository/04": 4,
+      "currie/expository/07": 0,
+      "currie/expository/12": 1,
+      "currie/expository/01": 2,
+      "currie/expository/10": 3,
+      "currie/expository/02": 4,
+      "currie/narrative/03": 0,
+      "currie/narrative/11": 1,
+      "currie/narrative/04": 2,
+      "currie/narrative/07": 3,
+      "currie/narrative/01": 4,
+      "currie/narrative/05": 0,
+      "currie/narrative/09": 1,
+      "currie/narrative/08": 2,
+      "currie/narrative/06": 3,
+      "currie/narrative/02": 4
+    },
+    "metrics": {
+      "brier": {
+        "by_method": {
+          "critical_only": 0.23819538823795505,
+          "critical": 0.23884305115063778
+        },
+        "paired_family_differences": {
+          "critical_minus_critical_only": {
+            "difference": 0.0006476629126827282,
+            "family_bootstrap_95_ci": [
+              -0.00239483684767646,
+              0.003951479331651103
+            ]
+          }
+        }
+      },
+      "cross_entropy_nats": {
+        "by_method": {
+          "critical_only": 0.6693655346135888,
+          "critical": 0.6705549194187576
+        },
+        "paired_family_differences": {
+          "critical_minus_critical_only": {
+            "difference": 0.001189384805168725,
+            "family_bootstrap_95_ci": [
+              -0.005015139359704856,
+              0.00792491813985883
+            ]
+          }
+        }
+      }
+    },
+    "near_far": {
+      "contrast": "near minus far, equal weight per material family",
+      "families": 20,
+      "non_tied_human_families": 19,
+      "human_difference": 0.00204055275732921,
+      "predicted_difference": {
+        "critical_only": 0.0,
+        "critical": 1.914101078138164e-05
+      },
+      "direction_concordance_model_ties_half_credit": {
+        "critical_only": 0.5,
+        "critical": 0.5263157894736842
+      }
+    }
+  },
+  "fitting": {
+    "hardware": "NVIDIA L4",
+    "dtype": "float64",
+    "ridge_penalty": 1.0,
+    "feature_rows": "L2 normalized",
+    "training_weights": "Each cell's vote count divided by mean count of training cells.",
+    "probability_floor_for_log_loss_only": 1e-06,
+    "fold_seed": 0,
+    "bootstrap": {
+      "unit": "material family",
+      "paired": true,
+      "seed": 43,
+      "draws": 10000
+    }
+  }
+}

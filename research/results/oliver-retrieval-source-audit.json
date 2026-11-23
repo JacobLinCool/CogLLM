@@ -1,0 +1,157 @@
+{
+  "all_rows": {
+    "alternate_realized_definition": 1144,
+    "both_author_valid": 1652,
+    "first": {
+      "author_valid": 1762,
+      "delay_know_signals": 245,
+      "delay_participation": 1272,
+      "explicit_target_confirmations": 2288,
+      "explicit_target_yes": 1163,
+      "states": {
+        "dont_know": 744,
+        "know": 1016,
+        "tot": 528
+      }
+    },
+    "paired_reader_items": 2288,
+    "same_realized_definition": 1144,
+    "second": {
+      "author_valid": 2096,
+      "explicit_target_confirmations": 2288,
+      "explicit_target_yes": 1801,
+      "states": {
+        "dont_know": 339,
+        "know": 1626,
+        "tot": 323
+      }
+    }
+  },
+  "assay": {
+    "first_delay": "Only initial TOT and do-not-know enter the 15-second delay. The exported delayed KNOW key is self-report. Recorded spoken guesses are absent, so equality with the target is missing.",
+    "model_input": "One exact written author definition per document, full-source Unicode endpoint. No revealed target, assignments, instructions, timings, grades or speaker identifiers in packet.",
+    "observed_reveal": "Intended target revealed after first attempt. Reveal modality or exact screen transcript unreported. Confirmations are explicit post-reveal yes/no reports of sought-word identity.",
+    "scope": "Elicited lexical retrieval and target recognition from an English definition, with only whole-definition model alignment.",
+    "second_trial": "Retest after five-minute break with same or alternative written definition, following prior intended-target exposure. The realized selector fields determine same versus alternate.",
+    "split_unit": "Author item/target family, keeping the two definitions and both stages together.",
+    "timing": "Integer raw reaction-time units. Positive delay values fit the 15-second programmed window on a millisecond scale. Zero denotes a timeout in first-delay RT."
+  },
+  "author_families": 44,
+  "exact_definitions_with_edge_whitespace": 4,
+  "literal_definitions": 86,
+  "literal_families": 43,
+  "literal_rows": {
+    "alternate_realized_definition": 1119,
+    "both_author_valid": 1610,
+    "first": {
+      "author_valid": 1718,
+      "delay_know_signals": 242,
+      "delay_participation": 1258,
+      "explicit_target_confirmations": 2236,
+      "explicit_target_yes": 1121,
+      "states": {
+        "dont_know": 741,
+        "know": 978,
+        "tot": 517
+      }
+    },
+    "paired_reader_items": 2236,
+    "same_realized_definition": 1117,
+    "second": {
+      "author_valid": 2047,
+      "explicit_target_confirmations": 2236,
+      "explicit_target_yes": 1753,
+      "states": {
+        "dont_know": 338,
+        "know": 1579,
+        "tot": 319
+      }
+    }
+  },
+  "packet_sha256": {
+    "extractor-preflight.json": "98e47f89ef293fbc97518c2eed542a48edda11c1639a0bbd2b84761c8ce66e43",
+    "preflight.json": "4edc8472655b3d7006ba1fee023359a01c22b0c24484c4db0b1a3e11eee12c17",
+    "stimuli.jsonl": "95ec69434b6e21ce89fc52b22d7d85628a57491631425f5210cf43436fb30fb8"
+  },
+  "paper_table_one": {
+    "paper_valid_trials": 1686,
+    "scope": "Raw paired validity flags are retained. Printed Table 1 and exported flags give different denominators.",
+    "strict_source_both_valid": 1652
+  },
+  "prepared_sha256": {
+    "layout": "dacad20e9e9aebd4a76ca82f63de43db836d5df00e6b83c75ea16d9261681b47",
+    "outcomes": "eb8843124705de37d0e0c6147e52c2c2b2d2796327afc6d57a1f0c35c23bef09",
+    "stimuli": "95ec69434b6e21ce89fc52b22d7d85628a57491631425f5210cf43436fb30fb8",
+    "targets": "b042cef23d72964905daf1a37aa96c1e8ba1288396eb1e9141dc6cc7d90f7db2"
+  },
+  "preparer_sha256": "1040773fea7afd217e33cda581e980485b4aad302908fbcdc8a846ee12dba27c",
+  "quarantine": {
+    "item": "d33",
+    "pairs": 52,
+    "reason": "One definition field contains two prompts separated by a tab. The alternate field is blank and two paired Test 2 records have inconsistent fields. No reconstruction.",
+    "target": "chameleon"
+  },
+  "readers": 52,
+  "source": {
+    "dataset": "https://doi.org/10.5683/SP2/SP6BYO",
+    "definition_provenance": "Authors credit Warriner and Humphreys (2008) for original definitions and WordNet for adapted definitions.",
+    "file_bytes": 1167967,
+    "file_sha256": "84632126243ff8b0229080247ce5e54ade20b67310d7ab26a8ef848f5ddf2fc2",
+    "file_url": "https://borealisdata.ca/api/access/datafile/75345",
+    "materials_appendix": "https://doi.org/10.1525/collabra.200.s1",
+    "paper": "https://doi.org/10.1525/collabra.200",
+    "repository_license": "CC0-1.0",
+    "version": "3.0"
+  },
+  "source_condition_by_realized_versions": [
+    {
+      "first_version": "Def1",
+      "pairs": 561,
+      "second_version": "Def1",
+      "source_condition": 1
+    },
+    {
+      "first_version": "Def1",
+      "pairs": 11,
+      "second_version": "Def2",
+      "source_condition": 1
+    },
+    {
+      "first_version": "Def1",
+      "pairs": 11,
+      "second_version": "Def1",
+      "source_condition": 2
+    },
+    {
+      "first_version": "Def1",
+      "pairs": 561,
+      "second_version": "Def2",
+      "source_condition": 2
+    },
+    {
+      "first_version": "Def2",
+      "pairs": 561,
+      "second_version": "Def1",
+      "source_condition": 3
+    },
+    {
+      "first_version": "Def2",
+      "pairs": 11,
+      "second_version": "Def2",
+      "source_condition": 3
+    },
+    {
+      "first_version": "Def2",
+      "pairs": 11,
+      "second_version": "Def1",
+      "source_condition": 4
+    },
+    {
+      "first_version": "Def2",
+      "pairs": 561,
+      "second_version": "Def2",
+      "source_condition": 4
+    }
+  ],
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+}

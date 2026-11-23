@@ -1,0 +1,106 @@
+{
+  "bootstrap": {
+    "clusters": [
+      "reader",
+      "story_family"
+    ],
+    "draws": 10000,
+    "frozen_model": true,
+    "seed": 735972
+  },
+  "forecast_stops": 584,
+  "independent_max_absolute_check_error": 5.551115123125783e-17,
+  "provenance": {
+    "diagnostic_code_sha256": "991cd62818b1d8036a09ddc3bf9c52ab0d127bec0cf26f64e9952f98edcc09b8",
+    "forecast_seal_sha256": "ebdabf23da814fc0f97dcc316ce5548c75bac0d42d003c263471fe558df128a2",
+    "forecasts_sha256": "70de8a6273682f302ff8abe4090254119e89ed8a20b51bbb4baa8271f4213cb4",
+    "outcomes_sha256": "b26b6f225eab250788083da5456a169519a06f9b25415bec56695b0af21aeb00",
+    "score_sha256": "d991259e5b7b55acaa889b4c0ca67fb06f957035dabf3a69d28f7e16b4cd0efd",
+    "source_audit_sha256": "18275a8edaccdac253a1cc1057debbcc11adf82af69dc6efbdd982cd7079a6e4"
+  },
+  "reader_groups": 180,
+  "schema": 1,
+  "scope": "Retrospective diagnostic on existing story pairs, with no fitting or new model inference.",
+  "statistics": {
+    "calibrated_target_first_report_contrast": {
+      "crossed_story_reader_ci95": [
+        0.11393303481536482,
+        0.23941922907357058
+      ],
+      "estimate": 0.17153862834352476
+    },
+    "contrast_change_after_replacing_survival_only": {
+      "crossed_story_reader_ci95": [
+        -0.011318204191022451,
+        0.030675719205597432
+      ],
+      "estimate": 0.008339199186563562
+    },
+    "human_contrast_minus_survival_only_ceiling": {
+      "crossed_story_reader_ci95": [
+        0.07908109597201324,
+        0.3117163186348456
+      ],
+      "estimate": 0.19663456330228263
+    },
+    "human_target_hazard_01": {
+      "crossed_story_reader_ci95": [
+        0.008669156236894281,
+        0.06710221941187897
+      ],
+      "estimate": 0.033140254233827666
+    },
+    "human_target_hazard_02": {
+      "crossed_story_reader_ci95": [
+        0.4974915277299295,
+        0.6797869567295334
+      ],
+      "estimate": 0.5914391951870263
+    },
+    "maximum_contrast_with_fixed_model_target_hazards": {
+      "crossed_story_reader_ci95": [
+        0.20174637046450639,
+        0.3814292077765578
+      ],
+      "estimate": 0.28608102374225186
+    },
+    "model_target_hazard_01": {
+      "crossed_story_reader_ci95": [
+        0.03969482042565738,
+        0.13104900642431616
+      ],
+      "estimate": 0.07740743215056702
+    },
+    "model_target_hazard_02": {
+      "crossed_story_reader_ci95": [
+        0.20174637046450639,
+        0.3814292077765578
+      ],
+      "estimate": 0.28608102374225186
+    },
+    "observed_target_first_report_contrast": {
+      "crossed_story_reader_ci95": [
+        0.39098023241490343,
+        0.5725665406683451
+      ],
+      "estimate": 0.4827155870445345
+    },
+    "replace_hazard_only_with_human": {
+      "crossed_story_reader_ci95": [
+        0.3773811824369525,
+        0.5456030892251026
+      ],
+      "estimate": 0.46251800705715906
+    },
+    "replace_survival_only_with_human": {
+      "crossed_story_reader_ci95": [
+        0.11719083736215412,
+        0.25599820833099696
+      ],
+      "estimate": 0.17987782753008832
+    }
+  },
+  "story_families": 20,
+  "trial_count": 1800,
+  "units": "Probability or probability contrast; multiply by 100 for percent or percentage points."
+}

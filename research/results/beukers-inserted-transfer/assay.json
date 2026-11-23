@@ -1,0 +1,173 @@
+{
+  "assay_id": "beukers-inserted-cached-v1",
+  "base_assay_sha256": "62a33c41914671f252490861205577a284ef9435f86337bdc90cf4a531c0923a",
+  "base_extraction_sha256": "1f370a9d19f24b44745a6c2b5e0a08b662c05d9c1c5ab0179733d2adc8bda83f",
+  "base_fit_sha256": "8fa16fc44b70d5675d7338ee21611edf2d058dcd83c26920231034dd93c87c4e",
+  "base_prepare_sha256": "425f87417f9be7cfd02b12d48e84f739af30a87a123f271e67c6c37cade9b6e6",
+  "base_stimuli_sha256": "e2c29e09a0ab6a100f957a8cf2b0ba139ad9c68dc8af6571fee2fb03b0cb1552",
+  "cohort_inventory": {
+    "inserted_early_rep_thresh90.csv": {
+      "missing_certified_state": 11,
+      "missing_first_probe": 160,
+      "post160_by_depth": {
+        "1": 668,
+        "2": 670
+      },
+      "post160_probes": 1338,
+      "readers": 22,
+      "retained_by_depth": {
+        "1": 666,
+        "2": 501
+      },
+      "retained_probes": 1167
+    },
+    "inserted_early_thresh90.csv": {
+      "missing_certified_state": 21,
+      "missing_first_probe": 167,
+      "post160_by_depth": {
+        "1": 622,
+        "2": 639
+      },
+      "post160_probes": 1261,
+      "readers": 21,
+      "retained_by_depth": {
+        "1": 614,
+        "2": 459
+      },
+      "retained_probes": 1073
+    },
+    "inserted_late_rep_thresh90.csv": {
+      "missing_certified_state": 12,
+      "missing_first_probe": 88,
+      "post160_by_depth": {
+        "1": 362,
+        "2": 362
+      },
+      "post160_probes": 724,
+      "readers": 12,
+      "retained_by_depth": {
+        "1": 360,
+        "2": 264
+      },
+      "retained_probes": 624
+    },
+    "inserted_late_thresh90.csv": {
+      "missing_certified_state": 26,
+      "missing_first_probe": 185,
+      "post160_by_depth": {
+        "1": 726,
+        "2": 741
+      },
+      "post160_probes": 1467,
+      "readers": 24,
+      "retained_by_depth": {
+        "1": 721,
+        "2": 535
+      },
+      "retained_probes": 1256
+    },
+    "inserted_middle_rep_thresh90.csv": {
+      "missing_certified_state": 23,
+      "missing_first_probe": 176,
+      "post160_by_depth": {
+        "1": 714,
+        "2": 711
+      },
+      "post160_probes": 1425,
+      "readers": 24,
+      "retained_by_depth": {
+        "1": 709,
+        "2": 517
+      },
+      "retained_probes": 1226
+    },
+    "inserted_middle_thresh90.csv": {
+      "missing_certified_state": 19,
+      "missing_first_probe": 148,
+      "post160_by_depth": {
+        "1": 607,
+        "2": 594
+      },
+      "post160_probes": 1201,
+      "readers": 20,
+      "retained_by_depth": {
+        "1": 602,
+        "2": 432
+      },
+      "retained_probes": 1034
+    }
+  },
+  "eligibility": "Story 160–199. The earlier displayed event of a second probe must be observed in the same story. Retain only exact prefix and option texts with their full certified stops in the prior extraction.",
+  "file_sha256": {
+    "test.jsonl": "c3fe74ebc506867359ffab91ed4c9f890cfd404a9107ff31edb0e0b35e86179f"
+  },
+  "matched_inventory": {
+    "original": {
+      "early_vs_late": {
+        "ordered_layouts": 303,
+        "probes": {
+          "early": 351,
+          "late": 368
+        },
+        "readers": {
+          "early": 21,
+          "late": 24
+        }
+      },
+      "early_vs_middle": {
+        "ordered_layouts": 287,
+        "probes": {
+          "early": 339,
+          "middle": 342
+        },
+        "readers": {
+          "early": 21,
+          "middle": 20
+        }
+      }
+    },
+    "replication": {
+      "early_vs_late": {
+        "ordered_layouts": 173,
+        "probes": {
+          "early": 199,
+          "late": 214
+        },
+        "readers": {
+          "early": 22,
+          "late": 12
+        }
+      },
+      "early_vs_middle": {
+        "ordered_layouts": 316,
+        "probes": {
+          "early": 388,
+          "middle": 393
+        },
+        "readers": {
+          "early": 22,
+          "middle": 24
+        }
+      }
+    }
+  },
+  "paper": "https://doi.org/10.1038/s44271-024-00079-4",
+  "schedules": {
+    "early": "ABII",
+    "late": "IIAB",
+    "middle": "IABI"
+  },
+  "source_code_sha256": "2bd2fbfc69b1c4ce4835ef95094119c1c37eb78d4358ef663d4e34c319025d82",
+  "source_commit": "eb0edbe51042ffaf065bd90839f4f999de5f3ffb",
+  "source_license": "CC BY 4.0",
+  "source_release": "https://doi.org/10.5281/zenodo.10695055",
+  "source_sha256": {
+    "inserted_early_rep_thresh90.csv": "6a884968b142133c4276d63d5da6d7688f9285397e75c43d8fe104c5bbe2a65e",
+    "inserted_early_thresh90.csv": "9016d2072aca03308c0ac8dd769b1e4040d19d8d01870f16cb34eda2a4d710c9",
+    "inserted_late_rep_thresh90.csv": "6e1cefab216e06e3565c0a75a5e0d70c65f44346e46b502477302bf787c157d4",
+    "inserted_late_thresh90.csv": "fd5b43a3bdcd6cdacdc1d763181d82838703e316e116e003b1704f0045d8efd8",
+    "inserted_middle_rep_thresh90.csv": "672e5d585defa27f8c6b91834f5dbd3e13a976b84911d4324dafc72613b92470",
+    "inserted_middle_thresh90.csv": "105c6e24459e8920fc1bff9d87d7e13edc1ea4b198f14e50295be529c88987d8"
+  },
+  "test_count": 6380
+}

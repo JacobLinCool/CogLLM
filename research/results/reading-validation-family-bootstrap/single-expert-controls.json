@@ -1,0 +1,223 @@
+{
+  "estimand": "Family bootstrap improvement over forced private or forced shared fitting. Secondary, descriptive, equal linked-component and material resampling.",
+  "partitions": {
+    "global": {
+      "fully_shared_or_private": {
+        "private": {
+          "point_gain": 0.018220832207334087,
+          "paired_nested_nominal_ci": [
+            0.001770207663435697,
+            0.041268832227885896
+          ],
+          "paired_nested_simultaneous_ci": [
+            3.3909664010443015e-05,
+            0.0447752584202276
+          ],
+          "exact_group_signflip": 0.007615089416503906,
+          "groups": 21,
+          "improving_groups": 17
+        },
+        "shared": {
+          "point_gain": 0.0063154643896822975,
+          "paired_nested_nominal_ci": [
+            -0.00024861629275233296,
+            0.014041932534402477
+          ],
+          "paired_nested_simultaneous_ci": [
+            -0.0010071710368383046,
+            0.015302902055576618
+          ],
+          "exact_group_signflip": 0.02408123016357422,
+          "groups": 21,
+          "improving_groups": 15
+        }
+      },
+      "omit_every_Frick_endpoint": {
+        "units": 20,
+        "source_and_material": {
+          "over_map": {
+            "gain": 0.003847633041130581,
+            "joint_source_material_simultaneous_ci": [
+              -0.001327773189454526,
+              0.010229435897892622
+            ],
+            "joint_source_material_nominal_ci": [
+              -0.0007207055318545839,
+              0.009360217719584866
+            ],
+            "exact_signflip_p": 0.0434417724609375,
+            "leave_one_range": [
+              0.002542109405711019,
+              0.004632844974264724
+            ]
+          },
+          "over_midpoint": {
+            "gain": 0.004991406632388394,
+            "joint_source_material_simultaneous_ci": [
+              -0.0011645366914779048,
+              0.012347499575242536
+            ],
+            "joint_source_material_nominal_ci": [
+              -0.00041134553821118187,
+              0.011363808516691533
+            ],
+            "exact_signflip_p": 0.02846527099609375,
+            "leave_one_range": [
+              0.0033582687174908026,
+              0.0059012118502879815
+            ]
+          }
+        },
+        "registered_source_only": {
+          "source_macro_nll": {
+            "endpoint_map": 1.0265378794614413,
+            "midpoint": 1.027681653052699,
+            "family_bootstrap": 1.0226902464203105
+          },
+          "comparisons": {
+            "endpoint_map": {
+              "gain": 0.003847633041130581,
+              "ci95": [
+                0.00021979857192358133,
+                0.008180020784810874
+              ],
+              "ci95_simultaneous": [
+                -0.00019590423460553313,
+                0.009031476294236432
+              ],
+              "signflip_p": 0.04391956080439196,
+              "bonferroni_p": 0.08783912160878392,
+              "improving_sources": 15,
+              "losing_sources": 5
+            },
+            "midpoint": {
+              "gain": 0.004991406632388394,
+              "ci95": [
+                0.0006591122186475246,
+                0.01008007661475941
+              ],
+              "ci95_simultaneous": [
+                0.00019668665026040724,
+                0.011091581640312998
+              ],
+              "signflip_p": 0.02900970990290097,
+              "bonferroni_p": 0.05801941980580194,
+              "improving_sources": 15,
+              "losing_sources": 5
+            }
+          }
+        }
+      }
+    },
+    "confirmation": {
+      "fully_shared_or_private": {
+        "private": {
+          "point_gain": 0.004372961482509171,
+          "paired_nested_nominal_ci": [
+            -0.0015364066806502336,
+            0.011063834867463184
+          ],
+          "paired_nested_simultaneous_ci": [
+            -0.0023922947170895467,
+            0.012046703587394495
+          ],
+          "exact_group_signflip": 0.0898895263671875,
+          "groups": 19,
+          "improving_groups": 12
+        },
+        "shared": {
+          "point_gain": 0.008613598121654213,
+          "paired_nested_nominal_ci": [
+            -0.00015322206314681864,
+            0.020365846807554166
+          ],
+          "paired_nested_simultaneous_ci": [
+            -0.001289543953790791,
+            0.022317524966580127
+          ],
+          "exact_group_signflip": 0.017587661743164062,
+          "groups": 19,
+          "improving_groups": 14
+        }
+      },
+      "omit_every_Frick_endpoint": {
+        "units": 18,
+        "source_and_material": {
+          "over_map": {
+            "gain": 0.0006897445933162142,
+            "joint_source_material_simultaneous_ci": [
+              -0.0021844825661110796,
+              0.0037573255069165857
+            ],
+            "joint_source_material_nominal_ci": [
+              -0.001789795115957428,
+              0.0032861614534835577
+            ],
+            "exact_signflip_p": 0.2645912170410156,
+            "leave_one_range": [
+              5.497956389804543e-05,
+              0.0013126751417665108
+            ]
+          },
+          "over_midpoint": {
+            "gain": 0.002327346562631437,
+            "joint_source_material_simultaneous_ci": [
+              -0.0018782773771619846,
+              0.007704483131508893
+            ],
+            "joint_source_material_nominal_ci": [
+              -0.0013684614159955068,
+              0.006938891903907584
+            ],
+            "exact_signflip_p": 0.10680770874023438,
+            "leave_one_range": [
+              0.0009930976910342837,
+              0.003056276232031784
+            ]
+          }
+        },
+        "registered_source_only": {
+          "source_macro_nll": {
+            "endpoint_map": 0.8877970784102697,
+            "midpoint": 0.8894346803795847,
+            "family_bootstrap": 0.8871073338169535
+          },
+          "comparisons": {
+            "endpoint_map": {
+              "gain": 0.0006897445933162142,
+              "ci95": [
+                -0.0012859196804530814,
+                0.0027260669156629874
+              ],
+              "ci95_simultaneous": [
+                -0.001587245601641016,
+                0.0030061204585279363
+              ],
+              "signflip_p": 0.26246737532624675,
+              "bonferroni_p": 0.5249347506524935,
+              "improving_sources": 11,
+              "losing_sources": 7
+            },
+            "midpoint": {
+              "gain": 0.002327346562631437,
+              "ci95": [
+                -0.0006904572454805953,
+                0.005961487859140135
+              ],
+              "ci95_simultaneous": [
+                -0.0010651578735195756,
+                0.006456342016630715
+              ],
+              "signflip_p": 0.1058889411105889,
+              "bonferroni_p": 0.2117778822211778,
+              "improving_sources": 12,
+              "losing_sources": 6
+            }
+          }
+        }
+      }
+    }
+  },
+  "endpoint_table_sha256": "b609450031e0ff1a0a33ca8b9a8441859b9b3eda715ab327c51003809c514050",
+  "program_sha256": "4914ff168ef1976e7375716d512a61dfb51bd077da4472b16d2114dd02429d57"
+}

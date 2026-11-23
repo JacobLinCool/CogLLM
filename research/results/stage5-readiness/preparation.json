@@ -1,0 +1,290 @@
+{
+  "source": "https://github.com/MMU-TDMLab/CompLex/tree/4b31c2bd34da4c1265f9db3d727d95ee23099f14",
+  "release": "4b31c2bd34da4c1265f9db3d727d95ee23099f14",
+  "source_sha256": {
+    "train/lcp_single_train.tsv": "12142b2653edfbedf27452e9b0e9d14d2808a90950319a013b91245d567379e0",
+    "train/lcp_multi_train.tsv": "8bd1e51343ac36e975deed6ee45926d0fd91a3fe2dd0f94cc37272b69441b2df",
+    "trial/lcp_single_trial.tsv": "67bb6ef05cb1a690eb78a948592ef8693fbf8f5db451762522ecb02e8e47d9ab",
+    "trial/lcp_multi_trial.tsv": "7ebaa82428381458c7e0abcd4c712099ccd435b1c4393c623e7b02bc308810a8",
+    "test/lcp_single_test.tsv": "8eaa0a3985deaca4d15ae40b71c38052abc0a8cba9327cea3bed6c33e7a26bb1",
+    "test/lcp_multi_test.tsv": "ab9170be99f67b3a3b7a8028893ffb14fb0b9d72b34c5cf1255916437ab9e866",
+    "test-labels/lcp_single_test.tsv": "846ef133c72cfa0547a285dc9060e74e87a8e9ad3a0de149e2cf680c12f611ed",
+    "test-labels/lcp_multi_test.tsv": "59669b0a546f2bd4cb7b23271e4c8d555e24c862948aae76aaa7b957db736372"
+  },
+  "scope": "Retrospective lexical difficulty of the designated target when the whole sentence is visible.",
+  "unobserved_positions": "Undesignated targets and discarded ambiguous positions have no assessed label.",
+  "span_coordinates": "Zero-based Unicode code points in unmodified sentence text, with exclusive end.",
+  "context_grouping": "NFKC, then Unicode casefold, then collapse whitespace. Hash the resulting context.",
+  "split_priority_for_unique_exact_spans": [
+    "test",
+    "trial",
+    "train"
+  ],
+  "counts": {
+    "source": 10800,
+    "unique_exact": 10740,
+    "retained": 10279,
+    "ambiguous_repeated_isolated_match_ignoring_case": 56,
+    "no_isolated_match": 3,
+    "unique_case_insensitive_only": 1,
+    "purged_context_kept_in_trial": 152,
+    "purged_context_kept_in_test": 309
+  },
+  "counts_by_split": {
+    "train": {
+      "source": 9179,
+      "unique_exact": 9128,
+      "retained": 8680,
+      "purged_context_kept_in_trial": 152,
+      "purged_context_kept_in_test": 296,
+      "ambiguous_repeated_isolated_match_ignoring_case": 49,
+      "no_isolated_match": 2
+    },
+    "trial": {
+      "source": 520,
+      "unique_exact": 516,
+      "retained": 503,
+      "purged_context_kept_in_test": 13,
+      "ambiguous_repeated_isolated_match_ignoring_case": 4
+    },
+    "test": {
+      "source": 1101,
+      "unique_exact": 1096,
+      "retained": 1096,
+      "ambiguous_repeated_isolated_match_ignoring_case": 3,
+      "no_isolated_match": 1,
+      "unique_case_insensitive_only": 1
+    }
+  },
+  "counts_by_split_kind_corpus": [
+    {
+      "split": "test",
+      "kind": "multi",
+      "corpus": "bible",
+      "source": 66,
+      "unique_exact": 66,
+      "retained": 66
+    },
+    {
+      "split": "test",
+      "kind": "multi",
+      "corpus": "biomed",
+      "source": 53,
+      "unique_exact": 53,
+      "retained": 53
+    },
+    {
+      "split": "test",
+      "kind": "multi",
+      "corpus": "europarl",
+      "source": 65,
+      "unique_exact": 65,
+      "retained": 65
+    },
+    {
+      "split": "test",
+      "kind": "single",
+      "corpus": "bible",
+      "source": 283,
+      "unique_exact": 283,
+      "retained": 283
+    },
+    {
+      "split": "test",
+      "kind": "single",
+      "corpus": "biomed",
+      "source": 289,
+      "unique_exact": 286,
+      "retained": 286,
+      "ambiguous_repeated_isolated_match_ignoring_case": 2,
+      "no_isolated_match": 1
+    },
+    {
+      "split": "test",
+      "kind": "single",
+      "corpus": "europarl",
+      "source": 345,
+      "unique_exact": 343,
+      "retained": 343,
+      "ambiguous_repeated_isolated_match_ignoring_case": 1,
+      "unique_case_insensitive_only": 1
+    },
+    {
+      "split": "train",
+      "kind": "multi",
+      "corpus": "bible",
+      "source": 505,
+      "unique_exact": 505,
+      "retained": 493,
+      "purged_context_kept_in_trial": 7,
+      "purged_context_kept_in_test": 5
+    },
+    {
+      "split": "train",
+      "kind": "multi",
+      "corpus": "biomed",
+      "source": 514,
+      "unique_exact": 514,
+      "retained": 449,
+      "purged_context_kept_in_test": 48,
+      "purged_context_kept_in_trial": 17
+    },
+    {
+      "split": "train",
+      "kind": "multi",
+      "corpus": "europarl",
+      "source": 498,
+      "unique_exact": 492,
+      "retained": 484,
+      "ambiguous_repeated_isolated_match_ignoring_case": 5,
+      "purged_context_kept_in_test": 5,
+      "no_isolated_match": 1,
+      "purged_context_kept_in_trial": 3
+    },
+    {
+      "split": "train",
+      "kind": "single",
+      "corpus": "bible",
+      "source": 2574,
+      "unique_exact": 2565,
+      "retained": 2521,
+      "purged_context_kept_in_test": 30,
+      "ambiguous_repeated_isolated_match_ignoring_case": 9,
+      "purged_context_kept_in_trial": 14
+    },
+    {
+      "split": "train",
+      "kind": "single",
+      "corpus": "biomed",
+      "source": 2576,
+      "unique_exact": 2566,
+      "retained": 2284,
+      "purged_context_kept_in_test": 179,
+      "purged_context_kept_in_trial": 103,
+      "ambiguous_repeated_isolated_match_ignoring_case": 9,
+      "no_isolated_match": 1
+    },
+    {
+      "split": "train",
+      "kind": "single",
+      "corpus": "europarl",
+      "source": 2512,
+      "unique_exact": 2486,
+      "retained": 2449,
+      "purged_context_kept_in_test": 29,
+      "ambiguous_repeated_isolated_match_ignoring_case": 26,
+      "purged_context_kept_in_trial": 8
+    },
+    {
+      "split": "trial",
+      "kind": "multi",
+      "corpus": "bible",
+      "source": 29,
+      "unique_exact": 29,
+      "retained": 27,
+      "purged_context_kept_in_test": 2
+    },
+    {
+      "split": "trial",
+      "kind": "multi",
+      "corpus": "biomed",
+      "source": 33,
+      "unique_exact": 33,
+      "retained": 31,
+      "purged_context_kept_in_test": 2
+    },
+    {
+      "split": "trial",
+      "kind": "multi",
+      "corpus": "europarl",
+      "source": 37,
+      "unique_exact": 37,
+      "retained": 37
+    },
+    {
+      "split": "trial",
+      "kind": "single",
+      "corpus": "bible",
+      "source": 143,
+      "unique_exact": 143,
+      "retained": 142,
+      "purged_context_kept_in_test": 1
+    },
+    {
+      "split": "trial",
+      "kind": "single",
+      "corpus": "biomed",
+      "source": 135,
+      "unique_exact": 133,
+      "retained": 126,
+      "ambiguous_repeated_isolated_match_ignoring_case": 2,
+      "purged_context_kept_in_test": 7
+    },
+    {
+      "split": "trial",
+      "kind": "single",
+      "corpus": "europarl",
+      "source": 143,
+      "unique_exact": 141,
+      "retained": 140,
+      "ambiguous_repeated_isolated_match_ignoring_case": 2,
+      "purged_context_kept_in_test": 1
+    }
+  ],
+  "retained_stimuli": 9181,
+  "retained_context_groups": {
+    "train": 7616,
+    "trial": 495,
+    "test": 1069
+  },
+  "raw_canonical_context_overlap": {
+    "train_vs_trial": 116,
+    "train_vs_test": 223,
+    "trial_vs_test": 13
+  },
+  "unique_exact_canonical_context_overlap_before_purge": {
+    "train_vs_trial": 114,
+    "train_vs_test": 220,
+    "trial_vs_test": 13
+  },
+  "retained_canonical_context_overlap": {
+    "train_vs_trial": 0,
+    "train_vs_test": 0,
+    "trial_vs_test": 0
+  },
+  "retained_canonical_target_type_overlap": {
+    "train_vs_trial": 25,
+    "train_vs_test": 52,
+    "trial_vs_test": 0
+  },
+  "example_ids": {
+    "train_single": {
+      "id": "complex-single-train-301KG0KX9CLV8GLA6QPGKOCZD972HG",
+      "stimulus_id": "complex-sentence-a819021cb18ea217ceb6f6cabcde8e2c2bda2c25ce4a5ed274b7af2e30e39d79"
+    },
+    "train_multi": {
+      "id": "complex-multi-train-301KG0KX9CLV8GLA6QPGKOCZDB32HG",
+      "stimulus_id": "complex-sentence-48713dc6b2b472d73f14bf934e5657717827a8f382120ba0e96c4be39baaf517"
+    },
+    "trial_single": {
+      "id": "complex-single-trial-302U8RURJZ1WF35NXY44RD66WLNNV0",
+      "stimulus_id": "complex-sentence-2d82f5fa8a0f2aba881df6a490dab7613ab3abb5621a28f59fac53bbfd6d2a75"
+    },
+    "trial_multi": {
+      "id": "complex-multi-trial-301KG0KX9CLV8GLA6QPGKOCZDD1H2X",
+      "stimulus_id": "complex-sentence-6ac47139c60139519bfd617f3b7179202fd4096f704f80f76b5fe73838bba72d"
+    },
+    "test_single": {
+      "id": "complex-single-test-302OLP89DZ7TWB5YXD4UFFYHC7KCAI",
+      "stimulus_id": "complex-sentence-22141424ade7e64591edfe0e666f942b361cc72732f6cb456ea6840db53d710f"
+    },
+    "test_multi": {
+      "id": "complex-multi-test-302U8RURJZ1WF35NXY44RD66WL4NVH",
+      "stimulus_id": "complex-sentence-84e4b4ee179199a6405f7c9f4f5a26f0d16dae414ab992a7f9337f929d6d913f"
+    }
+  },
+  "output_sha256": {
+    "stimuli.jsonl": "becaaa53572657e0b8dec013c125edbc8b7cf31c5687278a0dafdc267aa080a0",
+    "observations.jsonl": "d5ecf73f64569963aba0061c1566f58223b08dbec42cc430303e7c0b727050d4"
+  }
+}

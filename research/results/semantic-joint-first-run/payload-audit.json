@@ -1,0 +1,43 @@
+{
+  "inventory": {
+    "source": {
+      "texts": 526,
+      "train": 949,
+      "test_rows": 226,
+      "test_unique_inputs": 226
+    },
+    "onset": {
+      "texts": 128,
+      "train": 24473,
+      "test_rows": 8226,
+      "test_unique_inputs": 460
+    },
+    "closure": {
+      "Auftrag": {
+        "questions": 48,
+        "right_censored": 3
+      },
+      "Katze": {
+        "questions": 99,
+        "right_censored": 5
+      },
+      "Thomas": {
+        "questions": 49,
+        "right_censored": 5
+      }
+    }
+  },
+  "file_sha256": {
+    "stimuli.jsonl": "2c2251f5e95519af784a06d85cbddc455e53d23d3265eebdb73db7c587154af9",
+    "source-train.jsonl": "7d0fb92b7d44381f7b87bb6ec56d39071e2a0e40dbd32c961b1e0e63884955bd",
+    "source-eval.jsonl": "1d08abc550e7e56b59b5792c79b29768c70b606fd34b6b76b3db68baaea43fd8",
+    "onset-train.jsonl": "c73cba2623a8575ebf040c728348205d82bc779afcf916b70a5b0efcba5b50b2",
+    "onset-eval.jsonl": "ca0c6bf9443b86e2eb6269b0b621e2a8b75849e59a1928f6c850e708e0171afd",
+    "closure-intervals.jsonl": "f682818e7a955a72b93391251a8033520f63c14e5bfe659552a58f8c7a81ee56"
+  },
+  "evaluation_separation": {
+    "onset_and_source": "Material-group outcomes for both fixed test folds stay local.",
+    "closure": "All numeric rows are present for story rotation. Fit code must exclude the current test story.",
+    "closure_story_text_in_payload": false
+  }
+}

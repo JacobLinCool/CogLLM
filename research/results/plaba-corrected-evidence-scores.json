@@ -1,0 +1,97 @@
+{
+  "protocol_sha256": "2d5c877d7b97eb7342dd0f0c6f7f63dac33744cb85be71352b1a7e273af7bd1a",
+  "coverage": {
+    "open_book_trials": 935,
+    "scored_trials": 932,
+    "excluded_missing_evidence": 3,
+    "multi_sentence_evidence_trials": 126,
+    "old_index_outside_evidence_trials": 213,
+    "incorrect_trials": 133,
+    "maximum_evidence_sentences": 5
+  },
+  "methods": {
+    "candidate_evidence": {
+      "AUROC": {
+        "estimate": 0.5570402853190548,
+        "ci95": [
+          0.4777287508252729,
+          0.627661601694561
+        ]
+      },
+      "average_precision": {
+        "estimate": 0.1964964672380792,
+        "ci95": [
+          0.13842260632894177,
+          0.26879562538926405
+        ]
+      }
+    },
+    "length_evidence": {
+      "AUROC": {
+        "estimate": 0.5649590183217744,
+        "ci95": [
+          0.4773061112610772,
+          0.6344329000716626
+        ]
+      },
+      "average_precision": {
+        "estimate": 0.19409922981116828,
+        "ci95": [
+          0.11223955068641762,
+          0.2918716092548615
+        ]
+      }
+    },
+    "candidate_article": {
+      "AUROC": {
+        "estimate": 0.5517987710201662,
+        "ci95": [
+          0.47429065353252703,
+          0.6207211015510417
+        ]
+      },
+      "average_precision": {
+        "estimate": 0.18889090426807206,
+        "ci95": [
+          0.14002509872264648,
+          0.23818234046771022
+        ]
+      }
+    }
+  },
+  "contrasts": {
+    "candidate_evidence_minus_length_evidence": {
+      "AUROC": {
+        "estimate": -0.007918733002719613,
+        "ci95": [
+          -0.06714840807730352,
+          0.06065042841932016
+        ]
+      },
+      "average_precision": {
+        "estimate": 0.00239723742691092,
+        "ci95": [
+          -0.049395137725450525,
+          0.06516812931705143
+        ]
+      }
+    },
+    "candidate_evidence_minus_candidate_article": {
+      "AUROC": {
+        "estimate": 0.005241514298888639,
+        "ci95": [
+          -0.022232445706531535,
+          0.02892851959181928
+        ]
+      },
+      "average_precision": {
+        "estimate": 0.00760556297000714,
+        "ci95": [
+          -0.011010508405120719,
+          0.039269643160903686
+        ]
+      }
+    }
+  },
+  "passes_both_auroc_comparisons": false
+}

@@ -1,0 +1,80 @@
+{
+  "exp1_stimuli_sha256": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+  "stage4_heads_sha256": "4ece32f81090ef3da0249410d48a9a79b22c44efb57c0796c1d6178973623648",
+  "metric_aggregation": "Calculate metrics separately on each label draw, then average scores across draws.",
+  "scope": "Exact canonical prompt matching; separate reader cohorts; preexisting Exp1 out-of-fold predictions with matched Exp1 family held out; prompts and experimental family overlap.",
+  "experiments": {
+    "2": {
+      "source_sha256": "3b1f8de102c796d9b32b614a5507f5c9f468e9f7de23ccc1c1895cb46df18acb",
+      "trials": 1117,
+      "readers": 71,
+      "families": 35,
+      "human_interaction": 0.12938162995957928,
+      "human_shifts": [
+        0.22700796473048793,
+        0.3563895946900672
+      ],
+      "arms": {
+        "limited": {
+          "brier": 0.21976498693789506,
+          "interaction": -0.045989943447741634,
+          "absolute_interaction_error": 0.1753715734073209
+        },
+        "weak": {
+          "brier": 0.2197017324838798,
+          "interaction": 0.006250079996815594,
+          "absolute_interaction_error": 0.1231315499627637
+        },
+        "full": {
+          "brier": 0.21685327660921047,
+          "interaction": -0.04590607744531733,
+          "absolute_interaction_error": 0.1752877074048966
+        }
+      },
+      "weak_minus_limited_brier_95_ci": [
+        -0.001916545259264317,
+        0.0017071553494425696
+      ],
+      "weak_minus_limited_abs_interaction_error_95_ci": [
+        -0.06422361885941706,
+        0.004876147788035045
+      ]
+    },
+    "3": {
+      "source_sha256": "9c71ee1da6decbc2afb0bcc4d8e4d972c8dfd4a00174a72198c668a4ff4efc32",
+      "trials": 1283,
+      "readers": 87,
+      "families": 34,
+      "human_interaction": 0.05072963342156267,
+      "human_shifts": [
+        0.3140848650360024,
+        0.3648144984575651
+      ],
+      "arms": {
+        "limited": {
+          "brier": 0.21683719943902863,
+          "interaction": -0.04431324807940834,
+          "absolute_interaction_error": 0.09504288150097101
+        },
+        "weak": {
+          "brier": 0.21817463956822722,
+          "interaction": 0.00859075407535572,
+          "absolute_interaction_error": 0.04213887934620695
+        },
+        "full": {
+          "brier": 0.21129384354248215,
+          "interaction": -0.044984373326733385,
+          "absolute_interaction_error": 0.09571400674829604
+        }
+      },
+      "weak_minus_limited_brier_95_ci": [
+        -0.00031895813285785546,
+        0.0029481315435625197
+      ],
+      "weak_minus_limited_abs_interaction_error_95_ci": [
+        -0.062496128085989054,
+        0.04694190048269237
+      ]
+    }
+  }
+}

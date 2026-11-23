@@ -1,0 +1,132 @@
+{
+  "certification": {
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 2304,
+    "documents": 192,
+    "exclusions_by_reason": {},
+    "input_tokens": 5512,
+    "max_input_tokens": 34,
+    "study_stop_coverage": {
+      "eos": 192,
+      "word_11": 192,
+      "word_4": 192,
+      "word_6": 192,
+      "word_7": 192,
+      "word_8": 192
+    },
+    "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42"
+  },
+  "code_sha256": "170680bb1a260ea4312eb4994284cb0452498b90dfd731fa534c360724d8a36e",
+  "coordinates": "Exact published material text, Unicode half-open spans for visible author words. Stops also include orthographic word ends and EOS.",
+  "documents": 192,
+  "experiment_2": {
+    "explicit_unsure": 217,
+    "joins_after_question_normalization": 114,
+    "literal_source_rows": 8352,
+    "literal_word_sequence_and_question_join": 8238,
+    "missing_answer": 53,
+    "qmis_yes_among_nonmissing": {
+      "gp": [
+        308,
+        1383
+      ],
+      "nongp": [
+        99,
+        1387
+      ]
+    },
+    "question_type_counts": {
+      "qcor": 2784,
+      "qmis": 2784,
+      "qpos": 2784
+    },
+    "readers": 174,
+    "response_counts": {
+      "missing": 53,
+      "no": 2637,
+      "unsure": 217,
+      "yes": 5445
+    },
+    "trials": 8352
+  },
+  "experiment_3": {
+    "answer_fields_vary_across_word_rows": 92,
+    "explicit_unsure": 226,
+    "joins_after_question_normalization": 106,
+    "literal_source_rows": 83952,
+    "literal_word_sequence_and_question_join": 7526,
+    "missing_answer": 32,
+    "qmis_yes_among_nonmissing": {
+      "gp": [
+        357,
+        1266
+      ],
+      "nongp": [
+        110,
+        1267
+      ]
+    },
+    "question_type_counts": {
+      "qcor": 2544,
+      "qmis": 2544,
+      "qpos": 2544
+    },
+    "readers": 159,
+    "response_counts": {
+      "missing": 32,
+      "no": 2347,
+      "unsure": 226,
+      "yes": 5027
+    },
+    "trials": 7632,
+    "trials_with_all_11_word_positions": 7632,
+    "trials_with_numeric_disambiguating_word_rt": 7167,
+    "word_rows_with_numeric_rt": 81211
+  },
+  "families": 48,
+  "family_crosswalk": {
+    "identity_pairs": 2,
+    "pairs": 48,
+    "sha256": "3a4666045a713c829e831a2ab51c107a0ce9c859246ebb1cfee38db7907a5a24"
+  },
+  "file_sha256": {
+    "packet/extractor-preflight.json": "8ddecefe28aec504ed767707c807b38087541fdf940e7098ec4321a00be769bd",
+    "packet/preflight.json": "3d8a5b174473f83e3acd20e7342459ab906d05f8e454b42e4d0a83937ab1180e",
+    "packet/stimuli.jsonl": "120719720d2e6ab6ceb2f003edfff142beb6735f05ca639dc73b8f1b12ff2098",
+    "prepared/layout.jsonl": "3ecf1997400120ddcdae2bd54184c1238d4a42f5840479f2babce892dc800840",
+    "prepared/outcomes.jsonl": "775e24c64a4fa54bf41f22fae60dc697c78f9b1ea970455fc6ce04289e7d8eee",
+    "prepared/stimuli.jsonl": "120719720d2e6ab6ceb2f003edfff142beb6735f05ca639dc73b8f1b12ff2098"
+  },
+  "license": {
+    "osf_node": null,
+    "osf_relationship": null,
+    "paper": "CC BY"
+  },
+  "material_text_changed": 0,
+  "material_text_not_single_space_join": 4,
+  "paper": "https://doi.org/10.1371/journal.pone.0288817",
+  "privacy": "Only experiment-scoped reader aliases and categorical choices are retained. Layout, reader rows and raw OSF files are outside the inference packet.",
+  "project": "https://osf.io/98g26/",
+  "question_normalization": "Only linkage keys use NFC and whitespace collapse. Display words and material text are unmodified.",
+  "requested_stops": 2304,
+  "schema": 1,
+  "source_audit_sha256": "6fdefc7d5c033e75dc214c10934285cf99662791a027c48011df6ce01a4e5698",
+  "source_files": {
+    "experiments_2_and_3_items.csv": {
+      "bytes": 77220,
+      "sha256": "285fe6720e14037e2e0f9cfc9b890673359ad4b14b53a92ff01fddbdecaece4a",
+      "url": "https://osf.io/download/6gjur/"
+    },
+    "results_exp2_whole_yes-no_analysis.csv": {
+      "bytes": 1732638,
+      "sha256": "27a6830d2f7632221c7edd632fca96e444774abdcf2bc41072cdc49060b95f32",
+      "url": "https://osf.io/download/6cf5h/"
+    },
+    "results_exp3_wbw_yes-no_analysis.csv": {
+      "bytes": 11685076,
+      "sha256": "ced62e1bc384bc6491bd960fd5da7efdf5732be29b3e4de80ca5dca177f2214a",
+      "url": "https://osf.io/download/cb624/"
+    }
+  },
+  "words_per_sentence": 11
+}

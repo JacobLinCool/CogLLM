@@ -1,0 +1,3893 @@
+{
+  "source_forecast": "e433358859a9675001e02de443d99e23a4a3812bb61fa6e0d6e6f96252234c7c",
+  "source_weights": "44f93729a95b8c4cc8552c8a9237b27b8bbe27a1941a290458b8b7469a3e83fc",
+  "subsets": {
+    "native": {
+      "readers": 43,
+      "articles": 38,
+      "term_judgments": 563,
+      "endpoints": {
+        "definition_over_example.within_same": {
+          "group": "within_same",
+          "articles": 9,
+          "readers": 9,
+          "informative_pairs": 33,
+          "informative_cells": 11,
+          "bootstrap_valid": 9993,
+          "scores": {
+            "lexical": {
+              "estimate": 0.7116402116402116,
+              "interval95": [
+                0.3333333333333333,
+                1.0
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.6746031746031745,
+              "interval95": [
+                0.30952380952380953,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.6931216931216931,
+              "interval95": [
+                0.3728174603174603,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.6560846560846562,
+              "interval95": [
+                0.27777777777777773,
+                1.0
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5753968253968255,
+              "interval95": [
+                0.2222222222222222,
+                0.9
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.09920634920634908,
+              "interval95": [
+                -0.24999999999999994,
+                0.08333333333333331
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.05555555555555547,
+              "interval95": [
+                -0.22222222222222215,
+                0.11111111111111105
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.0806878306878307,
+              "interval95": [
+                -0.20634920634920634,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.11772486772486768,
+              "interval95": [
+                -0.25,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition_over_example.within_all": {
+          "group": "within_all",
+          "articles": 16,
+          "readers": 15,
+          "informative_pairs": 84,
+          "informative_cells": 18,
+          "bootstrap_valid": 9999,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6883184523809525,
+              "interval95": [
+                0.4226190476190476,
+                0.9047738095238095
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.739360119047619,
+              "interval95": [
+                0.46666666666666673,
+                0.9461675824175823
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.7367559523809524,
+              "interval95": [
+                0.46696825396825403,
+                0.9444444444444445
+              ]
+            },
+            "article": {
+              "estimate": 0.6648809523809524,
+              "interval95": [
+                0.3856994047619048,
+                0.8958333333333334
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.7111607142857143,
+              "interval95": [
+                0.4329004329004329,
+                0.9365079365079365
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.028199404761904745,
+              "interval95": [
+                -0.0801587301587301,
+                0.03703703703703709
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.02343750000000011,
+              "interval95": [
+                -0.09999999999999998,
+                0.044900932400932035
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.04627976190476191,
+              "interval95": [
+                -0.11190476190476195,
+                0.29367063492063467
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.025595238095238115,
+              "interval95": [
+                -0.06952380952380954,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition_over_example.between_different": {
+          "group": "between_different",
+          "articles": 5,
+          "readers": 12,
+          "informative_pairs": 13,
+          "informative_cells": 11,
+          "bootstrap_valid": 9084,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 0.4333333333333334,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.4333333333333334,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 0.4333333333333334,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": -0.0666666666666666,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition_over_example.between_same": {
+          "group": "between_same",
+          "articles": 3,
+          "readers": 6,
+          "informative_pairs": 4,
+          "informative_cells": 3,
+          "bootstrap_valid": 7675,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition.within_same": {
+          "group": "within_same",
+          "articles": 18,
+          "readers": 20,
+          "informative_pairs": 112,
+          "informative_cells": 28,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5152667548500882,
+              "interval95": [
+                0.27678075396825397,
+                0.7517729955229954
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5093419312169313,
+              "interval95": [
+                0.2857142857142857,
+                0.7628472222222219
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5023974867724869,
+              "interval95": [
+                0.2751692708333333,
+                0.7604432397959181
+              ]
+            },
+            "article": {
+              "estimate": 0.4844576719576719,
+              "interval95": [
+                0.2708333333333333,
+                0.7068526785714285
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.4655533509700176,
+              "interval95": [
+                0.23979060374149663,
+                0.7129985119047619
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.04378858024691368,
+              "interval95": [
+                -0.22916666666666674,
+                0.08518623737373732
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.030809082892416295,
+              "interval95": [
+                -0.12111429398148153,
+                0.025000000000000022
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.01890432098765432,
+              "interval95": [
+                -0.125,
+                0.09830246913580228
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.0344466490299824,
+              "interval95": [
+                -0.2602093962585034,
+                0.21299851190476188
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.03684413580246926,
+              "interval95": [
+                -0.2248429840686276,
+                0.09615384615384615
+              ]
+            }
+          }
+        },
+        "definition.within_all": {
+          "group": "within_all",
+          "articles": 30,
+          "readers": 35,
+          "informative_pairs": 712,
+          "informative_cells": 48,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6539766313932981,
+              "interval95": [
+                0.5288009359467694,
+                0.7760658547410192
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8678322310405643,
+              "interval95": [
+                0.7716173178673179,
+                0.9535280612244899
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8662343474426808,
+              "interval95": [
+                0.7700416666666667,
+                0.9527124309868876
+              ]
+            },
+            "article": {
+              "estimate": 0.6394966931216931,
+              "interval95": [
+                0.5096087962962963,
+                0.7578932901272456
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8610597442680776,
+              "interval95": [
+                0.758176877394636,
+                0.9500140544475367
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8752173721340388,
+              "interval95": [
+                0.797528051948052,
+                0.9438195331825912
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.006772486772486652,
+              "interval95": [
+                -0.021538162838223834,
+                0.00615574144219994
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.014479938271604986,
+              "interval95": [
+                -0.054920532564877785,
+                0.015906987795118142
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.22156305114638453,
+              "interval95": [
+                0.13077093192349404,
+                0.3270259058484505
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.014157627865961198,
+              "interval95": [
+                -0.06779098409306736,
+                0.035961806742234134
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.005174603174603165,
+              "interval95": [
+                -0.02106544833842631,
+                0.010050572860723327
+              ]
+            }
+          }
+        },
+        "definition.between_different": {
+          "group": "between_different",
+          "articles": 14,
+          "readers": 30,
+          "informative_pairs": 111,
+          "informative_cells": 57,
+          "bootstrap_valid": 9998,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8532738095238095,
+              "interval95": [
+                0.5785327380952381,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8532738095238095,
+              "interval95": [
+                0.5785327380952381,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8532738095238095,
+              "interval95": [
+                0.5785327380952381,
+                1.0
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8532738095238095,
+              "interval95": [
+                0.5785327380952381,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.3532738095238095,
+              "interval95": [
+                0.07853273809523804,
+                0.5
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition.between_same": {
+          "group": "between_same",
+          "articles": 7,
+          "readers": 20,
+          "informative_pairs": 42,
+          "informative_cells": 21,
+          "bootstrap_valid": 9898,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "example.within_same": {
+          "group": "within_same",
+          "articles": 28,
+          "readers": 31,
+          "informative_pairs": 156,
+          "informative_cells": 40,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5511267006802721,
+              "interval95": [
+                0.35335443722943727,
+                0.7151581942614551
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.47614087301587305,
+              "interval95": [
+                0.27392694805194806,
+                0.6606801457902001
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.42480867346938783,
+              "interval95": [
+                0.2571428571428572,
+                0.6075381652661065
+              ]
+            },
+            "article": {
+              "estimate": 0.5060728458049887,
+              "interval95": [
+                0.3146300590943448,
+                0.6690956925699573
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.4222151360544218,
+              "interval95": [
+                0.24387632026494807,
+                0.6166671390778534
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.053925736961451254,
+              "interval95": [
+                -0.17075891855058523,
+                0.09705943627450994
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.04505385487528346,
+              "interval95": [
+                -0.194196590320911,
+                0.10104340277777768
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.08385770975056689,
+              "interval95": [
+                -0.25529281537176274,
+                0.11008664149420423
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.07778486394557821,
+              "interval95": [
+                -0.25612367973505196,
+                0.1166671390778534
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.0025935374149660406,
+              "interval95": [
+                -0.08541800213675212,
+                0.08581365740740743
+              ]
+            }
+          }
+        },
+        "example.within_all": {
+          "group": "within_all",
+          "articles": 32,
+          "readers": 34,
+          "informative_pairs": 700,
+          "informative_cells": 48,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6416125165343918,
+              "interval95": [
+                0.5262841617707689,
+                0.7268967139694041
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.7300475363756614,
+              "interval95": [
+                0.6409106620718462,
+                0.8170844725710796
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.6866927083333334,
+              "interval95": [
+                0.5903548983134921,
+                0.7789796336553945
+              ]
+            },
+            "article": {
+              "estimate": 0.6111826223544974,
+              "interval95": [
+                0.5095281852324263,
+                0.6993731858098179
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.6562400793650794,
+              "interval95": [
+                0.5418603066274402,
+                0.7714971025447217
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.7425520833333334,
+              "interval95": [
+                0.6295102182539682,
+                0.8439878885582012
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.073807457010582,
+              "interval95": [
+                -0.1434598019763462,
+                -0.0003758597883596302
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.03042989417989439,
+              "interval95": [
+                -0.09048841619981329,
+                0.04984188161375656
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.04505745701058206,
+              "interval95": [
+                -0.06062498767622987,
+                0.1595198650034175
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.086312003968254,
+              "interval95": [
+                -0.2127417809228954,
+                0.04259990501710951
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.03045262896825396,
+              "interval95": [
+                -0.10027729304282094,
+                0.029540923721340276
+              ]
+            }
+          }
+        },
+        "example.between_different": {
+          "group": "between_different",
+          "articles": 14,
+          "readers": 30,
+          "informative_pairs": 119,
+          "informative_cells": 63,
+          "bootstrap_valid": 9998,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8263492063492064,
+              "interval95": [
+                0.5428459821428571,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8263492063492064,
+              "interval95": [
+                0.5428459821428571,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.7212698412698414,
+              "interval95": [
+                0.37464506172839507,
+                0.9928571428571429
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8263492063492064,
+              "interval95": [
+                0.5428459821428571,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.105079365079365,
+              "interval95": [
+                -0.3999999999999999,
+                0.055041666666666204
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.2212698412698414,
+              "interval95": [
+                -0.12535493827160496,
+                0.4928571428571429
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.105079365079365,
+              "interval95": [
+                -0.3999999999999999,
+                0.055041666666666204
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.105079365079365,
+              "interval95": [
+                -0.3999999999999999,
+                0.055041666666666204
+              ]
+            }
+          }
+        },
+        "example.between_same": {
+          "group": "between_same",
+          "articles": 12,
+          "readers": 26,
+          "informative_pairs": 78,
+          "informative_cells": 37,
+          "bootstrap_valid": 9973,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "extended_inclusive": {
+      "readers": 49,
+      "articles": 87,
+      "term_judgments": 1207,
+      "endpoints": {
+        "definition_over_example.within_same": {
+          "group": "within_same",
+          "articles": 18,
+          "readers": 15,
+          "informative_pairs": 62,
+          "informative_cells": 21,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.7007275132275133,
+              "interval95": [
+                0.42708333333333337,
+                0.9039732142857142
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.6243386243386243,
+              "interval95": [
+                0.373499503968254,
+                0.8333333333333333
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.6243386243386244,
+              "interval95": [
+                0.41514687693259117,
+                0.8083506944444441
+              ]
+            },
+            "article": {
+              "estimate": 0.6451719576719577,
+              "interval95": [
+                0.3844204695767196,
+                0.8589843749999999
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.609457671957672,
+              "interval95": [
+                0.3868964947089947,
+                0.8093005952380952
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.014880952380952328,
+              "interval95": [
+                -0.1443477182539683,
+                0.15277777777777773
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.05555555555555558,
+              "interval95": [
+                -0.15625,
+                0.044469696969696666
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.0357142857142857,
+              "interval95": [
+                -0.12857142857142845,
+                0.09523809523809512
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.014880952380952439,
+              "interval95": [
+                -0.1250000000000001,
+                0.12222789115646263
+              ]
+            }
+          }
+        },
+        "definition_over_example.within_all": {
+          "group": "within_all",
+          "articles": 29,
+          "readers": 22,
+          "informative_pairs": 152,
+          "informative_cells": 32,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.7059113300492611,
+              "interval95": [
+                0.5130181644668738,
+                0.8639766535904979
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.7182676518883416,
+              "interval95": [
+                0.5212081339712918,
+                0.875
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.7168308702791462,
+              "interval95": [
+                0.5315737874097007,
+                0.8693082137161082
+              ]
+            },
+            "article": {
+              "estimate": 0.6671182266009853,
+              "interval95": [
+                0.4814805088702148,
+                0.8301995798319325
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.7231116584564861,
+              "interval95": [
+                0.5400111607142857,
+                0.8809523809523808
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.004844006568144432,
+              "interval95": [
+                -0.05555555555555547,
+                0.10147220072239417
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.0387931034482758,
+              "interval95": [
+                -0.125,
+                0.03508943256578956
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.055993431855500764,
+              "interval95": [
+                -0.125,
+                0.24286904761904746
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.006280788177339902,
+              "interval95": [
+                -0.04285714285714293,
+                0.08333333333333337
+              ]
+            }
+          }
+        },
+        "definition_over_example.between_different": {
+          "group": "between_different",
+          "articles": 11,
+          "readers": 21,
+          "informative_pairs": 28,
+          "informative_cells": 24,
+          "bootstrap_valid": 9932,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.4090909090909091,
+              "interval95": [
+                0.0,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.4090909090909091,
+              "interval95": [
+                0.0,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.4090909090909091,
+              "interval95": [
+                0.0,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.09090909090909088,
+              "interval95": [
+                -0.5,
+                0.5
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition_over_example.between_same": {
+          "group": "between_same",
+          "articles": 8,
+          "readers": 13,
+          "informative_pairs": 12,
+          "informative_cells": 10,
+          "bootstrap_valid": 9676,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition.within_same": {
+          "group": "within_same",
+          "articles": 42,
+          "readers": 33,
+          "informative_pairs": 206,
+          "informative_cells": 57,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.573804799697657,
+              "interval95": [
+                0.39542156698028674,
+                0.7400410732133934
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5077735260770976,
+              "interval95": [
+                0.3388888888888889,
+                0.6884217171717171
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5295989229024944,
+              "interval95": [
+                0.3616049544817927,
+                0.7055484250992062
+              ]
+            },
+            "article": {
+              "estimate": 0.5744897959183674,
+              "interval95": [
+                0.40865364583333336,
+                0.7424061512350583
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5417847694633409,
+              "interval95": [
+                0.3785875496031746,
+                0.711562003968254
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.034011243386243284,
+              "interval95": [
+                -0.07607026143790856,
+                0.14583333333333331
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0006849962207103877,
+              "interval95": [
+                -0.04411764705882349,
+                0.05500148809523807
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.03270502645502649,
+              "interval95": [
+                -0.13269290123456798,
+                0.052028434684684634
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.041784769463340865,
+              "interval95": [
+                -0.12141245039682542,
+                0.211562003968254
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.012185846560846425,
+              "interval95": [
+                -0.08935500841750836,
+                0.11612975823045256
+              ]
+            }
+          }
+        },
+        "definition.within_all": {
+          "group": "within_all",
+          "articles": 66,
+          "readers": 45,
+          "informative_pairs": 1376,
+          "informative_cells": 98,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.7057800224466889,
+              "interval95": [
+                0.6149579695767196,
+                0.791626489031147
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8691775893859227,
+              "interval95": [
+                0.803141068817878,
+                0.9273696413540161
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8710306437389769,
+              "interval95": [
+                0.8077882482993197,
+                0.928684619468264
+              ]
+            },
+            "article": {
+              "estimate": 0.7052191558441557,
+              "interval95": [
+                0.6115204402515724,
+                0.7936846649567685
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8780803070386403,
+              "interval95": [
+                0.8135745965052688,
+                0.9353781318330903
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8727623456790123,
+              "interval95": [
+                0.8151121236215445,
+                0.9237394202177729
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.008902717652717551,
+              "interval95": [
+                -0.008589253612940452,
+                0.0378810962301588
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.0005608666025331832,
+              "interval95": [
+                -0.026305806839095013,
+                0.023601931885342948
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.17286115119448453,
+              "interval95": [
+                0.10174403552071244,
+                0.2483957256965567
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.005317961359627921,
+              "interval95": [
+                -0.02709657861892166,
+                0.036784250033870834
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.007049663299663389,
+              "interval95": [
+                -0.009776819971587405,
+                0.034290596163418466
+              ]
+            }
+          }
+        },
+        "definition.between_different": {
+          "group": "between_different",
+          "articles": 32,
+          "readers": 43,
+          "informative_pairs": 220,
+          "informative_cells": 124,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8271267361111111,
+              "interval95": [
+                0.633720238095238,
+                0.9619101731601731
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8271267361111111,
+              "interval95": [
+                0.633720238095238,
+                0.9619101731601731
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8271267361111111,
+              "interval95": [
+                0.633720238095238,
+                0.9619101731601731
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8271267361111111,
+              "interval95": [
+                0.633720238095238,
+                0.9619101731601731
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.3271267361111111,
+              "interval95": [
+                0.1337202380952381,
+                0.4619101731601731
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition.between_same": {
+          "group": "between_same",
+          "articles": 22,
+          "readers": 37,
+          "informative_pairs": 72,
+          "informative_cells": 47,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "example.within_same": {
+          "group": "within_same",
+          "articles": 59,
+          "readers": 42,
+          "informative_pairs": 305,
+          "informative_cells": 76,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5795500403551253,
+              "interval95": [
+                0.43598363095238096,
+                0.7067202380952382
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5548796072101156,
+              "interval95": [
+                0.41711986646510457,
+                0.6835990127758421
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5593523002421307,
+              "interval95": [
+                0.43109667270713775,
+                0.6850808482307652
+              ]
+            },
+            "article": {
+              "estimate": 0.5725147968792036,
+              "interval95": [
+                0.43550623520607074,
+                0.6945505420918365
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.526220742534302,
+              "interval95": [
+                0.40033108516877897,
+                0.6591220589890802
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.02865886467581369,
+              "interval95": [
+                -0.1192835365853657,
+                0.09532560834644173
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.00703524347592166,
+              "interval95": [
+                -0.09877735690235699,
+                0.09099474882491183
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.046294054344901636,
+              "interval95": [
+                -0.16097914359542267,
+                0.08324497767857153
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.026220742534301955,
+              "interval95": [
+                -0.09966891483122102,
+                0.15912205898908016
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.03313155770782872,
+              "interval95": [
+                -0.12144654263220425,
+                0.06497384559884543
+              ]
+            }
+          }
+        },
+        "example.within_all": {
+          "group": "within_all",
+          "articles": 71,
+          "readers": 46,
+          "informative_pairs": 1494,
+          "informative_cells": 103,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.656318093747671,
+              "interval95": [
+                0.5779851657519068,
+                0.7292112373884739
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.7517423056859678,
+              "interval95": [
+                0.6868238626138286,
+                0.8144596329205327
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.7286513525598034,
+              "interval95": [
+                0.6617934141987075,
+                0.7942658192791003
+              ]
+            },
+            "article": {
+              "estimate": 0.6320996348461138,
+              "interval95": [
+                0.5616834774157238,
+                0.7049733859890109
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.6909110216856696,
+              "interval95": [
+                0.6259101101444849,
+                0.7648748403755284
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.762600184439973,
+              "interval95": [
+                0.6824779778975083,
+                0.8339351682268349
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.060831284000298136,
+              "interval95": [
+                -0.1081144802365391,
+                -0.007911607846448192
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.02421845890155727,
+              "interval95": [
+                -0.06325811838624312,
+                0.024158052543934005
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.05881138683955589,
+              "interval95": [
+                -0.01216583973309867,
+                0.1362752869287085
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.07168916275430337,
+              "interval95": [
+                -0.1530364948467811,
+                0.02140007491091689
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.037740330874133754,
+              "interval95": [
+                -0.08430794273974364,
+                0.01237831363010017
+              ]
+            }
+          }
+        },
+        "example.between_different": {
+          "group": "between_different",
+          "articles": 29,
+          "readers": 41,
+          "informative_pairs": 206,
+          "informative_cells": 115,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.804977650063857,
+              "interval95": [
+                0.6106628787878788,
+                0.9713541666666666
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.804977650063857,
+              "interval95": [
+                0.6106628787878788,
+                0.9713541666666666
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.6943837803320562,
+              "interval95": [
+                0.4866679067460318,
+                0.8816774891774891
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.804977650063857,
+              "interval95": [
+                0.6106628787878788,
+                0.9713541666666666
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.11059386973180085,
+              "interval95": [
+                -0.2759098615756224,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.19438378033205617,
+              "interval95": [
+                -0.013332093253968221,
+                0.38167748917748917
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.11059386973180085,
+              "interval95": [
+                -0.2759098615756224,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.11059386973180085,
+              "interval95": [
+                -0.2759098615756224,
+                0.0
+              ]
+            }
+          }
+        },
+        "example.between_same": {
+          "group": "between_same",
+          "articles": 25,
+          "readers": 37,
+          "informative_pairs": 126,
+          "informative_cells": 70,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "native_unique_mentions": {
+      "readers": 42,
+      "articles": 34,
+      "term_judgments": 256,
+      "endpoints": {
+        "definition_over_example.within_same": {
+          "group": "within_same",
+          "articles": 2,
+          "readers": 2,
+          "informative_pairs": 2,
+          "informative_cells": 2,
+          "bootstrap_valid": 8740,
+          "scores": {
+            "lexical": {
+              "estimate": 1.0,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 1.0,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 1.0,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 1.0,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 1.0,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition_over_example.within_all": {
+          "group": "within_all",
+          "articles": 7,
+          "readers": 7,
+          "informative_pairs": 16,
+          "informative_cells": 7,
+          "bootstrap_valid": 9964,
+          "scores": {
+            "lexical": {
+              "estimate": 0.7142857142857143,
+              "interval95": [
+                0.14285714285714285,
+                1.0
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.7857142857142857,
+              "interval95": [
+                0.3,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.7857142857142857,
+              "interval95": [
+                0.3,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.7142857142857143,
+              "interval95": [
+                0.14285714285714285,
+                1.0
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.7857142857142857,
+              "interval95": [
+                0.3,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0714285714285714,
+              "interval95": [
+                -0.30000000000000004,
+                0.6000000000000001
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition_over_example.between_different": {
+          "group": "between_different",
+          "articles": 2,
+          "readers": 5,
+          "informative_pairs": 6,
+          "informative_cells": 5,
+          "bootstrap_valid": 6752,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition_over_example.between_same": {
+          "group": "between_same",
+          "articles": 2,
+          "readers": 5,
+          "informative_pairs": 3,
+          "informative_cells": 2,
+          "bootstrap_valid": 6809,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition.within_same": {
+          "group": "within_same",
+          "articles": 6,
+          "readers": 8,
+          "informative_pairs": 22,
+          "informative_cells": 8,
+          "bootstrap_valid": 9978,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5763888888888888,
+              "interval95": [
+                0.19791666666666666,
+                0.9166666666666666
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5972222222222222,
+              "interval95": [
+                0.2222222222222222,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5763888888888888,
+              "interval95": [
+                0.15277777777777776,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5972222222222222,
+              "interval95": [
+                0.25,
+                0.9166666666666666
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5347222222222222,
+              "interval95": [
+                0.13333333333333333,
+                0.8958333333333334
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.0625,
+              "interval95": [
+                -0.5,
+                0.07500000000000007
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.02083333333333337,
+              "interval95": [
+                0.0,
+                0.08333333333333331
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.0625,
+              "interval95": [
+                -0.33333333333333326,
+                0.08333333333333331
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.03472222222222221,
+              "interval95": [
+                -0.3666666666666667,
+                0.39583333333333337
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.04166666666666663,
+              "interval95": [
+                -0.5,
+                0.15000000000000002
+              ]
+            }
+          }
+        },
+        "definition.within_all": {
+          "group": "within_all",
+          "articles": 20,
+          "readers": 24,
+          "informative_pairs": 155,
+          "informative_cells": 27,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6402976190476191,
+              "interval95": [
+                0.42983928571428576,
+                0.8491246843434342
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8597916666666666,
+              "interval95": [
+                0.6868988095238096,
+                0.9851879084967321
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8572916666666668,
+              "interval95": [
+                0.6843628472222222,
+                0.9851879084967321
+              ]
+            },
+            "article": {
+              "estimate": 0.6707142857142857,
+              "interval95": [
+                0.46851851851851856,
+                0.8618821699134198
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8602083333333332,
+              "interval95": [
+                0.6857010582010582,
+                0.9833333333333333
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8490624999999999,
+              "interval95": [
+                0.6774504697712418,
+                0.972046980218855
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0004166666666666208,
+              "interval95": [
+                -0.01388888888888884,
+                0.009374999999999911
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.030416666666666647,
+              "interval95": [
+                -0.05521391369047605,
+                0.15256410256410252
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.18949404761904753,
+              "interval95": [
+                -0.07373214285714277,
+                0.4204602949134198
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0111458333333333,
+              "interval95": [
+                -0.06166911764705891,
+                0.1021683035714285
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0029166666666664565,
+              "interval95": [
+                -0.012965686274509903,
+                0.018750000000000044
+              ]
+            }
+          }
+        },
+        "definition.between_different": {
+          "group": "between_different",
+          "articles": 8,
+          "readers": 20,
+          "informative_pairs": 42,
+          "informative_cells": 21,
+          "bootstrap_valid": 9937,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8458333333333332,
+              "interval95": [
+                0.25,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8458333333333332,
+              "interval95": [
+                0.25,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8458333333333332,
+              "interval95": [
+                0.25,
+                1.0
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8458333333333332,
+              "interval95": [
+                0.25,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.3458333333333332,
+              "interval95": [
+                -0.25,
+                0.5
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition.between_same": {
+          "group": "between_same",
+          "articles": 7,
+          "readers": 17,
+          "informative_pairs": 13,
+          "informative_cells": 8,
+          "bootstrap_valid": 9609,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "example.within_same": {
+          "group": "within_same",
+          "articles": 17,
+          "readers": 19,
+          "informative_pairs": 42,
+          "informative_cells": 20,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.40196078431372545,
+              "interval95": [
+                0.1111111111111111,
+                0.7
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.4411764705882353,
+              "interval95": [
+                0.15,
+                0.7592881944444441
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.3705882352941176,
+              "interval95": [
+                0.10714285714285714,
+                0.6819791666666661
+              ]
+            },
+            "article": {
+              "estimate": 0.43921568627450974,
+              "interval95": [
+                0.15384615384615385,
+                0.725
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.33627450980392154,
+              "interval95": [
+                0.08333333333333333,
+                0.6378901515151513
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.10490196078431374,
+              "interval95": [
+                -0.3300833333333333,
+                0.025016025641025428
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.03725490196078429,
+              "interval95": [
+                -0.26410256410256405,
+                0.3611111111111111
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.1029411764705882,
+              "interval95": [
+                -0.375,
+                0.19525910364145618
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.16372549019607846,
+              "interval95": [
+                -0.4166666666666667,
+                0.1378901515151513
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.03431372549019607,
+              "interval95": [
+                -0.16666666666666663,
+                0.03703703703703698
+              ]
+            }
+          }
+        },
+        "example.within_all": {
+          "group": "within_all",
+          "articles": 23,
+          "readers": 26,
+          "informative_pairs": 185,
+          "informative_cells": 30,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5837359098228664,
+              "interval95": [
+                0.39443865740740747,
+                0.75
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.648970554405337,
+              "interval95": [
+                0.45712590187590185,
+                0.837582963741052
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.6135725787899701,
+              "interval95": [
+                0.4379596560846561,
+                0.7953044394841269
+              ]
+            },
+            "article": {
+              "estimate": 0.6251897860593513,
+              "interval95": [
+                0.4384767316017317,
+                0.7888888888888889
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5813463308028526,
+              "interval95": [
+                0.3896592412217412,
+                0.7723692754613806
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.664873763515068,
+              "interval95": [
+                0.4704799107142857,
+                0.840279356060606
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.06762422360248443,
+              "interval95": [
+                -0.185521103896104,
+                0.014885085978835975
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.04145387623648489,
+              "interval95": [
+                -0.12553075396825392,
+                0.24848887471655332
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.04384345525649869,
+              "interval95": [
+                -0.24421875000000004,
+                0.12176215277777777
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.08352743271221541,
+              "interval95": [
+                -0.2655691964285715,
+                0.08135747354497336
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.032226247987117485,
+              "interval95": [
+                -0.14950727513227519,
+                0.0425357238247863
+              ]
+            }
+          }
+        },
+        "example.between_different": {
+          "group": "between_different",
+          "articles": 10,
+          "readers": 26,
+          "informative_pairs": 43,
+          "informative_cells": 23,
+          "bootstrap_valid": 9978,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.7566666666666666,
+              "interval95": [
+                0.4108829365079365,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.7566666666666666,
+              "interval95": [
+                0.4108829365079365,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.6933333333333332,
+              "interval95": [
+                0.25,
+                1.0
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.7566666666666666,
+              "interval95": [
+                0.4108829365079365,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.06333333333333335,
+              "interval95": [
+                -0.5,
+                0.3571428571428572
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.19333333333333325,
+              "interval95": [
+                -0.25,
+                0.5
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.06333333333333335,
+              "interval95": [
+                -0.5,
+                0.3571428571428572
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.06333333333333335,
+              "interval95": [
+                -0.5,
+                0.3571428571428572
+              ]
+            }
+          }
+        },
+        "example.between_same": {
+          "group": "between_same",
+          "articles": 9,
+          "readers": 21,
+          "informative_pairs": 27,
+          "informative_cells": 16,
+          "bootstrap_valid": 9877,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      }
+    },
+    "native_all_readers": {
+      "readers": 44,
+      "articles": 39,
+      "term_judgments": 604,
+      "endpoints": {
+        "definition_over_example.within_same": {
+          "group": "within_same",
+          "articles": 9,
+          "readers": 9,
+          "informative_pairs": 33,
+          "informative_cells": 11,
+          "bootstrap_valid": 9993,
+          "scores": {
+            "lexical": {
+              "estimate": 0.7116402116402116,
+              "interval95": [
+                0.3333333333333333,
+                1.0
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.6746031746031745,
+              "interval95": [
+                0.30952380952380953,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.6931216931216931,
+              "interval95": [
+                0.3728174603174603,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.6560846560846562,
+              "interval95": [
+                0.27777777777777773,
+                1.0
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5753968253968255,
+              "interval95": [
+                0.2222222222222222,
+                0.9
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.09920634920634908,
+              "interval95": [
+                -0.24999999999999994,
+                0.08333333333333331
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.05555555555555547,
+              "interval95": [
+                -0.22222222222222215,
+                0.11111111111111105
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.0806878306878307,
+              "interval95": [
+                -0.20634920634920634,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.11772486772486768,
+              "interval95": [
+                -0.25,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition_over_example.within_all": {
+          "group": "within_all",
+          "articles": 16,
+          "readers": 15,
+          "informative_pairs": 84,
+          "informative_cells": 18,
+          "bootstrap_valid": 9999,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6883184523809525,
+              "interval95": [
+                0.4226190476190476,
+                0.9047738095238095
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.739360119047619,
+              "interval95": [
+                0.46666666666666673,
+                0.9461675824175823
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.7367559523809524,
+              "interval95": [
+                0.46696825396825403,
+                0.9444444444444445
+              ]
+            },
+            "article": {
+              "estimate": 0.6648809523809524,
+              "interval95": [
+                0.3856994047619048,
+                0.8958333333333334
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.7111607142857143,
+              "interval95": [
+                0.4329004329004329,
+                0.9365079365079365
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.028199404761904745,
+              "interval95": [
+                -0.0801587301587301,
+                0.03703703703703709
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.02343750000000011,
+              "interval95": [
+                -0.09999999999999998,
+                0.044900932400932035
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.04627976190476191,
+              "interval95": [
+                -0.11190476190476195,
+                0.29367063492063467
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.025595238095238115,
+              "interval95": [
+                -0.06952380952380954,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition_over_example.between_different": {
+          "group": "between_different",
+          "articles": 6,
+          "readers": 15,
+          "informative_pairs": 15,
+          "informative_cells": 12,
+          "bootstrap_valid": 9418,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 0.5277777777777778,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5277777777777778,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 0.5277777777777778,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": 0.02777777777777779,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition_over_example.between_same": {
+          "group": "between_same",
+          "articles": 3,
+          "readers": 6,
+          "informative_pairs": 4,
+          "informative_cells": 3,
+          "bootstrap_valid": 7675,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": null
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": null
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": null
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": null
+            }
+          }
+        },
+        "definition.within_same": {
+          "group": "within_same",
+          "articles": 20,
+          "readers": 21,
+          "informative_pairs": 127,
+          "informative_cells": 31,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5287400793650795,
+              "interval95": [
+                0.29582589285714284,
+                0.7385653011204482
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5134077380952381,
+              "interval95": [
+                0.29,
+                0.7452426739926739
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5071577380952381,
+              "interval95": [
+                0.2821083257020757,
+                0.7435912698412698
+              ]
+            },
+            "article": {
+              "estimate": 0.5060119047619047,
+              "interval95": [
+                0.292900958994709,
+                0.7075063657407407
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.48899801587301595,
+              "interval95": [
+                0.26309441137566136,
+                0.7028661236424393
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.024409722222222152,
+              "interval95": [
+                -0.20468293128654974,
+                0.09166666666666667
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.022728174603174778,
+              "interval95": [
+                -0.10198014567669163,
+                0.028846153846153855
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.017013888888888773,
+              "interval95": [
+                -0.11752136752136755,
+                0.08333333333333343
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.011001984126984055,
+              "interval95": [
+                -0.2369055886243386,
+                0.20286612364243928
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.018159722222222174,
+              "interval95": [
+                -0.20324089105339102,
+                0.09940476190476188
+              ]
+            }
+          }
+        },
+        "definition.within_all": {
+          "group": "within_all",
+          "articles": 31,
+          "readers": 36,
+          "informative_pairs": 793,
+          "informative_cells": 53,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6679313876088071,
+              "interval95": [
+                0.548894625959358,
+                0.779337679516251
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8747838795016214,
+              "interval95": [
+                0.7850041992105485,
+                0.949377869897959
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8732375405359276,
+              "interval95": [
+                0.7834843674843673,
+                0.9483989467592592
+              ]
+            },
+            "article": {
+              "estimate": 0.6548668714797747,
+              "interval95": [
+                0.5305408399470899,
+                0.7640575754214729
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8698427632701826,
+              "interval95": [
+                0.7741478435672515,
+                0.9471009920634921
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8826700375490698,
+              "interval95": [
+                0.8098370690724206,
+                0.9420827059990663
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.00494111623143878,
+              "interval95": [
+                -0.019404119981326014,
+                0.011041723901098852
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.013064516129032366,
+              "interval95": [
+                -0.05076174860376244,
+                0.014855279431216803
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.21497589179040788,
+              "interval95": [
+                0.1283457099462532,
+                0.31596266892772445
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.01282727427888719,
+              "interval95": [
+                -0.06249102439107819,
+                0.034522004519400386
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.003394777265744997,
+              "interval95": [
+                -0.018915945165945348,
+                0.014089366804692926
+              ]
+            }
+          }
+        },
+        "definition.between_different": {
+          "group": "between_different",
+          "articles": 15,
+          "readers": 32,
+          "informative_pairs": 121,
+          "informative_cells": 61,
+          "bootstrap_valid": 9997,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8102777777777778,
+              "interval95": [
+                0.5277777777777778,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8102777777777778,
+              "interval95": [
+                0.5277777777777778,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.8102777777777778,
+              "interval95": [
+                0.5277777777777778,
+                1.0
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8102777777777778,
+              "interval95": [
+                0.5277777777777778,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.31027777777777776,
+              "interval95": [
+                0.02777777777777779,
+                0.5
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "definition.between_same": {
+          "group": "between_same",
+          "articles": 8,
+          "readers": 22,
+          "informative_pairs": 43,
+          "informative_cells": 22,
+          "bootstrap_valid": 9933,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        },
+        "example.within_same": {
+          "group": "within_same",
+          "articles": 28,
+          "readers": 32,
+          "informative_pairs": 168,
+          "informative_cells": 41,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5496386054421769,
+              "interval95": [
+                0.3599764905962385,
+                0.7169340513983371
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.47614087301587305,
+              "interval95": [
+                0.2816591614906832,
+                0.6611127645502645
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.42480867346938783,
+              "interval95": [
+                0.2646889991181658,
+                0.6088550347222222
+              ]
+            },
+            "article": {
+              "estimate": 0.5045847505668933,
+              "interval95": [
+                0.3239229024943311,
+                0.6703008389028127
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.4222151360544218,
+              "interval95": [
+                0.2555555555555556,
+                0.6166666666666666
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.053925736961451254,
+              "interval95": [
+                -0.16708482142857156,
+                0.09767857142857116
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.04505385487528357,
+              "interval95": [
+                -0.18519675925925924,
+                0.09421176825993548
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": -0.08236961451247155,
+              "interval95": [
+                -0.2519778025793651,
+                0.11292611489040054
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.07778486394557821,
+              "interval95": [
+                -0.2444444444444444,
+                0.11666666666666659
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.0025935374149660406,
+              "interval95": [
+                -0.088160737491878,
+                0.08377253898635476
+              ]
+            }
+          }
+        },
+        "example.within_all": {
+          "group": "within_all",
+          "articles": 32,
+          "readers": 35,
+          "informative_pairs": 733,
+          "informative_cells": 51,
+          "bootstrap_valid": 10000,
+          "scores": {
+            "lexical": {
+              "estimate": 0.6494250165343918,
+              "interval95": [
+                0.5355381211180125,
+                0.7375159065819311
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.7302645502645503,
+              "interval95": [
+                0.6464962802343158,
+                0.8220490721662596
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.6867361111111112,
+              "interval95": [
+                0.5973865575396825,
+                0.7872127925868415
+              ]
+            },
+            "article": {
+              "estimate": 0.6166947751322751,
+              "interval95": [
+                0.5217807000517598,
+                0.712098306878307
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.6580195932539682,
+              "interval95": [
+                0.5552509040578597,
+                0.7826372767857143
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.737734375,
+              "interval95": [
+                0.6358996420304233,
+                0.8439400880915637
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.07224495701058209,
+              "interval95": [
+                -0.1406668044532628,
+                0.0005209764194138884
+              ]
+            },
+            "article minus lexical": {
+              "estimate": -0.03273024140211667,
+              "interval95": [
+                -0.08472304894179887,
+                0.04651111619861605
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.041324818121693085,
+              "interval95": [
+                -0.05969843351949838,
+                0.15179900380290998
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.07971478174603186,
+              "interval95": [
+                -0.2017429602396514,
+                0.04992021762408663
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.02871651785714302,
+              "interval95": [
+                -0.09560289423740513,
+                0.03080694916855638
+              ]
+            }
+          }
+        },
+        "example.between_different": {
+          "group": "between_different",
+          "articles": 16,
+          "readers": 32,
+          "informative_pairs": 131,
+          "informative_cells": 68,
+          "bootstrap_valid": 9997,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.8279662698412699,
+              "interval95": [
+                0.5629166666666666,
+                1.0
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.8279662698412699,
+              "interval95": [
+                0.5629166666666666,
+                1.0
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.7360218253968254,
+              "interval95": [
+                0.3901455026455027,
+                0.9722222222222223
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.8279662698412699,
+              "interval95": [
+                0.5629166666666666,
+                1.0
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": -0.0919444444444445,
+              "interval95": [
+                -0.37037037037037046,
+                0.04178571428571478
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.23602182539682537,
+              "interval95": [
+                -0.10985449735449734,
+                0.4722222222222223
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": -0.0919444444444445,
+              "interval95": [
+                -0.37037037037037046,
+                0.04178571428571478
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": -0.0919444444444445,
+              "interval95": [
+                -0.37037037037037046,
+                0.04178571428571478
+              ]
+            }
+          }
+        },
+        "example.between_same": {
+          "group": "between_same",
+          "articles": 14,
+          "readers": 29,
+          "informative_pairs": 81,
+          "informative_cells": 40,
+          "bootstrap_valid": 9990,
+          "scores": {
+            "lexical": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "lexical_deft_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "article_prior": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            },
+            "familiarity_only": {
+              "estimate": 0.5,
+              "interval95": [
+                0.5,
+                0.5
+              ]
+            }
+          },
+          "differences": {
+            "article_prior minus lexical_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article minus lexical": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus article": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus familiarity_only": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            },
+            "article_prior minus lexical_deft_prior": {
+              "estimate": 0.0,
+              "interval95": [
+                0.0,
+                0.0
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

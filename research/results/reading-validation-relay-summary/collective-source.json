@@ -1,0 +1,43 @@
+{
+  "protocol_sha256": "ec91088c7c3119b28c780b0ca20fef10e1fff4f1b8fab5870bc6572127b3cb5f",
+  "source": {
+    "exclusions": {},
+    "source_receipt_sha256": "f68234172a774cf419bdeadf4723937ec190b91bea3951a3794dedb7e13955eb",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc"
+  },
+  "source_counts": {
+    "plaba": {
+      "training_rows": 476,
+      "response_coordinates": 4,
+      "objective": "count-weighted cumulative Bernoulli"
+    },
+    "clear": {
+      "training_rows": 806,
+      "response_coordinates": 1,
+      "objective": "weighted Gaussian"
+    },
+    "students": {
+      "training_rows": 914,
+      "response_coordinates": 4,
+      "objective": "count-weighted cumulative Bernoulli"
+    }
+  },
+  "source_prior_sha256": "bf28bc11bd362426b1f0c80d47e7a267a4a6891b98b911e23175a43716bd1126",
+  "features": 36,
+  "isotropic_regularizer": 0.01,
+  "eigenvalue_range": [
+    0.03641167191301893,
+    3.7485332750634424
+  ],
+  "condition_number": 102.94867217352798,
+  "source_convergence": {
+    "iterations": 220,
+    "objective": 0.3284295968246438,
+    "gradient_inf": 3.5547843623936256e-08,
+    "solver": "CONVERGENCE: RELATIVE REDUCTION OF F <= FACTR*EPSMCH"
+  },
+  "elapsed_seconds": 1.0995511670189444,
+  "code_sha256": "ad98c49995d3f6169f636d5819ae96ad10bfd0fa245f1130e13c4056d167615a",
+  "cefr_labels_used": false,
+  "heldout_target_read": false
+}

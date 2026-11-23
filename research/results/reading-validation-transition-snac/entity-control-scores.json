@@ -1,0 +1,392 @@
+{
+  "all": {
+    "movies": 39,
+    "words": 22133,
+    "positive": 413,
+    "models": {
+      "ner_pos_surprisal": {
+        "ap": {
+          "estimate": 0.6630799051581245,
+          "family_bootstrap_95_interval": [
+            0.5833119359513212,
+            0.7434036868336846
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9746060358781587,
+          "family_bootstrap_95_interval": [
+            0.958034871802253,
+            0.9868620212844186
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8765133171912833,
+          "family_bootstrap_95_interval": [
+            0.815425937698665,
+            0.9314737877452745
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.021823204419889504,
+          "family_bootstrap_95_interval": [
+            0.018724706150121197,
+            0.025205083842298616
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9801798162900572,
+          "family_bootstrap_95_interval": [
+            0.977355603635535,
+            0.9827696838821984
+          ]
+        },
+        "precision": {
+          "estimate": 0.43301435406698563,
+          "family_bootstrap_95_interval": [
+            0.383116684417174,
+            0.4859934121776485
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04666132429784063,
+        "alert_counts": {
+          "true_positive": 362,
+          "false_positive": 474,
+          "human_positive": 413,
+          "human_negative": 21720
+        }
+      },
+      "contextual_model": {
+        "ap": {
+          "estimate": 0.7999522142492617,
+          "family_bootstrap_95_interval": [
+            0.7367566293467742,
+            0.8586139257927191
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9812130170918447,
+          "family_bootstrap_95_interval": [
+            0.967016526279917,
+            0.9918228696578703
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9152542372881356,
+          "family_bootstrap_95_interval": [
+            0.8705023708306082,
+            0.9546666666666667
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.03342541436464089,
+          "family_bootstrap_95_interval": [
+            0.029868598908438997,
+            0.037435252112633495
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9731698790219253,
+          "family_bootstrap_95_interval": [
+            0.9698982011219784,
+            0.9760582836245438
+          ]
+        },
+        "precision": {
+          "estimate": 0.3423913043478261,
+          "family_bootstrap_95_interval": [
+            0.30761926351419006,
+            0.3783795732071594
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 378,
+          "false_positive": 726,
+          "human_positive": 413,
+          "human_negative": 21720
+        }
+      }
+    },
+    "contextual_minus_ner_ap": {
+      "estimate": 0.13687230909113712,
+      "family_bootstrap_95_interval": [
+        0.06837239800117462,
+        0.20956671846191666
+      ]
+    }
+  },
+  "recognized_person": {
+    "movies": 39,
+    "words": 764,
+    "positive": 198,
+    "models": {
+      "ner_pos_surprisal": {
+        "ap": {
+          "estimate": 0.8116532957460031,
+          "family_bootstrap_95_interval": [
+            0.7044497714889879,
+            0.9099308119999343
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9517078916372202,
+          "family_bootstrap_95_interval": [
+            0.9200944946016356,
+            0.9759734218503643
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9797979797979798,
+          "family_bootstrap_95_interval": [
+            0.9595959595959596,
+            0.9952612223911294
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.20141342756183744,
+          "family_bootstrap_95_interval": [
+            0.14461036506188465,
+            0.2692307692307692
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8540259076105332,
+          "family_bootstrap_95_interval": [
+            0.8078932599834795,
+            0.8920328285324793
+          ]
+        },
+        "precision": {
+          "estimate": 0.6298701298701299,
+          "family_bootstrap_95_interval": [
+            0.5516108814808159,
+            0.705685618729097
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04666132429784063,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 114,
+          "human_positive": 198,
+          "human_negative": 566
+        }
+      },
+      "contextual_model": {
+        "ap": {
+          "estimate": 0.9260038357436933,
+          "family_bootstrap_95_interval": [
+            0.8912397675527737,
+            0.9589690242702047
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9728468429881857,
+          "family_bootstrap_95_interval": [
+            0.9592085802531565,
+            0.9844042713199551
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9848484848484849,
+          "family_bootstrap_95_interval": [
+            0.9672897196261683,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.2915194346289753,
+          "family_bootstrap_95_interval": [
+            0.23356372928428337,
+            0.3615858511422254
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7936626057523718,
+          "family_bootstrap_95_interval": [
+            0.7491708686644831,
+            0.831846509285737
+          ]
+        },
+        "precision": {
+          "estimate": 0.5416666666666666,
+          "family_bootstrap_95_interval": [
+            0.47860675061813585,
+            0.60932944606414
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.2591623036649215,
+          "family_bootstrap_95_interval": [
+            0.20577593671191527,
+            0.32006360661046146
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 195,
+          "false_positive": 165,
+          "human_positive": 198,
+          "human_negative": 566
+        }
+      }
+    },
+    "contextual_minus_ner_ap": {
+      "estimate": 0.11435053999769018,
+      "family_bootstrap_95_interval": [
+        0.031011595582006727,
+        0.20614004638465433
+      ]
+    }
+  },
+  "first_person_mention": {
+    "movies": 39,
+    "words": 302,
+    "positive": 194,
+    "models": {
+      "ner_pos_surprisal": {
+        "ap": {
+          "estimate": 0.8189775126771967,
+          "family_bootstrap_95_interval": [
+            0.7139365261975394,
+            0.9146261533676169
+          ]
+        },
+        "auroc": {
+          "estimate": 0.7916666666666666,
+          "family_bootstrap_95_interval": [
+            0.7204506542917319,
+            0.868781936142055
+          ]
+        },
+        "sensitivity": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.9907407407407407,
+          "family_bootstrap_95_interval": [
+            0.97,
+            1.0
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5100870789430241,
+          "family_bootstrap_95_interval": [
+            0.41303995666465904,
+            0.6059861719570643
+          ]
+        },
+        "precision": {
+          "estimate": 0.6445182724252492,
+          "family_bootstrap_95_interval": [
+            0.5644133315383579,
+            0.7201525153950527
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04666132429784063,
+        "alert_counts": {
+          "true_positive": 194,
+          "false_positive": 107,
+          "human_positive": 194,
+          "human_negative": 108
+        }
+      },
+      "contextual_model": {
+        "ap": {
+          "estimate": 0.9396147459200804,
+          "family_bootstrap_95_interval": [
+            0.9065957908543262,
+            0.9702685158616545
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9096029018709431,
+          "family_bootstrap_95_interval": [
+            0.8714277056277057,
+            0.9446630150768318
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9744897959183674,
+            1.0
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.6203703703703703,
+          "family_bootstrap_95_interval": [
+            0.5104166666666666,
+            0.7063510266491918
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.7387395289680277,
+          "family_bootstrap_95_interval": [
+            0.6478145672402627,
+            0.8214970520423077
+          ]
+        },
+        "precision": {
+          "estimate": 0.7413127413127413,
+          "family_bootstrap_95_interval": [
+            0.6509047459893048,
+            0.8235294117647058
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.6423841059602649,
+          "family_bootstrap_95_interval": [
+            0.561593386865126,
+            0.718978102189781
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 192,
+          "false_positive": 67,
+          "human_positive": 194,
+          "human_negative": 108
+        }
+      }
+    },
+    "contextual_minus_ner_ap": {
+      "estimate": 0.12063723324288378,
+      "family_bootstrap_95_interval": [
+        0.036927360989663476,
+        0.2132110022903504
+      ]
+    }
+  }
+}

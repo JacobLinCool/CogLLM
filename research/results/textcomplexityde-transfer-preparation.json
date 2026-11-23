@@ -1,0 +1,61 @@
+{
+  "version": 1,
+  "scope": "Cross-language rank transfer to German learner judgments of isolated sentences.",
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "protocol_sha256": "88360c66db7a28ae606961a7b926c4d8f21a257ea8567a8fa3c23c62b166f08c",
+  "preparation_code_sha256": "2f82f358a542485815a83b108547125b9af26bbbb389e22b8c7697796162ae8d",
+  "author_file_sha256": {
+    "source.csv": "08881ded42eef46183b2e89845ad4b07ee128e3caa77e606a39ac059e13102f5",
+    "ratings.csv": "191da27ff56f6c1f26a9db6939f400c53ef902a5d2e0e358364ce70bc284d75c",
+    "LICENSE": "634f134375e113150bde4669d280b71f50e294353bfff7c365fa7912ed3d638e"
+  },
+  "plaba_data_sha256": {
+    "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+    "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+    "trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e"
+  },
+  "plaba_ordinal_head_sha256": "99b5c0397b0ea143ab953f590a836b264cc20b74432e952e55524889996b9858",
+  "plaba_candidate_array": "weights",
+  "ordinal_length_control_l2": 1.0,
+  "target_order": [
+    "processing_ease",
+    "perceived_understanding"
+  ],
+  "observed_difficulty_order": [
+    "complexity",
+    "understandability"
+  ],
+  "human_exposure": "Complete isolated sentence",
+  "human_measurement": "Separate aggregate mean ratings, range 1\u20137",
+  "cases": 775,
+  "article_groups": 23,
+  "excluded": {
+    "source_and_rating_text_differ": 125,
+    "controls_without_wikipedia_source": 100
+  },
+  "model_input_hashes": {
+    "stimuli.jsonl": "2260aa40ce3adf9c0227fa8f1a7eaabc997462064b621d8ef8949704880544ba",
+    "heads.npz": "5d43edc5a82804f4599c54b12a67a2abdf7dee1278fecb6cafaa45eed8806fc2",
+    "attribution.json": "36488573bcb6b93505526e0e599a9c82d37544011d6b336780620a15649b8c2a",
+    "LICENSE": "634f134375e113150bde4669d280b71f50e294353bfff7c365fa7912ed3d638e"
+  },
+  "heldout_outcomes_sha256": "18fbde951e765ad94c5f9de3a3f8c180e13789e81d4d4383b4cd4864b9d9e6c3",
+  "prespecified_evaluation": {
+    "primary_metric": "Within-article pairwise order concordance, mean across eligible articles.",
+    "polarity": "Model scores higher=easier or better understood; human scores higher=harder or less understood.",
+    "minimum_certified_sentence_coverage": 0.95,
+    "bootstrap_unit": "source article",
+    "bootstrap_draws": 10000,
+    "bootstrap_seed": 43,
+    "requirements": "Each target paired improvement 95% lower bound above zero."
+  },
+  "archive_members_sha256": {
+    "LICENSE": "634f134375e113150bde4669d280b71f50e294353bfff7c365fa7912ed3d638e",
+    "assay.json": "2294f015450fe398517ef52cadd6ae99a132bf229951ec643e01df4fa2fbe481",
+    "attribution.json": "36488573bcb6b93505526e0e599a9c82d37544011d6b336780620a15649b8c2a",
+    "heads.npz": "5d43edc5a82804f4599c54b12a67a2abdf7dee1278fecb6cafaa45eed8806fc2",
+    "stimuli.jsonl": "2260aa40ce3adf9c0227fa8f1a7eaabc997462064b621d8ef8949704880544ba"
+  },
+  "archive_sha256": "e57e3da976f3abc6a7014305ef08da2774f49036b9b9cd9997aa3b6228b54cc5"
+}

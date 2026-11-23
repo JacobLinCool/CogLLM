@@ -1,0 +1,92 @@
+{
+  "allocation_to_verified_release_s": 144.149908,
+  "beukers": {
+    "assay_sha256": "20f5e6dfbc9e5936d5ba6a5701e14a9810200d356314d94145f04030d02b6edf",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 6144,
+    "combined_route_receipt_sha256": "d36762a8a0403f274a487c34d1468a35ef0a9e6028fa7f335739a84b9f89e770",
+    "combined_route_run_id": "cogllm-cuda-checks-20261121T063246Z-544ed4db",
+    "encoded_documents": 1024,
+    "input_tokens": 93122,
+    "preflight_sha256": "69dafdd439abf372455b7a29e6159769660bfbbb3155ce3f1b3cff4be025e8f1",
+    "protocol_sha256": "8f7f4ef379f89ac79ac7a343ee4dc11b52215b9831a87f4c19d819a8cbb3837d",
+    "source_code_sha256": "e5f3f8c94c3ae42162be741fdf79173672fdfc1d197e326ccec39764900d6960",
+    "stimuli_sha256": "0e6d226c445b2146db8872ec25d6f0fc3d38f8115fdf647b4f73e8696693b17f"
+  },
+  "checks": {
+    "cpu_byte_exact_replay": true,
+    "frozen_original_logits_replay_max_error": {
+      "qwen": 0.0,
+      "surface": 0.0
+    },
+    "independent_scalar_nll_and_cdf_check": true
+  },
+  "endpoint_absent_after_stop": true,
+  "minutes_budget": 18.0,
+  "payload_bytes": 1663999,
+  "payload_members_sha256": {
+    "beukers-inputs.tar.gz": "5750d3ebe69891a52074ac13a8d22a1d8174a5b853520253aaf79fcc7cbf7c6a",
+    "bundle.json": "c7a354254ee2230c8f6982eb5b13e899b14b2ec9bc93a4500d33279cfa761eb4"
+  },
+  "payload_sha256": "2f0f2060913f311e9806a31cfcc06353af09ccaa41b1ce812f602073fcf1372e",
+  "phase": "finished",
+  "published_sha256": {
+    "causal-preflight.json": "69dafdd439abf372455b7a29e6159769660bfbbb3155ce3f1b3cff4be025e8f1",
+    "causality.json": "83ca1762489f86349f5b1f38090c1402a8728f26a1a49f3aa0001c001f2d8833",
+    "coordinates.jsonl": "92d63211b400acd75b65d4ad604fa7e25f2b4be0e2e55f71b54e767f1db58f8f",
+    "extraction-seal.json": "e81aaa01780fc5fc68373563c7bbbc75a94bb8f8cf431d39753e3b3537c26e21",
+    "forecast-seal.json": "5be18acb0422e93262ad9cdf5c3a6d477aa6855900985a1a1ce86ed65f6ff57e",
+    "forecasts.jsonl": "584b2ecb06269d95d1951159a87d004ad7e0fe256130d9ed44d5ffebc00ffa1e",
+    "panel-preflight.json": "20f5e6dfbc9e5936d5ba6a5701e14a9810200d356314d94145f04030d02b6edf",
+    "results.json": "b58a95611cbef402eb7a2c5e9d2407dde87e4b711913b18a1ab33227dfb028e2",
+    "runtime.json": "89f5c9c1a8ff54ddcf15758f3a1ae718c428d05a5a57f433fffbcb2d2790f7af",
+    "telemetry.jsonl": "31b1e2f4d0b5dbf5200cab5af3b4c019191e6e0fc9c34e1b965ca8e08895a9e2",
+    "vectors.npy": "847641bebb2f7ec93ffffbb833822a9f4795ae65c368d01408bcc9b4a39a91cd"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T064249Z-03e0837b",
+  "schema_version": 21,
+  "stages": {
+    "beukers": {
+      "archive_bytes": 1313748,
+      "archive_sha256": "be222f3cfee934cd8cb76fb52403d7de545bdc23d5d88689d0e9b64a4c925759",
+      "elapsed_s": 83.25186966700005,
+      "members": {
+        "causality.json": "83ca1762489f86349f5b1f38090c1402a8728f26a1a49f3aa0001c001f2d8833",
+        "coordinates.jsonl": "92d63211b400acd75b65d4ad604fa7e25f2b4be0e2e55f71b54e767f1db58f8f",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "e81aaa01780fc5fc68373563c7bbbc75a94bb8f8cf431d39753e3b3537c26e21",
+        "telemetry.jsonl": "31b1e2f4d0b5dbf5200cab5af3b4c019191e6e0fc9c34e1b965ca8e08895a9e2",
+        "vectors.npy": "847641bebb2f7ec93ffffbb833822a9f4795ae65c368d01408bcc9b4a39a91cd"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 661,
+      "archive_sha256": "58a5c3106200d2576c60582023d612cf5ffbd7f251c084970d6d2d175630d647",
+      "elapsed_s": 40.74740606,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "89f5c9c1a8ff54ddcf15758f3a1ae718c428d05a5a57f433fffbcb2d2790f7af"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T06:43:22.846358+00:00",
+    "allocating": "2026-11-21T06:43:16.735321+00:00",
+    "finished": "2026-11-21T06:45:46.996266+00:00",
+    "prepared": "2026-11-21T06:42:50.260608+00:00",
+    "releasing": "2026-11-21T06:45:37.970277+00:00",
+    "remote-beukers": "2026-11-21T06:44:13.737237+00:00",
+    "remote-setup": "2026-11-21T06:43:30.616253+00:00",
+    "remote-stages-finished": "2026-11-21T06:45:36.741621+00:00",
+    "retrieved-beukers": "2026-11-21T06:45:37.969851+00:00",
+    "retrieved-setup": "2026-11-21T06:44:14.569799+00:00",
+    "worker-running": "2026-11-21T06:43:30.180533+00:00"
+  },
+  "worker_sha256": "b7626a65a11159ca6f6e85d97aaf1e06a3f516c851fac7b28d9fdb27d8992cda"
+}

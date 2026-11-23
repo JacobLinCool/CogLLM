@@ -1,0 +1,43 @@
+{
+  "completed": true,
+  "phase": "complete",
+  "phase_seconds": {
+    "install": 12.643979417999617,
+    "extract": 166.34374723200017,
+    "fit": 4.57482194899967
+  },
+  "device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "input_sha256": {
+    "data/eval.jsonl": "31abe613fbab7d9c43a921770bbec0943d764ca06a896d93a00e68eaf096f0e7",
+    "data/stimuli.jsonl": "35a44eba37ea8d1d84ba8e443efecd06cc45d8bf3a80c0e9807bed2fe6c28c2f",
+    "data/train.jsonl": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+    "research/core_features/extract.py": "7f0843cab98f5bd6cd97e67a5c654f0ba4c10411436e9b2e0643854ae05ef3da",
+    "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+    "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+    "research/semantic_tracking/qasper_extract.py": "d475c3e1bd810ce4c7478cf8fbfd8232c2637fe70370e8c96cb47635beef8f56",
+    "research/semantic_tracking/qasper_fit.py": "ee67ceeda7d77d8ee1573e0747235eb7b4c9ee6070f21f9507bbdcea7b5f7527",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+  },
+  "payload_sha256": "7b59d10f7dbd69b86c8ee0f7cf2f444516d0b566c4cd4bec100fb256bff057ec",
+  "worker_sha256": "6eba7f9857492033ba557dfff6811d5ffa6dac8331051a968c1743f2fe1c7345",
+  "worker_elapsed_s": 187.00206515799982,
+  "output_sha256": {
+    "extract/causality.json": "6c21c6315110001c42684847cff0cf55ffc443df97f3db53bd3ff88eb6c5f801",
+    "extract/extraction.json": "1398a4c00cd3f9023d8d5e905adf2f0c01d48dfdf1210f47c619fa96de6f11dd",
+    "extract/telemetry.jsonl": "915e813e5bd2824ed4fae235a9905fedd29763c6975e024bc3f02f26d88ce6e6",
+    "fit/fit-manifest.json": "5fc8e08db810acd9648ae1c736a9c6857a120f48aa62702d4a77ad12d5078e71",
+    "fit/heads.npz": "b66f0ed1f8cafb52cf7a1942736fd4f9ed9a4d2172b09015d26b2efad911449f",
+    "fit/predictions.jsonl": "693d30cb1ff01fb99eae88fc485f64b51dffe0f214c38d800d0f8d019e9bf680",
+    "worker.log": "e191382ad6836aebef5add59659802d0f75da288e5b9430cb875d529818a2503"
+  }
+}

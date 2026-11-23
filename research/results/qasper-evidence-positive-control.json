@@ -1,0 +1,128 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 20261121,
+    "unit": "official test paper"
+  },
+  "holdout": {
+    "all": {
+      "cumulative_brier": {
+        "mixed_qasper_clock": 0.1553625488136671,
+        "positive_only_qasper_clock": 0.15844239941125762
+      },
+      "mean_terminal_residual": {
+        "mixed_qasper_clock": 0.2790913247915758,
+        "positive_only_qasper_clock": 0.1353898483846095
+      },
+      "mixed_minus_positive_nll_nats": {
+        "article_cluster_ci95": [
+          -0.1293965846731689,
+          0.12113774004415725
+        ],
+        "articles": 25,
+        "difference": 0.004101058290912408
+      },
+      "nll_nats": {
+        "mixed_qasper_clock": 4.3702869315213055,
+        "positive_only_qasper_clock": 4.3661858732303935
+      },
+      "papers": 25,
+      "questions": 73,
+      "references": 165
+    },
+    "event": {
+      "cumulative_brier": {
+        "mixed_qasper_clock": 0.15826869425392565,
+        "positive_only_qasper_clock": 0.15414081773408825
+      },
+      "mean_terminal_residual": {
+        "mixed_qasper_clock": 0.27238351988212384,
+        "positive_only_qasper_clock": 0.12772807857474006
+      },
+      "mixed_minus_positive_nll_nats": {
+        "article_cluster_ci95": [
+          -0.0008759228468586994,
+          0.20494569229170112
+        ],
+        "articles": 25,
+        "difference": 0.11107287962271811
+      },
+      "nll_nats": {
+        "mixed_qasper_clock": 4.674403978760364,
+        "positive_only_qasper_clock": 4.563331099137646
+      },
+      "papers": 25,
+      "questions": 69,
+      "references": 149
+    },
+    "null": {
+      "cumulative_brier": {
+        "mixed_qasper_clock": 0.1583510729380456,
+        "positive_only_qasper_clock": 0.2446296746363557
+      },
+      "mean_terminal_residual": {
+        "mixed_qasper_clock": 0.31727756811392044,
+        "positive_only_qasper_clock": 0.17412362473688617
+      },
+      "mixed_minus_positive_nll_nats": {
+        "article_cluster_ci95": [
+          -1.7810845592178677,
+          -0.6668201909627877
+        ],
+        "articles": 9,
+        "difference": -1.2295570573413197
+      },
+      "nll_nats": {
+        "mixed_qasper_clock": 1.3400669823853073,
+        "positive_only_qasper_clock": 2.569624039726627
+      },
+      "papers": 9,
+      "questions": 10,
+      "references": 16
+    }
+  },
+  "input_sha256": {
+    "articles_sha256": "23a6319c5f70bba66844b17342f7ed09132fc2fd12f498ff561f4cf2fed4887b",
+    "assay_sha256": "4f8a5358704ca67af480bbc41575567ab8d0d4417903045f6ff38b56fb0b16c9",
+    "control_code_sha256": "6ec08b31abfda50480eefe5b3393663d7915158f260906045e00126e5b4b2fb9",
+    "fit_receipt_sha256": "1f38624d2059ab8dcee585c007b0efea72bb443471174aaa46546c9da4345f4a",
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "holdout_sha256": "5b791bd32a19e9c80f0b935d9aad56fad84c1e712143e03383056ece35946909",
+    "original_scores_sha256": "fbcc5e9ffb036d6ba850b55ab67a2d1cce3682cc4dceda1eba8e4cb23459d647",
+    "predictions_sha256": "f676a47da5f3048f5f62ba04952f08dc6e79efbacdfea483e43e0c4e9d24d5ee",
+    "protocol_sha256": "ffe30e103310eb4807693ddd2e9ee922a1e507c5d2daa5a1c392c0f2326965f3",
+    "queries_sha256": "431e916291b78d4b87ec7c238f9cd8cd0ce3d654019847932bb22dbff4890e7a",
+    "scorer_sha256": "e1098d8cbcd79cc61f341da82c96401f13a9cb99749946393a06ac77eea1f539",
+    "seal_sha256": "bf4d0559fabf898f6ff3d004f6e650c4036e219e93457e094f29ce4565ce337a",
+    "training_sha256": "17db8a5bac7a930f5b150a85d14ef6135200369a7ad8155aedb847ea212ae493"
+  },
+  "mixed_estimate": [
+    -2.3216940671485764,
+    -0.09764063960421912
+  ],
+  "mixed_train": {
+    "papers": 28,
+    "questions": 76,
+    "scored_questions": 52,
+    "unusable_references_by_reason": {
+      "figure_or_table_evidence": 17,
+      "missing_text_evidence": 7,
+      "unmatched_text_paragraph": 2
+    }
+  },
+  "positive_only_train": {
+    "a": -2.3554688349863317,
+    "b": 1.1319646793909581,
+    "estimate": [
+      -2.3554688349863317,
+      0.12395477734274968
+    ],
+    "iterations": 11,
+    "papers": 24,
+    "questions": 42,
+    "references": 44,
+    "train_nll_nats": 4.442596849997034
+  },
+  "scope": "Post-hoc QASPER comparison holding domain, forecast, clock family, and official test papers fixed",
+  "training_weighting": "Equal questions with an eligible training reference, equal eligible references within question"
+}

@@ -1,0 +1,61 @@
+{
+  "study": "Xi, Gardner, and Burke, If at first you don't succeed, you should try again",
+  "paper": "https://doi.org/10.1080/20445911.2025.2607741",
+  "decision": "Independent participants, but the verified releases do not currently support a text-anchored replication of Oliver et al.'s initial response and target identity confirmation.",
+  "experiment_1": {
+    "dataset": "https://doi.org/10.17632/63vpd8xdp6.3",
+    "license": "CC BY 4.0",
+    "verified_files": {
+      "Handscored Datasheets Master.xlsx": {
+        "url": "https://data.mendeley.com/public-files/datasets/63vpd8xdp6/files/c24b92aa-ea7c-4b9f-b34f-5ba7dd1b168b/file_downloaded",
+        "bytes": 329958,
+        "sha256": "5bd7b24fadf981b3be562a41eb00aea2b67cf010c2bf8c1edceb1068462631a3"
+      },
+      "Master Study Materials.pdf": {
+        "url": "https://data.mendeley.com/public-files/datasets/63vpd8xdp6/files/ca0d6bb8-60b4-423d-b8af-5b03e5350d35/file_downloaded",
+        "bytes": 575638,
+        "sha256": "1f9326cda7f332e626db57a58f36c35e9724798f702e791f80f2102a2309e3e7"
+      },
+      "Data.zip": {
+        "url": "https://data.mendeley.com/public-files/datasets/63vpd8xdp6/files/17b72fce-ed36-4862-9951-4d7ec42a48c5/file_downloaded",
+        "bytes": 6108,
+        "sha256": "f69e4ba6018581f026a39ddc71a9cfb82f91177d004e353ea6e629d3750305df",
+        "contents": ["RawData_06282021.sav", "Syntax1.sps"]
+      }
+    },
+    "inventory": {
+      "individual_workbook_tabs": {"control": 23, "study": 23, "test": 23},
+      "item_positions_per_tab": 50,
+      "reader_item_positions": 3450,
+      "author_item_types": {"common": 25, "proper": 25},
+      "common_targets_overlapping_oliver_experiment_1": 4,
+      "target_labels_with_spelling_variant_across_tabs": 1
+    },
+    "overlap_method": "Select the modal target label per numbered workbook item with the author item type fixed. Normalize whitespace and casefold. Compare to the 44 unique target labels in Oliver et al. Experiment 1 (Borealis 75345).",
+    "stage_observations": "The workbook has initial and follow-up scored responses on the same numbered items, including correct and incorrect know and both confirmed and unconfirmed follow-up TOT. The preliminary test had no immediate target confirmation. Test participants repeated retrieval without feedback, Study participants saw the answers, and Control participants had neither additional exposure on the first day.",
+    "unresolved": "The workbook has target labels but no exact displayed question text. The eight-page materials PDF contains study forms, not the 50-prompt PowerPoint bank. These worksheet counts describe archived tabs and positions, not the paper's eligible final analysis cohort or complete follow-up counts."
+  },
+  "experiment_2": {
+    "dataset_linked_in_paper": "https://doi.org/10.17632/3fz8nxn95g.1",
+    "newer_version_with_item_level_csv": "https://doi.org/10.17632/3fz8nxn95g.2",
+    "license": "CC BY 4.0",
+    "verified_file": {
+      "name": "CleanedforMLM.csv",
+      "url": "https://data.mendeley.com/public-files/datasets/3fz8nxn95g/files/36308cb1-a8e6-47c6-af65-07fb7d77fd29/file_downloaded",
+      "bytes": 105426,
+      "sha256": "48d82fd0a975765b5d6d271a0b783f75601880028aca567584fd94ccd70cf448"
+    },
+    "inventory": {
+      "unique_reader_item_rows": 1955,
+      "unique_readers": 99,
+      "unique_item_ids": 100,
+      "item_ids_by_consistent_noun_flag": {"0": 50, "1": 50},
+      "day_2_outcome_code_counts": {"1": 181, "2": 604, "3": 1170},
+      "delay_arm_resolution_indicator_counts": {"0": 405, "1": 271, "missing": 2}
+    },
+    "verified_columns": ["PID", "Condition", "Age", "variable", "var_num", "Day2outcome", "ResInDelayBin", "Noun"],
+    "stage_observations": "The displayed question stays visible during the 30-second forced retrieval interval in the Delay arm. The target is then shown and participants answer whether it was the word they had in mind. In the Immediate arm the answer is shown without the interval. Follow-up was 48 hours later. The paper routes target confirmation after an initial TOT, and the public CSV contains the same 1,955 already-confirmed initial TOT cases reported by the paper.",
+    "unresolved": "No exact displayed prompts, target text or stimulus-to-item crosswalk in the inspected CSV. The paper locates the full lists in publisher supplements, but the supplement could not be retrieved during this audit. The positive-only initial cohort cannot estimate target-confirmation calibration or initial three-category response probabilities."
+  },
+  "disclosure": "Only source metadata, file digests, and aggregate counts are recorded. The workbook personal-information tab was excluded from the analysis."
+}

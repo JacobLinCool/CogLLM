@@ -1,0 +1,1588 @@
+{
+  "source": {
+    "revision": "153082e7d58b833d5e2f481b92fdcf9248c60d11",
+    "release": "https://github.com/SDS-NLP/PLABA-EVAL/tree/153082e7d58b833d5e2f481b92fdcf9248c60d11",
+    "license": "CC-BY-4.0",
+    "raw_sha256": {
+      "annotations.csv": "fb71cdd8b742c10da443c5de8a468605820b45a9ad1abe9cc50b1f7298f2bf29",
+      "documents.csv": "26c5d4516e8a3039f0fc2e8b645bfd25fa5edd6e77b041dff441fea609d39a94",
+      "sentences.csv": "0d0f798d7e2417f5eafa93611c1e5efb26ce67ee2da2f95c598433f491fae02e"
+    },
+    "prepared_sha256": {
+      "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+      "trials.jsonl": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e"
+    }
+  },
+  "scope": "Explicitly named difficulty in full-document, sentence-linked Round 1 feedback. The named span is retrospective; the data do not record when the reader first encountered the difficulty or resolved it.",
+  "development_reuse": "PLABA documents and readers served in project development. This free-text endpoint can supply a positive-only diagnostic for a frozen head from a different corpus.",
+  "round1_included_sentence_ratings": 968,
+  "round1_nonempty_feedback_rows": 449,
+  "round1_question_mark_feedback_rows": 49,
+  "reviewed_candidate_feedback_rows": 99,
+  "retained_feedback_rows": 89,
+  "retained_span_mentions": 110,
+  "unique_exact_document_spans": 94,
+  "unique_sentences": 70,
+  "document_variants": 27,
+  "unique_readers": 42,
+  "article_families": 19,
+  "round1_reader_connected_groups": 12,
+  "all_round_reader_connected_groups": 12,
+  "by_variant": {
+    "orig": {
+      "feedback_rows": 68,
+      "unique_sentences": 51,
+      "span_mentions": 85
+    },
+    "simp": {
+      "feedback_rows": 21,
+      "unique_sentences": 19,
+      "span_mentions": 25
+    }
+  },
+  "feedback_rows_per_family": {
+    "text_01": 14,
+    "text_02": 1,
+    "text_03": 4,
+    "text_04": 6,
+    "text_05": 3,
+    "text_06": 1,
+    "text_07": 3,
+    "text_08": 1,
+    "text_10": 6,
+    "text_11": 7,
+    "text_12": 7,
+    "text_13": 1,
+    "text_14": 9,
+    "text_15": 2,
+    "text_16": 13,
+    "text_17": 3,
+    "text_18": 1,
+    "text_19": 3,
+    "text_20": 4
+  },
+  "rejected_verbatim_candidates": [
+    {
+      "source_row": 24,
+      "candidate": "compression garment",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 150,
+      "candidate": "mmil",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 151,
+      "candidate": "mol",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 153,
+      "candidate": "predicted value",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 217,
+      "candidate": "HbA1c",
+      "in_sentence_matches": 2
+    },
+    {
+      "source_row": 224,
+      "candidate": "hollow viscera perforation",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 281,
+      "candidate": "inguinal",
+      "in_sentence_matches": 2
+    },
+    {
+      "source_row": 391,
+      "candidate": "schizophrenia",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 429,
+      "candidate": "spinal\u2014anasthesia",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 444,
+      "candidate": "mcg/mL",
+      "in_sentence_matches": 2
+    },
+    {
+      "source_row": 450,
+      "candidate": "metabolomics application",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 481,
+      "candidate": "mol",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 482,
+      "candidate": "mol",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 537,
+      "candidate": "metbolomics",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 595,
+      "candidate": "short stretch system",
+      "in_sentence_matches": 0
+    },
+    {
+      "source_row": 857,
+      "candidate": "phenotype",
+      "in_sentence_matches": 0
+    }
+  ],
+  "positives": [
+    {
+      "source_row": 1,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s1",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 97,
+          "end": 116,
+          "expression": "physiological state"
+        }
+      ]
+    },
+    {
+      "source_row": 2,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s2",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 192,
+          "end": 204,
+          "expression": "metabolomics"
+        }
+      ]
+    },
+    {
+      "source_row": 4,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s4",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 560,
+          "end": 570,
+          "expression": "endogenous"
+        },
+        {
+          "start": 574,
+          "end": 583,
+          "expression": "exogenous"
+        }
+      ]
+    },
+    {
+      "source_row": 7,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s7",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 1028,
+          "end": 1045,
+          "expression": "prospective tests"
+        }
+      ]
+    },
+    {
+      "source_row": 9,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s2",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 192,
+          "end": 204,
+          "expression": "metabolomics"
+        },
+        {
+          "start": 265,
+          "end": 283,
+          "expression": "metabolic profiles"
+        }
+      ]
+    },
+    {
+      "source_row": 11,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s4",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 560,
+          "end": 570,
+          "expression": "endogenous"
+        },
+        {
+          "start": 574,
+          "end": 583,
+          "expression": "exogenous"
+        },
+        {
+          "start": 584,
+          "end": 603,
+          "expression": "gas-phase compounds"
+        }
+      ]
+    },
+    {
+      "source_row": 14,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s7",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 1028,
+          "end": 1045,
+          "expression": "prospective tests"
+        }
+      ]
+    },
+    {
+      "source_row": 16,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s2",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 192,
+          "end": 204,
+          "expression": "metabolomics"
+        }
+      ]
+    },
+    {
+      "source_row": 18,
+      "document_id": "text_01",
+      "sentence_id": "text_01__s4",
+      "family_id": "text_01",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 560,
+          "end": 570,
+          "expression": "endogenous"
+        },
+        {
+          "start": 574,
+          "end": 583,
+          "expression": "exogenous"
+        }
+      ]
+    },
+    {
+      "source_row": 22,
+      "document_id": "text_04",
+      "sentence_id": "text_04__s1",
+      "family_id": "text_04",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_04",
+      "spans": [
+        {
+          "start": 44,
+          "end": 54,
+          "expression": "phlebology"
+        }
+      ]
+    },
+    {
+      "source_row": 25,
+      "document_id": "text_04",
+      "sentence_id": "text_04__s4",
+      "family_id": "text_04",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_04",
+      "spans": [
+        {
+          "start": 397,
+          "end": 411,
+          "expression": "high stiffness"
+        },
+        {
+          "start": 473,
+          "end": 486,
+          "expression": "low stiffness"
+        }
+      ]
+    },
+    {
+      "source_row": 30,
+      "document_id": "text_04",
+      "sentence_id": "text_04__s9",
+      "family_id": "text_04",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_04",
+      "spans": [
+        {
+          "start": 894,
+          "end": 915,
+          "expression": "Long stretch bandages"
+        },
+        {
+          "start": 920,
+          "end": 940,
+          "expression": "compression garments"
+        }
+      ]
+    },
+    {
+      "source_row": 46,
+      "document_id": "text_03",
+      "sentence_id": "text_03__s2",
+      "family_id": "text_03",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 263,
+          "end": 271,
+          "expression": "cosmesis"
+        }
+      ]
+    },
+    {
+      "source_row": 69,
+      "document_id": "text_03",
+      "sentence_id": "text_03__s1",
+      "family_id": "text_03",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 63,
+          "end": 74,
+          "expression": "moist wound"
+        }
+      ]
+    },
+    {
+      "source_row": 70,
+      "document_id": "text_03",
+      "sentence_id": "text_03__s2",
+      "family_id": "text_03",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 263,
+          "end": 271,
+          "expression": "cosmesis"
+        }
+      ]
+    },
+    {
+      "source_row": 76,
+      "document_id": "text_10",
+      "sentence_id": "text_10__s1",
+      "family_id": "text_10",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 26,
+          "end": 34,
+          "expression": "ureteric"
+        }
+      ]
+    },
+    {
+      "source_row": 77,
+      "document_id": "text_10",
+      "sentence_id": "text_10__s2",
+      "family_id": "text_10",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 335,
+          "end": 363,
+          "expression": "large distal ureteric stones"
+        }
+      ]
+    },
+    {
+      "source_row": 78,
+      "document_id": "text_10",
+      "sentence_id": "text_10__s3",
+      "family_id": "text_10",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 369,
+          "end": 377,
+          "expression": "mainstay"
+        }
+      ]
+    },
+    {
+      "source_row": 81,
+      "document_id": "text_10",
+      "sentence_id": "text_10__s6",
+      "family_id": "text_10",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 808,
+          "end": 821,
+          "expression": "Dissemination"
+        }
+      ]
+    },
+    {
+      "source_row": 89,
+      "document_id": "text_02",
+      "sentence_id": "text_02__s1",
+      "family_id": "text_02",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 71,
+          "end": 81,
+          "expression": "oropharynx"
+        },
+        {
+          "start": 85,
+          "end": 96,
+          "expression": "nasopharynx"
+        },
+        {
+          "start": 131,
+          "end": 150,
+          "expression": "otorhinolaryngology"
+        }
+      ]
+    },
+    {
+      "source_row": 126,
+      "document_id": "text_05",
+      "sentence_id": "text_05__s7",
+      "family_id": "text_05",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 674,
+          "end": 690,
+          "expression": "VMAT2 inhibitors"
+        }
+      ]
+    },
+    {
+      "source_row": 151,
+      "document_id": "text_07",
+      "sentence_id": "text_07__s2",
+      "family_id": "text_07",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_07",
+      "spans": [
+        {
+          "start": 331,
+          "end": 345,
+          "expression": "plasma glucose"
+        }
+      ]
+    },
+    {
+      "source_row": 153,
+      "document_id": "text_07",
+      "sentence_id": "text_07__s4",
+      "family_id": "text_07",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_07",
+      "spans": [
+        {
+          "start": 641,
+          "end": 650,
+          "expression": "phenotype"
+        }
+      ]
+    },
+    {
+      "source_row": 186,
+      "document_id": "text_03",
+      "sentence_id": "text_03__s2",
+      "family_id": "text_03",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 263,
+          "end": 271,
+          "expression": "cosmesis"
+        }
+      ]
+    },
+    {
+      "source_row": 208,
+      "document_id": "text_06",
+      "sentence_id": "text_06__s2",
+      "family_id": "text_06",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 365,
+          "end": 371,
+          "expression": "atopic"
+        }
+      ]
+    },
+    {
+      "source_row": 217,
+      "document_id": "text_17",
+      "sentence_id": "text_17__s7",
+      "family_id": "text_17",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 756,
+          "end": 759,
+          "expression": "FPG"
+        },
+        {
+          "start": 763,
+          "end": 767,
+          "expression": "OGTT"
+        }
+      ]
+    },
+    {
+      "source_row": 224,
+      "document_id": "text_19",
+      "sentence_id": "text_19__s1",
+      "family_id": "text_19",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 39,
+          "end": 43,
+          "expression": "TAWH"
+        }
+      ]
+    },
+    {
+      "source_row": 234,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s5",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 641,
+          "end": 652,
+          "expression": "pole cortex"
+        }
+      ]
+    },
+    {
+      "source_row": 246,
+      "document_id": "text_15",
+      "sentence_id": "text_15__s1",
+      "family_id": "text_15",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_15",
+      "spans": [
+        {
+          "start": 95,
+          "end": 112,
+          "expression": "orofacial muscles"
+        }
+      ]
+    },
+    {
+      "source_row": 258,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s1",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 46,
+          "end": 61,
+          "expression": "schizoaffective"
+        }
+      ]
+    },
+    {
+      "source_row": 270,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s2",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 206,
+          "end": 216,
+          "expression": "remarkable"
+        }
+      ]
+    },
+    {
+      "source_row": 282,
+      "document_id": "text_12",
+      "sentence_id": "text_12__s2",
+      "family_id": "text_12",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 164,
+          "end": 171,
+          "expression": "bimodal"
+        }
+      ]
+    },
+    {
+      "source_row": 283,
+      "document_id": "text_12",
+      "sentence_id": "text_12__s3",
+      "family_id": "text_12",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 314,
+          "end": 329,
+          "expression": "inguinal region"
+        }
+      ]
+    },
+    {
+      "source_row": 286,
+      "document_id": "text_12",
+      "sentence_id": "text_12__s6",
+      "family_id": "text_12",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 728,
+          "end": 750,
+          "expression": "open anterior approach"
+        }
+      ]
+    },
+    {
+      "source_row": 288,
+      "document_id": "text_12",
+      "sentence_id": "text_12__s8",
+      "family_id": "text_12",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 1036,
+          "end": 1048,
+          "expression": "epidemiology"
+        },
+        {
+          "start": 1053,
+          "end": 1061,
+          "expression": "etiology"
+        }
+      ]
+    },
+    {
+      "source_row": 300,
+      "document_id": "text_15",
+      "sentence_id": "text_15__s1",
+      "family_id": "text_15",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_15",
+      "spans": [
+        {
+          "start": 95,
+          "end": 112,
+          "expression": "orofacial muscles"
+        }
+      ]
+    },
+    {
+      "source_row": 316,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s4",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 302,
+          "end": 320,
+          "expression": "status epilepticus"
+        }
+      ]
+    },
+    {
+      "source_row": 319,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s7",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 688,
+          "end": 702,
+          "expression": "norepinephrine"
+        }
+      ]
+    },
+    {
+      "source_row": 321,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s9",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 818,
+          "end": 839,
+          "expression": "epileptiform activity"
+        }
+      ]
+    },
+    {
+      "source_row": 366,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s4",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 541,
+          "end": 553,
+          "expression": "hydatid cyst"
+        }
+      ]
+    },
+    {
+      "source_row": 367,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s5",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 617,
+          "end": 627,
+          "expression": "septations"
+        },
+        {
+          "start": 635,
+          "end": 652,
+          "expression": "lower pole cortex"
+        }
+      ]
+    },
+    {
+      "source_row": 368,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s6",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 686,
+          "end": 700,
+          "expression": "pericystectomy"
+        }
+      ]
+    },
+    {
+      "source_row": 387,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s4",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 541,
+          "end": 548,
+          "expression": "hydatid"
+        }
+      ]
+    },
+    {
+      "source_row": 388,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s5",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 617,
+          "end": 627,
+          "expression": "septations"
+        }
+      ]
+    },
+    {
+      "source_row": 389,
+      "document_id": "text_11",
+      "sentence_id": "text_11__s6",
+      "family_id": "text_11",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 673,
+          "end": 685,
+          "expression": "Laparoscopic"
+        }
+      ]
+    },
+    {
+      "source_row": 391,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s1",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 46,
+          "end": 70,
+          "expression": "schizoaffective disorder"
+        }
+      ]
+    },
+    {
+      "source_row": 393,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s11",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 1144,
+          "end": 1173,
+          "expression": "confound the clinical picture"
+        }
+      ]
+    },
+    {
+      "source_row": 395,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s4",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 348,
+          "end": 357,
+          "expression": "bilateral"
+        },
+        {
+          "start": 358,
+          "end": 373,
+          "expression": "lower extremity"
+        },
+        {
+          "start": 374,
+          "end": 379,
+          "expression": "edema"
+        }
+      ]
+    },
+    {
+      "source_row": 397,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s6",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 473,
+          "end": 489,
+          "expression": "3+ pitting edema"
+        }
+      ]
+    },
+    {
+      "source_row": 398,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s7",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 585,
+          "end": 609,
+          "expression": "lower extremity swelling"
+        }
+      ]
+    },
+    {
+      "source_row": 401,
+      "document_id": "text_14",
+      "sentence_id": "text_14__s10",
+      "family_id": "text_14",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 975,
+          "end": 994,
+          "expression": "diabetic neuropathy"
+        }
+      ]
+    },
+    {
+      "source_row": 403,
+      "document_id": "text_19",
+      "sentence_id": "text_19__s2",
+      "family_id": "text_19",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 208,
+          "end": 222,
+          "expression": "hollow viscera"
+        },
+        {
+          "start": 302,
+          "end": 323,
+          "expression": "sepsis source control"
+        }
+      ]
+    },
+    {
+      "source_row": 405,
+      "document_id": "text_19",
+      "sentence_id": "text_19__s4",
+      "family_id": "text_19",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_03",
+      "spans": [
+        {
+          "start": 759,
+          "end": 775,
+          "expression": "intraoperatively"
+        }
+      ]
+    },
+    {
+      "source_row": 409,
+      "document_id": "text_17",
+      "sentence_id": "text_17__s2",
+      "family_id": "text_17",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 206,
+          "end": 222,
+          "expression": "hemoglobin A(1c)"
+        }
+      ]
+    },
+    {
+      "source_row": 410,
+      "document_id": "text_17",
+      "sentence_id": "text_17__s3",
+      "family_id": "text_17",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_11",
+      "spans": [
+        {
+          "start": 393,
+          "end": 415,
+          "expression": "glucose tolerance test"
+        }
+      ]
+    },
+    {
+      "source_row": 417,
+      "document_id": "text_20",
+      "sentence_id": "text_20__s2",
+      "family_id": "text_20",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_20",
+      "spans": [
+        {
+          "start": 130,
+          "end": 140,
+          "expression": "aneuploidy"
+        }
+      ]
+    },
+    {
+      "source_row": 424,
+      "document_id": "text_20",
+      "sentence_id": "text_20__s9",
+      "family_id": "text_20",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_20",
+      "spans": [
+        {
+          "start": 1145,
+          "end": 1171,
+          "expression": "Turner syndrome phenotypes"
+        }
+      ]
+    },
+    {
+      "source_row": 427,
+      "document_id": "text_12",
+      "sentence_id": "text_12__s3",
+      "family_id": "text_12",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 314,
+          "end": 329,
+          "expression": "inguinal region"
+        }
+      ]
+    },
+    {
+      "source_row": 432,
+      "document_id": "text_12",
+      "sentence_id": "text_12__s8",
+      "family_id": "text_12",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 1053,
+          "end": 1061,
+          "expression": "etiology"
+        }
+      ]
+    },
+    {
+      "source_row": 434,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s2",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 221,
+          "end": 232,
+          "expression": "tachycardia"
+        }
+      ]
+    },
+    {
+      "source_row": 435,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s11",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 1028,
+          "end": 1037,
+          "expression": "bupropion"
+        }
+      ]
+    },
+    {
+      "source_row": 436,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s12",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 1099,
+          "end": 1108,
+          "expression": "extubated"
+        }
+      ]
+    },
+    {
+      "source_row": 437,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s3",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 252,
+          "end": 261,
+          "expression": "intubated"
+        }
+      ]
+    },
+    {
+      "source_row": 438,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s4",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 302,
+          "end": 320,
+          "expression": "status epilepticus"
+        },
+        {
+          "start": 400,
+          "end": 408,
+          "expression": "titrated"
+        }
+      ]
+    },
+    {
+      "source_row": 439,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s5",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 512,
+          "end": 530,
+          "expression": "receiving hospital"
+        }
+      ]
+    },
+    {
+      "source_row": 440,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s6",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 583,
+          "end": 586,
+          "expression": "QRS"
+        },
+        {
+          "start": 620,
+          "end": 623,
+          "expression": "mEq"
+        }
+      ]
+    },
+    {
+      "source_row": 442,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s8",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 790,
+          "end": 802,
+          "expression": "dysrhythmias"
+        }
+      ]
+    },
+    {
+      "source_row": 444,
+      "document_id": "text_16",
+      "sentence_id": "text_16__s10",
+      "family_id": "text_16",
+      "variant": "orig",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 924,
+          "end": 941,
+          "expression": "serum lamotrigine"
+        }
+      ]
+    },
+    {
+      "source_row": 447,
+      "document_id": "text_01_simp",
+      "sentence_id": "text_01_simp__s3",
+      "family_id": "text_01",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 371,
+          "end": 383,
+          "expression": "metabolomics"
+        }
+      ]
+    },
+    {
+      "source_row": 448,
+      "document_id": "text_01_simp",
+      "sentence_id": "text_01_simp__s4",
+      "family_id": "text_01",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 472,
+          "end": 484,
+          "expression": "Metabolomics"
+        }
+      ]
+    },
+    {
+      "source_row": 455,
+      "document_id": "text_01_simp",
+      "sentence_id": "text_01_simp__s11",
+      "family_id": "text_01",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 1091,
+          "end": 1101,
+          "expression": "biomarkers"
+        }
+      ]
+    },
+    {
+      "source_row": 470,
+      "document_id": "text_01_simp",
+      "sentence_id": "text_01_simp__s3",
+      "family_id": "text_01",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 371,
+          "end": 383,
+          "expression": "metabolomics"
+        }
+      ]
+    },
+    {
+      "source_row": 471,
+      "document_id": "text_01_simp",
+      "sentence_id": "text_01_simp__s4",
+      "family_id": "text_01",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_01",
+      "spans": [
+        {
+          "start": 472,
+          "end": 484,
+          "expression": "Metabolomics"
+        },
+        {
+          "start": 501,
+          "end": 512,
+          "expression": "metabolites"
+        }
+      ]
+    },
+    {
+      "source_row": 484,
+      "document_id": "text_07_simp",
+      "sentence_id": "text_07_simp__s4",
+      "family_id": "text_07",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_07",
+      "spans": [
+        {
+          "start": 730,
+          "end": 746,
+          "expression": "predictive value"
+        }
+      ]
+    },
+    {
+      "source_row": 520,
+      "document_id": "text_10_simp",
+      "sentence_id": "text_10_simp__s3",
+      "family_id": "text_10",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 418,
+          "end": 449,
+          "expression": "medical expulsive therapy (MET)"
+        }
+      ]
+    },
+    {
+      "source_row": 521,
+      "document_id": "text_10_simp",
+      "sentence_id": "text_10_simp__s4",
+      "family_id": "text_10",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 564,
+          "end": 585,
+          "expression": "shockwave lithotripsy"
+        },
+        {
+          "start": 687,
+          "end": 699,
+          "expression": "ureteroscopy"
+        }
+      ]
+    },
+    {
+      "source_row": 566,
+      "document_id": "text_08_simp",
+      "sentence_id": "text_08_simp__s2",
+      "family_id": "text_08",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_08",
+      "spans": [
+        {
+          "start": 148,
+          "end": 177,
+          "expression": "gene-environment interactions"
+        }
+      ]
+    },
+    {
+      "source_row": 591,
+      "document_id": "text_04_simp",
+      "sentence_id": "text_04_simp__s2",
+      "family_id": "text_04",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_04",
+      "spans": [
+        {
+          "start": 166,
+          "end": 186,
+          "expression": "intravenous pressure"
+        }
+      ]
+    },
+    {
+      "source_row": 593,
+      "document_id": "text_04_simp",
+      "sentence_id": "text_04_simp__s4",
+      "family_id": "text_04",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_04",
+      "spans": [
+        {
+          "start": 322,
+          "end": 352,
+          "expression": "ambulatory venous hypertension"
+        }
+      ]
+    },
+    {
+      "source_row": 600,
+      "document_id": "text_04_simp",
+      "sentence_id": "text_04_simp__s11",
+      "family_id": "text_04",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_04",
+      "spans": [
+        {
+          "start": 911,
+          "end": 934,
+          "expression": "higher optimal pressure"
+        }
+      ]
+    },
+    {
+      "source_row": 684,
+      "document_id": "text_05_simp",
+      "sentence_id": "text_05_simp__s1",
+      "family_id": "text_05",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 67,
+          "end": 75,
+          "expression": "dopamine"
+        }
+      ]
+    },
+    {
+      "source_row": 687,
+      "document_id": "text_05_simp",
+      "sentence_id": "text_05_simp__s4",
+      "family_id": "text_05",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_02",
+      "spans": [
+        {
+          "start": 400,
+          "end": 403,
+          "expression": "FDA"
+        },
+        {
+          "start": 413,
+          "end": 459,
+          "expression": "vesicular monoamine transporter type 2 (VMAT2)"
+        }
+      ]
+    },
+    {
+      "source_row": 736,
+      "document_id": "text_20_simp",
+      "sentence_id": "text_20_simp__s1",
+      "family_id": "text_20",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_20",
+      "spans": [
+        {
+          "start": 21,
+          "end": 32,
+          "expression": "chromosomal"
+        }
+      ]
+    },
+    {
+      "source_row": 738,
+      "document_id": "text_20_simp",
+      "sentence_id": "text_20_simp__s3",
+      "family_id": "text_20",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_20",
+      "spans": [
+        {
+          "start": 150,
+          "end": 160,
+          "expression": "aneuploidy"
+        },
+        {
+          "start": 272,
+          "end": 282,
+          "expression": "phenotypes"
+        }
+      ]
+    },
+    {
+      "source_row": 749,
+      "document_id": "text_13_simp",
+      "sentence_id": "text_13_simp__s2",
+      "family_id": "text_13",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_13",
+      "spans": [
+        {
+          "start": 177,
+          "end": 243,
+          "expression": "systemic (full-body) response to inflammation (infection-fighting)"
+        }
+      ]
+    },
+    {
+      "source_row": 838,
+      "document_id": "text_14_simp",
+      "sentence_id": "text_14_simp__s3",
+      "family_id": "text_14",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 391,
+          "end": 402,
+          "expression": "hydrocodone"
+        }
+      ]
+    },
+    {
+      "source_row": 875,
+      "document_id": "text_18_simp",
+      "sentence_id": "text_18_simp__s3",
+      "family_id": "text_18",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 474,
+          "end": 508,
+          "expression": "out-of-hours specialist cardiology"
+        }
+      ]
+    },
+    {
+      "source_row": 878,
+      "document_id": "text_14_simp",
+      "sentence_id": "text_14_simp__s1",
+      "family_id": "text_14",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_14",
+      "spans": [
+        {
+          "start": 48,
+          "end": 63,
+          "expression": "schizoaffective"
+        }
+      ]
+    },
+    {
+      "source_row": 902,
+      "document_id": "text_12_simp",
+      "sentence_id": "text_12_simp__s5",
+      "family_id": "text_12",
+      "variant": "simp",
+      "round1_reader_connected_group": "text_12",
+      "spans": [
+        {
+          "start": 404,
+          "end": 412,
+          "expression": "Inguinal"
+        }
+      ]
+    }
+  ]
+}

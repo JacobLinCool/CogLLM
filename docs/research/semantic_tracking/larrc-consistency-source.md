@@ -1,0 +1,38 @@
+# End-of-paper consistency judgment by Currie et al
+
+Currie et al. (2021) had sixth-grade students read eight English sentences one at a time, answering only after completing the passage whether the text made sense. Publicly available data can be used to evaluate the model's **readout** of **end-of-text explicit coherence judgment**, covering narrative texts and animal-themed expository texts. The position of the punctuation mark containing the contradictory sentence can be specified in the stimulus material. The human judgment point is at the end of the full text. sentences first noticed during the same reading session were not observed. [Original Measures and procedure, Table 2](https://pmc.ncbi.nlm.nih.gov/articles/PMC7986958/) · [Author archive](https://osf.io/sj28g/)
+
+## Open data and reuse
+
+The author's OSF data and stimulus project are all listed under CC BY 4.0. The following hash is used to recompute the downloaded files. Licensing comes from the author's archive, while the journal article itself uses CC BY-NC-ND 4.0. [Stimulus License Field](https://api.osf.io/v2/nodes/vp45x/) · [Data License Field](https://api.osf.io/v2/nodes/g9pyc/) · [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/) · [Journal Rights Statement](https://pmc.ncbi.nlm.nih.gov/articles/PMC7986958/)
+
+| Author Profile | Byte | SHA-256 |
+| --- | ---: | --- |
+| [CM Narrative Materials_OSF.docx](https://osf.io/download/b73ks/) | 41,397 | `1c62b97572d0a671fd0f7780815328782553107b894bb356b07f7cac39400082` |
+| [CM Expository Materials_OSF.docx](https://osf.io/download/3pswr/) | 53,480 | `27b085c6be95d165484a002f1b4b13ddd6322d104535dcb349406305fb3fae48` |
+| [cm.data.and.TOWRE.csv](https://osf.io/download/swjdf/) | 510,504 | `9f649f59e1eb517a562eb398979bb185d0cba81415da87ba8602682bddda2f85` |
+| [Variable descriptions for CM paper_OSF.xlsx](https://osf.io/download/tq36h/) | 10,877 | `c76c2cadf4d46eeb4b2b22d64ec242987dcb2cb1f6eb3e1447f1237155bef204` |
+
+## Stimulus–response alignment
+
+- Each genre comprises 12 sets of contradictory texts. DOCX entries are numbered from `1` to `12`, with each set listing eight sentences under the `NEAR` and `FAR` headers. The `Text_Type` in CSV corresponds to the genre, `Test` to the set number, and `Condition` to the version. The `text` represents the concatenation value of `Test` and `Text_Type`. Both versions share the same set number. Each subject views only one version per set, and the difference between the two versions is estimated by reports from different subjects. [Stimulus File](https://osf.io/vp45x/) · [Alignment Column Definitions](https://osf.io/download/tq36h/) · [Original Counterbalancing](https://pmc.ncbi.nlm.nih.gov/articles/PMC7986958/)
+- Each of the two genres has six consistent texts, CSV numbered `13` to `18`, conditioned by `consistent`. DOCX lists the six texts sequentially in their respective `Consistent items` sections. The expository texts are renumbered from `1` to `6`, while the narrative texts list only titles. These 12 correspondences can be established according to the author file's ordering. The public archive lacks an E-Prime item index that can independently verify the ordering. Using consistent texts for item-by-item scoring requires disclosing this alignment assumption. [Author Stimulus File](https://osf.io/vp45x/) · [Author Data Sheet](https://osf.io/g9pyc/)
+- After removing blank paragraphs, section headers, exercise items, Q&A columns, and one author's editorial note, 60 distinct eight-sentence versions were obtained. The `Birds of paradise` `FAR` version marks sentence order with handwritten numbers at line start, while the remaining list is formatted as DOCX. When comparing, the eight numbers of the former were removed. Contradictory versions underline the two conflicting sentences. The `Hannah` `NEAR` version additionally uses underlined formatting in blank spaces. only marks with text are retained. [Narrative DOCX](https://osf.io/download/b73ks/) · [Explanatory DOCX](https://osf.io/download/3pswr/)
+- Among 24 near-far pairs, 23 pairs shared the same target sentence, while the two target sentences of pair `Hannah` differed only by a comma. After normalizing case, apostrophes, and whitespace, a set comparison of full sentences revealed that 20 pairs differed solely in order. The remaining four pairs contained differences in punctuation, wording, or reference expression. When testing only for sentence-order effects, these 20 pairs could be pre-selected via textual rules. Applying the same normalization procedure, searching for the 294 distinct full sentences of this dataset within 372 Frick inference texts yielded zero overlapping full sentences. [Near-far stimuli](https://osf.io/vp45x/) · [Frick material source](frick-consistency-source.md)
+
+## Human results can be evaluated
+
+The CSV contains 6,372 valid binary reports, 179 readers, and 36 original stimuli. `(Subject, Text_Type, Test)` is unique in the full set. 175 readers completed both genres across all 36 items, while four readers completed only one genre across 18 items. A total of 178 individuals completed the narrative condition and 176 completed the expository condition. Each version yielded between 87 and 178 reports. All 60 versions contained both correct and incorrect responses, and all 179 readers exhibited both correct and incorrect responses. [per-trial data](https://osf.io/download/swjdf/) · [Original Measures and procedure](https://pmc.ncbi.nlm.nih.gov/articles/PMC7986958/)
+
+`Question.ACC` The endpoint consistency check determines whether the answer is correct. For near-far contradictory texts, a correct answer indicates the report contains contradictions. For consistent texts, a correct answer indicates the report is consistent. If the readout target is set to "report contradiction," the consistency condition should be `1 − Question.ACC`, and the contradiction condition should directly be `Question.ACC`. The table below shows the recalculated correct answers and total scoreable items. [Field Definitions](https://osf.io/download/tq36h/) · [Original Measures and procedure](https://pmc.ncbi.nlm.nih.gov/articles/PMC7986958/)
+
+| Style | Consistency | Contradictions are closer. | Contradictory distance |
+| --- | ---: | ---: | ---: |
+| Narrative text | 910 / 1,068 | 696 / 1,068 | 693 / 1,068 |
+| Expository text | 867 / 1,056 | 423 / 1,056 | 431 / 1,056 |
+
+This dataset can be independently evaluated for end-of-report responses, including differences after reordering sentences within the same passage. When splitting the data, both versions are grouped by topic. The consistent condition differs from the contradictory condition. therefore, this design difference must be preserved during comparative analysis. Frick's "read target sentence immediately at `D`" includes an additional observation time point. For instance, if a student feels the target sentence is odd at the moment of reading but later judges the passage as coherent, only the end-of-report response is retained. [Currie et al.'s presentation and question order](https://pmc.ncbi.nlm.nih.gov/articles/PMC7986958/) · [Frick's sentence-by-sentence response process](frick-consistency-source.md)
+
+The aforementioned four files total 616,258 bytes. Source alignment can be performed on CPU. If subsequent reads extract one 2,048-dimensional FP32 vector from the end of each of the 60 versions, the array body for 480 positions is approximately 3.75 MiB. This is a capacity estimate. the current work only verifies text against observations, with no model experimental results yet.
+
+[Original research record](../../../research/semantic_tracking/larrc-consistency-source.md)

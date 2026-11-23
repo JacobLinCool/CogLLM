@@ -1,0 +1,411 @@
+{
+  "plaba": {
+    "source": {
+      "name": "PLABA-EVAL",
+      "role": "development",
+      "revision": "153082e7d58b833d5e2f481b92fdcf9248c60d11",
+      "source": "https://github.com/SDS-NLP/PLABA-EVAL/tree/153082e7d58b833d5e2f481b92fdcf9248c60d11",
+      "license": "CC-BY-4.0",
+      "download_base": "https://raw.githubusercontent.com/SDS-NLP/PLABA-EVAL/153082e7d58b833d5e2f481b92fdcf9248c60d11/dataset/",
+      "files": {
+        "annotations.csv": {
+          "path": "annotations.csv",
+          "sha256": "fb71cdd8b742c10da443c5de8a468605820b45a9ad1abe9cc50b1f7298f2bf29"
+        },
+        "document_ratings.csv": {
+          "path": "document_ratings.csv",
+          "sha256": "88e1e859e5984327eab892c9deaac3826c1ec34fe6d5a145ef2a1dc4d44deaed"
+        },
+        "documents.csv": {
+          "path": "documents.csv",
+          "sha256": "26c5d4516e8a3039f0fc2e8b645bfd25fa5edd6e77b041dff441fea609d39a94"
+        },
+        "mcq_items.csv": {
+          "path": "mcq_items.csv",
+          "sha256": "c12f2773edb6f85e91e9083f4a030f1e361aecf647a51ae002410104611b2bc7"
+        },
+        "mcq_responses.csv": {
+          "path": "mcq_responses.csv",
+          "sha256": "92b6e16bb6be332ee1526d9579e19d776df10aa8a1bb881ae6980a31c07860c7"
+        },
+        "sentences.csv": {
+          "path": "sentences.csv",
+          "sha256": "0d0f798d7e2417f5eafa93611c1e5efb26ce67ee2da2f95c598433f491fae02e"
+        }
+      }
+    },
+    "stimuli": 78,
+    "trials": 2995,
+    "trials_by_task": {
+      "document_rating": 234,
+      "open_book_mcq": 935,
+      "sentence_rating": 1826
+    },
+    "metrics": {
+      "article_pairs": 39,
+      "document_variants": 78,
+      "sentences": 609,
+      "sentence_ratings": 1826,
+      "document_ratings": 234,
+      "structured_feedback": 858,
+      "structured_with_issue": 452,
+      "structured_no_issue": 406,
+      "free_text_feedback": 968,
+      "mcq_items": 158,
+      "mcq_items_with_correct_option_a": 153,
+      "mcq_responses": 935,
+      "mcq_correct_responses": 800,
+      "mcq_with_canonical_evidence": 932,
+      "mcq_with_one_canonical_evidence_segment": 806,
+      "mcq_with_response_indexed_sentence": 932,
+      "mcq_joinable_response_index_outside_canonical_evidence": 213,
+      "mcq_response_index_outside_canonical_evidence": 216,
+      "mcq_selected_text_differs_from_item_option": 11,
+      "paired_sentence_alignments": 265,
+      "paired_mean_understanding_difference_simplified_minus_original": 0.7229559748427673
+    },
+    "splits": {
+      "purpose": "development_cross_validation",
+      "grouping": "reader_connected_stimulus_families",
+      "group_count": 25,
+      "reader_ids_spanning_folds": 0,
+      "folds": [
+        {
+          "fold": 0,
+          "families": [
+            "text_01",
+            "text_08",
+            "text_15",
+            "text_23",
+            "text_26",
+            "text_34",
+            "text_35"
+          ],
+          "trials": 567
+        },
+        {
+          "fold": 1,
+          "families": [
+            "text_02",
+            "text_05",
+            "text_09",
+            "text_10",
+            "text_20",
+            "text_36",
+            "text_37",
+            "text_38"
+          ],
+          "trials": 621
+        },
+        {
+          "fold": 2,
+          "families": [
+            "text_14",
+            "text_21",
+            "text_24",
+            "text_27",
+            "text_28",
+            "text_30",
+            "text_31",
+            "text_32"
+          ],
+          "trials": 606
+        },
+        {
+          "fold": 3,
+          "families": [
+            "text_06",
+            "text_12",
+            "text_13",
+            "text_16",
+            "text_18",
+            "text_22",
+            "text_25",
+            "text_29"
+          ],
+          "trials": 592
+        },
+        {
+          "fold": 4,
+          "families": [
+            "text_03",
+            "text_04",
+            "text_07",
+            "text_11",
+            "text_17",
+            "text_19",
+            "text_33",
+            "text_39"
+          ],
+          "trials": 609
+        }
+      ]
+    },
+    "artifacts": {
+      "splits.json": {
+        "bytes": 1303,
+        "sha256": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420"
+      },
+      "stimuli.jsonl": {
+        "bytes": 126618,
+        "sha256": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb"
+      },
+      "trials.jsonl": {
+        "bytes": 3268054,
+        "sha256": "464534943263d245ef486d495edc28eba6b7589ff106d551cbb6c3eef7b6f87e"
+      }
+    }
+  },
+  "zhan": {
+    "source": {
+      "name": "Zhan, Levy & Kehler, Experiment 1",
+      "role": "development_diagnostic",
+      "revision": "OSF:8zk57",
+      "source": "https://osf.io/t87my/",
+      "license": "CC-BY-4.0",
+      "download_base": "https://osf.io/download/",
+      "files": {
+        "experiment-1.csv": {
+          "path": "8zk57/",
+          "sha256": "cd04e554aea959fd075564ea432a6ccf3bbd6e88bf2fbdabc3f8abeb6b3ff4ef"
+        }
+      }
+    },
+    "stimuli": 72,
+    "trials": 1651,
+    "trials_by_task": {
+      "explanation_continuation": 1651
+    },
+    "metrics": {
+      "n_stimuli": 72,
+      "n_families": 36,
+      "n_trials": 1651,
+      "n_participants": 50,
+      "trials_by_prompt": {
+        "free": 780,
+        "pronoun": 871
+      },
+      "fig1_free_prompt": {
+        "IC-1": {
+          "n_readers": 50,
+          "n_trials": 350,
+          "np1_count": 277,
+          "reader_equal_rate": 0.7768095238095237,
+          "reader_equal_se": 0.03247350433048833
+        },
+        "IC-2": {
+          "n_readers": 50,
+          "n_trials": 430,
+          "np1_count": 51,
+          "reader_equal_rate": 0.11718253968253968,
+          "reader_equal_se": 0.01990638247071598
+        }
+      }
+    },
+    "splits": {
+      "purpose": "development_cross_validation",
+      "grouping": "stimulus_family",
+      "group_count": 36,
+      "reader_ids_spanning_folds": 50,
+      "folds": [
+        {
+          "fold": 0,
+          "families": [
+            "zhan-e1-04",
+            "zhan-e1-18",
+            "zhan-e1-19",
+            "zhan-e1-20",
+            "zhan-e1-25",
+            "zhan-e1-30",
+            "zhan-e1-36"
+          ],
+          "trials": 322
+        },
+        {
+          "fold": 1,
+          "families": [
+            "zhan-e1-01",
+            "zhan-e1-05",
+            "zhan-e1-07",
+            "zhan-e1-21",
+            "zhan-e1-22",
+            "zhan-e1-26",
+            "zhan-e1-27"
+          ],
+          "trials": 322
+        },
+        {
+          "fold": 2,
+          "families": [
+            "zhan-e1-03",
+            "zhan-e1-08",
+            "zhan-e1-10",
+            "zhan-e1-23",
+            "zhan-e1-28",
+            "zhan-e1-31",
+            "zhan-e1-34"
+          ],
+          "trials": 322
+        },
+        {
+          "fold": 3,
+          "families": [
+            "zhan-e1-02",
+            "zhan-e1-11",
+            "zhan-e1-12",
+            "zhan-e1-13",
+            "zhan-e1-14",
+            "zhan-e1-15",
+            "zhan-e1-35"
+          ],
+          "trials": 322
+        },
+        {
+          "fold": 4,
+          "families": [
+            "zhan-e1-06",
+            "zhan-e1-09",
+            "zhan-e1-16",
+            "zhan-e1-17",
+            "zhan-e1-24",
+            "zhan-e1-29",
+            "zhan-e1-32",
+            "zhan-e1-33"
+          ],
+          "trials": 363
+        }
+      ]
+    },
+    "artifacts": {
+      "splits.json": {
+        "bytes": 1336,
+        "sha256": "b9b3f20ff7936b5c6a8046493b1f0d226b9e27b17a866693e712fb91671b2c2f"
+      },
+      "stimuli.jsonl": {
+        "bytes": 24486,
+        "sha256": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4"
+      },
+      "trials.jsonl": {
+        "bytes": 1062515,
+        "sha256": "d67c0223e3628084c50136e031efe3b1f97f92b56ccf0478ebafc2ad110980f8"
+      }
+    }
+  },
+  "onestop": {
+    "source": {
+      "name": "OneStopQA Prolific open-book comprehension",
+      "role": "development_benchmark",
+      "revision": "7a058755e1ff0d3f835a67109c669c7e294d4239",
+      "source": "https://github.com/berzak/onestop-qa/tree/7a058755e1ff0d3f835a67109c669c7e294d4239",
+      "license": "CC-BY-SA-4.0",
+      "material_reference": {
+        "url": "https://huggingface.co/datasets/malmaud/onestop_qa/resolve/1df9aea8c9532045bc55c001d7c588372de2d723/data/train-00000-of-00001.parquet",
+        "sha256": "fe10e4a2bd7488614df3d2084436b2050e6b8bed8ff23aed53da1da785baa48e",
+        "role": "material_comparison_only"
+      },
+      "download_base": "https://raw.githubusercontent.com/berzak/onestop-qa/7a058755e1ff0d3f835a67109c669c7e294d4239/",
+      "files": {
+        "qa.tsv": {
+          "path": "human_experiments/prolific/qa.tsv",
+          "sha256": "bc8af0a78819b918eb0ce97935bf8fcd82eeec2d9f99111762034817c1e56e0d"
+        }
+      }
+    },
+    "stimuli": 216,
+    "trials": 1940,
+    "trials_by_task": {
+      "open_book_mcq": 1940
+    },
+    "metrics": {
+      "n_stimuli": 216,
+      "n_families": 20,
+      "n_trials": 1940,
+      "n_participants": 970,
+      "n_items": 648,
+      "n_questions": 324,
+      "n_correct": 1567,
+      "by_difficulty": {
+        "Adv": {
+          "n_trials": 970,
+          "n_correct": 774
+        },
+        "Ele": {
+          "n_trials": 970,
+          "n_correct": 793
+        }
+      }
+    },
+    "splits": {
+      "purpose": "development_cross_validation",
+      "grouping": "stimulus_family",
+      "group_count": 20,
+      "reader_ids_spanning_folds": 847,
+      "folds": [
+        {
+          "fold": 0,
+          "families": [
+            "onestop-article-1",
+            "onestop-article-18",
+            "onestop-article-4",
+            "onestop-article-6"
+          ],
+          "trials": 395
+        },
+        {
+          "fold": 1,
+          "families": [
+            "onestop-article-10",
+            "onestop-article-2",
+            "onestop-article-7",
+            "onestop-article-8"
+          ],
+          "trials": 395
+        },
+        {
+          "fold": 2,
+          "families": [
+            "onestop-article-14",
+            "onestop-article-20",
+            "onestop-article-5",
+            "onestop-article-9"
+          ],
+          "trials": 394
+        },
+        {
+          "fold": 3,
+          "families": [
+            "onestop-article-11",
+            "onestop-article-13",
+            "onestop-article-15",
+            "onestop-article-17"
+          ],
+          "trials": 378
+        },
+        {
+          "fold": 4,
+          "families": [
+            "onestop-article-12",
+            "onestop-article-16",
+            "onestop-article-19",
+            "onestop-article-3"
+          ],
+          "trials": 378
+        }
+      ]
+    },
+    "artifacts": {
+      "splits.json": {
+        "bytes": 1136,
+        "sha256": "daff171461d021dc02fe207ff5f74aa1051f46726b617a76521435a1d132474a"
+      },
+      "stimuli.jsonl": {
+        "bytes": 196872,
+        "sha256": "7da869f2c95ab0284d634dbb9f4e74edb747823d063d3c0b4c259bb0aad34d8c"
+      },
+      "trials.jsonl": {
+        "bytes": 2353722,
+        "sha256": "41d5017245048e5b6196d23aa7d72f53adb656bf0ebb17e0ae1090147fa1bfb9"
+      }
+    }
+  }
+}

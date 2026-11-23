@@ -1,0 +1,247 @@
+{
+  "source": "https://github.com/MMU-TDMLab/CompLex/tree/4b31c2bd34da4c1265f9db3d727d95ee23099f14",
+  "release": "4b31c2bd34da4c1265f9db3d727d95ee23099f14",
+  "files_sha256": {
+    "train/lcp_single_train.tsv": "12142b2653edfbedf27452e9b0e9d14d2808a90950319a013b91245d567379e0",
+    "train/lcp_multi_train.tsv": "8bd1e51343ac36e975deed6ee45926d0fd91a3fe2dd0f94cc37272b69441b2df",
+    "trial/lcp_single_trial.tsv": "67bb6ef05cb1a690eb78a948592ef8693fbf8f5db451762522ecb02e8e47d9ab",
+    "trial/lcp_multi_trial.tsv": "7ebaa82428381458c7e0abcd4c712099ccd435b1c4393c623e7b02bc308810a8",
+    "test/lcp_single_test.tsv": "8eaa0a3985deaca4d15ae40b71c38052abc0a8cba9327cea3bed6c33e7a26bb1",
+    "test/lcp_multi_test.tsv": "ab9170be99f67b3a3b7a8028893ffb14fb0b9d72b34c5cf1255916437ab9e866",
+    "test-labels/lcp_single_test.tsv": "846ef133c72cfa0547a285dc9060e74e87a8e9ad3a0de149e2cf680c12f611ed",
+    "test-labels/lcp_multi_test.tsv": "59669b0a546f2bd4cb7b23271e4c8d555e24c862948aae76aaa7b957db736372"
+  },
+  "label_method": {
+    "reference": "https://aclanthology.org/2021.semeval-1.1.pdf#page=3",
+    "unit": "Human lexical difficulty judgment for a designated English word or multiword expression given its enclosing sentence.",
+    "rating_values_before_aggregation": [
+      0,
+      0.25,
+      0.5,
+      0.75,
+      1
+    ],
+    "released_label": "Arithmetic mean of retained ratings on the five-point scale after the stated mapping.",
+    "missing_observation": "Unrated tokens and phrases have no corresponding lexical-difficulty observation.",
+    "position_scope": "The whole sentence was visible and a target was supplied. No reading-time or spontaneous confusion-onset label is present."
+  },
+  "offset_audit_method": {
+    "unit": "Zero-based Unicode code-point offsets with an exclusive end in the source sentence.",
+    "exact": "Exactly one isolated case-insensitive candidate exists, and its surface equals the released target.",
+    "ambiguous": "More than one isolated case-insensitive candidate exists. Do not assign its rating to a specific occurrence.",
+    "boundary": "No Unicode word character just before or after the candidate. Search allows overlapping matches.",
+    "annotation_interface": "https://github.com/MMU-TDMLab/CompLex/blob/4b31c2bd34da4c1265f9db3d727d95ee23099f14/Annotation/mturk.html"
+  },
+  "licensing": {
+    "dataset": {
+      "stated": "CC BY 4.0",
+      "source": "https://github.com/MMU-TDMLab/CompLex/blob/4b31c2bd34da4c1265f9db3d727d95ee23099f14/Readme.md"
+    },
+    "bible": {
+      "stated": "World English Bible text in the public domain",
+      "source": "https://www.ebible.org/find/details.php?id=eng-web"
+    },
+    "europarl": {
+      "stated": "Corpus provider reports unaware of copyright restrictions",
+      "source": "https://www.statmt.org/europarl/"
+    },
+    "biomedical": {
+      "stated": "CRAFT v2 and earlier annotations use CC BY 3.0, articles are PMC Open Access and row-level article provenance was not audited",
+      "source": "https://bionlp-corpora.sourceforge.net/CRAFT/"
+    }
+  },
+  "labeled_items": 10800,
+  "isolated_location_totals": {
+    "unique_exact_isolated_match": 10740,
+    "ambiguous_repeated_isolated_match_ignoring_case": 56,
+    "no_isolated_match": 3,
+    "unique_case_insensitive_only": 1
+  },
+  "tasks": {
+    "single": {
+      "splits": {
+        "train": {
+          "items": 7662,
+          "contexts": 6825,
+          "items_by_corpus": {
+            "bible": 2574,
+            "biomed": 2576,
+            "europarl": 2512
+          },
+          "raw_case_sensitive_substring_matches": {
+            "one": 7660,
+            "multiple": 2
+          },
+          "isolated_location": {
+            "unique_exact_isolated_match": 7617,
+            "ambiguous_repeated_isolated_match_ignoring_case": 44,
+            "no_isolated_match": 1
+          },
+          "observed_difficulty_range": [
+            0.0,
+            0.8611111111111112
+          ]
+        },
+        "trial": {
+          "items": 421,
+          "contexts": 417,
+          "items_by_corpus": {
+            "bible": 143,
+            "biomed": 135,
+            "europarl": 143
+          },
+          "raw_case_sensitive_substring_matches": {
+            "one": 421
+          },
+          "isolated_location": {
+            "unique_exact_isolated_match": 417,
+            "ambiguous_repeated_isolated_match_ignoring_case": 4
+          },
+          "observed_difficulty_range": [
+            0.0,
+            0.875
+          ]
+        },
+        "test": {
+          "items": 917,
+          "contexts": 896,
+          "items_by_corpus": {
+            "bible": 283,
+            "biomed": 289,
+            "europarl": 345
+          },
+          "raw_case_sensitive_substring_matches": {
+            "one": 916,
+            "none": 1
+          },
+          "isolated_location": {
+            "unique_exact_isolated_match": 912,
+            "ambiguous_repeated_isolated_match_ignoring_case": 3,
+            "no_isolated_match": 1,
+            "unique_case_insensitive_only": 1
+          },
+          "observed_difficulty_range": [
+            0.0,
+            0.7777777777777777
+          ]
+        }
+      },
+      "test_items_joined_by_id_and_exact_fields": 917,
+      "official_split_overlap": {
+        "train_vs_trial": {
+          "literal_context_overlap": 86,
+          "literal_target_type_overlap": 0,
+          "casefolded_target_type_overlap": 28
+        },
+        "train_vs_test": {
+          "literal_context_overlap": 154,
+          "literal_target_type_overlap": 0,
+          "casefolded_target_type_overlap": 54
+        },
+        "trial_vs_test": {
+          "literal_context_overlap": 9,
+          "literal_target_type_overlap": 0,
+          "casefolded_target_type_overlap": 1
+        }
+      }
+    },
+    "multi": {
+      "splits": {
+        "train": {
+          "items": 1517,
+          "contexts": 1473,
+          "items_by_corpus": {
+            "bible": 505,
+            "biomed": 514,
+            "europarl": 498
+          },
+          "raw_case_sensitive_substring_matches": {
+            "one": 1517
+          },
+          "isolated_location": {
+            "unique_exact_isolated_match": 1511,
+            "ambiguous_repeated_isolated_match_ignoring_case": 5,
+            "no_isolated_match": 1
+          },
+          "observed_difficulty_range": [
+            0.02777777777777779,
+            0.9750000000000001
+          ]
+        },
+        "trial": {
+          "items": 99,
+          "contexts": 98,
+          "items_by_corpus": {
+            "bible": 29,
+            "biomed": 33,
+            "europarl": 37
+          },
+          "raw_case_sensitive_substring_matches": {
+            "one": 99
+          },
+          "isolated_location": {
+            "unique_exact_isolated_match": 99
+          },
+          "observed_difficulty_range": [
+            0.0,
+            0.825
+          ]
+        },
+        "test": {
+          "items": 184,
+          "contexts": 183,
+          "items_by_corpus": {
+            "bible": 66,
+            "biomed": 53,
+            "europarl": 65
+          },
+          "raw_case_sensitive_substring_matches": {
+            "one": 184
+          },
+          "isolated_location": {
+            "unique_exact_isolated_match": 184
+          },
+          "observed_difficulty_range": [
+            0.0,
+            0.8
+          ]
+        }
+      },
+      "test_items_joined_by_id_and_exact_fields": 184,
+      "official_split_overlap": {
+        "train_vs_trial": {
+          "literal_context_overlap": 9,
+          "literal_target_type_overlap": 0,
+          "casefolded_target_type_overlap": 0
+        },
+        "train_vs_test": {
+          "literal_context_overlap": 8,
+          "literal_target_type_overlap": 0,
+          "casefolded_target_type_overlap": 2
+        },
+        "trial_vs_test": {
+          "literal_context_overlap": 0,
+          "literal_target_type_overlap": 0,
+          "casefolded_target_type_overlap": 0
+        }
+      }
+    }
+  },
+  "pooled_official_split_overlap": {
+    "train_vs_trial": {
+      "literal_context_overlap": 116,
+      "literal_target_type_overlap": 0,
+      "casefolded_target_type_overlap": 28
+    },
+    "train_vs_test": {
+      "literal_context_overlap": 223,
+      "literal_target_type_overlap": 0,
+      "casefolded_target_type_overlap": 56
+    },
+    "trial_vs_test": {
+      "literal_context_overlap": 13,
+      "literal_target_type_overlap": 0,
+      "casefolded_target_type_overlap": 1
+    }
+  }
+}

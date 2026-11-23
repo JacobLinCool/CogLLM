@@ -1,0 +1,1201 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "fixed": [
+      "readers",
+      "forecasts"
+    ],
+    "interval": "linear percentile",
+    "no_positive_replicate_ap": 0,
+    "seed": 20261121,
+    "shared_resamples_within_study": true,
+    "strata": "study",
+    "unit": "original material family"
+  },
+  "endpoint": {
+    "excluded": "Terminal actions, forward skips and opportunities following an earlier backward action",
+    "negative": "Next event is a one-region advance",
+    "positive": "Next event is a one-region backward action or restart at region one",
+    "risk_set": "First visit to a recorded region after all earlier regions were displayed, from region two until and including the trial's first explicit backward keypress",
+    "unit": "One trial opportunity at a displayed region; a region may span multiple words"
+  },
+  "input_sha256": {
+    "assay_sha256": "d8dca9e9bfd7977d38939aede6cd0d8e51db34bc5e4e04cde93c85adfd9e4bbd",
+    "extraction_sha256": "f370870bac771fe33d5c2edb3906434a40f6f1299a416c7239749cc441830b90",
+    "heads_sha256": "029c8503fb4110f8c853478809674b68c077c078c56ce62662ad98b03387d432",
+    "predictions_sha256": "c40db258d69f3967823a84005b1461af170f0adaf68986909f5382e066e0cc30",
+    "protocol_sha256": "667518a52592e50a42e0e2560319fc68b7a696d5d92b4de2e61fd9bd88652b66",
+    "scorer_sha256": "2258ac2c246e22710765aa29d42582a25c98c05d71c65a766a1f3a29fd0dc220",
+    "seal_sha256": "bf43d26b4796050f5a5f89d6b5ae8448adb8dffc74b131f79189edec6617426b",
+    "source_code_sha256": "f55719ef973668674ff1959deb0cdae74f02476f22d94ac417876860faea19a9",
+    "stimuli_sha256": "5c8776dc439599565fe249c981cc3f002289747a171184201801a0cbdece7fbf",
+    "targets_sha256": "cd57b7b4ff921e639ae6896c15bf1c84e813f366eb983069091314a5089ac465",
+    "test_sha256": "aad0ce17e1d9d9f97c6ff4578c5d2d076e7146b541ca7aa8d03059173b7438db",
+    "train_sha256": "fe89c67a29e781cd53014b809a552e59dab890a2495a4f454b7f439c81b4535a"
+  },
+  "primary": {
+    "calibration_absolute_margin": 0.01,
+    "gates": {
+      "english": {
+        "brier_superiority": true,
+        "calibration_equivalence": false
+      },
+      "german": {
+        "brier_superiority": true,
+        "calibration_equivalence": true
+      }
+    },
+    "passed_both_studies": false,
+    "population": "all observed held-out regions in each study",
+    "training_mode": "pooled"
+  },
+  "scoring_unit": "one observed trial opportunity",
+  "studies": {
+    "english": {
+      "all": {
+        "event_rate": 0.04195804195804196,
+        "families_with_observations": 5,
+        "methods": {
+          "cross_study_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.06188756873164867,
+                0.18388899652744004
+              ],
+              "brier": [
+                0.03493743562330259,
+                0.04642757542506272
+              ],
+              "calibration_gap": [
+                -0.010163449026770367,
+                0.004250853710211874
+              ],
+              "mean_probability": [
+                0.038480760507480304,
+                0.04158479072313176
+              ],
+              "nll_nats": [
+                0.1540508360107268,
+                0.19420243316022406
+              ]
+            },
+            "average_precision": 0.07814122200637719,
+            "brier": 0.039947419577822385,
+            "calibration_gap": -0.001973194387717398,
+            "mean_probability": 0.03998484757032456,
+            "nll_nats": 0.1709576165325398
+          },
+          "cross_study_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.03637635536901014,
+                0.048939641109298535
+              ],
+              "brier": [
+                0.035173720140108736,
+                0.04654705314848819
+              ],
+              "calibration_gap": [
+                -0.0015813004447643205,
+                0.010981985295524072
+              ],
+              "mean_probability": [
+                0.0473583406645342,
+                0.04735834066453421
+              ],
+              "nll_nats": [
+                0.15769993960025327,
+                0.19540858981733356
+              ]
+            },
+            "average_precision": 0.04195804195804196,
+            "brier": 0.040226727899208475,
+            "calibration_gap": 0.005400298706492252,
+            "mean_probability": 0.04735834066453421,
+            "nll_nats": 0.17445334882441832
+          },
+          "cross_study_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.24290420059180567,
+                0.5686252923133731
+              ],
+              "brier": [
+                0.03458588252726772,
+                0.04512845232198551
+              ],
+              "calibration_gap": [
+                0.012328168373029446,
+                0.027041225556737183
+              ],
+              "mean_probability": [
+                0.05930396316788799,
+                0.0644905280503661
+              ],
+              "nll_nats": [
+                0.15139289279338158,
+                0.18405603795381634
+              ]
+            },
+            "average_precision": 0.40648884531174356,
+            "brier": 0.03906674940111232,
+            "calibration_gap": 0.02012860432263458,
+            "mean_probability": 0.06208664628067655,
+            "nll_nats": 0.1661977287751675
+          },
+          "pooled_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.07916067578124995,
+                0.2312723084955961
+              ],
+              "brier": [
+                0.034803656397980685,
+                0.04628283303137962
+              ],
+              "calibration_gap": [
+                -0.012124679150247371,
+                0.003377015541835053
+              ],
+              "mean_probability": [
+                0.03664383746000286,
+                0.04057664270976133
+              ],
+              "nll_nats": [
+                0.14951500090860745,
+                0.1906963556327697
+              ]
+            },
+            "average_precision": 0.13548198390614635,
+            "brier": 0.03962559930606252,
+            "calibration_gap": -0.003384712632772976,
+            "mean_probability": 0.03857332932526898,
+            "nll_nats": 0.16717747367238764
+          },
+          "pooled_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.03637635536901014,
+                0.048939641109298535
+              ],
+              "brier": [
+                0.03514261732036405,
+                0.04655417987704514
+              ],
+              "calibration_gap": [
+                -0.0031027793433546537,
+                0.009460506396933735
+              ],
+              "mean_probability": [
+                0.04583686176594386,
+                0.045836861765943884
+              ],
+              "nll_nats": [
+                0.15734999490583984,
+                0.19548893998964698
+              ]
+            },
+            "average_precision": 0.04195804195804196,
+            "brier": 0.040212609916191314,
+            "calibration_gap": 0.0038788198079019193,
+            "mean_probability": 0.04583686176594388,
+            "nll_nats": 0.17429457793091876
+          },
+          "pooled_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.24837590610178023,
+                0.5662961237346249
+              ],
+              "brier": [
+                0.03282580206988605,
+                0.04397133063455091
+              ],
+              "calibration_gap": [
+                -0.0029242888115855767,
+                0.01166143208131725
+              ],
+              "mean_probability": [
+                0.0448400455010596,
+                0.048787847960212676
+              ],
+              "nll_nats": [
+                0.13668643977966807,
+                0.17810946190018728
+              ]
+            },
+            "average_precision": 0.4064704326930276,
+            "brier": 0.03757821340316923,
+            "calibration_gap": 0.005051404704756254,
+            "mean_probability": 0.04700944666279821,
+            "nll_nats": 0.1550840355698327
+          },
+          "within_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.0893161497156549,
+                0.568936471177376
+              ],
+              "brier": [
+                0.03371109399311323,
+                0.04538039188950213
+              ],
+              "calibration_gap": [
+                -0.008278698844220894,
+                0.008900705217432298
+              ],
+              "mean_probability": [
+                0.039894555214146234,
+                0.047514423715719956
+              ],
+              "nll_nats": [
+                0.14023707236437621,
+                0.18949282911989096
+              ]
+            },
+            "average_precision": 0.1813228464514096,
+            "brier": 0.03873411357213529,
+            "calibration_gap": 0.0017059316683267465,
+            "mean_probability": 0.0436639736263687,
+            "nll_nats": 0.16192146076327074
+          },
+          "within_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.03637635536901014,
+                0.048939641109298535
+              ],
+              "brier": [
+                0.03511614436543103,
+                0.046565936361644245
+              ],
+              "calibration_gap": [
+                -0.004624253913081776,
+                0.007939031827206611
+              ],
+              "mean_probability": [
+                0.04431538719621675,
+                0.04431538719621676
+              ],
+              "nll_nats": [
+                0.15704260268780018,
+                0.19562565924881567
+              ]
+            },
+            "average_precision": 0.04195804195804196,
+            "brier": 0.040203121749661085,
+            "calibration_gap": 0.002357345238174796,
+            "mean_probability": 0.04431538719621675,
+            "nll_nats": 0.17418449803448138
+          },
+          "within_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.2644263765963962,
+                0.5771900132219618
+              ],
+              "brier": [
+                0.02977578708526936,
+                0.04217997955202047
+              ],
+              "calibration_gap": [
+                -0.0028447746922438673,
+                0.010207886605641578
+              ],
+              "mean_probability": [
+                0.044556862100692554,
+                0.047678152719509745
+              ],
+              "nll_nats": [
+                0.12389629053280526,
+                0.1780257448350715
+              ]
+            },
+            "average_precision": 0.4273206739103131,
+            "brier": 0.0351313907294084,
+            "calibration_gap": 0.004378747900903556,
+            "mean_probability": 0.04633678985894552,
+            "nll_nats": 0.14917795321575553
+          }
+        },
+        "negative": 2603,
+        "observed_stops": 74,
+        "pooled_qwen_calibration_gap": {
+          "article_family_ci90": [
+            -0.0009363688033866738,
+            0.010557500000763389
+          ],
+          "difference": 0.005051404704756254
+        },
+        "pooled_qwen_minus_pooled_position_brier": {
+          "difference": -0.0020473859028932867,
+          "paired_article_family_ci95": [
+            -0.0031503266160726254,
+            -0.0008445115610651727
+          ]
+        },
+        "positive": 114,
+        "trials": 2717
+      },
+      "design_families": 5,
+      "single_word": {
+        "event_rate": 0.01730103806228374,
+        "families_with_observations": 5,
+        "methods": {
+          "cross_study_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.011235955056179775,
+                0.04033292688640991
+              ],
+              "brier": [
+                0.005542627958031535,
+                0.028507778921800085
+              ],
+              "calibration_gap": [
+                0.009330956236948169,
+                0.026276497890604062
+              ],
+              "mean_probability": [
+                0.03037350105430311,
+                0.03937430260888834
+              ],
+              "nll_nats": [
+                0.047199561799671996,
+                0.1332116557822254
+              ]
+            },
+            "average_precision": 0.03272810055624736,
+            "brier": 0.01723792548263873,
+            "calibration_gap": 0.017940542278972873,
+            "mean_probability": 0.035241580341256615,
+            "nll_nats": 0.09170407213479351
+          },
+          "cross_study_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.004962779156327543,
+                0.029308323563892145
+              ],
+              "brier": [
+                0.006735533614969198,
+                0.028775148851099816
+              ],
+              "calibration_gap": [
+                0.018050017100642066,
+                0.042395561508206676
+              ],
+              "mean_probability": [
+                0.047358340664534204,
+                0.04735834066453422
+              ],
+              "nll_nats": [
+                0.06341222045103893,
+                0.13648527135405647
+              ]
+            },
+            "average_precision": 0.01730103806228374,
+            "brier": 0.017905153583974397,
+            "calibration_gap": 0.030057302602250473,
+            "mean_probability": 0.047358340664534204,
+            "nll_nats": 0.10044545355505632
+          },
+          "cross_study_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.011235955056179775,
+                0.03678793118507597
+              ],
+              "brier": [
+                0.006063713483303261,
+                0.029111914095253266
+              ],
+              "calibration_gap": [
+                0.023900907126493325,
+                0.038068131821244716
+              ],
+              "mean_probability": [
+                0.038230936585522256,
+                0.0565891465986166
+              ],
+              "nll_nats": [
+                0.054515263124842415,
+                0.1396681303712937
+              ]
+            },
+            "average_precision": 0.030517078990799983,
+            "brier": 0.017860799788526276,
+            "calibration_gap": 0.030754645515050333,
+            "mean_probability": 0.04805568357733407,
+            "nll_nats": 0.09916656771964413
+          },
+          "pooled_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.009575824329018321,
+                0.02902999578148416
+              ],
+              "brier": [
+                0.005189046727882445,
+                0.02859454734760343
+              ],
+              "calibration_gap": [
+                0.0027105654876844317,
+                0.01806569707669269
+              ],
+              "mean_probability": [
+                0.021740591613188913,
+                0.03378495709034067
+              ],
+              "nll_nats": [
+                0.040010072597499995,
+                0.13468309977666124
+              ]
+            },
+            "average_precision": 0.020391557090676825,
+            "brier": 0.01711872919335369,
+            "calibration_gap": 0.010596271196571486,
+            "mean_probability": 0.02789730925885522,
+            "nll_nats": 0.08933401284156609
+          },
+          "pooled_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.004962779156327543,
+                0.029308323563892145
+              ],
+              "brier": [
+                0.006608840608550804,
+                0.028722538308863035
+              ],
+              "calibration_gap": [
+                0.016528538202051732,
+                0.04087408260961633
+              ],
+              "mean_probability": [
+                0.04583686176594387,
+                0.045836861765943884
+              ],
+              "nll_nats": [
+                0.06198635494504164,
+                0.1358932452594046
+              ]
+            },
+            "average_precision": 0.01730103806228374,
+            "brier": 0.017816005378697514,
+            "calibration_gap": 0.02853582370366014,
+            "mean_probability": 0.04583686176594388,
+            "nll_nats": 0.0994421757049741
+          },
+          "pooled_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.010217936220582091,
+                0.03005719752063959
+              ],
+              "brier": [
+                0.005046736533837195,
+                0.028632550803748876
+              ],
+              "calibration_gap": [
+                0.0022922190816760187,
+                0.014613629029013512
+              ],
+              "mean_probability": [
+                0.018200480548042852,
+                0.03398583960350046
+              ],
+              "nll_nats": [
+                0.03650601577433247,
+                0.13524565354138698
+              ]
+            },
+            "average_precision": 0.024108358626926348,
+            "brier": 0.01707950802409465,
+            "calibration_gap": 0.009090465717967938,
+            "mean_probability": 0.026391503780251676,
+            "nll_nats": 0.08815436372412748
+          },
+          "within_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.0061314524224652615,
+                0.02902999578148416
+              ],
+              "brier": [
+                0.004929825676699627,
+                0.02893157094920365
+              ],
+              "calibration_gap": [
+                -0.00927660725791179,
+                0.004583332728885579
+              ],
+              "mean_probability": [
+                0.007173237279232376,
+                0.02680744999894484
+              ],
+              "nll_nats": [
+                0.03202707868737847,
+                0.14480745009121457
+              ]
+            },
+            "average_precision": 0.019639352502681853,
+            "brier": 0.01716492036523508,
+            "calibration_gap": -1.2286180090730056e-05,
+            "mean_probability": 0.017288751882193008,
+            "nll_nats": 0.09078823651176984
+          },
+          "within_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.004962779156327543,
+                0.029308323563892145
+              ],
+              "brier": [
+                0.006486777738914218,
+                0.028674557692630987
+              ],
+              "calibration_gap": [
+                0.01500706363232461,
+                0.03935260803988921
+              ],
+              "mean_probability": [
+                0.04431538719621675,
+                0.044315387196216756
+              ],
+              "nll_nats": [
+                0.06056849449244814,
+                0.1353359984960798
+              ]
+            },
+            "average_precision": 0.01730103806228374,
+            "brier": 0.017731487203381177,
+            "calibration_gap": 0.027014349133933014,
+            "mean_probability": 0.04431538719621676,
+            "nll_nats": 0.09846047204306252
+          },
+          "within_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.008695194206714944,
+                0.03005719752063959
+              ],
+              "brier": [
+                0.0049118383925378884,
+                0.02901664637896099
+              ],
+              "calibration_gap": [
+                -0.009424825886325759,
+                0.0035558539980969717
+              ],
+              "mean_probability": [
+                0.006735465550359216,
+                0.024935786845396088
+              ],
+              "nll_nats": [
+                0.032179077058554884,
+                0.14673306589168714
+              ]
+            },
+            "average_precision": 0.02039359209837027,
+            "brier": 0.017201783091007335,
+            "calibration_gap": -0.0011822973744223411,
+            "mean_probability": 0.016118740687861396,
+            "nll_nats": 0.09178270659104472
+          }
+        },
+        "negative": 852,
+        "observed_stops": 20,
+        "pooled_qwen_calibration_gap": {
+          "article_family_ci90": [
+            0.003499010615462987,
+            0.013898088327307996
+          ],
+          "difference": 0.009090465717967938
+        },
+        "pooled_qwen_minus_pooled_position_brier": {
+          "difference": -3.922116925903982e-05,
+          "paired_article_family_ci95": [
+            -0.00013036199145512097,
+            4.84332355815513e-05
+          ]
+        },
+        "positive": 15,
+        "trials": 867
+      }
+    },
+    "german": {
+      "all": {
+        "event_rate": 0.04631655725747629,
+        "families_with_observations": 16,
+        "methods": {
+          "cross_study_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.06599236913340313,
+                0.17821104316243475
+              ],
+              "brier": [
+                0.046890434245608514,
+                0.055730859019424275
+              ],
+              "calibration_gap": [
+                0.049853177907934226,
+                0.06849447926980608
+              ],
+              "mean_probability": [
+                0.09911281113854055,
+                0.1110699492461849
+              ],
+              "nll_nats": [
+                0.205509821574693,
+                0.23596102902376329
+              ]
+            },
+            "average_precision": 0.08212135139439646,
+            "brier": 0.051445202425977915,
+            "calibration_gap": 0.05915004000103015,
+            "mean_probability": 0.10546659725850645,
+            "nll_nats": 0.22109401559084593
+          },
+          "cross_study_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.040477500471664644,
+                0.05175435579141295
+              ],
+              "brier": [
+                0.03885380180174153,
+                0.04913118070178912
+              ],
+              "calibration_gap": [
+                -0.007438968595196195,
+                0.0038378867245521175
+              ],
+              "mean_probability": [
+                0.04431538719621675,
+                0.04431538719621677
+              ],
+              "nll_nats": [
+                0.16963761300052568,
+                0.20426991824508117
+              ]
+            },
+            "average_precision": 0.0463165572574763,
+            "brier": 0.0441753384629053,
+            "calibration_gap": -0.0020011700612595387,
+            "mean_probability": 0.044315387196216756,
+            "nll_nats": 0.18756991692858882
+          },
+          "cross_study_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.19287663940872032,
+                0.2984074047897399
+              ],
+              "brier": [
+                0.046708119980198234,
+                0.05545575696564918
+              ],
+              "calibration_gap": [
+                0.05710485259848058,
+                0.07740130754407946
+              ],
+              "mean_probability": [
+                0.10653228190483031,
+                0.11982182720931635
+              ],
+              "nll_nats": [
+                0.20726076852446704,
+                0.23893275797697783
+              ]
+            },
+            "average_precision": 0.2369481128324823,
+            "brier": 0.05123539316053039,
+            "calibration_gap": 0.06709977961076914,
+            "mean_probability": 0.11341633686824543,
+            "nll_nats": 0.22335099873563505
+          },
+          "pooled_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.056816069279618325,
+                0.13981203803946535
+              ],
+              "brier": [
+                0.038959136348125784,
+                0.0490292271439034
+              ],
+              "calibration_gap": [
+                0.0003615644907837341,
+                0.012352832082763535
+              ],
+              "mean_probability": [
+                0.05119732017304263,
+                0.053638581462635955
+              ],
+              "nll_nats": [
+                0.17018821390440284,
+                0.20348151987262447
+              ]
+            },
+            "average_precision": 0.06831411229371809,
+            "brier": 0.04416877427027965,
+            "calibration_gap": 0.006172541413437566,
+            "mean_probability": 0.052489098670913864,
+            "nll_nats": 0.1873724974320881
+          },
+          "pooled_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.040477500471664644,
+                0.05175435579141295
+              ],
+              "brier": [
+                0.03886779518071364,
+                0.049110859183570256
+              ],
+              "calibration_gap": [
+                -0.0059174940254690745,
+                0.0053593612942792355
+              ],
+              "mean_probability": [
+                0.04583686176594387,
+                0.045836861765943884
+              ],
+              "nll_nats": [
+                0.16980002995911195,
+                0.20403369897283977
+              ]
+            },
+            "average_precision": 0.0463165572574763,
+            "brier": 0.04417156388905581,
+            "calibration_gap": -0.0004796954915324168,
+            "mean_probability": 0.04583686176594388,
+            "nll_nats": 0.18752592354291817
+          },
+          "pooled_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.19671533972882757,
+                0.34206846865223867
+              ],
+              "brier": [
+                0.03668954319572818,
+                0.046708872384644703
+              ],
+              "calibration_gap": [
+                -0.005712510375054508,
+                0.007064694905383926
+              ],
+              "mean_probability": [
+                0.04514154900418938,
+                0.04857243018577656
+              ],
+              "nll_nats": [
+                0.15879894498463826,
+                0.19285712614235573
+              ]
+            },
+            "average_precision": 0.26050282574783595,
+            "brier": 0.041883463793819485,
+            "calibration_gap": 0.0005318737596651192,
+            "mean_probability": 0.04684843101714141,
+            "nll_nats": 0.1762930801065838
+          },
+          "within_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.046241237392741594,
+                0.06410627572975056
+              ],
+              "brier": [
+                0.0387968753804211,
+                0.0489584236587361
+              ],
+              "calibration_gap": [
+                -0.0042960007941197495,
+                0.007136366430379582
+              ],
+              "mean_probability": [
+                0.04663213973396736,
+                0.04836228358041041
+              ],
+              "nll_nats": [
+                0.16855510080748806,
+                0.202520851206066
+              ]
+            },
+            "average_precision": 0.05323834524064336,
+            "brier": 0.044068547666741786,
+            "calibration_gap": 0.0012623308400784245,
+            "mean_probability": 0.047578888097554714,
+            "nll_nats": 0.18615166750838974
+          },
+          "within_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.040477500471664644,
+                0.05175435579141295
+              ],
+              "brier": [
+                0.03888641838899083,
+                0.04909516739702454
+              ],
+              "calibration_gap": [
+                -0.0043960151268787415,
+                0.0068808401928695745
+              ],
+              "mean_probability": [
+                0.0473583406645342,
+                0.04735834066453422
+              ],
+              "nll_nats": [
+                0.1700095096731171,
+                0.20385694430061668
+              ]
+            },
+            "average_precision": 0.0463165572574763,
+            "brier": 0.04417241909395843,
+            "calibration_gap": 0.0010417834070579168,
+            "mean_probability": 0.04735834066453421,
+            "nll_nats": 0.18753541447903502
+          },
+          "within_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.20344175751468177,
+                0.3470614806486649
+              ],
+              "brier": [
+                0.03650671999731832,
+                0.04655055969371029
+              ],
+              "calibration_gap": [
+                -0.00586338211976482,
+                0.00638049332017542
+              ],
+              "mean_probability": [
+                0.0446677357695429,
+                0.04808584784661866
+              ],
+              "nll_nats": [
+                0.15602758373686296,
+                0.18931162365124055
+              ]
+            },
+            "average_precision": 0.26609014972200357,
+            "brier": 0.041714675790019945,
+            "calibration_gap": 5.5768763569387384e-05,
+            "mean_probability": 0.04637232602104568,
+            "nll_nats": 0.1731624684972766
+          }
+        },
+        "negative": 7845,
+        "observed_stops": 460,
+        "pooled_qwen_calibration_gap": {
+          "article_family_ci90": [
+            -0.004721830708321283,
+            0.00603241249647102
+          ],
+          "difference": 0.0005318737596651192
+        },
+        "pooled_qwen_minus_pooled_position_brier": {
+          "difference": -0.0022853104764601617,
+          "paired_article_family_ci95": [
+            -0.003065184001208723,
+            -0.0016749301333823592
+          ]
+        },
+        "positive": 381,
+        "trials": 8226
+      },
+      "design_families": 16,
+      "single_word": {
+        "event_rate": 0.04346513733776034,
+        "families_with_observations": 16,
+        "methods": {
+          "cross_study_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.03299084610485609,
+                0.22069328772055072
+              ],
+              "brier": [
+                0.03815219394415821,
+                0.05685695780176773
+              ],
+              "calibration_gap": [
+                0.01917143303005481,
+                0.05918624709044634
+              ],
+              "mean_probability": [
+                0.07088201089415055,
+                0.0960114865593762
+              ],
+              "nll_nats": [
+                0.17579439169087968,
+                0.24041613279483898
+              ]
+            },
+            "average_precision": 0.11001077610624403,
+            "brier": 0.0475841877469371,
+            "calibration_gap": 0.04049576946177017,
+            "mean_probability": 0.08396090679953053,
+            "nll_nats": 0.20984589959763306
+          },
+          "cross_study_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.031405412167769625,
+                0.057204935285940874
+              ],
+              "brier": [
+                0.030585779709577255,
+                0.05409867111482949
+              ],
+              "calibration_gap": [
+                -0.01288954808972411,
+                0.012909975028447134
+              ],
+              "mean_probability": [
+                0.04431538719621675,
+                0.04431538719621676
+              ],
+              "nll_nats": [
+                0.14177635891528081,
+                0.22100917111849824
+              ]
+            },
+            "average_precision": 0.04346513733776034,
+            "brier": 0.04157664209879178,
+            "calibration_gap": 0.00085024985845642,
+            "mean_probability": 0.04431538719621676,
+            "nll_nats": 0.178812932624013
+          },
+          "cross_study_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.03568932964538884,
+                0.4266006756111555
+              ],
+              "brier": [
+                0.04289620894871008,
+                0.05987657266146386
+              ],
+              "calibration_gap": [
+                0.041211984572654056,
+                0.08116564156693518
+              ],
+              "mean_probability": [
+                0.09258758076886844,
+                0.11823248346473789
+              ],
+              "nll_nats": [
+                0.1938167239340993,
+                0.25765924314647515
+              ]
+            },
+            "average_precision": 0.2124328540963641,
+            "brier": 0.05149372427431112,
+            "calibration_gap": 0.06264238997464901,
+            "mean_probability": 0.10610752731240934,
+            "nll_nats": 0.22689566250272886
+          },
+          "pooled_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.033566725680103215,
+                0.23665267902447537
+              ],
+              "brier": [
+                0.030854858142664907,
+                0.05361934637659698
+              ],
+              "calibration_gap": [
+                -0.012885505228365504,
+                0.014248083245022452
+              ],
+              "mean_probability": [
+                0.0419337380647308,
+                0.048405183890054784
+              ],
+              "nll_nats": [
+                0.14312046617858426,
+                0.21718809787295718
+              ]
+            },
+            "average_precision": 0.11275576234268175,
+            "brier": 0.04162863094206897,
+            "calibration_gap": 0.001877883559744121,
+            "mean_probability": 0.04534302089750446,
+            "nll_nats": 0.17911126356409907
+          },
+          "pooled_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.031405412167769625,
+                0.057204935285940874
+              ],
+              "brier": [
+                0.03062737899184677,
+                0.05406176376042823
+              ],
+              "calibration_gap": [
+                -0.01136807351999699,
+                0.014431449598174256
+              ],
+              "mean_probability": [
+                0.04583686176594387,
+                0.045836861765943884
+              ],
+              "nll_nats": [
+                0.14225947370891573,
+                0.2205802741534146
+              ]
+            },
+            "average_precision": 0.04346513733776034,
+            "brier": 0.04158154425073321,
+            "calibration_gap": 0.0023717244281835407,
+            "mean_probability": 0.04583686176594389,
+            "nll_nats": 0.1788697367795958
+          },
+          "pooled_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.03824961022294403,
+                0.430084342354005
+              ],
+              "brier": [
+                0.02995554787950588,
+                0.050613815710039
+              ],
+              "calibration_gap": [
+                -0.015874455860616237,
+                0.009019769843851937
+              ],
+              "mean_probability": [
+                0.037665091736501864,
+                0.043868041661783895
+              ],
+              "nll_nats": [
+                0.13722744525122338,
+                0.20530318895425895
+              ]
+            },
+            "average_precision": 0.21767812827122363,
+            "brier": 0.040019136152747346,
+            "calibration_gap": -0.0026400206474221496,
+            "mean_probability": 0.04082511669033819,
+            "nll_nats": 0.17147591545576957
+          },
+          "within_position": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.04910774282957436,
+                0.2621389073328375
+              ],
+              "brier": [
+                0.03036153498076883,
+                0.05357773253300092
+              ],
+              "calibration_gap": [
+                -0.01581837347645143,
+                0.009788306192832082
+              ],
+              "mean_probability": [
+                0.03940341940713095,
+                0.04314530798622044
+              ],
+              "nll_nats": [
+                0.13894777726809854,
+                0.21509793163477203
+              ]
+            },
+            "average_precision": 0.13222161693620926,
+            "brier": 0.0412756875168289,
+            "calibration_gap": -0.0020639854617267306,
+            "mean_probability": 0.041401151876033604,
+            "nll_nats": 0.17525837988372878
+          },
+          "within_prior": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.031405412167769625,
+                0.057204935285940874
+              ],
+              "brier": [
+                0.03067360818196501,
+                0.0540294860905105
+              ],
+              "calibration_gap": [
+                -0.009846594621406654,
+                0.015952928496764593
+              ],
+              "mean_probability": [
+                0.047358340664534204,
+                0.04735834066453422
+              ],
+              "nll_nats": [
+                0.1427796741299362,
+                0.2202168361225809
+              ]
+            },
+            "average_precision": 0.04346513733776034,
+            "brier": 0.04159107620611357,
+            "calibration_gap": 0.0038932033267738723,
+            "mean_probability": 0.04735834066453421,
+            "nll_nats": 0.17897688937681797
+          },
+          "within_qwen": {
+            "article_family_ci95": {
+              "average_precision": [
+                0.06071974341436179,
+                0.44868568516592827
+              ],
+              "brier": [
+                0.02944374891068956,
+                0.05000775091884067
+              ],
+              "calibration_gap": [
+                -0.014921787023375545,
+                0.00797361873002239
+              ],
+              "mean_probability": [
+                0.038130421268519274,
+                0.0430565681520831
+              ],
+              "nll_nats": [
+                0.13278955246899846,
+                0.1980826104420871
+              ]
+            },
+            "average_precision": 0.23448451572137075,
+            "brier": 0.039459663535643924,
+            "calibration_gap": -0.0029538844723662576,
+            "mean_probability": 0.04051125286539408,
+            "nll_nats": 0.1654085040212534
+          }
+        },
+        "negative": 3169,
+        "observed_stops": 180,
+        "pooled_qwen_calibration_gap": {
+          "article_family_ci90": [
+            -0.013617720972030841,
+            0.007292380642840905
+          ],
+          "difference": -0.0026400206474221496
+        },
+        "pooled_qwen_minus_pooled_position_brier": {
+          "difference": -0.001609494789321625,
+          "paired_article_family_ci95": [
+            -0.00393323468952458,
+            -0.0002264747869212463
+          ]
+        },
+        "positive": 144,
+        "trials": 3313
+      }
+    }
+  }
+}

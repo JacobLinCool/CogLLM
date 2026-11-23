@@ -1,0 +1,93 @@
+{
+  "assay_sha256": "fdae78efa14887bc6a25b6b2012d4d79bbf77e8d7ad803fcb6deeeb3c87f8fd0",
+  "forecasts_sha256": "9977ac20b790b38e5f872613dea3e331084b7ddbeeb3c5b5721440cd9e4ee056",
+  "label_audit_sha256": "0275ef4214df8c794862f0d0454ac6a72a03e84ecb4366d64f8bb796a3ba1874",
+  "scope": "Positive-only phrase recovery in a supplied PLABA author sentence with frozen IIRC weights.",
+  "targets": 94,
+  "sentences_containing_targets": 70,
+  "targets_with_certified_sentence_end": 94,
+  "candidate_support_count": {
+    "overlap": 94,
+    "exact": 90
+  },
+  "primary": "top5_overlap",
+  "scores": {
+    "top1_overlap": {
+      "hits": {
+        "form": 4,
+        "qwen": 7
+      },
+      "means": {
+        "form": 0.0425531914893617,
+        "qwen": 0.07446808510638298
+      },
+      "qwen_minus_form": {
+        "difference": 0.031914893617021274,
+        "descriptive_paired_material_95_ci": [
+          0.0,
+          0.08163265306122448
+        ],
+        "groups": 12
+      }
+    },
+    "top5_overlap": {
+      "hits": {
+        "form": 19,
+        "qwen": 52
+      },
+      "means": {
+        "form": 0.20212765957446807,
+        "qwen": 0.5531914893617021
+      },
+      "qwen_minus_form": {
+        "difference": 0.35106382978723405,
+        "descriptive_paired_material_95_ci": [
+          0.20833333333333334,
+          0.5
+        ],
+        "groups": 12
+      }
+    },
+    "top1_exact": {
+      "hits": {
+        "form": 4,
+        "qwen": 4
+      },
+      "means": {
+        "form": 0.0425531914893617,
+        "qwen": 0.0425531914893617
+      },
+      "qwen_minus_form": {
+        "difference": 0.0,
+        "descriptive_paired_material_95_ci": [
+          -0.030612244897959183,
+          0.02970666469632032
+        ],
+        "groups": 12
+      }
+    },
+    "top5_exact": {
+      "hits": {
+        "form": 9,
+        "qwen": 31
+      },
+      "means": {
+        "form": 0.09574468085106383,
+        "qwen": 0.32978723404255317
+      },
+      "qwen_minus_form": {
+        "difference": 0.23404255319148937,
+        "descriptive_paired_material_95_ci": [
+          0.09090909090909091,
+          0.4117647058823529
+        ],
+        "groups": 12
+      }
+    }
+  },
+  "bootstrap": {
+    "unit": "Round 1 reader-connected article component",
+    "draws": 10000,
+    "seed": 43
+  }
+}

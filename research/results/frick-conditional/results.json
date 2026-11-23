@@ -1,0 +1,783 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "nll_margin_nats_per_story_trial": 0.05,
+    "probability_margin": 0.1,
+    "seed": 735972
+  },
+  "comparisons": {
+    "global": {
+      "conditional_minus_comparator_nll": {
+        "crossed_story_reader_ci95": [
+          -0.1828837224548435,
+          0.08777974798575255
+        ],
+        "estimate": -0.05076964452657551
+      },
+      "conditional_minus_comparator_target_effect": {
+        "crossed_story_reader_ci95": [
+          0.10690648813327411,
+          0.23869352775876668
+        ],
+        "estimate": 0.16732520371374188
+      },
+      "conditional_target_absolute_error_reduction": {
+        "crossed_story_reader_ci95": [
+          0.10690648813327408,
+          0.2386935277587667
+        ],
+        "estimate": 0.16732520371374193
+      }
+    },
+    "original_contextual": {
+      "conditional_minus_comparator_nll": {
+        "crossed_story_reader_ci95": [
+          -0.2987280251144167,
+          0.027723361138089604
+        ],
+        "estimate": -0.13544094197931478
+      },
+      "conditional_minus_comparator_target_effect": {
+        "crossed_story_reader_ci95": [
+          0.1226973766875031,
+          0.26691272465578364
+        ],
+        "estimate": 0.1890003384202686
+      },
+      "conditional_target_absolute_error_reduction": {
+        "crossed_story_reader_ci95": [
+          0.12269737668750307,
+          0.26691272465578364
+        ],
+        "estimate": 0.18900033842026864
+      }
+    },
+    "phase_calibrated": {
+      "conditional_minus_comparator_nll": {
+        "crossed_story_reader_ci95": [
+          0.004088270814829398,
+          0.03701531818690026
+        ],
+        "estimate": 0.02022335606189407
+      },
+      "conditional_minus_comparator_target_effect": {
+        "crossed_story_reader_ci95": [
+          0.007693490371387104,
+          0.029845137263180145
+        ],
+        "estimate": 0.01797084731443141
+      },
+      "conditional_target_absolute_error_reduction": {
+        "crossed_story_reader_ci95": [
+          0.007693490371387104,
+          0.029845137263180145
+        ],
+        "estimate": 0.017970847314431437
+      }
+    }
+  },
+  "forecast_seal_sha256": "efd9a531ac3360bdeb06a2c1f78cf03ca916b139b5f7c375a6a07a8255760e55",
+  "gate_results": {
+    "nll_noninferior_to_global": false,
+    "nll_noninferior_to_original_contextual": true,
+    "pretarget_bias_equivalent_01": true,
+    "pretarget_bias_equivalent_02": true,
+    "target_effect_equivalent": false,
+    "target_effect_positive": true
+  },
+  "human_first_d_by_condition": {
+    "01": {
+      "after_target": {
+        "crossed_story_reader_ci95": [
+          0.0008768148820326682,
+          0.062164283486090266
+        ],
+        "estimate": 0.02308502024291498
+      },
+      "at_target": {
+        "crossed_story_reader_ci95": [
+          0.007606440904470461,
+          0.058152076730505126
+        ],
+        "estimate": 0.028735829959514177
+      },
+      "before_target": {
+        "crossed_story_reader_ci95": [
+          0.09047628380143992,
+          0.1763957115250941
+        ],
+        "estimate": 0.13079352226720647
+      },
+      "no_d": {
+        "crossed_story_reader_ci95": [
+          0.7555708056622691,
+          0.871922836018787
+        ],
+        "estimate": 0.8173856275303645
+      }
+    },
+    "02": {
+      "after_target": {
+        "crossed_story_reader_ci95": [
+          0.002259185700099305,
+          0.027146750087657785
+        ],
+        "estimate": 0.012200404858299598
+      },
+      "at_target": {
+        "crossed_story_reader_ci95": [
+          0.42523053927344545,
+          0.5955366765435313
+        ],
+        "estimate": 0.5114514170040486
+      },
+      "before_target": {
+        "crossed_story_reader_ci95": [
+          0.08940511770879336,
+          0.18600611728108565
+        ],
+        "estimate": 0.1340981781376518
+      },
+      "no_d": {
+        "crossed_story_reader_ci95": [
+          0.2643771843145413,
+          0.4243020991759328
+        ],
+        "estimate": 0.34225
+      }
+    }
+  },
+  "human_target_effect": {
+    "crossed_story_reader_ci95": [
+      0.3909802324149035,
+      0.572566540668345
+    ],
+    "estimate": 0.48271558704453443
+  },
+  "inventory": {
+    "current_judgments": 26340,
+    "first_at_risk_judgments": 23474,
+    "first_d": 754,
+    "max_trials_per_variant": 52,
+    "min_trials_per_variant": 38,
+    "readers": 180,
+    "right_censored": 1046,
+    "stories": 20,
+    "target_observations": {
+      "01": {
+        "author_filtered_d": 42,
+        "author_filtered_n": 890,
+        "uncut_d": 42,
+        "uncut_n": 900
+      },
+      "02": {
+        "author_filtered_d": 505,
+        "author_filtered_n": 889,
+        "uncut_d": 505,
+        "uncut_n": 900
+      }
+    },
+    "trials": 1800,
+    "variants": 40
+  },
+  "methods": {
+    "conditional": {
+      "exact_first_event_nll": {
+        "crossed_story_reader_ci95": [
+          1.3638032609781419,
+          1.849798058522051
+        ],
+        "estimate": 1.5938747675888492
+      },
+      "first_d_by_condition": {
+        "01": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.07147680784652859,
+                0.12088238482882632
+              ],
+              "estimate": 0.0957728343912755
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.025535653344441196,
+                0.10446591627474339
+              ],
+              "estimate": 0.05740916793983362
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.13091149008262246,
+                0.208492159469023
+              ],
+              "estimate": 0.16724003077414754
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.6210540265290925,
+                0.7353063784045469
+              ],
+              "estimate": 0.6795779668947435
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.032297498092829724,
+                0.10608905535349342
+              ],
+              "estimate": 0.07268781414836052
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.01598470046974383,
+                0.08061807680055644
+              ],
+              "estimate": 0.02867333798031944
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                -0.01874302304240158,
+                0.08936101203050836
+              ],
+              "estimate": 0.03644650850694106
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.22141574310164236,
+                -0.04948385592897323
+              ],
+              "estimate": -0.137807660635621
+            }
+          }
+        },
+        "02": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.028560982297818973,
+                0.05163604517331039
+              ],
+              "estimate": 0.03981548672313972
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.17154161503790785,
+                0.3316618106976128
+              ],
+              "estimate": 0.24691864359778976
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.1302666911120687,
+                0.20796699814918557
+              ],
+              "estimate": 0.1665652372591249
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.45586159325956666,
+                0.6285612234550593
+              ],
+              "estimate": 0.5467006324199457
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.009653659574682753,
+                0.04380082150049666
+              ],
+              "estimate": 0.027615081864840123
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.37327684087336127,
+                -0.15336408522906425
+              ],
+              "estimate": -0.26453277340625886
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                -0.030415558276379557,
+                0.09655058917942687
+              ],
+              "estimate": 0.0324670591214731
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.08912173722244408,
+                0.31634547679266845
+              ],
+              "estimate": 0.2044506324199457
+            }
+          }
+        }
+      },
+      "target_effect": {
+        "crossed_story_reader_ci95": [
+          0.12320401032937245,
+          0.26736693230787584
+        ],
+        "estimate": 0.18950947565795614
+      },
+      "target_model_minus_human": {
+        "crossed_story_reader_ci95": [
+          -0.40053913617956516,
+          -0.18458006794959836
+        ],
+        "estimate": -0.29320611138657826
+      }
+    },
+    "global": {
+      "exact_first_event_nll": {
+        "crossed_story_reader_ci95": [
+          1.4937245704155306,
+          1.803507583986788
+        ],
+        "estimate": 1.6446444121154247
+      },
+      "first_d_by_condition": {
+        "01": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.06231536097146833,
+                0.06935759212349375
+              ],
+              "estimate": 0.06593813641461997
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.03195716515179012,
+                0.040840199123963715
+              ],
+              "estimate": 0.036009077162820015
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.2657460296986926,
+                0.2940078173421376
+              ],
+              "estimate": 0.28038264592171985
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.6032928887107795,
+                0.6323114668085107
+              ],
+              "estimate": 0.6176701405008402
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.003654943329809251,
+                0.06576703081966419
+              ],
+              "estimate": 0.042853116171704994
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.021965352186206634,
+                0.028866722429301096
+              ],
+              "estimate": 0.0072732472033058375
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.10241764348541936,
+                0.19123516352726655
+              ],
+              "estimate": 0.14958912365451338
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.2586712787947107,
+                -0.13247559615231908
+              ],
+              "estimate": -0.19971548702952424
+            }
+          }
+        },
+        "02": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.05122478871973681,
+                0.05844612058147384
+              ],
+              "estimate": 0.054844157269533025
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.05117197667242063,
+                0.06588524277819638
+              ],
+              "estimate": 0.05819334910703428
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.26582420432539594,
+                0.29375090092719314
+              ],
+              "estimate": 0.2801210434742706
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.592410893303527,
+                0.6218029408151986
+              ],
+              "estimate": 0.6068414501491621
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.027778236364530706,
+                0.05315012684412695
+              ],
+              "estimate": 0.04264375241123343
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.537236244972166,
+                -0.36661678965651373
+              ],
+              "estimate": -0.45325806789701434
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.09090251336444545,
+                0.19526196391081932
+              ],
+              "estimate": 0.1460228653366188
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.1803495190892508,
+                0.34362414489071147
+              ],
+              "estimate": 0.26459145014916213
+            }
+          }
+        }
+      },
+      "target_effect": {
+        "crossed_story_reader_ci95": [
+          0.015558494593563354,
+          0.029524018624951198
+        ],
+        "estimate": 0.022184271944214268
+      },
+      "target_model_minus_human": {
+        "crossed_story_reader_ci95": [
+          -0.5503374948301042,
+          -0.3701528941243591
+        ],
+        "estimate": -0.4605313151003202
+      }
+    },
+    "original_contextual": {
+      "exact_first_event_nll": {
+        "crossed_story_reader_ci95": [
+          1.5754846516005157,
+          1.8890608361738699
+        ],
+        "estimate": 1.729315709568164
+      },
+      "first_d_by_condition": {
+        "01": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.060833650928006494,
+                0.06457733445122804
+              ],
+              "estimate": 0.0627447744371889
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.037105534432398286,
+                0.039404508991259274
+              ],
+              "estimate": 0.03827571888853333
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.27534939388317314,
+                0.3032897888175491
+              ],
+              "estimate": 0.29000191772710227
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.5969739954951017,
+                0.6222980511801897
+              ],
+              "estimate": 0.6089775889471757
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                -0.00024051032636901107,
+                0.06287081195318403
+              ],
+              "estimate": 0.03965975419427392
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.019589739009731343,
+                0.030435847042169225
+              ],
+              "estimate": 0.009539888929019153
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.1115362508892912,
+                0.20134937250666382
+              ],
+              "estimate": 0.1592083954598958
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.2668904948096786,
+                -0.1420811070587796
+              ],
+              "estimate": -0.2084080385831888
+            }
+          }
+        },
+        "02": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.060797121933880906,
+                0.06455524891831801
+              ],
+              "estimate": 0.0627125545455395
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.037589357042985036,
+                0.03995218262970743
+              ],
+              "estimate": 0.03878485612622089
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.2752133221104993,
+                0.30309099173199433
+              ],
+              "estimate": 0.2898369051794559
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.596695515602731,
+                0.6218956740685975
+              ],
+              "estimate": 0.6086656841487837
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.03534433130868536,
+                0.06074336324860582
+              ],
+              "estimate": 0.05051214968723991
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.5568719539613038,
+                -0.3863645803340859
+              ],
+              "estimate": -0.4726665608778277
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.10067334547156977,
+                0.20481410921138052
+              ],
+              "estimate": 0.15573872704180408
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.18173530132600202,
+                0.34537651445165374
+              ],
+              "estimate": 0.26641568414878375
+            }
+          }
+        }
+      },
+      "target_effect": {
+        "crossed_story_reader_ci95": [
+          0.0003436494699728426,
+          0.0006873401192270219
+        ],
+        "estimate": 0.0005091372376875569
+      },
+      "target_model_minus_human": {
+        "crossed_story_reader_ci95": [
+          -0.5721591209884638,
+          -0.39042570227499146
+        ],
+        "estimate": -0.4822064498068469
+      }
+    },
+    "phase_calibrated": {
+      "exact_first_event_nll": {
+        "crossed_story_reader_ci95": [
+          1.3526005131712409,
+          1.8202096735298712
+        ],
+        "estimate": 1.573651411526955
+      },
+      "first_d_by_condition": {
+        "01": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.07975090328489981,
+                0.12672333896910454
+              ],
+              "estimate": 0.10291207327229299
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.03335540339711125,
+                0.10418678388189512
+              ],
+              "estimate": 0.06264360691781364
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.13344945981457854,
+                0.20647780462870904
+              ],
+              "estimate": 0.16753508950051707
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.61511031566624,
+                0.7172750964955684
+              ],
+              "estimate": 0.6669092303093764
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.039627734629712766,
+                0.11258713450316604
+              ],
+              "estimate": 0.07982705302937801
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.008301056982678868,
+                0.0808887031874483
+              ],
+              "estimate": 0.033907776958299454
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                -0.017474415457021136,
+                0.08809134375911179
+              ],
+              "estimate": 0.036741567233310596
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                -0.22906289862999374,
+                -0.06577960516292003
+              ],
+              "estimate": -0.15047639722098805
+            }
+          }
+        },
+        "02": {
+          "predicted": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.03342847907424246,
+                0.05748635045486269
+              ],
+              "estimate": 0.04521720630481261
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                0.1685221379740157,
+                0.30720448888632107
+              ],
+              "estimate": 0.23418223526133838
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                0.1328277030189014,
+                0.205334244711301
+              ],
+              "estimate": 0.1668439557167455
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.47352740992878056,
+                0.6271014475991813
+              ],
+              "estimate": 0.5537566027171036
+            }
+          },
+          "prediction_minus_human": {
+            "after_target": {
+              "crossed_story_reader_ci95": [
+                0.01459276989475785,
+                0.04953801122722122
+              ],
+              "estimate": 0.03301680144651301
+            },
+            "at_target": {
+              "crossed_story_reader_ci95": [
+                -0.3802830272453098,
+                -0.17236394507667224
+              ],
+              "estimate": -0.2772691817427102
+            },
+            "before_target": {
+              "crossed_story_reader_ci95": [
+                -0.029504089883961925,
+                0.0958675381587115
+              ],
+              "estimate": 0.03274577757909372
+            },
+            "no_d": {
+              "crossed_story_reader_ci95": [
+                0.10223914874903749,
+                0.316492274115561
+              ],
+              "estimate": 0.2115066027171036
+            }
+          }
+        }
+      },
+      "target_effect": {
+        "crossed_story_reader_ci95": [
+          0.1139330348153648,
+          0.23941922907357058
+        ],
+        "estimate": 0.17153862834352473
+      },
+      "target_model_minus_human": {
+        "crossed_story_reader_ci95": [
+          -0.4130884562230518,
+          -0.20746231694325215
+        ],
+        "estimate": -0.3111769587010097
+      }
+    }
+  },
+  "pass": false,
+  "retrospective": true
+}

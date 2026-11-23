@@ -1,0 +1,90 @@
+{
+  "scope": "Cross-language rank transfer to German learner judgments of isolated sentences.",
+  "assay_sha256": "667f1f059eb6045f050bd75dce7653b3970e4ee302014f45d08bc24789f16a0d",
+  "forecasts_sha256": "47f142c5d00de3def936d7233c3f9407515377b29a9dc875fa32ad9cdfd256cb",
+  "heldout_outcomes_sha256": "18fbde951e765ad94c5f9de3a3f8c180e13789e81d4d4383b4cd4864b9d9e6c3",
+  "certified_sentences": 775,
+  "coverage": 1.0,
+  "coverage_gate_passed": true,
+  "excluded_stops": {},
+  "bootstrap": {
+    "unit": "source article",
+    "draws": 10000,
+    "seed": 43
+  },
+  "targets": {
+    "processing_ease": {
+      "eligible_articles": 23,
+      "eligible_pairs": 13018,
+      "mean_article_concordance": {
+        "plaba_length": 0.7760496087238284,
+        "plaba_ordinal": 0.7789390514875631,
+        "plaba_effect_calibrated": 0.7764304892963824
+      },
+      "paired_concordance_differences": {
+        "plaba_ordinal_minus_plaba_length": {
+          "difference": 0.0028894427637347355,
+          "descriptive_paired_material_95_ci": [
+            -0.002068787027828594,
+            0.007833688958723198
+          ],
+          "groups": 23
+        },
+        "plaba_effect_calibrated_minus_plaba_length": {
+          "difference": 0.0003808805725540031,
+          "descriptive_paired_material_95_ci": [
+            -0.00609061725423895,
+            0.0064425866582528135
+          ],
+          "groups": 23
+        },
+        "plaba_effect_calibrated_minus_plaba_ordinal": {
+          "difference": -0.0025085621911807325,
+          "descriptive_paired_material_95_ci": [
+            -0.00607100433535411,
+            0.0009987767571161905
+          ],
+          "groups": 23
+        }
+      },
+      "primary_gate_passed": false
+    },
+    "perceived_understanding": {
+      "eligible_articles": 23,
+      "eligible_pairs": 12984,
+      "mean_article_concordance": {
+        "plaba_length": 0.7127317704790191,
+        "plaba_ordinal": 0.7186086012876997,
+        "plaba_effect_calibrated": 0.7164352301999996
+      },
+      "paired_concordance_differences": {
+        "plaba_ordinal_minus_plaba_length": {
+          "difference": 0.005876830808680405,
+          "descriptive_paired_material_95_ci": [
+            -0.0013418994302099101,
+            0.013103112985030732
+          ],
+          "groups": 23
+        },
+        "plaba_effect_calibrated_minus_plaba_length": {
+          "difference": 0.003703459720980397,
+          "descriptive_paired_material_95_ci": [
+            -0.005963285782608461,
+            0.014599904178329388
+          ],
+          "groups": 23
+        },
+        "plaba_effect_calibrated_minus_plaba_ordinal": {
+          "difference": -0.0021733710877000077,
+          "descriptive_paired_material_95_ci": [
+            -0.007904061113750699,
+            0.0037341562559273273
+          ],
+          "groups": 23
+        }
+      },
+      "primary_gate_passed": false
+    }
+  },
+  "primary_conditions_passed": false
+}

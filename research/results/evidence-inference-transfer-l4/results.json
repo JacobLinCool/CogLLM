@@ -1,0 +1,298 @@
+{
+  "assay_sha256": "0d05da35993b5d07a1a1b00002cf2a8bc1fc983e2232c04c53f1b03005cde9ce",
+  "average_precision": {
+    "articles": 23,
+    "fused_centered_minus": {
+      "bm25_causal": {
+        "ci95": [
+          -0.02988153014018499,
+          0.06104740384851568
+        ],
+        "estimate": 0.012778484719169564
+      },
+      "bm25_unit": {
+        "ci95": [
+          -0.17675339113210725,
+          -0.013901608649690271
+        ],
+        "estimate": -0.09156822984148832
+      },
+      "centered_token_rank": {
+        "ci95": [
+          0.05835700824593183,
+          0.18147595879803313
+        ],
+        "estimate": 0.11793890067351695
+      },
+      "fused_raw": {
+        "ci95": [
+          -0.02941217221950761,
+          0.06102162523514108
+        ],
+        "estimate": 0.013083124755410708
+      },
+      "qwen_only": {
+        "ci95": [
+          0.07833875802246831,
+          0.19115339003483253
+        ],
+        "estimate": 0.13358458294912678
+      },
+      "token_rank": {
+        "ci95": [
+          0.06797441295108632,
+          0.21987967121224258
+        ],
+        "estimate": 0.14201216190603355
+      }
+    },
+    "mapped_reference_occurrences": 145,
+    "methods": {
+      "bm25_causal": {
+        "ci95": [
+          0.12959692079851678,
+          0.2815409271659751
+        ],
+        "estimate": 0.20179542166513095
+      },
+      "bm25_unit": {
+        "ci95": [
+          0.22879612805825741,
+          0.3857187594373621
+        ],
+        "estimate": 0.30614213622578884
+      },
+      "centered_token_rank": {
+        "ci95": [
+          0.055675482459341126,
+          0.14957714360297378
+        ],
+        "estimate": 0.09663500571078357
+      },
+      "fused_centered": {
+        "ci95": [
+          0.14602384211974517,
+          0.2906592528898398
+        ],
+        "estimate": 0.21457390638430052
+      },
+      "fused_raw": {
+        "ci95": [
+          0.1309887702909683,
+          0.28087830543707615
+        ],
+        "estimate": 0.2014907816288898
+      },
+      "qwen_only": {
+        "ci95": [
+          0.043456582786440254,
+          0.1323075454151978
+        ],
+        "estimate": 0.08098932343517373
+      },
+      "token_rank": {
+        "ci95": [
+          0.04477805389501198,
+          0.10304013790941961
+        ],
+        "estimate": 0.07256174447826695
+      }
+    },
+    "queries": 79,
+    "valid_bootstrap_draws": 10000
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "interval": "paired_percentile",
+    "population": "eligible_articles_per_endpoint",
+    "sampling_unit": "article",
+    "seed": 735972
+  },
+  "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "claim_pair_ordering": {
+    "articles": 17,
+    "directions": 194,
+    "fused_centered_minus": {
+      "bm25_causal": {
+        "ci95": [
+          0.007567163228928068,
+          0.20121466768525592
+        ],
+        "estimate": 0.09825991002461598
+      },
+      "bm25_unit": {
+        "ci95": [
+          -0.21715735245146994,
+          0.0169148172089349
+        ],
+        "estimate": -0.10240478475772574
+      },
+      "centered_token_rank": {
+        "ci95": [
+          -0.17414414017355195,
+          -0.005046513943572794
+        ],
+        "estimate": -0.08654058359940708
+      },
+      "fused_raw": {
+        "ci95": [
+          0.0229901960784314,
+          0.21227824463118583
+        ],
+        "estimate": 0.11159951159951165
+      },
+      "qwen_only": {
+        "ci95": [
+          -0.06736937082525316,
+          0.13095345830639935
+        ],
+        "estimate": 0.024527433350962857
+      },
+      "token_rank": {
+        "ci95": [
+          0.11792430608607092,
+          0.3342315772462831
+        ],
+        "estimate": 0.22695735636912118
+      }
+    },
+    "methods": {
+      "bm25_causal": {
+        "ci95": [
+          0.5167949452508277,
+          0.7530425456896046
+        ],
+        "estimate": 0.6391082773435715
+      },
+      "bm25_unit": {
+        "ci95": [
+          0.7485203521968229,
+          0.9226036218683277
+        ],
+        "estimate": 0.8397729721259132
+      },
+      "centered_token_rank": {
+        "ci95": [
+          0.7368308080808081,
+          0.9058823529411765
+        ],
+        "estimate": 0.8239087709675945
+      },
+      "fused_centered": {
+        "ci95": [
+          0.6277648332060097,
+          0.8433328436269614
+        ],
+        "estimate": 0.7373681873681874
+      },
+      "fused_raw": {
+        "ci95": [
+          0.5068805704099821,
+          0.7378932178932179
+        ],
+        "estimate": 0.6257686757686758
+      },
+      "qwen_only": {
+        "ci95": [
+          0.6250805322128853,
+          0.7983697348403231
+        ],
+        "estimate": 0.7128407540172246
+      },
+      "token_rank": {
+        "ci95": [
+          0.5,
+          0.5220821661998133
+        ],
+        "estimate": 0.5104108309990663
+      }
+    },
+    "pairs": 97,
+    "raw_direction_counts": {
+      "bm25_causal": {
+        "losses": 62,
+        "ties": 0,
+        "wins": 132
+      },
+      "bm25_unit": {
+        "losses": 31,
+        "ties": 0,
+        "wins": 163
+      },
+      "centered_token_rank": {
+        "losses": 42,
+        "ties": 0,
+        "wins": 152
+      },
+      "fused_centered": {
+        "losses": 53,
+        "ties": 0,
+        "wins": 141
+      },
+      "fused_raw": {
+        "losses": 66,
+        "ties": 0,
+        "wins": 128
+      },
+      "qwen_only": {
+        "losses": 47,
+        "ties": 0,
+        "wins": 147
+      },
+      "token_rank": {
+        "losses": 94,
+        "ties": 0,
+        "wins": 100
+      }
+    },
+    "valid_bootstrap_draws": 10000
+  },
+  "coverage": {
+    "pairs": {
+      "fully_mapped_pairs": 125,
+      "overlapping_candidate_unions": 28,
+      "pairs_without_two_fully_mapped_queries": 18,
+      "scored_disjoint_pairs": 97,
+      "within_article_query_pairs": 143
+    },
+    "queries": {
+      "fully_mapped_queries": 78,
+      "partially_mapped_queries": 1,
+      "queries": 89,
+      "queries_with_any_mapped_reference": 79,
+      "queries_with_no_mapped_reference": 1,
+      "queries_without_references": 9
+    },
+    "references": {
+      "mapped_reference_occurrences": 145,
+      "reference_occurrences": 148,
+      "repeated_reference_occurrences": 22,
+      "unalignable_reference_occurrences": 3,
+      "uncovered_non_whitespace": 3,
+      "whitespace_only": 0
+    }
+  },
+  "fitted_sha256": "8dbd9e3fdc1a538f90736d55e7b793835692ef7276a4908a4562aab5516160fe",
+  "forecast_seal_sha256": "3fc918405f8663ed14c81a3ed8cc824b265d901d1bb83f5845c99f33f48dad26",
+  "gates": {
+    "average_precision_fused_centered_over_bm25_causal": false,
+    "average_precision_fused_centered_over_bm25_unit": false,
+    "claim_pair_ordering_fused_centered_over_bm25_unit": false
+  },
+  "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "packet_sha256": {
+    "articles.jsonl": "774447b22c694508b4b863fb31f852da40c56911bde0e5a92556290ee21bb8f3",
+    "preflight.json": "0a449a916f33cfc499cd6fbf240a7bc56ddb026532be788fad8e370dece0f4e0",
+    "stimuli.jsonl": "f8991a756d310587de612652b8420fd6d1de057efad7399e78822fe093792d4e"
+  },
+  "pass": false,
+  "protocol_sha256": "5eb92673df67a817d10a17366c3a2dd3a7f21b0d63080c6ec694dcf21d33bb1e",
+  "scope": {
+    "articles": 24,
+    "certified_sentence_candidates": 3378,
+    "queries": 89,
+    "sentence_candidates": 3395
+  },
+  "scoring_code_sha256": "904d556dfe2750f9e0c2db43637eb99587ea4282222a3137479a0e0ca6cf71c8"
+}

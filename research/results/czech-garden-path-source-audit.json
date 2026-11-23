@@ -1,0 +1,105 @@
+{
+  "paper": "https://doi.org/10.1371/journal.pone.0288817",
+  "public_osf_project": "https://osf.io/98g26/",
+  "osf_project_metadata": "https://api.osf.io/v2/nodes/98g26/",
+  "paper_license": "CC BY",
+  "osf_node_license": null,
+  "osf_license_relationship": null,
+  "language": "Czech",
+  "files": {
+    "experiments_2_and_3_items.csv": {
+      "url": "https://osf.io/download/6gjur/",
+      "bytes": 77220,
+      "sha256": "285fe6720e14037e2e0f9cfc9b890673359ad4b14b53a92ff01fddbdecaece4a"
+    },
+    "experiments_4_and_5_items.csv": {
+      "url": "https://osf.io/download/m24np/",
+      "bytes": 47775,
+      "sha256": "d4f3174981241809ce83db3aa7fe6db1763f8f7bf36b166fcfd9114015f38076"
+    },
+    "results_exp2_whole_yes-no_analysis.csv": {
+      "url": "https://osf.io/download/6cf5h/",
+      "bytes": 1732638,
+      "sha256": "27a6830d2f7632221c7edd632fca96e444774abdcf2bc41072cdc49060b95f32"
+    },
+    "results_exp3_wbw_yes-no_analysis.csv": {
+      "url": "https://osf.io/download/cb624/",
+      "bytes": 11685076,
+      "sha256": "ced62e1bc384bc6491bd960fd5da7efdf5732be29b3e4de80ca5dca177f2214a"
+    },
+    "results_exp3_wbw_yes-no_analysis.R": {
+      "url": "https://osf.io/download/pyv9b/",
+      "bytes": 6547,
+      "sha256": "5b6af205cdf7d184b33f39247d974e16626a64da2cce16659489d237e369ec8e"
+    },
+    "results_exp3_wbw_yes-no_analysis_description.txt": {
+      "url": "https://osf.io/download/um9bc/",
+      "bytes": 1413,
+      "sha256": "ee07e5721809b04aea3384d9cb09819211b58a262c75e8ea8480291bcac43bb9"
+    },
+    "results_exp5_wbw_open_ended_answers.csv": {
+      "url": "https://osf.io/download/hgxt6/",
+      "bytes": 1219901,
+      "sha256": "9456222cc2f16c4e2c00af680628487c8a71b94c62c2867d56e8ae62322d0843"
+    },
+    "results_exp5_wbw_open_ended_answers_description.txt": {
+      "url": "https://osf.io/download/y2jgd/",
+      "bytes": 1639,
+      "sha256": "c63affdbda498804f5a58764c397431dc843eb62fabb0535d9633437839f0b4b"
+    }
+  },
+  "crosswalk": {
+    "join_fields": ["sentence_type", "object_animacy", "question_type", "ordered_words", "question_nfc_whitespace_normalized"],
+    "animacy_labels_material_to_trials": {"anim": "animate", "inanim": "inanimate"},
+    "trial_item_to_material_item_pairs": 48,
+    "same_index_pairs": 2,
+    "shared_bijection_across_experiments": [2, 3, 5],
+    "canonical_yes_no_keys": 576,
+    "shared_literal_sentence_variants_across_material_tables": 192,
+    "words_per_sentence": 11,
+    "differing_word_positions_within_same_animacy_pairs": {"4": 96},
+    "one_based_ambiguity_word": 4,
+    "one_based_disambiguating_word": 7
+  },
+  "experiment_2": {
+    "display": "whole written sentence",
+    "readers": 174,
+    "trials": 8352,
+    "one_post_sentence_question_per_trial": true,
+    "question_type_counts": {"qcor": 2784, "qmis": 2784, "qpos": 2784},
+    "explicit_unsure": 217,
+    "missing_answer": 53,
+    "literal_word_sequence_and_question_join": 8238,
+    "joins_after_question_normalization": 114,
+    "qmis_yes_among_nonmissing": {"gp": [308, 1383], "nongp": [99, 1387]}
+  },
+  "experiment_3": {
+    "display": "written word-by-word moving window",
+    "readers": 159,
+    "trials": 7632,
+    "word_rows": 83952,
+    "trials_with_all_11_word_positions": 7632,
+    "word_rows_with_numeric_rt": 81211,
+    "trials_with_numeric_disambiguating_word_rt": 7167,
+    "answer_row_rule": "WordNo == 1, as in the author R analysis",
+    "trials_with_inconsistent_repeated_field": {"Answer": 92, "Correct": 92},
+    "one_post_sentence_question_per_trial": true,
+    "question_type_counts": {"qcor": 2544, "qmis": 2544, "qpos": 2544},
+    "explicit_unsure": 226,
+    "missing_answer": 32,
+    "literal_word_sequence_and_question_join": 7526,
+    "joins_after_question_normalization": 106,
+    "qmis_yes_among_nonmissing": {"gp": [357, 1266], "nongp": [110, 1267]}
+  },
+  "experiment_5": {
+    "display": "written word-by-word moving window",
+    "readers": 141,
+    "released_answer_trials": 6740,
+    "trials_per_reader_distribution": {"20": 1, "48": 140},
+    "one_post_sentence_question_per_trial": true,
+    "question_type_counts": {"qwhat": 3368, "qwhose": 3372},
+    "literal_word_sequence_and_question_join": 6740,
+    "qwhat_error_subtype_gp": {"gp": [148, 1686], "nongp": [5, 1682]},
+    "word_rt_release_join_verified": false
+  }
+}

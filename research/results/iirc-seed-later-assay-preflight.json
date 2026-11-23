@@ -1,0 +1,48 @@
+{
+  "assay_sha256": "68d8fc5398a34b7242eb32bdbd65b97c90d91db4973ca0995c7496cbdac88dd8",
+  "model_inputs_archive_sha256": "e345442379ee14c5e478921314329ecf9caf9e57dc3aca4a16ce9e5157232d3b",
+  "coverage": {
+    "train": {
+      "questions": 260,
+      "paragraphs": 239,
+      "tokens": 69070,
+      "stops": 3447,
+      "exclusions": {},
+      "article_families": 239,
+      "questions_at_shared_anchors": 14,
+      "observed": 260,
+      "right_censored": 0
+    },
+    "dev": {
+      "questions": 22,
+      "paragraphs": 19,
+      "tokens": 5018,
+      "stops": 263,
+      "exclusions": {},
+      "article_families": 19,
+      "questions_at_shared_anchors": 0,
+      "observed": 22,
+      "right_censored": 0
+    }
+  },
+  "strict_same_paragraph_swap_pairs_before_alignment": {
+    "train": 3,
+    "dev": 0
+  },
+  "certified_with_extractor_tokenizer": {
+    "unique_paragraphs": 258,
+    "input_tokens": 74088,
+    "cutpoints": 3710,
+    "rejected_stops": 0
+  },
+  "public_archive_verified_against_member_hashes": true,
+  "preparation_replayed_byte_for_byte": true,
+  "synthetic_fit_and_score": {
+    "three_methods": true,
+    "held_out_targets_absent_during_fit": true,
+    "pre_scoring_forecast_hash_checked": true,
+    "fixed_prefix_censoring": true
+  },
+  "model_forward_run": false,
+  "human_observation_hypothesis_tested": false
+}

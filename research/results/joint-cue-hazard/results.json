@@ -1,0 +1,203 @@
+{
+  "forecast_seal_sha256": "d89591cce4aec2b46e25d9c749b972fa6d027b5c5d89e2cad2f2cc400f235b9b",
+  "passes_both_cdf": false,
+  "passes_both_nll": false,
+  "results": {
+    "act_german": {
+      "joint_calibration": [
+        {
+          "exposure": 1,
+          "human_cdf": 0.004,
+          "joint_minus_human": 0.0005913456244561485,
+          "model_cdf": 0.004591345624456149,
+          "paired_crossed_95_ci": [
+            -0.0075545991974922755,
+            0.004922532141605793
+          ],
+          "paired_material_95_ci": [
+            -0.005504294968805633,
+            0.004601969384670965
+          ],
+          "within_margin": true
+        },
+        {
+          "exposure": 3,
+          "human_cdf": 0.039510101010101016,
+          "joint_minus_human": 0.002850850786377636,
+          "model_cdf": 0.04236095179647864,
+          "paired_crossed_95_ci": [
+            -0.02974730720557763,
+            0.0274000570779547
+          ],
+          "paired_material_95_ci": [
+            -0.02673250044370518,
+            0.025066979666836707
+          ],
+          "within_margin": true
+        },
+        {
+          "exposure": 6,
+          "human_cdf": 0.17756060606060606,
+          "joint_minus_human": 0.006555561034478037,
+          "model_cdf": 0.18411616709508408,
+          "paired_crossed_95_ci": [
+            -0.07542317617514174,
+            0.07991742329215876
+          ],
+          "paired_material_95_ci": [
+            -0.06899557088603547,
+            0.07579332096767152
+          ],
+          "within_margin": false
+        }
+      ],
+      "macro_nll_nats": {
+        "position": 0.7597491057755945,
+        "qwen_independent": 0.7672342603061495,
+        "qwen_shared": 0.7665662838901418,
+        "surface": 0.7658130207811765
+      },
+      "materials": 20,
+      "paired_shared_gain": {
+        "position": {
+          "control_minus_joint_nll_nats": -0.006817178114547337,
+          "paired_crossed_95_ci": [
+            -0.016479801623651605,
+            0.0017336360936076425
+          ],
+          "paired_material_95_ci": [
+            -0.01584499544440964,
+            0.0012793340865145124
+          ],
+          "passes": false
+        },
+        "qwen_independent": {
+          "control_minus_joint_nll_nats": 0.0006679764160077179,
+          "paired_crossed_95_ci": [
+            -0.00040403965506922984,
+            0.0019322428693917036
+          ],
+          "paired_material_95_ci": [
+            -0.0003431174545924398,
+            0.0018301070407272717
+          ],
+          "passes": false
+        },
+        "surface": {
+          "control_minus_joint_nll_nats": -0.0007532631089653463,
+          "paired_crossed_95_ci": [
+            -0.0021942814324250465,
+            0.0005164569542492141
+          ],
+          "paired_material_95_ci": [
+            -0.002091141268910049,
+            0.00044445283765785635
+          ],
+          "passes": false
+        }
+      },
+      "passes_cdf": false,
+      "passes_nll": false,
+      "readers": 100,
+      "trials": 1999
+    },
+    "core_vocabulary": {
+      "joint_calibration": [
+        {
+          "exposure": 1,
+          "human_cdf": 0.09347402831101966,
+          "joint_minus_human": -0.017259915616858898,
+          "model_cdf": 0.07621411269416074,
+          "paired_crossed_95_ci": [
+            -0.051944309295196,
+            0.012836661032198498
+          ],
+          "paired_material_95_ci": [
+            -0.04475126494893456,
+            0.006990561591629545
+          ],
+          "within_margin": true
+        },
+        {
+          "exposure": 3,
+          "human_cdf": 0.35822029059848126,
+          "joint_minus_human": -0.013242616471463764,
+          "model_cdf": 0.3449776741270175,
+          "paired_crossed_95_ci": [
+            -0.0707876386905771,
+            0.04262643493643835
+          ],
+          "paired_material_95_ci": [
+            -0.05881411300749044,
+            0.02900407089056715
+          ],
+          "within_margin": false
+        },
+        {
+          "exposure": 6,
+          "human_cdf": 0.6989317988341994,
+          "joint_minus_human": 0.016578675681439378,
+          "model_cdf": 0.7155104745156387,
+          "paired_crossed_95_ci": [
+            -0.03789983798380368,
+            0.07210681383936234
+          ],
+          "paired_material_95_ci": [
+            -0.024699300423417423,
+            0.059823014880003654
+          ],
+          "within_margin": false
+        }
+      ],
+      "macro_nll_nats": {
+        "position": 1.8676282609634431,
+        "qwen_independent": 1.8600372826958673,
+        "qwen_shared": 1.8621692875841966,
+        "surface": 1.8640152031728996
+      },
+      "materials": 32,
+      "paired_shared_gain": {
+        "position": {
+          "control_minus_joint_nll_nats": 0.005458973379246612,
+          "paired_crossed_95_ci": [
+            0.0019776741853122447,
+            0.0091512709544869
+          ],
+          "paired_material_95_ci": [
+            0.002499078733189347,
+            0.008600126247598937
+          ],
+          "passes": true
+        },
+        "qwen_independent": {
+          "control_minus_joint_nll_nats": -0.0021320048883292156,
+          "paired_crossed_95_ci": [
+            -0.003646242035774283,
+            -0.0008334832178344798
+          ],
+          "paired_material_95_ci": [
+            -0.0035190555407247416,
+            -0.0009541567622790404
+          ],
+          "passes": false
+        },
+        "surface": {
+          "control_minus_joint_nll_nats": 0.0018459155887031661,
+          "paired_crossed_95_ci": [
+            0.0008356061078713117,
+            0.002967262355797894
+          ],
+          "paired_material_95_ci": [
+            0.0010425158410415913,
+            0.0027825467666329038
+          ],
+          "passes": true
+        }
+      },
+      "passes_cdf": false,
+      "passes_nll": false,
+      "readers": 195,
+      "trials": 1603
+    }
+  }
+}

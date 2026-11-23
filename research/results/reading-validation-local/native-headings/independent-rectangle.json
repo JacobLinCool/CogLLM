@@ -1,0 +1,203 @@
+{
+  "split": {
+    "train_dois": [
+      "10.5964/jspp.v7i1.557",
+      "10.5964/jspp.v7i1.822",
+      "10.5964/jspp.v5i1.642",
+      "10.5964/jspp.v7i1.1063",
+      "10.5964/jspp.v6i1.601",
+      "10.5964/jspp.v5i2.713"
+    ],
+    "test_dois": [
+      "10.5964/jspp.v7i1.933",
+      "10.5964/jspp.v6i2.859",
+      "10.5964/jspp.v7i1.981",
+      "10.5964/jspp.v5i2.733",
+      "10.5964/jspp.v6i1.741",
+      "10.5964/jspp.v7i1.746"
+    ],
+    "train_n": 83,
+    "test_n": 83,
+    "train_ratings": 316,
+    "test_ratings": 323,
+    "excluded_cross_ratings": 644,
+    "source_arm_n": [
+      [
+        38,
+        6
+      ],
+      [
+        24,
+        29
+      ],
+      [
+        24,
+        30
+      ],
+      [
+        21,
+        25
+      ],
+      [
+        32,
+        26
+      ],
+      [
+        30,
+        31
+      ]
+    ],
+    "held_arm_n": [
+      [
+        23,
+        22
+      ],
+      [
+        40,
+        20
+      ],
+      [
+        28,
+        31
+      ],
+      [
+        26,
+        26
+      ],
+      [
+        31,
+        22
+      ],
+      [
+        33,
+        21
+      ]
+    ]
+  },
+  "estimates": {
+    "human": {
+      "estimate": 0.5838908092063774,
+      "ci95": [
+        -0.12654001348320013,
+        1.3632979677496415
+      ]
+    },
+    "frozen.mean": {
+      "estimate": 0.05428938216666538,
+      "ci95": [
+        0.013551121890701326,
+        0.0932423721161495
+      ]
+    },
+    "frozen.minus_human": {
+      "estimate": -0.529601427039712,
+      "ci95": [
+        -1.297273120911679,
+        0.16916490937769413
+      ]
+    },
+    "frozen.absolute_article_error": {
+      "estimate": 0.6610200170701526,
+      "ci95": [
+        0.22819261351646467,
+        1.409910919842429
+      ]
+    },
+    "frozen.individual_rmse": {
+      "estimate": 1.8186338839596812,
+      "ci95": [
+        1.2554764723270966,
+        2.3598005415318686
+      ]
+    },
+    "heading_only.mean": {
+      "estimate": 0.36588306429019113,
+      "ci95": [
+        -0.08829617256355665,
+        0.8517150954344472
+      ]
+    },
+    "heading_only.minus_human": {
+      "estimate": -0.21800774491618627,
+      "ci95": [
+        -1.099445639737627,
+        0.6347046272023477
+      ]
+    },
+    "heading_only.absolute_article_error": {
+      "estimate": 0.560219132839852,
+      "ci95": [
+        0.224049652464024,
+        1.3317562131821097
+      ]
+    },
+    "heading_only.individual_rmse": {
+      "estimate": 1.7099039924173038,
+      "ci95": [
+        1.4062240745622692,
+        2.0822877342934007
+      ]
+    },
+    "native_and_heading.mean": {
+      "estimate": 0.395370597665255,
+      "ci95": [
+        -0.056003821253287116,
+        0.8827584830538517
+      ]
+    },
+    "native_and_heading.minus_human": {
+      "estimate": -0.18852021154112242,
+      "ci95": [
+        -1.0614139287956699,
+        0.6555319092159944
+      ]
+    },
+    "native_and_heading.absolute_article_error": {
+      "estimate": 0.5473262785706227,
+      "ci95": [
+        0.21516255424875966,
+        1.3013214729607365
+      ]
+    },
+    "native_and_heading.individual_rmse": {
+      "estimate": 1.7074414884689475,
+      "ci95": [
+        1.3864162858103306,
+        2.077869639963335
+      ]
+    },
+    "native_and_heading_minus_frozen.individual_rmse": {
+      "estimate": -0.11119239549073368,
+      "ci95": [
+        -0.3592462782364399,
+        0.29242614247125853
+      ]
+    },
+    "native_and_heading_minus_heading_only.individual_rmse": {
+      "estimate": -0.0024625039483563427,
+      "ci95": [
+        -0.09877865233283452,
+        0.06821517563152027
+      ]
+    },
+    "native_and_heading_minus_frozen.absolute_article_error": {
+      "estimate": -0.1136937384995299,
+      "ci95": [
+        -0.4185091954889074,
+        0.3336776124799553
+      ]
+    },
+    "native_and_heading_minus_heading_only.absolute_article_error": {
+      "estimate": -0.01289285426922937,
+      "ci95": [
+        -0.06352326035997442,
+        0.043094261780883804
+      ]
+    }
+  },
+  "seed": 14817,
+  "resamples": 10000,
+  "undefined_resamples": 13,
+  "protocol_sha256": "80bc5cc71c1e2fc95549ae665c204b30703ec6ff6ce6b7b5ef41c508276f1a37",
+  "code_sha256": "69339c08b4ac28dcd7088c6d33692f2b1429995a34eae5e617dbbe7a5c4f6cbf"
+}

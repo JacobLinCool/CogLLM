@@ -1,0 +1,59 @@
+{
+  "endpoint_absent_after_stop": true,
+  "extraction": {
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 86,
+    "content_forward_per_document": 1,
+    "elapsed_s": 40.57635933400002,
+    "encoded_documents": 86,
+    "forward_and_readout_s": 1.1989323290000584,
+    "gpu": "NVIDIA L4",
+    "independent_causal_checks": 12,
+    "input_tokens": 1556,
+    "peak_gpu_reserved_bytes": 8097103872,
+    "protocol_sha256": "c08ecb28267f4b27a7a11e36837e821e0cde0cacec5717df8b863f8739eee741",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "states_dtype": "float32",
+    "states_shape": [
+      86,
+      2048
+    ]
+  },
+  "extraction_asset_sha256": {
+    "causality.json": "9df4e2cfffe9540ef6b512d772dce38f0e5d5581620307ba46de5588c8126114",
+    "coordinates.jsonl": "4e742cceee36582232281ec2c50b7f39082986aa85b48af0406cff5b63dad63d",
+    "states.npy": "7aad8224dc471e0d7300d0d536a8c148b575a54ebd6f34056b7aef838e4d36e6",
+    "telemetry.jsonl": "e274b437076df77d1fa925f1c2220610d102d9b87b443731e4ff2be2ff5457b7",
+    "terminal_states.npy": "7aad8224dc471e0d7300d0d536a8c148b575a54ebd6f34056b7aef838e4d36e6",
+    "vectors.npy": "b6a089728085f2f3f4df2cdb18564b413b37afd6a3b6e871867904dac0fbaeb6"
+  },
+  "extraction_seal_sha256": "14fc78f1f87ab8e567790e87e6c0eaed8731b72ac66df8870a2ffc10eab47500",
+  "phase": "finished",
+  "raw_states_verification": {
+    "dtype": "float32",
+    "max_projection_replay_l2": 0.00023197739210445434,
+    "rows": 86,
+    "width": 2048
+  },
+  "release_verified": true,
+  "replay_bitwise_equal_files": [
+    "coefficients.json",
+    "forecast.json",
+    "metrics.json",
+    "receipt.json"
+  ],
+  "run_id": "cogllm-cuda-checks-20261121T095327Z-07657ae9",
+  "timeline": {
+    "allocated": "2026-11-21T09:53:50.428312+00:00",
+    "allocating": "2026-11-21T09:53:44.718842+00:00",
+    "finished": "2026-11-21T09:56:15.626598+00:00",
+    "prepared": "2026-11-21T09:53:28.378073+00:00",
+    "releasing": "2026-11-21T09:56:07.333070+00:00",
+    "remote-projection": "2026-11-21T09:55:19.269745+00:00",
+    "remote-setup": "2026-11-21T09:54:50.978467+00:00",
+    "retrieved-projection": "2026-11-21T09:56:07.286252+00:00",
+    "retrieved-setup": "2026-11-21T09:56:06.707249+00:00",
+    "worker-running": "2026-11-21T09:54:50.635317+00:00"
+  },
+  "verified_outputs": true
+}

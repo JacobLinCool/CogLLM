@@ -1,0 +1,302 @@
+{
+  "assay_sha256": "6877d33e6c148ef871695b21131219b7836ddbc52b60b91b4e948bfec8e22fa7",
+  "forecasts_sha256": "5696ca201f586063a834903893a51438ddb0e9b1db9bac8ee5a4ef65687486cf",
+  "heldout_outcomes_sha256": "304eb1ff613bbf5b76f17950cc1a9957d1ce8af2693e5c7993b2aad540b168b5",
+  "test_certified_candidates": 7112,
+  "test_certified_fraction": 0.9995783555867884,
+  "test_known_material_groups": 102,
+  "excluded_exact_stops": 3,
+  "annotator_background": {
+    "definition": "Selection NLL (nats) and Brier are per-annotator scores. Gap compares non-native minus native selection fractions per candidate.",
+    "candidate_annotator_decisions": [
+      71120,
+      71120
+    ],
+    "annotator_order": [
+      "native",
+      "nonnative"
+    ],
+    "candidates_with_unequal_observed_fractions": 2839,
+    "mean_observed_nonnative_minus_native": -0.011361079865016874,
+    "methods": {
+      "length_frequency": {
+        "selection_nll": 0.31512089771358337,
+        "selection_brier": 0.08831225122687546,
+        "gap_mae": 0.07061304836895389,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.3191820431040501,
+            "selection_brier": 0.09025115888137045,
+            "observed_selection_rate": 0.10208098987626546,
+            "predicted_selection_rate": 0.18074543030746296
+          },
+          "nonnative": {
+            "selection_nll": 0.3110597523231168,
+            "selection_brier": 0.0863733435723805,
+            "observed_selection_rate": 0.0907199100112486,
+            "predicted_selection_rate": 0.18074543030746296
+          }
+        },
+        "observed_gap_direction_concordance": 0.5,
+        "mean_predicted_nonnative_minus_native": 0.0
+      },
+      "qwen_pooled": {
+        "selection_nll": 0.30422546180434584,
+        "selection_brier": 0.085188672031621,
+        "gap_mae": 0.07061304836895389,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.3089275039872941,
+            "selection_brier": 0.08725121411625976,
+            "observed_selection_rate": 0.10208098987626546,
+            "predicted_selection_rate": 0.17480809387439822
+          },
+          "nonnative": {
+            "selection_nll": 0.2995234196213975,
+            "selection_brier": 0.08312612994698224,
+            "observed_selection_rate": 0.0907199100112486,
+            "predicted_selection_rate": 0.17480809387439822
+          }
+        },
+        "observed_gap_direction_concordance": 0.5,
+        "mean_predicted_nonnative_minus_native": 0.0
+      },
+      "background_only": {
+        "selection_nll": 0.3172114043215021,
+        "selection_brier": 0.08712411364988096,
+        "gap_mae": 0.07695532757369024,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.3299019839873786,
+            "selection_brier": 0.09170804985850628,
+            "observed_selection_rate": 0.10208098987626546,
+            "predicted_selection_rate": 0.09518254973671053
+          },
+          "nonnative": {
+            "selection_nll": 0.3045208246556249,
+            "selection_brier": 0.08254017744125564,
+            "observed_selection_rate": 0.0907199100112486,
+            "predicted_selection_rate": 0.08362276252397739
+          }
+        },
+        "observed_gap_direction_concordance": 0.5653399084184572,
+        "mean_predicted_nonnative_minus_native": -0.011559787212733126
+      },
+      "qwen_group_offset": {
+        "selection_nll": 0.30403695313264373,
+        "selection_brier": 0.0851309523510531,
+        "gap_mae": 0.07938262451620293,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.31457259354121037,
+            "selection_brier": 0.0888905232666275,
+            "observed_selection_rate": 0.10208098987626546,
+            "predicted_selection_rate": 0.1847615582237079
+          },
+          "nonnative": {
+            "selection_nll": 0.29350131272407703,
+            "selection_brier": 0.08137138143547869,
+            "observed_selection_rate": 0.0907199100112486,
+            "predicted_selection_rate": 0.16481782515414398
+          }
+        },
+        "observed_gap_direction_concordance": 0.5653399084184572,
+        "mean_predicted_nonnative_minus_native": -0.019943733069563922
+      },
+      "qwen_group_interaction": {
+        "selection_nll": 0.3034310720475852,
+        "selection_brier": 0.08494826152678088,
+        "gap_mae": 0.07662461229432888,
+        "by_annotator_background": {
+          "native": {
+            "selection_nll": 0.3121177471998527,
+            "selection_brier": 0.08854058833736937,
+            "observed_selection_rate": 0.10208098987626546,
+            "predicted_selection_rate": 0.18376215553338454
+          },
+          "nonnative": {
+            "selection_nll": 0.2947443968953176,
+            "selection_brier": 0.0813559347161924,
+            "observed_selection_rate": 0.0907199100112486,
+            "predicted_selection_rate": 0.16573557042151482
+          }
+        },
+        "observed_gap_direction_concordance": 0.6153575202536105,
+        "mean_predicted_nonnative_minus_native": -0.01802658511186974
+      }
+    },
+    "paired_differences": {
+      "qwen_pooled_minus_length_frequency": {
+        "selection_nll": {
+          "difference": -0.010895435909237527,
+          "article_family_bootstrap_95_interval": [
+            -0.013333245299421943,
+            -0.008423420426308826
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.003123579195254453,
+          "article_family_bootstrap_95_interval": [
+            -0.0038660161086149303,
+            -0.0023675224878316418
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0,
+          "article_family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        }
+      },
+      "qwen_group_offset_minus_qwen_pooled": {
+        "selection_nll": {
+          "difference": -0.0001885086717021145,
+          "article_family_bootstrap_95_interval": [
+            -0.00031815059989976637,
+            -5.7719656402045756e-05
+          ]
+        },
+        "selection_brier": {
+          "difference": -5.771968056790533e-05,
+          "article_family_bootstrap_95_interval": [
+            -0.00010766318372582156,
+            -9.205721276701195e-06
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.008769576147249034,
+          "article_family_bootstrap_95_interval": [
+            0.008241875404937609,
+            0.009302802510839236
+          ]
+        }
+      },
+      "qwen_group_offset_minus_background_only": {
+        "selection_nll": {
+          "difference": -0.01317445118885835,
+          "article_family_bootstrap_95_interval": [
+            -0.017372770425188946,
+            -0.009172026017445685
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.0019931612988278585,
+          "article_family_bootstrap_95_interval": [
+            -0.0032399470501080297,
+            -0.0007805811099110984
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0024272969425126883,
+          "article_family_bootstrap_95_interval": [
+            0.0020947736640318736,
+            0.002769913129117887
+          ]
+        }
+      },
+      "qwen_group_interaction_minus_qwen_group_offset": {
+        "selection_nll": {
+          "difference": -0.0006058810850585461,
+          "article_family_bootstrap_95_interval": [
+            -0.0007742580008855193,
+            -0.0004459505994133792
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.00018269082427221917,
+          "article_family_bootstrap_95_interval": [
+            -0.00024684738433825015,
+            -0.00012246988083146617
+          ]
+        },
+        "gap_mae": {
+          "difference": -0.002758012221874051,
+          "article_family_bootstrap_95_interval": [
+            -0.0033251073286716002,
+            -0.002179756041008026
+          ]
+        }
+      },
+      "qwen_group_interaction_minus_qwen_pooled": {
+        "selection_nll": {
+          "difference": -0.0007943897567606606,
+          "article_family_bootstrap_95_interval": [
+            -0.001030676487860871,
+            -0.0005664802756926449
+          ]
+        },
+        "selection_brier": {
+          "difference": -0.0002404105048401245,
+          "article_family_bootstrap_95_interval": [
+            -0.000341118187958021,
+            -0.000146933478951877
+          ]
+        },
+        "gap_mae": {
+          "difference": 0.0060115639253749825,
+          "article_family_bootstrap_95_interval": [
+            0.005116873905846157,
+            0.006913258240548922
+          ]
+        }
+      }
+    }
+  },
+  "group_calibration_and_brier": {
+    "native": {
+      "calibration_error": 0.0816811656571191,
+      "calibration_error_95_interval": [
+        0.07688659659353801,
+        0.08636551492853665
+      ],
+      "brier_delta_vs_qwen_pooled": {
+        "difference": 0.001289374221109607,
+        "paired_95_interval": [
+          0.0010213430954170912,
+          0.0015586886132241075
+        ]
+      },
+      "brier_delta_vs_qwen_group_offset": {
+        "difference": -0.0003499349292581239,
+        "paired_95_interval": [
+          -0.0005288445363718509,
+          -0.00017433618913204792
+        ]
+      }
+    },
+    "nonnative": {
+      "calibration_error": 0.07501566041026622,
+      "calibration_error_95_interval": [
+        0.07110789439481902,
+        0.07891941503166211
+      ],
+      "brier_delta_vs_qwen_pooled": {
+        "difference": -0.0017701952307898343,
+        "paired_95_interval": [
+          -0.002062584604967628,
+          -0.0014796861851665412
+        ]
+      },
+      "brier_delta_vs_qwen_group_offset": {
+        "difference": -1.5446719286292458e-05,
+        "paired_95_interval": [
+          -0.00019267717986088377,
+          0.0001587736752540185
+        ]
+      }
+    }
+  },
+  "acceptance": {
+    "certified_test_coverage": true,
+    "native_absolute_calibration": false,
+    "native_brier_vs_qwen_pooled": false,
+    "native_brier_vs_qwen_group_offset": true,
+    "nonnative_absolute_calibration": false,
+    "nonnative_brier_vs_qwen_pooled": true,
+    "nonnative_brier_vs_qwen_group_offset": true,
+    "gap_mae_vs_qwen_pooled": false,
+    "gap_mae_vs_qwen_group_offset": true
+  },
+  "all_conditions_passed": false
+}

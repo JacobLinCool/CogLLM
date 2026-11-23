@@ -1,0 +1,1174 @@
+{
+  "forecast": "772b749d8c6653b4b1780cfa13034abbc816378d84709fae7da5c48562f51590",
+  "development": {
+    "form": {
+      "joint_threshold": 0.12769931053147943,
+      "dev_f1": 0.27188769855929074,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    },
+    "native": {
+      "joint_threshold": 0.16344706370776496,
+      "dev_f1": 0.34417875343002746,
+      "dev_positions": 3619,
+      "dev_links": 1100
+    }
+  },
+  "panels": {
+    "held": {
+      "eligible_essays": 480,
+      "audit": {
+        "hierarchy_total": 2653,
+        "intra_or_forward": 350,
+        "hierarchy_backward": 2144,
+        "same_sentence": 124,
+        "missing_effectiveness_position": 28,
+        "unlocalized_child": 13,
+        "unlocalized_or_ambiguous_parent": 22,
+        "essays_with_unlocalizable_children": 11
+      },
+      "models": {
+        "nearest": {
+          "all.top1": {
+            "estimate": 0.21387217788316687,
+            "interval95": [
+              0.19573408825606625,
+              0.23274203025301923
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.18304072470739138,
+              "Car-free cities": 0.135598398651496,
+              "The Face on Mars": 0.23731900283624421,
+              "Community service": 0.2939984685747398
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.37273667040576536,
+            "interval95": [
+              0.3570598975790302,
+              0.3894429956041862
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.21387217788316687,
+            "interval95": [
+              0.1958813605503166,
+              0.2336811620918764
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.37273667040576536,
+            "interval95": [
+              0.35614736167656186,
+              0.38912066685164354
+            ],
+            "essays": 455,
+            "measurements": 2079
+          }
+        },
+        "form": {
+          "all.top1": {
+            "estimate": 0.43716907329544696,
+            "interval95": [
+              0.4100001403511019,
+              0.46368673550198275
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.45994468494468493,
+              "Car-free cities": 0.3951538137378846,
+              "The Face on Mars": 0.3950160471712195,
+              "Community service": 0.49799711823016907
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6114807445783943,
+            "interval95": [
+              0.5911550095644669,
+              0.6307656517733745
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.6159444099416598,
+            "interval95": [
+              1.544849898257691,
+              1.686461248349484
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.43716907329544696,
+            "interval95": [
+              0.40979770816790045,
+              0.4636837170765742
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6114807445783943,
+            "interval95": [
+              0.5915598427036621,
+              0.6318254437305751
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.6159444099416598,
+            "interval95": [
+              1.5469316560740192,
+              1.6876547869597778
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.5969578042936822,
+            "interval95": [
+              0.5473102563549764,
+              0.6481366497464478
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.22088785096377545,
+            "interval95": [
+              0.20106788030787096,
+              0.2411471626888616
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.564991597920183,
+            "interval95": [
+              0.550911929078125,
+              0.5794862909007757
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.49465934826120594,
+            "interval95": [
+              0.4736085980246149,
+              0.516267341509696
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.1860041726927175,
+            "interval95": [
+              0.16759917563155982,
+              0.2040535745443701
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 1.1684434968017057,
+            "interval95": [
+              1.0554371002132197,
+              1.2814498933901919
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 6.394456289978678,
+            "interval95": [
+              6.1705756929637525,
+              6.631130063965885
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.147068230277186,
+              4.592803837953091
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.3652234728848118,
+            "joint_average_precision": 0.09741271862546534,
+            "positives_emitted": 2999,
+            "aligned_with_own_source": 548,
+            "joint_f1": 0.2172017439556084,
+            "prevalence": 0.25488731166728923
+          }
+        },
+        "native": {
+          "all.top1": {
+            "estimate": 0.4616305367404268,
+            "interval95": [
+              0.4352031373693462,
+              0.4887734910083811
+            ],
+            "essays": 455,
+            "measurements": 2079,
+            "topic_means": {
+              "\"A Cowboy Who Rode the Waves\"": 0.4712031024531025,
+              "Car-free cities": 0.45934471133586174,
+              "The Face on Mars": 0.4214494078718217,
+              "Community service": 0.4945582665921649
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.6408987269796551,
+            "interval95": [
+              0.6211435502748236,
+              0.6601035976654316
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "all.choice_nll": {
+            "estimate": 1.5136114834035572,
+            "interval95": [
+              1.4420647586408946,
+              1.5869602780116578
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.top1": {
+            "estimate": 0.4616305367404268,
+            "interval95": [
+              0.4351080433607907,
+              0.4895376441324244
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.reciprocal_rank": {
+            "estimate": 0.6408987269796551,
+            "interval95": [
+              0.6209281503056878,
+              0.6604707520286957
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "hierarchy.choice_nll": {
+            "estimate": 1.5136114834035572,
+            "interval95": [
+              1.4427263503855128,
+              1.5903130440228102
+            ],
+            "essays": 455,
+            "measurements": 2079
+          },
+          "effectiveness.ordinal_nll": {
+            "estimate": 0.6314981497979413,
+            "interval95": [
+              0.5809504123575365,
+              0.6809947493074772
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "effectiveness.absolute_level_error": {
+            "estimate": 0.27414506446964737,
+            "interval95": [
+              0.2573427901632623,
+              0.2922293809789756
+            ],
+            "essays": 480,
+            "measurements": 3895
+          },
+          "event.nll": {
+            "estimate": 0.5469356897606457,
+            "interval95": [
+              0.5280310792160063,
+              0.566885106423253
+            ],
+            "essays": 469,
+            "measurements": 8031
+          },
+          "event.average_precision": {
+            "estimate": 0.5877900005231038,
+            "interval95": [
+              0.5661049643169213,
+              0.609366538637523
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.22705849377093967,
+            "interval95": [
+              0.20483635050686588,
+              0.24822361666417314
+            ],
+            "essays": 444,
+            "measurements": 444
+          },
+          "joint.tp": {
+            "estimate": 0.9189765458422174,
+            "interval95": [
+              0.8102345415778252,
+              1.0341684434968015
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.emitted": {
+            "estimate": 3.650319829424307,
+            "interval95": [
+              3.396588486140725,
+              3.901918976545842
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "joint.gold": {
+            "estimate": 4.364605543710021,
+            "interval95": [
+              4.144989339019189,
+              4.588539445628998
+            ],
+            "essays": 469,
+            "measurements": 469
+          },
+          "pooled_unmarked": {
+            "sentences": 8031,
+            "positive_sentences": 2047,
+            "event_average_precision": 0.44835967699002854,
+            "joint_average_precision": 0.12110332117644151,
+            "positives_emitted": 1712,
+            "aligned_with_own_source": 431,
+            "joint_f1": 0.22931630752859802,
+            "prevalence": 0.25488731166728923
+          }
+        }
+      },
+      "differences": {
+        "form_minus_nearest.all.top1": {
+          "estimate": 0.22329689541228004,
+          "interval95": [
+            0.19407470703899274,
+            0.25377672510639543
+          ]
+        },
+        "form_minus_nearest.hierarchy.reciprocal_rank": {
+          "estimate": 0.2387440741726288,
+          "interval95": [
+            0.21550424885587485,
+            0.2601938600829949
+          ]
+        },
+        "form_minus_nearest.hierarchy.top1": {
+          "estimate": 0.22329689541228004,
+          "interval95": [
+            0.19410405154979335,
+            0.25283764038159645
+          ]
+        },
+        "form_minus_nearest.all.reciprocal_rank": {
+          "estimate": 0.2387440741726288,
+          "interval95": [
+            0.21600084784797924,
+            0.2609701469484578
+          ]
+        },
+        "native_minus_form.joint.emitted": {
+          "estimate": -2.744136460554371,
+          "interval95": [
+            -2.985127931769723,
+            -2.4946695095948828
+          ]
+        },
+        "native_minus_form.hierarchy.choice_nll": {
+          "estimate": -0.10233292653810247,
+          "interval95": [
+            -0.15172398784284644,
+            -0.053444916451901414
+          ]
+        },
+        "native_minus_form.all.top1": {
+          "estimate": 0.02446146344497993,
+          "interval95": [
+            0.0014677098694955832,
+            0.048334929264874316
+          ]
+        },
+        "native_minus_form.event.average_precision": {
+          "estimate": 0.09313065226189775,
+          "interval95": [
+            0.07307818321044465,
+            0.11252018777256483
+          ]
+        },
+        "native_minus_form.event.nll": {
+          "estimate": -0.01805590815953749,
+          "interval95": [
+            -0.028974491742266864,
+            -0.007150910540112947
+          ]
+        },
+        "native_minus_form.effectiveness.ordinal_nll": {
+          "estimate": 0.03454034550425907,
+          "interval95": [
+            0.005281810883898288,
+            0.06494108340198484
+          ]
+        },
+        "native_minus_form.effectiveness.absolute_level_error": {
+          "estimate": 0.0532572135058719,
+          "interval95": [
+            0.044170433672078784,
+            0.06255415217258607
+          ]
+        },
+        "native_minus_form.hierarchy.top1": {
+          "estimate": 0.02446146344497993,
+          "interval95": [
+            0.0010882632324940036,
+            0.04816586153468023
+          ]
+        },
+        "native_minus_form.all.choice_nll": {
+          "estimate": -0.10233292653810247,
+          "interval95": [
+            -0.15122532612736148,
+            -0.05412783928946765
+          ]
+        },
+        "native_minus_form.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_minus_form.all.reciprocal_rank": {
+          "estimate": 0.029417982401260832,
+          "interval95": [
+            0.013519273663621155,
+            0.04554062568454707
+          ]
+        },
+        "native_minus_form.joint.retrieval_average_precision": {
+          "estimate": 0.04105432107822213,
+          "interval95": [
+            0.023112923372881303,
+            0.05983874839748838
+          ]
+        },
+        "native_minus_form.hierarchy.reciprocal_rank": {
+          "estimate": 0.029417982401260832,
+          "interval95": [
+            0.013943609497704042,
+            0.0455062873866037
+          ]
+        },
+        "native_minus_form.joint.tp": {
+          "estimate": -0.24946695095948826,
+          "interval95": [
+            -0.3497334754797441,
+            -0.13859275053304904
+          ]
+        }
+      }
+    },
+    "external": {
+      "eligible_essays": 399,
+      "audit": {
+        "supports_total": 3597,
+        "supports_backward": 2127,
+        "intra_or_forward": 1286,
+        "same_sentence": 265,
+        "attacks_total": 218,
+        "attacks_backward": 137
+      },
+      "models": {
+        "nearest": {
+          "all.top1": {
+            "estimate": 0.4658705394925867,
+            "interval95": [
+              0.44451974279730183,
+              0.4887654216591224
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.4658705394925867
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.5549210716653639,
+            "interval95": [
+              0.5366114700392365,
+              0.5736137067230798
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.46642563996287395,
+            "interval95": [
+              0.4434681078746903,
+              0.4919024651471459
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.5558962232320993,
+            "interval95": [
+              0.5355834943399607,
+              0.5750774975217051
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "attacks.top1": {
+            "estimate": 0.510752688172043,
+            "interval95": [
+              0.4264784946236559,
+              0.5967741935483871
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.5838405869495236,
+            "interval95": [
+              0.5049075382693486,
+              0.6597427549723814
+            ],
+            "essays": 93,
+            "measurements": 137
+          }
+        },
+        "form": {
+          "all.top1": {
+            "estimate": 0.5993054699747613,
+            "interval95": [
+              0.5663601135303892,
+              0.6310802355635032
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.5993054699747613
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7439488857922278,
+            "interval95": [
+              0.7218673629191581,
+              0.7661067286685245
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.3213501897961506,
+            "interval95": [
+              1.2639627877096078,
+              1.3809907194983142
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.5968778930879994,
+            "interval95": [
+              0.5631137689881042,
+              0.6296463140878035
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.742061029588791,
+            "interval95": [
+              0.7191537755758994,
+              0.7646266536035532
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.3248411886907596,
+            "interval95": [
+              1.2608086391759659,
+              1.3911250165524327
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.6921297179811509,
+            "interval95": [
+              0.6725080369213111,
+              0.7122827192795284
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.3866194509932548,
+            "interval95": [
+              0.37245809271881836,
+              0.40110511228006773
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.19598865499256762,
+            "interval95": [
+              0.17989553417764154,
+              0.21155982816400826
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 1.0150375939849625,
+            "interval95": [
+              0.899749373433584,
+              1.1428571428571428
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 5.734335839598997,
+            "interval95": [
+              5.546365914786968,
+              5.927318295739348
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.340852130325815,
+              5.967418546365915
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.5062724014336918,
+            "interval95": [
+              0.41397849462365593,
+              0.60127688172043
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.6859117286536641,
+            "interval95": [
+              0.6238623271889402,
+              0.7484114862139056
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.5152762998527132,
+            "interval95": [
+              1.3448673702190903,
+              1.6901430793764016
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.29300382634172567,
+            "joint_average_precision": 0.10595405304438203,
+            "positives_emitted": 2288,
+            "aligned_with_own_source": 405,
+            "joint_f1": 0.17837480731116495,
+            "prevalence": 0.33561745866229703
+          }
+        },
+        "native": {
+          "all.top1": {
+            "estimate": 0.6595989749533057,
+            "interval95": [
+              0.6261478551340756,
+              0.6923056949976241
+            ],
+            "essays": 381,
+            "measurements": 2253,
+            "topic_means": {
+              "None": 0.6595989749533057
+            }
+          },
+          "all.reciprocal_rank": {
+            "estimate": 0.7889850115086023,
+            "interval95": [
+              0.766783457615549,
+              0.8090538800720497
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "all.choice_nll": {
+            "estimate": 1.083633829345518,
+            "interval95": [
+              1.0124211311656945,
+              1.1605782146693868
+            ],
+            "essays": 381,
+            "measurements": 2253
+          },
+          "supports.top1": {
+            "estimate": 0.6587546171322767,
+            "interval95": [
+              0.6261031021652698,
+              0.6921545885408917
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.reciprocal_rank": {
+            "estimate": 0.7890662883186788,
+            "interval95": [
+              0.7684624719756116,
+              0.8093295810911989
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "supports.choice_nll": {
+            "estimate": 1.079963677111135,
+            "interval95": [
+              1.005453795562975,
+              1.156122795103069
+            ],
+            "essays": 376,
+            "measurements": 2116
+          },
+          "event.nll": {
+            "estimate": 0.7596863756484111,
+            "interval95": [
+              0.7302672853928688,
+              0.7888879977578673
+            ],
+            "essays": 399,
+            "measurements": 6713
+          },
+          "event.average_precision": {
+            "estimate": 0.49373107719825776,
+            "interval95": [
+              0.4757143538996126,
+              0.5126807186082628
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.retrieval_average_precision": {
+            "estimate": 0.31096275662979506,
+            "interval95": [
+              0.2858657721469654,
+              0.33536640872350326
+            ],
+            "essays": 381,
+            "measurements": 381
+          },
+          "joint.tp": {
+            "estimate": 1.0325814536340852,
+            "interval95": [
+              0.9197994987468672,
+              1.1528822055137844
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.emitted": {
+            "estimate": 3.5463659147869673,
+            "interval95": [
+              3.343358395989975,
+              3.764411027568922
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "joint.gold": {
+            "estimate": 5.646616541353383,
+            "interval95": [
+              5.345864661654136,
+              5.954887218045113
+            ],
+            "essays": 399,
+            "measurements": 399
+          },
+          "attacks.top1": {
+            "estimate": 0.6021505376344086,
+            "interval95": [
+              0.510752688172043,
+              0.6989247311827957
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.reciprocal_rank": {
+            "estimate": 0.7444227815195555,
+            "interval95": [
+              0.679153324274292,
+              0.8116833077316946
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "attacks.choice_nll": {
+            "estimate": 1.2860742811074608,
+            "interval95": [
+              1.0835821315208707,
+              1.4818948648188823
+            ],
+            "essays": 93,
+            "measurements": 137
+          },
+          "pooled_unmarked": {
+            "sentences": 6713,
+            "positive_sentences": 2253,
+            "event_average_precision": 0.37961440291347276,
+            "joint_average_precision": 0.18698217548698717,
+            "positives_emitted": 1415,
+            "aligned_with_own_source": 412,
+            "joint_f1": 0.22464558342420937,
+            "prevalence": 0.33561745866229703
+          }
+        }
+      },
+      "differences": {
+        "form_minus_nearest.supports.reciprocal_rank": {
+          "estimate": 0.18616480635669172,
+          "interval95": [
+            0.15272530974066922,
+            0.21836884732772008
+          ]
+        },
+        "form_minus_nearest.all.top1": {
+          "estimate": 0.13343493048217459,
+          "interval95": [
+            0.09110722792809409,
+            0.1757460695108333
+          ]
+        },
+        "form_minus_nearest.attacks.reciprocal_rank": {
+          "estimate": 0.10207114170414053,
+          "interval95": [
+            -0.001216879339825125,
+            0.20423304218523788
+          ]
+        },
+        "form_minus_nearest.attacks.top1": {
+          "estimate": -0.004480286738351248,
+          "interval95": [
+            -0.13799283154121864,
+            0.12365591397849462
+          ]
+        },
+        "form_minus_nearest.all.reciprocal_rank": {
+          "estimate": 0.18902781412686398,
+          "interval95": [
+            0.1552818606183773,
+            0.22078938001894655
+          ]
+        },
+        "form_minus_nearest.supports.top1": {
+          "estimate": 0.13045225312512546,
+          "interval95": [
+            0.0865505820642124,
+            0.17582210877922314
+          ]
+        },
+        "native_minus_form.supports.reciprocal_rank": {
+          "estimate": 0.04700525872988772,
+          "interval95": [
+            0.03166527381101468,
+            0.06366727056033407
+          ]
+        },
+        "native_minus_form.joint.emitted": {
+          "estimate": -2.18796992481203,
+          "interval95": [
+            -2.43609022556391,
+            -1.9473684210526316
+          ]
+        },
+        "native_minus_form.attacks.choice_nll": {
+          "estimate": -0.22920201874525226,
+          "interval95": [
+            -0.3601533552427095,
+            -0.09504575575714402
+          ]
+        },
+        "native_minus_form.supports.choice_nll": {
+          "estimate": -0.2448775115796247,
+          "interval95": [
+            -0.29027552443729,
+            -0.19432321165053296
+          ]
+        },
+        "native_minus_form.all.top1": {
+          "estimate": 0.060293504978544354,
+          "interval95": [
+            0.03526837317683775,
+            0.08556836736462727
+          ]
+        },
+        "native_minus_form.event.average_precision": {
+          "estimate": 0.10711162620500295,
+          "interval95": [
+            0.09121162482930854,
+            0.1239697894049451
+          ]
+        },
+        "native_minus_form.attacks.reciprocal_rank": {
+          "estimate": 0.058511052865891575,
+          "interval95": [
+            0.005332181259600612,
+            0.11343772938531006
+          ]
+        },
+        "native_minus_form.event.nll": {
+          "estimate": 0.06755665766726018,
+          "interval95": [
+            0.05250420986364828,
+            0.08329051084045756
+          ]
+        },
+        "native_minus_form.joint.gold": {
+          "estimate": 0.0,
+          "interval95": [
+            0.0,
+            0.0
+          ]
+        },
+        "native_minus_form.joint.tp": {
+          "estimate": 0.017543859649122806,
+          "interval95": [
+            -0.09523809523809523,
+            0.14035087719298245
+          ]
+        },
+        "native_minus_form.all.choice_nll": {
+          "estimate": -0.23771636045063232,
+          "interval95": [
+            -0.28503748186627487,
+            -0.19163787875602406
+          ]
+        },
+        "native_minus_form.attacks.top1": {
+          "estimate": 0.09587813620071686,
+          "interval95": [
+            0.007168458781362009,
+            0.18727598566308246
+          ]
+        },
+        "native_minus_form.all.reciprocal_rank": {
+          "estimate": 0.0450361257163745,
+          "interval95": [
+            0.02970013190600319,
+            0.06036257127076635
+          ]
+        },
+        "native_minus_form.joint.retrieval_average_precision": {
+          "estimate": 0.11497410163722746,
+          "interval95": [
+            0.09755563327750473,
+            0.13305710645195623
+          ]
+        },
+        "native_minus_form.supports.top1": {
+          "estimate": 0.061876724044277236,
+          "interval95": [
+            0.03545045822971355,
+            0.08904237975381596
+          ]
+        }
+      }
+    }
+  },
+  "sufficiency": {
+    "published_label": {
+      "essays": 399,
+      "observations": 1022,
+      "insufficient": 346,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.34184210076273214,
+            "interval95": [
+              0.30457461390977436,
+              0.380581648433541
+            ]
+          },
+          "ap": 0.25563560225382065
+        },
+        "form": {
+          "auc": {
+            "estimate": 0.6578992372678455,
+            "interval95": [
+              0.6226302254740669,
+              0.6951857981852455
+            ]
+          },
+          "ap": 0.4736585354567826
+        },
+        "native": {
+          "auc": {
+            "estimate": 0.5231940691589424,
+            "interval95": [
+              0.4789464578623215,
+              0.5678596373242659
+            ]
+          },
+          "ap": 0.35131902596014825
+        },
+        "form_minus_shorter_paragraph": {
+          "estimate": 0.31605713650511336,
+          "interval95": [
+            0.27268599243550434,
+            0.3634348315034758
+          ]
+        },
+        "native_minus_form": {
+          "estimate": -0.1347051681089031,
+          "interval95": [
+            -0.18768852550011927,
+            -0.0816122002544658
+          ]
+        }
+      }
+    },
+    "three_reader_majority": {
+      "essays": 167,
+      "observations": 433,
+      "insufficient": 114,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.3568305560138591,
+            "interval95": [
+              0.2927718866227893,
+              0.42617052771940483
+            ]
+          },
+          "ap": 0.20047528920356972
+        },
+        "form": {
+          "auc": {
+            "estimate": 0.6553374030688005,
+            "interval95": [
+              0.5883968815343944,
+              0.7156147082011862
+            ]
+          },
+          "ap": 0.39208886055947306
+        },
+        "native": {
+          "auc": {
+            "estimate": 0.4780564263322884,
+            "interval95": [
+              0.4014132990063264,
+              0.5534371303910969
+            ]
+          },
+          "ap": 0.2506131629654308
+        },
+        "form_minus_shorter_paragraph": {
+          "estimate": 0.2985068470549414,
+          "interval95": [
+            0.21528365015898313,
+            0.37774519911293564
+          ]
+        },
+        "native_minus_form": {
+          "estimate": -0.1772809767365121,
+          "interval95": [
+            -0.26708846418442167,
+            -0.0861269952809171
+          ]
+        }
+      }
+    },
+    "individual_votes": {
+      "essays": 167,
+      "observations": 1299,
+      "insufficient": 336,
+      "scores": {
+        "shorter_paragraph": {
+          "auc": {
+            "estimate": 0.3490255525886367,
+            "interval95": [
+              0.28928877900334177,
+              0.41431920321780236
+            ]
+          },
+          "ap": 0.19427189257134975
+        },
+        "form": {
+          "auc": {
+            "estimate": 0.6620772140631954,
+            "interval95": [
+              0.6013507693801392,
+              0.7207213521978689
+            ]
+          },
+          "ap": 0.3927007885689046
+        },
+        "native": {
+          "auc": {
+            "estimate": 0.480149458537309,
+            "interval95": [
+              0.40871170651504024,
+              0.5498904100441082
+            ]
+          },
+          "ap": 0.24670070325936683
+        },
+        "form_minus_shorter_paragraph": {
+          "estimate": 0.3130516614745587,
+          "interval95": [
+            0.23432584750003707,
+            0.389136411474809
+          ]
+        },
+        "native_minus_form": {
+          "estimate": -0.18192775552588641,
+          "interval95": [
+            -0.26763487901424665,
+            -0.09613231862040258
+          ]
+        }
+      }
+    },
+    "alignment_audit": {
+      "published_label_differs_from_vote_majority": 18,
+      "ineligible_article": 7
+    }
+  }
+}

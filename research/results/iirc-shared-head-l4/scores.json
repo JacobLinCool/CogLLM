@@ -1,0 +1,175 @@
+{
+  "scope": "Linked retrospective text-support arrival given a supplied IIRC writer anchor.",
+  "run_id": "cogllm-iirc-linked-20261120T232943Z-90b50487",
+  "fit_paths": 3240,
+  "heads_sha256": "3fa4133add15bf2d1f73871fa518ed0956da428e42022964b0f38c34b5976192",
+  "fit_seal_sha256": "92e6e0eefa275ad13878a579f2aa55c3e2ac0c1919cfbf850c15f963c3a148a9",
+  "source_checkpoint_sha256": "a89811ace4662eda022598d89204cb3a5d511eb4f51eb248f4de074d0bdb6259",
+  "protocol_sha256": "b933a355b973cebaa7e4f5542189b390c5c88d621665b60917bd1d0d35a3bdb8",
+  "code_sha256": "377d47676c55a521b250555cd2a7843431521e48fcdf67702f48e648e872dbae",
+  "matched_replay_max_abs_probability_difference": 7.216449660063518e-16,
+  "official_forecast_seal_sha256": "ba995f4ab4a1e9e9df03e7b47771dcffdcecbf12b7877a55810affdaf0e5ffc5",
+  "official_dev": {
+    "scope": "Linked retrospective text-support arrival given a supplied IIRC writer anchor.",
+    "observed_intervals": 413,
+    "right_censored": 39,
+    "strict_same_document_swaps": 0,
+    "identity_swap_available": false,
+    "bootstrap": {
+      "seed": 43,
+      "draws": 10000,
+      "unit": "connected article component"
+    },
+    "assay_sha256": "a358a9f72c231a225d94aeca98e5d3bd2b3a1379359c86d9e1706b1b7ca24bf6",
+    "forecasts_sha256": "f2f0157dd8535382d2b23b001388664a8e343cd56e24a5965ceb02cfe6433f39",
+    "seal_sha256": "ba995f4ab4a1e9e9df03e7b47771dcffdcecbf12b7877a55810affdaf0e5ffc5",
+    "metrics": {
+      "geometry": {
+        "interval_nll_nats": 2.660223718339091,
+        "cumulative_brier": 0.1515031357884604,
+        "terminal_calibration_in_large": 0.01779211633167266,
+        "modal_exact_bin_or_censor": 0.2853982300884956
+      },
+      "path_text": {
+        "interval_nll_nats": 2.6294127319673093,
+        "cumulative_brier": 0.14977745128082318,
+        "terminal_calibration_in_large": 0.019957588106125083,
+        "modal_exact_bin_or_censor": 0.2853982300884956
+      },
+      "anchor_conditioned": {
+        "interval_nll_nats": 2.6233067026626684,
+        "cumulative_brier": 0.1491346944193827,
+        "terminal_calibration_in_large": 0.020423072071642963,
+        "modal_exact_bin_or_censor": 0.2853982300884956
+      }
+    },
+    "paired_anchor_conditioned_minus_baseline": {
+      "geometry": {
+        "interval_nll_nats": {
+          "difference": -0.03691701567642294,
+          "descriptive_paired_material_95_ci": [
+            -0.05465537717856187,
+            -0.01981497272658679
+          ],
+          "groups": 269
+        },
+        "cumulative_brier": {
+          "difference": -0.0023684413690776562,
+          "descriptive_paired_material_95_ci": [
+            -0.004467158078313032,
+            -0.0004367303370170978
+          ],
+          "groups": 269
+        },
+        "terminal_calibration_in_large": {
+          "difference": 0.002630955739970304,
+          "descriptive_paired_material_95_ci": [
+            -6.116979966320719e-05,
+            0.005338659596478071
+          ],
+          "groups": 269
+        },
+        "modal_exact_bin_or_censor": {
+          "difference": 0.0,
+          "descriptive_paired_material_95_ci": [
+            0.0,
+            0.0
+          ],
+          "groups": 269
+        }
+      },
+      "path_text": {
+        "interval_nll_nats": {
+          "difference": -0.0061060293046408184,
+          "descriptive_paired_material_95_ci": [
+            -0.016012966541059173,
+            0.0037160319026880192
+          ],
+          "groups": 269
+        },
+        "cumulative_brier": {
+          "difference": -0.0006427568614404579,
+          "descriptive_paired_material_95_ci": [
+            -0.0019174019172331343,
+            0.0005535489750974188
+          ],
+          "groups": 269
+        },
+        "terminal_calibration_in_large": {
+          "difference": 0.00046548396551787907,
+          "descriptive_paired_material_95_ci": [
+            -0.0009820245195634482,
+            0.001964094656541394
+          ],
+          "groups": 269
+        },
+        "modal_exact_bin_or_censor": {
+          "difference": 0.0,
+          "descriptive_paired_material_95_ci": [
+            0.0,
+            0.0
+          ],
+          "groups": 269
+        }
+      }
+    },
+    "conditions": {
+      "anchor_conditioned_improves_interval_nll_vs_geometry": false,
+      "anchor_conditioned_cumulative_brier_noninferior_to_geometry": true,
+      "explicit_anchor_improves_interval_nll_vs_path_text": false
+    },
+    "all_conditions_passed": false
+  },
+  "matched": {
+    "counts": {
+      "fit_paths": 3240,
+      "holdout_paths": 114,
+      "pairs": 37,
+      "paired_paths": 72,
+      "paired_groups": 33
+    },
+    "fit_seal_sha256": "92e6e0eefa275ad13878a579f2aa55c3e2ac0c1919cfbf850c15f963c3a148a9",
+    "assay_sha256": "b136d6ec6d8fc9ed52cf378213764f5166c495171ec8108449217780a632fab9",
+    "swap_minus_own_interval_nll_nats": {
+      "geometry": {
+        "difference": 0.0,
+        "descriptive_paired_material_95_ci": [
+          0.0,
+          0.0
+        ],
+        "groups": 33
+      },
+      "path_text": {
+        "difference": 0.0009136037977800523,
+        "descriptive_paired_material_95_ci": [
+          -0.006606798980740281,
+          0.010532692690580079
+        ],
+        "groups": 33
+      },
+      "anchor_conditioned": {
+        "difference": 0.004357169275036309,
+        "descriptive_paired_material_95_ci": [
+          -0.01981661910145161,
+          0.03130715619648265
+        ],
+        "groups": 33
+      },
+      "anchor_minus_path_text": {
+        "difference": 0.0034435654772562566,
+        "descriptive_paired_material_95_ci": [
+          -0.017292230812953762,
+          0.02414701650542681
+        ],
+        "groups": 33
+      }
+    },
+    "acceptance": false,
+    "both_paths_favor_own_interval": {
+      "geometry": 0,
+      "path_text": 0,
+      "anchor_conditioned": 0
+    }
+  },
+  "both_pass": false
+}

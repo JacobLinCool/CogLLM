@@ -1,0 +1,1440 @@
+{
+  "schema_version": 1,
+  "qwen_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "projection_checkpoint_sha256": "b38abeb8ea5ac9bceff597b4a1617e17e79e1592d363e68a85eee799bb1f670f",
+  "previous_projection_training": "Previously supervised portable token readout. The fixed projection overlaps two subsequently re-held Frick training families. See the linked input receipt and source-level sensitivity.",
+  "seeds": [
+    1729,
+    2718
+  ],
+  "calibration_sha256": "58ef9bc43a3c456ad6dc88bbceb50b2e5cc676a8e686a11d5b6a6fbf0bc82ff0",
+  "weights": {
+    "1729": {
+      "shared": "e94e846dbb427510d88d169788fe97d024cf9cd773948983ca44295eae4d644f",
+      "private": "b35dcb3292c1d01c6ea484b0324ee8d1203b43caab36eb3eda19aea314e91f2c"
+    },
+    "2718": {
+      "shared": "9e6601a4e7594a0fe6ffb48bc7adfcef251e31badc741dfbfd685fecee45fdbc",
+      "private": "dc4096333bf620a89fbd47e49185f32789231fb816212a6f8e6e8e0a970467c4"
+    }
+  },
+  "endpoints": {
+    "ambistory_joint": {
+      "source": "ambistory",
+      "likelihood": "ordinal_binary",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 10,
+      "labels": [
+        "1|0",
+        "1|1",
+        "2|0",
+        "2|1",
+        "3|0",
+        "3|1",
+        "4|0",
+        "4|1",
+        "5|0",
+        "5|1"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 258
+    },
+    "blott_2021_sentence_end_sense": {
+      "source": "blott",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 12
+    },
+    "blott_2023_sense_response_log_milliseconds": {
+      "source": "blott",
+      "likelihood": "gaussian",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "blott_2023_sense_response_log_milliseconds"
+      ],
+      "center": 6.715984422277146,
+      "spread": 0.5432041111677473,
+      "held_rows": 8
+    },
+    "blott_2023_sentence_end_sense": {
+      "source": "blott",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 8
+    },
+    "clear_excerpt_easiness": {
+      "source": "clear",
+      "likelihood": "known_error_gaussian",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        "clear_excerpt_easiness"
+      ],
+      "center": -0.6452395811516081,
+      "spread": 1.0047383610514489,
+      "held_rows": 80
+    },
+    "complex_word_difficulty": {
+      "source": "complex",
+      "likelihood": "gaussian",
+      "states": [
+        "lexical"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 3,
+      "labels": [
+        "complex_word_difficulty"
+      ],
+      "center": 0.3187948256024467,
+      "spread": 0.14150407435754528,
+      "held_rows": 803
+    },
+    "context_first_readback": {
+      "source": "context-readback",
+      "likelihood": "categorical",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 217
+    },
+    "currie_end_coherence_report": {
+      "source": "currie",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 4
+    },
+    "cwi_native_marked": {
+      "source": "cwi",
+      "likelihood": "categorical",
+      "states": [
+        "lexical"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 266
+    },
+    "cwi_nonnative_marked": {
+      "source": "cwi",
+      "likelihood": "categorical",
+      "states": [
+        "lexical"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 266
+    },
+    "czech_exp2_qcor": {
+      "source": "czech",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "no",
+        "yes",
+        "unsure"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 20
+    },
+    "czech_exp2_qmis": {
+      "source": "czech",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "no",
+        "yes",
+        "unsure"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 20
+    },
+    "czech_exp2_qpos": {
+      "source": "czech",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "no",
+        "yes",
+        "unsure"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 20
+    },
+    "czech_exp3_qcor": {
+      "source": "czech",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "no",
+        "yes",
+        "unsure"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 20
+    },
+    "czech_exp3_qmis": {
+      "source": "czech",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "no",
+        "yes",
+        "unsure"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 20
+    },
+    "czech_exp3_qpos": {
+      "source": "czech",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "no",
+        "yes",
+        "unsure"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 20
+    },
+    "first_readback_end_acceptability": {
+      "source": "first-readback",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 2
+    },
+    "first_readback_risk": {
+      "source": "first-readback",
+      "likelihood": "categorical",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 156
+    },
+    "frick_after_first_report": {
+      "source": "frick",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 27
+    },
+    "frick_first_report": {
+      "source": "frick",
+      "likelihood": "first_event",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 16,
+      "coordinates": "trajectory",
+      "output_width": 17,
+      "labels": [],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 2
+    },
+    "frick_log_keypress_seconds": {
+      "source": "frick",
+      "likelihood": "gaussian",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "frick_log_keypress_seconds"
+      ],
+      "center": 0.6833928190708575,
+      "spread": 0.7507769695201357,
+      "held_rows": 32
+    },
+    "kerwer_comprehensibility": {
+      "source": "kerwer",
+      "likelihood": "ordinal",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 8,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 3
+    },
+    "kerwer_confusion": {
+      "source": "kerwer",
+      "likelihood": "ordinal",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 3
+    },
+    "kerwer_frustration": {
+      "source": "kerwer",
+      "likelihood": "ordinal",
+      "states": [
+        "appraisal"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 3
+    },
+    "oliver_first_confirmation_rt_log_milliseconds": {
+      "source": "oliver",
+      "likelihood": "gaussian",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "oliver_first_confirmation_rt_log_milliseconds"
+      ],
+      "center": 7.622600217925887,
+      "spread": 0.5401148608525269,
+      "held_rows": 8
+    },
+    "oliver_first_definition_rt_log_milliseconds": {
+      "source": "oliver",
+      "likelihood": "gaussian",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "oliver_first_definition_rt_log_milliseconds"
+      ],
+      "center": 9.013395635048175,
+      "spread": 0.532695929838144,
+      "held_rows": 8
+    },
+    "oliver_first_delay_rt_log_milliseconds": {
+      "source": "oliver",
+      "likelihood": "gaussian",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "oliver_first_delay_rt_log_milliseconds"
+      ],
+      "center": 8.777384219033767,
+      "spread": 0.5838867239240509,
+      "held_rows": 8
+    },
+    "oliver_retest_initial_state": {
+      "source": "oliver",
+      "likelihood": "categorical",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "know",
+        "dont_know",
+        "tot"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 8
+    },
+    "oliver_retest_target_confirmation": {
+      "source": "oliver",
+      "likelihood": "categorical",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 8
+    },
+    "oliver_retrieval_protocol_path": {
+      "source": "oliver",
+      "likelihood": "categorical",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 10,
+      "labels": [
+        "know|delay_None|confirmation_False",
+        "know|delay_None|confirmation_True",
+        "dont_know|delay_False|confirmation_False",
+        "dont_know|delay_False|confirmation_True",
+        "dont_know|delay_True|confirmation_False",
+        "dont_know|delay_True|confirmation_True",
+        "tot|delay_False|confirmation_False",
+        "tot|delay_False|confirmation_True",
+        "tot|delay_True|confirmation_False",
+        "tot|delay_True|confirmation_True"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 8
+    },
+    "oliver_second_confirmation_rt_log_milliseconds": {
+      "source": "oliver",
+      "likelihood": "gaussian",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "oliver_second_confirmation_rt_log_milliseconds"
+      ],
+      "center": 7.172921640146814,
+      "spread": 0.5201388113983881,
+      "held_rows": 8
+    },
+    "oliver_second_definition_rt_log_milliseconds": {
+      "source": "oliver",
+      "likelihood": "gaussian",
+      "states": [
+        "retrieval"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "oliver_second_definition_rt_log_milliseconds"
+      ],
+      "center": 8.424631309442363,
+      "spread": 0.5670662367703655,
+      "held_rows": 8
+    },
+    "onestop_answer_choice": {
+      "source": "onestop",
+      "likelihood": "choice",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 4,
+      "labels": [
+        "A",
+        "B",
+        "C",
+        "D"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 192
+    },
+    "onestop_rereading_first_read_correct": {
+      "source": "onestop-rereading",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 22
+    },
+    "onestop_rereading_reread_correct": {
+      "source": "onestop-rereading",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 22
+    },
+    "plaba_issue_set": {
+      "source": "plaba",
+      "likelihood": "categorical",
+      "states": [
+        "processing",
+        "interpretation"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 64,
+      "labels": [
+        [],
+        [
+          "awkward_wordy_vague"
+        ],
+        [
+          "other"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other"
+        ],
+        [
+          "too_dense"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense"
+        ],
+        [
+          "other",
+          "too_dense"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense"
+        ],
+        [
+          "unclear_reference"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_reference"
+        ],
+        [
+          "other",
+          "unclear_reference"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_reference"
+        ],
+        [
+          "too_dense",
+          "unclear_reference"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_reference"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_reference"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_reference"
+        ],
+        [
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_takeaway"
+        ],
+        [
+          "other",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_takeaway"
+        ],
+        [
+          "too_dense",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_takeaway"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_takeaway"
+        ],
+        [
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "other",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway"
+        ],
+        [
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_term"
+        ],
+        [
+          "too_dense",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_term"
+        ],
+        [
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "too_dense",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_reference",
+          "unclear_term"
+        ],
+        [
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "too_dense",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "other",
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ],
+        [
+          "awkward_wordy_vague",
+          "other",
+          "too_dense",
+          "unclear_reference",
+          "unclear_takeaway",
+          "unclear_term"
+        ]
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 0
+    },
+    "plaba_open_book_accuracy": {
+      "source": "plaba",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 24
+    },
+    "plaba_overall_perceived_understanding": {
+      "source": "plaba",
+      "likelihood": "ordinal",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 6
+    },
+    "plaba_overall_processing_ease": {
+      "source": "plaba",
+      "likelihood": "ordinal",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 6
+    },
+    "plaba_perceived_understanding": {
+      "source": "plaba",
+      "likelihood": "ordinal",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 45
+    },
+    "plaba_processing_ease": {
+      "source": "plaba",
+      "likelihood": "ordinal",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 45
+    },
+    "plaba_quiz_confidence": {
+      "source": "plaba",
+      "likelihood": "ordinal",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 24
+    },
+    "plaba_quiz_effort": {
+      "source": "plaba",
+      "likelihood": "ordinal",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 24
+    },
+    "qiao_confidence": {
+      "source": "qiao",
+      "likelihood": "gaussian",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "qiao_confidence"
+      ],
+      "center": 58.71451229183188,
+      "spread": 25.00352432612746,
+      "held_rows": 0
+    },
+    "qiao_evidence_likelihood_if_guilty": {
+      "source": "qiao",
+      "likelihood": "gaussian",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "qiao_evidence_likelihood_if_guilty"
+      ],
+      "center": 66.05154639175258,
+      "spread": 29.221998186658002,
+      "held_rows": 0
+    },
+    "qiao_evidence_likelihood_if_not_guilty": {
+      "source": "qiao",
+      "likelihood": "gaussian",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "qiao_evidence_likelihood_if_not_guilty"
+      ],
+      "center": 53.687549563838225,
+      "spread": 30.960373416164096,
+      "held_rows": 0
+    },
+    "qiao_final_verdict": {
+      "source": "qiao",
+      "likelihood": "categorical",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        "not_guilty",
+        "guilty"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 0
+    },
+    "qiao_guilt_rating": {
+      "source": "qiao",
+      "likelihood": "gaussian",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "qiao_guilt_rating"
+      ],
+      "center": 56.116574147501986,
+      "spread": 26.386618932402765,
+      "held_rows": 0
+    },
+    "race_answer_choice": {
+      "source": "race",
+      "likelihood": "choice",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 4,
+      "labels": [
+        0,
+        1,
+        2,
+        3
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 143
+    },
+    "rodger_paired_effectiveness": {
+      "source": "rodger",
+      "likelihood": "paired_gaussian",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 2,
+      "coordinates": "pair",
+      "output_width": 2,
+      "labels": [
+        "before",
+        "after"
+      ],
+      "center": 50.579734219269106,
+      "spread": 30.21550519689632,
+      "held_rows": 301
+    },
+    "rodger_paired_support": {
+      "source": "rodger",
+      "likelihood": "paired_gaussian",
+      "states": [
+        "belief"
+      ],
+      "max_positions": 2,
+      "coordinates": "pair",
+      "output_width": 2,
+      "labels": [
+        "before",
+        "after"
+      ],
+      "center": 51.13898117386489,
+      "spread": 33.347246119705225,
+      "held_rows": 301
+    },
+    "scarecrow_retrospective_contradiction_mark_ordinal": {
+      "source": "scarecrow",
+      "likelihood": "hurdle_ordinal",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 2,
+      "coordinates": "target_and_document_end",
+      "output_width": 4,
+      "labels": [
+        "unmarked",
+        "severity_1",
+        "severity_2",
+        "severity_3"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 9553
+    },
+    "studentannotations_comprehension_difficulty": {
+      "source": "studentannotations",
+      "likelihood": "ordinal",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 5,
+      "labels": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 89
+    },
+    "textcomplexityde_complexity": {
+      "source": "textcomplexityde",
+      "likelihood": "gaussian",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "textcomplexityde_complexity"
+      ],
+      "center": 3.225053491538611,
+      "spread": 1.56519558287804,
+      "held_rows": 59
+    },
+    "textcomplexityde_lexical_difficulty": {
+      "source": "textcomplexityde",
+      "likelihood": "gaussian",
+      "states": [
+        "lexical"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "textcomplexityde_lexical_difficulty"
+      ],
+      "center": 3.592857142857143,
+      "spread": 1.6400122253455784,
+      "held_rows": 59
+    },
+    "textcomplexityde_understandability": {
+      "source": "textcomplexityde",
+      "likelihood": "gaussian",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "textcomplexityde_understandability"
+      ],
+      "center": 2.9551319083381475,
+      "spread": 1.6431351943248491,
+      "held_rows": 59
+    },
+    "turkish_comprehension_correct": {
+      "source": "turkish",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 86
+    },
+    "turkish_sentence_comparison": {
+      "source": "turkish",
+      "likelihood": "ordered_choice",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 2,
+      "coordinates": "pair",
+      "output_width": 2,
+      "labels": [
+        0,
+        1
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 53
+    },
+    "yadav_full_sentence_difficulty": {
+      "source": "yadav",
+      "likelihood": "gaussian",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "yadav_full_sentence_difficulty"
+      ],
+      "center": 36.04170353982302,
+      "spread": 29.740956883492156,
+      "held_rows": 15
+    },
+    "yadav_paced_words_difficulty": {
+      "source": "yadav",
+      "likelihood": "gaussian",
+      "states": [
+        "processing"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "yadav_paced_words_difficulty"
+      ],
+      "center": 35.276837212243855,
+      "spread": 28.175518380798028,
+      "held_rows": 16
+    },
+    "zhan_reference_form": {
+      "source": "zhan",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 3,
+      "labels": [
+        "name",
+        "overtPro",
+        "nullPro"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 2
+    },
+    "zhan_remention": {
+      "source": "zhan",
+      "likelihood": "categorical",
+      "states": [
+        "interpretation"
+      ],
+      "max_positions": 1,
+      "coordinates": "point",
+      "output_width": 2,
+      "labels": [
+        "np1",
+        "np2"
+      ],
+      "center": 0.0,
+      "spread": 1.0,
+      "held_rows": 4
+    }
+  }
+}

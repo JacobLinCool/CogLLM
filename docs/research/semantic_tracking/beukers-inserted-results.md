@@ -1,0 +1,22 @@
+# Independent transfer results of practice order
+
+With the previously sealed Qwen and structural-choice readout, the effect of practice on early-inserted blocks was positive in all four held-out contrasts. The human accuracy advantage was **19.5 to 24.4 percentage points**, and the model estimated **28.2 to 28.9 percentage points**. The model point estimates exceeded the human effects by **3.8 to 9.4 percentage points**. In all four contrasts, the intervals for the differences extended beyond the prespecified ±10 percentage point tolerance, so equivalence of effect magnitudes remains unestablished. [Prespecified protocol](beukers-inserted-protocol.md) · [Original and repeated scoring](../../../research/results/beukers-inserted-transfer/scores.json)
+
+| Comparison within the same layout | Shared layout | human early group advantage | The model's early-stage advantage. | Model reduction by human, 90% interval |
+| --- | ---: | ---: | ---: | ---: |
+| In the original experiment, early versus mid. | 287 | +21.0 pp | +28.8 pp | +7.8 pp [−3.6, +19.3] |
+| In the original experiment, early-to-late | 303 | +22.1 pp | +28.6 pp | +6.5 pp [−4.8, +17.4] |
+| Independent re-do, early vs. mid | 316 | +19.5 pp | +28.9 pp | +9.4 pp [−1.0, +19.7] |
+| Independent re-do, early over late | 173 | +24.4 pp | +28.2 pp | +3.8 pp [−9.8, +18.0] |
+
+`pp` is percentage points. The two groups used identical weights on shared story prefixes and left/right options. For each group, the human and model direction lower bounds were both above zero. The model effect on empty background and body text readout was zero on the same layout. [Pairwise estimation and reader coverage](../../../research/results/beukers-inserted-transfer/scores.json)
+
+With the addition of initial practice order, relative to the same readout in the no-issue background, the human's difference in NLL was **−0.041 to −0.024 nats**, with all four 95% confidence intervals crossing zero. Relative to readout using only the original text, all four groups showed lower NLL, with differences ranging from **−0.167 to −0.137 nats**, all intervals below zero. The first comparison isolates the gain from the background encoding itself, while the second comparison also includes the difference arising from selecting after extracting structure from the text representation. Lower NLL indicates a higher actual probability of the event selected by the human. Overall validation failed. [Four groups of NLL and predicted threshold](../../../research/results/beukers-inserted-transfer/scores.json)
+
+## Applicability and Reproducibility
+
+Of the final 40 groups, there were 7,416 trial publications. Among these, 924 lacked a verifiable preceding display event, and 112 had either missing word-for-word stories or candidate representations lacking both authentication features. The sealed snapshot included 6,380 predictions covering 123 readers. Each control condition evaluated only the identical layouts appearing in both groups, retaining all readers from each group within the control. The original study filtered data using an attention condition. Anonymous numbering was insufficient to confirm whether the same participant had engaged across different studies. thus, the authors explicitly re-analyzed using independent samples. This transfer test only encoded whether practice began with blocks or interleaved. The model assigned the same distribution to the middle and late groups for identical layouts. The endpoint refers to the designated next event selection. [Six Groups: Sources, Splitting, and Exclusion](../../../research/results/beukers-inserted-transfer/assay.json) · [Original Study Fig. 10](https://gershmanlab.com/pubs/Beukers24.pdf#page=9)
+
+First, generate predictions using the original L4 sealed snapshot representation, then unseal and answer six groups. No new model forward or update behavior weights were added. The prediction and scoring CPU replay is bitwise consistent, and the four groups' correct answer rate differences and NLL are recalculated using the per-page formula. the replay takes approximately 0.84 seconds, with a program peak of about 97 MiB. [prediction sealed snapshot ](../../../research/results/beukers-inserted-transfer/forecast-seal.json) · [answer unseal](../../../research/results/beukers-inserted-transfer/test-truth-seal.json) · [replay manifest ](../../../research/results/beukers-inserted-transfer/local-verification.json)
+
+[Original research record](../../../research/semantic_tracking/beukers-inserted-results.md)

@@ -1,0 +1,80 @@
+{
+  "annotation_inventory": {
+    "articles_with_disjoint_reference_hulls": 160,
+    "disjoint_spans": 14,
+    "identical_ends": 352,
+    "identical_spans": 306,
+    "overlapping_spans": 547,
+    "same_article_disjoint_reference_hulls": 709,
+    "same_article_question_pairs": 740
+  },
+  "article_count": 167,
+  "endpoint": "Two retrospective minimal supporting spans per question, selected with the answer visible.",
+  "file_sha256": {
+    "articles.jsonl": "3f696df5c24b2b18ff1a4041c36fbe14b8823853bc1eec0078dc780efdd31fdc",
+    "outcomes.jsonl": "8049bf5493202795ade880bf7fbd14bfabe7594f05a125c6803bfc4201368a84",
+    "queries.jsonl": "aa9e86e80294d179a76db4780cf34918693492387fd58b52e65f8055a5fb34d9"
+  },
+  "license_reference": "https://ymcui.com/expmrc/",
+  "offsets": "Zero-based, half-open Unicode code point indices in unchanged article text.",
+  "overlap_comparisons": {
+    ".cache/cogllm/qasper/dev-holdout/stimuli.jsonl": {
+      "largest_overlap_fraction_among_pairs_sharing_at_least_20_shingles": 0.0,
+      "largest_shared_shingle_count": 2,
+      "near_pairs_sharing_at_least_20_distinct_5_word_shingles_and_80_percent_of_smaller": 0,
+      "normalized_exact_reference_matches": 0,
+      "reference_distinct_texts": 303,
+      "sha256": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce"
+    },
+    ".cache/cogllm/qasper/input/stimuli.jsonl": {
+      "largest_overlap_fraction_among_pairs_sharing_at_least_20_shingles": 0.0,
+      "largest_shared_shingle_count": 2,
+      "near_pairs_sharing_at_least_20_distinct_5_word_shingles_and_80_percent_of_smaller": 0,
+      "normalized_exact_reference_matches": 0,
+      "reference_distinct_texts": 288,
+      "sha256": "35a44eba37ea8d1d84ba8e443efecd06cc45d8bf3a80c0e9807bed2fe6c28c2f"
+    },
+    ".cache/cogllm/raw/onestop/qa.tsv": {
+      "largest_overlap_fraction_among_pairs_sharing_at_least_20_shingles": 0.6431095406360424,
+      "largest_shared_shingle_count": 182,
+      "near_pairs_sharing_at_least_20_distinct_5_word_shingles_and_80_percent_of_smaller": 0,
+      "normalized_exact_reference_matches": 0,
+      "reference_distinct_texts": 216,
+      "sha256": "bc8af0a78819b918eb0ce97935bf8fcd82eeec2d9f99111762034817c1e56e0d",
+      "subset": "source == RACE"
+    },
+    ".cache/cogllm/stage2/onestop/stimuli.jsonl": {
+      "largest_overlap_fraction_among_pairs_sharing_at_least_20_shingles": 0.0,
+      "largest_shared_shingle_count": 2,
+      "near_pairs_sharing_at_least_20_distinct_5_word_shingles_and_80_percent_of_smaller": 0,
+      "normalized_exact_reference_matches": 0,
+      "reference_distinct_texts": 216,
+      "sha256": "7da869f2c95ab0284d634dbb9f4e74edb747823d063d3c0b4c259bb0aad34d8c"
+    },
+    ".cache/cogllm/stage2/plaba/stimuli.jsonl": {
+      "largest_overlap_fraction_among_pairs_sharing_at_least_20_shingles": 0.0,
+      "largest_shared_shingle_count": 2,
+      "near_pairs_sharing_at_least_20_distinct_5_word_shingles_and_80_percent_of_smaller": 0,
+      "normalized_exact_reference_matches": 0,
+      "reference_distinct_texts": 78,
+      "sha256": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb"
+    },
+    ".cache/cogllm/stage2/zhan/stimuli.jsonl": {
+      "largest_overlap_fraction_among_pairs_sharing_at_least_20_shingles": 0.0,
+      "largest_shared_shingle_count": 0,
+      "near_pairs_sharing_at_least_20_distinct_5_word_shingles_and_80_percent_of_smaller": 0,
+      "normalized_exact_reference_matches": 0,
+      "reference_distinct_texts": 72,
+      "sha256": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4"
+    }
+  },
+  "paper": "https://doi.org/10.1016/j.heliyon.2022.e09290",
+  "prepare_sha256": "5bdeeeb6ddf73b4f7e5f2300610f9845e9a3fad55d7cadb60bfb0b7b6adfe46d",
+  "query_count": 561,
+  "reference_count": 1122,
+  "schema_version": 1,
+  "source_license": "CC-BY-SA-4.0",
+  "source_sha256": "43819fee2096d40f8a209bd5bce82a47b663cb79804119c036de4655bd01f021",
+  "source_text_scope": "The authors used in-house English exam passages for the RACE+ subset.",
+  "source_url": "https://raw.githubusercontent.com/ymcui/expmrc/9827fed6466f295252f9054c56ec7b233d46e636/data/race/expmrc-race-dev.json"
+}

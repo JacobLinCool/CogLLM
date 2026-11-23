@@ -1,0 +1,33 @@
+{
+  "callable": "research.reading_validation.nns_writer_l4.run",
+  "source": ".cache/cogllm/reading-validation/nns-serving/stimuli.jsonl",
+  "source_sha256": "a6f4dcaa41c5161e661c3273f954275ab9181006b6de6581390a4be31baf4298",
+  "extra_files": {
+    "research/token_readout/app.py": "ab170ed874252c7e06a7737f97d24a5e326f8f64c522c0011832a72f7fd702bf",
+    "research/token_readout/runner.py": "1e9a5b5a7a05935a7037ca2c485f3cd20e23d16dbd706025fc0228177ed7d934",
+    "research/token_readout/learner_view.py": "2946bf3ad1fa3ff5bf33fd6bace080d4e242cf4de6c1cadbb33196c78f2450f8",
+    "research/reading_validation/local_forecast.py": "18fc1ecb0907abbc890112cef6c1d6045e9b1a7736191d5af44f8b9d231bb93c",
+    "research/reading_validation/local_features.py": "2bd7c1daaf7cf15c8075dc788e3742c0e4c13fa9a344d4d232994cf5002a97b0",
+    "research/reading_validation/local_inference.py": "4508ddfa531a7fdd2c883f9fcd50a147c8c0a66139cff25923de49a9ebeaf6b3",
+    "research/reading_validation/nns_writer_l4.py": "a70c3eb1c1baf18c48b5064b25b5074fcabc81c277bff077509ceddcb2fc6d1f",
+    "research/reading_validation/nns_writer_worker.py": "19003f1b8ee0bb96b870f220b2da1ec4e1af9b74f760146389b6071098e56ef8",
+    "research/reading_validation/nns_material.py": "63005dfe062b6594769026e4fec1778b88fb7c57427708e6a5f7b05da86682bf",
+    "research/reading_validation/nns_features.py": "98261142a2c0cf671d6f932d3f831567146bd2790110a1deb2a1bb4223d7305e",
+    "research/reading_validation/nns_fit.py": "b23c240688965823e5300877fec7fee0f219630abb79babab1b7a74dda31ffe4",
+    "research/reading_validation/nns_inference.py": "677982c2f7b4f60d552b2f700444358a916553bda031d619929f552a1ce5c47f",
+    "research/results/reading-validation-nns/weights.npz": "a2df0c0f2c9781fdca747d98802236b6c754069327b04414862184bf16c275d0",
+    "research/results/reading-validation-nns/vocabulary.json.gz": "f0fc60edcbad329a9f2d8a7d17b2a65d9eaf930971d8f3c2238862d900f4fbc1",
+    "research/results/reading-validation-nns/serving.json": "ff728b08b2a08c6484116d2ec6b164ac847e2692fbf99d7724384b066e48348b",
+    "research/results/reading-validation-local/serving/weights.npz": "2f72b3b28ec5bc4f47bfe084ae76ccf2f9fdc01e4f4d61bfd4a7a38bda99bfa3",
+    "research/results/reading-validation-local/serving/replay.json": "2c210b2c874c1d4864c207cc5010db4f72630820b934d1ae2ee911be70d386e6",
+    "research/results/reading-validation-local/serving/manifest.json": "c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e",
+    "research/results/reading-validation-local/serving/lexicon.json.gz": "8788398962c1b7c09678e4243ceb992696a52b4fae999dc20ff51b5fd05a04c6"
+  },
+  "stage_to_literal_root_name": {
+    ".cache/cogllm/reading-validation/nns-serving/linux-wheels.zip": "nns-learner-wheels.zip"
+  },
+  "offline_wheels_sha256": "7b54e68acb7e7d12043f4c47264b820270d7cf6c90f5968fa85f7d877c12cca4",
+  "registered_numerical_tolerance": 0.0001,
+  "expected_source_held_count": 462,
+  "source_probability_replay_stays_local": true
+}

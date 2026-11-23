@@ -1,0 +1,812 @@
+{
+  "scope": "Five fixed source-family folds; the same cached states are used for every condition.",
+  "methods": {
+    "linear": {
+      "plaba": {
+        "pooled": {
+          "processing_ease": {
+            "trials": 1826,
+            "mean_sentence_mae": 0.5824112558077774,
+            "trial_mae": 0.8848973829931654,
+            "trial_mse": 1.1967918982986363
+          },
+          "perceived_understanding": {
+            "trials": 1826,
+            "mean_sentence_mae": 0.6174904585667628,
+            "trial_mae": 0.8913879849563423,
+            "trial_mse": 1.2247652636843864
+          },
+          "any_issue": {
+            "trials": 858,
+            "brier": 0.19179987969425472,
+            "nll_nats": 0.5730020767662313
+          },
+          "unclear_term": {
+            "trials": 858,
+            "brier": 0.19630991016842564,
+            "nll_nats": 0.5762094085240838
+          }
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "processing_ease": {
+              "trials": 357,
+              "mean_sentence_mae": 0.620275512796824,
+              "trial_mae": 0.8703536646706718,
+              "trial_mse": 1.182675691002494
+            },
+            "perceived_understanding": {
+              "trials": 357,
+              "mean_sentence_mae": 0.6446375232450768,
+              "trial_mae": 0.8845138496377555,
+              "trial_mse": 1.2072447271177924
+            },
+            "any_issue": {
+              "trials": 213,
+              "brier": 0.1702150890371059,
+              "nll_nats": 0.5302247331756815
+            },
+            "unclear_term": {
+              "trials": 213,
+              "brier": 0.17583929604020576,
+              "nll_nats": 0.5160467069264533
+            }
+          },
+          {
+            "fold": 1,
+            "processing_ease": {
+              "trials": 387,
+              "mean_sentence_mae": 0.5150402343858429,
+              "trial_mae": 0.8687270168186159,
+              "trial_mse": 1.149879812167692
+            },
+            "perceived_understanding": {
+              "trials": 387,
+              "mean_sentence_mae": 0.6037245924158614,
+              "trial_mae": 0.8251911509560677,
+              "trial_mse": 1.110878502483411
+            },
+            "any_issue": {
+              "trials": 123,
+              "brier": 0.1774166223885975,
+              "nll_nats": 0.5369302646291361
+            },
+            "unclear_term": {
+              "trials": 123,
+              "brier": 0.17385574366094284,
+              "nll_nats": 0.5205973040459202
+            }
+          },
+          {
+            "fold": 2,
+            "processing_ease": {
+              "trials": 354,
+              "mean_sentence_mae": 0.6091578222264004,
+              "trial_mae": 0.8790730554505256,
+              "trial_mse": 1.1696835991056724
+            },
+            "perceived_understanding": {
+              "trials": 354,
+              "mean_sentence_mae": 0.6474482565276366,
+              "trial_mae": 0.9247616512627251,
+              "trial_mse": 1.330490921759279
+            },
+            "any_issue": {
+              "trials": 288,
+              "brier": 0.20466036891228878,
+              "nll_nats": 0.6020315609301194
+            },
+            "unclear_term": {
+              "trials": 288,
+              "brier": 0.21203169815551384,
+              "nll_nats": 0.624985920244801
+            }
+          },
+          {
+            "fold": 3,
+            "processing_ease": {
+              "trials": 353,
+              "mean_sentence_mae": 0.5522261608791891,
+              "trial_mae": 0.9172689907949302,
+              "trial_mse": 1.3255933027799238
+            },
+            "perceived_understanding": {
+              "trials": 353,
+              "mean_sentence_mae": 0.5957807080220368,
+              "trial_mae": 0.9649936646307494,
+              "trial_mse": 1.3874716149779223
+            },
+            "any_issue": {
+              "trials": 135,
+              "brier": 0.1755911014776177,
+              "nll_nats": 0.5320274014437811
+            },
+            "unclear_term": {
+              "trials": 135,
+              "brier": 0.19218141702233577,
+              "nll_nats": 0.5645527692462243
+            }
+          },
+          {
+            "fold": 4,
+            "processing_ease": {
+              "trials": 375,
+              "mean_sentence_mae": 0.6191373481750488,
+              "trial_mae": 0.8904565124511719,
+              "trial_mse": 1.1629889795514703
+            },
+            "perceived_understanding": {
+              "trials": 375,
+              "mean_sentence_mae": 0.5980666700998944,
+              "trial_mae": 0.8654550736745199,
+              "trial_mse": 1.106010018814844
+            },
+            "any_issue": {
+              "trials": 99,
+              "brier": 0.24080053851264574,
+              "nll_nats": 0.6812798222912898
+            },
+            "unclear_term": {
+              "trials": 99,
+              "brier": 0.22814400031157692,
+              "nll_nats": 0.6487443097165473
+            }
+          }
+        ]
+      },
+      "zhan": {
+        "pooled": {
+          "trials": 1651,
+          "brier": 0.19884637598615845,
+          "nll_nats": 0.5822744403487334
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "trials": 322,
+            "brier": 0.19520504075753697,
+            "nll_nats": 0.5736640764649505
+          },
+          {
+            "fold": 1,
+            "trials": 322,
+            "brier": 0.1787128123301271,
+            "nll_nats": 0.53778274544296
+          },
+          {
+            "fold": 2,
+            "trials": 322,
+            "brier": 0.20042474699794596,
+            "nll_nats": 0.588332218617153
+          },
+          {
+            "fold": 3,
+            "trials": 322,
+            "brier": 0.2252072057680467,
+            "nll_nats": 0.6371922069824307
+          },
+          {
+            "fold": 4,
+            "trials": 363,
+            "brier": 0.19515242222663962,
+            "nll_nats": 0.5752902460560484
+          }
+        ]
+      },
+      "onestop": {
+        "pooled": {
+          "trials": 1940,
+          "selection_nll_nats": 0.7785900402602477,
+          "selection_brier": 0.40085151411758735,
+          "modal_choice_agreement": 0.7314432989690721,
+          "correctness": {
+            "trials": 1940,
+            "brier": 0.20026778195242176,
+            "nll_nats": 0.5950050584403185
+          }
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "trials": 395,
+            "selection_nll_nats": 0.7286826147467108,
+            "selection_brier": 0.37552032273093117,
+            "modal_choice_agreement": 0.759493670886076,
+            "correctness": {
+              "trials": 395,
+              "brier": 0.18956321983582405,
+              "nll_nats": 0.5707019129487398
+            }
+          },
+          {
+            "fold": 1,
+            "trials": 395,
+            "selection_nll_nats": 0.758905432389949,
+            "selection_brier": 0.38737542381386275,
+            "modal_choice_agreement": 0.7518987341772152,
+            "correctness": {
+              "trials": 395,
+              "brier": 0.1968650029820383,
+              "nll_nats": 0.5879990066592431
+            }
+          },
+          {
+            "fold": 2,
+            "trials": 394,
+            "selection_nll_nats": 0.8238203296632423,
+            "selection_brier": 0.41519850156777505,
+            "modal_choice_agreement": 0.7284263959390863,
+            "correctness": {
+              "trials": 394,
+              "brier": 0.19787045592358596,
+              "nll_nats": 0.5905598510771982
+            }
+          },
+          {
+            "fold": 3,
+            "trials": 378,
+            "selection_nll_nats": 0.8627174592976196,
+            "selection_brier": 0.46240817143437635,
+            "modal_choice_agreement": 0.6640211640211641,
+            "correctness": {
+              "trials": 378,
+              "brier": 0.2352058346496294,
+              "nll_nats": 0.6790835768954925
+            }
+          },
+          {
+            "fold": 4,
+            "trials": 378,
+            "selection_nll_nats": 0.7200396560425454,
+            "selection_brier": 0.3648931721773229,
+            "modal_choice_agreement": 0.7513227513227513,
+            "correctness": {
+              "trials": 378,
+              "brier": 0.18257032762748632,
+              "nll_nats": 0.5482771871379691
+            }
+          }
+        ]
+      }
+    },
+    "independent_adapter": {
+      "plaba": {
+        "pooled": {
+          "processing_ease": {
+            "trials": 1826,
+            "mean_sentence_mae": 0.6100467705113286,
+            "trial_mae": 0.8897174145018545,
+            "trial_mse": 1.2894544506253451
+          },
+          "perceived_understanding": {
+            "trials": 1826,
+            "mean_sentence_mae": 0.6369138654621168,
+            "trial_mae": 0.8917291176802227,
+            "trial_mse": 1.3081075017745005
+          },
+          "any_issue": {
+            "trials": 858,
+            "brier": 0.26109424014041815,
+            "nll_nats": 1.0397683053347844
+          },
+          "unclear_term": {
+            "trials": 858,
+            "brier": 0.22001590989786027,
+            "nll_nats": 0.8275865863646669
+          }
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "processing_ease": {
+              "trials": 357,
+              "mean_sentence_mae": 0.5643985384986513,
+              "trial_mae": 0.8415215502933961,
+              "trial_mse": 1.171146876250212
+            },
+            "perceived_understanding": {
+              "trials": 357,
+              "mean_sentence_mae": 0.5333733395034191,
+              "trial_mae": 0.8126557971916947,
+              "trial_mse": 1.068229643361427
+            },
+            "any_issue": {
+              "trials": 213,
+              "brier": 0.22596347691457525,
+              "nll_nats": 0.9889368451982394
+            },
+            "unclear_term": {
+              "trials": 213,
+              "brier": 0.17631311621507603,
+              "nll_nats": 0.6999496194185926
+            }
+          },
+          {
+            "fold": 1,
+            "processing_ease": {
+              "trials": 387,
+              "mean_sentence_mae": 0.6356580805716897,
+              "trial_mae": 0.9275523193122804,
+              "trial_mse": 1.3349836446908065
+            },
+            "perceived_understanding": {
+              "trials": 387,
+              "mean_sentence_mae": 0.6457100148656879,
+              "trial_mae": 0.8589015413624371,
+              "trial_mse": 1.2187535259181974
+            },
+            "any_issue": {
+              "trials": 123,
+              "brier": 0.2455508135274141,
+              "nll_nats": 0.8233670591320807
+            },
+            "unclear_term": {
+              "trials": 123,
+              "brier": 0.22303205353641534,
+              "nll_nats": 0.8923912205964928
+            }
+          },
+          {
+            "fold": 2,
+            "processing_ease": {
+              "trials": 354,
+              "mean_sentence_mae": 0.5941596563253027,
+              "trial_mae": 0.8586767467401796,
+              "trial_mse": 1.1755281935519437
+            },
+            "perceived_understanding": {
+              "trials": 354,
+              "mean_sentence_mae": 0.6625303622692993,
+              "trial_mae": 0.9250507704955709,
+              "trial_mse": 1.3910410084807956
+            },
+            "any_issue": {
+              "trials": 288,
+              "brier": 0.23306744244153638,
+              "nll_nats": 0.9024886777630913
+            },
+            "unclear_term": {
+              "trials": 288,
+              "brier": 0.2232576593284663,
+              "nll_nats": 0.8057065545091882
+            }
+          },
+          {
+            "fold": 3,
+            "processing_ease": {
+              "trials": 353,
+              "mean_sentence_mae": 0.6035245879221772,
+              "trial_mae": 0.9214543836988065,
+              "trial_mse": 1.4610472505795233
+            },
+            "perceived_understanding": {
+              "trials": 353,
+              "mean_sentence_mae": 0.7088520526885986,
+              "trial_mae": 0.9983242159186949,
+              "trial_mse": 1.6443345679916674
+            },
+            "any_issue": {
+              "trials": 135,
+              "brier": 0.38775792951016314,
+              "nll_nats": 1.7929057791760241
+            },
+            "unclear_term": {
+              "trials": 135,
+              "brier": 0.2839496915476002,
+              "nll_nats": 1.154316261585768
+            }
+          },
+          {
+            "fold": 4,
+            "processing_ease": {
+              "trials": 375,
+              "mean_sentence_mae": 0.6482273915608724,
+              "trial_mae": 0.8959815788269043,
+              "trial_mse": 1.3011174974753403
+            },
+            "perceived_understanding": {
+              "trials": 375,
+              "mean_sentence_mae": 0.6343151982625327,
+              "trial_mae": 0.869087818145752,
+              "trial_mse": 1.2338935507376143
+            },
+            "any_issue": {
+              "trials": 99,
+              "brier": 0.2647994291592714,
+              "nll_nats": 0.7903483867903098
+            },
+            "unclear_term": {
+              "trials": 99,
+              "brier": 0.21368282937423705,
+              "nll_nats": 0.6397951416023286
+            }
+          }
+        ]
+      },
+      "zhan": {
+        "pooled": {
+          "trials": 1651,
+          "brier": 0.19989653865361864,
+          "nll_nats": 0.588181546104713
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "trials": 322,
+            "brier": 0.21175898582462355,
+            "nll_nats": 0.6259367195636066
+          },
+          {
+            "fold": 1,
+            "trials": 322,
+            "brier": 0.17238003138896377,
+            "nll_nats": 0.5303069756243709
+          },
+          {
+            "fold": 2,
+            "trials": 322,
+            "brier": 0.2238766128262075,
+            "nll_nats": 0.642148944923924
+          },
+          {
+            "fold": 3,
+            "trials": 322,
+            "brier": 0.18065472882925818,
+            "nll_nats": 0.5374193836765233
+          },
+          {
+            "fold": 4,
+            "trials": 363,
+            "brier": 0.20957942082999806,
+            "nll_nats": 0.6031852918980942
+          }
+        ]
+      },
+      "onestop": {
+        "pooled": {
+          "trials": 1940,
+          "selection_nll_nats": 0.9505183703963874,
+          "selection_brier": 0.44403969977884783,
+          "modal_choice_agreement": 0.7072164948453609,
+          "correctness": {
+            "trials": 1940,
+            "brier": 0.2105691172820965,
+            "nll_nats": 0.6873164957983213
+          }
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "trials": 395,
+            "selection_nll_nats": 0.8300093747622274,
+            "selection_brier": 0.40588039290581085,
+            "modal_choice_agreement": 0.7417721518987341,
+            "correctness": {
+              "trials": 395,
+              "brier": 0.19751444099389218,
+              "nll_nats": 0.6519052947410848
+            }
+          },
+          {
+            "fold": 1,
+            "trials": 395,
+            "selection_nll_nats": 0.8979733391189654,
+            "selection_brier": 0.426191556083683,
+            "modal_choice_agreement": 0.7316455696202532,
+            "correctness": {
+              "trials": 395,
+              "brier": 0.20499975321900624,
+              "nll_nats": 0.6372708527105708
+            }
+          },
+          {
+            "fold": 2,
+            "trials": 394,
+            "selection_nll_nats": 1.1423053547567443,
+            "selection_brier": 0.46859327891039754,
+            "modal_choice_agreement": 0.6903553299492385,
+            "correctness": {
+              "trials": 394,
+              "brier": 0.21201301839572323,
+              "nll_nats": 0.7572044366314458
+            }
+          },
+          {
+            "fold": 3,
+            "trials": 378,
+            "selection_nll_nats": 1.0060803896694175,
+            "selection_brier": 0.5082527443412433,
+            "modal_choice_agreement": 0.6507936507936508,
+            "correctness": {
+              "trials": 378,
+              "brier": 0.24279643858208025,
+              "nll_nats": 0.7579671797317995
+            }
+          },
+          {
+            "fold": 4,
+            "trials": 378,
+            "selection_nll_nats": 0.875888279144771,
+            "selection_brier": 0.4127600753133016,
+            "modal_choice_agreement": 0.7195767195767195,
+            "correctness": {
+              "trials": 378,
+              "brier": 0.1962984068286537,
+              "nll_nats": 0.6331197926823535
+            }
+          }
+        ]
+      }
+    },
+    "shared_adapter": {
+      "plaba": {
+        "pooled": {
+          "processing_ease": {
+            "trials": 1826,
+            "mean_sentence_mae": 0.6016477724209991,
+            "trial_mae": 0.8952170538615032,
+            "trial_mse": 1.2465722747251928
+          },
+          "perceived_understanding": {
+            "trials": 1826,
+            "mean_sentence_mae": 0.6177214943259939,
+            "trial_mae": 0.8964202684745078,
+            "trial_mse": 1.2793674559496584
+          },
+          "any_issue": {
+            "trials": 858,
+            "brier": 0.23198813136488916,
+            "nll_nats": 0.7864455849915161
+          },
+          "unclear_term": {
+            "trials": 858,
+            "brier": 0.22788126221868793,
+            "nll_nats": 0.8247640583498668
+          }
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "processing_ease": {
+              "trials": 357,
+              "mean_sentence_mae": 0.5802317179885566,
+              "trial_mae": 0.8358648197323668,
+              "trial_mse": 1.150917236044504
+            },
+            "perceived_understanding": {
+              "trials": 357,
+              "mean_sentence_mae": 0.5578780000617188,
+              "trial_mae": 0.8049944121630586,
+              "trial_mse": 1.103241061203117
+            },
+            "any_issue": {
+              "trials": 213,
+              "brier": 0.1961038635860719,
+              "nll_nats": 0.788739821047357
+            },
+            "unclear_term": {
+              "trials": 213,
+              "brier": 0.22291486714252873,
+              "nll_nats": 0.8703898108140046
+            }
+          },
+          {
+            "fold": 1,
+            "processing_ease": {
+              "trials": 387,
+              "mean_sentence_mae": 0.6827240723356104,
+              "trial_mae": 0.9698464710275024,
+              "trial_mse": 1.395522976672958
+            },
+            "perceived_understanding": {
+              "trials": 387,
+              "mean_sentence_mae": 0.6457237920095754,
+              "trial_mae": 0.8886278846159154,
+              "trial_mse": 1.2576621357554685
+            },
+            "any_issue": {
+              "trials": 123,
+              "brier": 0.23452936679554032,
+              "nll_nats": 0.7496967964278187
+            },
+            "unclear_term": {
+              "trials": 123,
+              "brier": 0.20458544194464917,
+              "nll_nats": 0.7175998524415863
+            }
+          },
+          {
+            "fold": 2,
+            "processing_ease": {
+              "trials": 354,
+              "mean_sentence_mae": 0.5460917134742953,
+              "trial_mae": 0.8278697594410955,
+              "trial_mse": 1.070843878917091
+            },
+            "perceived_understanding": {
+              "trials": 354,
+              "mean_sentence_mae": 0.6040071137880874,
+              "trial_mae": 0.8988360116037272,
+              "trial_mse": 1.2741662962578753
+            },
+            "any_issue": {
+              "trials": 288,
+              "brier": 0.19973201217102254,
+              "nll_nats": 0.6457307035884726
+            },
+            "unclear_term": {
+              "trials": 288,
+              "brier": 0.23998639066032312,
+              "nll_nats": 0.8721462755945328
+            }
+          },
+          {
+            "fold": 3,
+            "processing_ease": {
+              "trials": 353,
+              "mean_sentence_mae": 0.5872382255597303,
+              "trial_mae": 0.9427032416670585,
+              "trial_mse": 1.437665603102395
+            },
+            "perceived_understanding": {
+              "trials": 353,
+              "mean_sentence_mae": 0.6750162930811866,
+              "trial_mae": 1.0024632661268327,
+              "trial_mse": 1.5865750407579728
+            },
+            "any_issue": {
+              "trials": 135,
+              "brier": 0.33787581326068494,
+              "nll_nats": 1.1342749001700312
+            },
+            "unclear_term": {
+              "trials": 135,
+              "brier": 0.25743439341232255,
+              "nll_nats": 0.9151042024638321
+            }
+          },
+          {
+            "fold": 4,
+            "processing_ease": {
+              "trials": 375,
+              "mean_sentence_mae": 0.6044126466115316,
+              "trial_mae": 0.8935783367156982,
+              "trial_mse": 1.1699238330028907
+            },
+            "perceived_understanding": {
+              "trials": 375,
+              "mean_sentence_mae": 0.604654214859009,
+              "trial_mae": 0.8893971538543701,
+              "trial_mse": 1.185164829104919
+            },
+            "any_issue": {
+              "trials": 99,
+              "brier": 0.25548007430245656,
+              "nll_nats": 0.7622067668947256
+            },
+            "unclear_term": {
+              "trials": 99,
+              "brier": 0.19199518487118342,
+              "nll_nats": 0.5987126849156037
+            }
+          }
+        ]
+      },
+      "zhan": {
+        "pooled": {
+          "trials": 1651,
+          "brier": 0.20109403061220024,
+          "nll_nats": 0.5896165393785657
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "trials": 322,
+            "brier": 0.20918021540766712,
+            "nll_nats": 0.6119267067710157
+          },
+          {
+            "fold": 1,
+            "trials": 322,
+            "brier": 0.17349890427340275,
+            "nll_nats": 0.5304921862931677
+          },
+          {
+            "fold": 2,
+            "trials": 322,
+            "brier": 0.20658906433161095,
+            "nll_nats": 0.6031813657906234
+          },
+          {
+            "fold": 3,
+            "trials": 322,
+            "brier": 0.20949458695938655,
+            "nll_nats": 0.6050516047530542
+          },
+          {
+            "fold": 4,
+            "trials": 363,
+            "brier": 0.20607336718384828,
+            "nll_nats": 0.5965482270861732
+          }
+        ]
+      },
+      "onestop": {
+        "pooled": {
+          "trials": 1940,
+          "selection_nll_nats": 0.9467112974562986,
+          "selection_brier": 0.4444455020183221,
+          "modal_choice_agreement": 0.7154639175257732,
+          "correctness": {
+            "trials": 1940,
+            "brier": 0.21230665780965316,
+            "nll_nats": 0.6988373117655651
+          }
+        },
+        "folds": [
+          {
+            "fold": 0,
+            "trials": 395,
+            "selection_nll_nats": 0.8075530350643363,
+            "selection_brier": 0.40783997746611383,
+            "modal_choice_agreement": 0.7291139240506329,
+            "correctness": {
+              "trials": 395,
+              "brier": 0.19528391862459743,
+              "nll_nats": 0.6276954105886486
+            }
+          },
+          {
+            "fold": 1,
+            "trials": 395,
+            "selection_nll_nats": 0.9455333734415626,
+            "selection_brier": 0.4316350809259664,
+            "modal_choice_agreement": 0.7215189873417721,
+            "correctness": {
+              "trials": 395,
+              "brier": 0.21321095570016318,
+              "nll_nats": 0.6992451886042024
+            }
+          },
+          {
+            "fold": 2,
+            "trials": 394,
+            "selection_nll_nats": 0.9859762535230178,
+            "selection_brier": 0.47106104480662825,
+            "modal_choice_agreement": 0.700507614213198,
+            "correctness": {
+              "trials": 394,
+              "brier": 0.21382898090478406,
+              "nll_nats": 0.6738284089067411
+            }
+          },
+          {
+            "fold": 3,
+            "trials": 378,
+            "selection_nll_nats": 1.2030060154380648,
+            "selection_brier": 0.5307289390561165,
+            "modal_choice_agreement": 0.6772486772486772,
+            "correctness": {
+              "trials": 378,
+              "brier": 0.2585653048146518,
+              "nll_nats": 0.9138403198734693
+            }
+          },
+          {
+            "fold": 4,
+            "trials": 378,
+            "selection_nll_nats": 0.7961372168828875,
+            "selection_brier": 0.38205829426891447,
+            "modal_choice_agreement": 0.7486772486772487,
+            "correctness": {
+              "trials": 378,
+              "brier": 0.18130459549212535,
+              "nll_nats": 0.5838169685782877
+            }
+          }
+        ]
+      }
+    }
+  }
+}

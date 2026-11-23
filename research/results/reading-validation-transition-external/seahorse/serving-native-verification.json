@@ -1,0 +1,75 @@
+{
+  "registered_input_sha256": "d0bb54ed3be55fe76151ed32940ac278a84a4bfeffc394070db3a510f56a9d7c",
+  "native_receipt_sha256": "07107a88f4fafdbd20e0919e8d5b0b0bf39cd6acc9d080f2a37d44a491c6040d",
+  "human_response_source": {
+    "text": "Choose a feeder that is appropriate for your yard. Choose a feeder with different types of seeds. Choose a feeder with a special suet feeder. Install your feeder in a safe location.",
+    "gem_id": "wiki_lingua_english_en-test-5068",
+    "generator": "mt5_small",
+    "text_sha256": "004961c35925309c9162a36440cc0331c3be57449a87958cb9e0aecc4d044ca4",
+    "official_row_key": "9218e961273547dc9d065e3d5120874c92ff834462f58e9053cedb86c707ea0c",
+    "grade_used_to_select": false
+  },
+  "original_forward_calls": 66,
+  "empty_input_abstentions_without_forward": 1,
+  "complete_application_responses": 3,
+  "fresh_held_probabilities": 65,
+  "matching_held_abstentions": 1,
+  "same_held_alerts": 65,
+  "held_max_absolute_probability_drift": 2.3041088330205683e-06,
+  "fixed_probability_tolerance": 0.003,
+  "examples": [
+    {
+      "fixture": "synthetic_example",
+      "text_sha256": "419cc3e17de920fba7513c04f310723e6d85fbf832f17227241b5faed1f03cb7",
+      "response": {
+        "available": true,
+        "eligible_regions": 1,
+        "probability_difficult": 0.016264176622664873,
+        "reason": null,
+        "reason_code": null,
+        "review": false,
+        "scope": "english_generated_summary_comprehensibility",
+        "threshold": 0.11412351505396101
+      },
+      "official_human_response": null
+    },
+    {
+      "fixture": "licensed_wikilingua_example",
+      "text_sha256": "004961c35925309c9162a36440cc0331c3be57449a87958cb9e0aecc4d044ca4",
+      "response": {
+        "available": true,
+        "eligible_regions": 3,
+        "probability_difficult": 0.019903820192824145,
+        "reason": null,
+        "reason_code": null,
+        "review": false,
+        "scope": "english_generated_summary_comprehensibility",
+        "threshold": 0.11412351505396101
+      },
+      "official_human_response": {
+        "article": "wiki_lingua_english_en-test-5068",
+        "system": "mt5_small",
+        "human_Q1": "Yes"
+      }
+    },
+    {
+      "fixture": "highest_risk_in_fixed_source_subset",
+      "text_sha256": "fc9d7d0fc534b7a03e40f18d758cd105058976e7fdafcc9608c71da3a7d6d9bb",
+      "response": {
+        "available": true,
+        "eligible_regions": 1,
+        "probability_difficult": 0.4896780246248169,
+        "reason": null,
+        "reason_code": null,
+        "review": true,
+        "scope": "english_generated_summary_comprehensibility",
+        "threshold": 0.11412351505396101
+      },
+      "official_human_response": {
+        "article": "xsum-test-16",
+        "system": "mt5_small",
+        "human_Q1": "No"
+      }
+    }
+  ]
+}

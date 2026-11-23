@@ -1,0 +1,132 @@
+{
+  "counts": {
+    "fit": {
+      "components": 30,
+      "judgments": 2144,
+      "quality_retained_judgments": 1629,
+      "readers": 1365,
+      "sentences": 584,
+      "word_count_histogram": {
+        "2": 30,
+        "3": 23,
+        "4": 46,
+        "6": 37,
+        "7": 30,
+        "10": 34,
+        "11": 41,
+        "12": 38,
+        "13": 30,
+        "14": 35,
+        "15": 33,
+        "17": 26,
+        "18": 34,
+        "19": 21,
+        "20": 19,
+        "22": 20,
+        "24": 17,
+        "25": 12,
+        "27": 11,
+        "28": 5,
+        "29": 6,
+        "30": 9,
+        "31": 6,
+        "32": 4,
+        "33": 3,
+        "34": 4,
+        "38": 4,
+        "40": 4,
+        "46": 2
+      }
+    },
+    "test": {
+      "components": 9,
+      "judgments": 700,
+      "quality_retained_judgments": 554,
+      "readers": 616,
+      "sentences": 195,
+      "word_count_histogram": {
+        "5": 33,
+        "8": 41,
+        "9": 51,
+        "16": 23,
+        "21": 17,
+        "23": 13,
+        "26": 8,
+        "35": 6,
+        "36": 3
+      }
+    }
+  },
+  "creators": [
+    "Naim Karasekreter",
+    "Özkan Aslan",
+    "Caner Balım",
+    "Taner Sezer",
+    "Özay Karadağ",
+    "Süleyman Yaman"
+  ],
+  "endpoint": "Observed binary choice of the earlier-displayed sentence as easier. Earlier and later follow the original Cumle_1 and Cumle_2 fields. Include all valid strict equal-word pairs.",
+  "file_sha256": {
+    "fit-truth.jsonl": "4e9703032a86676a43a8e7e004ee9415310717d23b647f74e91f5353519b942e",
+    "fit.jsonl": "7d573c59736497ad2ab4eb5ff20e225170039ea0797e1ded0f7aec5df8ad05fe",
+    "model_input/stimuli.jsonl": "29c4308f9630beea56d27eafa0f7b0a91d3c7790b48dcbfe0212c6da39824640",
+    "sentence-metadata.jsonl": "c7423e6b9a9a43c561eb04fb0fd8d88ddfe3c49d1896476d2e15a09748afcf51",
+    "test-truth.jsonl": "5398c1b0639aa10650b85f843ef760b2e81b14eb070571afc7e46503ca6340cd",
+    "test.jsonl": "1c09aa2d26552f8d7ddc5d820d5805f55d9a58a6c8fbba0c6a50709ecf43092f"
+  },
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "license_scope": "The authors license the study data and documentation under CC BY 4.0. LexiTR compiler Taner Sezer approved redistribution of these sentence excerpts. The authors did not independently verify rights in each original source.",
+  "modifications": "Retain exact released sentence strings. Select strict equal-word-count pairs and assign whole connected components to a held-out set. Replace local identifiers with deterministic opaque hashes.",
+  "prepare_sha256": "a95953045a43577966aa986be813f2cc141f8a2a41be4117bcf0dc3a41735516",
+  "quality_sensitivity": "The original filter retained readers with median comprehension response time >=5 seconds and mean correctness >0.30. Flags are private and do not determine eligibility, split, surface variables or model input.",
+  "release": "https://zenodo.org/records/22775520",
+  "release_doi": "10.5281/zenodo.22775520",
+  "schema_version": 1,
+  "security": {
+    "local_outcomes": [
+      "fit-truth.jsonl",
+      "test-truth.jsonl"
+    ],
+    "model_input": "model_input/stimuli.jsonl"
+  },
+  "source_counts": {
+    "administered_sentences": 787,
+    "comprehension_responses": 22490,
+    "preference_judgments": 2960,
+    "workbook_sentences": 800
+  },
+  "source_sha256": {
+    "2_soru_yanitlari-11.csv": "bd9f57888ed1cb602b142d1dff11ec8ced4a8440dcc9f713b5fc70a79dbd0c76",
+    "3_karsilastirma_tercihleri-5.csv": "9f4d975848b1684e606d5b721608084e5c8ee2568361392289f2739696cd0cec",
+    "saha_calismasi_veri_seti_800.xlsx": "333c2089173f94e9e0afde45fc3e3ddcafcbfcb70ffd963537d03f91aa3f2f7b"
+  },
+  "split": {
+    "seed": "cogllm-turkish-v5-equal-word-v1",
+    "selection": "Sort whole strict-equal-word connected components by the opaque seeded hash of their sorted source sentence IDs. Select the contiguous cyclic window minimizing normalized absolute deviations from 25% of sentences and judgments. Break ties by component-count deviation, starting position and window width.",
+    "shared_normalized_sentences": 0,
+    "shared_readers": 502,
+    "shared_sentence_ids": 0,
+    "target_test_fraction": 0.25,
+    "test_component_ids": [
+      "bf3d584742d805ea9ca6880d3c69b7b1",
+      "c0215be8d2da98e305f6475ea09ab6e4",
+      "d0c6407f267ad3660abe02ba0d9325dd",
+      "d311cfe08009b52ae428b09989524c28",
+      "d4673b2aa9d76dc14d8ad13f034b02c4",
+      "d5c8054a34d7d78f6557bc1abac0641c",
+      "da5b9ce5bfebacb460ac0b8e912a6680",
+      "de38d016573222c79c14e2b2f6d368d3",
+      "e3a9625a7d370df0087e7382faa03a51"
+    ]
+  },
+  "strict_equal_word_counts": {
+    "components": 39,
+    "judgments": 2844,
+    "largest_component": 51,
+    "sentences": 779,
+    "unique_pairs": 1589
+  },
+  "study": "Reader-based Turkish sentence difficulty",
+  "surface_controls": "Use published selected_sentences #word, #char and #syl counts. All comparisons have exactly equal #word.",
+  "version": "v5"
+}

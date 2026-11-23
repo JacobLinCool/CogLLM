@@ -1,0 +1,60 @@
+{
+  "artifact_hashes": {
+    "blott/scores.json": "2245bcb18db3979d85a5b8badecf5af45c184a0cf4dd407101daa5f2a5e13ae7",
+    "iirc-locked-scores.json": "a749376d6c7bc0bda891d5be08e5bc83b44bb7e254ec6aac727b4bcd93dcc93c",
+    "kerwer/scores.json": "ec00e257faeeda3676f44a3b5ceb327201d45ea0c6324695a5fff9d9d66d5cd7",
+    "verification.json": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "directly_unverified_candidate_outputs": [
+    "reader_background",
+    "question_onset",
+    "question_resolution",
+    "independent_sentence_rating_distribution_calibration"
+  ],
+  "evidence": {
+    "annotator_selected_spans_after_reading_iirc_paragraph": {
+      "both_same_stop_targets": {
+        "form": 0.06038135593220339,
+        "qwen": 0.1271186440677966
+      },
+      "paragraphs": 430,
+      "passed": true
+    },
+    "article_comprehensibility_rewrite_kerwer": {
+      "improved_absolute_error_over_length": false,
+      "passed_direction_and_magnitude": true
+    },
+    "designated_complex_lexical_target_replay": {
+      "designated_targets": 1094,
+      "mae_0_to_1": 0.08065494344994109,
+      "passed_numeric_replay": true
+    },
+    "english_medical_difficult_word_localization": {
+      "eligible_word_coverage": 0.9999141114832947,
+      "mean_within_sentence_average_precision": {
+        "inverse_frequency": 0.5646258247978323,
+        "length": 0.5039411257156492,
+        "served": 0.7127897496029998
+      },
+      "passed": true,
+      "scores_sha256": "64719841218e91d4d94fa214b65cc73275bd19a1e10b70bdcd69e171707a9dd9",
+      "sentences": 1109,
+      "sources": 15
+    },
+    "sentence_coherence_rank_blott": {
+      "ci95": [
+        -0.054964539007092195,
+        0.10283687943262415
+      ],
+      "estimate": 0.014184397163120532,
+      "improved_over_length": false
+    }
+  },
+  "execution": {
+    "cached_interaction_forwards": 0,
+    "device": "NVIDIA L4 FP32",
+    "forwards_per_analysis": 1
+  },
+  "run_sha256": "615264254e06e6bfe0408e8abfbc137c73cadd3f46f7a3c1122cd5982d7ccdf1"
+}

@@ -1,0 +1,231 @@
+{
+  "source_sha256": {
+    "ratings.sav": "e64eace00774c951579b31c612da3f365b115c472a514edaf6033ad0cf358adb",
+    "blocked.docx": "d1bbf84bf650f29ebee8ae918b55d1b31caf46049c35a67faedd2f4a94c2a5e7",
+    "interleaved.docx": "4ce8baf3ce70d8770b21933802a7f7ba64b4303d132d6d4c166602bbc297021d"
+  },
+  "reader_rows": 114,
+  "columns": [
+    "sex",
+    "age",
+    "Sequence",
+    "SelfQuestioning",
+    "latency_in_min_reading_cycle_1",
+    "latency_in_min_reading_cycle_2",
+    "processes_low_level_inferences_reading_cycle_1",
+    "processes_comparative_inferences_reading_cycle_1",
+    "processes_relational_inferences_reading_cycle_1",
+    "processes_elaborative_inferences_reading_cycle_1",
+    "processes_indistinct_reading_cycle_1",
+    "processes_missings_reading_cycle_1",
+    "processes_low_level_inferences_reading_cycle_2",
+    "processes_comparative_inferences_reading_cycle_2",
+    "processes_relational_inferences_reading_cycle_2",
+    "processes_elaborative_inferences_reading_cycle_2",
+    "processes_indistinct_reading_cycle_2",
+    "processes_missings_reading_cycle_2",
+    "processes_low_level_inferences_sum",
+    "processes_comparative_inferences_sum",
+    "processes_relational_inferences_sum",
+    "processes_elaborative_inferences_sum",
+    "processes_missings_sum",
+    "outcomes_factual_details_T1",
+    "outcomes_factual_details_T2",
+    "outcomes_comparative_reasoning_details_T1",
+    "outcomes_comparative_reasoning_details_T2",
+    "outcomes_relational_reasoning_details_T1",
+    "outcomes_relational_reasoning_details_T2"
+  ],
+  "cells": {
+    "blocked/spontaneous_thought_reports": {
+      "first_cycle": {
+        "count": 28,
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "second_cycle": {
+        "count": 28,
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "both_cycles_total": {
+        "count": 28,
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "count_per_cycle": {
+        "count": 28,
+        "mean": 0.0,
+        "sd": 0.0
+      }
+    },
+    "blocked/prompted_self_questioning": {
+      "first_cycle": {
+        "count": 28,
+        "mean": 0.0,
+        "sd": 0.0
+      },
+      "second_cycle": {
+        "count": 28,
+        "mean": 0.03571428571428571,
+        "sd": 0.18898223650461365
+      },
+      "both_cycles_total": {
+        "count": 28,
+        "mean": 0.03571428571428571,
+        "sd": 0.18898223650461365
+      },
+      "count_per_cycle": {
+        "count": 28,
+        "mean": 0.017857142857142856,
+        "sd": 0.09449111825230683
+      }
+    },
+    "interleaved/spontaneous_thought_reports": {
+      "first_cycle": {
+        "count": 28,
+        "mean": 0.9642857142857143,
+        "sd": 1.6212053782007012
+      },
+      "second_cycle": {
+        "count": 28,
+        "mean": 1.1785714285714286,
+        "sd": 1.564740457204548
+      },
+      "both_cycles_total": {
+        "count": 28,
+        "mean": 2.142857142857143,
+        "sd": 3.002644337225609
+      },
+      "count_per_cycle": {
+        "count": 28,
+        "mean": 1.0714285714285714,
+        "sd": 1.5013221686128044
+      }
+    },
+    "interleaved/prompted_self_questioning": {
+      "first_cycle": {
+        "count": 30,
+        "mean": 0.36666666666666664,
+        "sd": 0.7648904962570575
+      },
+      "second_cycle": {
+        "count": 30,
+        "mean": 0.5666666666666667,
+        "sd": 0.8976341829703132
+      },
+      "both_cycles_total": {
+        "count": 30,
+        "mean": 0.9333333333333333,
+        "sd": 1.436790804568276
+      },
+      "count_per_cycle": {
+        "count": 30,
+        "mean": 0.4666666666666667,
+        "sd": 0.718395402284138
+      }
+    }
+  },
+  "observations": {
+    "reader_by_cycle_inference_counts": true,
+    "subject_and_paragraph_keys": false,
+    "verbatim_thought_reports": false,
+    "same_question_updates": false
+  },
+  "inductive_inference_2x2": {
+    "sequence": {
+      "difference_per_reading_cycle": 0.7601190476190474,
+      "ci95": [
+        0.45128915302090905,
+        1.0689489422171856
+      ],
+      "F": 23.791892912455918,
+      "df": [
+        1,
+        110
+      ]
+    },
+    "prompting": {
+      "difference_per_reading_cycle": -0.29345238095238113,
+      "ci95": [
+        -0.6022822755505195,
+        0.01537751364575718
+      ],
+      "F": 3.546018854438419,
+      "df": [
+        1,
+        110
+      ]
+    },
+    "interaction": {
+      "difference_per_reading_cycle": -0.6226190476190472,
+      "ci95": [
+        -1.2402788368153237,
+        -0.004959258422770563
+      ],
+      "F": 3.990713770621084,
+      "df": [
+        1,
+        110
+      ]
+    },
+    "interleaving_in_spontaneous": {
+      "difference_per_reading_cycle": 1.071428571428571,
+      "ci95": [
+        0.6309914146403915,
+        1.5118657282167502
+      ],
+      "F": 23.241437056397643,
+      "df": [
+        1,
+        110
+      ]
+    },
+    "interleaving_in_prompted": {
+      "difference_per_reading_cycle": 0.44880952380952377,
+      "ci95": [
+        0.015775199407481122,
+        0.8818438482115665
+      ],
+      "F": 4.2187512227187,
+      "df": [
+        1,
+        110
+      ]
+    }
+  },
+  "published_english_materials": {
+    "blocked": {
+      "translated_edition": true,
+      "nonempty_document_paragraphs": 17,
+      "substantive_section_counts": [
+        143,
+        165,
+        171,
+        179,
+        184,
+        151,
+        174
+      ],
+      "total_body_words_excluding_headings": 1167,
+      "section_structure": "one shared introduction and six headed body sections",
+      "same_intro_sha256_for_comparison": "126f7aaa471308fa5a0b9e8fce3d6f9547f42bb29bfdecc5b019235e562e0b44"
+    },
+    "interleaved": {
+      "translated_edition": true,
+      "nonempty_document_paragraphs": 15,
+      "substantive_section_counts": [
+        143,
+        70,
+        221,
+        362,
+        155,
+        98,
+        118
+      ],
+      "total_body_words_excluding_headings": 1167,
+      "section_structure": "one shared introduction and six headed body sections",
+      "same_intro_sha256_for_comparison": "126f7aaa471308fa5a0b9e8fce3d6f9547f42bb29bfdecc5b019235e562e0b44"
+    }
+  }
+}

@@ -1,0 +1,315 @@
+{
+  "protocol_sha256": "447b4535900b296a282274b38462fa6d838d264ab0c08cbda50b119eadfb38f4",
+  "variant": null,
+  "direct_source_cut": 0.039763849212109216,
+  "marginal_source_cut": 0.0520363396339581,
+  "direct_forecasts_sha256": "a68ccca20261eebfcae48da0c701c4b9df9680e47294c6bf8f15dd265a8707d3",
+  "marginal_forecasts_sha256": "50f36f2aecfbe3fc3d8aaf9729bd2dae9bc689e15a2b8c9a6cdd8ec7df34b6ea",
+  "t5_forecasts_sha256": null,
+  "all_words": {
+    "movie_groups": 39,
+    "words": 22133,
+    "human_positive": 413,
+    "methods": {
+      "served_marginal": {
+        "tp_fp_fn_tn": [
+          375,
+          666,
+          38,
+          21054
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.36023054755043227,
+          "family_bootstrap_95_interval": [
+            0.3243237139578603,
+            0.39780092918718496
+          ]
+        },
+        "recall": {
+          "estimate": 0.9079903147699758,
+          "family_bootstrap_95_interval": [
+            0.8590901464307505,
+            0.9511657722122838
+          ]
+        },
+        "f1": {
+          "estimate": 0.515818431911967,
+          "family_bootstrap_95_interval": [
+            0.4767516105450724,
+            0.554427423874463
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 3.0662983425414363,
+          "family_bootstrap_95_interval": [
+            2.7294525782556236,
+            3.4480936348341205
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 47.03384087109746,
+          "family_bootstrap_95_interval": [
+            42.41108350829937,
+            52.14629813550161
+          ]
+        }
+      },
+      "direct_native": {
+        "tp_fp_fn_tn": [
+          382,
+          589,
+          31,
+          21131
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.39340885684860966,
+          "family_bootstrap_95_interval": [
+            0.35480854383378724,
+            0.43536170917760947
+          ]
+        },
+        "recall": {
+          "estimate": 0.9249394673123487,
+          "family_bootstrap_95_interval": [
+            0.8804591454272863,
+            0.9619289340101523
+          ]
+        },
+        "f1": {
+          "estimate": 0.5520231213872833,
+          "family_bootstrap_95_interval": [
+            0.5122655122655123,
+            0.5929465882144079
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 2.7117863720073667,
+          "family_bootstrap_95_interval": [
+            2.3981954398441983,
+            3.029259583142525
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 43.871142637690326,
+          "family_bootstrap_95_interval": [
+            39.64502973364053,
+            48.3311960117386
+          ]
+        }
+      }
+    }
+  },
+  "first_person_mention": {
+    "movie_groups": 39,
+    "words": 302,
+    "human_positive": 194,
+    "methods": {
+      "served_marginal": {
+        "tp_fp_fn_tn": [
+          192,
+          69,
+          2,
+          39
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.735632183908046,
+          "family_bootstrap_95_interval": [
+            0.6459123702983139,
+            0.8164802597670343
+          ]
+        },
+        "recall": {
+          "estimate": 0.9896907216494846,
+          "family_bootstrap_95_interval": [
+            0.9749968592964824,
+            1.0
+          ]
+        },
+        "f1": {
+          "estimate": 0.843956043956044,
+          "family_bootstrap_95_interval": [
+            0.782098401165471,
+            0.8950012376237624
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 63.888888888888886,
+          "family_bootstrap_95_interval": [
+            53.086419753086425,
+            72.22222222222221
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 864.2384105960265,
+          "family_bootstrap_95_interval": [
+            831.8042813455658,
+            896.551724137931
+          ]
+        }
+      },
+      "direct_native": {
+        "tp_fp_fn_tn": [
+          193,
+          75,
+          1,
+          33
+        ],
+        "movies_with_alerts": 39,
+        "precision": {
+          "estimate": 0.7201492537313433,
+          "family_bootstrap_95_interval": [
+            0.6354147086466165,
+            0.7991807393508461
+          ]
+        },
+        "recall": {
+          "estimate": 0.9948453608247423,
+          "family_bootstrap_95_interval": [
+            0.9833333333333333,
+            1.0
+          ]
+        },
+        "f1": {
+          "estimate": 0.8354978354978355,
+          "family_bootstrap_95_interval": [
+            0.7756813417190775,
+            0.8863636363636364
+          ]
+        },
+        "false_alarms_per_100_negatives": {
+          "estimate": 69.44444444444444,
+          "family_bootstrap_95_interval": [
+            59.63302752293578,
+            76.97856000913555
+          ]
+        },
+        "flags_per_1000_words": {
+          "estimate": 887.4172185430464,
+          "family_bootstrap_95_interval": [
+            854.4061302681993,
+            919.0944460308394
+          ]
+        }
+      }
+    }
+  },
+  "sentence_metrics": {
+    "served_marginal": {
+      "tp_fp_fn_tn": [
+        248,
+        293,
+        2,
+        873
+      ],
+      "precision": {
+        "estimate": 0.4584103512014787,
+        "family_bootstrap_95_interval": [
+          0.4164904240175991,
+          0.5
+        ]
+      },
+      "recall": {
+        "estimate": 0.992,
+        "family_bootstrap_95_interval": [
+          0.9798387096774194,
+          1.0
+        ]
+      },
+      "f1": {
+        "estimate": 0.6270543615676359,
+        "family_bootstrap_95_interval": [
+          0.5865623687956335,
+          0.6649683145268195
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 25.128644939965696,
+        "family_bootstrap_95_interval": [
+          21.913724012314262,
+          28.955986005372353
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 247,
+        "evaluated": 248,
+        "fraction": 0.9959677419354839
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 247,
+        "evaluated": 541,
+        "fraction": 0.4565619223659889
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 306,
+        "evaluated": 409,
+        "fraction": 0.7481662591687042
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 306,
+        "evaluated": 782,
+        "fraction": 0.391304347826087
+      }
+    },
+    "direct_native": {
+      "tp_fp_fn_tn": [
+        248,
+        283,
+        2,
+        883
+      ],
+      "precision": {
+        "estimate": 0.4670433145009416,
+        "family_bootstrap_95_interval": [
+          0.42886139774859283,
+          0.5085481099656357
+        ]
+      },
+      "recall": {
+        "estimate": 0.992,
+        "family_bootstrap_95_interval": [
+          0.980544747081712,
+          1.0
+        ]
+      },
+      "f1": {
+        "estimate": 0.6350832266325224,
+        "family_bootstrap_95_interval": [
+          0.5989844453433899,
+          0.672515263930752
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 24.271012006861064,
+        "family_bootstrap_95_interval": [
+          21.66114138078085,
+          27.195806680881308
+        ]
+      },
+      "overlap_per_correct_sentence": {
+        "overlapping": 247,
+        "evaluated": 248,
+        "fraction": 0.9959677419354839
+      },
+      "overlap_per_alerted_sentence": {
+        "overlapping": 247,
+        "evaluated": 531,
+        "fraction": 0.4651600753295669
+      },
+      "overlap_per_span_in_correct_sentences": {
+        "overlapping": 325,
+        "evaluated": 429,
+        "fraction": 0.7575757575757576
+      },
+      "overlap_per_span_in_alerted_sentences": {
+        "overlapping": 325,
+        "evaluated": 785,
+        "fraction": 0.4140127388535032
+      }
+    }
+  },
+  "fully_measured_sentences": 1416,
+  "movie_groups": 39
+}

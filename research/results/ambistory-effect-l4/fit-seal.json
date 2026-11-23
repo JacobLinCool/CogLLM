@@ -1,0 +1,68 @@
+{
+  "status": "effect_and_baseline_forecasts_locked_before_dev_scoring",
+  "selected_beta": 4,
+  "forecast_samples": 588,
+  "protocol_sha256": "128c1a212c6570c4f21f54ad595eeefc2e204658e338492acb0ef93e6b885393",
+  "source_preparation_sha256": "0364a1942796740435c060da2d86a26774d6c794827dfd0cecae8037fafd3253",
+  "input_sha256": {
+    "dev/design/stops.jsonl": "f5a4f02330e815e0f6e4e8ec571ecc07a2e9995d8a1a9e7068918bc35381df69",
+    "dev/model_input/stimuli.jsonl": "139e3e068326f8c88b145dd131e51d6544fb42ebebea5dd8e31cc7dbaf892588",
+    "test/design/stops.jsonl": "d46391ff6f5713b784df7dedd619790f6cfe82d538c0be832a385232103eac70",
+    "test/model_input/stimuli.jsonl": "ba24280b10b5015721ad6a78ede79103efe80986e9ae0c7b372b5716dfa6c47b",
+    "train/design/stops.jsonl": "a3299e585742d2348882adb6d7c8edb373ced81191c411f0c9a6281ca5df83a9",
+    "train/model_input/stimuli.jsonl": "089178c26651b2d401a1d7ea186169bd247d3e24827e715422a6f784d68713cd",
+    "train/scoring/ordinal-ratings.jsonl": "532fdaec53fc27cb2469ef96fe48949f93445e1cf9f1cb57d4e258636a9fc762"
+  },
+  "extraction_sha256": {
+    "feature_manifest": "876b097b252bda33d7543f6ff50fe2c2114bdd5be36feca93ed119ab1894a6f8",
+    "story_features": "8b89d83d6c7ced57e5eef28d28d65d090a9e732914e57b674ccb6438b146611e",
+    "sense_features": "04ce0e21a58216ad312d7c523c0a4c8e9fe6e53016f63c4d57d0d1e06164d03f",
+    "causality": "3b27c22ca660e74f233e694988dccd2783e19a1ee15a103d2904d2935e0b729f",
+    "extraction_seal": "1fd6484f469add5fca744ce47e920591b61b4e1fd551ed2a189e69dc35d31d48"
+  },
+  "runtime": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3"
+  },
+  "prefix_benchmark": {
+    "train": {
+      "families": 378,
+      "comparisons": 2268,
+      "max_relative_rms": 5.108447346289947e-06,
+      "max_absolute": 1.1771917343139648e-06
+    },
+    "dev": {
+      "families": 98,
+      "comparisons": 588,
+      "max_relative_rms": 2.2461246038300474e-06,
+      "max_absolute": 5.662441253662109e-07
+    },
+    "test": {
+      "families": 155,
+      "comparisons": 930,
+      "max_relative_rms": 4.632050991159431e-06,
+      "max_absolute": 1.0952353477478027e-06
+    }
+  },
+  "fit_split": "train",
+  "forecast_split": "dev",
+  "fit_samples": 2268,
+  "methods": [
+    "form_control",
+    "common_prefix",
+    "ending"
+  ],
+  "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "file_sha256": {
+    "baseline-predictions.jsonl": "06752cd203fa4c2594af3a5771518d0534b3a2283fd587d3ebca8c31efd74db6",
+    "effect-predictions.jsonl": "d94c6d78e6642f96c27858d329084b3b298263f88e7b53ea7f41d29ba401bd1b",
+    "heads.npz": "a235da95035f476d41a91fe7c7de0f8eb017467342b04208d3e7f36a7a1b320e",
+    "train-diagnostics.json": "7e6a7e8386ce926ef0fc1d769321d96edd3ffdf5a2ef6a891f41de2f55938076"
+  }
+}

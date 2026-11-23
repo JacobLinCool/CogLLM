@@ -1,0 +1,42 @@
+{
+  "schema_version": 1,
+  "scope": "First linked stop that covers a complete retrospective evidence excerpt for a given IIRC anchor.",
+  "preparation_audit_sha256": "35f7c12f6910c22afa519c326e51e05593832f11b67000cbda642be8b7566835",
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "method_fields": [
+    "geometry",
+    "path_text",
+    "anchor_conditioned"
+  ],
+  "forecast_row": {
+    "case_id": "prepared case identifier",
+    "methods": "per-method conditional event probabilities aligned to linked stops only, in ascending character order"
+  },
+  "cases": {
+    "train": 3354,
+    "dev": 452
+  },
+  "tokens": {
+    "train": 5869203,
+    "dev": 835677
+  },
+  "held_out_not_in_archive": {
+    "dev/locked-labels.jsonl": "02b3d673335bc19fb06c222d140f5b9185e2c96742e38cede4a9236c7a009187",
+    "dev/locked-matched-swaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  },
+  "inputs_sha256": {
+    "train/stimuli.jsonl": "1b6cebe855c50977352ae0ce10e9a287bea3e7699274410fa2bd6799d8dae79b",
+    "train/queries.jsonl": "ce537485e84fc8c4d17c951caacf41bb02eb35f937931d04f26e45d2d21672b1",
+    "dev/stimuli.jsonl": "55761282923e72600636dd91609df6dbc729226b989bc0315b37f029840a59f5",
+    "dev/queries.jsonl": "6898636c4af9d5e759a4f6fff47850ccfabf26ab37b269cf49cd540aebb8db45",
+    "train/intervals.jsonl": "5593b72e6705c3ce53b927bba1e6e4254e660a5bdeb3d8ddace3004e172736cf"
+  },
+  "acceptance": {
+    "bootstrap": "10,000 paired resamples grouped by connected article family",
+    "interval_nll_gain_required_nats_vs_geometry": 0.02,
+    "max_brier_increase_vs_geometry": 0.01,
+    "explicit_anchor_requirement": "Upper paired NLL difference bound below zero vs same joined-path model using linked text states without explicit anchor vectors",
+    "same_document_swaps": "Descriptive only. A transfer gain does not establish identity-specific prediction."
+  }
+}

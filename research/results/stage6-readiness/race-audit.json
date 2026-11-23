@@ -1,0 +1,55 @@
+{
+  "by_source": {
+    "OneStopQA": {
+      "article_families": 20,
+      "distinct_full_inputs_with_displayed_option_order": 1872,
+      "distinct_items": 648,
+      "distinct_question_and_option_inputs_with_displayed_option_order": 1770,
+      "distinct_reader_keys": 970,
+      "items_by_released_trial_count": {
+        "2": 4,
+        "3": 644
+      },
+      "readers_by_released_trial_count": {
+        "2": 970
+      },
+      "released_trials": 1940
+    },
+    "RACE": {
+      "article_families": 216,
+      "distinct_full_inputs_with_displayed_option_order": 1851,
+      "distinct_items": 648,
+      "distinct_question_and_option_inputs_with_displayed_option_order": 1851,
+      "distinct_reader_keys": 970,
+      "items_by_released_trial_count": {
+        "2": 4,
+        "3": 644
+      },
+      "readers_by_released_trial_count": {
+        "2": 970
+      },
+      "released_trials": 1940
+    }
+  },
+  "overlap": {
+    "comparison_normalization": "Unicode NFKC, casefold, collapse whitespace; exact equality only",
+    "distinct_reader_keys": 970,
+    "item_id": 0,
+    "paragraph": 0,
+    "question": 0
+  },
+  "protocol": "STARC \u00a74.3: same Prolific QA experiment; passage, question and four displayed options concurrently visible.",
+  "protocol_source": "https://aclanthology.org/2020.acl-main.507.pdf#page=6",
+  "race_source_terms": "https://www.cs.cmu.edu/~glai1/data/race/",
+  "race_source_terms_summary": "RACE releases the data for noncommercial research; source passages are third-party content.",
+  "scope": "Matched-protocol material transfer within the same experiment and cohort. Selected-response column omitted by parser; no labels or text exported.",
+  "source": "https://raw.githubusercontent.com/berzak/onestop-qa/7a058755e1ff0d3f835a67109c669c7e294d4239/human_experiments/prolific/qa.tsv",
+  "source_bytes": 5628628,
+  "source_sha256": "bc8af0a78819b918eb0ce97935bf8fcd82eeec2d9f99111762034817c1e56e0d",
+  "structural_checks": {
+    "cohort_trial_positions_unique": true,
+    "displayed_option_permutations_valid": true,
+    "item_material_mapping_unambiguous": true,
+    "race_article_to_exact_text_mapping_unambiguous": true
+  }
+}

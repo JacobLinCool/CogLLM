@@ -1,0 +1,1952 @@
+{
+  "development_endpoints_evaluated": 69,
+  "documents": 27173,
+  "endpoint_count": 74,
+  "endpoints": {
+    "ambistory_given_sense_nonsensical_flag": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.10722752194963903,
+        "shared": 0.11746771778591325,
+        "shared_effect": 0.1350504778416366
+      },
+      "development_nll_original_scale": {
+        "independent": 0.10722752194963903,
+        "shared": 0.11746771778591325,
+        "shared_effect": 0.1350504778416366
+      },
+      "development_observations": 4031,
+      "development_rows": 804,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "ambistory"
+    },
+    "ambistory_given_sense_plausibility": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.6106597333856392,
+        "shared": 1.731999186028684,
+        "shared_effect": 1.6228155340539305
+      },
+      "development_nll_original_scale": {
+        "independent": 1.6106597333856392,
+        "shared": 1.731999186028684,
+        "shared_effect": 1.6228155340539305
+      },
+      "development_observations": 4031,
+      "development_rows": 804,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.006281094527363015,
+          "label": "mean_ending_minus_base_for_given_sense",
+          "matched_material_pairs": 268,
+          "methods": {
+            "independent": {
+              "error": 0.027416912582587116,
+              "prediction": 0.033698007109950294
+            },
+            "shared": {
+              "error": 0.026918700987482436,
+              "prediction": 0.033199795514845615
+            },
+            "shared_effect": {
+              "error": 0.013111495114955653,
+              "prediction": 0.019392589642318832
+            }
+          }
+        }
+      ],
+      "source": "ambistory"
+    },
+    "blott_2021_sentence_end_sense": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6926835397139525,
+        "shared": 1.2023512344892902,
+        "shared_effect": 1.306621668049415
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6926835397139525,
+        "shared": 1.2023512344892902,
+        "shared_effect": 1.306621668049415
+      },
+      "development_observations": 1152,
+      "development_rows": 48,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.22569444444444445,
+          "label": "ambiguity_minus_unambiguous_sense",
+          "matched_material_pairs": 12,
+          "methods": {
+            "independent": {
+              "error": 0.19170096682177645,
+              "prediction": -0.03399347762266796
+            },
+            "shared": {
+              "error": 0.22860989140139681,
+              "prediction": 0.0029154469569523944
+            },
+            "shared_effect": {
+              "error": 0.23710003164079455,
+              "prediction": 0.011405587196350125
+            }
+          }
+        }
+      ],
+      "source": "blott"
+    },
+    "blott_2023_sense_response_log_milliseconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.786156890589871,
+        "shared": 2.222991314855099,
+        "shared_effect": 1.808805387823507
+      },
+      "development_nll_original_scale": {
+        "independent": 1.1635277674711708,
+        "shared": 1.6003621917363984,
+        "shared_effect": 1.1861762647048069
+      },
+      "development_observations": 417,
+      "development_rows": 12,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "blott"
+    },
+    "blott_2023_sentence_end_sense": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.4917686040692588,
+        "shared": 0.37822545869555196,
+        "shared_effect": 4.331911803314472
+      },
+      "development_nll_original_scale": {
+        "independent": 0.4917686040692588,
+        "shared": 0.37822545869555196,
+        "shared_effect": 4.331911803314472
+      },
+      "development_observations": 417,
+      "development_rows": 12,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.21764705882352942,
+          "label": "ambiguity_minus_unambiguous_sense",
+          "matched_material_pairs": 6,
+          "methods": {
+            "independent": {
+              "error": 0.17596306707344803,
+              "prediction": -0.04168399175008139
+            },
+            "shared": {
+              "error": 0.20669597691180658,
+              "prediction": -0.010951081911722838
+            },
+            "shared_effect": {
+              "error": 0.19313249132851615,
+              "prediction": -0.02451456749501327
+            }
+          }
+        }
+      ],
+      "source": "blott"
+    },
+    "clear_excerpt_easiness": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.515927343100376,
+        "shared": 1.1199653650262664,
+        "shared_effect": 1.2612732986777104
+      },
+      "development_nll_original_scale": {
+        "independent": 1.5514128442982917,
+        "shared": 1.1554508662241822,
+        "shared_effect": 1.2967587998756263
+      },
+      "development_observations": 204,
+      "development_rows": 204,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "clear"
+    },
+    "complex_word_difficulty": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.2543487518852885,
+        "shared": 1.2767541665538162,
+        "shared_effect": 1.4508064328271304
+      },
+      "development_nll_original_scale": {
+        "independent": -0.6952800925226523,
+        "shared": -0.6728746778541246,
+        "shared_effect": -0.4988224115808105
+      },
+      "development_observations": 2051,
+      "development_rows": 2037,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "complex"
+    },
+    "context_first_readback": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.12283107334701535,
+        "shared": 0.12998270533550924,
+        "shared_effect": 0.1850219243711566
+      },
+      "development_nll_original_scale": {
+        "independent": 0.12283107334701535,
+        "shared": 0.12998270533550924,
+        "shared_effect": 0.1850219243711566
+      },
+      "development_observations": 20845,
+      "development_rows": 494,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.010754169257360273,
+          "label": "comp_critical_two_minus_one",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": -0.009075773241000945,
+              "prediction": 0.0016783960163593275
+            },
+            "shared": {
+              "error": -0.011285566618136424,
+              "prediction": -0.0005313973607761523
+            },
+            "shared_effect": {
+              "error": -0.013247834944035745,
+              "prediction": -0.0024936656866754725
+            }
+          }
+        },
+        {
+          "human_difference": 0.00289803400074291,
+          "label": "comp_spill_two_minus_one",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": -0.002460554002358707,
+              "prediction": 0.00043747999838420273
+            },
+            "shared": {
+              "error": -0.003201672767129589,
+              "prediction": -0.0003036387663866791
+            },
+            "shared_effect": {
+              "error": -0.005116263430805356,
+              "prediction": -0.002218229430062446
+            }
+          }
+        },
+        {
+          "human_difference": -0.041433356165860316,
+          "label": "rc_critical_two_minus_one",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": 0.04178957281471996,
+              "prediction": 0.00035621664885963694
+            },
+            "shared": {
+              "error": 0.04017696289715591,
+              "prediction": -0.0012563932687044144
+            },
+            "shared_effect": {
+              "error": 0.029559936902327125,
+              "prediction": -0.011873419263533198
+            }
+          }
+        },
+        {
+          "human_difference": -0.029612181196673325,
+          "label": "rc_spill_two_minus_one",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": 0.03203084348503256,
+              "prediction": 0.002418662288359236
+            },
+            "shared": {
+              "error": 0.029279420971224036,
+              "prediction": -0.00033276022544928997
+            },
+            "shared_effect": {
+              "error": 0.03178730050303329,
+              "prediction": 0.0021751193063599683
+            }
+          }
+        },
+        {
+          "human_difference": -0.008410396238097705,
+          "label": "unamb_critical_two_minus_one",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": 0.005091885687624288,
+              "prediction": -0.003318510550473419
+            },
+            "shared": {
+              "error": 0.007906128170874022,
+              "prediction": -0.0005042680672236854
+            },
+            "shared_effect": {
+              "error": 0.0068176148433776226,
+              "prediction": -0.0015927813947200845
+            }
+          }
+        },
+        {
+          "human_difference": -0.005765217419352757,
+          "label": "unamb_spill_two_minus_one",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": 0.0008916947289884626,
+              "prediction": -0.004873522690364295
+            },
+            "shared": {
+              "error": 0.004163241076853502,
+              "prediction": -0.0016019763424992561
+            },
+            "shared_effect": {
+              "error": -0.009362552118981689,
+              "prediction": -0.015127769538334446
+            }
+          }
+        }
+      ],
+      "source": "context-readback"
+    },
+    "currie_end_coherence_report": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6874773096796823,
+        "shared": 0.7324131030532709,
+        "shared_effect": 1.1143104639679258
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6874773096796823,
+        "shared": 0.7324131030532709,
+        "shared_effect": 1.1143104639679258
+      },
+      "development_observations": 708,
+      "development_rows": 8,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.037194885703215774,
+          "label": "expository_far_minus_near",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": -0.03607896754373094,
+              "prediction": 0.0011159181594848633
+            },
+            "shared": {
+              "error": -0.040852673741469586,
+              "prediction": -0.003657788038253784
+            },
+            "shared_effect": {
+              "error": -0.024821021052489484,
+              "prediction": 0.012373864650726318
+            }
+          }
+        },
+        {
+          "human_difference": 0.0393258426966292,
+          "label": "narrative_far_minus_near",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": -0.043435240227184924,
+              "prediction": -0.004109397530555725
+            },
+            "shared": {
+              "error": -0.03499610169550005,
+              "prediction": 0.00432974100112915
+            },
+            "shared_effect": {
+              "error": -0.041960993844471606,
+              "prediction": -0.0026351511478424072
+            }
+          }
+        }
+      ],
+      "source": "currie"
+    },
+    "cwi_native_marked": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.27558890793081076,
+        "shared": 0.2695584593236796,
+        "shared_effect": 0.3201271184078987
+      },
+      "development_nll_original_scale": {
+        "independent": 0.27558890793081076,
+        "shared": 0.2695584593236796,
+        "shared_effect": 0.3201271184078987
+      },
+      "development_observations": 17490,
+      "development_rows": 1548,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "cwi"
+    },
+    "cwi_nonnative_marked": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.267428979884108,
+        "shared": 0.2794042074017868,
+        "shared_effect": 0.3075333955986681
+      },
+      "development_nll_original_scale": {
+        "independent": 0.267428979884108,
+        "shared": 0.2794042074017868,
+        "shared_effect": 0.3075333955986681
+      },
+      "development_observations": 17490,
+      "development_rows": 1548,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "cwi"
+    },
+    "czech_exp2_qcor": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.36102047745855914,
+        "shared": 0.3847058708921536,
+        "shared_effect": 0.4394502250193843
+      },
+      "development_nll_original_scale": {
+        "independent": 0.36102047745855914,
+        "shared": 0.3847058708921536,
+        "shared_effect": 0.4394502250193843
+      },
+      "development_observations": 498,
+      "development_rows": 36,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.07329226691971785,
+          "label": "garden_path_minus_unambiguous_yes",
+          "matched_material_pairs": 18,
+          "methods": {
+            "independent": {
+              "error": 0.07368768744452696,
+              "prediction": 0.00039542052480906476
+            },
+            "shared": {
+              "error": 0.0685118651335495,
+              "prediction": -0.004780401786168398
+            },
+            "shared_effect": {
+              "error": 0.04453294303136311,
+              "prediction": -0.028759323888354782
+            }
+          }
+        }
+      ],
+      "source": "czech"
+    },
+    "czech_exp2_qmis": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6307016162950616,
+        "shared": 0.5574426732994895,
+        "shared_effect": 2.6487086424691793
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6307016162950616,
+        "shared": 0.5574426732994895,
+        "shared_effect": 2.6487086424691793
+      },
+      "development_observations": 513,
+      "development_rows": 36,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.1747949762655645,
+          "label": "garden_path_minus_unambiguous_yes",
+          "matched_material_pairs": 18,
+          "methods": {
+            "independent": {
+              "error": -0.1714762583553807,
+              "prediction": 0.003318717910183816
+            },
+            "shared": {
+              "error": -0.17695036631624061,
+              "prediction": -0.002155390050676123
+            },
+            "shared_effect": {
+              "error": -0.14950791102449262,
+              "prediction": 0.025287065241071882
+            }
+          }
+        }
+      ],
+      "source": "czech"
+    },
+    "czech_exp2_qpos": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.3842680451656735,
+        "shared": 0.3818221277871818,
+        "shared_effect": 0.8542161880637646
+      },
+      "development_nll_original_scale": {
+        "independent": 0.3842680451656735,
+        "shared": 0.3818221277871818,
+        "shared_effect": 0.8542161880637646
+      },
+      "development_observations": 547,
+      "development_rows": 36,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.015834406153033664,
+          "label": "garden_path_minus_unambiguous_yes",
+          "matched_material_pairs": 18,
+          "methods": {
+            "independent": {
+              "error": 0.015458585622248163,
+              "prediction": -0.0003758205307854423
+            },
+            "shared": {
+              "error": 0.013870462910006816,
+              "prediction": -0.001963943243026789
+            },
+            "shared_effect": {
+              "error": 0.015866731738716718,
+              "prediction": 3.2325585683112834e-05
+            }
+          }
+        }
+      ],
+      "source": "czech"
+    },
+    "czech_exp3_qcor": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.4108147616271231,
+        "shared": 0.43881106669883563,
+        "shared_effect": 1.8851531001440505
+      },
+      "development_nll_original_scale": {
+        "independent": 0.4108147616271231,
+        "shared": 0.43881106669883563,
+        "shared_effect": 1.8851531001440505
+      },
+      "development_observations": 460,
+      "development_rows": 36,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.020662253505390804,
+          "label": "garden_path_minus_unambiguous_yes",
+          "matched_material_pairs": 18,
+          "methods": {
+            "independent": {
+              "error": 0.018666746291586288,
+              "prediction": -0.0019955072138044816
+            },
+            "shared": {
+              "error": 0.018601353373529438,
+              "prediction": -0.002060900131861332
+            },
+            "shared_effect": {
+              "error": -0.008561272391277658,
+              "prediction": -0.029223525896668427
+            }
+          }
+        }
+      ],
+      "source": "czech"
+    },
+    "czech_exp3_qmis": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6225483627171926,
+        "shared": 0.6362209778864912,
+        "shared_effect": 0.9450620665447397
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6225483627171926,
+        "shared": 0.6362209778864912,
+        "shared_effect": 0.9450620665447397
+      },
+      "development_observations": 474,
+      "development_rows": 36,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.23256468023624885,
+          "label": "garden_path_minus_unambiguous_yes",
+          "matched_material_pairs": 18,
+          "methods": {
+            "independent": {
+              "error": -0.22873506111337277,
+              "prediction": 0.003829619122876063
+            },
+            "shared": {
+              "error": -0.23057361232671672,
+              "prediction": 0.0019910679095321293
+            },
+            "shared_effect": {
+              "error": -0.09644637832145095,
+              "prediction": 0.1361183019147979
+            }
+          }
+        }
+      ],
+      "source": "czech"
+    },
+    "czech_exp3_qpos": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.39530270598958817,
+        "shared": 0.404608325771722,
+        "shared_effect": 0.7271355372331643
+      },
+      "development_nll_original_scale": {
+        "independent": 0.39530270598958817,
+        "shared": 0.404608325771722,
+        "shared_effect": 0.7271355372331643
+      },
+      "development_observations": 488,
+      "development_rows": 36,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.03851790910614439,
+          "label": "garden_path_minus_unambiguous_yes",
+          "matched_material_pairs": 18,
+          "methods": {
+            "independent": {
+              "error": 0.036063803755437995,
+              "prediction": -0.0024541053507063926
+            },
+            "shared": {
+              "error": 0.033460779511129635,
+              "prediction": -0.005057129595014753
+            },
+            "shared_effect": {
+              "error": 0.010585801657566507,
+              "prediction": -0.02793210744857788
+            }
+          }
+        }
+      ],
+      "source": "czech"
+    },
+    "first_readback_end_acceptability": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6714000148211114,
+        "shared": 0.6383461999541862,
+        "shared_effect": 0.6907287351157232
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6714000148211114,
+        "shared": 0.6383461999541862,
+        "shared_effect": 0.6907287351157232
+      },
+      "development_observations": 347,
+      "development_rows": 8,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "first-readback"
+    },
+    "first_readback_risk": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.2141357137437613,
+        "shared": 0.18379296494212613,
+        "shared_effect": 0.19220433004805368
+      },
+      "development_nll_original_scale": {
+        "independent": 0.2141357137437613,
+        "shared": 0.18379296494212613,
+        "shared_effect": 0.19220433004805368
+      },
+      "development_observations": 8490,
+      "development_rows": 415,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "first-readback"
+    },
+    "frick_first_report_hazard": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.20597721533500088,
+        "shared": 0.12407787163093453,
+        "shared_effect": 0.167333991063863
+      },
+      "development_nll_original_scale": {
+        "independent": 0.20597721533500088,
+        "shared": 0.12407787163093453,
+        "shared_effect": 0.167333991063863
+      },
+      "development_observations": 5169,
+      "development_rows": 120,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "frick"
+    },
+    "frick_log_keypress_seconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.478292237987876,
+        "shared": 1.5011193134215202,
+        "shared_effect": 2.0488712195878214
+      },
+      "development_nll_original_scale": {
+        "independent": 1.1861268989884743,
+        "shared": 1.2089539744221185,
+        "shared_effect": 1.7567058805884197
+      },
+      "development_observations": 5760,
+      "development_rows": 120,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "frick"
+    },
+    "frick_sentence_inconsistent": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.16837796619119974,
+        "shared": 0.24262985068204937,
+        "shared_effect": 0.16148990629941642
+      },
+      "development_nll_original_scale": {
+        "independent": 0.16837796619119974,
+        "shared": 0.24262985068204937,
+        "shared_effect": 0.16148990629941642
+      },
+      "development_observations": 5760,
+      "development_rows": 120,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.0,
+          "label": "inconsistent_minus_consistent",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -0.0004889853298664093,
+              "prediction": -0.0004889853298664093
+            },
+            "shared": {
+              "error": -8.17381078377366e-06,
+              "prediction": -8.17381078377366e-06
+            },
+            "shared_effect": {
+              "error": -8.565071038901806e-05,
+              "prediction": -8.565071038901806e-05
+            }
+          }
+        }
+      ],
+      "source": "frick"
+    },
+    "frick_target_first_report": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.02211264074204808,
+        "shared": 0.02480149165803867,
+        "shared_effect": 0.025497512247406054
+      },
+      "development_nll_original_scale": {
+        "independent": 0.02211264074204808,
+        "shared": 0.02480149165803867,
+        "shared_effect": 0.025497512247406054
+      },
+      "development_observations": 384,
+      "development_rows": 8,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.004807692307692308,
+          "label": "inconsistent_minus_consistent",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": 0.004810888977842227,
+              "prediction": 3.1966701499186456e-06
+            },
+            "shared": {
+              "error": 0.004806465103753838,
+              "prediction": -1.2272039384697564e-06
+            },
+            "shared_effect": {
+              "error": 0.004807580466219336,
+              "prediction": -1.1184147297171876e-07
+            }
+          }
+        }
+      ],
+      "source": "frick"
+    },
+    "kerwer_comprehensibility": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.8805789948833258,
+        "shared": 1.8151094555096443,
+        "shared_effect": 2.314643794883331
+      },
+      "development_nll_original_scale": {
+        "independent": 1.8805789948833258,
+        "shared": 1.8151094555096443,
+        "shared_effect": 2.314643794883331
+      },
+      "development_observations": 289,
+      "development_rows": 6,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.09394944469571342,
+          "label": "headings",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": 0.04090939638077984,
+              "prediction": 0.13485884107649326
+            },
+            "shared": {
+              "error": -0.009311020478012466,
+              "prediction": 0.08463842421770096
+            },
+            "shared_effect": {
+              "error": -0.012501714854838752,
+              "prediction": 0.08144772984087467
+            }
+          }
+        },
+        {
+          "human_difference": 1.2989093836919925,
+          "label": "plain",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": -0.7175470598565004,
+              "prediction": 0.5813623238354921
+            },
+            "shared": {
+              "error": -0.8401799265818259,
+              "prediction": 0.45872945711016655
+            },
+            "shared_effect": {
+              "error": -1.190155512519326,
+              "prediction": 0.10875387117266655
+            }
+          }
+        }
+      ],
+      "source": "kerwer"
+    },
+    "kerwer_confusion": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.1774113820239203,
+        "shared": 1.1863572764870565,
+        "shared_effect": 1.7063646840270474
+      },
+      "development_nll_original_scale": {
+        "independent": 1.1774113820239203,
+        "shared": 1.1863572764870565,
+        "shared_effect": 1.7063646840270474
+      },
+      "development_observations": 289,
+      "development_rows": 6,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.0295869139152721,
+          "label": "headings",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": -0.10550359535395656,
+              "prediction": -0.07591668143868446
+            },
+            "shared": {
+              "error": -0.04765983197271381,
+              "prediction": -0.01807291805744171
+            },
+            "shared_effect": {
+              "error": -0.05702375472887908,
+              "prediction": -0.027436840813606977
+            }
+          }
+        },
+        {
+          "human_difference": -0.49442248572683356,
+          "label": "plain",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": 0.21013579298830054,
+              "prediction": -0.284286692738533
+            },
+            "shared": {
+              "error": 0.1561544580859544,
+              "prediction": -0.33826802764087915
+            },
+            "shared_effect": {
+              "error": 0.4214189695435988,
+              "prediction": -0.07300351618323475
+            }
+          }
+        }
+      ],
+      "source": "kerwer"
+    },
+    "kerwer_frustration": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.9831603888718567,
+        "shared": 1.1848417416711707,
+        "shared_effect": 1.3161003112655505
+      },
+      "development_nll_original_scale": {
+        "independent": 0.9831603888718567,
+        "shared": 1.1848417416711707,
+        "shared_effect": 1.3161003112655505
+      },
+      "development_observations": 289,
+      "development_rows": 6,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": -0.015905321875471168,
+          "label": "headings",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": -0.025120465716463036,
+              "prediction": -0.041025787591934204
+            },
+            "shared": {
+              "error": -0.027163187673431344,
+              "prediction": -0.04306850954890251
+            },
+            "shared_effect": {
+              "error": -0.05140426294237793,
+              "prediction": -0.0673095848178491
+            }
+          }
+        },
+        {
+          "human_difference": -0.11475625823451907,
+          "label": "plain",
+          "matched_material_pairs": 2,
+          "methods": {
+            "independent": {
+              "error": 0.038353521406787924,
+              "prediction": -0.07640273682773113
+            },
+            "shared": {
+              "error": -0.09755659379796357,
+              "prediction": -0.21231285203248262
+            },
+            "shared_effect": {
+              "error": 0.3829253940793197,
+              "prediction": 0.2681691358448006
+            }
+          }
+        }
+      ],
+      "source": "kerwer"
+    },
+    "oliver_first_confirmation_rt_log_milliseconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.8822507966892088,
+        "shared": 2.7417901878680793,
+        "shared_effect": 2.12676164666921
+      },
+      "development_nll_original_scale": {
+        "independent": 1.2540890999485632,
+        "shared": 2.1136284911274337,
+        "shared_effect": 1.4985999499285645
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_first_definition_rt_log_milliseconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.652968447199819,
+        "shared": 1.5812820601589732,
+        "shared_effect": 1.4502169792097694
+      },
+      "development_nll_original_scale": {
+        "independent": 2.022442044843292,
+        "shared": 0.9507556578024463,
+        "shared_effect": 0.8196905768532425
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_first_delay_rt_log_milliseconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.7170635569355177,
+        "shared": 2.1316088457962095,
+        "shared_effect": 1.9011159523583632
+      },
+      "development_nll_original_scale": {
+        "independent": 2.203899596850372,
+        "shared": 1.6184448857110638,
+        "shared_effect": 1.3879519922732175
+      },
+      "development_observations": 42,
+      "development_rows": 14,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_retest_initial_state": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.8475701228515848,
+        "shared": 1.3902148311751927,
+        "shared_effect": 1.3400046400318268
+      },
+      "development_nll_original_scale": {
+        "independent": 0.8475701228515848,
+        "shared": 1.3902148311751927,
+        "shared_effect": 1.3400046400318268
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_retest_target_confirmation": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.5539971920419683,
+        "shared": 0.7463685747293863,
+        "shared_effect": 0.714771491651537
+      },
+      "development_nll_original_scale": {
+        "independent": 0.5539971920419683,
+        "shared": 0.7463685747293863,
+        "shared_effect": 0.714771491651537
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_retrieval_protocol_path": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.8760262478884846,
+        "shared": 3.0324067955961524,
+        "shared_effect": 1.9773530608451677
+      },
+      "development_nll_original_scale": {
+        "independent": 1.8760262478884846,
+        "shared": 3.0324067955961524,
+        "shared_effect": 1.9773530608451677
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_second_confirmation_rt_log_milliseconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.239603803311426,
+        "shared": 1.492758665253749,
+        "shared_effect": 1.5713285011127227
+      },
+      "development_nll_original_scale": {
+        "independent": 1.6476487155652437,
+        "shared": 0.9008035775075667,
+        "shared_effect": 0.9793734133665405
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "oliver_second_definition_rt_log_milliseconds": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.0698550299662033,
+        "shared": 1.5270007775336776,
+        "shared_effect": 1.5996255507726458
+      },
+      "development_nll_original_scale": {
+        "independent": 1.5121091909639175,
+        "shared": 0.9692549385313918,
+        "shared_effect": 1.04187971177036
+      },
+      "development_observations": 416,
+      "development_rows": 16,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "oliver"
+    },
+    "onestop_answer_accuracy": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.5413254436673273,
+        "shared": 0.5440764301685513,
+        "shared_effect": 0.5604346291440659
+      },
+      "development_nll_original_scale": {
+        "independent": 0.5413254436673273,
+        "shared": 0.5440764301685513,
+        "shared_effect": 0.5604346291440659
+      },
+      "development_observations": 342,
+      "development_rows": 328,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "onestop"
+    },
+    "onestop_answer_choice": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.306269599007746,
+        "shared": 1.3647790358087064,
+        "shared_effect": 1.3570399820489474
+      },
+      "development_nll_original_scale": {
+        "independent": 1.306269599007746,
+        "shared": 1.3647790358087064,
+        "shared_effect": 1.3570399820489474
+      },
+      "development_observations": 342,
+      "development_rows": 328,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "onestop"
+    },
+    "onestop_rereading_first_read_correct": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.5472307018276643,
+        "shared": 0.5532625783516743,
+        "shared_effect": 0.5844679157223007
+      },
+      "development_nll_original_scale": {
+        "independent": 0.5472307018276643,
+        "shared": 0.5532625783516743,
+        "shared_effect": 0.5844679157223007
+      },
+      "development_observations": 432,
+      "development_rows": 88,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "onestop-rereading"
+    },
+    "onestop_rereading_reread_correct": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.47121771452076217,
+        "shared": 0.4990463407649053,
+        "shared_effect": 0.6896984637737101
+      },
+      "development_nll_original_scale": {
+        "independent": 0.47121771452076217,
+        "shared": 0.4990463407649053,
+        "shared_effect": 0.6896984637737101
+      },
+      "development_observations": 432,
+      "development_rows": 88,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "onestop-rereading"
+    },
+    "plaba_issue_awkward_wordy_vague": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.25901825561651504,
+        "shared": 0.2833400983512479,
+        "shared_effect": 0.31054574734580775
+      },
+      "development_nll_original_scale": {
+        "independent": 0.25901825561651504,
+        "shared": 0.2833400983512479,
+        "shared_effect": 0.31054574734580775
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_issue_other": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.38158562448294664,
+        "shared": 0.06890222758968692,
+        "shared_effect": 0.06354831808950805
+      },
+      "development_nll_original_scale": {
+        "independent": 0.38158562448294664,
+        "shared": 0.06890222758968692,
+        "shared_effect": 0.06354831808950805
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_issue_report": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6487371676473125,
+        "shared": 0.6500382954514445,
+        "shared_effect": 0.9268518490441884
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6487371676473125,
+        "shared": 0.6500382954514445,
+        "shared_effect": 0.9268518490441884
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_issue_too_dense": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.8007445789912729,
+        "shared": 0.5949899504377577,
+        "shared_effect": 0.495876549600846
+      },
+      "development_nll_original_scale": {
+        "independent": 0.8007445789912729,
+        "shared": 0.5949899504377577,
+        "shared_effect": 0.495876549600846
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_issue_unclear_reference": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.17009014082029653,
+        "shared": 0.3091452107818642,
+        "shared_effect": 0.282988958677696
+      },
+      "development_nll_original_scale": {
+        "independent": 0.17009014082029653,
+        "shared": 0.3091452107818642,
+        "shared_effect": 0.282988958677696
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_issue_unclear_takeaway": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.27524125956155904,
+        "shared": 0.5447321847429573,
+        "shared_effect": 0.48909048340967404
+      },
+      "development_nll_original_scale": {
+        "independent": 0.27524125956155904,
+        "shared": 0.5447321847429573,
+        "shared_effect": 0.48909048340967404
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_issue_unclear_term": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6804841016441705,
+        "shared": 0.815052369934044,
+        "shared_effect": 1.1840004664188504
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6804841016441705,
+        "shared": 0.815052369934044,
+        "shared_effect": 1.1840004664188504
+      },
+      "development_observations": 132,
+      "development_rows": 44,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_open_book_accuracy": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.4761464857399622,
+        "shared": 0.5338524243856165,
+        "shared_effect": 0.4275153980059789
+      },
+      "development_nll_original_scale": {
+        "independent": 0.4761464857399622,
+        "shared": 0.5338524243856165,
+        "shared_effect": 0.4275153980059789
+      },
+      "development_observations": 192,
+      "development_rows": 64,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_overall_perceived_understanding": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.5173064191335524,
+        "shared": 1.9164901889612098,
+        "shared_effect": 2.0685983861952946
+      },
+      "development_nll_original_scale": {
+        "independent": 1.5173064191335524,
+        "shared": 1.9164901889612098,
+        "shared_effect": 2.0685983861952946
+      },
+      "development_observations": 48,
+      "development_rows": 16,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_overall_processing_ease": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.7483727001710196,
+        "shared": 2.4732644309404535,
+        "shared_effect": 1.9740654604215877
+      },
+      "development_nll_original_scale": {
+        "independent": 1.7483727001710196,
+        "shared": 2.4732644309404535,
+        "shared_effect": 1.9740654604215877
+      },
+      "development_observations": 48,
+      "development_rows": 16,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_perceived_understanding": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.3125434522882775,
+        "shared": 1.3471242822843907,
+        "shared_effect": 1.494032045504352
+      },
+      "development_nll_original_scale": {
+        "independent": 1.3125434522882775,
+        "shared": 1.3471242822843907,
+        "shared_effect": 1.494032045504352
+      },
+      "development_observations": 399,
+      "development_rows": 133,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.4274193548387096,
+          "label": "plain_minus_original",
+          "matched_material_pairs": 62,
+          "methods": {
+            "independent": {
+              "error": 0.07084922399371857,
+              "prediction": 0.4982685788324282
+            },
+            "shared": {
+              "error": 0.007200185192613728,
+              "prediction": 0.43461954003132336
+            },
+            "shared_effect": {
+              "error": 0.16439861919559096,
+              "prediction": 0.5918179740343006
+            }
+          }
+        }
+      ],
+      "source": "plaba"
+    },
+    "plaba_processing_ease": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.4383913522589928,
+        "shared": 1.4385098170079702,
+        "shared_effect": 1.5634297053536006
+      },
+      "development_nll_original_scale": {
+        "independent": 1.4383913522589928,
+        "shared": 1.4385098170079702,
+        "shared_effect": 1.5634297053536006
+      },
+      "development_observations": 399,
+      "development_rows": 133,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.5188172043010753,
+          "label": "plain_minus_original",
+          "matched_material_pairs": 62,
+          "methods": {
+            "independent": {
+              "error": -0.22811351311943862,
+              "prediction": 0.29070369118163664
+            },
+            "shared": {
+              "error": -0.19536079887941626,
+              "prediction": 0.323456405421659
+            },
+            "shared_effect": {
+              "error": -0.20858969366533414,
+              "prediction": 0.3102275106357411
+            }
+          }
+        }
+      ],
+      "source": "plaba"
+    },
+    "plaba_quiz_confidence": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.4999384549159938,
+        "shared": 1.5653342931305254,
+        "shared_effect": 1.5079454398198722
+      },
+      "development_nll_original_scale": {
+        "independent": 1.4999384549159938,
+        "shared": 1.5653342931305254,
+        "shared_effect": 1.5079454398198722
+      },
+      "development_observations": 192,
+      "development_rows": 64,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "plaba_quiz_effort": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.7092935626302517,
+        "shared": 2.0527376342225097,
+        "shared_effect": 1.850741360567983
+      },
+      "development_nll_original_scale": {
+        "independent": 1.7092935626302517,
+        "shared": 2.0527376342225097,
+        "shared_effect": 1.850741360567983
+      },
+      "development_observations": 192,
+      "development_rows": 64,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "plaba"
+    },
+    "qiao_confidence": {
+      "checkpoint_objective_contribution": {},
+      "development_nll_original_scale": {},
+      "development_observations": 0,
+      "development_rows": 0,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "qiao"
+    },
+    "qiao_evidence_likelihood_if_guilty": {
+      "checkpoint_objective_contribution": {},
+      "development_nll_original_scale": {},
+      "development_observations": 0,
+      "development_rows": 0,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "qiao"
+    },
+    "qiao_evidence_likelihood_if_not_guilty": {
+      "checkpoint_objective_contribution": {},
+      "development_nll_original_scale": {},
+      "development_observations": 0,
+      "development_rows": 0,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "qiao"
+    },
+    "qiao_final_verdict": {
+      "checkpoint_objective_contribution": {},
+      "development_nll_original_scale": {},
+      "development_observations": 0,
+      "development_rows": 0,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "qiao"
+    },
+    "qiao_guilt_rating": {
+      "checkpoint_objective_contribution": {},
+      "development_nll_original_scale": {},
+      "development_observations": 0,
+      "development_rows": 0,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "qiao"
+    },
+    "race_answer_accuracy": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.4273201608782565,
+        "shared": 0.45200660976723145,
+        "shared_effect": 0.5894002191967618
+      },
+      "development_nll_original_scale": {
+        "independent": 0.4273201608782565,
+        "shared": 0.45200660976723145,
+        "shared_effect": 0.5894002191967618
+      },
+      "development_observations": 385,
+      "development_rows": 367,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "race"
+    },
+    "race_answer_choice": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.8266261481717732,
+        "shared": 0.9294029756884903,
+        "shared_effect": 0.8458810004765016
+      },
+      "development_nll_original_scale": {
+        "independent": 0.8266261481717732,
+        "shared": 0.9294029756884903,
+        "shared_effect": 0.8458810004765016
+      },
+      "development_observations": 385,
+      "development_rows": 367,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "race"
+    },
+    "rodger_change_effectiveness": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.199481205019377,
+        "shared": 1.4811535878155135,
+        "shared_effect": 1.873854816101698
+      },
+      "development_nll_original_scale": {
+        "independent": 5.388181387958348,
+        "shared": 4.669853770754484,
+        "shared_effect": 5.062554999040668
+      },
+      "development_observations": 301,
+      "development_rows": 6,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "rodger"
+    },
+    "rodger_change_support": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.1340372225025206,
+        "shared": 1.9310119236578913,
+        "shared_effect": 1.5269552135348317
+      },
+      "development_nll_original_scale": {
+        "independent": 5.243711886434757,
+        "shared": 5.040686587590128,
+        "shared_effect": 4.636629877467068
+      },
+      "development_observations": 301,
+      "development_rows": 6,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "rodger"
+    },
+    "rodger_rating_effectiveness": {
+      "checkpoint_objective_contribution": {
+        "independent": 3.481081347462314,
+        "shared": 1.4143564619757707,
+        "shared_effect": 1.7474978383460864
+      },
+      "development_nll_original_scale": {
+        "independent": 6.923938743253697,
+        "shared": 4.857213857767154,
+        "shared_effect": 5.19035523413747
+      },
+      "development_observations": 602,
+      "development_rows": 7,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "rodger"
+    },
+    "rodger_rating_support": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.4177361099191073,
+        "shared": 1.6299498982110183,
+        "shared_effect": 2.3116406653258403
+      },
+      "development_nll_original_scale": {
+        "independent": 5.958715909845007,
+        "shared": 5.170929698136918,
+        "shared_effect": 5.85262046525174
+      },
+      "development_observations": 602,
+      "development_rows": 7,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "rodger"
+    },
+    "scarecrow_retrospective_contradiction_mark_ordinal": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.06635515067037741,
+        "shared": 0.0663201193413166,
+        "shared_effect": 0.06706070055745414
+      },
+      "development_nll_original_scale": {
+        "independent": 0.06635515067037741,
+        "shared": 0.0663201193413166,
+        "shared_effect": 0.06706070055745414
+      },
+      "development_observations": 219978,
+      "development_rows": 22091,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "scarecrow"
+    },
+    "studentannotations_comprehension_difficulty": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.273934776729818,
+        "shared": 1.2224088085205076,
+        "shared_effect": 1.373485839754049
+      },
+      "development_nll_original_scale": {
+        "independent": 1.273934776729818,
+        "shared": 1.2224088085205076,
+        "shared_effect": 1.373485839754049
+      },
+      "development_observations": 579,
+      "development_rows": 229,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "studentannotations"
+    },
+    "textcomplexityde_complexity": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.3630163325892892,
+        "shared": 1.4085666565505786,
+        "shared_effect": 1.4382338719778611
+      },
+      "development_nll_original_scale": {
+        "independent": 1.8150483010683085,
+        "shared": 1.8605986250295978,
+        "shared_effect": 1.8902658404568804
+      },
+      "development_observations": 1289,
+      "development_rows": 125,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "textcomplexityde"
+    },
+    "textcomplexityde_lexical_difficulty": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.3588533098243334,
+        "shared": 1.4621914984855175,
+        "shared_effect": 1.3769688926573838
+      },
+      "development_nll_original_scale": {
+        "independent": 1.8709879982150552,
+        "shared": 1.9743261868762394,
+        "shared_effect": 1.8891035810481056
+      },
+      "development_observations": 1298,
+      "development_rows": 125,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "textcomplexityde"
+    },
+    "textcomplexityde_understandability": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.3782934360554657,
+        "shared": 1.3266277916762448,
+        "shared_effect": 1.5121923983907104
+      },
+      "development_nll_original_scale": {
+        "independent": 1.8866104838772049,
+        "shared": 1.8349448394979837,
+        "shared_effect": 2.0205094462124493
+      },
+      "development_observations": 1301,
+      "development_rows": 125,
+      "kind": "gaussian",
+      "paired_development_effects": [],
+      "source": "textcomplexityde"
+    },
+    "turkish_comprehension_correct": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6709319689347868,
+        "shared": 0.6745627608130724,
+        "shared_effect": 0.6922604352260162
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6709319689347868,
+        "shared": 0.6745627608130724,
+        "shared_effect": 0.6922604352260162
+      },
+      "development_observations": 2925,
+      "development_rows": 395,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "turkish"
+    },
+    "turkish_earlier_sentence_easier": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.7405582851764448,
+        "shared": 0.6788100568271888,
+        "shared_effect": 0.7935463375563166
+      },
+      "development_nll_original_scale": {
+        "independent": 0.7405582851764448,
+        "shared": 0.6788100568271888,
+        "shared_effect": 0.7935463375563166
+      },
+      "development_observations": 307,
+      "development_rows": 195,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "turkish"
+    },
+    "yadav_full_sentence_difficulty": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.4974247464522796,
+        "shared": 1.5480826119562532,
+        "shared_effect": 3.6769623526712567
+      },
+      "development_nll_original_scale": {
+        "independent": 4.85881312368398,
+        "shared": 4.9094709891879535,
+        "shared_effect": 7.038350729902957
+      },
+      "development_observations": 282,
+      "development_rows": 32,
+      "kind": "gaussian",
+      "paired_development_effects": [
+        {
+          "human_difference": 5.874305555555557,
+          "label": "dutch_level_2_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -2.033934423658584,
+              "prediction": 3.8403711318969727
+            },
+            "shared": {
+              "error": -1.1513956281873927,
+              "prediction": 4.722909927368164
+            },
+            "shared_effect": {
+              "error": 2.7191144731309667,
+              "prediction": 8.593420028686523
+            }
+          }
+        },
+        {
+          "human_difference": 35.04147569444444,
+          "label": "dutch_level_3_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -28.155151765611436,
+              "prediction": 6.886323928833008
+            },
+            "shared": {
+              "error": -27.365263383653428,
+              "prediction": 7.676212310791016
+            },
+            "shared_effect": {
+              "error": -24.609113137986924,
+              "prediction": 10.43236255645752
+            }
+          }
+        },
+        {
+          "human_difference": 18.56134672619048,
+          "label": "german_level_2_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -6.498304562341598,
+              "prediction": 12.063042163848877
+            },
+            "shared": {
+              "error": -7.440195755731491,
+              "prediction": 11.121150970458984
+            },
+            "shared_effect": {
+              "error": -10.48367948986235,
+              "prediction": 8.077667236328125
+            }
+          }
+        },
+        {
+          "human_difference": 22.711119791666654,
+          "label": "german_level_3_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -7.852049490610749,
+              "prediction": 14.859070301055908
+            },
+            "shared": {
+              "error": -7.869409701029451,
+              "prediction": 14.841710090637207
+            },
+            "shared_effect": {
+              "error": -15.528012415568025,
+              "prediction": 7.183107376098633
+            }
+          }
+        }
+      ],
+      "source": "yadav"
+    },
+    "yadav_paced_words_difficulty": {
+      "checkpoint_objective_contribution": {
+        "independent": 2.2765564934740246,
+        "shared": 2.2200011442510927,
+        "shared_effect": 3.7742308839715903
+      },
+      "development_nll_original_scale": {
+        "independent": 5.591236943067072,
+        "shared": 5.53468159384414,
+        "shared_effect": 7.088911333564638
+      },
+      "development_observations": 986,
+      "development_rows": 32,
+      "kind": "gaussian",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.8408945808895449,
+          "label": "dutch_level_2_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": 0.34520065684238976,
+              "prediction": 1.1860952377319336
+            },
+            "shared": {
+              "error": 1.3890777816287667,
+              "prediction": 2.2299723625183105
+            },
+            "shared_effect": {
+              "error": 3.892295001935163,
+              "prediction": 4.733189582824707
+            }
+          }
+        },
+        {
+          "human_difference": 19.080415411826994,
+          "label": "dutch_level_3_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -14.825203581687834,
+              "prediction": 4.25521183013916
+            },
+            "shared": {
+              "error": -14.514885588523772,
+              "prediction": 4.565529823303223
+            },
+            "shared_effect": {
+              "error": -8.351543112632658,
+              "prediction": 10.728872299194336
+            }
+          }
+        },
+        {
+          "human_difference": 1.19225564468212,
+          "label": "german_level_2_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": 2.257946343538095,
+              "prediction": 3.450201988220215
+            },
+            "shared": {
+              "error": 2.737075181123544,
+              "prediction": 3.929330825805664
+            },
+            "shared_effect": {
+              "error": 4.957642884370614,
+              "prediction": 6.149898529052734
+            }
+          }
+        },
+        {
+          "human_difference": 21.61109461502039,
+          "label": "german_level_3_embedded_minus_paraphrase",
+          "matched_material_pairs": 4,
+          "methods": {
+            "independent": {
+              "error": -18.923777720489145,
+              "prediction": 2.68731689453125
+            },
+            "shared": {
+              "error": -15.777565619506479,
+              "prediction": 5.833528995513916
+            },
+            "shared_effect": {
+              "error": -23.57416929916346,
+              "prediction": -1.9630746841430664
+            }
+          }
+        }
+      ],
+      "source": "yadav"
+    },
+    "zhan_reference_form": {
+      "checkpoint_objective_contribution": {
+        "independent": 1.2241626529384784,
+        "shared": 0.9581635105661176,
+        "shared_effect": 0.961493671627697
+      },
+      "development_nll_original_scale": {
+        "independent": 1.2241626529384784,
+        "shared": 0.9581635105661176,
+        "shared_effect": 0.961493671627697
+      },
+      "development_observations": 151,
+      "development_rows": 7,
+      "kind": "categorical",
+      "paired_development_effects": [],
+      "source": "zhan"
+    },
+    "zhan_remention": {
+      "checkpoint_objective_contribution": {
+        "independent": 0.6802683770049915,
+        "shared": 1.9421008723840307,
+        "shared_effect": 6.157729092831305
+      },
+      "development_nll_original_scale": {
+        "independent": 0.6802683770049915,
+        "shared": 1.9421008723840307,
+        "shared_effect": 6.157729092831305
+      },
+      "development_observations": 317,
+      "development_rows": 14,
+      "kind": "categorical",
+      "paired_development_effects": [
+        {
+          "human_difference": 0.2578201589071154,
+          "label": "pronoun_prompt_minus_free",
+          "matched_material_pairs": 7,
+          "methods": {
+            "independent": {
+              "error": -0.012638706956361101,
+              "prediction": 0.24518145195075436
+            },
+            "shared": {
+              "error": 0.3055070300956027,
+              "prediction": 0.5633271890027182
+            },
+            "shared_effect": {
+              "error": 0.29505939451415203,
+              "prediction": 0.5528795534212675
+            }
+          }
+        }
+      ],
+      "source": "zhan"
+    }
+  },
+  "equal_endpoint_checkpoint_objective": {
+    "independent": 1.0588132045652523,
+    "shared": 1.0537626948805252,
+    "shared_effect": 1.3217200139267362
+  },
+  "forecast_seal_sha256": "1884dd1192678a9615e0e4b5f4126823519648fead987087d48d45ec34f3e0d6",
+  "forecast_sha256": "d3964b1e9d7b11cb7f0e31bbab5165077028d5e1de28d29190daf513b0c730cf",
+  "formal_data_in_worker": false,
+  "formal_data_scored": false,
+  "forward_and_readout_seconds": 1211.604896199,
+  "original_scale_nll_absolute_tolerance": 2e-05,
+  "original_scale_nll_relative_tolerance": 2e-05,
+  "packet_receipt_sha256": "acf3d087a0b21a29bf25418040af8c20e3c0b9c0f6e6a7ee586b57b6fee8020d",
+  "paired_development_effects_replayed": 36,
+  "paired_effect_tolerance": 1e-09,
+  "registered_formal_seal_sha256": "c46099aa8b0c095ec983046a310b0bf3f822ec5c0a9d53f5e42377ef10710b84",
+  "release_verified": true,
+  "run_id": "cogllm-union-20261121T162802Z-89c14624",
+  "status": "independently_verified",
+  "training_updates_per_method": 882,
+  "verification_code_sha256": "fb5cc64e62fcbb363476c2891d2f97fe96c279bdf81fbd62d76a6c34a578b837",
+  "verified_causal_prefix_checks": 10
+}

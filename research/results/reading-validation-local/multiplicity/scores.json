@@ -1,0 +1,706 @@
+{
+  "scope": "Local word, sentence and revision results; selected retrospective headline inventory",
+  "comparisons": 32,
+  "two_sided_marginal_coverage": 0.9984375,
+  "per_tail": 0.00078125,
+  "positive_original_95": 14,
+  "positive_after_correction": 11,
+  "evaluated": 32,
+  "protocol_sha256": "efa95f7528e53c068602a80fcdc7dd4e48380fedf139d5ca82045f1e8d39da18",
+  "code_sha256": "03bc685911fc0fb3fd268c56fd9144087a67fc2799d723a8d151ff193e3e6ef1",
+  "inventory_sha256": "ee491d8b2355c7dde4e7c24f6983abb923f2be16d3d0bbb84c9ab5e6d251424d",
+  "results": [
+    {
+      "index": 1,
+      "study": "PLABA",
+      "comparison": "Named phrases, top five vs form",
+      "artifact": "local/localization/scores",
+      "outcome_path": [
+        "paired",
+        "sentence",
+        "hit5",
+        "local minus form"
+      ],
+      "source_sha256": "7ee49f88d6778f791bac1efa28bda213acaf62d58e3bc8d6d0ec1aa255dd0dbc",
+      "estimate": 0.11702127659574468,
+      "ordinary_95": [
+        0.05607476635514019,
+        0.19718309859154937
+      ],
+      "familywise_interval": [
+        0.025553905460060623,
+        0.25710770037278785
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 2,
+      "study": "PLABA",
+      "comparison": "Named phrases, top one vs form",
+      "artifact": "local/localization/scores",
+      "outcome_path": [
+        "paired",
+        "sentence",
+        "hit1",
+        "local minus form"
+      ],
+      "source_sha256": "7ee49f88d6778f791bac1efa28bda213acaf62d58e3bc8d6d0ec1aa255dd0dbc",
+      "estimate": 0.2127659574468085,
+      "ordinary_95": [
+        0.15853658536585363,
+        0.2666666666666667
+      ],
+      "familywise_interval": [
+        0.11764705882352942,
+        0.29359864530051194
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 3,
+      "study": "PLABA",
+      "comparison": "Whole-article phrase location vs form",
+      "artifact": "local/article-localization/scores",
+      "outcome_path": [
+        "metrics",
+        "hit5",
+        "local_joint minus form_joint"
+      ],
+      "source_sha256": "95644aa2352e30d8a2c10314c2385481fafbcf06d135ec7755f703fbd45f53dd",
+      "estimate": 0.09574468085106383,
+      "ordinary_95": [
+        0.04054054054054054,
+        0.16304347826086957
+      ],
+      "familywise_interval": [
+        0.013063816830446369,
+        0.2062419427998486
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 4,
+      "study": "PLABA",
+      "comparison": "Sentence ease loss vs earlier head",
+      "artifact": "local/ratings/scores",
+      "outcome_path": [
+        "metrics",
+        "ease",
+        "nll",
+        "full_state_local minus historical_frozen"
+      ],
+      "source_sha256": "8ba3e37429875a563a9c5862e148005751493416a1d6111ab680ce4bf1689f07",
+      "estimate": 0.004594732149487246,
+      "ordinary_95": [
+        -0.019270260900306577,
+        0.02664511117439508
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 5,
+      "study": "PLABA",
+      "comparison": "Sentence understanding loss vs earlier head",
+      "artifact": "local/ratings/scores",
+      "outcome_path": [
+        "metrics",
+        "understanding",
+        "nll",
+        "full_state_local minus historical_frozen"
+      ],
+      "source_sha256": "8ba3e37429875a563a9c5862e148005751493416a1d6111ab680ce4bf1689f07",
+      "estimate": 0.012708190901307814,
+      "ordinary_95": [
+        -0.007486834045801742,
+        0.03763191825386445
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 6,
+      "study": "Kerwer",
+      "comparison": "Predicted heading effect above zero",
+      "artifact": "local/headings/scores",
+      "outcome_path": [
+        "estimates",
+        "local",
+        "model_effect"
+      ],
+      "source_sha256": "216afb7cabafc70fa622482547d960610001b7500fdb8f73fc6152293ff4b9b7",
+      "estimate": 0.04226139894308187,
+      "ordinary_95": [
+        0.019140526216592225,
+        0.06583217154116858
+      ],
+      "familywise_interval": [
+        0.007493770238547997,
+        0.0784325108806753
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 7,
+      "study": "Guo",
+      "comparison": "Postreading familiarity vs form",
+      "artifact": "local/jargon/scores",
+      "outcome_path": [
+        "after",
+        "estimates",
+        "local minus form"
+      ],
+      "source_sha256": "d0ffa0aff309e019d9728f8a1f63a56ec9308016537e006d646aaa7f097302b0",
+      "estimate": 0.09394229549999178,
+      "ordinary_95": [
+        0.051664162973858854,
+        0.13452093631029832
+      ],
+      "familywise_interval": [
+        0.021799991037326254,
+        0.15879914251765245
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 8,
+      "study": "Guo",
+      "comparison": "Postreading familiarity vs external_lexical",
+      "artifact": "local/jargon/scores",
+      "outcome_path": [
+        "after",
+        "estimates",
+        "local minus external_lexical"
+      ],
+      "source_sha256": "d0ffa0aff309e019d9728f8a1f63a56ec9308016537e006d646aaa7f097302b0",
+      "estimate": -0.04937814197990542,
+      "ordinary_95": [
+        -0.09388417987083687,
+        -0.0077239551094441345
+      ],
+      "familywise_interval": [
+        -0.12736637165640588,
+        0.021425086665941215
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 9,
+      "study": "Guo",
+      "comparison": "Adding text to a reader's prior, ordinal loss",
+      "artifact": "local/jargon/crossfit-scores",
+      "outcome_path": [
+        "after",
+        "metrics",
+        "nll_nats",
+        "text_with_prior minus prior"
+      ],
+      "source_sha256": "136c8c92570186df534fca663d127eae0b21b23859ae2aed29d8a128eaf1408a",
+      "estimate": 0.00428422434297504,
+      "ordinary_95": [
+        -0.012184002376767932,
+        0.019945689655577765
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 10,
+      "study": "Guo",
+      "comparison": "Adding a reader's prior for requested definitions",
+      "artifact": "local/help-choice/scores",
+      "outcome_path": [
+        "heldout_comparisons",
+        "definition",
+        "all_priors",
+        "concordance",
+        "lexical_prior minus lexical"
+      ],
+      "source_sha256": "a3f291984c8195555dc927cf1d588014aad5d70f32fd7db4ff2d8a2f1337f12b",
+      "estimate": 0.10746353265632846,
+      "ordinary_95": [
+        0.05783789523117183,
+        0.16310618309399713
+      ],
+      "familywise_interval": [
+        0.026434137115206535,
+        0.1944005603041867
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 11,
+      "study": "Guo",
+      "comparison": "Article evidence for definition versus example at equal prior",
+      "artifact": "local/help-choice/scores",
+      "outcome_path": [
+        "heldout_comparisons",
+        "definition_over_example",
+        "same_prior",
+        "concordance",
+        "article_prior minus lexical_prior"
+      ],
+      "source_sha256": "a3f291984c8195555dc927cf1d588014aad5d70f32fd7db4ff2d8a2f1337f12b",
+      "estimate": -0.007807807807807876,
+      "ordinary_95": [
+        -0.13086640211640213,
+        0.1652189009661837
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 12,
+      "study": "Isolated words l2",
+      "comparison": "Within-reader Spearman gain vs surface",
+      "artifact": "local/word-readers/scores",
+      "outcome_path": [
+        "l2",
+        "strict_novel",
+        "results",
+        "qwen minus surface"
+      ],
+      "source_sha256": "6dca42ea3cbcf72a53449d6107abb22ee8d64c524d4b4d26053eaa67bb78ff84",
+      "estimate": 0.06052996734698718,
+      "ordinary_95": [
+        -0.03807015125010748,
+        0.1647698829377102
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 13,
+      "study": "Isolated words dhh",
+      "comparison": "Within-reader Spearman gain vs surface",
+      "artifact": "local/word-readers/scores",
+      "outcome_path": [
+        "dhh",
+        "strict_novel",
+        "results",
+        "qwen minus surface"
+      ],
+      "source_sha256": "6dca42ea3cbcf72a53449d6107abb22ee8d64c524d4b4d26053eaa67bb78ff84",
+      "estimate": 0.03023254200404446,
+      "ordinary_95": [
+        -0.038401379245538186,
+        0.10012830462125696
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 14,
+      "study": "SimpDA",
+      "comparison": "Simplicity order vs length",
+      "artifact": "revision/scores",
+      "outcome_path": [
+        "group_mean_preferences",
+        "simplicity",
+        "crossed_source_reader_interval",
+        "full minus length"
+      ],
+      "source_sha256": "80a87731ce29605f38ec92fb28281377850be918f3709822410e04adda43a8e3",
+      "estimate": -0.06515873015873008,
+      "ordinary_95": [
+        -0.1174871031746031,
+        -0.0022012235449736157
+      ],
+      "familywise_interval": [
+        -0.15388755580357139,
+        0.043066065228176055
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 15,
+      "study": "SimpDA",
+      "comparison": "Simplicity order vs edit",
+      "artifact": "revision/scores",
+      "outcome_path": [
+        "group_mean_preferences",
+        "simplicity",
+        "crossed_source_reader_interval",
+        "full minus edit"
+      ],
+      "source_sha256": "80a87731ce29605f38ec92fb28281377850be918f3709822410e04adda43a8e3",
+      "estimate": 0.09904761904761905,
+      "ordinary_95": [
+        0.02714087301587301,
+        0.1374623015873016
+      ],
+      "familywise_interval": [
+        -0.009918248562779732,
+        0.17925781250000192
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 16,
+      "study": "SimpDA",
+      "comparison": "Both winners among opposed preferences vs trained edit scores",
+      "artifact": "revision/contrasts",
+      "outcome_path": [
+        "opposed_preferences",
+        "crossed_95",
+        "adaptive minus edit"
+      ],
+      "source_sha256": "3566408ca7490ddc91dc0bf954c90b8512d1af34a80d406dc1ae7583c3b35e6f",
+      "estimate": 0.13289309560496,
+      "ordinary_95": [
+        0.048183148593727146,
+        0.1927651269185359
+      ],
+      "familywise_interval": [
+        -0.0006080431725955914,
+        0.24885246949816506
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 17,
+      "study": "OneStopQA",
+      "comparison": "Observed correctness, meaning vs retained_length",
+      "artifact": "comprehension/scores",
+      "outcome_path": [
+        "primary",
+        "correctness",
+        "paired",
+        "meaning minus retained_length"
+      ],
+      "source_sha256": "dfcd73f65746d73e550f3850499e093910733c3717516fdc5375327d3f311c44",
+      "estimate": -0.004772927689594142,
+      "ordinary_95": [
+        -0.039484223434744344,
+        0.03919212962962967
+      ],
+      "familywise_interval": [
+        -0.05493922310750101,
+        0.06705780371610481
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 18,
+      "study": "OneStopQA",
+      "comparison": "Observed correctness, meaning vs edit_meaning",
+      "artifact": "comprehension/scores",
+      "outcome_path": [
+        "primary",
+        "correctness",
+        "paired",
+        "meaning minus edit_meaning"
+      ],
+      "source_sha256": "dfcd73f65746d73e550f3850499e093910733c3717516fdc5375327d3f311c44",
+      "estimate": 0.016563602292768986,
+      "ordinary_95": [
+        -0.003586372905643714,
+        0.0383766617063492
+      ],
+      "familywise_interval": [
+        -0.015598573219797181,
+        0.05143115096588475
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 19,
+      "study": "OneStopQA",
+      "comparison": "Observed correctness, meaning vs source_word_recall",
+      "artifact": "comprehension/scores",
+      "outcome_path": [
+        "primary",
+        "correctness",
+        "paired",
+        "meaning minus source_word_recall"
+      ],
+      "source_sha256": "dfcd73f65746d73e550f3850499e093910733c3717516fdc5375327d3f311c44",
+      "estimate": 0.008311838624338486,
+      "ordinary_95": [
+        -0.010677609678130697,
+        0.027483746693121473
+      ],
+      "familywise_interval": [
+        -0.02258146873622131,
+        0.03860636487957475
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 20,
+      "study": "OneStopQA",
+      "comparison": "Observed correctness, meaning vs simplicity",
+      "artifact": "comprehension/scores",
+      "outcome_path": [
+        "primary",
+        "correctness",
+        "paired",
+        "meaning minus simplicity"
+      ],
+      "source_sha256": "dfcd73f65746d73e550f3850499e093910733c3717516fdc5375327d3f311c44",
+      "estimate": 0.18007374338624355,
+      "ordinary_95": [
+        0.11839700451940031,
+        0.24446623401675469
+      ],
+      "familywise_interval": [
+        0.08386925869088953,
+        0.2839764772445443
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 21,
+      "study": "Leroy",
+      "comparison": "Sentence-difficulty squared error vs form",
+      "artifact": "noun/scores",
+      "outcome_path": [
+        "primary_family_stratified_mse_gain"
+      ],
+      "source_sha256": "2887cd66b81081539f51ad2ea34a0541df9ca6e1315f4d031f62e1f5d1228839",
+      "estimate": -0.0016144734427032616,
+      "ordinary_95": [
+        -0.07402353632294145,
+        0.06397675807669927
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 22,
+      "study": "ReLay",
+      "comparison": "Within-reader simplicity vs four readability formulas",
+      "artifact": "relay-summary/scores",
+      "outcome_path": [
+        "datasets",
+        "primary",
+        "frozen",
+        "simplicity",
+        "differences",
+        "plaba_ease_minus_authors_formula"
+      ],
+      "source_sha256": "eabca5c2ffb3ddf7987fd2118b7a11c51e71f927612b4b191543b28bb8486d23",
+      "estimate": -0.012499999999999956,
+      "ordinary_95": [
+        -0.2689420995670996,
+        0.24999999999999994
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 23,
+      "study": "ReLay",
+      "comparison": "Simplicity, adaptive transferred coefficients vs target only",
+      "artifact": "relay-summary/collective-scores",
+      "outcome_path": [
+        "endpoints",
+        "simplicity",
+        "paired_improvement",
+        "adaptive_over_independent"
+      ],
+      "source_sha256": "002d3f569b0117781d923e98e5b09f348746357e4431211df346adc035f011c4",
+      "estimate": -0.0031274794442581744,
+      "ordinary_95": [
+        -0.009122807359745936,
+        0.00298964727496158
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 24,
+      "study": "Paetzold unknown",
+      "comparison": "Word-report rank vs trained lexical reference",
+      "artifact": "nns/scores",
+      "outcome_path": [
+        "reported",
+        "rank",
+        "paired_difference",
+        "adaptive_minus_lexical"
+      ],
+      "source_sha256": "d56aa2d8bbee9d3a501203c7469224144dd15e4ae0f7666348dc935c502b7621",
+      "estimate": 0.0045282419364098825,
+      "ordinary_95": [
+        -0.003469125529728259,
+        0.01272808142486365
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 25,
+      "study": "Paetzold unknown",
+      "comparison": "Word-report log loss, adding a reader's CEFR",
+      "artifact": "nns/scores",
+      "outcome_path": [
+        "reported",
+        "logloss",
+        "paired_difference",
+        "text.adaptive_minus_cefr.adaptive"
+      ],
+      "source_sha256": "d56aa2d8bbee9d3a501203c7469224144dd15e4ae0f7666348dc935c502b7621",
+      "estimate": 0.007882492408253616,
+      "ordinary_95": [
+        0.005844882991773799,
+        0.009975326178387369
+      ],
+      "familywise_interval": [
+        0.00462624533527895,
+        0.011424872552025102
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 26,
+      "study": "Paetzold unknown",
+      "comparison": "Joint vs matched independent likelihood",
+      "artifact": "nns-rewrite/scores",
+      "outcome_path": [
+        "unknown_word",
+        "logloss",
+        "oriented_gains",
+        "contextual.adaptive_gain_vs_contextual.independent"
+      ],
+      "source_sha256": "44e169536b7a7436c413e3b75cb05fe226cd8ef8a1fea526e78894d4595ead5b",
+      "estimate": 3.9422287988061244e-05,
+      "ordinary_95": [
+        1.7832826894233907e-05,
+        6.229169871175694e-05
+      ],
+      "familywise_interval": [
+        5.724283586219597e-06,
+        7.515107784343138e-05
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 27,
+      "study": "Paetzold preference",
+      "comparison": "Joint vs matched independent likelihood",
+      "artifact": "nns-rewrite/scores",
+      "outcome_path": [
+        "revision_preference",
+        "logloss",
+        "oriented_gains",
+        "contextual.adaptive_gain_vs_contextual.independent"
+      ],
+      "source_sha256": "44e169536b7a7436c413e3b75cb05fe226cd8ef8a1fea526e78894d4595ead5b",
+      "estimate": 0.001029073135649039,
+      "ordinary_95": [
+        0.0001120445390852626,
+        0.0019439469279150575
+      ],
+      "familywise_interval": [
+        -0.00044905565128405616,
+        0.0025285992522786033
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 28,
+      "study": "EMTeC",
+      "comparison": "passage_rps, added unresolved stock vs strong common control",
+      "artifact": "emtec/scores",
+      "outcome_path": [
+        "passage_rps",
+        "gain_over_strong"
+      ],
+      "source_sha256": "57eeadb99dbec219fada3fa1a78fdeb2f9e54c543ac4e060985013dac284b25a",
+      "estimate": -0.00026947707419305855,
+      "ordinary_95": [
+        -0.001843699684415473,
+        0.0008530907515278946
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 29,
+      "study": "EMTeC",
+      "comparison": "word_reread_logloss, added unresolved stock vs strong common control",
+      "artifact": "emtec/scores",
+      "outcome_path": [
+        "word_reread_logloss",
+        "gain_over_strong"
+      ],
+      "source_sha256": "57eeadb99dbec219fada3fa1a78fdeb2f9e54c543ac4e060985013dac284b25a",
+      "estimate": 0.00019295056016988,
+      "ordinary_95": [
+        -0.000706131502605653,
+        0.0009196467353845161
+      ],
+      "familywise_interval": null,
+      "positive_after_correction": false
+    },
+    {
+      "index": 30,
+      "study": "SemEval",
+      "comparison": "Context reversal vs context_invariant",
+      "artifact": "semlex/scores",
+      "outcome_path": [
+        "all_shared_candidate_pairs",
+        "relative_confidence",
+        "contrasts",
+        "mix_minus_context_invariant"
+      ],
+      "source_sha256": "58e37b70dc35c1eb861f73af0ef7921cc972c33768c410f0679ed41eb737bed3",
+      "estimate": 0.12741717057193247,
+      "ordinary_95": [
+        0.07379575920976844,
+        0.17858844662203488
+      ],
+      "familywise_interval": [
+        0.04071957028719225,
+        0.20976887783573278
+      ],
+      "positive_after_correction": true
+    },
+    {
+      "index": 31,
+      "study": "SemEval",
+      "comparison": "Context reversal vs lexical_plus_surprisal",
+      "artifact": "semlex/scores",
+      "outcome_path": [
+        "all_shared_candidate_pairs",
+        "relative_confidence",
+        "contrasts",
+        "mix_minus_lexical_plus_surprisal"
+      ],
+      "source_sha256": "58e37b70dc35c1eb861f73af0ef7921cc972c33768c410f0679ed41eb737bed3",
+      "estimate": -0.008000395925565895,
+      "ordinary_95": [
+        -0.049692539052658136,
+        0.031674627357556794
+      ],
+      "familywise_interval": [
+        -0.07397538539121847,
+        0.053221065113586666
+      ],
+      "positive_after_correction": false
+    },
+    {
+      "index": 32,
+      "study": "SemEval",
+      "comparison": "Context reversal vs paper_adaptive_ngram",
+      "artifact": "semlex/scores",
+      "outcome_path": [
+        "all_shared_candidate_pairs",
+        "relative_confidence",
+        "contrasts",
+        "mix_minus_paper_adaptive_ngram"
+      ],
+      "source_sha256": "58e37b70dc35c1eb861f73af0ef7921cc972c33768c410f0679ed41eb737bed3",
+      "estimate": 0.1053951044703596,
+      "ordinary_95": [
+        0.04959585925970928,
+        0.15939154001547698
+      ],
+      "familywise_interval": [
+        0.013534731510515275,
+        0.19460818228477766
+      ],
+      "positive_after_correction": true
+    }
+  ]
+}

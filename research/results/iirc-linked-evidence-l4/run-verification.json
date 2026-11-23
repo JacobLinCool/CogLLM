@@ -1,0 +1,69 @@
+{
+  "run_id": "cogllm-iirc-linked-20261120T232943Z-90b50487",
+  "cli_version": "0.7.4",
+  "release_verified": true,
+  "timeline": {
+    "prepared": "2026-11-20T23:29:43.205513+00:00",
+    "allocating": "2026-11-20T23:29:56.163408+00:00",
+    "allocated": "2026-11-20T23:30:01.851008+00:00",
+    "uploading": "2026-11-20T23:30:03.008843+00:00",
+    "uploading-resume": "2026-11-20T23:30:07.509299+00:00",
+    "worker-running": "2026-11-20T23:30:58.345741+00:00",
+    "remote-preflight": "2026-11-20T23:30:59.178762+00:00",
+    "remote-extract": "2026-11-20T23:31:20.057591+00:00",
+    "extraction-shard-20": "2026-11-20T23:34:07.215617+00:00",
+    "checkpoint-local-21": "2026-11-20T23:35:59.235679+00:00",
+    "extraction-shard-21": "2026-11-20T23:36:00.080977+00:00",
+    "checkpoint-local-22": "2026-11-20T23:37:39.270652+00:00",
+    "extraction-shard-22": "2026-11-20T23:37:40.096304+00:00",
+    "checkpoint-local-23": "2026-11-20T23:39:09.577958+00:00",
+    "extraction-shard-23": "2026-11-20T23:39:10.402557+00:00",
+    "checkpoint-local-24": "2026-11-20T23:40:23.078429+00:00",
+    "extraction-shard-24": "2026-11-20T23:40:23.895793+00:00",
+    "checkpoint-local-25": "2026-11-20T23:41:54.879065+00:00",
+    "extraction-shard-25": "2026-11-20T23:41:55.306844+00:00",
+    "checkpoint-local-26": "2026-11-20T23:43:47.343305+00:00",
+    "extraction-shard-26": "2026-11-20T23:43:48.190333+00:00",
+    "checkpoint-local-27": "2026-11-20T23:45:17.314873+00:00",
+    "extraction-shard-27": "2026-11-20T23:45:17.730376+00:00",
+    "checkpoint-local-28": "2026-11-20T23:47:10.115454+00:00",
+    "extraction-shard-28": "2026-11-20T23:47:10.526679+00:00",
+    "remote-complete": "2026-11-20T23:47:31.179513+00:00",
+    "checkpoint-local-29": "2026-11-20T23:47:33.502218+00:00",
+    "releasing": "2026-11-20T23:47:34.493264+00:00",
+    "finished": "2026-11-20T23:47:42.626219+00:00"
+  },
+  "release_usage_recorded": true,
+  "endpoint_absent_after_stop": true,
+  "artifacts_verified": true,
+  "resume": {
+    "run_id": "cogllm-iirc-linked-20261120T225741Z-6ed8fae8",
+    "plan_sha256": "90a803f990a5411a9f48fec14ec1aa50658c60b44db9be41fb3c2d550112dbcc",
+    "shards": 20,
+    "metadata_sha256": "bed213140cc0fe37742bf14171c3f04519554083d2ff9d631d9b55bef9b95cce"
+  },
+  "device": {
+    "name": "NVIDIA L4",
+    "bytes": 23659151360,
+    "torch": "2.14.1+cu130",
+    "cuda": "13.0"
+  },
+  "phase_seconds": {
+    "install": 12.449319865000234,
+    "extract": 969.1244085339995,
+    "fit": 2.219147740999688
+  },
+  "archive_sha256": "55d17a0ae2b3b13e04645b86f517392e3d6a7c6b6a9fbe68ca941f97703ec806",
+  "archive_members_sha256": {
+    "features/extraction.json": "b0c847a79a738a487ef561c3184e776a6f09e57d8235656dff145c8480a51fee",
+    "features/plan.json": "90a803f990a5411a9f48fec14ec1aa50658c60b44db9be41fb3c2d550112dbcc",
+    "features/causality.json": "745e4ef23404aec17eac8b55ea4da00c056d2f350d675ff0206d0e71a415431c",
+    "fit/fit-manifest.json": "d1fe43dec2c4301cb6fe5325778d1f6dda1e732a15ab0752111206ab6567d3f0",
+    "fit/heads.npz": "870754695515a75e4d64a69ff3936804e2c4ef1c51f6ba1a0edb3df82cec3fb3",
+    "fit/predictions.jsonl": "dbc0439d25a30865f7b68c63379932bd3da6f63c05f359cc206b7411bde248f0"
+  },
+  "durable_checkpoint_receipt_sha256": "a89811ace4662eda022598d89204cb3a5d511eb4f51eb248f4de074d0bdb6259",
+  "scores_sha256": "e106ffe804635b4e457dbc9839323f8d84d9fd6d93b635393f0e1191006aa799",
+  "usage_log_sha256": "0050e5d2666d079068821f6da86649235e7660def4a4f3d430df6d7ac60a6c9b",
+  "peak_cuda_reserved_bytes_across_shards": 14864613376
+}

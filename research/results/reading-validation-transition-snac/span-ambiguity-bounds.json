@@ -1,0 +1,456 @@
+{
+  "analysis": "post-primary sensitivity at the frozen alert thresholds",
+  "observation": "one released human-selected phrase record within one source segment",
+  "guaranteed": "every matching occurrence overlaps at least one alerted word",
+  "possible": "at least one matching occurrence overlaps at least one alerted word",
+  "results": {
+    "CharE": {
+      "all": {
+        "source_span_records": 554,
+        "movies": 39,
+        "models": {
+          "surface": {
+            "guaranteed": {
+              "estimate": 0.7870036101083032,
+              "family_bootstrap_95_interval": [
+                0.7439698478364953,
+                0.8260887561186294
+              ],
+              "hits": 436
+            },
+            "possible": {
+              "estimate": 0.9566787003610109,
+              "family_bootstrap_95_interval": [
+                0.9392358713167588,
+                0.9735774275195582
+              ],
+              "hits": 530
+            }
+          },
+          "surprisal": {
+            "guaranteed": {
+              "estimate": 0.7815884476534296,
+              "family_bootstrap_95_interval": [
+                0.7317455556241416,
+                0.8265143291359097
+              ],
+              "hits": 433
+            },
+            "possible": {
+              "estimate": 0.9548736462093863,
+              "family_bootstrap_95_interval": [
+                0.9365060908084164,
+                0.9722779893373953
+              ],
+              "hits": 529
+            }
+          },
+          "local": {
+            "guaranteed": {
+              "estimate": 0.8375451263537906,
+              "family_bootstrap_95_interval": [
+                0.7942383117172528,
+                0.8745968975694334
+              ],
+              "hits": 464
+            },
+            "possible": {
+              "estimate": 0.9855595667870036,
+              "family_bootstrap_95_interval": [
+                0.975,
+                0.994535519125683
+              ],
+              "hits": 546
+            }
+          },
+          "antecedents": {
+            "guaranteed": {
+              "estimate": 0.8267148014440433,
+              "family_bootstrap_95_interval": [
+                0.7822987167338548,
+                0.8649164771390478
+              ],
+              "hits": 458
+            },
+            "possible": {
+              "estimate": 0.9855595667870036,
+              "family_bootstrap_95_interval": [
+                0.9735449735449735,
+                0.996078431372549
+              ],
+              "hits": 546
+            }
+          }
+        }
+      },
+      "ambiguous": {
+        "source_span_records": 123,
+        "movies": 37,
+        "models": {
+          "surface": {
+            "guaranteed": {
+              "estimate": 0.21951219512195122,
+              "family_bootstrap_95_interval": [
+                0.1487575385302658,
+                0.2912640470912009
+              ],
+              "hits": 27
+            },
+            "possible": {
+              "estimate": 0.983739837398374,
+              "family_bootstrap_95_interval": [
+                0.9617773150416463,
+                1.0
+              ],
+              "hits": 121
+            }
+          },
+          "surprisal": {
+            "guaranteed": {
+              "estimate": 0.2032520325203252,
+              "family_bootstrap_95_interval": [
+                0.12396694214876033,
+                0.2857142857142857
+              ],
+              "hits": 25
+            },
+            "possible": {
+              "estimate": 0.983739837398374,
+              "family_bootstrap_95_interval": [
+                0.9512195121951219,
+                1.0
+              ],
+              "hits": 121
+            }
+          },
+          "local": {
+            "guaranteed": {
+              "estimate": 0.3252032520325203,
+              "family_bootstrap_95_interval": [
+                0.2442725900940884,
+                0.41025641025641024
+              ],
+              "hits": 40
+            },
+            "possible": {
+              "estimate": 0.991869918699187,
+              "family_bootstrap_95_interval": [
+                0.975609756097561,
+                1.0
+              ],
+              "hits": 122
+            }
+          },
+          "antecedents": {
+            "guaranteed": {
+              "estimate": 0.2764227642276423,
+              "family_bootstrap_95_interval": [
+                0.1956521739130435,
+                0.36036036036036034
+              ],
+              "hits": 34
+            },
+            "possible": {
+              "estimate": 0.991869918699187,
+              "family_bootstrap_95_interval": [
+                0.975609756097561,
+                1.0
+              ],
+              "hits": 122
+            }
+          }
+        }
+      },
+      "single_match": {
+        "source_span_records": 431,
+        "movies": 39,
+        "models": {
+          "surface": {
+            "guaranteed": {
+              "estimate": 0.9489559164733179,
+              "family_bootstrap_95_interval": [
+                0.9287597266141647,
+                0.9679638094486591
+              ],
+              "hits": 409
+            },
+            "possible": {
+              "estimate": 0.9489559164733179,
+              "family_bootstrap_95_interval": [
+                0.9287597266141647,
+                0.9679638094486591
+              ],
+              "hits": 409
+            }
+          },
+          "surprisal": {
+            "guaranteed": {
+              "estimate": 0.9466357308584686,
+              "family_bootstrap_95_interval": [
+                0.9260143198090692,
+                0.9661840550897512
+              ],
+              "hits": 408
+            },
+            "possible": {
+              "estimate": 0.9466357308584686,
+              "family_bootstrap_95_interval": [
+                0.9260143198090692,
+                0.9661840550897512
+              ],
+              "hits": 408
+            }
+          },
+          "local": {
+            "guaranteed": {
+              "estimate": 0.9837587006960556,
+              "family_bootstrap_95_interval": [
+                0.9701834862385321,
+                0.9952038369304557
+              ],
+              "hits": 424
+            },
+            "possible": {
+              "estimate": 0.9837587006960556,
+              "family_bootstrap_95_interval": [
+                0.9701834862385321,
+                0.9952038369304557
+              ],
+              "hits": 424
+            }
+          },
+          "antecedents": {
+            "guaranteed": {
+              "estimate": 0.9837587006960556,
+              "family_bootstrap_95_interval": [
+                0.9681818181818181,
+                0.9957627118644068
+              ],
+              "hits": 424
+            },
+            "possible": {
+              "estimate": 0.9837587006960556,
+              "family_bootstrap_95_interval": [
+                0.9681818181818181,
+                0.9957627118644068
+              ],
+              "hits": 424
+            }
+          }
+        }
+      }
+    },
+    "RefE": {
+      "all": {
+        "source_span_records": 303,
+        "movies": 38,
+        "models": {
+          "surface": {
+            "guaranteed": {
+              "estimate": 0.49504950495049505,
+              "family_bootstrap_95_interval": [
+                0.4174109760648222,
+                0.5746037668798862
+              ],
+              "hits": 150
+            },
+            "possible": {
+              "estimate": 0.49504950495049505,
+              "family_bootstrap_95_interval": [
+                0.4174109760648222,
+                0.5746037668798862
+              ],
+              "hits": 150
+            }
+          },
+          "surprisal": {
+            "guaranteed": {
+              "estimate": 0.4884488448844885,
+              "family_bootstrap_95_interval": [
+                0.40340860939907547,
+                0.5746361940298506
+              ],
+              "hits": 148
+            },
+            "possible": {
+              "estimate": 0.4884488448844885,
+              "family_bootstrap_95_interval": [
+                0.40340860939907547,
+                0.5746361940298506
+              ],
+              "hits": 148
+            }
+          },
+          "local": {
+            "guaranteed": {
+              "estimate": 0.7755775577557755,
+              "family_bootstrap_95_interval": [
+                0.7234843194514983,
+                0.8247133842872377
+              ],
+              "hits": 235
+            },
+            "possible": {
+              "estimate": 0.7755775577557755,
+              "family_bootstrap_95_interval": [
+                0.7234843194514983,
+                0.8247133842872377
+              ],
+              "hits": 235
+            }
+          },
+          "antecedents": {
+            "guaranteed": {
+              "estimate": 0.735973597359736,
+              "family_bootstrap_95_interval": [
+                0.6750899679987246,
+                0.7925938312894835
+              ],
+              "hits": 223
+            },
+            "possible": {
+              "estimate": 0.735973597359736,
+              "family_bootstrap_95_interval": [
+                0.6750899679987246,
+                0.7925938312894835
+              ],
+              "hits": 223
+            }
+          }
+        }
+      },
+      "ambiguous": {
+        "source_span_records": 1,
+        "movies": 1,
+        "models": {
+          "surface": {
+            "guaranteed": {
+              "estimate": 0.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 0
+            },
+            "possible": {
+              "estimate": 0.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 0
+            }
+          },
+          "surprisal": {
+            "guaranteed": {
+              "estimate": 0.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 0
+            },
+            "possible": {
+              "estimate": 0.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 0
+            }
+          },
+          "local": {
+            "guaranteed": {
+              "estimate": 1.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 1
+            },
+            "possible": {
+              "estimate": 1.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 1
+            }
+          },
+          "antecedents": {
+            "guaranteed": {
+              "estimate": 1.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 1
+            },
+            "possible": {
+              "estimate": 1.0,
+              "family_bootstrap_95_interval": null,
+              "hits": 1
+            }
+          }
+        }
+      },
+      "single_match": {
+        "source_span_records": 302,
+        "movies": 38,
+        "models": {
+          "surface": {
+            "guaranteed": {
+              "estimate": 0.4966887417218543,
+              "family_bootstrap_95_interval": [
+                0.41999848942598184,
+                0.5752508361204013
+              ],
+              "hits": 150
+            },
+            "possible": {
+              "estimate": 0.4966887417218543,
+              "family_bootstrap_95_interval": [
+                0.41999848942598184,
+                0.5752508361204013
+              ],
+              "hits": 150
+            }
+          },
+          "surprisal": {
+            "guaranteed": {
+              "estimate": 0.4900662251655629,
+              "family_bootstrap_95_interval": [
+                0.4056594301735243,
+                0.5753022363426308
+              ],
+              "hits": 148
+            },
+            "possible": {
+              "estimate": 0.4900662251655629,
+              "family_bootstrap_95_interval": [
+                0.4056594301735243,
+                0.5753022363426308
+              ],
+              "hits": 148
+            }
+          },
+          "local": {
+            "guaranteed": {
+              "estimate": 0.7748344370860927,
+              "family_bootstrap_95_interval": [
+                0.722433121794785,
+                0.8241379310344827
+              ],
+              "hits": 234
+            },
+            "possible": {
+              "estimate": 0.7748344370860927,
+              "family_bootstrap_95_interval": [
+                0.722433121794785,
+                0.8241379310344827
+              ],
+              "hits": 234
+            }
+          },
+          "antecedents": {
+            "guaranteed": {
+              "estimate": 0.7350993377483444,
+              "family_bootstrap_95_interval": [
+                0.6746025020177563,
+                0.792
+              ],
+              "hits": 222
+            },
+            "possible": {
+              "estimate": 0.7350993377483444,
+              "family_bootstrap_95_interval": [
+                0.6746025020177563,
+                0.792
+              ],
+              "hits": 222
+            }
+          }
+        }
+      }
+    }
+  }
+}

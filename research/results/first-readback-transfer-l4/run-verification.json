@@ -1,0 +1,97 @@
+{
+  "endpoint_absent_after_stop": true,
+  "first_readback": {
+    "assay_sha256": "d8dca9e9bfd7977d38939aede6cd0d8e51db34bc5e4e04cde93c85adfd9e4bbd",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "documents": 168,
+    "heldout_stops": 538,
+    "max_tokens": 70,
+    "protocol_sha256": "667518a52592e50a42e0e2560319fc68b7a696d5d92b4de2e61fd9bd88652b66",
+    "source_code_sha256": "f55719ef973668674ff1959deb0cdae74f02476f22d94ac417876860faea19a9",
+    "stimuli_sha256": "5c8776dc439599565fe249c981cc3f002289747a171184201801a0cbdece7fbf",
+    "stops": 2344,
+    "targets_sha256": "cd57b7b4ff921e639ae6896c15bf1c84e813f366eb983069091314a5089ac465",
+    "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "train_sha256": "fe89c67a29e781cd53014b809a552e59dab890a2495a4f454b7f439c81b4535a",
+    "training_stops": 1622,
+    "uncertified_stops": 0,
+    "verified_gradio_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "verified_gradio_sha256": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "independent_trial_expansion": {
+    "matches_within_absolute_1e-13": true,
+    "metrics": [
+      "brier",
+      "nll_nats",
+      "calibration_gap",
+      "average_precision"
+    ],
+    "score_replay_byte_identical": true,
+    "study_subset_readouts": 36
+  },
+  "minutes_budget": 12.0,
+  "payload_members_sha256": {
+    "bundle.json": "282ea259bdc12e553d727929eb1050406060b18f6858b524f390a1765931239c",
+    "first-readback-inputs.tar.gz": "9c635e780b5f160be99854d31b276896680cf1aae298423aa1d0b7c50ed4374e"
+  },
+  "payload_sha256": "450f9177a3652a4505c6e38e7486e482b7ec8694405d6dd29467ff6b5d8e03ff",
+  "phase": "finished",
+  "published_sha256": {
+    "assay.json": "d8dca9e9bfd7977d38939aede6cd0d8e51db34bc5e4e04cde93c85adfd9e4bbd",
+    "causality.json": "295716a3ee1817d104c24fc7bcc240d0835b1f7bb7aa41a6ccfb4e6f0021f91c",
+    "extraction.json": "f370870bac771fe33d5c2edb3906434a40f6f1299a416c7239749cc441830b90",
+    "heads.npz": "029c8503fb4110f8c853478809674b68c077c078c56ce62662ad98b03387d432",
+    "predictions.jsonl": "c40db258d69f3967823a84005b1461af170f0adaf68986909f5382e066e0cc30",
+    "preflight.json": "f71aa59ddb722985867e732acfdf06466ea4346b171b4a53b54a5191a38cc3ad",
+    "scores.json": "817e4929068f34c7c3cf8f2f46eea6781a44dee7930ad37fe8c681c72de941d0",
+    "seal.json": "bf43d26b4796050f5a5f89d6b5ae8448adb8dffc74b131f79189edec6617426b",
+    "telemetry.jsonl": "91aa19d29556b8f2081909a3643f4ea2fce6429e6164f89e7bb70bb441213bef"
+  },
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261121T012635Z-ec28bc09",
+  "schema_version": 16,
+  "stages": {
+    "first-readback": {
+      "archive_bytes": 97553,
+      "archive_sha256": "0a0c7e15b189249eb57d713fa6653b135ad6df722c34cf6b2e151c7cf83f4b03",
+      "elapsed_s": 44.23053695700037,
+      "members": {
+        "causality.json": "295716a3ee1817d104c24fc7bcc240d0835b1f7bb7aa41a6ccfb4e6f0021f91c",
+        "extraction.json": "f370870bac771fe33d5c2edb3906434a40f6f1299a416c7239749cc441830b90",
+        "heads.npz": "029c8503fb4110f8c853478809674b68c077c078c56ce62662ad98b03387d432",
+        "predictions.jsonl": "c40db258d69f3967823a84005b1461af170f0adaf68986909f5382e066e0cc30",
+        "run.log": "9cd7780193e2aeb0dbd3bee896116f7777a8855bafc941f9552cb32b18aea494",
+        "seal.json": "bf43d26b4796050f5a5f89d6b5ae8448adb8dffc74b131f79189edec6617426b",
+        "telemetry.jsonl": "91aa19d29556b8f2081909a3643f4ea2fce6429e6164f89e7bb70bb441213bef"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 651,
+      "archive_sha256": "c5114a61ca6bdf175b9b178545ef9db873e3303e4f909f525079903e0dd9f0fe",
+      "elapsed_s": 34.56654789899949,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "61f57b85e60fa78df557430ca1a961fa700cd0800d4e60b1e0d56208c614f274"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-21T01:27:08.635556+00:00",
+    "allocating": "2026-11-21T01:27:01.955296+00:00",
+    "finished": "2026-11-21T01:29:06.896972+00:00",
+    "prepared": "2026-11-21T01:26:36.555876+00:00",
+    "releasing": "2026-11-21T01:28:58.479257+00:00",
+    "remote-first-readback": "2026-11-21T01:28:24.366713+00:00",
+    "remote-setup": "2026-11-21T01:27:38.979276+00:00",
+    "remote-stages-finished": "2026-11-21T01:28:58.089593+00:00",
+    "retrieved-first-readback": "2026-11-21T01:28:58.479040+00:00",
+    "retrieved-setup": "2026-11-21T01:28:24.704096+00:00",
+    "worker-running": "2026-11-21T01:27:38.676081+00:00"
+  },
+  "worker_sha256": "105491f281b50497174332fce8c9b007c6d81b33d4be3bb4d625fe199203937b"
+}

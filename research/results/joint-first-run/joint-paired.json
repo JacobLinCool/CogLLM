@@ -1,0 +1,133 @@
+{
+  "input_sha256": {
+    "design": "05e41dbfac748869dd696ebd671bdb17f8da7726a18c42b01d3b48c32b5ef680",
+    "predictions": "f8784480b8093bae765749ec50ef1b513b64ebb18c1a9306aae0cd140ab0fb88",
+    "plaba_sentences": "0d0f798d7e2417f5eafa93611c1e5efb26ce67ee2da2f95c598433f491fae02e"
+  },
+  "bootstrap": "10000 paired draws of original material groups on fixed fits, reader panel, and seed.",
+  "plaba": {
+    "processing_ease_average_sentence_mae": {
+      "by_method": {
+        "linear": 0.5824112558077774,
+        "independent_adapter": 0.6100467705113286,
+        "shared_adapter": 0.6016477724209991
+      },
+      "shared_minus_independent": -0.00839899809032956,
+      "material_bootstrap_95_ci": [
+        -0.05323173371599557,
+        0.030538820686335507
+      ],
+      "sampled_material_groups": 25
+    },
+    "understanding_average_sentence_mae": {
+      "by_method": {
+        "linear": 0.6174904585667628,
+        "independent_adapter": 0.6369138654621168,
+        "shared_adapter": 0.6177214943259939
+      },
+      "shared_minus_independent": -0.019192371136122998,
+      "material_bootstrap_95_ci": [
+        -0.05214923586247469,
+        0.01161175108125834
+      ],
+      "sampled_material_groups": 25
+    },
+    "any_issue_brier": {
+      "by_method": {
+        "linear": 0.19179987969425472,
+        "independent_adapter": 0.26109424014041815,
+        "shared_adapter": 0.23198813136488916
+      },
+      "shared_minus_independent": -0.02910610877552903,
+      "material_bootstrap_95_ci": [
+        -0.04132566470378492,
+        -0.014598937654861673
+      ],
+      "sampled_material_groups": 13
+    },
+    "unclear_term_brier": {
+      "by_method": {
+        "linear": 0.19630991016842564,
+        "independent_adapter": 0.22001590989786027,
+        "shared_adapter": 0.22788126221868793
+      },
+      "shared_minus_independent": 0.007865352320827676,
+      "material_bootstrap_95_ci": [
+        -0.021571801029339917,
+        0.026416861680195393
+      ],
+      "sampled_material_groups": 13
+    },
+    "rewrite_contrast": {
+      "aligned_positions": 265,
+      "mean_simplified_minus_original_understanding_rating": {
+        "human": 0.7229559748427679,
+        "linear": 0.6576581881331199,
+        "independent_adapter": 0.7390541296185187,
+        "shared_adapter": 0.6615526165452394
+      }
+    }
+  },
+  "zhan": {
+    "choice_brier": {
+      "by_method": {
+        "linear": 0.19884637598615845,
+        "independent_adapter": 0.19989653865361864,
+        "shared_adapter": 0.20109403061220024
+      },
+      "shared_minus_independent": 0.001197491958581637,
+      "material_bootstrap_95_ci": [
+        -0.007471850626957493,
+        0.01063917708286017
+      ],
+      "sampled_material_groups": 36
+    },
+    "interaction_ic2_minus_ic1": {
+      "human": 0.24459473581126898,
+      "linear": -0.02626090422272681,
+      "independent_adapter": 0.0599313505925238,
+      "shared_adapter": 0.05074590630829334
+    }
+  },
+  "onestop": {
+    "choice_nll": {
+      "by_method": {
+        "linear": 0.7785900402602477,
+        "independent_adapter": 0.9505183703963873,
+        "shared_adapter": 0.9467112974562986
+      },
+      "shared_minus_independent": -0.003807072940088913,
+      "material_bootstrap_95_ci": [
+        -0.0661772025823026,
+        0.062343468052402415
+      ],
+      "sampled_material_groups": 20
+    },
+    "choice_brier": {
+      "by_method": {
+        "linear": 0.4008515141175873,
+        "independent_adapter": 0.44403969977884783,
+        "shared_adapter": 0.444445502018322
+      },
+      "shared_minus_independent": 0.00040580223947422114,
+      "material_bootstrap_95_ci": [
+        -0.012423386354630753,
+        0.013108269265728993
+      ],
+      "sampled_material_groups": 20
+    },
+    "correctness_brier": {
+      "by_method": {
+        "linear": 0.20026778195242176,
+        "independent_adapter": 0.2105691172820965,
+        "shared_adapter": 0.21230665780965316
+      },
+      "shared_minus_independent": 0.0017375405275566397,
+      "material_bootstrap_95_ci": [
+        -0.005441043572192013,
+        0.00924379739538005
+      ],
+      "sampled_material_groups": 20
+    }
+  }
+}

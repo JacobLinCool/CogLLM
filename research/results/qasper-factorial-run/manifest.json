@@ -1,0 +1,1178 @@
+{
+  "schema_version": 1,
+  "project": "/Users/jacoblincool/Documents/GitHub/CogLLM",
+  "run_id": "cogllm-qasper-factorial-20261120T204203Z-d4aa99f6",
+  "owner": "CogLLM QASPER evidence arrival",
+  "session_registry": "CLI default (~/.config/colab-cli/sessions.json)",
+  "requested_gpu": "L4",
+  "task": "QASPER factorial readout and rank supervision, two controls, new paper holdout",
+  "local_scoring_sha256": {
+    "research/semantic_tracking/qasper_factorial_score.py": "726647426e6f05c3a8f4392ae5bda96e8de2aac26c71af2e3ebdc48cbbdf1b48",
+    "research/training-protocol.md": "2e4be0748814f0b2c4f8ab8cd32d79a94f052f89219a1ea862b4880a6c792d1a"
+  },
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "expected": {
+    "stimuli_sha256": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+    "texts": 303,
+    "stops": 2280,
+    "tokens": 235523,
+    "max_tokens": 3394,
+    "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "excluded_stops": []
+  },
+  "dataset_inventory": {
+    "training": 151,
+    "heldout": 65,
+    "training_papers": 60,
+    "heldout_papers": 27,
+    "heldout_keys": [
+      [
+        "paper-1603.01514",
+        "question-50cc6c5f2dcf5fb87b56007f6a825fa7c90b64ed"
+      ],
+      [
+        "paper-1603.01514",
+        "question-6568a31241167f618ef5ede939053feaa2fb0d7e"
+      ],
+      [
+        "paper-1603.01514",
+        "question-6bf5620f295b5243230bc97b340fae6e92304595"
+      ],
+      [
+        "paper-1605.03481",
+        "question-127d5ddfabec5c58832e5865cbd8ed0978c25a13"
+      ],
+      [
+        "paper-1605.03481",
+        "question-792f6d76d2befba2af07198584aac1b189583ae4"
+      ],
+      [
+        "paper-1605.03481",
+        "question-b85fc420eb2f77f6f14f375cc1fcc5155eb5c0a8"
+      ],
+      [
+        "paper-1605.03481",
+        "question-b91671715ad4fad56c67c28ce6f29e180fe08595"
+      ],
+      [
+        "paper-1605.07333",
+        "question-30eacb4595014c9c0e5ee9669103d003cfdfe1e5"
+      ],
+      [
+        "paper-1605.07333",
+        "question-e2e977d7222654ee8d983fd8ba63b930e9a5a691"
+      ],
+      [
+        "paper-1610.09225",
+        "question-4c07c33dfaf4f3e6db55e377da6fa69825d0ba15"
+      ],
+      [
+        "paper-1610.09225",
+        "question-b1ce129678e37070e69f01332f1a8587e18e06b0"
+      ],
+      [
+        "paper-1705.05437",
+        "question-42084c41343e5a6ae58a22e5bfc5ce987b5173de"
+      ],
+      [
+        "paper-1705.05437",
+        "question-cf874cd9023d901e10aa8664b813d32501e7e4d2"
+      ],
+      [
+        "paper-1709.10367",
+        "question-2dbf6fe095cd879a9bf40f110b7b72c8bdde9475"
+      ],
+      [
+        "paper-1709.10367",
+        "question-de830c534c23f103288c198eb19174c76bfd38a1"
+      ],
+      [
+        "paper-1712.05999",
+        "question-a8f51b4e334a917702422782329d97304a2fe139"
+      ],
+      [
+        "paper-1712.05999",
+        "question-dca86fbe1d57b44986055b282a03c15ef7882e51"
+      ],
+      [
+        "paper-1903.09722",
+        "question-4d47bef19afd70c10bbceafd1846516546641a2f"
+      ],
+      [
+        "paper-1903.09722",
+        "question-4fa6fbb9df1a4c32583d4ef70d2b29ece4b3d802"
+      ],
+      [
+        "paper-1908.05828",
+        "question-6d1217b3d9cfb04be7fcd2238666fa02855ce9c5"
+      ],
+      [
+        "paper-1908.05828",
+        "question-bb2de20ee5937da7e3e6230e942bec7b6e8f61ee"
+      ],
+      [
+        "paper-1908.07245",
+        "question-10fb7dc031075946153baf0a0599e126de29e3a4"
+      ],
+      [
+        "paper-1908.07245",
+        "question-c5b0ed5db65051eebd858beaf303809aa815e8e5"
+      ],
+      [
+        "paper-1908.08717",
+        "question-2da4c3679111dd92a1d0869dae353ebe5989dfd2"
+      ],
+      [
+        "paper-1908.08717",
+        "question-a253749e3b4c4f340778235f640ce694642a4555"
+      ],
+      [
+        "paper-1909.00105",
+        "question-1bdc990c7e948724ab04e70867675a334fdd3051"
+      ],
+      [
+        "paper-1909.00105",
+        "question-34dc0838632d643f33c8dbfe7bd4b656586582a2"
+      ],
+      [
+        "paper-1909.00105",
+        "question-c77359fb9d3ef96965a9af0396b101f82a0a9de6"
+      ],
+      [
+        "paper-1909.13104",
+        "question-1e775cf30784e6b1c2b573294a82e145a3f959bb"
+      ],
+      [
+        "paper-1909.13104",
+        "question-21548433abd21346659505296fb0576e78287a74"
+      ],
+      [
+        "paper-1910.03634",
+        "question-54e945ea4b014e11ed4e1e61abc2aa9e68fea310"
+      ],
+      [
+        "paper-1910.03634",
+        "question-58ee0cbf1d8e3711c617b1cd3d7aca8620e26187"
+      ],
+      [
+        "paper-1910.06592",
+        "question-483a699563efcb8804e1861b18809279f21c7610"
+      ],
+      [
+        "paper-1910.06592",
+        "question-c00ce1e3be14610fb4e1f0614005911bb5ff0302"
+      ],
+      [
+        "paper-1910.06592",
+        "question-d3ff2986ca8cb85a9a5cec039c266df756947b43"
+      ],
+      [
+        "paper-1910.06592",
+        "question-e35c2fa99d5c84d8cb5d83fca2b434dcd83f3851"
+      ],
+      [
+        "paper-1910.08293",
+        "question-36ae003c7cb2a1bbfa90b89c671bc286bd3b3dfd"
+      ],
+      [
+        "paper-1910.08293",
+        "question-808f0ad46ca4eb4ea5492f9e14ca043fe1e206cc"
+      ],
+      [
+        "paper-1911.00841",
+        "question-3c3807f226ba72fc41f59f0338f12a49a0c35605"
+      ],
+      [
+        "paper-1911.00841",
+        "question-c70bafc35e27be9d1efae60596bc0dd390c124c0"
+      ],
+      [
+        "paper-1911.06964",
+        "question-1ff0fccf0dca95a6630380c84b0422bed854269a"
+      ],
+      [
+        "paper-1911.06964",
+        "question-3d7d865e905295d11f1e85af5fa89b210e3e9fdf"
+      ],
+      [
+        "paper-1911.06964",
+        "question-3fad42be0fb2052bb404b989cc7d58b440cd23a0"
+      ],
+      [
+        "paper-1911.07555",
+        "question-92dfacbbfa732ecea006e251be415a6f89fb4ec6"
+      ],
+      [
+        "paper-1911.07555",
+        "question-c598028815066089cc1e131b96d6966d2610467a"
+      ],
+      [
+        "paper-1912.08904",
+        "question-375b281e7441547ba284068326dd834216e55c07"
+      ],
+      [
+        "paper-1912.08904",
+        "question-6ecb69360449bb9915ac73c0a816c8ac479cbbfc"
+      ],
+      [
+        "paper-2001.01269",
+        "question-3355918bbdccac644afe441f085d0ffbbad565d7"
+      ],
+      [
+        "paper-2001.01269",
+        "question-81d193672090295e687bc4f4ac1b7a9c76ea35df"
+      ],
+      [
+        "paper-2001.07820",
+        "question-4ef11518b40cc55d86c485f14e24732123b0d907"
+      ],
+      [
+        "paper-2001.07820",
+        "question-92bb41cf7bd1f7886784796a8220ed5aa07bc49b"
+      ],
+      [
+        "paper-2002.01320",
+        "question-6a219d7c58451842aa5d6819a7cdf51c55e9fc0f"
+      ],
+      [
+        "paper-2002.01320",
+        "question-8dc707a0daf7bff61a97d9d854283e65c0c85064"
+      ],
+      [
+        "paper-2002.01320",
+        "question-cee8cfaf26e49d98e7d34fa1b414f8f31d6502ad"
+      ],
+      [
+        "paper-2002.02070",
+        "question-6bf93968110c6e3e3640360440607744007a5228"
+      ],
+      [
+        "paper-2002.02070",
+        "question-899ed05c460bf2aa0aa65101cad1986d4f622652"
+      ],
+      [
+        "paper-2002.07306",
+        "question-2275b0e195cd9cb25f50c5c570da97a4cce5dca8"
+      ],
+      [
+        "paper-2002.07306",
+        "question-d01c51155e4719bf587d114bcd403b273c77246f"
+      ],
+      [
+        "paper-2002.07306",
+        "question-d571e0b0f402a3d36fb30d70cdcd2911df883bc7"
+      ],
+      [
+        "paper-2002.07306",
+        "question-f9aa055bf73185ba939dfb03454384810eb17ad1"
+      ],
+      [
+        "paper-2004.02192",
+        "question-59e58c6fc63cf5b54b632462465bfbd85b1bf3dd"
+      ],
+      [
+        "paper-2004.02192",
+        "question-8dda1ef371933811e2a25a286529c31623cca0c6"
+      ],
+      [
+        "paper-2004.02192",
+        "question-b3de9357c569fb1454be8f2ac5fcecaea295b967"
+      ],
+      [
+        "paper-2004.04721",
+        "question-b3307d5b68c57a074c483636affee41054be06d1"
+      ],
+      [
+        "paper-2004.04721",
+        "question-bfc1de5fa4da2f0e301fd22aea19cf01e2bb5b31"
+      ]
+    ],
+    "heldout_stops": {
+      "paper-2002.02070": [
+        946,
+        1245,
+        1635,
+        2054,
+        2116,
+        2173,
+        2244,
+        2338,
+        2499,
+        2820,
+        3076,
+        3249,
+        3506,
+        3920,
+        4263,
+        4799,
+        5074,
+        5349,
+        5873,
+        6062,
+        6327,
+        6631,
+        7141,
+        7659,
+        7937,
+        8307,
+        8718,
+        9071,
+        9381,
+        9667,
+        9894,
+        10112
+      ],
+      "paper-1605.03481": [
+        1718,
+        2488,
+        3554,
+        4224,
+        4869,
+        5574,
+        6099,
+        6354,
+        6810,
+        7199,
+        7372,
+        8446,
+        8941,
+        8984,
+        9207,
+        9427,
+        9513,
+        9618,
+        9735,
+        10043,
+        10635,
+        11526,
+        12712,
+        13071,
+        13687
+      ],
+      "paper-1712.05999": [
+        858,
+        866,
+        1864,
+        1867,
+        2465,
+        3029,
+        3364,
+        4229,
+        4599,
+        5266,
+        5330,
+        5779,
+        6143,
+        6754,
+        7157,
+        7600,
+        8014,
+        8325,
+        8576,
+        8587,
+        8606,
+        8621,
+        9475,
+        10209,
+        10621,
+        10856,
+        11348,
+        11691,
+        12328,
+        12647,
+        12888,
+        13152
+      ],
+      "paper-1903.09722": [
+        1489,
+        2015,
+        2509,
+        2742,
+        3443,
+        3741,
+        4648,
+        5083,
+        5664,
+        6178,
+        6736,
+        8392,
+        9170,
+        9718,
+        10287,
+        10852,
+        11529,
+        11765,
+        12109,
+        12768,
+        13300
+      ],
+      "paper-1910.06592": [
+        1697,
+        2297,
+        3120,
+        3138,
+        3420,
+        3652,
+        4484,
+        5086,
+        5487,
+        5505,
+        6052,
+        6266,
+        6496,
+        6733,
+        6936,
+        7516,
+        7677,
+        8651,
+        8733,
+        8751,
+        8890,
+        9246,
+        9438,
+        9570,
+        9773,
+        10322,
+        11171,
+        12901,
+        13770
+      ],
+      "paper-1908.05828": [
+        1545,
+        2450,
+        2484,
+        2633,
+        2733,
+        2846,
+        3146,
+        3259,
+        3465,
+        4079,
+        4338,
+        5379,
+        5535,
+        6179,
+        6700,
+        7149,
+        7762,
+        8120,
+        8743,
+        9605,
+        9855,
+        10471,
+        10910,
+        11184,
+        11421,
+        11817,
+        12081,
+        12607,
+        13169,
+        13659,
+        13905
+      ],
+      "paper-1910.03634": [
+        1884,
+        2664,
+        3882,
+        4060,
+        4555,
+        4873,
+        6000,
+        6578,
+        7268,
+        7780,
+        8401,
+        8882,
+        9298,
+        9613,
+        10058,
+        10497,
+        11321
+      ],
+      "paper-1603.01514": [
+        1332,
+        1345,
+        1530,
+        2004,
+        2017,
+        2502,
+        3223,
+        3385,
+        3542,
+        3632,
+        3925,
+        4907,
+        5064,
+        5566,
+        6341,
+        7499,
+        8225,
+        8713,
+        9233,
+        9698,
+        9770,
+        9784,
+        10106,
+        10234,
+        10248,
+        10442,
+        10456,
+        10637,
+        10900,
+        11834,
+        12252,
+        13301
+      ],
+      "paper-1705.05437": [
+        1415,
+        1491,
+        1702,
+        2067,
+        2483,
+        2810,
+        3664,
+        5233,
+        5431,
+        6642,
+        7430,
+        8493,
+        9299,
+        9976,
+        10971,
+        11588,
+        12472,
+        13172,
+        13554,
+        13870
+      ],
+      "paper-1911.06964": [
+        1562,
+        2172,
+        2626,
+        2975,
+        3562,
+        3944,
+        4187,
+        4580,
+        5271,
+        5614,
+        5967,
+        6373,
+        6662,
+        7133,
+        7223,
+        7637,
+        7907,
+        8283,
+        8783,
+        9259,
+        9722,
+        10276,
+        10552,
+        10839,
+        11634,
+        12225,
+        12907,
+        13098,
+        13215
+      ],
+      "paper-2004.04721": [
+        1704,
+        2322,
+        2927,
+        4168,
+        4910,
+        5656,
+        6588,
+        7342,
+        7985,
+        8787,
+        9433,
+        10374,
+        10479,
+        11319,
+        12456,
+        12640,
+        12940,
+        13987
+      ],
+      "paper-1911.00841": [
+        2092,
+        2833,
+        3064,
+        3780,
+        4792,
+        5706,
+        6818,
+        7366,
+        8079,
+        8489,
+        9421,
+        10115,
+        10272,
+        10368,
+        10473,
+        10530,
+        10588,
+        10645,
+        10730,
+        10801,
+        10890,
+        10978,
+        11639,
+        12501
+      ],
+      "paper-1909.00105": [
+        1553,
+        2383,
+        2728,
+        2782,
+        2934,
+        3015,
+        3310,
+        3728,
+        4602,
+        4952,
+        5360,
+        6287,
+        6494,
+        6697,
+        6948,
+        7341,
+        7794,
+        8030,
+        8409,
+        8573,
+        8716,
+        8758,
+        9040,
+        9415,
+        10008,
+        10273,
+        10568,
+        11262,
+        12398,
+        12835,
+        13343
+      ],
+      "paper-2002.01320": [
+        2718,
+        3834,
+        4235,
+        4703,
+        5190,
+        6677,
+        6851,
+        7308,
+        7838,
+        8172,
+        9459,
+        10282,
+        10484,
+        11484,
+        12022,
+        12419,
+        12971,
+        13776
+      ],
+      "paper-2004.02192": [
+        3017,
+        3066,
+        3272,
+        3381,
+        3564,
+        4860,
+        6007,
+        6915,
+        7907,
+        10496,
+        11163,
+        11347,
+        11566,
+        12002,
+        12202,
+        12661,
+        13959
+      ],
+      "paper-1910.08293": [
+        2151,
+        2926,
+        4063,
+        4486,
+        5532,
+        6970,
+        7700,
+        8395,
+        8481,
+        8609,
+        8741,
+        9351,
+        9773,
+        10150,
+        10356,
+        10760,
+        11170,
+        11598,
+        12387,
+        13052,
+        13319,
+        13781
+      ],
+      "paper-1911.07555": [
+        979,
+        1345,
+        1708,
+        2156,
+        2509,
+        2722,
+        2971,
+        3333,
+        4195,
+        4635,
+        5461,
+        5935,
+        6411,
+        7194,
+        7433,
+        7815,
+        8320,
+        8612,
+        9478,
+        9744,
+        10032,
+        10362,
+        10709,
+        10892,
+        11411,
+        11879,
+        12263,
+        12638
+      ],
+      "paper-2001.01269": [
+        1858,
+        2261,
+        2593,
+        3000,
+        3867,
+        4189,
+        4799,
+        5141,
+        5563,
+        5968,
+        6614,
+        7064,
+        7514,
+        7857,
+        8256,
+        8894,
+        9392,
+        9804,
+        10198,
+        10662,
+        11049,
+        11566,
+        11851,
+        13303,
+        13896
+      ],
+      "paper-1912.08904": [
+        1551,
+        2533,
+        3595,
+        4256,
+        4331,
+        4347,
+        4402,
+        4448,
+        4522,
+        4580,
+        6115,
+        6792,
+        6975,
+        6991,
+        7397,
+        7605,
+        7964,
+        8361,
+        8489,
+        8563,
+        8579,
+        8789,
+        8956,
+        9844,
+        9944,
+        10168,
+        10184,
+        10523,
+        10731,
+        11012,
+        11250,
+        11658
+      ],
+      "paper-1909.13104": [
+        2477,
+        2845,
+        3985,
+        4944,
+        7642,
+        8578,
+        9390,
+        9562,
+        9760,
+        10616,
+        11259,
+        11452,
+        11498,
+        11550,
+        11701,
+        11751,
+        12763
+      ],
+      "paper-1610.09225": [
+        2301,
+        3119,
+        3310,
+        4555,
+        5118,
+        6787,
+        7767,
+        8260,
+        8570,
+        8731,
+        8885,
+        9313,
+        9728,
+        10109,
+        10202,
+        10967,
+        11735,
+        12373,
+        13320,
+        13509
+      ],
+      "paper-2001.07820": [
+        1709,
+        2048,
+        2092,
+        2141,
+        2365,
+        2388,
+        2418,
+        3055,
+        3608,
+        4214,
+        4463,
+        5180,
+        5977,
+        6562,
+        7833,
+        8348,
+        8520,
+        9258,
+        9913,
+        10532,
+        11438,
+        11631,
+        11716,
+        11799,
+        11877,
+        12460,
+        12932
+      ],
+      "paper-1605.07333": [
+        1421,
+        1615,
+        1933,
+        2297,
+        2445,
+        2821,
+        3298,
+        3610,
+        4308,
+        6084,
+        6451,
+        7185,
+        7471,
+        7882,
+        8216,
+        8561,
+        8697,
+        8815,
+        9203,
+        9605,
+        9908,
+        10396,
+        10874,
+        11534,
+        11674,
+        12345,
+        13069,
+        13294,
+        13855
+      ],
+      "paper-1908.08717": [
+        1787,
+        2612,
+        3074,
+        3991,
+        4975,
+        5609,
+        7033,
+        8255,
+        9013,
+        9353,
+        10216,
+        10749,
+        11170,
+        12533,
+        12710,
+        12846,
+        13519
+      ],
+      "paper-2002.07306": [
+        1757,
+        2541,
+        3424,
+        3588,
+        3841,
+        3962,
+        4607,
+        5218,
+        6044,
+        6586,
+        6669,
+        7082,
+        7411,
+        7480,
+        8193,
+        8555,
+        9384,
+        10133,
+        10724,
+        11407,
+        12405,
+        12862,
+        13220,
+        13690
+      ],
+      "paper-1908.07245": [
+        1275,
+        1682,
+        1867,
+        2407,
+        2925,
+        3612,
+        3694,
+        3899,
+        3964,
+        4552,
+        5022,
+        5486,
+        5888,
+        6056,
+        6510,
+        6967,
+        7311,
+        7620,
+        7920,
+        8223,
+        8314,
+        8559,
+        9079,
+        9274,
+        9916,
+        10089,
+        10213,
+        10502,
+        10787,
+        11339,
+        12048,
+        12381
+      ],
+      "paper-1709.10367": [
+        1744,
+        2488,
+        3088,
+        3673,
+        4171,
+        4725,
+        5509,
+        6275,
+        6659,
+        6875,
+        7205,
+        7624,
+        8099,
+        8278,
+        8601,
+        8963,
+        9297,
+        9607,
+        9830,
+        10323,
+        10877,
+        11565,
+        12478,
+        12791,
+        12904,
+        13230
+      ]
+    }
+  },
+  "worker_time_budget_s": 790,
+  "payload_sha256": "6f36e4ff115e02e40545c4157082a4c5183ad967c2ed0917c81a5d1b5d2fad58",
+  "worker_sha256": "1339888de9db4e0f864424648a7c289f2b9ecd28fcc0f0c748dc656f53202750",
+  "launch_sha256": "3308e463e9cc0791050696e8647095474c9c6668428941e4e86a08f25c4d0372",
+  "input_sha256": {
+    "data/stimuli.jsonl": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+    "data/train.jsonl": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+    "data/eval.jsonl": "8e06578e5230a04fb6929b94140fadebdbd99c567d0bb730136ac797bccd23de",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+    "research/core_features/extract.py": "db0c984a834dbdc16ac3c5bd744b53081e220004c577daf06bf84af5d0739b49",
+    "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+    "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+    "research/semantic_tracking/qasper_extract.py": "5098a26f8d9ce29239e336cafa28583b7da5dae9d486ae3e42ce06e1d4491ab7",
+    "research/semantic_tracking/qasper_fit.py": "ee67ceeda7d77d8ee1573e0747235eb7b4c9ee6070f21f9507bbdcea7b5f7527",
+    "research/semantic_tracking/qasper_factorial_fit.py": "86ea89c60846ea9ab979498c7ffb813e402a91d90cc57113d6d619b4296355bb"
+  },
+  "timeline_utc": {
+    "prepared": "2026-11-20T20:42:03.785382+00:00",
+    "before-allocation": "2026-11-20T20:42:16.580930+00:00",
+    "allocate": "2026-11-20T20:42:17.776726+00:00",
+    "allocated": "2026-11-20T20:42:22.174044+00:00",
+    "after-allocation": "2026-11-20T20:42:22.174533+00:00",
+    "upload": "2026-11-20T20:42:23.363640+00:00",
+    "launch-1": "2026-11-20T20:42:26.793736+00:00",
+    "remote-worker-confirmed": "2026-11-20T20:42:30.253316+00:00",
+    "remote-preflight": "2026-11-20T20:42:30.696020+00:00",
+    "remote-install": "2026-11-20T20:42:40.784608+00:00",
+    "remote-extract": "2026-11-20T20:42:50.677179+00:00",
+    "remote-complete": "2026-11-20T20:45:45.861936+00:00",
+    "download": "2026-11-20T20:45:45.862409+00:00",
+    "local-artifacts-verified": "2026-11-20T20:45:47.148748+00:00",
+    "before-stop": "2026-11-20T20:45:47.149095+00:00",
+    "stop-1": "2026-11-20T20:45:48.576047+00:00",
+    "after-stop": "2026-11-20T20:45:51.886147+00:00",
+    "finished": "2026-11-20T20:45:53.196362+00:00"
+  },
+  "cli_version": "0.7.4",
+  "latest_worker_progress": {
+    "completed": true,
+    "phase": "complete",
+    "phase_seconds": {
+      "install": 12.79461110200009,
+      "extract": 171.84957036300057,
+      "fit": 6.1270081100001335
+    },
+    "device": {
+      "gpu": "NVIDIA L4",
+      "vram_bytes": 23659151360,
+      "cuda": "13.0",
+      "torch": "2.14.1+cu130",
+      "compute_capability": [
+        8,
+        9
+      ]
+    },
+    "input_sha256": {
+      "data/eval.jsonl": "8e06578e5230a04fb6929b94140fadebdbd99c567d0bb730136ac797bccd23de",
+      "data/stimuli.jsonl": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+      "data/train.jsonl": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+      "research/core_features/extract.py": "db0c984a834dbdc16ac3c5bd744b53081e220004c577daf06bf84af5d0739b49",
+      "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+      "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+      "research/semantic_tracking/qasper_extract.py": "5098a26f8d9ce29239e336cafa28583b7da5dae9d486ae3e42ce06e1d4491ab7",
+      "research/semantic_tracking/qasper_factorial_fit.py": "86ea89c60846ea9ab979498c7ffb813e402a91d90cc57113d6d619b4296355bb",
+      "research/semantic_tracking/qasper_fit.py": "ee67ceeda7d77d8ee1573e0747235eb7b4c9ee6070f21f9507bbdcea7b5f7527",
+      "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+      "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+    },
+    "payload_sha256": "6f36e4ff115e02e40545c4157082a4c5183ad967c2ed0917c81a5d1b5d2fad58",
+    "worker_sha256": "1339888de9db4e0f864424648a7c289f2b9ecd28fcc0f0c748dc656f53202750",
+    "worker_elapsed_s": 195.1813617079997,
+    "output_sha256": {
+      "extract/causality.json": "1e005f05969ac60ddb36a59a9808d3ed6dcc48b75ce0be826d2732371d7c60fd",
+      "extract/extraction.json": "d6cdb93297e7f3034f99730fc2d40926804426eee7fea450315ab6e775549cbd",
+      "extract/telemetry.jsonl": "3dd02e9432baefdf3e7bcb96ab74f12880c2403a279550520242744a88617633",
+      "fit/fit-manifest.json": "4eab8b61bf83e46e830e69afc6663535981eb9b55967bdd892f1354b1002512b",
+      "fit/heads.npz": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+      "fit/predictions.jsonl": "8317e3182c9bdc83b5b90e670f7224da9de58509a35a517cfeeb428e29e78148",
+      "worker.log": "cb38979e365e5ddece0bfe950ba3c909d5b7826d5a9406d5e7c44d31ce6b8e3e"
+    },
+    "finished": true,
+    "archive_sha256": "5a6dbcf1acfd7fe56b32b99d24dd4e2e2bd9d49c93e8a5004ecb4a305a2e63e6",
+    "archive_parts": [
+      {
+        "name": "results.part-00",
+        "bytes": 231708,
+        "sha256": "5a6dbcf1acfd7fe56b32b99d24dd4e2e2bd9d49c93e8a5004ecb4a305a2e63e6"
+      }
+    ]
+  },
+  "archive_parts": [
+    {
+      "name": "results.part-00",
+      "bytes": 231708,
+      "sha256": "5a6dbcf1acfd7fe56b32b99d24dd4e2e2bd9d49c93e8a5004ecb4a305a2e63e6"
+    }
+  ],
+  "remote_status": {
+    "completed": true,
+    "phase": "complete",
+    "phase_seconds": {
+      "install": 12.79461110200009,
+      "extract": 171.84957036300057,
+      "fit": 6.1270081100001335
+    },
+    "device": {
+      "gpu": "NVIDIA L4",
+      "vram_bytes": 23659151360,
+      "cuda": "13.0",
+      "torch": "2.14.1+cu130",
+      "compute_capability": [
+        8,
+        9
+      ]
+    },
+    "input_sha256": {
+      "data/eval.jsonl": "8e06578e5230a04fb6929b94140fadebdbd99c567d0bb730136ac797bccd23de",
+      "data/stimuli.jsonl": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+      "data/train.jsonl": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+      "research/core_features/extract.py": "db0c984a834dbdc16ac3c5bd744b53081e220004c577daf06bf84af5d0739b49",
+      "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+      "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+      "research/semantic_tracking/qasper_extract.py": "5098a26f8d9ce29239e336cafa28583b7da5dae9d486ae3e42ce06e1d4491ab7",
+      "research/semantic_tracking/qasper_factorial_fit.py": "86ea89c60846ea9ab979498c7ffb813e402a91d90cc57113d6d619b4296355bb",
+      "research/semantic_tracking/qasper_fit.py": "ee67ceeda7d77d8ee1573e0747235eb7b4c9ee6070f21f9507bbdcea7b5f7527",
+      "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+      "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+    },
+    "payload_sha256": "6f36e4ff115e02e40545c4157082a4c5183ad967c2ed0917c81a5d1b5d2fad58",
+    "worker_sha256": "1339888de9db4e0f864424648a7c289f2b9ecd28fcc0f0c748dc656f53202750",
+    "worker_elapsed_s": 195.1813617079997,
+    "output_sha256": {
+      "extract/causality.json": "1e005f05969ac60ddb36a59a9808d3ed6dcc48b75ce0be826d2732371d7c60fd",
+      "extract/extraction.json": "d6cdb93297e7f3034f99730fc2d40926804426eee7fea450315ab6e775549cbd",
+      "extract/telemetry.jsonl": "3dd02e9432baefdf3e7bcb96ab74f12880c2403a279550520242744a88617633",
+      "fit/fit-manifest.json": "4eab8b61bf83e46e830e69afc6663535981eb9b55967bdd892f1354b1002512b",
+      "fit/heads.npz": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+      "fit/predictions.jsonl": "8317e3182c9bdc83b5b90e670f7224da9de58509a35a517cfeeb428e29e78148",
+      "worker.log": "cb38979e365e5ddece0bfe950ba3c909d5b7826d5a9406d5e7c44d31ce6b8e3e"
+    }
+  },
+  "output_sha256": {
+    "extract/causality.json": "1e005f05969ac60ddb36a59a9808d3ed6dcc48b75ce0be826d2732371d7c60fd",
+    "extract/extraction.json": "d6cdb93297e7f3034f99730fc2d40926804426eee7fea450315ab6e775549cbd",
+    "extract/telemetry.jsonl": "3dd02e9432baefdf3e7bcb96ab74f12880c2403a279550520242744a88617633",
+    "fit/fit-manifest.json": "4eab8b61bf83e46e830e69afc6663535981eb9b55967bdd892f1354b1002512b",
+    "fit/heads.npz": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "fit/predictions.jsonl": "8317e3182c9bdc83b5b90e670f7224da9de58509a35a517cfeeb428e29e78148",
+    "worker.log": "cb38979e365e5ddece0bfe950ba3c909d5b7826d5a9406d5e7c44d31ce6b8e3e"
+  },
+  "archive_sha256": "5a6dbcf1acfd7fe56b32b99d24dd4e2e2bd9d49c93e8a5004ecb4a305a2e63e6",
+  "artifacts_verified": true,
+  "allocated_to_stop_request_seconds": 206.39783537498442,
+  "release_verified": true
+}

@@ -1,0 +1,283 @@
+{
+  "protocol_sha256": "9391c7f75d804d8cdfd149a3d7a3db91bcdac052a44685127257dc690ee80171",
+  "movie_titles": 39,
+  "all_words": 26417,
+  "audit": {
+    "source_spans_with_2_literal_occurrences": 87,
+    "source_spans_with_1_literal_occurrences": 431,
+    "released_records": 554,
+    "segments": 568,
+    "ambiguous_segments": 82,
+    "words_in_ambiguous_segments": 4284,
+    "unresolved_word_label": 285,
+    "guaranteed_positive_words": 508,
+    "possible_positive_words": 793,
+    "source_spans_with_3_literal_occurrences": 31,
+    "source_spans_with_4_literal_occurrences": 4,
+    "source_spans_with_5_literal_occurrences": 1
+  },
+  "methods": {
+    "qwen": {
+      "one_placement_per_record": {
+        "cut": 0.04484973516246828,
+        "alerts": 1555,
+        "positive_word_count": [
+          629,
+          632
+        ],
+        "ap_bounds": [
+          0.5779166492589984,
+          0.8455371773171095
+        ],
+        "operating_bounds": {
+          "precision": [
+            {
+              "estimate": 0.3221864951768489,
+              "numerator": 501,
+              "denominator": 1555
+            },
+            {
+              "estimate": 0.37942122186495175,
+              "numerator": 590,
+              "denominator": 1555
+            }
+          ],
+          "recall": [
+            {
+              "estimate": 0.7939778129952456,
+              "numerator": 501,
+              "denominator": 631
+            },
+            {
+              "estimate": 0.9350237717908082,
+              "numerator": 590,
+              "denominator": 631
+            }
+          ],
+          "f1": [
+            {
+              "estimate": 0.4583714547118024,
+              "numerator": 1002,
+              "denominator": 2186
+            },
+            {
+              "estimate": 0.5397987191216834,
+              "numerator": 1180,
+              "denominator": 2186
+            }
+          ],
+          "false_alert_fraction": [
+            {
+              "estimate": 0.037423408050880326,
+              "numerator": 965,
+              "denominator": 25786
+            },
+            {
+              "estimate": 0.040874893352982236,
+              "numerator": 1054,
+              "denominator": 25786
+            }
+          ]
+        }
+      },
+      "arbitrary_matching_word": {
+        "cut": 0.04484973516246828,
+        "alerts": 1555,
+        "positive_word_count": [
+          508,
+          793
+        ],
+        "ap_bounds": [
+          0.4317131960201388,
+          0.9271742766099053
+        ],
+        "operating_bounds": {
+          "precision": [
+            {
+              "estimate": 0.3009646302250804,
+              "numerator": 468,
+              "denominator": 1555
+            },
+            {
+              "estimate": 0.4064308681672026,
+              "numerator": 632,
+              "denominator": 1555
+            }
+          ],
+          "recall": [
+            {
+              "estimate": 0.7440381558028617,
+              "numerator": 468,
+              "denominator": 629
+            },
+            {
+              "estimate": 0.9404761904761905,
+              "numerator": 632,
+              "denominator": 672
+            }
+          ],
+          "f1": [
+            {
+              "estimate": 0.42857142857142855,
+              "numerator": 936,
+              "denominator": 2184
+            },
+            {
+              "estimate": 0.56757970363718,
+              "numerator": 1264,
+              "denominator": 2227
+            }
+          ],
+          "false_alert_fraction": [
+            {
+              "estimate": 0.035851621674111475,
+              "numerator": 923,
+              "denominator": 25745
+            },
+            {
+              "estimate": 0.04215138824259346,
+              "numerator": 1087,
+              "denominator": 25788
+            }
+          ]
+        }
+      }
+    },
+    "ner_surprisal": {
+      "one_placement_per_record": {
+        "cut": 0.04666132429784063,
+        "alerts": 1193,
+        "positive_word_count": [
+          629,
+          632
+        ],
+        "ap_bounds": [
+          0.5152296241095538,
+          0.722826123487475
+        ],
+        "operating_bounds": {
+          "precision": [
+            {
+              "estimate": 0.4056999161777033,
+              "numerator": 484,
+              "denominator": 1193
+            },
+            {
+              "estimate": 0.47694886839899414,
+              "numerator": 569,
+              "denominator": 1193
+            }
+          ],
+          "recall": [
+            {
+              "estimate": 0.7670364500792393,
+              "numerator": 484,
+              "denominator": 631
+            },
+            {
+              "estimate": 0.901743264659271,
+              "numerator": 569,
+              "denominator": 631
+            }
+          ],
+          "f1": [
+            {
+              "estimate": 0.5307017543859649,
+              "numerator": 968,
+              "denominator": 1824
+            },
+            {
+              "estimate": 0.6239035087719298,
+              "numerator": 1138,
+              "denominator": 1824
+            }
+          ],
+          "false_alert_fraction": [
+            {
+              "estimate": 0.024199177848444893,
+              "numerator": 624,
+              "denominator": 25786
+            },
+            {
+              "estimate": 0.02749554021562088,
+              "numerator": 709,
+              "denominator": 25786
+            }
+          ]
+        }
+      },
+      "arbitrary_matching_word": {
+        "cut": 0.04666132429784063,
+        "alerts": 1193,
+        "positive_word_count": [
+          508,
+          793
+        ],
+        "ap_bounds": [
+          0.36525686057026946,
+          0.8016562092487678
+        ],
+        "operating_bounds": {
+          "precision": [
+            {
+              "estimate": 0.3755238893545683,
+              "numerator": 448,
+              "denominator": 1193
+            },
+            {
+              "estimate": 0.5272422464375524,
+              "numerator": 629,
+              "denominator": 1193
+            }
+          ],
+          "recall": [
+            {
+              "estimate": 0.7320261437908496,
+              "numerator": 448,
+              "denominator": 612
+            },
+            {
+              "estimate": 0.9129172714078374,
+              "numerator": 629,
+              "denominator": 689
+            }
+          ],
+          "f1": [
+            {
+              "estimate": 0.496398891966759,
+              "numerator": 896,
+              "denominator": 1805
+            },
+            {
+              "estimate": 0.6684378320935175,
+              "numerator": 1258,
+              "denominator": 1882
+            }
+          ],
+          "false_alert_fraction": [
+            {
+              "estimate": 0.021921641791044777,
+              "numerator": 564,
+              "denominator": 25728
+            },
+            {
+              "estimate": 0.02887037395853517,
+              "numerator": 745,
+              "denominator": 25805
+            }
+          ]
+        }
+      }
+    }
+  },
+  "qwen_minus_ner_conservative_ap_bounds": {
+    "one_placement_per_record": [
+      -0.14490947422847655,
+      0.3303075532075558
+    ],
+    "arbitrary_matching_word": [
+      -0.369943013228629,
+      0.5619174160396359
+    ]
+  }
+}

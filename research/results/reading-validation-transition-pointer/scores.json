@@ -1,0 +1,5978 @@
+{
+  "protocol_sha256": "2e6d39f45053dfcf336061d3f07bbebe2bba4f59fbef42d61dfee9c7af9f88af",
+  "source_forecast_sha256": "3a1a85941ca8e647a6a837531778f8b6b1a94cff754f5bde3e7d79d23855c22d",
+  "external_human_sha256": "26ee10ead50048dea044f22b04f10b3e0f4c9918c7bd17ba1654664c5f80ffc0",
+  "distinct_eligible_clickers": {
+    "dev": 74,
+    "train": 433,
+    "test": 120
+  },
+  "unseen_eligible_gold_clickers": 20,
+  "intake": {
+    "clicks": 2196,
+    "single_word_clicks": 1265
+  },
+  "reader_region_consistency": {
+    "word_from_another_click_in_held_click": {
+      "estimate": 0.8656269653694422,
+      "family_bootstrap_95_interval": [
+        0.8303416419759252,
+        0.8998039818690743
+      ]
+    },
+    "same_exact_region": {
+      "estimate": 0.8421140781907523,
+      "family_bootstrap_95_interval": [
+        0.79747088509203,
+        0.8840034791226682
+      ]
+    },
+    "same_expert_entity": {
+      "estimate": 0.931767879835117,
+      "family_bootstrap_95_interval": [
+        0.8876299099812028,
+        0.9679636687106282
+      ]
+    },
+    "empirical_best_word_fraction": {
+      "estimate": 0.9293825297633213,
+      "family_bootstrap_95_interval": [
+        0.9089918471877653,
+        0.9490189985204606
+      ]
+    }
+  },
+  "evaluations": {
+    "all": {
+      "articles": 37,
+      "queries": 366,
+      "clicks": 2196,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 4.276410903191422,
+            "family_bootstrap_95_interval": [
+              3.941975959625135,
+              4.591529230084646
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.034095488433613236,
+            "family_bootstrap_95_interval": [
+              0.022420075704014854,
+              0.04820970202939525
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.08899515085800627,
+            "family_bootstrap_95_interval": [
+              0.06260402780932085,
+              0.1196229067848558
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.10017625655521696,
+            "family_bootstrap_95_interval": [
+              0.07672818226178514,
+              0.12645228241086168
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.03409548843361324,
+            "family_bootstrap_95_interval": [
+              0.022420075704014858,
+              0.04820970202939525
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211335,
+              0.08676552792593538
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211333,
+              0.08676552792593538
+            ]
+          },
+          "region_words": {
+            "estimate": 2.5337328344774854,
+            "family_bootstrap_95_interval": [
+              2.0005875244709292,
+              3.268197281797833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.203649198893915,
+            "family_bootstrap_95_interval": [
+              9.487250213988064,
+              12.982279455271488
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211333,
+              0.08676552792593538
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.47317520500824,
+            "family_bootstrap_95_interval": [
+              2.232899688819193,
+              2.7136987875830014
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.2115793717576797,
+            "family_bootstrap_95_interval": [
+              0.13670919289786113,
+              0.2955710490865434
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.35725513451997576,
+            "family_bootstrap_95_interval": [
+              0.27117524534543547,
+              0.4475054427712842
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3516446529470551,
+            "family_bootstrap_95_interval": [
+              0.28235833999070625,
+              0.4280921074422627
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.15203810371844098,
+            "family_bootstrap_95_interval": [
+              0.12315371408728067,
+              0.18582422501531026
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.2315345020433487,
+            "family_bootstrap_95_interval": [
+              0.1521564800429299,
+              0.3192996791148836
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.1830717987451272,
+            "family_bootstrap_95_interval": [
+              0.15392114554363515,
+              0.21528555180229303
+            ]
+          },
+          "region_words": {
+            "estimate": 2.5337328344774854,
+            "family_bootstrap_95_interval": [
+              2.0005875244709292,
+              3.268197281797833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.203649198893915,
+            "family_bootstrap_95_interval": [
+              9.487250213988064,
+              12.982279455271488
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211333,
+              0.08676552792593538
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.3812108691708302,
+            "family_bootstrap_95_interval": [
+              1.1473027990469473,
+              1.6472270545424104
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.5870146771427631,
+            "family_bootstrap_95_interval": [
+              0.4895321935803416,
+              0.6816090662418791
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.7928783202751746,
+            "family_bootstrap_95_interval": [
+              0.6984724213087014,
+              0.8748599230421079
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7132164065285056,
+            "family_bootstrap_95_interval": [
+              0.6418155638897313,
+              0.7811711496751388
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.433396013799752,
+            "family_bootstrap_95_interval": [
+              0.376243509348347,
+              0.4903109907822872
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.6425312278132292,
+            "family_bootstrap_95_interval": [
+              0.53333257559167,
+              0.7456721259255635
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.513209975270452,
+            "family_bootstrap_95_interval": [
+              0.44117803781173814,
+              0.584121003933322
+            ]
+          },
+          "region_words": {
+            "estimate": 2.5337328344774854,
+            "family_bootstrap_95_interval": [
+              2.0005875244709292,
+              3.268197281797833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.203649198893915,
+            "family_bootstrap_95_interval": [
+              9.487250213988064,
+              12.982279455271488
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211333,
+              0.08676552792593538
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 0.844807088326229,
+            "family_bootstrap_95_interval": [
+              0.6752215544137645,
+              1.0385057158081807
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7524030275130658,
+            "family_bootstrap_95_interval": [
+              0.6670070478455249,
+              0.8309298173651265
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9248215588484295,
+            "family_bootstrap_95_interval": [
+              0.8625005796177673,
+              0.9660076425544941
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8465844295337862,
+            "family_bootstrap_95_interval": [
+              0.7887452316128083,
+              0.8969688177717571
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5978351560995148,
+            "family_bootstrap_95_interval": [
+              0.5416338740821411,
+              0.6490289918516433
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8269290021572218,
+            "family_bootstrap_95_interval": [
+              0.7386027385475734,
+              0.9058234366515828
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6981283600814785,
+            "family_bootstrap_95_interval": [
+              0.6313642724503041,
+              0.7576784119904294
+            ]
+          },
+          "region_words": {
+            "estimate": 2.5337328344774854,
+            "family_bootstrap_95_interval": [
+              2.0005875244709292,
+              3.268197281797833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.203649198893915,
+            "family_bootstrap_95_interval": [
+              9.487250213988064,
+              12.982279455271488
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211333,
+              0.08676552792593538
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 0.7131959522793525,
+            "family_bootstrap_95_interval": [
+              0.5620925347398,
+              0.8733960993125157
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7839080898523779,
+            "family_bootstrap_95_interval": [
+              0.702840760263043,
+              0.8564026559145449
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9621976310950154,
+            "family_bootstrap_95_interval": [
+              0.9457390134483443,
+              0.976806338971243
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8728851475198175,
+            "family_bootstrap_95_interval": [
+              0.8259871690613563,
+              0.9151020426698883
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6825316132717628,
+            "family_bootstrap_95_interval": [
+              0.6253588631608856,
+              0.7359504313730576
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8634758670026024,
+            "family_bootstrap_95_interval": [
+              0.7767449371421334,
+              0.938404578716464
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7924324338645506,
+            "family_bootstrap_95_interval": [
+              0.72556757570448,
+              0.8522087045179888
+            ]
+          },
+          "region_words": {
+            "estimate": 2.5337328344774854,
+            "family_bootstrap_95_interval": [
+              2.0005875244709292,
+              3.268197281797833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.203649198893915,
+            "family_bootstrap_95_interval": [
+              9.487250213988064,
+              12.982279455271488
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0721769786730095,
+            "family_bootstrap_95_interval": [
+              0.05859412104211333,
+              0.08676552792593538
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -1.0919643358374098,
+            "family_bootstrap_95_interval": [
+              -1.2511814872265143,
+              -0.9143159874215289
+            ],
+            "articles_improved": 35
+          },
+          "top1_inside": {
+            "estimate": 0.3754353053850834,
+            "family_bootstrap_95_interval": [
+              0.26347925701797265,
+              0.47555954743170514
+            ],
+            "articles_improved": 29
+          },
+          "top3_inside": {
+            "estimate": 0.4356231857551988,
+            "family_bootstrap_95_interval": [
+              0.34134601265813647,
+              0.5316495209278405
+            ],
+            "articles_improved": 29
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3615717535814505,
+            "family_bootstrap_95_interval": [
+              0.28346029982743076,
+              0.43495035562855716
+            ],
+            "articles_improved": 35
+          },
+          "clicked_probability": {
+            "estimate": 0.28135791008131106,
+            "family_bootstrap_95_interval": [
+              0.2349769921072487,
+              0.3266999034587893
+            ],
+            "articles_improved": 37
+          },
+          "entity_top1_inside": {
+            "estimate": 0.41099672576988056,
+            "family_bootstrap_95_interval": [
+              0.2932227018598759,
+              0.516693580948612
+            ],
+            "articles_improved": 29
+          },
+          "entity_probability": {
+            "estimate": 0.3301381765253248,
+            "family_bootstrap_95_interval": [
+              0.27104933124779856,
+              0.3887410821133729
+            ],
+            "articles_improved": 37
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.6680149168914777,
+            "family_bootstrap_95_interval": [
+              -0.8927063699063156,
+              -0.46021133307111145
+            ],
+            "articles_improved": 35
+          },
+          "top1_inside": {
+            "estimate": 0.1968934127096148,
+            "family_bootstrap_95_interval": [
+              0.09144387135217849,
+              0.30861765868179436
+            ],
+            "articles_improved": 24
+          },
+          "top3_inside": {
+            "estimate": 0.16931931081984086,
+            "family_bootstrap_95_interval": [
+              0.0880592097233377,
+              0.2637745780731257
+            ],
+            "articles_improved": 20
+          },
+          "reciprocal_rank": {
+            "estimate": 0.1596687409913119,
+            "family_bootstrap_95_interval": [
+              0.09088656593054467,
+              0.23227137286002367
+            ],
+            "articles_improved": 28
+          },
+          "clicked_probability": {
+            "estimate": 0.2491355994720108,
+            "family_bootstrap_95_interval": [
+              0.18772710108314533,
+              0.31329101618045496
+            ],
+            "articles_improved": 35
+          },
+          "entity_top1_inside": {
+            "estimate": 0.22094463918937313,
+            "family_bootstrap_95_interval": [
+              0.11715120189753786,
+              0.3283345434358947
+            ],
+            "articles_improved": 23
+          },
+          "entity_probability": {
+            "estimate": 0.27922245859409867,
+            "family_bootstrap_95_interval": [
+              0.21962024983463002,
+              0.34079105089681405
+            ],
+            "articles_improved": 35
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.13161113604687646,
+            "family_bootstrap_95_interval": [
+              -0.21493482884111975,
+              -0.059453727526666576
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.03150506233931216,
+            "family_bootstrap_95_interval": [
+              -0.020863747777917475,
+              0.08556676169392637
+            ],
+            "articles_improved": 14
+          },
+          "top3_inside": {
+            "estimate": 0.0373760722465859,
+            "family_bootstrap_95_interval": [
+              0.0019618605161339955,
+              0.0921842676192471
+            ],
+            "articles_improved": 8
+          },
+          "reciprocal_rank": {
+            "estimate": 0.026300717986031286,
+            "family_bootstrap_95_interval": [
+              -0.00367795352323916,
+              0.056284800167399146
+            ],
+            "articles_improved": 20
+          },
+          "clicked_probability": {
+            "estimate": 0.08469645717224805,
+            "family_bootstrap_95_interval": [
+              0.0562510265336168,
+              0.11569992882531314
+            ],
+            "articles_improved": 29
+          },
+          "entity_top1_inside": {
+            "estimate": 0.03654686484538061,
+            "family_bootstrap_95_interval": [
+              -0.009569200783466954,
+              0.0835333637068793
+            ],
+            "articles_improved": 13
+          },
+          "entity_probability": {
+            "estimate": 0.09430407378307215,
+            "family_bootstrap_95_interval": [
+              0.07082983333306597,
+              0.11907497774657942
+            ],
+            "articles_improved": 33
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.5364037808446013,
+            "family_bootstrap_95_interval": [
+              -0.7135053580139026,
+              -0.36736752001131384
+            ],
+            "articles_improved": 35
+          },
+          "top1_inside": {
+            "estimate": 0.16538835037030264,
+            "family_bootstrap_95_interval": [
+              0.06292241814812609,
+              0.27215646688703193
+            ],
+            "articles_improved": 21
+          },
+          "top3_inside": {
+            "estimate": 0.13194323857325496,
+            "family_bootstrap_95_interval": [
+              0.061364748659484526,
+              0.21829278845956965
+            ],
+            "articles_improved": 19
+          },
+          "reciprocal_rank": {
+            "estimate": 0.1333680230052806,
+            "family_bootstrap_95_interval": [
+              0.06943007464326204,
+              0.20113257494401288
+            ],
+            "articles_improved": 28
+          },
+          "clicked_probability": {
+            "estimate": 0.16443914229976275,
+            "family_bootstrap_95_interval": [
+              0.1129168906871213,
+              0.21858604613090285
+            ],
+            "articles_improved": 33
+          },
+          "entity_top1_inside": {
+            "estimate": 0.18439777434399252,
+            "family_bootstrap_95_interval": [
+              0.08458729901796141,
+              0.2883311785912803
+            ],
+            "articles_improved": 21
+          },
+          "entity_probability": {
+            "estimate": 0.18491838481102651,
+            "family_bootstrap_95_interval": [
+              0.13087738938220142,
+              0.24168236504740637
+            ],
+            "articles_improved": 33
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -3.56321495091207,
+            "family_bootstrap_95_interval": [
+              -3.9429961342149493,
+              -3.1679915828551892
+            ],
+            "articles_improved": 37
+          },
+          "top1_inside": {
+            "estimate": 0.7498126014187647,
+            "family_bootstrap_95_interval": [
+              0.6631163478104675,
+              0.8273320961918874
+            ],
+            "articles_improved": 36
+          },
+          "top3_inside": {
+            "estimate": 0.8732024802370092,
+            "family_bootstrap_95_interval": [
+              0.8352384001859168,
+              0.9066472599835661
+            ],
+            "articles_improved": 37
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7727088909646005,
+            "family_bootstrap_95_interval": [
+              0.7105414433429977,
+              0.8270190973244724
+            ],
+            "articles_improved": 37
+          },
+          "clicked_probability": {
+            "estimate": 0.6484361248381496,
+            "family_bootstrap_95_interval": [
+              0.5832940687912604,
+              0.7083905676855873
+            ],
+            "articles_improved": 37
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7912988883295928,
+            "family_bootstrap_95_interval": [
+              0.6973932614175865,
+              0.8724533172442905
+            ],
+            "articles_improved": 36
+          },
+          "entity_probability": {
+            "estimate": 0.7202554551915411,
+            "family_bootstrap_95_interval": [
+              0.6477465783378963,
+              0.7842622001214609
+            ],
+            "articles_improved": 37
+          }
+        }
+      }
+    },
+    "all_distinct_works": {
+      "articles": 35,
+      "queries": 366,
+      "clicks": 2196,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 4.190257464562198,
+            "family_bootstrap_95_interval": [
+              3.861566714488853,
+              4.512831708123428
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.03553514454561899,
+            "family_bootstrap_95_interval": [
+              0.02314005043667382,
+              0.04981714903430943
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.09272163978014956,
+            "family_bootstrap_95_interval": [
+              0.0644414044069461,
+              0.12357281910174384
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.10400486451226443,
+            "family_bootstrap_95_interval": [
+              0.07886586359034174,
+              0.13057172210894072
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.03553514454561899,
+            "family_bootstrap_95_interval": [
+              0.023140050436673817,
+              0.04981714903430943
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.057398790684834194,
+              0.08733165391530376
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.05739879068483419,
+              0.08733165391530376
+            ]
+          },
+          "region_words": {
+            "estimate": 2.588577370513747,
+            "family_bootstrap_95_interval": [
+              2.0156883620421095,
+              3.3499059097268833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.241703963668375,
+            "family_bootstrap_95_interval": [
+              9.48369418893902,
+              13.122064899871548
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.0573987906848342,
+              0.08733165391530373
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.451569559188312,
+            "family_bootstrap_95_interval": [
+              2.2057588051985335,
+              2.7075702348723443
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.21636597226221288,
+            "family_bootstrap_95_interval": [
+              0.13577684757389646,
+              0.3030039638473473
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.3595346485872802,
+            "family_bootstrap_95_interval": [
+              0.26973338097088095,
+              0.45143909452076747
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3550473672970962,
+            "family_bootstrap_95_interval": [
+              0.281607576995182,
+              0.43209317203247893
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.15520080055453495,
+            "family_bootstrap_95_interval": [
+              0.12400934567855591,
+              0.18859037364047132
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.23656265970175744,
+            "family_bootstrap_95_interval": [
+              0.1513761592243735,
+              0.3271842091874987
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.1854543104701264,
+            "family_bootstrap_95_interval": [
+              0.15432252286010964,
+              0.2177348183300765
+            ]
+          },
+          "region_words": {
+            "estimate": 2.588577370513747,
+            "family_bootstrap_95_interval": [
+              2.0156883620421095,
+              3.3499059097268833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.241703963668375,
+            "family_bootstrap_95_interval": [
+              9.48369418893902,
+              13.122064899871548
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.0573987906848342,
+              0.08733165391530373
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.3834626893017237,
+            "family_bootstrap_95_interval": [
+              1.1436210087582812,
+              1.658735122297511
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.5857897620619424,
+            "family_bootstrap_95_interval": [
+              0.4796866045719804,
+              0.6839307215111537
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.79103056216966,
+            "family_bootstrap_95_interval": [
+              0.6930488060289752,
+              0.8742301668986819
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7120855385274149,
+            "family_bootstrap_95_interval": [
+              0.6353945251947465,
+              0.7827574003310074
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.42897281191273245,
+            "family_bootstrap_95_interval": [
+              0.3679235924138237,
+              0.4861633749304217
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.6404006941818972,
+            "family_bootstrap_95_interval": [
+              0.5236644628297071,
+              0.7483910440659314
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.5065459450413614,
+            "family_bootstrap_95_interval": [
+              0.42982386738178,
+              0.5796520366284835
+            ]
+          },
+          "region_words": {
+            "estimate": 2.588577370513747,
+            "family_bootstrap_95_interval": [
+              2.0156883620421095,
+              3.3499059097268833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.241703963668375,
+            "family_bootstrap_95_interval": [
+              9.48369418893902,
+              13.122064899871548
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.0573987906848342,
+              0.08733165391530373
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 0.836944047289607,
+            "family_bootstrap_95_interval": [
+              0.6653287370980536,
+              1.0400431874663065
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7526392693262366,
+            "family_bootstrap_95_interval": [
+              0.6618319939034789,
+              0.8330506456144802
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9254709369624156,
+            "family_bootstrap_95_interval": [
+              0.8607646026803419,
+              0.9683093278894596
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8473453624507995,
+            "family_bootstrap_95_interval": [
+              0.7862981510055703,
+              0.8993759310388508
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5955744286570952,
+            "family_bootstrap_95_interval": [
+              0.5376824957167028,
+              0.6492119373644815
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8246458736751969,
+            "family_bootstrap_95_interval": [
+              0.7285908998395089,
+              0.906553062002047
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6929457312707852,
+            "family_bootstrap_95_interval": [
+              0.6242263114718517,
+              0.7547510203845712
+            ]
+          },
+          "region_words": {
+            "estimate": 2.588577370513747,
+            "family_bootstrap_95_interval": [
+              2.0156883620421095,
+              3.3499059097268833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.241703963668375,
+            "family_bootstrap_95_interval": [
+              9.48369418893902,
+              13.122064899871548
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.0573987906848342,
+              0.08733165391530373
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 0.7089190942162437,
+            "family_bootstrap_95_interval": [
+              0.5539322589546628,
+              0.8811513077058795
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7831646196373013,
+            "family_bootstrap_95_interval": [
+              0.6961108510381756,
+              0.8580548762374264
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9628234178148966,
+            "family_bootstrap_95_interval": [
+              0.9453807744256115,
+              0.9779756234942075
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8727258946879107,
+            "family_bootstrap_95_interval": [
+              0.8222262894512133,
+              0.9163401923815756
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6813475807826085,
+            "family_bootstrap_95_interval": [
+              0.6217074894521253,
+              0.7369889395891621
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.860553077582401,
+            "family_bootstrap_95_interval": [
+              0.767897394256398,
+              0.9377005130270731
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7876231418810711,
+            "family_bootstrap_95_interval": [
+              0.7177679593907604,
+              0.8495111801834988
+            ]
+          },
+          "region_words": {
+            "estimate": 2.588577370513747,
+            "family_bootstrap_95_interval": [
+              2.0156883620421095,
+              3.3499059097268833
+            ]
+          },
+          "words_back": {
+            "estimate": 11.241703963668375,
+            "family_bootstrap_95_interval": [
+              9.48369418893902,
+              13.122064899871548
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07224204785423985,
+            "family_bootstrap_95_interval": [
+              0.0573987906848342,
+              0.08733165391530373
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -1.0681068698865885,
+            "family_bootstrap_95_interval": [
+              -1.2314481874625072,
+              -0.8893753205716315
+            ],
+            "articles_improved": 33
+          },
+          "top1_inside": {
+            "estimate": 0.36942378979972956,
+            "family_bootstrap_95_interval": [
+              0.25170661530755517,
+              0.47674239232641474
+            ],
+            "articles_improved": 27
+          },
+          "top3_inside": {
+            "estimate": 0.43149591358237976,
+            "family_bootstrap_95_interval": [
+              0.3320373841766699,
+              0.5318535730525393
+            ],
+            "articles_improved": 27
+          },
+          "reciprocal_rank": {
+            "estimate": 0.35703817123031867,
+            "family_bootstrap_95_interval": [
+              0.2756637108511788,
+              0.43373934553349447
+            ],
+            "articles_improved": 33
+          },
+          "clicked_probability": {
+            "estimate": 0.2737720113581975,
+            "family_bootstrap_95_interval": [
+              0.2258541664890845,
+              0.32035922634941394
+            ],
+            "articles_improved": 35
+          },
+          "entity_top1_inside": {
+            "estimate": 0.4038380344801397,
+            "family_bootstrap_95_interval": [
+              0.28063069315535477,
+              0.5168492017548031
+            ],
+            "articles_improved": 27
+          },
+          "entity_probability": {
+            "estimate": 0.321091634571235,
+            "family_bootstrap_95_interval": [
+              0.258557419565513,
+              0.38299087937238824
+            ],
+            "articles_improved": 35
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.67454359508548,
+            "family_bootstrap_95_interval": [
+              -0.9099771166575263,
+              -0.4545042215132695
+            ],
+            "articles_improved": 33
+          },
+          "top1_inside": {
+            "estimate": 0.1973748575753589,
+            "family_bootstrap_95_interval": [
+              0.08477861263863773,
+              0.3160594264456419
+            ],
+            "articles_improved": 22
+          },
+          "top3_inside": {
+            "estimate": 0.1717928556452366,
+            "family_bootstrap_95_interval": [
+              0.08920708010684206,
+              0.2705664333461952
+            ],
+            "articles_improved": 18
+          },
+          "reciprocal_rank": {
+            "estimate": 0.16064035616049588,
+            "family_bootstrap_95_interval": [
+              0.08852180611862502,
+              0.23856882194745646
+            ],
+            "articles_improved": 26
+          },
+          "clicked_probability": {
+            "estimate": 0.25237476886987603,
+            "family_bootstrap_95_interval": [
+              0.18797845709391697,
+              0.31992713703316644
+            ],
+            "articles_improved": 33
+          },
+          "entity_top1_inside": {
+            "estimate": 0.2201523834005038,
+            "family_bootstrap_95_interval": [
+              0.11032942153919598,
+              0.3348464315550782
+            ],
+            "articles_improved": 21
+          },
+          "entity_probability": {
+            "estimate": 0.28107719683970966,
+            "family_bootstrap_95_interval": [
+              0.21716362596386915,
+              0.3459300413878888
+            ],
+            "articles_improved": 33
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.12802495307336337,
+            "family_bootstrap_95_interval": [
+              -0.2143547764355477,
+              -0.05379843769567748
+            ],
+            "articles_improved": 25
+          },
+          "top1_inside": {
+            "estimate": 0.030525350311064736,
+            "family_bootstrap_95_interval": [
+              -0.02734349816849812,
+              0.08748444531658843
+            ],
+            "articles_improved": 13
+          },
+          "top3_inside": {
+            "estimate": 0.037352480852480996,
+            "family_bootstrap_95_interval": [
+              0.0002720957613815106,
+              0.09562659661766812
+            ],
+            "articles_improved": 6
+          },
+          "reciprocal_rank": {
+            "estimate": 0.02538053223711123,
+            "family_bootstrap_95_interval": [
+              -0.0063482441502420595,
+              0.05730173946088957
+            ],
+            "articles_improved": 18
+          },
+          "clicked_probability": {
+            "estimate": 0.08577315212551329,
+            "family_bootstrap_95_interval": [
+              0.0552227718230447,
+              0.11958919091460707
+            ],
+            "articles_improved": 27
+          },
+          "entity_top1_inside": {
+            "estimate": 0.03590720390720403,
+            "family_bootstrap_95_interval": [
+              -0.014630075876504592,
+              0.0861385051456479
+            ],
+            "articles_improved": 11
+          },
+          "entity_probability": {
+            "estimate": 0.0946774106102859,
+            "family_bootstrap_95_interval": [
+              0.06895376402840396,
+              0.12109510566861395
+            ],
+            "articles_improved": 31
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.5465186420121166,
+            "family_bootstrap_95_interval": [
+              -0.7355356111454578,
+              -0.36834298615804595
+            ],
+            "articles_improved": 33
+          },
+          "top1_inside": {
+            "estimate": 0.16684950726429415,
+            "family_bootstrap_95_interval": [
+              0.05689697414578367,
+              0.2838260037175764
+            ],
+            "articles_improved": 19
+          },
+          "top3_inside": {
+            "estimate": 0.1344403747927556,
+            "family_bootstrap_95_interval": [
+              0.060550276733848184,
+              0.22717784546141695
+            ],
+            "articles_improved": 17
+          },
+          "reciprocal_rank": {
+            "estimate": 0.13525982392338465,
+            "family_bootstrap_95_interval": [
+              0.06662229757931808,
+              0.20980674305140853
+            ],
+            "articles_improved": 26
+          },
+          "clicked_probability": {
+            "estimate": 0.16660161674436275,
+            "family_bootstrap_95_interval": [
+              0.11238817513819174,
+              0.22420168684826414
+            ],
+            "articles_improved": 31
+          },
+          "entity_top1_inside": {
+            "estimate": 0.18424517949329977,
+            "family_bootstrap_95_interval": [
+              0.07718747433296311,
+              0.2961720466459188
+            ],
+            "articles_improved": 19
+          },
+          "entity_probability": {
+            "estimate": 0.18639978622942377,
+            "family_bootstrap_95_interval": [
+              0.12966253449188395,
+              0.2457957110609624
+            ],
+            "articles_improved": 31
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -3.481338370345955,
+            "family_bootstrap_95_interval": [
+              -3.867290948854728,
+              -3.0824819790300984
+            ],
+            "articles_improved": 35
+          },
+          "top1_inside": {
+            "estimate": 0.7476294750916823,
+            "family_bootstrap_95_interval": [
+              0.6543485216900791,
+              0.8279301471171752
+            ],
+            "articles_improved": 34
+          },
+          "top3_inside": {
+            "estimate": 0.870101778034747,
+            "family_bootstrap_95_interval": [
+              0.8308072205442034,
+              0.9051246344993095
+            ],
+            "articles_improved": 35
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7687210301756463,
+            "family_bootstrap_95_interval": [
+              0.7025774495436885,
+              0.8263090440127867
+            ],
+            "articles_improved": 35
+          },
+          "clicked_probability": {
+            "estimate": 0.6458124362369895,
+            "family_bootstrap_95_interval": [
+              0.5780457172625336,
+              0.7084258204553477
+            ],
+            "articles_improved": 35
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7883110297281611,
+            "family_bootstrap_95_interval": [
+              0.6878711997204846,
+              0.8722291550660028
+            ],
+            "articles_improved": 34
+          },
+          "entity_probability": {
+            "estimate": 0.7153810940268313,
+            "family_bootstrap_95_interval": [
+              0.6384494891170447,
+              0.7823033476966428
+            ],
+            "articles_improved": 35
+          }
+        }
+      }
+    },
+    "genre_gnome": {
+      "articles": 5,
+      "queries": 13,
+      "clicks": 136,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 3.1719810534079813,
+            "family_bootstrap_95_interval": [
+              2.636306355651315,
+              3.6439753486800535
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.056886842130798795,
+            "family_bootstrap_95_interval": [
+              0.03423605154020197,
+              0.09387403105050163
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.1580500951675151,
+            "family_bootstrap_95_interval": [
+              0.0988399453147231,
+              0.2514069095563748
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.16726173131312422,
+            "family_bootstrap_95_interval": [
+              0.11774511119487667,
+              0.23800389929503352
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.05688684213079881,
+            "family_bootstrap_95_interval": [
+              0.03423605154020197,
+              0.09387403105050166
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.11681916786782302,
+            "family_bootstrap_95_interval": [
+              0.09018635063692446,
+              0.14371301635959172
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.11681916786782302,
+            "family_bootstrap_95_interval": [
+              0.09018635063692447,
+              0.1437130163595917
+            ]
+          },
+          "region_words": {
+            "estimate": 4.632240093240093,
+            "family_bootstrap_95_interval": [
+              2.2453333333333334,
+              8.702599067599069
+            ]
+          },
+          "words_back": {
+            "estimate": 7.821592074592074,
+            "family_bootstrap_95_interval": [
+              3.5655538461538496,
+              13.625333333333334
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.11681916786782305,
+            "family_bootstrap_95_interval": [
+              0.09018635063692448,
+              0.14371301635959172
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.2006989668376864,
+            "family_bootstrap_95_interval": [
+              1.206292122710548,
+              3.479710074035819
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.4817264957264958,
+            "family_bootstrap_95_interval": [
+              0.2,
+              0.7634529914529915
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.6271810411810412,
+            "family_bootstrap_95_interval": [
+              0.2942222222222223,
+              0.9163418803418804
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.5931031750345518,
+            "family_bootstrap_95_interval": [
+              0.31162322529235564,
+              0.836941798941799
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.24240967736244395,
+            "family_bootstrap_95_interval": [
+              0.10999640384427085,
+              0.3874714160013498
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.4946153846153846,
+            "family_bootstrap_95_interval": [
+              0.2,
+              0.7892307692307693
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.2629555167405377,
+            "family_bootstrap_95_interval": [
+              0.11532388432222915,
+              0.4050815082626056
+            ]
+          },
+          "region_words": {
+            "estimate": 4.632240093240093,
+            "family_bootstrap_95_interval": [
+              2.2453333333333334,
+              8.702599067599069
+            ]
+          },
+          "words_back": {
+            "estimate": 7.821592074592074,
+            "family_bootstrap_95_interval": [
+              3.5655538461538496,
+              13.625333333333334
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.11681916786782305,
+            "family_bootstrap_95_interval": [
+              0.09018635063692448,
+              0.14371301635959172
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.4983089623482597,
+            "family_bootstrap_95_interval": [
+              0.6681251722256223,
+              3.01444739741342
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7323519813519814,
+            "family_bootstrap_95_interval": [
+              0.3631212121212121,
+              0.9496853146853146
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.7651709401709402,
+            "family_bootstrap_95_interval": [
+              0.3805555555555556,
+              0.9801709401709402
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7786804127120218,
+            "family_bootstrap_95_interval": [
+              0.45272594997594995,
+              0.9664535809018568
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.4847707780464935,
+            "family_bootstrap_95_interval": [
+              0.24240387837118543,
+              0.657820984372294
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7646853146853146,
+            "family_bootstrap_95_interval": [
+              0.36923076923076925,
+              0.9954545454545455
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.5394740842049294,
+            "family_bootstrap_95_interval": [
+              0.2603441401819735,
+              0.7650942432382773
+            ]
+          },
+          "region_words": {
+            "estimate": 4.632240093240093,
+            "family_bootstrap_95_interval": [
+              2.2453333333333334,
+              8.702599067599069
+            ]
+          },
+          "words_back": {
+            "estimate": 7.821592074592074,
+            "family_bootstrap_95_interval": [
+              3.5655538461538496,
+              13.625333333333334
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.11681916786782305,
+            "family_bootstrap_95_interval": [
+              0.09018635063692448,
+              0.14371301635959172
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 1.0773296610564493,
+            "family_bootstrap_95_interval": [
+              0.39987087527798726,
+              2.0988442187257657
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.567052836052836,
+            "family_bootstrap_95_interval": [
+              0.20660839160839162,
+              0.8813535353535353
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.7647863247863248,
+            "family_bootstrap_95_interval": [
+              0.36923076923076925,
+              0.9955555555555555
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7071289142955809,
+            "family_bootstrap_95_interval": [
+              0.40963614163614165,
+              0.9389483726150394
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5496865405680105,
+            "family_bootstrap_95_interval": [
+              0.30638962726319574,
+              0.7321996317662641
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.6416083916083916,
+            "family_bootstrap_95_interval": [
+              0.24615384615384617,
+              0.9954545454545455
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6192543439288546,
+            "family_bootstrap_95_interval": [
+              0.3238854775014913,
+              0.8358892141490017
+            ]
+          },
+          "region_words": {
+            "estimate": 4.632240093240093,
+            "family_bootstrap_95_interval": [
+              2.2453333333333334,
+              8.702599067599069
+            ]
+          },
+          "words_back": {
+            "estimate": 7.821592074592074,
+            "family_bootstrap_95_interval": [
+              3.5655538461538496,
+              13.625333333333334
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.11681916786782305,
+            "family_bootstrap_95_interval": [
+              0.09018635063692448,
+              0.14371301635959172
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 0.8476621969034547,
+            "family_bootstrap_95_interval": [
+              0.33651169817540066,
+              1.418505196270827
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.5892750582750583,
+            "family_bootstrap_95_interval": [
+              0.22882051282051283,
+              0.9257878787878788
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9335742035742036,
+            "family_bootstrap_95_interval": [
+              0.8765811965811967,
+              0.9865656565656566
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7702896547896547,
+            "family_bootstrap_95_interval": [
+              0.5668156288156287,
+              0.9591565656565656
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6447047872610502,
+            "family_bootstrap_95_interval": [
+              0.3948611084055914,
+              0.8440235217431299
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.6416083916083916,
+            "family_bootstrap_95_interval": [
+              0.24615384615384617,
+              0.9954545454545455
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7254452636869395,
+            "family_bootstrap_95_interval": [
+              0.4559928992286365,
+              0.9520870080314587
+            ]
+          },
+          "region_words": {
+            "estimate": 4.632240093240093,
+            "family_bootstrap_95_interval": [
+              2.2453333333333334,
+              8.702599067599069
+            ]
+          },
+          "words_back": {
+            "estimate": 7.821592074592074,
+            "family_bootstrap_95_interval": [
+              3.5655538461538496,
+              13.625333333333334
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.11681916786782305,
+            "family_bootstrap_95_interval": [
+              0.09018635063692448,
+              0.14371301635959172
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -0.7023900044894267,
+            "family_bootstrap_95_interval": [
+              -1.2119685589829352,
+              -0.20202281094132024
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": 0.25062548562548564,
+            "family_bootstrap_95_interval": [
+              0.0047863247863247915,
+              0.4964646464646464
+            ],
+            "articles_improved": 3
+          },
+          "top3_inside": {
+            "estimate": 0.137989898989899,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.3170808080808082
+            ],
+            "articles_improved": 2
+          },
+          "reciprocal_rank": {
+            "estimate": 0.18557723767747003,
+            "family_bootstrap_95_interval": [
+              0.03572663607146365,
+              0.36058319261014904
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.24236110068404954,
+            "family_bootstrap_95_interval": [
+              0.10508050805591757,
+              0.37478934638556216
+            ],
+            "articles_improved": 5
+          },
+          "entity_top1_inside": {
+            "estimate": 0.27006993006993,
+            "family_bootstrap_95_interval": [
+              0.009230769230769265,
+              0.5363636363636364
+            ],
+            "articles_improved": 3
+          },
+          "entity_probability": {
+            "estimate": 0.2765185674643917,
+            "family_bootstrap_95_interval": [
+              0.11625255257201073,
+              0.43678458235677275
+            ],
+            "articles_improved": 5
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.650646765444805,
+            "family_bootstrap_95_interval": [
+              -1.6134885664464123,
+              -0.02223980271159265
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": -0.1430769230769231,
+            "family_bootstrap_95_interval": [
+              -0.38923076923076916,
+              0.0
+            ],
+            "articles_improved": 0
+          },
+          "top3_inside": {
+            "estimate": 0.1684032634032634,
+            "family_bootstrap_95_interval": [
+              -0.03569930069930072,
+              0.5199999999999999
+            ],
+            "articles_improved": 2
+          },
+          "reciprocal_rank": {
+            "estimate": -0.008390757922367098,
+            "family_bootstrap_95_interval": [
+              -0.1911519514967791,
+              0.17906553631553623
+            ],
+            "articles_improved": 2
+          },
+          "clicked_probability": {
+            "estimate": 0.1599340092145567,
+            "family_bootstrap_95_interval": [
+              -0.010863654691344982,
+              0.30499551780324513
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": -0.12307692307692308,
+            "family_bootstrap_95_interval": [
+              -0.36923076923076925,
+              0.0
+            ],
+            "articles_improved": 0
+          },
+          "entity_probability": {
+            "estimate": 0.18597117948201014,
+            "family_bootstrap_95_interval": [
+              0.009170775171378653,
+              0.3457122563979921
+            ],
+            "articles_improved": 4
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.22966746415299466,
+            "family_bootstrap_95_interval": [
+              -0.6965632530889498,
+              0.08521055645822356
+            ],
+            "articles_improved": 3
+          },
+          "top1_inside": {
+            "estimate": 0.022222222222222365,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.06666666666666676
+            ],
+            "articles_improved": 1
+          },
+          "top3_inside": {
+            "estimate": 0.16878787878787882,
+            "family_bootstrap_95_interval": [
+              -0.013636363636363669,
+              0.5199999999999999
+            ],
+            "articles_improved": 1
+          },
+          "reciprocal_rank": {
+            "estimate": 0.06316074049407383,
+            "family_bootstrap_95_interval": [
+              -0.0021145521145522483,
+              0.1663084816418149
+            ],
+            "articles_improved": 3
+          },
+          "clicked_probability": {
+            "estimate": 0.09501824669303971,
+            "family_bootstrap_95_interval": [
+              0.03921528989182144,
+              0.13464455262581954
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": 0.0,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.0
+            ],
+            "articles_improved": 0
+          },
+          "entity_probability": {
+            "estimate": 0.10619091975808492,
+            "family_bootstrap_95_interval": [
+              0.04252850135459685,
+              0.1576081278159338
+            ],
+            "articles_improved": 4
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.4209793012918104,
+            "family_bootstrap_95_interval": [
+              -0.9401003571763091,
+              -0.007226097817942034
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": -0.16529914529914547,
+            "family_bootstrap_95_interval": [
+              -0.3914529914529914,
+              -0.020000000000000018
+            ],
+            "articles_improved": 0
+          },
+          "top3_inside": {
+            "estimate": -0.00038461538461542766,
+            "family_bootstrap_95_interval": [
+              -0.0461538461538461,
+              0.04499999999999993
+            ],
+            "articles_improved": 1
+          },
+          "reciprocal_rank": {
+            "estimate": -0.07155149841644093,
+            "family_bootstrap_95_interval": [
+              -0.2044053770835379,
+              0.019007054673721435
+            ],
+            "articles_improved": 1
+          },
+          "clicked_probability": {
+            "estimate": 0.06491576252151698,
+            "family_bootstrap_95_interval": [
+              -0.057019807382004795,
+              0.18685133242503876
+            ],
+            "articles_improved": 3
+          },
+          "entity_top1_inside": {
+            "estimate": -0.12307692307692308,
+            "family_bootstrap_95_interval": [
+              -0.36923076923076925,
+              0.0
+            ],
+            "articles_improved": 0
+          },
+          "entity_probability": {
+            "estimate": 0.07978025972392522,
+            "family_bootstrap_95_interval": [
+              -0.05103441640291817,
+              0.2105949358507685
+            ],
+            "articles_improved": 3
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -2.3243188565045267,
+            "family_bootstrap_95_interval": [
+              -3.15006873524113,
+              -1.4985689777679243
+            ],
+            "articles_improved": 5
+          },
+          "top1_inside": {
+            "estimate": 0.5323882161442596,
+            "family_bootstrap_95_interval": [
+              0.1664483768601416,
+              0.8881899410262423
+            ],
+            "articles_improved": 4
+          },
+          "top3_inside": {
+            "estimate": 0.7755241084066885,
+            "family_bootstrap_95_interval": [
+              0.6300718206742357,
+              0.8844980085375053
+            ],
+            "articles_improved": 5
+          },
+          "reciprocal_rank": {
+            "estimate": 0.6030279234765306,
+            "family_bootstrap_95_interval": [
+              0.37860368777991477,
+              0.8273288521700431
+            ],
+            "articles_improved": 5
+          },
+          "clicked_probability": {
+            "estimate": 0.5878179451302514,
+            "family_bootstrap_95_interval": [
+              0.33248897244522013,
+              0.8064255839814933
+            ],
+            "articles_improved": 5
+          },
+          "entity_top1_inside": {
+            "estimate": 0.5247892237405686,
+            "family_bootstrap_95_interval": [
+              0.13280745786628145,
+              0.8833543221392036
+            ],
+            "articles_improved": 4
+          },
+          "entity_probability": {
+            "estimate": 0.6086260958191165,
+            "family_bootstrap_95_interval": [
+              0.34281605975892504,
+              0.8445322392615714
+            ],
+            "articles_improved": 5
+          }
+        }
+      }
+    },
+    "nonlocal_10words": {
+      "articles": 31,
+      "queries": 187,
+      "clicks": 817,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 4.356645968663056,
+            "family_bootstrap_95_interval": [
+              3.961223460712377,
+              4.765383983773077
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.028063180406606755,
+            "family_bootstrap_95_interval": [
+              0.018066214481229987,
+              0.03911719539927761
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.07974803884874557,
+            "family_bootstrap_95_interval": [
+              0.052258487756062816,
+              0.11002234664474726
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.09249806692932352,
+            "family_bootstrap_95_interval": [
+              0.06713656535960608,
+              0.11955750374274636
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.02806318040660675,
+            "family_bootstrap_95_interval": [
+              0.018066214481229984,
+              0.03911719539927762
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.07178855398867627,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295632
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.07178855398867627,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295632
+            ]
+          },
+          "region_words": {
+            "estimate": 2.304075315365638,
+            "family_bootstrap_95_interval": [
+              1.9132921961550995,
+              2.745415677512452
+            ]
+          },
+          "words_back": {
+            "estimate": 23.65825600474794,
+            "family_bootstrap_95_interval": [
+              19.812458439521944,
+              27.889872383105242
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07178855398867628,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295633
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 3.6718028823536533,
+            "family_bootstrap_95_interval": [
+              3.301209343532617,
+              4.045504860529141
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.0,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.0,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.0
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.07790828872628687,
+            "family_bootstrap_95_interval": [
+              0.0692641259240961,
+              0.08709456702286034
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.07034884107387158,
+            "family_bootstrap_95_interval": [
+              0.050934265083916505,
+              0.09533754841654371
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.11545698924731183,
+            "family_bootstrap_95_interval": [
+              0.050268817204301076,
+              0.190994623655914
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.1296138325243162,
+            "family_bootstrap_95_interval": [
+              0.1052801916003516,
+              0.15578819866703297
+            ]
+          },
+          "region_words": {
+            "estimate": 2.304075315365638,
+            "family_bootstrap_95_interval": [
+              1.9132921961550995,
+              2.745415677512452
+            ]
+          },
+          "words_back": {
+            "estimate": 23.65825600474794,
+            "family_bootstrap_95_interval": [
+              19.812458439521944,
+              27.889872383105242
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07178855398867628,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295633
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 2.747148359293594,
+            "family_bootstrap_95_interval": [
+              2.2902297839738286,
+              3.226110595173756
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.23752693990597215,
+            "family_bootstrap_95_interval": [
+              0.14914448779267328,
+              0.3391715018852115
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.5220452218032863,
+            "family_bootstrap_95_interval": [
+              0.40670346902201737,
+              0.6433525011055254
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.4370719253413376,
+            "family_bootstrap_95_interval": [
+              0.3635940984726925,
+              0.5184232482600547
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.22124703982179425,
+            "family_bootstrap_95_interval": [
+              0.16990216018894513,
+              0.27984794724184864
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.516439452124936,
+            "family_bootstrap_95_interval": [
+              0.38399849590373786,
+              0.652654329877112
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.4672119300381072,
+            "family_bootstrap_95_interval": [
+              0.3731345485935383,
+              0.5642433666359007
+            ]
+          },
+          "region_words": {
+            "estimate": 2.304075315365638,
+            "family_bootstrap_95_interval": [
+              1.9132921961550995,
+              2.745415677512452
+            ]
+          },
+          "words_back": {
+            "estimate": 23.65825600474794,
+            "family_bootstrap_95_interval": [
+              19.812458439521944,
+              27.889872383105242
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07178855398867628,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295633
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 2.1148685937547542,
+            "family_bootstrap_95_interval": [
+              1.664274922698396,
+              2.5732976450303857
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.4768478564446306,
+            "family_bootstrap_95_interval": [
+              0.35097302227342553,
+              0.6065200492831541
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.7567911255411256,
+            "family_bootstrap_95_interval": [
+              0.6599924940650747,
+              0.8456240544849416
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.6367014837436763,
+            "family_bootstrap_95_interval": [
+              0.5473722924015204,
+              0.7296097778342278
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.3682261556160603,
+            "family_bootstrap_95_interval": [
+              0.29505633033785056,
+              0.44501732065604127
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7487359190988224,
+            "family_bootstrap_95_interval": [
+              0.6238464861751152,
+              0.8632539682539683
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6474093121317909,
+            "family_bootstrap_95_interval": [
+              0.5591935488456389,
+              0.7325530622241474
+            ]
+          },
+          "region_words": {
+            "estimate": 2.304075315365638,
+            "family_bootstrap_95_interval": [
+              1.9132921961550995,
+              2.745415677512452
+            ]
+          },
+          "words_back": {
+            "estimate": 23.65825600474794,
+            "family_bootstrap_95_interval": [
+              19.812458439521944,
+              27.889872383105242
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07178855398867628,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295633
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 2.119147652377962,
+            "family_bootstrap_95_interval": [
+              1.5778307445204423,
+              2.66803586733483
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.4953898431317787,
+            "family_bootstrap_95_interval": [
+              0.3734058877950007,
+              0.6199170390541358
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.798864218219057,
+            "family_bootstrap_95_interval": [
+              0.7167670003607504,
+              0.8753524661942002
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.6637561255643748,
+            "family_bootstrap_95_interval": [
+              0.586108857864284,
+              0.7460216141105483
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.4431074031626879,
+            "family_bootstrap_95_interval": [
+              0.352943434519435,
+              0.5381796259454926
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8015072964669738,
+            "family_bootstrap_95_interval": [
+              0.6895161290322581,
+              0.9029874711981567
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7503139521151173,
+            "family_bootstrap_95_interval": [
+              0.6601311686062414,
+              0.8335068598812277
+            ]
+          },
+          "region_words": {
+            "estimate": 2.304075315365638,
+            "family_bootstrap_95_interval": [
+              1.9132921961550995,
+              2.745415677512452
+            ]
+          },
+          "words_back": {
+            "estimate": 23.65825600474794,
+            "family_bootstrap_95_interval": [
+              19.812458439521944,
+              27.889872383105242
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07178855398867628,
+            "family_bootstrap_95_interval": [
+              0.05823058880574055,
+              0.08637553480295633
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -0.9246545230600591,
+            "family_bootstrap_95_interval": [
+              -1.213821726197828,
+              -0.598119104856683
+            ],
+            "articles_improved": 28
+          },
+          "top1_inside": {
+            "estimate": 0.23752693990597215,
+            "family_bootstrap_95_interval": [
+              0.14914448779267328,
+              0.3391715018852115
+            ],
+            "articles_improved": 17
+          },
+          "top3_inside": {
+            "estimate": 0.5220452218032863,
+            "family_bootstrap_95_interval": [
+              0.40670346902201737,
+              0.6433525011055254
+            ],
+            "articles_improved": 25
+          },
+          "reciprocal_rank": {
+            "estimate": 0.35916363661505074,
+            "family_bootstrap_95_interval": [
+              0.29113729517104925,
+              0.4344977408834743
+            ],
+            "articles_improved": 31
+          },
+          "clicked_probability": {
+            "estimate": 0.15089819874792265,
+            "family_bootstrap_95_interval": [
+              0.10873954185831652,
+              0.19952544685785095
+            ],
+            "articles_improved": 30
+          },
+          "entity_top1_inside": {
+            "estimate": 0.4009824628776242,
+            "family_bootstrap_95_interval": [
+              0.294678699436764,
+              0.5154491487455196
+            ],
+            "articles_improved": 22
+          },
+          "entity_probability": {
+            "estimate": 0.337598097513791,
+            "family_bootstrap_95_interval": [
+              0.25996472689360833,
+              0.4198689145304916
+            ],
+            "articles_improved": 31
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.6280007069156319,
+            "family_bootstrap_95_interval": [
+              -0.9602998190166827,
+              -0.28581605889588924
+            ],
+            "articles_improved": 24
+          },
+          "top1_inside": {
+            "estimate": 0.2578629032258065,
+            "family_bootstrap_95_interval": [
+              0.13689348118279565,
+              0.39398129480286725
+            ],
+            "articles_improved": 18
+          },
+          "top3_inside": {
+            "estimate": 0.2768189964157707,
+            "family_bootstrap_95_interval": [
+              0.1681003584229389,
+              0.39498275089605733
+            ],
+            "articles_improved": 19
+          },
+          "reciprocal_rank": {
+            "estimate": 0.2266842002230372,
+            "family_bootstrap_95_interval": [
+              0.1493189607138425,
+              0.3093082112284883
+            ],
+            "articles_improved": 27
+          },
+          "clicked_probability": {
+            "estimate": 0.22186036334089362,
+            "family_bootstrap_95_interval": [
+              0.1465071115308537,
+              0.30771890390728324
+            ],
+            "articles_improved": 27
+          },
+          "entity_top1_inside": {
+            "estimate": 0.2850678443420378,
+            "family_bootstrap_95_interval": [
+              0.1700897657450077,
+              0.41541602662570387
+            ],
+            "articles_improved": 18
+          },
+          "entity_probability": {
+            "estimate": 0.28310202207701013,
+            "family_bootstrap_95_interval": [
+              0.20796927630066528,
+              0.36557896517049715
+            ],
+            "articles_improved": 28
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": 0.0042790586232079875,
+            "family_bootstrap_95_interval": [
+              -0.1815125619875752,
+              0.20451379183426271
+            ],
+            "articles_improved": 17
+          },
+          "top1_inside": {
+            "estimate": 0.01854198668714807,
+            "family_bootstrap_95_interval": [
+              -0.044802867383512524,
+              0.08018529185867902
+            ],
+            "articles_improved": 9
+          },
+          "top3_inside": {
+            "estimate": 0.042073092677931356,
+            "family_bootstrap_95_interval": [
+              -0.042507600486431193,
+              0.14468950012800813
+            ],
+            "articles_improved": 6
+          },
+          "reciprocal_rank": {
+            "estimate": 0.0270546418206985,
+            "family_bootstrap_95_interval": [
+              -0.01256085153482854,
+              0.06576037612712253
+            ],
+            "articles_improved": 16
+          },
+          "clicked_probability": {
+            "estimate": 0.07488124754662756,
+            "family_bootstrap_95_interval": [
+              0.03917763199866809,
+              0.11510596840801122
+            ],
+            "articles_improved": 23
+          },
+          "entity_top1_inside": {
+            "estimate": 0.052771377368151406,
+            "family_bootstrap_95_interval": [
+              -0.013321172555043457,
+              0.11881096390168981
+            ],
+            "articles_improved": 10
+          },
+          "entity_probability": {
+            "estimate": 0.10290463998332644,
+            "family_bootstrap_95_interval": [
+              0.07224165782422429,
+              0.1348895513097149
+            ],
+            "articles_improved": 29
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.6322797655388399,
+            "family_bootstrap_95_interval": [
+              -0.8697804892719905,
+              -0.39204789353625885
+            ],
+            "articles_improved": 24
+          },
+          "top1_inside": {
+            "estimate": 0.23932091653865847,
+            "family_bootstrap_95_interval": [
+              0.12414706541218634,
+              0.3698687115975421
+            ],
+            "articles_improved": 17
+          },
+          "top3_inside": {
+            "estimate": 0.23474590373783932,
+            "family_bootstrap_95_interval": [
+              0.13999052739375337,
+              0.3385780049923195
+            ],
+            "articles_improved": 20
+          },
+          "reciprocal_rank": {
+            "estimate": 0.1996295584023387,
+            "family_bootstrap_95_interval": [
+              0.12341752428348562,
+              0.28338755952729233
+            ],
+            "articles_improved": 26
+          },
+          "clicked_probability": {
+            "estimate": 0.14697911579426606,
+            "family_bootstrap_95_interval": [
+              0.08915579903772294,
+              0.2106601549322462
+            ],
+            "articles_improved": 25
+          },
+          "entity_top1_inside": {
+            "estimate": 0.2322964669738864,
+            "family_bootstrap_95_interval": [
+              0.11804627496159749,
+              0.36244719662058367
+            ],
+            "articles_improved": 16
+          },
+          "entity_probability": {
+            "estimate": 0.1801973820936837,
+            "family_bootstrap_95_interval": [
+              0.1189821693512237,
+              0.24897611360050712
+            ],
+            "articles_improved": 25
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -2.2374983162850937,
+            "family_bootstrap_95_interval": [
+              -2.9074648256532933,
+              -1.5528388604921974
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.4673266627251719,
+            "family_bootstrap_95_interval": [
+              0.34122668516236826,
+              0.5945786050895856
+            ],
+            "articles_improved": 25
+          },
+          "top3_inside": {
+            "estimate": 0.7191161793703114,
+            "family_bootstrap_95_interval": [
+              0.6384538449434292,
+              0.7980930151305481
+            ],
+            "articles_improved": 31
+          },
+          "reciprocal_rank": {
+            "estimate": 0.5712580586350513,
+            "family_bootstrap_95_interval": [
+              0.481827360299382,
+              0.662259625868405
+            ],
+            "articles_improved": 31
+          },
+          "clicked_probability": {
+            "estimate": 0.4150442227560811,
+            "family_bootstrap_95_interval": [
+              0.32013080459844395,
+              0.5141818493975149
+            ],
+            "articles_improved": 29
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7297187424782976,
+            "family_bootstrap_95_interval": [
+              0.6144786538234391,
+              0.8332502973353221
+            ],
+            "articles_improved": 28
+          },
+          "entity_probability": {
+            "estimate": 0.6785253981264411,
+            "family_bootstrap_95_interval": [
+              0.5863549911625346,
+              0.7625744072253605
+            ],
+            "articles_improved": 30
+          }
+        }
+      }
+    },
+    "disputed_entity": {
+      "articles": 16,
+      "queries": 38,
+      "clicks": 275,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 4.126173614441767,
+            "family_bootstrap_95_interval": [
+              3.4391664815869167,
+              4.793050309646931
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.057537541217886144,
+            "family_bootstrap_95_interval": [
+              0.02351226814686556,
+              0.10551134017004518
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.12889630324658252,
+            "family_bootstrap_95_interval": [
+              0.06483099166182725,
+              0.20485888074411476
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.13271752447116394,
+            "family_bootstrap_95_interval": [
+              0.07604206533415814,
+              0.19985285615494575
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.057537541217886144,
+            "family_bootstrap_95_interval": [
+              0.02351226814686555,
+              0.1055113401700452
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.08690718608283868,
+            "family_bootstrap_95_interval": [
+              0.051378401668437435,
+              0.13273010865174456
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.08690718608283866,
+            "family_bootstrap_95_interval": [
+              0.05137840166843745,
+              0.13273010865174456
+            ]
+          },
+          "region_words": {
+            "estimate": 3.7200170039338274,
+            "family_bootstrap_95_interval": [
+              2.3790591908613528,
+              5.4250960813413815
+            ]
+          },
+          "words_back": {
+            "estimate": 10.276841443852724,
+            "family_bootstrap_95_interval": [
+              7.0517104321313075,
+              13.791895669825943
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.08690718608283866,
+            "family_bootstrap_95_interval": [
+              0.05137840166843745,
+              0.13273010865174456
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.441913308762472,
+            "family_bootstrap_95_interval": [
+              1.9761484640902849,
+              2.9478127896980024
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.21104226244028876,
+            "family_bootstrap_95_interval": [
+              0.06960978835978837,
+              0.3771109799070325
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.4306149868649869,
+            "family_bootstrap_95_interval": [
+              0.27123882741892613,
+              0.6005223611823117
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.37625845014046094,
+            "family_bootstrap_95_interval": [
+              0.2561576761651742,
+              0.5115816380231184
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.18153366499297174,
+            "family_bootstrap_95_interval": [
+              0.12232245229118978,
+              0.24491821175733172
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.21104226244028876,
+            "family_bootstrap_95_interval": [
+              0.06960978835978837,
+              0.3771109799070325
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.19941943770648757,
+            "family_bootstrap_95_interval": [
+              0.14444043391266492,
+              0.25851644288572984
+            ]
+          },
+          "region_words": {
+            "estimate": 3.7200170039338274,
+            "family_bootstrap_95_interval": [
+              2.3790591908613528,
+              5.4250960813413815
+            ]
+          },
+          "words_back": {
+            "estimate": 10.276841443852724,
+            "family_bootstrap_95_interval": [
+              7.0517104321313075,
+              13.791895669825943
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.08690718608283866,
+            "family_bootstrap_95_interval": [
+              0.05137840166843745,
+              0.13273010865174456
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.5184289718721886,
+            "family_bootstrap_95_interval": [
+              1.1165316776603924,
+              2.0362450696978325
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.5798451557145166,
+            "family_bootstrap_95_interval": [
+              0.4211469774894939,
+              0.7313420414172294
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.7986904390687285,
+            "family_bootstrap_95_interval": [
+              0.6504610514211666,
+              0.9183639179260068
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7144075335871328,
+            "family_bootstrap_95_interval": [
+              0.5927589296662897,
+              0.8250124238250334
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.4276697599725368,
+            "family_bootstrap_95_interval": [
+              0.34710047793222243,
+              0.49886718256038576
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.5985618495956841,
+            "family_bootstrap_95_interval": [
+              0.43486597776570757,
+              0.7513135857067952
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.46359643433900566,
+            "family_bootstrap_95_interval": [
+              0.3800774873421081,
+              0.5356148012009003
+            ]
+          },
+          "region_words": {
+            "estimate": 3.7200170039338274,
+            "family_bootstrap_95_interval": [
+              2.3790591908613528,
+              5.4250960813413815
+            ]
+          },
+          "words_back": {
+            "estimate": 10.276841443852724,
+            "family_bootstrap_95_interval": [
+              7.0517104321313075,
+              13.791895669825943
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.08690718608283866,
+            "family_bootstrap_95_interval": [
+              0.05137840166843745,
+              0.13273010865174456
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 1.2559127421548228,
+            "family_bootstrap_95_interval": [
+              0.8972217807860654,
+              1.6513519996578032
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.6476344874841116,
+            "family_bootstrap_95_interval": [
+              0.49066356305166214,
+              0.7940605093462823
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.810929704432994,
+            "family_bootstrap_95_interval": [
+              0.666385786636609,
+              0.9212403066597146
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7563385639212259,
+            "family_bootstrap_95_interval": [
+              0.637939809227879,
+              0.8615748992773931
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5167483846828462,
+            "family_bootstrap_95_interval": [
+              0.41831028039335577,
+              0.6094990323176004
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.6817281654922632,
+            "family_bootstrap_95_interval": [
+              0.5212312240026056,
+              0.8286354024699888
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.5736767526963038,
+            "family_bootstrap_95_interval": [
+              0.47265440229957617,
+              0.6689520477779489
+            ]
+          },
+          "region_words": {
+            "estimate": 3.7200170039338274,
+            "family_bootstrap_95_interval": [
+              2.3790591908613528,
+              5.4250960813413815
+            ]
+          },
+          "words_back": {
+            "estimate": 10.276841443852724,
+            "family_bootstrap_95_interval": [
+              7.0517104321313075,
+              13.791895669825943
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.08690718608283866,
+            "family_bootstrap_95_interval": [
+              0.05137840166843745,
+              0.13273010865174456
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 1.1204345220920349,
+            "family_bootstrap_95_interval": [
+              0.7996059239100307,
+              1.4403519143936678
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.6268011541507782,
+            "family_bootstrap_95_interval": [
+              0.46809443751084967,
+              0.7761912424459416
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9340259947167843,
+            "family_bootstrap_95_interval": [
+              0.9068966527806988,
+              0.9607097376916456
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7767319650786915,
+            "family_bootstrap_95_interval": [
+              0.6883030719344909,
+              0.8616207433684692
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6012047215570284,
+            "family_bootstrap_95_interval": [
+              0.4855583556803814,
+              0.7160678626762085
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.66089483215893,
+            "family_bootstrap_95_interval": [
+              0.5013660080694855,
+              0.8047099291207608
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6579235756630596,
+            "family_bootstrap_95_interval": [
+              0.5479785419358566,
+              0.7641220615972512
+            ]
+          },
+          "region_words": {
+            "estimate": 3.7200170039338274,
+            "family_bootstrap_95_interval": [
+              2.3790591908613528,
+              5.4250960813413815
+            ]
+          },
+          "words_back": {
+            "estimate": 10.276841443852724,
+            "family_bootstrap_95_interval": [
+              7.0517104321313075,
+              13.791895669825943
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.08690718608283866,
+            "family_bootstrap_95_interval": [
+              0.05137840166843745,
+              0.13273010865174456
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -0.9234843368902834,
+            "family_bootstrap_95_interval": [
+              -1.2428474385011736,
+              -0.6238865789727296
+            ],
+            "articles_improved": 15
+          },
+          "top1_inside": {
+            "estimate": 0.36880289327422777,
+            "family_bootstrap_95_interval": [
+              0.12601205606345411,
+              0.5842580816218034
+            ],
+            "articles_improved": 11
+          },
+          "top3_inside": {
+            "estimate": 0.3680754522037416,
+            "family_bootstrap_95_interval": [
+              0.2164119806697931,
+              0.5231351154480265
+            ],
+            "articles_improved": 11
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3381490834466719,
+            "family_bootstrap_95_interval": [
+              0.181163913662854,
+              0.4764597292176447
+            ],
+            "articles_improved": 14
+          },
+          "clicked_probability": {
+            "estimate": 0.24613609497956507,
+            "family_bootstrap_95_interval": [
+              0.17960755675131235,
+              0.31286356976490104
+            ],
+            "articles_improved": 16
+          },
+          "entity_top1_inside": {
+            "estimate": 0.38751958715539536,
+            "family_bootstrap_95_interval": [
+              0.14006556569996426,
+              0.608907070960055
+            ],
+            "articles_improved": 11
+          },
+          "entity_probability": {
+            "estimate": 0.2641769966325181,
+            "family_bootstrap_95_interval": [
+              0.19322221600101733,
+              0.334769535713043
+            ],
+            "articles_improved": 16
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.39799444978015375,
+            "family_bootstrap_95_interval": [
+              -0.7605896757368663,
+              -0.1253854031896355
+            ],
+            "articles_improved": 11
+          },
+          "top1_inside": {
+            "estimate": 0.04695599843626164,
+            "family_bootstrap_95_interval": [
+              -0.0897149725274724,
+              0.20399002229799917
+            ],
+            "articles_improved": 5
+          },
+          "top3_inside": {
+            "estimate": 0.13533555564805577,
+            "family_bootstrap_95_interval": [
+              0.0213604451104451,
+              0.2739982977092351
+            ],
+            "articles_improved": 7
+          },
+          "reciprocal_rank": {
+            "estimate": 0.06232443149155864,
+            "family_bootstrap_95_interval": [
+              -0.0183070164327672,
+              0.14939434342912888
+            ],
+            "articles_improved": 8
+          },
+          "clicked_probability": {
+            "estimate": 0.1735349615844916,
+            "family_bootstrap_95_interval": [
+              0.07838012579805882,
+              0.2709650438136954
+            ],
+            "articles_improved": 12
+          },
+          "entity_top1_inside": {
+            "estimate": 0.06233298256324582,
+            "family_bootstrap_95_interval": [
+              -0.07157015133988809,
+              0.21735752140768594
+            ],
+            "articles_improved": 6
+          },
+          "entity_probability": {
+            "estimate": 0.19432714132405393,
+            "family_bootstrap_95_interval": [
+              0.1065304273928353,
+              0.28242999728379775
+            ],
+            "articles_improved": 13
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.13547822006278798,
+            "family_bootstrap_95_interval": [
+              -0.35908769361530085,
+              0.07398044067419006
+            ],
+            "articles_improved": 9
+          },
+          "top1_inside": {
+            "estimate": -0.02083333333333337,
+            "family_bootstrap_95_interval": [
+              -0.06770833333333326,
+              0.015625
+            ],
+            "articles_improved": 1
+          },
+          "top3_inside": {
+            "estimate": 0.12309629028379032,
+            "family_bootstrap_95_interval": [
+              0.017137596200096087,
+              0.26064829846079846
+            ],
+            "articles_improved": 6
+          },
+          "reciprocal_rank": {
+            "estimate": 0.020393401157465574,
+            "family_bootstrap_95_interval": [
+              -0.014980535158677338,
+              0.06272388813399454
+            ],
+            "articles_improved": 7
+          },
+          "clicked_probability": {
+            "estimate": 0.08445633687418219,
+            "family_bootstrap_95_interval": [
+              0.03202362277948437,
+              0.1396980200488398
+            ],
+            "articles_improved": 11
+          },
+          "entity_top1_inside": {
+            "estimate": -0.02083333333333326,
+            "family_bootstrap_95_interval": [
+              -0.06770833333333326,
+              0.015625
+            ],
+            "articles_improved": 1
+          },
+          "entity_probability": {
+            "estimate": 0.08424682296675579,
+            "family_bootstrap_95_interval": [
+              0.04105976906765087,
+              0.1302800502040642
+            ],
+            "articles_improved": 12
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.26251622971736577,
+            "family_bootstrap_95_interval": [
+              -0.4983343373205379,
+              -0.028808198837984512
+            ],
+            "articles_improved": 12
+          },
+          "top1_inside": {
+            "estimate": 0.06778933176959501,
+            "family_bootstrap_95_interval": [
+              -0.06612142920736676,
+              0.2219050773635477
+            ],
+            "articles_improved": 6
+          },
+          "top3_inside": {
+            "estimate": 0.01223926536426545,
+            "family_bootstrap_95_interval": [
+              -0.032387057387057494,
+              0.0787202380952381
+            ],
+            "articles_improved": 2
+          },
+          "reciprocal_rank": {
+            "estimate": 0.04193103033409307,
+            "family_bootstrap_95_interval": [
+              -0.032033272199272274,
+              0.12264169752228256
+            ],
+            "articles_improved": 8
+          },
+          "clicked_probability": {
+            "estimate": 0.08907862471030942,
+            "family_bootstrap_95_interval": [
+              0.00023518503654029217,
+              0.16869700251326544
+            ],
+            "articles_improved": 13
+          },
+          "entity_top1_inside": {
+            "estimate": 0.08316631589657908,
+            "family_bootstrap_95_interval": [
+              -0.053425639753764846,
+              0.23767682008841529
+            ],
+            "articles_improved": 7
+          },
+          "entity_probability": {
+            "estimate": 0.11008031835729815,
+            "family_bootstrap_95_interval": [
+              0.029569195690789397,
+              0.18524432358713716
+            ],
+            "articles_improved": 13
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -3.0057390923497325,
+            "family_bootstrap_95_interval": [
+              -3.6972034063169135,
+              -2.256441683112387
+            ],
+            "articles_improved": 15
+          },
+          "top1_inside": {
+            "estimate": 0.5692636129328921,
+            "family_bootstrap_95_interval": [
+              0.39210234728793636,
+              0.7356607188370484
+            ],
+            "articles_improved": 15
+          },
+          "top3_inside": {
+            "estimate": 0.8051296914702017,
+            "family_bootstrap_95_interval": [
+              0.7249544261074917,
+              0.8763482165714391
+            ],
+            "articles_improved": 16
+          },
+          "reciprocal_rank": {
+            "estimate": 0.6440144406075275,
+            "family_bootstrap_95_interval": [
+              0.5148763218821758,
+              0.7614866973665271
+            ],
+            "articles_improved": 16
+          },
+          "clicked_probability": {
+            "estimate": 0.5436671803391423,
+            "family_bootstrap_95_interval": [
+              0.41161119909006166,
+              0.6727335248274312
+            ],
+            "articles_improved": 16
+          },
+          "entity_top1_inside": {
+            "estimate": 0.5739876460760913,
+            "family_bootstrap_95_interval": [
+              0.40121927506962807,
+              0.7335583882708313
+            ],
+            "articles_improved": 15
+          },
+          "entity_probability": {
+            "estimate": 0.5710163895802209,
+            "family_bootstrap_95_interval": [
+              0.4449914687056965,
+              0.6890822862042995
+            ],
+            "articles_improved": 16
+          }
+        }
+      }
+    },
+    "unseen_reader": {
+      "articles": 13,
+      "queries": 23,
+      "clicks": 32,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 4.446347721270316,
+            "family_bootstrap_95_interval": [
+              3.6084533975485127,
+              5.303417931336787
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.03357470758643469,
+            "family_bootstrap_95_interval": [
+              0.013844048458167476,
+              0.05620851240159931
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.09454871162122595,
+            "family_bootstrap_95_interval": [
+              0.03981981929619458,
+              0.1573199998600512
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.10153673979184102,
+            "family_bootstrap_95_interval": [
+              0.05136131322825073,
+              0.15769378056163905
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.03357470758643468,
+            "family_bootstrap_95_interval": [
+              0.013844048458167462,
+              0.0562085124015993
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.07556845156164765,
+            "family_bootstrap_95_interval": [
+              0.04330409796360602,
+              0.1096532700056076
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.07556845156164763,
+            "family_bootstrap_95_interval": [
+              0.043304097963606014,
+              0.10965327000560757
+            ]
+          },
+          "region_words": {
+            "estimate": 3.0384615384615383,
+            "family_bootstrap_95_interval": [
+              2.0,
+              4.923076923076923
+            ]
+          },
+          "words_back": {
+            "estimate": 14.884615384615385,
+            "family_bootstrap_95_interval": [
+              9.846153846153847,
+              21.615384615384617
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07556845156164763,
+            "family_bootstrap_95_interval": [
+              0.043304097963606014,
+              0.10965327000560757
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.7654135236719046,
+            "family_bootstrap_95_interval": [
+              1.9943147193351296,
+              3.5218449543972357
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.19230769230769232,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.4230769230769231
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.34615384615384615,
+            "family_bootstrap_95_interval": [
+              0.11538461538461539,
+              0.6153846153846154
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3168253271462712,
+            "family_bootstrap_95_interval": [
+              0.14608942915449127,
+              0.5172524489217935
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.16579289807300615,
+            "family_bootstrap_95_interval": [
+              0.08459745611892981,
+              0.25629646053245514
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.19230769230769232,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.4230769230769231
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.19290428485897324,
+            "family_bootstrap_95_interval": [
+              0.11958704941423311,
+              0.27523660772285
+            ]
+          },
+          "region_words": {
+            "estimate": 3.0384615384615383,
+            "family_bootstrap_95_interval": [
+              2.0,
+              4.923076923076923
+            ]
+          },
+          "words_back": {
+            "estimate": 14.884615384615385,
+            "family_bootstrap_95_interval": [
+              9.846153846153847,
+              21.615384615384617
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07556845156164763,
+            "family_bootstrap_95_interval": [
+              0.043304097963606014,
+              0.10965327000560757
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.9182054193057805,
+            "family_bootstrap_95_interval": [
+              1.2811513086501836,
+              2.5657387508588507
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.2948717948717949,
+            "family_bootstrap_95_interval": [
+              0.10256410256410257,
+              0.5256410256410257
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.6794871794871795,
+            "family_bootstrap_95_interval": [
+              0.4487179487179488,
+              0.8974358974358976
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.5337008622252839,
+            "family_bootstrap_95_interval": [
+              0.37820058016369074,
+              0.6976573574729099
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.3111051599748579,
+            "family_bootstrap_95_interval": [
+              0.18385032275796045,
+              0.4410816397672336
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.41346153846153844,
+            "family_bootstrap_95_interval": [
+              0.15384615384615385,
+              0.6730769230769231
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.41222046774029636,
+            "family_bootstrap_95_interval": [
+              0.2736166933853182,
+              0.5471972819975824
+            ]
+          },
+          "region_words": {
+            "estimate": 3.0384615384615383,
+            "family_bootstrap_95_interval": [
+              2.0,
+              4.923076923076923
+            ]
+          },
+          "words_back": {
+            "estimate": 14.884615384615385,
+            "family_bootstrap_95_interval": [
+              9.846153846153847,
+              21.615384615384617
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07556845156164763,
+            "family_bootstrap_95_interval": [
+              0.043304097963606014,
+              0.10965327000560757
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 0.9616793637337684,
+            "family_bootstrap_95_interval": [
+              0.5070697778322266,
+              1.5127680208877268
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7227564102564104,
+            "family_bootstrap_95_interval": [
+              0.483974358974359,
+              0.9230769230769231
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.8766025641025641,
+            "family_bootstrap_95_interval": [
+              0.6923076923076923,
+              1.0
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8060758685758687,
+            "family_bootstrap_95_interval": [
+              0.6291375291375292,
+              0.9538614163614163
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5574114338088342,
+            "family_bootstrap_95_interval": [
+              0.4108158171243072,
+              0.6951478192160583
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7692307692307693,
+            "family_bootstrap_95_interval": [
+              0.5384615384615384,
+              1.0
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6576237261473294,
+            "family_bootstrap_95_interval": [
+              0.5153267574338614,
+              0.7774934866521654
+            ]
+          },
+          "region_words": {
+            "estimate": 3.0384615384615383,
+            "family_bootstrap_95_interval": [
+              2.0,
+              4.923076923076923
+            ]
+          },
+          "words_back": {
+            "estimate": 14.884615384615385,
+            "family_bootstrap_95_interval": [
+              9.846153846153847,
+              21.615384615384617
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07556845156164763,
+            "family_bootstrap_95_interval": [
+              0.043304097963606014,
+              0.10965327000560757
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 0.8754064502962788,
+            "family_bootstrap_95_interval": [
+              0.36346746612000724,
+              1.4845234530046478
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7227564102564104,
+            "family_bootstrap_95_interval": [
+              0.5,
+              0.9070512820512822
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.953525641025641,
+            "family_bootstrap_95_interval": [
+              0.876602564102564,
+              1.0
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.836921427224736,
+            "family_bootstrap_95_interval": [
+              0.7211329303355958,
+              0.9398684954751132
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6995769672344854,
+            "family_bootstrap_95_interval": [
+              0.5376924601767542,
+              0.8435253250942653
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8076923076923077,
+            "family_bootstrap_95_interval": [
+              0.5769230769230769,
+              1.0
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7939082324696936,
+            "family_bootstrap_95_interval": [
+              0.6550690195172677,
+              0.9087585214724326
+            ]
+          },
+          "region_words": {
+            "estimate": 3.0384615384615383,
+            "family_bootstrap_95_interval": [
+              2.0,
+              4.923076923076923
+            ]
+          },
+          "words_back": {
+            "estimate": 14.884615384615385,
+            "family_bootstrap_95_interval": [
+              9.846153846153847,
+              21.615384615384617
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.07556845156164763,
+            "family_bootstrap_95_interval": [
+              0.043304097963606014,
+              0.10965327000560757
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -0.8472081043661241,
+            "family_bootstrap_95_interval": [
+              -1.093159410844747,
+              -0.6063800115668612
+            ],
+            "articles_improved": 13
+          },
+          "top1_inside": {
+            "estimate": 0.10256410256410256,
+            "family_bootstrap_95_interval": [
+              -0.12852564102564074,
+              0.32051282051282054
+            ],
+            "articles_improved": 4
+          },
+          "top3_inside": {
+            "estimate": 0.33333333333333337,
+            "family_bootstrap_95_interval": [
+              0.1282051282051282,
+              0.5641025641025641
+            ],
+            "articles_improved": 6
+          },
+          "reciprocal_rank": {
+            "estimate": 0.2168755350790127,
+            "family_bootstrap_95_interval": [
+              0.060558839162238226,
+              0.351772322897529
+            ],
+            "articles_improved": 11
+          },
+          "clicked_probability": {
+            "estimate": 0.14531226190185173,
+            "family_bootstrap_95_interval": [
+              0.07690172009779421,
+              0.2231367333053446
+            ],
+            "articles_improved": 13
+          },
+          "entity_top1_inside": {
+            "estimate": 0.22115384615384612,
+            "family_bootstrap_95_interval": [
+              -0.07692307692307693,
+              0.49999999999999994
+            ],
+            "articles_improved": 5
+          },
+          "entity_probability": {
+            "estimate": 0.21931618288132312,
+            "family_bootstrap_95_interval": [
+              0.1161895216723924,
+              0.33181627976240885
+            ],
+            "articles_improved": 13
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -1.0427989690095016,
+            "family_bootstrap_95_interval": [
+              -1.7728294792325994,
+              -0.33881821820962543
+            ],
+            "articles_improved": 10
+          },
+          "top1_inside": {
+            "estimate": 0.4278846153846155,
+            "family_bootstrap_95_interval": [
+              0.16346153846153855,
+              0.6923076923076923
+            ],
+            "articles_improved": 7
+          },
+          "top3_inside": {
+            "estimate": 0.27403846153846145,
+            "family_bootstrap_95_interval": [
+              0.07692307692307687,
+              0.5048076923076923
+            ],
+            "articles_improved": 5
+          },
+          "reciprocal_rank": {
+            "estimate": 0.30322056499945205,
+            "family_bootstrap_95_interval": [
+              0.14445665881363104,
+              0.47237675518925526
+            ],
+            "articles_improved": 9
+          },
+          "clicked_probability": {
+            "estimate": 0.3884718072596275,
+            "family_bootstrap_95_interval": [
+              0.21076653025525083,
+              0.5694821409632015
+            ],
+            "articles_improved": 11
+          },
+          "entity_top1_inside": {
+            "estimate": 0.3942307692307693,
+            "family_bootstrap_95_interval": [
+              0.15384615384615385,
+              0.6346153846153847
+            ],
+            "articles_improved": 6
+          },
+          "entity_probability": {
+            "estimate": 0.3816877647293972,
+            "family_bootstrap_95_interval": [
+              0.2227737711254708,
+              0.5472775291572713
+            ],
+            "articles_improved": 12
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.08627291343748955,
+            "family_bootstrap_95_interval": [
+              -0.4275949126427808,
+              0.32395832937960695
+            ],
+            "articles_improved": 10
+          },
+          "top1_inside": {
+            "estimate": 0.0,
+            "family_bootstrap_95_interval": [
+              -0.11538461538461542,
+              0.11538461538461542
+            ],
+            "articles_improved": 1
+          },
+          "top3_inside": {
+            "estimate": 0.07692307692307687,
+            "family_bootstrap_95_interval": [
+              0.0,
+              0.23076923076923084
+            ],
+            "articles_improved": 1
+          },
+          "reciprocal_rank": {
+            "estimate": 0.03084555864886729,
+            "family_bootstrap_95_interval": [
+              -0.043513415710106806,
+              0.10777972027972016
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.1421655334256512,
+            "family_bootstrap_95_interval": [
+              0.049085056100222936,
+              0.22931838278360017
+            ],
+            "articles_improved": 11
+          },
+          "entity_top1_inside": {
+            "estimate": 0.038461538461538436,
+            "family_bootstrap_95_interval": [
+              -0.11538461538461542,
+              0.23076923076923073
+            ],
+            "articles_improved": 1
+          },
+          "entity_probability": {
+            "estimate": 0.1362845063223641,
+            "family_bootstrap_95_interval": [
+              0.04440988587387968,
+              0.23277321741701879
+            ],
+            "articles_improved": 12
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.9565260555720121,
+            "family_bootstrap_95_interval": [
+              -1.507070821845916,
+              -0.4359230174166102
+            ],
+            "articles_improved": 11
+          },
+          "top1_inside": {
+            "estimate": 0.4278846153846155,
+            "family_bootstrap_95_interval": [
+              0.16826923076923073,
+              0.6923076923076923
+            ],
+            "articles_improved": 7
+          },
+          "top3_inside": {
+            "estimate": 0.19711538461538458,
+            "family_bootstrap_95_interval": [
+              0.009615384615384581,
+              0.42307692307692313
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": 0.27237500635058476,
+            "family_bootstrap_95_interval": [
+              0.10891340646276369,
+              0.44990842490842486
+            ],
+            "articles_improved": 10
+          },
+          "clicked_probability": {
+            "estimate": 0.2463062738339763,
+            "family_bootstrap_95_interval": [
+              0.10423383688017533,
+              0.3916603038224867
+            ],
+            "articles_improved": 11
+          },
+          "entity_top1_inside": {
+            "estimate": 0.35576923076923084,
+            "family_bootstrap_95_interval": [
+              0.125,
+              0.6153846153846154
+            ],
+            "articles_improved": 6
+          },
+          "entity_probability": {
+            "estimate": 0.2454032584070331,
+            "family_bootstrap_95_interval": [
+              0.10212629504454217,
+              0.3982672816355636
+            ],
+            "articles_improved": 12
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -3.570941270974037,
+            "family_bootstrap_95_interval": [
+              -4.612700968073671,
+              -2.470605957935252
+            ],
+            "articles_improved": 12
+          },
+          "top1_inside": {
+            "estimate": 0.6891817026699757,
+            "family_bootstrap_95_interval": [
+              0.4573827111895143,
+              0.8838732951396778
+            ],
+            "articles_improved": 11
+          },
+          "top3_inside": {
+            "estimate": 0.8589769294044151,
+            "family_bootstrap_95_interval": [
+              0.7709887977830349,
+              0.9344869590604213
+            ],
+            "articles_improved": 13
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7353846874328949,
+            "family_bootstrap_95_interval": [
+              0.586056917031213,
+              0.8663124245894928
+            ],
+            "articles_improved": 13
+          },
+          "clicked_probability": {
+            "estimate": 0.6660022596480507,
+            "family_bootstrap_95_interval": [
+              0.49348587339616873,
+              0.8194926552781456
+            ],
+            "articles_improved": 13
+          },
+          "entity_top1_inside": {
+            "estimate": 0.73212385613066,
+            "family_bootstrap_95_interval": [
+              0.5033677746577071,
+              0.9164235119824007
+            ],
+            "articles_improved": 11
+          },
+          "entity_probability": {
+            "estimate": 0.718339780908046,
+            "family_bootstrap_95_interval": [
+              0.5745070565131085,
+              0.8416324925959737
+            ],
+            "articles_improved": 13
+          }
+        }
+      }
+    },
+    "single_word_region": {
+      "articles": 28,
+      "queries": 240,
+      "clicks": 1265,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 5.019441182598928,
+            "family_bootstrap_95_interval": [
+              4.674417735213345,
+              5.338593388599432
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.011756413753325057,
+            "family_bootstrap_95_interval": [
+              0.007526680214155186,
+              0.016906684122869206
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.03526924125997518,
+            "family_bootstrap_95_interval": [
+              0.022580040642465576,
+              0.05072005236860761
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.05262119088240751,
+            "family_bootstrap_95_interval": [
+              0.037789661813272486,
+              0.07029779772873439
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.01175641375332506,
+            "family_bootstrap_95_interval": [
+              0.007526680214155191,
+              0.016906684122869206
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.06508120816115169,
+            "family_bootstrap_95_interval": [
+              0.04656465729712316,
+              0.08554663900843479
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.0650812081611517,
+            "family_bootstrap_95_interval": [
+              0.046564657297123155,
+              0.08554663900843476
+            ]
+          },
+          "region_words": {
+            "estimate": 1.0,
+            "family_bootstrap_95_interval": [
+              1.0,
+              1.0
+            ]
+          },
+          "words_back": {
+            "estimate": 12.939972454906739,
+            "family_bootstrap_95_interval": [
+              9.211643119499783,
+              17.97085097664411
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0650812081611517,
+            "family_bootstrap_95_interval": [
+              0.046564657297123155,
+              0.08554663900843477
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 3.102088663621933,
+            "family_bootstrap_95_interval": [
+              2.7655135673505424,
+              3.5220324272175216
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.1502531918564527,
+            "family_bootstrap_95_interval": [
+              0.06780006685645272,
+              0.24784037482746707
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.33060307689328317,
+            "family_bootstrap_95_interval": [
+              0.21641097594576134,
+              0.45593059098639444
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.31742615380968414,
+            "family_bootstrap_95_interval": [
+              0.2442146702690373,
+              0.40368974021222404
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.0758436504435747,
+            "family_bootstrap_95_interval": [
+              0.06276600380149447,
+              0.09034547032317729
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.19111579414374444,
+            "family_bootstrap_95_interval": [
+              0.09781644360642808,
+              0.2943357796016957
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.1389749993709156,
+            "family_bootstrap_95_interval": [
+              0.12004638857139951,
+              0.15870195785341484
+            ]
+          },
+          "region_words": {
+            "estimate": 1.0,
+            "family_bootstrap_95_interval": [
+              1.0,
+              1.0
+            ]
+          },
+          "words_back": {
+            "estimate": 12.939972454906739,
+            "family_bootstrap_95_interval": [
+              9.211643119499783,
+              17.97085097664411
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0650812081611517,
+            "family_bootstrap_95_interval": [
+              0.046564657297123155,
+              0.08554663900843477
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.4654354977883748,
+            "family_bootstrap_95_interval": [
+              0.9832468771438914,
+              2.059217834962119
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.6366198242366304,
+            "family_bootstrap_95_interval": [
+              0.49982418931599554,
+              0.7646325361229507
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.8104340255771045,
+            "family_bootstrap_95_interval": [
+              0.6818602606242634,
+              0.9146640822693811
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7353886130094344,
+            "family_bootstrap_95_interval": [
+              0.6247365627902097,
+              0.834976107982565
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.48553525024665617,
+            "family_bootstrap_95_interval": [
+              0.3970030049079073,
+              0.5710922868924749
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7155876435719215,
+            "family_bootstrap_95_interval": [
+              0.5759668825637139,
+              0.8384056892684609
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6147255655483799,
+            "family_bootstrap_95_interval": [
+              0.5122106770142313,
+              0.7102417539381172
+            ]
+          },
+          "region_words": {
+            "estimate": 1.0,
+            "family_bootstrap_95_interval": [
+              1.0,
+              1.0
+            ]
+          },
+          "words_back": {
+            "estimate": 12.939972454906739,
+            "family_bootstrap_95_interval": [
+              9.211643119499783,
+              17.97085097664411
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0650812081611517,
+            "family_bootstrap_95_interval": [
+              0.046564657297123155,
+              0.08554663900843477
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 1.2795038337879443,
+            "family_bootstrap_95_interval": [
+              0.869430901776868,
+              1.7817126132053613
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.6956991359129917,
+            "family_bootstrap_95_interval": [
+              0.5721812205623277,
+              0.8070704156290492
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.8907378681286179,
+            "family_bootstrap_95_interval": [
+              0.8034983379048651,
+              0.9562722064800729
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7985157942740788,
+            "family_bootstrap_95_interval": [
+              0.7109129772320534,
+              0.8734960226791004
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5323834791290328,
+            "family_bootstrap_95_interval": [
+              0.44712199356960125,
+              0.6093057868875165
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8495119016809622,
+            "family_bootstrap_95_interval": [
+              0.7299795001786946,
+              0.9406995588090307
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7323850803460071,
+            "family_bootstrap_95_interval": [
+              0.6323833286312355,
+              0.8129560124982836
+            ]
+          },
+          "region_words": {
+            "estimate": 1.0,
+            "family_bootstrap_95_interval": [
+              1.0,
+              1.0
+            ]
+          },
+          "words_back": {
+            "estimate": 12.939972454906739,
+            "family_bootstrap_95_interval": [
+              9.211643119499783,
+              17.97085097664411
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0650812081611517,
+            "family_bootstrap_95_interval": [
+              0.046564657297123155,
+              0.08554663900843477
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 1.4236025899183724,
+            "family_bootstrap_95_interval": [
+              0.9225394428929997,
+              2.051711771280011
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.6382347824179707,
+            "family_bootstrap_95_interval": [
+              0.5029285767285262,
+              0.7634789310570891
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.8831663231415753,
+            "family_bootstrap_95_interval": [
+              0.773654394053062,
+              0.9651040529927248
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7655817770521448,
+            "family_bootstrap_95_interval": [
+              0.6668602620735524,
+              0.8518653212040176
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5312365768829518,
+            "family_bootstrap_95_interval": [
+              0.43090053579437165,
+              0.6224042970017128
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8211069980528443,
+            "family_bootstrap_95_interval": [
+              0.6879984656906242,
+              0.9295762914540817
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7793870572161081,
+            "family_bootstrap_95_interval": [
+              0.670904665263035,
+              0.8680799694449914
+            ]
+          },
+          "region_words": {
+            "estimate": 1.0,
+            "family_bootstrap_95_interval": [
+              1.0,
+              1.0
+            ]
+          },
+          "words_back": {
+            "estimate": 12.939972454906739,
+            "family_bootstrap_95_interval": [
+              9.211643119499783,
+              17.97085097664411
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.0650812081611517,
+            "family_bootstrap_95_interval": [
+              0.046564657297123155,
+              0.08554663900843477
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -1.6366531658335584,
+            "family_bootstrap_95_interval": [
+              -1.9874245148309349,
+              -1.1474119177090003
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.48636663238017774,
+            "family_bootstrap_95_interval": [
+              0.36605139095568784,
+              0.6076478097671307
+            ],
+            "articles_improved": 22
+          },
+          "top3_inside": {
+            "estimate": 0.47983094868382137,
+            "family_bootstrap_95_interval": [
+              0.34652612613584083,
+              0.6122341616447302
+            ],
+            "articles_improved": 21
+          },
+          "reciprocal_rank": {
+            "estimate": 0.4179624591997502,
+            "family_bootstrap_95_interval": [
+              0.30934452657640354,
+              0.5225715714420941
+            ],
+            "articles_improved": 24
+          },
+          "clicked_probability": {
+            "estimate": 0.40969159980308145,
+            "family_bootstrap_95_interval": [
+              0.32441561173775924,
+              0.4919072383719007
+            ],
+            "articles_improved": 27
+          },
+          "entity_top1_inside": {
+            "estimate": 0.524471849428177,
+            "family_bootstrap_95_interval": [
+              0.4049244206287587,
+              0.6438393646634377
+            ],
+            "articles_improved": 23
+          },
+          "entity_probability": {
+            "estimate": 0.47575056617746425,
+            "family_bootstrap_95_interval": [
+              0.383620234277025,
+              0.5605139511799111
+            ],
+            "articles_improved": 27
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.04183290787000238,
+            "family_bootstrap_95_interval": [
+              -0.39186574911306393,
+              0.34252914192621303
+            ],
+            "articles_improved": 16
+          },
+          "top1_inside": {
+            "estimate": 0.0016149581813402758,
+            "family_bootstrap_95_interval": [
+              -0.12047431803337286,
+              0.11864213312136442
+            ],
+            "articles_improved": 8
+          },
+          "top3_inside": {
+            "estimate": 0.07273229756447075,
+            "family_bootstrap_95_interval": [
+              0.01684273491196419,
+              0.15552963602625314
+            ],
+            "articles_improved": 8
+          },
+          "reciprocal_rank": {
+            "estimate": 0.03019316404271044,
+            "family_bootstrap_95_interval": [
+              -0.0420040739509211,
+              0.10507776929349906
+            ],
+            "articles_improved": 12
+          },
+          "clicked_probability": {
+            "estimate": 0.045701326636295614,
+            "family_bootstrap_95_interval": [
+              -0.047640377342730036,
+              0.13342865874057175
+            ],
+            "articles_improved": 18
+          },
+          "entity_top1_inside": {
+            "estimate": 0.10551935448092276,
+            "family_bootstrap_95_interval": [
+              0.040986198147737275,
+              0.19319154835847385
+            ],
+            "articles_improved": 11
+          },
+          "entity_probability": {
+            "estimate": 0.16466149166772825,
+            "family_bootstrap_95_interval": [
+              0.10184409768447943,
+              0.23102332850267734
+            ],
+            "articles_improved": 26
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": 0.1440987561304281,
+            "family_bootstrap_95_interval": [
+              -0.0447533920402661,
+              0.3707541308261239
+            ],
+            "articles_improved": 14
+          },
+          "top1_inside": {
+            "estimate": -0.05746435349502099,
+            "family_bootstrap_95_interval": [
+              -0.16513878490707876,
+              0.03785566015355407
+            ],
+            "articles_improved": 6
+          },
+          "top3_inside": {
+            "estimate": -0.0075715449870426,
+            "family_bootstrap_95_interval": [
+              -0.054489390994493014,
+              0.029821960034013606
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": -0.03293401722193401,
+            "family_bootstrap_95_interval": [
+              -0.09243129992034822,
+              0.020798271765364442
+            ],
+            "articles_improved": 11
+          },
+          "clicked_probability": {
+            "estimate": -0.0011469022460810496,
+            "family_bootstrap_95_interval": [
+              -0.048259700779592074,
+              0.04818509623134956
+            ],
+            "articles_improved": 14
+          },
+          "entity_top1_inside": {
+            "estimate": -0.028404903628117983,
+            "family_bootstrap_95_interval": [
+              -0.11521843112244905,
+              0.03208758503401355
+            ],
+            "articles_improved": 5
+          },
+          "entity_probability": {
+            "estimate": 0.04700197687010099,
+            "family_bootstrap_95_interval": [
+              0.023129898691130035,
+              0.07042200940217365
+            ],
+            "articles_improved": 23
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.18593166400043049,
+            "family_bootstrap_95_interval": [
+              -0.4407272689450346,
+              0.06801355579459066
+            ],
+            "articles_improved": 17
+          },
+          "top1_inside": {
+            "estimate": 0.05907931167636127,
+            "family_bootstrap_95_interval": [
+              -0.08831847625825709,
+              0.20654560154375767
+            ],
+            "articles_improved": 11
+          },
+          "top3_inside": {
+            "estimate": 0.08030384255151335,
+            "family_bootstrap_95_interval": [
+              0.014351306011535333,
+              0.17017013580794635
+            ],
+            "articles_improved": 10
+          },
+          "reciprocal_rank": {
+            "estimate": 0.06312718126464445,
+            "family_bootstrap_95_interval": [
+              -0.026742245433948035,
+              0.16093962693673347
+            ],
+            "articles_improved": 14
+          },
+          "clicked_probability": {
+            "estimate": 0.046848228882376663,
+            "family_bootstrap_95_interval": [
+              -0.031321505586766024,
+              0.12217924079242265
+            ],
+            "articles_improved": 16
+          },
+          "entity_top1_inside": {
+            "estimate": 0.13392425810904074,
+            "family_bootstrap_95_interval": [
+              0.0405753814206842,
+              0.24553075781943218
+            ],
+            "articles_improved": 12
+          },
+          "entity_probability": {
+            "estimate": 0.11765951479762726,
+            "family_bootstrap_95_interval": [
+              0.05720823844476405,
+              0.18209608562719537
+            ],
+            "articles_improved": 22
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -3.595838592680555,
+            "family_bootstrap_95_interval": [
+              -4.168639548473519,
+              -2.9338703620793245
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.6264783686646457,
+            "family_bootstrap_95_interval": [
+              0.4902073558739872,
+              0.7515984052339433
+            ],
+            "articles_improved": 23
+          },
+          "top3_inside": {
+            "estimate": 0.8478970818816001,
+            "family_bootstrap_95_interval": [
+              0.7391409907088797,
+              0.9311356095201251
+            ],
+            "articles_improved": 26
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7129605861697373,
+            "family_bootstrap_95_interval": [
+              0.6131742022139851,
+              0.8002962287351878
+            ],
+            "articles_improved": 28
+          },
+          "clicked_probability": {
+            "estimate": 0.5194801631296267,
+            "family_bootstrap_95_interval": [
+              0.4189761485926452,
+              0.6105197210202349
+            ],
+            "articles_improved": 28
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7560257898916926,
+            "family_bootstrap_95_interval": [
+              0.6250322759301705,
+              0.8632974761474136
+            ],
+            "articles_improved": 25
+          },
+          "entity_probability": {
+            "estimate": 0.7143058490549564,
+            "family_bootstrap_95_interval": [
+              0.6107975317833405,
+              0.7989318614553818
+            ],
+            "articles_improved": 28
+          }
+        }
+      }
+    },
+    "genre_gutenberg": {
+      "articles": 4,
+      "queries": 238,
+      "clicks": 1352,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 5.232340883218448,
+            "family_bootstrap_95_interval": [
+              4.073256510654389,
+              5.93717721303405
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.020853001657555707,
+            "family_bootstrap_95_interval": [
+              0.00614494872494532,
+              0.04365824295361921
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.05581404987941066,
+            "family_bootstrap_95_interval": [
+              0.01775928261615116,
+              0.11766838047592858
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.0632245196236676,
+            "family_bootstrap_95_interval": [
+              0.0276256224023141,
+              0.12219057303088313
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.020853001657555704,
+            "family_bootstrap_95_interval": [
+              0.00614494872494532,
+              0.04365824295361921
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.09232458372304533,
+            "family_bootstrap_95_interval": [
+              0.0652679459716517,
+              0.13094362950445587
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.09232458372304532,
+            "family_bootstrap_95_interval": [
+              0.06526794597165167,
+              0.1309436295044559
+            ]
+          },
+          "region_words": {
+            "estimate": 1.6298681533962154,
+            "family_bootstrap_95_interval": [
+              1.4771911568365663,
+              1.7825451499558644
+            ]
+          },
+          "words_back": {
+            "estimate": 10.641052129960503,
+            "family_bootstrap_95_interval": [
+              9.587401658600758,
+              11.694702601320248
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.09232458372304532,
+            "family_bootstrap_95_interval": [
+              0.06526794597165167,
+              0.1309436295044559
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.768493525610795,
+            "family_bootstrap_95_interval": [
+              2.5591334046680965,
+              2.945115772687785
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.15784907265631565,
+            "family_bootstrap_95_interval": [
+              0.12289719626168225,
+              0.2173264235764236
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.3665924733317286,
+            "family_bootstrap_95_interval": [
+              0.2951418885311134,
+              0.4631588999236058
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3205488875542985,
+            "family_bootstrap_95_interval": [
+              0.28062518652292334,
+              0.3752059952531064
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.10487526750824175,
+            "family_bootstrap_95_interval": [
+              0.09110758266975066,
+              0.12295414822628631
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.18341617065589716,
+            "family_bootstrap_95_interval": [
+              0.13106016355140188,
+              0.2675339366515837
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.15579055696145025,
+            "family_bootstrap_95_interval": [
+              0.1346207808260687,
+              0.18244535159176775
+            ]
+          },
+          "region_words": {
+            "estimate": 1.6298681533962154,
+            "family_bootstrap_95_interval": [
+              1.4771911568365663,
+              1.7825451499558644
+            ]
+          },
+          "words_back": {
+            "estimate": 10.641052129960503,
+            "family_bootstrap_95_interval": [
+              9.587401658600758,
+              11.694702601320248
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.09232458372304532,
+            "family_bootstrap_95_interval": [
+              0.06526794597165167,
+              0.1309436295044559
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.3106978272300203,
+            "family_bootstrap_95_interval": [
+              1.010708112068683,
+              1.579281381162056
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.6080577816109995,
+            "family_bootstrap_95_interval": [
+              0.5481611102384879,
+              0.6819387457780314
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.8360103069641032,
+            "family_bootstrap_95_interval": [
+              0.7862610428786898,
+              0.8873021261393258
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7381533389807207,
+            "family_bootstrap_95_interval": [
+              0.6865785232512207,
+              0.7963560511473031
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.5176682677213644,
+            "family_bootstrap_95_interval": [
+              0.4747769222241167,
+              0.5696305551470976
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.7326142341372206,
+            "family_bootstrap_95_interval": [
+              0.6270526960784314,
+              0.8220352564102564
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6844934664954884,
+            "family_bootstrap_95_interval": [
+              0.5961807988900303,
+              0.7756517188972584
+            ]
+          },
+          "region_words": {
+            "estimate": 1.6298681533962154,
+            "family_bootstrap_95_interval": [
+              1.4771911568365663,
+              1.7825451499558644
+            ]
+          },
+          "words_back": {
+            "estimate": 10.641052129960503,
+            "family_bootstrap_95_interval": [
+              9.587401658600758,
+              11.694702601320248
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.09232458372304532,
+            "family_bootstrap_95_interval": [
+              0.06526794597165167,
+              0.1309436295044559
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 1.0025041669003751,
+            "family_bootstrap_95_interval": [
+              0.8322533762287284,
+              1.1136787476363772
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7087815131217363,
+            "family_bootstrap_95_interval": [
+              0.6291845409492468,
+              0.7699642603076347
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.920754189285638,
+            "family_bootstrap_95_interval": [
+              0.8878596298332417,
+              0.9536487487380344
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8166502570084638,
+            "family_bootstrap_95_interval": [
+              0.7826783347065668,
+              0.8560401695170936
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6133271234272385,
+            "family_bootstrap_95_interval": [
+              0.5624881433493952,
+              0.6576206672441989
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8840827991872522,
+            "family_bootstrap_95_interval": [
+              0.8429366606455666,
+              0.9252289377289378
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.8082474364265064,
+            "family_bootstrap_95_interval": [
+              0.7710252789750827,
+              0.8454695938779302
+            ]
+          },
+          "region_words": {
+            "estimate": 1.6298681533962154,
+            "family_bootstrap_95_interval": [
+              1.4771911568365663,
+              1.7825451499558644
+            ]
+          },
+          "words_back": {
+            "estimate": 10.641052129960503,
+            "family_bootstrap_95_interval": [
+              9.587401658600758,
+              11.694702601320248
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.09232458372304532,
+            "family_bootstrap_95_interval": [
+              0.06526794597165167,
+              0.1309436295044559
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 0.8358558555497049,
+            "family_bootstrap_95_interval": [
+              0.7135175307352448,
+              0.9581941803641648
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7625621614941933,
+            "family_bootstrap_95_interval": [
+              0.6986683876870793,
+              0.8086580781302419
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9484276488863488,
+            "family_bootstrap_95_interval": [
+              0.9344016277839807,
+              0.9632960381122145
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8576346705615406,
+            "family_bootstrap_95_interval": [
+              0.823907502060104,
+              0.8782178767917668
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6723373256445213,
+            "family_bootstrap_95_interval": [
+              0.6128657109192769,
+              0.7079287571604693
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.9391284784942014,
+            "family_bootstrap_95_interval": [
+              0.8967093379407838,
+              0.9815476190476191
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.891975712222199,
+            "family_bootstrap_95_interval": [
+              0.8599842897909207,
+              0.9165084047944134
+            ]
+          },
+          "region_words": {
+            "estimate": 1.6298681533962154,
+            "family_bootstrap_95_interval": [
+              1.4771911568365663,
+              1.7825451499558644
+            ]
+          },
+          "words_back": {
+            "estimate": 10.641052129960503,
+            "family_bootstrap_95_interval": [
+              9.587401658600758,
+              11.694702601320248
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.09232458372304532,
+            "family_bootstrap_95_interval": [
+              0.06526794597165167,
+              0.1309436295044559
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -1.457795698380775,
+            "family_bootstrap_95_interval": [
+              -1.7790236469091754,
+              -1.1365677498523747
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": 0.4502087089546839,
+            "family_bootstrap_95_interval": [
+              0.36610228007286827,
+              0.5349626214122011
+            ],
+            "articles_improved": 4
+          },
+          "top3_inside": {
+            "estimate": 0.46941783363237455,
+            "family_bootstrap_95_interval": [
+              0.38343788221124664,
+              0.5427332402799693
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": 0.41760445142642216,
+            "family_bootstrap_95_interval": [
+              0.3568827678340669,
+              0.47832613501877763
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.4127930002131227,
+            "family_bootstrap_95_interval": [
+              0.3728046246059345,
+              0.46616351362834973
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": 0.5491980634813234,
+            "family_bootstrap_95_interval": [
+              0.46568562004240943,
+              0.6176457498887404
+            ],
+            "articles_improved": 4
+          },
+          "entity_probability": {
+            "estimate": 0.5287029095340381,
+            "family_bootstrap_95_interval": [
+              0.46045295756313975,
+              0.5958458010041146
+            ],
+            "articles_improved": 4
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.4748419716803154,
+            "family_bootstrap_95_interval": [
+              -0.6990583312201355,
+              -0.25062561214049517
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": 0.15450437988319377,
+            "family_bootstrap_95_interval": [
+              0.07464005901505888,
+              0.24237906701141987
+            ],
+            "articles_improved": 4
+          },
+          "top3_inside": {
+            "estimate": 0.11241734192224562,
+            "family_bootstrap_95_interval": [
+              0.07469397335468775,
+              0.15014071048980338
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": 0.11948133158081997,
+            "family_bootstrap_95_interval": [
+              0.0661171634436486,
+              0.17547565533098686
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.15466905792315688,
+            "family_bootstrap_95_interval": [
+              0.0782063170184808,
+              0.23113179882783302
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": 0.20651424435698085,
+            "family_bootstrap_95_interval": [
+              0.15951236263736268,
+              0.2729122899159664
+            ],
+            "articles_improved": 4
+          },
+          "entity_probability": {
+            "estimate": 0.2074822457267106,
+            "family_bootstrap_95_interval": [
+              0.14019337143531452,
+              0.2712622207599542
+            ],
+            "articles_improved": 4
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.16664831135067026,
+            "family_bootstrap_95_interval": [
+              -0.3166379333073158,
+              -0.04808283688140291
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": 0.053780648372456996,
+            "family_bootstrap_95_interval": [
+              0.008814102564102644,
+              0.07890271493212664
+            ],
+            "articles_improved": 3
+          },
+          "top3_inside": {
+            "estimate": 0.02767345960071077,
+            "family_bootstrap_95_interval": [
+              -0.002262443438914019,
+              0.0644190600695107
+            ],
+            "articles_improved": 3
+          },
+          "reciprocal_rank": {
+            "estimate": 0.040984413553076804,
+            "family_bootstrap_95_interval": [
+              0.01479618126467408,
+              0.06280201803108976
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.059010202217282814,
+            "family_bootstrap_95_interval": [
+              0.029964206962217688,
+              0.08805619747234772
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": 0.05504567930694926,
+            "family_bootstrap_95_interval": [
+              0.04080440587449918,
+              0.0705599547511313
+            ],
+            "articles_improved": 4
+          },
+          "entity_probability": {
+            "estimate": 0.08372827579569253,
+            "family_bootstrap_95_interval": [
+              0.07103881091648323,
+              0.09641774067490183
+            ],
+            "articles_improved": 4
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.3081936603296451,
+            "family_bootstrap_95_interval": [
+              -0.5092748827984539,
+              -0.17189683407310274
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": 0.10072373151073677,
+            "family_bootstrap_95_interval": [
+              0.03721008353017696,
+              0.17672200824774342
+            ],
+            "articles_improved": 4
+          },
+          "top3_inside": {
+            "estimate": 0.08474388232153485,
+            "family_bootstrap_95_interval": [
+              0.05021757404934968,
+              0.11927019059372002
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": 0.07849691802774317,
+            "family_bootstrap_95_interval": [
+              0.04465618874812849,
+              0.1284353027118793
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.09565885570587407,
+            "family_bootstrap_95_interval": [
+              0.0436601071888878,
+              0.14513168239627078
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": 0.1514685650500316,
+            "family_bootstrap_95_interval": [
+              0.09322579678888099,
+              0.22538077731092432
+            ],
+            "articles_improved": 4
+          },
+          "entity_probability": {
+            "estimate": 0.12375396993101806,
+            "family_bootstrap_95_interval": [
+              0.06156300087285349,
+              0.17484448008505238
+            ],
+            "articles_improved": 4
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -4.396485027668744,
+            "family_bootstrap_95_interval": [
+              -5.192707827330141,
+              -3.1047131675037147
+            ],
+            "articles_improved": 4
+          },
+          "top1_inside": {
+            "estimate": 0.7417091598366377,
+            "family_bootstrap_95_interval": [
+              0.6550101447334601,
+              0.8003708297321481
+            ],
+            "articles_improved": 4
+          },
+          "top3_inside": {
+            "estimate": 0.8926135990069382,
+            "family_bootstrap_95_interval": [
+              0.8209848612283958,
+              0.9352744239417768
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": 0.794410150937873,
+            "family_bootstrap_95_interval": [
+              0.700449843018019,
+              0.8464086624305067
+            ],
+            "articles_improved": 4
+          },
+          "clicked_probability": {
+            "estimate": 0.6514843239869657,
+            "family_bootstrap_95_interval": [
+              0.5692074679656577,
+              0.701783808435524
+            ],
+            "articles_improved": 4
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8468038947711561,
+            "family_bootstrap_95_interval": [
+              0.824623207861416,
+              0.872663690992815
+            ],
+            "articles_improved": 4
+          },
+          "entity_probability": {
+            "estimate": 0.7996511284991537,
+            "family_bootstrap_95_interval": [
+              0.7799666761482322,
+              0.8211751963996129
+            ],
+            "articles_improved": 4
+          }
+        }
+      }
+    },
+    "genre_wikipedia": {
+      "articles": 28,
+      "queries": 115,
+      "clicks": 708,
+      "methods": {
+        "uniform": {
+          "region_nll": {
+            "estimate": 4.337069093506034,
+            "family_bootstrap_95_interval": [
+              3.9975904748351865,
+              4.6606333240026805
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.03191738766998117,
+            "family_bootstrap_95_interval": [
+              0.018411039215680672,
+              0.04874901381699597
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.0814040680853934,
+            "family_bootstrap_95_interval": [
+              0.0520838521992266,
+              0.11509136923245811
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.09347552705295484,
+            "family_bootstrap_95_interval": [
+              0.06755375703216304,
+              0.1227302124498711
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.03191738766998118,
+            "family_bootstrap_95_interval": [
+              0.018411039215680672,
+              0.04874901381699597
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.06132692988107342,
+            "family_bootstrap_95_interval": [
+              0.047297017799654034,
+              0.07770227432709523
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.06132692988107341,
+            "family_bootstrap_95_interval": [
+              0.04729701779965402,
+              0.07770227432709524
+            ]
+          },
+          "region_words": {
+            "estimate": 2.2881229212814875,
+            "family_bootstrap_95_interval": [
+              1.8856891947990395,
+              2.763855331867902
+            ]
+          },
+          "words_back": {
+            "estimate": 11.887958980938304,
+            "family_bootstrap_95_interval": [
+              9.90642292778841,
+              13.945352994245383
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.06132692988107341,
+            "family_bootstrap_95_interval": [
+              0.047297017799654034,
+              0.07770227432709524
+            ]
+          }
+        },
+        "recency": {
+          "region_nll": {
+            "estimate": 2.4796433445954746,
+            "family_bootstrap_95_interval": [
+              2.2540808154727823,
+              2.700436440048066
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.17101457092058597,
+            "family_bootstrap_95_interval": [
+              0.09729751275510204,
+              0.2574943124179496
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.30772017421453507,
+            "family_bootstrap_95_interval": [
+              0.22281802596769698,
+              0.399062844984485
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.31296931191611,
+            "family_bootstrap_95_interval": [
+              0.2468961544677766,
+              0.3873782570569367
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.14263787074061185,
+            "family_bootstrap_95_interval": [
+              0.11609331172596853,
+              0.17086601382194627
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.19142982035369255,
+            "family_bootstrap_95_interval": [
+              0.11085725130133024,
+              0.28231139150723256
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.17270416935790062,
+            "family_bootstrap_95_interval": [
+              0.14540937293231923,
+              0.20003408889961172
+            ]
+          },
+          "region_words": {
+            "estimate": 2.2881229212814875,
+            "family_bootstrap_95_interval": [
+              1.8856891947990395,
+              2.763855331867902
+            ]
+          },
+          "words_back": {
+            "estimate": 11.887958980938304,
+            "family_bootstrap_95_interval": [
+              9.90642292778841,
+              13.945352994245383
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.06132692988107341,
+            "family_bootstrap_95_interval": [
+              0.047297017799654034,
+              0.07770227432709524
+            ]
+          }
+        },
+        "lexical": {
+          "region_nll": {
+            "estimate": 1.3703737870949768,
+            "family_bootstrap_95_interval": [
+              1.15079504939196,
+              1.5997610015367285
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.5580554293242262,
+            "family_bootstrap_95_interval": [
+              0.4419992882274368,
+              0.6643830819608545
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.7916643543382266,
+            "family_bootstrap_95_interval": [
+              0.6865271885069817,
+              0.881813980636114
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.6979639865025612,
+            "family_bootstrap_95_interval": [
+              0.6186546669405721,
+              0.7705513733318843
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.41218305533831784,
+            "family_bootstrap_95_interval": [
+              0.349687559106835,
+              0.47366894413260646
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.607848997111215,
+            "family_bootstrap_95_interval": [
+              0.4789687916467757,
+              0.7254946393762184
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.48405088564286153,
+            "family_bootstrap_95_interval": [
+              0.4044889496021163,
+              0.5628323150095857
+            ]
+          },
+          "region_words": {
+            "estimate": 2.2881229212814875,
+            "family_bootstrap_95_interval": [
+              1.8856891947990395,
+              2.763855331867902
+            ]
+          },
+          "words_back": {
+            "estimate": 11.887958980938304,
+            "family_bootstrap_95_interval": [
+              9.90642292778841,
+              13.945352994245383
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.06132692988107341,
+            "family_bootstrap_95_interval": [
+              0.047297017799654034,
+              0.07770227432709524
+            ]
+          }
+        },
+        "pooled": {
+          "region_nll": {
+            "estimate": 0.7807570462566688,
+            "family_bootstrap_95_interval": [
+              0.618840492422093,
+              0.9548809158444812
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.7917329209011539,
+            "family_bootstrap_95_interval": [
+              0.7050445141872538,
+              0.8703145409310822
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.953980332011347,
+            "family_bootstrap_95_interval": [
+              0.9253709458226611,
+              0.9771277409411806
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8757635104727974,
+            "family_bootstrap_95_interval": [
+              0.8247229428853771,
+              0.9220003899412104
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6042199849690373,
+            "family_bootstrap_95_interval": [
+              0.5460500768725323,
+              0.659002317817858
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8518571401795086,
+            "family_bootstrap_95_interval": [
+              0.7637001094578633,
+              0.9271763844707924
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.6964817092023001,
+            "family_bootstrap_95_interval": [
+              0.6269639184662675,
+              0.7593033406559961
+            ]
+          },
+          "region_words": {
+            "estimate": 2.2881229212814875,
+            "family_bootstrap_95_interval": [
+              1.8856891947990395,
+              2.763855331867902
+            ]
+          },
+          "words_back": {
+            "estimate": 11.887958980938304,
+            "family_bootstrap_95_interval": [
+              9.90642292778841,
+              13.945352994245383
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.06132692988107341,
+            "family_bootstrap_95_interval": [
+              0.047297017799654034,
+              0.07770227432709524
+            ]
+          }
+        },
+        "headwise": {
+          "region_nll": {
+            "estimate": 0.6716612795578553,
+            "family_bootstrap_95_interval": [
+              0.5010711171324137,
+              0.8562766450057241
+            ]
+          },
+          "top1_inside": {
+            "estimate": 0.821713406685211,
+            "family_bootstrap_95_interval": [
+              0.7431332327212262,
+              0.8916954924513665
+            ]
+          },
+          "top3_inside": {
+            "estimate": 0.9692760977535413,
+            "family_bootstrap_95_interval": [
+              0.9508877648562799,
+              0.9851066339153746
+            ]
+          },
+          "reciprocal_rank": {
+            "estimate": 0.8933844107871003,
+            "family_bootstrap_95_interval": [
+              0.8447699722117049,
+              0.9352338646318424
+            ]
+          },
+          "clicked_probability": {
+            "estimate": 0.6907427304347101,
+            "family_bootstrap_95_interval": [
+              0.6270015050777896,
+              0.7493052501097754
+            ]
+          },
+          "entity_top1_inside": {
+            "estimate": 0.8922875431099114,
+            "family_bootstrap_95_interval": [
+              0.8097878833129067,
+              0.9583839061940564
+            ]
+          },
+          "entity_probability": {
+            "estimate": 0.7901739602023173,
+            "family_bootstrap_95_interval": [
+              0.7174015957228503,
+              0.8543479218749114
+            ]
+          },
+          "region_words": {
+            "estimate": 2.2881229212814875,
+            "family_bootstrap_95_interval": [
+              1.8856891947990395,
+              2.763855331867902
+            ]
+          },
+          "words_back": {
+            "estimate": 11.887958980938304,
+            "family_bootstrap_95_interval": [
+              9.90642292778841,
+              13.945352994245383
+            ]
+          },
+          "entity_word_coverage_fraction": {
+            "estimate": 0.06132692988107341,
+            "family_bootstrap_95_interval": [
+              0.047297017799654034,
+              0.07770227432709524
+            ]
+          }
+        }
+      },
+      "paired": {
+        "lexical_minus_recency": {
+          "region_nll": {
+            "estimate": -1.1092695575004978,
+            "family_bootstrap_95_interval": [
+              -1.2758219651235072,
+              -0.9183696629536411
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.3870408584036403,
+            "family_bootstrap_95_interval": [
+              0.24607785068593335,
+              0.5109424976130803
+            ],
+            "articles_improved": 22
+          },
+          "top3_inside": {
+            "estimate": 0.4839441801236915,
+            "family_bootstrap_95_interval": [
+              0.3691702152014653,
+              0.5945821491973984
+            ],
+            "articles_improved": 23
+          },
+          "reciprocal_rank": {
+            "estimate": 0.3849946745864512,
+            "family_bootstrap_95_interval": [
+              0.28892220471998203,
+              0.469490006083633
+            ],
+            "articles_improved": 27
+          },
+          "clicked_probability": {
+            "estimate": 0.269545184597706,
+            "family_bootstrap_95_interval": [
+              0.21620567791074294,
+              0.32073464856739764
+            ],
+            "articles_improved": 28
+          },
+          "entity_top1_inside": {
+            "estimate": 0.41641917675752244,
+            "family_bootstrap_95_interval": [
+              0.27021804262640736,
+              0.5461714343857201
+            ],
+            "articles_improved": 22
+          },
+          "entity_probability": {
+            "estimate": 0.3113467162849609,
+            "family_bootstrap_95_interval": [
+              0.24425341493665326,
+              0.3759717609783788
+            ],
+            "articles_improved": 28
+          }
+        },
+        "headwise_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.6987125075371216,
+            "family_bootstrap_95_interval": [
+              -0.9455544494692655,
+              -0.4698286516949474
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.26365797736098473,
+            "family_bootstrap_95_interval": [
+              0.14696166928309776,
+              0.400550005967299
+            ],
+            "articles_improved": 20
+          },
+          "top3_inside": {
+            "estimate": 0.17761174341531472,
+            "family_bootstrap_95_interval": [
+              0.0852780912044305,
+              0.28683137373539136
+            ],
+            "articles_improved": 14
+          },
+          "reciprocal_rank": {
+            "estimate": 0.1954204242845391,
+            "family_bootstrap_95_interval": [
+              0.11940160801858019,
+              0.2834487625299516
+            ],
+            "articles_improved": 22
+          },
+          "clicked_probability": {
+            "estimate": 0.2785596750963923,
+            "family_bootstrap_95_interval": [
+              0.20807319511557887,
+              0.3568851445620371
+            ],
+            "articles_improved": 27
+          },
+          "entity_top1_inside": {
+            "estimate": 0.28443854599869645,
+            "family_bootstrap_95_interval": [
+              0.17271235552250586,
+              0.4146256265664161
+            ],
+            "articles_improved": 19
+          },
+          "entity_probability": {
+            "estimate": 0.3061230745594558,
+            "family_bootstrap_95_interval": [
+              0.23655305162255733,
+              0.37980163972018227
+            ],
+            "articles_improved": 27
+          }
+        },
+        "headwise_minus_pooled": {
+          "region_nll": {
+            "estimate": -0.10909576669881349,
+            "family_bootstrap_95_interval": [
+              -0.17818767456457102,
+              -0.04517644997758776
+            ],
+            "articles_improved": 20
+          },
+          "top1_inside": {
+            "estimate": 0.029980485784057098,
+            "family_bootstrap_95_interval": [
+              -0.038566468253968096,
+              0.09984782454648515
+            ],
+            "articles_improved": 10
+          },
+          "top3_inside": {
+            "estimate": 0.015295765742194267,
+            "family_bootstrap_95_interval": [
+              -0.0023394982993196387,
+              0.04234748386534104
+            ],
+            "articles_improved": 4
+          },
+          "reciprocal_rank": {
+            "estimate": 0.017620900314302856,
+            "family_bootstrap_95_interval": [
+              -0.017781618311752765,
+              0.053195193358042805
+            ],
+            "articles_improved": 13
+          },
+          "clicked_probability": {
+            "estimate": 0.08652274546567285,
+            "family_bootstrap_95_interval": [
+              0.05012798140642394,
+              0.12728484065384663
+            ],
+            "articles_improved": 21
+          },
+          "entity_top1_inside": {
+            "estimate": 0.04043040293040279,
+            "family_bootstrap_95_interval": [
+              -0.021176739926739855,
+              0.10046220892203034
+            ],
+            "articles_improved": 9
+          },
+          "entity_probability": {
+            "estimate": 0.09369225100001721,
+            "family_bootstrap_95_interval": [
+              0.0639161166655591,
+              0.12456973213989558
+            ],
+            "articles_improved": 25
+          }
+        },
+        "pooled_minus_lexical": {
+          "region_nll": {
+            "estimate": -0.5896167408383081,
+            "family_bootstrap_95_interval": [
+              -0.8036262122351685,
+              -0.38950211632648396
+            ],
+            "articles_improved": 27
+          },
+          "top1_inside": {
+            "estimate": 0.23367749157692763,
+            "family_bootstrap_95_interval": [
+              0.12090879528262038,
+              0.3606004016738274
+            ],
+            "articles_improved": 17
+          },
+          "top3_inside": {
+            "estimate": 0.16231597767312045,
+            "family_bootstrap_95_interval": [
+              0.07103041601255888,
+              0.2715880102040814
+            ],
+            "articles_improved": 14
+          },
+          "reciprocal_rank": {
+            "estimate": 0.17779952397023624,
+            "family_bootstrap_95_interval": [
+              0.10575263716014434,
+              0.2594093649226556
+            ],
+            "articles_improved": 23
+          },
+          "clicked_probability": {
+            "estimate": 0.19203692963071944,
+            "family_bootstrap_95_interval": [
+              0.13190788325340136,
+              0.257524776458429
+            ],
+            "articles_improved": 26
+          },
+          "entity_top1_inside": {
+            "estimate": 0.24400814306829366,
+            "family_bootstrap_95_interval": [
+              0.13589931071956443,
+              0.3672871352488365
+            ],
+            "articles_improved": 17
+          },
+          "entity_probability": {
+            "estimate": 0.2124308235594386,
+            "family_bootstrap_95_interval": [
+              0.14886464599016566,
+              0.2794829361433144
+            ],
+            "articles_improved": 26
+          }
+        },
+        "headwise_minus_uniform": {
+          "region_nll": {
+            "estimate": -3.6654078139481783,
+            "family_bootstrap_95_interval": [
+              -4.058108456656306,
+              -3.255532626286329
+            ],
+            "articles_improved": 28
+          },
+          "top1_inside": {
+            "estimate": 0.7897960190152298,
+            "family_bootstrap_95_interval": [
+              0.7020576936859784,
+              0.8637073414901759
+            ],
+            "articles_improved": 28
+          },
+          "top3_inside": {
+            "estimate": 0.8878720296681479,
+            "family_bootstrap_95_interval": [
+              0.8501618392941347,
+              0.9221527874845205
+            ],
+            "articles_improved": 28
+          },
+          "reciprocal_rank": {
+            "estimate": 0.7999088837341455,
+            "family_bootstrap_95_interval": [
+              0.7357136535433206,
+              0.8515746175735471
+            ],
+            "articles_improved": 28
+          },
+          "clicked_probability": {
+            "estimate": 0.6588253427647289,
+            "family_bootstrap_95_interval": [
+              0.5849248990281107,
+              0.7241488096420562
+            ],
+            "articles_improved": 28
+          },
+          "entity_top1_inside": {
+            "estimate": 0.830960613228838,
+            "family_bootstrap_95_interval": [
+              0.7384888525648582,
+              0.9040330740261869
+            ],
+            "articles_improved": 28
+          },
+          "entity_probability": {
+            "estimate": 0.728847030321244,
+            "family_bootstrap_95_interval": [
+              0.6461672363027643,
+              0.7997043937803778
+            ],
+            "articles_improved": 28
+          }
+        }
+      }
+    }
+  }
+}

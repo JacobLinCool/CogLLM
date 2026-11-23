@@ -1,0 +1,108 @@
+{
+  "counts": {
+    "correct": 1171,
+    "passages": 12,
+    "readers": 60,
+    "trials": 1440
+  },
+  "descriptive": {
+    "human_accuracy": 0.8131944444444444,
+    "model_brier": 0.2145125509406275,
+    "model_mean_probability": 0.561204670554861,
+    "model_minus_human_accuracy": -0.25198977388958343,
+    "source_baseline_brier": 0.15206962426164608,
+    "source_baseline_minus_human_accuracy": -0.012664292025624024,
+    "source_baseline_probability": 0.8005301524188204
+  },
+  "estimand": "Horizontal passage-marginal post-reading correctness",
+  "forecast_seal_sha256": "5ec4204050408e8b1ab21b14167f8365a3c9e6f03ada576690ada717b035b65c",
+  "passages": [
+    {
+      "correct": 75,
+      "id": "traditional-chinese-meco:01",
+      "model_probability": 0.5239924937421597,
+      "trials": 120
+    },
+    {
+      "correct": 97,
+      "id": "traditional-chinese-meco:02",
+      "model_probability": 0.565266371501543,
+      "trials": 120
+    },
+    {
+      "correct": 97,
+      "id": "traditional-chinese-meco:03",
+      "model_probability": 0.6108376674585958,
+      "trials": 120
+    },
+    {
+      "correct": 95,
+      "id": "traditional-chinese-meco:04",
+      "model_probability": 0.5204123700123624,
+      "trials": 120
+    },
+    {
+      "correct": 91,
+      "id": "traditional-chinese-meco:05",
+      "model_probability": 0.5723519518418189,
+      "trials": 120
+    },
+    {
+      "correct": 115,
+      "id": "traditional-chinese-meco:06",
+      "model_probability": 0.5622721063773629,
+      "trials": 120
+    },
+    {
+      "correct": 107,
+      "id": "traditional-chinese-meco:07",
+      "model_probability": 0.5887995901861903,
+      "trials": 120
+    },
+    {
+      "correct": 100,
+      "id": "traditional-chinese-meco:08",
+      "model_probability": 0.5977647082068364,
+      "trials": 120
+    },
+    {
+      "correct": 104,
+      "id": "traditional-chinese-meco:09",
+      "model_probability": 0.5517732548513476,
+      "trials": 120
+    },
+    {
+      "correct": 112,
+      "id": "traditional-chinese-meco:10",
+      "model_probability": 0.5441443684774838,
+      "trials": 120
+    },
+    {
+      "correct": 93,
+      "id": "traditional-chinese-meco:11",
+      "model_probability": 0.552622568372993,
+      "trials": 120
+    },
+    {
+      "correct": 85,
+      "id": "traditional-chinese-meco:12",
+      "model_probability": 0.544218595629639,
+      "trials": 120
+    }
+  ],
+  "primary": {
+    "bootstrap_draws": 6000,
+    "bootstrap_seed": 1729,
+    "crossed_bootstrap_95_interval": [
+      0.0704222794018906,
+      0.20626313735807555
+    ],
+    "decision": "supports_worse_performance",
+    "metric": "mean_bernoulli_nll_nats",
+    "model": 0.6216471951762499,
+    "model_minus_source_baseline": 0.13957903879368705,
+    "source_baseline": 0.48206815638256284
+  },
+  "protocol_sha256": "e2c38d6bb1281ba31c1a4be730667267eb8e2b1328cad7a2ad384fea0e5195b1",
+  "source_sha256": "7ed2a73a193b3df6417d86bf18a095905dcf70db6662b9bd0d4656d5a5f52e55"
+}

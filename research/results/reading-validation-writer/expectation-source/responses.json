@@ -1,0 +1,3300 @@
+{
+  "1": {
+    "checkpoint": "c1704d4436d767fa43bdb59e9216698514e1f6bd1d45cad4b60d0f018d84abb5",
+    "english": {
+      "bundle_sha256": "c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e",
+      "expectations": {
+        "coverage": {
+          "adjacent_single_space_updates": 30,
+          "surface_words": 31,
+          "verified_word_ends": 31
+        },
+        "interpretation": "Estimated chance that two English-speaking readers will give different next-word responses among 8,192 named spellings and one other category. Training used genuine English sentence completions and evaluation used English paragraphs.",
+        "scope": "population_next_word_disagreement",
+        "terminal_scope": "At document end, after refers to a hypothetical next word. The source readers predicted actual continuations.",
+        "units": "Probability, from 0 to 1. The exact-spelling upper bound adds other_after squared.",
+        "words": [
+          {
+            "after": 0.9858338709220373,
+            "before": null,
+            "change": null,
+            "document_end": false,
+            "end": 3,
+            "other_after": 0.11077364722681705,
+            "other_before": null,
+            "start": 0,
+            "text": "The",
+            "token": 0,
+            "top_next": [
+              {
+                "probability": 0.11077364722681705,
+                "word": null
+              },
+              {
+                "probability": 0.011282434432486348,
+                "word": "first"
+              },
+              {
+                "probability": 0.009548945558888128,
+                "word": "text"
+              }
+            ],
+            "word_index": 0
+          },
+          {
+            "after": 0.9376476821532107,
+            "before": 0.9858338709220373,
+            "change": -0.04818618876882663,
+            "document_end": false,
+            "end": 10,
+            "other_after": 0.02372799564396905,
+            "other_before": 0.11077364722681705,
+            "start": 4,
+            "text": "lights",
+            "token": 1,
+            "top_next": [
+              {
+                "probability": 0.17894373257346508,
+                "word": "were"
+              },
+              {
+                "probability": 0.09256210063289919,
+                "word": "of"
+              },
+              {
+                "probability": 0.07566232246882205,
+                "word": "are"
+              }
+            ],
+            "word_index": 1
+          },
+          {
+            "after": 0.4592407823342092,
+            "before": 0.9376476821532107,
+            "change": -0.47840689981900153,
+            "document_end": false,
+            "end": 15,
+            "other_after": 0.010439994220989344,
+            "other_before": 0.02372799564396905,
+            "start": 11,
+            "text": "went",
+            "token": 2,
+            "top_next": [
+              {
+                "probability": 0.7246633872551095,
+                "word": "out"
+              },
+              {
+                "probability": 0.11506058430536514,
+                "word": "off"
+              },
+              {
+                "probability": 0.027475142083900263,
+                "word": "down"
+              }
+            ],
+            "word_index": 2
+          },
+          {
+            "after": 0.944092134972517,
+            "before": 0.4592407823342092,
+            "change": 0.4848513526383078,
+            "document_end": false,
+            "end": 19,
+            "other_after": 0.07562180979169296,
+            "other_before": 0.010439994220989344,
+            "start": 16,
+            "text": "out",
+            "token": 3,
+            "top_next": [
+              {
+                "probability": 0.16840066426775308,
+                "word": "suddenly"
+              },
+              {
+                "probability": 0.07997589245265982,
+                "word": "and"
+              },
+              {
+                "probability": 0.07562180979169296,
+                "word": null
+              }
+            ],
+            "word_index": 3
+          },
+          {
+            "after": 0.7739089527701851,
+            "before": 0.944092134972517,
+            "change": -0.17018318220233186,
+            "document_end": false,
+            "end": 22,
+            "other_after": 0.07609038448858377,
+            "other_before": 0.07562180979169296,
+            "start": 20,
+            "text": "in",
+            "token": 4,
+            "top_next": [
+              {
+                "probability": 0.4415738822871441,
+                "word": "the"
+              },
+              {
+                "probability": 0.1443711428568876,
+                "word": "my"
+              },
+              {
+                "probability": 0.07609038448858377,
+                "word": null
+              }
+            ],
+            "word_index": 4
+          },
+          {
+            "after": 0.9613087502112629,
+            "before": 0.7739089527701851,
+            "change": 0.18739979744107782,
+            "document_end": false,
+            "end": 26,
+            "other_after": 0.030816344762825517,
+            "other_before": 0.07609038448858377,
+            "start": 23,
+            "text": "the",
+            "token": 5,
+            "top_next": [
+              {
+                "probability": 0.1333784713110653,
+                "word": "room"
+              },
+              {
+                "probability": 0.11490600303282215,
+                "word": "house"
+              },
+              {
+                "probability": 0.04718805498911828,
+                "word": "kitchen"
+              }
+            ],
+            "word_index": 5
+          },
+          {
+            "after": 0.1660223923185722,
+            "before": 0.9613087502112629,
+            "change": -0.7952863578926908,
+            "document_end": false,
+            "end": 33,
+            "other_after": 0.008084147877626595,
+            "other_before": 0.030816344762825517,
+            "start": 27,
+            "text": "middle",
+            "token": 6,
+            "top_next": [
+              {
+                "probability": 0.9130736743203782,
+                "word": "of"
+              },
+              {
+                "probability": 0.00993943377022273,
+                "word": "and"
+              },
+              {
+                "probability": 0.008084147877626595,
+                "word": null
+              }
+            ],
+            "word_index": 6
+          },
+          {
+            "after": 0.5491417567111357,
+            "before": 0.1660223923185722,
+            "change": 0.38311936439256356,
+            "document_end": false,
+            "end": 36,
+            "other_after": 0.00850286990703431,
+            "other_before": 0.008084147877626595,
+            "start": 34,
+            "text": "of",
+            "token": 7,
+            "top_next": [
+              {
+                "probability": 0.6583085908741565,
+                "word": "the"
+              },
+              {
+                "probability": 0.11409546492148369,
+                "word": "a"
+              },
+              {
+                "probability": 0.05658300417695255,
+                "word": "my"
+              }
+            ],
+            "word_index": 7
+          },
+          {
+            "after": 0.14283946519915924,
+            "before": 0.5491417567111357,
+            "change": -0.4063022915119765,
+            "document_end": false,
+            "end": 44,
+            "other_after": 0.9257618930723498,
+            "other_before": 0.00850286990703431,
+            "start": 37,
+            "text": "dinner.",
+            "token": 9,
+            "top_next": [
+              {
+                "probability": 0.9257618930723498,
+                "word": null
+              },
+              {
+                "probability": 0.009165495770435924,
+                "word": "rome"
+              },
+              {
+                "probability": 0.004000807965715373,
+                "word": "i"
+              }
+            ],
+            "word_index": 8
+          },
+          {
+            "after": 0.9729284832879198,
+            "before": 0.14283946519915924,
+            "change": 0.8300890180887606,
+            "document_end": false,
+            "end": 49,
+            "other_after": 0.08659409869041243,
+            "other_before": 0.9257618930723498,
+            "start": 45,
+            "text": "Maya",
+            "token": 10,
+            "top_next": [
+              {
+                "probability": 0.08659409869041243,
+                "word": null
+              },
+              {
+                "probability": 0.07078211181397324,
+                "word": "didn't"
+              },
+              {
+                "probability": 0.04236925157107275,
+                "word": "was"
+              }
+            ],
+            "word_index": 9
+          },
+          {
+            "after": 0.657351236082568,
+            "before": 0.9729284832879198,
+            "change": -0.31557724720535185,
+            "document_end": false,
+            "end": 56,
+            "other_after": 0.021589410754905447,
+            "other_before": 0.08659409869041243,
+            "start": 50,
+            "text": "opened",
+            "token": 11,
+            "top_next": [
+              {
+                "probability": 0.4281276898492444,
+                "word": "the"
+              },
+              {
+                "probability": 0.3945009867918683,
+                "word": "her"
+              },
+              {
+                "probability": 0.05255644878310303,
+                "word": "a"
+              }
+            ],
+            "word_index": 10
+          },
+          {
+            "after": 0.9635917660038305,
+            "before": 0.657351236082568,
+            "change": 0.3062405299212625,
+            "document_end": false,
+            "end": 58,
+            "other_after": 0.09550008319375147,
+            "other_before": 0.021589410754905447,
+            "start": 57,
+            "text": "a",
+            "token": 12,
+            "top_next": [
+              {
+                "probability": 0.11598987038696403,
+                "word": "window"
+              },
+              {
+                "probability": 0.09550008319375147,
+                "word": null
+              },
+              {
+                "probability": 0.08660134647735562,
+                "word": "bottle"
+              }
+            ],
+            "word_index": 11
+          },
+          {
+            "after": 0.8374221255728361,
+            "before": 0.9635917660038305,
+            "change": -0.12616964043099432,
+            "document_end": false,
+            "end": 65,
+            "other_after": 0.13446605886988702,
+            "other_before": 0.09550008319375147,
+            "start": 59,
+            "text": "drawer",
+            "token": 13,
+            "top_next": [
+              {
+                "probability": 0.3425374322077496,
+                "word": "and"
+              },
+              {
+                "probability": 0.135070792957133,
+                "word": "to"
+              },
+              {
+                "probability": 0.13446605886988702,
+                "word": null
+              }
+            ],
+            "word_index": 12
+          },
+          {
+            "after": 0.9332785023950525,
+            "before": 0.8374221255728361,
+            "change": 0.09585637682221637,
+            "document_end": false,
+            "end": 69,
+            "other_after": 0.11184261716313668,
+            "other_before": 0.13446605886988702,
+            "start": 66,
+            "text": "and",
+            "token": 14,
+            "top_next": [
+              {
+                "probability": 0.18524784585045267,
+                "word": "pulled"
+              },
+              {
+                "probability": 0.11184261716313668,
+                "word": null
+              },
+              {
+                "probability": 0.08795048321808348,
+                "word": "found"
+              }
+            ],
+            "word_index": 13
+          },
+          {
+            "after": 0.9395847287955249,
+            "before": 0.9332785023950525,
+            "change": 0.006306226400472403,
+            "document_end": false,
+            "end": 74,
+            "other_after": 0.0546441338734293,
+            "other_before": 0.11184261716313668,
+            "start": 70,
+            "text": "felt",
+            "token": 15,
+            "top_next": [
+              {
+                "probability": 0.16424972058989587,
+                "word": "a"
+              },
+              {
+                "probability": 0.11905915482307007,
+                "word": "the"
+              },
+              {
+                "probability": 0.09291214630966195,
+                "word": "her"
+              }
+            ],
+            "word_index": 14
+          },
+          {
+            "after": 0.8852891478571343,
+            "before": 0.9395847287955249,
+            "change": -0.0542955809383906,
+            "document_end": false,
+            "end": 81,
+            "other_after": 0.1307576983507145,
+            "other_before": 0.0546441338734293,
+            "start": 75,
+            "text": "around",
+            "token": 16,
+            "top_next": [
+              {
+                "probability": 0.2061919051172422,
+                "word": "for"
+              },
+              {
+                "probability": 0.18649989714779439,
+                "word": "until"
+              },
+              {
+                "probability": 0.1307576983507145,
+                "word": null
+              }
+            ],
+            "word_index": 15
+          },
+          {
+            "after": 0.13768957937672432,
+            "before": 0.8852891478571343,
+            "change": -0.74759956848041,
+            "document_end": false,
+            "end": 87,
+            "other_after": 0.002018202342504026,
+            "other_before": 0.1307576983507145,
+            "start": 82,
+            "text": "until",
+            "token": 17,
+            "top_next": [
+              {
+                "probability": 0.9282963842443498,
+                "word": "she"
+              },
+              {
+                "probability": 0.019204653253747317,
+                "word": "she's"
+              },
+              {
+                "probability": 0.007307221216526064,
+                "word": "they"
+              }
+            ],
+            "word_index": 16
+          },
+          {
+            "after": 0.7931115132566473,
+            "before": 0.13768957937672432,
+            "change": 0.655421933879923,
+            "document_end": false,
+            "end": 91,
+            "other_after": 0.05272195633395465,
+            "other_before": 0.002018202342504026,
+            "start": 88,
+            "text": "she",
+            "token": 18,
+            "top_next": [
+              {
+                "probability": 0.423661416559989,
+                "word": "found"
+              },
+              {
+                "probability": 0.1375335890342616,
+                "word": "felt"
+              },
+              {
+                "probability": 0.05272195633395465,
+                "word": null
+              }
+            ],
+            "word_index": 17
+          },
+          {
+            "after": 0.7562223636834737,
+            "before": 0.7931115132566473,
+            "change": -0.036889149573173574,
+            "document_end": false,
+            "end": 97,
+            "other_after": 0.017537919833150593,
+            "other_before": 0.05272195633395465,
+            "start": 92,
+            "text": "found",
+            "token": 19,
+            "top_next": [
+              {
+                "probability": 0.3794891233265758,
+                "word": "a"
+              },
+              {
+                "probability": 0.2939266369553204,
+                "word": "the"
+              },
+              {
+                "probability": 0.08850337019011706,
+                "word": "her"
+              }
+            ],
+            "word_index": 18
+          },
+          {
+            "after": 0.9752756685314646,
+            "before": 0.7562223636834737,
+            "change": 0.2190533048479909,
+            "document_end": false,
+            "end": 99,
+            "other_after": 0.1302772843737675,
+            "other_before": 0.017537919833150593,
+            "start": 98,
+            "text": "a",
+            "token": 20,
+            "top_next": [
+              {
+                "probability": 0.1302772843737675,
+                "word": null
+              },
+              {
+                "probability": 0.04279721508491166,
+                "word": "box"
+              },
+              {
+                "probability": 0.031422066053757525,
+                "word": "small"
+              }
+            ],
+            "word_index": 19
+          },
+          {
+            "after": 0.08581013417302064,
+            "before": 0.9752756685314646,
+            "change": -0.889465534358444,
+            "document_end": false,
+            "end": 106,
+            "other_after": 0.9559791362067394,
+            "other_before": 0.1302772843737675,
+            "start": 100,
+            "text": "match.",
+            "token": 22,
+            "top_next": [
+              {
+                "probability": 0.9559791362067394,
+                "word": null
+              },
+              {
+                "probability": 0.016812394514296523,
+                "word": "she"
+              },
+              {
+                "probability": 0.0018356236005608,
+                "word": "rome"
+              }
+            ],
+            "word_index": 20
+          },
+          {
+            "after": 0.9826665078988559,
+            "before": 0.08581013417302064,
+            "change": 0.8968563737258353,
+            "document_end": false,
+            "end": 108,
+            "other_after": 0.041790757919850784,
+            "other_before": 0.9559791362067394,
+            "start": 107,
+            "text": "A",
+            "token": 23,
+            "top_next": [
+              {
+                "probability": 0.06166487801949651,
+                "word": "little"
+              },
+              {
+                "probability": 0.05186316593287768,
+                "word": "few"
+              },
+              {
+                "probability": 0.04505074110638774,
+                "word": "fire"
+              }
+            ],
+            "word_index": 21
+          },
+          {
+            "after": 0.4175195121775481,
+            "before": 0.9826665078988559,
+            "change": -0.5651469957213078,
+            "document_end": false,
+            "end": 115,
+            "other_after": 0.014778312631560512,
+            "other_before": 0.041790757919850784,
+            "start": 109,
+            "text": "moment",
+            "token": 24,
+            "top_next": [
+              {
+                "probability": 0.7529605195107908,
+                "word": "later"
+              },
+              {
+                "probability": 0.11772591517304967,
+                "word": "of"
+              },
+              {
+                "probability": 0.02802572859419798,
+                "word": "ago"
+              }
+            ],
+            "word_index": 22
+          },
+          {
+            "after": 0.6903535412884322,
+            "before": 0.4175195121775481,
+            "change": 0.27283402911088406,
+            "document_end": false,
+            "end": 121,
+            "other_after": 0.2402274990299276,
+            "other_before": 0.014778312631560512,
+            "start": 116,
+            "text": "later",
+            "token": 25,
+            "top_next": [
+              {
+                "probability": 0.4866405356672946,
+                "word": "she"
+              },
+              {
+                "probability": 0.2402274990299276,
+                "word": null
+              },
+              {
+                "probability": 0.11226246507925697,
+                "word": "the"
+              }
+            ],
+            "word_index": 23
+          },
+          {
+            "after": 0.916058514347073,
+            "before": 0.6903535412884322,
+            "change": 0.2257049730586408,
+            "document_end": false,
+            "end": 125,
+            "other_after": 0.03442529616597131,
+            "other_before": 0.2402274990299276,
+            "start": 122,
+            "text": "the",
+            "token": 26,
+            "top_next": [
+              {
+                "probability": 0.19932415382531307,
+                "word": "room"
+              },
+              {
+                "probability": 0.1641366032758337,
+                "word": "kitchen"
+              },
+              {
+                "probability": 0.08229378012271903,
+                "word": "lights"
+              }
+            ],
+            "word_index": 24
+          },
+          {
+            "after": 0.9431557237811592,
+            "before": 0.916058514347073,
+            "change": 0.027097209434086222,
+            "document_end": false,
+            "end": 132,
+            "other_after": 0.1280608082366989,
+            "other_before": 0.03442529616597131,
+            "start": 126,
+            "text": "candle",
+            "token": 27,
+            "top_next": [
+              {
+                "probability": 0.14436248853520064,
+                "word": "was"
+              },
+              {
+                "probability": 0.1280608082366989,
+                "word": null
+              },
+              {
+                "probability": 0.06607423291977568,
+                "word": "burned"
+              }
+            ],
+            "word_index": 25
+          },
+          {
+            "after": 0.5044575990216726,
+            "before": 0.9431557237811592,
+            "change": -0.43869812475948655,
+            "document_end": false,
+            "end": 135,
+            "other_after": 0.0034175767096159835,
+            "other_before": 0.1280608082366989,
+            "start": 133,
+            "text": "on",
+            "token": 28,
+            "top_next": [
+              {
+                "probability": 0.6500086527592752,
+                "word": "the"
+              },
+              {
+                "probability": 0.26856031164746386,
+                "word": "her"
+              },
+              {
+                "probability": 0.025529817470666294,
+                "word": "a"
+              }
+            ],
+            "word_index": 26
+          },
+          {
+            "after": 0.8307796750527038,
+            "before": 0.5044575990216726,
+            "change": 0.32632207603103114,
+            "document_end": false,
+            "end": 139,
+            "other_after": 0.06786378893026226,
+            "other_before": 0.0034175767096159835,
+            "start": 136,
+            "text": "the",
+            "token": 29,
+            "top_next": [
+              {
+                "probability": 0.3831183213403699,
+                "word": "table"
+              },
+              {
+                "probability": 0.08158916082531352,
+                "word": "night"
+              },
+              {
+                "probability": 0.06786378893026226,
+                "word": null
+              }
+            ],
+            "word_index": 27
+          },
+          {
+            "after": 0.9248142910155126,
+            "before": 0.8307796750527038,
+            "change": 0.09403461596280882,
+            "document_end": false,
+            "end": 145,
+            "other_after": 0.09743616113105878,
+            "other_before": 0.06786378893026226,
+            "start": 140,
+            "text": "table",
+            "token": 30,
+            "top_next": [
+              {
+                "probability": 0.1722913381953687,
+                "word": "was"
+              },
+              {
+                "probability": 0.12019942606909123,
+                "word": "began"
+              },
+              {
+                "probability": 0.10249429055509501,
+                "word": "burned"
+              }
+            ],
+            "word_index": 28
+          },
+          {
+            "after": 0.9338273379627883,
+            "before": 0.9248142910155126,
+            "change": 0.009013046947275671,
+            "document_end": false,
+            "end": 149,
+            "other_after": 0.12096535597156731,
+            "other_before": 0.09743616113105878,
+            "start": 146,
+            "text": "was",
+            "token": 31,
+            "top_next": [
+              {
+                "probability": 0.18144970344846767,
+                "word": "lit"
+              },
+              {
+                "probability": 0.12096535597156731,
+                "word": null
+              },
+              {
+                "probability": 0.10578310148996131,
+                "word": "burning"
+              }
+            ],
+            "word_index": 29
+          },
+          {
+            "after": 0.08412453816959875,
+            "before": 0.9338273379627883,
+            "change": -0.8497027997931895,
+            "document_end": true,
+            "end": 158,
+            "other_after": 0.9569352139109647,
+            "other_before": 0.12096535597156731,
+            "start": 150,
+            "text": "burning.",
+            "token": 33,
+            "top_next": [
+              {
+                "probability": 0.9569352139109647,
+                "word": null
+              },
+              {
+                "probability": 0.01179098042437177,
+                "word": "she"
+              },
+              {
+                "probability": 0.00260930666771709,
+                "word": "rome"
+              }
+            ],
+            "word_index": 30
+          }
+        ]
+      },
+      "language": "en",
+      "schema": "cogllm-local-reading-en-v1",
+      "sentences": [
+        {
+          "certified_words": 9,
+          "end": 44,
+          "phrases": [
+            {
+              "end": 43,
+              "rank": 1,
+              "score": -0.003491215066818709,
+              "start": 37
+            },
+            {
+              "end": 33,
+              "rank": 2,
+              "score": -0.018685598226877154,
+              "start": 27
+            },
+            {
+              "end": 15,
+              "rank": 3,
+              "score": -1.5596816512865799,
+              "start": 4
+            },
+            {
+              "end": 19,
+              "rank": 4,
+              "score": -2.4495739712065134,
+              "start": 16
+            },
+            {
+              "end": 22,
+              "rank": 5,
+              "score": -3.560076492410901,
+              "start": 20
+            }
+          ],
+          "rating": {
+            "ease": 4.792706162110453,
+            "understanding": 4.794298249828106
+          },
+          "start": 0,
+          "words": 9
+        },
+        {
+          "certified_words": 12,
+          "end": 106,
+          "phrases": [
+            {
+              "end": 65,
+              "rank": 1,
+              "score": 3.3176916472022446,
+              "start": 59
+            },
+            {
+              "end": 49,
+              "rank": 2,
+              "score": 2.153002947756574,
+              "start": 45
+            },
+            {
+              "end": 74,
+              "rank": 3,
+              "score": 1.175679243335536,
+              "start": 70
+            },
+            {
+              "end": 56,
+              "rank": 4,
+              "score": 0.7822861390581777,
+              "start": 50
+            },
+            {
+              "end": 81,
+              "rank": 5,
+              "score": 0.6952246664973761,
+              "start": 75
+            }
+          ],
+          "rating": {
+            "ease": 4.632182907112208,
+            "understanding": 4.690293440178244
+          },
+          "start": 45,
+          "words": 12
+        },
+        {
+          "certified_words": 10,
+          "end": 158,
+          "phrases": [
+            {
+              "end": 132,
+              "rank": 1,
+              "score": 1.2693054650307014,
+              "start": 126
+            },
+            {
+              "end": 115,
+              "rank": 2,
+              "score": 1.1340841532301442,
+              "start": 109
+            },
+            {
+              "end": 157,
+              "rank": 3,
+              "score": 0.43684303829010285,
+              "start": 150
+            },
+            {
+              "end": 108,
+              "rank": 4,
+              "score": 0.2729782926188828,
+              "start": 107
+            },
+            {
+              "end": 121,
+              "rank": 5,
+              "score": -0.0016213060018642755,
+              "start": 116
+            }
+          ],
+          "rating": {
+            "ease": 4.747961318500973,
+            "understanding": 4.763960277013123
+          },
+          "start": 107,
+          "words": 10
+        }
+      ],
+      "transitions": [
+        {
+          "distilled_risk": 0.10853165086482387,
+          "end": 106,
+          "flagged": false,
+          "risk": 0.10518847982023084,
+          "sentence_index": 2,
+          "start": 45,
+          "surprisal_control_risk": 0.15069811413715475,
+          "threshold": 0.39221974817295097
+        },
+        {
+          "distilled_risk": 0.044358924564790764,
+          "end": 158,
+          "flagged": false,
+          "risk": 0.016417092568543384,
+          "sentence_index": 3,
+          "start": 107,
+          "surprisal_control_risk": 0.06259606852275751,
+          "threshold": 0.39221974817295097
+        }
+      ]
+    },
+    "text": "The lights went out in the middle of dinner. Maya opened a drawer and felt around until she found a match. A moment later the candle on the table was burning.",
+    "tokens": [
+      {
+        "end": 3,
+        "opened": 0.003983070142567158,
+        "pointer_end": null,
+        "pointer_start": null,
+        "resolved": 0.0,
+        "start": 0,
+        "transition": 0.0,
+        "unresolved": 0.003983070142567158
+      },
+      {
+        "end": 10,
+        "opened": 0.0056526619009673595,
+        "pointer_end": 3,
+        "pointer_start": 0,
+        "resolved": 0.00011512887431308627,
+        "start": 3,
+        "transition": 0.0012864622985944152,
+        "unresolved": 0.009520603343844414
+      },
+      {
+        "end": 15,
+        "opened": 0.0007577718934044242,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00012748214066959918,
+        "start": 10,
+        "transition": 0.0017895292257890105,
+        "unresolved": 0.010150892660021782
+      },
+      {
+        "end": 19,
+        "opened": 0.0023148078471422195,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.0003036613925360143,
+        "start": 15,
+        "transition": 0.0017815821338444948,
+        "unresolved": 0.012162039056420326
+      },
+      {
+        "end": 22,
+        "opened": 0.0013328316854313016,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00013105157995596528,
+        "start": 19,
+        "transition": 0.0017712839180603623,
+        "unresolved": 0.013363818638026714
+      },
+      {
+        "end": 26,
+        "opened": 0.0014607432531192899,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.0001714443351374939,
+        "start": 22,
+        "transition": 0.0013403099728748202,
+        "unresolved": 0.014653118327260017
+      },
+      {
+        "end": 33,
+        "opened": 0.007286075968295336,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00020555585797410458,
+        "start": 26,
+        "transition": 0.001699488260783255,
+        "unresolved": 0.021733637899160385
+      },
+      {
+        "end": 36,
+        "opened": 0.000688288186211139,
+        "pointer_end": 33,
+        "pointer_start": 15,
+        "resolved": 0.0001507271663285792,
+        "start": 33,
+        "transition": 0.001986826304346323,
+        "unresolved": 0.02227119915187359
+      },
+      {
+        "end": 43,
+        "opened": 0.0072476244531571865,
+        "pointer_end": 33,
+        "pointer_start": 15,
+        "resolved": 0.0012295522028580308,
+        "start": 36,
+        "transition": 0.005142679903656244,
+        "unresolved": 0.028289273381233215
+      },
+      {
+        "end": 44,
+        "opened": 0.0,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 4.639139660866931e-05,
+        "start": 43,
+        "transition": 0.003908971790224314,
+        "unresolved": 0.02824288047850132
+      },
+      {
+        "end": 49,
+        "opened": 0.0030219119507819414,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.0006411101203411818,
+        "start": 44,
+        "transition": 0.004648622125387192,
+        "unresolved": 0.030623681843280792
+      },
+      {
+        "end": 56,
+        "opened": 0.00044293192331679165,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.00019788136705756187,
+        "start": 49,
+        "transition": 0.003834398929029703,
+        "unresolved": 0.030868731439113617
+      },
+      {
+        "end": 58,
+        "opened": 0.0008053907658904791,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.0002606264897622168,
+        "start": 56,
+        "transition": 0.003637137822806835,
+        "unresolved": 0.031413495540618896
+      },
+      {
+        "end": 65,
+        "opened": 0.009266218170523643,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.0011118358233943582,
+        "start": 58,
+        "transition": 0.005554960574954748,
+        "unresolved": 0.03956788033246994
+      },
+      {
+        "end": 69,
+        "opened": 0.0003258012293372303,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0001286371989408508,
+        "start": 65,
+        "transition": 0.002843204652890563,
+        "unresolved": 0.039765045046806335
+      },
+      {
+        "end": 74,
+        "opened": 0.00048006768338382244,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00023295546998269856,
+        "start": 69,
+        "transition": 0.005306023173034191,
+        "unresolved": 0.04001215845346451
+      },
+      {
+        "end": 81,
+        "opened": 0.0009894628310576081,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.002048041671514511,
+        "start": 74,
+        "transition": 0.008512812666594982,
+        "unresolved": 0.03895357623696327
+      },
+      {
+        "end": 87,
+        "opened": 0.0006649490096606314,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 8.721049380255863e-05,
+        "start": 81,
+        "transition": 0.005137343425303698,
+        "unresolved": 0.039531316608190536
+      },
+      {
+        "end": 91,
+        "opened": 0.0008913657511584461,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0011758103501051664,
+        "start": 87,
+        "transition": 0.0029089581221342087,
+        "unresolved": 0.03924687206745148
+      },
+      {
+        "end": 97,
+        "opened": 0.0007643084391020238,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00015732778410892934,
+        "start": 91,
+        "transition": 0.0025093592703342438,
+        "unresolved": 0.03985384851694107
+      },
+      {
+        "end": 99,
+        "opened": 0.0004072560404893011,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.000505681789945811,
+        "start": 97,
+        "transition": 0.004456138238310814,
+        "unresolved": 0.03975542634725571
+      },
+      {
+        "end": 105,
+        "opened": 0.00795193761587143,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0008592071244493127,
+        "start": 99,
+        "transition": 0.00815108697861433,
+        "unresolved": 0.04684815555810928
+      },
+      {
+        "end": 106,
+        "opened": 0.0,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 6.304917042143643e-05,
+        "start": 105,
+        "transition": 0.005640285089612007,
+        "unresolved": 0.046785108745098114
+      },
+      {
+        "end": 108,
+        "opened": 0.0009099967428483069,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0006121076876297593,
+        "start": 106,
+        "transition": 0.004447732120752335,
+        "unresolved": 0.04708299785852432
+      },
+      {
+        "end": 115,
+        "opened": 0.0016103865345939994,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00014653743710368872,
+        "start": 108,
+        "transition": 0.0029135067015886307,
+        "unresolved": 0.04854684695601463
+      },
+      {
+        "end": 121,
+        "opened": 0.0005081710405647755,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00019463663920760155,
+        "start": 115,
+        "transition": 0.0032351426780223846,
+        "unresolved": 0.04886037856340408
+      },
+      {
+        "end": 125,
+        "opened": 0.00047238278784789145,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00044805541983805597,
+        "start": 121,
+        "transition": 0.006178294308483601,
+        "unresolved": 0.04888470843434334
+      },
+      {
+        "end": 132,
+        "opened": 0.0223043542355299,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00034419255098327994,
+        "start": 125,
+        "transition": 0.004818530287593603,
+        "unresolved": 0.0708448737859726
+      },
+      {
+        "end": 135,
+        "opened": 0.0011215423000976443,
+        "pointer_end": 132,
+        "pointer_start": 108,
+        "resolved": 0.00022592231107410043,
+        "start": 132,
+        "transition": 0.0028276355005800724,
+        "unresolved": 0.07174049317836761
+      },
+      {
+        "end": 139,
+        "opened": 0.0012135502183809876,
+        "pointer_end": 132,
+        "pointer_start": 108,
+        "resolved": 0.0003645425895228982,
+        "start": 135,
+        "transition": 0.004250598140060902,
+        "unresolved": 0.07258950173854828
+      },
+      {
+        "end": 145,
+        "opened": 0.004624050576239824,
+        "pointer_end": 132,
+        "pointer_start": 108,
+        "resolved": 0.0009285225532948971,
+        "start": 139,
+        "transition": 0.0035733242984861135,
+        "unresolved": 0.07628502696752548
+      },
+      {
+        "end": 149,
+        "opened": 0.0004241656279191375,
+        "pointer_end": 132,
+        "pointer_start": 108,
+        "resolved": 0.0005860022502020001,
+        "start": 145,
+        "transition": 0.004359453450888395,
+        "unresolved": 0.0761231929063797
+      },
+      {
+        "end": 157,
+        "opened": 0.0008593713282607496,
+        "pointer_end": 132,
+        "pointer_start": 108,
+        "resolved": 0.001045070355758071,
+        "start": 149,
+        "transition": 0.011626399122178555,
+        "unresolved": 0.07593749463558197
+      },
+      {
+        "end": 158,
+        "opened": 0.0,
+        "pointer_end": 132,
+        "pointer_start": 108,
+        "resolved": 0.00025547895347699523,
+        "start": 157,
+        "transition": 0.006362694315612316,
+        "unresolved": 0.07568200677633286
+      }
+    ]
+  },
+  "2": {
+    "checkpoint": "c1704d4436d767fa43bdb59e9216698514e1f6bd1d45cad4b60d0f018d84abb5",
+    "english": {
+      "bundle_sha256": "c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e",
+      "expectations": {
+        "coverage": {
+          "adjacent_single_space_updates": 28,
+          "surface_words": 29,
+          "verified_word_ends": 29
+        },
+        "interpretation": "Estimated chance that two English-speaking readers will give different next-word responses among 8,192 named spellings and one other category. Training used genuine English sentence completions and evaluation used English paragraphs.",
+        "scope": "population_next_word_disagreement",
+        "terminal_scope": "At document end, after refers to a hypothetical next word. The source readers predicted actual continuations.",
+        "units": "Probability, from 0 to 1. The exact-spelling upper bound adds other_after squared.",
+        "words": [
+          {
+            "after": 0.9858338699520114,
+            "before": null,
+            "change": null,
+            "document_end": false,
+            "end": 3,
+            "other_after": 0.1107736518717438,
+            "other_before": null,
+            "start": 0,
+            "text": "The",
+            "token": 0,
+            "top_next": [
+              {
+                "probability": 0.1107736518717438,
+                "word": null
+              },
+              {
+                "probability": 0.0112824336043733,
+                "word": "first"
+              },
+              {
+                "probability": 0.009548946330005616,
+                "word": "text"
+              }
+            ],
+            "word_index": 0
+          },
+          {
+            "after": 0.9376476959606426,
+            "before": 0.9858338699520114,
+            "change": -0.04818617399136882,
+            "document_end": false,
+            "end": 10,
+            "other_after": 0.023727993016360815,
+            "other_before": 0.1107736518717438,
+            "start": 4,
+            "text": "lights",
+            "token": 1,
+            "top_next": [
+              {
+                "probability": 0.1789437127574624,
+                "word": "were"
+              },
+              {
+                "probability": 0.0925620903826892,
+                "word": "of"
+              },
+              {
+                "probability": 0.07566231409007212,
+                "word": "are"
+              }
+            ],
+            "word_index": 1
+          },
+          {
+            "after": 0.4592407713969703,
+            "before": 0.9376476959606426,
+            "change": -0.4784069245636723,
+            "document_end": false,
+            "end": 15,
+            "other_after": 0.010439994326568156,
+            "other_before": 0.023727993016360815,
+            "start": 11,
+            "text": "went",
+            "token": 2,
+            "top_next": [
+              {
+                "probability": 0.7246633945835713,
+                "word": "out"
+              },
+              {
+                "probability": 0.11506058546896346,
+                "word": "off"
+              },
+              {
+                "probability": 0.027475142361754138,
+                "word": "down"
+              }
+            ],
+            "word_index": 2
+          },
+          {
+            "after": 0.9440923362856372,
+            "before": 0.4592407713969703,
+            "change": 0.4848515648886669,
+            "document_end": false,
+            "end": 19,
+            "other_after": 0.07562167083322081,
+            "other_before": 0.010439994326568156,
+            "start": 16,
+            "text": "out",
+            "token": 3,
+            "top_next": [
+              {
+                "probability": 0.16840037152355172,
+                "word": "suddenly"
+              },
+              {
+                "probability": 0.07997573756249425,
+                "word": "and"
+              },
+              {
+                "probability": 0.07562167083322081,
+                "word": null
+              }
+            ],
+            "word_index": 3
+          },
+          {
+            "after": 0.7739089733713647,
+            "before": 0.9440923362856372,
+            "change": -0.1701833629142725,
+            "document_end": false,
+            "end": 22,
+            "other_after": 0.07609038264878762,
+            "other_before": 0.07562167083322081,
+            "start": 20,
+            "text": "in",
+            "token": 4,
+            "top_next": [
+              {
+                "probability": 0.4415738606630163,
+                "word": "the"
+              },
+              {
+                "probability": 0.14437113936612495,
+                "word": "my"
+              },
+              {
+                "probability": 0.07609038264878762,
+                "word": null
+              }
+            ],
+            "word_index": 4
+          },
+          {
+            "after": 0.9613086511938159,
+            "before": 0.7739089733713647,
+            "change": 0.18739967782245126,
+            "document_end": false,
+            "end": 26,
+            "other_after": 0.030816387573105244,
+            "other_before": 0.07609038264878762,
+            "start": 23,
+            "text": "the",
+            "token": 5,
+            "top_next": [
+              {
+                "probability": 0.1333786433747406,
+                "word": "room"
+              },
+              {
+                "probability": 0.1149061512662589,
+                "word": "house"
+              },
+              {
+                "probability": 0.04718811586363641,
+                "word": "kitchen"
+              }
+            ],
+            "word_index": 5
+          },
+          {
+            "after": 0.16602261573900012,
+            "before": 0.9613086511938159,
+            "change": -0.7952860354548158,
+            "document_end": false,
+            "end": 33,
+            "other_after": 0.008084146945737256,
+            "other_before": 0.030816387573105244,
+            "start": 27,
+            "text": "middle",
+            "token": 6,
+            "top_next": [
+              {
+                "probability": 0.9130735520896908,
+                "word": "of"
+              },
+              {
+                "probability": 0.00993942868185517,
+                "word": "and"
+              },
+              {
+                "probability": 0.008084146945737256,
+                "word": null
+              }
+            ],
+            "word_index": 6
+          },
+          {
+            "after": 0.5491417013299495,
+            "before": 0.16602261573900012,
+            "change": 0.3831190855909494,
+            "document_end": false,
+            "end": 36,
+            "other_after": 0.008502872002463734,
+            "other_before": 0.008084146945737256,
+            "start": 34,
+            "text": "of",
+            "token": 7,
+            "top_next": [
+              {
+                "probability": 0.6583086436681913,
+                "word": "the"
+              },
+              {
+                "probability": 0.11409541683622261,
+                "word": "a"
+              },
+              {
+                "probability": 0.05658297132265822,
+                "word": "my"
+              }
+            ],
+            "word_index": 7
+          },
+          {
+            "after": 0.1428396592285751,
+            "before": 0.5491417013299495,
+            "change": -0.40630204210137444,
+            "document_end": false,
+            "end": 44,
+            "other_after": 0.9257617882908973,
+            "other_before": 0.008502872002463734,
+            "start": 37,
+            "text": "dinner.",
+            "token": 9,
+            "top_next": [
+              {
+                "probability": 0.9257617882908973,
+                "word": null
+              },
+              {
+                "probability": 0.009165494747249908,
+                "word": "rome"
+              },
+              {
+                "probability": 0.0040008075190869664,
+                "word": "i"
+              }
+            ],
+            "word_index": 8
+          },
+          {
+            "after": 0.9729284832879198,
+            "before": 0.1428396592285751,
+            "change": 0.8300888240593447,
+            "document_end": false,
+            "end": 49,
+            "other_after": 0.08659409869041243,
+            "other_before": 0.9257617882908973,
+            "start": 45,
+            "text": "Maya",
+            "token": 10,
+            "top_next": [
+              {
+                "probability": 0.08659409869041243,
+                "word": null
+              },
+              {
+                "probability": 0.07078211181397324,
+                "word": "didn't"
+              },
+              {
+                "probability": 0.04236925157107275,
+                "word": "was"
+              }
+            ],
+            "word_index": 9
+          },
+          {
+            "after": 0.6573515609237264,
+            "before": 0.9729284832879198,
+            "change": -0.31557692236419344,
+            "document_end": false,
+            "end": 56,
+            "other_after": 0.02158940209886645,
+            "other_before": 0.08659409869041243,
+            "start": 50,
+            "text": "opened",
+            "token": 11,
+            "top_next": [
+              {
+                "probability": 0.42812749696827496,
+                "word": "the"
+              },
+              {
+                "probability": 0.3945007894999458,
+                "word": "her"
+              },
+              {
+                "probability": 0.05255641728755165,
+                "word": "a"
+              }
+            ],
+            "word_index": 10
+          },
+          {
+            "after": 0.9635917671108783,
+            "before": 0.6573515609237264,
+            "change": 0.306240206187152,
+            "document_end": false,
+            "end": 58,
+            "other_after": 0.09550008174174524,
+            "other_before": 0.02158940209886645,
+            "start": 57,
+            "text": "a",
+            "token": 12,
+            "top_next": [
+              {
+                "probability": 0.11598986862342615,
+                "word": "window"
+              },
+              {
+                "probability": 0.09550008174174524,
+                "word": null
+              },
+              {
+                "probability": 0.08660134516064792,
+                "word": "bottle"
+              }
+            ],
+            "word_index": 11
+          },
+          {
+            "after": 0.8374223504772378,
+            "before": 0.9635917671108783,
+            "change": -0.12616941663364056,
+            "document_end": false,
+            "end": 65,
+            "other_after": 0.13446716819988802,
+            "other_before": 0.09550008174174524,
+            "start": 59,
+            "text": "drawer",
+            "token": 13,
+            "top_next": [
+              {
+                "probability": 0.3425368918283792,
+                "word": "and"
+              },
+              {
+                "probability": 0.1350701467149594,
+                "word": "to"
+              },
+              {
+                "probability": 0.13446716819988802,
+                "word": null
+              }
+            ],
+            "word_index": 12
+          },
+          {
+            "after": 0.9332785036157757,
+            "before": 0.8374223504772378,
+            "change": 0.0958561531385379,
+            "document_end": false,
+            "end": 69,
+            "other_after": 0.1118426050010608,
+            "other_before": 0.13446716819988802,
+            "start": 66,
+            "text": "and",
+            "token": 14,
+            "top_next": [
+              {
+                "probability": 0.1852478478943304,
+                "word": "pulled"
+              },
+              {
+                "probability": 0.1118426050010608,
+                "word": null
+              },
+              {
+                "probability": 0.08795048097142251,
+                "word": "found"
+              }
+            ],
+            "word_index": 13
+          },
+          {
+            "after": 0.9395847308818677,
+            "before": 0.9332785036157757,
+            "change": 0.006306227266091979,
+            "document_end": false,
+            "end": 74,
+            "other_after": 0.054644132929864815,
+            "other_before": 0.1118426050010608,
+            "start": 70,
+            "text": "felt",
+            "token": 15,
+            "top_next": [
+              {
+                "probability": 0.16424971775372313,
+                "word": "a"
+              },
+              {
+                "probability": 0.11905915276722287,
+                "word": "the"
+              },
+              {
+                "probability": 0.09291214470530673,
+                "word": "her"
+              }
+            ],
+            "word_index": 14
+          },
+          {
+            "after": 0.885289178501495,
+            "before": 0.9395847308818677,
+            "change": -0.05429555238037265,
+            "document_end": false,
+            "end": 81,
+            "other_after": 0.13075768544940972,
+            "other_before": 0.054644132929864815,
+            "start": 75,
+            "text": "around",
+            "token": 16,
+            "top_next": [
+              {
+                "probability": 0.20619188477316575,
+                "word": "for"
+              },
+              {
+                "probability": 0.18649986025220636,
+                "word": "until"
+              },
+              {
+                "probability": 0.13075768544940972,
+                "word": null
+              }
+            ],
+            "word_index": 15
+          },
+          {
+            "after": 0.1376895839451272,
+            "before": 0.885289178501495,
+            "change": -0.7475995945563678,
+            "document_end": false,
+            "end": 87,
+            "other_after": 0.002018202337157946,
+            "other_before": 0.13075768544940972,
+            "start": 82,
+            "text": "until",
+            "token": 17,
+            "top_next": [
+              {
+                "probability": 0.9282963817853557,
+                "word": "she"
+              },
+              {
+                "probability": 0.019204653202875486,
+                "word": "she's"
+              },
+              {
+                "probability": 0.007307221197169728,
+                "word": "they"
+              }
+            ],
+            "word_index": 16
+          },
+          {
+            "after": 0.7931115436642732,
+            "before": 0.1376895839451272,
+            "change": 0.655421959719146,
+            "document_end": false,
+            "end": 91,
+            "other_after": 0.05272138458712168,
+            "other_before": 0.002018202337157946,
+            "start": 88,
+            "text": "she",
+            "token": 18,
+            "top_next": [
+              {
+                "probability": 0.42366122507729836,
+                "word": "found"
+              },
+              {
+                "probability": 0.13753426570501925,
+                "word": "felt"
+              },
+              {
+                "probability": 0.05272138458712168,
+                "word": null
+              }
+            ],
+            "word_index": 17
+          },
+          {
+            "after": 0.7562223728335148,
+            "before": 0.7931115436642732,
+            "change": -0.03688917083075838,
+            "document_end": false,
+            "end": 97,
+            "other_after": 0.017537920117668967,
+            "other_before": 0.05272138458712168,
+            "start": 92,
+            "text": "found",
+            "token": 19,
+            "top_next": [
+              {
+                "probability": 0.3794891027249684,
+                "word": "a"
+              },
+              {
+                "probability": 0.29392664743110175,
+                "word": "the"
+              },
+              {
+                "probability": 0.08850336852108746,
+                "word": "her"
+              }
+            ],
+            "word_index": 18
+          },
+          {
+            "after": 0.9752757005428646,
+            "before": 0.7562223728335148,
+            "change": 0.21905332770934982,
+            "document_end": false,
+            "end": 99,
+            "other_after": 0.13027716847020088,
+            "other_before": 0.017537920117668967,
+            "start": 98,
+            "text": "a",
+            "token": 20,
+            "top_next": [
+              {
+                "probability": 0.13027716847020088,
+                "word": null
+              },
+              {
+                "probability": 0.04279722478969488,
+                "word": "box"
+              },
+              {
+                "probability": 0.03142202469641158,
+                "word": "small"
+              }
+            ],
+            "word_index": 19
+          },
+          {
+            "after": 0.08581013417302064,
+            "before": 0.9752757005428646,
+            "change": -0.889465566369844,
+            "document_end": false,
+            "end": 106,
+            "other_after": 0.9559791362067394,
+            "other_before": 0.13027716847020088,
+            "start": 100,
+            "text": "match.",
+            "token": 22,
+            "top_next": [
+              {
+                "probability": 0.9559791362067394,
+                "word": null
+              },
+              {
+                "probability": 0.016812394514296523,
+                "word": "she"
+              },
+              {
+                "probability": 0.0018356236005608,
+                "word": "rome"
+              }
+            ],
+            "word_index": 20
+          },
+          {
+            "after": 0.8661094188321272,
+            "before": 0.08581013417302064,
+            "change": 0.7802992846591066,
+            "document_end": false,
+            "end": 115,
+            "other_after": 0.021383709364364217,
+            "other_before": 0.9559791362067394,
+            "start": 107,
+            "text": "Outside,",
+            "token": 24,
+            "top_next": [
+              {
+                "probability": 0.23289433039140384,
+                "word": "the"
+              },
+              {
+                "probability": 0.21742772818652417,
+                "word": "she"
+              },
+              {
+                "probability": 0.14283339230802417,
+                "word": "it"
+              }
+            ],
+            "word_index": 21
+          },
+          {
+            "after": 0.9688008395981328,
+            "before": 0.8661094188321272,
+            "change": 0.10269142076600557,
+            "document_end": false,
+            "end": 117,
+            "other_after": 0.05673654136039093,
+            "other_before": 0.021383709364364217,
+            "start": 116,
+            "text": "a",
+            "token": 25,
+            "top_next": [
+              {
+                "probability": 0.15649000182205539,
+                "word": "storm"
+              },
+              {
+                "probability": 0.05673654136039093,
+                "word": null
+              },
+              {
+                "probability": 0.01828733156787353,
+                "word": "cold"
+              }
+            ],
+            "word_index": 22
+          },
+          {
+            "after": 0.9392537336201897,
+            "before": 0.9688008395981328,
+            "change": -0.029547105977943078,
+            "document_end": false,
+            "end": 121,
+            "other_after": 0.04231856743124952,
+            "other_before": 0.05673654136039093,
+            "start": 118,
+            "text": "bus",
+            "token": 26,
+            "top_next": [
+              {
+                "probability": 0.15844182095072992,
+                "word": "was"
+              },
+              {
+                "probability": 0.12692773691197548,
+                "word": "stopped"
+              },
+              {
+                "probability": 0.07230428466347583,
+                "word": "ride"
+              }
+            ],
+            "word_index": 23
+          },
+          {
+            "after": 0.6425751081098842,
+            "before": 0.9392537336201897,
+            "change": -0.29667862551030555,
+            "document_end": false,
+            "end": 128,
+            "other_after": 0.002300643317696414,
+            "other_before": 0.04231856743124952,
+            "start": 122,
+            "text": "pulled",
+            "token": 27,
+            "top_next": [
+              {
+                "probability": 0.5552120757820641,
+                "word": "up"
+              },
+              {
+                "probability": 0.1986562072894355,
+                "word": "into"
+              },
+              {
+                "probability": 0.07072478091387319,
+                "word": "away"
+              }
+            ],
+            "word_index": 24
+          },
+          {
+            "after": 0.7986407866324992,
+            "before": 0.6425751081098842,
+            "change": 0.156065678522615,
+            "document_end": false,
+            "end": 133,
+            "other_after": 0.18279272829789403,
+            "other_before": 0.002300643317696414,
+            "start": 129,
+            "text": "away",
+            "token": 28,
+            "top_next": [
+              {
+                "probability": 0.392941283860622,
+                "word": "from"
+              },
+              {
+                "probability": 0.18279272829789403,
+                "word": null
+              },
+              {
+                "probability": 0.07948332351162764,
+                "word": "and"
+              }
+            ],
+            "word_index": 25
+          },
+          {
+            "after": 0.2136121161323732,
+            "before": 0.7986407866324992,
+            "change": -0.585028670500126,
+            "document_end": false,
+            "end": 138,
+            "other_after": 0.009447907933312065,
+            "other_before": 0.18279272829789403,
+            "start": 134,
+            "text": "from",
+            "token": 29,
+            "top_next": [
+              {
+                "probability": 0.885962484223183,
+                "word": "the"
+              },
+              {
+                "probability": 0.025142992224187737,
+                "word": "a"
+              },
+              {
+                "probability": 0.02349065203706888,
+                "word": "its"
+              }
+            ],
+            "word_index": 26
+          },
+          {
+            "after": 0.8698766891318382,
+            "before": 0.2136121161323732,
+            "change": 0.6562645729994651,
+            "document_end": false,
+            "end": 142,
+            "other_after": 0.05679385293815669,
+            "other_before": 0.009447907933312065,
+            "start": 139,
+            "text": "the",
+            "token": 30,
+            "top_next": [
+              {
+                "probability": 0.26613957738961014,
+                "word": "station"
+              },
+              {
+                "probability": 0.13947396075570673,
+                "word": "school"
+              },
+              {
+                "probability": 0.13766878545597153,
+                "word": "bus"
+              }
+            ],
+            "word_index": 27
+          },
+          {
+            "after": 0.05091876893470515,
+            "before": 0.8698766891318382,
+            "change": -0.8189579201971331,
+            "document_end": true,
+            "end": 150,
+            "other_after": 0.9741690613268154,
+            "other_before": 0.05679385293815669,
+            "start": 143,
+            "text": "corner.",
+            "token": 32,
+            "top_next": [
+              {
+                "probability": 0.9741690613268154,
+                "word": null
+              },
+              {
+                "probability": 0.008125428630900712,
+                "word": "she"
+              },
+              {
+                "probability": 0.002912565455866064,
+                "word": "rome"
+              }
+            ],
+            "word_index": 28
+          }
+        ]
+      },
+      "language": "en",
+      "schema": "cogllm-local-reading-en-v1",
+      "sentences": [
+        {
+          "certified_words": 9,
+          "end": 44,
+          "phrases": [
+            {
+              "end": 43,
+              "rank": 1,
+              "score": -0.003492216913747015,
+              "start": 37
+            },
+            {
+              "end": 33,
+              "rank": 2,
+              "score": -0.0186875741913963,
+              "start": 27
+            },
+            {
+              "end": 15,
+              "rank": 3,
+              "score": -1.5596817928870852,
+              "start": 4
+            },
+            {
+              "end": 19,
+              "rank": 4,
+              "score": -2.4495740918367215,
+              "start": 16
+            },
+            {
+              "end": 22,
+              "rank": 5,
+              "score": -3.560077563854063,
+              "start": 20
+            }
+          ],
+          "rating": {
+            "ease": 4.79270618490672,
+            "understanding": 4.7942982443629845
+          },
+          "start": 0,
+          "words": 9
+        },
+        {
+          "certified_words": 12,
+          "end": 106,
+          "phrases": [
+            {
+              "end": 65,
+              "rank": 1,
+              "score": 3.317692291869775,
+              "start": 59
+            },
+            {
+              "end": 49,
+              "rank": 2,
+              "score": 2.1530024326174777,
+              "start": 45
+            },
+            {
+              "end": 74,
+              "rank": 3,
+              "score": 1.1756793973468818,
+              "start": 70
+            },
+            {
+              "end": 56,
+              "rank": 4,
+              "score": 0.7822870439945595,
+              "start": 50
+            },
+            {
+              "end": 81,
+              "rank": 5,
+              "score": 0.6952240785397088,
+              "start": 75
+            }
+          ],
+          "rating": {
+            "ease": 4.6321828780772805,
+            "understanding": 4.690293391875801
+          },
+          "start": 45,
+          "words": 12
+        },
+        {
+          "certified_words": 8,
+          "end": 150,
+          "phrases": [
+            {
+              "end": 128,
+              "rank": 1,
+              "score": 2.538701173131196,
+              "start": 122
+            },
+            {
+              "end": 149,
+              "rank": 2,
+              "score": 0.4613027223212489,
+              "start": 143
+            },
+            {
+              "end": 121,
+              "rank": 3,
+              "score": 0.3169175324875583,
+              "start": 118
+            },
+            {
+              "end": 133,
+              "rank": 4,
+              "score": -0.2778439412501855,
+              "start": 129
+            },
+            {
+              "end": 114,
+              "rank": 5,
+              "score": -0.5687933852124405,
+              "start": 107
+            }
+          ],
+          "rating": {
+            "ease": 4.730695024436991,
+            "understanding": 4.745116740227262
+          },
+          "start": 107,
+          "words": 8
+        }
+      ],
+      "transitions": [
+        {
+          "distilled_risk": 0.10853149190682454,
+          "end": 106,
+          "flagged": false,
+          "risk": 0.10518830101956607,
+          "sentence_index": 2,
+          "start": 45,
+          "surprisal_control_risk": 0.15069808292964088,
+          "threshold": 0.39221974817295097
+        },
+        {
+          "distilled_risk": 0.146593736404217,
+          "end": 150,
+          "flagged": false,
+          "risk": 0.12549103062447647,
+          "sentence_index": 3,
+          "start": 107,
+          "surprisal_control_risk": 0.19604395427078436,
+          "threshold": 0.39221974817295097
+        }
+      ]
+    },
+    "text": "The lights went out in the middle of dinner. Maya opened a drawer and felt around until she found a match. Outside, a bus pulled away from the corner.",
+    "tokens": [
+      {
+        "end": 3,
+        "opened": 0.003983070142567158,
+        "pointer_end": null,
+        "pointer_start": null,
+        "resolved": 0.0,
+        "start": 0,
+        "transition": 0.0,
+        "unresolved": 0.003983070142567158
+      },
+      {
+        "end": 10,
+        "opened": 0.0056526619009673595,
+        "pointer_end": 3,
+        "pointer_start": 0,
+        "resolved": 0.00011512885248521343,
+        "start": 3,
+        "transition": 0.0012864621821790934,
+        "unresolved": 0.009520603343844414
+      },
+      {
+        "end": 15,
+        "opened": 0.0007577718934044242,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.0001274821988772601,
+        "start": 10,
+        "transition": 0.0017895280616357923,
+        "unresolved": 0.010150892660021782
+      },
+      {
+        "end": 19,
+        "opened": 0.0023148078471422195,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00030366145074367523,
+        "start": 15,
+        "transition": 0.0017815830651670694,
+        "unresolved": 0.012162039056420326
+      },
+      {
+        "end": 22,
+        "opened": 0.0013328316854313016,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00013105160905979574,
+        "start": 19,
+        "transition": 0.0017712839180603623,
+        "unresolved": 0.013363818638026714
+      },
+      {
+        "end": 26,
+        "opened": 0.0014607432531192899,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00017144424782600254,
+        "start": 22,
+        "transition": 0.0013403099728748202,
+        "unresolved": 0.014653118327260017
+      },
+      {
+        "end": 33,
+        "opened": 0.007286075968295336,
+        "pointer_end": 10,
+        "pointer_start": 0,
+        "resolved": 0.00020555578521452844,
+        "start": 26,
+        "transition": 0.0016994879115372896,
+        "unresolved": 0.021733637899160385
+      },
+      {
+        "end": 36,
+        "opened": 0.0006882885354571044,
+        "pointer_end": 33,
+        "pointer_start": 15,
+        "resolved": 0.00015072710812091827,
+        "start": 33,
+        "transition": 0.001986826304346323,
+        "unresolved": 0.022271201014518738
+      },
+      {
+        "end": 43,
+        "opened": 0.007247628644108772,
+        "pointer_end": 33,
+        "pointer_start": 15,
+        "resolved": 0.0012295529013499618,
+        "start": 36,
+        "transition": 0.005142677575349808,
+        "unresolved": 0.028289275243878365
+      },
+      {
+        "end": 44,
+        "opened": 0.0,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 4.6391367504838854e-05,
+        "start": 43,
+        "transition": 0.003908971324563026,
+        "unresolved": 0.02824288420379162
+      },
+      {
+        "end": 49,
+        "opened": 0.0030219131149351597,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.0006411102367565036,
+        "start": 44,
+        "transition": 0.00464862072840333,
+        "unresolved": 0.03062368743121624
+      },
+      {
+        "end": 56,
+        "opened": 0.00044293166138231754,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.00019788145436905324,
+        "start": 49,
+        "transition": 0.0038344005588442087,
+        "unresolved": 0.030868737027049065
+      },
+      {
+        "end": 58,
+        "opened": 0.0008053907658904791,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.0002606265770737082,
+        "start": 56,
+        "transition": 0.0036371375899761915,
+        "unresolved": 0.03141350299119949
+      },
+      {
+        "end": 65,
+        "opened": 0.009266226552426815,
+        "pointer_end": 43,
+        "pointer_start": 22,
+        "resolved": 0.0011118365218862891,
+        "start": 58,
+        "transition": 0.005554958246648312,
+        "unresolved": 0.039567891508340836
+      },
+      {
+        "end": 69,
+        "opened": 0.00032580088009126484,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00012863728625234216,
+        "start": 65,
+        "transition": 0.0028432076796889305,
+        "unresolved": 0.03976505622267723
+      },
+      {
+        "end": 74,
+        "opened": 0.00048006814904510975,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00023295539722312242,
+        "start": 69,
+        "transition": 0.0053060222417116165,
+        "unresolved": 0.040012165904045105
+      },
+      {
+        "end": 81,
+        "opened": 0.0009894628310576081,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0020480421371757984,
+        "start": 74,
+        "transition": 0.008512810803949833,
+        "unresolved": 0.03895358741283417
+      },
+      {
+        "end": 87,
+        "opened": 0.0006649487186223269,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 8.721051563043147e-05,
+        "start": 81,
+        "transition": 0.005137342493981123,
+        "unresolved": 0.03953132778406143
+      },
+      {
+        "end": 91,
+        "opened": 0.0008913654019124806,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0011758109321817756,
+        "start": 87,
+        "transition": 0.0029089588206261396,
+        "unresolved": 0.03924688324332237
+      },
+      {
+        "end": 97,
+        "opened": 0.0007643080316483974,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00015732774045318365,
+        "start": 91,
+        "transition": 0.002509361132979393,
+        "unresolved": 0.039853859692811966
+      },
+      {
+        "end": 99,
+        "opened": 0.00040725618600845337,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0005056820809841156,
+        "start": 97,
+        "transition": 0.004456144291907549,
+        "unresolved": 0.0397554375231266
+      },
+      {
+        "end": 105,
+        "opened": 0.00795193761587143,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0008592072408646345,
+        "start": 99,
+        "transition": 0.00815108884125948,
+        "unresolved": 0.04684816673398018
+      },
+      {
+        "end": 106,
+        "opened": 0.0,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 6.30492068012245e-05,
+        "start": 105,
+        "transition": 0.005640287883579731,
+        "unresolved": 0.04678511619567871
+      },
+      {
+        "end": 114,
+        "opened": 0.0024107997305691242,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00029182052821852267,
+        "start": 106,
+        "transition": 0.002222631126642227,
+        "unresolved": 0.04890409857034683
+      },
+      {
+        "end": 115,
+        "opened": 0.0,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 9.273181785829365e-05,
+        "start": 114,
+        "transition": 0.004133246839046478,
+        "unresolved": 0.04881136119365692
+      },
+      {
+        "end": 117,
+        "opened": 0.0011964394943788648,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0003375134547241032,
+        "start": 115,
+        "transition": 0.006119112018495798,
+        "unresolved": 0.04967029392719269
+      },
+      {
+        "end": 121,
+        "opened": 0.006228536833077669,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0015140220057219267,
+        "start": 117,
+        "transition": 0.007629681844264269,
+        "unresolved": 0.054384805262088776
+      },
+      {
+        "end": 128,
+        "opened": 0.0007492543081752956,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0004091946466360241,
+        "start": 121,
+        "transition": 0.005856669042259455,
+        "unresolved": 0.05472486466169357
+      },
+      {
+        "end": 133,
+        "opened": 0.0004211768100503832,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0011598458513617516,
+        "start": 128,
+        "transition": 0.00834745168685913,
+        "unresolved": 0.05398619920015335
+      },
+      {
+        "end": 138,
+        "opened": 0.0013502177316695452,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.00035664867027662694,
+        "start": 133,
+        "transition": 0.004081863444298506,
+        "unresolved": 0.05497976392507553
+      },
+      {
+        "end": 142,
+        "opened": 0.0013395278947427869,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0007002941565588117,
+        "start": 138,
+        "transition": 0.0056670489721000195,
+        "unresolved": 0.055618997663259506
+      },
+      {
+        "end": 149,
+        "opened": 0.0057787117548286915,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0011000660015270114,
+        "start": 142,
+        "transition": 0.00670242914929986,
+        "unresolved": 0.0602976456284523
+      },
+      {
+        "end": 150,
+        "opened": 0.0,
+        "pointer_end": 65,
+        "pointer_start": 44,
+        "resolved": 0.0001952580059878528,
+        "start": 149,
+        "transition": 0.0037248958833515644,
+        "unresolved": 0.06010238826274872
+      }
+    ]
+  },
+  "3": {
+    "checkpoint": "c1704d4436d767fa43bdb59e9216698514e1f6bd1d45cad4b60d0f018d84abb5",
+    "english": {
+      "bundle_sha256": "c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e",
+      "expectations": {
+        "coverage": {
+          "adjacent_single_space_updates": 13,
+          "surface_words": 14,
+          "verified_word_ends": 14
+        },
+        "interpretation": "Estimated chance that two English-speaking readers will give different next-word responses among 8,192 named spellings and one other category. Training used genuine English sentence completions and evaluation used English paragraphs.",
+        "scope": "population_next_word_disagreement",
+        "terminal_scope": "At document end, after refers to a hypothetical next word. The source readers predicted actual continuations.",
+        "units": "Probability, from 0 to 1. The exact-spelling upper bound adds other_after squared.",
+        "words": [
+          {
+            "after": 0.9858338708822776,
+            "before": null,
+            "change": null,
+            "document_end": false,
+            "end": 3,
+            "other_after": 0.11077364738227237,
+            "other_before": null,
+            "start": 0,
+            "text": "The",
+            "token": 0,
+            "top_next": [
+              {
+                "probability": 0.11077364738227237,
+                "word": null
+              },
+              {
+                "probability": 0.011282434448319667,
+                "word": "first"
+              },
+              {
+                "probability": 0.009548945572288746,
+                "word": "text"
+              }
+            ],
+            "word_index": 0
+          },
+          {
+            "after": 0.9576675965259989,
+            "before": 0.9858338708822776,
+            "change": -0.02816627435627872,
+            "document_end": false,
+            "end": 11,
+            "other_after": 0.10652148903049555,
+            "other_before": 0.11077364738227237,
+            "start": 4,
+            "text": "painter",
+            "token": 1,
+            "top_next": [
+              {
+                "probability": 0.10700012789361733,
+                "word": "was"
+              },
+              {
+                "probability": 0.10652148903049555,
+                "word": null
+              },
+              {
+                "probability": 0.096763118056451,
+                "word": "of"
+              }
+            ],
+            "word_index": 1
+          },
+          {
+            "after": 0.9694135810853571,
+            "before": 0.9576675965259989,
+            "change": 0.011745984559358269,
+            "document_end": false,
+            "end": 17,
+            "other_after": 0.04061251137304692,
+            "other_before": 0.10652148903049555,
+            "start": 12,
+            "text": "mixed",
+            "token": 2,
+            "top_next": [
+              {
+                "probability": 0.09076739974217773,
+                "word": "a"
+              },
+              {
+                "probability": 0.06738463365205158,
+                "word": "water"
+              },
+              {
+                "probability": 0.062022603649986456,
+                "word": "paint"
+              }
+            ],
+            "word_index": 2
+          },
+          {
+            "after": 0.7272909367559144,
+            "before": 0.9694135810853571,
+            "change": -0.24212264432944275,
+            "document_end": false,
+            "end": 22,
+            "other_after": 0.0746380292096667,
+            "other_before": 0.04061251137304692,
+            "start": 18,
+            "text": "blue",
+            "token": 3,
+            "top_next": [
+              {
+                "probability": 0.36727778012106993,
+                "word": "paint"
+              },
+              {
+                "probability": 0.3610572128946562,
+                "word": "and"
+              },
+              {
+                "probability": 0.0746380292096667,
+                "word": null
+              }
+            ],
+            "word_index": 3
+          },
+          {
+            "after": 0.8368730926286445,
+            "before": 0.7272909367559144,
+            "change": 0.10958215587273012,
+            "document_end": false,
+            "end": 26,
+            "other_after": 0.01022316243985193,
+            "other_before": 0.0746380292096667,
+            "start": 23,
+            "text": "and",
+            "token": 4,
+            "top_next": [
+              {
+                "probability": 0.2998813566201098,
+                "word": "yellow"
+              },
+              {
+                "probability": 0.1995192346827532,
+                "word": "red"
+              },
+              {
+                "probability": 0.130863984006399,
+                "word": "white"
+              }
+            ],
+            "word_index": 4
+          },
+          {
+            "after": 0.6687172237113381,
+            "before": 0.8368730926286445,
+            "change": -0.16815586891730638,
+            "document_end": false,
+            "end": 33,
+            "other_after": 0.03500144916929046,
+            "other_before": 0.01022316243985193,
+            "start": 27,
+            "text": "yellow",
+            "token": 5,
+            "top_next": [
+              {
+                "probability": 0.4887496264981088,
+                "word": "to"
+              },
+              {
+                "probability": 0.2893090440119092,
+                "word": "paint"
+              },
+              {
+                "probability": 0.07991442981264568,
+                "word": "pig"
+              }
+            ],
+            "word_index": 5
+          },
+          {
+            "after": 0.8183470584606585,
+            "before": 0.6687172237113381,
+            "change": 0.14962983474932035,
+            "document_end": false,
+            "end": 36,
+            "other_after": 0.006905329367965902,
+            "other_before": 0.03500144916929046,
+            "start": 34,
+            "text": "on",
+            "token": 6,
+            "top_next": [
+              {
+                "probability": 0.264255774753152,
+                "word": "his"
+              },
+              {
+                "probability": 0.2395428628873183,
+                "word": "a"
+              },
+              {
+                "probability": 0.21877550829617987,
+                "word": "the"
+              }
+            ],
+            "word_index": 6
+          },
+          {
+            "after": 0.935095340263183,
+            "before": 0.8183470584606585,
+            "change": 0.1167482818025245,
+            "document_end": false,
+            "end": 40,
+            "other_after": 0.20540012728290727,
+            "other_before": 0.006905329367965902,
+            "start": 37,
+            "text": "her",
+            "token": 7,
+            "top_next": [
+              {
+                "probability": 0.20540012728290727,
+                "word": null
+              },
+              {
+                "probability": 0.0818537047421237,
+                "word": "desk"
+              },
+              {
+                "probability": 0.06311105192551583,
+                "word": "paint"
+              }
+            ],
+            "word_index": 7
+          },
+          {
+            "after": 0.08119965097317883,
+            "before": 0.935095340263183,
+            "change": -0.8538956892900041,
+            "document_end": false,
+            "end": 49,
+            "other_after": 0.958430218441061,
+            "other_before": 0.20540012728290727,
+            "start": 41,
+            "text": "palette.",
+            "token": 9,
+            "top_next": [
+              {
+                "probability": 0.958430218441061,
+                "word": null
+              },
+              {
+                "probability": 0.013397237510410347,
+                "word": "she"
+              },
+              {
+                "probability": 0.003959267578070254,
+                "word": "blue"
+              }
+            ],
+            "word_index": 8
+          },
+          {
+            "after": 0.8727319498649089,
+            "before": 0.08119965097317883,
+            "change": 0.79153229889173,
+            "document_end": false,
+            "end": 53,
+            "other_after": 0.021960255922531445,
+            "other_before": 0.958430218441061,
+            "start": 50,
+            "text": "The",
+            "token": 10,
+            "top_next": [
+              {
+                "probability": 0.327663518739595,
+                "word": "blue"
+              },
+              {
+                "probability": 0.10849422719921265,
+                "word": "paint"
+              },
+              {
+                "probability": 0.04354644814961016,
+                "word": "ratio"
+              }
+            ],
+            "word_index": 9
+          },
+          {
+            "after": 0.816222324936051,
+            "before": 0.8727319498649089,
+            "change": -0.056509624928857916,
+            "document_end": false,
+            "end": 63,
+            "other_after": 0.03622854620257791,
+            "other_before": 0.021960255922531445,
+            "start": 54,
+            "text": "resulting",
+            "token": 11,
+            "top_next": [
+              {
+                "probability": 0.3933253272076199,
+                "word": "paint"
+              },
+              {
+                "probability": 0.13761272343407982,
+                "word": "color"
+              },
+              {
+                "probability": 0.06346421311398777,
+                "word": "mixture"
+              }
+            ],
+            "word_index": 10
+          },
+          {
+            "after": 0.8471980172103812,
+            "before": 0.816222324936051,
+            "change": 0.03097569227433028,
+            "document_end": false,
+            "end": 69,
+            "other_after": 0.01668685720119826,
+            "other_before": 0.03622854620257791,
+            "start": 64,
+            "text": "color",
+            "token": 12,
+            "top_next": [
+              {
+                "probability": 0.32630123996223426,
+                "word": "was"
+              },
+              {
+                "probability": 0.18416637889966994,
+                "word": "is"
+              },
+              {
+                "probability": 0.06959950409678761,
+                "word": "she"
+              }
+            ],
+            "word_index": 11
+          },
+          {
+            "after": 0.9657398664459794,
+            "before": 0.8471980172103812,
+            "change": 0.11854184923559818,
+            "document_end": false,
+            "end": 73,
+            "other_after": 0.03863588977180093,
+            "other_before": 0.01668685720119826,
+            "start": 70,
+            "text": "was",
+            "token": 13,
+            "top_next": [
+              {
+                "probability": 0.10682122586307354,
+                "word": "a"
+              },
+              {
+                "probability": 0.06050636779313726,
+                "word": "green"
+              },
+              {
+                "probability": 0.05822395703029417,
+                "word": "purple"
+              }
+            ],
+            "word_index": 12
+          },
+          {
+            "after": 0.13088886344203976,
+            "before": 0.9657398664459794,
+            "change": -0.8348510030039397,
+            "document_end": true,
+            "end": 80,
+            "other_after": 0.9320191067063864,
+            "other_before": 0.03863588977180093,
+            "start": 74,
+            "text": "green.",
+            "token": 15,
+            "top_next": [
+              {
+                "probability": 0.9320191067063864,
+                "word": null
+              },
+              {
+                "probability": 0.019951969287250786,
+                "word": "she"
+              },
+              {
+                "probability": 0.003964089639843806,
+                "word": "a"
+              }
+            ],
+            "word_index": 13
+          }
+        ]
+      },
+      "language": "en",
+      "schema": "cogllm-local-reading-en-v1",
+      "sentences": [
+        {
+          "certified_words": 9,
+          "end": 49,
+          "phrases": [
+            {
+              "end": 48,
+              "rank": 1,
+              "score": 2.7755526903815007,
+              "start": 41
+            },
+            {
+              "end": 33,
+              "rank": 2,
+              "score": 1.180410060442096,
+              "start": 27
+            },
+            {
+              "end": 11,
+              "rank": 3,
+              "score": 1.0007725164257437,
+              "start": 4
+            },
+            {
+              "end": 22,
+              "rank": 4,
+              "score": 0.06889508364711078,
+              "start": 18
+            },
+            {
+              "end": 17,
+              "rank": 5,
+              "score": -0.2651978208401136,
+              "start": 12
+            }
+          ],
+          "rating": {
+            "ease": 4.561855929893603,
+            "understanding": 4.658414097272235
+          },
+          "start": 0,
+          "words": 9
+        },
+        {
+          "certified_words": 5,
+          "end": 80,
+          "phrases": [
+            {
+              "end": 63,
+              "rank": 1,
+              "score": 0.4474709867026392,
+              "start": 54
+            },
+            {
+              "end": 69,
+              "rank": 2,
+              "score": -0.47959865317040035,
+              "start": 64
+            },
+            {
+              "end": 79,
+              "rank": 3,
+              "score": -0.8501190860554488,
+              "start": 74
+            },
+            {
+              "end": 73,
+              "rank": 4,
+              "score": -1.627909837012792,
+              "start": 70
+            },
+            {
+              "end": 53,
+              "rank": 5,
+              "score": -5.074764845915266,
+              "start": 50
+            }
+          ],
+          "rating": {
+            "ease": 4.771683957938436,
+            "understanding": 4.777878067330961
+          },
+          "start": 50,
+          "words": 5
+        }
+      ],
+      "transitions": [
+        {
+          "distilled_risk": 0.008011497018960862,
+          "end": 80,
+          "flagged": false,
+          "risk": 0.0013277463570733699,
+          "sentence_index": 2,
+          "start": 50,
+          "surprisal_control_risk": 0.026312307149365638,
+          "threshold": 0.39221974817295097
+        }
+      ]
+    },
+    "text": "The painter mixed blue and yellow on her palette. The resulting color was green.",
+    "tokens": [
+      {
+        "end": 3,
+        "opened": 0.003983072005212307,
+        "pointer_end": null,
+        "pointer_start": null,
+        "resolved": 0.0,
+        "start": 0,
+        "transition": 0.0,
+        "unresolved": 0.003983072005212307
+      },
+      {
+        "end": 11,
+        "opened": 0.02671590819954872,
+        "pointer_end": 3,
+        "pointer_start": 0,
+        "resolved": 0.0001048799094860442,
+        "start": 3,
+        "transition": 0.0014142190339043736,
+        "unresolved": 0.030594099313020706
+      },
+      {
+        "end": 17,
+        "opened": 0.0011742813512682915,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.000271156313829124,
+        "start": 11,
+        "transition": 0.008216655813157558,
+        "unresolved": 0.031497225165367126
+      },
+      {
+        "end": 22,
+        "opened": 0.00554653350263834,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.00021074182586744428,
+        "start": 17,
+        "transition": 0.0065645319409668446,
+        "unresolved": 0.0368330180644989
+      },
+      {
+        "end": 26,
+        "opened": 0.000999931711703539,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.00018315980560146272,
+        "start": 22,
+        "transition": 0.0038723491597920656,
+        "unresolved": 0.037649791687726974
+      },
+      {
+        "end": 33,
+        "opened": 0.002295031677931547,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.00028376071713864803,
+        "start": 26,
+        "transition": 0.006472476292401552,
+        "unresolved": 0.03966106101870537
+      },
+      {
+        "end": 36,
+        "opened": 0.0013829402159899473,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0001190862967632711,
+        "start": 33,
+        "transition": 0.005661617498844862,
+        "unresolved": 0.04092491418123245
+      },
+      {
+        "end": 40,
+        "opened": 0.0016939700581133366,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.00022329852799884975,
+        "start": 36,
+        "transition": 0.005925988778471947,
+        "unresolved": 0.04239558428525925
+      },
+      {
+        "end": 48,
+        "opened": 0.004794557113200426,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0006151586421765387,
+        "start": 40,
+        "transition": 0.008448873646557331,
+        "unresolved": 0.04657498374581337
+      },
+      {
+        "end": 49,
+        "opened": 0.0,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 6.452142406487837e-05,
+        "start": 48,
+        "transition": 0.006298765540122986,
+        "unresolved": 0.04651045799255371
+      },
+      {
+        "end": 53,
+        "opened": 0.0007063137018121779,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0002944565494544804,
+        "start": 49,
+        "transition": 0.0064491587691009045,
+        "unresolved": 0.04692231863737106
+      },
+      {
+        "end": 63,
+        "opened": 0.0011942221317440271,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0003241780214011669,
+        "start": 53,
+        "transition": 0.006466778460890055,
+        "unresolved": 0.04779236391186714
+      },
+      {
+        "end": 69,
+        "opened": 0.0028413464315235615,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0010048954281955957,
+        "start": 63,
+        "transition": 0.010272442363202572,
+        "unresolved": 0.04962881654500961
+      },
+      {
+        "end": 73,
+        "opened": 0.0006706962594762444,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0005193757824599743,
+        "start": 69,
+        "transition": 0.007661490701138973,
+        "unresolved": 0.049780137836933136
+      },
+      {
+        "end": 79,
+        "opened": 0.009018762037158012,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0005594961112365127,
+        "start": 73,
+        "transition": 0.004975988529622555,
+        "unresolved": 0.0582394003868103
+      },
+      {
+        "end": 80,
+        "opened": 0.0,
+        "pointer_end": 11,
+        "pointer_start": 0,
+        "resolved": 0.0002200799499405548,
+        "start": 79,
+        "transition": 0.006330632138997316,
+        "unresolved": 0.05801932141184807
+      }
+    ]
+  }
+}

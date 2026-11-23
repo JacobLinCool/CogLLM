@@ -1,0 +1,120 @@
+{
+  "dataset_release": {
+    "url": "https://jamesf-incomplete-qa.s3.amazonaws.com/iirc.tar.gz",
+    "sha256": "efab875854691530a3bd55809244b0656dff1e15e98e4108bae5405c63e31a9b"
+  },
+  "article_release": {
+    "url": "https://jamesf-incomplete-qa.s3.amazonaws.com/context_articles.tar.gz",
+    "sha256": "d239390a27ed3f4aa868afe126187e6d108990a7bcc2a3efb6cae5de917264c7",
+    "article_entries": 56550
+  },
+  "annotation_protocol": "https://aclanthology.org/2020.emnlp-main.86.pdf#page=4",
+  "author_source_setup": "https://github.com/jferguson144/IIRC-baseline/blob/main/setup.sh#L7-L9",
+  "author_article_parser": "https://github.com/jferguson144/IIRC-baseline/blob/main/util.py#L35-L45",
+  "author_dataset_license": "https://github.com/allenai/allennlp-website/blob/master/iirc.html",
+  "source_text_terms": "https://foundation.wikimedia.org/w/index.php?title=Policy:Terms_of_Use&oldid=98524#7._Licensing_of_Content",
+  "source_overlap": {
+    "article_family": 0,
+    "paragraph_text": 0,
+    "paragraph_id": 0,
+    "question_id": 0,
+    "question_text": 0
+  },
+  "raw_annotation_alignment": {
+    "train": {
+      "authored_questions": 10839,
+      "seed_excerpts": 13200,
+      "seed_exact": 13200,
+      "linked_excerpts": 10687,
+      "linked_document_found": 10687,
+      "linked_exact": 10251,
+      "one_visible_writer_anchor": 7195,
+      "answerable_one_linked_excerpt_matching_writer_anchor": 4811,
+      "eligible_exact_linked_evidence": 4626,
+      "eligible_with_span_answer": 2978,
+      "one_answer_surface_same_linked_document": 2847,
+      "answer_surface_offset_matches_linked_document": 1,
+      "answer_surface_unique_in_gold_context": 2733
+    },
+    "dev": {
+      "authored_questions": 1301,
+      "seed_excerpts": 1620,
+      "seed_exact": 1620,
+      "linked_excerpts": 1327,
+      "linked_document_found": 1327,
+      "linked_exact": 1265,
+      "one_visible_writer_anchor": 858,
+      "answerable_one_linked_excerpt_matching_writer_anchor": 594,
+      "eligible_exact_linked_evidence": 567,
+      "eligible_with_span_answer": 362,
+      "one_answer_surface_same_linked_document": 353,
+      "answer_surface_offset_matches_linked_document": 0,
+      "answer_surface_unique_in_gold_context": 342
+    }
+  },
+  "linked_overlap_before_filter": {
+    "linked_families": 64,
+    "linked_text_sha256": 64
+  },
+  "linked_overlap_after_filter": {
+    "linked_families": 0,
+    "linked_text_sha256": 0
+  },
+  "train_filter": "Remove train rows whose seed title, linked title or linked text hash matches dev seed titles or dev visible links (hashing available dev linked texts). Keep dev fixed.",
+  "strict_split": {
+    "train": {
+      "questions": 3951,
+      "seed_article_families": 2692,
+      "linked_article_families": 3683,
+      "same_seed_distinct_linked_family_pairs": 1705,
+      "same_seed_same_link_disjoint_support_pairs": 103,
+      "same_document_distinct_seed_disjoint_support_pairs": 72,
+      "one_eligible_question_per_anchor": 3686,
+      "one_question_support_end_inside_prefix_chars": {
+        "512": 2483,
+        "1024": 2889,
+        "2048": 3127,
+        "4096": 3334,
+        "8000": 3485,
+        "16000": 3582
+      },
+      "one_authored_question_per_anchor_in_release": 3359,
+      "one_authored_question_support_end_inside_prefix_chars": {
+        "512": 2263,
+        "1024": 2631,
+        "2048": 2849,
+        "4096": 3040,
+        "8000": 3179,
+        "16000": 3267
+      }
+    },
+    "dev": {
+      "questions": 567,
+      "seed_article_families": 301,
+      "linked_article_families": 527,
+      "same_seed_distinct_linked_family_pairs": 432,
+      "same_seed_same_link_disjoint_support_pairs": 23,
+      "same_document_distinct_seed_disjoint_support_pairs": 9,
+      "one_eligible_question_per_anchor": 505,
+      "one_question_support_end_inside_prefix_chars": {
+        "512": 316,
+        "1024": 369,
+        "2048": 414,
+        "4096": 435,
+        "8000": 462,
+        "16000": 477
+      },
+      "one_authored_question_per_anchor_in_release": 453,
+      "one_authored_question_support_end_inside_prefix_chars": {
+        "512": 282,
+        "1024": 328,
+        "2048": 372,
+        "4096": 392,
+        "8000": 414,
+        "16000": 428
+      }
+    }
+  },
+  "evidence": "Use context.indices matched exactly against the author’s HTML-stripped document. The answer span offsets are a separate coordinate system and were not used as evidence.",
+  "scope": "Separate answer annotators selected necessary source evidence for a writer-posed question. Text offsets specify support location, not a time of subjective resolution."
+}

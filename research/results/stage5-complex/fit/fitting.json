@@ -1,0 +1,475 @@
+{
+  "hardware": "NVIDIA L4",
+  "fitting_dtype": "float64",
+  "torch_version": "2.14.1+cu130",
+  "numpy_version": "2.4.6",
+  "methods": [
+    "target_only",
+    "target_end",
+    "full_sentence"
+  ],
+  "fractions": [
+    25,
+    50,
+    100
+  ],
+  "seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "split_rows": {
+    "train": 8667,
+    "trial": 503,
+    "test": 1094
+  },
+  "split_context_groups": {
+    "train": 7603,
+    "trial": 495,
+    "test": 1067
+  },
+  "feature_normalization": "L2-normalize each hidden-state row. Concatenate the normalized target_end and sentence_end rows for full_sentence and divide by sqrt(2).",
+  "training_sampling": "Select nested prefixes of the permuted canonical context groups for each seed. Round each group count up. Share the full-data fit across seeds.",
+  "fitting_objective": "Sum squared error plus (n / N_all_train) times squared L2 weight norm with an unpenalized intercept and a fixed penalty schedule.",
+  "prediction_bounds": [
+    0,
+    1
+  ],
+  "trial_diagnostics": "Diagnostic-only MAE after clipping estimates to prediction_bounds.",
+  "unique_fits": 33,
+  "fit_seconds": 5.6966768549998505,
+  "elapsed_seconds": 7.6463697669998965,
+  "cuda_peak_allocated_bytes": 1316002304,
+  "inputs": {
+    "design": {
+      "sha256": "7ad07ee3b5da409cff5e6525dcd28c861f4ce2675630510cf306707b85b38931",
+      "bytes": 3643110
+    },
+    "features": {
+      "sha256": "189565fdde90727fd66d5e69d1e107afdcfcb816813796e3a54abf551e9e197d",
+      "bytes": 189427594
+    }
+  },
+  "artifacts": {
+    "predictions.npz": {
+      "sha256": "5ae8cfaec976e138f51e61b5bfdbee93541478ac895251d38fbd5d73dfa80683",
+      "bytes": 267237
+    },
+    "heads.npz": {
+      "sha256": "e9721f340b325015826bf1645d9814385d4d180689b652e772480f99a80f49d4",
+      "bytes": 933091
+    }
+  },
+  "grid": [
+    {
+      "method": "target_only",
+      "fraction": 25,
+      "seeds": [
+        0
+      ],
+      "train_rows": 2203,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.2541825314410984,
+      "normal_equation_relative_residual": 1.2489243589161323e-15,
+      "trial_mae": 0.07548275381514663
+    },
+    {
+      "method": "target_only",
+      "fraction": 25,
+      "seeds": [
+        1
+      ],
+      "train_rows": 2174,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.2508365062882197,
+      "normal_equation_relative_residual": 1.1294188012936652e-15,
+      "trial_mae": 0.07630644585106046
+    },
+    {
+      "method": "target_only",
+      "fraction": 25,
+      "seeds": [
+        2
+      ],
+      "train_rows": 2198,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.25360563055267105,
+      "normal_equation_relative_residual": 1.2861466055171275e-15,
+      "trial_mae": 0.07542065923866374
+    },
+    {
+      "method": "target_only",
+      "fraction": 25,
+      "seeds": [
+        3
+      ],
+      "train_rows": 2162,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.249451944155994,
+      "normal_equation_relative_residual": 1.3666273613059138e-15,
+      "trial_mae": 0.07571462529740373
+    },
+    {
+      "method": "target_only",
+      "fraction": 25,
+      "seeds": [
+        4
+      ],
+      "train_rows": 2148,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.24783662166839737,
+      "normal_equation_relative_residual": 1.2217874519722599e-15,
+      "trial_mae": 0.07513543381706934
+    },
+    {
+      "method": "target_only",
+      "fraction": 50,
+      "seeds": [
+        0
+      ],
+      "train_rows": 4368,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5039806161301489,
+      "normal_equation_relative_residual": 1.5114588081191203e-15,
+      "trial_mae": 0.07231317742398795
+    },
+    {
+      "method": "target_only",
+      "fraction": 50,
+      "seeds": [
+        1
+      ],
+      "train_rows": 4342,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5009807315103265,
+      "normal_equation_relative_residual": 1.322941950410799e-15,
+      "trial_mae": 0.07351284962251496
+    },
+    {
+      "method": "target_only",
+      "fraction": 50,
+      "seeds": [
+        2
+      ],
+      "train_rows": 4364,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.503519095419407,
+      "normal_equation_relative_residual": 1.3846654391367194e-15,
+      "trial_mae": 0.07333457995558758
+    },
+    {
+      "method": "target_only",
+      "fraction": 50,
+      "seeds": [
+        3
+      ],
+      "train_rows": 4344,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5012114918656975,
+      "normal_equation_relative_residual": 1.4835910492241714e-15,
+      "trial_mae": 0.07321567225480978
+    },
+    {
+      "method": "target_only",
+      "fraction": 50,
+      "seeds": [
+        4
+      ],
+      "train_rows": 4294,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.4954424829814238,
+      "normal_equation_relative_residual": 1.3825015619028974e-15,
+      "trial_mae": 0.0713715089902881
+    },
+    {
+      "method": "target_only",
+      "fraction": 100,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "train_rows": 8667,
+      "train_context_groups": 7603,
+      "l2_penalty": 1.0,
+      "normal_equation_relative_residual": 1.8121758956473102e-15,
+      "trial_mae": 0.07124689439351004
+    },
+    {
+      "method": "target_end",
+      "fraction": 25,
+      "seeds": [
+        0
+      ],
+      "train_rows": 2203,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.2541825314410984,
+      "normal_equation_relative_residual": 1.876932899922109e-15,
+      "trial_mae": 0.09535377485273851
+    },
+    {
+      "method": "target_end",
+      "fraction": 25,
+      "seeds": [
+        1
+      ],
+      "train_rows": 2174,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.2508365062882197,
+      "normal_equation_relative_residual": 1.7668030592869814e-15,
+      "trial_mae": 0.093848648079652
+    },
+    {
+      "method": "target_end",
+      "fraction": 25,
+      "seeds": [
+        2
+      ],
+      "train_rows": 2198,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.25360563055267105,
+      "normal_equation_relative_residual": 1.848361331461212e-15,
+      "trial_mae": 0.09409753804968204
+    },
+    {
+      "method": "target_end",
+      "fraction": 25,
+      "seeds": [
+        3
+      ],
+      "train_rows": 2162,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.249451944155994,
+      "normal_equation_relative_residual": 1.7054496631580916e-15,
+      "trial_mae": 0.094129518458702
+    },
+    {
+      "method": "target_end",
+      "fraction": 25,
+      "seeds": [
+        4
+      ],
+      "train_rows": 2148,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.24783662166839737,
+      "normal_equation_relative_residual": 1.8646707036276225e-15,
+      "trial_mae": 0.09248795841892121
+    },
+    {
+      "method": "target_end",
+      "fraction": 50,
+      "seeds": [
+        0
+      ],
+      "train_rows": 4368,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5039806161301489,
+      "normal_equation_relative_residual": 2.139099119587857e-15,
+      "trial_mae": 0.08748322540788243
+    },
+    {
+      "method": "target_end",
+      "fraction": 50,
+      "seeds": [
+        1
+      ],
+      "train_rows": 4342,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5009807315103265,
+      "normal_equation_relative_residual": 2.0768450503808474e-15,
+      "trial_mae": 0.0876332532841372
+    },
+    {
+      "method": "target_end",
+      "fraction": 50,
+      "seeds": [
+        2
+      ],
+      "train_rows": 4364,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.503519095419407,
+      "normal_equation_relative_residual": 2.1554567599625996e-15,
+      "trial_mae": 0.08854005529556999
+    },
+    {
+      "method": "target_end",
+      "fraction": 50,
+      "seeds": [
+        3
+      ],
+      "train_rows": 4344,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5012114918656975,
+      "normal_equation_relative_residual": 1.9184531284112626e-15,
+      "trial_mae": 0.08710347601083482
+    },
+    {
+      "method": "target_end",
+      "fraction": 50,
+      "seeds": [
+        4
+      ],
+      "train_rows": 4294,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.4954424829814238,
+      "normal_equation_relative_residual": 2.1269369592749946e-15,
+      "trial_mae": 0.08840893557631752
+    },
+    {
+      "method": "target_end",
+      "fraction": 100,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "train_rows": 8667,
+      "train_context_groups": 7603,
+      "l2_penalty": 1.0,
+      "normal_equation_relative_residual": 2.3873589783101665e-15,
+      "trial_mae": 0.08419456660545165
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 25,
+      "seeds": [
+        0
+      ],
+      "train_rows": 2203,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.2541825314410984,
+      "normal_equation_relative_residual": 7.243877572499746e-15,
+      "trial_mae": 0.09485729606907138
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 25,
+      "seeds": [
+        1
+      ],
+      "train_rows": 2174,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.2508365062882197,
+      "normal_equation_relative_residual": 5.1615097255114696e-15,
+      "trial_mae": 0.09345878953945466
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 25,
+      "seeds": [
+        2
+      ],
+      "train_rows": 2198,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.25360563055267105,
+      "normal_equation_relative_residual": 7.552540658670855e-15,
+      "trial_mae": 0.09383266373042823
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 25,
+      "seeds": [
+        3
+      ],
+      "train_rows": 2162,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.249451944155994,
+      "normal_equation_relative_residual": 4.455444696571217e-15,
+      "trial_mae": 0.09407782735319081
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 25,
+      "seeds": [
+        4
+      ],
+      "train_rows": 2148,
+      "train_context_groups": 1901,
+      "l2_penalty": 0.24783662166839737,
+      "normal_equation_relative_residual": 4.707760272033155e-15,
+      "trial_mae": 0.09179772378818714
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 50,
+      "seeds": [
+        0
+      ],
+      "train_rows": 4368,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5039806161301489,
+      "normal_equation_relative_residual": 2.0299271839919816e-15,
+      "trial_mae": 0.08841373524021075
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 50,
+      "seeds": [
+        1
+      ],
+      "train_rows": 4342,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5009807315103265,
+      "normal_equation_relative_residual": 2.106573090350044e-15,
+      "trial_mae": 0.08958928784755289
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 50,
+      "seeds": [
+        2
+      ],
+      "train_rows": 4364,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.503519095419407,
+      "normal_equation_relative_residual": 2.2941300584704634e-15,
+      "trial_mae": 0.09011865487273628
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 50,
+      "seeds": [
+        3
+      ],
+      "train_rows": 4344,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.5012114918656975,
+      "normal_equation_relative_residual": 1.9504187596883136e-15,
+      "trial_mae": 0.08839515598947133
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 50,
+      "seeds": [
+        4
+      ],
+      "train_rows": 4294,
+      "train_context_groups": 3802,
+      "l2_penalty": 0.4954424829814238,
+      "normal_equation_relative_residual": 1.9972256383862863e-15,
+      "trial_mae": 0.08879681667421303
+    },
+    {
+      "method": "full_sentence",
+      "fraction": 100,
+      "seeds": [
+        0,
+        1,
+        2,
+        3,
+        4
+      ],
+      "train_rows": 8667,
+      "train_context_groups": 7603,
+      "l2_penalty": 1.0,
+      "normal_equation_relative_residual": 2.3249728571627405e-15,
+      "trial_mae": 0.08602987736990642
+    }
+  ]
+}

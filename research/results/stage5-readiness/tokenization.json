@@ -1,0 +1,52 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "tokenizers": "0.23.3",
+  "input_sha256": {
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "stimuli.jsonl": "becaaa53572657e0b8dec013c125edbc8b7cf31c5687278a0dafdc267aa080a0",
+    "observations.jsonl": "d5ecf73f64569963aba0061c1566f58223b08dbec42cc430303e7c0b727050d4"
+  },
+  "span_scope": "Whole-sentence native tokenization; selected overlapping tokens must cover exactly the non-whitespace characters of the designated span. A stable prefix means equality to tokenizing the original text truncated immediately after the final target character. This checks token IDs only.",
+  "by_split": {
+    "train": {
+      "observations": 8680,
+      "exact_nonwhite_span": 8667,
+      "exact_span_and_stable_target_end_prefix": 8667,
+      "crosses_nonwhite_boundary": 13
+    },
+    "trial": {
+      "observations": 503,
+      "exact_nonwhite_span": 503,
+      "exact_span_and_stable_target_end_prefix": 503
+    },
+    "test": {
+      "observations": 1096,
+      "exact_nonwhite_span": 1094,
+      "exact_span_and_stable_target_end_prefix": 1094,
+      "crosses_nonwhite_boundary": 2
+    }
+  },
+  "exact_target_token_width_counts": {
+    "1": 6458,
+    "2": 2720,
+    "3": 821,
+    "4": 200,
+    "5": 47,
+    "6": 15,
+    "7": 2,
+    "8": 1
+  },
+  "native_sentence_inventory": {
+    "unique_sentences": 9181,
+    "tokens": 322400,
+    "shortest": 2,
+    "longest": 341
+  },
+  "test_exact_span_target_types": {
+    "casefold_unique": 564,
+    "also_in_train": 52,
+    "with_multiple_distinct_context_groups": 216,
+    "same_type_pairs_across_contexts_before_scoring": 1110
+  }
+}

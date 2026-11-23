@@ -1,0 +1,460 @@
+{
+  "early": {
+    "movies": 39,
+    "regions": 529,
+    "regions_marked": 266,
+    "regions_with_two_votes": 129,
+    "models": {
+      "surprisal": {
+        "ap": {
+          "estimate": 0.6482033475028598,
+          "family_bootstrap_95_interval": [
+            0.5811627537690709,
+            0.7219623476822457
+          ]
+        },
+        "auroc": {
+          "estimate": 0.620843934932388,
+          "family_bootstrap_95_interval": [
+            0.5697271376268873,
+            0.6755810571215131
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.007518796992481203,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.025319137524136413
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.338528434137608,
+          "family_bootstrap_95_interval": [
+            0.28250290002408296,
+            0.3954554035006401
+          ]
+        },
+        "precision": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.502835538752363,
+          "family_bootstrap_95_interval": [
+            0.45270238930953216,
+            0.5551475417224684
+          ]
+        },
+        "cutoff": 0.760273101225853,
+        "alert_counts": {
+          "true_positive": 2,
+          "false_positive": 0,
+          "human_positive": 266,
+          "human_negative": 263
+        },
+        "within_movie_concordance": {
+          "estimate": 0.6731387170113247,
+          "family_bootstrap_95_interval": [
+            0.6036451206007127,
+            0.7408906448720294
+          ],
+          "eligible_documents": 38
+        },
+        "two_vote_ap": 0.38019252795717345,
+        "two_vote_auroc": 0.6226937984496124
+      },
+      "local": {
+        "ap": {
+          "estimate": 0.6728088227820233,
+          "family_bootstrap_95_interval": [
+            0.5961992522184605,
+            0.7485017673852844
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6518196632265073,
+          "family_bootstrap_95_interval": [
+            0.6046166377419266,
+            0.6980721567303607
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.16541353383458646,
+          "family_bootstrap_95_interval": [
+            0.1131370741017771,
+            0.22040816326530613
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.03802281368821293,
+          "family_bootstrap_95_interval": [
+            0.012048192771084338,
+            0.07335907335907337
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.4791540514649003,
+          "family_bootstrap_95_interval": [
+            0.42392952377728654,
+            0.5319041305484331
+          ]
+        },
+        "precision": {
+          "estimate": 0.8148148148148148,
+          "family_bootstrap_95_interval": [
+            0.6724137931034483,
+            0.9344262295081968
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.502835538752363,
+          "family_bootstrap_95_interval": [
+            0.45270238930953216,
+            0.5551475417224684
+          ]
+        },
+        "cutoff": 0.7975006924982743,
+        "alert_counts": {
+          "true_positive": 44,
+          "false_positive": 10,
+          "human_positive": 266,
+          "human_negative": 263
+        },
+        "within_movie_concordance": {
+          "estimate": 0.662750421096713,
+          "family_bootstrap_95_interval": [
+            0.6076802110672476,
+            0.7176177557853693
+          ],
+          "eligible_documents": 38
+        },
+        "two_vote_ap": 0.44311974355251005,
+        "two_vote_auroc": 0.6978875968992249
+      },
+      "relations": {
+        "ap": {
+          "estimate": 0.6238884491009873,
+          "family_bootstrap_95_interval": [
+            0.5409499420462115,
+            0.7095321135965784
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6094370908259241,
+          "family_bootstrap_95_interval": [
+            0.5559871835919287,
+            0.6649365180913096
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.2781954887218045,
+          "family_bootstrap_95_interval": [
+            0.19920278236646907,
+            0.3554855294558045
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.12927756653992395,
+          "family_bootstrap_95_interval": [
+            0.08583690987124463,
+            0.17472118959107807
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5318797188409226,
+          "family_bootstrap_95_interval": [
+            0.47430880142592785,
+            0.5832660279088783
+          ]
+        },
+        "precision": {
+          "estimate": 0.6851851851851852,
+          "family_bootstrap_95_interval": [
+            0.58,
+            0.780952380952381
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.502835538752363,
+          "family_bootstrap_95_interval": [
+            0.45270238930953216,
+            0.5551475417224684
+          ]
+        },
+        "cutoff": 0.8143235919826295,
+        "alert_counts": {
+          "true_positive": 74,
+          "false_positive": 34,
+          "human_positive": 266,
+          "human_negative": 263
+        },
+        "within_movie_concordance": {
+          "estimate": 0.601604160393036,
+          "family_bootstrap_95_interval": [
+            0.540520797061007,
+            0.6621414068643088
+          ],
+          "eligible_documents": 38
+        },
+        "two_vote_ap": 0.4323302571938292,
+        "two_vote_auroc": 0.6803488372093023
+      }
+    },
+    "relations_minus_control_ap": {
+      "surprisal": {
+        "estimate": -0.02431489840187251,
+        "family_bootstrap_95_interval": [
+          -0.09307182003974085,
+          0.037163321749671394
+        ]
+      },
+      "local": {
+        "estimate": -0.04892037368103597,
+        "family_bootstrap_95_interval": [
+          -0.09362582665438705,
+          -0.00527874605826107
+        ]
+      }
+    },
+    "gate": false
+  },
+  "complete": {
+    "movies": 39,
+    "regions": 529,
+    "regions_marked": 266,
+    "regions_with_two_votes": 129,
+    "models": {
+      "surprisal": {
+        "ap": {
+          "estimate": 0.6015166002616396,
+          "family_bootstrap_95_interval": [
+            0.532469410389593,
+            0.6794315655558306
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6106378112581835,
+          "family_bootstrap_95_interval": [
+            0.5581061032373428,
+            0.6638569917167054
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.007518796992481203,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0199203187250996
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.0,
+          "family_bootstrap_95_interval": [
+            0.0,
+            0.0
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.338528434137608,
+          "family_bootstrap_95_interval": [
+            0.2826560362469401,
+            0.3955224589980337
+          ]
+        },
+        "precision": {
+          "estimate": 1.0,
+          "family_bootstrap_95_interval": [
+            1.0,
+            1.0
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.502835538752363,
+          "family_bootstrap_95_interval": [
+            0.45270238930953216,
+            0.5551475417224684
+          ]
+        },
+        "cutoff": 0.6880223796643903,
+        "alert_counts": {
+          "true_positive": 2,
+          "false_positive": 0,
+          "human_positive": 266,
+          "human_negative": 263
+        },
+        "within_movie_concordance": {
+          "estimate": 0.6371484688888995,
+          "family_bootstrap_95_interval": [
+            0.5755374148158238,
+            0.6986479168013259
+          ],
+          "eligible_documents": 38
+        },
+        "two_vote_ap": 0.3367369569613186,
+        "two_vote_auroc": 0.5906782945736434
+      },
+      "local": {
+        "ap": {
+          "estimate": 0.637630251036656,
+          "family_bootstrap_95_interval": [
+            0.5715024321186611,
+            0.7221068955307987
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6721032619571743,
+          "family_bootstrap_95_interval": [
+            0.6328613431028538,
+            0.719227354795237
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.13157894736842105,
+          "family_bootstrap_95_interval": [
+            0.08814563907063006,
+            0.18146718146718147
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.06463878326996197,
+          "family_bootstrap_95_interval": [
+            0.030418250950570342,
+            0.10294239788938829
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.4412342506218456,
+          "family_bootstrap_95_interval": [
+            0.3815544221285976,
+            0.5013449276110623
+          ]
+        },
+        "precision": {
+          "estimate": 0.6730769230769231,
+          "family_bootstrap_95_interval": [
+            0.5454545454545454,
+            0.825414078674948
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.502835538752363,
+          "family_bootstrap_95_interval": [
+            0.45270238930953216,
+            0.5551475417224684
+          ]
+        },
+        "cutoff": 0.7265482797222896,
+        "alert_counts": {
+          "true_positive": 35,
+          "false_positive": 17,
+          "human_positive": 266,
+          "human_negative": 263
+        },
+        "within_movie_concordance": {
+          "estimate": 0.6913733999918211,
+          "family_bootstrap_95_interval": [
+            0.6334219334515387,
+            0.7486523357044191
+          ],
+          "eligible_documents": 38
+        },
+        "two_vote_ap": 0.3641670069896028,
+        "two_vote_auroc": 0.6624418604651163
+      },
+      "relations": {
+        "ap": {
+          "estimate": 0.6333788605247007,
+          "family_bootstrap_95_interval": [
+            0.5523469756261846,
+            0.7344128530613295
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6546070499442522,
+          "family_bootstrap_95_interval": [
+            0.599419778325123,
+            0.7180256378819505
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.3383458646616541,
+          "family_bootstrap_95_interval": [
+            0.27199916317991635,
+            0.40963988111034444
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.17110266159695817,
+          "family_bootstrap_95_interval": [
+            0.0823045267489712,
+            0.26117143332224807
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.5556412490825687,
+          "family_bootstrap_95_interval": [
+            0.5109763107286651,
+            0.6026335107114981
+          ]
+        },
+        "precision": {
+          "estimate": 0.6666666666666666,
+          "family_bootstrap_95_interval": [
+            0.5460526315789473,
+            0.8173076923076923
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.502835538752363,
+          "family_bootstrap_95_interval": [
+            0.45270238930953216,
+            0.5551475417224684
+          ]
+        },
+        "cutoff": 0.7518539076175988,
+        "alert_counts": {
+          "true_positive": 90,
+          "false_positive": 45,
+          "human_positive": 266,
+          "human_negative": 263
+        },
+        "within_movie_concordance": {
+          "estimate": 0.671837820273825,
+          "family_bootstrap_95_interval": [
+            0.608769765674762,
+            0.732646793829509
+          ],
+          "eligible_documents": 38
+        },
+        "two_vote_ap": 0.3677968655765967,
+        "two_vote_auroc": 0.6606007751937985
+      }
+    },
+    "relations_minus_control_ap": {
+      "surprisal": {
+        "estimate": 0.03186226026306116,
+        "family_bootstrap_95_interval": [
+          -0.03906558876216153,
+          0.10928176354936522
+        ]
+      },
+      "local": {
+        "estimate": -0.004251390511955333,
+        "family_bootstrap_95_interval": [
+          -0.04632488850871465,
+          0.038763682768473695
+        ]
+      }
+    },
+    "gate": false
+  }
+}

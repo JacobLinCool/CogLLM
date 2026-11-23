@@ -1,0 +1,124 @@
+{
+  "protocol_sha256": "38e70d16e74c36f18e1a3ce55a247ed43016ee95f1fc8aacc88af38c9ba3b9c6",
+  "source_sha256": "c4d238bfd365a107fa4f986d33feb44f0f37c7fc85207a21096313a44f786ef4",
+  "forecasts_sha256": "9cbe2457438b6b1b08ed570869ca5c05d6e1974403b345f9ab32246c5c4a8497",
+  "receipt": {
+    "input_sha256": "8bfdc6b25fbb813d04f854eac623cbe8b1ace3f5441c41b3fe2bade652e32000",
+    "feature_sha256": "dc90ded961a5d45447fd41bd5f63f9d2f0e7e8a3b20c4961c88df8a041241765",
+    "candidate": "qwen",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "documents": 1,
+    "forwards": 1,
+    "words": 1777,
+    "surface_features": [
+      "log_word_length",
+      "capitalized",
+      "all_caps",
+      "has_apostrophe",
+      "numeric",
+      "document_first",
+      "segment_first",
+      "log_segment_number",
+      "log_word_in_segment",
+      "log_word_ordinal",
+      "log_repetitions",
+      "first_mention",
+      "log_previous_mention_distance",
+      "previous_capitalized",
+      "earlier_capitalized_rate",
+      "starts_with_article"
+    ],
+    "local_width": 96,
+    "relation_features": [
+      "same_form_exists",
+      "same_form_max_middle_cos",
+      "same_form_max_final_cos",
+      "same_form_attention_mass",
+      "same_form_max_attention",
+      "other_capitalized_exists",
+      "other_capitalized_max_middle_cos",
+      "other_capitalized_max_final_cos",
+      "other_capitalized_attention_mass",
+      "other_capitalized_max_attention",
+      "other_content_exists",
+      "other_content_max_middle_cos",
+      "other_content_max_final_cos",
+      "other_content_attention_mass",
+      "other_content_max_attention"
+    ]
+  },
+  "recorded_character_spans": 21,
+  "ambiguous_span_records": 6,
+  "eligible_words": 1777,
+  "excluded_tail_words": 390,
+  "source_thresholds": [
+    0.2746196853500068,
+    0.15076164797137248
+  ],
+  "all_placements": {
+    "words": 1777,
+    "model_and_control_flags": [
+      29,
+      28
+    ],
+    "possible_positive_totals": [
+      24
+    ],
+    "scores": {
+      "served_marginal": {
+        "precision": [
+          0.5862068965517241,
+          0.7931034482758621
+        ],
+        "recall": [
+          0.7083333333333333,
+          0.9583333333333334
+        ],
+        "f1": [
+          0.6415094339622641,
+          0.8679245283018868
+        ],
+        "false_flags_per_1000_words": [
+          3.376477208778839,
+          6.75295441755768
+        ]
+      },
+      "ner_surprisal": {
+        "precision": [
+          0.5714285714285714,
+          0.7499999999999999
+        ],
+        "recall": [
+          0.6666666666666666,
+          0.875
+        ],
+        "f1": [
+          0.6153846153846154,
+          0.8076923076923077
+        ],
+        "false_flags_per_1000_words": [
+          3.939223410241981,
+          6.752954417557682
+        ]
+      },
+      "paired": {
+        "precision": [
+          0.008620689655172459,
+          0.04926108374384239
+        ],
+        "recall": [
+          0.041666666666666685,
+          0.08333333333333337
+        ],
+        "f1": [
+          0.022496371552975243,
+          0.06386066763425247
+        ],
+        "false_flags_per_1000_words": [
+          -0.5627462014631419,
+          -1.7763568394002505e-15
+        ]
+      }
+    }
+  }
+}

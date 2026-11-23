@@ -1,0 +1,648 @@
+{
+  "evaluations": {
+    "dev": {
+      "annotations": {
+        "same_paragraph_target": 373,
+        "scored": 72,
+        "target_tokenization_or_nonword": 1,
+        "unknown_paragraph": 198
+      },
+      "articles": 18,
+      "contrasts": {
+        "cosine_minus_surface": {
+          "mrr": {
+            "ci95": [
+              -0.1282667072840166,
+              0.14587094283234212
+            ],
+            "difference": 0.020885429200654157
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.9119885311963034,
+              -0.32304776464884477
+            ],
+            "difference": -0.589657402322066
+          },
+          "top1": {
+            "ci95": [
+              -0.21986531986531987,
+              0.17592592592592593
+            ],
+            "difference": -0.01616161616161615
+          },
+          "top5": {
+            "ci95": [
+              0.05185185185185185,
+              0.21851851851851856
+            ],
+            "difference": 0.12962962962962965
+          }
+        },
+        "interaction_minus_cosine": {
+          "mrr": {
+            "ci95": [
+              -0.0492926814236202,
+              0.1162295890165603
+            ],
+            "difference": 0.034061512269139976
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.43198861694634616,
+              0.2443386508078292
+            ],
+            "difference": -0.08184891208305342
+          },
+          "top1": {
+            "ci95": [
+              -0.05286195286195285,
+              0.13602693602693605
+            ],
+            "difference": 0.03973063973063973
+          },
+          "top5": {
+            "ci95": [
+              -0.25235690235690234,
+              0.03148148148148148
+            ],
+            "difference": -0.0930976430976431
+          }
+        },
+        "interaction_minus_original_cosine": {
+          "mrr": {
+            "ci95": [
+              -0.03012285029238437,
+              0.22516465653807224
+            ],
+            "difference": 0.10382484779024694
+          },
+          "nll_nats": {
+            "ci95": [
+              -1.456200177046389,
+              -0.33118669581535426
+            ],
+            "difference": -0.8747709231470653
+          },
+          "top1": {
+            "ci95": [
+              -0.11077441077441079,
+              0.12289562289562289
+            ],
+            "difference": 0.015151515151515147
+          },
+          "top5": {
+            "ci95": [
+              -0.0015993265993266097,
+              0.3752588383838383
+            ],
+            "difference": 0.18728956228956228
+          }
+        },
+        "pos_minus_interaction": {
+          "mrr": {
+            "ci95": [
+              -0.04488014520834015,
+              0.02024204461620238
+            ],
+            "difference": -0.008613127910563291
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.31707766403151394,
+              -0.09697459946359868
+            ],
+            "difference": -0.2025066533351601
+          },
+          "top1": {
+            "ci95": [
+              -0.07878787878787878,
+              0.020202020202020197
+            ],
+            "difference": -0.023232323232323233
+          },
+          "top5": {
+            "ci95": [
+              -0.022222222222222216,
+              0.07407407407407407
+            ],
+            "difference": 0.0212962962962963
+          }
+        }
+      },
+      "inputs_sha256": "1e69d86060fdebd064f850dc2626340e2df09664dda525a7dd0f0da7742f9391",
+      "labels_sha256": "29ec2988fe277a7e7545639ba17fc428f4811c033e52d47bd26d2fac6cffa254",
+      "metrics": {
+        "cosine": {
+          "mrr": 0.3019201813698201,
+          "nll_nats": 3.3657910545933074,
+          "top1": 0.13973063973063973,
+          "top5": 0.5520202020202021
+        },
+        "interaction": {
+          "mrr": 0.33598169363896,
+          "nll_nats": 3.283942142510254,
+          "top1": 0.17946127946127943,
+          "top5": 0.4589225589225589
+        },
+        "original_cosine": {
+          "mrr": 0.23215684584871316,
+          "nll_nats": 4.158713065657319,
+          "top1": 0.1643097643097643,
+          "top5": 0.27163299663299667
+        },
+        "original_surface": {
+          "mrr": 0.1387518692074847,
+          "nll_nats": 4.824556498952728,
+          "top1": 0.08518518518518518,
+          "top5": 0.20218855218855217
+        },
+        "pos": {
+          "mrr": 0.3273685657283968,
+          "nll_nats": 3.0814354891750937,
+          "top1": 0.15622895622895622,
+          "top5": 0.48021885521885527
+        },
+        "surface": {
+          "mrr": 0.2810347521691659,
+          "nll_nats": 3.955448456915373,
+          "top1": 0.1558922558922559,
+          "top5": 0.4223905723905724
+        }
+      },
+      "nominal_only_diagnostic": {
+        "counts": {
+          "gold": 161,
+          "gold_retained": 155,
+          "queries_any_gold": 72,
+          "retained": 10490,
+          "total": 27828
+        },
+        "document_weighted": {
+          "candidate_retention": 0.39452145171159625,
+          "original_top_choice_nominal": 0.8084175084175086,
+          "queries_with_gold_retained": 1.0,
+          "top1": 0.17356902356902357,
+          "top5": 0.3457070707070707
+        }
+      },
+      "paragraph_nll_diagnostic": {
+        "cosine": {
+          "earlier_paragraph_mass_nll": 0.023259164108193814,
+          "within_earlier_paragraphs_nll": 3.3425318904851133
+        },
+        "interaction": {
+          "earlier_paragraph_mass_nll": 0.021941657751164786,
+          "within_earlier_paragraphs_nll": 3.2620004847590884
+        },
+        "original_cosine": {
+          "earlier_paragraph_mass_nll": 0.20721658275682298,
+          "within_earlier_paragraphs_nll": 3.951496482900496
+        },
+        "original_surface": {
+          "earlier_paragraph_mass_nll": 0.1416463166637543,
+          "within_earlier_paragraphs_nll": 4.682910182288974
+        },
+        "pos": {
+          "earlier_paragraph_mass_nll": 0.019155848600000695,
+          "within_earlier_paragraphs_nll": 3.0622796405750927
+        },
+        "surface": {
+          "earlier_paragraph_mass_nll": 0.012548959882355515,
+          "within_earlier_paragraphs_nll": 3.942899497033017
+        }
+      },
+      "queries": 72
+    },
+    "gentle": {
+      "annotations": {
+        "same_paragraph_target": 87,
+        "scored": 31,
+        "target_tokenization_or_nonword": 3,
+        "unknown_paragraph": 253
+      },
+      "articles": 13,
+      "contrasts": {
+        "cosine_minus_surface": {
+          "mrr": {
+            "ci95": [
+              -0.21212627755672678,
+              0.05332207182468878
+            ],
+            "difference": -0.06116433960081155
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.39871765710087514,
+              0.31305089554590815
+            ],
+            "difference": -0.029321772708019108
+          },
+          "top1": {
+            "ci95": [
+              -0.3076923076923077,
+              0.0
+            ],
+            "difference": -0.11538461538461539
+          },
+          "top5": {
+            "ci95": [
+              -0.03862179487179473,
+              0.43589743589743585
+            ],
+            "difference": 0.18589743589743588
+          }
+        },
+        "interaction_minus_cosine": {
+          "mrr": {
+            "ci95": [
+              -0.0706789325481986,
+              0.004035541373123783
+            ],
+            "difference": -0.029913821832571654
+          },
+          "nll_nats": {
+            "ci95": [
+              0.018049931761114704,
+              0.8626607843909025
+            ],
+            "difference": 0.44104474430507956
+          },
+          "top1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "difference": 0.0
+          },
+          "top5": {
+            "ci95": [
+              -0.4871794871794872,
+              -0.05128205128205128
+            ],
+            "difference": -0.25641025641025644
+          }
+        },
+        "interaction_minus_original_cosine": {
+          "mrr": {
+            "ci95": [
+              -0.055221978888205146,
+              0.04473634119643239
+            ],
+            "difference": -0.0023355477017132707
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.36360295476968313,
+              0.4522134375002621
+            ],
+            "difference": 0.059792189028865024
+          },
+          "top1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "difference": 0.0
+          },
+          "top5": {
+            "ci95": [
+              -0.29487179487179493,
+              0.07692307692307693
+            ],
+            "difference": -0.08974358974358974
+          }
+        },
+        "pos_minus_interaction": {
+          "mrr": {
+            "ci95": [
+              0.009126758852629983,
+              0.048589218740591605
+            ],
+            "difference": 0.027597743847123615
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.5150669232311024,
+              -0.15238321975943547
+            ],
+            "difference": -0.34598005184231345
+          },
+          "top1": {
+            "ci95": [
+              0.0,
+              0.0
+            ],
+            "difference": 0.0
+          },
+          "top5": {
+            "ci95": [
+              0.0,
+              0.19230769230769232
+            ],
+            "difference": 0.08974358974358973
+          }
+        }
+      },
+      "inputs_sha256": "8e51238e4802a3f14a59c2bd4f425c01fc6318a3a7fe0165fa395d3589871b98",
+      "labels_sha256": "2ac7db4fe73460c6ed41a2fb82f911524819ddca85b843bcc55bc42a4da253dc",
+      "metrics": {
+        "cosine": {
+          "mrr": 0.1100004385162121,
+          "nll_nats": 3.880997397384661,
+          "top1": 0.0,
+          "top5": 0.32051282051282054
+        },
+        "interaction": {
+          "mrr": 0.08008661668364046,
+          "nll_nats": 4.322042141689741,
+          "top1": 0.0,
+          "top5": 0.0641025641025641
+        },
+        "original_cosine": {
+          "mrr": 0.08242216438535374,
+          "nll_nats": 4.262249952660875,
+          "top1": 0.0,
+          "top5": 0.15384615384615385
+        },
+        "original_surface": {
+          "mrr": 0.027106465341048085,
+          "nll_nats": 4.423193960734864,
+          "top1": 0.0,
+          "top5": 0.02564102564102564
+        },
+        "pos": {
+          "mrr": 0.10768436053076408,
+          "nll_nats": 3.9760620898474275,
+          "top1": 0.0,
+          "top5": 0.15384615384615385
+        },
+        "surface": {
+          "mrr": 0.17116477811702366,
+          "nll_nats": 3.9103191700926816,
+          "top1": 0.11538461538461539,
+          "top5": 0.1346153846153846
+        }
+      },
+      "nominal_only_diagnostic": {
+        "counts": {
+          "gold": 213,
+          "gold_retained": 211,
+          "queries_any_gold": 29,
+          "retained": 2440,
+          "total": 6480
+        },
+        "document_weighted": {
+          "candidate_retention": 0.37342663704226636,
+          "original_top_choice_nominal": 0.5897435897435898,
+          "queries_with_gold_retained": 0.9615384615384616,
+          "top1": 0.1282051282051282,
+          "top5": 0.23076923076923078
+        }
+      },
+      "paragraph_nll_diagnostic": {
+        "cosine": {
+          "earlier_paragraph_mass_nll": 0.027418613407195664,
+          "within_earlier_paragraphs_nll": 3.8535787839774662
+        },
+        "interaction": {
+          "earlier_paragraph_mass_nll": 0.029683976073318033,
+          "within_earlier_paragraphs_nll": 4.292358165616424
+        },
+        "original_cosine": {
+          "earlier_paragraph_mass_nll": 0.24002476285363908,
+          "within_earlier_paragraphs_nll": 4.022225189807236
+        },
+        "original_surface": {
+          "earlier_paragraph_mass_nll": 0.169267842331319,
+          "within_earlier_paragraphs_nll": 4.253926118403544
+        },
+        "pos": {
+          "earlier_paragraph_mass_nll": 0.022551000752201535,
+          "within_earlier_paragraphs_nll": 3.9535110890952265
+        },
+        "surface": {
+          "earlier_paragraph_mass_nll": 0.016610016430995637,
+          "within_earlier_paragraphs_nll": 3.8937091536616846
+        }
+      },
+      "queries": 31
+    },
+    "test": {
+      "annotations": {
+        "same_paragraph_target": 227,
+        "scored": 89,
+        "target_tokenization_or_nonword": 1,
+        "unknown_paragraph": 201
+      },
+      "articles": 19,
+      "contrasts": {
+        "cosine_minus_surface": {
+          "mrr": {
+            "ci95": [
+              0.0696743814218475,
+              0.20699280012069649
+            ],
+            "difference": 0.13376228448960595
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.6849906433647873,
+              -0.1891710605554286
+            ],
+            "difference": -0.42234515213382456
+          },
+          "top1": {
+            "ci95": [
+              0.01695906432748538,
+              0.2236842105263158
+            ],
+            "difference": 0.10029239766081871
+          },
+          "top5": {
+            "ci95": [
+              0.19302033492822968,
+              0.4382364638285689
+            ],
+            "difference": 0.30918701181859076
+          }
+        },
+        "interaction_minus_cosine": {
+          "mrr": {
+            "ci95": [
+              -0.053161632443530386,
+              0.11372672051460965
+            ],
+            "difference": 0.027385517411368163
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.47862922453845413,
+              0.2726421540745898
+            ],
+            "difference": -0.09090633432894057
+          },
+          "top1": {
+            "ci95": [
+              -0.04093567251461988,
+              0.12094630515683147
+            ],
+            "difference": 0.03474215842636895
+          },
+          "top5": {
+            "ci95": [
+              -0.16169876906719013,
+              0.08422892896577107
+            ],
+            "difference": -0.03286304338935918
+          }
+        },
+        "interaction_minus_original_cosine": {
+          "mrr": {
+            "ci95": [
+              0.0013424422046229994,
+              0.264770676638401
+            ],
+            "difference": 0.1300910491807545
+          },
+          "nll_nats": {
+            "ci95": [
+              -1.1956900855332988,
+              -0.23284265798515677
+            ],
+            "difference": -0.697900142576314
+          },
+          "top1": {
+            "ci95": [
+              -0.010287081339712916,
+              0.25598086124401914
+            ],
+            "difference": 0.1160287081339713
+          },
+          "top5": {
+            "ci95": [
+              0.03541666666666668,
+              0.36703395288921603
+            ],
+            "difference": 0.20342084815769024
+          }
+        },
+        "pos_minus_interaction": {
+          "mrr": {
+            "ci95": [
+              -0.08332607016406203,
+              0.038239282607688926
+            ],
+            "difference": -0.013447481012899878
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.3853609853830742,
+              -0.1308994587909354
+            ],
+            "difference": -0.253752018451323
+          },
+          "top1": {
+            "ci95": [
+              -0.19114832535885168,
+              0.0009569377990430655
+            ],
+            "difference": -0.07057416267942583
+          },
+          "top5": {
+            "ci95": [
+              -0.033603801169590636,
+              0.06873221077168443
+            ],
+            "difference": 0.018729808203492418
+          }
+        }
+      },
+      "inputs_sha256": "b59b96e23db16027d449d973f1888da6ce0c02ae6c00f0ee08f2101c62ae3520",
+      "labels_sha256": "698e87dcde9ec3f89e80c79f17523eb4dcc4258dfb805ea00af065f05eb5da84",
+      "metrics": {
+        "cosine": {
+          "mrr": 0.2749713180184626,
+          "nll_nats": 3.5904616401838108,
+          "top1": 0.15029239766081873,
+          "top5": 0.46309450783135003
+        },
+        "interaction": {
+          "mrr": 0.3023568354298308,
+          "nll_nats": 3.4995553058548703,
+          "top1": 0.1850345560871877,
+          "top5": 0.43023146444199084
+        },
+        "original_cosine": {
+          "mrr": 0.17226578624907626,
+          "nll_nats": 4.197455448431184,
+          "top1": 0.06900584795321638,
+          "top5": 0.22681061628430052
+        },
+        "original_surface": {
+          "mrr": 0.07554527183614898,
+          "nll_nats": 4.732225425636158,
+          "top1": 0.0362123256860099,
+          "top5": 0.08591992802519118
+        },
+        "pos": {
+          "mrr": 0.28890935441693094,
+          "nll_nats": 3.2458032874035476,
+          "top1": 0.11446039340776182,
+          "top5": 0.44896127264548313
+        },
+        "surface": {
+          "mrr": 0.14120903352885672,
+          "nll_nats": 4.012806792317636,
+          "top1": 0.049999999999999996,
+          "top5": 0.15390749601275916
+        }
+      },
+      "nominal_only_diagnostic": {
+        "counts": {
+          "gold": 284,
+          "gold_retained": 255,
+          "queries_any_gold": 82,
+          "retained": 13024,
+          "total": 35017
+        },
+        "document_weighted": {
+          "candidate_retention": 0.39170618271985463,
+          "original_top_choice_nominal": 0.7464482885535517,
+          "queries_with_gold_retained": 0.9626630679262258,
+          "top1": 0.1347953216374269,
+          "top5": 0.28695456590193436
+        }
+      },
+      "paragraph_nll_diagnostic": {
+        "cosine": {
+          "earlier_paragraph_mass_nll": 0.013049985914447953,
+          "within_earlier_paragraphs_nll": 3.5774116542693633
+        },
+        "interaction": {
+          "earlier_paragraph_mass_nll": 0.011769562625960364,
+          "within_earlier_paragraphs_nll": 3.4877857432289097
+        },
+        "original_cosine": {
+          "earlier_paragraph_mass_nll": 0.12203660876236161,
+          "within_earlier_paragraphs_nll": 4.0754188396688225
+        },
+        "original_surface": {
+          "earlier_paragraph_mass_nll": 0.10065700857438,
+          "within_earlier_paragraphs_nll": 4.631568417061779
+        },
+        "pos": {
+          "earlier_paragraph_mass_nll": 0.012443975319684115,
+          "within_earlier_paragraphs_nll": 3.2333593120838633
+        },
+        "surface": {
+          "earlier_paragraph_mass_nll": 0.010439449358901343,
+          "within_earlier_paragraphs_nll": 4.002367342958735
+        }
+      },
+      "queries": 89
+    }
+  },
+  "fit_sha256": "fef59789feb358901ef910a8f8375393bf9b0276ae0acb06da859d359c84f85b",
+  "passes_retrospective_comparison": false
+}

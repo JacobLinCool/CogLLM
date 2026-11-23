@@ -1,0 +1,166 @@
+{
+  "task": "full_text_sentence_rating",
+  "sentences": 609,
+  "sentence_rating_trials": 1826,
+  "article_families": 39,
+  "participants": 220,
+  "article_families_spanning_folds": 0,
+  "participants_spanning_folds": 0,
+  "ridge_penalty": 1.0,
+  "feature_normalization": "per_sentence_l2",
+  "feature_width": 2048,
+  "folds": [
+    {
+      "fold": 0,
+      "test_families": [
+        "text_01",
+        "text_08",
+        "text_15",
+        "text_23",
+        "text_26",
+        "text_34",
+        "text_35"
+      ],
+      "test_participants": 39,
+      "test_sentences": 119
+    },
+    {
+      "fold": 1,
+      "test_families": [
+        "text_02",
+        "text_05",
+        "text_09",
+        "text_10",
+        "text_20",
+        "text_36",
+        "text_37",
+        "text_38"
+      ],
+      "test_participants": 45,
+      "test_sentences": 129
+    },
+    {
+      "fold": 2,
+      "test_families": [
+        "text_14",
+        "text_21",
+        "text_24",
+        "text_27",
+        "text_28",
+        "text_30",
+        "text_31",
+        "text_32"
+      ],
+      "test_participants": 45,
+      "test_sentences": 118
+    },
+    {
+      "fold": 3,
+      "test_families": [
+        "text_06",
+        "text_12",
+        "text_13",
+        "text_16",
+        "text_18",
+        "text_22",
+        "text_25",
+        "text_29"
+      ],
+      "test_participants": 45,
+      "test_sentences": 118
+    },
+    {
+      "fold": 4,
+      "test_families": [
+        "text_03",
+        "text_04",
+        "text_07",
+        "text_11",
+        "text_17",
+        "text_19",
+        "text_33",
+        "text_39"
+      ],
+      "test_participants": 46,
+      "test_sentences": 125
+    }
+  ],
+  "pooled_mae": {
+    "mean": {
+      "processing_ease": 0.7368345255938655,
+      "perceived_understanding": 0.8125855058149876
+    },
+    "length": {
+      "processing_ease": 0.6323549205080884,
+      "perceived_understanding": 0.7317926344492433
+    },
+    "length_plus_variant": {
+      "processing_ease": 0.6131879168564667,
+      "perceived_understanding": 0.6868856323809739
+    },
+    "qwen": {
+      "processing_ease": 0.636408990834147,
+      "perceived_understanding": 0.644831268376381
+    },
+    "qwen_plus_length": {
+      "processing_ease": 0.57701737141233,
+      "perceived_understanding": 0.604327791417479
+    }
+  },
+  "paired_mae_differences": {
+    "qwen_minus_length": {
+      "processing_ease": {
+        "mae_difference": 0.0040540703260582185,
+        "95_ci": [
+          -0.04682306781037896,
+          0.052930620584379764
+        ]
+      },
+      "perceived_understanding": {
+        "mae_difference": -0.08696136607286152,
+        "95_ci": [
+          -0.14096627156285477,
+          -0.03637236053669005
+        ]
+      }
+    },
+    "qwen_plus_length_minus_length": {
+      "processing_ease": {
+        "mae_difference": -0.05533754909575898,
+        "95_ci": [
+          -0.09386604265316535,
+          -0.01937607100054435
+        ]
+      },
+      "perceived_understanding": {
+        "mae_difference": -0.12746484303176422,
+        "95_ci": [
+          -0.17373505218200583,
+          -0.08450728606988099
+        ]
+      }
+    },
+    "qwen_plus_length_minus_length_plus_variant": {
+      "processing_ease": {
+        "mae_difference": -0.03617054544413616,
+        "95_ci": [
+          -0.06898617781653427,
+          -0.003646220638814429
+        ]
+      },
+      "perceived_understanding": {
+        "mae_difference": -0.08255784096349547,
+        "95_ci": [
+          -0.12855133525557938,
+          -0.0417180223301186
+        ]
+      }
+    }
+  },
+  "bootstrap": {
+    "unit": "source_article_family",
+    "draws": 1000,
+    "seed": 43,
+    "scope": "Fixed out-of-fold predictions; does not resample overlapping readers or refit heads."
+  }
+}

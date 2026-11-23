@@ -1,0 +1,36 @@
+{
+  "schema": "cogllm-local-reading-en-v1",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "rank_features": [
+    "surface",
+    "medical",
+    "lexical",
+    "representation"
+  ],
+  "rating_features": [
+    "surface",
+    "medical",
+    "lexical",
+    "sentence_state"
+  ],
+  "source_weights_sha256": {
+    "span": "c4430b62590f53752b67ef5e7e9a1fb9a5d90299285a7e3abcdd6a1809d61860",
+    "sentence": "30b1a9affc2af4be023dfdb673acbc5d41625ef5bf1b276bfad5a659064d7f86",
+    "lexical": "caef04fb8b90154e208e528fee39fc2ccba96cd34a6945fac836771427784254"
+  },
+  "files_sha256": {
+    "weights.npz": "2f72b3b28ec5bc4f47bfe084ae76ccf2f9fdc01e4f4d61bfd4a7a38bda99bfa3",
+    "lexicon.json.gz": "8788398962c1b7c09678e4243ceb992696a52b4fae999dc20ff51b5fd05a04c6"
+  },
+  "training_data": {
+    "medreadme_training": {
+      "used_sentences": 2559,
+      "ambiguous_or_unaligned": 28
+    },
+    "complex_unique_sentences": 8078,
+    "overlapping_complex_sentences": 0,
+    "lexical_checkpoint_overlap_qualification": "The immutable CompLex head used its published original fit."
+  },
+  "target": "English biomedical abstract difficulty; positive-only named spans, full-text-visible sentence ratings",
+  "scope": "Retrospective development full fit. Independent domain transfer is evaluated separately."
+}

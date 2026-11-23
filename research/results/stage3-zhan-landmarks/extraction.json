@@ -1,0 +1,821 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "stimuli_sha256": "5df5bf0a0ab4e56fb8e925954d917df6281be1b16dfb0b896855af3bd0b8eff4",
+  "platform": "macOS-26.4-arm64-arm-64bit",
+  "hardware": "Apple M5 Pro",
+  "versions": {
+    "mlx": "0.32.2",
+    "mlx-lm": "0.31.3",
+    "numpy": "2.4.6",
+    "transformers": "5.17.0"
+  },
+  "device": "DeviceType.gpu",
+  "checkpoint_embedding_dtype": "mlx.core.bfloat16",
+  "compute_embedding_dtype": "mlx.core.float32",
+  "cached_state_dtype": "float32",
+  "family_count": 36,
+  "landmark_count": 72,
+  "main_forward_calls": 36,
+  "main_forward_token_count": 297,
+  "prefix_verification_forward_calls": 36,
+  "prefix_max_token_relative_rms": 0.0016663059359416366,
+  "prefix_rms_tolerance": 0.02,
+  "model_and_tokenizer_setup_s": 1.868227582948748,
+  "main_forward_s": 2.720981874037534,
+  "prefix_verification_s": 1.0309227481484413,
+  "anchors": [
+    {
+      "family_id": "zhan-e1-01",
+      "free_id": "zhan-e1-01-free",
+      "pronoun_id": "zhan-e1-01-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-02",
+      "free_id": "zhan-e1-02-free",
+      "pronoun_id": "zhan-e1-02-pronoun",
+      "landmark_indices": [
+        5,
+        6
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 7,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-03",
+      "free_id": "zhan-e1-03-free",
+      "pronoun_id": "zhan-e1-03-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-04",
+      "free_id": "zhan-e1-04-free",
+      "pronoun_id": "zhan-e1-04-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-05",
+      "free_id": "zhan-e1-05-free",
+      "pronoun_id": "zhan-e1-05-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-06",
+      "free_id": "zhan-e1-06-free",
+      "pronoun_id": "zhan-e1-06-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-07",
+      "free_id": "zhan-e1-07-free",
+      "pronoun_id": "zhan-e1-07-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-08",
+      "free_id": "zhan-e1-08-free",
+      "pronoun_id": "zhan-e1-08-pronoun",
+      "landmark_indices": [
+        5,
+        6
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 7,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-09",
+      "free_id": "zhan-e1-09-free",
+      "pronoun_id": "zhan-e1-09-pronoun",
+      "landmark_indices": [
+        5,
+        6
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 7,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-10",
+      "free_id": "zhan-e1-10-free",
+      "pronoun_id": "zhan-e1-10-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.000827923824544996
+    },
+    {
+      "family_id": "zhan-e1-11",
+      "free_id": "zhan-e1-11-free",
+      "pronoun_id": "zhan-e1-11-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-12",
+      "free_id": "zhan-e1-12-free",
+      "pronoun_id": "zhan-e1-12-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-13",
+      "free_id": "zhan-e1-13-free",
+      "pronoun_id": "zhan-e1-13-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-14",
+      "free_id": "zhan-e1-14-free",
+      "pronoun_id": "zhan-e1-14-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-15",
+      "free_id": "zhan-e1-15-free",
+      "pronoun_id": "zhan-e1-15-pronoun",
+      "landmark_indices": [
+        5,
+        6
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 7,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-16",
+      "free_id": "zhan-e1-16-free",
+      "pronoun_id": "zhan-e1-16-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-17",
+      "free_id": "zhan-e1-17-free",
+      "pronoun_id": "zhan-e1-17-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0008429026347585022
+    },
+    {
+      "family_id": "zhan-e1-18",
+      "free_id": "zhan-e1-18-free",
+      "pronoun_id": "zhan-e1-18-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0015681324293836951
+    },
+    {
+      "family_id": "zhan-e1-19",
+      "free_id": "zhan-e1-19-free",
+      "pronoun_id": "zhan-e1-19-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0016663059359416366
+    },
+    {
+      "family_id": "zhan-e1-20",
+      "free_id": "zhan-e1-20-free",
+      "pronoun_id": "zhan-e1-20-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-21",
+      "free_id": "zhan-e1-21-free",
+      "pronoun_id": "zhan-e1-21-pronoun",
+      "landmark_indices": [
+        8,
+        9
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 10,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-22",
+      "free_id": "zhan-e1-22-free",
+      "pronoun_id": "zhan-e1-22-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-23",
+      "free_id": "zhan-e1-23-free",
+      "pronoun_id": "zhan-e1-23-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0007835516007617116
+    },
+    {
+      "family_id": "zhan-e1-24",
+      "free_id": "zhan-e1-24-free",
+      "pronoun_id": "zhan-e1-24-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0015681324293836951
+    },
+    {
+      "family_id": "zhan-e1-25",
+      "free_id": "zhan-e1-25-free",
+      "pronoun_id": "zhan-e1-25-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0016650408506393433
+    },
+    {
+      "family_id": "zhan-e1-26",
+      "free_id": "zhan-e1-26-free",
+      "pronoun_id": "zhan-e1-26-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-27",
+      "free_id": "zhan-e1-27-free",
+      "pronoun_id": "zhan-e1-27-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-28",
+      "free_id": "zhan-e1-28-free",
+      "pronoun_id": "zhan-e1-28-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.000702059653121978
+    },
+    {
+      "family_id": "zhan-e1-29",
+      "free_id": "zhan-e1-29-free",
+      "pronoun_id": "zhan-e1-29-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-30",
+      "free_id": "zhan-e1-30-free",
+      "pronoun_id": "zhan-e1-30-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-31",
+      "free_id": "zhan-e1-31-free",
+      "pronoun_id": "zhan-e1-31-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-32",
+      "free_id": "zhan-e1-32-free",
+      "pronoun_id": "zhan-e1-32-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-33",
+      "free_id": "zhan-e1-33-free",
+      "pronoun_id": "zhan-e1-33-pronoun",
+      "landmark_indices": [
+        6,
+        7
+      ],
+      "landmark_offsets": [
+        [
+          7,
+          8
+        ],
+        [
+          8,
+          9
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 8,
+      "prefix_max_token_relative_rms": 0.0
+    },
+    {
+      "family_id": "zhan-e1-34",
+      "free_id": "zhan-e1-34-free",
+      "pronoun_id": "zhan-e1-34-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0007717837579548359
+    },
+    {
+      "family_id": "zhan-e1-35",
+      "free_id": "zhan-e1-35-free",
+      "pronoun_id": "zhan-e1-35-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.001311941654421389
+    },
+    {
+      "family_id": "zhan-e1-36",
+      "free_id": "zhan-e1-36-free",
+      "pronoun_id": "zhan-e1-36-pronoun",
+      "landmark_indices": [
+        7,
+        8
+      ],
+      "landmark_offsets": [
+        [
+          9,
+          10
+        ],
+        [
+          10,
+          11
+        ]
+      ],
+      "pronoun_token_count": 1,
+      "full_token_count": 9,
+      "prefix_max_token_relative_rms": 0.0008236434659920633
+    }
+  ]
+}

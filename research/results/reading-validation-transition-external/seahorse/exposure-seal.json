@@ -1,0 +1,87 @@
+{
+  "source": "0a39d585e36b5f7d9282da2605f8ff8fa35bef35327b2b46509ae285a1add60b",
+  "protocol": "31c1bad44b29174336109a864453a05d53eb21d836553c131a4c4e481582aa66",
+  "input_only_rows": {
+    "test": {
+      "rows": 4355,
+      "articles": 1005,
+      "strings": 4351,
+      "models": {
+        "mt5_small": 482,
+        "mt5_small_250steps": 484,
+        "mt5_xxl": 481,
+        "t5_xxl": 476,
+        "reference": 484,
+        "t5_base_250steps": 482,
+        "t5_base": 484,
+        "1shot": 495,
+        "finetuned": 487
+      }
+    },
+    "validation": {
+      "rows": 2183,
+      "articles": 586,
+      "strings": 2179,
+      "models": {
+        "t5_xxl": 247,
+        "reference": 239,
+        "t5_base_250steps": 241,
+        "mt5_small_250steps": 243,
+        "t5_base": 236,
+        "mt5_xxl": 239,
+        "mt5_small": 239,
+        "1shot": 250,
+        "finetuned": 249
+      }
+    },
+    "train": {
+      "rows": 14755,
+      "articles": 4123,
+      "strings": 14722,
+      "models": {
+        "mt5_small": 1619,
+        "t5_base": 1636,
+        "reference": 1615,
+        "t5_base_250steps": 1628,
+        "t5_xxl": 1642,
+        "mt5_xxl": 1639,
+        "mt5_small_250steps": 1637,
+        "1shot": 1674,
+        "finetuned": 1665
+      }
+    }
+  },
+  "total_distinct": 21247,
+  "packets": {
+    "test": {
+      "file": ".cache/cogllm/reading-validation/seahorse-test-stimuli.jsonl",
+      "sha256": "dc7463cf7e8be88fb3b17da65208829f3e55b262400133e7878e8c15dea335a1",
+      "unique": 4351
+    },
+    "validation": {
+      "file": ".cache/cogllm/reading-validation/seahorse-validation-stimuli.jsonl",
+      "sha256": "99a240bbac28ca73fd4454a6510b78a3d20dbdffface6b0dc7d27e41e7b122bb",
+      "unique": 2178
+    },
+    "train0": {
+      "file": ".cache/cogllm/reading-validation/seahorse-train0-stimuli.jsonl",
+      "sha256": "ff5c51bf0ecba62f377b988161b3a1e23ce26bd2f596a025b79805343129232a",
+      "unique": 3674
+    },
+    "train1": {
+      "file": ".cache/cogllm/reading-validation/seahorse-train1-stimuli.jsonl",
+      "sha256": "06dcf25839194d4ffb6ea3bcbdc195bd41a385be4150d78f34a1102ff9a8ad41",
+      "unique": 3642
+    },
+    "train2": {
+      "file": ".cache/cogllm/reading-validation/seahorse-train2-stimuli.jsonl",
+      "sha256": "dac9abdcd6d9aaf17c9c0bcbeeb7f9bd5691f70452c4542c9b1f394b4a9a907c",
+      "unique": 3715
+    },
+    "train3": {
+      "file": ".cache/cogllm/reading-validation/seahorse-train3-stimuli.jsonl",
+      "sha256": "3c94dc7d6287aae4a9e7b5c88a27d5673236091b822f4f74bd07e341bcb5d848",
+      "unique": 3687
+    }
+  }
+}

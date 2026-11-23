@@ -1,0 +1,79 @@
+{
+  "change": "Used the existing 1e-3 per-token relative RMS gate for hidden states; retained the 1e-3 max-absolute attention relation gate.",
+  "first_run": "cogllm-portable-gemma4-20261122T073707Z-f2da7f",
+  "first_run_rejection": "RuntimeError: gemma4 causal-prefix feature check failed: {'truncation': {'hidden': 0.025098800659179688, 'mid': 0.002445220947265625, 'relations': 0.0007537603378295898}, 'suffix_replacement': {'hidden': 0.0, 'mid': 0.0, 'relations': 0.0}}",
+  "first_run_release_verified": true,
+  "remeasured_on_same_revision_and_features": [
+    {
+      "common_prefix": 9,
+      "global_layers": 7,
+      "hidden_relative_tolerance": 0.001,
+      "max_absolute_difference": {
+        "suffix_replacement": {
+          "hidden": 0.0,
+          "mid": 0.0,
+          "relations": 0.0
+        },
+        "truncation": {
+          "hidden": 0.025098800659179688,
+          "mid": 0.002445220947265625,
+          "relations": 0.0007537603378295898
+        }
+      },
+      "max_relative_rms": {
+        "suffix_replacement": {
+          "hidden": 0.0,
+          "mid": 0.0
+        },
+        "truncation": {
+          "hidden": 0.0006154334405437112,
+          "mid": 0.0003119840403087437
+        }
+      },
+      "mid_layer": 17,
+      "relation_absolute_tolerance": 0.001,
+      "tokens": 18
+    },
+    {
+      "common_prefix": 11,
+      "global_layers": 7,
+      "hidden_relative_tolerance": 0.001,
+      "max_absolute_difference": {
+        "suffix_replacement": {
+          "hidden": 0.0,
+          "mid": 0.0,
+          "relations": 0.0
+        },
+        "truncation": {
+          "hidden": 0.0005035400390625,
+          "mid": 3.0517578125e-05,
+          "relations": 6.198883056640625e-06
+        }
+      },
+      "max_relative_rms": {
+        "suffix_replacement": {
+          "hidden": 0.0,
+          "mid": 0.0
+        },
+        "truncation": {
+          "hidden": 6.11026143815252e-06,
+          "mid": 4.7342041398223955e-06
+        }
+      },
+      "mid_layer": 17,
+      "relation_absolute_tolerance": 0.001,
+      "tokens": 22
+    }
+  ],
+  "timeline": {
+    "allocated": "2026-11-22T07:38:48.090038+00:00",
+    "allocating": "2026-11-22T07:38:41.294299+00:00",
+    "incomplete": "2026-11-22T07:41:18.829380+00:00",
+    "prepared": "2026-11-22T07:37:07.679207+00:00",
+    "releasing": "2026-11-22T07:41:07.856698+00:00",
+    "remote-dependencies": "2026-11-22T07:38:54.768440+00:00",
+    "remote-extraction": "2026-11-22T07:40:42.670605+00:00",
+    "remote-model-download": "2026-11-22T07:39:19.667959+00:00",
+    "worker-running": "2026-11-22T07:38:54.418451+00:00"
+  }
+}

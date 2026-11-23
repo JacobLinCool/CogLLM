@@ -1,0 +1,820 @@
+{
+  "CharE": {
+    "heldout_movies": 39,
+    "word_sites": 22133,
+    "human_marked": 413,
+    "prevalence": 0.018659919577102065,
+    "spans": {
+      "source_segments": 568,
+      "source_annotations": 554,
+      "multiply_matched_spans": 123,
+      "excluded_segments": 82,
+      "eligible_segments": 486,
+      "eligible_words": 22133,
+      "confirmed_positive_words": 413,
+      "eligible_segments_with_target": 212
+    },
+    "models": {
+      "surface": {
+        "ap": {
+          "estimate": 0.45272238994453917,
+          "family_bootstrap_95_interval": [
+            0.39022699016192053,
+            0.5280905273260121
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9563691423755568,
+          "family_bootstrap_95_interval": [
+            0.93664563655505,
+            0.9732182295735736
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8547215496368039,
+          "family_bootstrap_95_interval": [
+            0.7924528301886793,
+            0.9086297549664724
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.02794659300184162,
+          "family_bootstrap_95_interval": [
+            0.0237498754031102,
+            0.03248846144427532
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9756749021556846,
+          "family_bootstrap_95_interval": [
+            0.9722945266036133,
+            0.9788598675394085
+          ]
+        },
+        "precision": {
+          "estimate": 0.36770833333333336,
+          "family_bootstrap_95_interval": [
+            0.32063064877000497,
+            0.41796440826212744
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.06193584209005426,
+        "alert_counts": {
+          "true_positive": 353,
+          "false_positive": 607,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.7169811320754716,
+          "family_bootstrap_95_interval": [
+            0.6534090909090909,
+            0.7777777777777778
+          ],
+          "eligible_segments": 212,
+          "within_segment_random": 0.044147611932808126
+        },
+        "capitalized_word": {
+          "words": 2558,
+          "positive": 381,
+          "ap": 0.48594969292470236,
+          "auroc": 0.8682992198322477
+        },
+        "noncapitalized_word": {
+          "words": 19575,
+          "positive": 32,
+          "ap": 0.004848890170703604,
+          "auroc": 0.6687464821163588
+        },
+        "two_or_more_votes": {
+          "words": 22133,
+          "positive": 302,
+          "ap": 0.41328405374414445,
+          "auroc": 0.9842483545332128
+        }
+      },
+      "surprisal": {
+        "ap": {
+          "estimate": 0.600623253145209,
+          "family_bootstrap_95_interval": [
+            0.5324152561205643,
+            0.6789309200481627
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9642357720314458,
+          "family_bootstrap_95_interval": [
+            0.9454281592107145,
+            0.9797251278129478
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.8595641646489104,
+          "family_bootstrap_95_interval": [
+            0.8060344827586207,
+            0.9086297549664724
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.026979742173112338,
+          "family_bootstrap_95_interval": [
+            0.023066776640375177,
+            0.031160782641369452
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9763974048925506,
+          "family_bootstrap_95_interval": [
+            0.9731911329783767,
+            0.9794333879460244
+          ]
+        },
+        "precision": {
+          "estimate": 0.37725823591923485,
+          "family_bootstrap_95_interval": [
+            0.33116258803262905,
+            0.4266369480205966
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.05370135434992874,
+        "alert_counts": {
+          "true_positive": 355,
+          "false_positive": 586,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.8160377358490566,
+          "family_bootstrap_95_interval": [
+            0.7707317073170732,
+            0.8596491228070176
+          ],
+          "eligible_segments": 212,
+          "within_segment_random": 0.044147611932808126
+        },
+        "capitalized_word": {
+          "words": 2558,
+          "positive": 381,
+          "ap": 0.6459377425065769,
+          "auroc": 0.9213996964205841
+        },
+        "noncapitalized_word": {
+          "words": 19575,
+          "positive": 32,
+          "ap": 0.006081786853679688,
+          "auroc": 0.703680665711508
+        },
+        "two_or_more_votes": {
+          "words": 22133,
+          "positive": 302,
+          "ap": 0.561652301876579,
+          "auroc": 0.989626362172268
+        }
+      },
+      "local": {
+        "ap": {
+          "estimate": 0.7948556006900896,
+          "family_bootstrap_95_interval": [
+            0.7304867334066676,
+            0.8545536109750022
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9800094979465707,
+          "family_bootstrap_95_interval": [
+            0.9643188089283539,
+            0.9914687333437141
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.910411622276029,
+          "family_bootstrap_95_interval": [
+            0.8652281614213583,
+            0.9518723346645909
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.035589318600368326,
+          "family_bootstrap_95_interval": [
+            0.03223360799471982,
+            0.039520208622044084
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.971709760265206,
+          "family_bootstrap_95_interval": [
+            0.9685079518185168,
+            0.9744408418419266
+          ]
+        },
+        "precision": {
+          "estimate": 0.32724107919930373,
+          "family_bootstrap_95_interval": [
+            0.2942225115569496,
+            0.36096771833227387
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.0464313132335314,
+        "alert_counts": {
+          "true_positive": 376,
+          "false_positive": 773,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.9433962264150944,
+          "family_bootstrap_95_interval": [
+            0.9122785622593067,
+            0.9711538461538461
+          ],
+          "eligible_segments": 212,
+          "within_segment_random": 0.044147611932808126
+        },
+        "capitalized_word": {
+          "words": 2558,
+          "positive": 381,
+          "ap": 0.8521008015183212,
+          "auroc": 0.9671524178448755
+        },
+        "noncapitalized_word": {
+          "words": 19575,
+          "positive": 32,
+          "ap": 0.032131515474636996,
+          "auroc": 0.8329852760579236
+        },
+        "two_or_more_votes": {
+          "words": 22133,
+          "positive": 302,
+          "ap": 0.7878374490816188,
+          "auroc": 0.996103117233195
+        }
+      },
+      "antecedents": {
+        "ap": {
+          "estimate": 0.7999522142492617,
+          "family_bootstrap_95_interval": [
+            0.7367566293467742,
+            0.8586139257927191
+          ]
+        },
+        "auroc": {
+          "estimate": 0.9812130170918447,
+          "family_bootstrap_95_interval": [
+            0.967016526279917,
+            0.9918228696578703
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.9152542372881356,
+          "family_bootstrap_95_interval": [
+            0.8705023708306082,
+            0.9546666666666667
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.03342541436464089,
+          "family_bootstrap_95_interval": [
+            0.029868598908438997,
+            0.037435252112633495
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.9731698790219253,
+          "family_bootstrap_95_interval": [
+            0.9698982011219784,
+            0.9760582836245438
+          ]
+        },
+        "precision": {
+          "estimate": 0.3423913043478261,
+          "family_bootstrap_95_interval": [
+            0.30761926351419006,
+            0.3783795732071594
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.018659919577102065,
+          "family_bootstrap_95_interval": [
+            0.015866891902757096,
+            0.021785304714980563
+          ]
+        },
+        "cutoff": 0.04484973516246828,
+        "alert_counts": {
+          "true_positive": 378,
+          "false_positive": 726,
+          "human_positive": 413,
+          "human_negative": 21720
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.9481132075471698,
+          "family_bootstrap_95_interval": [
+            0.9186602870813397,
+            0.9748743718592965
+          ],
+          "eligible_segments": 212,
+          "within_segment_random": 0.044147611932808126
+        },
+        "capitalized_word": {
+          "words": 2558,
+          "positive": 381,
+          "ap": 0.8558598116879447,
+          "auroc": 0.9677214785450854
+        },
+        "noncapitalized_word": {
+          "words": 19575,
+          "positive": 32,
+          "ap": 0.03404948388697531,
+          "auroc": 0.8515804891777107
+        },
+        "two_or_more_votes": {
+          "words": 22133,
+          "positive": 302,
+          "ap": 0.79416692687158,
+          "auroc": 0.9962027689527104
+        }
+      }
+    },
+    "antecedents_minus_control": {
+      "surface": {
+        "ap": {
+          "estimate": 0.3472298243047225,
+          "family_bootstrap_95_interval": [
+            0.2790888339995488,
+            0.40822508715284944
+          ]
+        },
+        "auroc": {
+          "estimate": 0.024843874716287906,
+          "family_bootstrap_95_interval": [
+            0.017016533324781622,
+            0.03365682940521273
+          ]
+        }
+      },
+      "surprisal": {
+        "ap": {
+          "estimate": 0.19932896110405263,
+          "family_bootstrap_95_interval": [
+            0.13605689848465574,
+            0.2587162056372871
+          ]
+        },
+        "auroc": {
+          "estimate": 0.016977245060398882,
+          "family_bootstrap_95_interval": [
+            0.01050047364160132,
+            0.02388462483454591
+          ]
+        }
+      },
+      "local": {
+        "ap": {
+          "estimate": 0.005096613559172014,
+          "family_bootstrap_95_interval": [
+            -0.0025614242177691925,
+            0.014219605368630275
+          ]
+        },
+        "auroc": {
+          "estimate": 0.0012035191452740568,
+          "family_bootstrap_95_interval": [
+            -3.7015109027454995e-06,
+            0.0027803660224379576
+          ]
+        }
+      }
+    },
+    "increment_beyond_both_strong_controls": false
+  },
+  "RefE": {
+    "heldout_movies": 39,
+    "word_sites": 26361,
+    "human_marked": 2378,
+    "prevalence": 0.09020902090209021,
+    "spans": {
+      "source_segments": 568,
+      "source_annotations": 303,
+      "eligible_segments": 567,
+      "eligible_words": 26361,
+      "confirmed_positive_words": 2378,
+      "eligible_segments_with_target": 233,
+      "multiply_matched_spans": 1,
+      "excluded_segments": 1
+    },
+    "models": {
+      "surface": {
+        "ap": {
+          "estimate": 0.09671394539127759,
+          "family_bootstrap_95_interval": [
+            0.06910415683982195,
+            0.1343061448410611
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5118338220859905,
+          "family_bootstrap_95_interval": [
+            0.46713340331595843,
+            0.5588706508234318
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.10386879730866275,
+          "family_bootstrap_95_interval": [
+            0.08284798755621037,
+            0.12685835819539998
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.07913939040153442,
+          "family_bootstrap_95_interval": [
+            0.06426937080366658,
+            0.09419594794099344
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8435932787881328,
+          "family_bootstrap_95_interval": [
+            0.8148322838698102,
+            0.8687855710276144
+          ]
+        },
+        "precision": {
+          "estimate": 0.11515151515151516,
+          "family_bootstrap_95_interval": [
+            0.0781531421315407,
+            0.16616572661350457
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.09020902090209021,
+          "family_bootstrap_95_interval": [
+            0.06759156448076899,
+            0.1167857814838515
+          ]
+        },
+        "cutoff": 0.10018701983983468,
+        "alert_counts": {
+          "true_positive": 247,
+          "false_positive": 1898,
+          "human_positive": 2378,
+          "human_negative": 23983
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.3565217391304348,
+          "family_bootstrap_95_interval": [
+            0.2938591294587179,
+            0.42213114754098363
+          ],
+          "eligible_segments": 230,
+          "within_segment_random": 0.21813783549523907
+        },
+        "capitalized_word": {
+          "words": 3186,
+          "positive": 271,
+          "ap": 0.10399077455477965,
+          "auroc": 0.5290120448374295
+        },
+        "noncapitalized_word": {
+          "words": 23175,
+          "positive": 2107,
+          "ap": 0.09618191854596485,
+          "auroc": 0.5088185642278953
+        },
+        "two_or_more_votes": {
+          "words": 26361,
+          "positive": 293,
+          "ap": 0.0150012467370821,
+          "auroc": 0.5826464756653771
+        }
+      },
+      "surprisal": {
+        "ap": {
+          "estimate": 0.0990716667466514,
+          "family_bootstrap_95_interval": [
+            0.07090102318121735,
+            0.13768307016101686
+          ]
+        },
+        "auroc": {
+          "estimate": 0.5159658577895816,
+          "family_bootstrap_95_interval": [
+            0.47139448967712483,
+            0.5629243884578335
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.09503784693019345,
+          "family_bootstrap_95_interval": [
+            0.07752652432994764,
+            0.11415549248457817
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.06633865654838844,
+          "family_bootstrap_95_interval": [
+            0.053838717408145574,
+            0.07861884967661226
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8493364719847393,
+          "family_bootstrap_95_interval": [
+            0.8195595760847764,
+            0.8752380483410204
+          ]
+        },
+        "precision": {
+          "estimate": 0.12438084755090809,
+          "family_bootstrap_95_interval": [
+            0.08560627962329814,
+            0.17790604271012095
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.09020902090209021,
+          "family_bootstrap_95_interval": [
+            0.06759156448076899,
+            0.1167857814838515
+          ]
+        },
+        "cutoff": 0.10156308872462096,
+        "alert_counts": {
+          "true_positive": 226,
+          "false_positive": 1591,
+          "human_positive": 2378,
+          "human_negative": 23983
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.40869565217391307,
+          "family_bootstrap_95_interval": [
+            0.35106127250409164,
+            0.4678921679396213
+          ],
+          "eligible_segments": 230,
+          "within_segment_random": 0.21813783549523907
+        },
+        "capitalized_word": {
+          "words": 3186,
+          "positive": 271,
+          "ap": 0.11030418446690811,
+          "auroc": 0.5530776679979493
+        },
+        "noncapitalized_word": {
+          "words": 23175,
+          "positive": 2107,
+          "ap": 0.0980169969689159,
+          "auroc": 0.5101631267172116
+        },
+        "two_or_more_votes": {
+          "words": 26361,
+          "positive": 293,
+          "ap": 0.016297643345044834,
+          "auroc": 0.5878795075730002
+        }
+      },
+      "local": {
+        "ap": {
+          "estimate": 0.16779257935375302,
+          "family_bootstrap_95_interval": [
+            0.12431366110962414,
+            0.21655805278357043
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6398821642201213,
+          "family_bootstrap_95_interval": [
+            0.6042764241139237,
+            0.6771673871637132
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.3191757779646762,
+          "family_bootstrap_95_interval": [
+            0.27341357324987864,
+            0.3690190622153762
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.1493557936871951,
+          "family_bootstrap_95_interval": [
+            0.12386518135713616,
+            0.17671846229340385
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8273125787615933,
+          "family_bootstrap_95_interval": [
+            0.8004545113730841,
+            0.8526701626479685
+          ]
+        },
+        "precision": {
+          "estimate": 0.17484450587422254,
+          "family_bootstrap_95_interval": [
+            0.1288660225124931,
+            0.22665049091660175
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.09020902090209021,
+          "family_bootstrap_95_interval": [
+            0.06759156448076899,
+            0.1167857814838515
+          ]
+        },
+        "cutoff": 0.13785389138282947,
+        "alert_counts": {
+          "true_positive": 759,
+          "false_positive": 3582,
+          "human_positive": 2378,
+          "human_negative": 23983
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.5217391304347826,
+          "family_bootstrap_95_interval": [
+            0.45728589528840785,
+            0.5813008130081301
+          ],
+          "eligible_segments": 230,
+          "within_segment_random": 0.21813783549523907
+        },
+        "capitalized_word": {
+          "words": 3186,
+          "positive": 271,
+          "ap": 0.15980623355130702,
+          "auroc": 0.6421613615793105
+        },
+        "noncapitalized_word": {
+          "words": 23175,
+          "positive": 2107,
+          "ap": 0.169159111655713,
+          "auroc": 0.6394411019206098
+        },
+        "two_or_more_votes": {
+          "words": 26361,
+          "positive": 293,
+          "ap": 0.054511156154110944,
+          "auroc": 0.7617967919031402
+        }
+      },
+      "antecedents": {
+        "ap": {
+          "estimate": 0.16889348476439356,
+          "family_bootstrap_95_interval": [
+            0.12612757520624593,
+            0.21633140249567898
+          ]
+        },
+        "auroc": {
+          "estimate": 0.6452871877602396,
+          "family_bootstrap_95_interval": [
+            0.613604317875413,
+            0.6778549290257773
+          ]
+        },
+        "sensitivity": {
+          "estimate": 0.28847771236333053,
+          "family_bootstrap_95_interval": [
+            0.24548344728884583,
+            0.33381091617933717
+          ]
+        },
+        "false_alarm_rate": {
+          "estimate": 0.13000875620230998,
+          "family_bootstrap_95_interval": [
+            0.10873811060705717,
+            0.15357348873680188
+          ]
+        },
+        "weighted_f1": {
+          "estimate": 0.8357828098760491,
+          "family_bootstrap_95_interval": [
+            0.8098731738623495,
+            0.8598030997859756
+          ]
+        },
+        "precision": {
+          "estimate": 0.18033648790746581,
+          "family_bootstrap_95_interval": [
+            0.13208490969944836,
+            0.23472422588674782
+          ]
+        },
+        "prevalence": {
+          "estimate": 0.09020902090209021,
+          "family_bootstrap_95_interval": [
+            0.06759156448076899,
+            0.1167857814838515
+          ]
+        },
+        "cutoff": 0.13942416552337222,
+        "alert_counts": {
+          "true_positive": 686,
+          "false_positive": 3118,
+          "human_positive": 2378,
+          "human_negative": 23983
+        },
+        "top_word_in_marked_segment": {
+          "estimate": 0.5347826086956522,
+          "family_bootstrap_95_interval": [
+            0.47169322514419787,
+            0.5930772617213295
+          ],
+          "eligible_segments": 230,
+          "within_segment_random": 0.21813783549523907
+        },
+        "capitalized_word": {
+          "words": 3186,
+          "positive": 271,
+          "ap": 0.16586050075774914,
+          "auroc": 0.6498882861898945
+        },
+        "noncapitalized_word": {
+          "words": 23175,
+          "positive": 2107,
+          "ap": 0.17017557765979788,
+          "auroc": 0.644466571913182
+        },
+        "two_or_more_votes": {
+          "words": 26361,
+          "positive": 293,
+          "ap": 0.05725279204746896,
+          "auroc": 0.7686536289180149
+        }
+      }
+    },
+    "antecedents_minus_control": {
+      "surface": {
+        "ap": {
+          "estimate": 0.07217953937311597,
+          "family_bootstrap_95_interval": [
+            0.04616796213303039,
+            0.09862013801524337
+          ]
+        },
+        "auroc": {
+          "estimate": 0.13345336567424915,
+          "family_bootstrap_95_interval": [
+            0.0993295185122966,
+            0.168963363551421
+          ]
+        }
+      },
+      "surprisal": {
+        "ap": {
+          "estimate": 0.06982181801774216,
+          "family_bootstrap_95_interval": [
+            0.0434729907282257,
+            0.09623668960244498
+          ]
+        },
+        "auroc": {
+          "estimate": 0.12932132997065804,
+          "family_bootstrap_95_interval": [
+            0.09482457534397315,
+            0.16555554383386123
+          ]
+        }
+      },
+      "local": {
+        "ap": {
+          "estimate": 0.0011009054106405347,
+          "family_bootstrap_95_interval": [
+            -0.004351505130212958,
+            0.006111158760620863
+          ]
+        },
+        "auroc": {
+          "estimate": 0.005405023540118292,
+          "family_bootstrap_95_interval": [
+            -0.0018227231718635798,
+            0.012373357407772475
+          ]
+        }
+      }
+    },
+    "increment_beyond_both_strong_controls": false
+  }
+}

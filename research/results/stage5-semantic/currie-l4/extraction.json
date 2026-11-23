@@ -1,0 +1,63 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "gpu": "NVIDIA L4",
+  "cuda": "13.0",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.17.0",
+  "precision": "float32",
+  "stimuli_sha256": "f2d4d5c6f2cda2894da17bb24ee1022e5cc222466115f1274ea9680bba472e5e",
+  "stimuli": 48,
+  "token_aligned_critical_stops": 48,
+  "unique_inputs": 98,
+  "nonpadding_tokens": 6656,
+  "forward_batches": 13,
+  "setup_seconds": 25.74838492899994,
+  "extraction_and_save_seconds": 3.340929463999828,
+  "total_seconds": 34.36453811399997,
+  "cuda_peak_reserved_bytes": 7975469056,
+  "causal_stop_checks": [
+    {
+      "stimulus_id": "currie/expository/02/near",
+      "comparison": "suffix_truncated",
+      "prefix_tokens": 74,
+      "max_token_relative_rms": 7.980709142429987e-07,
+      "max_absolute": 1.71661376953125e-05
+    },
+    {
+      "stimulus_id": "currie/expository/02/near",
+      "comparison": "right_padded",
+      "prefix_tokens": 74,
+      "max_token_relative_rms": 8.238455393438926e-07,
+      "max_absolute": 1.9073486328125e-05
+    },
+    {
+      "stimulus_id": "currie/expository/12/near",
+      "comparison": "suffix_truncated",
+      "prefix_tokens": 91,
+      "max_token_relative_rms": 8.509977647008782e-07,
+      "max_absolute": 1.33514404296875e-05
+    },
+    {
+      "stimulus_id": "currie/expository/12/near",
+      "comparison": "right_padded",
+      "prefix_tokens": 91,
+      "max_token_relative_rms": 9.278784318667022e-07,
+      "max_absolute": 1.71661376953125e-05
+    },
+    {
+      "stimulus_id": "currie/expository/03/far",
+      "comparison": "suffix_truncated",
+      "prefix_tokens": 105,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0
+    },
+    {
+      "stimulus_id": "currie/expository/03/far",
+      "comparison": "right_padded",
+      "prefix_tokens": 105,
+      "max_token_relative_rms": 8.825412578516989e-07,
+      "max_absolute": 1.239776611328125e-05
+    }
+  ]
+}

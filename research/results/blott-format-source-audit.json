@@ -1,0 +1,172 @@
+{
+  "paper": "https://doi.org/10.1080/23273798.2022.2159992",
+  "project": "https://osf.io/m87vg/",
+  "license": "https://creativecommons.org/licenses/by/4.0/",
+  "intake_complete": true,
+  "published_design": {
+    "retained_readers": 108,
+    "coherent_family_pairs_experiment_1": 63,
+    "coherent_pairs_per_reader_written_before_trial_exclusions": 21,
+    "whole_sentence_visibility_ms": 4500,
+    "author_minimum_reaction_time_ms_exclusive": 250
+  },
+  "independent_aggregate_csv_check": {
+    "source": "https://osf.io/download/bw4ry/",
+    "sha256": "9cd0018de8bd734c53058ddcee3e5b9852bb91ddac6c1b5a6f4df74c46b5fb38",
+    "method": "Mean of the 108 released reader accuracies in Reading per condition.",
+    "written_ambiguous_accuracy": 0.7984985612222222,
+    "written_unambiguous_accuracy": 0.9495358766574074,
+    "written_ambiguous_minus_unambiguous_accuracy": -0.15103731543518517
+  },
+  "source_files": {
+    "materials": {
+      "url": "https://osf.io/download/h53ed/",
+      "size_bytes": 63631,
+      "sha256": "4267b62948264fd8f39b58668c2cfc6da0605262ae8ab38ae2b9724ac7130591"
+    },
+    "analysis": {
+      "url": "https://osf.io/download/uf5pr/",
+      "size_bytes": 75672,
+      "sha256": "27ccb8f12c4cbd4d47d14488bd6fe8ad125eff33ec7e0bb3ef9d27a65de25766"
+    },
+    "responses": {
+      "url": "https://osf.io/download/trf8w/",
+      "size_bytes": 256097247,
+      "sha256": "d972e47b4fba435748828c8cfe10affa92127f03f7de1f87c7d286b09ce1e93b"
+    }
+  },
+  "input_path": ".cache/cogllm/semantic-tracking/blott-ambiguity/prepared",
+  "prepared_sha256": {
+    "stimuli.jsonl": "a191df40dcd3cc77c33b1e5f096fb2778f2fd2ec6a9ee3c134c683b524a2dbf1",
+    "layout.jsonl": "c18e3a2b41d2f873a498909f8ba402cda82bad0670d3842c2e930683bbb7b47e",
+    "outcomes.jsonl": "507abfd54a325cc7c05301b9d26dd97d384b9c8561ed86c6e584bc34abfad3b9"
+  },
+  "verified_sanitized_source_sha256": "7f1111f5db2175f1f139a85ecbfac0307a06b5ed987744adb4aab619ce543548",
+  "source_bytes_received_and_verified": 256097247,
+  "raw_csv_rows": 195605,
+  "source_response_geometry": {
+    "coherent_written_response_rows_before_filter": 4536,
+    "latency_exclusions": 15,
+    "timeouts_after_latency_filter": 19,
+    "repeated_reader_family_variant_keys_after_filter": 0,
+    "verified_h4_wrappers_stripped": 126,
+    "display_variants_with_html_entities": 0,
+    "rendered_tokens_differ_from_material_docx": 0
+  },
+  "all_coherent_direct_explicit_reader_macro": {
+    "Amb": 0.7953123549614778,
+    "UA": 0.949866564559547
+  },
+  "same_reader_pair_arm_order": [
+    "Amb",
+    "UA"
+  ],
+  "retained": {
+    "independent_families": 44,
+    "sentences": 88,
+    "explicit_choices": 3139,
+    "explicit_choices_per_arm": {
+      "UA": 1567,
+      "Amb": 1572
+    },
+    "readers_with_a_complete_pair": 108,
+    "complete_reader_family_pairs": 1558,
+    "complete_pair_outcomes_1_means_sense": {
+      "00": 16,
+      "01": 296,
+      "10": 42,
+      "11": 1204
+    },
+    "matched_family_macro_amb_minus_unamb": -0.16328892613458473,
+    "noun_span_counts": {
+      "located": 86,
+      "missing": 2
+    }
+  },
+  "overlap_screen": {
+    "compared_2021_families": 48,
+    "compared_2021_variants": 192,
+    "normalized_same_sentence_families": [],
+    "masked_same_frame_families": [],
+    "same_noun_and_cue_families": [
+      "appendix",
+      "ball",
+      "bar",
+      "chip",
+      "coat",
+      "drill",
+      "interest",
+      "lobby",
+      "mine",
+      "organ",
+      "pen",
+      "pipe",
+      "plant",
+      "poker",
+      "program",
+      "star",
+      "strain",
+      "trailer",
+      "volume"
+    ],
+    "shared_five_word_fragment_families": [
+      "appendix",
+      "ball",
+      "bar",
+      "board",
+      "boxer",
+      "branch",
+      "button",
+      "chip",
+      "coat",
+      "deed",
+      "drill",
+      "interest",
+      "lobby",
+      "mine",
+      "nugget",
+      "organ",
+      "pen",
+      "pipe",
+      "plant",
+      "poker",
+      "program",
+      "star",
+      "strain",
+      "trailer",
+      "volume"
+    ],
+    "excluded_families": [
+      "appendix",
+      "ball",
+      "bar",
+      "chip",
+      "coat",
+      "drill",
+      "interest",
+      "lobby",
+      "mine",
+      "organ",
+      "pen",
+      "pipe",
+      "plant",
+      "poker",
+      "program",
+      "star",
+      "strain",
+      "trailer",
+      "volume"
+    ],
+    "five_word_fragment_screen_only": true
+  },
+  "optional_noun_coordinates_missing": [
+    [
+      "pupil",
+      "Amb"
+    ],
+    [
+      "pupil",
+      "UA"
+    ]
+  ]
+}

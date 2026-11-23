@@ -1,0 +1,193 @@
+{
+  "bootstrap": {
+    "fits_refit_per_draw": false,
+    "resamples": 5000,
+    "seed": 731503,
+    "unit": "source_family"
+  },
+  "calibration_sha256": "85f266c195fffb5d90c2f58645f162afcbd5d4484567a375ec0de88b475ad278",
+  "gate": {
+    "eligible": true,
+    "min_holdout_families": 100,
+    "passes": true
+  },
+  "holdout": {
+    "by_genre": {
+      "Info": 291,
+      "Lit": 119
+    },
+    "contrasts": {
+      "app_minus_surface": {
+        "ci95": [
+          0.01222833549649973,
+          0.09570288624162583
+        ],
+        "point": 0.05340110988602964,
+        "valid_resamples": 5000
+      },
+      "surface_app_minus_surface": {
+        "ci95": [
+          0.050822512924675066,
+          0.11819095013970422
+        ],
+        "point": 0.08300491913954888,
+        "valid_resamples": 5000
+      }
+    },
+    "families": 405,
+    "input_tokens": 89979,
+    "methods": {
+      "app": {
+        "spearman": 0.6609727804129361
+      },
+      "surface": {
+        "rmse": 0.8207640507466784,
+        "spearman": 0.6075716705269064
+      },
+      "surface_app": {
+        "rmse": 0.7344156412426461,
+        "spearman": 0.6905765896664553
+      }
+    },
+    "passages": 410,
+    "stops": 5089
+  },
+  "holdout_by_genre": {
+    "Info": {
+      "by_genre": {
+        "Info": 291
+      },
+      "contrasts": {
+        "app_minus_surface": {
+          "ci95": [
+            0.023334367002373662,
+            0.17561167402388375
+          ],
+          "point": 0.09854783807079648,
+          "valid_resamples": 5000
+        },
+        "surface_app_minus_surface": {
+          "ci95": [
+            0.09212784150884121,
+            0.2176005243793364
+          ],
+          "point": 0.15314026364871502,
+          "valid_resamples": 5000
+        }
+      },
+      "families": 288,
+      "input_tokens": 63016,
+      "methods": {
+        "app": {
+          "spearman": 0.6353466537455745
+        },
+        "surface": {
+          "rmse": 0.849005945784591,
+          "spearman": 0.536798815674778
+        },
+        "surface_app": {
+          "rmse": 0.7379913471029838,
+          "spearman": 0.6899390793234931
+        }
+      },
+      "passages": 291,
+      "stops": 2692
+    },
+    "Lit": {
+      "by_genre": {
+        "Lit": 119
+      },
+      "contrasts": {
+        "app_minus_surface": {
+          "ci95": [
+            -0.12347400948872407,
+            0.190238640117933
+          ],
+          "point": 0.03478137017518872,
+          "valid_resamples": 5000
+        },
+        "surface_app_minus_surface": {
+          "ci95": [
+            -0.04786518922513162,
+            0.18006382882416502
+          ],
+          "point": 0.06622988178322176,
+          "valid_resamples": 5000
+        }
+      },
+      "families": 117,
+      "input_tokens": 26963,
+      "methods": {
+        "app": {
+          "spearman": 0.10133171912832929
+        },
+        "surface": {
+          "rmse": 0.7472186980308388,
+          "spearman": 0.06655034895314058
+        },
+        "surface_app": {
+          "rmse": 0.7255974618334845,
+          "spearman": 0.13278023073636233
+        }
+      },
+      "passages": 119,
+      "stops": 2397
+    }
+  },
+  "holdout_no_soft_overlap": {
+    "by_genre": {
+      "Info": 291,
+      "Lit": 119
+    },
+    "contrasts": {
+      "app_minus_surface": {
+        "ci95": [
+          0.011790147413874597,
+          0.0953395589436816
+        ],
+        "point": 0.05302763658871745,
+        "valid_resamples": 5000
+      },
+      "surface_app_minus_surface": {
+        "ci95": [
+          0.05060199632503975,
+          0.11813906945277168
+        ],
+        "point": 0.08278814792502498,
+        "valid_resamples": 5000
+      }
+    },
+    "families": 405,
+    "input_tokens": 89979,
+    "methods": {
+      "app": {
+        "spearman": 0.6609727804129361
+      },
+      "surface": {
+        "rmse": 0.8206235809071305,
+        "spearman": 0.6079451438242186
+      },
+      "surface_app": {
+        "rmse": 0.734242222832897,
+        "spearman": 0.6907332917492436
+      }
+    },
+    "passages": 410,
+    "stops": 5089
+  },
+  "provenance": {
+    "assay_sha256": "2283e95e9c63cdab327cfa98c0199f0fbc0b05debc46951f18aadbc3f4c5e2fb",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "extraction_sha256": "7bc4b454d56474ca4340f86794f032622b716961c6992816ac5d469a3b486a79",
+    "forecasts_sha256": "39750597c862bfc0e5f944583a332c6bad469c6dc52a68b54ebd3a44cc0af221",
+    "materials_sha256": "4ae369d471bc164d516dff6eb9c3b49f623bf37da2a6a16d50d7333652acf4e9",
+    "outcomes_sha256": "a8805ee92d6c00ff6fd39704cbf5b213b311839caa4ca5496db33e1445de3e81",
+    "protocol_sha256": "f7062e2928990bf5fd89bdc8ab607a27cb59083e250d0bf4465e281ca84aae39",
+    "scorer_sha256": "7cb2aed25901e725fdf572f8c03505d9fef711a6e98959dd3c189e0795b51e9a",
+    "stimuli_sha256": "1d53420572ccc0b117b7ec8141c888c06536c45a76689b18f8ea5ff2831089b2"
+  },
+  "removed_soft_overlap": {
+    "calibration": 1,
+    "holdout": 0
+  }
+}

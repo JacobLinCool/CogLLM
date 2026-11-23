@@ -1,0 +1,1279 @@
+{
+  "sources": [
+    "ambistory",
+    "blott",
+    "clear",
+    "complex",
+    "context-readback",
+    "currie",
+    "cwi",
+    "czech",
+    "first-readback",
+    "frick",
+    "kerwer",
+    "oliver",
+    "onestop",
+    "onestop-rereading",
+    "plaba",
+    "race",
+    "rodger",
+    "scarecrow",
+    "studentannotations",
+    "textcomplexityde",
+    "turkish",
+    "yadav",
+    "zhan"
+  ],
+  "source_count": 23,
+  "macro_over_both_splits_and_seeds": {
+    "source_mean_nll": {
+      "private": 1.0235406662468456,
+      "shared": 1.0305111159034106,
+      "midpoint": 1.0209667922811232,
+      "independent_mode": 1.0195563284904536,
+      "independent_mean": 1.01990538785491,
+      "transported": 1.020902573763627,
+      "supported": 1.0202623388299776
+    },
+    "contrasts": {
+      "supported_over_independent_mode": {
+        "gain_nats_per_observed_trial": -0.000706010339523931,
+        "ci95": [
+          -0.0016437201096796365,
+          0.00022561023175299313
+        ],
+        "ci95_simultaneous": [
+          -0.00183475809956573,
+          0.0004517769174728226
+        ],
+        "source_improvements": 10,
+        "source_losses": 13,
+        "one_sided_signflip_p": 0.9137608623913761,
+        "bonferroni_p": 1.0
+      },
+      "supported_over_midpoint": {
+        "gain_nats_per_observed_trial": 0.0007044534511456532,
+        "ci95": [
+          -0.0011055146650553196,
+          0.003400936613907417
+        ],
+        "ci95_simultaneous": [
+          -0.0013312427749895192,
+          0.004117477757233739
+        ],
+        "source_improvements": 12,
+        "source_losses": 11,
+        "one_sided_signflip_p": 0.3971560284397156,
+        "bonferroni_p": 1.0
+      },
+      "transported_over_midpoint": {
+        "gain_nats_per_observed_trial": 6.421851749594973e-05,
+        "ci95": [
+          -0.0013300413975414697,
+          0.0018565286803748212
+        ],
+        "ci95_simultaneous": [
+          -0.0015411495511673966,
+          0.0023029559030763795
+        ],
+        "source_improvements": 11,
+        "source_losses": 12,
+        "one_sided_signflip_p": 0.47442525574744254,
+        "bonferroni_p": 1.0
+      },
+      "supported_over_private": {
+        "gain_nats_per_observed_trial": 0.003278327416868133,
+        "ci95": [
+          0.00021007309397337435,
+          0.006291864653434318
+        ],
+        "ci95_simultaneous": [
+          0.00021007309397337435,
+          0.006291864653434318
+        ],
+        "source_improvements": 15,
+        "source_losses": 8,
+        "one_sided_signflip_p": 0.023539764602353977,
+        "bonferroni_p": 0.023539764602353977
+      },
+      "supported_over_shared": {
+        "gain_nats_per_observed_trial": 0.010248777073433206,
+        "ci95": [
+          0.0016962003509410606,
+          0.024256198859815174
+        ],
+        "ci95_simultaneous": [
+          0.0016962003509410606,
+          0.024256198859815174
+        ],
+        "source_improvements": 15,
+        "source_losses": 8,
+        "one_sided_signflip_p": 0.004599954000459996,
+        "bonferroni_p": 0.004599954000459996
+      },
+      "supported_over_independent_mean": {
+        "gain_nats_per_observed_trial": -0.0003569509750672958,
+        "ci95": [
+          -0.001305594548225875,
+          0.0006065156638709646
+        ],
+        "ci95_simultaneous": [
+          -0.001305594548225875,
+          0.0006065156638709646
+        ],
+        "source_improvements": 11,
+        "source_losses": 12,
+        "one_sided_signflip_p": 0.7556424435755642,
+        "bonferroni_p": 0.7556424435755642
+      },
+      "supported_over_transported": {
+        "gain_nats_per_observed_trial": 0.0006402349336497035,
+        "ci95": [
+          1.6465518597834952e-05,
+          0.0016887317660991457
+        ],
+        "ci95_simultaneous": [
+          1.6465518597834952e-05,
+          0.0016887317660991457
+        ],
+        "source_improvements": 16,
+        "source_losses": 7,
+        "one_sided_signflip_p": 0.01729982700172998,
+        "bonferroni_p": 0.01729982700172998
+      },
+      "transported_over_private": {
+        "gain_nats_per_observed_trial": 0.002638092483218429,
+        "ci95": [
+          -0.001102792530387405,
+          0.005959417170818845
+        ],
+        "ci95_simultaneous": [
+          -0.001102792530387405,
+          0.005959417170818845
+        ],
+        "source_improvements": 15,
+        "source_losses": 8,
+        "one_sided_signflip_p": 0.08283917160828391,
+        "bonferroni_p": 0.08283917160828391
+      },
+      "transported_over_shared": {
+        "gain_nats_per_observed_trial": 0.009608542139783502,
+        "ci95": [
+          0.0015760268442272392,
+          0.022645194598527995
+        ],
+        "ci95_simultaneous": [
+          0.0015760268442272392,
+          0.022645194598527995
+        ],
+        "source_improvements": 15,
+        "source_losses": 8,
+        "one_sided_signflip_p": 0.0051399486005139945,
+        "bonferroni_p": 0.0051399486005139945
+      },
+      "independent_mode_over_midpoint": {
+        "gain_nats_per_observed_trial": 0.0014104637906695843,
+        "ci95": [
+          3.403966593830741e-05,
+          0.004004887667802394
+        ],
+        "ci95_simultaneous": [
+          3.403966593830741e-05,
+          0.004004887667802394
+        ],
+        "source_improvements": 17,
+        "source_losses": 6,
+        "one_sided_signflip_p": 0.023849761502384974,
+        "bonferroni_p": 0.023849761502384974
+      },
+      "independent_mean_over_midpoint": {
+        "gain_nats_per_observed_trial": 0.001061404426212949,
+        "ci95": [
+          2.7227120590700923e-05,
+          0.003008290133178436
+        ],
+        "ci95_simultaneous": [
+          2.7227120590700923e-05,
+          0.003008290133178436
+        ],
+        "source_improvements": 17,
+        "source_losses": 6,
+        "one_sided_signflip_p": 0.023279767202327977,
+        "bonferroni_p": 0.023279767202327977
+      }
+    }
+  },
+  "separate_split_and_seed": {
+    "historical": {
+      "source_mean_nll": {
+        "private": 1.0189373875566299,
+        "shared": 1.0287230328458294,
+        "midpoint": 1.0179049233650286,
+        "independent_mode": 1.015935118075359,
+        "independent_mean": 1.0164351078920562,
+        "transported": 1.0176125366353392,
+        "supported": 1.0166472572863945
+      },
+      "contrasts": {
+        "supported_over_independent_mode": {
+          "gain_nats_per_observed_trial": -0.0007121392110355645,
+          "ci95": [
+            -0.002277682080634628,
+            0.0006494395800080705
+          ],
+          "ci95_simultaneous": [
+            -0.0026315238139137075,
+            0.0008745404768505675
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.8007919920800792,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0012576660786339086,
+          "ci95": [
+            -0.0013980456686912563,
+            0.0050824376748264235
+          ],
+          "ci95_simultaneous": [
+            -0.0018109382122106423,
+            0.00616266647580382
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.33218667813321867,
+          "bonferroni_p": 0.996560034399656
+        },
+        "transported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.00029238672968931245,
+          "ci95": [
+            -0.001726022890739331,
+            0.0025720481433476544
+          ],
+          "ci95_simultaneous": [
+            -0.002144909162173057,
+            0.0031840525606178062
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.4024359756402436,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_private": {
+          "gain_nats_per_observed_trial": 0.002290130270235146,
+          "ci95": [
+            -0.0018696429881570795,
+            0.00637940677313995
+          ],
+          "ci95_simultaneous": [
+            -0.0018696429881570795,
+            0.00637940677313995
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.16068839311606883,
+          "bonferroni_p": 0.16068839311606883
+        },
+        "supported_over_shared": {
+          "gain_nats_per_observed_trial": 0.012075775559434577,
+          "ci95": [
+            0.0020066050607272074,
+            0.028064784956500513
+          ],
+          "ci95_simultaneous": [
+            0.0020066050607272074,
+            0.028064784956500513
+          ],
+          "source_improvements": 16,
+          "source_losses": 7,
+          "one_sided_signflip_p": 0.006769932300676993,
+          "bonferroni_p": 0.006769932300676993
+        },
+        "supported_over_independent_mean": {
+          "gain_nats_per_observed_trial": -0.00021214939433857803,
+          "ci95": [
+            -0.0016769838570133606,
+            0.0010103550601916682
+          ],
+          "ci95_simultaneous": [
+            -0.0016769838570133606,
+            0.0010103550601916682
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.5969540304596954,
+          "bonferroni_p": 0.5969540304596954
+        },
+        "supported_over_transported": {
+          "gain_nats_per_observed_trial": 0.0009652793489445961,
+          "ci95": [
+            -2.1904551528888232e-05,
+            0.0026623524275464143
+          ],
+          "ci95_simultaneous": [
+            -2.1904551528888232e-05,
+            0.0026623524275464143
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.10844891551084489,
+          "bonferroni_p": 0.10844891551084489
+        },
+        "transported_over_private": {
+          "gain_nats_per_observed_trial": 0.00132485092129055,
+          "ci95": [
+            -0.004188586540504622,
+            0.005969974902210103
+          ],
+          "ci95_simultaneous": [
+            -0.004188586540504622,
+            0.005969974902210103
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.3163468365316347,
+          "bonferroni_p": 0.3163468365316347
+        },
+        "transported_over_shared": {
+          "gain_nats_per_observed_trial": 0.011110496210489984,
+          "ci95": [
+            0.0017774142490996955,
+            0.025572290190610004
+          ],
+          "ci95_simultaneous": [
+            0.0017774142490996955,
+            0.025572290190610004
+          ],
+          "source_improvements": 16,
+          "source_losses": 7,
+          "one_sided_signflip_p": 0.008339916600833991,
+          "bonferroni_p": 0.008339916600833991
+        },
+        "independent_mode_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.001969805289669473,
+          "ci95": [
+            -6.893771036158818e-05,
+            0.005867214433776168
+          ],
+          "ci95_simultaneous": [
+            -6.893771036158818e-05,
+            0.005867214433776168
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.13709862901370987,
+          "bonferroni_p": 0.13709862901370987
+        },
+        "independent_mean_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0014698154729724867,
+          "ci95": [
+            -1.8190842031971964e-05,
+            0.004342738457265547
+          ],
+          "ci95_simultaneous": [
+            -1.8190842031971964e-05,
+            0.004342738457265547
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.0959190408095919,
+          "bonferroni_p": 0.0959190408095919
+        }
+      }
+    },
+    "historical/seed-1729": {
+      "source_mean_nll": {
+        "private": 1.0188855739628477,
+        "shared": 1.0268247021281887,
+        "midpoint": 1.0169257244716434,
+        "independent_mode": 1.015201533587489,
+        "independent_mean": 1.0156534158891144,
+        "transported": 1.016992587184768,
+        "supported": 1.0159192297159811
+      },
+      "contrasts": {
+        "supported_over_independent_mode": {
+          "gain_nats_per_observed_trial": -0.0007176961284919437,
+          "ci95": [
+            -0.002468255349628493,
+            0.000887629260126437
+          ],
+          "ci95_simultaneous": [
+            -0.0028983819662797695,
+            0.0012143038609589195
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.7724522754772453,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.001006494755662119,
+          "ci95": [
+            -0.0018503293960046212,
+            0.004949278241365546
+          ],
+          "ci95_simultaneous": [
+            -0.0023060668229173704,
+            0.006014042156620022
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.3788762112378876,
+          "bonferroni_p": 1.0
+        },
+        "transported_over_midpoint": {
+          "gain_nats_per_observed_trial": -6.686271312478473e-05,
+          "ci95": [
+            -0.0025013645999821003,
+            0.0026324273821017982
+          ],
+          "ci95_simultaneous": [
+            -0.002977558435163193,
+            0.0033354212938255462
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.5188048119518804,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_private": {
+          "gain_nats_per_observed_trial": 0.0029663442468666535,
+          "ci95": [
+            -0.0014563191662526553,
+            0.007483737367886693
+          ],
+          "ci95_simultaneous": [
+            -0.0014563191662526553,
+            0.007483737367886693
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.11414885851141489,
+          "bonferroni_p": 0.11414885851141489
+        },
+        "supported_over_shared": {
+          "gain_nats_per_observed_trial": 0.01090547241220772,
+          "ci95": [
+            0.0005446316699901249,
+            0.027199430332881257
+          ],
+          "ci95_simultaneous": [
+            0.0005446316699901249,
+            0.027199430332881257
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.03064969350306497,
+          "bonferroni_p": 0.03064969350306497
+        },
+        "supported_over_independent_mean": {
+          "gain_nats_per_observed_trial": -0.0002658138268665339,
+          "ci95": [
+            -0.0020315404356499294,
+            0.001376625653902626
+          ],
+          "ci95_simultaneous": [
+            -0.0020315404356499294,
+            0.001376625653902626
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.6114238857611424,
+          "bonferroni_p": 0.6114238857611424
+        },
+        "supported_over_transported": {
+          "gain_nats_per_observed_trial": 0.0010733574687869037,
+          "ci95": [
+            -6.5028924253725e-05,
+            0.0027948228901846024
+          ],
+          "ci95_simultaneous": [
+            -6.5028924253725e-05,
+            0.0027948228901846024
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.15195848041519586,
+          "bonferroni_p": 0.15195848041519586
+        },
+        "transported_over_private": {
+          "gain_nats_per_observed_trial": 0.0018929867780797496,
+          "ci95": [
+            -0.0035394271556646174,
+            0.006731920314522036
+          ],
+          "ci95_simultaneous": [
+            -0.0035394271556646174,
+            0.006731920314522036
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.2536874631253688,
+          "bonferroni_p": 0.2536874631253688
+        },
+        "transported_over_shared": {
+          "gain_nats_per_observed_trial": 0.009832114943420817,
+          "ci95": [
+            8.959539887837822e-05,
+            0.024795467511040174
+          ],
+          "ci95_simultaneous": [
+            8.959539887837822e-05,
+            0.024795467511040174
+          ],
+          "source_improvements": 12,
+          "source_losses": 11,
+          "one_sided_signflip_p": 0.04442955570444296,
+          "bonferroni_p": 0.04442955570444296
+        },
+        "independent_mode_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0017241908841540627,
+          "ci95": [
+            -0.00029193166949654647,
+            0.00544640397048201
+          ],
+          "ci95_simultaneous": [
+            -0.00029193166949654647,
+            0.00544640397048201
+          ],
+          "source_improvements": 12,
+          "source_losses": 11,
+          "one_sided_signflip_p": 0.35600643993560066,
+          "bonferroni_p": 0.35600643993560066
+        },
+        "independent_mean_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.001272308582528653,
+          "ci95": [
+            -0.000135419208079874,
+            0.00394753621475687
+          ],
+          "ci95_simultaneous": [
+            -0.000135419208079874,
+            0.00394753621475687
+          ],
+          "source_improvements": 12,
+          "source_losses": 11,
+          "one_sided_signflip_p": 0.36114638853611464,
+          "bonferroni_p": 0.36114638853611464
+        }
+      }
+    },
+    "historical/seed-2718": {
+      "source_mean_nll": {
+        "private": 1.0189892011504122,
+        "shared": 1.0306213635634702,
+        "midpoint": 1.018884122258414,
+        "independent_mode": 1.0166687025632295,
+        "independent_mean": 1.0172167998949981,
+        "transported": 1.018232486085911,
+        "supported": 1.0173752848568092
+      },
+      "contrasts": {
+        "supported_over_independent_mode": {
+          "gain_nats_per_observed_trial": -0.0007065822935792967,
+          "ci95": [
+            -0.002479776084904924,
+            0.0009695370393868988
+          ],
+          "ci95_simultaneous": [
+            -0.0028548585108641895,
+            0.0013181197410313023
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.7758322416775832,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0015088374016051685,
+          "ci95": [
+            -0.0012988505888278947,
+            0.005314878811268095
+          ],
+          "ci95_simultaneous": [
+            -0.001739985449947749,
+            0.0064211232288095815
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.27070729292707074,
+          "bonferroni_p": 0.8121218787812122
+        },
+        "transported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0006516361725029311,
+          "ci95": [
+            -0.0013756626588273574,
+            0.0028354035962196733
+          ],
+          "ci95_simultaneous": [
+            -0.001800007358445509,
+            0.0034202879813398468
+          ],
+          "source_improvements": 13,
+          "source_losses": 10,
+          "one_sided_signflip_p": 0.29395706042939573,
+          "bonferroni_p": 0.8818711812881872
+        },
+        "supported_over_private": {
+          "gain_nats_per_observed_trial": 0.001613916293603504,
+          "ci95": [
+            -0.002655955930379608,
+            0.005780523690396314
+          ],
+          "ci95_simultaneous": [
+            -0.002655955930379608,
+            0.005780523690396314
+          ],
+          "source_improvements": 12,
+          "source_losses": 11,
+          "one_sided_signflip_p": 0.24280757192428076,
+          "bonferroni_p": 0.24280757192428076
+        },
+        "supported_over_shared": {
+          "gain_nats_per_observed_trial": 0.013246078706661163,
+          "ci95": [
+            0.001463336697511068,
+            0.029844050090778222
+          ],
+          "ci95_simultaneous": [
+            0.001463336697511068,
+            0.029844050090778222
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.018809811901880982,
+          "bonferroni_p": 0.018809811901880982
+        },
+        "supported_over_independent_mean": {
+          "gain_nats_per_observed_trial": -0.00015848496181082765,
+          "ci95": [
+            -0.0016971684017975512,
+            0.0012710499142012048
+          ],
+          "ci95_simultaneous": [
+            -0.0016971684017975512,
+            0.0012710499142012048
+          ],
+          "source_improvements": 12,
+          "source_losses": 11,
+          "one_sided_signflip_p": 0.5775542244577554,
+          "bonferroni_p": 0.5775542244577554
+        },
+        "supported_over_transported": {
+          "gain_nats_per_observed_trial": 0.0008572012291022372,
+          "ci95": [
+            -2.721815219295228e-05,
+            0.002550149465567429
+          ],
+          "ci95_simultaneous": [
+            -2.721815219295228e-05,
+            0.002550149465567429
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.12997870021299787,
+          "bonferroni_p": 0.12997870021299787
+        },
+        "transported_over_private": {
+          "gain_nats_per_observed_trial": 0.0007567150645012669,
+          "ci95": [
+            -0.00510060563890587,
+            0.005678372594663342
+          ],
+          "ci95_simultaneous": [
+            -0.00510060563890587,
+            0.005678372594663342
+          ],
+          "source_improvements": 12,
+          "source_losses": 11,
+          "one_sided_signflip_p": 0.4006559934400656,
+          "bonferroni_p": 0.4006559934400656
+        },
+        "transported_over_shared": {
+          "gain_nats_per_observed_trial": 0.012388877477558928,
+          "ci95": [
+            0.001436448354615006,
+            0.027354957783990705
+          ],
+          "ci95_simultaneous": [
+            0.001436448354615006,
+            0.027354957783990705
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.01922980770192298,
+          "bonferroni_p": 0.01922980770192298
+        },
+        "independent_mode_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0022154196951844653,
+          "ci95": [
+            -9.162582721183568e-05,
+            0.006432671465659518
+          ],
+          "ci95_simultaneous": [
+            -9.162582721183568e-05,
+            0.006432671465659518
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.12806871931280686,
+          "bonferroni_p": 0.12806871931280686
+        },
+        "independent_mean_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.001667322363415996,
+          "ci95": [
+            -2.727652115568698e-05,
+            0.004819852481144307
+          ],
+          "ci95_simultaneous": [
+            -2.727652115568698e-05,
+            0.004819852481144307
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.1007489925100749,
+          "bonferroni_p": 0.1007489925100749
+        }
+      }
+    },
+    "fresh": {
+      "source_mean_nll": {
+        "private": 1.0281439449370613,
+        "shared": 1.032299198960992,
+        "midpoint": 1.0240286611972176,
+        "independent_mode": 1.023177538905548,
+        "independent_mean": 1.0233756678177641,
+        "transported": 1.0241926108919148,
+        "supported": 1.02387742037356
+      },
+      "contrasts": {
+        "supported_over_independent_mode": {
+          "gain_nats_per_observed_trial": -0.0006998814680122624,
+          "ci95": [
+            -0.0019533229460326792,
+            0.00046239078694007395
+          ],
+          "ci95_simultaneous": [
+            -0.0022746329792356214,
+            0.0007527871202755097
+          ],
+          "source_improvements": 7,
+          "source_losses": 16,
+          "one_sided_signflip_p": 0.8652613473865262,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.00015124082365744202,
+          "ci95": [
+            -0.0014523440274287014,
+            0.002001797139461117
+          ],
+          "ci95_simultaneous": [
+            -0.0017829086265194309,
+            0.002398758424525914
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.44328556714432854,
+          "bonferroni_p": 1.0
+        },
+        "transported_over_midpoint": {
+          "gain_nats_per_observed_trial": -0.00016394969469737893,
+          "ci95": [
+            -0.0016430874972542717,
+            0.0014451895401389394
+          ],
+          "ci95_simultaneous": [
+            -0.0019359068414399536,
+            0.001800872577463966
+          ],
+          "source_improvements": 9,
+          "source_losses": 14,
+          "one_sided_signflip_p": 0.5944240557594425,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_private": {
+          "gain_nats_per_observed_trial": 0.00426652456350116,
+          "ci95": [
+            0.0009675330355515608,
+            0.007952038710536517
+          ],
+          "ci95_simultaneous": [
+            0.0009675330355515608,
+            0.007952038710536517
+          ],
+          "source_improvements": 16,
+          "source_losses": 7,
+          "one_sided_signflip_p": 0.00901990980090199,
+          "bonferroni_p": 0.00901990980090199
+        },
+        "supported_over_shared": {
+          "gain_nats_per_observed_trial": 0.008421778587431861,
+          "ci95": [
+            -0.0008976540773248121,
+            0.021361035312148127
+          ],
+          "ci95_simultaneous": [
+            -0.0008976540773248121,
+            0.021361035312148127
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.06909930900690993,
+          "bonferroni_p": 0.06909930900690993
+        },
+        "supported_over_independent_mean": {
+          "gain_nats_per_observed_trial": -0.00050175255579601,
+          "ci95": [
+            -0.0017677718109893738,
+            0.0007190978526724745
+          ],
+          "ci95_simultaneous": [
+            -0.0017677718109893738,
+            0.0007190978526724745
+          ],
+          "source_improvements": 8,
+          "source_losses": 15,
+          "one_sided_signflip_p": 0.7866921330786693,
+          "bonferroni_p": 0.7866921330786693
+        },
+        "supported_over_transported": {
+          "gain_nats_per_observed_trial": 0.00031519051835482095,
+          "ci95": [
+            3.763497740557919e-05,
+            0.0007052602548237669
+          ],
+          "ci95_simultaneous": [
+            3.763497740557919e-05,
+            0.0007052602548237669
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.0020799792002079978,
+          "bonferroni_p": 0.0020799792002079978
+        },
+        "transported_over_private": {
+          "gain_nats_per_observed_trial": 0.003951334045146339,
+          "ci95": [
+            0.0005996079809251928,
+            0.007635832226294785
+          ],
+          "ci95_simultaneous": [
+            0.0005996079809251928,
+            0.007635832226294785
+          ],
+          "source_improvements": 16,
+          "source_losses": 7,
+          "one_sided_signflip_p": 0.015399846001539985,
+          "bonferroni_p": 0.015399846001539985
+        },
+        "transported_over_shared": {
+          "gain_nats_per_observed_trial": 0.00810658806907704,
+          "ci95": [
+            -0.0010056185405913022,
+            0.02077168103105271
+          ],
+          "ci95_simultaneous": [
+            -0.0010056185405913022,
+            0.02077168103105271
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.07502924970750292,
+          "bonferroni_p": 0.07502924970750292
+        },
+        "independent_mode_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0008511222916697044,
+          "ci95": [
+            9.095981942207218e-05,
+            0.0021681436524476415
+          ],
+          "ci95_simultaneous": [
+            9.095981942207218e-05,
+            0.0021681436524476415
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.0062699373006269935,
+          "bonferroni_p": 0.0062699373006269935
+        },
+        "independent_mean_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.000652993379453452,
+          "ci95": [
+            4.689553788200922e-05,
+            0.0016821013274248013
+          ],
+          "ci95_simultaneous": [
+            4.689553788200922e-05,
+            0.0016821013274248013
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.005869941300586994,
+          "bonferroni_p": 0.005869941300586994
+        }
+      }
+    },
+    "fresh/seed-1729": {
+      "source_mean_nll": {
+        "private": 1.0280016874263307,
+        "shared": 1.0303974978426806,
+        "midpoint": 1.0235441966012728,
+        "independent_mode": 1.0229720194452552,
+        "independent_mean": 1.023136607683043,
+        "transported": 1.0238770052914965,
+        "supported": 1.0234988534500216
+      },
+      "contrasts": {
+        "supported_over_independent_mode": {
+          "gain_nats_per_observed_trial": -0.0005268340047663354,
+          "ci95": [
+            -0.0013785471689321492,
+            0.00027289882367485894
+          ],
+          "ci95_simultaneous": [
+            -0.0015961476132881904,
+            0.00044484389765909186
+          ],
+          "source_improvements": 9,
+          "source_losses": 14,
+          "one_sided_signflip_p": 0.8788512114878851,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_midpoint": {
+          "gain_nats_per_observed_trial": 4.534315125149977e-05,
+          "ci95": [
+            -0.0009842445317886674,
+            0.0012223857187501493
+          ],
+          "ci95_simultaneous": [
+            -0.0011900133918028794,
+            0.0014946793091848687
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.46505534944650556,
+          "bonferroni_p": 1.0
+        },
+        "transported_over_midpoint": {
+          "gain_nats_per_observed_trial": -0.0003328086902235238,
+          "ci95": [
+            -0.0013412779290712267,
+            0.0007260893956785607
+          ],
+          "ci95_simultaneous": [
+            -0.0015489865916774698,
+            0.0009546131335403972
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.7364726352736473,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_private": {
+          "gain_nats_per_observed_trial": 0.004502833976309163,
+          "ci95": [
+            0.0011675820724123508,
+            0.007988879868176445
+          ],
+          "ci95_simultaneous": [
+            0.0011675820724123508,
+            0.007988879868176445
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.007959920400795992,
+          "bonferroni_p": 0.007959920400795992
+        },
+        "supported_over_shared": {
+          "gain_nats_per_observed_trial": 0.006898644392659108,
+          "ci95": [
+            -0.0002020124594920146,
+            0.01653574777227985
+          ],
+          "ci95_simultaneous": [
+            -0.0002020124594920146,
+            0.01653574777227985
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.04957950420495795,
+          "bonferroni_p": 0.04957950420495795
+        },
+        "supported_over_independent_mean": {
+          "gain_nats_per_observed_trial": -0.00036224576697861335,
+          "ci95": [
+            -0.0012106072949679585,
+            0.0004653867498066586
+          ],
+          "ci95_simultaneous": [
+            -0.0012106072949679585,
+            0.0004653867498066586
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.7978520214797852,
+          "bonferroni_p": 0.7978520214797852
+        },
+        "supported_over_transported": {
+          "gain_nats_per_observed_trial": 0.0003781518414750236,
+          "ci95": [
+            3.9605706953745406e-05,
+            0.0008414985153504187
+          ],
+          "ci95_simultaneous": [
+            3.9605706953745406e-05,
+            0.0008414985153504187
+          ],
+          "source_improvements": 16,
+          "source_losses": 7,
+          "one_sided_signflip_p": 0.006929930700692993,
+          "bonferroni_p": 0.006929930700692993
+        },
+        "transported_over_private": {
+          "gain_nats_per_observed_trial": 0.00412468213483414,
+          "ci95": [
+            0.0008544279229286691,
+            0.007528983626923804
+          ],
+          "ci95_simultaneous": [
+            0.0008544279229286691,
+            0.007528983626923804
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.011439885601143989,
+          "bonferroni_p": 0.011439885601143989
+        },
+        "transported_over_shared": {
+          "gain_nats_per_observed_trial": 0.006520492551184084,
+          "ci95": [
+            -0.00044207645058781035,
+            0.015956998643883856
+          ],
+          "ci95_simultaneous": [
+            -0.00044207645058781035,
+            0.015956998643883856
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.059019409805901944,
+          "bonferroni_p": 0.059019409805901944
+        },
+        "independent_mode_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0005721771560178353,
+          "ci95": [
+            3.8182048505061e-05,
+            0.001454049697473424
+          ],
+          "ci95_simultaneous": [
+            3.8182048505061e-05,
+            0.001454049697473424
+          ],
+          "source_improvements": 14,
+          "source_losses": 9,
+          "one_sided_signflip_p": 0.023479765202347975,
+          "bonferroni_p": 0.023479765202347975
+        },
+        "independent_mean_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0004075889182301131,
+          "ci95": [
+            1.5804878367364954e-05,
+            0.0010682337266061995
+          ],
+          "ci95_simultaneous": [
+            1.5804878367364954e-05,
+            0.0010682337266061995
+          ],
+          "source_improvements": 14,
+          "source_losses": 9,
+          "one_sided_signflip_p": 0.023369766302336975,
+          "bonferroni_p": 0.023369766302336975
+        }
+      }
+    },
+    "fresh/seed-2718": {
+      "source_mean_nll": {
+        "private": 1.0282862024477917,
+        "shared": 1.0342009000793033,
+        "midpoint": 1.024513125793162,
+        "independent_mode": 1.0233830583658405,
+        "independent_mean": 1.023614727952485,
+        "transported": 1.0245082164923331,
+        "supported": 1.0242559872970987
+      },
+      "contrasts": {
+        "supported_over_independent_mode": {
+          "gain_nats_per_observed_trial": -0.000872928931258028,
+          "ci95": [
+            -0.0025665342059746146,
+            0.0007215129845614946
+          ],
+          "ci95_simultaneous": [
+            -0.0030079987618533647,
+            0.0010758331059625417
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.8488515114848851,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.00025713849606340207,
+          "ci95": [
+            -0.001958720410585314,
+            0.002815521715180679
+          ],
+          "ci95_simultaneous": [
+            -0.002417723225781535,
+            0.0033605797928430584
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.4253757462425376,
+          "bonferroni_p": 1.0
+        },
+        "transported_over_midpoint": {
+          "gain_nats_per_observed_trial": 4.909300828815765e-06,
+          "ci95": [
+            -0.002082246988622392,
+            0.0022586423868972832
+          ],
+          "ci95_simultaneous": [
+            -0.002536623833955112,
+            0.002726475469354877
+          ],
+          "source_improvements": 11,
+          "source_losses": 12,
+          "one_sided_signflip_p": 0.4942350576494235,
+          "bonferroni_p": 1.0
+        },
+        "supported_over_private": {
+          "gain_nats_per_observed_trial": 0.004030215150693006,
+          "ci95": [
+            0.0005149219886634234,
+            0.008132407009677139
+          ],
+          "ci95_simultaneous": [
+            0.0005149219886634234,
+            0.008132407009677139
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.02002979970200298,
+          "bonferroni_p": 0.02002979970200298
+        },
+        "supported_over_shared": {
+          "gain_nats_per_observed_trial": 0.00994491278220466,
+          "ci95": [
+            -0.0016744428959498659,
+            0.026197504774358532
+          ],
+          "ci95_simultaneous": [
+            -0.0016744428959498659,
+            0.026197504774358532
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.0909890901090989,
+          "bonferroni_p": 0.0909890901090989
+        },
+        "supported_over_independent_mean": {
+          "gain_nats_per_observed_trial": -0.0006412593446134836,
+          "ci95": [
+            -0.0023365426289731835,
+            0.0009939530036783095
+          ],
+          "ci95_simultaneous": [
+            -0.0023365426289731835,
+            0.0009939530036783095
+          ],
+          "source_improvements": 10,
+          "source_losses": 13,
+          "one_sided_signflip_p": 0.7670123298767012,
+          "bonferroni_p": 0.7670123298767012
+        },
+        "supported_over_transported": {
+          "gain_nats_per_observed_trial": 0.0002522291952345863,
+          "ci95": [
+            2.092326618988502e-05,
+            0.0006387314669956287
+          ],
+          "ci95_simultaneous": [
+            2.092326618988502e-05,
+            0.0006387314669956287
+          ],
+          "source_improvements": 17,
+          "source_losses": 6,
+          "one_sided_signflip_p": 0.007779922200777992,
+          "bonferroni_p": 0.007779922200777992
+        },
+        "transported_over_private": {
+          "gain_nats_per_observed_trial": 0.0037779859554584196,
+          "ci95": [
+            0.00016576849438069892,
+            0.007920228869624303
+          ],
+          "ci95_simultaneous": [
+            0.00016576849438069892,
+            0.007920228869624303
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.03162968370316297,
+          "bonferroni_p": 0.03162968370316297
+        },
+        "transported_over_shared": {
+          "gain_nats_per_observed_trial": 0.009692683586970074,
+          "ci95": [
+            -0.0017615222647098965,
+            0.025577152719714183
+          ],
+          "ci95_simultaneous": [
+            -0.0017615222647098965,
+            0.025577152719714183
+          ],
+          "source_improvements": 15,
+          "source_losses": 8,
+          "one_sided_signflip_p": 0.09356906430935691,
+          "bonferroni_p": 0.09356906430935691
+        },
+        "independent_mode_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.00113006742732143,
+          "ci95": [
+            7.739483978109252e-05,
+            0.0029442638619921096
+          ],
+          "ci95_simultaneous": [
+            7.739483978109252e-05,
+            0.0029442638619921096
+          ],
+          "source_improvements": 18,
+          "source_losses": 5,
+          "one_sided_signflip_p": 0.007769922300776992,
+          "bonferroni_p": 0.007769922300776992
+        },
+        "independent_mean_over_midpoint": {
+          "gain_nats_per_observed_trial": 0.0008983978406768856,
+          "ci95": [
+            3.909824034599115e-05,
+            0.002377112212558121
+          ],
+          "ci95_simultaneous": [
+            3.909824034599115e-05,
+            0.002377112212558121
+          ],
+          "source_improvements": 18,
+          "source_losses": 5,
+          "one_sided_signflip_p": 0.007959920400795992,
+          "bonferroni_p": 0.007959920400795992
+        }
+      }
+    }
+  },
+  "code": "92cb28ff27b86eb053fe3b62fa798c8d1c717f2f73bd50529a2d07ef9f6d45f4",
+  "design": "0b3c0e34cde31e365dfcafbf58ffc44a1ec8977453a4b9e677a74d649904fd87",
+  "source_stats": "0ed320466726db16afe4711762f57ac1e8e806c57af84f7085c183a725d14989"
+}

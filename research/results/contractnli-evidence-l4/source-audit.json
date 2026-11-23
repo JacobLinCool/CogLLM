@@ -1,0 +1,83 @@
+{
+  "archive": "https://stanfordnlp.github.io/contract-nli/resources/contract-nli.zip",
+  "coordinates": "half-open Unicode code-point indices of the literal source text",
+  "counts": {
+    "candidate_spans": 4318,
+    "documents": 47,
+    "documents_by_type": {
+      "sec-html": 23,
+      "sec-text": 24
+    },
+    "documents_with_disjoint_entailment_contradiction_pairs": 45,
+    "evidence_spans_by_label": {
+      "Contradiction": 172,
+      "Entailment": 883,
+      "NotMentioned": 0
+    },
+    "hypotheses": 17,
+    "hypotheses_with_both_signs": 10,
+    "judgments": 799,
+    "labels": {
+      "Contradiction": 93,
+      "Entailment": 394,
+      "NotMentioned": 312
+    },
+    "same_document_disjoint_pairs": {
+      "Contradiction+Contradiction": 60,
+      "Contradiction+Entailment": 718,
+      "Entailment+Entailment": 1548
+    },
+    "same_hypothesis_cross_document_pairs": 1158,
+    "whitespace_only_candidate_spans": 102
+  },
+  "evidence_indices": "complete unmodified zero-based lists into the corresponding layout spans",
+  "exact_cross_split_edgar_text_or_url_overlap": 0,
+  "gold_endpoint": "merged offline human claim judgment and selected evidence membership",
+  "grade_free_files": [
+    "stimuli.jsonl",
+    "layout.jsonl",
+    "queries.jsonl"
+  ],
+  "group_id": "SHA-256 of Unicode NFKC then whitespace-collapsed then casefolded source text",
+  "license": "CC BY 4.0",
+  "normalized_cross_split_duplicates": [
+    [
+      {
+        "official_id": 538,
+        "split": "train"
+      },
+      {
+        "official_id": 537,
+        "split": "test"
+      }
+    ]
+  ],
+  "output_sha256": {
+    "gold.jsonl": "e498d84249b00198327971979f4f991bc99c88655088b54eae849aac12736d0a",
+    "layout.jsonl": "245594ac6d545b7b9211ed889d96c752358e67d107313b11abfac10e207e815d",
+    "queries.jsonl": "51fccfd832e8a82c3ec01f85b5639cfd9644e9ed1c0476a0827cedc0521c1e2f",
+    "stimuli.jsonl": "17b8e4cbd8deabf7be2f01a3d6208e57fd132e97148715c0018e2220a434e0ef"
+  },
+  "paper": "https://doi.org/10.18653/v1/2021.findings-emnlp.164",
+  "retained_split": "test",
+  "schema": 1,
+  "source_code_sha256": "064c64aced119561088ef54f2d660838dd6c745a054b1447537b27a4d73cc30f",
+  "source_json": {
+    "dev.json": {
+      "edgar_documents": 23,
+      "sha256": "310af7d661d2ab50ee3700169cef524c75f39fb296bbf5a515c229eb0f42e68e",
+      "total_documents": 61
+    },
+    "test.json": {
+      "edgar_documents": 47,
+      "sha256": "460267b56052a2dc5aead98eb35eadef9e6734d5723d37b4a9790e410f812387",
+      "total_documents": 123
+    },
+    "train.json": {
+      "edgar_documents": 162,
+      "sha256": "dbceb356cd6203b35b27be94a5fa85e499a81c34c42c89ad53060b39f0257ba5",
+      "total_documents": 423
+    }
+  },
+  "stops": "all official candidate ends in order, excluding the final uncataloged newline"
+}

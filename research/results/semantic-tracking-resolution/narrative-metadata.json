@@ -1,0 +1,281 @@
+{
+  "project": "https://osf.io/m524v/",
+  "paper": "https://doi.org/10.1017/langcog.2025.10057",
+  "guidelines": "https://osf.io/download/h9mxg/",
+  "license_as_listed_by_osf": "CC BY-NC-SA 4.0 for depositor-licensed material",
+  "endpoint": "Trained teams entered an opening line while reading under annotation instructions and selected the closing line on a second reading. The workbooks record no live timestamps or unaided reader reports.",
+  "unit_limits": "Unfall states are the authors’ deterministic expansion of line states onto their word index, which cannot identify the within-line moment of a semantic transition.",
+  "scope": "Only numerical summaries of the released annotation columns. No stimulus or question text is modeled or exported.",
+  "inputs": {
+    "PITQ_Katze_AA_AA.xlsx": {
+      "download": "https://osf.io/download/k5wq4/",
+      "sha256": "c28db8c46d7d07b0f9dc3414a00108f3d44bb9d822ff25ed601dda92488aedd6"
+    },
+    "PITQ_Auftrag_AA_AA.xlsx": {
+      "download": "https://osf.io/download/d6v5j/",
+      "sha256": "45cfa2e6da7a8d6ea1dce6b75418abc62e93c8337ca1d2e0db37a43d2afeb61a"
+    },
+    "PITQ_Auftrag_JE_JE.xlsx": {
+      "download": "https://osf.io/download/k45vd/",
+      "sha256": "729aa7ee904b58e142e313796ee0e9434aaead50e9533e560ee1dba32c856e96"
+    },
+    "PITQ_Thomas_AA_AA.xlsx": {
+      "download": "https://osf.io/download/fza6p/",
+      "sha256": "79c11344e8c57a40c45853781392989056c0539c4e763733ac04444fa9124547"
+    },
+    "PITQ_Thomas_JE_JE.xlsx": {
+      "download": "https://osf.io/download/65f20cce852037102d880876/",
+      "sha256": "d758db86de461b08707aa0d13304dc57079469e647c5a1eaa3df65a3d352e8eb"
+    },
+    "Unfall_suspense_data.csv": {
+      "download": "https://osf.io/download/ec4tr/",
+      "sha256": "c81ed3ca4ad4e120b143958693762d524b9d036367a5e98bf03eef174978490a"
+    }
+  },
+  "stories": {
+    "Katze": {
+      "AA": {
+        "source_unit": "annotation_line",
+        "positions": 461,
+        "questions": 99,
+        "closure_observed": 94,
+        "censored_at_last_position": 5,
+        "questions_with_an_uncertain_span": 6,
+        "distinct_opening_positions": 86,
+        "distinct_closing_positions": 58,
+        "closing_positions_with_more_than_one_closure": 16,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 58,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 44,
+        "max_simultaneously_open_after_position": 29,
+        "duration_from_open_to_first_confirmed_closing_median_units": 14.5
+      }
+    },
+    "Auftrag": {
+      "AA": {
+        "source_unit": "annotation_line",
+        "positions": 205,
+        "questions": 34,
+        "closure_observed": 31,
+        "censored_at_last_position": 3,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 33,
+        "distinct_closing_positions": 14,
+        "closing_positions_with_more_than_one_closure": 5,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 14,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 6,
+        "max_simultaneously_open_after_position": 15,
+        "duration_from_open_to_first_confirmed_closing_median_units": 19
+      },
+      "JE": {
+        "source_unit": "annotation_line",
+        "positions": 205,
+        "questions": 14,
+        "closure_observed": 14,
+        "censored_at_last_position": 0,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 12,
+        "distinct_closing_positions": 8,
+        "closing_positions_with_more_than_one_closure": 4,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 7,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 3,
+        "max_simultaneously_open_after_position": 8,
+        "duration_from_open_to_first_confirmed_closing_median_units": 22.0
+      }
+    },
+    "Thomas": {
+      "AA": {
+        "source_unit": "annotation_line",
+        "positions": 363,
+        "questions": 38,
+        "closure_observed": 36,
+        "censored_at_last_position": 2,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 36,
+        "distinct_closing_positions": 21,
+        "closing_positions_with_more_than_one_closure": 9,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 21,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 15,
+        "max_simultaneously_open_after_position": 15,
+        "duration_from_open_to_first_confirmed_closing_median_units": 39.0
+      },
+      "JE": {
+        "source_unit": "annotation_line",
+        "positions": 363,
+        "questions": 11,
+        "closure_observed": 8,
+        "censored_at_last_position": 3,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 11,
+        "distinct_closing_positions": 4,
+        "closing_positions_with_more_than_one_closure": 2,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 4,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 3,
+        "max_simultaneously_open_after_position": 8,
+        "duration_from_open_to_first_confirmed_closing_median_units": 55.5
+      }
+    },
+    "Unfall": {
+      "AA": {
+        "source_unit": "author_expanded_word_index",
+        "positions": 1291,
+        "questions": 17,
+        "closure_observed": 17,
+        "censored_at_last_position": 0,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 15,
+        "distinct_closing_positions": 10,
+        "closing_positions_with_more_than_one_closure": 3,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 8,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 5,
+        "max_simultaneously_open_after_position": 9,
+        "duration_from_open_to_first_confirmed_closing_median_units": 333
+      },
+      "JE": {
+        "source_unit": "author_expanded_word_index",
+        "positions": 1291,
+        "questions": 9,
+        "closure_observed": 8,
+        "censored_at_last_position": 1,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 9,
+        "distinct_closing_positions": 3,
+        "closing_positions_with_more_than_one_closure": 2,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 3,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 3,
+        "max_simultaneously_open_after_position": 7,
+        "duration_from_open_to_first_confirmed_closing_median_units": 311.0
+      }
+    }
+  },
+  "leave_one_story_out_closure_baseline": {
+    "description": "Closure hazard conditional on an annotated question already being open. Opening is fixed to the human annotation. Complete stories are held out.",
+    "at_risk_rule": "Begin the line after opening. Include the first blank after an open or uncertain run, or continue through the final text line for censored questions.",
+    "training_rule": "Use a Beta(1,1) posterior mean globally or per fixed elapsed-line interval. The two models see no stimulus or question text.",
+    "elapsed_line_intervals_inclusive_upper_bounds": [
+      4,
+      16,
+      64,
+      null
+    ],
+    "not_pooled": "Unfall uses expanded author word indices, not original line units.",
+    "by_held_out_story": {
+      "Katze": {
+        "held_out_at_risk_question_lines": 8805,
+        "held_out_closures": 94,
+        "training_at_risk_question_lines_by_interval": [
+          360,
+          850,
+          2278,
+          2652
+        ],
+        "training_closure_counts_by_interval": [
+          15,
+          19,
+          26,
+          29
+        ],
+        "estimated_constant_hazard": 0.014653207424291761,
+        "estimated_hazard_by_interval": [
+          0.04419889502762431,
+          0.023474178403755867,
+          0.011842105263157895,
+          0.011303692539562924
+        ],
+        "constant": {
+          "mean_log_loss_nats": 0.05968876226859499,
+          "brier": 0.010577600872172885,
+          "average_precision": 0.010675752413401476,
+          "sum_expected_closures": 129.02149137088895
+        },
+        "elapsed_line_intervals": {
+          "mean_log_loss_nats": 0.05603336385759335,
+          "brier": 0.010454942125559974,
+          "average_precision": 0.031600494941353106,
+          "sum_expected_closures": 121.66862468142139
+        }
+      },
+      "Auftrag": {
+        "held_out_at_risk_question_lines": 2268,
+        "held_out_closures": 45,
+        "training_at_risk_question_lines_by_interval": [
+          567,
+          1179,
+          3171,
+          7760
+        ],
+        "training_closure_counts_by_interval": [
+          21,
+          45,
+          25,
+          47
+        ],
+        "estimated_constant_hazard": 0.010963009701080526,
+        "estimated_hazard_by_interval": [
+          0.03866432337434095,
+          0.03895004233700254,
+          0.008194138039710053,
+          0.006183973202782788
+        ],
+        "constant": {
+          "mean_log_loss_nats": 0.10035300826675495,
+          "brier": 0.019526417355472628,
+          "average_precision": 0.01984126984126984,
+          "sum_expected_closures": 24.864106002050633
+        },
+        "elapsed_line_intervals": {
+          "mean_log_loss_nats": 0.09849607643499214,
+          "brier": 0.019434697792280218,
+          "average_precision": 0.024493864530201217,
+          "sum_expected_closures": 34.10028169811018
+        }
+      },
+      "Thomas": {
+        "held_out_at_risk_question_lines": 3872,
+        "held_out_closures": 44,
+        "training_at_risk_question_lines_by_interval": [
+          551,
+          1099,
+          2757,
+          6666
+        ],
+        "training_closure_counts_by_interval": [
+          28,
+          42,
+          29,
+          40
+        ],
+        "estimated_constant_hazard": 0.012641083521444696,
+        "estimated_hazard_by_interval": [
+          0.05244122965641953,
+          0.03905540417801998,
+          0.010873504893077202,
+          0.00614877024595081
+        ],
+        "constant": {
+          "mean_log_loss_nats": 0.06224531533089503,
+          "brier": 0.0112361360034724,
+          "average_precision": 0.011363636363636364,
+          "sum_expected_closures": 48.94627539503386
+        },
+        "elapsed_line_intervals": {
+          "mean_log_loss_nats": 0.06272737774140512,
+          "brier": 0.011290528117933999,
+          "average_precision": 0.015577348000825436,
+          "sum_expected_closures": 54.17209837493394
+        }
+      }
+    },
+    "equally_weighted_story_means": {
+      "constant": {
+        "mean_log_loss_nats": 0.07409569528874832,
+        "brier": 0.013780051410372638,
+        "average_precision": 0.013960219539435895
+      },
+      "elapsed_line_intervals": {
+        "mean_log_loss_nats": 0.07241893934466354,
+        "brier": 0.013726722678591397,
+        "average_precision": 0.02389056915745992
+      }
+    }
+  }
+}

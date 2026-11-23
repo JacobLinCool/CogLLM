@@ -1,0 +1,79 @@
+{
+  "schema": 1,
+  "transformers": "5.17.0",
+  "models": {
+    "qwen": {
+      "repo": "Qwen/Qwen3.5-2B",
+      "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "architecture": "Qwen3_5ForCausalLM",
+      "hidden_width": 2048,
+      "layers": 24,
+      "pad_id": 248044,
+      "files": [
+        "config.json",
+        "model.safetensors-00001-of-00001.safetensors",
+        "model.safetensors.index.json",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "sha256": {
+        "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+        "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+        "model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+        "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+        "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+      }
+    },
+    "lfm3": {
+      "repo": "LiquidAI/LFM3-1.7B-Base",
+      "revision": "7bca5038823c0d0f14efe06439109354a10e014c",
+      "architecture": "Lfm3ForCausalLM",
+      "transformers": "5.17.0",
+      "config_adapter": "lfm3-authored-rope-and-layer-types",
+      "hidden_width": 2048,
+      "layers": 24,
+      "pad_id": 124893,
+      "license": "LFM Open License v1.0",
+      "files": [
+        "config.json",
+        "configuration_lfm3.py",
+        "lfm3_conv.py",
+        "model.safetensors",
+        "modeling_lfm3.py",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "sha256": {
+        "config.json": "8c6ae8b8f6d88c87cfb98cf4b5e34e943d0ee07e24215c4121b3159a46e1399d",
+        "configuration_lfm3.py": "176cced35657aedfea7d7002221360582d1c05fcaca882c21508bc3a73b282e5",
+        "lfm3_conv.py": "80d4a985382a22774212759248a6b4c737bfbf9c2a47b3dd7f797dda748e4bb4",
+        "model.safetensors": "61a3f541d65b03a2180d08964bf0d55e349463a2706032814d455ae046bc8b59",
+        "modeling_lfm3.py": "e8cd5254ea99ce6bd731b57b10908c2e8b5010ce8315341f895a38484885eeab",
+        "tokenizer.json": "7e226e34bface23ccf6e495d157bf77186c1c30a7659880e1a8994db528c3701",
+        "tokenizer_config.json": "bf028f813efc6137bc07ed045cafe71820df9a5e26a38e39954706ed1e30a457"
+      }
+    },
+    "gemma4": {
+      "repo": "google/gemma-4-E2B",
+      "revision": "433813a669639fd7eaa83155828e9000ed357d53",
+      "architecture": "Gemma4TextModel",
+      "hidden_width": 1536,
+      "layers": 35,
+      "pad_id": 0,
+      "license": "Apache-2.0",
+      "text_weight_bf16_bytes": 9294899782,
+      "files": [
+        "config.json",
+        "model.safetensors",
+        "tokenizer.json",
+        "tokenizer_config.json"
+      ],
+      "sha256": {
+        "config.json": "e5faef0dd1a8f2437f6010721146b85433eaa90e679ef011e803c7ffefae73b8",
+        "model.safetensors": "76dc84a5a805a2c8b91e9ccc00b8dbf8f4a99bf0d56ab25832f6e6addd4f7f57",
+        "tokenizer.json": "9cad58a1ba9824a35574be51e8c9dcc2164a662cdfe56b1b008e06a231f80f0b",
+        "tokenizer_config.json": "12754e3442e47c1a1c55d550b617fc47ae227e8156ed1b1de0d8428195768b5c"
+      }
+    }
+  }
+}

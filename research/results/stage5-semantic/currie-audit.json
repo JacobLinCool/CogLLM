@@ -1,0 +1,277 @@
+{
+  "paper": "https://doi.org/10.1080/10888438.2020.1831503",
+  "project": "https://osf.io/sj28g/",
+  "data_component": "https://osf.io/g9pyc/",
+  "materials_component": "https://osf.io/vp45x/",
+  "data_and_materials_license": "CC BY 4.0",
+  "source_files": {
+    "sense-judgments.csv": {
+      "url": "https://osf.io/download/swjdf/",
+      "sha256": "9f649f59e1eb517a562eb398979bb185d0cba81415da87ba8602682bddda2f85"
+    },
+    "reading-times.csv": {
+      "url": "https://osf.io/download/qtcbv/",
+      "sha256": "68b1b6eec799ff6dfbbd9ea06ccd5d9869789d32f66c81ac759dd583b3b22d5c"
+    },
+    "variable-descriptions.xlsx": {
+      "url": "https://osf.io/download/tq36h/",
+      "sha256": "c76c2cadf4d46eeb4b2b22d64ec242987dcb2cb1f6eb3e1447f1237155bef204"
+    },
+    "narrative-materials.docx": {
+      "url": "https://osf.io/download/b73ks/",
+      "sha256": "1c62b97572d0a671fd0f7780815328782553107b894bb356b07f7cac39400082"
+    },
+    "expository-materials.docx": {
+      "url": "https://osf.io/download/3pswr/",
+      "sha256": "27b085c6be95d165484a002f1b4b13ddd6322d104535dcb349406305fb3fae48"
+    }
+  },
+  "stimuli": 48,
+  "passage_families": 24,
+  "sentence_segments": 384,
+  "released_response_rows": 6372,
+  "model_input_response_rows": 4248,
+  "reader_ids": 179,
+  "response_counts": {
+    "consistent": {
+      "yes": 1777,
+      "no": 347,
+      "correct": 1777,
+      "incorrect": 347
+    },
+    "far": {
+      "yes": 1000,
+      "no": 1124,
+      "correct": 1124,
+      "incorrect": 1000
+    },
+    "near": {
+      "yes": 1005,
+      "no": 1119,
+      "correct": 1119,
+      "incorrect": 1005
+    }
+  },
+  "table_3_genre_condition_language_accuracy": {
+    "narrative/consistent": {
+      "monolingual": 0.9067460317460317,
+      "bilingual": 0.8031914893617021
+    },
+    "narrative/near": {
+      "monolingual": 0.7043650793650794,
+      "bilingual": 0.6046099290780141
+    },
+    "narrative/far": {
+      "monolingual": 0.7222222222222222,
+      "bilingual": 0.5833333333333334
+    },
+    "expository/consistent": {
+      "monolingual": 0.8975903614457831,
+      "bilingual": 0.7526881720430108
+    },
+    "expository/near": {
+      "monolingual": 0.40963855421686746,
+      "bilingual": 0.3924731182795699
+    },
+    "expository/far": {
+      "monolingual": 0.42369477911646586,
+      "bilingual": 0.3942652329749104
+    }
+  },
+  "response_key": "Published binary accuracy records the final passage sense question. The material keys determine which Yes/No response was scored correct.",
+  "visibility": "The eight sentences were displayed successively in self-paced reading. The sense question appeared after the final sentence.",
+  "target_spans": "The first and second underlined sentences are the author-marked premise and critical sentence. The reader did not choose a sentence or report token-level onset.",
+  "material_join": "DOCX item numbers 1–12 per genre align with CSV Test and Text_Type for both near and far conditions.",
+  "control_item_linkage": "Consistent controls use IDs 13–18 in the judgment file, and their material headings lack these IDs. The audit reports their response totals and keeps model inputs to the precisely numbered near/far pairs.",
+  "material_formatting": "Removed numbered-list prefixes on expository item 8 FAR. Its critical sentence has 16 stimulus words by the recorded reading-time denominator, with the listing number excluded.",
+  "near_far_pairs": {
+    "pure_reorder_families": [
+      "currie/expository/01",
+      "currie/expository/02",
+      "currie/expository/03",
+      "currie/expository/04",
+      "currie/expository/05",
+      "currie/expository/07",
+      "currie/expository/08",
+      "currie/expository/09",
+      "currie/expository/10",
+      "currie/expository/12",
+      "currie/narrative/01",
+      "currie/narrative/02",
+      "currie/narrative/03",
+      "currie/narrative/04",
+      "currie/narrative/05",
+      "currie/narrative/06",
+      "currie/narrative/07",
+      "currie/narrative/08",
+      "currie/narrative/09",
+      "currie/narrative/11"
+    ],
+    "surface_change_families": [
+      "currie/expository/06",
+      "currie/expository/11",
+      "currie/narrative/10",
+      "currie/narrative/12"
+    ],
+    "anchors": {
+      "currie/expository/01": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 5,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/02": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 5,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/03": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/04": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/05": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/06": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/07": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/08": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 6,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/09": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/10": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/11": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": false,
+        "critical_sentence_exact_match": true
+      },
+      "currie/expository/12": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/01": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/02": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/03": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/04": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/05": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/06": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/07": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 5,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/08": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 5,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/09": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/10": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": false
+      },
+      "currie/narrative/11": {
+        "near_distance_in_sentences": 2,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      },
+      "currie/narrative/12": {
+        "near_distance_in_sentences": 3,
+        "far_distance_in_sentences": 4,
+        "support_sentence_exact_match": true,
+        "critical_sentence_exact_match": true
+      }
+    }
+  },
+  "reading_time_crosscheck": {
+    "rows": 8496,
+    "trials_exactly_linked": 4248,
+    "unmatched_rows": 0,
+    "critical_times_match_judgment_table_exactly": true,
+    "comparison_sentence": "Sentence immediately before the second underlined sentence (n−1).",
+    "word_count_checks": 96,
+    "word_count_check": "Minimum integer denominator for recorded ms/word to recover whole milliseconds matches the whitespace word count, for both roles in each variant.",
+    "max_integer_reconstruction_error_ms": 1e-05
+  },
+  "output_sha256": {
+    "stimuli.jsonl": "f2d4d5c6f2cda2894da17bb24ee1022e5cc222466115f1274ea9680bba472e5e",
+    "observations.jsonl": "82bb38198e7fa5f41afff9437571441e0a7cea435a710c36d20689a0b523e2cb"
+  }
+}

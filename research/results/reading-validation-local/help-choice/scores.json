@@ -1,0 +1,876 @@
+{
+  "forecasts_sha256": "2bc79153b67bdf3829f975e442accca2347cd894657036998c7c4fa6e3db2f89",
+  "reserve_scored": false,
+  "available_records": 5247,
+  "heldout_comparisons": {
+    "definition_over_example": {
+      "same_prior": {
+        "informative_pairs": 129,
+        "reader_article_cells": 65,
+        "articles": 37,
+        "readers": 9,
+        "concordance": {
+          "fixed_lexical": {
+            "estimate": 0.6357357357357357,
+            "reader_article_95": [
+              0.45166071428571436,
+              0.7980811403508772
+            ],
+            "conditional_article_95": [
+              0.5141103603603603,
+              0.7483483483483483
+            ]
+          },
+          "lexical": {
+            "estimate": 0.6569819819819819,
+            "reader_article_95": [
+              0.47291347789115645,
+              0.787881222943723
+            ],
+            "conditional_article_95": [
+              0.5430123873873873,
+              0.7633633633633633
+            ]
+          },
+          "lexical_prior": {
+            "estimate": 0.6301051051051051,
+            "reader_article_95": [
+              0.43666269841269845,
+              0.7649919191919192
+            ],
+            "conditional_article_95": [
+              0.516737987987988,
+              0.7395701951951951
+            ]
+          },
+          "lexical_deft_prior": {
+            "estimate": 0.6397147147147149,
+            "reader_article_95": [
+              0.4722222222222222,
+              0.7740262605042016
+            ],
+            "conditional_article_95": [
+              0.5302515015015015,
+              0.7439958708708708
+            ]
+          },
+          "article": {
+            "estimate": 0.6262762762762762,
+            "reader_article_95": [
+              0.46127886002886,
+              0.7916856060606059
+            ],
+            "conditional_article_95": [
+              0.5100600600600601,
+              0.734237987987988
+            ]
+          },
+          "article_prior": {
+            "estimate": 0.6222972972972972,
+            "reader_article_95": [
+              0.43919515669515674,
+              0.7833346688034187
+            ],
+            "conditional_article_95": [
+              0.509984984984985,
+              0.7273273273273273
+            ]
+          },
+          "article_prior minus lexical_prior": {
+            "estimate": -0.007807807807807876,
+            "reader_article_95": [
+              -0.13086640211640213,
+              0.1652189009661837
+            ],
+            "conditional_article_95": [
+              -0.09639639639639641,
+              0.08378753753753751
+            ]
+          },
+          "article_prior minus lexical_deft_prior": {
+            "estimate": -0.017417417417417647,
+            "reader_article_95": [
+              -0.14506421744324968,
+              0.12179608585858596
+            ],
+            "conditional_article_95": [
+              -0.09804804804804801,
+              0.06306306306306309
+            ]
+          },
+          "article minus lexical": {
+            "estimate": -0.030705705705705633,
+            "reader_article_95": [
+              -0.13243643643643652,
+              0.13700833333333323
+            ],
+            "conditional_article_95": [
+              -0.10698385885885893,
+              0.03514076576576577
+            ]
+          },
+          "article_prior minus article": {
+            "estimate": -0.003978978978979031,
+            "reader_article_95": [
+              -0.17803787878787874,
+              0.15266720430107542
+            ],
+            "conditional_article_95": [
+              -0.11366554054054052,
+              0.11291478978978968
+            ]
+          },
+          "lexical_prior minus lexical": {
+            "estimate": -0.026876876876876787,
+            "reader_article_95": [
+              -0.13141369047619034,
+              0.07372685185185168
+            ],
+            "conditional_article_95": [
+              -0.0869406906906908,
+              0.034684684684684663
+            ]
+          },
+          "article_prior minus fixed_lexical": {
+            "estimate": -0.013438438438438505,
+            "reader_article_95": [
+              -0.2282076149425287,
+              0.21213068181818165
+            ],
+            "conditional_article_95": [
+              -0.16726914414414404,
+              0.14362424924924924
+            ]
+          }
+        },
+        "exceeds_chance_and_lexical_prior": false
+      },
+      "all_priors": {
+        "informative_pairs": 484,
+        "reader_article_cells": 139,
+        "articles": 54,
+        "readers": 10,
+        "concordance": {
+          "fixed_lexical": {
+            "estimate": 0.706275720164609,
+            "reader_article_95": [
+              0.582450389936067,
+              0.8022891865079365
+            ],
+            "conditional_article_95": [
+              0.6345286779835392,
+              0.7752575231481481
+            ]
+          },
+          "lexical": {
+            "estimate": 0.7401620370370371,
+            "reader_article_95": [
+              0.6181298810986311,
+              0.821780799062049
+            ],
+            "conditional_article_95": [
+              0.6658436213991771,
+              0.809557934670782
+            ]
+          },
+          "lexical_prior": {
+            "estimate": 0.767116769547325,
+            "reader_article_95": [
+              0.647987462464943,
+              0.8632091066789718
+            ],
+            "conditional_article_95": [
+              0.6968209876543209,
+              0.8329099151234569
+            ]
+          },
+          "lexical_deft_prior": {
+            "estimate": 0.7868441358024691,
+            "reader_article_95": [
+              0.6766644405729771,
+              0.8762992149758454
+            ],
+            "conditional_article_95": [
+              0.7224405221193415,
+              0.8472479423868313
+            ]
+          },
+          "article": {
+            "estimate": 0.7331532921810703,
+            "reader_article_95": [
+              0.6341733091787439,
+              0.8272021329365079
+            ],
+            "conditional_article_95": [
+              0.6676427469135804,
+              0.7967091049382716
+            ]
+          },
+          "article_prior": {
+            "estimate": 0.7788708847736626,
+            "reader_article_95": [
+              0.6850822310405643,
+              0.8741859148550724
+            ],
+            "conditional_article_95": [
+              0.7073170653292181,
+              0.8438271604938271
+            ]
+          },
+          "article_prior minus lexical_prior": {
+            "estimate": 0.011754115226337625,
+            "reader_article_95": [
+              -0.02754666327913284,
+              0.08452403499278502
+            ],
+            "conditional_article_95": [
+              -0.02129629629629615,
+              0.045216692386831604
+            ]
+          },
+          "article_prior minus lexical_deft_prior": {
+            "estimate": -0.007973251028806527,
+            "reader_article_95": [
+              -0.057710805252333595,
+              0.049125905797101375
+            ],
+            "conditional_article_95": [
+              -0.051775334362139935,
+              0.0195216049382716
+            ]
+          },
+          "article minus lexical": {
+            "estimate": -0.007008744855966809,
+            "reader_article_95": [
+              -0.05432062275381854,
+              0.09468641154997742
+            ],
+            "conditional_article_95": [
+              -0.048366769547324995,
+              0.032511895576131704
+            ]
+          },
+          "article_prior minus article": {
+            "estimate": 0.04571759259259234,
+            "reader_article_95": [
+              -0.04188527199074078,
+              0.14052543884220356
+            ],
+            "conditional_article_95": [
+              -0.017297453703703884,
+              0.10601851851851818
+            ]
+          },
+          "lexical_prior minus lexical": {
+            "estimate": 0.026954732510287904,
+            "reader_article_95": [
+              -0.05984609885620906,
+              0.13316338340891923
+            ],
+            "conditional_article_95": [
+              -0.04434284979423896,
+              0.09627186213991765
+            ]
+          },
+          "article_prior minus fixed_lexical": {
+            "estimate": 0.07259516460905358,
+            "reader_article_95": [
+              -0.028772317910615824,
+              0.2053175104483284
+            ],
+            "conditional_article_95": [
+              -0.009659207818930022,
+              0.15048900462962964
+            ]
+          }
+        },
+        "exceeds_chance_and_lexical_prior": false
+      }
+    },
+    "definition": {
+      "same_prior": {
+        "informative_pairs": 797,
+        "reader_article_cells": 249,
+        "articles": 63,
+        "readers": 11,
+        "concordance": {
+          "fixed_lexical": {
+            "estimate": 0.6071274250440917,
+            "reader_article_95": [
+              0.5124632435492265,
+              0.6953492237538289
+            ],
+            "conditional_article_95": [
+              0.5414610496976568,
+              0.6697138054295791
+            ]
+          },
+          "lexical": {
+            "estimate": 0.6454438865493287,
+            "reader_article_95": [
+              0.5565861008755354,
+              0.7183977613911552
+            ],
+            "conditional_article_95": [
+              0.5861227864161537,
+              0.7038908685167188
+            ]
+          },
+          "lexical_prior": {
+            "estimate": 0.5797340100061188,
+            "reader_article_95": [
+              0.4898847899723817,
+              0.6802612849223966
+            ],
+            "conditional_article_95": [
+              0.5137327547421086,
+              0.6444854632329121
+            ]
+          },
+          "lexical_deft_prior": {
+            "estimate": 0.5736765738041246,
+            "reader_article_95": [
+              0.48214983101619513,
+              0.6757933983239012
+            ],
+            "conditional_article_95": [
+              0.5074254872583953,
+              0.6383158181261924
+            ]
+          },
+          "article": {
+            "estimate": 0.6338776859950329,
+            "reader_article_95": [
+              0.5494321765591483,
+              0.7215052008942606
+            ],
+            "conditional_article_95": [
+              0.5752728838228414,
+              0.6913502569017025
+            ]
+          },
+          "article_prior": {
+            "estimate": 0.6032377263074542,
+            "reader_article_95": [
+              0.5092096255377673,
+              0.6879304427017721
+            ],
+            "conditional_article_95": [
+              0.5453719293272864,
+              0.6610019447593851
+            ]
+          },
+          "article_prior minus lexical_prior": {
+            "estimate": 0.02350371630133541,
+            "reader_article_95": [
+              -0.04628684603630729,
+              0.07911454046639212
+            ],
+            "conditional_article_95": [
+              -0.0171917044595615,
+              0.07172241118669676
+            ]
+          },
+          "article_prior minus lexical_deft_prior": {
+            "estimate": 0.02956115250332958,
+            "reader_article_95": [
+              -0.03983357000207488,
+              0.08760544217687065
+            ],
+            "conditional_article_95": [
+              -0.012346518104596483,
+              0.07928729236403557
+            ]
+          },
+          "article minus lexical": {
+            "estimate": -0.011566200554295802,
+            "reader_article_95": [
+              -0.04441806340510443,
+              0.03177811592143493
+            ],
+            "conditional_article_95": [
+              -0.04198330026455045,
+              0.014507078294280551
+            ]
+          },
+          "article_prior minus article": {
+            "estimate": -0.03063995968757871,
+            "reader_article_95": [
+              -0.09266099567515189,
+              0.02506444209039549
+            ],
+            "conditional_article_95": [
+              -0.07234445861678,
+              0.01864747102544702
+            ]
+          },
+          "lexical_prior minus lexical": {
+            "estimate": -0.06570987654320992,
+            "reader_article_95": [
+              -0.12278965876414953,
+              0.001953963508785375
+            ],
+            "conditional_article_95": [
+              -0.11634479717813051,
+              -0.022534722222222248
+            ]
+          },
+          "article_prior minus fixed_lexical": {
+            "estimate": -0.0038896987366374702,
+            "reader_article_95": [
+              -0.0701885980128533,
+              0.06049930957536139
+            ],
+            "conditional_article_95": [
+              -0.04118239683439516,
+              0.03469879625130455
+            ]
+          }
+        },
+        "exceeds_chance_and_lexical_prior": false
+      },
+      "all_priors": {
+        "informative_pairs": 4300,
+        "reader_article_cells": 438,
+        "articles": 68,
+        "readers": 11,
+        "concordance": {
+          "fixed_lexical": {
+            "estimate": 0.7159435939779949,
+            "reader_article_95": [
+              0.6609225343901157,
+              0.7697162016574305
+            ],
+            "conditional_article_95": [
+              0.6759633791911124,
+              0.7548922315348694
+            ]
+          },
+          "lexical": {
+            "estimate": 0.7346270932615472,
+            "reader_article_95": [
+              0.6704105838183373,
+              0.7883521114600124
+            ],
+            "conditional_article_95": [
+              0.6849614812754857,
+              0.7806653014030739
+            ]
+          },
+          "lexical_prior": {
+            "estimate": 0.8420906259178756,
+            "reader_article_95": [
+              0.7927987120037409,
+              0.8839557740556812
+            ],
+            "conditional_article_95": [
+              0.8118558422027272,
+              0.8703229573947635
+            ]
+          },
+          "lexical_deft_prior": {
+            "estimate": 0.8419235475124394,
+            "reader_article_95": [
+              0.7928106464176581,
+              0.883472572060178
+            ],
+            "conditional_article_95": [
+              0.8119412916602877,
+              0.8698482758791649
+            ]
+          },
+          "article": {
+            "estimate": 0.7285526361217889,
+            "reader_article_95": [
+              0.6681693108702963,
+              0.783370776865039
+            ],
+            "conditional_article_95": [
+              0.6811679164353031,
+              0.7721115823328488
+            ]
+          },
+          "article_prior": {
+            "estimate": 0.848063910854746,
+            "reader_article_95": [
+              0.8014166648853641,
+              0.8884127065044956
+            ],
+            "conditional_article_95": [
+              0.8199059604665727,
+              0.8742209287834452
+            ]
+          },
+          "article_prior minus lexical_prior": {
+            "estimate": 0.005973284936870327,
+            "reader_article_95": [
+              -0.007338981189950552,
+              0.030108167683108006
+            ],
+            "conditional_article_95": [
+              -0.004272466078182454,
+              0.019126876429233306
+            ]
+          },
+          "article_prior minus lexical_deft_prior": {
+            "estimate": 0.0061403633423066095,
+            "reader_article_95": [
+              -0.006660766010950209,
+              0.031099436527229227
+            ],
+            "conditional_article_95": [
+              -0.003908030873333889,
+              0.01925181365159719
+            ]
+          },
+          "article minus lexical": {
+            "estimate": -0.006074457139758294,
+            "reader_article_95": [
+              -0.02429147201464397,
+              0.013750816954030493
+            ],
+            "conditional_article_95": [
+              -0.020997809066808273,
+              0.007104121293930151
+            ]
+          },
+          "article_prior minus article": {
+            "estimate": 0.11951127473295708,
+            "reader_article_95": [
+              0.06742105386451712,
+              0.1732157979125855
+            ],
+            "conditional_article_95": [
+              0.07928955485287545,
+              0.1653672623589631
+            ]
+          },
+          "lexical_prior minus lexical": {
+            "estimate": 0.10746353265632846,
+            "reader_article_95": [
+              0.05783789523117183,
+              0.16310618309399713
+            ],
+            "conditional_article_95": [
+              0.06866553840075632,
+              0.15141955079064448
+            ]
+          },
+          "article_prior minus fixed_lexical": {
+            "estimate": 0.13212031687675108,
+            "reader_article_95": [
+              0.0817121110295586,
+              0.185163339044881
+            ],
+            "conditional_article_95": [
+              0.09723174954167271,
+              0.16913907670338763
+            ]
+          }
+        },
+        "exceeds_chance_and_lexical_prior": false
+      }
+    },
+    "example": {
+      "same_prior": {
+        "informative_pairs": 930,
+        "reader_article_cells": 282,
+        "articles": 67,
+        "readers": 11,
+        "concordance": {
+          "fixed_lexical": {
+            "estimate": 0.47438100545509926,
+            "reader_article_95": [
+              0.3781669058123232,
+              0.5631055594773706
+            ],
+            "conditional_article_95": [
+              0.417457258966454,
+              0.531992433184264
+            ]
+          },
+          "lexical": {
+            "estimate": 0.594822436211029,
+            "reader_article_95": [
+              0.49256746229031384,
+              0.6859726272913604
+            ],
+            "conditional_article_95": [
+              0.5391501861825689,
+              0.6501637106674419
+            ]
+          },
+          "lexical_prior": {
+            "estimate": 0.6207858550475822,
+            "reader_article_95": [
+              0.5316718989233021,
+              0.7016789218752424
+            ],
+            "conditional_article_95": [
+              0.5612913837968474,
+              0.6781752045854524
+            ]
+          },
+          "lexical_deft_prior": {
+            "estimate": 0.6321589216871734,
+            "reader_article_95": [
+              0.5376958137761708,
+              0.719982223622149
+            ],
+            "conditional_article_95": [
+              0.5790469929265238,
+              0.6864109510041013
+            ]
+          },
+          "article": {
+            "estimate": 0.6112653491971187,
+            "reader_article_95": [
+              0.5228661317032935,
+              0.694473232901358
+            ],
+            "conditional_article_95": [
+              0.5554506663305305,
+              0.6667684272091923
+            ]
+          },
+          "article_prior": {
+            "estimate": 0.5974434298821292,
+            "reader_article_95": [
+              0.5114649515851392,
+              0.6804977893745083
+            ],
+            "conditional_article_95": [
+              0.5457542052608018,
+              0.6500607749940773
+            ]
+          },
+          "article_prior minus lexical_prior": {
+            "estimate": -0.02334242516545304,
+            "reader_article_95": [
+              -0.09441883221405918,
+              0.0527373130766271
+            ],
+            "conditional_article_95": [
+              -0.07048195555924755,
+              0.024953365804711587
+            ]
+          },
+          "article_prior minus lexical_deft_prior": {
+            "estimate": -0.034715491805044185,
+            "reader_article_95": [
+              -0.09696078248433296,
+              0.024580489220858082
+            ],
+            "conditional_article_95": [
+              -0.07473492655768758,
+              0.003974334900174392
+            ]
+          },
+          "article minus lexical": {
+            "estimate": 0.016442912986089686,
+            "reader_article_95": [
+              -0.05828780663780664,
+              0.09442032530418717
+            ],
+            "conditional_article_95": [
+              -0.03308891448370414,
+              0.0676463219616203
+            ]
+          },
+          "article_prior minus article": {
+            "estimate": -0.01382191931498955,
+            "reader_article_95": [
+              -0.08220752984389329,
+              0.053421272964183336
+            ],
+            "conditional_article_95": [
+              -0.05695438834737864,
+              0.030130377026432457
+            ]
+          },
+          "lexical_prior minus lexical": {
+            "estimate": 0.025963418836553176,
+            "reader_article_95": [
+              -0.0453482314002597,
+              0.09907228373478374
+            ],
+            "conditional_article_95": [
+              -0.01903356055221746,
+              0.07128485683056565
+            ]
+          },
+          "article_prior minus fixed_lexical": {
+            "estimate": 0.12306242442702992,
+            "reader_article_95": [
+              0.015162545605682259,
+              0.24088626670663915
+            ],
+            "conditional_article_95": [
+              0.03784728279597678,
+              0.2106770271824244
+            ]
+          }
+        },
+        "exceeds_chance_and_lexical_prior": false
+      },
+      "all_priors": {
+        "informative_pairs": 3663,
+        "reader_article_cells": 376,
+        "articles": 68,
+        "readers": 11,
+        "concordance": {
+          "fixed_lexical": {
+            "estimate": 0.5335565906918325,
+            "reader_article_95": [
+              0.4679447151745799,
+              0.6033757953414759
+            ],
+            "conditional_article_95": [
+              0.48746809821150666,
+              0.5799535686149461
+            ]
+          },
+          "lexical": {
+            "estimate": 0.5761125019452227,
+            "reader_article_95": [
+              0.5146618274486413,
+              0.6380969566164574
+            ],
+            "conditional_article_95": [
+              0.5312849938354972,
+              0.6202047601911135
+            ]
+          },
+          "lexical_prior": {
+            "estimate": 0.6180260997917686,
+            "reader_article_95": [
+              0.5532231279948849,
+              0.6899333804312973
+            ],
+            "conditional_article_95": [
+              0.5795373493031472,
+              0.6558937919033354
+            ]
+          },
+          "lexical_deft_prior": {
+            "estimate": 0.626645591338387,
+            "reader_article_95": [
+              0.5645179836719441,
+              0.6938167847315693
+            ],
+            "conditional_article_95": [
+              0.5867679050729088,
+              0.6657464599265631
+            ]
+          },
+          "article": {
+            "estimate": 0.5931919529385831,
+            "reader_article_95": [
+              0.5328096788862852,
+              0.6562045718355735
+            ],
+            "conditional_article_95": [
+              0.5474434953379502,
+              0.6379718617192249
+            ]
+          },
+          "article_prior": {
+            "estimate": 0.6062337321502673,
+            "reader_article_95": [
+              0.5419307266193514,
+              0.6726825450241826
+            ],
+            "conditional_article_95": [
+              0.5622744659148381,
+              0.649696312211227
+            ]
+          },
+          "article_prior minus lexical_prior": {
+            "estimate": -0.011792367641501267,
+            "reader_article_95": [
+              -0.0548653453805764,
+              0.02587200191713933
+            ],
+            "conditional_article_95": [
+              -0.040849466846924004,
+              0.013493347367882477
+            ]
+          },
+          "article_prior minus lexical_deft_prior": {
+            "estimate": -0.02041185918811972,
+            "reader_article_95": [
+              -0.05895601655619507,
+              0.007586299876532421
+            ],
+            "conditional_article_95": [
+              -0.04594281757842037,
+              0.00038961348428284866
+            ]
+          },
+          "article minus lexical": {
+            "estimate": 0.01707945099336039,
+            "reader_article_95": [
+              -0.018680117209447,
+              0.05366619463441946
+            ],
+            "conditional_article_95": [
+              -0.007117196270869563,
+              0.04407088995899295
+            ]
+          },
+          "article_prior minus article": {
+            "estimate": 0.013041779211684257,
+            "reader_article_95": [
+              -0.03907324414140652,
+              0.0701977600620425
+            ],
+            "conditional_article_95": [
+              -0.012409214032835358,
+              0.03926492801981886
+            ]
+          },
+          "lexical_prior minus lexical": {
+            "estimate": 0.041913597846545914,
+            "reader_article_95": [
+              -0.012767174325538163,
+              0.10154314823613
+            ],
+            "conditional_article_95": [
+              0.009845292052005789,
+              0.07712614170668275
+            ]
+          },
+          "article_prior minus fixed_lexical": {
+            "estimate": 0.07267714145843485,
+            "reader_article_95": [
+              -0.006700094215322457,
+              0.15455243090239038
+            ],
+            "conditional_article_95": [
+              0.005040920534880657,
+              0.13790434819761224
+            ]
+          }
+        },
+        "exceeds_chance_and_lexical_prior": false
+      }
+    }
+  },
+  "serving_replay": {
+    "definition_over_example.lexical": 0.0,
+    "definition_over_example.lexical_prior": 0.0,
+    "definition_over_example.lexical_deft_prior": 0.0,
+    "definition_over_example.article": 0.0,
+    "definition_over_example.article_prior": 0.0,
+    "definition.lexical": 0.0,
+    "definition.lexical_prior": 0.0,
+    "definition.lexical_deft_prior": 0.0,
+    "definition.article": 0.0,
+    "definition.article_prior": 0.0,
+    "example.lexical": 0.0,
+    "example.lexical_prior": 0.0,
+    "example.lexical_deft_prior": 0.0,
+    "example.article": 0.0,
+    "example.article_prior": 0.0
+  }
+}

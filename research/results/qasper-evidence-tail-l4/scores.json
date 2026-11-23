@@ -1,0 +1,508 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "group": "paper",
+    "seed": 20261121,
+    "weighting": "equal scored questions"
+  },
+  "holdout": {
+    "papers": 25,
+    "questions": 78,
+    "scored_questions": 73,
+    "unusable_references_by_reason": {
+      "figure_or_table_evidence": 27,
+      "missing_text_evidence": 4,
+      "unmatched_text_paragraph": 2
+    }
+  },
+  "input_sha256": {
+    "article_metadata_sha256": "84afc4924e53e83e8d2fe2763750cebe7f329ed7d70968ac4fbabaa48e9407a3",
+    "articles_sha256": "23a6319c5f70bba66844b17342f7ed09132fc2fd12f498ff561f4cf2fed4887b",
+    "assay_sha256": "4f8a5358704ca67af480bbc41575567ab8d0d4417903045f6ff38b56fb0b16c9",
+    "calibrator_sha256": "b01cf7f3d4573dfa8ae87156d43a0ff214e6749921a36c2d2d227f0324248e67",
+    "extraction_sha256": "007939f21fef61d866e9078a52b39aaede25f215d8b8a35b9ec1cbbf2e37be3e",
+    "fit_receipt_sha256": "1f38624d2059ab8dcee585c007b0efea72bb443471174aaa46546c9da4345f4a",
+    "frozen_expmrc_calibration_sha256": "efab56f7379a00b6b468a82c5a0ac8ad34aa8fe9d1189f434e995bd27bf1f944",
+    "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+    "holdout_sha256": "5b791bd32a19e9c80f0b935d9aad56fad84c1e712143e03383056ece35946909",
+    "predictions_sha256": "f676a47da5f3048f5f62ba04952f08dc6e79efbacdfea483e43e0c4e9d24d5ee",
+    "protocol_sha256": "ffe30e103310eb4807693ddd2e9ee922a1e507c5d2daa5a1c392c0f2326965f3",
+    "queries_sha256": "431e916291b78d4b87ec7c238f9cd8cd0ce3d654019847932bb22dbff4890e7a",
+    "scorer_sha256": "e1098d8cbcd79cc61f341da82c96401f13a9cb99749946393a06ac77eea1f539",
+    "seal_sha256": "bf4d0559fabf898f6ff3d004f6e650c4036e219e93457e094f29ce4565ce337a",
+    "training_sha256": "17db8a5bac7a930f5b150a85d14ef6135200369a7ad8155aedb847ea212ae493"
+  },
+  "methods": {
+    "pooled_rank": {
+      "all": {
+        "cumulative_brier": {
+          "clock": 0.15518419603324307,
+          "clock_plateau": 0.15492979666052556,
+          "expmrc_frozen": 0.576914333146045,
+          "raw": 0.3534099131916734
+        },
+        "mean_terminal_residual": {
+          "clock": 0.28355663357023353,
+          "clock_plateau": 0.28009855043961707,
+          "expmrc_frozen": 4.182429778547869e-10,
+          "raw": 0.002607346207786798
+        },
+        "nll_nats": {
+          "clock": 4.371804678723527,
+          "clock_plateau": 4.387092464055542,
+          "expmrc_frozen": 37.20799669185447,
+          "raw": 10.635843068874888
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.025629388622143884,
+            0.06418705656648972
+          ],
+          "articles": 25,
+          "difference": 0.01528778533201515
+        },
+        "questions": 73,
+        "references": 165
+      },
+      "event": {
+        "cumulative_brier": {
+          "clock": 0.15809599024344378,
+          "clock_plateau": 0.1573540338698107,
+          "expmrc_frozen": 0.5409763726225214,
+          "raw": 0.3251991443053628
+        },
+        "mean_terminal_residual": {
+          "clock": 0.2774314215908218,
+          "clock_plateau": 0.2739725332374879,
+          "expmrc_frozen": 4.225480919875015e-10,
+          "raw": 0.00231678309663848
+        },
+        "nll_nats": {
+          "clock": 4.67558103858821,
+          "clock_plateau": 4.694058101182135,
+          "expmrc_frozen": 34.88620688799399,
+          "raw": 9.936455197380251
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.02834460421081047,
+            0.07432620052493352
+          ],
+          "articles": 25,
+          "difference": 0.01847706259392394
+        },
+        "questions": 69,
+        "references": 149
+      },
+      "null": {
+        "cumulative_brier": {
+          "clock": 0.1574072306322794,
+          "clock_plateau": 0.16336651292171409,
+          "expmrc_frozen": 0.935782535809272,
+          "raw": 0.6639764881045864
+        },
+        "mean_terminal_residual": {
+          "clock": 0.3207479653854399,
+          "clock_plateau": 0.3151015346900564,
+          "expmrc_frozen": 1.3759190364687882e-10,
+          "raw": 0.00305223363095756
+        },
+        "nll_nats": {
+          "clock": 1.3300763110986622,
+          "clock_plateau": 1.302663595743922,
+          "expmrc_frozen": 64.64092976571305,
+          "raw": 19.26423947020585
+        },
+        "papers": 9,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.1558546266845085,
+            0.056394473494175486
+          ],
+          "articles": 9,
+          "difference": -0.02741271535474011
+        },
+        "questions": 10,
+        "references": 16
+      },
+      "same_stop_order": {
+        "all_question_pair_stops": 7904,
+        "all_strictly_ordered_event_pairs": 46,
+        "cdf_comparison_tolerance": 1e-12,
+        "cdf_tolerance_order_changes": {
+          "clock": 183,
+          "clock_plateau": 183,
+          "expmrc_frozen": 3186
+        },
+        "intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        },
+        "strict_pair_intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        }
+      }
+    },
+    "position": {
+      "all": {
+        "cumulative_brier": {
+          "clock": 0.160080214317128,
+          "clock_plateau": 0.1596043569898185,
+          "expmrc_frozen": 0.5592467630833666,
+          "raw": 0.2297922557089196
+        },
+        "mean_terminal_residual": {
+          "clock": 0.2854075996523308,
+          "clock_plateau": 0.2844645734931222,
+          "expmrc_frozen": 3.382936575586342e-08,
+          "raw": 0.03072635655136938
+        },
+        "nll_nats": {
+          "clock": 4.620060466730527,
+          "clock_plateau": 4.629021401503155,
+          "expmrc_frozen": 32.04843104795543,
+          "raw": 5.437637111130221
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.01847712643311657,
+            0.04235760357789
+          ],
+          "articles": 25,
+          "difference": 0.008960934772628066
+        },
+        "questions": 73,
+        "references": 165
+      },
+      "event": {
+        "cumulative_brier": {
+          "clock": 0.16165779075869469,
+          "clock_plateau": 0.16066288708901671,
+          "expmrc_frozen": 0.5240616976753465,
+          "raw": 0.20942331482414367
+        },
+        "mean_terminal_residual": {
+          "clock": 0.2790716174200242,
+          "clock_plateau": 0.2782994384669587,
+          "expmrc_frozen": 3.5770181898180956e-08,
+          "raw": 0.02799058177527966
+        },
+        "nll_nats": {
+          "clock": 4.954608847480451,
+          "clock_plateau": 4.964871964591633,
+          "expmrc_frozen": 29.81158811280946,
+          "raw": 5.42046842015759
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.019085495254893572,
+            0.04480592378465995
+          ],
+          "articles": 25,
+          "difference": 0.010263117111183363
+        },
+        "questions": 69,
+        "references": 149
+      },
+      "null": {
+        "cumulative_brier": {
+          "clock": 0.15630816522203123,
+          "clock_plateau": 0.16138815142143353,
+          "expmrc_frozen": 0.9139124895807006,
+          "raw": 0.46151002371273436
+        },
+        "mean_terminal_residual": {
+          "clock": 0.3067335599989567,
+          "clock_plateau": 0.30546087241299763,
+          "expmrc_frozen": 1.4011499185665666e-10,
+          "raw": 0.037629324480852946
+        },
+        "nll_nats": {
+          "clock": 1.344993051743192,
+          "clock_plateau": 1.32282509809107,
+          "expmrc_frozen": 57.61556687601467,
+          "raw": 6.0437710863559255
+        },
+        "papers": 9,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.07705986816293946,
+            0.033676032816372166
+          ],
+          "articles": 9,
+          "difference": -0.022167953652121885
+        },
+        "questions": 10,
+        "references": 16
+      },
+      "same_stop_order": {
+        "all_question_pair_stops": 7904,
+        "all_strictly_ordered_event_pairs": 46,
+        "cdf_comparison_tolerance": 1e-12,
+        "cdf_tolerance_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        },
+        "intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        },
+        "strict_pair_intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        }
+      }
+    },
+    "question_only": {
+      "all": {
+        "cumulative_brier": {
+          "clock": 0.16717700964495288,
+          "clock_plateau": 0.16610742412948565,
+          "expmrc_frozen": 0.4785472413346515,
+          "raw": 0.466856832952361
+        },
+        "mean_terminal_residual": {
+          "clock": 0.33120447765667627,
+          "clock_plateau": 0.3182819661930079,
+          "expmrc_frozen": 7.777610409396735e-05,
+          "raw": 6.402879863127952e-05
+        },
+        "nll_nats": {
+          "clock": 4.492046529818686,
+          "clock_plateau": 4.504727689539568,
+          "expmrc_frozen": 13.496168085805968,
+          "raw": 14.867000588823533
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.02845654265353496,
+            0.05786861661448374
+          ],
+          "articles": 25,
+          "difference": 0.012681159720881283
+        },
+        "questions": 73,
+        "references": 165
+      },
+      "event": {
+        "cumulative_brier": {
+          "clock": 0.17056510090240132,
+          "clock_plateau": 0.1684080396622665,
+          "expmrc_frozen": 0.4432518968336327,
+          "raw": 0.43169379771684896
+        },
+        "mean_terminal_residual": {
+          "clock": 0.32510202783186287,
+          "clock_plateau": 0.31261450452923384,
+          "expmrc_frozen": 7.578689451660347e-05,
+          "raw": 6.308811435577129e-05
+        },
+        "nll_nats": {
+          "clock": 4.82998950988312,
+          "clock_plateau": 4.838797003174066,
+          "expmrc_frozen": 12.826459188315809,
+          "raw": 14.020334055511311
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.036168410367718014,
+            0.05698033194050217
+          ],
+          "articles": 25,
+          "difference": 0.008807493290947268
+        },
+        "questions": 69,
+        "references": 149
+      },
+      "null": {
+        "cumulative_brier": {
+          "clock": 0.14502673719459303,
+          "clock_plateau": 0.15557717769125853,
+          "expmrc_frozen": 0.8342085211843958,
+          "raw": 0.8217848464054945
+        },
+        "mean_terminal_residual": {
+          "clock": 0.3493036171770603,
+          "clock_plateau": 0.33486651540334234,
+          "expmrc_frozen": 4.542203214966762e-05,
+          "raw": 3.2300036823832163e-05
+        },
+        "nll_nats": {
+          "clock": 1.1557534775300915,
+          "clock_plateau": 1.1954873313271484,
+          "expmrc_frozen": 21.706644770320413,
+          "raw": 25.251576751132973
+        },
+        "papers": 9,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            0.016635081708315052,
+            0.06010440623470374
+          ],
+          "articles": 9,
+          "difference": 0.03973385379705722
+        },
+        "questions": 10,
+        "references": 16
+      },
+      "same_stop_order": {
+        "all_question_pair_stops": 7904,
+        "all_strictly_ordered_event_pairs": 46,
+        "cdf_comparison_tolerance": 1e-12,
+        "cdf_tolerance_order_changes": {
+          "clock": 336,
+          "clock_plateau": 336,
+          "expmrc_frozen": 243
+        },
+        "intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        },
+        "strict_pair_intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        }
+      }
+    },
+    "token_rank": {
+      "all": {
+        "cumulative_brier": {
+          "clock": 0.1553625488136671,
+          "clock_plateau": 0.15510834617267374,
+          "expmrc_frozen": 0.5765865933053318,
+          "raw": 0.3497318151882944
+        },
+        "mean_terminal_residual": {
+          "clock": 0.2790913247915758,
+          "clock_plateau": 0.2775081849401852,
+          "expmrc_frozen": 1.2984311927283822e-10,
+          "raw": 0.0025827932438872033
+        },
+        "nll_nats": {
+          "clock": 4.3702869315213055,
+          "clock_plateau": 4.385156463362052,
+          "expmrc_frozen": 38.40695924927649,
+          "raw": 10.152935409384995
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.020981175510999015,
+            0.05800646812759703
+          ],
+          "articles": 25,
+          "difference": 0.014869531840747
+        },
+        "questions": 73,
+        "references": 165
+      },
+      "event": {
+        "cumulative_brier": {
+          "clock": 0.15826869425392565,
+          "clock_plateau": 0.15758322881455822,
+          "expmrc_frozen": 0.5407354138792382,
+          "raw": 0.3218549560204578
+        },
+        "mean_terminal_residual": {
+          "clock": 0.27238351988212384,
+          "clock_plateau": 0.2708792113670701,
+          "expmrc_frozen": 1.3045108970753682e-10,
+          "raw": 0.0022782301387379734
+        },
+        "nll_nats": {
+          "clock": 4.674403978760364,
+          "clock_plateau": 4.692905886546637,
+          "expmrc_frozen": 36.014128425125584,
+          "raw": 9.527725869649263
+        },
+        "papers": 25,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.022888244553239855,
+            0.06749267663732429
+          ],
+          "articles": 25,
+          "difference": 0.018501907786272365
+        },
+        "questions": 69,
+        "references": 149
+      },
+      "null": {
+        "cumulative_brier": {
+          "clock": 0.1583510729380456,
+          "clock_plateau": 0.16351154795599873,
+          "expmrc_frozen": 0.9351970087274131,
+          "raw": 0.6597139973009699
+        },
+        "mean_terminal_residual": {
+          "clock": 0.31727756811392044,
+          "clock_plateau": 0.3133641274932497,
+          "expmrc_frozen": 4.774225171015286e-11,
+          "raw": 0.0031383798674100025
+        },
+        "nll_nats": {
+          "clock": 1.3400669823853073,
+          "clock_plateau": 1.306439502161497,
+          "expmrc_frozen": 67.3006564731376,
+          "raw": 18.104186416279298
+        },
+        "papers": 9,
+        "plateau_minus_clock_nll_nats": {
+          "article_cluster_ci95": [
+            -0.15318999274645037,
+            0.05052766747392614
+          ],
+          "articles": 9,
+          "difference": -0.03362748022381047
+        },
+        "questions": 10,
+        "references": 16
+      },
+      "same_stop_order": {
+        "all_question_pair_stops": 7904,
+        "all_strictly_ordered_event_pairs": 46,
+        "cdf_comparison_tolerance": 1e-12,
+        "cdf_tolerance_order_changes": {
+          "clock": 126,
+          "clock_plateau": 126,
+          "expmrc_frozen": 3351
+        },
+        "intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        },
+        "strict_pair_intensity_order_changes": {
+          "clock": 0,
+          "clock_plateau": 0,
+          "expmrc_frozen": 0
+        }
+      }
+    }
+  },
+  "primary": {
+    "article_cluster_ci95": [
+      -0.020981175510999015,
+      0.05800646812759703
+    ],
+    "articles": 25,
+    "contrast": "token_rank clock_plateau minus clock NLL in nats",
+    "difference": 0.014869531840747,
+    "upper_ci95_below_zero": false
+  },
+  "scope": "Externally supplied question and complete annotated evidence arrival, including explicit null votes"
+}

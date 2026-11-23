@@ -1,0 +1,326 @@
+{
+  "source": "Paape and Vasishth Experiment 2 German bidirectional self-paced reading",
+  "scope": "Explicit first backward keypress or restart, conditional on reaching an eligible displayed region with no preceding backward action. Earlier destination is behavior and was not reported as a semantic antecedent.",
+  "display_words": "Single-whitespace-delimited word in the experiment's visible region. Anchors use the certified causal ending token.",
+  "coverage": {
+    "planned_first_backward_risk_set_visits": 8226,
+    "heldout_items": [
+      "garden-path-exp2-gpa-1",
+      "garden-path-exp2-gpa-11",
+      "garden-path-exp2-gpa-12",
+      "garden-path-exp2-gpa-14",
+      "garden-path-exp2-gpa-21",
+      "garden-path-exp2-gpa-24",
+      "garden-path-exp2-gpa-9",
+      "garden-path-exp2-gpc-16",
+      "garden-path-exp2-gpc-22",
+      "garden-path-exp2-gpc-23",
+      "garden-path-exp2-gpc-26",
+      "garden-path-exp2-gpc-28",
+      "garden-path-exp2-gpc-29",
+      "garden-path-exp2-gpc-3",
+      "garden-path-exp2-gpc-30",
+      "garden-path-exp2-gpc-6"
+    ],
+    "scored_unique_anchors": 460,
+    "scored_readers": 100,
+    "excluded_stimuli": [],
+    "first_backward_then_progressed_beyond_origin": 303
+  },
+  "event": {
+    "all": {
+      "at_risk_visits": 8226,
+      "first_backward_actions": 381,
+      "item_families": 16,
+      "metrics": {
+        "event_prior": {
+          "brier": 0.04417241909395843,
+          "nll_nats": 0.18753541447903507,
+          "average_precision": 0.04631655725747629
+        },
+        "event_position": {
+          "brier": 0.0440175900080097,
+          "nll_nats": 0.1857383559426745,
+          "average_precision": 0.0661823330881102
+        },
+        "event_qwen": {
+          "brier": 0.041826471340035726,
+          "nll_nats": 0.17293062516027652,
+          "average_precision": 0.3006528115644621
+        }
+      },
+      "brier_qwen_minus_position": {
+        "difference": -0.0021911186679739684,
+        "descriptive_paired_material_95_ci": [
+          -0.0029576091372459316,
+          -0.001585158386524847
+        ],
+        "groups": 16
+      }
+    },
+    "single_word": {
+      "at_risk_visits": 3313,
+      "first_backward_actions": 144,
+      "item_families": 16,
+      "metrics": {
+        "event_prior": {
+          "brier": 0.04159107620611357,
+          "nll_nats": 0.178976889376818,
+          "average_precision": 0.04346513733776034
+        },
+        "event_position": {
+          "brier": 0.041409347913246415,
+          "nll_nats": 0.1764889357530815,
+          "average_precision": 0.10342780910617898
+        },
+        "event_qwen": {
+          "brier": 0.03999278277904421,
+          "nll_nats": 0.16661170838250797,
+          "average_precision": 0.24771628781844857
+        }
+      },
+      "brier_qwen_minus_position": {
+        "difference": -0.0014165651342022047,
+        "descriptive_paired_material_95_ci": [
+          -0.003742658739260147,
+          -7.143786947433415e-05
+        ],
+        "groups": 16
+      }
+    },
+    "single_word_critical_verb": {
+      "at_risk_visits": 236,
+      "first_backward_actions": 15,
+      "item_families": 7,
+      "metrics": {
+        "event_prior": {
+          "brier": 0.059782006413819984,
+          "nll_nats": 0.23928950167967886,
+          "average_precision": 0.0635593220338983
+        },
+        "event_position": {
+          "brier": 0.06030669075922379,
+          "nll_nats": 0.24598277881506667,
+          "average_precision": 0.04896301662235742
+        },
+        "event_qwen": {
+          "brier": 0.06035700313749152,
+          "nll_nats": 0.24708834745721578,
+          "average_precision": 0.0779397949333675
+        }
+      },
+      "brier_qwen_minus_position": {
+        "difference": 5.031237826772774e-05,
+        "descriptive_paired_material_95_ci": [
+          -0.00030610934609280984,
+          0.00040310936672098183
+        ],
+        "groups": 7
+      }
+    }
+  },
+  "destination": {
+    "all": {
+      "first_backward_actions": 381,
+      "item_families": 16,
+      "metrics": {
+        "source_distance": {
+          "top_1_fractional_ties": 0.5433070866141733,
+          "expected_destination_mae_regions": 2.491017476772821,
+          "nll_nats": 1.1552898064891288
+        },
+        "source_qwen": {
+          "top_1_fractional_ties": 0.5695538057742782,
+          "expected_destination_mae_regions": 2.345427757001315,
+          "nll_nats": 1.1098391068086226
+        },
+        "previous_region": {
+          "top_1_fractional_ties": 0.5406824146981627,
+          "expected_destination_mae_regions": 2.8923884514435696
+        }
+      },
+      "nll_qwen_minus_distance": {
+        "difference": -0.04545069968050617,
+        "descriptive_paired_material_95_ci": [
+          -0.06387426417765013,
+          -0.028024304600927332
+        ],
+        "groups": 16
+      }
+    },
+    "choice_set_size_at_least_two": {
+      "first_backward_actions": 335,
+      "item_families": 16,
+      "metrics": {
+        "source_distance": {
+          "top_1_fractional_ties": 0.48059701492537316,
+          "expected_destination_mae_regions": 2.833067637762522,
+          "nll_nats": 1.3139266157383822
+        },
+        "source_qwen": {
+          "top_1_fractional_ties": 0.5104477611940299,
+          "expected_destination_mae_regions": 2.667486493783585,
+          "nll_nats": 1.2622349244599558
+        },
+        "previous_region": {
+          "top_1_fractional_ties": 0.47761194029850745,
+          "expected_destination_mae_regions": 3.28955223880597
+        }
+      },
+      "nll_qwen_minus_distance": {
+        "difference": -0.051691691278426405,
+        "descriptive_paired_material_95_ci": [
+          -0.07151817639084872,
+          -0.032373966002490394
+        ],
+        "groups": 16
+      }
+    },
+    "single_word_origin_and_destination_choice_set_size_at_least_two": {
+      "first_backward_actions": 7,
+      "item_families": 5,
+      "metrics": {
+        "source_distance": {
+          "top_1_fractional_ties": 0.0,
+          "expected_destination_mae_regions": 1.9720922271348125,
+          "nll_nats": 3.887604714312516
+        },
+        "source_qwen": {
+          "top_1_fractional_ties": 0.0,
+          "expected_destination_mae_regions": 1.880106532711083,
+          "nll_nats": 3.8558381100847408
+        },
+        "previous_region": {
+          "top_1_fractional_ties": 0.0,
+          "expected_destination_mae_regions": 3.857142857142857
+        }
+      },
+      "nll_qwen_minus_distance": {
+        "difference": -0.03176660422777568,
+        "descriptive_paired_material_95_ci": [
+          -0.10307471864736391,
+          0.03547410696051153
+        ],
+        "groups": 5
+      }
+    }
+  },
+  "manipulation_matched_wording": {
+    "-1": {
+      "available": true,
+      "matched_item_families": 15,
+      "at_risk_visits": 607,
+      "exactly_same_region_text_required": true,
+      "condition_contrast": {
+        "observed": {
+          "late_minus_early_pp": -1.103353409875149,
+          "paired_item_95_interval_pp": [
+            -4.387461770367948,
+            2.168956255097559
+          ]
+        },
+        "event_prior": {
+          "late_minus_early_pp": -3.2381504884900397e-16,
+          "paired_item_95_interval_pp": [
+            -6.476300976980079e-16,
+            4.625929269271486e-17
+          ]
+        },
+        "event_position": {
+          "late_minus_early_pp": 0.015069129618387606,
+          "paired_item_95_interval_pp": [
+            0.004829766319963189,
+            0.02400541835130215
+          ]
+        },
+        "event_qwen": {
+          "late_minus_early_pp": 0.1711635988082371,
+          "paired_item_95_interval_pp": [
+            0.018594384087706136,
+            0.32113497128167745
+          ]
+        }
+      }
+    },
+    "0": {
+      "available": true,
+      "matched_item_families": 16,
+      "at_risk_visits": 589,
+      "exactly_same_region_text_required": true,
+      "condition_contrast": {
+        "observed": {
+          "late_minus_early_pp": 1.4577536058282965,
+          "paired_item_95_interval_pp": [
+            -1.3047485441545037,
+            4.6860228466386555
+          ]
+        },
+        "event_prior": {
+          "late_minus_early_pp": 1.3010426069826053e-16,
+          "paired_item_95_interval_pp": [
+            -2.6020852139652106e-16,
+            5.204170427930421e-16
+          ]
+        },
+        "event_position": {
+          "late_minus_early_pp": 0.011890952423009634,
+          "paired_item_95_interval_pp": [
+            0.005508762327615157,
+            0.017652281704601817
+          ]
+        },
+        "event_qwen": {
+          "late_minus_early_pp": 0.030527980639938054,
+          "paired_item_95_interval_pp": [
+            -0.12490988299229315,
+            0.16360067069871648
+          ]
+        }
+      }
+    },
+    "1": {
+      "available": true,
+      "matched_item_families": 15,
+      "at_risk_visits": 517,
+      "exactly_same_region_text_required": true,
+      "condition_contrast": {
+        "observed": {
+          "late_minus_early_pp": -0.6619857610569685,
+          "paired_item_95_interval_pp": [
+            -3.6963899533558977,
+            2.1819974143503553
+          ]
+        },
+        "event_prior": {
+          "late_minus_early_pp": -1.8503717077085943e-16,
+          "paired_item_95_interval_pp": [
+            -5.551115123125783e-16,
+            1.8503717077085943e-16
+          ]
+        },
+        "event_position": {
+          "late_minus_early_pp": 0.01031565592387628,
+          "paired_item_95_interval_pp": [
+            0.0033326153880604385,
+            0.016512056375936182
+          ]
+        },
+        "event_qwen": {
+          "late_minus_early_pp": -0.09682329528572821,
+          "paired_item_95_interval_pp": [
+            -0.2426111700102173,
+            0.021042969805742915
+          ]
+        }
+      }
+    }
+  },
+  "manipulation_note": "Each equal-weight contrast compares late minus early disambiguation in material pairs with an identically worded region. Both experiment arms must contribute at-risk observations. The preceding region is a diagnostic control for localization and can still differ in its preceding context.",
+  "input_sha256": {
+    "outcomes": "81c27b557cdcf1bf1bb8c7627cd102177aacc4b94a0363f7aabdea79eeffd647",
+    "stimuli": "69a2ccaccb1977e1088abe22db26d00cd488ad9867baafc54d24b77d308cb231",
+    "forecasts": "7172dfa6b0fc8d561aaa41b9b53af45095834c87ccd23c1089ff9da63ba60b70",
+    "seal": "a737dfa70e51276826b0fe0109ea253e3c9602d2f07c6c621895eec114563e3d",
+    "extraction": "e2ae8dc955963d18d15b8dbc26b65da0cc1f029190076bf6284a86017f980e29"
+  }
+}

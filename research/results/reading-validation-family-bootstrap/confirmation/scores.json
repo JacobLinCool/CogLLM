@@ -1,0 +1,1788 @@
+{
+  "observations": {
+    "held_rows": 8834,
+    "raw_observations": 86740,
+    "global_held_articles": 741
+  },
+  "eligible_sources": 20,
+  "eligible_endpoints": 51,
+  "excluded_sources": [
+    "kerwer",
+    "onestop",
+    "qiao",
+    "rodger"
+  ],
+  "equal_linked_components": {
+    "units": 19,
+    "source_and_material": {
+      "over_map": {
+        "gain": 0.0007701825450278369,
+        "joint_source_material_simultaneous_ci": [
+          -0.0019193364584139101,
+          0.003716011609446118
+        ],
+        "joint_source_material_nominal_ci": [
+          -0.0015394563028856467,
+          0.0032952973371096783
+        ],
+        "exact_signflip_p": 0.22730064392089844,
+        "leave_one_range": [
+          0.00017515101456132314,
+          0.0013629746158815405
+        ]
+      },
+      "over_midpoint": {
+        "gain": 0.0023270519759341093,
+        "joint_source_material_simultaneous_ci": [
+          -0.0016687620758184074,
+          0.007507821184336056
+        ],
+        "joint_source_material_nominal_ci": [
+          -0.0011656601242362305,
+          0.006788848529555773
+        ],
+        "exact_signflip_p": 0.09058570861816406,
+        "leave_one_range": [
+          0.0010669116757202797,
+          0.0030154691866623637
+        ]
+      }
+    },
+    "registered_source_only": {
+      "source_macro_nll": {
+        "endpoint_map": 0.9118333113835688,
+        "midpoint": 0.9133901808144748,
+        "family_bootstrap": 0.9110631288385409
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.0007701825450278369,
+          "ci95": [
+            -0.0010627881005456107,
+            0.002716354855936146
+          ],
+          "ci95_simultaneous": [
+            -0.001344495774758868,
+            0.0029765588378404617
+          ],
+          "signflip_p": 0.22860771392286078,
+          "bonferroni_p": 0.45721542784572156,
+          "improving_sources": 12,
+          "losing_sources": 7
+        },
+        "midpoint": {
+          "gain": 0.0023270519759341093,
+          "ci95": [
+            -0.0004614674287242647,
+            0.005736582783103302
+          ],
+          "ci95_simultaneous": [
+            -0.0007950467900685901,
+            0.006323897400087471
+          ],
+          "signflip_p": 0.09062909370906291,
+          "bonferroni_p": 0.18125818741812583,
+          "improving_sources": 13,
+          "losing_sources": 6
+        }
+      }
+    }
+  },
+  "equal_sources": {
+    "units": 20,
+    "source_and_material": {
+      "over_map": {
+        "gain": 0.0011414400674659032,
+        "joint_source_material_simultaneous_ci": [
+          -0.0017437582307295283,
+          0.0046010234487429665
+        ],
+        "joint_source_material_nominal_ci": [
+          -0.0013752548976632198,
+          0.004084057557759629
+        ],
+        "exact_signflip_p": 0.16082191467285156,
+        "leave_one_range": [
+          0.00042430215005252405,
+          0.0017225724252450995
+        ]
+      },
+      "over_midpoint": {
+        "gain": 0.0034611782461265563,
+        "joint_source_material_simultaneous_ci": [
+          -0.0014674263542447936,
+          0.011600303008972388
+        ],
+        "joint_source_material_nominal_ci": [
+          -0.00100444107094255,
+          0.010198106336627032
+        ],
+        "exact_signflip_p": 0.07989215850830078,
+        "leave_one_range": [
+          0.0010975538314325773,
+          0.004173053828405557
+        ]
+      }
+    },
+    "registered_source_only": {
+      "source_macro_nll": {
+        "endpoint_map": 0.9057324009270238,
+        "midpoint": 0.9080521391056842,
+        "family_bootstrap": 0.9045909608595577
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.0011414400674659032,
+          "ci95": [
+            -0.0008603966626004754,
+            0.0033871720450613374
+          ],
+          "ci95_simultaneous": [
+            -0.0011177780192772647,
+            0.0037312549075258633
+          ],
+          "signflip_p": 0.15957840421595784,
+          "bonferroni_p": 0.3191568084319157,
+          "improving_sources": 13,
+          "losing_sources": 7
+        },
+        "midpoint": {
+          "gain": 0.0034611782461265563,
+          "ci95": [
+            -0.0003460822295999594,
+            0.009080953045899325
+          ],
+          "ci95_simultaneous": [
+            -0.0006428235167632293,
+            0.00999687048360576
+          ],
+          "signflip_p": 0.07874921250787492,
+          "bonferroni_p": 0.15749842501574984,
+          "improving_sources": 14,
+          "losing_sources": 6
+        }
+      }
+    }
+  },
+  "source_macro_nll": {
+    "endpoint_map": 0.9057324009270238,
+    "midpoint": 0.9080521391056842,
+    "family_bootstrap": 0.9045909608595576,
+    "private": 0.9087379114801086,
+    "shared": 0.9168024597408106
+  },
+  "by_source": {
+    "ambistory": {
+      "families": 19,
+      "nll": {
+        "endpoint_map": 1.6830373589520697,
+        "midpoint": 1.6834769493394806,
+        "family_bootstrap": 1.681701331905097,
+        "private": 1.6821547090950886,
+        "shared": 1.6878103218319431
+      },
+      "paired_material_ci": [
+        [
+          -0.0013998433795753772,
+          0.0040646112984164436
+        ],
+        [
+          -0.0015611405282757672,
+          0.005080580033074934
+        ]
+      ]
+    },
+    "blott": {
+      "families": 5,
+      "nll": {
+        "endpoint_map": 0.8040032928095403,
+        "midpoint": 0.8042387530600325,
+        "family_bootstrap": 0.8012554900334505,
+        "private": 0.8061074687170358,
+        "shared": 0.8053993726244031
+      },
+      "paired_material_ci": [
+        [
+          0.001800704977404588,
+          0.0038733575379636953
+        ],
+        [
+          0.0019954186863663237,
+          0.004132831307657403
+        ]
+      ]
+    },
+    "clear": {
+      "families": 56,
+      "nll": {
+        "endpoint_map": 1.0972756678567561,
+        "midpoint": 1.1050861747034717,
+        "family_bootstrap": 1.0968273201065992,
+        "private": 1.0968587584858023,
+        "shared": 1.1285840482974347
+      },
+      "paired_material_ci": [
+        [
+          -0.006176745296295627,
+          0.007534808673570215
+        ],
+        [
+          -0.020632953931963988,
+          0.0391027291095992
+        ]
+      ]
+    },
+    "complex": {
+      "families": 499,
+      "nll": {
+        "endpoint_map": 1.2841705836125303,
+        "midpoint": 1.284664931819402,
+        "family_bootstrap": 1.2841800306980846,
+        "private": 1.297848442801504,
+        "shared": 1.295008882316651
+      },
+      "paired_material_ci": [
+        [
+          -5.921443703590379e-05,
+          4.054178212135608e-05
+        ],
+        [
+          -0.002040962983090844,
+          0.0030432961135556658
+        ]
+      ]
+    },
+    "context-readback": {
+      "families": 1,
+      "nll": {
+        "endpoint_map": 0.139459373946299,
+        "midpoint": 0.13942805225113228,
+        "family_bootstrap": 0.14211952767059352,
+        "private": 0.1430448173940338,
+        "shared": 0.1390182784273191
+      },
+      "paired_material_ci": null
+    },
+    "currie": {
+      "families": 2,
+      "nll": {
+        "endpoint_map": 0.6854368248093134,
+        "midpoint": 0.6852724417224777,
+        "family_bootstrap": 0.6953368995396522,
+        "private": 0.6762956548058839,
+        "shared": 0.6959132006860604
+      },
+      "paired_material_ci": [
+        [
+          -0.02224239155329133,
+          0.002303564375501832
+        ],
+        [
+          -0.022610110127194827,
+          0.0023402321073400234
+        ]
+      ]
+    },
+    "cwi": {
+      "families": 2,
+      "nll": {
+        "endpoint_map": 0.2751647601312801,
+        "midpoint": 0.27516152083704637,
+        "family_bootstrap": 0.27543464362911235,
+        "private": 0.27880819187043043,
+        "shared": 0.2795509641720256
+      },
+      "paired_material_ci": [
+        [
+          -0.0004523802245760544,
+          -7.929215820851043e-05
+        ],
+        [
+          -0.0004591337405707163,
+          -7.8861357941995e-05
+        ]
+      ]
+    },
+    "czech": {
+      "families": 3,
+      "nll": {
+        "endpoint_map": 0.44789271788717244,
+        "midpoint": 0.4479000870941426,
+        "family_bootstrap": 0.4466858125813349,
+        "private": 0.446084127696482,
+        "shared": 0.450021574021226
+      },
+      "paired_material_ci": [
+        [
+          0.000924780492347399,
+          0.0013522047004817517
+        ],
+        [
+          0.0009295412934435809,
+          0.0013599374179401602
+        ]
+      ]
+    },
+    "first-readback": {
+      "families": 5,
+      "nll": {
+        "endpoint_map": 0.41288036961678476,
+        "midpoint": 0.41269392247673464,
+        "family_bootstrap": 0.41487029544179754,
+        "private": 0.40644443416408016,
+        "shared": 0.4242739766822281
+      },
+      "paired_material_ci": [
+        [
+          -0.006090594324441423,
+          0.0014425014092923072
+        ],
+        [
+          -0.0064227867023094465,
+          0.0014067595726888205
+        ]
+      ]
+    },
+    "frick": {
+      "families": 1,
+      "nll": {
+        "endpoint_map": 1.3444855049029494,
+        "midpoint": 1.3445891886424943,
+        "family_bootstrap": 1.3422674392271126,
+        "private": 1.3402917307129973,
+        "shared": 1.352292371039772
+      },
+      "paired_material_ci": null
+    },
+    "oliver": {
+      "families": 2,
+      "nll": {
+        "endpoint_map": 1.2888975504198499,
+        "midpoint": 1.2888981793122376,
+        "family_bootstrap": 1.2888828006387127,
+        "private": 1.2894927483145842,
+        "shared": 1.288328166040309
+      },
+      "paired_material_ci": [
+        [
+          -5.349518819941501e-05,
+          8.907504275845746e-05
+        ],
+        [
+          -5.343005290625591e-05,
+          9.029287871320513e-05
+        ]
+      ]
+    },
+    "onestop-rereading": {
+      "families": 1,
+      "nll": {
+        "endpoint_map": 0.5527396725612115,
+        "midpoint": 0.5527651797062072,
+        "family_bootstrap": 0.5511160670719532,
+        "private": 0.5509744435499352,
+        "shared": 0.5556692397194947
+      },
+      "paired_material_ci": null
+    },
+    "plaba": {
+      "families": 1,
+      "nll": {
+        "endpoint_map": 1.3681425116731973,
+        "midpoint": 1.3680837179103684,
+        "family_bootstrap": 1.3714047501035664,
+        "private": 1.3756167833415287,
+        "shared": 1.3637107048752992
+      },
+      "paired_material_ci": null
+    },
+    "race": {
+      "families": 11,
+      "nll": {
+        "endpoint_map": 1.0268905319441228,
+        "midpoint": 1.0604935135711149,
+        "family_bootstrap": 1.0121234714458027,
+        "private": 1.011970583454509,
+        "shared": 1.1687135254255194
+      },
+      "paired_material_ci": [
+        [
+          -0.005590399984191674,
+          0.034815436706005835
+        ],
+        [
+          0.00033811019016971973,
+          0.09654396005330261
+        ]
+      ]
+    },
+    "scarecrow": {
+      "families": 67,
+      "nll": {
+        "endpoint_map": 0.04453806434875854,
+        "midpoint": 0.0447863363116547,
+        "family_bootstrap": 0.04446056838117164,
+        "private": 0.049560411563470026,
+        "shared": 0.04506856175862747
+      },
+      "paired_material_ci": [
+        [
+          -0.000791318491857608,
+          0.0010709679593020635
+        ],
+        [
+          -0.0008369022473104947,
+          0.001724355320627135
+        ]
+      ]
+    },
+    "studentannotations": {
+      "families": 59,
+      "nll": {
+        "endpoint_map": 1.347812765950629,
+        "midpoint": 1.3514438442866532,
+        "family_bootstrap": 1.344042897928695,
+        "private": 1.343757838301507,
+        "shared": 1.3615632003802602
+      },
+      "paired_material_ci": [
+        [
+          -0.00020077313675167513,
+          0.008016475336258757
+        ],
+        [
+          0.0004008755032658573,
+          0.015045168814979177
+        ]
+      ]
+    },
+    "textcomplexityde": {
+      "families": 1,
+      "nll": {
+        "endpoint_map": 1.4379380989921677,
+        "midpoint": 1.4380376277632212,
+        "family_bootstrap": 1.4361515810125518,
+        "private": 1.4346621389428424,
+        "shared": 1.4495703505095157
+      },
+      "paired_material_ci": null
+    },
+    "turkish": {
+      "families": 2,
+      "nll": {
+        "endpoint_map": 0.7168304387449806,
+        "midpoint": 0.7168501146197263,
+        "family_bootstrap": 0.7174618101250234,
+        "private": 0.7281048337004088,
+        "shared": 0.718011302762811
+      },
+      "paired_material_ci": [
+        [
+          -0.0008576216622881994,
+          -0.0006313713800427667
+        ],
+        [
+          -0.0008430917935933202,
+          -0.0006116955052972717
+        ]
+      ]
+    },
+    "yadav": {
+      "families": 2,
+      "nll": {
+        "endpoint_map": 1.489992426172018,
+        "midpoint": 1.4901804306769542,
+        "family_bootstrap": 1.489917726535423,
+        "private": 1.5152339802562875,
+        "shared": 1.4869630895365398
+      },
+      "paired_material_ci": [
+        [
+          -3.311013661244644e-06,
+          0.00014091471516186616
+        ],
+        [
+          0.00014552684973034857,
+          0.0003671108676146506
+        ]
+      ]
+    },
+    "zhan": {
+      "families": 2,
+      "nll": {
+        "endpoint_map": 0.6670595032088424,
+        "midpoint": 0.6669918160091316,
+        "family_bootstrap": 0.6555787531154174,
+        "private": 0.701446132433761,
+        "shared": 0.6405780637087742
+      },
+      "paired_material_ci": [
+        [
+          -0.0010806906513712855,
+          0.023451892634380522
+        ],
+        [
+          -0.0019493901752652976,
+          0.024193092361022628
+        ]
+      ]
+    }
+  },
+  "by_endpoint": {
+    "ambistory_joint": {
+      "source": "ambistory",
+      "families": 19,
+      "rows": 192,
+      "raw_observations": 962,
+      "likelihood": "ordinal_binary",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.6804711162727872,
+          "midpoint": 1.6813342076498643,
+          "family_bootstrap": 1.6778654537837074,
+          "private": 1.6778474760731454,
+          "shared": 1.6877332037436645
+        },
+        "2718": {
+          "endpoint_map": 1.6856036016313523,
+          "midpoint": 1.685619691029097,
+          "family_bootstrap": 1.685537210026487,
+          "private": 1.6864619421170317,
+          "shared": 1.687887439920222
+        }
+      }
+    },
+    "blott_2021_sentence_end_sense": {
+      "source": "blott",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 288,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6759145686490662,
+          "midpoint": 0.6764006390965862,
+          "family_bootstrap": 0.6700601905210594,
+          "private": 0.6700524767628545,
+          "shared": 0.6874126373865946
+        },
+        "2718": {
+          "endpoint_map": 0.669231170741083,
+          "midpoint": 0.670149912541279,
+          "family_bootstrap": 0.6598413944291046,
+          "private": 0.6596795169175778,
+          "shared": 0.6840979913327776
+        }
+      }
+    },
+    "blott_2023_sense_response_log_milliseconds": {
+      "source": "blott",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 146,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.4119876817084145,
+          "midpoint": 1.4119724611407263,
+          "family_bootstrap": 1.4145054675838247,
+          "private": 1.4300622726724541,
+          "shared": 1.3995633670782444
+        },
+        "2718": {
+          "endpoint_map": 1.4011086294264214,
+          "midpoint": 1.4011352631765221,
+          "family_bootstrap": 1.3964064023393943,
+          "private": 1.4090901086603589,
+          "shared": 1.3963958735078335
+        }
+      }
+    },
+    "blott_2023_sentence_end_sense": {
+      "source": "blott",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 146,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.3332171497140174,
+          "midpoint": 0.33321491605923836,
+          "family_bootstrap": 0.33355636989268617,
+          "private": 0.3345948483663162,
+          "shared": 0.3324880733550801
+        },
+        "2718": {
+          "endpoint_map": 0.3325605566182397,
+          "midpoint": 0.3325593263458431,
+          "family_bootstrap": 0.333163115434634,
+          "private": 0.3331655889226534,
+          "shared": 0.33243829308588796
+        }
+      }
+    },
+    "clear_excerpt_easiness": {
+      "source": "clear",
+      "families": 56,
+      "rows": 56,
+      "raw_observations": 56,
+      "likelihood": "known_error_gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.1046022503738335,
+          "midpoint": 1.1152849308595358,
+          "family_bootstrap": 1.1034494852396535,
+          "private": 1.1033640779197174,
+          "shared": 1.1421667218090512
+        },
+        "2718": {
+          "endpoint_map": 1.0899490853396787,
+          "midpoint": 1.0948874185474078,
+          "family_bootstrap": 1.090205154973545,
+          "private": 1.090353439051887,
+          "shared": 1.1150013747858183
+        }
+      }
+    },
+    "complex_word_difficulty": {
+      "source": "complex",
+      "families": 499,
+      "rows": 543,
+      "raw_observations": 545,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.275083127991896,
+          "midpoint": 1.2762260688441558,
+          "family_bootstrap": 1.275087005662127,
+          "private": 1.2957701134487225,
+          "shared": 1.2823892261708438
+        },
+        "2718": {
+          "endpoint_map": 1.2932580392331647,
+          "midpoint": 1.2931037947946482,
+          "family_bootstrap": 1.293273055734042,
+          "private": 1.2999267721542853,
+          "shared": 1.3076285384624582
+        }
+      }
+    },
+    "context_first_readback": {
+      "source": "context-readback",
+      "families": 1,
+      "rows": 72,
+      "raw_observations": 3058,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.1391413890404227,
+          "midpoint": 0.13907881389720916,
+          "family_bootstrap": 0.1439764286452684,
+          "private": 0.14558111883483515,
+          "shared": 0.13735453144634954
+        },
+        "2718": {
+          "endpoint_map": 0.13977735885217532,
+          "midpoint": 0.1397772906050554,
+          "family_bootstrap": 0.14026262669591863,
+          "private": 0.1405085159532324,
+          "shared": 0.14068202540828864
+        }
+      }
+    },
+    "currie_end_coherence_report": {
+      "source": "currie",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 354,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6800599446166263,
+          "midpoint": 0.6799412177085505,
+          "family_bootstrap": 0.6890053373820524,
+          "private": 0.6724142576527189,
+          "shared": 0.6892696183044424
+        },
+        "2718": {
+          "endpoint_map": 0.6908137050020005,
+          "midpoint": 0.6906036657364049,
+          "family_bootstrap": 0.7016684616972519,
+          "private": 0.680177051959049,
+          "shared": 0.7025567830676784
+        }
+      }
+    },
+    "cwi_native_marked": {
+      "source": "cwi",
+      "families": 2,
+      "rows": 460,
+      "raw_observations": 5070,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.2887645578775032,
+          "midpoint": 0.28876239071090515,
+          "family_bootstrap": 0.2888653931076178,
+          "private": 0.2969931334327504,
+          "shared": 0.29118756528380774
+        },
+        "2718": {
+          "endpoint_map": 0.2930560194250752,
+          "midpoint": 0.29305034838720784,
+          "family_bootstrap": 0.29338868505686794,
+          "private": 0.2946036141594946,
+          "shared": 0.29865033697379323
+        }
+      }
+    },
+    "cwi_nonnative_marked": {
+      "source": "cwi",
+      "families": 2,
+      "rows": 460,
+      "raw_observations": 5070,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.25752931062084583,
+          "midpoint": 0.25753215069370217,
+          "family_bootstrap": 0.25746094555981913,
+          "private": 0.26047154749077905,
+          "shared": 0.2625532269196296
+        },
+        "2718": {
+          "endpoint_map": 0.26130915260169624,
+          "midpoint": 0.26130119355637044,
+          "family_bootstrap": 0.26202355079214457,
+          "private": 0.2631644723986976,
+          "shared": 0.26581272751087165
+        }
+      }
+    },
+    "czech_exp2_qcor": {
+      "source": "czech",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 182,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.3698422506289397,
+          "midpoint": 0.3698757336068332,
+          "family_bootstrap": 0.3664431648923218,
+          "private": 0.3664431648923218,
+          "shared": 0.37399444553063965
+        },
+        "2718": {
+          "endpoint_map": 0.3716775201030896,
+          "midpoint": 0.3716816798500304,
+          "family_bootstrap": 0.3705462334012005,
+          "private": 0.3705462334012005,
+          "shared": 0.37287515197784726
+        }
+      }
+    },
+    "czech_exp2_qmis": {
+      "source": "czech",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 166,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6147982124933756,
+          "midpoint": 0.6148179036834821,
+          "family_bootstrap": 0.6113258361490633,
+          "private": 0.6113256050588777,
+          "shared": 0.6188571909960742
+        },
+        "2718": {
+          "endpoint_map": 0.622859109462878,
+          "midpoint": 0.6228628097089178,
+          "family_bootstrap": 0.6211952470138496,
+          "private": 0.6211952470138496,
+          "shared": 0.6245688019419833
+        }
+      }
+    },
+    "czech_exp2_qpos": {
+      "source": "czech",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 171,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.4414555469977932,
+          "midpoint": 0.4414573989482251,
+          "family_bootstrap": 0.4414961095519808,
+          "private": 0.4414961365655255,
+          "shared": 0.44206227737881054
+        },
+        "2718": {
+          "endpoint_map": 0.4415007248114904,
+          "midpoint": 0.4415006615968704,
+          "family_bootstrap": 0.441568456679759,
+          "private": 0.4416896570316872,
+          "shared": 0.4413800920118572
+        }
+      }
+    },
+    "czech_exp3_qcor": {
+      "source": "czech",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 159,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.3105132449890311,
+          "midpoint": 0.31052778222798855,
+          "family_bootstrap": 0.30765603793248547,
+          "private": 0.30765583562354837,
+          "shared": 0.3138162419424153
+        },
+        "2718": {
+          "endpoint_map": 0.31280171638659543,
+          "midpoint": 0.3128021430624265,
+          "family_bootstrap": 0.3122832907935942,
+          "private": 0.312171032880363,
+          "shared": 0.31344597903900556
+        }
+      }
+    },
+    "czech_exp3_qmis": {
+      "source": "czech",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 147,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.605935776780536,
+          "midpoint": 0.6059530570543852,
+          "family_bootstrap": 0.6029767639413104,
+          "private": 0.6029744788932075,
+          "shared": 0.6093238649492203
+        },
+        "2718": {
+          "endpoint_map": 0.609921333754648,
+          "midpoint": 0.6099282138503334,
+          "family_bootstrap": 0.6083134150808054,
+          "private": 0.6083134150808054,
+          "shared": 0.6116280049918569
+        }
+      }
+    },
+    "czech_exp3_qpos": {
+      "source": "czech",
+      "families": 3,
+      "rows": 12,
+      "raw_observations": 167,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.33695710131347045,
+          "midpoint": 0.3369448649608006,
+          "family_bootstrap": 0.33944027456209563,
+          "private": 0.3339580629579279,
+          "shared": 0.34056483594215825
+        },
+        "2718": {
+          "endpoint_map": 0.3364500769242218,
+          "midpoint": 0.33644879657941784,
+          "family_bootstrap": 0.3369849209775526,
+          "private": 0.3352406629584691,
+          "shared": 0.3377420015528443
+        }
+      }
+    },
+    "first_readback_end_acceptability": {
+      "source": "first-readback",
+      "families": 1,
+      "rows": 2,
+      "raw_observations": 89,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6501561111842078,
+          "midpoint": 0.649810121280487,
+          "family_bootstrap": 0.6513701071593819,
+          "private": 0.6399081475978643,
+          "shared": 0.6605630312213764
+        },
+        "2718": {
+          "endpoint_map": 0.6487769560230798,
+          "midpoint": 0.6480217160439399,
+          "family_bootstrap": 0.6570032735624621,
+          "private": 0.6335227379057833,
+          "shared": 0.6676117077552367
+        }
+      }
+    },
+    "first_readback_risk": {
+      "source": "first-readback",
+      "families": 5,
+      "rows": 123,
+      "raw_observations": 2447,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.17507483868088825,
+          "midpoint": 0.1751354709800028,
+          "family_bootstrap": 0.1750372887651754,
+          "private": 0.1754697402324527,
+          "shared": 0.17984863049725097
+        },
+        "2718": {
+          "endpoint_map": 0.17751357257896305,
+          "midpoint": 0.1778083816025089,
+          "family_bootstrap": 0.1760705122801707,
+          "private": 0.1768771109202204,
+          "shared": 0.18907253725504847
+        }
+      }
+    },
+    "frick_after_first_report": {
+      "source": "frick",
+      "families": 1,
+      "rows": 22,
+      "raw_observations": 206,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.33950966103828245,
+          "midpoint": 0.3395095118589524,
+          "family_bootstrap": 0.33971928796040535,
+          "private": 0.33991716389082277,
+          "shared": 0.3391360562837415
+        },
+        "2718": {
+          "endpoint_map": 0.3395264901609064,
+          "midpoint": 0.33952636366022837,
+          "family_bootstrap": 0.3397110917853132,
+          "private": 0.33990382152137383,
+          "shared": 0.3391938841376956
+        }
+      }
+    },
+    "frick_first_report": {
+      "source": "frick",
+      "families": 1,
+      "rows": 2,
+      "raw_observations": 90,
+      "likelihood": "first_event",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 2.1560175987888757,
+          "midpoint": 2.1566796811382383,
+          "family_bootstrap": 2.1354374237907026,
+          "private": 2.135384128734654,
+          "shared": 2.1806907426814353
+        },
+        "2718": {
+          "endpoint_map": 2.2163044128079212,
+          "midpoint": 2.2162904303583773,
+          "family_bootstrap": 2.2201282546992593,
+          "private": 2.209686151347546,
+          "shared": 2.223499569095041
+        }
+      }
+    },
+    "frick_log_keypress_seconds": {
+      "source": "frick",
+      "families": 1,
+      "rows": 28,
+      "raw_observations": 1260,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.5115155517162335,
+          "midpoint": 1.5114923860079035,
+          "family_bootstrap": 1.5141848739953714,
+          "private": 1.5107619583807066,
+          "shared": 1.5170402521679616
+        },
+        "2718": {
+          "endpoint_map": 1.5040393149054765,
+          "midpoint": 1.5040367588312662,
+          "family_bootstrap": 1.5044237031316223,
+          "private": 1.5060971604028819,
+          "shared": 1.514193721872757
+        }
+      }
+    },
+    "oliver_first_confirmation_rt_log_milliseconds": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.4175541899776287,
+          "midpoint": 1.41755792945354,
+          "family_bootstrap": 1.4165413560608089,
+          "private": 1.418626578357325,
+          "shared": 1.4165187932570211
+        },
+        "2718": {
+          "endpoint_map": 1.4138808589441139,
+          "midpoint": 1.4138811431268852,
+          "family_bootstrap": 1.4136444255045455,
+          "private": 1.4135888116429898,
+          "shared": 1.4141761906505472
+        }
+      }
+    },
+    "oliver_first_definition_rt_log_milliseconds": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.5412038695679988,
+          "midpoint": 1.5412148125289078,
+          "family_bootstrap": 1.5389537688435422,
+          "private": 1.5438082785290475,
+          "shared": 1.538688234229569
+        },
+        "2718": {
+          "endpoint_map": 1.5296537025425867,
+          "midpoint": 1.5296543194393615,
+          "family_bootstrap": 1.529385448195976,
+          "private": 1.529359689058882,
+          "shared": 1.529951817378118
+        }
+      }
+    },
+    "oliver_first_delay_rt_log_milliseconds": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 9,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.2049934016242085,
+          "midpoint": 1.204994734949861,
+          "family_bootstrap": 1.2047854249064196,
+          "private": 1.2062985232447307,
+          "shared": 1.2037290662343785
+        },
+        "2718": {
+          "endpoint_map": 1.1927102581620117,
+          "midpoint": 1.1927068029127166,
+          "family_bootstrap": 1.193445523657154,
+          "private": 1.1935219295905892,
+          "shared": 1.1918938785361215
+        }
+      }
+    },
+    "oliver_retest_initial_state": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.918325695740461,
+          "midpoint": 0.9183240196702347,
+          "family_bootstrap": 0.9192265762838677,
+          "private": 0.9195356355134062,
+          "shared": 0.9171350907301542
+        },
+        "2718": {
+          "endpoint_map": 0.9171876133901916,
+          "midpoint": 0.9171876341931353,
+          "family_bootstrap": 0.9171672058135267,
+          "private": 0.9172101984582105,
+          "shared": 0.9171655919728271
+        }
+      }
+    },
+    "oliver_retest_target_confirmation": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.5624354520964625,
+          "midpoint": 0.5624343492027546,
+          "family_bootstrap": 0.563118764707928,
+          "private": 0.5633147125670408,
+          "shared": 0.5615669002323084
+        },
+        "2718": {
+          "endpoint_map": 0.5585063595233778,
+          "midpoint": 0.5585062270582285,
+          "family_bootstrap": 0.5587010735206545,
+          "private": 0.5583042452640148,
+          "shared": 0.5587086920066621
+        }
+      }
+    },
+    "oliver_retrieval_protocol_path": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.9171779870753436,
+          "midpoint": 1.9171764012053067,
+          "family_bootstrap": 1.918122517593884,
+          "private": 1.9184917437704674,
+          "shared": 1.9159171119125369
+        },
+        "2718": {
+          "endpoint_map": 1.907339880699679,
+          "midpoint": 1.9073396837039591,
+          "family_bootstrap": 1.907583288792412,
+          "private": 1.9071015307648065,
+          "shared": 1.9075843792924112
+        }
+      }
+    },
+    "oliver_second_confirmation_rt_log_milliseconds": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.425565040739105,
+          "midpoint": 1.425563188441854,
+          "family_bootstrap": 1.425996835786743,
+          "private": 1.4263553236119155,
+          "shared": 1.4248354133343015
+        },
+        "2718": {
+          "endpoint_map": 1.4258676501011551,
+          "midpoint": 1.4258675789943354,
+          "family_bootstrap": 1.4259226913477696,
+          "private": 1.4257900473048077,
+          "shared": 1.4259487241081676
+        }
+      }
+    },
+    "oliver_second_definition_rt_log_milliseconds": {
+      "source": "oliver",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 104,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.3477968914051468,
+          "midpoint": 1.3478002397349913,
+          "family_bootstrap": 1.3473165393618847,
+          "private": 1.3483633555128227,
+          "shared": 1.3473144584456886
+        },
+        "2718": {
+          "endpoint_map": 1.3421619551281272,
+          "midpoint": 1.3421618043797292,
+          "family_bootstrap": 1.3422133698422898,
+          "private": 1.3422133698422898,
+          "shared": 1.342116314324134
+        }
+      }
+    },
+    "onestop_rereading_first_read_correct": {
+      "source": "onestop-rereading",
+      "families": 1,
+      "rows": 21,
+      "raw_observations": 84,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.5685597820431283,
+          "midpoint": 0.5685520869842284,
+          "family_bootstrap": 0.5715279797906869,
+          "private": 0.5715662129531912,
+          "shared": 0.5665050901300026
+        },
+        "2718": {
+          "endpoint_map": 0.5725959056771627,
+          "midpoint": 0.572636759630176,
+          "family_bootstrap": 0.5698088680970032,
+          "private": 0.5697338295988245,
+          "shared": 0.5766422394534709
+        }
+      }
+    },
+    "onestop_rereading_reread_correct": {
+      "source": "onestop-rereading",
+      "families": 1,
+      "rows": 21,
+      "raw_observations": 84,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.5311026757603565,
+          "midpoint": 0.531101530793182,
+          "family_bootstrap": 0.5311923910172203,
+          "private": 0.5310833177870236,
+          "shared": 0.5319152277924477
+        },
+        "2718": {
+          "endpoint_map": 0.5387003267641985,
+          "midpoint": 0.5387703414172423,
+          "family_bootstrap": 0.5319350293829024,
+          "private": 0.5315144138607015,
+          "shared": 0.5476144015020573
+        }
+      }
+    },
+    "plaba_issue_set": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 10,
+      "raw_observations": 30,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.4472863334871764,
+          "midpoint": 1.4474002815657758,
+          "family_bootstrap": 1.4440506985189756,
+          "private": 1.468113273194158,
+          "shared": 1.4442877191900925
+        },
+        "2718": {
+          "endpoint_map": 1.4399361574768874,
+          "midpoint": 1.4393990520280324,
+          "family_bootstrap": 1.4571973523515338,
+          "private": 1.4645825584508954,
+          "shared": 1.4245545276899738
+        }
+      }
+    },
+    "plaba_open_book_accuracy": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 8,
+      "raw_observations": 24,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.5669751127092617,
+          "midpoint": 0.5670050153142517,
+          "family_bootstrap": 0.5633890469195243,
+          "private": 0.5709985735593138,
+          "shared": 0.5632086406770327
+        },
+        "2718": {
+          "endpoint_map": 0.5887967012018218,
+          "midpoint": 0.5887625484723275,
+          "family_bootstrap": 0.5966034503752854,
+          "private": 0.5776651010977175,
+          "shared": 0.6006640767340657
+        }
+      }
+    },
+    "plaba_overall_perceived_understanding": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 2,
+      "raw_observations": 6,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.5000917992457898,
+          "midpoint": 1.49991542544484,
+          "family_bootstrap": 1.5111881454295493,
+          "private": 1.515765275476495,
+          "shared": 1.4857677675660093
+        },
+        "2718": {
+          "endpoint_map": 1.5134152754063106,
+          "midpoint": 1.513427522362712,
+          "family_bootstrap": 1.5124309352974057,
+          "private": 1.514484677321325,
+          "shared": 1.5124199014677064
+        }
+      }
+    },
+    "plaba_overall_processing_ease": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 2,
+      "raw_observations": 6,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.6141417919916419,
+          "midpoint": 1.6140090470378592,
+          "family_bootstrap": 1.617491528993046,
+          "private": 1.6179484256398082,
+          "shared": 1.610991236077819
+        },
+        "2718": {
+          "endpoint_map": 1.6227001786678368,
+          "midpoint": 1.6225089216893371,
+          "family_bootstrap": 1.6286557619662176,
+          "private": 1.630431482351476,
+          "shared": 1.6164100344013013
+        }
+      }
+    },
+    "plaba_perceived_understanding": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 10,
+      "raw_observations": 30,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.2942579330734492,
+          "midpoint": 1.2933869616303695,
+          "family_bootstrap": 1.3286048102680976,
+          "private": 1.3367558234824648,
+          "shared": 1.2579965819031511
+        },
+        "2718": {
+          "endpoint_map": 1.3481251319819132,
+          "midpoint": 1.3483614758633713,
+          "family_bootstrap": 1.341260296942766,
+          "private": 1.3566551370037128,
+          "shared": 1.3410166272129824
+        }
+      }
+    },
+    "plaba_processing_ease": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 10,
+      "raw_observations": 30,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.266169759798163,
+          "midpoint": 1.2667854089976118,
+          "family_bootstrap": 1.254180961997488,
+          "private": 1.2501937289444887,
+          "shared": 1.2871989547190301
+        },
+        "2718": {
+          "endpoint_map": 1.2769801116624653,
+          "midpoint": 1.2770471356208968,
+          "family_bootstrap": 1.2751522572064244,
+          "private": 1.2751511804227782,
+          "shared": 1.2797618488338065
+        }
+      }
+    },
+    "plaba_quiz_confidence": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 8,
+      "raw_observations": 24,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.586635746442447,
+          "midpoint": 1.5866302953084983,
+          "family_bootstrap": 1.5873218002514953,
+          "private": 1.5860343473574299,
+          "shared": 1.5873223449886276
+        },
+        "2718": {
+          "endpoint_map": 1.5919018617835794,
+          "midpoint": 1.5919000565926342,
+          "family_bootstrap": 1.5928736630722362,
+          "private": 1.5944419858326286,
+          "shared": 1.5894299968725492
+        }
+      }
+    },
+    "plaba_quiz_effort": {
+      "source": "plaba",
+      "families": 1,
+      "rows": 8,
+      "raw_observations": 24,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.6141249856494169,
+          "midpoint": 1.6140253206668167,
+          "family_bootstrap": 1.6199271312939463,
+          "private": 1.6204131073048569,
+          "shared": 1.6087297681045503
+        },
+        "2718": {
+          "endpoint_map": 1.6187413061929954,
+          "midpoint": 1.6187750179705598,
+          "family_bootstrap": 1.6121481607730737,
+          "private": 1.6302338560249094,
+          "shared": 1.6096112515660856
+        }
+      }
+    },
+    "race_answer_choice": {
+      "source": "race",
+      "families": 11,
+      "rows": 93,
+      "raw_observations": 99,
+      "likelihood": "choice",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.0146994956276487,
+          "midpoint": 1.0389081014839807,
+          "family_bootstrap": 0.9996075985595174,
+          "private": 0.9993849925294975,
+          "shared": 1.1209012961255873
+        },
+        "2718": {
+          "endpoint_map": 1.0390815682605972,
+          "midpoint": 1.082078925658249,
+          "family_bootstrap": 1.0246393443320883,
+          "private": 1.0245561743795204,
+          "shared": 1.2165257547254515
+        }
+      }
+    },
+    "scarecrow_retrospective_contradiction_mark_ordinal": {
+      "source": "scarecrow",
+      "families": 67,
+      "rows": 6228,
+      "raw_observations": 62224,
+      "likelihood": "hurdle_ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.04473356650775039,
+          "midpoint": 0.04518174309689828,
+          "family_bootstrap": 0.04426678608740969,
+          "private": 0.05320614960976112,
+          "shared": 0.04475816745599992
+        },
+        "2718": {
+          "endpoint_map": 0.044342562189766684,
+          "midpoint": 0.04439092952641112,
+          "family_bootstrap": 0.04465435067493359,
+          "private": 0.045914673517178935,
+          "shared": 0.045378956061255034
+        }
+      }
+    },
+    "studentannotations_comprehension_difficulty": {
+      "source": "studentannotations",
+      "families": 59,
+      "rows": 61,
+      "raw_observations": 133,
+      "likelihood": "ordinal",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.3447736376307728,
+          "midpoint": 1.3497551389380462,
+          "family_bootstrap": 1.3409513544640692,
+          "private": 1.340948274852151,
+          "shared": 1.3608005991593124
+        },
+        "2718": {
+          "endpoint_map": 1.3508518942704852,
+          "midpoint": 1.3531325496352602,
+          "family_bootstrap": 1.3471344413933208,
+          "private": 1.3465674017508629,
+          "shared": 1.3623258016012083
+        }
+      }
+    },
+    "textcomplexityde_complexity": {
+      "source": "textcomplexityde",
+      "families": 1,
+      "rows": 32,
+      "raw_observations": 333,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.41886320358282,
+          "midpoint": 1.419151143018258,
+          "family_bootstrap": 1.4167763523739196,
+          "private": 1.419489524293421,
+          "shared": 1.441932775923679
+        },
+        "2718": {
+          "endpoint_map": 1.4306493049341131,
+          "midpoint": 1.4307517491291253,
+          "family_bootstrap": 1.4284691425165315,
+          "private": 1.4219422966236281,
+          "shared": 1.4516744286861756
+        }
+      }
+    },
+    "textcomplexityde_lexical_difficulty": {
+      "source": "textcomplexityde",
+      "families": 1,
+      "rows": 32,
+      "raw_observations": 334,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.4613574319438334,
+          "midpoint": 1.4613830048432317,
+          "family_bootstrap": 1.4595831601165126,
+          "private": 1.4651093892947562,
+          "shared": 1.4593440222905445
+        },
+        "2718": {
+          "endpoint_map": 1.462980659451194,
+          "midpoint": 1.463244164783124,
+          "family_bootstrap": 1.4532480071113825,
+          "private": 1.4756617833453933,
+          "shared": 1.4527047941048818
+        }
+      }
+    },
+    "textcomplexityde_understandability": {
+      "source": "textcomplexityde",
+      "families": 1,
+      "rows": 32,
+      "raw_observations": 334,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.4289417511822862,
+          "midpoint": 1.4288761042605733,
+          "family_bootstrap": 1.4329604911485898,
+          "private": 1.4161820941188923,
+          "shared": 1.4450647044138558
+        },
+        "2718": {
+          "endpoint_map": 1.424836242858761,
+          "midpoint": 1.424819600545014,
+          "family_bootstrap": 1.4258723328083749,
+          "private": 1.4095877459809636,
+          "shared": 1.4467013776379585
+        }
+      }
+    },
+    "turkish_comprehension_correct": {
+      "source": "turkish",
+      "families": 2,
+      "rows": 79,
+      "raw_observations": 615,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6994102188873089,
+          "midpoint": 0.6993913201478986,
+          "family_bootstrap": 0.7009688854171655,
+          "private": 0.7020624783735406,
+          "shared": 0.6994622614753732
+        },
+        "2718": {
+          "endpoint_map": 0.6968594952627775,
+          "midpoint": 0.6968265182122949,
+          "family_bootstrap": 0.6998872324799674,
+          "private": 0.7011456885347183,
+          "shared": 0.6957979597865562
+        }
+      }
+    },
+    "turkish_sentence_comparison": {
+      "source": "turkish",
+      "families": 1,
+      "rows": 51,
+      "raw_observations": 51,
+      "likelihood": "ordered_choice",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.7354082054165155,
+          "midpoint": 0.7354296174280736,
+          "family_bootstrap": 0.7358538076761554,
+          "private": 0.7493808673752602,
+          "shared": 0.7457358757630592
+        },
+        "2718": {
+          "endpoint_map": 0.7356438354133208,
+          "midpoint": 0.7357530026906378,
+          "family_bootstrap": 0.7331373149268057,
+          "private": 0.7598303005181158,
+          "shared": 0.7310491140262552
+        }
+      }
+    },
+    "yadav_full_sentence_difficulty": {
+      "source": "yadav",
+      "families": 2,
+      "rows": 16,
+      "raw_observations": 143,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.488053038889324,
+          "midpoint": 1.4873402773572262,
+          "family_bootstrap": 1.4968231650887949,
+          "private": 1.4759446132184109,
+          "shared": 1.5207232287897994
+        },
+        "2718": {
+          "endpoint_map": 1.512865988670733,
+          "midpoint": 1.5143327434266884,
+          "family_bootstrap": 1.5012587024745514,
+          "private": 1.6082914514013462,
+          "shared": 1.4494764875660102
+        }
+      }
+    },
+    "yadav_paced_words_difficulty": {
+      "source": "yadav",
+      "families": 2,
+      "rows": 16,
+      "raw_observations": 489,
+      "likelihood": "gaussian",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 1.477659610086239,
+          "midpoint": 1.4766919796887314,
+          "family_bootstrap": 1.487032868997703,
+          "private": 1.4587191605513488,
+          "shared": 1.5105306562938987
+        },
+        "2718": {
+          "endpoint_map": 1.481391067041777,
+          "midpoint": 1.482356722235171,
+          "family_bootstrap": 1.4745561695806424,
+          "private": 1.5179806958540436,
+          "shared": 1.4671219854964501
+        }
+      }
+    },
+    "zhan_reference_form": {
+      "source": "zhan",
+      "families": 2,
+      "rows": 2,
+      "raw_observations": 40,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6729299115839039,
+          "midpoint": 0.6734141315791243,
+          "family_bootstrap": 0.6275416089736057,
+          "private": 0.7317315802808741,
+          "shared": 0.625132031200401
+        },
+        "2718": {
+          "endpoint_map": 0.7108780829064759,
+          "midpoint": 0.7112602953444546,
+          "family_bootstrap": 0.6823259517837691,
+          "private": 0.7487808936187027,
+          "shared": 0.6769667994598964
+        }
+      }
+    },
+    "zhan_remention": {
+      "source": "zhan",
+      "families": 2,
+      "rows": 4,
+      "raw_observations": 87,
+      "likelihood": "categorical",
+      "seed_nll": {
+        "1729": {
+          "endpoint_map": 0.6335691805422881,
+          "midpoint": 0.6334732318672475,
+          "family_bootstrap": 0.6404608875862859,
+          "private": 0.6419544737011471,
+          "shared": 0.6375588800289668
+        },
+        "2718": {
+          "endpoint_map": 0.650860837802702,
+          "midpoint": 0.6498196052457,
+          "family_bootstrap": 0.6719865641180086,
+          "private": 0.6833175821343198,
+          "shared": 0.6226545441458331
+        }
+      }
+    }
+  },
+  "seeds": {
+    "1729": {
+      "source_macro_nll": {
+        "endpoint_map": 0.9025728567992213,
+        "midpoint": 0.9046605689341343,
+        "family_bootstrap": 0.9015477503214167
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.00102510647780476,
+          "ci95": [
+            -0.0016064460029116708,
+            0.004077093752008011
+          ],
+          "ci95_simultaneous": [
+            -0.001911389399959827,
+            0.004563953994177559
+          ],
+          "signflip_p": 0.25568744312556874,
+          "bonferroni_p": 0.5113748862511375,
+          "improving_sources": 10,
+          "losing_sources": 10
+        },
+        "midpoint": {
+          "gain": 0.003112818612717879,
+          "ci95": [
+            -0.0008906396421112952,
+            0.008194105877848483
+          ],
+          "ci95_simultaneous": [
+            -0.0013437747193930547,
+            0.009055378400613405
+          ],
+          "signflip_p": 0.11719882801171988,
+          "bonferroni_p": 0.23439765602343976,
+          "improving_sources": 12,
+          "losing_sources": 8
+        }
+      }
+    },
+    "2718": {
+      "source_macro_nll": {
+        "endpoint_map": 0.9088919450548263,
+        "midpoint": 0.9114437092772342,
+        "family_bootstrap": 0.9076341713976988
+      },
+      "comparisons": {
+        "endpoint_map": {
+          "gain": 0.001257773657127433,
+          "ci95": [
+            -0.0008064728534402909,
+            0.00344872764530951
+          ],
+          "ci95_simultaneous": [
+            -0.0011901072978057472,
+            0.003777970921293371
+          ],
+          "signflip_p": 0.14247857521424787,
+          "bonferroni_p": 0.28495715042849573,
+          "improving_sources": 9,
+          "losing_sources": 11
+        },
+        "midpoint": {
+          "gain": 0.0038095378795353304,
+          "ci95": [
+            -0.00046935842851739725,
+            0.010190655242371187
+          ],
+          "ci95_simultaneous": [
+            -0.0008344253387868213,
+            0.011545447862955251
+          ],
+          "signflip_p": 0.08822911770882291,
+          "bonferroni_p": 0.17645823541764583,
+          "improving_sources": 10,
+          "losing_sources": 10
+        }
+      }
+    }
+  },
+  "statistics": "9189fac7d450c3d01f393e45fb57020f09002640a776d1740936a893713fcaa8",
+  "forecast": "7488c1f99d049d47917ac23c58d95915b49e4324d9b135dddce5929c97471a0c"
+}

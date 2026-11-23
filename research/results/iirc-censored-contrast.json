@@ -1,0 +1,149 @@
+{
+  "retrospective": true,
+  "counts": {
+    "training_pairs": 15,
+    "training_groups": 13,
+    "evaluation_pairs": 37,
+    "evaluation_groups": 33
+  },
+  "fit_seal_sha256": "5cd5df1b093b5727c24228eee01585fde3623a14690070b02cebd7e3490bbb05",
+  "fit_seal": {
+    "features_sha256": "867814918645491853222ef88d9a7a1709baf6ee3bbf7fcad8170b2c6de74fb1",
+    "predictions_sha256": "1289f4776e46fe3f80d2010d9f9f34aaf9190d3850946d80c07c3669f52713ae",
+    "diagnostics": {
+      "no_rank": {
+        "iterations": 24,
+        "objective": 2.476595977192907,
+        "train_interval_nll": 2.449612986617685,
+        "train_pair_rank_nll": 0.708423740043387
+      },
+      "censored_rank": {
+        "iterations": 23,
+        "objective": 2.7520180082942804,
+        "train_interval_nll": 2.468157085785659,
+        "train_pair_rank_nll": 0.4447852109227274
+      },
+      "locked": {
+        "train_pair_rank_nll": 0.7084237400434769
+      }
+    },
+    "published_replay_max_hazard_error": 7.216449660063518e-16,
+    "published_vs_zero_rank_max_hazard_error": 4.969358258222201e-13,
+    "elapsed_seconds": 0.28005737500097894,
+    "peak_rss_mib": 237.609375
+  },
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "holdout": {
+    "locked": {
+      "same_stop_accuracy": {
+        "difference": 0.5675675675675675,
+        "descriptive_paired_material_95_ci": [
+          0.3998684210526317,
+          0.7368421052631579
+        ],
+        "groups": 33
+      },
+      "swapped_minus_own_nll_nats": {
+        "difference": 0.004357169275036434,
+        "descriptive_paired_material_95_ci": [
+          -0.019816619101451546,
+          0.031307156196482715
+        ],
+        "groups": 33
+      },
+      "own_nll_nats": {
+        "difference": 3.21990939598982,
+        "descriptive_paired_material_95_ci": [
+          2.803161682936247,
+          3.637437878781378
+        ],
+        "groups": 33
+      },
+      "both_paths_favor_own_interval": 0,
+      "same_stop_correct": 21.0
+    },
+    "no_rank": {
+      "same_stop_accuracy": {
+        "difference": 0.5675675675675675,
+        "descriptive_paired_material_95_ci": [
+          0.3998684210526317,
+          0.7368421052631579
+        ],
+        "groups": 33
+      },
+      "swapped_minus_own_nll_nats": {
+        "difference": 0.004357169275039222,
+        "descriptive_paired_material_95_ci": [
+          -0.019816619101466745,
+          0.03130715619654866
+        ],
+        "groups": 33
+      },
+      "own_nll_nats": {
+        "difference": 3.2199093959898697,
+        "descriptive_paired_material_95_ci": [
+          2.803161682936381,
+          3.637437878781368
+        ],
+        "groups": 33
+      },
+      "both_paths_favor_own_interval": 0,
+      "same_stop_correct": 21.0
+    },
+    "censored_rank": {
+      "same_stop_accuracy": {
+        "difference": 0.6216216216216216,
+        "descriptive_paired_material_95_ci": [
+          0.46153846153846156,
+          0.7777777777777778
+        ],
+        "groups": 33
+      },
+      "swapped_minus_own_nll_nats": {
+        "difference": 0.014808272776375371,
+        "descriptive_paired_material_95_ci": [
+          -0.022344445824560175,
+          0.05257523413544275
+        ],
+        "groups": 33
+      },
+      "own_nll_nats": {
+        "difference": 3.250763106402907,
+        "descriptive_paired_material_95_ci": [
+          2.8410383830910697,
+          3.659496074571763
+        ],
+        "groups": 33
+      },
+      "both_paths_favor_own_interval": 0,
+      "same_stop_correct": 23.0
+    }
+  },
+  "censored_rank_minus_no_rank": {
+    "same_stop_accuracy": {
+      "difference": 0.05405405405405406,
+      "descriptive_paired_material_95_ci": [
+        -0.19444444444444445,
+        0.2972972972972973
+      ],
+      "groups": 33
+    },
+    "swapped_minus_own_nll_nats": {
+      "difference": 0.010451103501336151,
+      "descriptive_paired_material_95_ci": [
+        -0.02348728263226841,
+        0.044671676211453536
+      ],
+      "groups": 33
+    },
+    "own_nll_nats": {
+      "difference": 0.030853710413037142,
+      "descriptive_paired_material_95_ci": [
+        -0.009247030413246454,
+        0.06944250391272765
+      ],
+      "groups": 33
+    }
+  }
+}

@@ -1,0 +1,11 @@
+# Observation granularity of the Abel text-order experiment
+
+Abel et al. instructed readers to read either grouped or interleaved versions of the same-topic explanatory text and manipulated whether post-reading self-questioning was prompted. Readers entered thoughts or questions into text boxes at each screen. each reading condition comprised six reading stops. The authors' publicly available SPSS dataset included 114 reader participants and 29 variables, with the primary outcome variable being the count of responses per participant per reading condition. The data were not entered segment-by-segment, could not be linked back to the screen response keys, and lacked follow-up states for the same question. [Original paper §§3, 4.1, 5.2](https://onlinelibrary.wiley.com/doi/full/10.1002/acp.3761) · [Author-released scoring file](https://osf.io/g4hxd/)
+
+Recalculated based on the number of inductive inferences per round, the 2×2 contrast showed a main effect of +0.760 units, 95% CI [+0.451, +1.069], \(F(1,110)=23.79\). The interaction between prompt and order was −0.623 units, 95% CI [−1.240, −0.005], \(F(1,110)=3.99\). Both statistical measures from the original paper are reproducible. This manipulation provides a recalculable discourse arrangement effect. Observations can only indicate the frequency of inferences per round and cannot pinpoint a specific paragraph or token. [Data and contrast recalculated](../../../research/results/abel-interleaving-audit.json)
+
+Both author-published Word stimuli were translated from German to English using the same translation used in the study. After removing file metadata and headers, each stimulus contained 1,167 words, with identical initial strings. The grouped version was organized by the six whale species, while the interleaved version was organized by the six features. This release provides a checkable version of the same material, though the original German stimuli and segment-level responses remain unavailable. [Grouped version](https://osf.io/mr6a4/) · [Interleaved version](https://osf.io/gzu8c/)
+
+All three sources were cross-checked using content hashing. The same data were rerun twice, yielding identical byte-for-byte summary files. [Verification script](../../../research/stage6/abel_interleaving_audit.py)
+
+[Original research record](../../../research/stage6/abel-interleaving-audit.md)

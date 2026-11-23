@@ -1,0 +1,89 @@
+{
+  "scope": "Post-hoc descriptive check on previously scored single-word BSPR visits; not a new evaluation split.",
+  "input_sha256": {
+    "predictions": "fcf23e030903e61e5d42f67f6cead71052dba4b57cc830ca4c65f426b1477956",
+    "local_released_outcomes": "81c27b557cdcf1bf1bb8c7627cd102177aacc4b94a0363f7aabdea79eeffd647"
+  },
+  "visits": 3313,
+  "material_families": 16,
+  "contrasts": {
+    "shared_two_minus_independent": {
+      "paired_brier_difference": 0.0014397140412711253,
+      "families_with_higher_loss": 9,
+      "leave_one_material_family_out_range": [
+        0.00046724828966300145,
+        0.001618061002954046
+      ],
+      "by_observed_action": {
+        "first_backward": {
+          "visits": 144,
+          "paired_brier_contribution_to_all_visits": 0.0006823819019473382,
+          "mean_predicted_probability": {
+            "independent": 0.13465663766512176,
+            "shared_two": 0.10747393456066481
+          }
+        },
+        "forward": {
+          "visits": 3169,
+          "paired_brier_contribution_to_all_visits": 0.0007573321393237871,
+          "mean_predicted_probability": {
+            "independent": 0.03250910070428864,
+            "shared_two": 0.040338818344940325
+          }
+        }
+      }
+    },
+    "shared_three_minus_independent": {
+      "paired_brier_difference": 0.0019757027861656245,
+      "families_with_higher_loss": 10,
+      "leave_one_material_family_out_range": [
+        0.0006375479363915002,
+        0.00221214055044445
+      ],
+      "by_observed_action": {
+        "first_backward": {
+          "visits": 144,
+          "paired_brier_contribution_to_all_visits": 0.001527046828762503,
+          "mean_predicted_probability": {
+            "independent": 0.13465663766512176,
+            "shared_three": 0.09273989736437374
+          }
+        },
+        "forward": {
+          "visits": 3169,
+          "paired_brier_contribution_to_all_visits": 0.0004486559574031216,
+          "mean_predicted_probability": {
+            "independent": 0.03250910070428864,
+            "shared_three": 0.03687257541669132
+          }
+        }
+      }
+    },
+    "shared_three_minus_shared_two": {
+      "paired_brier_difference": 0.0005359887448944992,
+      "families_with_higher_loss": 9,
+      "leave_one_material_family_out_range": [
+        0.0001702996467284988,
+        0.0006306292465787532
+      ],
+      "by_observed_action": {
+        "first_backward": {
+          "visits": 144,
+          "paired_brier_contribution_to_all_visits": 0.0008446649268151647,
+          "mean_predicted_probability": {
+            "shared_two": 0.10747393456066481,
+            "shared_three": 0.09273989736437374
+          }
+        },
+        "forward": {
+          "visits": 3169,
+          "paired_brier_contribution_to_all_visits": -0.0003086761819206655,
+          "mean_predicted_probability": {
+            "shared_two": 0.040338818344940325,
+            "shared_three": 0.03687257541669132
+          }
+        }
+      }
+    }
+  }
+}

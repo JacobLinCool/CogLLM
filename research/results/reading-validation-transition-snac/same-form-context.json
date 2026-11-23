@@ -1,0 +1,110 @@
+{
+  "design": "post-primary comparison of marked and unmarked different occurrences of the same casefolded word within a movie; movies equally weighted",
+  "results": {
+    "same_form": {
+      "movies": 36,
+      "pairs": 1372,
+      "distinct_movie_word_groups": 140,
+      "models": {
+        "contextual": {
+          "estimate": 0.9023229491018729,
+          "family_bootstrap_95_interval": [
+            0.8354994194725854,
+            0.9602150599734898
+          ]
+        },
+        "ner": {
+          "estimate": 0.8799814382068913,
+          "family_bootstrap_95_interval": [
+            0.8168774322645417,
+            0.9344581953222584
+          ]
+        },
+        "surprisal": {
+          "estimate": 0.8957273174398941,
+          "family_bootstrap_95_interval": [
+            0.832651548709764,
+            0.9501731636902231
+          ]
+        },
+        "contextual_minus_ner": {
+          "estimate": 0.02234151089498161,
+          "family_bootstrap_95_interval": [
+            -0.023531012690108204,
+            0.0682831380310032
+          ]
+        }
+      }
+    },
+    "same_form_repeated_only": {
+      "movies": 15,
+      "pairs": 959,
+      "distinct_movie_word_groups": 22,
+      "models": {
+        "contextual": {
+          "estimate": 0.7136873908857742,
+          "family_bootstrap_95_interval": [
+            0.5579920499252201,
+            0.8537810212707753
+          ]
+        },
+        "ner": {
+          "estimate": 0.7057123265068419,
+          "family_bootstrap_95_interval": [
+            0.5589820899487252,
+            0.83724615538505
+          ]
+        },
+        "surprisal": {
+          "estimate": 0.6839971909866523,
+          "family_bootstrap_95_interval": [
+            0.5475560856471572,
+            0.8061700228343086
+          ]
+        },
+        "contextual_minus_ner": {
+          "estimate": 0.007975064378932317,
+          "family_bootstrap_95_interval": [
+            -0.13681108941736914,
+            0.16233993836781085
+          ]
+        }
+      }
+    },
+    "same_form_recognized_person": {
+      "movies": 27,
+      "pairs": 125,
+      "distinct_movie_word_groups": 54,
+      "models": {
+        "contextual": {
+          "estimate": 0.9925925925925926,
+          "family_bootstrap_95_interval": [
+            0.9777777777777777,
+            1.0
+          ]
+        },
+        "ner": {
+          "estimate": 0.9888888888888888,
+          "family_bootstrap_95_interval": [
+            0.9666666666666667,
+            1.0
+          ]
+        },
+        "surprisal": {
+          "estimate": 0.9888888888888888,
+          "family_bootstrap_95_interval": [
+            0.9703703703703703,
+            1.0
+          ]
+        },
+        "contextual_minus_ner": {
+          "estimate": 0.003703703703703707,
+          "family_bootstrap_95_interval": [
+            -0.022222222222222254,
+            0.033333333333333326
+          ]
+        }
+      }
+    }
+  }
+}

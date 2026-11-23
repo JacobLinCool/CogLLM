@@ -1,0 +1,260 @@
+{
+  "base_checkpoint": "Qwen/Qwen3.5-2B",
+  "model_snapshot": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "dataset_sha256": {
+    "annotations.csv": "fb71cdd8b742c10da443c5de8a468605820b45a9ad1abe9cc50b1f7298f2bf29",
+    "sentences.csv": "0d0f798d7e2417f5eafa93611c1e5efb26ce67ee2da2f95c598433f491fae02e",
+    "mcq_responses.csv": "92b6e16bb6be332ee1526d9579e19d776df10aa8a1bb881ae6980a31c07860c7"
+  },
+  "documents": 78,
+  "document_pairs": 39,
+  "sentences": 609,
+  "included_ratings": 1826,
+  "rating_scale": [
+    1,
+    5
+  ],
+  "test_doc_pair_ids_per_fold": [
+    [
+      29,
+      24,
+      31,
+      6,
+      5,
+      26,
+      39,
+      8
+    ],
+    [
+      30,
+      35,
+      19,
+      11,
+      25,
+      28,
+      37,
+      17
+    ],
+    [
+      7,
+      27,
+      32,
+      21,
+      10,
+      33,
+      23,
+      20
+    ],
+    [
+      4,
+      1,
+      16,
+      18,
+      36,
+      13,
+      22,
+      12
+    ],
+    [
+      15,
+      38,
+      3,
+      34,
+      2,
+      14,
+      9
+    ]
+  ],
+  "metrics": {
+    "mean": {
+      "processing_ease": {
+        "mae": 0.7390842245368893,
+        "pearson": null
+      },
+      "perceived_understanding": {
+        "mae": 0.8051563383193305,
+        "pearson": null
+      }
+    },
+    "length": {
+      "processing_ease": {
+        "mae": 0.6349530668355787,
+        "pearson": 0.47466718283099496
+      },
+      "perceived_understanding": {
+        "mae": 0.7241002420658414,
+        "pearson": 0.3567065905291284
+      }
+    },
+    "qwen": {
+      "processing_ease": {
+        "mae": 0.677664073860235,
+        "pearson": 0.34835101997924667
+      },
+      "perceived_understanding": {
+        "mae": 0.7226218741603326,
+        "pearson": 0.39321583663773285
+      }
+    },
+    "qwen_plus_length": {
+      "processing_ease": {
+        "mae": 0.6255320325405587,
+        "pearson": 0.4978655910298537
+      },
+      "perceived_understanding": {
+        "mae": 0.6807708502585099,
+        "pearson": 0.45595599469128234
+      }
+    },
+    "length_plus_variant": {
+      "processing_ease": {
+        "mae": 0.615362329542775,
+        "pearson": 0.5117978396759462
+      },
+      "perceived_understanding": {
+        "mae": 0.6780346125408401,
+        "pearson": 0.47228651990756854
+      }
+    }
+  },
+  "open_book_mcq": {
+    "trial_count": 932,
+    "excluded_missing_variant_evidence": 3,
+    "incorrect_count": 133,
+    "trials_by_variant": {
+      "orig": 470,
+      "simp": 462
+    },
+    "no_skill_auroc": 0.5,
+    "random_ranking_average_precision": 0.1427038626609442,
+    "score": "Negative out-of-fold perceived understanding at the designated evidence sentence. The document controls average scores across all sentences or subtract that average risk. The original-variant control assigns higher risk to every original abstract.",
+    "metrics": {
+      "length": {
+        "auroc": 0.5295811493690421,
+        "average_precision": 0.1770997874753666,
+        "auroc_cluster_bootstrap_95ci": [
+          0.4769728705191378,
+          0.5887390589207443
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.5830226321297749,
+            "average_precision": 0.25370592257156355
+          },
+          "simp": {
+            "auroc": 0.4449184721911995,
+            "average_precision": 0.10387930660520663
+          }
+        }
+      },
+      "qwen": {
+        "auroc": 0.5769570986289252,
+        "average_precision": 0.1825738541375656,
+        "auroc_cluster_bootstrap_95ci": [
+          0.5224994526488178,
+          0.6309472558703381
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.5748789900575615,
+            "average_precision": 0.2273413047831158
+          },
+          "simp": {
+            "auroc": 0.5570247933884298,
+            "average_precision": 0.1367168567730412
+          }
+        }
+      },
+      "qwen_plus_length": {
+        "auroc": 0.5629922741773081,
+        "average_precision": 0.19020703047248055,
+        "auroc_cluster_bootstrap_95ci": [
+          0.5022043680190994,
+          0.62617326795066
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.610953035060178,
+            "average_precision": 0.2583419913115232
+          },
+          "simp": {
+            "auroc": 0.48880947062765245,
+            "average_precision": 0.11305168517540001
+          }
+        }
+      },
+      "length_plus_variant": {
+        "auroc": 0.5554875925734235,
+        "average_precision": 0.2119124762595481,
+        "auroc_cluster_bootstrap_95ci": [
+          0.5024006207519998,
+          0.6179672700038825
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.5849522501308215,
+            "average_precision": 0.26012704682529664
+          },
+          "simp": {
+            "auroc": 0.440763904400268,
+            "average_precision": 0.10230414463913845
+          }
+        }
+      },
+      "qwen_document_mean": {
+        "auroc": 0.5813187537052895,
+        "average_precision": 0.18452400780141695,
+        "auroc_cluster_bootstrap_95ci": [
+          0.5118001812773254,
+          0.6485414602362279
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.5835295656724229,
+            "average_precision": 0.21455285001090074
+          },
+          "simp": {
+            "auroc": 0.5369220460129551,
+            "average_precision": 0.13784721592405594
+          }
+        }
+      },
+      "qwen_centered_within_document": {
+        "auroc": 0.5321642654822287,
+        "average_precision": 0.16282641548810284,
+        "auroc_cluster_bootstrap_95ci": [
+          0.4824795338060732,
+          0.5874995731209323
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.5318386970172684,
+            "average_precision": 0.20307102423116397
+          },
+          "simp": {
+            "auroc": 0.5367880276971186,
+            "average_precision": 0.1403275042497129
+          }
+        }
+      },
+      "original_variant_only": {
+        "auroc": 0.5479264494151523,
+        "average_precision": 0.15634130298808843,
+        "auroc_cluster_bootstrap_95ci": [
+          0.4985477013297754,
+          0.5970295873729483
+        ],
+        "by_variant": {
+          "orig": {
+            "auroc": 0.5,
+            "average_precision": 0.16595744680851063
+          },
+          "simp": {
+            "auroc": 0.5,
+            "average_precision": 0.11904761904761904
+          }
+        }
+      }
+    }
+  }
+}

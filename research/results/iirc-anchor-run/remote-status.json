@@ -1,0 +1,46 @@
+{
+  "completed": true,
+  "phase": "complete",
+  "phase_seconds": {
+    "install": 12.491111843999988,
+    "extract": 667.8811293340001,
+    "fit": 20.521998780999866
+  },
+  "device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "input_sha256": {
+    "data/eval-stimuli.jsonl": "e73474c2415a35238504d321f6a6e61a468ddd2295c38dae345b21ba1058f6de",
+    "data/stimuli.jsonl": "d996ec318009b905497d393cea1d75af5c54b75a5f406f5732f20e8f1995f96b",
+    "data/train-spans.jsonl": "af0136f064233eccbfc40f8effa733455a7825dc8e3efbdb01c976a927f26e9e",
+    "research/core_features/extract.py": "ff7fca2c3dd2b20f5178447265e0d53162aa5fdc5d1942b9978d620755c8f02c",
+    "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+    "research/semantic_tracking/iirc_anchor_fit.py": "69d4feb829b2b1c1b51baabdf3609734658fdb7c092f274375f0c2eec955cdac",
+    "research/semantic_tracking/iirc_extract.py": "6eb15c2b7ca95195e64fa7e99f2fbb8025abfd6c30aba54c96c509f3c833d7c8",
+    "research/semantic_tracking/iirc_prepare.py": "f7b057e5374ec13a15cd51178c1e362e86bcd78acacea6f25a6b29bf88691c65",
+    "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+    "research/semantic_tracking/qasper_fit.py": "ee67ceeda7d77d8ee1573e0747235eb7b4c9ee6070f21f9507bbdcea7b5f7527",
+    "research/stage2/records.py": "2dcbf793bf62f3b6f21f533f4fe9f9c654cb4d9d5194ff6b99285801a6c1ce9a",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+  },
+  "payload_sha256": "412e659c4928b7170f0d676eaba9c466a06bb66e2d017a17d8103ce0ec1c0a0d",
+  "worker_sha256": "acc031bc989968cc6a050404fac7f7864a6abe35b0b190a1cc4b910636c1a8e1",
+  "worker_elapsed_s": 705.335290485,
+  "output_sha256": {
+    "extract/causality.json": "db84b9c3ad1b50eb2188f990d51b050665aa329ff5998da0a06edd1d0bce6999",
+    "extract/extraction.json": "70797fb253c379b321b863af93aa1fa761060ae20415df3eadc5cababa68819f",
+    "extract/telemetry.jsonl": "e4420c173c949a5a96ea478d22dce53baa30f928ee919cf0c159c3f861baf9d7",
+    "fit/fit-manifest.json": "4951860a1d724120bd1992f21fed76212f65a3c6509dbae65b26f7f72f56b85c",
+    "fit/heads.npz": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+    "fit/predictions.jsonl": "0768169249a700f16ef3eac8ce60d5e400d7d5b698927f034dc19a0f985609d2",
+    "worker.log": "396216a14fa1e7b2c2ae58ac8b78aecd53eaa2c2733657964fdb23835c2374bd"
+  }
+}

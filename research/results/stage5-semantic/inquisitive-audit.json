@@ -1,0 +1,113 @@
+{
+  "source": {
+    "revision": "9c364b689a3c134cc5a0bc886f0ce7ce190e6111",
+    "questions_url": "https://github.com/wjko2/INQUISITIVE/blob/9c364b689a3c134cc5a0bc886f0ce7ce190e6111/questions.txt",
+    "article_terms_url": "https://github.com/wjko2/INQUISITIVE/tree/9c364b689a3c134cc5a0bc886f0ce7ce190e6111#article-sources",
+    "protocol_url": "https://aclanthology.org/2020.emnlp-main.530.pdf#page=3",
+    "sha256": "3d954e957d6df1dde297682b1c1f8c63ccc0c7cff1dcb9b995a7e054b3dd04ee",
+    "bytes": 4769525
+  },
+  "model_access": {
+    "status": "article_access_and_reuse_unverified",
+    "author_article_access": "Request by email. Newsela articles require prior Newsela permission.",
+    "hugging_face_loader_article_archive_status": "Author upstream article URL returned HTTP 404 on verification.",
+    "hugging_face_card": "https://huggingface.co/datasets/UT-CompLing/inquisitive_qg/tree/11b9160bec51fb01e2f1999f0de1c399aa81567a",
+    "model_inputs_built": false
+  },
+  "measurement": {
+    "observed": "A validated reader question after a complete focal sentence was visible, paired with a focal-sentence highlight.",
+    "unobserved": [
+      "Within-sentence time of onset",
+      "Prior-sentence source anchors",
+      "Worker-linked zero-question trials",
+      "Repeated uncertainty or resolution from the same reader"
+    ],
+    "denominator": "Unreleased stop rows can include zero reports or reports excluded by validation. They do not identify no-question trials."
+  },
+  "by_official_article_split": {
+    "train": {
+      "question_rows": 15931,
+      "scheduled_article_ids": 1200,
+      "scheduled_article_sentence_stops": 6000,
+      "stops_with_a_released_question": 5674,
+      "stops_without_released_rows": 326,
+      "released_stops_with_at_least_one_preceding_sentence_unrepresented": 385
+    },
+    "validation": {
+      "question_rows": 1991,
+      "scheduled_article_ids": 150,
+      "scheduled_article_sentence_stops": 750,
+      "stops_with_a_released_question": 713,
+      "stops_without_released_rows": 37,
+      "released_stops_with_at_least_one_preceding_sentence_unrepresented": 36
+    },
+    "test": {
+      "question_rows": 1894,
+      "scheduled_article_ids": 150,
+      "scheduled_article_sentence_stops": 750,
+      "stops_with_a_released_question": 712,
+      "stops_without_released_rows": 38,
+      "released_stops_with_at_least_one_preceding_sentence_unrepresented": 42
+    }
+  },
+  "total": {
+    "question_rows": 19816,
+    "scheduled_article_sentence_stops": 7500,
+    "stops_with_a_released_question": 7099,
+    "stops_without_released_rows": 401,
+    "released_stops_with_at_least_one_preceding_sentence_unrepresented": 463,
+    "exact_span_rows": 19814,
+    "distinct_exact_highlights_at_stops": 18074
+  },
+  "unusable_span_rows": [
+    {
+      "source_line": 325,
+      "article_id": 22,
+      "sentence_id": 2,
+      "reason": "span_does_not_match_offsets"
+    },
+    {
+      "source_line": 643,
+      "article_id": 44,
+      "sentence_id": 4,
+      "reason": "empty_span"
+    }
+  ],
+  "cross_split_focal_sentences": {
+    "normalization": "Unicode NFKC, case folding and whitespace normalization",
+    "unique_normalized_focal_strings_in_multiple_splits": 6,
+    "by_split_pair_including_all_split_overlap": {
+      "train/validation": 4,
+      "train/test": 4,
+      "validation/test": 2
+    }
+  },
+  "dcqa_inquisitive_reanalysis": {
+    "source": {
+      "revision": "011fd2cbb0bc49d2af41af4fb60da7a48aca5463",
+      "answers_url": "https://github.com/wjko2/DCQA-Discourse-Comprehension-by-Question-Answering/blob/011fd2cbb0bc49d2af41af4fb60da7a48aca5463/inquisitive.json",
+      "article_terms_url": "https://github.com/wjko2/DCQA-Discourse-Comprehension-by-Question-Answering/tree/011fd2cbb0bc49d2af41af4fb60da7a48aca5463#article-sources",
+      "method_url": "https://aclanthology.org/2022.emnlp-main.806.pdf#page=7",
+      "bytes": 220479,
+      "sha256": "66156fd2949ae2c2fa204e527129f7da511c973415b53c26ec037f728670b144"
+    },
+    "scope": "Retrospective expert answerability and candidate answer-sentence positions for the original question family.",
+    "reader_linked_trajectory_available": false,
+    "released_article_count": 61,
+    "paper_article_count": 60,
+    "question_rows": 719,
+    "questions_by_original_article_split": {
+      "test": 22,
+      "train": 677,
+      "validation": 20
+    },
+    "matches_by_article_id_and_exact_question": {
+      "unique": 711,
+      "ambiguous": 8
+    },
+    "marked_answerable": 424,
+    "answerable_with_numeric_location": 422,
+    "marked_unanswerable": 295,
+    "answerable_without_numeric_location": 2
+  }
+}

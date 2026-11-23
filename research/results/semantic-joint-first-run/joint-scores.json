@@ -1,0 +1,407 @@
+{
+  "scope": "Identical held-out observations across training conditions. Onset measures backward actions at reached word or region positions. Source conditions on marked contradiction stops. Closure conditions on retrospective annotated start and uses age and position, with no narrative text.",
+  "primary_endpoints": {
+    "onset": "single_word.brier",
+    "source": "source_span_nll",
+    "closure": "macro_story_interval_nll_nats_per_question"
+  },
+  "onset": {
+    "heldout_families": 16,
+    "anchors": 460,
+    "single_word": {
+      "visits": 3313,
+      "events": 144,
+      "metrics": {
+        "independent": {
+          "nll_nats": 0.15946483634772463,
+          "brier": 0.03599479402622454,
+          "average_precision": 0.2280419968427283
+        },
+        "shared_two": {
+          "nll_nats": 0.1634307989174115,
+          "brier": 0.03743450806749567,
+          "average_precision": 0.2254951531766655
+        },
+        "shared_three": {
+          "nll_nats": 0.16417258183814726,
+          "brier": 0.03797049681239016,
+          "average_precision": 0.22398234855798535
+        }
+      },
+      "paired": {
+        "shared_two_minus_independent": {
+          "nll_nats": {
+            "difference": 0.003965962569686863,
+            "descriptive_paired_material_95_ci": [
+              -0.0005059935427304962,
+              0.010394090516247597
+            ],
+            "groups": 16
+          },
+          "brier": {
+            "difference": 0.0014397140412711255,
+            "descriptive_paired_material_95_ci": [
+              0.0001302998588864429,
+              0.00401432133326709
+            ],
+            "groups": 16
+          }
+        },
+        "shared_three_minus_independent": {
+          "nll_nats": {
+            "difference": 0.004707745490422639,
+            "descriptive_paired_material_95_ci": [
+              -0.000230104345816317,
+              0.012839210294065286
+            ],
+            "groups": 16
+          },
+          "brier": {
+            "difference": 0.0019757027861656245,
+            "descriptive_paired_material_95_ci": [
+              0.0001341042611456799,
+              0.005597900353189778
+            ],
+            "groups": 16
+          }
+        },
+        "shared_three_minus_shared_two": {
+          "nll_nats": {
+            "difference": 0.0007417829207357762,
+            "descriptive_paired_material_95_ci": [
+              -0.0010003040477101315,
+              0.002955986668648971
+            ],
+            "groups": 16
+          },
+          "brier": {
+            "difference": 0.0005359887448944987,
+            "descriptive_paired_material_95_ci": [
+              -6.479644116794859e-05,
+              0.0015974649107706512
+            ],
+            "groups": 16
+          }
+        }
+      }
+    },
+    "all": {
+      "visits": 8226,
+      "events": 381,
+      "metrics": {
+        "independent": {
+          "nll_nats": 0.1633676572074843,
+          "brier": 0.037260182836291476,
+          "average_precision": 0.26649372498125257
+        },
+        "shared_two": {
+          "nll_nats": 0.16780424608135563,
+          "brier": 0.03863685904733395,
+          "average_precision": 0.26538736360101567
+        },
+        "shared_three": {
+          "nll_nats": 0.16856911794585216,
+          "brier": 0.039313324293239575,
+          "average_precision": 0.27058402947277416
+        }
+      },
+      "paired": {
+        "shared_two_minus_independent": {
+          "nll_nats": {
+            "difference": 0.004436588873871301,
+            "descriptive_paired_material_95_ci": [
+              0.0011958952563369536,
+              0.007794806982083055
+            ],
+            "groups": 16
+          },
+          "brier": {
+            "difference": 0.001376676211042479,
+            "descriptive_paired_material_95_ci": [
+              0.0006443337577366709,
+              0.0023716471849451136
+            ],
+            "groups": 16
+          }
+        },
+        "shared_three_minus_independent": {
+          "nll_nats": {
+            "difference": 0.005201460738367821,
+            "descriptive_paired_material_95_ci": [
+              0.0017246756531506425,
+              0.0089313268051245
+            ],
+            "groups": 16
+          },
+          "brier": {
+            "difference": 0.002053141456948097,
+            "descriptive_paired_material_95_ci": [
+              0.0011266794605357166,
+              0.003361879352657751
+            ],
+            "groups": 16
+          }
+        },
+        "shared_three_minus_shared_two": {
+          "nll_nats": {
+            "difference": 0.0007648718644965198,
+            "descriptive_paired_material_95_ci": [
+              -0.00011459520349808425,
+              0.0016862978943512086
+            ],
+            "groups": 16
+          },
+          "brier": {
+            "difference": 0.0006764652459056181,
+            "descriptive_paired_material_95_ci": [
+              0.0004333544079134025,
+              0.001005165653164533
+            ],
+            "groups": 16
+          }
+        }
+      }
+    },
+    "single_word_critical_verb": {
+      "visits": 236,
+      "events": 15,
+      "metrics": {
+        "independent": {
+          "nll_nats": 0.253555252934917,
+          "brier": 0.06076499422073969,
+          "average_precision": 0.054828192398754305
+        },
+        "shared_two": {
+          "nll_nats": 0.24991692255729203,
+          "brier": 0.0605352509028183,
+          "average_precision": 0.05581408381282138
+        },
+        "shared_three": {
+          "nll_nats": 0.2512291846442254,
+          "brier": 0.060601676236958446,
+          "average_precision": 0.058561462355961075
+        }
+      },
+      "paired": {
+        "shared_two_minus_independent": {
+          "nll_nats": {
+            "difference": -0.0036383303776249317,
+            "descriptive_paired_material_95_ci": [
+              -0.009757882015095138,
+              0.0031235145225799116
+            ],
+            "groups": 7
+          },
+          "brier": {
+            "difference": -0.00022974331792139876,
+            "descriptive_paired_material_95_ci": [
+              -0.0006377736618070937,
+              0.00023118129036642406
+            ],
+            "groups": 7
+          }
+        },
+        "shared_three_minus_independent": {
+          "nll_nats": {
+            "difference": -0.0023260682906915417,
+            "descriptive_paired_material_95_ci": [
+              -0.007335607338638266,
+              0.002837102759403347
+            ],
+            "groups": 7
+          },
+          "brier": {
+            "difference": -0.0001633179837812531,
+            "descriptive_paired_material_95_ci": [
+              -0.00047518806077507776,
+              0.00015416434247357994
+            ],
+            "groups": 7
+          }
+        },
+        "shared_three_minus_shared_two": {
+          "nll_nats": {
+            "difference": 0.0013122620869333887,
+            "descriptive_paired_material_95_ci": [
+              -0.001579247305488201,
+              0.0034705738099789062
+            ],
+            "groups": 7
+          },
+          "brier": {
+            "difference": 6.642533414014558e-05,
+            "descriptive_paired_material_95_ci": [
+              -0.00014346002588281703,
+              0.0002142942903095117
+            ],
+            "groups": 7
+          }
+        }
+      }
+    }
+  },
+  "source": {
+    "annotations": 226,
+    "families": 103,
+    "metrics": {
+      "independent": {
+        "source_span_nll": 2.0061065655616654,
+        "top_word_in_source": 0.3141592920353982,
+        "reciprocal_rank": 0.46003550105394697
+      },
+      "shared_two": {
+        "source_span_nll": 2.003504283854631,
+        "top_word_in_source": 0.29646017699115046,
+        "reciprocal_rank": 0.4502264417271863
+      },
+      "shared_three": {
+        "source_span_nll": 1.9910728570865772,
+        "top_word_in_source": 0.3008849557522124,
+        "reciprocal_rank": 0.4563771328913242
+      }
+    },
+    "paired": {
+      "shared_two_minus_independent": {
+        "source_span_nll": {
+          "difference": -0.002602281707034859,
+          "descriptive_paired_material_95_ci": [
+            -0.012288720057584399,
+            0.006738511890822888
+          ],
+          "groups": 103
+        },
+        "top_word_in_source": {
+          "difference": -0.017699115044247787,
+          "descriptive_paired_material_95_ci": [
+            -0.04109729973504707,
+            0.0
+          ],
+          "groups": 103
+        },
+        "reciprocal_rank": {
+          "difference": -0.00980905932676067,
+          "descriptive_paired_material_95_ci": [
+            -0.028298209258791084,
+            0.007681575691782323
+          ],
+          "groups": 103
+        }
+      },
+      "shared_three_minus_independent": {
+        "source_span_nll": {
+          "difference": -0.015033708475088427,
+          "descriptive_paired_material_95_ci": [
+            -0.035539987168025866,
+            0.005698153099389256
+          ],
+          "groups": 103
+        },
+        "top_word_in_source": {
+          "difference": -0.01327433628318584,
+          "descriptive_paired_material_95_ci": [
+            -0.0425531914893617,
+            0.016261821801891466
+          ],
+          "groups": 103
+        },
+        "reciprocal_rank": {
+          "difference": -0.0036583681626227646,
+          "descriptive_paired_material_95_ci": [
+            -0.02535425149145836,
+            0.01782805342182542
+          ],
+          "groups": 103
+        }
+      },
+      "shared_three_minus_shared_two": {
+        "source_span_nll": {
+          "difference": -0.012431426768053566,
+          "descriptive_paired_material_95_ci": [
+            -0.03236688906896113,
+            0.008282753846714001
+          ],
+          "groups": 103
+        },
+        "top_word_in_source": {
+          "difference": 0.004424778761061947,
+          "descriptive_paired_material_95_ci": [
+            -0.01834862385321101,
+            0.028037383177570093
+          ],
+          "groups": 103
+        },
+        "reciprocal_rank": {
+          "difference": 0.006150691164137909,
+          "descriptive_paired_material_95_ci": [
+            -0.007590861462578106,
+            0.020067132869458985
+          ],
+          "groups": 103
+        }
+      }
+    }
+  },
+  "closure": {
+    "outcome": "Retrospective closure interval or right censoring, conditional on the annotated opening line. Coordinates and age only, with no narrative content.",
+    "question_count": 196,
+    "story_count": 3,
+    "per_story": {
+      "Auftrag": {
+        "questions": 48,
+        "observed_closures": 45,
+        "right_censored": 3,
+        "confirmed_intervals_wider_than_one_line": 0,
+        "no_observed_post_opening_line": 0,
+        "interval_nll_nats_per_question": {
+          "independent": 4.578093194319926,
+          "shared_two": 4.578093194319926,
+          "shared_three": 4.619571185792775
+        },
+        "shared_three_minus_independent": 0.04147799147284825
+      },
+      "Katze": {
+        "questions": 99,
+        "observed_closures": 94,
+        "right_censored": 5,
+        "confirmed_intervals_wider_than_one_line": 6,
+        "no_observed_post_opening_line": 0,
+        "interval_nll_nats_per_question": {
+          "independent": 4.584744342243616,
+          "shared_two": 4.584744342243616,
+          "shared_three": 4.603368212868522
+        },
+        "shared_three_minus_independent": 0.018623870624905337
+      },
+      "Thomas": {
+        "questions": 49,
+        "observed_closures": 44,
+        "right_censored": 5,
+        "confirmed_intervals_wider_than_one_line": 0,
+        "no_observed_post_opening_line": 0,
+        "interval_nll_nats_per_question": {
+          "independent": 4.918975664917518,
+          "shared_two": 4.918975664917518,
+          "shared_three": 4.924854682226736
+        },
+        "shared_three_minus_independent": 0.0058790173092182485
+      }
+    },
+    "macro_story_interval_nll_nats_per_question": {
+      "independent": 4.6939377338270205,
+      "shared_two": 4.6939377338270205,
+      "shared_three": 4.715931360296011
+    },
+    "macro_shared_three_minus_independent": 0.021993626468990612
+  },
+  "input_sha256": {
+    "forecasts": {
+      "onset-predictions.jsonl": "fcf23e030903e61e5d42f67f6cead71052dba4b57cc830ca4c65f426b1477956",
+      "source-predictions.jsonl": "d4efe96c84dd59cf95c4fd9d9fcfafbd56e3817e9025693f57a285dd943ae9c4",
+      "closure-predictions.jsonl": "893eae5664c017c181a80e4998f4b105903a004406142f1c1231a3e85458eee1"
+    },
+    "onset": "81c27b557cdcf1bf1bb8c7627cd102177aacc4b94a0363f7aabdea79eeffd647",
+    "source": "58c49943b0488e64f2a067fa7344bf86f2a6e4c884b7681f23df9cd99fc0c2eb",
+    "closure": "f682818e7a955a72b93391251a8033520f63c14e5bfe659552a58f8c7a81ee56",
+    "seal": "fd745ee030d56916e342dc70249e3172a7ec8a98d394fd58bbe5db4493d49acb"
+  }
+}

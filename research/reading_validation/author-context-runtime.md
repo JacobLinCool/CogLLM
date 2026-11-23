@@ -1,0 +1,5 @@
+# Verify the causal writer and independent reading assays on one L4
+
+Replay eleven complete English articles through the writer's physical-state head. Check predictions and explanation pointers against the fitted physical plausibility model and test earlier sentences after removing their suffix. Capture every eligible word from the separately reserved movie narrative using one evaluation of its certified 2,036-token prefix. Capture the isolated forms of 188 source Mandarin words for a lexical-prior comparison against the earlier short sentence features. Each phase retains its original protocol and supplies a digest for its entire input and output. Independent source comparisons run after output verification on the assessment machine. No newly recruited readers or local model copy is required.
+
+Archive 128-dimensional fixed projections of the middle and final Qwen word states plus original prior attention utilities at each pronoun of 4,024 public articles. The independently registered shared-referent protocol controls reader data, source-only adaptation and comparisons. Its checkpoint records the source-projector and stimulus digests.

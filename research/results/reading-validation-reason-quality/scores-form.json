@@ -1,0 +1,697 @@
+{
+  "seal": "eec1be1ffd89730719970d1638b8e2e09002e2d1dab888bc06a92c2417a0f7f1",
+  "source_test": {
+    "sufficiency": {
+      "source_units": 80,
+      "observations": 406,
+      "unique_record_opportunities": 218,
+      "nll": {
+        "form.isolated": {
+          "estimate": 0.46138893231646144,
+          "interval95": [
+            0.37712544762964884,
+            0.5510100360068025
+          ]
+        },
+        "form.joint": {
+          "estimate": 0.4700136171195119,
+          "interval95": [
+            0.41043861937299325,
+            0.5320236548233384
+          ]
+        },
+        "form.adaptive": {
+          "estimate": 0.45362729012872877,
+          "interval95": [
+            0.38426871243755395,
+            0.526116614665434
+          ]
+        }
+      },
+      "contrasts": {
+        "form.joint minus form.isolated": {
+          "estimate": 0.008624684803050453,
+          "interval95": [
+            -0.03448738177651098,
+            0.048530313383080295
+          ]
+        },
+        "form.adaptive minus form.isolated": {
+          "estimate": -0.007761642187732676,
+          "interval95": [
+            -0.02976567047145175,
+            0.011760805260550431
+          ]
+        }
+      }
+    },
+    "comparison": {
+      "source_units": 4,
+      "observations": 2445,
+      "unique_record_opportunities": 2384,
+      "nll": {
+        "form.isolated": {
+          "estimate": 0.9341019876736448,
+          "interval95": [
+            0.8967699937910274,
+            0.9714339815562621
+          ]
+        },
+        "form.joint": {
+          "estimate": 0.9377740765257178,
+          "interval95": [
+            0.8932133941133038,
+            0.9823347589381317
+          ]
+        }
+      },
+      "contrasts": {
+        "form.joint minus form.isolated": {
+          "estimate": 0.00367208885207293,
+          "interval95": [
+            -0.011731073234897416,
+            0.019075250939043276
+          ]
+        }
+      }
+    }
+  },
+  "expert": {
+    "LocalSufficiency": {
+      "votes": 906,
+      "unique_passages": 302,
+      "direct_transfer": {
+        "models": {
+          "form.isolated": {
+            "primary": {
+              "estimate": 0.38092130813950725,
+              "interval95": [
+                0.33097315887847273,
+                0.4295743843531213
+              ]
+            },
+            "spearman_all_unique_arguments": -0.3089878044953402,
+            "debate_side_sensitivity": {
+              "estimate": 0.36141729001916534,
+              "interval95": [
+                0.3116792575825859,
+                0.4072964556223324
+              ]
+            }
+          },
+          "form.joint": {
+            "primary": {
+              "estimate": 0.4730560454328532,
+              "interval95": [
+                0.4220550759429046,
+                0.5224714336477417
+              ]
+            },
+            "spearman_all_unique_arguments": -0.12583338100857397,
+            "debate_side_sensitivity": {
+              "estimate": 0.44875020057436743,
+              "interval95": [
+                0.39641720773302497,
+                0.49542189249479746
+              ]
+            }
+          },
+          "form.paired-isolated": {
+            "primary": {
+              "estimate": 0.6864609352387268,
+              "interval95": [
+                0.6404496732914641,
+                0.7307311309821801
+              ]
+            },
+            "spearman_all_unique_arguments": 0.39562807593645144,
+            "debate_side_sensitivity": {
+              "estimate": 0.6963945425436469,
+              "interval95": [
+                0.647969953221029,
+                0.7454918035802112
+              ]
+            }
+          },
+          "form.paired-joint": {
+            "primary": {
+              "estimate": 0.6621713220557024,
+              "interval95": [
+                0.6196030343530342,
+                0.6994623622201487
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3220842790561736,
+            "debate_side_sensitivity": {
+              "estimate": 0.6744281751854242,
+              "interval95": [
+                0.6238338621292343,
+                0.7223985984262958
+              ]
+            }
+          },
+          "form.adaptive": {
+            "primary": {
+              "estimate": 0.4193696654331563,
+              "interval95": [
+                0.36865071270063265,
+                0.4677252414940266
+              ]
+            },
+            "spearman_all_unique_arguments": -0.23476576765811993,
+            "debate_side_sensitivity": {
+              "estimate": 0.396340521203193,
+              "interval95": [
+                0.3501094378972193,
+                0.440379712204732
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "form.joint minus form.isolated": {
+            "estimate": 0.09213473729334593,
+            "interval95": [
+              0.06265041218529359,
+              0.12051237796748467
+            ]
+          },
+          "form.adaptive minus form.isolated": {
+            "estimate": 0.03844835729364904,
+            "interval95": [
+              0.023254300277465507,
+              0.054079355497868895
+            ]
+          },
+          "form.adaptive minus form.paired-isolated": {
+            "estimate": -0.26709126980557046,
+            "interval95": [
+              -0.3458115746814404,
+              -0.19057231888764065
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "ordinal_topic_holdout": {
+        "models": {
+          "form.source_only": {
+            "primary": {
+              "estimate": 0.8645608259339091,
+              "interval95": [
+                0.8126701152957314,
+                0.917753965233612
+              ]
+            },
+            "spearman_all_unique_arguments": 0.2023326068174151,
+            "debate_side_sensitivity": {
+              "estimate": 0.8634540930989811,
+              "interval95": [
+                0.8068225908850766,
+                0.923849824224265
+              ]
+            }
+          },
+          "form.expert_only": {
+            "primary": {
+              "estimate": 0.9332779802401834,
+              "interval95": [
+                0.8376163436496772,
+                1.0260536631173598
+              ]
+            },
+            "spearman_all_unique_arguments": 0.3960000863994284,
+            "debate_side_sensitivity": {
+              "estimate": 0.929978746010478,
+              "interval95": [
+                0.8440445422746417,
+                1.0193655590926751
+              ]
+            }
+          },
+          "form.expert_plus_source": {
+            "primary": {
+              "estimate": 0.9318702210056549,
+              "interval95": [
+                0.8351027900041188,
+                1.0250595394613244
+              ]
+            },
+            "spearman_all_unique_arguments": 0.39964183758829386,
+            "debate_side_sensitivity": {
+              "estimate": 0.9286557027019094,
+              "interval95": [
+                0.8433523311060219,
+                1.0183439876694862
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "form.expert_plus_source minus form.expert_only": {
+            "estimate": -0.0014077592345285161,
+            "interval95": [
+              -0.0032847434622850003,
+              0.0005004608886322113
+            ]
+          },
+          "form.expert_plus_source minus form.source_only": {
+            "estimate": 0.06730939507174571,
+            "interval95": [
+              0.0014589251419125898,
+              0.1287844438883997
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "expert_vs_other_two": {
+        "1": {
+          "correlation": 0.42139806151734255,
+          "within_topic_ordering": 0.6793134352540751
+        },
+        "2": {
+          "correlation": 0.31255733527244567,
+          "within_topic_ordering": 0.634400094255762
+        },
+        "3": {
+          "correlation": 0.5335725279879349,
+          "within_topic_ordering": 0.7158549937314772
+        }
+      }
+    },
+    "Arrangement": {
+      "votes": 906,
+      "unique_passages": 302,
+      "direct_transfer": {
+        "models": {
+          "form.isolated": {
+            "primary": {
+              "estimate": 0.4104774391640799,
+              "interval95": [
+                0.36901073866795125,
+                0.4605985891280878
+              ]
+            },
+            "spearman_all_unique_arguments": -0.2903081905097,
+            "debate_side_sensitivity": {
+              "estimate": 0.38588453199428085,
+              "interval95": [
+                0.3294273032553528,
+                0.44111070682915215
+              ]
+            }
+          },
+          "form.joint": {
+            "primary": {
+              "estimate": 0.46980281729030776,
+              "interval95": [
+                0.426700270205338,
+                0.5211448553717491
+              ]
+            },
+            "spearman_all_unique_arguments": -0.16086675570754574,
+            "debate_side_sensitivity": {
+              "estimate": 0.43357626270597627,
+              "interval95": [
+                0.3789634214059262,
+                0.48521116718518276
+              ]
+            }
+          },
+          "form.paired-isolated": {
+            "primary": {
+              "estimate": 0.6540881292311438,
+              "interval95": [
+                0.6183602215852104,
+                0.6935116753105014
+              ]
+            },
+            "spearman_all_unique_arguments": 0.37686699167415655,
+            "debate_side_sensitivity": {
+              "estimate": 0.6773238389691965,
+              "interval95": [
+                0.6283330072682269,
+                0.7231461971052403
+              ]
+            }
+          },
+          "form.paired-joint": {
+            "primary": {
+              "estimate": 0.6358476683520511,
+              "interval95": [
+                0.5920377032206174,
+                0.6773677286441608
+              ]
+            },
+            "spearman_all_unique_arguments": 0.24006134887463979,
+            "debate_side_sensitivity": {
+              "estimate": 0.6408444575858969,
+              "interval95": [
+                0.5931755007854401,
+                0.684178137680876
+              ]
+            }
+          },
+          "form.adaptive": {
+            "primary": {
+              "estimate": 0.43382726679084566,
+              "interval95": [
+                0.39324275646852386,
+                0.481306707429529
+              ]
+            },
+            "spearman_all_unique_arguments": -0.241116428686777,
+            "debate_side_sensitivity": {
+              "estimate": 0.3939781281627507,
+              "interval95": [
+                0.3399557191375072,
+                0.4449742216871625
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "form.joint minus form.isolated": {
+            "estimate": 0.059325378126227846,
+            "interval95": [
+              0.043037615555691085,
+              0.0763145879815727
+            ]
+          },
+          "form.adaptive minus form.isolated": {
+            "estimate": 0.02334982762676574,
+            "interval95": [
+              0.01267685178977161,
+              0.033801113668518276
+            ]
+          },
+          "form.adaptive minus form.paired-isolated": {
+            "estimate": -0.22026086244029813,
+            "interval95": [
+              -0.2730432129088097,
+              -0.16596581814462413
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "ordinal_topic_holdout": {
+        "models": {
+          "form.source_only": {
+            "primary": {
+              "estimate": 0.9974272885878732,
+              "interval95": [
+                0.9555452917051672,
+                1.0385231840218208
+              ]
+            },
+            "spearman_all_unique_arguments": 0.14628134483912858,
+            "debate_side_sensitivity": {
+              "estimate": 1.0004985182506514,
+              "interval95": [
+                0.957254575862836,
+                1.0479933529190297
+              ]
+            }
+          },
+          "form.expert_only": {
+            "primary": {
+              "estimate": 1.2082013261115663,
+              "interval95": [
+                1.1241026446854039,
+                1.2937823628116092
+              ]
+            },
+            "spearman_all_unique_arguments": 0.18766653910601686,
+            "debate_side_sensitivity": {
+              "estimate": 1.2109988323474499,
+              "interval95": [
+                1.1382043994984878,
+                1.2882869849941814
+              ]
+            }
+          },
+          "form.expert_plus_source": {
+            "primary": {
+              "estimate": 1.2065154476747386,
+              "interval95": [
+                1.1225690429011201,
+                1.291414451722171
+              ]
+            },
+            "spearman_all_unique_arguments": 0.1898403059870939,
+            "debate_side_sensitivity": {
+              "estimate": 1.2093153265541048,
+              "interval95": [
+                1.1365992503735867,
+                1.2868566470615075
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "form.expert_plus_source minus form.expert_only": {
+            "estimate": -0.0016858784368276591,
+            "interval95": [
+              -0.0033412283195917215,
+              9.408384214925807e-06
+            ]
+          },
+          "form.expert_plus_source minus form.source_only": {
+            "estimate": 0.2090881590868654,
+            "interval95": [
+              0.14389005954393336,
+              0.27504514780833
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "expert_vs_other_two": {
+        "1": {
+          "correlation": 0.37293902332510104,
+          "within_topic_ordering": 0.6576090593201688
+        },
+        "2": {
+          "correlation": 0.21960811186407156,
+          "within_topic_ordering": 0.5943428362376043
+        },
+        "3": {
+          "correlation": 0.3685534425077856,
+          "within_topic_ordering": 0.6473210911221327
+        }
+      }
+    },
+    "Clarity": {
+      "votes": 906,
+      "unique_passages": 302,
+      "direct_transfer": {
+        "models": {
+          "form.isolated": {
+            "primary": {
+              "estimate": 0.46199127725995687,
+              "interval95": [
+                0.41557700438390477,
+                0.5101587179625191
+              ]
+            },
+            "spearman_all_unique_arguments": -0.1367031749340845,
+            "debate_side_sensitivity": {
+              "estimate": 0.45021032113752557,
+              "interval95": [
+                0.40736083967348646,
+                0.49281254008330067
+              ]
+            }
+          },
+          "form.joint": {
+            "primary": {
+              "estimate": 0.5067647976762018,
+              "interval95": [
+                0.46414578298734016,
+                0.5496294287805381
+              ]
+            },
+            "spearman_all_unique_arguments": -0.06547225040159015,
+            "debate_side_sensitivity": {
+              "estimate": 0.47153775239424994,
+              "interval95": [
+                0.42268731343202176,
+                0.5190596996618098
+              ]
+            }
+          },
+          "form.paired-isolated": {
+            "primary": {
+              "estimate": 0.6000593692596494,
+              "interval95": [
+                0.5568474284307212,
+                0.6370907653097038
+              ]
+            },
+            "spearman_all_unique_arguments": 0.22863074800281957,
+            "debate_side_sensitivity": {
+              "estimate": 0.604718783483076,
+              "interval95": [
+                0.5470327703532553,
+                0.6604901975808755
+              ]
+            }
+          },
+          "form.paired-joint": {
+            "primary": {
+              "estimate": 0.5914900016737418,
+              "interval95": [
+                0.5480883711251424,
+                0.6350396342297856
+              ]
+            },
+            "spearman_all_unique_arguments": 0.14465596918883847,
+            "debate_side_sensitivity": {
+              "estimate": 0.5873505076162268,
+              "interval95": [
+                0.5331463245931578,
+                0.6370896387573327
+              ]
+            }
+          },
+          "form.adaptive": {
+            "primary": {
+              "estimate": 0.47766498955073033,
+              "interval95": [
+                0.4356855478838689,
+                0.5205126300295779
+              ]
+            },
+            "spearman_all_unique_arguments": -0.10657813734411975,
+            "debate_side_sensitivity": {
+              "estimate": 0.4492965246642826,
+              "interval95": [
+                0.4066401190788717,
+                0.4906984612852592
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "form.joint minus form.isolated": {
+            "estimate": 0.04477352041624488,
+            "interval95": [
+              0.013761853253532916,
+              0.0769586830132545
+            ]
+          },
+          "form.adaptive minus form.isolated": {
+            "estimate": 0.015673712290773467,
+            "interval95": [
+              0.002219236048722634,
+              0.029382836930963115
+            ]
+          },
+          "form.adaptive minus form.paired-isolated": {
+            "estimate": -0.12239437970891909,
+            "interval95": [
+              -0.18537733141831345,
+              -0.05502076481526201
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "ordinal_topic_holdout": {
+        "models": {
+          "form.source_only": {
+            "primary": {
+              "estimate": 1.0285961823744803,
+              "interval95": [
+                0.9877414537236365,
+                1.0741992020955335
+              ]
+            },
+            "spearman_all_unique_arguments": -0.0077511615666869295,
+            "debate_side_sensitivity": {
+              "estimate": 1.025899353838332,
+              "interval95": [
+                0.9906910388678464,
+                1.0635864978174174
+              ]
+            }
+          },
+          "form.expert_only": {
+            "primary": {
+              "estimate": 1.3416851186974192,
+              "interval95": [
+                1.266562711722587,
+                1.4182096838032283
+              ]
+            },
+            "spearman_all_unique_arguments": -0.0008989921506634596,
+            "debate_side_sensitivity": {
+              "estimate": 1.3409183519835932,
+              "interval95": [
+                1.2674378805741087,
+                1.4172095688350093
+              ]
+            }
+          },
+          "form.expert_plus_source": {
+            "primary": {
+              "estimate": 1.3410918954724576,
+              "interval95": [
+                1.2661247409841268,
+                1.4173664404704358
+              ]
+            },
+            "spearman_all_unique_arguments": 0.0006140328047654262,
+            "debate_side_sensitivity": {
+              "estimate": 1.3402765464821975,
+              "interval95": [
+                1.26584367376912,
+                1.4168563259335198
+              ]
+            }
+          }
+        },
+        "comparisons": {
+          "form.expert_plus_source minus form.expert_only": {
+            "estimate": -0.000593223224961692,
+            "interval95": [
+              -0.0016666986658031458,
+              0.000569114839401813
+            ]
+          },
+          "form.expert_plus_source minus form.source_only": {
+            "estimate": 0.3124957130979773,
+            "interval95": [
+              0.25085634150557273,
+              0.3727453107552829
+            ]
+          }
+        },
+        "topic_units": 16,
+        "debate_sides": 32
+      },
+      "expert_vs_other_two": {
+        "1": {
+          "correlation": 0.27607099094922405,
+          "within_topic_ordering": 0.6092530127620984
+        },
+        "2": {
+          "correlation": 0.3181018064220784,
+          "within_topic_ordering": 0.6233793786251284
+        },
+        "3": {
+          "correlation": 0.4106909391337983,
+          "within_topic_ordering": 0.6560292896819788
+        }
+      }
+    }
+  },
+  "excluded_source_repeats": 2
+}

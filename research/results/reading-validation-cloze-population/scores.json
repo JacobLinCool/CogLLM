@@ -1,0 +1,627 @@
+{
+  "coverage": {
+    "aligned_consistent_nonempty_choices": 71647,
+    "aligned_denominator_mismatches": 709,
+    "all_released_denominator_mismatches": 769,
+    "eligible_blank_choices": 0,
+    "eligible_nonempty_choices": 100367,
+    "externally_observed_choices_absent_from_training": 15472,
+    "externally_observed_types_absent_from_training": 4402,
+    "outside_fixed_alphabet": 7086,
+    "outside_spellings": 3070,
+    "participants_reported_by_authors": 470,
+    "released_contexts": 2688,
+    "represented_choices": 93281,
+    "verified_contexts": 2500,
+    "verified_human_response_types": 7622
+  },
+  "exact_spelling_support": {
+    "calibrated": {
+      "accuracy_given_named_forecast": 0.539057456423499,
+      "exact_modal_spelling_accuracy": 0.46621998883305416,
+      "mean_distance_to_identified_disagreement_range": 0.12118311974002874,
+      "named_forecasts": 1549,
+      "observed_exact_spelling_disagreement": 0.745073566887572,
+      "predicted_exact_spelling_disagreement_mean_bounds": [
+        0.7963669786114068,
+        0.8272203051147312
+      ],
+      "unnamed_other_forecasts": 242
+    },
+    "context": {
+      "accuracy_given_named_forecast": 0.5541528239202658,
+      "exact_modal_spelling_accuracy": 0.4656616415410385,
+      "mean_distance_to_identified_disagreement_range": 0.12000693013928543,
+      "named_forecasts": 1505,
+      "observed_exact_spelling_disagreement": 0.745073566887572,
+      "predicted_exact_spelling_disagreement_mean_bounds": [
+        0.7873058875022579,
+        0.8207743924478443
+      ],
+      "unnamed_other_forecasts": 286
+    },
+    "frequency": {
+      "accuracy_given_named_forecast": null,
+      "exact_modal_spelling_accuracy": 0.0,
+      "mean_distance_to_identified_disagreement_range": 0.24369294621415385,
+      "named_forecasts": 0,
+      "observed_exact_spelling_disagreement": 0.745073566887572,
+      "predicted_exact_spelling_disagreement_mean_bounds": [
+        0.9887577043411989,
+        0.993114082295886
+      ],
+      "unnamed_other_forecasts": 1791
+    },
+    "raw": {
+      "accuracy_given_named_forecast": 0.6139937106918238,
+      "exact_modal_spelling_accuracy": 0.4360692350642099,
+      "mean_distance_to_identified_disagreement_range": 0.1026246284606299,
+      "named_forecasts": 1272,
+      "observed_exact_spelling_disagreement": 0.745073566887572,
+      "predicted_exact_spelling_disagreement_mean_bounds": [
+        0.706045347051102,
+        0.783935985809029
+      ],
+      "unnamed_other_forecasts": 519
+    }
+  },
+  "forecasts": "04cbd23856bbc36d7c509ec93838134c42de9bbc635daa806c1c7ff72455a36e",
+  "independent_Provo": {
+    "all": {
+      "metrics": {
+        "calibrated": {
+          "NLL_per_choice": 3.6478386670079064,
+          "actual_target_probability_MAE": 0.10519509497776935,
+          "choices": 71647,
+          "human_disagreement_MAE": 0.1443720982611152,
+          "human_disagreement_rho": 0.6250105778363912,
+          "mean_observed_disagreement": 0.7343937234570503,
+          "mean_predicted_disagreement": 0.7963669786114068,
+          "prefixes": 1791,
+          "target_words_represented": 1584,
+          "top1_matches_any_mode": 0.4885538805136795
+        },
+        "context": {
+          "NLL_per_choice": 3.6591562733640224,
+          "actual_target_probability_MAE": 0.1064809625061078,
+          "choices": 71647,
+          "human_disagreement_MAE": 0.14323151807751058,
+          "human_disagreement_rho": 0.6250928501119845,
+          "mean_observed_disagreement": 0.7343937234570503,
+          "mean_predicted_disagreement": 0.7873058875022579,
+          "prefixes": 1791,
+          "target_words_represented": 1584,
+          "top1_matches_any_mode": 0.5064209938581797
+        },
+        "frequency": {
+          "NLL_per_choice": 6.8721179902958704,
+          "actual_target_probability_MAE": 0.22960640124583934,
+          "choices": 71647,
+          "human_disagreement_MAE": 0.25436398088414863,
+          "human_disagreement_rho": null,
+          "mean_observed_disagreement": 0.7343937234570503,
+          "mean_predicted_disagreement": 0.9887577043411989,
+          "prefixes": 1791,
+          "target_words_represented": 1584,
+          "top1_matches_any_mode": 0.12116136236739251
+        },
+        "raw": {
+          "NLL_per_choice": 3.860092801051808,
+          "actual_target_probability_MAE": 0.10650675010641147,
+          "choices": 71647,
+          "human_disagreement_MAE": 0.14650279062085866,
+          "human_disagreement_rho": 0.589740230311088,
+          "mean_observed_disagreement": 0.7343937234570503,
+          "mean_predicted_disagreement": 0.706045347051102,
+          "prefixes": 1791,
+          "target_words_represented": 1584,
+          "top1_matches_any_mode": 0.5053042992741485
+        }
+      },
+      "paired_nll": {
+        "calibrated_over_raw": {
+          "equal_passage_gain": 0.22942797469020287,
+          "gain_in_nats_per_choice": 0.21225413404390162,
+          "passage_interval": [
+            0.17279219489100614,
+            0.250940410204379
+          ]
+        },
+        "context_over_calibrated": {
+          "equal_passage_gain": -0.015025192451682828,
+          "gain_in_nats_per_choice": -0.011317606356116167,
+          "passage_interval": [
+            -0.02249360395953112,
+            0.000178497007820657
+          ]
+        },
+        "context_over_frequency": {
+          "equal_passage_gain": 3.1843028637637523,
+          "gain_in_nats_per_choice": 3.212961716931848,
+          "passage_interval": [
+            3.0633188669462528,
+            3.3552073645717937
+          ]
+        },
+        "context_over_raw": {
+          "equal_passage_gain": 0.2144027822385201,
+          "gain_in_nats_per_choice": 0.20093652768778544,
+          "passage_interval": [
+            0.16440883672180054,
+            0.23645980860962904
+          ]
+        }
+      },
+      "unique_articles": 46
+    },
+    "complete_articles": {
+      "metrics": {
+        "calibrated": {
+          "NLL_per_choice": 3.6349305309995303,
+          "actual_target_probability_MAE": 0.10776139828175438,
+          "choices": 64195,
+          "human_disagreement_MAE": 0.1455485613527636,
+          "human_disagreement_rho": 0.6264681501134475,
+          "mean_observed_disagreement": 0.733737476545228,
+          "mean_predicted_disagreement": 0.7980911568291762,
+          "prefixes": 1604,
+          "target_words_represented": 1424,
+          "top1_matches_any_mode": 0.4869077306733167
+        },
+        "context": {
+          "NLL_per_choice": 3.6484745977665067,
+          "actual_target_probability_MAE": 0.10946298055406414,
+          "choices": 64195,
+          "human_disagreement_MAE": 0.14456845705263063,
+          "human_disagreement_rho": 0.6244621890492209,
+          "mean_observed_disagreement": 0.733737476545228,
+          "mean_predicted_disagreement": 0.7888649160408188,
+          "prefixes": 1604,
+          "target_words_represented": 1424,
+          "top1_matches_any_mode": 0.506857855361596
+        },
+        "frequency": {
+          "NLL_per_choice": 6.837045121380488,
+          "actual_target_probability_MAE": 0.23044258400296092,
+          "choices": 64195,
+          "human_disagreement_MAE": 0.2550202277959709,
+          "human_disagreement_rho": null,
+          "mean_observed_disagreement": 0.733737476545228,
+          "mean_predicted_disagreement": 0.9887577043411988,
+          "prefixes": 1604,
+          "target_words_represented": 1424,
+          "top1_matches_any_mode": 0.12032418952618454
+        },
+        "raw": {
+          "NLL_per_choice": 3.840202888796725,
+          "actual_target_probability_MAE": 0.10923961230356163,
+          "choices": 64195,
+          "human_disagreement_MAE": 0.14624732213301841,
+          "human_disagreement_rho": 0.5899867908190309,
+          "mean_observed_disagreement": 0.733737476545228,
+          "mean_predicted_disagreement": 0.7076935077858305,
+          "prefixes": 1604,
+          "target_words_represented": 1424,
+          "top1_matches_any_mode": 0.5043640897755611
+        }
+      },
+      "paired_nll": {
+        "calibrated_over_raw": {
+          "equal_passage_gain": 0.22037972747086826,
+          "gain_in_nats_per_choice": 0.20527235779719452,
+          "passage_interval": [
+            0.16302857606416132,
+            0.2470460897517608
+          ]
+        },
+        "context_over_calibrated": {
+          "equal_passage_gain": -0.015615543983580027,
+          "gain_in_nats_per_choice": -0.013544066766976517,
+          "passage_interval": [
+            -0.02524398556085953,
+            -0.0021893636126171924
+          ]
+        },
+        "context_over_frequency": {
+          "equal_passage_gain": 3.1496272467453545,
+          "gain_in_nats_per_choice": 3.188570523613981,
+          "passage_interval": [
+            3.031509014204147,
+            3.336462753289351
+          ]
+        },
+        "context_over_raw": {
+          "equal_passage_gain": 0.20476418348728828,
+          "gain_in_nats_per_choice": 0.191728291030218,
+          "passage_interval": [
+            0.15251482117491333,
+            0.22965573879625792
+          ]
+        }
+      },
+      "unique_articles": 39
+    }
+  },
+  "program": "45b49686a917ab8667149c615fd239c4f0624dada136a43669e910665c37ea01",
+  "response_denominator_audit": "21f0ca24ff8f1bd96cdee8f88d3aac82000469bfdabd88a2635233a32f993ffd",
+  "sensitivity_all_observed_row_mass": {
+    "all": {
+      "metrics": {
+        "calibrated": {
+          "NLL_per_choice": 3.7219559216456046,
+          "actual_target_probability_MAE": 0.10500429318489989,
+          "choices": 100367,
+          "human_disagreement_MAE": 0.15320645982400743,
+          "human_disagreement_rho": 0.5802226513884222,
+          "mean_observed_disagreement": 0.7404191081178584,
+          "mean_predicted_disagreement": 0.7872731820141604,
+          "prefixes": 2500,
+          "target_words_represented": 2218,
+          "top1_matches_any_mode": 0.482
+        },
+        "context": {
+          "NLL_per_choice": 3.725529359148151,
+          "actual_target_probability_MAE": 0.10537567814546393,
+          "choices": 100367,
+          "human_disagreement_MAE": 0.15116748057723378,
+          "human_disagreement_rho": 0.5834347513130778,
+          "mean_observed_disagreement": 0.7404191081178584,
+          "mean_predicted_disagreement": 0.7788809800066684,
+          "prefixes": 2500,
+          "target_words_represented": 2218,
+          "top1_matches_any_mode": 0.4948
+        },
+        "frequency": {
+          "NLL_per_choice": 6.834606951126128,
+          "actual_target_probability_MAE": 0.22230133111128675,
+          "choices": 100367,
+          "human_disagreement_MAE": 0.24834076079157502,
+          "human_disagreement_rho": null,
+          "mean_observed_disagreement": 0.7404191081178584,
+          "mean_predicted_disagreement": 0.9887577043411991,
+          "prefixes": 2500,
+          "target_words_represented": 2218,
+          "top1_matches_any_mode": 0.1116
+        },
+        "raw": {
+          "NLL_per_choice": 3.984079709095983,
+          "actual_target_probability_MAE": 0.10763406302689192,
+          "choices": 100367,
+          "human_disagreement_MAE": 0.1600789613628557,
+          "human_disagreement_rho": 0.5421638305877742,
+          "mean_observed_disagreement": 0.7404191081178584,
+          "mean_predicted_disagreement": 0.6955858551396916,
+          "prefixes": 2500,
+          "target_words_represented": 2218,
+          "top1_matches_any_mode": 0.4928
+        }
+      },
+      "paired_nll": {
+        "calibrated_over_raw": {
+          "equal_passage_gain": 0.27133554998253356,
+          "gain_in_nats_per_choice": 0.26212378745037873,
+          "passage_interval": [
+            0.2264690974676872,
+            0.298395598785488
+          ]
+        },
+        "context_over_calibrated": {
+          "equal_passage_gain": -0.0055052132847703845,
+          "gain_in_nats_per_choice": -0.003573437502546609,
+          "passage_interval": [
+            -0.01314885721564765,
+            0.006861771335741852
+          ]
+        },
+        "context_over_frequency": {
+          "equal_passage_gain": 3.123170642056539,
+          "gain_in_nats_per_choice": 3.109077591977977,
+          "passage_interval": [
+            2.9760143794568026,
+            3.2496357309753066
+          ]
+        },
+        "context_over_raw": {
+          "equal_passage_gain": 0.2658303366977632,
+          "gain_in_nats_per_choice": 0.2585503499478321,
+          "passage_interval": [
+            0.22512512119701084,
+            0.29282760915264205
+          ]
+        }
+      },
+      "unique_articles": 54
+    },
+    "complete_articles": {
+      "metrics": {
+        "calibrated": {
+          "NLL_per_choice": 3.701990147213987,
+          "actual_target_probability_MAE": 0.10631823161231167,
+          "choices": 90246,
+          "human_disagreement_MAE": 0.15389582160939277,
+          "human_disagreement_rho": 0.5825931799941948,
+          "mean_observed_disagreement": 0.7389353750534731,
+          "mean_predicted_disagreement": 0.7887571563631038,
+          "prefixes": 2249,
+          "target_words_represented": 1998,
+          "top1_matches_any_mode": 0.4819919964428635
+        },
+        "context": {
+          "NLL_per_choice": 3.7084014914660406,
+          "actual_target_probability_MAE": 0.10696316960599868,
+          "choices": 90246,
+          "human_disagreement_MAE": 0.15211735291851905,
+          "human_disagreement_rho": 0.5838927521466853,
+          "mean_observed_disagreement": 0.7389353750534731,
+          "mean_predicted_disagreement": 0.780031007596182,
+          "prefixes": 2249,
+          "target_words_represented": 1998,
+          "top1_matches_any_mode": 0.49622054246331704
+        },
+        "frequency": {
+          "NLL_per_choice": 6.800510250203505,
+          "actual_target_probability_MAE": 0.22349244311368177,
+          "choices": 90246,
+          "human_disagreement_MAE": 0.24982473543293976,
+          "human_disagreement_rho": null,
+          "mean_observed_disagreement": 0.7389353750534731,
+          "mean_predicted_disagreement": 0.9887577043411989,
+          "prefixes": 2249,
+          "target_words_represented": 1998,
+          "top1_matches_any_mode": 0.11249444197421075
+        },
+        "raw": {
+          "NLL_per_choice": 3.955086751804287,
+          "actual_target_probability_MAE": 0.10882125025021695,
+          "choices": 90246,
+          "human_disagreement_MAE": 0.15936426273511098,
+          "human_disagreement_rho": 0.5440729194908941,
+          "mean_observed_disagreement": 0.7389353750534731,
+          "mean_predicted_disagreement": 0.6972724154507489,
+          "prefixes": 2249,
+          "target_words_represented": 1998,
+          "top1_matches_any_mode": 0.49399733214762115
+        }
+      },
+      "paired_nll": {
+        "calibrated_over_raw": {
+          "equal_passage_gain": 0.2551840537426819,
+          "gain_in_nats_per_choice": 0.25309660459029976,
+          "passage_interval": [
+            0.21636755997934076,
+            0.2922508143802451
+          ]
+        },
+        "context_over_calibrated": {
+          "equal_passage_gain": -0.00671748706081324,
+          "gain_in_nats_per_choice": -0.006411344252053472,
+          "passage_interval": [
+            -0.01604258555584345,
+            0.0030738656315568717
+          ]
+        },
+        "context_over_frequency": {
+          "equal_passage_gain": 3.106835013812896,
+          "gain_in_nats_per_choice": 3.092108758737464,
+          "passage_interval": [
+            2.949016595743992,
+            3.2394619458508
+          ]
+        },
+        "context_over_raw": {
+          "equal_passage_gain": 0.24846656668186864,
+          "gain_in_nats_per_choice": 0.24668526033824628,
+          "passage_interval": [
+            0.2131376060322223,
+            0.28350443917388374
+          ]
+        }
+      },
+      "unique_articles": 46
+    }
+  },
+  "source_UCL": {
+    "all": {
+      "metrics": {
+        "calibrated": {
+          "NLL_per_choice": 4.004109012226333,
+          "actual_target_probability_MAE": 0.10111614594584623,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.11440901758850905,
+          "human_disagreement_rho": 0.5471005186460566,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.8678486428687167,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.40730011587485515
+        },
+        "context": {
+          "NLL_per_choice": 3.9265392400945545,
+          "actual_target_probability_MAE": 0.09867037047416466,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.10856698930289724,
+          "human_disagreement_rho": 0.6182254291320146,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.8652985360544561,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.4420625724217845
+        },
+        "frequency": {
+          "NLL_per_choice": 6.175259100168528,
+          "actual_target_probability_MAE": 0.19658856668874436,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.19591401025580177,
+          "human_disagreement_rho": -0.07711663635087262,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.9889002796198008,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.10776361529548088
+        },
+        "raw": {
+          "NLL_per_choice": 4.339569042828553,
+          "actual_target_probability_MAE": 0.09957825403442216,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.1484484172397829,
+          "human_disagreement_rho": 0.3726832482363305,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.7539693033374548,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.4003476245654693
+        }
+      },
+      "paired_nll": {
+        "calibrated_over_raw": {
+          "equal_passage_gain": 0.3492438763487076,
+          "gain_in_nats_per_choice": 0.33546003060222,
+          "passage_interval": [
+            0.31082893513671267,
+            0.3612469022043315
+          ]
+        },
+        "context_over_calibrated": {
+          "equal_passage_gain": 0.079050674805814,
+          "gain_in_nats_per_choice": 0.07756977213177887,
+          "passage_interval": [
+            0.06861137210897875,
+            0.08650944525291863
+          ]
+        },
+        "context_over_frequency": {
+          "equal_passage_gain": 2.204960397336793,
+          "gain_in_nats_per_choice": 2.2487198600739733,
+          "passage_interval": [
+            2.1869744014010313,
+            2.3082982830530976
+          ]
+        },
+        "context_over_raw": {
+          "equal_passage_gain": 0.4282945511545216,
+          "gain_in_nats_per_choice": 0.4130298027339989,
+          "passage_interval": [
+            0.38838389907314785,
+            0.4387602512744375
+          ]
+        }
+      },
+      "unique_articles": 205
+    },
+    "complete_articles": {
+      "metrics": {
+        "calibrated": {
+          "NLL_per_choice": 4.004109012226333,
+          "actual_target_probability_MAE": 0.10111614594584623,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.11440901758850905,
+          "human_disagreement_rho": 0.5471005186460566,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.8678486428687167,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.40730011587485515
+        },
+        "context": {
+          "NLL_per_choice": 3.9265392400945545,
+          "actual_target_probability_MAE": 0.09867037047416466,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.10856698930289724,
+          "human_disagreement_rho": 0.6182254291320146,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.8652985360544561,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.4420625724217845
+        },
+        "frequency": {
+          "NLL_per_choice": 6.175259100168528,
+          "actual_target_probability_MAE": 0.19658856668874436,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.19591401025580177,
+          "human_disagreement_rho": -0.07711663635087262,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.9889002796198008,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.10776361529548088
+        },
+        "raw": {
+          "NLL_per_choice": 4.339569042828553,
+          "actual_target_probability_MAE": 0.09957825403442216,
+          "choices": 135905,
+          "human_disagreement_MAE": 0.1484484172397829,
+          "human_disagreement_rho": 0.3726832482363305,
+          "mean_observed_disagreement": 0.792986269363999,
+          "mean_predicted_disagreement": 0.7539693033374548,
+          "prefixes": 1726,
+          "target_words_represented": 1654,
+          "top1_matches_any_mode": 0.4003476245654693
+        }
+      },
+      "paired_nll": {
+        "calibrated_over_raw": {
+          "equal_passage_gain": 0.3492438763487076,
+          "gain_in_nats_per_choice": 0.33546003060222,
+          "passage_interval": [
+            0.31082893513671267,
+            0.3612469022043315
+          ]
+        },
+        "context_over_calibrated": {
+          "equal_passage_gain": 0.079050674805814,
+          "gain_in_nats_per_choice": 0.07756977213177887,
+          "passage_interval": [
+            0.06861137210897875,
+            0.08650944525291863
+          ]
+        },
+        "context_over_frequency": {
+          "equal_passage_gain": 2.204960397336793,
+          "gain_in_nats_per_choice": 2.2487198600739733,
+          "passage_interval": [
+            2.1869744014010313,
+            2.3082982830530976
+          ]
+        },
+        "context_over_raw": {
+          "equal_passage_gain": 0.4282945511545216,
+          "gain_in_nats_per_choice": 0.4130298027339989,
+          "passage_interval": [
+            0.38838389907314785,
+            0.4387602512744375
+          ]
+        }
+      },
+      "unique_articles": 205
+    }
+  },
+  "unambiguous_single_token_choices": {
+    "article_groups": 46,
+    "identified_words": 7275,
+    "included_reader_choices": 49278,
+    "paired": {
+      "context_over_calibrated": {
+        "gain": -0.020991301566323953,
+        "paired_passage_interval": [
+          -0.03291759822788585,
+          -0.008696094688327514
+        ]
+      },
+      "context_over_raw": {
+        "gain": 0.06029583625759787,
+        "paired_passage_interval": [
+          0.028374736016832113,
+          0.0935271653713323
+        ]
+      }
+    },
+    "per_choice_NLL": {
+      "calibrated": 3.6333927635905092,
+      "context": 3.6543840651568327,
+      "frequency": 7.486620826985141,
+      "raw": 3.7146799014144314
+    }
+  },
+  "vocabulary_identification": "20eefb1d4d30bb79401466deb274c1ffb2f14b83b8d3e0a0111fb1e27efc60e3"
+}

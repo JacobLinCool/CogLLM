@@ -1,0 +1,110 @@
+{
+  "scope": "Study prompt prefixes under same-length replacement, truncation and right padding",
+  "reference_prompt": "full-3d3c82b639a57c8f0d659bedacc9f5f3b84f0eca347927ff916303619c526bfa",
+  "replacement_prompt": "full-f52bb58ee4212a0f113ee23c105e1b95cabfb3252ac5c43a9372ecbadc591300",
+  "tokenizer_class": "Qwen2Tokenizer",
+  "checks": [
+    {
+      "comparison": "different_suffix_same_length",
+      "prefix_tokens": 32,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.002,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "comparison": "truncate",
+      "prefix_tokens": 32,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 9.114230124396272e-06,
+      "max_absolute": 0.0003781318664550781,
+      "passed": true
+    },
+    {
+      "comparison": "right_pad_in_batch",
+      "prefix_tokens": 32,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 7.104907581378939e-06,
+      "max_absolute": 9.34600830078125e-05,
+      "passed": true
+    },
+    {
+      "comparison": "positive_control_different_suffix",
+      "prefix_tokens": 32,
+      "max_token_relative_rms": 1.4878565073013306,
+      "max_absolute": 64.92535400390625,
+      "passed": true
+    },
+    {
+      "comparison": "different_suffix_same_length",
+      "prefix_tokens": 65,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.002,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "comparison": "truncate",
+      "prefix_tokens": 65,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 7.409838872263208e-06,
+      "max_absolute": 0.0003223419189453125,
+      "passed": true
+    },
+    {
+      "comparison": "right_pad_in_batch",
+      "prefix_tokens": 65,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 7.104907581378939e-06,
+      "max_absolute": 9.34600830078125e-05,
+      "passed": true
+    },
+    {
+      "comparison": "positive_control_different_suffix",
+      "prefix_tokens": 65,
+      "max_token_relative_rms": 1.5152568817138672,
+      "max_absolute": 66.52044677734375,
+      "passed": true
+    },
+    {
+      "comparison": "different_suffix_same_length",
+      "prefix_tokens": 97,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.002,
+      "max_token_relative_rms": 0.0,
+      "max_absolute": 0.0,
+      "passed": true
+    },
+    {
+      "comparison": "truncate",
+      "prefix_tokens": 97,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 8.955673365562689e-06,
+      "max_absolute": 0.0004630088806152344,
+      "passed": true
+    },
+    {
+      "comparison": "right_pad_in_batch",
+      "prefix_tokens": 97,
+      "original_tokens": 382,
+      "max_token_relative_rms_tolerance": 0.02,
+      "max_token_relative_rms": 7.104907581378939e-06,
+      "max_absolute": 9.34600830078125e-05,
+      "passed": true
+    },
+    {
+      "comparison": "positive_control_different_suffix",
+      "prefix_tokens": 97,
+      "max_token_relative_rms": 1.5142697095870972,
+      "max_absolute": 70.16029357910156,
+      "passed": true
+    }
+  ]
+}

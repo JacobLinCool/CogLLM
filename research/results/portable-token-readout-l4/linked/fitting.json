@@ -1,0 +1,53 @@
+{
+  "candidate": "qwen",
+  "dev_position_nll": {
+    "evidence": 2.8228015899658203,
+    "frick": 1.426093339920044
+  },
+  "device": "NVIDIA L4",
+  "documents": 351,
+  "extraction_seconds": 43.91273192800003,
+  "fits": {
+    "point": {
+      "dev_nll": {
+        "evidence": 2.510406017303467,
+        "frick": 1.1836357116699219
+      },
+      "epochs": 10,
+      "parameters": 202900,
+      "seconds": 16.144809159999966,
+      "selected_epoch": 2,
+      "stop": "development_plateau"
+    },
+    "span": {
+      "dev_nll": {
+        "evidence": 2.5593278408050537,
+        "frick": 1.1622568368911743
+      },
+      "epochs": 10,
+      "parameters": 209097,
+      "seconds": 20.437810999999954,
+      "selected_epoch": 3,
+      "stop": "development_plateau"
+    },
+    "span-calibrated": {
+      "dev_nll": {
+        "evidence": 2.4076013565063477,
+        "frick": 1.1622568368911743
+      },
+      "parameters": 209097,
+      "scale": {
+        "opening_gain": 1.0,
+        "resolution_bias": 0.75,
+        "resolution_gain": 0.75
+      },
+      "selected_epoch": 3
+    }
+  },
+  "linked_training_examples": 160,
+  "peak_extraction_reserved_bytes": 9493807104,
+  "peak_fitting_reserved_bytes": 9458155520,
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "selection_score": "equal mean Frick and ExpMRC development negative log likelihood",
+  "tokens": 91118
+}

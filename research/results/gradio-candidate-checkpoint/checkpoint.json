@@ -1,0 +1,52 @@
+{
+  "backbone": {
+    "compute_dtype": "float32",
+    "model": "Qwen/Qwen3.5-2B",
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "snapshot_sha256": {
+      "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+      "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+      "model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+      "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+    },
+    "transformers": "5.17.0"
+  },
+  "checkpoint_sha256": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "contract": {
+    "anchor": "IIRC qwen, at paragraph end",
+    "input": "article",
+    "lexical": "CompLex target_end, 100% training",
+    "offsets": "half-open Unicode code-point indices",
+    "question_onset": "withheld",
+    "question_resolution": "withheld",
+    "reader_background": "withheld",
+    "sentence_boundaries": "bundled English Punkt parameters",
+    "sentence_distribution": "PLABA effect_calibrated_weights, experimental",
+    "sentence_mean": "PLABA qwen_plus_length"
+  },
+  "files": {
+    "anchor/fit-manifest.json": "4951860a1d724120bd1992f21fed76212f65a3c6509dbae65b26f7f72f56b85c",
+    "anchor/heads.npz": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+    "anchor/scores.json": "3819d2d57a8b1fb498dbea83cc75586b5ce3e18c82f0956fdc5cdb3b6a0a1c1f",
+    "evidence/l4-iirc-scores.json": "a749376d6c7bc0bda891d5be08e5bc83b44bb7e254ec6aac727b4bcd93dcc93c",
+    "evidence/l4-route.json": "4c1bc3fdd8b60d40e9de3cbed2ade5ebbdde544800a4a736785b431bc6a4c199",
+    "evidence/l4-serving-seal.json": "8a9c87b4f831143fe373ded6e3d0a5fba57ffb75c67950395ca25161a1758bf7",
+    "lexical/fitting.json": "e1cb73cbb6973d7b73ac26768cf29f07aba7d859c2623c54d343c04df4843e0a",
+    "lexical/heads.npz": "e9721f340b325015826bf1645d9814385d4d180689b652e772480f99a80f49d4",
+    "lexical/replay.json": "c4b710e117895b8764db6b01b0ffe9368a16a569786ddd468dbd7f5e205cb016",
+    "lexical/run-manifest.json": "f6d204f40892471bfc126f5f22a06b109b144bed71407b6da1a02ed8369660a6",
+    "ordinal/head.npz": "99b5c0397b0ea143ab953f590a836b264cc20b74432e952e55524889996b9858",
+    "ordinal/manifest.json": "d8641d32e02889b34ac0d4d9187027bbbe69bc60de9d83c9f1000abec66e1782",
+    "punkt/README": "d3251cae66a9359bd68c039e3a46172a05ca9df0b27dcdfa23ae594d68d27ec4",
+    "punkt/english/abbrev_types.txt": "92a3e070f43d9b4c5534758ca40ad7343b04e7e29bfe0c2eb658a39445a4f779",
+    "punkt/english/collocations.tab": "8e2da1225e4dd2cc9dba261ee231ccb134859e21b46006e7f472c5ee269af0cf",
+    "punkt/english/ortho_context.tab": "4bbcca25ed3d3f06c02402abf8419b9f033b8adc06e7b482eca4e45f81a5dc4c",
+    "punkt/english/sent_starters.txt": "f3f8535483e1dba487241b764945168123bca3209a9645e59acd1225dc76edac",
+    "sentence/head.npz": "7b77b069d2b79303be9f7b2917c1fd71e187ab9b571879651cca98999a883678",
+    "sentence/manifest.json": "f012a1e78a73fc1b9a657697367843bbdba20bcddf25089c2026effd75f1f92e",
+    "sentence/metrics.json": "ce93b21b733535289cbb8a2788a59a5c2e8e40ab9d8f36e40e068856d46012e0"
+  },
+  "schema": 1,
+  "status": "candidate"
+}

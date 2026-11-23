@@ -1,0 +1,142 @@
+{
+  "architecture": "Qwen3_5ForCausalLM",
+  "candidate": "qwen",
+  "certified_stops": 164220,
+  "compute_dtype": "float32",
+  "config_adapter": null,
+  "content_forward_batches": 1156,
+  "content_forward_per_document": 1,
+  "cuda": "13.0",
+  "documents": 27167,
+  "file_sha256": {
+    "causality.json": "0b3db076b767a3be21659dc6cffa747de1f0082b3fe7d2ab6b6f68b5f8f52a5f",
+    "coordinates.jsonl": "bea8abd40fb6fd2a6d4967a93c5dd462d648dd582e8ddd6c9b489c2ab709b9a9",
+    "states.npy": "ce1ce551394f9168371f9c7d4115aad87bf60427c6a27742a56075b2271febda"
+  },
+  "formal_holdout_sha256": "c46099aa8b0c095ec983046a310b0bf3f822ec5c0a9d53f5e42377ef10710b84",
+  "forward_and_readout_s": 1194.6751624069998,
+  "gpu": "NVIDIA L4",
+  "hidden_width": 2048,
+  "independent_causal_checks": 206,
+  "layers": 24,
+  "max_batch_documents": 48,
+  "max_batch_tokens": 6144,
+  "model": "Qwen/Qwen3.5-2B",
+  "model_files_sha256": {
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+    "model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "model_load_and_verification_s": 0.0,
+  "model_manifest_sha256": "61fa27e774796c62d9270e19b9db5fa675e1aac3bf44c1a52ce79449cb62e83e",
+  "packet_receipt_sha256": "eb40327d95b7d292958cfd27ceb513e0ce9a5307c811ab84131212157b8f5756",
+  "peak_gpu_reserved_bytes": 10850664448,
+  "protocol_sha256": "e1398a0abcd74881a4dd6b3fd151efbd2bbf6b875d380e9f0b46b6770df4f2e0",
+  "recording_plan_sha256": "8b55e6fa1d3cfa9485f9cee54ed29e1ca34a54fee7a6d9942c5d2a42dbe49843",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "shards": [
+    {
+      "id": "shard-0000",
+      "receipt_sha256": "49e350113008cc5469fd7d17479237625eb160af03f5febf4ea5e6ac0c6401a0",
+      "seal_sha256": "16e871cb227da37a1231e437defb2e2c984e48b2c7dc040170455271a62f20d4"
+    },
+    {
+      "id": "shard-0001",
+      "receipt_sha256": "bf1ca68ee26fa2a2420fc8b2429bb6232f48c41112b9a27765021d503bc2db86",
+      "seal_sha256": "73dd4c8a5b507d55d4c4acab01168959493957e340169ef14fff981c6cebf0d0"
+    },
+    {
+      "id": "shard-0002",
+      "receipt_sha256": "db820f40d4c2b22b6e20a0032129adccf963a4c3aef70d8cf902ad86b70bfd2f",
+      "seal_sha256": "9890a5f1182c9c1c9abf7ab4ee0de4d8d9d770ca7c7c88b129a5c9f24ef501a9"
+    },
+    {
+      "id": "shard-0003",
+      "receipt_sha256": "cc98ffa72254bbcf15beeb7d21044b022d5ecdc24dd09ee90ea1cfd3c5af0a0c",
+      "seal_sha256": "6bfb2b6771d98b56a3d4919a56ae4da8d529fe67a7a092d9c41a5bb48ece3e08"
+    },
+    {
+      "id": "shard-0004",
+      "receipt_sha256": "b837de243131ef7e2882f6b4b9cd01c14790eba62b59a1db28af3b4f549dfcc6",
+      "seal_sha256": "c405232ca57f83d8e423d85d800ae420b3c73d7ba723662e767cac1c0ae582bf"
+    },
+    {
+      "id": "shard-0005",
+      "receipt_sha256": "c31fa4270226ce09e17d60783f14f704305c68ac7c1c7875dd9bc9591156b3bc",
+      "seal_sha256": "a2f5bdb86a1cf42e72a21af50323a5527c58bcd3b367d24ab1595a0b0b43d809"
+    },
+    {
+      "id": "shard-0006",
+      "receipt_sha256": "f95388467b91fc049a8c6b1d0b718808b9aab5031f54d45bfa68d9c72f239dda",
+      "seal_sha256": "786d69f3c6f6c70c965368ad3bc75c155f99343d49c44ff67d9a71b7083e3dd0"
+    },
+    {
+      "id": "shard-0007",
+      "receipt_sha256": "4203f6ecdc39ad047e8dcd14fc211e578a661e3f4fb78eb0b6dd688c4a3ec152",
+      "seal_sha256": "dcd237586b851c4025a46faee3d0a9bad1cef2dcc20dedb7051b04e47926f03f"
+    },
+    {
+      "id": "shard-0008",
+      "receipt_sha256": "9305db92544b148b1469c2fea0bf31fb77af840934d554ccaaa44f79b0394b14",
+      "seal_sha256": "29911d1dfcb17cdd302b480cb0732e2575c2c65ddfe647637601d34a5a147dce"
+    },
+    {
+      "id": "shard-0009",
+      "receipt_sha256": "89954f20b34a26f3d0510aea987e3d829f5c60814f0ef208595f9c30b637b461",
+      "seal_sha256": "cab8a6ae56c2da096679fabe3af36f344368e42a3d709edd340b1f0014bd7b17"
+    },
+    {
+      "id": "shard-0010",
+      "receipt_sha256": "8542923bdad92ae4fd390be09da03f3514227934d0b87e1a2d88bcbaa67eb76b",
+      "seal_sha256": "0cf7a972dfe005c8c0725713b332a26009673cdd7adba9d54719fd3b35eecff4"
+    },
+    {
+      "id": "shard-0011",
+      "receipt_sha256": "dff51467cf2f0d39ae002b33bca8661994fb7a38b703dec53ba6ffd06b440857",
+      "seal_sha256": "b0b3eef3cdf0ef646a91a22299bc5459cee53e4c2222b007f493057406183421"
+    },
+    {
+      "id": "shard-0012",
+      "receipt_sha256": "f6502eb89e837fd2e717ff2b44c075db48c6421433cfee262b5b5ce5f513ff34",
+      "seal_sha256": "528a569d9aa40f1853eb35977a47ad07fe8bbd3ef964432d08caf9f0ee2cd42f"
+    },
+    {
+      "id": "shard-0013",
+      "receipt_sha256": "bbb825f2c8dce0244920600f876c12ec38c1f5bd4e03a2c8796e8b708c21b2a0",
+      "seal_sha256": "e62de19eb89a1d4ded640ce68663233436b202117900fe1ac42212f47e2fe6e6"
+    },
+    {
+      "id": "shard-0014",
+      "receipt_sha256": "1032c1cfa36808b91cbd2f37c56ce97b8465198aa6476153da4679fbefe94435",
+      "seal_sha256": "5734f7c0ed498906f18d482b46ee6dfd38b547c491becbfe45f5c2ed8e9ebd6d"
+    },
+    {
+      "id": "shard-0015",
+      "receipt_sha256": "75835d5eee0bed9232ecb90ebdcdffac5d980b72ef2538652301fa62d95ac71e",
+      "seal_sha256": "b00cb4ca1ef25026c7b76c087de7485cff82cac95f67e6b563c36333905716f5"
+    },
+    {
+      "id": "shard-0016",
+      "receipt_sha256": "eaf3e9fb5d28b6b252d3a820a1504ca77658fc70f4d8127997de41b9a8284c68",
+      "seal_sha256": "12d554a6bbe5227f516b52b6407a29d48e738670128d971f8625d486df8eae2e"
+    },
+    {
+      "id": "shard-0017",
+      "receipt_sha256": "264ad69e99f13a03bdaa0766575999bc21d7a0709d4e9284e43aa326b8f6f188",
+      "seal_sha256": "7cf292186864bd20e1252f8f93f5938424602c9d54cb147f2e7f67430d1f2609"
+    }
+  ],
+  "source_code_sha256": "8c2cd1fcc3dc8ae2b8569b4c6aff8ecc053cdb53427d63c4ff3da537a26d85ed",
+  "states_dtype": "float32",
+  "states_shape": [
+    164220,
+    2048
+  ],
+  "stimuli_sha256": "498b2caf6cb53173edd4a473b8e9c20ca21830fc066ba52760cecc08c88e0e40",
+  "targets_sha256": null,
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.17.0"
+}

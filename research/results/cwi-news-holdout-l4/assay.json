@@ -1,0 +1,55 @@
+{
+  "schema": 1,
+  "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "lexical_weights_sha256": "e9721f340b325015826bf1645d9814385d4d180689b652e772480f99a80f49d4",
+  "checkpoint_manifest_sha256": "7dff4f755c9c684fd4ae215c52dabeb72314d47d4105ad2de2516ca42db9752c",
+  "protocol_sha256": "03d9f3d907749d77251ed3c6b294761907deb8f5e0ab5daf9c24161eed3b6b25",
+  "preparation_code_sha256": "6983df9050cfb1a7361b8bc092db25fbdc76d92088237476d574ccdbb0ded70c",
+  "stimuli_sha256": "c36ef26d89a3ef91ba01adba34252f069adf3f99be1020cc8941385f88191012",
+  "outcomes_sha256": "dc6db2efdda4f17249d2ff0ba4ac2adfd3c12dba94aa6b831e5812d2bd22c9c3",
+  "source_url": "https://www.inf.uni-hamburg.de/en/inst/ab/lt/resources/data/complex-word-identification-dataset/cwishareddataset.zip",
+  "source_sha256": "4a47b3f0b4589907e44f5cc19231dc24fee157636b65ba668ef1850224e52e3e",
+  "official_member": "testset/english/News_Test.tsv",
+  "official_member_sha256": "3d914c936b1dfd6b63cd0555dfedf8bc8e3314dea1e5e3ea67399061fe7ba156",
+  "license": "CC BY 4.0",
+  "complex_stimuli_sha256": "20d1859671ffcb6b0d577b6c9cc6b1398bb7699e46c2cfea08efedab93a7068a",
+  "complex_reference_splits": [
+    "train",
+    "trial",
+    "test"
+  ],
+  "frequency_reference_splits": [
+    "train",
+    "trial"
+  ],
+  "cwi_reference_members": [
+    "traindevset/english/News_Train.tsv",
+    "traindevset/english/News_Dev.tsv",
+    "traindevset/english/Wikipedia_Train.tsv",
+    "traindevset/english/Wikipedia_Dev.tsv",
+    "testset/english/Wikipedia_Test.tsv",
+    "traindevset/english/WikiNews_Train.tsv",
+    "traindevset/english/WikiNews_Dev.tsv",
+    "testset/english/WikiNews_Test.tsv"
+  ],
+  "overlap_rule": "Reject normalized exact matches or at least 25% shared distinct five-word windows with one reference sentence.",
+  "source_hits": 28,
+  "source_sentences": 177,
+  "source_candidates": 2095,
+  "votes_per_group": {
+    "native": 10,
+    "nonnative": 10
+  },
+  "retained_sentences": 100,
+  "retained_hits": 22,
+  "retained_candidates": 979,
+  "excluded_candidates": {
+    "cwi_exact": 247,
+    "cwi_substantial_fivegram": 584,
+    "duplicate_heldout_sentence": 115,
+    "not_one_complete_served_word": 170
+  },
+  "presentation": "Literal released sentence; original annotators saw a paragraph.",
+  "resampling_scope": "Original HIT; the release gives no article or reader identity key.",
+  "pretraining_overlap": "Unknown."
+}

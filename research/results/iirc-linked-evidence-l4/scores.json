@@ -1,0 +1,111 @@
+{
+  "scope": "Linked retrospective text-support arrival given a supplied IIRC writer anchor.",
+  "observed_intervals": 413,
+  "right_censored": 39,
+  "strict_same_document_swaps": 0,
+  "identity_swap_available": false,
+  "bootstrap": {
+    "seed": 43,
+    "draws": 10000,
+    "unit": "connected article component"
+  },
+  "assay_sha256": "a358a9f72c231a225d94aeca98e5d3bd2b3a1379359c86d9e1706b1b7ca24bf6",
+  "forecasts_sha256": "dbc0439d25a30865f7b68c63379932bd3da6f63c05f359cc206b7411bde248f0",
+  "seal_sha256": "d1fe43dec2c4301cb6fe5325778d1f6dda1e732a15ab0752111206ab6567d3f0",
+  "metrics": {
+    "geometry": {
+      "interval_nll_nats": 2.6595020203324267,
+      "cumulative_brier": 0.15146154619409063,
+      "terminal_calibration_in_large": 0.017305052812569485,
+      "modal_exact_bin_or_censor": 0.2853982300884956
+    },
+    "path_text": {
+      "interval_nll_nats": 2.6291109111711912,
+      "cumulative_brier": 0.1497658466053098,
+      "terminal_calibration_in_large": 0.01946392829013431,
+      "modal_exact_bin_or_censor": 0.2853982300884956
+    },
+    "anchor_conditioned": {
+      "interval_nll_nats": 2.623121720676086,
+      "cumulative_brier": 0.14917233247390763,
+      "terminal_calibration_in_large": 0.020166903867874716,
+      "modal_exact_bin_or_censor": 0.2853982300884956
+    }
+  },
+  "paired_anchor_conditioned_minus_baseline": {
+    "geometry": {
+      "interval_nll_nats": {
+        "difference": -0.03638029965634069,
+        "descriptive_paired_material_95_ci": [
+          -0.05431168886402927,
+          -0.01899386241810068
+        ],
+        "groups": 269
+      },
+      "cumulative_brier": {
+        "difference": -0.002289213720182993,
+        "descriptive_paired_material_95_ci": [
+          -0.004366305693099314,
+          -0.0003671027194993066
+        ],
+        "groups": 269
+      },
+      "terminal_calibration_in_large": {
+        "difference": 0.0028618510553052316,
+        "descriptive_paired_material_95_ci": [
+          0.00016807039617537677,
+          0.005599392345022945
+        ],
+        "groups": 269
+      },
+      "modal_exact_bin_or_censor": {
+        "difference": 0.0,
+        "descriptive_paired_material_95_ci": [
+          0.0,
+          0.0
+        ],
+        "groups": 269
+      }
+    },
+    "path_text": {
+      "interval_nll_nats": {
+        "difference": -0.005989190495105189,
+        "descriptive_paired_material_95_ci": [
+          -0.015902575660136073,
+          0.003844966946428744
+        ],
+        "groups": 269
+      },
+      "cumulative_brier": {
+        "difference": -0.000593514131402187,
+        "descriptive_paired_material_95_ci": [
+          -0.0018444210541030362,
+          0.0005792787015101895
+        ],
+        "groups": 269
+      },
+      "terminal_calibration_in_large": {
+        "difference": 0.0007029755777404103,
+        "descriptive_paired_material_95_ci": [
+          -0.0007315202475767808,
+          0.0021912052640788394
+        ],
+        "groups": 269
+      },
+      "modal_exact_bin_or_censor": {
+        "difference": 0.0,
+        "descriptive_paired_material_95_ci": [
+          0.0,
+          0.0
+        ],
+        "groups": 269
+      }
+    }
+  },
+  "conditions": {
+    "anchor_conditioned_improves_interval_nll_vs_geometry": false,
+    "anchor_conditioned_cumulative_brier_noninferior_to_geometry": true,
+    "explicit_anchor_improves_interval_nll_vs_path_text": false
+  },
+  "all_conditions_passed": false
+}

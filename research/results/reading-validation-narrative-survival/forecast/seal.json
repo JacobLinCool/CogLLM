@@ -1,0 +1,122 @@
+{
+  "archive": "6232564fb005630ce725a715bcc20d55292d18b465d0b723c4417bcca03dc47b",
+  "old": "7727e3657c505f91b0a1455a4829e3e2ff6caadbd2b81a50f468c135229f8b8e",
+  "protocol": "dd56ad42f8afa3a5424719533b558347d772d8052eec5cb09903d70203516281",
+  "estimator": "d7a1912a7e0befc44cbe83bb0c3f74d38758d4c99a6c2bd3c37ee041a81563ea",
+  "geometry": {
+    "Auftrag": {
+      "spells": 48,
+      "questions": 48,
+      "additional_spells": 0,
+      "left_uncertain": 0,
+      "right_censored": 3,
+      "exact": 45,
+      "interval": 0
+    },
+    "Katze": {
+      "spells": 99,
+      "questions": 99,
+      "additional_spells": 0,
+      "left_uncertain": 0,
+      "right_censored": 5,
+      "exact": 88,
+      "interval": 6
+    },
+    "Thomas": {
+      "spells": 49,
+      "questions": 49,
+      "additional_spells": 0,
+      "left_uncertain": 0,
+      "right_censored": 5,
+      "exact": 44,
+      "interval": 0
+    },
+    "Verkehrsunfall": {
+      "spells": 26,
+      "questions": 26,
+      "additional_spells": 0,
+      "left_uncertain": 0,
+      "right_censored": 1,
+      "exact": 25,
+      "interval": 0
+    }
+  },
+  "folds": {
+    "Auftrag": {
+      "source": [
+        "Katze",
+        "Thomas",
+        "Verkehrsunfall"
+      ],
+      "excluded_question_wordings": "Auftrag",
+      "teacher_shape": [
+        [
+          768,
+          384
+        ],
+        [
+          768,
+          384
+        ]
+      ]
+    },
+    "Katze": {
+      "source": [
+        "Auftrag",
+        "Thomas",
+        "Verkehrsunfall"
+      ],
+      "excluded_question_wordings": "Katze",
+      "teacher_shape": [
+        [
+          768,
+          384
+        ],
+        [
+          768,
+          384
+        ]
+      ]
+    },
+    "Thomas": {
+      "source": [
+        "Auftrag",
+        "Katze",
+        "Verkehrsunfall"
+      ],
+      "excluded_question_wordings": "Thomas",
+      "teacher_shape": [
+        [
+          768,
+          384
+        ],
+        [
+          768,
+          384
+        ]
+      ]
+    },
+    "Verkehrsunfall": {
+      "source": [
+        "Auftrag",
+        "Katze",
+        "Thomas"
+      ],
+      "excluded_question_wordings": "Verkehrsunfall",
+      "teacher_shape": [
+        [
+          768,
+          384
+        ],
+        [
+          768,
+          384
+        ]
+      ]
+    }
+  },
+  "files": {
+    "predictions.npz": "426e3994609a45addb68ad6e0b0c29d05b640392450011ebe04aa6d53f61fd13",
+    "models.json": "96f38d64637ca33096c1001b41e2d7442c7899ffee37807f895a1b01ed68d65c"
+  }
+}

@@ -1,0 +1,882 @@
+{
+  "forecast_seal_sha256": "9d5a516a316ff12e24ee44e924aa1961eeb3ac570db06b60a3b83425e95220af",
+  "simulation": {
+    "opposed_predictions": "passed",
+    "original_and_revision_pair_denominators": "passed"
+  },
+  "draws": 10000,
+  "seed": 486130,
+  "observed_presentations": 660,
+  "response_rows_with_ambiguous_identity": 4,
+  "primary": {
+    "correctness": {
+      "articles": 30,
+      "paragraphs": 60,
+      "questions": 176,
+      "observed_pairs": 3281,
+      "model": {
+        "contextual_coverage": {
+          "estimate": 0.6090432098765431,
+          "article_bootstrap_95": [
+            0.5629418926366844,
+            0.6550069885361551
+          ]
+        },
+        "edit_meaning": {
+          "estimate": 0.611329475308642,
+          "article_bootstrap_95": [
+            0.5625225363756613,
+            0.660930370921517
+          ]
+        },
+        "fluency": {
+          "estimate": 0.4808216490299823,
+          "article_bootstrap_95": [
+            0.43442743606701945,
+            0.5306256834215167
+          ]
+        },
+        "length": {
+          "estimate": 0.35309893077601406,
+          "article_bootstrap_95": [
+            0.3091441440696649,
+            0.39866809413580234
+          ]
+        },
+        "meaning": {
+          "estimate": 0.627893077601411,
+          "article_bootstrap_95": [
+            0.5852208939594357,
+            0.6715895667989418
+          ]
+        },
+        "readme": {
+          "estimate": 0.4466980820105821,
+          "article_bootstrap_95": [
+            0.407380536265432,
+            0.4886486579585538
+          ]
+        },
+        "retained_length": {
+          "estimate": 0.6326660052910051,
+          "article_bootstrap_95": [
+            0.5841218915343915,
+            0.6784998043430335
+          ]
+        },
+        "simplicity": {
+          "estimate": 0.44781933421516745,
+          "article_bootstrap_95": [
+            0.4030296406525573,
+            0.4947107363315697
+          ]
+        },
+        "source_word_recall": {
+          "estimate": 0.6195812389770725,
+          "article_bootstrap_95": [
+            0.5750828455687831,
+            0.6645811287477955
+          ]
+        },
+        "word_coverage": {
+          "estimate": 0.6156785714285714,
+          "article_bootstrap_95": [
+            0.5712612158289243,
+            0.6599429122574957
+          ]
+        }
+      },
+      "paired": {
+        "meaning minus contextual_coverage": {
+          "estimate": 0.018849867724867853,
+          "article_bootstrap_95": [
+            -0.002966032848324565,
+            0.04153889991181665
+          ]
+        },
+        "meaning minus edit_meaning": {
+          "estimate": 0.016563602292768986,
+          "article_bootstrap_95": [
+            -0.003586372905643714,
+            0.0383766617063492
+          ]
+        },
+        "meaning minus fluency": {
+          "estimate": 0.1470714285714287,
+          "article_bootstrap_95": [
+            0.09474216269841271,
+            0.20132641093474415
+          ]
+        },
+        "meaning minus length": {
+          "estimate": 0.27479414682539693,
+          "article_bootstrap_95": [
+            0.1948851741622574,
+            0.356037464175485
+          ]
+        },
+        "meaning minus readme": {
+          "estimate": 0.1811949955908289,
+          "article_bootstrap_95": [
+            0.10759152336860667,
+            0.25258118110670186
+          ]
+        },
+        "meaning minus retained_length": {
+          "estimate": -0.004772927689594142,
+          "article_bootstrap_95": [
+            -0.039484223434744344,
+            0.03919212962962967
+          ]
+        },
+        "meaning minus simplicity": {
+          "estimate": 0.18007374338624355,
+          "article_bootstrap_95": [
+            0.11839700451940031,
+            0.24446623401675469
+          ]
+        },
+        "meaning minus source_word_recall": {
+          "estimate": 0.008311838624338486,
+          "article_bootstrap_95": [
+            -0.010677609678130697,
+            0.027483746693121473
+          ]
+        },
+        "meaning minus word_coverage": {
+          "estimate": 0.01221450617283959,
+          "article_bootstrap_95": [
+            -0.008928676146384562,
+            0.03289168871252201
+          ]
+        }
+      },
+      "exceeds_all_primary_controls": false
+    },
+    "answerability": {
+      "articles": 30,
+      "paragraphs": 60,
+      "questions": 157,
+      "observed_pairs": 2517,
+      "model": {
+        "contextual_coverage": {
+          "estimate": 0.6549562389770721,
+          "article_bootstrap_95": [
+            0.6130331817680776,
+            0.6973448522927689
+          ]
+        },
+        "edit_meaning": {
+          "estimate": 0.6551086860670196,
+          "article_bootstrap_95": [
+            0.604462398037919,
+            0.7045815806878306
+          ]
+        },
+        "fluency": {
+          "estimate": 0.49332032627865974,
+          "article_bootstrap_95": [
+            0.4407301973104056,
+            0.5478246886022928
+          ]
+        },
+        "length": {
+          "estimate": 0.32519003527336854,
+          "article_bootstrap_95": [
+            0.2766114486882716,
+            0.3757959270282186
+          ]
+        },
+        "meaning": {
+          "estimate": 0.6680511463844797,
+          "article_bootstrap_95": [
+            0.6245782407407406,
+            0.7100846175044091
+          ]
+        },
+        "readme": {
+          "estimate": 0.418163029100529,
+          "article_bootstrap_95": [
+            0.37782980048500875,
+            0.4611802606922398
+          ]
+        },
+        "retained_length": {
+          "estimate": 0.6629694664902996,
+          "article_bootstrap_95": [
+            0.6108830550044091,
+            0.7126617793761022
+          ]
+        },
+        "simplicity": {
+          "estimate": 0.4548624338624338,
+          "article_bootstrap_95": [
+            0.4050569692460318,
+            0.5058993138227512
+          ]
+        },
+        "source_word_recall": {
+          "estimate": 0.6648543320105821,
+          "article_bootstrap_95": [
+            0.6151040275022046,
+            0.7126585593033511
+          ]
+        },
+        "word_coverage": {
+          "estimate": 0.6602705026455026,
+          "article_bootstrap_95": [
+            0.6115042548500881,
+            0.7068020116843035
+          ]
+        }
+      },
+      "paired": {
+        "meaning minus contextual_coverage": {
+          "estimate": 0.013094907407407597,
+          "article_bootstrap_95": [
+            -0.008065382495590913,
+            0.035518843694885234
+          ]
+        },
+        "meaning minus edit_meaning": {
+          "estimate": 0.012942460317460158,
+          "article_bootstrap_95": [
+            -0.0049183145943561156,
+            0.033816906415343836
+          ]
+        },
+        "meaning minus fluency": {
+          "estimate": 0.17473082010581997,
+          "article_bootstrap_95": [
+            0.11699985119047614,
+            0.23400515046296322
+          ]
+        },
+        "meaning minus length": {
+          "estimate": 0.34286111111111117,
+          "article_bootstrap_95": [
+            0.25724733107363323,
+            0.42823960813492046
+          ]
+        },
+        "meaning minus readme": {
+          "estimate": 0.24988811728395072,
+          "article_bootstrap_95": [
+            0.17529098324514994,
+            0.3187733713624337
+          ]
+        },
+        "meaning minus retained_length": {
+          "estimate": 0.005081679894180069,
+          "article_bootstrap_95": [
+            -0.028999875992063242,
+            0.043550024801587504
+          ]
+        },
+        "meaning minus simplicity": {
+          "estimate": 0.2131887125220459,
+          "article_bootstrap_95": [
+            0.1473601686507937,
+            0.28131702766754846
+          ]
+        },
+        "meaning minus source_word_recall": {
+          "estimate": 0.0031968143738976273,
+          "article_bootstrap_95": [
+            -0.01668956404320999,
+            0.0249044243276016
+          ]
+        },
+        "meaning minus word_coverage": {
+          "estimate": 0.007780643738977133,
+          "article_bootstrap_95": [
+            -0.011009846230158653,
+            0.027105346119929555
+          ]
+        }
+      },
+      "exceeds_all_primary_controls": false
+    }
+  },
+  "original_versus_revision": {
+    "correctness": {
+      "articles": 30,
+      "paragraphs": 60,
+      "questions": 176,
+      "observed_pairs": 651,
+      "model": {
+        "contextual_coverage": {
+          "estimate": 0.7713392857142857,
+          "article_bootstrap_95": [
+            0.706498015873016,
+            0.8318948412698413
+          ]
+        },
+        "edit_meaning": {
+          "estimate": 0.7261276455026454,
+          "article_bootstrap_95": [
+            0.6605897817460318,
+            0.7888544973544973
+          ]
+        },
+        "fluency": {
+          "estimate": 0.4595557760141094,
+          "article_bootstrap_95": [
+            0.40746552579365075,
+            0.5138284281305114
+          ]
+        },
+        "length": {
+          "estimate": 0.29633377425044094,
+          "article_bootstrap_95": [
+            0.24291997354497358,
+            0.35199140211640195
+          ]
+        },
+        "meaning": {
+          "estimate": 0.756471560846561,
+          "article_bootstrap_95": [
+            0.6901587301587302,
+            0.818204861111111
+          ]
+        },
+        "readme": {
+          "estimate": 0.3285901675485008,
+          "article_bootstrap_95": [
+            0.2731897872574956,
+            0.38521401014109347
+          ]
+        },
+        "retained_length": {
+          "estimate": 0.7685714285714286,
+          "article_bootstrap_95": [
+            0.7039111276455026,
+            0.8284825562169312
+          ]
+        },
+        "simplicity": {
+          "estimate": 0.3245160934744268,
+          "article_bootstrap_95": [
+            0.2662515707671958,
+            0.38363381834215166
+          ]
+        },
+        "source_word_recall": {
+          "estimate": 0.7637268518518519,
+          "article_bootstrap_95": [
+            0.6988115906084656,
+            0.8250431547619049
+          ]
+        },
+        "word_coverage": {
+          "estimate": 0.768422619047619,
+          "article_bootstrap_95": [
+            0.7028169642857142,
+            0.8296753472222221
+          ]
+        }
+      },
+      "paired": {
+        "meaning minus contextual_coverage": {
+          "estimate": -0.014867724867724696,
+          "article_bootstrap_95": [
+            -0.023611111111111138,
+            -0.00710962301587292
+          ]
+        },
+        "meaning minus edit_meaning": {
+          "estimate": 0.030343915343915562,
+          "article_bootstrap_95": [
+            0.004449900793650775,
+            0.05836656746031744
+          ]
+        },
+        "meaning minus fluency": {
+          "estimate": 0.29691578483245157,
+          "article_bootstrap_95": [
+            0.2146866181657848,
+            0.37934953703703694
+          ]
+        },
+        "meaning minus length": {
+          "estimate": 0.46013778659612004,
+          "article_bootstrap_95": [
+            0.3438077601410934,
+            0.5691955467372133
+          ]
+        },
+        "meaning minus readme": {
+          "estimate": 0.4278813932980602,
+          "article_bootstrap_95": [
+            0.3229869929453263,
+            0.5306876102292768
+          ]
+        },
+        "meaning minus retained_length": {
+          "estimate": -0.012099867724867597,
+          "article_bootstrap_95": [
+            -0.022053902116402034,
+            -0.0023145667989418676
+          ]
+        },
+        "meaning minus simplicity": {
+          "estimate": 0.4319554673721342,
+          "article_bootstrap_95": [
+            0.31833107363315694,
+            0.5450248567019399
+          ]
+        },
+        "meaning minus source_word_recall": {
+          "estimate": -0.007255291005290876,
+          "article_bootstrap_95": [
+            -0.019868138227513283,
+            0.005473214285714135
+          ]
+        },
+        "meaning minus word_coverage": {
+          "estimate": -0.011951058201058018,
+          "article_bootstrap_95": [
+            -0.02226851851851841,
+            -0.0015342261904762646
+          ]
+        }
+      },
+      "exceeds_all_primary_controls": false
+    },
+    "answerability": {
+      "articles": 30,
+      "paragraphs": 60,
+      "questions": 157,
+      "observed_pairs": 481,
+      "model": {
+        "contextual_coverage": {
+          "estimate": 0.8600308641975308,
+          "article_bootstrap_95": [
+            0.7999999999999999,
+            0.913125
+          ]
+        },
+        "edit_meaning": {
+          "estimate": 0.8119356261022926,
+          "article_bootstrap_95": [
+            0.75436541005291,
+            0.8636116622574956
+          ]
+        },
+        "fluency": {
+          "estimate": 0.440734126984127,
+          "article_bootstrap_95": [
+            0.37938720789241626,
+            0.5035315806878307
+          ]
+        },
+        "length": {
+          "estimate": 0.22062555114638446,
+          "article_bootstrap_95": [
+            0.1706918127204585,
+            0.2749529320987654
+          ]
+        },
+        "meaning": {
+          "estimate": 0.8397376543209876,
+          "article_bootstrap_95": [
+            0.7767746913580246,
+            0.8956809413580247
+          ]
+        },
+        "readme": {
+          "estimate": 0.24115740740740738,
+          "article_bootstrap_95": [
+            0.18617851631393295,
+            0.2995445326278659
+          ]
+        },
+        "retained_length": {
+          "estimate": 0.8517035934744268,
+          "article_bootstrap_95": [
+            0.7934097360008819,
+            0.9027999063051146
+          ]
+        },
+        "simplicity": {
+          "estimate": 0.25430004409171075,
+          "article_bootstrap_95": [
+            0.19987670855379186,
+            0.3130926477072309
+          ]
+        },
+        "source_word_recall": {
+          "estimate": 0.8547067901234566,
+          "article_bootstrap_95": [
+            0.7946354166666665,
+            0.9074479166666666
+          ]
+        },
+        "word_coverage": {
+          "estimate": 0.8593364197530863,
+          "article_bootstrap_95": [
+            0.7989197530864197,
+            0.9125
+          ]
+        }
+      },
+      "paired": {
+        "meaning minus contextual_coverage": {
+          "estimate": -0.02029320987654326,
+          "article_bootstrap_95": [
+            -0.03641975308641943,
+            -0.007716049382716084
+          ]
+        },
+        "meaning minus edit_meaning": {
+          "estimate": 0.02780202821869493,
+          "article_bootstrap_95": [
+            0.005116512345679095,
+            0.051685019841269886
+          ]
+        },
+        "meaning minus fluency": {
+          "estimate": 0.39900352733686056,
+          "article_bootstrap_95": [
+            0.3084610615079365,
+            0.487172123015873
+          ]
+        },
+        "meaning minus length": {
+          "estimate": 0.6191121031746031,
+          "article_bootstrap_95": [
+            0.5079333939594356,
+            0.7184476686507937
+          ]
+        },
+        "meaning minus readme": {
+          "estimate": 0.5985802469135801,
+          "article_bootstrap_95": [
+            0.49218435846560854,
+            0.695692074514991
+          ]
+        },
+        "meaning minus retained_length": {
+          "estimate": -0.011965939153439242,
+          "article_bootstrap_95": [
+            -0.029903039572310414,
+            0.004039448302469063
+          ]
+        },
+        "meaning minus simplicity": {
+          "estimate": 0.5854376102292769,
+          "article_bootstrap_95": [
+            0.47730704365079346,
+            0.6838552689594355
+          ]
+        },
+        "meaning minus source_word_recall": {
+          "estimate": -0.014969135802469058,
+          "article_bootstrap_95": [
+            -0.032137345679012386,
+            -0.0010021219135802812
+          ]
+        },
+        "meaning minus word_coverage": {
+          "estimate": -0.019598765432098708,
+          "article_bootstrap_95": [
+            -0.03565007716049388,
+            -0.007175925925925972
+          ]
+        }
+      },
+      "exceeds_all_primary_controls": false
+    }
+  },
+  "including_repeat_means": {
+    "correctness": {
+      "articles": 30,
+      "paragraphs": 60,
+      "questions": 176,
+      "observed_pairs": 3303,
+      "model": {
+        "contextual_coverage": {
+          "estimate": 0.6087110842726785,
+          "article_bootstrap_95": [
+            0.5626516457710299,
+            0.6547596560846561
+          ]
+        },
+        "edit_meaning": {
+          "estimate": 0.6112829873092555,
+          "article_bootstrap_95": [
+            0.5624287602561153,
+            0.6608089561287478
+          ]
+        },
+        "fluency": {
+          "estimate": 0.4817624798711755,
+          "article_bootstrap_95": [
+            0.4353232217142091,
+            0.5315477208898858
+          ]
+        },
+        "length": {
+          "estimate": 0.3536384311977609,
+          "article_bootstrap_95": [
+            0.30952150255683997,
+            0.39920895037765497
+          ]
+        },
+        "meaning": {
+          "estimate": 0.6286305593896173,
+          "article_bootstrap_95": [
+            0.5859441892397055,
+            0.672215261243386
+          ]
+        },
+        "readme": {
+          "estimate": 0.4455749415305575,
+          "article_bootstrap_95": [
+            0.4064550289711295,
+            0.4873920875747641
+          ]
+        },
+        "retained_length": {
+          "estimate": 0.632538474810214,
+          "article_bootstrap_95": [
+            0.5841133818342152,
+            0.6783565945863047
+          ]
+        },
+        "simplicity": {
+          "estimate": 0.44811532378651936,
+          "article_bootstrap_95": [
+            0.4035477414979679,
+            0.4946484105417529
+          ]
+        },
+        "source_word_recall": {
+          "estimate": 0.6201851037113719,
+          "article_bootstrap_95": [
+            0.5757113167126755,
+            0.6649141263610919
+          ]
+        },
+        "word_coverage": {
+          "estimate": 0.615666110727705,
+          "article_bootstrap_95": [
+            0.5711920383310329,
+            0.6599745240970785
+          ]
+        }
+      },
+      "paired": {
+        "meaning minus contextual_coverage": {
+          "estimate": 0.019919475116938812,
+          "article_bootstrap_95": [
+            -0.0017914764013497563,
+            0.042474248044628446
+          ]
+        },
+        "meaning minus edit_meaning": {
+          "estimate": 0.01734757208036186,
+          "article_bootstrap_95": [
+            -0.002714617720075113,
+            0.03896716485507244
+          ]
+        },
+        "meaning minus fluency": {
+          "estimate": 0.14686807951844183,
+          "article_bootstrap_95": [
+            0.09437910244613146,
+            0.20126128532129442
+          ]
+        },
+        "meaning minus length": {
+          "estimate": 0.2749921281918564,
+          "article_bootstrap_95": [
+            0.19520806201355345,
+            0.35631904150851174
+          ]
+        },
+        "meaning minus readme": {
+          "estimate": 0.18305561785905983,
+          "article_bootstrap_95": [
+            0.10932437325070943,
+            0.2545782907033585
+          ]
+        },
+        "meaning minus retained_length": {
+          "estimate": -0.003907915420596653,
+          "article_bootstrap_95": [
+            -0.03856668655586229,
+            0.039890908960202344
+          ]
+        },
+        "meaning minus simplicity": {
+          "estimate": 0.18051523560309796,
+          "article_bootstrap_95": [
+            0.11892082422743668,
+            0.24483884671420914
+          ]
+        },
+        "meaning minus source_word_recall": {
+          "estimate": 0.008445455678245395,
+          "article_bootstrap_95": [
+            -0.010534774820757825,
+            0.027615972222222104
+          ]
+        },
+        "meaning minus word_coverage": {
+          "estimate": 0.012964448661912265,
+          "article_bootstrap_95": [
+            -0.008146413954068,
+            0.03354249650141849
+          ]
+        }
+      },
+      "exceeds_all_primary_controls": false
+    },
+    "answerability": {
+      "articles": 30,
+      "paragraphs": 60,
+      "questions": 158,
+      "observed_pairs": 2535,
+      "model": {
+        "contextual_coverage": {
+          "estimate": 0.652950066137566,
+          "article_bootstrap_95": [
+            0.6111490189594356,
+            0.6954615906084655
+          ]
+        },
+        "edit_meaning": {
+          "estimate": 0.6537638888888889,
+          "article_bootstrap_95": [
+            0.6034487378747796,
+            0.703155009920635
+          ]
+        },
+        "fluency": {
+          "estimate": 0.4958996913580247,
+          "article_bootstrap_95": [
+            0.4443177634479718,
+            0.5494330136684303
+          ]
+        },
+        "length": {
+          "estimate": 0.32588447971781304,
+          "article_bootstrap_95": [
+            0.2780900848765432,
+            0.37624319058641975
+          ]
+        },
+        "meaning": {
+          "estimate": 0.6682164902998236,
+          "article_bootstrap_95": [
+            0.6245782407407406,
+            0.7103499586640213
+          ]
+        },
+        "readme": {
+          "estimate": 0.41788745590828913,
+          "article_bootstrap_95": [
+            0.3775404072971781,
+            0.4609678681657848
+          ]
+        },
+        "retained_length": {
+          "estimate": 0.6622750220458553,
+          "article_bootstrap_95": [
+            0.6102559937169312,
+            0.7115575823963843
+          ]
+        },
+        "simplicity": {
+          "estimate": 0.4558655202821869,
+          "article_bootstrap_95": [
+            0.4067821593915345,
+            0.5061472194664903
+          ]
+        },
+        "source_word_recall": {
+          "estimate": 0.6644685295414463,
+          "article_bootstrap_95": [
+            0.6146611579585537,
+            0.7126483947861552
+          ]
+        },
+        "word_coverage": {
+          "estimate": 0.6586611552028218,
+          "article_bootstrap_95": [
+            0.6096473627645502,
+            0.7055455550044091
+          ]
+        }
+      },
+      "paired": {
+        "meaning minus contextual_coverage": {
+          "estimate": 0.015266424162257541,
+          "article_bootstrap_95": [
+            -0.005148120590829052,
+            0.03690578152557306
+          ]
+        },
+        "meaning minus edit_meaning": {
+          "estimate": 0.014452601410934629,
+          "article_bootstrap_95": [
+            -0.002892587081128802,
+            0.03498629298941796
+          ]
+        },
+        "meaning minus fluency": {
+          "estimate": 0.17231679894179885,
+          "article_bootstrap_95": [
+            0.11545107197971781,
+            0.23154555224867748
+          ]
+        },
+        "meaning minus length": {
+          "estimate": 0.3423320105820105,
+          "article_bootstrap_95": [
+            0.2568923680004408,
+            0.4276420483355379
+          ]
+        },
+        "meaning minus readme": {
+          "estimate": 0.2503290343915344,
+          "article_bootstrap_95": [
+            0.17532899581128755,
+            0.31934561011904766
+          ]
+        },
+        "meaning minus retained_length": {
+          "estimate": 0.005941468253968241,
+          "article_bootstrap_95": [
+            -0.027676672729276795,
+            0.04390433752204586
+          ]
+        },
+        "meaning minus simplicity": {
+          "estimate": 0.21235097001763664,
+          "article_bootstrap_95": [
+            0.1470657021604937,
+            0.2801926532186948
+          ]
+        },
+        "meaning minus source_word_recall": {
+          "estimate": 0.0037479607583772445,
+          "article_bootstrap_95": [
+            -0.015919141313933054,
+            0.025264716986331672
+          ]
+        },
+        "meaning minus word_coverage": {
+          "estimate": 0.009555335097001794,
+          "article_bootstrap_95": [
+            -0.008832988866842917,
+            0.028604232804232937
+          ]
+        }
+      },
+      "exceeds_all_primary_controls": false
+    }
+  },
+  "all_including_supervised_overlap": "Identical to the primary sample."
+}

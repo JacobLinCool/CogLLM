@@ -1,0 +1,53 @@
+{
+  "owner": "CogLLM",
+  "requested_gpu": "L4",
+  "job_limit_seconds": 900,
+  "allocation_target_ceiling_seconds": 1200,
+  "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "source_release": "153082e7d58b833d5e2f481b92fdcf9248c60d11",
+  "bootstrap_seed": 43,
+  "colab_session_registry": "/Users/jacoblincool/.config/colab-cli/sessions.json",
+  "run_id": "cogllm-stage3-features-20261120T150006Z-119103",
+  "reference_run": "cogllm-stage3-fp32-20261120T141921Z-dd6129",
+  "compute_dtype": "float32",
+  "reason": "Stage 3 sentence issue ablation: final surprisal, layer-12 logits, and eager attention",
+  "code_sha256": {
+    "ablation_run.py": "69a0caef6f4ccd31f5fdbc5b09010a83c45e36bacc8c1d8cb1a0e3732d6799c8",
+    "feature_signals.py": "548a8ebbe38419edee2dc9c08a772a34e4d4454191a4fbb43a8a950a21bf7f12",
+    "issue_probe.py": "d275a33d94d6764ceabf3524e08ad404b94003d1280cc0f7e695864fe25b8b73",
+    "run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282",
+    "probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e"
+  },
+  "worker_sha256": "89a166d11ea19c83cff54ba461ca3f7648db4f665aa0f92f61cc4044d1fec1cb",
+  "payload_sha256": "cb21033fc5ecc628400e1eeb22e793eb5a57858efe189e3704bd03f733cb312d",
+  "data_sha256": {
+    "splits.json": "bac34660cc30bc7f2b7f02cd9b49b5bcee7589b51d47d40ae68562333b773420",
+    "stimuli.jsonl": "b00a21a666bb217f32010fbac2d11639ccd559607fd6a01cd441b4ed2566bbcb",
+    "trials.jsonl": "9a55a18c501add3d0d536fa428e71652f11d476da0050cd2e6f0b159987ff610"
+  },
+  "cli_version": "0.7.4",
+  "timeline_utc": {
+    "before-allocation": "2026-11-20T15:00:25.572954+00:00",
+    "allocate": "2026-11-20T15:00:27.223123+00:00",
+    "allocated": "2026-11-20T15:00:31.988911+00:00",
+    "after-allocation": "2026-11-20T15:00:31.989149+00:00",
+    "preflight": "2026-11-20T15:00:34.113445+00:00",
+    "upload": "2026-11-20T15:00:41.197934+00:00",
+    "execute": "2026-11-20T15:00:41.711793+00:00",
+    "download": "2026-11-20T15:02:16.670044+00:00",
+    "local-artifacts-verified": "2026-11-20T15:02:40.207401+00:00",
+    "before-stop": "2026-11-20T15:02:40.207544+00:00",
+    "stop-1": "2026-11-20T15:02:42.345409+00:00",
+    "sessions-after-stop-1": "2026-11-20T15:02:44.897405+00:00",
+    "after-stop": "2026-11-20T15:02:47.005387+00:00",
+    "finished": "2026-11-20T15:02:49.156295+00:00"
+  },
+  "remote_status": {
+    "phase": "feature_extraction_and_probe",
+    "completed": false,
+    "worker_elapsed_s": 82.05747485
+  },
+  "failure": "Remote completion artifact is missing or incomplete",
+  "release_verified": true
+}

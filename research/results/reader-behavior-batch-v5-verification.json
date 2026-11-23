@@ -1,0 +1,43 @@
+{
+  "run_id": "cogllm-cuda-checks-20261120T221650Z-f77aa4bc",
+  "runtime": "NVIDIA L4",
+  "release_verified": true,
+  "allocated_to_confirmed_release_s": 334.769046,
+  "stages": {
+    "setup": {
+      "state": "complete",
+      "verified": true
+    },
+    "gradio": {
+      "state": "complete",
+      "verified": true
+    },
+    "iirc-later": {
+      "state": "complete",
+      "verified": true
+    },
+    "cwi-transfer": {
+      "state": "complete",
+      "verified": true
+    },
+    "textcomplexityde": {
+      "state": "failed",
+      "verified": false
+    },
+    "plaba-span": {
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "recomputed": {
+    "cwi_group_gap_mae_and_vote_nll_methods": 5,
+    "iirc_seed_later_interval_nll_and_brier_methods": 3,
+    "plaba_positive_span_coverage_cells": 8
+  },
+  "scored_sha256": {
+    "cwi-background-transfer-l4/scores.json": "080e980cee8fbc8ec1e27514b24003e9485677d30cdc64e7efcf88dcb20847d5",
+    "iirc-seed-later-l4/scores.json": "fdf71477b5161f2f89706b7ee268133e068dc603748d869782aa16dfba369d73",
+    "plaba-span-transfer-l4/scores.json": "729cad7d8badf54517945fefae1c6945ac7bbf49ce2911e81dc9ba1b19897ef6",
+    "gradio-combined-l4/iirc-locked-scores.json": "a749376d6c7bc0bda891d5be08e5bc83b44bb7e254ec6aac727b4bcd93dcc93c"
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "device": "cuda",
+  "gpu": "NVIDIA L4",
+  "torch": "2.14.1+cu130",
+  "predictions_sha256": "8317e3182c9bdc83b5b90e670f7224da9de58509a35a517cfeeb428e29e78148",
+  "heads_sha256": "5bf54b491e1d1be375a12fa1e2e1dbc8c5c5127ed242d203465f1c1fee679ec7",
+  "train_questions": 151,
+  "heldout_questions": 65,
+  "train_papers": 60,
+  "heldout_papers": 27,
+  "train_same_cutoff_pairs": 121,
+  "same_cutoff_pair_reduction": "all strict pairs equally weighted",
+  "methods": {
+    "position": {
+      "train_interval_nll_nats": 3.1106267346659386,
+      "train_rank_nll_nats": null,
+      "objective": 3.12853282863588,
+      "gradient_max": 1.451931893825531e-06,
+      "parameters": 4,
+      "lbfgs_iterations": 13,
+      "function_evaluations": 13
+    },
+    "question_only": {
+      "train_interval_nll_nats": 3.257728351446989,
+      "train_rank_nll_nats": null,
+      "objective": 3.297747941854599,
+      "gradient_max": 2.074427902698517e-05,
+      "parameters": 258,
+      "lbfgs_iterations": 23,
+      "function_evaluations": 27
+    },
+    "pooled_interval": {
+      "train_interval_nll_nats": 2.5379476424987333,
+      "train_rank_nll_nats": null,
+      "objective": 2.7457752850587385,
+      "gradient_max": 9.508803486824036e-07,
+      "parameters": 518,
+      "lbfgs_iterations": 28,
+      "function_evaluations": 29
+    },
+    "pooled_rank": {
+      "train_interval_nll_nats": 2.5155394208484507,
+      "train_rank_nll_nats": 0.5713155000695599,
+      "objective": 3.0412929352818057,
+      "gradient_max": 7.329508662223816e-07,
+      "parameters": 518,
+      "lbfgs_iterations": 35,
+      "function_evaluations": 36
+    },
+    "token_interval": {
+      "train_interval_nll_nats": 2.5882629268704735,
+      "train_rank_nll_nats": null,
+      "objective": 2.782781537705549,
+      "gradient_max": 1.812819391489029e-06,
+      "parameters": 518,
+      "lbfgs_iterations": 26,
+      "function_evaluations": 27
+    },
+    "token_rank": {
+      "train_interval_nll_nats": 2.5685622069508525,
+      "train_rank_nll_nats": 0.5936535269322641,
+      "objective": 3.088393579763374,
+      "gradient_max": 4.319474101066589e-06,
+      "parameters": 518,
+      "lbfgs_iterations": 25,
+      "function_evaluations": 27
+    }
+  },
+  "fit_wall_s": 3.5434206050003922,
+  "max_lbfgs_steps": 120,
+  "penalty": 0.012,
+  "rank_weight": 0.5,
+  "projection_seed": 43,
+  "token_log_mean_exp_temperature": 1.0,
+  "token_readout": "Current revealed segment, including initial title/abstract context; normalized log-sum-exp of learned question\u2013token scores replaces the pooled local interaction at each paragraph stop. Contextual endpoint terms are shared by design; earlier segments enter cumulative hazard.",
+  "question_only_readout": "Paragraph index and fixed question projection, with a question \u00d7 index interaction.",
+  "source_sha256": {
+    "stimuli": "ca1b5fd0a65959d12a486fd9a290aeeb8d211719cb0e1ef456043b570d21f4ce",
+    "train": "f4615d8912a8b2c0f5843c4be7035d88f96f8902cb2cece69dd4956f2d8b6c9a",
+    "eval": "8e06578e5230a04fb6929b94140fadebdbd99c567d0bb730136ac797bccd23de",
+    "features": "4eca7c80ebc43087737673192e94ea0af282359bceca816e767b4366c40c15d2",
+    "token_features": "cbcd3e75ce63946fcd980dd585e8eea3a4555cae09371cb7d115dc96280d939a",
+    "extraction": "d6cdb93297e7f3034f99730fc2d40926804426eee7fea450315ab6e775549cbd"
+  }
+}

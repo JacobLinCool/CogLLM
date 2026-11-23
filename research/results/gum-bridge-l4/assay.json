@@ -1,0 +1,97 @@
+{
+  "exclusion_rules": {
+    "dev": "Exclude URLs in official test.",
+    "test": "Preserve official test.",
+    "train": "Exclude URLs in original official dev or test."
+  },
+  "family_key": "Published source URL with fragment removed. Missing URL does not define a family.",
+  "input_sha256": {
+    "model_input/dev.jsonl": "726ba46fd4fa85adb72dc94e813507e3c8d97aa0e5c04f289b6ebf94c7bc7b9d",
+    "model_input/test.jsonl": "b59b96e23db16027d449d973f1888da6ce0c02ae6c00f0ee08f2101c62ae3520",
+    "model_input/train.jsonl": "bbf692eb1e1d41716e74cbfaffc2ca12fc76bac3c3ddc7278347e3d90f50e3bf",
+    "private_metadata/dev.jsonl": "2ebbefc5fa3e20c9a7598d3b3c61fc72c74e162e8b2877975bfde63809bca669",
+    "private_metadata/test.jsonl": "1479a229f340af9b94200c7b3371d545e251d64f74304d1581aa6ff89deb4828",
+    "private_metadata/train.jsonl": "962bdf029134f77c016a4b726ddd81f167cf1357d7d76ea014d5b517b36c5061",
+    "scoring/dev.jsonl": "c615151585047eb15b7a0ee1a5c2af3eb635c0df03fad6f8dce339f6ad003a26",
+    "scoring/test.jsonl": "698e87dcde9ec3f89e80c79f17523eb4dcc4258dfb805ea00af065f05eb5da84",
+    "scoring/train.jsonl": "01e8cdd0d6820ce7995a27b6ee2c0fe73eedf5c8d35c1832a25d1c635ae8e57f"
+  },
+  "official_test_literal_cross_only": {
+    "distinct_stops": 89,
+    "documents": 19,
+    "rows": 90,
+    "rule": "Trigger and all retained gold spans belong to literal paragraphs. All gold paragraphs precede the trigger paragraph. No minimum count of earlier paragraphs is imposed."
+  },
+  "output_sha256": {
+    "model_input/dev.jsonl": "1e69d86060fdebd064f850dc2626340e2df09664dda525a7dd0f0da7742f9391",
+    "model_input/test.jsonl": "b59b96e23db16027d449d973f1888da6ce0c02ae6c00f0ee08f2101c62ae3520",
+    "model_input/train.jsonl": "b30e8241222a21710f282cc77172ce54c187762a3ed98b51187aa5b6fddc4251",
+    "private_metadata/dev.jsonl": "a19c0f9709dd5c72294950ebf4dcb52cc672833283e23da542814be585e7019c",
+    "private_metadata/test.jsonl": "1479a229f340af9b94200c7b3371d545e251d64f74304d1581aa6ff89deb4828",
+    "private_metadata/train.jsonl": "6e4070584bdf19d1a979a3d84adee192adbc2e9eac82d94f8a0908d05e9bc058",
+    "scoring/dev.jsonl": "29ec2988fe277a7e7545639ba17fc428f4811c033e52d47bd26d2fac6cffa254",
+    "scoring/test.jsonl": "698e87dcde9ec3f89e80c79f17523eb4dcc4258dfb805ea00af065f05eb5da84",
+    "scoring/train.jsonl": "dd495e8affd5d63a87cdbe26baf5472eac574392ecd73edf524563baba52e9db"
+  },
+  "source_revision": "e92f501b037ebd38387d7479b99aa2a0c45b779e",
+  "splits": {
+    "dev": {
+      "excluded_document_ids": [
+        "GUM_conversation_grounded",
+        "GUM_essay_evolved"
+      ],
+      "original_documents": 30,
+      "retained_documents": 28,
+      "retained_rows": {
+        "model_input": 28,
+        "private_metadata": 28,
+        "scoring": 644
+      },
+      "unavailable_source_url_documents": 0
+    },
+    "test": {
+      "excluded_document_ids": [],
+      "original_documents": 30,
+      "retained_documents": 30,
+      "retained_rows": {
+        "model_input": 30,
+        "private_metadata": 30,
+        "scoring": 518
+      },
+      "unavailable_source_url_documents": 0
+    },
+    "train": {
+      "excluded_document_ids": [
+        "GUM_conversation_artist",
+        "GUM_conversation_atoms",
+        "GUM_conversation_blacksmithing",
+        "GUM_conversation_christmas",
+        "GUM_conversation_erasmus",
+        "GUM_conversation_scientist",
+        "GUM_conversation_toys",
+        "GUM_conversation_vet",
+        "GUM_conversation_zero",
+        "GUM_court_carpet",
+        "GUM_essay_distraction",
+        "GUM_essay_dividends",
+        "GUM_essay_ghost",
+        "GUM_essay_merit",
+        "GUM_essay_public",
+        "GUM_essay_sexlife",
+        "GUM_essay_walking",
+        "GUM_fiction_giants",
+        "GUM_speech_albania",
+        "GUM_speech_humanitarian"
+      ],
+      "original_documents": 197,
+      "retained_documents": 177,
+      "retained_rows": {
+        "model_input": 177,
+        "private_metadata": 177,
+        "scoring": 3407
+      },
+      "unavailable_source_url_documents": 0
+    }
+  },
+  "upstream_intake_audit_sha256": "737a64684f4426e4a2b5adcaa411758909603cc2193a0b306330d33862dc0e1c"
+}

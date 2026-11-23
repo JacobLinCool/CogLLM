@@ -1,0 +1,1686 @@
+{
+  "datasets": [
+    {
+      "available": [
+        "abel-interleaving/raw"
+      ],
+      "cache": [
+        "abel-interleaving/raw"
+      ],
+      "id": "abel",
+      "reason": "順序對照已登錄，可取得的刺激是英譯且缺逐段反應。原研究估計可作研究層級對照。",
+      "reference": "research/stage6/abel-interleaving-audit.md",
+      "signals": [
+        "order_effect"
+      ],
+      "status": "missing_stimuli"
+    },
+    {
+      "available": [
+        "semantic-tracking/act-german/assessment-v1",
+        "semantic-tracking/act-german/material-v1"
+      ],
+      "cache": [
+        "semantic-tracking/act-german/assessment-v1",
+        "semantic-tracking/act-german/material-v1"
+      ],
+      "id": "act",
+      "reason": "公開檔有原始線索與首次答對或未答對，獨立 OSF 檔未列授權。",
+      "reference": "research/semantic_tracking/act-source.md",
+      "signals": [
+        "first_correct_answer"
+      ],
+      "status": "rights_pending"
+    },
+    {
+      "available": [],
+      "cache": [],
+      "id": "albertazzi",
+      "reason": "真人重複置信評分公開，當次完整刺激與題目版本對照不全。",
+      "reference": "research/results/albertazzi-narrative-source-audit.json",
+      "signals": [
+        "belief_update"
+      ],
+      "status": "missing_stimuli"
+    },
+    {
+      "available": [
+        "ambistory/causal-v3",
+        "ambistory/effect-inputs/prepared"
+      ],
+      "cache": [
+        "ambistory/causal-v3",
+        "ambistory/effect-inputs/prepared"
+      ],
+      "id": "ambistory",
+      "reason": "多版本故事與序位真人評分，保留線索、篇章狀態與原作者家族分割。",
+      "reference": "research/stage6/ambistory-context-update.md",
+      "signals": [
+        "interpretation_rating"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "anglin"
+      ],
+      "cache": [
+        "anglin"
+      ],
+      "id": "anglin",
+      "reason": "本機有 SAV 與文稿，Study 1 的呈現文字、試次和問卷需要依稽核保留限定。",
+      "reference": "research/anglin-study1-audit.md",
+      "signals": [
+        "belief_revision"
+      ],
+      "status": "source_unaligned"
+    },
+    {
+      "available": [
+        "arrau-bridge/prepared"
+      ],
+      "cache": [
+        "arrau-bridge/prepared"
+      ],
+      "id": "arrau",
+      "reason": "人標橋接與先行詞，原標註單位與讀者當下判斷不同。",
+      "reference": "research/semantic_tracking/arrau-bridge-results.md",
+      "signals": [
+        "annotation_reference"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "beukers/assay-v1",
+        "beukers/inserted-assay-v1"
+      ],
+      "cache": [
+        "beukers/assay-v1",
+        "beukers/inserted-assay-v1"
+      ],
+      "id": "beukers",
+      "reason": "以作者試次及共同段落模板重建學習背景、證據呈現及讀者選擇。變體對照按共用模板分組。",
+      "reference": "research/semantic_tracking/beukers-background-results.md",
+      "signals": [
+        "background_interaction",
+        "choice"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/blott-ambiguity/prepared",
+        "semantic-tracking/blott-update/2021/prepared",
+        "reading-trace-source-audit/blott-rerun"
+      ],
+      "cache": [
+        "semantic-tracking/blott-ambiguity/prepared",
+        "semantic-tracking/blott-update/2021/prepared",
+        "reading-trace-source-audit/blott-rerun"
+      ],
+      "id": "blott",
+      "reason": "2021 及 2023 OSF 專案皆為 CC BY 4.0。兩年句框有共用詞彙關聯，依已核重用範圍分組。",
+      "reference": "research/semantic_tracking/blott-update-results.md",
+      "signals": [
+        "coherence_judgment",
+        "disambiguation"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "enro-audit"
+      ],
+      "cache": [
+        "enro-audit"
+      ],
+      "id": "cedar_enro",
+      "reason": "已檢查作者眼動及作答表。能否取得正文與同一試次的連結需另行清查。",
+      "reference": "research/stage-6-holdout-plan.md",
+      "signals": [
+        "eye_tracking",
+        "comprehension"
+      ],
+      "status": "source_unaligned"
+    },
+    {
+      "available": [],
+      "cache": [],
+      "id": "christianson_masking_2024",
+      "reason": "眼動遮罩與篇末理解是獨立對照候選。作者檔案可見性及逐試次對齊待核。",
+      "reference": "research/expository-reading-plan.md",
+      "signals": [
+        "rereading_policy",
+        "comprehension"
+      ],
+      "status": "public_unprepared"
+    },
+    {
+      "available": [
+        "clear-reading-ease/prepared"
+      ],
+      "cache": [
+        "clear-reading-ease/prepared"
+      ],
+      "id": "clear",
+      "reason": "既有對照僅使用逐列來源授權符合條件的材料，保留同一來源的家族分割。",
+      "reference": "research/stage6/clear-reading-ease-source.md",
+      "signals": [
+        "article_reading_ease"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "backbone-transfer/prepared/complex",
+        "stage5/complex"
+      ],
+      "cache": [
+        "backbone-transfer/prepared/complex",
+        "stage5/complex"
+      ],
+      "id": "complex",
+      "reason": "作者發布指定詞或片語的多位真人閱讀難度彙總。",
+      "reference": "research/stage-5-complex-run.md",
+      "signals": [
+        "lexical_difficulty"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/context-readback-v1",
+        "semantic-tracking/context-6uv37-source"
+      ],
+      "cache": [
+        "semantic-tracking/context-readback-v1",
+        "semantic-tracking/context-6uv37-source"
+      ],
+      "id": "context-readback",
+      "reason": "正式英文同片段前文操弄，已做失配診斷。作者資料為 CC BY-NC 4.0。",
+      "reference": "research/semantic_tracking/context-readback-transfer-results.md",
+      "signals": [
+        "first_rereading",
+        "context_effect"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/contractnli-prepared"
+      ],
+      "cache": [
+        "semantic-tracking/contractnli-prepared"
+      ],
+      "id": "contractnli",
+      "reason": "人標全文合約判斷及證據，屬判斷和定位標註，無讀者當下狀態。",
+      "reference": "research/semantic_tracking/contractnli-evidence-source.md",
+      "signals": [
+        "annotation_evidence"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "semantic-tracking/core-vocabulary/marginal-disjoint-panel-v1"
+      ],
+      "cache": [
+        "semantic-tracking/core-vocabulary/marginal-disjoint-panel-v1"
+      ],
+      "id": "core-vocabulary",
+      "reason": "提供詞項逐次支持與可測的邊際，未知的個體間路徑保持不可辨識。",
+      "reference": "research/semantic_tracking/core-vocabulary-source.md",
+      "signals": [
+        "retrieval_marginals"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "stage5/currie",
+        "stage5/currie-source"
+      ],
+      "cache": [
+        "stage5/currie",
+        "stage5/currie-source"
+      ],
+      "id": "currie",
+      "reason": "依作者材料提供敘事與說明文的一致性判斷與閱讀時間，判斷的時機依觀測表。",
+      "reference": "research/stage-5-semantic-run.md",
+      "signals": [
+        "coherence_judgment",
+        "reading_time"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "core-features/cwi",
+        "core-features/cwi-lexical-readout/prepared-v2",
+        "core-features/cwi-news-holdout/prepared"
+      ],
+      "cache": [
+        "core-features/cwi",
+        "core-features/cwi-lexical-readout/prepared-v2",
+        "core-features/cwi-news-holdout/prepared"
+      ],
+      "id": "cwi",
+      "reason": "指定詞的語境複雜度判斷，作者規則決定負例與可用分母。",
+      "reference": "research/core_features/cwi-lexical-readout-results.md",
+      "signals": [
+        "lexical_difficulty"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/czech-garden-path/prepared"
+      ],
+      "cache": [
+        "semantic-tracking/czech-garden-path/prepared"
+      ],
+      "id": "czech",
+      "reason": "刺激與誤解作答已建置。文章具 CC BY 且作者指向公開原始材料，獨立 OSF 資料發行的授權欄空白。",
+      "reference": "research/semantic_tracking/czech-garden-path-source.md",
+      "signals": [
+        "lingering_interpretation"
+      ],
+      "status": "rights_pending"
+    },
+    {
+      "available": [
+        "semantic-tracking/evidence-inference-transfer/prepared"
+      ],
+      "cache": [
+        "semantic-tracking/evidence-inference-transfer/prepared"
+      ],
+      "id": "evidence-inference",
+      "reason": "人標科學文獻證據，訓練須逐篇納入已核的文本授權。與有人實際回應的閱讀端點分開。",
+      "reference": "research/semantic_tracking/evidence-inference-source.md",
+      "signals": [
+        "annotation_evidence"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "exp-mrc/v1",
+        "semantic-tracking/same-question-evidence/expmrc-v1"
+      ],
+      "cache": [
+        "exp-mrc/v1",
+        "semantic-tracking/same-question-evidence/expmrc-v1"
+      ],
+      "id": "expmrc",
+      "reason": "中英文標註的讀解證據範圍，按共享文章與題目 split。",
+      "reference": "research/semantic_tracking/expmrc-transfer.md",
+      "signals": [
+        "annotation_evidence"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "semantic-tracking/first-readback-v1",
+        "core-features/readback",
+        "semantic-tracking/reanalysis"
+      ],
+      "cache": [
+        "semantic-tracking/first-readback-v1",
+        "core-features/readback",
+        "semantic-tracking/reanalysis"
+      ],
+      "id": "first-readback",
+      "reason": "英德原顯示區段的首次回讀，依原資料建風險集合。與其他 Paape 資料檢查重合。",
+      "reference": "research/semantic_tracking/first-readback-transfer.md",
+      "signals": [
+        "first_rereading"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "french-connectives-audit/raw"
+      ],
+      "cache": [
+        "french-connectives-audit/raw"
+      ],
+      "id": "french-connectives",
+      "reason": "法語連接詞資料已本機稽核，題型、同批刺激及分割鍵依實驗另確認。",
+      "reference": "research/stage6/french-connectives-audit.md",
+      "signals": [
+        "connective_response"
+      ],
+      "status": "source_unaligned"
+    },
+    {
+      "available": [
+        "semantic-tracking/frick-consistency/prepared",
+        "backbone-transfer/prepared/frick-both"
+      ],
+      "cache": [
+        "semantic-tracking/frick-consistency/prepared",
+        "backbone-transfer/prepared/frick-both"
+      ],
+      "id": "frick",
+      "reason": "前綴一致性與首次矛盾按鍵已對齊。論文授權與獨立工作表及刺激的使用條件分開核。",
+      "reference": "research/semantic_tracking/frick-consistency-source.md",
+      "signals": [
+        "first_inconsistency_report"
+      ],
+      "status": "rights_pending"
+    },
+    {
+      "available": [
+        "gum-bridge/prepared",
+        "gum-bridge/gentle"
+      ],
+      "cache": [
+        "gum-bridge/prepared",
+        "gum-bridge/gentle"
+      ],
+      "id": "gum-gentle",
+      "reason": "人標橋接先行詞，GUM 與 GENTLE 不是同一語料。版號和文字授權依收據。",
+      "reference": "research/semantic_tracking/gum-bridge-results.md",
+      "signals": [
+        "annotation_reference"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "raw/hippocorpus"
+      ],
+      "cache": [
+        "raw/hippocorpus"
+      ],
+      "id": "hippocorpus",
+      "reason": "既有故事重述和事件標記，原發行與各版標記需按同故事分組。",
+      "reference": "research/semantic_tracking/semantic-load-curve-plan.md",
+      "signals": [
+        "event_annotations"
+      ],
+      "status": "public_unprepared"
+    },
+    {
+      "available": [
+        "iirc/linked-identity-v2",
+        "iirc/linked-evidence-v1"
+      ],
+      "cache": [
+        "iirc/linked-identity-v2",
+        "iirc/linked-evidence-v1"
+      ],
+      "id": "iirc",
+      "reason": "問題及跨文章支持標註可評文字證據關聯與時點，與人類當下反應分開。",
+      "reference": "research/iirc-linked-evidence-protocol.md",
+      "signals": [
+        "annotation_evidence"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "core-features/kangoo-v4/local-audit"
+      ],
+      "cache": [
+        "core-features/kangoo-v4/local-audit"
+      ],
+      "id": "kangoo",
+      "reason": "候選詞的真人難度報告依本地查核的原始資格與句界。",
+      "reference": "research/core_features/kangoo-source-audit.md",
+      "signals": [
+        "lexical_difficulty"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "kerwer-2021/holdout",
+        "kerwer-2021/reader-background-v1",
+        "expository-lora/prepared/kerwer"
+      ],
+      "cache": [
+        "kerwer-2021/holdout",
+        "kerwer-2021/reader-background-v1",
+        "expository-lora/prepared/kerwer"
+      ],
+      "id": "kerwer",
+      "reason": "作者資料限定科學用途。保留原摘要家族、小標臂、篇末反應及已核讀前變項。",
+      "reference": "research/stage6/kerwer-article-holdout.md",
+      "signals": [
+        "article_comprehensibility",
+        "background"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "raw/lam-hwang-holdout"
+      ],
+      "cache": [
+        "raw/lam-hwang-holdout"
+      ],
+      "id": "lam-hwang",
+      "reason": "原始留出 dir 已有部分材料。先核對版本是否與已用研究共享正文。",
+      "reference": "research/stage-6-holdout-plan.md",
+      "signals": [
+        "reference_choice"
+      ],
+      "status": "public_unprepared"
+    },
+    {
+      "available": [
+        "semantic-tracking/larrc-consistency/prepared"
+      ],
+      "cache": [
+        "semantic-tracking/larrc-consistency/prepared"
+      ],
+      "id": "larrc",
+      "reason": "獨立研究使用文章層級的一致性判斷；巢狀情境和本篇結束分開。",
+      "reference": "research/semantic_tracking/larrc-consistency-source.md",
+      "signals": [
+        "coherence_judgment"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "medreadme-audit/lexical-holdout-v3"
+      ],
+      "cache": [
+        "medreadme-audit/lexical-holdout-v3"
+      ],
+      "id": "medreadme",
+      "reason": "專家圈定難字課題及對照槽；預測詞級專家標記屬輔助目標。",
+      "reference": "research/stage6/medreadme-span-audit.md",
+      "signals": [
+        "annotation_span"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "nahatame-t75nh/prepared-v2"
+      ],
+      "cache": [
+        "nahatame-t75nh/prepared-v2"
+      ],
+      "id": "nahatame",
+      "reason": "已對齊原測驗的英語閱讀、篇末難度及讀前能力，EIKEN 全文的模型抽取使用範圍未核。",
+      "reference": "research/nahatame-teco-data-audit.md",
+      "signals": [
+        "comprehension",
+        "proficiency"
+      ],
+      "status": "rights_pending"
+    },
+    {
+      "available": [
+        "natural-questions/holdout-v1"
+      ],
+      "cache": [
+        "natural-questions/holdout-v1"
+      ],
+      "id": "natural-questions",
+      "reason": "人標文章回答範圍。題目在閱讀輸入，證據定位為輔助端點。",
+      "reference": "research/semantic_tracking/nq-evidence-source-audit.md",
+      "signals": [
+        "annotation_evidence"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "semantic-tracking/ncloze/raw"
+      ],
+      "cache": [
+        "semantic-tracking/ncloze/raw"
+      ],
+      "id": "ncloze",
+      "reason": "既有讀者填字反應可比較接續線索，使用資料所保留的顯示單位。",
+      "reference": "research/semantic_tracking/ncloze-source.md",
+      "signals": [
+        "cloze_choice"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/oliver-retrieval/prepared"
+      ],
+      "cache": [
+        "semantic-tracking/oliver-retrieval/prepared"
+      ],
+      "id": "oliver",
+      "reason": "CC0-1.0 Borealis v3 的定義後回報、提示、揭曉後判斷。定義保留原有來源致謝。",
+      "reference": "research/semantic_tracking/oliver-retrieval-results.md",
+      "signals": [
+        "retrieval_path"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-joint/closure",
+        "semantic-tracking/resolution-osf"
+      ],
+      "cache": [
+        "semantic-joint/closure",
+        "semantic-tracking/resolution-osf"
+      ],
+      "id": "onea",
+      "reason": "故事中的問題與關閉行，依公開故事資源可用範圍取座標。原生端點為文本標記的解答。",
+      "reference": "research/semantic_tracking/onea-reopening-source.md",
+      "signals": [
+        "annotated_closure"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "stage2/onestop",
+        "onestop-rereading/assay-v1"
+      ],
+      "cache": [
+        "stage2/onestop",
+        "onestop-rereading/assay-v1"
+      ],
+      "id": "onestop",
+      "reason": "正文理解反應與閱讀回視分別保存。兩端點按共用新聞、基礎版或簡化版分組。",
+      "reference": "research/stage6/onestop-rereading-audit.md",
+      "signals": [
+        "comprehension",
+        "rereading"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/source",
+        "semantic-tracking/remote-input"
+      ],
+      "cache": [
+        "semantic-tracking/source",
+        "semantic-tracking/remote-input"
+      ],
+      "id": "onset-source",
+      "reason": "來源是人類圈選與先前建置的對齊評分。依原標註方式呈現，勿改寫為首次閱讀反應。",
+      "reference": "research/semantic-tracking-first-run.md",
+      "signals": [
+        "annotation_span"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "stage2/plaba",
+        "expository-lora/prepared/plaba"
+      ],
+      "cache": [
+        "stage2/plaba",
+        "expository-lora/prepared/plaba"
+      ],
+      "id": "plaba",
+      "reason": "句級評分與白話改寫、結構疑難、讀後自評及開卷反應。作答證據依已訂正的版本。",
+      "reference": "research/stage-2-data.md",
+      "signals": [
+        "sentence_ratings",
+        "sentence_reports",
+        "comprehension"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "potec-terms-audit"
+      ],
+      "cache": [
+        "potec-terms-audit"
+      ],
+      "id": "potec",
+      "reason": "資料表與數值可供本機數值統計；已發現教材再授權限制，完整正文的雲端使用缺依據。",
+      "reference": "research/stage6/potec-background-readiness.md",
+      "signals": [
+        "comprehension",
+        "background",
+        "eye_tracking"
+      ],
+      "status": "rights_pending"
+    },
+    {
+      "available": [
+        "semantic-tracking/qanta25-source-audit"
+      ],
+      "cache": [
+        "semantic-tracking/qanta25-source-audit"
+      ],
+      "id": "qanta25",
+      "reason": "已核對語音與搶答欄位。如實區分跟讀式提示、回答與沒有完整位置的觀測。",
+      "reference": "research/semantic_tracking/qanta25-source.md",
+      "signals": [
+        "quiz_buzz"
+      ],
+      "status": "source_unaligned"
+    },
+    {
+      "available": [
+        "qasper/input",
+        "qasper/dev-holdout",
+        "qasper/censor-v1"
+      ],
+      "cache": [
+        "qasper/input",
+        "qasper/dev-holdout",
+        "qasper/censor-v1"
+      ],
+      "id": "qasper",
+      "reason": "論文問題和事後支持段落。人標證據抵達可作輔助區間，原提問者的察覺時刻未測。",
+      "reference": "research/qasper-evidence-run.md",
+      "signals": [
+        "annotation_evidence"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [
+        "semantic-tracking/qiao-evidence/prepared-v2"
+      ],
+      "cache": [
+        "semantic-tracking/qiao-evidence/prepared-v2"
+      ],
+      "id": "qiao",
+      "reason": "同一讀者循序判斷的條件及可見證據已建置，組別資訊另存。",
+      "reference": "research/semantic_tracking/qiao-evidence-source.md",
+      "signals": [
+        "belief_update"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "stage6/race"
+      ],
+      "cache": [
+        "stage6/race"
+      ],
+      "id": "race",
+      "reason": "Prolific 發行有 1,940 筆真人逐次選答。沿用 RACE 非商業研究條件，與 OneStopQA 共用 970 位讀者。",
+      "reference": "research/stage-6-race-run.md",
+      "signals": [
+        "comprehension"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/rodger-belief/prepared"
+      ],
+      "cache": [
+        "semantic-tracking/rodger-belief/prepared"
+      ],
+      "id": "rodger",
+      "reason": "同一讀者的政策事前、事後評分與文字干預版本可對齊。",
+      "reference": "research/semantic_tracking/rodger-belief-source.md",
+      "signals": [
+        "belief_update"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "salt-discourse-audit"
+      ],
+      "cache": [
+        "salt-discourse-audit"
+      ],
+      "id": "salt-discourse",
+      "reason": "原始刺激、實驗一事件先後選答、實驗二逐區段時間及篇末作答可對齊。兩實驗共用材料，OSF 與 DataCite 未列授權。",
+      "reference": "research/stage6/salt-discourse-audit.md",
+      "signals": [
+        "discourse_processing"
+      ],
+      "status": "rights_pending"
+    },
+    {
+      "available": [],
+      "cache": [],
+      "id": "sap_syntactic_ambiguity",
+      "reason": "先封同材料自定步速與眼動家族，再核對可重建的閱讀位置及理解題。",
+      "reference": "research/stage-1/measurement-and-boundaries.md",
+      "signals": [
+        "reading_time",
+        "eye_tracking",
+        "comprehension"
+      ],
+      "status": "public_unprepared"
+    },
+    {
+      "available": [
+        "semantic-tracking/scarecrow-detection/prepared"
+      ],
+      "cache": [
+        "semantic-tracking/scarecrow-detection/prepared"
+      ],
+      "id": "scarecrow",
+      "reason": "作者釋出供研究使用。端點限全文事後真人圈選，既有整備只送模型續文，第三方新聞前綴留在本機。",
+      "reference": "research/semantic_tracking/scarecrow-detection-results.md",
+      "signals": [
+        "annotation_span"
+      ],
+      "status": "aligned_auxiliary"
+    },
+    {
+      "available": [],
+      "cache": [],
+      "id": "scholman",
+      "reason": "原論文指向公開的中文連詞自定步速資料。實驗刺激及第二標記原位置須依作者檔確認。",
+      "reference": "research/reading-evidence.md",
+      "signals": [
+        "reading_time",
+        "connective_effect"
+      ],
+      "status": "public_unprepared"
+    },
+    {
+      "available": [
+        "studentannotations/guide-v1"
+      ],
+      "cache": [
+        "studentannotations/guide-v1"
+      ],
+      "id": "studentannotations",
+      "reason": "德國高中生五級句級理解難度與讀前語言背景，職涯指南子集已排除和 TextComplexityDE 重疊的 554 句。作者提供研究用途。",
+      "reference": "research/stage6/student-annotations-background.md",
+      "signals": [
+        "sentence_ratings",
+        "background"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "textcomplexityde/transfer-v2"
+      ],
+      "cache": [
+        "textcomplexityde/transfer-v2"
+      ],
+      "id": "textcomplexityde",
+      "reason": "德文逐句閱讀評分。取經過收據檢查的固定版本與版權註記。",
+      "reference": "research/stage6/textcomplexityde-transfer-amendment.md",
+      "signals": [
+        "sentence_ratings"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "turkish-v5/assay-v1"
+      ],
+      "cache": [
+        "turkish-v5/assay-v1"
+      ],
+      "id": "turkish",
+      "reason": "土耳其語相同長度的句對比較與讀後題目，保留底層摘錄的授權範圍。",
+      "reference": "research/stage6/turkish-sentence-source.md",
+      "signals": [
+        "pair_preference",
+        "comprehension"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [
+        "semantic-tracking/wahlheim-correction-source"
+      ],
+      "cache": [
+        "semantic-tracking/wahlheim-correction-source"
+      ],
+      "id": "wahlheim",
+      "reason": "公開資料與素材已在本機，修正與揭示之後的試次需逐段對齊。兩輪共享主題。",
+      "reference": "research/results/wahlheim-correction-source-audit.json",
+      "signals": [
+        "belief_update",
+        "memory"
+      ],
+      "status": "public_unprepared"
+    },
+    {
+      "available": [
+        "yadav/raw"
+      ],
+      "cache": [
+        "yadav/raw"
+      ],
+      "id": "yadav",
+      "reason": "CC BY 4.0 的德荷逐試次難度與受控嵌套版本已依原作者鍵核對到顯示刺激。全句及逐詞兩實驗共用大部分原題。",
+      "reference": "research/stage6/yadav-transfer-audit.md",
+      "signals": [
+        "discourse_reading"
+      ],
+      "status": "aligned_reading"
+    },
+    {
+      "available": [],
+      "cache": [],
+      "id": "yazbec",
+      "reason": "原發布部分重複前測有相異分值，題號與讀者原始作答未全部唯一對齊。",
+      "reference": "research/results/yazbec-conceptual-change-source-audit.json",
+      "signals": [
+        "conceptual_change"
+      ],
+      "status": "source_unaligned"
+    },
+    {
+      "available": [
+        "stage2/zhan"
+      ],
+      "cache": [
+        "stage2/zhan"
+      ],
+      "id": "zhan",
+      "reason": "作者發布的華語續寫逐次資料已按材料對齊。不同提示或語法臂保持同家族。",
+      "reference": "research/stage-2-data.md",
+      "signals": [
+        "reference_choice"
+      ],
+      "status": "aligned_reading"
+    }
+  ],
+  "literature": [
+    {
+      "family": "onestop",
+      "id": "D01",
+      "links": [
+        "https://www.nature.com/articles/s41597-025-06272-2",
+        "https://lacclab.github.io/OneStop-Eye-Movements/variables",
+        "https://aclanthology.org/2020.acl-main.507/",
+        "https://github.com/lacclab/OneStop-Eye-Movements"
+      ],
+      "observation": "英語新聞段落，真實讀者逐次作答、難度版本、閱讀目的及證據範圍。官方文件列出 `selected_answer`、`is_correct`、`onestopqa_question_id`、`question_preview`。",
+      "reason": "對齊作答和眼動回讀，共用新聞及簡化版本。",
+      "source": "research/reading-evidence.md:98",
+      "status": "aligned_reading",
+      "title": "OneStop Eye Movements ＋ OneStopQA／STARC"
+    },
+    {
+      "family": "tibken_inconsistency",
+      "id": "D02",
+      "links": [
+        "https://link.springer.com/article/10.1007/s11409-025-09440-2",
+        "https://osf.io/download/fcs25/?view_only=1cd488d47c254163bfc032fbbc7fa0cc",
+        "https://osf.io/download/8qha3/?view_only=1cd488d47c254163bfc032fbbc7fa0cc"
+      ],
+      "observation": "研究有 96 位德語讀者，發布分析檔涵蓋 94 位、1,870 筆試次。以一詞改動操弄矛盾，讀後回報有無矛盾，回報有時再從編號句中選位置。",
+      "reason": "同 R09 的發表分析表，缺完整呈現刺激及所選句欄位。",
+      "source": "research/reading-evidence.md:99",
+      "status": "missing_stimuli",
+      "title": "Tibken & Tiffin-Richards"
+    },
+    {
+      "family": "reco",
+      "id": "D03",
+      "links": [
+        "https://aclanthology.org/2026.acl-long.1241/",
+        "https://github.com/SeonjeongHwang/ReCo"
+      ],
+      "observation": "776 道由英語閱讀材料衍生的判斷題，專家標註證據句、證據範圍與推論類型。",
+      "reason": "專家推論與證據標記屬輔助資料，正式建置與 D12 書評資料分開。",
+      "source": "research/reading-evidence.md:100",
+      "status": "public_unprepared",
+      "title": "Hwang et al. RECO（2026）"
+    },
+    {
+      "family": "qasa",
+      "id": "D04",
+      "links": [
+        "https://proceedings.mlr.press/v202/lee23n.html",
+        "https://github.com/lgresearch/QASA"
+      ],
+      "observation": "AI/ML 論文的讀者提出問題，專家給答案、引用段落及解釋。",
+      "reason": "專家問答與證據供輔助編碼，完整試次及原文尚未準備。",
+      "source": "research/reading-evidence.md:101",
+      "status": "public_unprepared",
+      "title": "QASA"
+    },
+    {
+      "family": "wikidomains",
+      "id": "D05",
+      "links": [
+        "https://aclanthology.org/2024.emnlp-main.357/",
+        "https://github.com/google-deepmind/wikidomains"
+      ],
+      "observation": "13 個學科、約 22,000 筆英文短定義，每筆搭配困難概念候選，另有人類對改寫的評估。",
+      "reason": "概念候選及改寫評估可作弱標，逐篇使用條件待核。",
+      "source": "research/reading-evidence.md:102",
+      "status": "public_unprepared",
+      "title": "WikiDomains"
+    },
+    {
+      "family": "expmrc",
+      "id": "D06",
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC9048090/",
+        "https://ymcui.com/expmrc/"
+      ],
+      "observation": "中英文閱讀理解題與人類標出的證據片段，包含抽取式與選擇題。",
+      "reason": "標註的是題目的支持範圍，沒有首次察覺答案位置。",
+      "source": "research/reading-evidence.md:103",
+      "status": "aligned_auxiliary",
+      "title": "ExpMRC"
+    },
+    {
+      "family": "potec",
+      "id": "D07",
+      "links": [
+        "https://link.springer.com/article/10.3758/s13428-024-02536-8",
+        "https://osf.io/dn5hp/"
+      ],
+      "observation": "德語物理與生物教材的逐詞眼動、主修、背景題與理解題。背景題在讀後施測。",
+      "reason": "數值與背景已對齊，出版社教材的雲端使用範圍未建立。",
+      "source": "research/reading-evidence.md:104",
+      "status": "rights_pending",
+      "title": "PoTeC"
+    },
+    {
+      "family": "meco_traditional_chinese",
+      "id": "D08",
+      "links": [
+        "https://www.nature.com/articles/s41597-026-06989-8"
+      ],
+      "observation": "60 名香港讀者、12 篇繁中百科式短文，分橫排與直排並有篇章理解題。",
+      "reason": "繁中篇章理解與行向操弄待原檔、刺激及試次對齊。",
+      "source": "research/reading-evidence.md:105",
+      "status": "public_unprepared",
+      "title": "繁中 MECO 延伸語料"
+    },
+    {
+      "family": "plaba",
+      "id": "D09",
+      "links": [
+        "https://aclanthology.org/2026.readi-1.4/",
+        "https://github.com/SDS-NLP/PLABA-EVAL/tree/153082e7d58b833d5e2f481b92fdcf9248c60d11"
+      ],
+      "observation": "39 對英語摘要及白話改寫、609 句、1,826 筆納入分析的逐句雙量尺評分。原始資料另含疑難類型、自由回饋、全文評分、開卷作答及作答容易度。",
+      "reason": "同 R41，既有句級、疑難類型與篇末作答重建。",
+      "source": "research/reading-evidence.md:106",
+      "status": "aligned_reading",
+      "title": "PLABA-EVAL"
+    },
+    {
+      "family": "inquisitive",
+      "id": "D10",
+      "links": [
+        "https://aclanthology.org/2020.emnlp-main.530.pdf#page=3",
+        "https://github.com/wjko2/INQUISITIVE/blob/master/questions.txt",
+        "https://github.com/wjko2/INQUISITIVE#article-sources"
+      ],
+      "observation": "1,500 篇英語新聞的前五句逐句揭露。讀者讀完當前句，圈出原文片語並提出問題。公開問題檔有 19,816 筆，附焦點句與圈選位置。",
+      "reason": "公開問題及圈選位置，完整合法正文和無事件分母待補。",
+      "source": "research/reading-evidence.md:107",
+      "status": "missing_stimuli",
+      "title": "INQUISITIVE"
+    },
+    {
+      "family": "tedq",
+      "id": "D11",
+      "links": [
+        "https://aclanthology.org/2020.lrec-1.141.pdf#page=3",
+        "https://github.com/amore-upf/ted-q",
+        "https://www.ted.com/about/our-organization/our-policies-terms/ted-com-terms-of-use"
+      ],
+      "observation": "111 位真人讀六篇英文演講逐字稿的片段。原始逐次檔有 2,412 個讀者提出的疑問，以及 3,669 筆對先前疑問的後續評分。提問與有答案時均可標出關鍵片語。",
+      "reason": "疑問與再評時間可重建，TED 逐字稿的 AI 用途需專門授權。",
+      "source": "research/reading-evidence.md:108",
+      "status": "rights_pending",
+      "title": "TED-Q"
+    },
+    {
+      "family": "reading_between_lines",
+      "id": "D12",
+      "links": [
+        "https://aclanthology.org/2025.naacl-long.409.pdf#page=3",
+        "https://github.com/sougata-ub/reading_between_lines"
+      ],
+      "observation": "50 位讀者、57 篇英文書評。真人圈出自己不理解或不熟悉的片語，另有整篇熟悉度、理解自評、讀者背景、是否讀過書或作者。",
+      "reason": "全文圈選存在，書評原文與訓練使用範圍待查。",
+      "source": "research/reading-evidence.md:109",
+      "status": "rights_pending",
+      "title": "Reading between the Lines"
+    },
+    {
+      "family": "im_farber_simplification",
+      "id": "D13",
+      "links": [
+        "https://arxiv.org/html/2607.25630v1#S3.SS3",
+        "https://github.com/faerber-lab/scientific-text-simplification-corpus"
+      ],
+      "observation": "英語跨領域讀者讀原摘要與改寫，自行勾選困難句、圈出複雜詞或片語，並比較兩版理解容易度。論文報告每個比較維度各 92 筆判斷。",
+      "reason": "原始備份與正式逐例分析映射尚未確認，原文用途待核。",
+      "source": "research/reading-evidence.md:110",
+      "status": "public_unprepared",
+      "title": "Im & Färber 科學摘要"
+    },
+    {
+      "family": "complex",
+      "id": "D14",
+      "links": [
+        "https://aclanthology.org/2021.semeval-1.1/",
+        "https://github.com/MMU-TDMLab/CompLex"
+      ],
+      "observation": "真人在英文句子中用五點量尺評指定詞或多詞表達的難度。官方版發布彙整分數。",
+      "reason": "官方英語詞／片語負荷彙總已對齊指定位置。",
+      "source": "research/reading-evidence.md:111",
+      "status": "aligned_reading",
+      "title": "CompLex"
+    },
+    {
+      "family": "mcnamara_coherence",
+      "id": "R01",
+      "links": [
+        "https://doi.org/10.1207/s1532690xci1401_1"
+      ],
+      "observation": "英語青少年閱讀局部／全局連貫程度不同的心臟病說明文。實驗 2 的推論和解題表現呈現先備知識與連貫性互動。推論、解題、分類與文本回憶各自分析。",
+      "reason": "完整刺激和逐次反應待核，保留連貫與知識的交互對照。",
+      "source": "research/reading-evidence.md:78",
+      "status": "published_effect",
+      "title": "McNamara, E. Kintsch, Songer & W. Kintsch（1996）"
+    },
+    {
+      "family": "mcnamara_kintsch_history",
+      "id": "R02",
+      "links": [
+        "https://doi.org/10.1080/01638539609544975"
+      ],
+      "observation": "高／低知識讀者閱讀不同連貫性的歷史說明文。高知識讀者在低連貫版本上的關鍵詞分類表現較佳，理解結果依題型而變。",
+      "reason": "已核對摘要，逐題材料和反應待取得。",
+      "source": "research/reading-evidence.md:79",
+      "status": "published_effect",
+      "title": "McNamara & Kintsch（1996）"
+    },
+    {
+      "family": "britton_repair",
+      "id": "R03",
+      "links": [
+        "https://doi.org/10.1037/0022-0663.83.3.329"
+      ],
+      "observation": "用理解模型定位一篇教學文章中需要讀者自行推論的區域，合併修補這些區域。修訂增加大學生的自由回憶，另一研究的概念關係較接近專家。",
+      "reason": "目前只核到研究摘要和部分說明，完整刺激及反應待取得。",
+      "source": "research/reading-evidence.md:80",
+      "status": "published_effect",
+      "title": "Britton & Gülgöz（1991）"
+    },
+    {
+      "family": "gilabert_causal",
+      "id": "R04",
+      "links": [
+        "https://doi.org/10.1016/j.learninstruc.2004.12.003"
+      ],
+      "observation": "西班牙中學生和大學生讀俄國革命相關文章。實驗 1 因果解釋版的開卷推論題表現優於原版。僅增加概念重疊的效果依實驗而變。",
+      "reason": "附錄及條件彙總可作重建線索，逐題刺激和作答對照尚未建置。",
+      "source": "research/reading-evidence.md:15",
+      "status": "published_effect",
+      "title": "Gilabert, Martínez & Vidal-Abarca（2005）"
+    },
+    {
+      "family": "van_silfhout_connectives",
+      "id": "R05",
+      "links": [
+        "https://doi.org/10.1080/0163853X.2014.905237"
+      ],
+      "observation": "荷語八年級生閱讀有／無連接詞的敘事和說明文。連接詞條件的局部橋接推論題表現較佳，後續區段讀得較快。",
+      "reason": "已登錄句後閱讀與橋接題端點，無本機逐次可對齊表。",
+      "source": "research/reading-evidence.md:16",
+      "status": "published_effect",
+      "title": "Van Silfhout, Evers-Vermeul & Sanders（2015）"
+    },
+    {
+      "family": "kendeou_newton",
+      "id": "R06",
+      "links": [
+        "https://link.springer.com/content/pdf/10.3758/BF03193491.pdf#page=7"
+      ],
+      "observation": "英語大學生先測牛頓定律迷思，再閱讀有／無明示反駁的文本。知識狀態與文本結構的交互作用出現在定律句的每音節閱讀時間。回憶有知識差異，文本結構效應未達顯著。",
+      "reason": "保留知識前測與反駁文本的條件差，逐試次對照未建。",
+      "source": "research/reading-evidence.md:17",
+      "status": "published_effect",
+      "title": "Kendeou & van den Broek（2007）"
+    },
+    {
+      "family": "gu_medical_simplification",
+      "id": "R07",
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC5977593/"
+      ],
+      "observation": "成人閱讀來自 Wikipedia／PubMed 的英語醫學片段。Study 1 中，技術定義與白話解釋條件的內容題答對率分別為 62.6% 和 72.1%，差 9.5 個百分點。篇章閱讀時間與該研究的理解結果未觀察到顯著相關。",
+      "reason": "已登錄成人理解條件平均，完整原刺激與作答連結待核。",
+      "source": "research/reading-evidence.md:18",
+      "status": "published_effect",
+      "title": "Gu, Leroy & Kauchak（2017）"
+    },
+    {
+      "family": "gu_medical_simplification",
+      "id": "R08",
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC12243615/"
+      ],
+      "observation": "重分析 R07 的成人作答。LLM 以句子、上文和摘要估計連貫性，部分分數與篇章答對率相關，並隨一些解釋改寫而改善。",
+      "reason": "重分析 R07，隨原研究共享材料和作答家族。",
+      "source": "research/reading-evidence.md:19",
+      "status": "shared_reanalysis",
+      "title": "Cohen et al.（2025）"
+    },
+    {
+      "family": "tibken_inconsistency",
+      "id": "R09",
+      "links": [
+        "https://doi.org/10.1007/s11409-025-09440-2",
+        "https://osf.io/ekf4t/?view_only=1cd488d47c254163bfc032fbbc7fa0cc"
+      ],
+      "observation": "96 名德語讀者讀 20 篇短說明文。版本間改動一個詞以製造矛盾，讀後確認有無矛盾及所在句。目標詞的重讀與正確偵測相關，首遍訊號的支持較弱。",
+      "reason": "公開分析表有偵測及選句合併正確性，所選句索引和完整刺激缺。",
+      "source": "research/reading-evidence.md:20",
+      "status": "missing_stimuli",
+      "title": "Tibken & Tiffin-Richards（2025）"
+    },
+    {
+      "family": "beker_text_explanations",
+      "id": "R10",
+      "links": [
+        "https://link.springer.com/article/10.1007/s11145-016-9630-3"
+      ],
+      "observation": "荷語大學生讀完前篇後讀第二篇。第二篇目標句一致，只有前篇是否交代可解決矛盾的解釋不同。有前置解釋時目標句讀得較快，實驗 2 自由回憶未觀察到對應差異。",
+      "reason": "兩個實驗的前篇解釋對照已登錄，無本機可訓練逐次表。",
+      "source": "research/reading-evidence.md:21",
+      "status": "published_effect",
+      "title": "Beker, Jolles, Lorch & van den Broek（2016）"
+    },
+    {
+      "family": "chi_self_explanation",
+      "id": "R11",
+      "links": [
+        "https://doi.org/10.1207/s15516709cog1803_3"
+      ],
+      "observation": "八年級生讀人體循環說明文。有逐行自我解釋提示的組別，其知識前後測進步較多。另分析複雜題、隱含元件功能和心智模型。",
+      "reason": "保留自我解釋干預與知識前後測，缺模型使用的同次資料。",
+      "source": "research/reading-evidence.md:81",
+      "status": "published_effect",
+      "title": "Chi, de Leeuw, Chiu & LaVancher（1994）"
+    },
+    {
+      "family": "mcnamara_istrat",
+      "id": "R12",
+      "links": [
+        "https://doi.org/10.1207/s15326950dp3801_1"
+      ],
+      "observation": "比較自我解釋閱讀訓練與朗讀控制。對低先備知識者，有絲分裂後測的訓練優勢出現在文本依據題，橋接推論題未呈現同樣效果。",
+      "reason": "兩種訓練條件及分題型結果，原刺激與逐題資料待核。",
+      "source": "research/reading-evidence.md:27",
+      "status": "published_effect",
+      "title": "McNamara（2004）"
+    },
+    {
+      "family": "recht_baseball",
+      "id": "R13",
+      "links": [
+        "https://www.yesataretelearningtrust.net/Portals/0/Effect-of-Prior-Knowledge-on-Good-and-Poor-Readers-Memory-of-Text.pdf"
+      ],
+      "observation": "64 名中學生閱讀同一棒球半局敘述。以事先測得的棒球知識及閱讀能力分組。知識與動作重演、口頭複述、摘要及重要性分類均有關。",
+      "reason": "知識與能力分組的回憶，缺可對齊的原始讀者反應。",
+      "source": "research/reading-evidence.md:82",
+      "status": "published_effect",
+      "title": "Recht & Leslie（1988）"
+    },
+    {
+      "family": "ozuru_biology_cohesion",
+      "id": "R14",
+      "links": [
+        "https://doi.org/10.1016/j.learninstruc.2008.04.003",
+        "https://asu.elsevierpure.com/en/publications/prior-knowledge-reading-skill-and-text-cohesion-in-the-comprehens/"
+      ],
+      "observation": "美國大學生讀高／低銜接性的生物文本，分開作答文本、局部橋接、全局橋接題。高銜接性改善文本依據題，閱讀能力較高者在該研究中受益更多。先備知識與整體理解正相關。",
+      "reason": "材料與題型分開登錄，無本機對照後的逐次反應。",
+      "source": "research/reading-evidence.md:28",
+      "status": "published_effect",
+      "title": "Ozuru, Dempsey & McNamara（2009）"
+    },
+    {
+      "family": "mckeown_history",
+      "id": "R15",
+      "links": [
+        "https://files.eric.ed.gov/fulltext/ED410308.pdf",
+        "https://doi.org/10.2307/747784"
+      ],
+      "observation": "學童閱讀原版或增進連貫的歷史材料。提高連貫性改善回憶及理解題表現。文章並比較具不同先備知識的讀者。",
+      "reason": "保留寫法和回憶與理解的群體差，逐筆資料待核。",
+      "source": "research/reading-evidence.md:83",
+      "status": "published_effect",
+      "title": "McKeown, Beck, Sinatra & Loxterman（1992）"
+    },
+    {
+      "family": "tibken_inconsistency",
+      "id": "R16",
+      "links": [
+        "https://doi.org/10.1080/10888438.2023.2261572"
+      ],
+      "observation": "較年輕與較年長的德語成人讀帶有矛盾操弄的說明文，指出是否有矛盾及出現在哪一句。以偵測個數及個人差異比較兩年齡組。",
+      "reason": "同類說明文矛盾範式，跨研究原文重疊尚待核對。",
+      "source": "research/reading-evidence.md:29",
+      "status": "missing_stimuli",
+      "title": "Tibken, Richter & Wannagat（2024）"
+    },
+    {
+      "family": "wiley_rayner_topic",
+      "id": "R17",
+      "links": [
+        "https://link.springer.com/content/pdf/10.3758/BF03209349.pdf"
+      ],
+      "observation": "為同一英語正文提供主題標題。實驗 1 的標題組在目標名詞和句尾的閱讀較快、回視較少，理解較佳。",
+      "reason": "保留標題影響下游名詞的效應，無可接的逐次觀測。",
+      "source": "research/reading-evidence.md:30",
+      "status": "published_effect",
+      "title": "Wiley & Rayner（2000）"
+    },
+    {
+      "family": "hyona_lorch_headings",
+      "id": "R18",
+      "links": [
+        "https://doi.org/10.1016/j.learninstruc.2004.01.001",
+        "https://scholars.uky.edu/en/publications/effects-of-topic-headings-on-text-processing-evidence-from-adult-/"
+      ],
+      "observation": "成人讀兩篇多主題說明文，操弄有無小標題。小標題組的主題句首遍和回看處理較順，摘要涵蓋較多主題。",
+      "reason": "保留雙篇同正文小標效應，完整條件刺激與個別反應待核。",
+      "source": "research/reading-evidence.md:31",
+      "status": "published_effect",
+      "title": "Hyönä & Lorch（2004）"
+    },
+    {
+      "family": "harp_mayer_details",
+      "id": "R19",
+      "links": [
+        "https://doi.org/10.1037/0022-0663.90.3.414"
+      ],
+      "observation": "以閃電形成教材加入有趣但與學習重點無關的細節，測主旨回憶和遷移。細節可降低兩項表現，實驗 4 顯示位置影響結果。",
+      "reason": "圖文教學材料與回憶遷移端點，純文字反應另需觀測。",
+      "source": "research/reading-evidence.md:84",
+      "status": "published_effect",
+      "title": "Harp & Mayer（1998）"
+    },
+    {
+      "family": "bai_reading_policy",
+      "id": "R20",
+      "links": [
+        "https://doi.org/10.1038/s41562-026-02534-0",
+        "https://osf.io/q2dm6/"
+      ],
+      "observation": "新收集的英語閱讀實驗比較 30、60、90 秒限時條件。時間增加時，跳讀變少、回視變多，理解答題和自由回憶亦改善。",
+      "reason": "有作者資料入口，限時、可見文字、行動與理解欄位尚待接入。",
+      "source": "research/reading-evidence.md:32",
+      "status": "public_unprepared",
+      "title": "Bai et al.（2026）"
+    },
+    {
+      "family": "albrecht_obrien_consistency",
+      "id": "R21",
+      "links": [
+        "https://doi.org/10.1037/0278-7393.19.5.1061"
+      ],
+      "observation": "敘事中的關鍵句與更早的角色描述有一致和不一致版本。實驗 1 在關鍵句觀察到不一致時閱讀較慢。",
+      "reason": "保留一致性操弄作設計對照，試次材料尚未建置。",
+      "source": "research/reading-evidence.md:85",
+      "status": "published_effect",
+      "title": "Albrecht & O’Brien（1993）"
+    },
+    {
+      "family": "wang_global_coherence",
+      "id": "R22",
+      "links": [
+        "https://journal.psych.ac.cn/xlxb/CN/Y2006/V38/I05/645"
+      ],
+      "observation": "中文逐行自定步速閱讀。在局部合理的情況下，目標內容與較遠背景抵觸時，比無關對照更慢。此模式在有無句法邊界的版本均出現。",
+      "reason": "已核對摘要與操弄方向，未取得可對齊逐次資料。",
+      "source": "research/reading-evidence.md:38",
+      "status": "published_effect",
+      "title": "Wang et al.（2006）"
+    },
+    {
+      "family": "troyer_domain_knowledge",
+      "id": "R23",
+      "links": [
+        "https://doi.org/10.1111/psyp.14422"
+      ],
+      "observation": "分開測量讀者對特定哈利波特事實的答題表現及整體領域知識，讀正確答案的關鍵詞時量測 ERP。即使讀者答不出該事實，高領域知識仍與較小的 N400 振幅相關。",
+      "reason": "已登錄知識和 N400 端點，試次鍵、預處理與刺激尚未建置。",
+      "source": "research/reading-evidence.md:39",
+      "status": "published_effect",
+      "title": "Troyer et al.（2024）"
+    },
+    {
+      "family": "schotter_masked_reread",
+      "id": "R24",
+      "links": [
+        "https://doi.org/10.1177/0956797614531148"
+      ],
+      "observation": "英語讀者讀有／無句法歧義的句子。遮罩阻止有效重讀時，理解問答表現下降，影響也出現在無歧義的句子。",
+      "reason": "屏蔽回讀與篇末理解的介入已登錄，無本機逐次對照。",
+      "source": "research/reading-evidence.md:40",
+      "status": "published_effect",
+      "title": "Schotter, Tran & Rayner（2014）"
+    },
+    {
+      "family": "demberg_sayeed_pupil",
+      "id": "R26",
+      "links": [
+        "https://doi.org/10.1371/journal.pone.0146194",
+        "https://doi.org/10.7910/DVN/QGEAL1"
+      ],
+      "observation": "德語自定步速閱讀中，語意違反使目標詞較慢。瞳孔變化在目標呈現後約 600–1,100 ms 的時間窗觀察到。",
+      "reason": "有出版資料庫入口，逐字及生理時間窗尚待對齊。",
+      "source": "research/reading-evidence.md:41",
+      "status": "public_unprepared",
+      "title": "Demberg & Sayeed（2016）"
+    },
+    {
+      "family": "sap_syntactic_ambiguity",
+      "id": "R27",
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC13462876/#fig03",
+        "https://osf.io/b6rqh/"
+      ],
+      "observation": "英語暫時性句法歧義在消歧詞及下一詞造成延滯。多種 LM surprisal 相對接近前向閱讀效應，回讀時間的增幅則大得多。",
+      "reason": "眼動與自定步速沿用相同 SAP 材料，整組刺激共同分割。",
+      "source": "research/reading-evidence.md:42",
+      "status": "public_unprepared",
+      "title": "Timkey et al.（2026）"
+    },
+    {
+      "family": "hirotani_punctuation",
+      "id": "R28",
+      "links": [
+        "https://pure.mpg.de/pubman/faces/ViewItemFullPage.jsp?itemId=item_725746_4"
+      ],
+      "observation": "英語句子加入標示子句末尾的逗號。實驗 1 局部首遍較慢，但整句閱讀時間縮短。",
+      "reason": "標點和處理位置的實驗對照已登錄，原始眼動未建置。",
+      "source": "research/reading-evidence.md:43",
+      "status": "published_effect",
+      "title": "Hirotani, Frazier & Rayner（2006）"
+    },
+    {
+      "family": "xue_sentence_boundaries",
+      "id": "R29",
+      "links": [
+        "https://doi.org/10.1177/17470218251347264",
+        "https://osf.io/xf2q9/"
+      ],
+      "observation": "簡中眼動研究把同一目標詞放在句末或句中。多項指標呈現不同模式，總注視時間在目標句末較短。",
+      "reason": "有作者資料入口，字詞邊界及逐次眼動尚待核。",
+      "source": "research/reading-evidence.md:44",
+      "status": "public_unprepared",
+      "title": "Xue et al.（2026）"
+    },
+    {
+      "family": "smith_levy_surprisal",
+      "id": "R30",
+      "links": [
+        "https://www.mit.edu/~rplevy/papers/smith-levy-2013-cognition.pdf"
+      ],
+      "observation": "英語眼動與自定步速語料支持詞的條件機率取負對數與閱讀時間相關。效果可出現在後續詞，兩種方法的延滯模式不同。",
+      "reason": "詞機率及閱讀時長的文獻對照，底層語料需另按材料家族準備。",
+      "source": "research/reading-evidence.md:45",
+      "status": "published_effect",
+      "title": "Smith & Levy（2013）"
+    },
+    {
+      "family": "christianson_role_errors",
+      "id": "R31",
+      "links": [
+        "https://ferreiralab.faculty.ucdavis.edu/wp-content/uploads/sites/222/2015/05/Christianson-et-al.-2001_LingeringInterpretationsGP_Cog-Psych.pdf"
+      ],
+      "observation": "英語成人閱讀暫時性句法歧義句。實驗 2 的從句角色題錯誤較多，主句角色題多數答對，顯示錯誤解讀可殘留。",
+      "reason": "已核對句法角色答錯類別，完整可重現試次對照待核。",
+      "source": "research/reading-evidence.md:51",
+      "status": "published_effect",
+      "title": "Christianson, Hollingworth, Halliwell & Ferreira（2001）"
+    },
+    {
+      "family": "camblin_local_global",
+      "id": "R32",
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC1766924/"
+      ],
+      "observation": "在英語段落操弄目標詞的廣域篇章一致性和局部詞彙聯想。即使句子局部可解讀，較遠篇章的一致性仍影響眼動及 ERP。",
+      "reason": "眼動／ERP 的局部與廣域對照，未建完整逐次輸入。",
+      "source": "research/reading-evidence.md:52",
+      "status": "published_effect",
+      "title": "Camblin, Gordon & Swaab（2007）"
+    },
+    {
+      "family": "claus_kelter_flashbacks",
+      "id": "R33",
+      "links": [
+        "https://research.uni-hannover.de/en/publications/comprehending-narratives-containing-flashbacks-evidence-for-tempo/"
+      ],
+      "observation": "透過倒敘改變事件在文中的出現順序。讀者對較早故事時間的事件較難提取，即使剛在倒敘提過。實驗 3 使用辨認測驗。",
+      "reason": "保留文字順序與故事時間的操弄，完整逐次資料未建。",
+      "source": "research/reading-evidence.md:53",
+      "status": "published_effect",
+      "title": "Claus & Kelter（2006）"
+    },
+    {
+      "family": "cozijn_causal_relations",
+      "id": "R34",
+      "links": [
+        "https://research.tilburguniversity.edu/files/1442185/cozijn_noordman_vonk2011.pdf"
+      ],
+      "observation": "荷語讀者閱讀有／無因果連接詞的句對。明示因果使緊接連詞的區段較快、子句末端較慢，並使實驗 2 的推論陳述驗證較快。",
+      "reason": "已登錄連詞、語段時間與推論驗證端點，無本機逐次對照。",
+      "source": "research/reading-evidence.md:54",
+      "status": "published_effect",
+      "title": "Cozijn, Noordman & Vonk（2011）"
+    },
+    {
+      "family": "kleijn_connectives",
+      "id": "R35",
+      "links": [
+        "https://research-portal.uu.nl/en/publications/comprehension-effects-of-connectives-across-texts-readers-and-coh/"
+      ],
+      "observation": "794 名青少年讀 20 篇荷語真實文本的連詞操弄版本。局部克漏字表現依關係類型而變，因果和對比明示時較好，添加關係明示時較差。全文合併未觀察到效應。",
+      "reason": "完整荷語文本及各關係的逐次克漏作答待核。",
+      "source": "research/reading-evidence.md:55",
+      "status": "published_effect",
+      "title": "Kleijn, Pander Maat & Sanders（2019）"
+    },
+    {
+      "family": "zhan",
+      "id": "R36",
+      "links": [
+        "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0237012",
+        "https://osf.io/download/8zk57/",
+        "https://osf.io/download/z48qy/",
+        "https://osf.io/download/yajhg/"
+      ],
+      "observation": "華語篇章續寫實驗操弄主動、把字和被字結構，以及隱含因果。句法形式和篇章預期改變代詞可能指向對象的分布。",
+      "reason": "作者固定版已重建逐次指涉反應及來源家族。",
+      "source": "research/reading-evidence.md:56",
+      "status": "aligned_reading",
+      "title": "Zhan, Levy & Kehler（2020）"
+    },
+    {
+      "family": "wu_mo_antecedent_distance",
+      "id": "R37",
+      "links": [
+        "https://journal.psych.ac.cn/xlxb/CN/abstract/abstract210.shtml"
+      ],
+      "observation": "中文說明文三個自定步速實驗。在前提可提取時，明示與隱含前提均出現結論句推論訊號。插入兩個句子後，距離削弱此效應。",
+      "reason": "已登錄中文版前提距離效應，逐次材料與可見位置待核。",
+      "source": "research/reading-evidence.md:57",
+      "status": "published_effect",
+      "title": "伍麗梅、莫雷（2010）"
+    },
+    {
+      "family": "scholman_chinese_connectives",
+      "id": "R38",
+      "links": [
+        "https://link.springer.com/article/10.1007/s10936-026-10269-2",
+        "https://osf.io/frh6z"
+      ],
+      "observation": "兩項華語自定步速閱讀實驗操弄因果與讓步的成對連接標記。先出現的標記對第二標記的閱讀時間沒有可重複的促進效果。",
+      "reason": "有作者資料目錄，可作閱讀時間及未重現促進的對照，尚未接入。",
+      "source": "research/reading-evidence.md:58",
+      "status": "public_unprepared",
+      "title": "Scholman, Yan, Yung & Demberg（2026）"
+    },
+    {
+      "family": "yu_hsiao_lin_pragmatics",
+      "id": "R39",
+      "links": [
+        "https://www.benjamins.com/catalog/cld.25002.yu"
+      ],
+      "observation": "華語母語者閱讀含量詞、連詞及可分級形容詞的短對話，選出續句。語境對字面與語用解讀的影響，初步結果隨所測詞類而不同。",
+      "reason": "僅核到摘要或原刊目錄，完整情境和逐次選擇待取得。",
+      "source": "research/reading-evidence.md:59",
+      "status": "published_effect",
+      "title": "Yu, Hsiao & Lin（2025）"
+    },
+    {
+      "family": "wei_ba_construction",
+      "id": "R40",
+      "links": [
+        "https://doi.org/10.1017/langcog.2023.42",
+        "https://osf.io/5vfwr/"
+      ],
+      "observation": "華語把字句中的句法與語意訊息交互作用，在自然眼動與自定步速閱讀得到不同模式。",
+      "reason": "有資料入口，眼動與自定步速的共同材料須先對齊。",
+      "source": "research/reading-evidence.md:60",
+      "status": "public_unprepared",
+      "title": "Wei et al.（2024）"
+    },
+    {
+      "family": "plaba",
+      "id": "R41",
+      "links": [
+        "https://aclanthology.org/2026.readi-1.4/"
+      ],
+      "observation": "成人閱讀英語醫學摘要或白話改寫。分別收集逐句理解自評、處理容易度和可查閱全文的選擇題作答。",
+      "reason": "已重建逐句自評、原文改寫配對與試次，同 D09。",
+      "source": "research/reading-evidence.md:61",
+      "status": "aligned_reading",
+      "title": "Bian, Yoon & Komachi（2026）"
+    },
+    {
+      "family": "daneman_carpenter_span",
+      "id": "R42",
+      "links": [
+        "https://eric.ed.gov/?id=EJ230538"
+      ],
+      "observation": "建立 reading span，並探討它與事實提取、代詞指涉的關係。",
+      "reason": "保留早期讀者能力檢驗，沒有可對應文章的讀者逐次資料。",
+      "source": "research/reading-evidence.md:76",
+      "status": "published_effect",
+      "title": "Daneman & Carpenter（1980）"
+    },
+    {
+      "family": "yeung_explanatory_notes",
+      "id": "R43",
+      "links": [
+        "https://pubmed.ncbi.nlm.nih.gov/9514686/"
+      ],
+      "observation": "五個閱讀實驗比較逐文解釋、集中列出的詞彙解釋等安排。文內整合的理解效應在五年級母語組與成人組方向相反，低與高能力的英語學習者也呈現不同模式。",
+      "reason": "保留註解、讀者族群與理解效應，原始刺激及反應待核。",
+      "source": "research/reading-evidence.md:77",
+      "status": "published_effect",
+      "title": "Yeung, Jin & Sweller（1998）"
+    },
+    {
+      "family": "love_mckoon_gerrig",
+      "id": "R44",
+      "links": [
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC2864939/"
+      ],
+      "observation": "敘事中的角色若缺少與故事的關聯，該角色名字在辨認探針中反應較快，後續詞的辨認反應較慢，後續資訊的記憶也較弱。",
+      "reason": "角色與主文的關係操弄已登錄，完整探針材料和逐次反應待核。",
+      "source": "research/reading-evidence.md:67",
+      "status": "published_effect",
+      "title": "Love, McKoon & Gerrig（2010）"
+    },
+    {
+      "family": "jones_bergen",
+      "id": "R45",
+      "links": [
+        "https://doi.org/10.1017/langcog.2024.2",
+        "https://osf.io/v8rjm/"
+      ],
+      "observation": "英語短文操弄代詞是否有歧義，以及後文是否符合較常見的指涉解讀。實驗 1 收指涉選擇，實驗 2 在後續區段測到違反較常見解讀的閱讀變慢，並用明確指涉版本控制續句差異。",
+      "reason": "已核對作者刺激欄及兩實驗逐次資料，排除規則、版本與用途待收據。",
+      "source": "research/reading-evidence.md:68",
+      "status": "public_unprepared",
+      "title": "Jones & Bergen（2024）"
+    },
+    {
+      "family": "kendeou_refutation_reactivation",
+      "id": "R46",
+      "links": [
+        "https://experts.umn.edu/en/publications/updating-during-reading-comprehension-why-causality-matters/"
+      ],
+      "observation": "反駁後加入一句因果解釋，後續已無可測得的理解干擾，但仍觀察到舊資訊再活化。三句因果解釋及等長的限定性補述並有不同結果。",
+      "reason": "同時保留再活化與理解干擾，全文條件與逐次反應待取得。",
+      "source": "research/reading-evidence.md:69",
+      "status": "published_effect",
+      "title": "Kendeou, Smith & O’Brien（2013）"
+    },
+    {
+      "family": "pettijohn_event_transition",
+      "id": "R47",
+      "links": [
+        "https://memorylab.nd.edu/assets/259391/pettijohn_radvansky_2016_memory_cognition_.pdf"
+      ],
+      "observation": "操弄敘事的事件轉換是否預告。實驗 3 未預告的轉換造成局部閱讀變慢，預告條件下未測到同樣的差異。先前內容的辨認反應在轉換後較慢，兩種預告條件均見此趨勢。",
+      "reason": "附錄示例可核，完整刺激及逐次意外自評未接入。",
+      "source": "research/reading-evidence.md:70",
+      "status": "published_effect",
+      "title": "Pettijohn & Radvansky（2016）"
+    }
+  ],
+  "schema_version": 1,
+  "scope": "CogLLM 已登錄的 46 篇實證論文、14 個資源及後續在本機或研究紀錄中可追查的資料。準備狀態與模型工作批次的資料切分分開。檔案存在只代表已取得對應路徑。",
+  "shared_split_constraints": [
+    {
+      "axis": "readers",
+      "evidence": "research/stage-6-race-run.md",
+      "families": [
+        "onestop",
+        "race"
+      ],
+      "scope": "同一次 Prolific 實驗共用 970 位讀者。"
+    },
+    {
+      "axis": "materials",
+      "evidence": "research/semantic_tracking/expmrc-transfer.md",
+      "families": [
+        "race",
+        "expmrc"
+      ],
+      "scope": "RACE+ 的兩篇來源有已核重疊。新增版本仍需核對文章。"
+    },
+    {
+      "axis": "materials",
+      "evidence": "research/stage6/student-annotations-background.md",
+      "families": [
+        "studentannotations",
+        "textcomplexityde"
+      ],
+      "scope": "職涯指南準備版本已剔除既有 TextComplexityDE 的 554 句。"
+    },
+    {
+      "axis": "materials",
+      "evidence": "research/semantic_tracking/context-readback-transfer-results.md",
+      "families": [
+        "first-readback",
+        "context-readback"
+      ],
+      "scope": "先前版本聲明兩個訓練來源無已查全文或片段重合。新的材料納入時需重查。"
+    }
+  ],
+  "source_index_sha256": "0c723ebf66ae18a1938e783057ccf6de6f92a703ab86665f55168f4dfcf86a15"
+}

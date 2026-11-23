@@ -1,0 +1,2732 @@
+{
+  "coverage": {
+    "all": 1726,
+    "prefix_mismatch": 180
+  },
+  "drop_sentence_final": {
+    "GPT2_xl": [
+      {
+        "demeaned_rho": 0.24974005379957087,
+        "rho": 0.253752507409258,
+        "sentence_ci": [
+          0.20633840357402777,
+          0.3063339472799147
+        ],
+        "within_sentence_median_rho": 0.2727272727272727,
+        "words": 1368
+      },
+      {
+        "demeaned_rho": 0.8033488762835467,
+        "rho": 0.8278694530391313,
+        "sentence_ci": [
+          0.8038330198394515,
+          0.848530360868414
+        ],
+        "within_sentence_median_rho": 0.8181818181818182,
+        "words": 1368
+      },
+      {
+        "demeaned_rho": 0.7411261173961793,
+        "rho": 0.757130320866944,
+        "sentence_ci": [
+          0.7292718569824836,
+          0.7831776022940019
+        ],
+        "within_sentence_median_rho": 0.7857142857142857,
+        "words": 1368
+      }
+    ],
+    "context": [
+      {
+        "demeaned_rho": 0.21054683680945258,
+        "rho": 0.19347131926423589,
+        "sentence_ci": [
+          0.1442091822313257,
+          0.24292636947787802
+        ],
+        "within_sentence_median_rho": 0.20879120879120877,
+        "words": 1368
+      },
+      {
+        "demeaned_rho": 0.5105742460523921,
+        "rho": 0.4763432619601091,
+        "sentence_ci": [
+          0.42886389744288383,
+          0.5195857981856669
+        ],
+        "within_sentence_median_rho": 0.5428571428571428,
+        "words": 1368
+      },
+      {
+        "demeaned_rho": 0.44036775800913647,
+        "rho": 0.36342202071797663,
+        "sentence_ci": [
+          0.3077004334032623,
+          0.4156236069935769
+        ],
+        "within_sentence_median_rho": 0.44242424242424244,
+        "words": 1368
+      }
+    ],
+    "qwen_surprisal": [
+      {
+        "demeaned_rho": 0.27014873783399523,
+        "rho": 0.26271731745025756,
+        "sentence_ci": [
+          0.2185750085876072,
+          0.31095800081798675
+        ],
+        "within_sentence_median_rho": 0.30000000000000004,
+        "words": 1368
+      },
+      {
+        "demeaned_rho": 0.7932196482173333,
+        "rho": 0.7998041880195461,
+        "sentence_ci": [
+          0.7758687457564832,
+          0.8212679450898777
+        ],
+        "within_sentence_median_rho": 0.8,
+        "words": 1368
+      },
+      {
+        "demeaned_rho": 0.728856012102124,
+        "rho": 0.7339945823735536,
+        "sentence_ci": [
+          0.7067427697630232,
+          0.763023015285844
+        ],
+        "within_sentence_median_rho": 0.7500000000000001,
+        "words": 1368
+      }
+    ]
+  },
+  "english_crossvalidated": {
+    "analytic_fits": [
+      {
+        "arm": "surface",
+        "fold": 0,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "surface",
+        "fold": 1,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "surface",
+        "fold": 2,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "separate",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "surface",
+        "fold": 3,
+        "normal_equation_error": 3.8163916471489756e-17,
+        "shared": "separate",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "surface",
+        "fold": 4,
+        "normal_equation_error": 2.7755575615628914e-17,
+        "shared": "separate",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "surface",
+        "fold": 0,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "shared_rank2",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "surface",
+        "fold": 1,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "shared_rank2",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "surface",
+        "fold": 2,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "shared_rank2",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "surface",
+        "fold": 3,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "shared_rank2",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "surface",
+        "fold": 4,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "shared_rank2",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "surface",
+        "fold": 0,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "joint_full",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "surface",
+        "fold": 1,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "joint_full",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "surface",
+        "fold": 2,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "joint_full",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "surface",
+        "fold": 3,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "joint_full",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "surface",
+        "fold": 4,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "joint_full",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 0,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 1,
+        "normal_equation_error": 4.163336342344337e-17,
+        "shared": "separate",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 2,
+        "normal_equation_error": 8.326672684688674e-17,
+        "shared": "separate",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 3,
+        "normal_equation_error": 2.7755575615628914e-17,
+        "shared": "separate",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 4,
+        "normal_equation_error": 2.220446049250313e-16,
+        "shared": "separate",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "shared_rank2",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 1,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "shared_rank2",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 2,
+        "normal_equation_error": 8.326672684688674e-17,
+        "shared": "shared_rank2",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 3,
+        "normal_equation_error": 4.163336342344337e-17,
+        "shared": "shared_rank2",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 4,
+        "normal_equation_error": 2.220446049250313e-16,
+        "shared": "shared_rank2",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "joint_full",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 1,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "joint_full",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 2,
+        "normal_equation_error": 8.326672684688674e-17,
+        "shared": "joint_full",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 3,
+        "normal_equation_error": 4.163336342344337e-17,
+        "shared": "joint_full",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "qwen_surface",
+        "fold": 4,
+        "normal_equation_error": 2.220446049250313e-16,
+        "shared": "joint_full",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "separate",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 1,
+        "normal_equation_error": 1.249000902703301e-16,
+        "shared": "separate",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 2,
+        "normal_equation_error": 1.457167719820518e-16,
+        "shared": "separate",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 3,
+        "normal_equation_error": 3.122502256758253e-17,
+        "shared": "separate",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 4,
+        "normal_equation_error": 1.7520707107365752e-16,
+        "shared": "separate",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "shared_rank2",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 1,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "shared_rank2",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 2,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "shared_rank2",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 3,
+        "normal_equation_error": 1.249000902703301e-16,
+        "shared": "shared_rank2",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 4,
+        "normal_equation_error": 2.42861286636753e-16,
+        "shared": "shared_rank2",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "joint_full",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 1,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "joint_full",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 2,
+        "normal_equation_error": 1.1102230246251565e-16,
+        "shared": "joint_full",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 3,
+        "normal_equation_error": 1.249000902703301e-16,
+        "shared": "joint_full",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "gpt2_xl_surface",
+        "fold": 4,
+        "normal_equation_error": 2.42861286636753e-16,
+        "shared": "joint_full",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "context",
+        "fold": 0,
+        "normal_equation_error": 5.551115123125783e-16,
+        "shared": "separate",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "context",
+        "fold": 1,
+        "normal_equation_error": 3.3306690738754696e-16,
+        "shared": "separate",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "context",
+        "fold": 2,
+        "normal_equation_error": 4.996003610813204e-16,
+        "shared": "separate",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "context",
+        "fold": 3,
+        "normal_equation_error": 1.6653345369377348e-16,
+        "shared": "separate",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "context",
+        "fold": 4,
+        "normal_equation_error": 2.220446049250313e-16,
+        "shared": "separate",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "context",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-15,
+        "shared": "shared_rank2",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "context",
+        "fold": 1,
+        "normal_equation_error": 1.1102230246251565e-15,
+        "shared": "shared_rank2",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "context",
+        "fold": 2,
+        "normal_equation_error": 6.106226635438361e-16,
+        "shared": "shared_rank2",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "context",
+        "fold": 3,
+        "normal_equation_error": 5.551115123125783e-16,
+        "shared": "shared_rank2",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "context",
+        "fold": 4,
+        "normal_equation_error": 5.551115123125783e-16,
+        "shared": "shared_rank2",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "context",
+        "fold": 0,
+        "normal_equation_error": 1.1102230246251565e-15,
+        "shared": "joint_full",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "context",
+        "fold": 1,
+        "normal_equation_error": 1.1102230246251565e-15,
+        "shared": "joint_full",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "context",
+        "fold": 2,
+        "normal_equation_error": 6.106226635438361e-16,
+        "shared": "joint_full",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "context",
+        "fold": 3,
+        "normal_equation_error": 5.551115123125783e-16,
+        "shared": "joint_full",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "context",
+        "fold": 4,
+        "normal_equation_error": 5.551115123125783e-16,
+        "shared": "joint_full",
+        "test_words": 310,
+        "train_words": 1236
+      },
+      {
+        "arm": "human_offline",
+        "fold": 0,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 289,
+        "train_words": 1257
+      },
+      {
+        "arm": "human_offline",
+        "fold": 1,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 347,
+        "train_words": 1199
+      },
+      {
+        "arm": "human_offline",
+        "fold": 2,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 297,
+        "train_words": 1249
+      },
+      {
+        "arm": "human_offline",
+        "fold": 3,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 303,
+        "train_words": 1243
+      },
+      {
+        "arm": "human_offline",
+        "fold": 4,
+        "normal_equation_error": 5.551115123125783e-17,
+        "shared": "separate",
+        "test_words": 310,
+        "train_words": 1236
+      }
+    ],
+    "offline_N400": {
+      "context_separate": [
+        {
+          "demeaned_rho": 0.4306218822864643,
+          "rho": 0.4077110012777157,
+          "sentence_ci": [
+            0.3705731244181312,
+            0.449305474527695
+          ],
+          "within_sentence_median_rho": 0.4000000000000001,
+          "words": 1546
+        }
+      ],
+      "human_offline": [
+        {
+          "demeaned_rho": 0.4268442922898001,
+          "rho": 0.4089100537171239,
+          "sentence_ci": [
+            0.37111721286910754,
+            0.448866613691919
+          ],
+          "within_sentence_median_rho": 0.3727272727272728,
+          "words": 1546
+        }
+      ],
+      "qwen_surface_separate": [
+        {
+          "demeaned_rho": 0.40683618532225463,
+          "rho": 0.38557811797299546,
+          "sentence_ci": [
+            0.3440913844642765,
+            0.4287425220584456
+          ],
+          "within_sentence_median_rho": 0.41818181818181827,
+          "words": 1546
+        }
+      ]
+    },
+    "paired_MSE": {
+      "context_separate__over__gpt2_xl_surface_separate": [
+        {
+          "mean_squared_error_reduction": -0.0038205393856878696,
+          "sentence_ci": [
+            -0.04814457406797581,
+            0.04168903539459116
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.07921520941789442,
+          "sentence_ci": [
+            0.011673743598217103,
+            0.14925011855699624
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.043003796794757,
+          "sentence_ci": [
+            0.018864704341768294,
+            0.0699935588917328
+          ]
+        }
+      ],
+      "context_separate__over__qwen_surface_separate": [
+        {
+          "mean_squared_error_reduction": -0.0023221027913630536,
+          "sentence_ci": [
+            -0.0446190022432428,
+            0.04040642777154307
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.14307146797338155,
+          "sentence_ci": [
+            0.0917746295173843,
+            0.19295845913788132
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.04143952296285851,
+          "sentence_ci": [
+            0.024345319652229826,
+            0.05928698503593992
+          ]
+        }
+      ],
+      "context_separate__over__surface_separate": [
+        {
+          "mean_squared_error_reduction": 0.08624974767539034,
+          "sentence_ci": [
+            0.030295965311705638,
+            0.1438386318058304
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.8462582648596372,
+          "sentence_ci": [
+            0.7449367955564414,
+            0.9460012834122206
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.2570915433650135,
+          "sentence_ci": [
+            0.22150051116089403,
+            0.2942036497521367
+          ]
+        }
+      ],
+      "context_shared_rank2__over__context_separate": [
+        {
+          "mean_squared_error_reduction": -0.00047138874393974644,
+          "sentence_ci": [
+            -0.0015977954906434561,
+            0.000667085522718019
+          ]
+        },
+        {
+          "mean_squared_error_reduction": -0.0955586894670732,
+          "sentence_ci": [
+            -0.1329888662052467,
+            -0.06054443493348541
+          ]
+        },
+        {
+          "mean_squared_error_reduction": -0.018106215142265968,
+          "sentence_ci": [
+            -0.02734238528437554,
+            -0.00883346461846416
+          ]
+        }
+      ],
+      "context_shared_rank2__over__qwen_surface_shared_rank2": [
+        {
+          "mean_squared_error_reduction": -0.0021506653521129585,
+          "sentence_ci": [
+            -0.04470148887232419,
+            0.04047566868724971
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.08515491090457729,
+          "sentence_ci": [
+            0.033166215952072024,
+            0.135828287048529
+          ]
+        },
+        {
+          "mean_squared_error_reduction": 0.033139312423240246,
+          "sentence_ci": [
+            0.02053790965258709,
+            0.04634277222254831
+          ]
+        }
+      ]
+    },
+    "paired_rho": {
+      "context_separate__over__gpt2_xl_surface_separate": [
+        {
+          "paired_sentence_ci": [
+            -0.01420103797520034,
+            0.061771456013262845
+          ],
+          "rho_gain": 0.023742745218543082
+        },
+        {
+          "paired_sentence_ci": [
+            -0.03359199605515731,
+            -0.0035671958213996558
+          ],
+          "rho_gain": -0.018793367411935158
+        },
+        {
+          "paired_sentence_ci": [
+            -0.0358234835964023,
+            0.011631016781903316
+          ],
+          "rho_gain": -0.012143875109127622
+        }
+      ],
+      "context_separate__over__qwen_surface_separate": [
+        {
+          "paired_sentence_ci": [
+            -0.014693497326238411,
+            0.055722732144087704
+          ],
+          "rho_gain": 0.02213288330472024
+        },
+        {
+          "paired_sentence_ci": [
+            -0.004924139498430485,
+            0.020104230714115184
+          ],
+          "rho_gain": 0.00802188563591233
+        },
+        {
+          "paired_sentence_ci": [
+            -0.00789338353109215,
+            0.03413528173174978
+          ],
+          "rho_gain": 0.013563751588392292
+        }
+      ],
+      "context_separate__over__surface_separate": [
+        {
+          "paired_sentence_ci": [
+            0.06637550667218658,
+            0.15056233310034367
+          ],
+          "rho_gain": 0.1076748209553085
+        },
+        {
+          "paired_sentence_ci": [
+            0.2597024190158195,
+            0.3328157917975018
+          ],
+          "rho_gain": 0.2967949520323694
+        },
+        {
+          "paired_sentence_ci": [
+            0.3849191027105091,
+            0.48243574841432646
+          ],
+          "rho_gain": 0.43402023535372236
+        }
+      ],
+      "context_shared_rank2__over__context_separate": [
+        {
+          "paired_sentence_ci": [
+            -0.001463824958273814,
+            0.0007084714895397685
+          ],
+          "rho_gain": -0.00039971878677252937
+        },
+        {
+          "paired_sentence_ci": [
+            -0.03040836261109777,
+            -0.013431890136919514
+          ],
+          "rho_gain": -0.02208971286009609
+        },
+        {
+          "paired_sentence_ci": [
+            -0.0176026521026612,
+            0.00407989205976337
+          ],
+          "rho_gain": -0.007169478264929419
+        }
+      ],
+      "context_shared_rank2__over__qwen_surface_shared_rank2": [
+        {
+          "paired_sentence_ci": [
+            -0.014847344969736302,
+            0.0553934062564828
+          ],
+          "rho_gain": 0.02195504864918829
+        },
+        {
+          "paired_sentence_ci": [
+            -0.015021681992383096,
+            0.01294507379546405
+          ],
+          "rho_gain": -0.0002749925051735991
+        },
+        {
+          "paired_sentence_ci": [
+            -0.00711897369241504,
+            0.025337401100143566
+          ],
+          "rho_gain": 0.009443623621115949
+        }
+      ]
+    },
+    "rho": {
+      "context_separate": [
+        {
+          "demeaned_rho": 0.4306218822864643,
+          "rho": 0.4077110012777157,
+          "sentence_ci": [
+            0.3685637731904635,
+            0.4491323517145018
+          ],
+          "within_sentence_median_rho": 0.4000000000000001,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7997300966120147,
+          "rho": 0.8049202340026498,
+          "sentence_ci": [
+            0.7866842645990713,
+            0.8212801218551932
+          ],
+          "within_sentence_median_rho": 0.8,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7604615253943584,
+          "rho": 0.7640061621083024,
+          "sentence_ci": [
+            0.7406773285883128,
+            0.7852991388917918
+          ],
+          "within_sentence_median_rho": 0.75,
+          "words": 1546
+        }
+      ],
+      "context_shared_rank2": [
+        {
+          "demeaned_rho": 0.4301841251994297,
+          "rho": 0.40731128249094317,
+          "sentence_ci": [
+            0.36826954102183035,
+            0.44839827634137186
+          ],
+          "within_sentence_median_rho": 0.40476190476190477,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7900742137946554,
+          "rho": 0.7828305211425537,
+          "sentence_ci": [
+            0.7619854550112404,
+            0.8000293910203835
+          ],
+          "within_sentence_median_rho": 0.7857142857142857,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.751658389976447,
+          "rho": 0.756836683843373,
+          "sentence_ci": [
+            0.7346326014180249,
+            0.7780657283480945
+          ],
+          "within_sentence_median_rho": 0.7363636363636364,
+          "words": 1546
+        }
+      ],
+      "gpt2_xl_surface_separate": [
+        {
+          "demeaned_rho": 0.40455912232232255,
+          "rho": 0.3839682560591726,
+          "sentence_ci": [
+            0.344544684424471,
+            0.4267863891550315
+          ],
+          "within_sentence_median_rho": 0.3666666666666667,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.8147709742633313,
+          "rho": 0.8237136014145849,
+          "sentence_ci": [
+            0.805566173726621,
+            0.8395314282322882
+          ],
+          "within_sentence_median_rho": 0.8181818181818181,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7795102217090183,
+          "rho": 0.77615003721743,
+          "sentence_ci": [
+            0.752093315501814,
+            0.7990571564093569
+          ],
+          "within_sentence_median_rho": 0.8,
+          "words": 1546
+        }
+      ],
+      "gpt2_xl_surface_shared_rank2": [
+        {
+          "demeaned_rho": 0.4036270362033574,
+          "rho": 0.3839553373911065,
+          "sentence_ci": [
+            0.3442179609094462,
+            0.42707702653823315
+          ],
+          "within_sentence_median_rho": 0.38181818181818183,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.8155671610693416,
+          "rho": 0.8231807956332189,
+          "sentence_ci": [
+            0.8042485411029958,
+            0.8389475535720904
+          ],
+          "within_sentence_median_rho": 0.8095238095238095,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7636439051649959,
+          "rho": 0.764860240955756,
+          "sentence_ci": [
+            0.7386093895793866,
+            0.788229081930874
+          ],
+          "within_sentence_median_rho": 0.7857142857142857,
+          "words": 1546
+        }
+      ],
+      "qwen_surface_separate": [
+        {
+          "demeaned_rho": 0.40683618532225463,
+          "rho": 0.38557811797299546,
+          "sentence_ci": [
+            0.34530305031835956,
+            0.42831193442091825
+          ],
+          "within_sentence_median_rho": 0.41818181818181827,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7919436519196328,
+          "rho": 0.7968983483667375,
+          "sentence_ci": [
+            0.7750567942335246,
+            0.8153120765087327
+          ],
+          "within_sentence_median_rho": 0.7939393939393941,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7550629429101573,
+          "rho": 0.7504424105199101,
+          "sentence_ci": [
+            0.7255960950592723,
+            0.7739648631273278
+          ],
+          "within_sentence_median_rho": 0.7833333333333333,
+          "words": 1546
+        }
+      ],
+      "qwen_surface_shared_rank2": [
+        {
+          "demeaned_rho": 0.4066792712445575,
+          "rho": 0.3853562338417549,
+          "sentence_ci": [
+            0.345206966869846,
+            0.42780985492448836
+          ],
+          "within_sentence_median_rho": 0.41818181818181827,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7841761484369,
+          "rho": 0.7831055136477273,
+          "sentence_ci": [
+            0.7607148329280466,
+            0.8028864324802054
+          ],
+          "within_sentence_median_rho": 0.7857142857142858,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7464068474611268,
+          "rho": 0.747393060222257,
+          "sentence_ci": [
+            0.7214164716115566,
+            0.7723625007766468
+          ],
+          "within_sentence_median_rho": 0.7720400404736819,
+          "words": 1546
+        }
+      ],
+      "surface_separate": [
+        {
+          "demeaned_rho": 0.3026856713295889,
+          "rho": 0.3000361803224072,
+          "sentence_ci": [
+            0.26160049317449563,
+            0.3412010654388002
+          ],
+          "within_sentence_median_rho": 0.3166666666666666,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.49818324449926304,
+          "rho": 0.5081252819702804,
+          "sentence_ci": [
+            0.4712168014385096,
+            0.5453350935111743
+          ],
+          "within_sentence_median_rho": 0.5523060897787773,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.3611251902745181,
+          "rho": 0.32998592675458005,
+          "sentence_ci": [
+            0.2848515473535171,
+            0.37500275287390505
+          ],
+          "within_sentence_median_rho": 0.3928571428571429,
+          "words": 1546
+        }
+      ],
+      "surface_shared_rank2": [
+        {
+          "demeaned_rho": 0.30045637110799656,
+          "rho": 0.2979727275953897,
+          "sentence_ci": [
+            0.2595677656640212,
+            0.3385863100917862
+          ],
+          "within_sentence_median_rho": 0.30952380952380953,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5045342036787503,
+          "rho": 0.5101842135543351,
+          "sentence_ci": [
+            0.4738665474723443,
+            0.5487212914090399
+          ],
+          "within_sentence_median_rho": 0.5698573305313221,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.3350340609997507,
+          "rho": 0.32001211139642766,
+          "sentence_ci": [
+            0.2764722229905964,
+            0.3677809172593792
+          ],
+          "within_sentence_median_rho": 0.3890595479552414,
+          "words": 1546
+        }
+      ]
+    },
+    "rmse": {
+      "context_separate": [
+        0.9867840062989207,
+        0.9829155955079146,
+        0.47368107378145896
+      ],
+      "context_shared_rank2": [
+        0.9870224359140982,
+        1.024339529904874,
+        0.4905961615817827
+      ],
+      "gpt2_xl_surface_separate": [
+        0.9833043139825557,
+        1.0252743068067904,
+        0.5112406448446707
+      ],
+      "gpt2_xl_surface_shared_rank2": [
+        0.9837508236422506,
+        1.0360397409417894,
+        0.5217860196090408
+      ],
+      "qwen_surface_separate": [
+        0.9815656968156952,
+        1.0530791933030925,
+        0.5070202127432012
+      ],
+      "qwen_surface_shared_rank2": [
+        0.9818133700248382,
+        1.067452596159718,
+        0.5173518009271362
+      ],
+      "surface_separate": [
+        1.0260080859459169,
+        1.3628576533974186,
+        0.6928330065146524
+      ],
+      "surface_shared_rank2": [
+        1.0261937175586986,
+        1.3660174044791726,
+        0.6968721678805503
+      ]
+    }
+  },
+  "english_exact_noninitial_words": 1546,
+  "english_sentences": 186,
+  "external_spanish_no_updates": {
+    "best_published_per_endpoint": {
+      "N400_negativity": "GPTNeo",
+      "cloze_surprisal": "GPT2_xl",
+      "rated_unpredictability": "GPT2_xl"
+    },
+    "increments": {
+      "context__over__GPT2_xl": [
+        {
+          "paired_sentence_ci": [
+            0.22726023544366117,
+            0.33849269895651646
+          ],
+          "rho_gain": 0.28270705020000775
+        },
+        {
+          "paired_sentence_ci": [
+            -0.2665930609372207,
+            -0.15155201116553038
+          ],
+          "rho_gain": -0.20931246516470986
+        },
+        {
+          "paired_sentence_ci": [
+            -0.3478152754461184,
+            -0.22381340798031502
+          ],
+          "rho_gain": -0.28674557553050917
+        }
+      ],
+      "context__over__GPTNeo": [
+        {
+          "paired_sentence_ci": [
+            0.22709786916258193,
+            0.3385950718642203
+          ],
+          "rho_gain": 0.2815281648928812
+        },
+        {
+          "paired_sentence_ci": [
+            -0.26197736063628335,
+            -0.14963471185194224
+          ],
+          "rho_gain": -0.20682523979662898
+        },
+        {
+          "paired_sentence_ci": [
+            -0.3433140430040523,
+            -0.2227697981309572
+          ],
+          "rho_gain": -0.2824170819968381
+        }
+      ],
+      "context__over__context_early_control": [
+        {
+          "paired_sentence_ci": [
+            0.322679140003185,
+            0.41616137793686453
+          ],
+          "rho_gain": 0.36731560194887325
+        },
+        {
+          "paired_sentence_ci": [
+            0.42398149172624966,
+            0.5244688075853191
+          ],
+          "rho_gain": 0.4723964742449913
+        },
+        {
+          "paired_sentence_ci": [
+            0.3837299592105895,
+            0.4909241098578488
+          ],
+          "rho_gain": 0.43610705019949275
+        }
+      ],
+      "context__over__qwen_surface": [
+        {
+          "paired_sentence_ci": [
+            -0.04165712412237318,
+            0.03409661013539767
+          ],
+          "rho_gain": -0.0026275040603837563
+        },
+        {
+          "paired_sentence_ci": [
+            -0.11386815134589069,
+            -0.035559973933270025
+          ],
+          "rho_gain": -0.07197012382228146
+        },
+        {
+          "paired_sentence_ci": [
+            -0.07448276677631156,
+            0.011188080297801509
+          ],
+          "rho_gain": -0.030707134693718108
+        }
+      ],
+      "context__over__qwen_surprisal": [
+        {
+          "paired_sentence_ci": [
+            0.020345967032907395,
+            0.11535389139498625
+          ],
+          "rho_gain": 0.07042141946976088
+        },
+        {
+          "paired_sentence_ci": [
+            -0.39136834997111103,
+            -0.30628804614760213
+          ],
+          "rho_gain": -0.34832237840918084
+        },
+        {
+          "paired_sentence_ci": [
+            -0.44664355369838377,
+            -0.3589673719971845
+          ],
+          "rho_gain": -0.4028071070487571
+        }
+      ],
+      "context__over__surface": [
+        {
+          "paired_sentence_ci": [
+            0.04182047296676042,
+            0.12818906375809863
+          ],
+          "rho_gain": 0.08702569837846566
+        },
+        {
+          "paired_sentence_ci": [
+            0.1097925427600803,
+            0.20311942661133023
+          ],
+          "rho_gain": 0.1588609604962814
+        },
+        {
+          "paired_sentence_ci": [
+            0.19049803101906843,
+            0.2938524886463113
+          ],
+          "rho_gain": 0.24335475515720156
+        }
+      ]
+    },
+    "models": {
+      "GPT2": [
+        {
+          "demeaned_rho": 0.01784845673349969,
+          "rho": 0.031443317504257176,
+          "sentence_ci": [
+            -0.014819959802257724,
+            0.07869889661641007
+          ],
+          "within_sentence_median_rho": 0.0,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5676069931553313,
+          "rho": 0.6029455851281016,
+          "sentence_ci": [
+            0.5667449863421516,
+            0.6381311298355087
+          ],
+          "within_sentence_median_rho": 0.5714285714285714,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5343702030224636,
+          "rho": 0.5602059711865834,
+          "sentence_ci": [
+            0.5221427465292555,
+            0.6003490041044294
+          ],
+          "within_sentence_median_rho": 0.5499999999999999,
+          "words": 1546
+        }
+      ],
+      "GPT2_large": [
+        {
+          "demeaned_rho": 0.021463874903971596,
+          "rho": 0.03502716001419528,
+          "sentence_ci": [
+            -0.012267272803402573,
+            0.08461646324435596
+          ],
+          "within_sentence_median_rho": -0.006060606060606066,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.6059577044314873,
+          "rho": 0.6415502074519366,
+          "sentence_ci": [
+            0.6083240561883569,
+            0.6740622525788001
+          ],
+          "within_sentence_median_rho": 0.5957474328064634,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5766255313416254,
+          "rho": 0.6038972372663318,
+          "sentence_ci": [
+            0.5676667406387983,
+            0.6421029294649604
+          ],
+          "within_sentence_median_rho": 0.5909090909090908,
+          "words": 1546
+        }
+      ],
+      "GPT2_medium": [
+        {
+          "demeaned_rho": 0.02207106853825085,
+          "rho": 0.03637418285993285,
+          "sentence_ci": [
+            -0.010703912744954788,
+            0.0855549059249499
+          ],
+          "within_sentence_median_rho": 1.665334536937735e-17,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.6027548847116564,
+          "rho": 0.6423831980474698,
+          "sentence_ci": [
+            0.6093378325529046,
+            0.674669877632311
+          ],
+          "within_sentence_median_rho": 0.6000000000000001,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5714267108267423,
+          "rho": 0.6028708680778064,
+          "sentence_ci": [
+            0.5654777955962489,
+            0.6397671151101868
+          ],
+          "within_sentence_median_rho": 0.6,
+          "words": 1546
+        }
+      ],
+      "GPT2_xl": [
+        {
+          "demeaned_rho": 0.023469009360050738,
+          "rho": 0.03905669657783814,
+          "sentence_ci": [
+            -0.007285976886978025,
+            0.08908409040764569
+          ],
+          "within_sentence_median_rho": 0.0,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.6104852202313484,
+          "rho": 0.6469820199481366,
+          "sentence_ci": [
+            0.614429753406085,
+            0.6780678012382293
+          ],
+          "within_sentence_median_rho": 0.6,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5817015140933166,
+          "rho": 0.6075602933509852,
+          "sentence_ci": [
+            0.571222833610488,
+            0.6446683491131862
+          ],
+          "within_sentence_median_rho": 0.6,
+          "words": 1546
+        }
+      ],
+      "GPTNeo": [
+        {
+          "demeaned_rho": 0.025873924305942084,
+          "rho": 0.040235581884964726,
+          "sentence_ci": [
+            -0.007798274454675803,
+            0.09023525345825648
+          ],
+          "within_sentence_median_rho": 0.0,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.6028439108326538,
+          "rho": 0.6444947945800558,
+          "sentence_ci": [
+            0.6116342188709469,
+            0.6744964496036243
+          ],
+          "within_sentence_median_rho": 0.6,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5692321058010601,
+          "rho": 0.6032317998173141,
+          "sentence_ci": [
+            0.5679800309212639,
+            0.639312737879677
+          ],
+          "within_sentence_median_rho": 0.5714312110592608,
+          "words": 1546
+        }
+      ],
+      "GPTNeo_125M": [
+        {
+          "demeaned_rho": 0.01864753058386265,
+          "rho": 0.036151139357608504,
+          "sentence_ci": [
+            -0.013135909107033,
+            0.0849413798237607
+          ],
+          "within_sentence_median_rho": -0.028571428571428546,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5711618092356701,
+          "rho": 0.6116652938873075,
+          "sentence_ci": [
+            0.577085518193409,
+            0.6443897408920188
+          ],
+          "within_sentence_median_rho": 0.5774109120414488,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5511997446202092,
+          "rho": 0.5802588761837509,
+          "sentence_ci": [
+            0.5447445732419927,
+            0.6154073642154421
+          ],
+          "within_sentence_median_rho": 0.5545454545454545,
+          "words": 1546
+        }
+      ],
+      "GPTNeo_2.7B": [
+        {
+          "demeaned_rho": 0.016547782635097003,
+          "rho": 0.03248474467415684,
+          "sentence_ci": [
+            -0.016211418621710837,
+            0.08213920967439971
+          ],
+          "within_sentence_median_rho": 0.0,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.6036698547417955,
+          "rho": 0.6457800612592656,
+          "sentence_ci": [
+            0.6124461401816235,
+            0.6766239338834159
+          ],
+          "within_sentence_median_rho": 0.6,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.5676596541548324,
+          "rho": 0.6006158371059592,
+          "sentence_ci": [
+            0.5643432248550163,
+            0.6372352945792861
+          ],
+          "within_sentence_median_rho": 0.5664335664335663,
+          "words": 1546
+        }
+      ],
+      "context": [
+        {
+          "demeaned_rho": 0.3478765276383788,
+          "rho": 0.3217637467778459,
+          "sentence_ci": [
+            0.2828316098087243,
+            0.36459701152974
+          ],
+          "within_sentence_median_rho": 0.35454545454545455,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.46766167154817684,
+          "rho": 0.4376695547834268,
+          "sentence_ci": [
+            0.3952078896049306,
+            0.47701188707587017
+          ],
+          "within_sentence_median_rho": 0.5151515151515151,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.3914237973228414,
+          "rho": 0.320814717820476,
+          "sentence_ci": [
+            0.2747424191233868,
+            0.3657939354887295
+          ],
+          "within_sentence_median_rho": 0.4,
+          "words": 1546
+        }
+      ],
+      "context_early_control": [
+        {
+          "demeaned_rho": -0.027771448660639318,
+          "rho": -0.045551855171027354,
+          "sentence_ci": [
+            -0.09394191191604188,
+            -0.0013775915087127647
+          ],
+          "within_sentence_median_rho": -0.018181818181818216,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.019791782814014048,
+          "rho": -0.03472691946156451,
+          "sentence_ci": [
+            -0.08942404461154743,
+            0.015094129038568865
+          ],
+          "within_sentence_median_rho": -0.018181818181818188,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.06508298512122357,
+          "rho": -0.11529233237901676,
+          "sentence_ci": [
+            -0.17062408879576946,
+            -0.06417169837592379
+          ],
+          "within_sentence_median_rho": -0.05454545454545452,
+          "words": 1546
+        }
+      ],
+      "pending_readout": [
+        {
+          "demeaned_rho": -0.16356928800367146,
+          "rho": -0.10401875943891094,
+          "sentence_ci": [
+            -0.14322455497206704,
+            -0.06504518670324158
+          ],
+          "within_sentence_median_rho": -0.23333333333333328,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.17528738720835424,
+          "rho": -0.14967852705092388,
+          "sentence_ci": [
+            -0.19762542091204285,
+            -0.10072466267157526
+          ],
+          "within_sentence_median_rho": -0.3142857142857142,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.03284262694202413,
+          "rho": 0.1089418608974433,
+          "sentence_ci": [
+            0.05209232525134429,
+            0.165582616567183
+          ],
+          "within_sentence_median_rho": -0.11389551189455129,
+          "words": 1546
+        }
+      ],
+      "qwen_surface": [
+        {
+          "demeaned_rho": 0.33871162250554404,
+          "rho": 0.32439125083822967,
+          "sentence_ci": [
+            0.2858294113847419,
+            0.3632699768329663
+          ],
+          "within_sentence_median_rho": 0.32142857142857145,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.49402944940143534,
+          "rho": 0.5096396786057082,
+          "sentence_ci": [
+            0.47459997386758657,
+            0.5456256770862598
+          ],
+          "within_sentence_median_rho": 0.5,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.3453918386179323,
+          "rho": 0.3515218525141941,
+          "sentence_ci": [
+            0.3059523021100169,
+            0.399973399481812
+          ],
+          "within_sentence_median_rho": 0.39180056091725646,
+          "words": 1546
+        }
+      ],
+      "qwen_surface_early_control": [
+        {
+          "demeaned_rho": 0.08699489982970203,
+          "rho": 0.07603722611301296,
+          "sentence_ci": [
+            0.03070776699546295,
+            0.11985510694479058
+          ],
+          "within_sentence_median_rho": 0.06993006993006992,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.21040274664849237,
+          "rho": -0.21976765208685178,
+          "sentence_ci": [
+            -0.2635552288997391,
+            -0.176507406904856
+          ],
+          "within_sentence_median_rho": -0.23636363636363633,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.2333266273765467,
+          "rho": -0.23532314589189546,
+          "sentence_ci": [
+            -0.28292496737940037,
+            -0.18957586644431126
+          ],
+          "within_sentence_median_rho": -0.23809523809523808,
+          "words": 1546
+        }
+      ],
+      "qwen_surprisal": [
+        {
+          "demeaned_rho": 0.2578188659041367,
+          "rho": 0.25134232730808503,
+          "sentence_ci": [
+            0.20783352041499853,
+            0.29947477466853706
+          ],
+          "within_sentence_median_rho": 0.25,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7788053599161203,
+          "rho": 0.7859919331926076,
+          "sentence_ci": [
+            0.7629500092001137,
+            0.8079536447492391
+          ],
+          "within_sentence_median_rho": 0.7740817475138726,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.7199542653168008,
+          "rho": 0.7236218248692331,
+          "sentence_ci": [
+            0.6970524605761313,
+            0.7511849504720863
+          ],
+          "within_sentence_median_rho": 0.7500000000000001,
+          "words": 1546
+        }
+      ],
+      "surface": [
+        {
+          "demeaned_rho": 0.24024218202817468,
+          "rho": 0.23473804839938026,
+          "sentence_ci": [
+            0.19390810426898533,
+            0.27534356423636297
+          ],
+          "within_sentence_median_rho": 0.23076923076923075,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.25786425953969355,
+          "rho": 0.2788085942871454,
+          "sentence_ci": [
+            0.23876909917221453,
+            0.32038899792380143
+          ],
+          "within_sentence_median_rho": 0.3233590907165799,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": 0.07702824725731326,
+          "rho": 0.07745996266327441,
+          "sentence_ci": [
+            0.02545619894255,
+            0.1341003153004588
+          ],
+          "within_sentence_median_rho": 0.14285714285714282,
+          "words": 1546
+        }
+      ],
+      "surface_early_control": [
+        {
+          "demeaned_rho": 0.11476553391976702,
+          "rho": 0.10186350333305351,
+          "sentence_ci": [
+            0.05623651479359682,
+            0.14584157351841523
+          ],
+          "within_sentence_median_rho": 0.09523809523809523,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.14853473736394207,
+          "rho": -0.15817041678060573,
+          "sentence_ci": [
+            -0.20252661622749146,
+            -0.11390145872661153
+          ],
+          "within_sentence_median_rho": -0.1422606594884729,
+          "words": 1546
+        },
+        {
+          "demeaned_rho": -0.16954744943243608,
+          "rho": -0.1689712903052928,
+          "sentence_ci": [
+            -0.21672329558932332,
+            -0.12079326070477901
+          ],
+          "within_sentence_median_rho": -0.21212121212121215,
+          "words": 1546
+        }
+      ]
+    },
+    "spanish_coefficients": {
+      "context": {
+        "beta": [
+          [
+            -0.4505419565970034,
+            -0.5411736866788963
+          ],
+          [
+            -0.07734605123186065,
+            0.024530608035345538
+          ],
+          [
+            -0.35535119616950983,
+            -0.1350079132926205
+          ],
+          [
+            0.32669717345729293,
+            0.398889214945925
+          ],
+          [
+            -0.833642223025018,
+            -0.11696252991682642
+          ],
+          [
+            0.05335927898152818,
+            -0.004496397061642749
+          ],
+          [
+            -2.4594716568505826,
+            -1.4016597790391323
+          ],
+          [
+            2.8003744591045567,
+            -1.1954953638607508
+          ],
+          [
+            -0.5101239063381824,
+            1.1270721858252575
+          ],
+          [
+            0.7120304293363224,
+            1.5634161131443747
+          ],
+          [
+            -0.03081511509221736,
+            -0.02015251115722868
+          ],
+          [
+            0.04208051165194511,
+            0.1021506542615636
+          ],
+          [
+            -0.04708712810425174,
+            -0.0787607595723289
+          ],
+          [
+            -0.1526550882959396,
+            -0.06800087473001133
+          ],
+          [
+            0.14508706798822668,
+            -0.03019900847051719
+          ],
+          [
+            -0.05859748059774225,
+            0.05490786900492043
+          ],
+          [
+            0.10041508765692513,
+            -0.057435810321373765
+          ],
+          [
+            0.07010869709604095,
+            0.012789496440578788
+          ],
+          [
+            -0.03989817209585998,
+            0.02414622813783339
+          ],
+          [
+            0.057972209466517294,
+            0.10387985402992124
+          ],
+          [
+            0.06836377827800644,
+            0.029144913460724012
+          ],
+          [
+            -0.12170736801837895,
+            -0.027488878260189982
+          ],
+          [
+            -0.02495330833202778,
+            0.08365446965299447
+          ],
+          [
+            0.010310053575552638,
+            -0.056365675829690064
+          ],
+          [
+            0.054174390537193404,
+            0.016863509619950756
+          ],
+          [
+            -0.011209019319653301,
+            0.019112167574479772
+          ],
+          [
+            0.04718333306746276,
+            0.15222228879518387
+          ],
+          [
+            -0.04648655685231964,
+            0.021052130902559512
+          ],
+          [
+            0.043905359911243405,
+            0.003945426118766688
+          ],
+          [
+            -0.03304344179485667,
+            -0.022674196872274878
+          ],
+          [
+            -0.08201731091606139,
+            -0.058024810235945544
+          ],
+          [
+            0.000625327576373823,
+            -0.014531986609914239
+          ],
+          [
+            0.013300593428093477,
+            0.046345182749217055
+          ],
+          [
+            0.12821484503703864,
+            0.08355036706394407
+          ],
+          [
+            -0.01385699936995178,
+            -0.07159150174702562
+          ],
+          [
+            -0.045532486336600723,
+            0.0003236280002613665
+          ],
+          [
+            0.0959558738607743,
+            0.043358630235281984
+          ],
+          [
+            -0.14157121994965488,
+            -0.014245583714647856
+          ],
+          [
+            0.018744555281058103,
+            0.01937892619741076
+          ],
+          [
+            0.026680057381424902,
+            -0.08453161254720097
+          ],
+          [
+            0.027980925023021772,
+            0.010113453502083073
+          ],
+          [
+            -0.008822052070079632,
+            0.004252305571571479
+          ],
+          [
+            0.028918150087298453,
+            -0.0031137787651624787
+          ],
+          [
+            -0.032282968953117615,
+            0.03951752844564306
+          ],
+          [
+            0.07571309223629615,
+            0.03904264788332053
+          ],
+          [
+            0.021207932199044648,
+            0.01697340649466998
+          ],
+          [
+            0.07548603182166039,
+            -0.006200718191473664
+          ],
+          [
+            -0.007411701024094089,
+            0.047153075198475475
+          ],
+          [
+            -0.04513868185208558,
+            0.0028975863296990902
+          ],
+          [
+            0.06510998961252706,
+            0.007104139183062461
+          ],
+          [
+            -0.032668253770021714,
+            -0.026390222528169954
+          ],
+          [
+            -0.022790542768894268,
+            -0.025117887653403368
+          ],
+          [
+            -0.01766289333927749,
+            0.01942078040961263
+          ],
+          [
+            -0.02190140047138504,
+            -0.08570555065008753
+          ],
+          [
+            -0.08962133947427159,
+            -0.1389572342375274
+          ],
+          [
+            -0.023424701434764654,
+            0.026561994474448593
+          ],
+          [
+            -0.08957519480064849,
+            0.058902165085509564
+          ],
+          [
+            0.11837665655587247,
+            0.058865783668146675
+          ],
+          [
+            0.09414636274502691,
+            0.10872705559200004
+          ],
+          [
+            0.0408864222461286,
+            0.0020113386154894
+          ],
+          [
+            -0.02299225016781245,
+            0.01932425980260988
+          ],
+          [
+            -0.03769341722653536,
+            -0.08324511166399909
+          ],
+          [
+            0.024631169059614752,
+            0.01520842003466705
+          ],
+          [
+            -0.04314210736629095,
+            0.013192753998137819
+          ],
+          [
+            0.035258618000308925,
+            -0.05502304968946538
+          ],
+          [
+            -0.13007982320455808,
+            -0.07170038659000834
+          ],
+          [
+            -0.05532335749146556,
+            -0.10526904993294751
+          ],
+          [
+            -0.053419312871467034,
+            -0.020112332186161045
+          ],
+          [
+            -0.019491788546058233,
+            -0.023218634712318536
+          ],
+          [
+            0.09214155501409166,
+            0.03272400412937801
+          ],
+          [
+            -0.0387522660064031,
+            -0.00274124202184373
+          ],
+          [
+            0.06850606946381299,
+            0.034658332456866066
+          ],
+          [
+            -0.03858606721070409,
+            0.007633526609462503
+          ],
+          [
+            -0.05585151657227565,
+            0.04772313603357223
+          ],
+          [
+            0.02553299351381598,
+            0.015413041327296368
+          ],
+          [
+            -0.03722105561292078,
+            -0.03524196824072005
+          ],
+          [
+            0.009075767871670647,
+            0.0033113223733618005
+          ],
+          [
+            -0.04419239944164839,
+            0.015302864501121694
+          ],
+          [
+            -0.04452374590378758,
+            -0.024372105000611204
+          ],
+          [
+            -0.06590259211812602,
+            -0.008423325665624455
+          ],
+          [
+            0.0016988915929710125,
+            -0.13745171246811477
+          ],
+          [
+            0.03203007317401899,
+            -0.0037633779591477734
+          ],
+          [
+            0.02694834203248879,
+            -0.019293404030147815
+          ],
+          [
+            -0.038258767903033515,
+            -0.07530600308192607
+          ],
+          [
+            0.018675444134166882,
+            0.08568295528140263
+          ],
+          [
+            -0.0516247676657035,
+            -0.03557890015011315
+          ],
+          [
+            0.08461883397063848,
+            0.049958288747363695
+          ],
+          [
+            0.028407997376398958,
+            -0.030442731853901065
+          ],
+          [
+            -0.16576756210931498,
+            -0.05528433126056989
+          ],
+          [
+            0.008489547953463766,
+            0.024123356095520986
+          ],
+          [
+            0.10749458820118861,
+            -0.039921068824710484
+          ],
+          [
+            -0.09744716239361573,
+            -0.023515670337300742
+          ],
+          [
+            -0.1183712632728835,
+            -0.12508983461913606
+          ],
+          [
+            0.13871876223838936,
+            0.07399945508799533
+          ],
+          [
+            0.05381715125298972,
+            0.06000203511362322
+          ],
+          [
+            -0.01449275929274255,
+            0.019893177856414333
+          ],
+          [
+            0.022793943603050357,
+            -0.021954276369206677
+          ],
+          [
+            -0.060703220364949684,
+            -0.014925082123871773
+          ],
+          [
+            0.023105244733214837,
+            0.01909993343716444
+          ],
+          [
+            0.012309952356039261,
+            0.01662445062898701
+          ],
+          [
+            -0.004297551763153953,
+            0.016877126614154365
+          ],
+          [
+            -0.10485208100544989,
+            0.022550112532080464
+          ],
+          [
+            0.015779549360247013,
+            0.057600422491451087
+          ],
+          [
+            -0.07646688644521213,
+            0.017056007184481366
+          ],
+          [
+            -0.12561114347190638,
+            -0.04568188058044716
+          ],
+          [
+            -0.10005493381046794,
+            -0.03594215595902199
+          ],
+          [
+            -0.021000008963928042,
+            0.040027200333667697
+          ],
+          [
+            -0.08132412680207765,
+            -0.01246879448899096
+          ],
+          [
+            0.07630358815116772,
+            0.052627438857138865
+          ],
+          [
+            0.005084326695953315,
+            0.020543091694278228
+          ],
+          [
+            -0.11685477683961316,
+            -0.03726795321782491
+          ],
+          [
+            0.050196066321562545,
+            -0.06331229679449477
+          ],
+          [
+            -0.18418668642742372,
+            -0.047571450710301236
+          ],
+          [
+            -0.057800351734577766,
+            -0.01242375115673542
+          ],
+          [
+            0.018247273471109056,
+            -0.020167415127592292
+          ],
+          [
+            -0.07132296217535167,
+            -0.034731212002081624
+          ],
+          [
+            -0.07894820300329393,
+            -0.011282129501173193
+          ],
+          [
+            -0.08891587837577919,
+            -0.02793660139813076
+          ],
+          [
+            0.00626056444228143,
+            -0.04182778467847707
+          ],
+          [
+            -0.004435636614123049,
+            -0.008684252472887077
+          ],
+          [
+            -0.10734293321683362,
+            -0.010065416462820208
+          ],
+          [
+            0.031544935948853464,
+            0.05701908068503194
+          ],
+          [
+            -0.005175209749990064,
+            0.024530831213020146
+          ],
+          [
+            0.03369188209309595,
+            -0.005129625819696493
+          ],
+          [
+            -0.09154644142846535,
+            -0.08695044544496308
+          ],
+          [
+            -0.09404301926317625,
+            0.030873390148317824
+          ],
+          [
+            0.18175133528680834,
+            0.07049315459848014
+          ],
+          [
+            -0.024024603711067925,
+            0.013936762280852567
+          ],
+          [
+            -0.007117609781771155,
+            -0.03419655692989822
+          ],
+          [
+            -0.13666557239913324,
+            -0.05246654002984009
+          ],
+          [
+            0.010364992728992205,
+            0.026979198720056982
+          ],
+          [
+            -0.02978683934981,
+            -0.051357197559237164
+          ],
+          [
+            -0.11629023075048153,
+            -0.07656855969815718
+          ],
+          [
+            0.029137549770313922,
+            -0.062174433300881286
+          ],
+          [
+            0.06953879137342152,
+            0.054143378234507364
+          ],
+          [
+            -0.01672267296175933,
+            -0.01899242503742078
+          ],
+          [
+            0.036897767770681586,
+            0.0095464791876441
+          ],
+          [
+            -0.08870932091702556,
+            -0.0144737351188089
+          ],
+          [
+            -0.1130617514151886,
+            -0.07256921005881578
+          ],
+          [
+            -0.0223255978804229,
+            -0.014434341158912279
+          ],
+          [
+            0.036410709538040924,
+            0.04833703599064534
+          ],
+          [
+            -0.03813642373368065,
+            0.034708549906307146
+          ],
+          [
+            0.138268030787632,
+            0.06265069807465701
+          ],
+          [
+            0.07080773613980183,
+            0.019806584707453882
+          ],
+          [
+            -0.060581773570308646,
+            -0.12194580629047957
+          ],
+          [
+            0.04631652279378008,
+            0.013052343578181204
+          ],
+          [
+            -0.012013770209722864,
+            -0.008299720678911096
+          ],
+          [
+            -0.10231069921154472,
+            -0.011459203542363515
+          ],
+          [
+            0.07848581902516341,
+            0.09710992519948423
+          ],
+          [
+            0.0823872328425846,
+            0.05580004374808204
+          ],
+          [
+            -0.07320175047833677,
+            -0.015483501676004336
+          ],
+          [
+            -0.03894092602678141,
+            -0.0090764941656906
+          ],
+          [
+            0.15948775798599313,
+            -0.0193011048443861
+          ],
+          [
+            0.15210924908283474,
+            0.0843782007304021
+          ],
+          [
+            0.025906209661149707,
+            -0.04613313963289313
+          ],
+          [
+            0.005281165720542139,
+            -0.0405735296495923
+          ],
+          [
+            -0.004726661053887054,
+            0.0015493215096152257
+          ],
+          [
+            0.09649319046302979,
+            0.12081216068473867
+          ],
+          [
+            0.061373780102005164,
+            0.05302601196706539
+          ],
+          [
+            -0.008974335767724703,
+            -0.013485619853968485
+          ],
+          [
+            0.03536858970548892,
+            0.11581351604425523
+          ],
+          [
+            0.1365732764255417,
+            0.03771946673728679
+          ],
+          [
+            0.09936773541778478,
+            0.06978582813818102
+          ],
+          [
+            -0.004982823740022067,
+            -0.0636831329735867
+          ],
+          [
+            -0.07367017106020371,
+            0.010447035227343063
+          ],
+          [
+            -0.024626664633832576,
+            -0.03656793618342299
+          ],
+          [
+            -0.00249787281139005,
+            -0.008162333110479304
+          ],
+          [
+            -0.13098368424879375,
+            -0.047050010440329804
+          ],
+          [
+            -0.08510751780564617,
+            0.0027132715638406835
+          ],
+          [
+            -0.005283435212740744,
+            -0.06549967851518038
+          ],
+          [
+            -0.00885980143412141,
+            0.032590804460090446
+          ],
+          [
+            -0.11542217658182247,
+            -0.07982679616217804
+          ],
+          [
+            0.04194911564100836,
+            -0.009838810092811453
+          ],
+          [
+            -0.05001780272577535,
+            -0.04496255194198933
+          ],
+          [
+            0.05736198556435071,
+            0.020776052906815664
+          ],
+          [
+            0.017775398268164322,
+            -0.03846071511967309
+          ],
+          [
+            0.025594839637331123,
+            0.13688678872640364
+          ],
+          [
+            -0.05740555882803092,
+            0.04688357529744003
+          ],
+          [
+            -0.026167825894761167,
+            -0.01461114398398492
+          ],
+          [
+            0.060499944564142295,
+            0.0009422249679870979
+          ],
+          [
+            0.1315245067903632,
+            0.02577524553166888
+          ],
+          [
+            0.06331244276857556,
+            0.10829638340505417
+          ],
+          [
+            -0.058713141820441385,
+            -0.05652089056564533
+          ],
+          [
+            0.08906694989705574,
+            0.06154430681034014
+          ],
+          [
+            0.04922245440935012,
+            0.040560818206932706
+          ],
+          [
+            0.02898792493055607,
+            0.036536350327969556
+          ],
+          [
+            -0.0832588806891158,
+            -0.000915539556877011
+          ],
+          [
+            0.1068031672787625,
+            0.07920391713051837
+          ],
+          [
+            0.06313390255084265,
+            0.05359612329706015
+          ],
+          [
+            -0.031107217287286954,
+            -0.03962644673238709
+          ],
+          [
+            0.03188918383540345,
+            -0.025851969660671027
+          ],
+          [
+            0.005379333459555498,
+            -0.02315255060653588
+          ],
+          [
+            -0.014220438148708742,
+            0.05665220903537621
+          ],
+          [
+            0.09115190344216123,
+            0.06706694600944012
+          ],
+          [
+            -0.0338113236460761,
+            0.02705495682382133
+          ],
+          [
+            -0.08418851912055204,
+            -0.06379972946634564
+          ],
+          [
+            -0.06523979549396407,
+            -0.012146576053909139
+          ],
+          [
+            -0.04044751471243417,
+            -0.06562067169917213
+          ],
+          [
+            -0.08425364251707654,
+            -0.010715211215260895
+          ],
+          [
+            0.043914106072532696,
+            0.03328950998933543
+          ],
+          [
+            0.033298522692306994,
+            0.06193798251997571
+          ],
+          [
+            0.03677427798546164,
+            -0.009296682981472472
+          ],
+          [
+            0.004067262529354153,
+            -0.04420242311223176
+          ]
+        ],
+        "bias": [
+          1.5336605475528131,
+          0.4307611598650758
+        ],
+        "examples": 8640,
+        "rank": null,
+        "stationarity": 1.8041124150158794e-16
+      },
+      "qwen_surface": {
+        "beta": [
+          [
+            -0.25565922907934135,
+            -0.5321969899465548
+          ],
+          [
+            0.034716667563057496,
+            0.06679161932121372
+          ],
+          [
+            -0.3827641687821707,
+            -0.15960626373226272
+          ],
+          [
+            0.512884655268239,
+            0.6329599063825744
+          ],
+          [
+            -1.461060555403469,
+            -0.1264482335462355
+          ],
+          [
+            0.06016540840032874,
+            -0.008571012492129774
+          ]
+        ],
+        "bias": [
+          1.1913977859695457,
+          0.08359740235224389
+        ],
+        "examples": 8640,
+        "rank": null,
+        "stationarity": 2.7755575615628914e-17
+      },
+      "surface": {
+        "beta": [
+          [
+            -0.10513518470955818,
+            -0.553640266057533
+          ],
+          [
+            0.6332405486870574,
+            -0.018472584784593196
+          ],
+          [
+            -0.509167795240857,
+            -0.14159912158475127
+          ],
+          [
+            0.6192654830880558,
+            0.6178051616811139
+          ],
+          [
+            -1.4766959359337586,
+            -0.12422085662969025
+          ]
+        ],
+        "bias": [
+          1.0727275124229383,
+          0.1005028705283253
+        ],
+        "examples": 8640,
+        "rank": null,
+        "stationarity": 2.7755575615628914e-17
+      }
+    }
+  },
+  "outcomes": [
+    "N400_negativity",
+    "cloze_surprisal",
+    "rated_unpredictability"
+  ],
+  "program": "39b9e05618d75be63bcffe4516d10f6a8f4950baad4ae971279560f883757070",
+  "registered_geometry": "6473d43bf6a822a72d5570620f24a4a42c001c6b541dc9b296665b4dfc0e5173",
+  "source": "5ed2aa4afeb55bc63b88e908bf6bedba1f674b6bcb61d746660af29e17155a6c",
+  "spanish_fit_word_cells": 8640,
+  "spanish_trials_used": 122036
+}

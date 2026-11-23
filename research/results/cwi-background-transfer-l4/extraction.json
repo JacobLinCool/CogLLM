@@ -1,0 +1,39 @@
+{
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "gpu": "NVIDIA L4",
+  "cuda": "13.0",
+  "torch": "2.14.1+cu130",
+  "dtype": "float32",
+  "input_sha256": "73f9a418f8afa1e94cc43991bb8cec2a0d7a14dfd5fee48a324ef9b2942ac22e",
+  "input_texts": 571,
+  "encoded_texts": 571,
+  "unique_certified_stops": 10819,
+  "excluded_stops": [
+    {
+      "id": "wikipedia-086-04",
+      "stop": 64,
+      "reason": "no_token_ends_at_stop"
+    },
+    {
+      "id": "wikipedia-093-05",
+      "stop": 26,
+      "reason": "no_token_ends_at_stop"
+    },
+    {
+      "id": "wikipedia-094-03",
+      "stop": 237,
+      "reason": "no_token_ends_at_stop"
+    }
+  ],
+  "tokens": 29847,
+  "forward_and_readout_s": 13.816576414999417,
+  "throughput_tokens_s": 2160.2312398893396,
+  "load_tokenize_setup_s": 6.726172114000292,
+  "approx_total_s": 23.6311855820004,
+  "batches": 72,
+  "max_batch_tokens": null,
+  "segment_means": false,
+  "peak_gpu_reserved_bytes": 8390705152
+}

@@ -1,0 +1,259 @@
+{
+  "gap_response_sequence_available": false,
+  "gap_response_timestamps_available": false,
+  "git_revision": "10260b8e2dd20aa93b5f6fdcdb83ba2bb8154ceb",
+  "materials": {
+    "body_comparisons": {
+      "cdgp-m vs ncloze-m": {
+        "exact_common_span_count_in_identical_bodies": 231,
+        "exact_restored_body_count": 12,
+        "files_with_all_span_coordinates_equal": 12,
+        "same_normalized_restored_body_count": 12
+      },
+      "cdgp-m vs t5multi-m": {
+        "exact_common_span_count_in_identical_bodies": 231,
+        "exact_restored_body_count": 12,
+        "files_with_all_span_coordinates_equal": 12,
+        "same_normalized_restored_body_count": 12
+      },
+      "cloth vs cdgp-m": {
+        "exact_common_span_count_in_identical_bodies": 13,
+        "exact_restored_body_count": 10,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "cloth vs ncloze": {
+        "exact_common_span_count_in_identical_bodies": 30,
+        "exact_restored_body_count": 10,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "cloth vs ncloze-m": {
+        "exact_common_span_count_in_identical_bodies": 13,
+        "exact_restored_body_count": 10,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "cloth vs t5multi-m": {
+        "exact_common_span_count_in_identical_bodies": 13,
+        "exact_restored_body_count": 10,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "ncloze vs cdgp-m": {
+        "exact_common_span_count_in_identical_bodies": 11,
+        "exact_restored_body_count": 12,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "ncloze vs ncloze-m": {
+        "exact_common_span_count_in_identical_bodies": 11,
+        "exact_restored_body_count": 12,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "ncloze vs t5multi-m": {
+        "exact_common_span_count_in_identical_bodies": 11,
+        "exact_restored_body_count": 12,
+        "files_with_all_span_coordinates_equal": 0,
+        "same_normalized_restored_body_count": 12
+      },
+      "ncloze-m vs t5multi-m": {
+        "exact_common_span_count_in_identical_bodies": 231,
+        "exact_restored_body_count": 12,
+        "files_with_all_span_coordinates_equal": 12,
+        "same_normalized_restored_body_count": 12
+      }
+    },
+    "body_normalization_for_comparison_only": "NFKC then Unicode casefold and whitespace collapse",
+    "coverage": 12,
+    "material_html_tags": {
+      "<br/>": 36
+    },
+    "offsets": "Zero-based half-open Unicode ranges in released HTML-bearing source, reconstructed by filling each underscore with its own keyed choice",
+    "per_condition": {
+      "cdgp-m": {
+        "correct_span_has_whitespace": 0,
+        "keyed_correct_text_has_duplicate_choice": 87,
+        "option_rows_with_duplicate_text": 87,
+        "positions": 231
+      },
+      "cloth": {
+        "correct_span_has_whitespace": 0,
+        "keyed_correct_text_has_duplicate_choice": 0,
+        "option_rows_with_duplicate_text": 0,
+        "positions": 231
+      },
+      "ncloze": {
+        "correct_span_has_whitespace": 0,
+        "keyed_correct_text_has_duplicate_choice": 0,
+        "option_rows_with_duplicate_text": 0,
+        "positions": 231
+      },
+      "ncloze-m": {
+        "correct_span_has_whitespace": 0,
+        "keyed_correct_text_has_duplicate_choice": 0,
+        "option_rows_with_duplicate_text": 0,
+        "positions": 231
+      },
+      "t5multi-m": {
+        "correct_span_has_whitespace": 0,
+        "keyed_correct_text_has_duplicate_choice": 20,
+        "option_rows_with_duplicate_text": 66,
+        "positions": 231
+      }
+    },
+    "presentation_groups": {
+      "high_single_passage_groups": 6,
+      "middle_template_fields_per_group_with_exactly_one_double_br_separator": 3,
+      "middle_two_passage_groups": 6,
+      "original_passage_count": 18
+    },
+    "restored_char_length_range": [
+      1443,
+      2302
+    ],
+    "shared_mechanical_gap_sets": {
+      "conditions": [
+        "cdgp-m",
+        "ncloze-m",
+        "t5multi-m"
+      ],
+      "covered_groups": 12,
+      "exact_shared_gap_count": 231,
+      "exact_shared_gap_count_after_removing_index_9": 219,
+      "response_count": 1159,
+      "response_count_by_condition": {
+        "cdgp-m": 373,
+        "ncloze-m": 387,
+        "t5multi-m": 399
+      },
+      "unique_choices_all_conditions_after_removing_index_9": 92
+    },
+    "variants": 1155
+  },
+  "observed_endpoint": "One terminal choice per prompted gap with surrounding text available",
+  "paper": "https://aclanthology.org/2024.naacl-long.220/",
+  "repository": "https://github.com/ondovb/nCloze",
+  "rights": {
+    "repository_notice": "MIT for software and associated documentation",
+    "separate_cloth_excerpt_and_mturk_response_licenses_found": false
+  },
+  "schema_version": 1,
+  "source_files": {
+    "Data/exp-data.json": {
+      "bytes": 112419,
+      "sha256": "bc1c13bb489cf30b2ecfe031bbb9d665111c7c7be4a26fade064950541aacfb8",
+      "url": "https://raw.githubusercontent.com/ondovb/nCloze/10260b8e2dd20aa93b5f6fdcdb83ba2bb8154ceb/Data/exp-data.json"
+    },
+    "Data/parseResults.py": {
+      "bytes": 5496,
+      "sha256": "fe6455be8d8f3e7ac376b6214cea344255b848b2df58826f68559dfe8adc9adc",
+      "url": "https://raw.githubusercontent.com/ondovb/nCloze/10260b8e2dd20aa93b5f6fdcdb83ba2bb8154ceb/Data/parseResults.py"
+    },
+    "Data/results.json": {
+      "bytes": 338094,
+      "sha256": "937ac08ea6e3482fb5fba2ac64c1efb9a3884b5151064648875cafbf21f02090",
+      "url": "https://raw.githubusercontent.com/ondovb/nCloze/10260b8e2dd20aa93b5f6fdcdb83ba2bb8154ceb/Data/results.json"
+    },
+    "LICENSE": {
+      "bytes": 1068,
+      "sha256": "cff987b8a2d457fb5d17072ba0e3f1dcb269baf2f21c7a828b92980648dbb981",
+      "url": "https://raw.githubusercontent.com/ondovb/nCloze/10260b8e2dd20aa93b5f6fdcdb83ba2bb8154ceb/LICENSE"
+    },
+    "README.md": {
+      "bytes": 1594,
+      "sha256": "e953710524da58cf80b43fdf8628c3f2d29f25e71c4276ef5404a52437911423",
+      "url": "https://raw.githubusercontent.com/ondovb/nCloze/10260b8e2dd20aa93b5f6fdcdb83ba2bb8154ceb/README.md"
+    }
+  },
+  "submission_coverage": {
+    "assignment_status_counts": {
+      "Submitted": 200
+    },
+    "assignments": 200,
+    "assignments_by_serialized_operator_blocks": {
+      "cdgp-m → cloth": 23,
+      "cloth → cdgp-m": 24,
+      "cloth → ncloze": 23,
+      "cloth → ncloze-m": 28,
+      "cloth → t5multi-m": 25,
+      "ncloze → cloth": 26,
+      "ncloze-m → cloth": 25,
+      "t5multi-m → cloth": 26
+    },
+    "assignments_by_unordered_operator_pair": {
+      "cdgp-m + cloth": 47,
+      "cloth + ncloze": 49,
+      "cloth + ncloze-m": 53,
+      "cloth + t5multi-m": 51
+    },
+    "attention_assumption": "The public parser excludes zero-based gap index 9 in both article blocks",
+    "attention_index_9_by_condition": {
+      "cdgp-m": 47,
+      "cloth": 200,
+      "ncloze": 49,
+      "ncloze-m": 53,
+      "t5multi-m": 51
+    },
+    "distinct_bundles_per_assignment": 2,
+    "distinct_hit_count": 3,
+    "distinct_worker_count": 199,
+    "join_checks": {
+      "choices_outside_A_D": 0,
+      "missing_response_keys": 0,
+      "passage_blocks_not_serialized_in_gap_order": 400
+    },
+    "matched_item_variants": 1155,
+    "matched_noncheck_item_variants": 1095,
+    "observed_by_condition": {
+      "cdgp-m": 909,
+      "cloth": 3844,
+      "ncloze": 953,
+      "ncloze-m": 1023,
+      "t5multi-m": 978
+    },
+    "ordinary_response_count_per_item_variant_range": {
+      "cdgp-m": [
+        1,
+        8
+      ],
+      "cloth": [
+        11,
+        26
+      ],
+      "ncloze": [
+        2,
+        7
+      ],
+      "ncloze-m": [
+        1,
+        8
+      ],
+      "t5multi-m": [
+        2,
+        6
+      ]
+    },
+    "ordinary_responses_by_condition": {
+      "cdgp-m": 862,
+      "cloth": 3644,
+      "ncloze": 904,
+      "ncloze-m": 970,
+      "t5multi-m": 927
+    },
+    "ordinary_total_response_count": 7307,
+    "passage_condition_blocks": 400,
+    "population": "Raw submissions, no correctness-based exclusion or accuracy calculation",
+    "responses": 7707,
+    "same_bundle_teacher_experiment_assignments": 0,
+    "studied_passage_families": 12,
+    "unique_items_observed_by_condition": {
+      "cdgp-m": 231,
+      "cloth": 231,
+      "ncloze": 231,
+      "ncloze-m": 231,
+      "t5multi-m": 231
+    }
+  }
+}

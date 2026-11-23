@@ -179,3 +179,30 @@ cython_debug/
 #  refer to https://docs.cursor.com/context/ignore-files
 .cursorignore
 .cursorindexingignore
+
+# Machine-local browser sessions and macOS metadata.
+.DS_Store
+/.playwright-cli/
+
+# Run receipts containing private Colab account usage.
+/research/results/**/usage.jsonl
+/research/results/**/failed-start-usage.jsonl
+/research/results/reading-validation-identity-transfer/compute.json
+/research/results/same-question-l4/run-verification.json
+/research/results/clear-reading-ease-l4/run-verification.json
+/research/results/blott-format-transfer-l4/run-verification.json
+/research/results/blott-word-l4/run-verification.json
+/research/results/reading-validation-identity/run-verification.json
+/research/results/load-curve-l4/run-verification.json
+/research/results/expository-lora-l4/run-verification.json
+/research/results/gradio-word-cue-route-l4/run-verification.json
+/research/results/czech-garden-l4/run-verification.json
+/research/results/blott-update-transfer-l4/run-verification.json
+
+# Source-specific lexical tables and trial-level reader records.
+/research/results/reading-validation-local/serving/lexicon.json.gz
+/research/results/reading-validation-nns/vocabulary.json.gz
+/research/results/reading-validation-expectation-rereading/predictions.npz
+/research/results/stage3-zhan-landmarks/predictions.jsonl
+/research/results/stage4-zhan-weak/predictions.jsonl
+/research/results/reading-validation-transition-pointer/all-reader-actions.json

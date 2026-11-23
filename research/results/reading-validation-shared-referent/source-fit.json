@@ -1,0 +1,76 @@
+{
+  "analytic_gradient_check": [
+    4.4053006034716624e-11,
+    1.5782097850802757e-12
+  ],
+  "arms": [
+    "prior",
+    "private",
+    "shared"
+  ],
+  "development_click_articles": 12,
+  "development_twins": 120,
+  "forecast_sha256": "30d231196d0036b3b63baef7c0c126e2a50ee81ac5b5730bcbc762ccd13cefd2",
+  "native": {
+    "archive_sha256": "a9653d45d547b46448d0eb6c93e7648d9429211d9aaa9805145b90a1ca495b92",
+    "articles": 4024,
+    "candidate_prior_scores": 1928701,
+    "external_outcomes": 0,
+    "forwards": 4024,
+    "input_sha256": "b12b3dc1ee66b2fa25eadfbdefc3a690405378b3c4ace34abf969c9e4adc54ca",
+    "model": "Qwen3.5-2B",
+    "model_revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "protocol_sha256": "cf20f50dd8da30deabd0fe2aec8d02bfef1ed563b4c1afbc24bd08003040541a",
+    "seconds": 324.98906207500005,
+    "seed": 61392,
+    "sketch_dimensions": 128,
+    "source_weights_sha256": "9162700762a7574f45532bac88f8c018b1f2922118ac033bd1206a1edaecfaf5",
+    "tokens": 257832,
+    "words": 202556
+  },
+  "native_parity_max_logodds": 0.0003266186857622255,
+  "optimization": {
+    "private_click": {
+      "criterion": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "evaluations": 57,
+      "gradient": 3.8296748285700927e-07,
+      "initial": 0.6478596136803425,
+      "iterations": 52,
+      "objective": 0.5008141524249962
+    },
+    "private_revision": {
+      "criterion": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "evaluations": 240,
+      "gradient": 2.2369295770482273e-07,
+      "initial": 1.0158174527543657,
+      "iterations": 222,
+      "objective": 0.5773036688038293
+    },
+    "shared": {
+      "criterion": "CONVERGENCE: NORM OF PROJECTED GRADIENT <= PGTOL",
+      "evaluations": 249,
+      "gradient": 3.254678517789324e-07,
+      "initial": 0.596268333416883,
+      "iterations": 228,
+      "objective": 0.5297510619325824
+    }
+  },
+  "source_basis_words": 134340,
+  "source_development": {
+    "prior": {
+      "click_nll": 0.9312642624526326,
+      "twin_choice_loss": 0.9281867021016086
+    },
+    "private": {
+      "click_nll": 0.9259005432670939,
+      "twin_choice_loss": 1.090727117347253
+    },
+    "shared": {
+      "click_nll": 0.8873622678088946,
+      "twin_choice_loss": 0.8672569523179257
+    }
+  },
+  "training_click_articles": 230,
+  "training_twins": 539,
+  "weights_sha256": "6ed5b630c54e13b7d11cceb55519ba68d06e8a84aade83e186dcced6880862fd"
+}

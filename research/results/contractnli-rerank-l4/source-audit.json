@@ -1,0 +1,93 @@
+{
+  "archive": "https://stanfordnlp.github.io/contract-nli/resources/contract-nli.zip",
+  "coordinates": "half-open Unicode code-point indices into the official literal source text",
+  "counts": {
+    "candidate_spans": 1739,
+    "documents": 23,
+    "documents_by_type": {
+      "sec-html": 11,
+      "sec-text": 12
+    },
+    "evidence_spans_by_label": {
+      "Contradiction": 82,
+      "Entailment": 427,
+      "NotMentioned": 0
+    },
+    "hypotheses": 17,
+    "judgments": 391,
+    "labels": {
+      "Contradiction": 41,
+      "Entailment": 194,
+      "NotMentioned": 156
+    },
+    "whitespace_only_candidate_spans": 54,
+    "whitespace_only_evidence_memberships": 1
+  },
+  "evaluation_overlap_with_fitting": {
+    "character_shingles": "5 adjacent Unicode code points of NFKC, whitespace-collapsed, casefolded text",
+    "comparisons": 1081,
+    "identity_matches": {
+      "canonical_url": [],
+      "exact_text": [],
+      "normalized_text": [],
+      "official_id": [],
+      "raw_url": []
+    },
+    "metric": "intersection size divided by union size of the sets of shingles",
+    "most_similar_pairs": {
+      "character_jaccard": {
+        "character_jaccard": 0.7961834084283064,
+        "evaluation_official_id": 586,
+        "fitting_official_id": 565,
+        "word_jaccard": 0.7035398230088495
+      },
+      "word_jaccard": {
+        "character_jaccard": 0.7961834084283064,
+        "evaluation_official_id": 586,
+        "fitting_official_id": 565,
+        "word_jaccard": 0.7035398230088495
+      }
+    },
+    "strong_match_threshold": 0.8,
+    "strong_matches": [],
+    "word_shingles": "5 adjacent Unicode alphanumeric tokens of the same normalized text"
+  },
+  "evidence_indices": "complete unchanged zero-based lists into the corresponding layout spans",
+  "fitting_split": "test",
+  "gold_endpoint": "merged offline human claim judgment and selected evidence membership",
+  "grade_free_files": [
+    "stimuli.jsonl",
+    "layout.jsonl",
+    "queries.jsonl"
+  ],
+  "group_id": "SHA-256 of Unicode NFKC then whitespace-collapsed then casefolded source text",
+  "license": "CC BY 4.0",
+  "output_sha256": {
+    "gold.jsonl": "03996cf5eaee885d0775103695a9b056a60d4ff4427a1fae3b3dda95f013b22b",
+    "layout.jsonl": "25017ce51cc35c7a287d957ce077c9b0d11036180f379d72bdde1b8d24bb9269",
+    "queries.jsonl": "51fccfd832e8a82c3ec01f85b5639cfd9644e9ed1c0476a0827cedc0521c1e2f",
+    "stimuli.jsonl": "8a3be43a12c2d05de03257bf0ba3c0fe9707b9e6d820462ddb64a65a6b24eba8"
+  },
+  "paper": "https://doi.org/10.18653/v1/2021.findings-emnlp.164",
+  "retained_split": "dev",
+  "schema": 1,
+  "source_code_sha256": "f4fd06fc653bff88d92b14ab566c04df22bef366f8743934c2675881b6775a56",
+  "source_json": {
+    "dev.json": {
+      "edgar_documents": 23,
+      "sha256": "310af7d661d2ab50ee3700169cef524c75f39fb296bbf5a515c229eb0f42e68e",
+      "total_documents": 61
+    },
+    "test.json": {
+      "edgar_documents": 47,
+      "sha256": "460267b56052a2dc5aead98eb35eadef9e6734d5723d37b4a9790e410f812387",
+      "total_documents": 123
+    },
+    "train.json": {
+      "edgar_documents": 162,
+      "sha256": "dbceb356cd6203b35b27be94a5fa85e499a81c34c42c89ad53060b39f0257ba5",
+      "total_documents": 423
+    }
+  },
+  "stops": "all official candidate ends in order, excluding the final uncataloged newline"
+}

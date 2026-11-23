@@ -1,0 +1,163 @@
+{
+  "assay_status": "secondary diagnostic on previously inspected official GUM dev/test",
+  "fit_sha256": "6bc619f28f6f762f24d7dc1265a4f3fc7afb825321073c46bf55b10ef652e145",
+  "gum_assay_sha256": "8133afc38956d133364baea0a3b2a3d5022f73c8c217274fcdb5fd60a25ffe1c",
+  "peak_process_resident_bytes": 144670720,
+  "projection_sha256": "22b2e291ccc3e3bb76b1b1d50c06f0670663a2bd57b1149a55bc5f77a0943127",
+  "splits": {
+    "dev": {
+      "article_macro": {
+        "articles": 28,
+        "cases": 633,
+        "cosine_minus_surface": {
+          "mrr": {
+            "ci95": [
+              0.011682634301665324,
+              0.049876268249131994
+            ],
+            "delta": 0.029680580900650465
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.28749471067259025,
+              -0.12706521234395626
+            ],
+            "delta": -0.2085538857908433
+          },
+          "top1": {
+            "ci95": [
+              -0.021785105519480513,
+              0.023400071186334324
+            ],
+            "delta": -0.0006866279312280309
+          },
+          "top5": {
+            "ci95": [
+              0.03671020502825171,
+              0.10577257837867651
+            ],
+            "delta": 0.06897158408454199
+          }
+        },
+        "methods": {
+          "cosine": {
+            "mrr": 0.2996621672668386,
+            "nll_nats": 3.342246465096855,
+            "top1": 0.14132410886221652,
+            "top5": 0.4697244702867396
+          },
+          "distance": {
+            "mrr": 0.13723517011960143,
+            "nll_nats": 4.06232546887303,
+            "top1": 0.024179968944292973,
+            "top5": 0.22419422774654554
+          },
+          "surface": {
+            "mrr": 0.26998158636618813,
+            "nll_nats": 3.5508003508876977,
+            "top1": 0.1420107367934445,
+            "top5": 0.4007528862021977
+          }
+        }
+      },
+      "inventory": {
+        "annotations": 644,
+        "articles": 28,
+        "articles_extracted": 28,
+        "articles_with_annotations": 28,
+        "coverage": {
+          "annotations_with_inaccessible_gold": 44,
+          "candidate_words": 250585,
+          "exact_gold_spans": 2944,
+          "gold_spans": 3022,
+          "inaccessible_gold_spans": 78,
+          "uncertified_prior_words": 2020
+        },
+        "median_candidates": 376.0,
+        "outcomes": {
+          "no_exact_gold": 8,
+          "scored": 633,
+          "uncertified_trigger": 3
+        },
+        "sentence_outcomes": {}
+      }
+    },
+    "test": {
+      "article_macro": {
+        "articles": 30,
+        "cases": 515,
+        "cosine_minus_surface": {
+          "mrr": {
+            "ci95": [
+              0.000985883084211243,
+              0.042110818486970375
+            ],
+            "delta": 0.020845446091883005
+          },
+          "nll_nats": {
+            "ci95": [
+              -0.2868715148782291,
+              -0.14180605180232636
+            ],
+            "delta": -0.21391614919052487
+          },
+          "top1": {
+            "ci95": [
+              -0.02232631234275243,
+              0.026543359633021617
+            ],
+            "delta": 0.0008997777339717058
+          },
+          "top5": {
+            "ci95": [
+              0.01479393054187105,
+              0.09094474335097905
+            ],
+            "delta": 0.05147125042090716
+          }
+        },
+        "methods": {
+          "cosine": {
+            "mrr": 0.3386924131844999,
+            "nll_nats": 3.3109723228734254,
+            "top1": 0.19719010360032457,
+            "top5": 0.49811474000316197
+          },
+          "distance": {
+            "mrr": 0.16424287341976324,
+            "nll_nats": 4.050364779293451,
+            "top1": 0.032168588345637204,
+            "top5": 0.2801837941477521
+          },
+          "surface": {
+            "mrr": 0.31784696709261684,
+            "nll_nats": 3.524888472063949,
+            "top1": 0.19629032586635287,
+            "top5": 0.4466434895822547
+          }
+        }
+      },
+      "inventory": {
+        "annotations": 518,
+        "articles": 30,
+        "articles_extracted": 30,
+        "articles_with_annotations": 30,
+        "coverage": {
+          "annotations_with_inaccessible_gold": 31,
+          "candidate_words": 206326,
+          "exact_gold_spans": 2203,
+          "gold_spans": 2280,
+          "inaccessible_gold_spans": 77,
+          "uncertified_prior_words": 1263
+        },
+        "median_candidates": 360.0,
+        "outcomes": {
+          "no_exact_gold": 2,
+          "scored": 515,
+          "uncertified_trigger": 1
+        },
+        "sentence_outcomes": {}
+      }
+    }
+  }
+}

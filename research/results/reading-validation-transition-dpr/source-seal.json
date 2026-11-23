@@ -1,0 +1,74 @@
+{
+  "protocol_sha256": "ef8809e8c5391c0feefce61d8cd2f5a2cace788cb6fbb040a7eb56fb4469e678",
+  "input_sha256": "8efcfbb0884c36adf240503b9bd05fa27d1b236dcaaa67791d183f788a095ccc",
+  "external_key_sha256": "da3930f8d15ba8be61f906d83d4765c7b257a12b4768056f6dfca63dd6754217",
+  "university_sources": {
+    "train": "bc0a54b3ca1009d8d5b2ca5a221086aee2b0fc5cd03b22b9dfa9cdf44c629cec",
+    "test": "cf1cf025e1d59a5b363e6dcfbd5a13aae8a9830831ac16fd7f865aca7a1559d8"
+  },
+  "outcome_free_external_transfer_sha256": "d0439250a93b77e4d83da445ccfd2313e3f0c9038952b1e1219e441aec8999aa",
+  "audit": {
+    "train": {
+      "counts": {
+        "retained_pairs": 659,
+        "pronoun_not_supported": 1,
+        "nonunique_or_later_named_region": 1
+      },
+      "excluded": [
+        [
+          "train-288",
+          [
+            "pronoun_not_supported",
+            "pronoun_not_supported"
+          ]
+        ],
+        [
+          "train-618",
+          [
+            "nonunique_or_later_named_region",
+            "nonunique_or_later_named_region"
+          ]
+        ]
+      ],
+      "training_overlap": []
+    },
+    "test": {
+      "counts": {
+        "retained_pairs": 279,
+        "pronoun_not_supported": 2,
+        "nonunique_or_later_named_region": 1
+      },
+      "excluded": [
+        [
+          "test-137",
+          [
+            "pronoun_not_supported",
+            "pronoun_not_supported"
+          ]
+        ],
+        [
+          "test-186",
+          [
+            "nonunique_or_later_named_region",
+            "nonunique_or_later_named_region"
+          ]
+        ],
+        [
+          "test-278",
+          [
+            "pronoun_not_supported",
+            "pronoun_not_supported"
+          ]
+        ]
+      ],
+      "training_overlap": []
+    }
+  },
+  "texts_by_fold": {
+    "train": 1318,
+    "test": 558,
+    "jones": 180
+  },
+  "max_words": 123,
+  "max_tokens": 146
+}

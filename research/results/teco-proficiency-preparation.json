@@ -1,0 +1,329 @@
+{
+  "status": "prepared_before_any_model_extraction_or_fitting",
+  "source": {
+    "ratings": "https://osf.io/t75nh/",
+    "passages": "https://osf.io/wrvj3/"
+  },
+  "source_use": {
+    "teco_project_license": "https://api.osf.io/v2/licenses/563c1cf88c5e4a3877f9e96a/",
+    "passage_rightsholder_guideline": "https://www.eiken.or.jp/eiken/en/pdf-guideline01.pdf#page=5",
+    "model_extraction_authorization": "unverified"
+  },
+  "source_sha256": {
+    "df_individual.csv": "a1b02eb1133a3aaef06666c1f016ab1d8a54a94efd89f569999c3d133b6452ff",
+    "df_text.csv": "b0440d8251cf0ba2688b47b18eec8beed4257ce76342cd1994d8256d0fe8453f",
+    "teco_participant_info.csv": "873ed1afebe14991373ede612f1f1e2b27e1260dddd7e9660d12103dc5fa9867",
+    "teco_reading_materials.pdf": "d59ec536a7306c455f4422105905203ae0cb0677b37da66a700a72adad7a3375",
+    "teco_text_info.xlsx": "855e55d22195c6cf5da82ca060f7b337199e3c1238d9352110890b681d5202ad",
+    "teco_textmeasure.csv": "6882faba674575c64f7086aab468541baf23850aa4f01ce9fcb3bf0f89e71044",
+    "teco_word_info.csv": "25ea5891c269edd8efb1f29c27b233efb2837ded29f620b04a81eea1d5309f4b"
+  },
+  "source_audit_sha256": "8fd61a255addfc7c5bc8e34eead73352696324e4c05b5aef3daa9bbfa14021fe",
+  "source_audit_code_sha256": "a99c328eb168d9e30ab642183b843b9aea0d0058c0fb6e2da33b7ae9682388b8",
+  "protocol_sha256": "e9b5d728462b7920d6dca79af4666f75fb4afa6189a8e06496cae00c90e4fe54",
+  "preparation_code_sha256": "b190a9e71c3600148a713b66f55d2f600ac7ff1d84b1be353668635eb4ef9645",
+  "counts": {
+    "readers": 41,
+    "passages": 30,
+    "observed_ratings": 1208,
+    "missing_ratings": 22,
+    "exact_body_end_stops": 30
+  },
+  "target": {
+    "name": "post_reading_passage_difficulty",
+    "levels": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "anchors": {
+      "1": "very easy",
+      "9": "very difficult"
+    }
+  },
+  "background": {
+    "name": "pre_reading_english_reading_proficiency",
+    "range": [
+      0,
+      19
+    ],
+    "observed_range": [
+      6,
+      19
+    ],
+    "use": "optional downstream readout only"
+  },
+  "folds": {
+    "count": 5,
+    "index_base": 0,
+    "hash": "SHA-256",
+    "namespace": "cogllm-teco-proficiency-v1",
+    "rank_input_utf8": "{namespace}/reader/{reader_id} or {namespace}/passage/{eiken_grade}/{text_id}",
+    "allocation": "Sort by digest and numeric source ID within each stratum, then assign rank % 5.",
+    "reader_counts": [
+      9,
+      8,
+      8,
+      8,
+      8
+    ],
+    "passage_counts_by_grade": [
+      {
+        "p2": 2,
+        "2": 2,
+        "p1": 2
+      },
+      {
+        "p2": 2,
+        "2": 2,
+        "p1": 2
+      },
+      {
+        "p2": 2,
+        "2": 2,
+        "p1": 2
+      },
+      {
+        "p2": 2,
+        "2": 2,
+        "p1": 2
+      },
+      {
+        "p2": 2,
+        "2": 2,
+        "p1": 2
+      }
+    ],
+    "cells": [
+      {
+        "reader_fold": 0,
+        "passage_fold": 0,
+        "fit": 750,
+        "evaluation": 53,
+        "excluded_one_dimension": 405
+      },
+      {
+        "reader_fold": 0,
+        "passage_fold": 1,
+        "fit": 754,
+        "evaluation": 54,
+        "excluded_one_dimension": 400
+      },
+      {
+        "reader_fold": 0,
+        "passage_fold": 2,
+        "fit": 756,
+        "evaluation": 54,
+        "excluded_one_dimension": 398
+      },
+      {
+        "reader_fold": 0,
+        "passage_fold": 3,
+        "fit": 751,
+        "evaluation": 54,
+        "excluded_one_dimension": 403
+      },
+      {
+        "reader_fold": 0,
+        "passage_fold": 4,
+        "fit": 753,
+        "evaluation": 52,
+        "excluded_one_dimension": 403
+      },
+      {
+        "reader_fold": 1,
+        "passage_fold": 0,
+        "fit": 780,
+        "evaluation": 48,
+        "excluded_one_dimension": 380
+      },
+      {
+        "reader_fold": 1,
+        "passage_fold": 1,
+        "fit": 781,
+        "evaluation": 46,
+        "excluded_one_dimension": 381
+      },
+      {
+        "reader_fold": 1,
+        "passage_fold": 2,
+        "fit": 782,
+        "evaluation": 45,
+        "excluded_one_dimension": 381
+      },
+      {
+        "reader_fold": 1,
+        "passage_fold": 3,
+        "fit": 779,
+        "evaluation": 47,
+        "excluded_one_dimension": 382
+      },
+      {
+        "reader_fold": 1,
+        "passage_fold": 4,
+        "fit": 782,
+        "evaluation": 46,
+        "excluded_one_dimension": 380
+      },
+      {
+        "reader_fold": 2,
+        "passage_fold": 0,
+        "fit": 775,
+        "evaluation": 47,
+        "excluded_one_dimension": 386
+      },
+      {
+        "reader_fold": 2,
+        "passage_fold": 1,
+        "fit": 778,
+        "evaluation": 47,
+        "excluded_one_dimension": 383
+      },
+      {
+        "reader_fold": 2,
+        "passage_fold": 2,
+        "fit": 780,
+        "evaluation": 47,
+        "excluded_one_dimension": 381
+      },
+      {
+        "reader_fold": 2,
+        "passage_fold": 3,
+        "fit": 776,
+        "evaluation": 48,
+        "excluded_one_dimension": 384
+      },
+      {
+        "reader_fold": 2,
+        "passage_fold": 4,
+        "fit": 779,
+        "evaluation": 47,
+        "excluded_one_dimension": 382
+      },
+      {
+        "reader_fold": 3,
+        "passage_fold": 0,
+        "fit": 778,
+        "evaluation": 48,
+        "excluded_one_dimension": 382
+      },
+      {
+        "reader_fold": 3,
+        "passage_fold": 1,
+        "fit": 780,
+        "evaluation": 47,
+        "excluded_one_dimension": 381
+      },
+      {
+        "reader_fold": 3,
+        "passage_fold": 2,
+        "fit": 780,
+        "evaluation": 45,
+        "excluded_one_dimension": 383
+      },
+      {
+        "reader_fold": 3,
+        "passage_fold": 3,
+        "fit": 777,
+        "evaluation": 47,
+        "excluded_one_dimension": 384
+      },
+      {
+        "reader_fold": 3,
+        "passage_fold": 4,
+        "fit": 781,
+        "evaluation": 47,
+        "excluded_one_dimension": 380
+      },
+      {
+        "reader_fold": 4,
+        "passage_fold": 0,
+        "fit": 773,
+        "evaluation": 48,
+        "excluded_one_dimension": 387
+      },
+      {
+        "reader_fold": 4,
+        "passage_fold": 1,
+        "fit": 775,
+        "evaluation": 47,
+        "excluded_one_dimension": 386
+      },
+      {
+        "reader_fold": 4,
+        "passage_fold": 2,
+        "fit": 778,
+        "evaluation": 48,
+        "excluded_one_dimension": 382
+      },
+      {
+        "reader_fold": 4,
+        "passage_fold": 3,
+        "fit": 773,
+        "evaluation": 48,
+        "excluded_one_dimension": 387
+      },
+      {
+        "reader_fold": 4,
+        "passage_fold": 4,
+        "fit": 777,
+        "evaluation": 48,
+        "excluded_one_dimension": 383
+      }
+    ],
+    "trial_key": [
+      "reader_id",
+      "id"
+    ]
+  },
+  "body_sha256_by_passage": {
+    "1": "3cd53aa626996d1956eea8eb280f3e2501c6604ad124f641d5c3945d4204a4d2",
+    "2": "43404e1a77b9d0ef8f9d77a0665b8e3c7823c00a6403dc4c9c4bd6c5993f3ee5",
+    "3": "55ade6fd4c5c1988b68c2774981ecb1c3957f4455d76e48033977ff89a16072b",
+    "4": "7a23b17f1da74afd42003431d4988855baef5d48f75a8614e2a909977489e93f",
+    "5": "37046a84a266711fb676ea3fafdda584313b434032f4fa310794ae981983d783",
+    "6": "c4b1dfffa3c352bf86be192cb292fa42645ba31c24521d84d2caa5802ce7c935",
+    "7": "f6162c47e957f06bead97951c375837d549b95b3ab7f6042d42d563587607ff9",
+    "8": "f96d08a0070c881a78ee6fbfca0db87022d3c58a373d839fd14b3dade01ab496",
+    "9": "869be404406f5e2c6da96d137453cbf0b967a69e485f4c25198aa245a740f1a1",
+    "10": "1ba31b7a5070929a14f26a5f2fa7d58bea6ac867fb9899086109b8a817c38219",
+    "11": "fa8c14b2189092e9daadfa5caab938dd5eb08a623476dfdfbcc3f84c3c45c1d6",
+    "12": "8b4b7da72ce6b15b39bd637cf5c0098906864f1bd2e7a387e70894a1f3124bf4",
+    "13": "ac027359544adcc96ea9fcd633c792112e2724671ab090f40c7fc946d3b323f3",
+    "14": "f1066c7de0c9a80282e23c1a5b8cb8f74d98785dbfe9da3f61b117e638b386ce",
+    "15": "5055d6e4874c69b4ba809c7466fcdd41b88e3f79652d1005f31b7d781b6a6af5",
+    "16": "bba4d0d2e3143e77ab0935d3b5b2b8fa55aa9abb96e9200a825b8c6cfcd45db3",
+    "17": "6f0262a1eb850c9c00c1f337cc47bcdefb059305e12c5dfcf4fc33c98248493f",
+    "18": "67d78ecb3597c3cf7531d298a7fa854a59e931a62a815b13206e8814d68d4fe0",
+    "19": "09c706b7ade14189e9c167e9c79489d72f8e8f376ef7451da2dde5bbd022190f",
+    "20": "e77343d5485a9c3f6e038fb68b1eb671c124ed8ffe2a86454e9be1465d6980bc",
+    "21": "3708d8e14e712e910111c8d8c0fd0fbf335173e86d4856754a9a8e153ea5d8df",
+    "22": "a00b67b306eaf2dbd20b73f7b5521b57fd9d8105b9d63b6dba61beb65233da91",
+    "23": "3d75572d50617fcc2df9b9eb14e507941b03afd92ce8f3c9f06cf681551c6526",
+    "24": "646e22d3ddb2871caaee50a12d31d25f40ee6a2985399fb05352512413de8ca0",
+    "25": "d3c560412855f3072090781cfbd6a5ab61dc339d23ce54c7326eb37f616c2014",
+    "26": "ec2e0ef4cad6f67d84c628aca7a3b89a4b5c419577f981beec8434ae34b745df",
+    "27": "580be97e644eb3d77a7d43875c39079dd6edc2780e8b65e3d2fcdc610d5ba9aa",
+    "28": "41aefe2d185b7d8c60d77b2b95c6a132234145e240526aab4442efd35a505be8",
+    "29": "4ff848d83525940f6fee5804ffaf6460f7eccbb2da8f8db0e6a8ba42867f2a76",
+    "30": "e926cc7a4ec2f29ff305eb80cfd8d0d0504c3483a6ba4fd5bcba2a7b30305fde"
+  },
+  "sha256": {
+    "local/crossed-cells.jsonl": "72f4e5645d1625d86cfa3232d8b6b5effd9134cab8a3846a6fcecf82a3da7b6a",
+    "local/outcomes.jsonl": "f3f0f12fd231ed2113b847d66bd12cd60006698334c52dd2e2c673dd22d23a31",
+    "local/passage-folds.jsonl": "77e63bf24a55b831de21155acda26f784b4bbdfe030f2247020647a16c9c1e4d",
+    "local/reader-background.jsonl": "c3d2ed56e3d2122cae9fa3c35ba2a51a15f2bfecd123a3dabe8ec72e16abf7b3",
+    "local/reader-folds.jsonl": "27a9d7e7b0588f14a5f81597afc1224180a052e654bc4182fcf665624f419cd0",
+    "local/trial-design.jsonl": "418ef9638ad245b60d28c702ba3d1700648f628bdbcf0ceb8d29d97075a12e2b",
+    "model-inputs.tar.gz": "8fa67bcae2d9f6b87cf63544c98015a125925f3b5eaf3f85e96982b56205cae7",
+    "model_input/certified-stops.jsonl": "4343c8032aa39ce8ea882d9bb98f40d79069adddbcd422da8033fabd5f2a5ca6",
+    "model_input/extraction-plan.json": "7d29f294710992758b9179f959d2f60c7c3fdc8182ef807bb2678602cc7f5e0f",
+    "model_input/stimuli.jsonl": "a786b653e2d562450e5744c84a290e8c9c7ff1f751e719cf80e6a467c0fb9c00"
+  }
+}

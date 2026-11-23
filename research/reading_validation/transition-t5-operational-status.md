@@ -1,0 +1,5 @@
+# Source-only T5 comparator status
+
+The full-parameter T5-Large job began on an actual Colab L4. Its last confirmed scientific log reported 100 of 1,840 optimizer updates and recent source-training token NLL of 0.484. On 22 November 2026 around 18:12 UTC, the owned endpoint disappeared. The controller verified that the runtime was no longer assigned. No full training checkpoint, completed epoch, development score or movie generation was recovered. These source updates do not permit a held-out performance comparison. [Original comparison and full-fit protocol](transition-t5-protocol.md)
+
+The separately registered recovery run updates rank-eight query/value adapters over the same T5-Large base. This reduces optimizer-checkpoint size from several gigabytes to tens of megabytes, allowing an external controller to preserve optimizer position, source RNG, best model and current state every 25 steps. It uses the same SNaC source split and downstream movie word-scoring protocol. [Recoverable comparator](transition-t5-adapter-protocol.md)

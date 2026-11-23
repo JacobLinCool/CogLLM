@@ -1,0 +1,53 @@
+{
+  "threshold_lock_sha256": "a79029f375fe9b8f8e3c46437e69376bb91a8f9c9858be1943d44babf4e830ee",
+  "known_external_words": 22133,
+  "known_external_positive": 413,
+  "policies": {
+    "default": {
+      "threshold": 0.04484973516246828,
+      "movies_with_alerts": 39,
+      "movies": 39,
+      "tp_fp_fn_tn": [
+        378,
+        726,
+        35,
+        20994
+      ],
+      "precision": {
+        "estimate": 0.3423913043478261,
+        "family_bootstrap_95_interval": [
+          0.30761926351419006,
+          0.3783795732071594
+        ]
+      },
+      "recall": {
+        "estimate": 0.9152542372881356,
+        "family_bootstrap_95_interval": [
+          0.8705023708306082,
+          0.9546666666666667
+        ]
+      },
+      "f1": {
+        "estimate": 0.4983520105471325,
+        "family_bootstrap_95_interval": [
+          0.4603165331553182,
+          0.5367028419859382
+        ]
+      },
+      "false_alarms_per_100_negatives": {
+        "estimate": 3.3425414364640886,
+        "family_bootstrap_95_interval": [
+          2.9868598908439,
+          3.7435252112633495
+        ]
+      },
+      "flags_per_1000_words": {
+        "estimate": 49.880269281163876,
+        "family_bootstrap_95_interval": [
+          45.066410178515746,
+          55.172421713619485
+        ]
+      }
+    }
+  }
+}

@@ -1,0 +1,2514 @@
+{
+  "analysis": "Model-selection development diagnostic on originally assigned Frick story families",
+  "baseline": {
+    "definition": "Train-only absolute sentence hazard pooled across both conditions with Beta(0.5, 0.5) smoothing",
+    "positions": [
+      {
+        "events": 6,
+        "hazard": 0.0045871559633027525,
+        "risk": 1416,
+        "sentence": 2
+      },
+      {
+        "events": 22,
+        "hazard": 0.015946137491141033,
+        "risk": 1410,
+        "sentence": 3
+      },
+      {
+        "events": 15,
+        "hazard": 0.011159107271418287,
+        "risk": 1388,
+        "sentence": 4
+      },
+      {
+        "events": 23,
+        "hazard": 0.01710334788937409,
+        "risk": 1373,
+        "sentence": 5
+      },
+      {
+        "events": 12,
+        "hazard": 0.009252405625462621,
+        "risk": 1350,
+        "sentence": 6
+      },
+      {
+        "events": 11,
+        "hazard": 0.008588498879761016,
+        "risk": 1338,
+        "sentence": 7
+      },
+      {
+        "events": 22,
+        "hazard": 0.01694277108433735,
+        "risk": 1327,
+        "sentence": 8
+      },
+      {
+        "events": 27,
+        "hazard": 0.02105666156202144,
+        "risk": 1305,
+        "sentence": 9
+      },
+      {
+        "events": 21,
+        "hazard": 0.016810007818608287,
+        "risk": 1278,
+        "sentence": 10
+      },
+      {
+        "events": 10,
+        "hazard": 0.008346581875993641,
+        "risk": 1257,
+        "sentence": 11
+      },
+      {
+        "events": 44,
+        "hazard": 0.03565705128205128,
+        "risk": 1247,
+        "sentence": 12
+      },
+      {
+        "events": 188,
+        "hazard": 0.15656146179401995,
+        "risk": 1203,
+        "sentence": 13
+      },
+      {
+        "events": 80,
+        "hazard": 0.07923228346456693,
+        "risk": 1015,
+        "sentence": 14
+      },
+      {
+        "events": 91,
+        "hazard": 0.10374149659863946,
+        "risk": 881,
+        "sentence": 15
+      },
+      {
+        "events": 3,
+        "hazard": 0.010355029585798817,
+        "risk": 337,
+        "sentence": 16
+      },
+      {
+        "events": 7,
+        "hazard": 0.04143646408839779,
+        "risk": 180,
+        "sentence": 17
+      }
+    ]
+  },
+  "condition_labels": {
+    "01": "consistent_context",
+    "02": "inconsistent_context"
+  },
+  "conditional_rows_sha256": "abd607c544324efa8bacb56572a0f61dcc7202a42a5ac6df2889f749579371d8",
+  "development": {
+    "forecast_phase_probabilities": {
+      "epoch12": {
+        "after_target": 0.0003848170204795072,
+        "before_target": 0.9989991396854142,
+        "no_report": 0.00017800803296571152,
+        "target": 0.0004379962894442239
+      },
+      "epoch31": {
+        "after_target": 0.0005544966376570907,
+        "before_target": 0.998557303337293,
+        "no_report": 0.00028145518960324506,
+        "target": 0.0006066970436222618
+      },
+      "position_hazard": {
+        "after_target": 0.0742687612678447,
+        "before_target": 0.2863388873755238,
+        "no_report": 0.582847351783531,
+        "target": 0.05654499957310072
+      }
+    },
+    "four_phase_nll_nats_per_trial": {
+      "epoch12": 7.365521604662348,
+      "epoch31": 7.00308261362827,
+      "position_hazard": 1.4009937116378373
+    },
+    "full_path_nll_nats_per_trial": {
+      "epoch12": 7.860135698067515,
+      "epoch31": 7.481439311560334,
+      "position_hazard": 1.7380392052749905
+    },
+    "human_phase_counts": {
+      "after_target": 3,
+      "before_target": 43,
+      "no_report": 212,
+      "target": 126
+    },
+    "human_phase_rates": {
+      "after_target": 0.0078125,
+      "before_target": 0.11197916666666667,
+      "no_report": 0.5520833333333334,
+      "target": 0.328125
+    },
+    "trials": 384,
+    "variants": 8
+  },
+  "development_by_condition": {
+    "01": {
+      "forecast_phase_probabilities": {
+        "epoch12": {
+          "after_target": 0.0003848560105931635,
+          "before_target": 0.9989991420187936,
+          "no_report": 0.00017802217480493708,
+          "target": 0.0004379458958283067
+        },
+        "epoch31": {
+          "after_target": 0.0005543822865648609,
+          "before_target": 0.9985577271423406,
+          "no_report": 0.00028118788646275386,
+          "target": 0.000606653362693679
+        },
+        "position_hazard": {
+          "after_target": 0.0742687612678447,
+          "before_target": 0.2863388873755238,
+          "no_report": 0.5828473517835309,
+          "target": 0.05654499957310072
+        }
+      },
+      "four_phase_nll_nats_per_trial": {
+        "epoch12": 7.83194348830913,
+        "epoch31": 7.420464671067186,
+        "position_hazard": 0.6922163747787525
+      },
+      "full_path_nll_nats_per_trial": {
+        "epoch12": 8.19878816644833,
+        "epoch31": 7.775475303269558,
+        "position_hazard": 0.9480036254176353
+      },
+      "human_phase_counts": {
+        "after_target": 1,
+        "before_target": 16,
+        "no_report": 157,
+        "target": 6
+      },
+      "human_phase_rates": {
+        "after_target": 0.005555555555555556,
+        "before_target": 0.08888888888888889,
+        "no_report": 0.8722222222222222,
+        "target": 0.03333333333333333
+      },
+      "trials": 180,
+      "variants": 4
+    },
+    "02": {
+      "forecast_phase_probabilities": {
+        "epoch12": {
+          "after_target": 0.00038478261743804586,
+          "before_target": 0.99899913762655,
+          "no_report": 0.0001779955548722772,
+          "target": 0.000438040754399445
+        },
+        "epoch31": {
+          "after_target": 0.0005545975356796465,
+          "before_target": 0.9985569293916627,
+          "no_report": 0.00028169104531544317,
+          "target": 0.0006067355856180703
+        },
+        "position_hazard": {
+          "after_target": 0.0742687612678447,
+          "before_target": 0.2863388873755238,
+          "no_report": 0.582847351783531,
+          "target": 0.05654499957310072
+        }
+      },
+      "four_phase_nll_nats_per_trial": {
+        "epoch12": 6.95397288379754,
+        "epoch31": 6.6348043276527555,
+        "position_hazard": 2.0263854794546767
+      },
+      "full_path_nll_nats_per_trial": {
+        "epoch12": 7.561324696555032,
+        "epoch31": 7.2219957894639615,
+        "position_hazard": 2.435129422796186
+      },
+      "human_phase_counts": {
+        "after_target": 2,
+        "before_target": 27,
+        "no_report": 55,
+        "target": 120
+      },
+      "human_phase_rates": {
+        "after_target": 0.00980392156862745,
+        "before_target": 0.1323529411764706,
+        "no_report": 0.2696078431372549,
+        "target": 0.5882352941176471
+      },
+      "trials": 204,
+      "variants": 4
+    }
+  },
+  "mean_absolute_within_family_target_effect_error_percentage_points": {
+    "epoch12": 55.391691738465184,
+    "epoch31": 55.391724712377496,
+    "position_hazard": 55.3917004048583
+  },
+  "original_source_sha256": {
+    "metadata.jsonl": "96f85c4197600299efc3ce56686df1a26857bee69622efdd8d47323e5729c1ce",
+    "outcomes.jsonl": "b26b6f225eab250788083da5456a169519a06f9b25415bec56695b0af21aeb00",
+    "stimuli.jsonl": "12851b63014a17ba9ae8d62111ed42e1cdc275c3d0a711741d712392df01c531"
+  },
+  "packet_sha256": "eb40327d95b7d292958cfd27ceb513e0ce9a5307c811ab84131212157b8f5756",
+  "pairs": [
+    {
+      "conditions": {
+        "01": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 973,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.00043846096377819777,
+                "sentence_inconsistent": 0.35909579767764843
+              },
+              "epoch31": {
+                "first_report": 0.0005983077571727335,
+                "sentence_inconsistent": 0.29987211848073964
+              }
+            },
+            "human_counts": {
+              "first_report": 1,
+              "sentence_inconsistent": 2
+            },
+            "trials": 52
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "He knew his mind was made up the minute he saw a shiny new trumpet laying on a table.",
+          "condition": "01",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.000385313673177734,
+              "before_target": 0.9989979107049294,
+              "no_report": 0.00017829201533459127,
+              "target": 0.00043846096377819777
+            },
+            "epoch31": {
+              "after_target": 0.0005490994662977755,
+              "before_target": 0.9985735054360703,
+              "no_report": 0.0002790468861348927,
+              "target": 0.0005983077571727335
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 7.950853413556781,
+            "epoch31": 7.54002423279537,
+            "position_hazard": 0.6393662227330233
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 8.191428788517383,
+            "epoch31": 7.775132569098965,
+            "position_hazard": 0.8852842102821955
+          },
+          "human_phase_counts": {
+            "after_target": 0,
+            "before_target": 4,
+            "no_report": 47,
+            "target": 1
+          },
+          "no_report": {
+            "human_count": 47,
+            "probability": {
+              "epoch12": 0.00017829201533459127,
+              "epoch31": 0.0002790468861348927,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 137,
+              "first_report_probability": {
+                "epoch12": 0.43757274746894836,
+                "epoch31": 0.4258819818496704,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 1,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 232,
+              "first_report_probability": {
+                "epoch12": 0.2461196482181549,
+                "epoch31": 0.24459218978881836,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 0,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 286,
+              "first_report_probability": {
+                "epoch12": 0.13840250670909882,
+                "epoch31": 0.13891364634037018,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 1,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 373,
+              "first_report_probability": {
+                "epoch12": 0.07784361392259598,
+                "epoch31": 0.08000882714986801,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 469,
+              "first_report_probability": {
+                "epoch12": 0.0437825582921505,
+                "epoch31": 0.04640914872288704,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 547,
+              "first_report_probability": {
+                "epoch12": 0.024625210091471672,
+                "epoch31": 0.026924557983875275,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 608,
+              "first_report_probability": {
+                "epoch12": 0.013850284740328789,
+                "epoch31": 0.015631893649697304,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 647,
+              "first_report_probability": {
+                "epoch12": 0.007790001574903727,
+                "epoch31": 0.009077795781195164,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 2,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 722,
+              "first_report_probability": {
+                "epoch12": 0.004381431266665459,
+                "epoch31": 0.005270569119602442,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 770,
+              "first_report_probability": {
+                "epoch12": 0.0024643081706017256,
+                "epoch31": 0.0030574121046811342,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 833,
+              "first_report_probability": {
+                "epoch12": 0.0013860345352441072,
+                "epoch31": 0.0017749653197824955,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 932,
+              "first_report_probability": {
+                "epoch12": 0.0007795657147653401,
+                "epoch31": 0.0010305176256224513,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 973,
+              "first_report_probability": {
+                "epoch12": 0.00043846096377819777,
+                "epoch31": 0.0005983077571727335,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 1,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 1011,
+              "first_report_probability": {
+                "epoch12": 0.0002466093865223229,
+                "epoch31": 0.0003473582910373807,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1086,
+              "first_report_probability": {
+                "epoch12": 0.00013870428665541112,
+                "epoch31": 0.0002017411752603948,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "c9169aeb8fd7b545ab482682446aef84c166260f6edcbfe7402706d2bd99b9ac",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.43755668625032484,
+                "survival_entering_target": 0.001002066652290523
+              },
+              "epoch31": {
+                "hazard": 0.41943708749119357,
+                "survival_entering_target": 0.0014264541096054018
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 48,
+            "human_first_reports": 1,
+            "human_hazard": 0.020833333333333332
+          },
+          "target_sentence": 14,
+          "trials": 52
+        },
+        "02": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 970,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.00043846058542840183,
+                "sentence_inconsistent": 0.35909540745707913
+              },
+              "epoch31": {
+                "first_report": 0.000597519741859287,
+                "sentence_inconsistent": 0.2999050064471102
+              }
+            },
+            "human_counts": {
+              "first_report": 27,
+              "sentence_inconsistent": 34
+            },
+            "trials": 50
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "He knew his mind was made up the minute he saw a shiny new drum laying on a table.",
+          "condition": "02",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.0003853131493087858,
+              "before_target": 0.9989979029051028,
+              "no_report": 0.00017829201533459127,
+              "target": 0.00043846058542840183
+            },
+            "epoch31": {
+              "after_target": 0.0005483581480802968,
+              "before_target": 0.998575450736098,
+              "no_report": 0.000278658902971074,
+              "target": 0.000597519741859287
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 6.577162326743304,
+            "epoch31": 6.286934531061823,
+            "position_hazard": 1.9687293440984885
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 7.517338051518716,
+            "epoch31": 7.196628082531852,
+            "position_hazard": 2.5876995439544697
+          },
+          "human_phase_counts": {
+            "after_target": 1,
+            "before_target": 9,
+            "no_report": 13,
+            "target": 27
+          },
+          "no_report": {
+            "human_count": 13,
+            "probability": {
+              "epoch12": 0.00017829201533459127,
+              "epoch31": 0.000278658902971074,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 137,
+              "first_report_probability": {
+                "epoch12": 0.43757274746894836,
+                "epoch31": 0.4258819818496704,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 232,
+              "first_report_probability": {
+                "epoch12": 0.2461196482181549,
+                "epoch31": 0.24459221959114075,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 286,
+              "first_report_probability": {
+                "epoch12": 0.13840250670909882,
+                "epoch31": 0.13891366124153137,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 1,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 370,
+              "first_report_probability": {
+                "epoch12": 0.07784359157085419,
+                "epoch31": 0.08006738871335983,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 466,
+              "first_report_probability": {
+                "epoch12": 0.04378262907266617,
+                "epoch31": 0.04643964022397995,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 544,
+              "first_report_probability": {
+                "epoch12": 0.024625180289149284,
+                "epoch31": 0.026887334883213043,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 605,
+              "first_report_probability": {
+                "epoch12": 0.013850271701812744,
+                "epoch31": 0.015610098838806152,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 644,
+              "first_report_probability": {
+                "epoch12": 0.00778999412432313,
+                "epoch31": 0.009064901620149612,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 2,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 719,
+              "first_report_probability": {
+                "epoch12": 0.0043814294040203094,
+                "epoch31": 0.005263228435069323,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 3,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 767,
+              "first_report_probability": {
+                "epoch12": 0.002464305842295289,
+                "epoch31": 0.0030532788950949907,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 44,
+              "human_first_reports": 3,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 830,
+              "first_report_probability": {
+                "epoch12": 0.0013860331382602453,
+                "epoch31": 0.0017725826473906636,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 41,
+              "human_first_reports": 0,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 929,
+              "first_report_probability": {
+                "epoch12": 0.0007795653655193746,
+                "epoch31": 0.0010291337966918945,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 41,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 970,
+              "first_report_probability": {
+                "epoch12": 0.00043846058542840183,
+                "epoch31": 0.000597519741859287,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 41,
+              "human_first_reports": 27,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 1008,
+              "first_report_probability": {
+                "epoch12": 0.0002466091245878488,
+                "epoch31": 0.00034688343293964863,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 14,
+              "human_first_reports": 0,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1083,
+              "first_report_probability": {
+                "epoch12": 0.00013870402472093701,
+                "epoch31": 0.00020147471514064819,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 14,
+              "human_first_reports": 1,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "afcddd4415b9dd2d98e4d231f6e9db851f9f5e6477282bf0e9e263e86bcc4194",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.437556702638519,
+                "survival_entering_target": 0.001002065750071779
+              },
+              "epoch31": {
+                "hazard": 0.41944844445780594,
+                "survival_entering_target": 0.0014245367929106578
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 41,
+            "human_first_reports": 27,
+            "human_hazard": 0.6585365853658537
+          },
+          "target_sentence": 14,
+          "trials": 50
+        }
+      },
+      "family": "frick:10",
+      "target_effect_percentage_points": {
+        "absolute_error": {
+          "epoch12": 52.07692311475805,
+          "epoch31": 52.07700187845442,
+          "position_hazard": 52.07692307692307
+        },
+        "forecast": {
+          "epoch12": -3.7834979593753815e-08,
+          "epoch31": -7.880153134465218e-05,
+          "position_hazard": 0.0
+        },
+        "human": 52.07692307692307
+      },
+      "target_sentence_text": "Lorenzo told him all about the trumpet."
+    },
+    {
+      "conditions": {
+        "01": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 1015,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.00043845782056450844,
+                "sentence_inconsistent": 0.3591421130382835
+              },
+              "epoch31": {
+                "first_report": 0.0006003829184919596,
+                "sentence_inconsistent": 0.3046896332547907
+              }
+            },
+            "human_counts": {
+              "first_report": 1,
+              "sentence_inconsistent": 2
+            },
+            "trials": 38
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "He pulled out an orange from the very bottom of the bag.",
+          "condition": "01",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.0003853141242871061,
+              "before_target": 0.9989978899830021,
+              "no_report": 0.00017828420095611364,
+              "target": 0.00043845782056450844
+            },
+            "epoch31": {
+              "after_target": 0.0005481489351950586,
+              "before_target": 0.9985730326734483,
+              "no_report": 0.0002784394600894302,
+              "target": 0.0006003829184919596
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 7.927045546169891,
+            "epoch31": 7.519914828752106,
+            "position_hazard": 0.6573335490500362
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 8.158804387872173,
+            "epoch31": 7.746140193546185,
+            "position_hazard": 0.9058289978127678
+          },
+          "human_phase_counts": {
+            "after_target": 0,
+            "before_target": 3,
+            "no_report": 34,
+            "target": 1
+          },
+          "no_report": {
+            "human_count": 34,
+            "probability": {
+              "epoch12": 0.00017828420095611364,
+              "epoch31": 0.0002784394600894302,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 139,
+              "first_report_probability": {
+                "epoch12": 0.4375591278076172,
+                "epoch31": 0.41972604393959045,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 248,
+              "first_report_probability": {
+                "epoch12": 0.24609972536563873,
+                "epoch31": 0.24396508932113647,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 2,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 329,
+              "first_report_probability": {
+                "epoch12": 0.13841718435287476,
+                "epoch31": 0.1413070410490036,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 387,
+              "first_report_probability": {
+                "epoch12": 0.077851802110672,
+                "epoch31": 0.08182752877473831,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 424,
+              "first_report_probability": {
+                "epoch12": 0.043787237256765366,
+                "epoch31": 0.04751615971326828,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 519,
+              "first_report_probability": {
+                "epoch12": 0.0246284157037735,
+                "epoch31": 0.027901431545615196,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 591,
+              "first_report_probability": {
+                "epoch12": 0.01385185681283474,
+                "epoch31": 0.015837915241718292,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 646,
+              "first_report_probability": {
+                "epoch12": 0.007790704257786274,
+                "epoch31": 0.009220956824719906,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 743,
+              "first_report_probability": {
+                "epoch12": 0.004381769336760044,
+                "epoch31": 0.005329227540642023,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 826,
+              "first_report_probability": {
+                "epoch12": 0.002464399905875325,
+                "epoch31": 0.003090607700869441,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 36,
+              "human_first_reports": 1,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 904,
+              "first_report_probability": {
+                "epoch12": 0.0013861020561307669,
+                "epoch31": 0.001819869503378868,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 0,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 977,
+              "first_report_probability": {
+                "epoch12": 0.0007795650162734091,
+                "epoch31": 0.001031161518767476,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 1015,
+              "first_report_probability": {
+                "epoch12": 0.00043845782056450844,
+                "epoch31": 0.0006003829184919596,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 1,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 1053,
+              "first_report_probability": {
+                "epoch12": 0.00024660679628141224,
+                "epoch31": 0.00034694228088483214,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 34,
+              "human_first_reports": 0,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1118,
+              "first_report_probability": {
+                "epoch12": 0.00013870732800569385,
+                "epoch31": 0.00020120665431022644,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 34,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "478efe0f21911dbff95d72c541403758f0fccb4a6cdc66c00e8e7c2e76bd4170",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.43755813723499537,
+                "survival_entering_target": 0.0010020561458077282
+              },
+              "epoch31": {
+                "hazard": 0.42073930477485166,
+                "survival_entering_target": 0.0014269713137764484
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 35,
+            "human_first_reports": 1,
+            "human_hazard": 0.02857142857142857
+          },
+          "target_sentence": 14,
+          "trials": 38
+        },
+        "02": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 1014,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.00043846224434673786,
+                "sentence_inconsistent": 0.3591054364782368
+              },
+              "epoch31": {
+                "first_report": 0.000601431296672672,
+                "sentence_inconsistent": 0.3014230576350606
+              }
+            },
+            "human_counts": {
+              "first_report": 36,
+              "sentence_inconsistent": 41
+            },
+            "trials": 52
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "He pulled out a banana from the very bottom of the bag.",
+          "condition": "02",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.00038531600148417056,
+              "before_target": 0.9989978863159195,
+              "no_report": 0.00017828964337240905,
+              "target": 0.00043846224434673786
+            },
+            "epoch31": {
+              "after_target": 0.0005510746850632131,
+              "before_target": 0.9985675057396293,
+              "no_report": 0.00027995105483569205,
+              "target": 0.000601431296672672
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 6.6664365809330945,
+            "epoch31": 6.380086841723326,
+            "position_hazard": 2.3038725913061997
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 7.255760188859316,
+            "epoch31": 6.951531123399452,
+            "position_hazard": 2.7693828562154077
+          },
+          "human_phase_counts": {
+            "after_target": 1,
+            "before_target": 8,
+            "no_report": 7,
+            "target": 36
+          },
+          "no_report": {
+            "human_count": 7,
+            "probability": {
+              "epoch12": 0.00017828964337240905,
+              "epoch31": 0.00027995105483569205,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 139,
+              "first_report_probability": {
+                "epoch12": 0.4375591278076172,
+                "epoch31": 0.41972604393959045,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 248,
+              "first_report_probability": {
+                "epoch12": 0.24609972536563873,
+                "epoch31": 0.24396507441997528,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 1,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 329,
+              "first_report_probability": {
+                "epoch12": 0.13841718435287476,
+                "epoch31": 0.1413070410490036,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 0,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 386,
+              "first_report_probability": {
+                "epoch12": 0.077851802110672,
+                "epoch31": 0.08182110637426376,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 2,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 423,
+              "first_report_probability": {
+                "epoch12": 0.04378722608089447,
+                "epoch31": 0.0476251095533371,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 2,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 518,
+              "first_report_probability": {
+                "epoch12": 0.024628035724163055,
+                "epoch31": 0.027651913464069366,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 590,
+              "first_report_probability": {
+                "epoch12": 0.013852043077349663,
+                "epoch31": 0.01590024307370186,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 645,
+              "first_report_probability": {
+                "epoch12": 0.007790800649672747,
+                "epoch31": 0.009257068857550621,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 1,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 742,
+              "first_report_probability": {
+                "epoch12": 0.0043818154372274876,
+                "epoch31": 0.005349671468138695,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 46,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 825,
+              "first_report_probability": {
+                "epoch12": 0.002464428311213851,
+                "epoch31": 0.0031023994088172913,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 46,
+              "human_first_reports": 1,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 903,
+              "first_report_probability": {
+                "epoch12": 0.0013861238257959485,
+                "epoch31": 0.0018266926053911448,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 45,
+              "human_first_reports": 1,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 976,
+              "first_report_probability": {
+                "epoch12": 0.0007795735727995634,
+                "epoch31": 0.0010351415257900953,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 44,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 1014,
+              "first_report_probability": {
+                "epoch12": 0.00043846224434673786,
+                "epoch31": 0.000601431296672672,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 44,
+              "human_first_reports": 36,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 1052,
+              "first_report_probability": {
+                "epoch12": 0.0002466098521836102,
+                "epoch31": 0.00034878498991020024,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 8,
+              "human_first_reports": 1,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1117,
+              "first_report_probability": {
+                "epoch12": 0.00013870614930056036,
+                "epoch31": 0.00020228969515301287,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 7,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "ad7811d9c7e9e71b2bcc16016520863b175dc11eaed0e454abb24da87e4d372d",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.43755742407366455,
+                "survival_entering_target": 0.0010020678892033175
+              },
+              "epoch31": {
+                "hazard": 0.4198599199262055,
+                "survival_entering_target": 0.0014324570365715772
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 44,
+            "human_first_reports": 36,
+            "human_hazard": 0.8181818181818182
+          },
+          "target_sentence": 14,
+          "trials": 52
+        }
+      },
+      "family": "frick:11",
+      "target_effect_percentage_points": {
+        "absolute_error": {
+          "epoch12": 66.59918984102259,
+          "epoch31": 66.59908544558274,
+          "position_hazard": 66.59919028340082
+        },
+        "forecast": {
+          "epoch12": 4.423782229423523e-07,
+          "epoch31": 0.00010483781807124615,
+          "position_hazard": 6.938893903907228e-16
+        },
+        "human": 66.59919028340082
+      },
+      "target_sentence_text": "He said he had just eaten an orange."
+    },
+    {
+      "conditions": {
+        "01": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 958,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.0004375309799797833,
+                "sentence_inconsistent": 0.36065604260214507
+              },
+              "epoch31": {
+                "first_report": 0.0006173998699523509,
+                "sentence_inconsistent": 0.31455176355852654
+              }
+            },
+            "human_counts": {
+              "first_report": 2,
+              "sentence_inconsistent": 2
+            },
+            "trials": 38
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "On one page she saw an advertisement for a short trip to the mountains.",
+          "condition": "01",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.00038442904769908637,
+              "before_target": 0.9990001304540783,
+              "no_report": 0.00017787728575058281,
+              "target": 0.0004375309799797833
+            },
+            "epoch31": {
+              "after_target": 0.0005576680996455252,
+              "before_target": 0.9985416303388774,
+              "no_report": 0.00028324697632342577,
+              "target": 0.0006173998699523509
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 7.905459912876333,
+            "epoch31": 7.483359989635569,
+            "position_hazard": 0.7187253528926053
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 8.288747774256993,
+            "epoch31": 7.852620112756356,
+            "position_hazard": 0.9314185284472581
+          },
+          "human_phase_counts": {
+            "after_target": 0,
+            "before_target": 3,
+            "no_report": 33,
+            "target": 2
+          },
+          "no_report": {
+            "human_count": 33,
+            "probability": {
+              "epoch12": 0.00017787728575058281,
+              "epoch31": 0.00028324697632342577,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 119,
+              "first_report_probability": {
+                "epoch12": 0.43755972385406494,
+                "epoch31": 0.41951537132263184,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 177,
+              "first_report_probability": {
+                "epoch12": 0.24610570073127747,
+                "epoch31": 0.24347878992557526,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 258,
+              "first_report_probability": {
+                "epoch12": 0.13841775059700012,
+                "epoch31": 0.1414293795824051,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 331,
+              "first_report_probability": {
+                "epoch12": 0.07791165262460709,
+                "epoch31": 0.08214970678091049,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 412,
+              "first_report_probability": {
+                "epoch12": 0.04376555606722832,
+                "epoch31": 0.047612063586711884,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 465,
+              "first_report_probability": {
+                "epoch12": 0.024614587426185608,
+                "epoch31": 0.02765406295657158,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 508,
+              "first_report_probability": {
+                "epoch12": 0.01384057942777872,
+                "epoch31": 0.016009530052542686,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 618,
+              "first_report_probability": {
+                "epoch12": 0.00778170395642519,
+                "epoch31": 0.009290579706430435,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 38,
+              "human_first_reports": 3,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 658,
+              "first_report_probability": {
+                "epoch12": 0.004377000033855438,
+                "epoch31": 0.005394353065639734,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 733,
+              "first_report_probability": {
+                "epoch12": 0.0024647030513733625,
+                "epoch31": 0.0031326282769441605,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 0,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 829,
+              "first_report_probability": {
+                "epoch12": 0.00138316850643605,
+                "epoch31": 0.0018175460863858461,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 0,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 917,
+              "first_report_probability": {
+                "epoch12": 0.0007780041778460145,
+                "epoch31": 0.00105761899612844,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 958,
+              "first_report_probability": {
+                "epoch12": 0.0004375309799797833,
+                "epoch31": 0.0006173998699523509,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 35,
+              "human_first_reports": 2,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 997,
+              "first_report_probability": {
+                "epoch12": 0.0002460455580148846,
+                "epoch31": 0.0003529017267283052,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 33,
+              "human_first_reports": 0,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1061,
+              "first_report_probability": {
+                "epoch12": 0.00013838348968420178,
+                "epoch31": 0.00020476637291722,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 33,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "f2b19a90dd2471958bc96b85b6e411676013684c8a2a0db337ab6ff2d5ddcd6d",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.4376021719764063,
+                "survival_entering_target": 0.0009998373134294525
+              },
+              "epoch31": {
+                "hazard": 0.4233652488299115,
+                "survival_entering_target": 0.0014583149459213018
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 35,
+            "human_first_reports": 2,
+            "human_hazard": 0.05714285714285714
+          },
+          "target_sentence": 14,
+          "trials": 38
+        },
+        "02": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 952,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.000437785784015432,
+                "sentence_inconsistent": 0.36977583315018875
+              },
+              "epoch31": {
+                "first_report": 0.0006144423387013376,
+                "sentence_inconsistent": 0.30785942213134776
+              }
+            },
+            "human_counts": {
+              "first_report": 26,
+              "sentence_inconsistent": 27
+            },
+            "trials": 52
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "On one page she saw an advertisement for a short trip to the sea.",
+          "condition": "02",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.0003842457808787003,
+              "before_target": 0.9990001392434351,
+              "no_report": 0.0001777933503035456,
+              "target": 0.000437785784015432
+            },
+            "epoch31": {
+              "after_target": 0.0005589836073340848,
+              "before_target": 0.9985424719052389,
+              "no_report": 0.0002840498345904052,
+              "target": 0.0006144423387013376
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 7.022080549335362,
+            "epoch31": 6.681456705154289,
+            "position_hazard": 1.8019520211766478
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 7.642433744450231,
+            "epoch31": 7.279638174175064,
+            "position_hazard": 2.165112309295944
+          },
+          "human_phase_counts": {
+            "after_target": 0,
+            "before_target": 7,
+            "no_report": 19,
+            "target": 26
+          },
+          "no_report": {
+            "human_count": 19,
+            "probability": {
+              "epoch12": 0.0001777933503035456,
+              "epoch31": 0.0002840498345904052,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 119,
+              "first_report_probability": {
+                "epoch12": 0.43755972385406494,
+                "epoch31": 0.41951537132263184,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 177,
+              "first_report_probability": {
+                "epoch12": 0.24610570073127747,
+                "epoch31": 0.24347878992557526,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 1,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 258,
+              "first_report_probability": {
+                "epoch12": 0.13841775059700012,
+                "epoch31": 0.1414293795824051,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 0,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 325,
+              "first_report_probability": {
+                "epoch12": 0.07790821045637131,
+                "epoch31": 0.08212162554264069,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 406,
+              "first_report_probability": {
+                "epoch12": 0.043766140937805176,
+                "epoch31": 0.04762902483344078,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 51,
+              "human_first_reports": 1,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 459,
+              "first_report_probability": {
+                "epoch12": 0.024614937603473663,
+                "epoch31": 0.027675645425915718,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 502,
+              "first_report_probability": {
+                "epoch12": 0.013842085376381874,
+                "epoch31": 0.01600666157901287,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 612,
+              "first_report_probability": {
+                "epoch12": 0.007782142609357834,
+                "epoch31": 0.009287395514547825,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 3,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 652,
+              "first_report_probability": {
+                "epoch12": 0.00437729200348258,
+                "epoch31": 0.005392578896135092,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 727,
+              "first_report_probability": {
+                "epoch12": 0.002464912598952651,
+                "epoch31": 0.003131688805297017,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 823,
+              "first_report_probability": {
+                "epoch12": 0.0013832015683874488,
+                "epoch31": 0.0018168366514146328,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 2,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 911,
+              "first_report_probability": {
+                "epoch12": 0.0007780409068800509,
+                "epoch31": 0.0010574738262221217,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 45,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 952,
+              "first_report_probability": {
+                "epoch12": 0.000437785784015432,
+                "epoch31": 0.0006144423387013376,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 45,
+              "human_first_reports": 26,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 991,
+              "first_report_probability": {
+                "epoch12": 0.00024592733825556934,
+                "epoch31": 0.0003536967560648918,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 19,
+              "human_first_reports": 0,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1055,
+              "first_report_probability": {
+                "epoch12": 0.00013831844262313098,
+                "epoch31": 0.000205286851269193,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 19,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "5ac5b8fbcf1a4f96f9157fadd66fcc33e3d0f7e6bdf4d70b723f9137b883094f",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.4378624470754225,
+                "survival_entering_target": 0.000999824915197678
+              },
+              "epoch31": {
+                "hazard": 0.4215797935506697,
+                "survival_entering_target": 0.0014574757806258276
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 45,
+            "human_first_reports": 26,
+            "human_hazard": 0.5777777777777777
+          },
+          "target_sentence": 14,
+          "trials": 52
+        }
+      },
+      "family": "frick:14",
+      "target_effect_percentage_points": {
+        "absolute_error": {
+          "epoch12": 44.73681662485959,
+          "epoch31": 44.73713785838826,
+          "position_hazard": 44.73684210526316
+        },
+        "forecast": {
+          "epoch12": 2.5480403564870358e-05,
+          "epoch31": -0.0002957531251013279,
+          "position_hazard": 6.938893903907228e-16
+        },
+        "human": 44.73684210526316
+      },
+      "target_sentence_text": "She said she would go to the mountains."
+    },
+    {
+      "conditions": {
+        "01": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 1003,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.00043735993676818907,
+                "sentence_inconsistent": 0.3613542243582118
+              },
+              "epoch31": {
+                "first_report": 0.0006117279990576208,
+                "sentence_inconsistent": 0.30101134767036736
+              }
+            },
+            "human_counts": {
+              "first_report": 2,
+              "sentence_inconsistent": 2
+            },
+            "trials": 52
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "He was very surprised when a man walked up to him and handed him a potted ivy.",
+          "condition": "01",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.00038437558396253735,
+              "before_target": 0.9990005659637973,
+              "no_report": 0.00017766673408914357,
+              "target": 0.00043735993676818907
+            },
+            "epoch31": {
+              "after_target": 0.0005618190771201625,
+              "before_target": 0.9985425270861015,
+              "no_report": 0.0002838326327037066,
+              "target": 0.0006117279990576208
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 7.58981236436412,
+            "epoch31": 7.18226803053851,
+            "position_hazard": 0.7511858770045744
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 8.169626746093979,
+            "epoch31": 7.740880179920724,
+            "position_hazard": 1.0536628392811385
+          },
+          "human_phase_counts": {
+            "after_target": 1,
+            "before_target": 6,
+            "no_report": 43,
+            "target": 2
+          },
+          "no_report": {
+            "human_count": 43,
+            "probability": {
+              "epoch12": 0.00017766673408914357,
+              "epoch31": 0.0002838326327037066,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 87,
+              "first_report_probability": {
+                "epoch12": 0.4375629127025604,
+                "epoch31": 0.41950497031211853,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 151,
+              "first_report_probability": {
+                "epoch12": 0.2461266964673996,
+                "epoch31": 0.2435726672410965,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 0,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 197,
+              "first_report_probability": {
+                "epoch12": 0.13844168186187744,
+                "epoch31": 0.14132097363471985,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 0,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 277,
+              "first_report_probability": {
+                "epoch12": 0.07784722000360489,
+                "epoch31": 0.08204782009124756,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 359,
+              "first_report_probability": {
+                "epoch12": 0.04376542940735817,
+                "epoch31": 0.04772040992975235,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 52,
+              "human_first_reports": 3,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 488,
+              "first_report_probability": {
+                "epoch12": 0.02461596578359604,
+                "epoch31": 0.02761942707002163,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 584,
+              "first_report_probability": {
+                "epoch12": 0.013845966197550297,
+                "epoch31": 0.016029642894864082,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 708,
+              "first_report_probability": {
+                "epoch12": 0.007792394608259201,
+                "epoch31": 0.009306270629167557,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 756,
+              "first_report_probability": {
+                "epoch12": 0.004379156976938248,
+                "epoch31": 0.005419319961220026,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 825,
+              "first_report_probability": {
+                "epoch12": 0.0024603644851595163,
+                "epoch31": 0.00312895979732275,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 0,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 876,
+              "first_report_probability": {
+                "epoch12": 0.0013849661918357015,
+                "epoch31": 0.0018192327115684748,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 49,
+              "human_first_reports": 2,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 962,
+              "first_report_probability": {
+                "epoch12": 0.0007778112776577473,
+                "epoch31": 0.0010528328130021691,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 1,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 1003,
+              "first_report_probability": {
+                "epoch12": 0.00043735993676818907,
+                "epoch31": 0.0006117279990576208,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 46,
+              "human_first_reports": 2,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 1045,
+              "first_report_probability": {
+                "epoch12": 0.0002459655806887895,
+                "epoch31": 0.000356643577106297,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 44,
+              "human_first_reports": 1,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1131,
+              "first_report_probability": {
+                "epoch12": 0.00013841000327374786,
+                "epoch31": 0.00020517550001386553,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 43,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "4da3542f4ab5db233304c93b31968858e570e588a2277050b3a8cb6a0022caeb",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.43762152292423817,
+                "survival_entering_target": 0.00099940225481987
+              },
+              "epoch31": {
+                "hazard": 0.4197451050880281,
+                "survival_entering_target": 0.00145737970888149
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 46,
+            "human_first_reports": 2,
+            "human_hazard": 0.043478260869565216
+          },
+          "target_sentence": 14,
+          "trials": 52
+        },
+        "02": {
+          "actual_target_reports": {
+            "display_sentence": 14,
+            "end_exclusive": 1006,
+            "forecasts": {
+              "epoch12": {
+                "first_report": 0.00043744774302467704,
+                "sentence_inconsistent": 0.3658789580869867
+              },
+              "epoch31": {
+                "first_report": 0.0006134528666734695,
+                "sentence_inconsistent": 0.30529907091827424
+              }
+            },
+            "human_counts": {
+              "first_report": 31,
+              "sentence_inconsistent": 33
+            },
+            "trials": 50
+          },
+          "changed_sentence": 5,
+          "changed_sentence_text": "He was very surprised when a man walked up to him and handed him a potted cactus.",
+          "condition": "02",
+          "forecast_phase_probabilities": {
+            "epoch12": {
+              "after_target": 0.0003842556761810556,
+              "before_target": 0.9990006320294924,
+              "no_report": 0.00017760353512130678,
+              "target": 0.00043744774302467704
+            },
+            "epoch31": {
+              "after_target": 0.0005599391733994707,
+              "before_target": 0.998542444431223,
+              "no_report": 0.0002840796369127929,
+              "target": 0.0006134528666734695
+            },
+            "position_hazard": {
+              "after_target": 0.0742687612678447,
+              "before_target": 0.2863388873755238,
+              "no_report": 0.582847351783531,
+              "target": 0.056544999573100725
+            }
+          },
+          "four_phase_nll_nats_per_trial": {
+            "epoch12": 7.558989223671465,
+            "epoch31": 7.199061837008701,
+            "position_hazard": 2.0288658150944308
+          },
+          "full_path_nll_nats_per_trial": {
+            "epoch12": 7.838745019783886,
+            "epoch31": 7.468698669003613,
+            "position_hazard": 2.2157535289221633
+          },
+          "human_phase_counts": {
+            "after_target": 0,
+            "before_target": 3,
+            "no_report": 16,
+            "target": 31
+          },
+          "no_report": {
+            "human_count": 16,
+            "probability": {
+              "epoch12": 0.00017760353512130678,
+              "epoch31": 0.0002840796369127929,
+              "position_hazard": 0.582847351783531
+            }
+          },
+          "sentences": [
+            {
+              "end_exclusive": 87,
+              "first_report_probability": {
+                "epoch12": 0.4375629127025604,
+                "epoch31": 0.41950497031211853,
+                "position_hazard": 0.0045871559633027525
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 2
+            },
+            {
+              "end_exclusive": 151,
+              "first_report_probability": {
+                "epoch12": 0.2461266964673996,
+                "epoch31": 0.2435726672410965,
+                "position_hazard": 0.0158729900714569
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 3
+            },
+            {
+              "end_exclusive": 197,
+              "first_report_probability": {
+                "epoch12": 0.13844168186187744,
+                "epoch31": 0.14132097363471985,
+                "position_hazard": 0.01093079030702752
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 4
+            },
+            {
+              "end_exclusive": 280,
+              "first_report_probability": {
+                "epoch12": 0.07785230129957199,
+                "epoch31": 0.08204291760921478,
+                "position_hazard": 0.016566457784547305
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 5
+            },
+            {
+              "end_exclusive": 362,
+              "first_report_probability": {
+                "epoch12": 0.04376404359936714,
+                "epoch31": 0.04766717553138733,
+                "position_hazard": 0.008808684362265595
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 0,
+              "sentence": 6
+            },
+            {
+              "end_exclusive": 491,
+              "first_report_probability": {
+                "epoch12": 0.024617081508040428,
+                "epoch31": 0.027642380446195602,
+                "position_hazard": 0.008100963478253249
+              },
+              "human_at_risk": 50,
+              "human_first_reports": 2,
+              "sentence": 7
+            },
+            {
+              "end_exclusive": 587,
+              "first_report_probability": {
+                "epoch12": 0.013844064436852932,
+                "epoch31": 0.01604461669921875,
+                "position_hazard": 0.01584374364137485
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 8
+            },
+            {
+              "end_exclusive": 711,
+              "first_report_probability": {
+                "epoch12": 0.0077905962243676186,
+                "epoch31": 0.009315438568592072,
+                "position_hazard": 0.019357161865064112
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 9
+            },
+            {
+              "end_exclusive": 759,
+              "first_report_probability": {
+                "epoch12": 0.00437858235090971,
+                "epoch31": 0.005430093500763178,
+                "position_hazard": 0.015127864839190163
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 10
+            },
+            {
+              "end_exclusive": 828,
+              "first_report_probability": {
+                "epoch12": 0.0024601297918707132,
+                "epoch31": 0.0031292003113776445,
+                "position_hazard": 0.007385090596755911
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 0,
+              "sentence": 11
+            },
+            {
+              "end_exclusive": 879,
+              "first_report_probability": {
+                "epoch12": 0.001384854782372713,
+                "epoch31": 0.001819111406803131,
+                "position_hazard": 0.03128617774081642
+              },
+              "human_at_risk": 48,
+              "human_first_reports": 1,
+              "sentence": 12
+            },
+            {
+              "end_exclusive": 965,
+              "first_report_probability": {
+                "epoch12": 0.000777687004301697,
+                "epoch31": 0.0010528991697356105,
+                "position_hazard": 0.13247180672546902
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 0,
+              "sentence": 13
+            },
+            {
+              "end_exclusive": 1006,
+              "first_report_probability": {
+                "epoch12": 0.00043744774302467704,
+                "epoch31": 0.0006134528666734695,
+                "position_hazard": 0.056544999573100725
+              },
+              "human_at_risk": 47,
+              "human_first_reports": 31,
+              "sentence": 14
+            },
+            {
+              "end_exclusive": 1048,
+              "first_report_probability": {
+                "epoch12": 0.00024589779786765575,
+                "epoch31": 0.0003544399805832654,
+                "position_hazard": 0.06817020900703047
+              },
+              "human_at_risk": 16,
+              "human_first_reports": 0,
+              "sentence": 15
+            },
+            {
+              "end_exclusive": 1134,
+              "first_report_probability": {
+                "epoch12": 0.00013835787831339985,
+                "epoch31": 0.00020549919281620532,
+                "position_hazard": 0.006098552260814226
+              },
+              "human_at_risk": 16,
+              "human_first_reports": 0,
+              "sentence": 16
+            }
+          ],
+          "stimulus_sha256": "8a4aeb3ad2ac0a01169008212db125a37b830dab7d61ac85f894a0985b11721d",
+          "target_conditional_first_report": {
+            "forecast": {
+              "epoch12": {
+                "hazard": 0.43775112454737825,
+                "survival_entering_target": 0.0009993069543270394
+              },
+              "epoch31": {
+                "hazard": 0.42090208431506587,
+                "survival_entering_target": 0.0014574716769857332
+              },
+              "position_hazard": {
+                "hazard": 0.07923228346456691,
+                "survival_entering_target": 0.7136611126244764
+              }
+            },
+            "human_at_risk": 47,
+            "human_first_reports": 31,
+            "human_hazard": 0.6595744680851063
+          },
+          "target_sentence": 14,
+          "trials": 50
+        }
+      },
+      "family": "frick:8",
+      "target_effect_percentage_points": {
+        "absolute_error": {
+          "epoch12": 58.153837373220505,
+          "epoch31": 58.15367366708457,
+          "position_hazard": 58.15384615384615
+        },
+        "forecast": {
+          "epoch12": 8.780625648796558e-06,
+          "epoch31": 0.00017248676158487797,
+          "position_hazard": 0.0
+        },
+        "human": 58.15384615384615
+      },
+      "target_sentence_text": "She was admiring the ivy he had gotten."
+    }
+  ],
+  "predictions_sha256": {
+    "epoch12": "f6ba1b90ba369eb2a412d07c6db2ea2c48f72a910eb1e3f59aae2d501ddd3910",
+    "epoch31": "8c4fe4ca2d3f419a1b1c4922fcbba057052a50d4d6a8f7351cc79041ffe7a9c1"
+  },
+  "readers_in_both_roles": 140,
+  "split": {
+    "development": {
+      "families": 4,
+      "readers": 140,
+      "trials": 384,
+      "variants": 8
+    },
+    "training": {
+      "families": 16,
+      "readers": 180,
+      "trials": 1416,
+      "variants": 32
+    }
+  },
+  "target_alignment_audit": {
+    "actual_target_effects_percentage_points": {
+      "equal_family": {
+        "first_report": {
+          "epoch12": 8.666393114253879e-06,
+          "epoch31": -2.430751919746399e-05,
+          "human": 55.3917004048583
+        },
+        "sentence_inconsistent": {
+          "epoch12": 0.3401864374050656,
+          "epoch31": -0.14095764581578685,
+          "human": 61.63765182186235
+        }
+      },
+      "trial_pooled": {
+        "first_report": {
+          "epoch12": 9.485857113830046e-06,
+          "epoch31": 8.222292439128472e-06,
+          "human": 55.490196078431374
+        },
+        "sentence_inconsistent": {
+          "epoch12": 0.3395665504837886,
+          "epoch31": -0.06756647637727875,
+          "human": 61.732026143790854
+        }
+      }
+    },
+    "archived_effects_percentage_points": {
+      "first_report": {
+        "epoch12": -1.983426045626402e-06,
+        "epoch31": 6.293412297964096e-05,
+        "human": -0.4807692307692308
+      },
+      "sentence_inconsistent": {
+        "epoch12": -0.0012643014815072462,
+        "epoch31": 0.010339114723023624,
+        "human": 0.0
+      }
+    },
+    "base_receipt_sha256": "acf3d087a0b21a29bf25418040af8c20e3c0b9c0f6e6a7ee586b57b6fee8020d",
+    "report_sha256": {
+      "epoch12": "af8374da19873057c67195ed83a8de787348c443c8647993abfcb58accdaa791",
+      "epoch31": "31092724460f8435585e6d129ce09245f3c7f2308f3a007cbc20854f57c8b9b7"
+    },
+    "status": "Archived contrast replayed at the preceding sentence, one position before the true target"
+  },
+  "target_conditional_first_report_by_condition": {
+    "01": {
+      "forecast": {
+        "epoch12": {
+          "human_risk_weighted_hazard": 0.43758488912761956,
+          "model_risk_weighted_hazard": 0.4375852900058609
+        },
+        "epoch31": {
+          "human_risk_weighted_hazard": 0.4206397220109347,
+          "model_risk_weighted_hazard": 0.42063754173188955
+        },
+        "position_hazard": {
+          "human_risk_weighted_hazard": 0.07923228346456691,
+          "model_risk_weighted_hazard": 0.07923228346456691
+        }
+      },
+      "human_at_risk": 164,
+      "human_first_reports": 6,
+      "human_hazard": 0.036585365853658534
+    },
+    "02": {
+      "forecast": {
+        "epoch12": {
+          "human_risk_weighted_hazard": 0.43768623977141985,
+          "model_risk_weighted_hazard": 0.43768232465339296
+        },
+        "epoch31": {
+          "human_risk_weighted_hazard": 0.4204785953226628,
+          "model_risk_weighted_hazard": 0.42046113963711707
+        },
+        "position_hazard": {
+          "human_risk_weighted_hazard": 0.07923228346456691,
+          "model_risk_weighted_hazard": 0.07923228346456691
+        }
+      },
+      "human_at_risk": 177,
+      "human_first_reports": 120,
+      "human_hazard": 0.6779661016949152
+    }
+  },
+  "target_effect_percentage_points": {
+    "absolute_error": {
+      "epoch12": 55.49018659257426,
+      "epoch31": 55.49018785613894,
+      "position_hazard": 55.490196078431374
+    },
+    "forecast": {
+      "epoch12": 9.485857113830046e-06,
+      "epoch31": 8.222292439128472e-06,
+      "position_hazard": 0.0
+    },
+    "human": 55.490196078431374
+  },
+  "task": "First prompted report of inconsistency with prior text, from displayed sentence 2; no report is terminal censoring",
+  "task_rows_sha256": "781af7380e795e63843d7970e5aa5023e0b7282cc85fd176919fa815dec2a79e"
+}

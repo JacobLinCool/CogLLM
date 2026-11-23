@@ -1,0 +1,480 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "family_strata": [
+      "narrative",
+      "expository"
+    ],
+    "interval": 0.95,
+    "nll_margin_nats": 0.02,
+    "probability_effect_margin": 0.1,
+    "reader_pool": "shared_across_genres_and_conditions",
+    "seed": 735972
+  },
+  "evaluation_sha256": "e0fd3204394234f8e363b86b29a3b5cc5159fdbc5dbd640665305ea809b9e6da",
+  "forecast_seal_sha256": "ebbc8174002436e125c59baf214eb63632c5beb03fece3a914be9eb0e630c0de",
+  "inputs_sha256": {
+    "layout.jsonl": "8ea0713ac8799a5663eac4625151ad8bef007eb6ee6c81bac14bc3afa732f908",
+    "outcomes.jsonl": "1b68a2ea23d33ca07c7bdef1e9816809526579993db9369e5d03209a561fdb85",
+    "stimuli.jsonl": "17ea1b4f66b01510fa23f4dd8290c4c15d437d8bfca547b64e4a1eb9ec4ef0a8"
+  },
+  "inventory": {
+    "families": 24,
+    "families_by_genre": {
+      "expository": 12,
+      "narrative": 12
+    },
+    "judgments": 4248,
+    "max_judgments_per_version": 89,
+    "min_judgments_per_version": 87,
+    "no_reports": 2243,
+    "readers": 179,
+    "readers_by_genre": {
+      "expository": 176,
+      "narrative": 178
+    },
+    "versions": 48
+  },
+  "primary": {
+    "by_genre_condition": {
+      "expository": {
+        "far": {
+          "families": 12,
+          "human_report_rate": 0.4079060656937448,
+          "judgments": 1056,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.6763357520130319,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 0.8079823083594739,
+              "report_probability": 0.18374940599465994
+            },
+            "paired_effect": {
+              "nll_nats": 1.03622414454581,
+              "report_probability": 0.09407237847095679
+            },
+            "target_weighted": {
+              "nll_nats": 0.6688263416724398,
+              "report_probability": 0.40510932476660005
+            }
+          },
+          "no_reports": 431
+        },
+        "near": {
+          "families": 12,
+          "human_report_rate": 0.4005230530802014,
+          "judgments": 1056,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.6739190241538987,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 0.7993592385319531,
+              "report_probability": 0.183470704010359
+            },
+            "paired_effect": {
+              "nll_nats": 1.0326334284905043,
+              "report_probability": 0.0903944258748137
+            },
+            "target_weighted": {
+              "nll_nats": 0.6704470537299462,
+              "report_probability": 0.4032504982735625
+            }
+          },
+          "no_reports": 423
+        }
+      },
+      "narrative": {
+        "far": {
+          "families": 12,
+          "human_report_rate": 0.6488764044943819,
+          "judgments": 1068,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.7552140854911481,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 1.2168520786381325,
+              "report_probability": 0.17140568229440106
+            },
+            "paired_effect": {
+              "nll_nats": 1.7198812366425187,
+              "report_probability": 0.09404450762574945
+            },
+            "target_weighted": {
+              "nll_nats": 0.8576208145300263,
+              "report_probability": 0.34921049632148293
+            }
+          },
+          "no_reports": 693
+        },
+        "near": {
+          "families": 12,
+          "human_report_rate": 0.6516853932584269,
+          "judgments": 1068,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.7561335694142295,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 1.2207476222971583,
+              "report_probability": 0.17147805057698295
+            },
+            "paired_effect": {
+              "nll_nats": 1.7359914555395026,
+              "report_probability": 0.08611715150323604
+            },
+            "target_weighted": {
+              "nll_nats": 0.8583255296328866,
+              "report_probability": 0.34850019855461967
+            }
+          },
+          "no_reports": 696
+        }
+      }
+    },
+    "effect": "narrative_minus_expository",
+    "gates": {
+      "paired_effect_gap_inside_margin": false,
+      "paired_effect_nll_noninferior_to_constant": false,
+      "paired_effect_nll_noninferior_to_global": false,
+      "paired_effect_positive": false
+    },
+    "human_effect": {
+      "ci95": [
+        0.1307453786130462,
+        0.3627822017133845
+      ],
+      "estimate": 0.24606633948943127
+    },
+    "methods": {
+      "constant": {
+        "effect": {
+          "ci95": [
+            -1.1102230246251565e-16,
+            1.1102230246251565e-16
+          ],
+          "estimate": 0.0
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.3627822017133845,
+            -0.13074537861304636
+          ],
+          "estimate": -0.24606633948943127
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            0.6946216663086495,
+            0.7356160458360701
+          ],
+          "estimate": 0.715400607768077
+        }
+      },
+      "global": {
+        "effect": {
+          "ci95": [
+            -0.0213012993863778,
+            -0.00323067477192816
+          ],
+          "estimate": -0.012168188566817464
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.37517915607487307,
+            -0.14107294574200188
+          ],
+          "estimate": -0.25823452805624875
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            0.9107106431491614,
+            1.1090511218673966
+          ],
+          "estimate": 1.0112353119566795
+        }
+      },
+      "paired_effect": {
+        "effect": {
+          "ci95": [
+            -0.034564398217857666,
+            0.033576288760635294
+          ],
+          "estimate": -0.0021525726083924945
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.37301503033586,
+            -0.12605261980282176
+          ],
+          "estimate": -0.24821891209782376
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            1.1827529225879123,
+            1.586894873263384
+          ],
+          "estimate": 1.3811825663045838
+        }
+      },
+      "target_weighted": {
+        "effect": {
+          "ci95": [
+            -0.09383863272373089,
+            -0.01669916781167539
+          ],
+          "estimate": -0.05532456408202999
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.42844938450220693,
+            -0.1777528000669174
+          ],
+          "estimate": -0.30139090357146125
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            0.7188928049738162,
+            0.8116447614002743
+          ],
+          "estimate": 0.7638049348913247
+        }
+      }
+    },
+    "nll_differences": {
+      "paired_effect_minus_constant": {
+        "ci95": [
+          0.48472238662242884,
+          0.8541489448340188
+        ],
+        "estimate": 0.6657819585365068
+      },
+      "paired_effect_minus_global": {
+        "ci95": [
+          0.2539781232106262,
+          0.48899076710671036
+        ],
+        "estimate": 0.3699472543479043
+      }
+    },
+    "passed": false
+  },
+  "report_event": "No",
+  "schema": 1,
+  "secondary": {
+    "available": true,
+    "by_genre_condition": {
+      "expository": {
+        "far": {
+          "families": 10,
+          "human_report_rate": 0.4121012527444143,
+          "judgments": 880,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.6777089889219096,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 0.8136410614252024,
+              "report_probability": 0.1836801818991611
+            },
+            "paired_effect": {
+              "nll_nats": 1.0531418851340686,
+              "report_probability": 0.09236918158814683
+            },
+            "target_weighted": {
+              "nll_nats": 0.6690016811124757,
+              "report_probability": 0.4038269417684183
+            }
+          },
+          "no_reports": 363
+        },
+        "near": {
+          "families": 10,
+          "human_report_rate": 0.4080201472297559,
+          "judgments": 880,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.6763730950382605,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 0.8110433988024114,
+              "report_probability": 0.1830170808445794
+            },
+            "paired_effect": {
+              "nll_nats": 1.075065357258965,
+              "report_probability": 0.08205733120168333
+            },
+            "target_weighted": {
+              "nll_nats": 0.6727187296119594,
+              "report_probability": 0.39883550458947054
+            }
+          },
+          "no_reports": 359
+        }
+      },
+      "narrative": {
+        "far": {
+          "families": 10,
+          "human_report_rate": 0.6662921348314607,
+          "judgments": 890,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.7609148858142519,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 1.2512789373423978,
+              "report_probability": 0.16928308416283327
+            },
+            "paired_effect": {
+              "nll_nats": 1.8450174228799985,
+              "report_probability": 0.07959145314502762
+            },
+            "target_weighted": {
+              "nll_nats": 0.8826788217658208,
+              "report_probability": 0.3374140189279723
+            }
+          },
+          "no_reports": 593
+        },
+        "near": {
+          "families": 10,
+          "human_report_rate": 0.6662921348314607,
+          "judgments": 890,
+          "methods": {
+            "constant": {
+              "nll_nats": 0.7609148858142519,
+              "report_probability": 0.4188888888888888
+            },
+            "global": {
+              "nll_nats": 1.24932037749536,
+              "report_probability": 0.1697925147875133
+            },
+            "paired_effect": {
+              "nll_nats": 1.8201082840535252,
+              "report_probability": 0.07940315617355928
+            },
+            "target_weighted": {
+              "nll_nats": 0.8780220415848758,
+              "report_probability": 0.3406467601577666
+            }
+          },
+          "no_reports": 593
+        }
+      }
+    },
+    "effect": "far_minus_near",
+    "families_by_genre": {
+      "expository": 10,
+      "narrative": 10
+    },
+    "human_effect": {
+      "ci95": [
+        -0.04862451302030961,
+        0.05425920781145577
+      ],
+      "estimate": 0.0020405527573292004
+    },
+    "methods": {
+      "constant": {
+        "effect": {
+          "ci95": [
+            0.0,
+            0.0
+          ],
+          "estimate": 0.0
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.05425920781145578,
+            0.04862451302030956
+          ],
+          "estimate": -0.0020405527573292004
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            0.6951555560011491,
+            0.7416969215444468
+          ],
+          "estimate": 0.7189779638971685
+        }
+      },
+      "global": {
+        "effect": {
+          "ci95": [
+            -0.0008221653836653162,
+            0.0010064255756866913
+          ],
+          "estimate": 7.683521495083223e-05
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.05410141895151234,
+            0.04877798846617711
+          ],
+          "estimate": -0.001963717542378368
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            0.915167730000921,
+            1.1405988981367534
+          ],
+          "estimate": 1.0313209437663429
+        }
+      },
+      "paired_effect": {
+        "effect": {
+          "ci95": [
+            -0.00269488108621769,
+            0.014661746240561721
+          ],
+          "estimate": 0.005250073678965919
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.05008378109173172,
+            0.055259108945770824
+          ],
+          "estimate": 0.0032095209216367188
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            1.2279859364493118,
+            1.6712065668470963
+          ],
+          "estimate": 1.4483332373316393
+        }
+      },
+      "target_weighted": {
+        "effect": {
+          "ci95": [
+            -0.0036945739215552345,
+            0.005798461852270075
+          ],
+          "estimate": 0.0008793479745767274
+        },
+        "effect_minus_human": {
+          "ci95": [
+            -0.05379251396794561,
+            0.05039209345997222
+          ],
+          "estimate": -0.001161204782752473
+        },
+        "nll_nats_per_judgment": {
+          "ci95": [
+            0.723642416839458,
+            0.8276881075505994
+          ],
+          "estimate": 0.775605318518783
+        }
+      }
+    }
+  }
+}

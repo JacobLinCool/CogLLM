@@ -1,0 +1,564 @@
+{
+  "average_precision": {
+    "all": {
+      "claims": 487,
+      "documents": 47,
+      "families": 47,
+      "methods": {
+        "lexical": {
+          "ci95": [
+            0.37511561726243303,
+            0.4458794589335425
+          ],
+          "estimate": 0.40948030254796797
+        },
+        "pooled_rank": {
+          "ci95": [
+            0.08713801220350703,
+            0.12420936601849089
+          ],
+          "estimate": 0.10538384726732918
+        },
+        "position": {
+          "ci95": [
+            0.0769870804448852,
+            0.11777511863885652
+          ],
+          "estimate": 0.0957829740945013
+        },
+        "question_only": {
+          "ci95": [
+            0.030567081247375488,
+            0.043642693556583304
+          ],
+          "estimate": 0.03673024922761965
+        },
+        "token_rank": {
+          "ci95": [
+            0.09373668192699151,
+            0.13566022322696059
+          ],
+          "estimate": 0.11413921007143253
+        }
+      },
+      "token_rank_minus": {
+        "lexical": {
+          "ci95": [
+            -0.33051196554009454,
+            -0.2594991945732599
+          ],
+          "estimate": -0.29534109247653545
+        },
+        "pooled_rank": {
+          "ci95": [
+            0.004053168075549295,
+            0.014645093465590734
+          ],
+          "estimate": 0.008755362804103356
+        },
+        "position": {
+          "ci95": [
+            0.0020802986486383227,
+            0.03450650367454291
+          ],
+          "estimate": 0.01835623597693123
+        },
+        "question_only": {
+          "ci95": [
+            0.05939117387934005,
+            0.09745320806373475
+          ],
+          "estimate": 0.07740896084381288
+        }
+      },
+      "valid_bootstrap_draws": 10000
+    },
+    "by_label": {
+      "Contradiction": {
+        "claims": 93,
+        "documents": 45,
+        "families": 45,
+        "methods": {
+          "lexical": {
+            "ci95": [
+              0.2502684512365706,
+              0.3792931025996035
+            ],
+            "estimate": 0.3124774682768159
+          },
+          "pooled_rank": {
+            "ci95": [
+              0.0827047485650625,
+              0.15957633775814942
+            ],
+            "estimate": 0.11976949661854733
+          },
+          "position": {
+            "ci95": [
+              0.057517303973326425,
+              0.10472770189120317
+            ],
+            "estimate": 0.07968283410674462
+          },
+          "question_only": {
+            "ci95": [
+              0.024338809150506905,
+              0.03860770921432502
+            ],
+            "estimate": 0.031093073928964352
+          },
+          "token_rank": {
+            "ci95": [
+              0.08906341617349248,
+              0.17289054561330028
+            ],
+            "estimate": 0.12979974080693327
+          }
+        },
+        "token_rank_minus": {
+          "lexical": {
+            "ci95": [
+              -0.25845432441899907,
+              -0.1107473419917417
+            ],
+            "estimate": -0.18267772746988262
+          },
+          "pooled_rank": {
+            "ci95": [
+              0.0026286813872647046,
+              0.019985455353591208
+            ],
+            "estimate": 0.01003024418838594
+          },
+          "position": {
+            "ci95": [
+              0.020049514796755666,
+              0.08486644762775288
+            ],
+            "estimate": 0.050116906700188646
+          },
+          "question_only": {
+            "ci95": [
+              0.06083229735462895,
+              0.14058410996799017
+            ],
+            "estimate": 0.09870666687796892
+          }
+        },
+        "valid_bootstrap_draws": 10000
+      },
+      "Entailment": {
+        "claims": 394,
+        "documents": 47,
+        "families": 47,
+        "methods": {
+          "lexical": {
+            "ci95": [
+              0.39491226724409073,
+              0.462723466644272
+            ],
+            "estimate": 0.42799319725694873
+          },
+          "pooled_rank": {
+            "ci95": [
+              0.08221096333929191,
+              0.11510982050282006
+            ],
+            "estimate": 0.09832106240884594
+          },
+          "position": {
+            "ci95": [
+              0.07910103702760495,
+              0.1256988810312941
+            ],
+            "estimate": 0.10016498913646722
+          },
+          "question_only": {
+            "ci95": [
+              0.031428757217956835,
+              0.04481789781351241
+            ],
+            "estimate": 0.03774061722254112
+          },
+          "token_rank": {
+            "ci95": [
+              0.08833804212737417,
+              0.1264309217936639
+            ],
+            "estimate": 0.10696084921881667
+          }
+        },
+        "token_rank_minus": {
+          "lexical": {
+            "ci95": [
+              -0.35334554132171325,
+              -0.28950084164447043
+            ],
+            "estimate": -0.3210323480381321
+          },
+          "pooled_rank": {
+            "ci95": [
+              0.003515123086357677,
+              0.015444572144715361
+            ],
+            "estimate": 0.008639786809970726
+          },
+          "position": {
+            "ci95": [
+              -0.012202915516038111,
+              0.022095113748850564
+            ],
+            "estimate": 0.0067958600823494475
+          },
+          "question_only": {
+            "ci95": [
+              0.05285634866290631,
+              0.08714118730577546
+            ],
+            "estimate": 0.06922023199627556
+          }
+        },
+        "valid_bootstrap_draws": 10000
+      }
+    },
+    "coverage": {
+      "Contradiction": {
+        "annotated_claims": 93,
+        "annotated_evidence_spans": 172,
+        "certified_evidence_spans": 172,
+        "claims_with_unaligned_evidence": 0,
+        "claims_without_certified_distractors": 0,
+        "scored_candidate_spans": 7640,
+        "scored_claims": 93
+      },
+      "Entailment": {
+        "annotated_claims": 394,
+        "annotated_evidence_spans": 883,
+        "certified_evidence_spans": 883,
+        "claims_with_unaligned_evidence": 0,
+        "claims_without_certified_distractors": 0,
+        "scored_candidate_spans": 36276,
+        "scored_claims": 394
+      }
+    }
+  },
+  "bootstrap": {
+    "draws": 10000,
+    "interval": "paired_percentile",
+    "sampling_unit": "document_family",
+    "seed": 735972
+  },
+  "claim_pair_ordering": {
+    "coverage": {
+      "annotated_entailment_contradiction_pairs": 806,
+      "disjoint_pairs": 718,
+      "disjoint_pairs_with_unaligned_evidence": 0,
+      "overlapping_pairs": 88,
+      "scored_pairs": 718
+    },
+    "directions": 1436,
+    "documents": 45,
+    "families": 45,
+    "methods": {
+      "lexical": {
+        "ci95": [
+          0.7012804584607785,
+          0.7721748983198146
+        ],
+        "estimate": 0.736869311205209
+      },
+      "pooled_rank": {
+        "ci95": [
+          0.5183086034033515,
+          0.5405403974394285
+        ],
+        "estimate": 0.5287692562692535
+      },
+      "position": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "estimate": 0.5
+      },
+      "question_only": {
+        "ci95": [
+          0.5,
+          0.5
+        ],
+        "estimate": 0.5
+      },
+      "token_rank": {
+        "ci95": [
+          0.5167939958904572,
+          0.5396040570750857
+        ],
+        "estimate": 0.5274989884635448
+      }
+    },
+    "pairs": 718,
+    "raw_direction_counts": {
+      "lexical": {
+        "losses": 353,
+        "ties": 0,
+        "wins": 1083
+      },
+      "pooled_rank": {
+        "losses": 673,
+        "ties": 0,
+        "wins": 763
+      },
+      "position": {
+        "losses": 718,
+        "ties": 0,
+        "wins": 718
+      },
+      "question_only": {
+        "losses": 718,
+        "ties": 0,
+        "wins": 718
+      },
+      "token_rank": {
+        "losses": 675,
+        "ties": 0,
+        "wins": 761
+      }
+    },
+    "token_rank_minus": {
+      "lexical": {
+        "ci95": [
+          -0.2475640268622613,
+          -0.17055014558383838
+        ],
+        "estimate": -0.20937032274166423
+      },
+      "pooled_rank": {
+        "ci95": [
+          -0.009847092438187316,
+          0.006728128734769156
+        ],
+        "estimate": -0.0012702678057087136
+      },
+      "position": {
+        "ci95": [
+          0.016793995890457117,
+          0.039604057075085776
+        ],
+        "estimate": 0.027498988463544816
+      },
+      "question_only": {
+        "ci95": [
+          0.016793995890457117,
+          0.039604057075085776
+        ],
+        "estimate": 0.027498988463544816
+      }
+    },
+    "valid_bootstrap_draws": 10000
+  },
+  "evidence_availability": {
+    "excluded_for_missing_evidence_boundary": {},
+    "included_by_label": {
+      "Contradiction": 93,
+      "Entailment": 394,
+      "NotMentioned": 312
+    },
+    "methods": {
+      "pooled_rank": {
+        "expmrc": {
+          "cumulative_brier": 0.4857239299501046,
+          "nll_by_label": {
+            "Contradiction": 10.417283600703113,
+            "Entailment": 14.55286554074149,
+            "NotMentioned": 56.88480773721365
+          },
+          "nll_nats": 29.141036315177217,
+          "terminal_survival": 0.002026812222049154
+        },
+        "qasper_clock": {
+          "cumulative_brier": 0.24361579347714904,
+          "nll_by_label": {
+            "Contradiction": 4.484832237553098,
+            "Entailment": 4.791603722788761,
+            "NotMentioned": 1.2005168658612948
+          },
+          "nll_nats": 3.2992370951838006,
+          "terminal_survival": 0.44651731211211626
+        },
+        "qasper_clock_plateau": {
+          "cumulative_brier": 0.24481511101659353,
+          "nll_by_label": {
+            "Contradiction": 4.690687848237583,
+            "Entailment": 4.889924258554838,
+            "NotMentioned": 1.0178098050516882
+          },
+          "nll_nats": 3.3126846270546517,
+          "terminal_survival": 0.44909213455538594
+        },
+        "raw": {
+          "cumulative_brier": 0.30522647280370485,
+          "nll_by_label": {
+            "Contradiction": 4.048418684156652,
+            "Entailment": 4.93497575413656,
+            "NotMentioned": 17.75328187315552
+          },
+          "nll_nats": 9.215793908544281,
+          "terminal_survival": 0.052407308276529965
+        }
+      },
+      "position": {
+        "expmrc": {
+          "cumulative_brier": 0.4898266737542217,
+          "nll_by_label": {
+            "Contradiction": 12.534939486333986,
+            "Entailment": 18.635660297595052,
+            "NotMentioned": 72.07742778150022
+          },
+          "nll_nats": 36.582721374629735,
+          "terminal_survival": 0.002134820593190781
+        },
+        "qasper_clock": {
+          "cumulative_brier": 0.23272050486107335,
+          "nll_by_label": {
+            "Contradiction": 4.27708517506989,
+            "Entailment": 4.457276118012762,
+            "NotMentioned": 1.9120002947109882
+          },
+          "nll_nats": 3.3608701783686397,
+          "terminal_survival": 0.3422366808684814
+        },
+        "qasper_clock_plateau": {
+          "cumulative_brier": 0.22916920459569204,
+          "nll_by_label": {
+            "Contradiction": 4.3806754563953705,
+            "Entailment": 4.5168277775917,
+            "NotMentioned": 1.3085745160376505
+          },
+          "nll_nats": 3.213991028961601,
+          "terminal_survival": 0.3600376848220428
+        },
+        "raw": {
+          "cumulative_brier": 0.26867793106947774,
+          "nll_by_label": {
+            "Contradiction": 3.875684237002169,
+            "Entailment": 4.367678845008784,
+            "NotMentioned": 9.405294842024086
+          },
+          "nll_nats": 5.869855481534099,
+          "terminal_survival": 0.105140007745394
+        }
+      },
+      "question_only": {
+        "expmrc": {
+          "cumulative_brier": 0.4066633332749488,
+          "nll_by_label": {
+            "Contradiction": 5.930827650658417,
+            "Entailment": 7.058089668593175,
+            "NotMentioned": 25.714550581902586
+          },
+          "nll_nats": 14.227611421373659,
+          "terminal_survival": 0.009016349116255942
+        },
+        "qasper_clock": {
+          "cumulative_brier": 0.24575931028689957,
+          "nll_by_label": {
+            "Contradiction": 5.292790867674746,
+            "Entailment": 5.036889564783269,
+            "NotMentioned": 1.4541106474725904
+          },
+          "nll_nats": 3.6567965512970804,
+          "terminal_survival": 0.3788078036233048
+        },
+        "qasper_clock_plateau": {
+          "cumulative_brier": 0.24419507133792182,
+          "nll_by_label": {
+            "Contradiction": 5.448694134100581,
+            "Entailment": 5.100071198795029,
+            "NotMentioned": 1.1440284478851885
+          },
+          "nll_nats": 3.5640523901359527,
+          "terminal_survival": 0.3902070357730682
+        },
+        "raw": {
+          "cumulative_brier": 0.3957057115609278,
+          "nll_by_label": {
+            "Contradiction": 6.23309536078468,
+            "Entailment": 7.402766356539116,
+            "NotMentioned": 31.09744318884577
+          },
+          "nll_nats": 16.579094383598875,
+          "terminal_survival": 0.010459744796321462
+        }
+      },
+      "token_rank": {
+        "expmrc": {
+          "cumulative_brier": 0.4840169424753169,
+          "nll_by_label": {
+            "Contradiction": 10.532131078213954,
+            "Entailment": 14.855351594311294,
+            "NotMentioned": 57.831342122448916
+          },
+          "nll_nats": 29.581081905008837,
+          "terminal_survival": 0.00218291691030935
+        },
+        "qasper_clock": {
+          "cumulative_brier": 0.24197629672476537,
+          "nll_by_label": {
+            "Contradiction": 4.445562617860119,
+            "Entailment": 4.765765823064596,
+            "NotMentioned": 1.1726950149018396
+          },
+          "nll_nats": 3.272105034868533,
+          "terminal_survival": 0.4505768497738877
+        },
+        "qasper_clock_plateau": {
+          "cumulative_brier": 0.2427165791179793,
+          "nll_by_label": {
+            "Contradiction": 4.615867731286309,
+            "Entailment": 4.844912734767307,
+            "NotMentioned": 1.0043880433489556
+          },
+          "nll_nats": 3.278661198833176,
+          "terminal_survival": 0.45301964426933217
+        },
+        "raw": {
+          "cumulative_brier": 0.30185634293209934,
+          "nll_by_label": {
+            "Contradiction": 3.9207154757778095,
+            "Entailment": 4.8113916921892805,
+            "NotMentioned": 16.09644753304118
+          },
+          "nll_nats": 8.530019151244135,
+          "terminal_survival": 0.05478522795289626
+        }
+      }
+    }
+  },
+  "gates": {
+    "average_precision_token_rank_over_lexical": false,
+    "average_precision_token_rank_over_pooled_rank": true,
+    "claim_pair_ordering_token_rank_over_lexical": false,
+    "claim_pair_ordering_token_rank_over_pooled_rank": false
+  },
+  "input_sha256": {
+    "exp_mrc_calibrators": "efab56f7379a00b6b468a82c5a0ac8ad34aa8fe9d1189f434e995bd27bf1f944",
+    "forecast_seal": "5d1c3026f12f11ac2c38ddb3b99bfc7fef8c08b55fd4d55d52782607ee3cd0a2",
+    "protocol": "fc96cba109347f95f4ee049ddaaae1fb2907dd0e19f26d44b795fa41c8828451",
+    "qasper_calibrators": "1f38624d2059ab8dcee585c007b0efea72bb443471174aaa46546c9da4345f4a",
+    "reporter_source": "89a9e296983767ea48c1512cfda820ee1ff996b322d04870983e6671cfd84402",
+    "source_audit": "38d43ddede0c67526e93ae8eaddc5de45292383efbb5a92f396a6da94cd3f14e"
+  },
+  "pass": false,
+  "scope": {
+    "certified_candidate_spans": 4207,
+    "claims": 799,
+    "claims_by_label": {
+      "Contradiction": 93,
+      "Entailment": 394,
+      "NotMentioned": 312
+    },
+    "documents": 47,
+    "families": 47,
+    "source_candidate_spans": 4318
+  }
+}

@@ -1,0 +1,294 @@
+{
+  "cached_live_equivalence": [
+    {
+      "fold": 4,
+      "max_absolute_probability_error": 3.786334773492328e-07,
+      "model": "frozen"
+    },
+    {
+      "fold": 4,
+      "max_absolute_probability_error": 4.622374788543215e-06,
+      "model": "lora"
+    },
+    {
+      "fold": 3,
+      "max_absolute_probability_error": 2.3639968996236327e-07,
+      "model": "frozen"
+    },
+    {
+      "fold": 3,
+      "max_absolute_probability_error": 4.782316333884484e-06,
+      "model": "lora"
+    },
+    {
+      "fold": 2,
+      "max_absolute_probability_error": 3.633504119804343e-07,
+      "model": "frozen"
+    },
+    {
+      "fold": 2,
+      "max_absolute_probability_error": 3.300259087901658e-06,
+      "model": "lora"
+    },
+    {
+      "fold": 1,
+      "max_absolute_probability_error": 2.8519626904532913e-07,
+      "model": "frozen"
+    },
+    {
+      "fold": 1,
+      "max_absolute_probability_error": 5.740360224937291e-06,
+      "model": "lora"
+    },
+    {
+      "fold": 0,
+      "max_absolute_probability_error": 2.5588624646966096e-07,
+      "model": "frozen"
+    },
+    {
+      "fold": 0,
+      "max_absolute_probability_error": 4.722552974456562e-06,
+      "model": "lora"
+    },
+    {
+      "fold": "full",
+      "max_absolute_probability_error": 1.806041225460575e-07,
+      "model": "frozen"
+    },
+    {
+      "fold": "full",
+      "max_absolute_probability_error": 4.1946156954519864e-06,
+      "model": "lora"
+    }
+  ],
+  "frozen": {
+    "checks": [
+      {
+        "character_end": 294,
+        "id": "text_36_simp",
+        "max_absolute": 4.57763671875e-05,
+        "max_relative_rms": 2.0224576928740134e-06,
+        "passed": true,
+        "prefix_tokens": 60,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 294,
+        "id": "text_36_simp",
+        "max_absolute": 3.62396240234375e-05,
+        "max_relative_rms": 1.9871249605785124e-06,
+        "passed": true,
+        "prefix_tokens": 60,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 456,
+        "id": "text_31",
+        "max_absolute": 5.53131103515625e-05,
+        "max_relative_rms": 3.0116525522316806e-06,
+        "passed": true,
+        "prefix_tokens": 95,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 456,
+        "id": "text_31",
+        "max_absolute": 3.9637088775634766e-05,
+        "max_relative_rms": 2.379671968810726e-06,
+        "passed": true,
+        "prefix_tokens": 95,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 493,
+        "id": "text_12_simp",
+        "max_absolute": 3.147125244140625e-05,
+        "max_relative_rms": 1.7084674936995725e-06,
+        "passed": true,
+        "prefix_tokens": 109,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 493,
+        "id": "text_12_simp",
+        "max_absolute": 4.5299530029296875e-05,
+        "max_relative_rms": 1.6582142734478111e-06,
+        "passed": true,
+        "prefix_tokens": 109,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 515,
+        "id": "text_35_simp",
+        "max_absolute": 4.673004150390625e-05,
+        "max_relative_rms": 2.785937567750807e-06,
+        "passed": true,
+        "prefix_tokens": 125,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 515,
+        "id": "text_35_simp",
+        "max_absolute": 5.030632019042969e-05,
+        "max_relative_rms": 2.9751695365121122e-06,
+        "passed": true,
+        "prefix_tokens": 125,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 882,
+        "id": "ba4a71fcd77164c1",
+        "max_absolute": 4.482269287109375e-05,
+        "max_relative_rms": 2.7052783480030484e-06,
+        "passed": true,
+        "prefix_tokens": 162,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 882,
+        "id": "ba4a71fcd77164c1",
+        "max_absolute": 3.910064697265625e-05,
+        "max_relative_rms": 2.457126811350463e-06,
+        "passed": true,
+        "prefix_tokens": 162,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 2198,
+        "id": "1686c5d0af0ad9f0",
+        "max_absolute": 6.961822509765625e-05,
+        "max_relative_rms": 2.4808277885313146e-06,
+        "passed": true,
+        "prefix_tokens": 409,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 2198,
+        "id": "1686c5d0af0ad9f0",
+        "max_absolute": 6.580352783203125e-05,
+        "max_relative_rms": 2.549628106862656e-06,
+        "passed": true,
+        "prefix_tokens": 409,
+        "variant": "replacement"
+      }
+    ],
+    "comparison": "original source states vs independently retokenized truncation and suffix replacement",
+    "relative_tolerance": 0.001
+  },
+  "inference_forwards_per_document_per_model": 1,
+  "lora": {
+    "checks": [
+      {
+        "character_end": 294,
+        "id": "text_36_simp",
+        "max_absolute": 0.00042724609375,
+        "max_relative_rms": 2.9288703444763087e-06,
+        "passed": true,
+        "prefix_tokens": 60,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 294,
+        "id": "text_36_simp",
+        "max_absolute": 0.000244140625,
+        "max_relative_rms": 2.2120070752862375e-06,
+        "passed": true,
+        "prefix_tokens": 60,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 456,
+        "id": "text_31",
+        "max_absolute": 0.00042724609375,
+        "max_relative_rms": 4.484405508264899e-06,
+        "passed": true,
+        "prefix_tokens": 95,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 456,
+        "id": "text_31",
+        "max_absolute": 0.00042724609375,
+        "max_relative_rms": 3.3153519325423986e-06,
+        "passed": true,
+        "prefix_tokens": 95,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 493,
+        "id": "text_12_simp",
+        "max_absolute": 0.0005359649658203125,
+        "max_relative_rms": 4.633775461115874e-06,
+        "passed": true,
+        "prefix_tokens": 109,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 493,
+        "id": "text_12_simp",
+        "max_absolute": 0.000446319580078125,
+        "max_relative_rms": 4.1367147787241265e-06,
+        "passed": true,
+        "prefix_tokens": 109,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 515,
+        "id": "text_35_simp",
+        "max_absolute": 0.000522613525390625,
+        "max_relative_rms": 3.852819645544514e-06,
+        "passed": true,
+        "prefix_tokens": 125,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 515,
+        "id": "text_35_simp",
+        "max_absolute": 0.0004730224609375,
+        "max_relative_rms": 3.5273906178190373e-06,
+        "passed": true,
+        "prefix_tokens": 125,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 882,
+        "id": "ba4a71fcd77164c1",
+        "max_absolute": 0.00038909912109375,
+        "max_relative_rms": 3.014841013282421e-06,
+        "passed": true,
+        "prefix_tokens": 162,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 882,
+        "id": "ba4a71fcd77164c1",
+        "max_absolute": 0.00037384033203125,
+        "max_relative_rms": 2.699839342312771e-06,
+        "passed": true,
+        "prefix_tokens": 162,
+        "variant": "replacement"
+      },
+      {
+        "character_end": 2198,
+        "id": "1686c5d0af0ad9f0",
+        "max_absolute": 0.000461578369140625,
+        "max_relative_rms": 3.1612969451089157e-06,
+        "passed": true,
+        "prefix_tokens": 409,
+        "variant": "truncation"
+      },
+      {
+        "character_end": 2198,
+        "id": "1686c5d0af0ad9f0",
+        "max_absolute": 0.00049591064453125,
+        "max_relative_rms": 3.510310989440768e-06,
+        "passed": true,
+        "prefix_tokens": 409,
+        "variant": "replacement"
+      }
+    ],
+    "comparison": "original source states vs independently retokenized truncation and suffix replacement",
+    "relative_tolerance": 0.001
+  },
+  "probability_tolerance": 5e-05
+}

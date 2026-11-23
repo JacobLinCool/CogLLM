@@ -1,0 +1,145 @@
+{
+  "arms": [
+    "surface",
+    "ner",
+    "historic",
+    "direct",
+    "shared"
+  ],
+  "candidate": "qwen",
+  "checkpoint_sha256": "57e0d5fda366fc088dbe07f19faf5eac0638c22952fb635c3a7073c51ae1219c",
+  "cutoffs": {
+    "direct": [
+      0.039763849212109216,
+      0.1577169436902474,
+      0.02192257596882236
+    ],
+    "historic": [
+      0.04299495231362429,
+      0.1545476871378162,
+      0.02364550164431383
+    ],
+    "ner": [
+      0.044825355807140005,
+      0.11717863550549895,
+      0.018803369748440962
+    ],
+    "shared": [
+      0.04226040811609779,
+      0.1512937948747793,
+      0.01722908858552968
+    ],
+    "surface": [
+      0.051050478845350064,
+      0.10613205401138237,
+      0.015416821062204836
+    ]
+  },
+  "elapsed_seconds": 170.10400834200004,
+  "extraction_seconds": 150.07507381300002,
+  "feature_metadata": {
+    "forwards": 193,
+    "global_layers": 6,
+    "historic_width": 96,
+    "native_width": 2048,
+    "ner_width": 24,
+    "official_logits": {
+      "absolute_error": 0.0,
+      "final_softcapping": null,
+      "official_forward": "Qwen3_5ForCausalLM",
+      "source_sha256": "762feb6c7426a7f15b5bf830df54c07438bf9e7c27b8cdb23179045920412c3b",
+      "technical_forwards": 2,
+      "vocabulary": 248320
+    },
+    "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+    "words": 108040
+  },
+  "input_sha256": "5ba394da96bd18b4859aed77d5c0b154980f18bd0eed5908855ff12ef0ce4467",
+  "ner_sha256": "9f906e30f9f998385c4fb4a76c67be95c2c98e7822a7f191a4920362400d64be",
+  "optimizers": {
+    "direct": {
+      "evaluations": 55,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 4.627549013546398e-09,
+      "objective": 0.11029483029343157
+    },
+    "historic": {
+      "evaluations": 113,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 5.851254946487121e-09,
+      "objective": 0.11769979136742818
+    },
+    "ner": {
+      "evaluations": 58,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 5.7653869494278184e-09,
+      "objective": 0.12509288363027776
+    },
+    "shared": {
+      "evaluations": 55,
+      "initial_objective": 0.14052745409145012,
+      "max_abs_gradient": 5.3771421555290876e-09,
+      "objective": 0.11454422139051218
+    },
+    "surface": {
+      "evaluations": 37,
+      "initial_objective": 0.14052745409144263,
+      "max_abs_gradient": 6.377695727222398e-09,
+      "objective": 0.1283951899219675
+    }
+  },
+  "predictions_sha256": "a68ccca20261eebfcae48da0c701c4b9df9680e47294c6bf8f15dd265a8707d3",
+  "protocol_sha256": "7701cbe2cea263e635aeeab518314e108dd5be2560e256137bcff79e0ca1dcb4",
+  "tasks": [
+    "CharE",
+    "RefE",
+    "CorefE"
+  ],
+  "training_titles": [
+    "book-0",
+    "book-1",
+    "book-10",
+    "book-105",
+    "book-108",
+    "book-11",
+    "book-12",
+    "book-124",
+    "book-13",
+    "book-137",
+    "book-14",
+    "book-15",
+    "book-16",
+    "book-161",
+    "book-167",
+    "book-168",
+    "book-183",
+    "book-19",
+    "book-2",
+    "book-20",
+    "book-21",
+    "book-216",
+    "book-22",
+    "book-222",
+    "book-224",
+    "book-233",
+    "book-235",
+    "book-24",
+    "book-256",
+    "book-32",
+    "book-4",
+    "book-40",
+    "book-44",
+    "book-5",
+    "book-6",
+    "book-7",
+    "book-76",
+    "book-8",
+    "book-80",
+    "book-83",
+    "book-86",
+    "book-9",
+    "book-91",
+    "book-96"
+  ],
+  "weights_sha256": "ebca91d38718dbb936b3ea74459f1377d5ee813f2dad6ad81cd62026318913fd"
+}

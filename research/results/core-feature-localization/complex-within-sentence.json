@@ -1,0 +1,67 @@
+{
+  "scope": "Ranking two distinct human-rated spans from an identical released CompLex test sentence.",
+  "analysis": "Retrospective reanalysis of sealed Stage 5 L4 predictions. Unknown ratings for other spans are excluded.",
+  "primary_contrast": "target_end_minus_target_only",
+  "training_fraction": 100,
+  "bootstrap": {
+    "draws": 10000,
+    "seed": 43,
+    "unit": "exact sentence"
+  },
+  "score_definition": "Proportion of pairs ordered as the human means, with half credit for a prediction tie.",
+  "input_sha256": {
+    "design.jsonl": "7ad07ee3b5da409cff5e6525dcd28c861f4ce2675630510cf306707b85b38931",
+    "observations.jsonl": "d5ecf73f64569963aba0061c1566f58223b08dbec42cc430303e7c0b727050d4",
+    "predictions.npz": "5ae8cfaec976e138f51e61b5bfdbee93541478ac895251d38fbd5d73dfa80683",
+    "historical_score": "94323317117734ecb20a3ac1cf0085b89096a104e7c28eefc6b9823f0abf640d"
+  },
+  "held_out_rows": 1094,
+  "held_out_exact_sentences": 1067,
+  "exact_sentences_with_at_least_two_rated_targets": 25,
+  "exact_sentences_with_comparable_pairs": 22,
+  "comparable_pairs": 25,
+  "excluded_overlapping_pairs": 2,
+  "excluded_tied_human_ratings_in_disjoint_pairs": 2,
+  "score": {
+    "target_only": {
+      "concordance": 0.92,
+      "prediction_ties": 0,
+      "sentence_bootstrap_95_interval": [
+        0.7916666666666666,
+        1.0
+      ]
+    },
+    "target_end": {
+      "concordance": 0.8,
+      "prediction_ties": 0,
+      "sentence_bootstrap_95_interval": [
+        0.625,
+        0.9354838709677419
+      ]
+    },
+    "full_sentence": {
+      "concordance": 0.76,
+      "prediction_ties": 0,
+      "sentence_bootstrap_95_interval": [
+        0.5833333333333334,
+        0.9130434782608695
+      ]
+    }
+  },
+  "paired_difference_vs_isolated_target": {
+    "target_end": {
+      "concordance_difference": -0.12,
+      "sentence_bootstrap_95_interval": [
+        -0.2727272727272727,
+        0.0
+      ]
+    },
+    "full_sentence": {
+      "concordance_difference": -0.16,
+      "sentence_bootstrap_95_interval": [
+        -0.30434782608695654,
+        -0.040000000000000036
+      ]
+    }
+  }
+}

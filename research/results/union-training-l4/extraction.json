@@ -1,0 +1,46 @@
+{
+  "architecture": "Qwen3_5ForCausalLM",
+  "candidate": "qwen",
+  "certified_stops": 152378,
+  "compute_dtype": "float32",
+  "config_adapter": null,
+  "content_forward_batches": 1463,
+  "content_forward_per_document": 1,
+  "cuda": "13.0",
+  "documents": 27173,
+  "file_sha256": {
+    "causality.json": "fe655bbf4918706e934c5f98599a1db8eb2953f811d20cad371e0279a95c4ddd",
+    "coordinates.jsonl": "91e556d136fd6909ecd1e8b2d2d2b1f15e5356b9f05835c1e92a50a7b91cdcdb",
+    "preflight.json": "d23f481a06b514fb9130edbeea78b03300adb11ef1e44d79704ed9a5b10557d1",
+    "states.npy": "034662d31e9c4ef86f10df6abc38908d68ea6caaa7f6a976070522ea48e38def"
+  },
+  "forward_and_readout_s": 1211.604896199,
+  "gpu": "NVIDIA L4",
+  "hidden_width": 2048,
+  "independent_causal_checks": 10,
+  "layers": 24,
+  "model": "Qwen/Qwen3.5-2B",
+  "model_files_sha256": {
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4",
+    "model.safetensors-00001-of-00001.safetensors": "aa33250c4fc64891ddfaba3a314fd9542ea371843c387178b425fbcc5ed680b1",
+    "model.safetensors.index.json": "aca8afed9da75b0f050b408d270766fd77627f1af401e240f61c3b47d0db02f9",
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c"
+  },
+  "model_load_and_verification_s": 24.11548740400002,
+  "model_manifest_sha256": "61fa27e774796c62d9270e19b9db5fa675e1aac3bf44c1a52ce79449cb62e83e",
+  "peak_gpu_reserved_bytes": 8774483968,
+  "protocol_sha256": "d023c8ff96a21525a3cbe7ea61e31604429b632c8aab243d495d740fa4d74449",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "source_code_sha256": "d0e6164365cc788807ad55948fd710c76e96bd548f2080af1bc9e0480e03bb5b",
+  "states_dtype": "float32",
+  "states_shape": [
+    152378,
+    2048
+  ],
+  "stimuli_sha256": "3f7074fab19d4d35d570d68c7f51239b248491095226f79dd59d1b177b2f0304",
+  "targets_sha256": null,
+  "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+  "torch": "2.14.1+cu130",
+  "transformers": "5.17.0"
+}

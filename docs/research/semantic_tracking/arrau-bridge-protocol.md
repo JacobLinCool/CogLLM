@@ -1,0 +1,25 @@
+# The ARRAU independent held-out comparison of the preceding context anchor span localization
+
+In this experiment, with a newly provided reference manually specified, whether Qwen3.5-2B's causal representations improve the ranking of positions preceding the readout when only text up to the end of the phrase is read. The previous GUM/GENTLE comparison restricted positive examples across segments, where part of the gain from expanded features stemmed from reducing the weight of the current segment. Here, we retain valid positive examples both within-sentence and cross-sentence, and the model features do not utilize sentence boundaries, segment boundaries, or manually specified part-of-speech tags. [Prior probability decomposition](bridge-rerank-results.md) · [ARRAU annotations and sources](arrau-bridge-intake.md)
+
+## Fitting and Independent Materials
+
+Retain the GUM official training split after removing source overlap and the same frozen Gradio candidate representation. Fit a small readout using only state and literal features. ARRAU 2.1 GNOME and PEAR are each held-out. actual scores are plugged in after the sealed snapshot coefficient. Both training and held-out sets search for candidates starting from the position immediately preceding each artificial trigger phrase. Any body text word that lies entirely before that position may participate in ranking if it has a raw source reading stop at its end and independent prefix word evidence. Allow multiple positive examples for GUM. ARRAU adopts a single complete antecedent from source human annotation, excluding multiple marks, non-contiguous annotations, or those not fully located in the earlier text, as originally configured. For each source, list the count of candidates or annotated alignments excluded. [Research Source List](arrau-bridge-intake.md) · [Existing GUM Frozen Extraction](../../../research/results/gum-bridge-l4/extraction.json)
+
+Perform a no-answer causal forward pass on each document, with the vector being the 128-dimensional L2-normalized projection of the current candidate IIRC head. Independently compare the state under the original prefix versus the truncated, rewritten, and right-padded documents, using the state under the rewritten document as the positive control. Training and held-out must share the same candidates, projections, and tokenizer. The held-out corpus contains only the document body, reading coordinates, vectors, and the operation manifest.
+
+## Fixed readout and endpoint
+
+| Readout | Feature |
+| --- | --- |
+| Distance | Negative log corpus distance |
+| Literal | logarithmic word distance, logarithmic word length, initial capitalization, literal word frequency to the end of the trigger word, literal overlap with the trigger phrase, function words, containing digits, immediately followed by punctuation, the preceding body word is a preposition |
+| Literal and Qwen | The same set of literal features, plus the causal vector cosine at the end of the candidate and trigger words. |
+
+Both learned readouts used an L2 penalty of 0.05, with training articles weighted equally in scaling and in the marginal negative log-likelihood. We included all candidates without sampling. We averaged first within articles and then across equally weighted articles. The primary endpoint is NLL, with a minimum of 0 nats. Lower values indicate that more probability went to human-annotated positives. The shared endpoint is the top-five word-end hit rate, ranging from 0–100%, with higher values indicating better performance. We also report top-ranked hit rate and mean reciprocal rank. For ties, we use the expected score under a uniform ordering of the tied candidates.
+
+The primary PEAR comparison uses all scorable annotations. It requires at least 15 scorable documents and both of the following criteria. The upper bound of the 95% interval for the NLL difference (lexical-plus-Qwen minus lexical-only) must be below zero. The lower bound of the interval for the difference in top-five hit rate (lexical-plus-Qwen minus lexical-only) must be above zero. Both paired differences use 10,000 document-level resamples with seed 735972. GNOME contains only 5 documents and serves as a descriptive comparison on written texts, with the difference retained for each document. Both datasets report separate results for within-sentence cases, cross-sentence cases, and cases that cannot be assigned to a single sentence using the original annotation boundaries. These strata do not alter the primary comparison. Results on verified materials from the GUM development and test sets are retained for diagnostics.
+
+The endpoint start is specified by the annotation. The antecedent hit supports backtracking from a known new reference to the preceding context. The point where human reading stalls, the current difficulty, and the time required to resolve the identification of the same question require corresponding direct reading observation.
+
+[Original research record](../../../research/semantic_tracking/arrau-bridge-protocol.md)

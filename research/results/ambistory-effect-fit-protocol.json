@@ -1,0 +1,98 @@
+{
+  "status": "follow_up_prespecified_before_training_selection_and_dev_scoring",
+  "fit_code_sha256": "4c24756bb8696ce13eee249bd29399d7ae152c59aa111c0c8bf486ee2aeb14a9",
+  "design_sha256": "4a8d10a4c3387e8684fe23fcda9434acadab8a1c12076ad9f310290302025266",
+  "preparation_sha256": "0364a1942796740435c060da2d86a26774d6c794827dfd0cecae8037fafd3253",
+  "baseline_fit_protocol_sha256": "bbe83fe0abf298bfbbb30bfd49b5bb7b46f2e198a6e4eda22f493d3fa4c60aff",
+  "fit_split": "train",
+  "forecast_split": "dev",
+  "fit_families": 378,
+  "forecast_families": 98,
+  "forecast_items": 588,
+  "held_out_votes_expected": 2952,
+  "held_out_flagged_votes_expected": 44,
+  "staged_members": [
+    "preparation.json",
+    "prepared/dev/design/stops.jsonl",
+    "prepared/dev/model_input/stimuli.jsonl",
+    "prepared/test/design/stops.jsonl",
+    "prepared/test/model_input/stimuli.jsonl",
+    "prepared/train/design/stops.jsonl",
+    "prepared/train/model_input/stimuli.jsonl",
+    "prepared/train/scoring/ordinal-ratings.jsonl"
+  ],
+  "folds": {
+    "group": "casefolded homonym",
+    "count": 5,
+    "hash": "SHA-256",
+    "salt": "cogllm-ambistory-effect-v1",
+    "allocation": "rank by digest of UTF-8 salt/homonym, tie by homonym, then rank modulo fold count"
+  },
+  "features": "identical to v2, with form scaling fit within each original-training fit partition",
+  "objective": {
+    "ordinal": "v2 summed per-item histogram cross-entropy and intercept-exempt L2",
+    "effect": "beta * N / (2 * M) * sum(((predicted signed difference - observed signed difference) / 4)^2)",
+    "relative_pair_order": "later - earlier by opaque ending ID for the same family and sense",
+    "grading_span": 4,
+    "beta_grid": [
+      0,
+      1,
+      4,
+      16,
+      64
+    ],
+    "total_scaling": "summed over N rated items"
+  },
+  "solver": {
+    "form_maxiter": 300,
+    "context_maxiter": 3000,
+    "ftol": 1e-12,
+    "gtol": 1e-07,
+    "method": "L-BFGS-B",
+    "initialization": "zero for beta=0, that fold beta=0 optimum for beta>0",
+    "numpy_scipy": {
+      "numpy": "2.4.6",
+      "scipy": "1.16.3"
+    },
+    "thread_count": 1
+  },
+  "selection": {
+    "score": "lowest pooled out-of-fold signed-update MAE, tie by smallest beta",
+    "eligibility": "positive beta converges in all folds and strictly improves MAE versus beta=0",
+    "maximum_nll_increase_nats_per_vote": 0.01,
+    "empty_selection": "seal_no_candidate_without_forecasts"
+  },
+  "dev_gates": {
+    "effect_ending_minus_effect_prefix": "paired 95% CI upper bounds below zero for NLL and update MAE",
+    "effect_ending_minus_baseline_ending": "paired 95% CI upper below zero for update MAE and below NLL margin",
+    "nll_margin_nats_per_vote": 0.01,
+    "effect_amplitude_minus_human": "paired 90% CI entirely inside the open equivalence bounds",
+    "equivalence_margin_grades": 0.5,
+    "nll_subset": "all variants, per vote",
+    "bootstrap": {
+      "unit": "casefolded homonym",
+      "draws": 10000,
+      "seed": 43
+    }
+  },
+  "forecasts": {
+    "files": [
+      "baseline-predictions.jsonl",
+      "effect-predictions.jsonl"
+    ],
+    "fields": [
+      "id",
+      "sense",
+      "form_control",
+      "common_prefix",
+      "ending"
+    ],
+    "grades": [
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  }
+}

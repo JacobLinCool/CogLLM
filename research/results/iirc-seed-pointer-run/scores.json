@@ -1,0 +1,52 @@
+{
+  "population": "Official IIRC dev earlier support labels, including uncertified anchors as misses",
+  "question_count": 65,
+  "article_families": 51,
+  "candidate_coverage_at_half_iou": 1.0,
+  "methods": {
+    "form": {
+      "top1_hit_at_half_iou": 0.18461538461538463,
+      "top1_mean_iou": 0.20650622533329058,
+      "top5_hit_at_half_iou": 0.27692307692307694
+    },
+    "qwen": {
+      "top1_hit_at_half_iou": 0.3076923076923077,
+      "top1_mean_iou": 0.3418096160562194,
+      "top5_hit_at_half_iou": 0.5384615384615384
+    }
+  },
+  "qwen_minus_form": {
+    "top1_hit_at_half_iou": {
+      "difference": 0.12307692307692308,
+      "descriptive_paired_material_95_ci": [
+        -0.015625,
+        0.26153846153846155
+      ],
+      "groups": 51
+    },
+    "top1_mean_iou": {
+      "difference": 0.1353033907229289,
+      "descriptive_paired_material_95_ci": [
+        0.021271230297056486,
+        0.2543257672329036
+      ],
+      "groups": 51
+    },
+    "top5_hit_at_half_iou": {
+      "difference": 0.26153846153846155,
+      "descriptive_paired_material_95_ci": [
+        0.11475409836065574,
+        0.4032802964254569
+      ],
+      "groups": 51
+    }
+  },
+  "article_cluster_bootstrap": {
+    "seed": 43,
+    "replicates": 10000
+  },
+  "passed_preregistered_superiority": false,
+  "sealed_predictions_sha256": "b36e1666c371f3eca4eb339e156adad2bcbd3aedf2d46aee62b23ff3ed4bf59f",
+  "locked_eval_sha256": "4a4fc1a38469531a7e423afcb9f91d1306968803926671f7f6d5645d01bf8c70",
+  "measurement_scope": "Answer-worker annotated support occurring before an observed anchor, no reader timeline"
+}

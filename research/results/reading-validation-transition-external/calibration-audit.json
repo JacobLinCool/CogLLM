@@ -1,0 +1,1783 @@
+{
+  "analysis": "calibration and audit after primary test",
+  "forecast_sha256": "0c2e9d1ae9b4987e6c05165b96e385402adafd8b3cb0f887cc2f61f9fc59e2bf",
+  "scored_data_sha256": "afbbf407069d64469877a1f429259ac8553acabb9a956c8163561e9b67f13968",
+  "independently_aligned_boundaries": {
+    "cohesentia": 293,
+    "decor": 1352
+  },
+  "reasons_positive_votes": {
+    "cohesentia": {
+      "3": 41,
+      "7": 17,
+      "8": 1,
+      "1": 45,
+      "5": 32,
+      "4": 43,
+      "2": 15,
+      "6": 5
+    },
+    "decor": {
+      "7": 31,
+      "3": 112,
+      "6": 236,
+      "1": 41,
+      "5": 7,
+      "2": 32,
+      "4": 18
+    }
+  },
+  "decor_missing_reason_cells": 1,
+  "max_abs_ranking_replay_error": 5.551115123125783e-16,
+  "bootstrap": "each draw resamples 49 whole stories or 100 whole essays with replacement; fixed local readers",
+  "metrics": {
+    "cohesentia": {
+      "lexical": {
+        "brier": {
+          "estimate": 0.12353231464538278,
+          "family_bootstrap_95_interval": [
+            0.09005819809066423,
+            0.16279806054698867
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.19496383079246896,
+          "family_bootstrap_95_interval": [
+            0.18265590277456376,
+            0.20778713523203546
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.03522357105220922,
+          "family_bootstrap_95_interval": [
+            -0.03392908616838763,
+            0.09458026131579654
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.057445348806562595,
+          "family_bootstrap_95_interval": [
+            0.030156164870592122,
+            0.1122030959193615
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 80,
+            "marks": 5,
+            "expected_marks": 5.797339624012089
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 351,
+            "marks": 44,
+            "expected_marks": 52.76504152772566
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 265,
+            "marks": 38,
+            "expected_marks": 63.63329313984072
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 49,
+            "marks": 16,
+            "expected_marks": 16.48185985404866
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 19,
+            "marks": 14,
+            "expected_marks": 8.37851978958463
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 6,
+            "marks": 6,
+            "expected_marks": 3.06609577498932
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          }
+        ]
+      },
+      "display": {
+        "brier": {
+          "estimate": 0.13611659655493613,
+          "family_bootstrap_95_interval": [
+            0.09951363156973012,
+            0.17946122035091353
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.20296160386613155,
+          "family_bootstrap_95_interval": [
+            0.19854900242634005,
+            0.20742860007881236
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.04322134412587181,
+          "family_bootstrap_95_interval": [
+            -0.03307499599495482,
+            0.10761223728259936
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.043221344125871836,
+          "family_bootstrap_95_interval": [
+            0.009302186663516718,
+            0.10773156068232059
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 361,
+            "marks": 55,
+            "expected_marks": 63.80262635433009
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 409,
+            "marks": 68,
+            "expected_marks": 92.47780862259123
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          }
+        ]
+      },
+      "lexical_surprisal": {
+        "brier": {
+          "estimate": 0.08855086244985401,
+          "family_bootstrap_95_interval": [
+            0.06038808099202468,
+            0.12061912136082936
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.1789370421407315,
+          "family_bootstrap_95_interval": [
+            0.14259881371370967,
+            0.2223084635675193
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.019196782400471762,
+          "family_bootstrap_95_interval": [
+            -0.030834429002494026,
+            0.06473878484151047
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.04023532778315532,
+          "family_bootstrap_95_interval": [
+            0.0338690143903204,
+            0.0867061357428901
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 346,
+            "marks": 9,
+            "expected_marks": 21.917249022613543
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 249,
+            "marks": 29,
+            "expected_marks": 33.65437281991587
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 65,
+            "marks": 16,
+            "expected_marks": 16.27673036445299
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 30,
+            "marks": 9,
+            "expected_marks": 10.32718769129075
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 18,
+            "marks": 10,
+            "expected_marks": 7.706913115638741
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 8,
+            "marks": 6,
+            "expected_marks": 4.430634802484775
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 12,
+            "marks": 10,
+            "expected_marks": 7.7652402538664695
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 14,
+            "marks": 12,
+            "expected_marks": 10.37874414755968
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 16,
+            "marks": 14,
+            "expected_marks": 13.618627708117174
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 12,
+            "marks": 8,
+            "expected_marks": 11.705822522423276
+          }
+        ]
+      },
+      "local_state": {
+        "brier": {
+          "estimate": 0.08470749402994245,
+          "family_bootstrap_95_interval": [
+            0.05461560791729684,
+            0.12077431032676195
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.16535768145765758,
+          "family_bootstrap_95_interval": [
+            0.12285753615966839,
+            0.21716944656780396
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.005617421717397847,
+          "family_bootstrap_95_interval": [
+            -0.04765483340087529,
+            0.053806309537328824
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.033152097003403526,
+          "family_bootstrap_95_interval": [
+            0.029318640737552738,
+            0.0819508232177991
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 481,
+            "marks": 18,
+            "expected_marks": 20.485201909380212
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 111,
+            "marks": 14,
+            "expected_marks": 15.143114923497173
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 38,
+            "marks": 4,
+            "expected_marks": 8.960289181933499
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 28,
+            "marks": 15,
+            "expected_marks": 9.824444112038035
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 36,
+            "marks": 15,
+            "expected_marks": 15.89084970778709
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 23,
+            "marks": 15,
+            "expected_marks": 12.668853352219145
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 7,
+            "marks": 7,
+            "expected_marks": 4.690839822976156
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 11,
+            "marks": 5,
+            "expected_marks": 8.393960051638679
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 21,
+            "marks": 16,
+            "expected_marks": 18.052848933271868
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 14,
+            "marks": 14,
+            "expected_marks": 13.215012727654475
+          }
+        ]
+      },
+      "integration": {
+        "brier": {
+          "estimate": 0.09005784841511343,
+          "family_bootstrap_95_interval": [
+            0.05570331099962116,
+            0.1319139338424672
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.1683974611960259,
+          "family_bootstrap_95_interval": [
+            0.12076482534518346,
+            0.2253889862707938
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.00865720145576615,
+          "family_bootstrap_95_interval": [
+            -0.04726405782320446,
+            0.05955173236635642
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.0641441667025658,
+          "family_bootstrap_95_interval": [
+            0.04258032400235093,
+            0.10743158511574044
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 498,
+            "marks": 24,
+            "expected_marks": 17.573288245000594
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 96,
+            "marks": 8,
+            "expected_marks": 13.541115914775713
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 38,
+            "marks": 5,
+            "expected_marks": 9.504474434683159
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 16,
+            "marks": 9,
+            "expected_marks": 5.813909169613606
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 32,
+            "marks": 22,
+            "expected_marks": 13.937675519557608
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 9,
+            "marks": 2,
+            "expected_marks": 4.972329360015813
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 18,
+            "marks": 3,
+            "expected_marks": 11.448273052975116
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 23,
+            "marks": 21,
+            "expected_marks": 17.312645445810332
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 24,
+            "marks": 16,
+            "expected_marks": 20.451756220670436
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 16,
+            "marks": 13,
+            "expected_marks": 15.110577757837573
+          }
+        ]
+      },
+      "student": {
+        "brier": {
+          "estimate": 0.08919256012660208,
+          "family_bootstrap_95_interval": [
+            0.05772936704805838,
+            0.1274136931906836
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.17736364659054973,
+          "family_bootstrap_95_interval": [
+            0.13635153719299772,
+            0.2248946572551955
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.017623386850289996,
+          "family_bootstrap_95_interval": [
+            -0.03821428399382956,
+            0.0670325984597072
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.045584751263326645,
+          "family_bootstrap_95_interval": [
+            0.03779317630377103,
+            0.09884479235501648
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 412,
+            "marks": 21,
+            "expected_marks": 20.34661781512193
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 158,
+            "marks": 9,
+            "expected_marks": 22.295139210306157
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 62,
+            "marks": 9,
+            "expected_marks": 15.086451553772982
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 34,
+            "marks": 19,
+            "expected_marks": 12.265299210243496
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 29,
+            "marks": 12,
+            "expected_marks": 12.883975814651802
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 12,
+            "marks": 6,
+            "expected_marks": 6.645694851596692
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 24,
+            "marks": 17,
+            "expected_marks": 15.341209636809788
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 21,
+            "marks": 17,
+            "expected_marks": 15.929106322821347
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 10,
+            "marks": 5,
+            "expected_marks": 8.423871743414773
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 8,
+            "marks": 8,
+            "expected_marks": 7.35264171598432
+          }
+        ]
+      },
+      "directed": {
+        "brier": {
+          "estimate": 0.08604816280754946,
+          "family_bootstrap_95_interval": [
+            0.05997142810604798,
+            0.11680533788257597
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.1823217880634085,
+          "family_bootstrap_95_interval": [
+            0.14763539549894447,
+            0.22041683601855733
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.022581528323148775,
+          "family_bootstrap_95_interval": [
+            -0.03285721160132686,
+            0.071404001230898
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.046097219069201875,
+          "family_bootstrap_95_interval": [
+            0.0330806843593463,
+            0.0864564230200933
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 422,
+            "marks": 17,
+            "expected_marks": 20.285441614364615
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 116,
+            "marks": 9,
+            "expected_marks": 16.247275936933775
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 63,
+            "marks": 8,
+            "expected_marks": 15.977429359127926
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 48,
+            "marks": 9,
+            "expected_marks": 16.931170835628684
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 42,
+            "marks": 23,
+            "expected_marks": 18.769921528805057
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 29,
+            "marks": 17,
+            "expected_marks": 16.02855897072834
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 24,
+            "marks": 17,
+            "expected_marks": 15.551266711624477
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 19,
+            "marks": 16,
+            "expected_marks": 14.228008581326002
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 2,
+            "marks": 2,
+            "expected_marks": 1.695601083243382
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 5,
+            "marks": 5,
+            "expected_marks": 4.673102187042312
+          }
+        ]
+      },
+      "static": {
+        "brier": {
+          "estimate": 0.14230919582706936,
+          "family_bootstrap_95_interval": [
+            0.10439907735287944,
+            0.18465530395554025
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.2081020110300597,
+          "family_bootstrap_95_interval": [
+            0.17055349817549095,
+            0.24626565479076448
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.15974025974025974,
+          "family_bootstrap_95_interval": [
+            0.09628676044083527,
+            0.23376964691025132
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.04836175128979997,
+          "family_bootstrap_95_interval": [
+            -0.027106322873495122,
+            0.11770011883264353
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.07958664940164284,
+          "family_bootstrap_95_interval": [
+            0.05256040114363798,
+            0.14576858314979593
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 276,
+            "marks": 13,
+            "expected_marks": 13.588390728834426
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 189,
+            "marks": 38,
+            "expected_marks": 27.89048265350281
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 126,
+            "marks": 23,
+            "expected_marks": 31.622146438201476
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 63,
+            "marks": 20,
+            "expected_marks": 21.729571299196397
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 44,
+            "marks": 5,
+            "expected_marks": 19.53925492639166
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 33,
+            "marks": 10,
+            "expected_marks": 17.419260532436503
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 22,
+            "marks": 6,
+            "expected_marks": 14.427052555530128
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 8,
+            "marks": 8,
+            "expected_marks": 6.08793157343769
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 6,
+            "marks": 0,
+            "expected_marks": 5.214775728950862
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 3,
+            "marks": 0,
+            "expected_marks": 2.719682056664028
+          }
+        ]
+      }
+    },
+    "decor": {
+      "lexical": {
+        "brier": {
+          "estimate": 0.23971337482684774,
+          "family_bootstrap_95_interval": [
+            0.2146718723305883,
+            0.2652257019027296
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.20624756505804914,
+          "family_bootstrap_95_interval": [
+            0.19385116554427548,
+            0.21969928813816667
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": -0.1236340917466846,
+          "family_bootstrap_95_interval": [
+            -0.16752899591704937,
+            -0.07980780409758843
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.12676589529940469,
+          "family_bootstrap_95_interval": [
+            0.0884161070756124,
+            0.17263887668698896
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 204,
+            "marks": 67,
+            "expected_marks": 14.927752570817244
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 524,
+            "marks": 159,
+            "expected_marks": 78.17613326694978
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 387,
+            "marks": 116,
+            "expected_marks": 94.30731639354364
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 165,
+            "marks": 68,
+            "expected_marks": 56.33779221518604
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 52,
+            "marks": 23,
+            "expected_marks": 22.770016167619644
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 12,
+            "marks": 8,
+            "expected_marks": 6.5755540759419056
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 4,
+            "marks": 4,
+            "expected_marks": 2.635044066785403
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 3,
+            "marks": 1,
+            "expected_marks": 2.218968980481574
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 1,
+            "marks": 0,
+            "expected_marks": 0.898130221157201
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          }
+        ]
+      },
+      "display": {
+        "brier": {
+          "estimate": 0.2262271114981868,
+          "family_bootstrap_95_interval": [
+            0.20482422586581173,
+            0.24816466272799473
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.24150641463599387,
+          "family_bootstrap_95_interval": [
+            0.2376546800295655,
+            0.24520477741617955
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": -0.08837524216873988,
+          "family_bootstrap_95_interval": [
+            -0.1310446977590529,
+            -0.04621091257983927
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.08837524216873992,
+          "family_bootstrap_95_interval": [
+            0.047006615494286204,
+            0.13107588667620196
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 278,
+            "marks": 69,
+            "expected_marks": 48.94044289820408
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 940,
+            "marks": 321,
+            "expected_marks": 235.03841813868866
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 134,
+            "marks": 56,
+            "expected_marks": 42.53781155097096
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          }
+        ]
+      },
+      "lexical_surprisal": {
+        "brier": {
+          "estimate": 0.20918246384111522,
+          "family_bootstrap_95_interval": [
+            0.19147016546957094,
+            0.22758832264559173
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.3012299226602225,
+          "family_bootstrap_95_interval": [
+            0.28338357700738065,
+            0.32105531822105904
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": -0.02865173414451122,
+          "family_bootstrap_95_interval": [
+            -0.06848292461564782,
+            0.011406953814884912
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.05121567843828092,
+          "family_bootstrap_95_interval": [
+            0.040500398967974666,
+            0.09078288443627605
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 150,
+            "marks": 29,
+            "expected_marks": 10.895233589771689
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 325,
+            "marks": 82,
+            "expected_marks": 49.09710460877906
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 281,
+            "marks": 69,
+            "expected_marks": 70.27839209902197
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 253,
+            "marks": 84,
+            "expected_marks": 87.79000192561864
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 156,
+            "marks": 72,
+            "expected_marks": 69.48211053597237
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 82,
+            "marks": 43,
+            "expected_marks": 44.74707791795125
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 59,
+            "marks": 37,
+            "expected_marks": 38.02920692740331
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 26,
+            "marks": 15,
+            "expected_marks": 19.528728540051702
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 13,
+            "marks": 8,
+            "expected_marks": 10.879818932541465
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 7,
+            "marks": 7,
+            "expected_marks": 6.535180359509428
+          }
+        ]
+      },
+      "local_state": {
+        "brier": {
+          "estimate": 0.22870698146267202,
+          "family_bootstrap_95_interval": [
+            0.21517011644589618,
+            0.2423799465763709
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.40966780140536085,
+          "family_bootstrap_95_interval": [
+            0.38867103861514607,
+            0.4316732996212055
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.0797861446006271,
+          "family_bootstrap_95_interval": [
+            0.03958641876482607,
+            0.11972054725174215
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.11134465965623487,
+          "family_bootstrap_95_interval": [
+            0.08454082165130918,
+            0.14592569258530674
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 124,
+            "marks": 20,
+            "expected_marks": 7.828629046642109
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 177,
+            "marks": 34,
+            "expected_marks": 26.57416632699105
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 219,
+            "marks": 56,
+            "expected_marks": 54.263648448776
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 178,
+            "marks": 53,
+            "expected_marks": 62.25085645933951
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 178,
+            "marks": 64,
+            "expected_marks": 80.034079523859
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 156,
+            "marks": 64,
+            "expected_marks": 85.89318407495354
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 125,
+            "marks": 54,
+            "expected_marks": 80.87387441460129
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 105,
+            "marks": 50,
+            "expected_marks": 78.92134186363627
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 74,
+            "marks": 40,
+            "expected_marks": 62.38203204863627
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 16,
+            "marks": 11,
+            "expected_marks": 14.84905529261281
+          }
+        ]
+      },
+      "integration": {
+        "brier": {
+          "estimate": 0.2376528339106888,
+          "family_bootstrap_95_interval": [
+            0.21384268936728731,
+            0.262312336541864
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.21686549353797854,
+          "family_bootstrap_95_interval": [
+            0.19575365521678384,
+            0.2394642973778404
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": -0.1130161632667552,
+          "family_bootstrap_95_interval": [
+            -0.15635924748106445,
+            -0.07000316453830942
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.15092642174535315,
+          "family_bootstrap_95_interval": [
+            0.12146437045911425,
+            0.18710197495402972
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 520,
+            "marks": 122,
+            "expected_marks": 23.845210683365014
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 283,
+            "marks": 95,
+            "expected_marks": 40.93167438895569
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 176,
+            "marks": 64,
+            "expected_marks": 43.39560020665257
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 132,
+            "marks": 51,
+            "expected_marks": 45.40232725284153
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 89,
+            "marks": 33,
+            "expected_marks": 39.45232505688111
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 63,
+            "marks": 29,
+            "expected_marks": 34.70211487151593
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 36,
+            "marks": 20,
+            "expected_marks": 23.11673066451084
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 32,
+            "marks": 17,
+            "expected_marks": 24.002897247686192
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 15,
+            "marks": 11,
+            "expected_marks": 12.792109129088928
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 6,
+            "marks": 4,
+            "expected_marks": 5.561157761849204
+          }
+        ]
+      },
+      "student": {
+        "brier": {
+          "estimate": 0.21973517091783326,
+          "family_bootstrap_95_interval": [
+            0.19915148461708426,
+            0.24097417269719792
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.24496206386172295,
+          "family_bootstrap_95_interval": [
+            0.22706300087427503,
+            0.2641175425464159
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": -0.0849195929430108,
+          "family_bootstrap_95_interval": [
+            -0.126695911625616,
+            -0.044040115126519494
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.1007261093920698,
+          "family_bootstrap_95_interval": [
+            0.07354934973508113,
+            0.13861113961395033
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 308,
+            "marks": 63,
+            "expected_marks": 18.515896764704394
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 340,
+            "marks": 89,
+            "expected_marks": 50.405456427604626
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 275,
+            "marks": 98,
+            "expected_marks": 67.69154871306631
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 189,
+            "marks": 77,
+            "expected_marks": 65.73565111064028
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 110,
+            "marks": 45,
+            "expected_marks": 48.6251343286597
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 71,
+            "marks": 35,
+            "expected_marks": 38.72661654478934
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 33,
+            "marks": 22,
+            "expected_marks": 21.2148318452321
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 20,
+            "marks": 12,
+            "expected_marks": 15.050304475180058
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 5,
+            "marks": 4,
+            "expected_marks": 4.283149770934845
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 1,
+            "marks": 1,
+            "expected_marks": 0.940120360237862
+          }
+        ]
+      },
+      "directed": {
+        "brier": {
+          "estimate": 0.21483021977029923,
+          "family_bootstrap_95_interval": [
+            0.20073447177602796,
+            0.2290084736729087
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.3381590870525394,
+          "family_bootstrap_95_interval": [
+            0.32304165712546157,
+            0.3536071199092708
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": 0.00827743024780564,
+          "family_bootstrap_95_interval": [
+            -0.03145559481484134,
+            0.0469889862508344
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.07896433275298025,
+          "family_bootstrap_95_interval": [
+            0.06335870633851892,
+            0.10683670369673173
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 174,
+            "marks": 33,
+            "expected_marks": 11.062518920626424
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 250,
+            "marks": 54,
+            "expected_marks": 37.697238846169796
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 222,
+            "marks": 65,
+            "expected_marks": 55.455896139705786
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 200,
+            "marks": 68,
+            "expected_marks": 69.40319877441361
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 198,
+            "marks": 59,
+            "expected_marks": 88.94389911036349
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 130,
+            "marks": 62,
+            "expected_marks": 70.57460593569614
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 104,
+            "marks": 61,
+            "expected_marks": 67.30570543562067
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 59,
+            "marks": 37,
+            "expected_marks": 44.1626976143304
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 14,
+            "marks": 7,
+            "expected_marks": 11.669864848687968
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 1,
+            "marks": 0,
+            "expected_marks": 0.915460069418999
+          }
+        ]
+      },
+      "static": {
+        "brier": {
+          "estimate": 0.25691199321853686,
+          "family_bootstrap_95_interval": [
+            0.22808636872127003,
+            0.28630261378031885
+          ]
+        },
+        "mean_prediction": {
+          "estimate": 0.16234161008484924,
+          "family_bootstrap_95_interval": [
+            0.1457529868904361,
+            0.18039677913337174
+          ]
+        },
+        "observed_rate": {
+          "estimate": 0.32988165680473375,
+          "family_bootstrap_95_interval": [
+            0.28819419428434195,
+            0.37190197989538215
+          ]
+        },
+        "predicted_minus_observed": {
+          "estimate": -0.1675400467198845,
+          "family_bootstrap_95_interval": [
+            -0.21030140693438046,
+            -0.12503653316340366
+          ]
+        },
+        "ece_ten_fixed_bins": {
+          "estimate": 0.1799709363965572,
+          "family_bootstrap_95_interval": [
+            0.1451629814651305,
+            0.22211225423175382
+          ]
+        },
+        "bins": [
+          {
+            "lower": 0.0,
+            "upper": 0.1,
+            "judgments": 572,
+            "marks": 174,
+            "expected_marks": 26.742739661425368
+          },
+          {
+            "lower": 0.1,
+            "upper": 0.2,
+            "judgments": 373,
+            "marks": 117,
+            "expected_marks": 53.57875833391984
+          },
+          {
+            "lower": 0.2,
+            "upper": 0.3,
+            "judgments": 203,
+            "marks": 71,
+            "expected_marks": 49.510577381253356
+          },
+          {
+            "lower": 0.3,
+            "upper": 0.4,
+            "judgments": 107,
+            "marks": 40,
+            "expected_marks": 37.25050003668686
+          },
+          {
+            "lower": 0.4,
+            "upper": 0.5,
+            "judgments": 40,
+            "marks": 15,
+            "expected_marks": 17.487396056797806
+          },
+          {
+            "lower": 0.5,
+            "upper": 0.6,
+            "judgments": 29,
+            "marks": 12,
+            "expected_marks": 15.800324928988728
+          },
+          {
+            "lower": 0.6,
+            "upper": 0.7,
+            "judgments": 16,
+            "marks": 9,
+            "expected_marks": 10.084861746668683
+          },
+          {
+            "lower": 0.7,
+            "upper": 0.8,
+            "judgments": 10,
+            "marks": 7,
+            "expected_marks": 7.347298114678443
+          },
+          {
+            "lower": 0.8,
+            "upper": 0.9,
+            "judgments": 2,
+            "marks": 1,
+            "expected_marks": 1.683400574297093
+          },
+          {
+            "lower": 0.9,
+            "upper": 1.0,
+            "judgments": 0,
+            "marks": 0,
+            "expected_marks": 0.0
+          }
+        ]
+      }
+    }
+  }
+}

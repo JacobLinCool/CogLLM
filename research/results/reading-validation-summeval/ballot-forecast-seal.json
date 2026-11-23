@@ -1,0 +1,70 @@
+{
+  "registered_instrument": "109e067b353a69d83611a7d3eec2f07a4a32833580dd01229ea07e831a1c5b46",
+  "public_capture": "ae325788a810b62bd71d39448af9077e430721617a0c3ca3993f5848bb73f366",
+  "before_confirm": true,
+  "source_story_mixture": {
+    "n": 8,
+    "groups": [
+      "dm-test-e880fda4c25289f8325574246f0f8ed4ff5eb26b",
+      "dm-test-e43eef75de38d246db9d80216ca9f5487215a78b",
+      "dm-test-a3b6201aca77b5bdaa5df02d6acee2be66233237",
+      "dm-test-2c37d44d03ce2e91310339d884d33ee5aabf9abc",
+      "dm-test-2c6695b438980783754f7db28129ec2fbb3e6e21",
+      "cnn-test-404f859482d47c127868964a9a39d1a7645dd2e9",
+      "dm-test-8bc8f134bc3ceaeec0df8f29e96e13d319717ab8",
+      "cnn-test-c05bda9b387ec8ae43803170b6f59b4b82505db9"
+    ],
+    "native_weight": 0.6219505570247827,
+    "form_loss": 0.670205185793737,
+    "native_loss": 0.6507387510626966,
+    "selected_loss": 0.6411644041401214
+  },
+  "optimizers": {
+    "form": {
+      "source_calibration": {
+        "target_source_articles": 40,
+        "total_distinct_draft_pairs": 4553,
+        "native_dim": 15,
+        "start": 0.6931471805599455,
+        "finish": 0.6382953356448515,
+        "max_gradient": 8.518723108999005e-09,
+        "max_fd_error": 2.2607984928590952e-11,
+        "iterations": 38
+      },
+      "inner": {
+        "target_source_articles": 32,
+        "total_distinct_draft_pairs": 3665,
+        "native_dim": 15,
+        "start": 0.6931471805599453,
+        "finish": 0.633023422554052,
+        "max_gradient": 3.66395667755412e-09,
+        "max_fd_error": 3.0932575945108454e-11,
+        "iterations": 32
+      }
+    },
+    "native": {
+      "source_calibration": {
+        "target_source_articles": 40,
+        "total_distinct_draft_pairs": 4553,
+        "native_dim": 187,
+        "start": 0.6931471805599455,
+        "finish": 0.5752276383837931,
+        "max_gradient": 4.180118206556418e-08,
+        "max_fd_error": 8.438186954728977e-11,
+        "iterations": 147
+      },
+      "inner": {
+        "target_source_articles": 32,
+        "total_distinct_draft_pairs": 3665,
+        "native_dim": 187,
+        "start": 0.6931471805599453,
+        "finish": 0.5698695610088881,
+        "max_gradient": 7.69440736886947e-08,
+        "max_fd_error": 8.204342760720351e-11,
+        "iterations": 146
+      }
+    }
+  },
+  "forecast_sha256": "711732a2bfb850fa52bf3fb02b78721f3d6f1e46ab7e6c4d6840301920d12c74",
+  "weights_sha256": "a5a732a7da7626e8cfde68869614c4d9690cee12aa4ee314f0945a2f104e79e3"
+}

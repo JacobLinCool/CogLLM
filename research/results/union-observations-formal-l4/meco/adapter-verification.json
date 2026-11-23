@@ -1,0 +1,19 @@
+{
+  "adapter_correction": "Use the displayed passage number and filename to join predictions. Session_Name_ identifies the reader session 01–60 and H/V orientation. Validated the join on the pinned file design columns with synthetic grades.",
+  "attempts_before_correction": [
+    {
+      "failure": "The initial loader mistook the reader-session number for a passage number. Duplicate reader/passage/item guard stopped scoring before calculating metrics.",
+      "forecast_seal_sha256": "10d337ed0dc75ccb697296aa411199b73bdc304082f30cb2d33199f14081bf57"
+    },
+    {
+      "failure": "The reader-session validation still expected passage-number range 01–12. Row-key guard stopped scoring before calculating metrics.",
+      "forecast_seal_sha256": "3377e0bdc1b92f2d968645b8bc1dbe4992672582270164a170fd1483ed8a3ce2"
+    }
+  ],
+  "corrected_analysis_code_sha256": "f053a046cdabb17ef08acb3cdbd98738e762fb8131ee78bb91928803427f793d",
+  "corrected_forecast_seal_sha256": "5ec4204050408e8b1ab21b14167f8365a3c9e6f03ada576690ada717b035b65c",
+  "original_analysis_code_sha256": "d930ae0f71f051c74c32a6304cb3412e56e08158b6ab0f4b22b754c53d745151",
+  "original_and_corrected_forecasts_sha256": "e5a9776cd86c3aca79d488439c8edf4c9dc1b9c1f0d66bfb0a6bc1c737864f1b",
+  "original_forecast_seal_sha256": "10d337ed0dc75ccb697296aa411199b73bdc304082f30cb2d33199f14081bf57",
+  "unchanged_protocol_sha256": "e2c38d6bb1281ba31c1a4be730667267eb8e2b1328cad7a2ad384fea0e5195b1"
+}

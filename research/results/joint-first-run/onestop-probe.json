@@ -1,0 +1,116 @@
+{
+  "scope": "OneStop Prolific selected options, five held-out article-family folds.",
+  "trials": 1940,
+  "families": 20,
+  "human_correct": 1567,
+  "trained_device": "NVIDIA L4",
+  "ridge_penalty": 0.002,
+  "timing_s": 4.14707072300007,
+  "input_sha256": {
+    "design": "05e41dbfac748869dd696ebd671bdb17f8da7726a18c42b01d3b48c32b5ef680",
+    "features": "5fc0632af94a60f1be672910a81b1378c26ffab9764d5ab86d9cb48c3982ecaa"
+  },
+  "methods": {
+    "display_position_prior": {
+      "choice_nll": 1.3867005977123383,
+      "choice_brier": 0.7502002572334421,
+      "correctness_brier": 0.46633283199133213
+    },
+    "question_options": {
+      "choice_nll": 1.3677129411011753,
+      "choice_brier": 0.7405920441655122,
+      "correctness_brier": 0.4592633265607323
+    },
+    "passage_question_options": {
+      "choice_nll": 0.9844459397498574,
+      "choice_brier": 0.5182195680656579,
+      "correctness_brier": 0.295112012792924
+    }
+  },
+  "with_passage_minus_question_only": {
+    "choice_nll": {
+      "difference": -0.38326700135131786,
+      "95_ci": [
+        -0.40198261548811437,
+        -0.3619180231522855
+      ]
+    },
+    "choice_brier": {
+      "difference": -0.22237247609985417,
+      "95_ci": [
+        -0.23377344506468029,
+        -0.20931208308652435
+      ]
+    },
+    "correctness_brier": {
+      "difference": -0.16415131376780828,
+      "95_ci": [
+        -0.17256425386408547,
+        -0.15471721468575306
+      ]
+    }
+  },
+  "bootstrap": "10,000 paired held-out article-family draws; fixed fitted predictions and reader sample.",
+  "diagnostics": [
+    {
+      "fold": 0,
+      "method": "question_options",
+      "loss": 1.3669695514985485,
+      "max_gradient": 2.129670886299659e-08
+    },
+    {
+      "fold": 0,
+      "method": "passage_question_options",
+      "loss": 1.1259382275037613,
+      "max_gradient": 3.179164312187843e-08
+    },
+    {
+      "fold": 1,
+      "method": "question_options",
+      "loss": 1.3692019314099477,
+      "max_gradient": 8.224686943655857e-09
+    },
+    {
+      "fold": 1,
+      "method": "passage_question_options",
+      "loss": 1.1264893024069427,
+      "max_gradient": 1.1310577682777101e-08
+    },
+    {
+      "fold": 2,
+      "method": "question_options",
+      "loss": 1.3704003834225564,
+      "max_gradient": 1.891253255273482e-08
+    },
+    {
+      "fold": 2,
+      "method": "passage_question_options",
+      "loss": 1.1204778433314297,
+      "max_gradient": 1.6856000109588543e-08
+    },
+    {
+      "fold": 3,
+      "method": "question_options",
+      "loss": 1.366903849167063,
+      "max_gradient": 8.925531347204313e-09
+    },
+    {
+      "fold": 3,
+      "method": "passage_question_options",
+      "loss": 1.1105544005206136,
+      "max_gradient": 1.171981787052162e-07
+    },
+    {
+      "fold": 4,
+      "method": "question_options",
+      "loss": 1.3642987276291123,
+      "max_gradient": 1.7769559712988575e-08
+    },
+    {
+      "fold": 4,
+      "method": "passage_question_options",
+      "loss": 1.1257040449912485,
+      "max_gradient": 1.7581954281364887e-08
+    }
+  ]
+}

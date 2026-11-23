@@ -1,0 +1,107 @@
+{
+  "archive": {
+    "url": "https://jamesf-incomplete-qa.s3.amazonaws.com/iirc.tar.gz",
+    "sha256": "efab875854691530a3bd55809244b0656dff1e15e98e4108bae5405c63e31a9b"
+  },
+  "source_documents": {
+    "annotation_method": "https://aclanthology.org/2020.emnlp-main.86.pdf#page=3",
+    "author_dataset_license": "https://github.com/allenai/allennlp-website/blob/master/iirc.html",
+    "upstream_paragraph_license": "https://en.wikipedia.org/wiki/Wikipedia:Copyrights",
+    "license_note": "The Allen AI IIRC page lists CC BY 4.0. Retain Wikipedia article attribution and CC BY-SA terms for source paragraphs. The bundled license.txt names DROP and does not replace the IIRC-specific license statement or the source text terms."
+  },
+  "splits": {
+    "train": {
+      "paragraphs": 4754,
+      "article_families": 4754,
+      "visible_anchor_locations": 68898,
+      "authored_questions": 10839,
+      "single_anchor_questions": 7195,
+      "excluded_questions": {
+        "multiple_selected_links": 3200,
+        "selected_target_has_no_exact_visible_link": 73,
+        "selected_target_has_multiple_visible_links": 320,
+        "no_selected_link": 51
+      },
+      "same_stop_pairs": 5355,
+      "paired_articles": 1830,
+      "paired_questions": 5069
+    },
+    "dev": {
+      "paragraphs": 430,
+      "article_families": 430,
+      "visible_anchor_locations": 6256,
+      "authored_questions": 1301,
+      "single_anchor_questions": 858,
+      "excluded_questions": {
+        "multiple_selected_links": 389,
+        "no_selected_link": 7,
+        "selected_target_has_multiple_visible_links": 37,
+        "selected_target_has_no_exact_visible_link": 10
+      },
+      "same_stop_pairs": 944,
+      "paired_articles": 216,
+      "paired_questions": 694
+    }
+  },
+  "cross_split_overlaps": {
+    "article_family": 0,
+    "paragraph_text": 0,
+    "paragraph_id": 0,
+    "question_id": 0,
+    "question_text": 0
+  },
+  "visible_stop": "End of the unedited seed paragraph, in half-open Unicode character coordinates",
+  "permitted_model_input": "stimuli.jsonl alone for plain-text evaluation. visible-anchors.jsonl contains all hyperlink locations as shown by the source for separate link-aware diagnostics.",
+  "label": "A selected hyperlink target recorded by the question writer. Accept only one selected title with one exactly matching visible source span. No unreported span is an absence label.",
+  "contrast": "Two different authored questions on one paragraph selecting different, disjoint links. Swapping assignments controls anchor-to-question correspondence.",
+  "answer_labels": "The separately elicited answer and evidence context are excluded from all outputs.",
+  "files_sha256": {
+    "train/stimuli.jsonl": "b030e557afd59d1624c475e179755fca3763b8e1bead41914bf1bb75418935fd",
+    "train/visible-anchors.jsonl": "00f2a1cd88f8a43a7d638cfdd0ce047a4adde5cc53ba626aa9e1ef2f1f5c733f",
+    "train/questions.jsonl": "3b319a9b48c5253317dd4a525adec6c2f84f483cbadfd5ac5af5c3d7ab5af03d",
+    "train/pairs.jsonl": "57604c52614665215f9bf61bda0b489798ef25d74a367de4b726a1b3c6297ac8",
+    "dev/stimuli.jsonl": "e73474c2415a35238504d321f6a6e61a468ddd2295c38dae345b21ba1058f6de",
+    "dev/visible-anchors.jsonl": "08a25bb0cc24f31e0f1ae3862b3c2d4e4d2cf3d56107ab55bd5aea31108e5b4a",
+    "dev/questions.jsonl": "f8619073af20feadd77c76833021a98410daf8917ad4d4879b1135d2acb315d5",
+    "dev/pairs.jsonl": "f7fd560905393b08262d0eac9b1fab63f9114da32b65f51135871751b4b97cb1"
+  },
+  "verification": {
+    "byte_identical_rebuild_files": 9,
+    "independent_raw_reconstruction": {
+      "train": {
+        "original_paragraphs": 4754,
+        "source_visible_spans": 68898,
+        "source_unique_question_links": 7195,
+        "exact_same_stop_pairs": 5355
+      },
+      "dev": {
+        "original_paragraphs": 430,
+        "source_visible_spans": 6256,
+        "source_unique_question_links": 858,
+        "exact_same_stop_pairs": 944
+      }
+    },
+    "split_disjoint_rechecked": true,
+    "tokenizer_alignment": {
+      "revision": "Qwen/Qwen3.5-2B@15852e8c16360a2fea060d615a32b45270f8a8fc",
+      "tokenizer_sha256": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+      "range": "Smallest interval of overlapping Qwen tokens for each exact source character span",
+      "train": {
+        "tokens": 1344197,
+        "full_final_stop": 4754,
+        "questions_exact_token_cover": 401,
+        "questions_exact_or_space_padding": 7176,
+        "questions_with_overlapping_tokens": 7195,
+        "pairs_disjoint_token_covers": 5355
+      },
+      "dev": {
+        "tokens": 119806,
+        "full_final_stop": 430,
+        "questions_exact_token_cover": 51,
+        "questions_exact_or_space_padding": 854,
+        "questions_with_overlapping_tokens": 858,
+        "pairs_disjoint_token_covers": 944
+      }
+    }
+  }
+}

@@ -1,0 +1,72 @@
+{
+  "checkpoint_sha256": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+  "endpoint_absent_after_stop": true,
+  "payload_members_sha256": {
+    "bundle.json": "5f43c34c2fdde67aa491930506411820671000f6ec8058ecf35bceb732b4b148",
+    "forecast-inputs.tar.gz": "1c65a5dbc5c61c492bfdf5666f1eb9b07b52cdc97a5ce5662d27cc8eb8c83811",
+    "gradio.tar.gz": "6a9b9b2605552c2a0a97e544a2e0c1e5de4a63a166c18eff6d7d5258767afbb8"
+  },
+  "payload_sha256": "ef18fbf292f8852d4c21710241b4403c795407af4bee61dcd0da26a606f11732",
+  "phase": "finished",
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+  "schema_version": 8,
+  "stages": {
+    "forecast": {
+      "archive_bytes": 110677,
+      "archive_sha256": "7f07e907189cd63da1a2925bd5443e2112304a922fe797c6107c0998e00fb8cb",
+      "elapsed_s": 57.787808023000025,
+      "members": {
+        "blott/predictions.jsonl": "4a98baad0a593d2ba3ec6eabfc8dba2ae90a07a4ad26024c65583868336be8c3",
+        "blott/seal.json": "cd3be8b633602cfc4c598bdd2fb64e1ec611e62bc0a2257ce2a3dac284dd30dd",
+        "kerwer/predictions.jsonl": "d5d4866de1283c704c9b1745d9f7b87de347c0558191ab1566e27176c02c5a9e",
+        "kerwer/seal.json": "7bbb0d2bdb952f6a30fb560167447073961fbdd8d1e00c53f2834b1382cf9699",
+        "run.log": "a20cfbdde77da7e2314e9b6a92d046c5ea619d825d94464ce55b69e80798363e"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "gradio": {
+      "archive_bytes": 79551,
+      "archive_sha256": "4f71017a66a980d6c624843f52b1445e9b2f0893e56625dc7f08f0918b42a617",
+      "elapsed_s": 101.38451666700007,
+      "members": {
+        "predictions.jsonl": "c7ffd25147e44dfaad3146db1004677dfec1dc189a52d8a00c0f35256e95497d",
+        "replay-report.json": "0d350d57cb3cd7d37573b83a182856933a09135a9d3161c737550fd2acd992a0",
+        "run.log": "265e7a76a9da53b248bfe306cce6717b9b893441e7f9f7ffb81128eec77d1f1f",
+        "serving-seal.json": "8a9c87b4f831143fe373ded6e3d0a5fba57ffb75c67950395ca25161a1758bf7",
+        "verification.json": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+      },
+      "state": "complete",
+      "verified": true
+    },
+    "setup": {
+      "archive_bytes": 686,
+      "archive_sha256": "06a2349ee89e954bca396488c322ae293434ed2b1b3eee48c64129fd4828e6bb",
+      "elapsed_s": 40.622700895999856,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "e45b6e1f0ef99d2dbe3abb76eb8e90159211c94fdf29cb9a82e69435c6cb4e0c"
+      },
+      "state": "complete",
+      "verified": true
+    }
+  },
+  "timeline": {
+    "allocated": "2026-11-20T23:01:38.111133+00:00",
+    "allocating": "2026-11-20T23:01:31.905451+00:00",
+    "finished": "2026-11-20T23:05:14.974205+00:00",
+    "prepared": "2026-11-20T23:00:10.322556+00:00",
+    "releasing": "2026-11-20T23:05:07.593632+00:00",
+    "remote-forecast": "2026-11-20T23:04:19.380844+00:00",
+    "remote-gradio": "2026-11-20T23:02:29.882890+00:00",
+    "remote-setup": "2026-11-20T23:01:47.587128+00:00",
+    "remote-stages-finished": "2026-11-20T23:05:06.945361+00:00",
+    "retrieved-forecast": "2026-11-20T23:05:07.593401+00:00",
+    "retrieved-gradio": "2026-11-20T23:04:19.978483+00:00",
+    "retrieved-setup": "2026-11-20T23:02:30.719751+00:00",
+    "worker-running": "2026-11-20T23:01:47.153398+00:00"
+  },
+  "worker_sha256": "3293e39a6c6e426e04e58c8538ed5a31ed2513d8be7d93182b06a3c563724fa2"
+}

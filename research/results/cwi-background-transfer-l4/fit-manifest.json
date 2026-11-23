@@ -1,0 +1,67 @@
+{
+  "version": 1,
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "status": "experimental_before_transfer_scoring",
+  "assay_sha256": "6877d33e6c148ef871695b21131219b7836ddbc52b60b91b4e948bfec8e22fa7",
+  "protocol_sha256": "3b60ce87d3932515a6d47e555613b21821392eaf6243f9122780922190c58ad9",
+  "extraction_sha256": "1416ef1a42e0c61348a8450404563aa9870fdf4b4845cdfb256b6d3565ab7538",
+  "features_sha256": "06f51d23cadcb010634a18edde0b5a13973c4743287378ea0a28685ffed879a9",
+  "heads_sha256": "ef2879173eb68d90ef2a8663a3b57e2f0110f073a4bc8be122a7e7cbf5266200",
+  "lexicon_sha256": "4f4a65f094e43edfc5e5b4086e827025993eedfbee70e8c7787412fb2961e9e7",
+  "predictions_sha256": "5696ca201f586063a834903893a51438ddb0e9b1db9bac8ee5a4ef65687486cf",
+  "inputs_sha256": {
+    "stimuli.jsonl": "73f9a418f8afa1e94cc43991bb8cec2a0d7a14dfd5fee48a324ef9b2942ac22e",
+    "cwi-train.jsonl": "19550adda0581947b42a0ea849ec344da5aac9afe293f539ef772d8b5068fc2a",
+    "cwi-eval.jsonl": "e3a4eb55d1bc457f7dce61056571f9f24f01d08a5ff29db5cc37d23157570ff9"
+  },
+  "methods": {
+    "length_frequency": {
+      "objective": 0.2750625277080802,
+      "gradient_max": 7.655828553946014e-07
+    },
+    "qwen_pooled": {
+      "objective": 0.2684987278304685,
+      "gradient_max": 5.35977026180955e-07
+    },
+    "background_only": {
+      "objective": 0.30094310470718144,
+      "gradient_max": 5.872774656428279e-08
+    },
+    "qwen_group_offset": {
+      "objective": 0.2682784119516209,
+      "gradient_max": 7.498119674989633e-07
+    },
+    "qwen_group_interaction": {
+      "objective": 0.26751229075190214,
+      "gradient_max": 7.59198568696883e-07
+    }
+  },
+  "penalty": 0.002,
+  "max_lbfgs_iterations": 110,
+  "fit_candidates": 3850,
+  "fit_excluded_candidates": 0,
+  "forecast_candidates": {
+    "dev": 1348,
+    "test": 7112
+  },
+  "annotator_order": [
+    "native",
+    "nonnative"
+  ],
+  "hidden_width": 2048,
+  "hidden_normalization": "row L2",
+  "lexical_features_in_order": [
+    "log1p_span_characters",
+    "log1p_span_words",
+    "log1p_start_character",
+    "log1p_lowest_fit_word_count",
+    "mean_log1p_fit_word_count",
+    "uppercase_span",
+    "span_contains_digit"
+  ],
+  "lexical_scaling": "(x - training_center) / training_scale / sqrt(7), scale floor 0.1",
+  "lexicon": "Case-folded lexical counts over unique fit documents; missing words have zero count.",
+  "candidate_coordinates": "Unicode character offsets, half-open spans at certified causal stops.",
+  "forecasts_from_reloaded_checkpoint": true
+}

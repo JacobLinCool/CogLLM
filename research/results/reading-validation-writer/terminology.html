@@ -1,0 +1,83 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>CogLLM Scientific Writing Review</title><style>body{max-width:54rem;margin:6vh auto;padding:0 1rem;font:17px/1.5 system-ui;color:#23352f}
+.writing-review .term-review { border-top:1px solid #cbd7cf; padding-top:.9rem; margin-top:.65rem; }
+.writing-review .term-review h3,.writing-review .term-review p,.writing-review .term-review li { color:#23352f!important; }
+.writing-review .term-review h3 { font-size:1.1rem; margin:.2rem 0; }
+.writing-review .term-source { border-bottom:3px solid #3d685a; }
+.writing-review .term-cue { border-bottom:3px dotted #3d685a; }
+.writing-review .term-chart { display:grid; grid-template-columns:1.5em minmax(0,1fr); margin-top:.6rem; }
+.writing-review .term-chart svg { display:block; width:100%; height:4.1rem; }
+.writing-review .term-chart span { display:flex; flex-direction:column; justify-content:space-between; font-size:.8rem; }
+.writing-review .term-x { display:flex; justify-content:space-between; flex-wrap:wrap; padding-left:1.5em; font-size:.8rem; }
+.writing-review .term-scope { font-size:.83rem; }
+.writing-review { --ink: #182b24; color: var(--ink)!important; background: #fcfcf8;
+ border: 1px solid #cbd7cf; border-radius: .65rem; padding: 1.1rem 1.25rem; }
+.writing-review .summary-understanding { margin-top:.8rem; padding-top:.65rem; border-top:1px solid #c4d1cc; }
+.writing-review .summary-understanding h3,.writing-review .summary-understanding p,
+.writing-review .summary-understanding strong { color:#23352f!important; }
+.writing-review .reading-key,.writing-review .reading-caption { color: #394c42!important; font-size: .87rem; }
+.writing-review .reading-key { display: flex; flex-wrap: wrap; gap: .35rem .72rem; align-items: center; }
+.writing-review .key-swatch { display: inline-block; width: 1.3em; height: .82em; border: 1px solid #b2b0a3;
+ border-radius: .15em; vertical-align: middle; margin-right: .18em; }
+.writing-review .draft { white-space: pre-wrap; overflow-wrap: anywhere; font-size: 1.1rem;
+ line-height: 2.1; max-width: 85ch; padding: 1.05rem 0; }
+.writing-review .draft mark { color: var(--ink)!important; padding: .14em 0; box-decoration-break: clone;
+ -webkit-box-decoration-break: clone; border-radius: .16rem; }
+.writing-review .phrase { text-decoration: underline solid #6e4218; text-underline-offset: .23em; }
+.writing-review .character { box-shadow: inset 0 3px 0 #624a8b; padding-top: .11em; }
+.writing-review .connection { outline: 2px dashed #28568c; outline-offset: .08em; }
+.writing-review .review-list { margin: .6rem 0 0; padding-left: 1.5rem; }
+.writing-review .review-list li { margin-bottom: .4rem; }
+
+.learner-result {background:#f8faf7;border:1px solid #cbd7cf;border-radius:.65rem;padding:1rem 1.2rem;}
+.learner-result p,.learner-result .learner-draft {color:#24372e!important;}
+.learner-result p {margin:0 0 .45rem;font-size:.9rem;}
+.learner-result .learner-draft {white-space:pre-wrap;overflow-wrap:anywhere;line-height:3.1;font-size:1.13rem;margin-top:.8rem}
+.learner-result .learner-word {display:inline-block;position:relative;line-height:1.45;min-width:1.35em;
+ background:var(--learner-word-color);border-bottom:2px solid #889c8a;border-radius:.16rem;color:#20352a!important;}
+.learner-result .learner-word::before {content:attr(data-rate);position:absolute;left:0;bottom:100%;white-space:nowrap;
+ color:#3c5749;font-size:.62em;line-height:1.2;font-weight:650;font-variant-numeric:tabular-nums;}
+.learner-result .high-word {border-bottom:3px solid #ac5f28;}
+
+.writing-review .ref-review { color:#23352f!important; border-top:1px solid #cbd7cf; padding-top:.8rem; }
+.writing-review .ref-review h3 { font-size:1.08rem; color:#23352f!important; }
+.writing-review .ref-review details { margin:.35rem 0; }
+.writing-review .ref-review summary { cursor:pointer; padding:.25rem 0; color:#273d36!important; }
+.writing-review .ref-review p { color:#273d36!important; }
+.writing-review .ref-answer { border-left:3px solid #356591; padding-left:.65rem; }
+
+.physical-review {background:#f8faf7; border:1px solid #b4c4bb; border-radius:.6rem; padding:1rem; color:#23352f!important;}
+.physical-review p,.physical-review strong,.physical-review .physical-draft {color:#23352f!important;}
+.physical-draft {white-space:pre-wrap;overflow-wrap:anywhere;line-height:1.8;}
+.physical-draft mark {color:#1d302a!important;padding:.08em 0;box-decoration-break:clone;}
+.physical-earlier {background:#c7e3df!important;box-shadow:inset 0 -.12em #347065;}
+.physical-conflict {background:#f7d9b9!important;outline:1px dashed #8a4726;}
+
+.writing-review .expectation-panel {border-top:1px solid #c4d1cc;padding-top:.75rem;color:#23352f;}
+.writing-review .expectation-panel h3,.writing-review .expectation-panel p,
+.writing-review .expectation-panel summary {color:#23352f!important;}
+.writing-review .expectation-increase {border-bottom:3px solid #974814;}
+.writing-review .expectation-decrease {border-bottom:3px dotted #14596a;}
+.writing-review .expectation-chart {display:block;width:100%;height:8.5rem;}
+.writing-review .expectation-axis {display:flex;justify-content:space-between;font-size:.85rem;}
+.writing-review .expectation-table {max-height:18rem;overflow:auto;}
+.writing-review .expectation-table table {width:100%;border-collapse:collapse;color:#23352f;}
+.writing-review .expectation-table th,.writing-review .expectation-table td {padding:.2rem .35rem;text-align:left;background:#fcfcf8;}
+
+:is(.writing-review,.physical-review,.learner-result) {
+  --reading-surface-ink:#182b24;
+  --body-text-color:var(--reading-surface-ink);
+  --body-text-color-subdued:var(--reading-surface-ink);
+  color-scheme:light;
+  color:var(--reading-surface-ink)!important;
+}
+:is(.writing-review,.physical-review,.learner-result) :where(*) {
+  color:var(--reading-surface-ink)!important;
+}
+:is(.writing-review,.physical-review,.learner-result) a:any-link {
+  color:#183b45!important;
+  text-decoration:underline;
+}
+:is(.writing-review,.physical-review,.learner-result) :is(a,summary):focus-visible {
+  outline:2px solid #284e62; outline-offset:2px;
+}
+</style></head><body><main><h1>CogLLM Scientific Writing Review</h1><section class="writing-review" data-model="c38406db17f11e803b1b46f760e5082e83de9dc29dd7b91f97d5e3e3f4fa2c7e"><div class="reading-key" aria-label="Estimated sentence ease"><span><i class="key-swatch" style="background:#d78353" aria-hidden="true"></i>Harder · 1</span><span><i class="key-swatch" style="background:#f0c796" aria-hidden="true"></i>3</span><span><i class="key-swatch" style="background:#e8f3e7" aria-hidden="true"></i>Easier · 5</span></div><p class="reading-caption"><span class="phrase">Underline</span> · wording to review. <span class="connection">Dashed outline</span> · check the connection to earlier sentences. <span class="term-source">Solid green</span> · earlier term. <span class="term-cue">Dotted green</span> · possible explanatory wording.</p><div class="draft" aria-label="Original passage"><mark style="background:#e7e9cc" data-start="0" data-end="72" title="Sentence 1. Estimated ease 4.43 of 5.">A light wave can change <span class="phrase" data-start="24" data-end="33" title="Top wording candidate within this sentence">direction</span> at the boundary between air and water.</mark> <mark style="background:#e8eed9" data-start="73" data-end="106" title="Sentence 2. Estimated ease 4.71 of 5.">This effect is called <span class="phrase term-source" data-start="95" data-end="105" title="Top wording candidate within this sentence. Earlier technical term">refraction</span>.</mark> <mark style="background:#e7e1b8" data-start="107" data-end="219" title="Sentence 3. Estimated ease 4.00 of 5.">The refractive index of a material is the ratio of the <span class="term-cue" data-start="162" data-end="167" title="Possible explanatory wording">speed</span> of light in a <span class="phrase" data-start="182" data-end="188" title="Top wording candidate within this sentence">vacuum</span> to its speed in that material.</mark></div><section class="term-review" aria-label="Technical terms"><h3>Terms awaiting an explanation</h3><p>The line estimates how many earlier terminology mentions are still waiting for a definition.</p><div class="term-chart" role="img" aria-label="Estimated mentions awaiting a definition, from 0.00 to 0.02, maximum 0.24"><span><small>1</small><small>0</small></span><svg aria-hidden="true" viewBox="0 0 1000 104" preserveAspectRatio="none"><path d="M0 4H1000 M0 100H1000" fill="none" stroke="#83978d" stroke-width="1"/><polyline fill="none" stroke="#176956" stroke-width="2.5" vector-effect="non-scaling-stroke" points="0.00,99.70 22.22,98.32 44.44,90.90 66.67,90.78 88.89,91.04 111.11,90.13 133.33,90.53 155.56,91.01 177.78,91.21 200.00,93.69 222.22,95.18 244.44,96.75 266.67,97.69 288.89,97.69 311.11,97.69 333.33,97.37 355.56,97.37 377.78,97.36 400.00,97.36 422.22,77.48 444.44,77.48 466.67,77.44 488.89,77.44 511.11,79.00 533.33,76.65 555.56,76.66 577.78,77.03 600.00,76.61 622.22,76.66 644.44,78.06 666.67,80.68 688.89,83.15 711.11,95.09 733.33,98.20 755.56,98.56 777.78,98.70 800.00,99.00 822.22,99.04 844.44,97.40 866.67,97.57 888.89,98.05 911.11,98.34 933.33,98.56 955.56,98.79 977.78,98.46 1000.00,98.46"/></svg></div><div class="term-x"><span>Start of draft</span><span>End · 0.02 expected mentions</span></div><p>Possible term → later wording</p><ul><li><span class="term-source">refraction</span> <span aria-label="may be explained at">→</span> <span class="term-cue">speed</span></li></ul><p class="term-scope">Trained on textbook definitions. In held biology and physics passages, 30% of proposed links matched both the annotated term and its later definition interval.</p></section><details><summary>Lowest estimated ease (3 of 3 rated sentences)</summary><ol class="review-list"><li>Sentence 3 · <strong>4.00/5</strong> ease · “vacuum”</li><li>Sentence 1 · <strong>4.43/5</strong> ease · “direction”</li><li>Sentence 2 · <strong>4.71/5</strong> ease · “refraction”</li></ol></details></section></main></body></html>

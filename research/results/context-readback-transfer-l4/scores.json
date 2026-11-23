@@ -1,0 +1,1005 @@
+{
+  "bootstrap": {
+    "draws": 10000,
+    "fixed": [
+      "readers",
+      "forecasts"
+    ],
+    "interval": "linear percentile",
+    "no_positive_replicate_ap": 0,
+    "seed": 20261122,
+    "unit": "original material family",
+    "within_effect_same_resamples_for_model_and_human": true
+  },
+  "context_cell_weight": "observed trial opportunity within each family-by-context-by-disambiguation cell",
+  "context_effect_direction": "tworef minus oneref",
+  "context_effect_unit": "complete original family, equal weight across families",
+  "context_effects": {
+    "all": {
+      "comp": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "comp"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              0.0044558373653712825,
+              0.011707734725286157
+            ],
+            "two_minus_one": 0.008124354612119144
+          },
+          "position": {
+            "model_minus_human": -0.009456038249146977,
+            "model_minus_human_paired_family_ci90": [
+              -0.012393762075410162,
+              -0.00637488759662452
+            ],
+            "paired_family_ci95": [
+              -0.0017053375415189993,
+              -0.0009864563403464536
+            ],
+            "two_minus_one": -0.0013316836370278326
+          },
+          "prior": {
+            "model_minus_human": -0.008124354612119142,
+            "model_minus_human_paired_family_ci90": [
+              -0.011081773345997015,
+              -0.005007702752206298
+            ],
+            "paired_family_ci95": [
+              -2.3129646346357427e-18,
+              2.8912057932946786e-18
+            ],
+            "two_minus_one": 3.854941057726238e-19
+          },
+          "qwen": {
+            "model_minus_human": -0.010204420987602346,
+            "model_minus_human_paired_family_ci90": [
+              -0.012942552687351061,
+              -0.007335319967184566
+            ],
+            "paired_family_ci95": [
+              -0.0029904931379011106,
+              -0.0012042729000206935
+            ],
+            "two_minus_one": -0.0020800663754832007
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": false,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 36590,
+        "incomplete_families": 0
+      },
+      "rc": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "rc"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.015983504148574062,
+              -0.006948552870744785
+            ],
+            "two_minus_one": -0.011497388347884989
+          },
+          "position": {
+            "model_minus_human": 0.010107061255327012,
+            "model_minus_human_paired_family_ci90": [
+              0.006248456031267389,
+              0.013923365140153368
+            ],
+            "paired_family_ci95": [
+              -0.0017419089305653328,
+              -0.0010667832274568402
+            ],
+            "two_minus_one": -0.001390327092557975
+          },
+          "prior": {
+            "model_minus_human": 0.011497388347884985,
+            "model_minus_human_paired_family_ci90": [
+              0.007653903423357595,
+              0.015275846738511496
+            ],
+            "paired_family_ci95": [
+              -3.469446951953614e-18,
+              1.1564823173178713e-18
+            ],
+            "two_minus_one": -1.1564823173178713e-18
+          },
+          "qwen": {
+            "model_minus_human": 0.007776836210908283,
+            "model_minus_human_paired_family_ci90": [
+              0.004129260316577651,
+              0.01135720315734796
+            ],
+            "paired_family_ci95": [
+              -0.0045269013270313515,
+              -0.0029339895452055106
+            ],
+            "two_minus_one": -0.0037205521369767037
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 36366,
+        "incomplete_families": 0
+      },
+      "unamb": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "unamb"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.012460269332005539,
+              -0.004825494743309414
+            ],
+            "two_minus_one": -0.008497471717180797
+          },
+          "position": {
+            "model_minus_human": 0.007074715574839631,
+            "model_minus_human_paired_family_ci90": [
+              0.0037994915766852632,
+              0.010490896589894874
+            ],
+            "paired_family_ci95": [
+              -0.0017885736958873485,
+              -0.001086417012521955
+            ],
+            "two_minus_one": -0.0014227561423411639
+          },
+          "prior": {
+            "model_minus_human": 0.008497471717180797,
+            "model_minus_human_paired_family_ci90": [
+              0.005347609089639052,
+              0.011824194429261895
+            ],
+            "paired_family_ci95": [
+              -2.3129646346357427e-18,
+              3.469446951953614e-18
+            ],
+            "two_minus_one": 5.782411586589357e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.004771330018257403,
+            "model_minus_human_paired_family_ci90": [
+              0.0017203422207163971,
+              0.007962850268429479
+            ],
+            "paired_family_ci95": [
+              -0.00447245998884519,
+              -0.00297725735398266
+            ],
+            "two_minus_one": -0.0037261416989233906
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": true,
+          "qwen_human_equivalence": true
+        },
+        "included_trials": 35835,
+        "incomplete_families": 0
+      }
+    },
+    "critical": {
+      "comp": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "comp"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              0.0014939724283110597,
+              0.012027253393211325
+            ],
+            "two_minus_one": 0.006589663087156043
+          },
+          "position": {
+            "model_minus_human": -0.0074668402083999585,
+            "model_minus_human_paired_family_ci90": [
+              -0.012105334758155674,
+              -0.003074578145537887
+            ],
+            "paired_family_ci95": [
+              -0.0010938574703281152,
+              -0.0006887710182947384
+            ],
+            "two_minus_one": -0.0008771771212439167
+          },
+          "prior": {
+            "model_minus_human": -0.006589663087156042,
+            "model_minus_human_paired_family_ci90": [
+              -0.011157852823556622,
+              -0.0022327827452741783
+            ],
+            "paired_family_ci95": [
+              -3.854941057726238e-19,
+              1.5419764230904951e-18
+            ],
+            "two_minus_one": 5.782411586589357e-19
+          },
+          "qwen": {
+            "model_minus_human": -0.006464693684388387,
+            "model_minus_human_paired_family_ci90": [
+              -0.011137710294887247,
+              -0.002076258080057539
+            ],
+            "paired_family_ci95": [
+              -0.000696506238023429,
+              0.0011925860603653083
+            ],
+            "two_minus_one": 0.00012496940276765628
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": false,
+          "qwen_direction": false,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 3213,
+        "incomplete_families": 0
+      },
+      "rc": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "rc"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.06852998492954256,
+              -0.024227309489662594
+            ],
+            "two_minus_one": -0.045833055514896213
+          },
+          "position": {
+            "model_minus_human": 0.04496388186576467,
+            "model_minus_human_paired_family_ci90": [
+              0.026565585640623914,
+              0.06420761684546322
+            ],
+            "paired_family_ci95": [
+              -0.0010866839485260528,
+              -0.0006796295636803105
+            ],
+            "two_minus_one": -0.000869173649131546
+          },
+          "prior": {
+            "model_minus_human": 0.045833055514896213,
+            "model_minus_human_paired_family_ci90": [
+              0.02745745878430669,
+              0.06504005638038939
+            ],
+            "paired_family_ci95": [
+              -3.854941057726238e-19,
+              1.1564823173178713e-18
+            ],
+            "two_minus_one": 3.854941057726238e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.0463059313758861,
+            "model_minus_human_paired_family_ci90": [
+              0.027809434229794483,
+              0.06539562223355692
+            ],
+            "paired_family_ci95": [
+              -0.0002876918573174825,
+              0.0014786991792580942
+            ],
+            "two_minus_one": 0.0004728758609899012
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": false,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 3198,
+        "incomplete_families": 0
+      },
+      "unamb": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "unamb"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.016577048310619045,
+              -0.0029647048481214826
+            ],
+            "two_minus_one": -0.009667199983657358
+          },
+          "position": {
+            "model_minus_human": 0.0088054467189233,
+            "model_minus_human_paired_family_ci90": [
+              0.003081407930722675,
+              0.014619234659608777
+            ],
+            "paired_family_ci95": [
+              -0.0010851804227468283,
+              -0.0006704523285665083
+            ],
+            "two_minus_one": -0.0008617532647340582
+          },
+          "prior": {
+            "model_minus_human": 0.009667199983657358,
+            "model_minus_human_paired_family_ci90": [
+              0.003942910435031479,
+              0.015448994994791233
+            ],
+            "paired_family_ci95": [
+              -9.637352644315595e-19,
+              5.782411586589357e-19
+            ],
+            "two_minus_one": -1.927470528863119e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.008527793408698156,
+            "model_minus_human_paired_family_ci90": [
+              0.00289029184629182,
+              0.01419526000382227
+            ],
+            "paired_family_ci95": [
+              -0.001752008948850576,
+              -0.0005450250066288658
+            ],
+            "two_minus_one": -0.0011394065749592034
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 3139,
+        "incomplete_families": 0
+      }
+    },
+    "single_word": {
+      "comp": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "comp"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.003522560156619862,
+              0.004126789380978534
+            ],
+            "two_minus_one": 3.085784661940746e-05
+          },
+          "position": {
+            "model_minus_human": -0.0008441656143253439,
+            "model_minus_human_paired_family_ci90": [
+              -0.004189650445983077,
+              0.00221658974739666
+            ],
+            "paired_family_ci95": [
+              -0.0010292358309679486,
+              -0.0006272729757710629
+            ],
+            "two_minus_one": -0.0008133077677059367
+          },
+          "prior": {
+            "model_minus_human": -3.085784661940842e-05,
+            "model_minus_human_paired_family_ci90": [
+              -0.003364873465083507,
+              0.002990426944455774
+            ],
+            "paired_family_ci95": [
+              -2.5057116875220546e-18,
+              1.927470528863119e-19
+            ],
+            "two_minus_one": -1.1564823173178713e-18
+          },
+          "qwen": {
+            "model_minus_human": 0.00014080095565775723,
+            "model_minus_human_paired_family_ci90": [
+              -0.0030853813350125536,
+              0.003161117968640706
+            ],
+            "paired_family_ci95": [
+              -0.00043370924515190724,
+              0.0007793005012920254
+            ],
+            "two_minus_one": 0.00017165880227716453
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": false,
+          "qwen_direction": false,
+          "qwen_human_equivalence": true
+        },
+        "included_trials": 15004,
+        "incomplete_families": 0
+      },
+      "rc": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "rc"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.005289827228855089,
+              -0.0019621832727435796
+            ],
+            "two_minus_one": -0.0036148036152011034
+          },
+          "position": {
+            "model_minus_human": 0.0027869953003156252,
+            "model_minus_human_paired_family_ci90": [
+              0.00138639159158382,
+              0.004198089812917958
+            ],
+            "paired_family_ci95": [
+              -0.0010363249912259892,
+              -0.0006479618943559663
+            ],
+            "two_minus_one": -0.0008278083148854789
+          },
+          "prior": {
+            "model_minus_human": 0.0036148036152011042,
+            "model_minus_human_paired_family_ci90": [
+              0.0022404598445909334,
+              0.005013499235784194
+            ],
+            "paired_family_ci95": [
+              -2.120217581749431e-18,
+              1.3492293702041833e-18
+            ],
+            "two_minus_one": -3.854941057726238e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.0035163854402716593,
+            "model_minus_human_paired_family_ci90": [
+              0.0021245026111448707,
+              0.004913803732357648
+            ],
+            "paired_family_ci95": [
+              -0.0006433559378584032,
+              0.0004308328172010529
+            ],
+            "two_minus_one": -9.841817492944497e-05
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": true,
+          "qwen_human_equivalence": true
+        },
+        "included_trials": 14551,
+        "incomplete_families": 0
+      },
+      "unamb": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "unamb"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.015155227999647428,
+              -0.004227313863878852
+            ],
+            "two_minus_one": -0.009229538562948714
+          },
+          "position": {
+            "model_minus_human": 0.00842035930641955,
+            "model_minus_human_paired_family_ci90": [
+              0.004102823194907727,
+              0.01342199856536229
+            ],
+            "paired_family_ci95": [
+              -0.0010181261790060498,
+              -0.000625706801113564
+            ],
+            "two_minus_one": -0.0008091792565291638
+          },
+          "prior": {
+            "model_minus_human": 0.009229538562948713,
+            "model_minus_human_paired_family_ci90": [
+              0.004957619104916829,
+              0.01421345643006644
+            ],
+            "paired_family_ci95": [
+              -1.734723475976807e-18,
+              9.637352644315595e-19
+            ],
+            "two_minus_one": -3.854941057726238e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.008225494262735174,
+            "model_minus_human_paired_family_ci90": [
+              0.003884219503531322,
+              0.013264112807680774
+            ],
+            "paired_family_ci95": [
+              -0.0017918474382402777,
+              -0.00017145442396178628
+            ],
+            "two_minus_one": -0.0010040443002135397
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 14311,
+        "incomplete_families": 0
+      }
+    },
+    "spill": {
+      "comp": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "comp"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              0.010898995154423354,
+              0.04237153063208078
+            ],
+            "two_minus_one": 0.02622913890502114
+          },
+          "position": {
+            "model_minus_human": -0.027118121456462675,
+            "model_minus_human_paired_family_ci90": [
+              -0.04071044874349233,
+              -0.014014504264213608
+            ],
+            "paired_family_ci95": [
+              -0.0011079380767102746,
+              -0.0006981563153250238
+            ],
+            "two_minus_one": -0.0008889825514415363
+          },
+          "prior": {
+            "model_minus_human": -0.02622913890502114,
+            "model_minus_human_paired_family_ci90": [
+              -0.03977562593645604,
+              -0.013160792693855929
+            ],
+            "paired_family_ci95": [
+              -5.782411586589357e-19,
+              9.637352644315595e-19
+            ],
+            "two_minus_one": 1.927470528863119e-19
+          },
+          "qwen": {
+            "model_minus_human": -0.0267367744028387,
+            "model_minus_human_paired_family_ci90": [
+              -0.04039255910795449,
+              -0.01350756131073005
+            ],
+            "paired_family_ci95": [
+              -0.0009447494228542088,
+              -7.854421485255431e-05
+            ],
+            "two_minus_one": -0.0005076354978175578
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": false,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 3181,
+        "incomplete_families": 0
+      },
+      "rc": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "rc"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.05985888171681569,
+              -0.013406261755531527
+            ],
+            "two_minus_one": -0.03690732859580068
+          },
+          "position": {
+            "model_minus_human": 0.03604654684879738,
+            "model_minus_human_paired_family_ci90": [
+              0.016309238695332337,
+              0.0555380816672365
+            ],
+            "paired_family_ci95": [
+              -0.0010893641450978593,
+              -0.0006654052923797056
+            ],
+            "two_minus_one": -0.0008607817470032932
+          },
+          "prior": {
+            "model_minus_human": 0.03690732859580068,
+            "model_minus_human_paired_family_ci90": [
+              0.017219434636009202,
+              0.056363791675315515
+            ],
+            "paired_family_ci95": [
+              -1.3492293702041833e-18,
+              1.927470528863119e-19
+            ],
+            "two_minus_one": -5.782411586589357e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.03609491801019495,
+            "model_minus_human_paired_family_ci90": [
+              0.016467065402952324,
+              0.055643109316687075
+            ],
+            "paired_family_ci95": [
+              -0.001433602148273794,
+              -0.000269454717332577
+            ],
+            "two_minus_one": -0.0008124105856057336
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": true,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 2992,
+        "incomplete_families": 0
+      },
+      "unamb": {
+        "complete_families": 36,
+        "disambiguation_strata": [
+          "unamb"
+        ],
+        "effects": {
+          "human": {
+            "paired_family_ci95": [
+              -0.026525396322523938,
+              0.0009516745374624569
+            ],
+            "two_minus_one": -0.01147204219536393
+          },
+          "position": {
+            "model_minus_human": 0.01061696255984315,
+            "model_minus_human_paired_family_ci90": [
+              9.79256060619652e-05,
+              0.023044660877917116
+            ],
+            "paired_family_ci95": [
+              -0.0010750262109831881,
+              -0.0006681282691928103
+            ],
+            "two_minus_one": -0.0008550796355207815
+          },
+          "prior": {
+            "model_minus_human": 0.011472042195363928,
+            "model_minus_human_paired_family_ci90": [
+              0.0009814614877435225,
+              0.02386253183531982
+            ],
+            "paired_family_ci95": [
+              -1.1564823173178713e-18,
+              5.782411586589357e-19
+            ],
+            "two_minus_one": -1.927470528863119e-19
+          },
+          "qwen": {
+            "model_minus_human": 0.009750692258491567,
+            "model_minus_human_paired_family_ci90": [
+              -0.0009430947312154345,
+              0.02230691152178497
+            ],
+            "paired_family_ci95": [
+              -0.0024088087195542947,
+              -0.0010609128670676443
+            ],
+            "two_minus_one": -0.0017213499368723645
+          }
+        },
+        "families_with_observations": 36,
+        "gates": {
+          "human_direction_confirmed": false,
+          "qwen_direction": true,
+          "qwen_human_equivalence": false
+        },
+        "included_trials": 3008,
+        "incomplete_families": 0
+      }
+    }
+  },
+  "designed_families": 36,
+  "designed_stops": 2542,
+  "input_sha256": {
+    "assay_sha256": "fde1e4a77d0aab2e985f5d60c305d96da3cbd276eafe1968eb88b9a3920022e5",
+    "causality_sha256": "e68f23d349106e8bdac1adde9333d155ef01bb6da0929fbe6ef69a97c3bad791",
+    "events_sha256": "e7bde8f75569f98942671e3d1344ca5bd0b7348c23cda206d2dc7aacd6cfdbab",
+    "extraction_sha256": "e0c3a48e8778a34a76a7ce1e7c4e78955d711765b26399d29d2fef7fba3cf686",
+    "forecast_seal_sha256": "44869e68eb1cf52090fc97ceca2e2e5c5a7de9c7910505ae662e2b7a79940b74",
+    "heads_sha256": "029c8503fb4110f8c853478809674b68c077c078c56ce62662ad98b03387d432",
+    "predictions_sha256": "ed5e1824332f85cfd393a8bb217fb45f099600c713339e6d717c8c6f49db09fa",
+    "protocol_sha256": "ca20c7f1883f74384912ebb696a17a90b8b0cae5dcec314264c756f4e4b57450",
+    "replay_code_sha256": "0b7d3d9c6fbb52e7b4b5b661a28863b1ca6df340019f8cb77e743f8cd8df86de",
+    "scorer_sha256": "6c165d9af63a9a6f83fe35f97528f1f7e24d3c674e812c6cdf374ae8795c8448",
+    "source_code_sha256": "ee29e1ba8a7ffc9abb162c0165c740599ea7f7aa5478be3c0bd01c4be2f2465d",
+    "stimuli_sha256": "517e0ed0117e73af93d8772974e239af12115c7a17e784a0d9d7f2e0d905dc0b",
+    "targets_sha256": "435c932616c7fa20054e31e469aa026cff99332fb4c02dee634633e58d348ff3",
+    "truth_seal_sha256": "01697649fee11e28845a19094aea42a5f6d9ddea9243424c9276b53872e60686",
+    "truth_sha256": "c91f1f24096f680deb590ca16059bf10c0ac25ae9a20c77a12c0c46432d161f1"
+  },
+  "population": {
+    "all": {
+      "event_rate": 0.036694211837376256,
+      "families": 36,
+      "gates": {
+        "brier_superiority": false,
+        "calibration_equivalence": false
+      },
+      "methods": {
+        "position": {
+          "article_family_ci95": {
+            "average_precision": [
+              0.07069373646069133,
+              0.11538939014767112
+            ],
+            "brier": [
+              0.03547788740600656,
+              0.03877703546739888
+            ],
+            "calibration_gap": [
+              0.041372819868167966,
+              0.04654862480518798
+            ],
+            "mean_probability": [
+              0.07945355150229205,
+              0.08194691355501153
+            ],
+            "nll_nats": [
+              0.16733031390210593,
+              0.1767091338630988
+            ]
+          },
+          "average_precision": 0.08898049991338826,
+          "brier": 0.03707576653673641,
+          "calibration_gap": 0.0440027295850575,
+          "mean_probability": 0.08069694142243376,
+          "nll_nats": 0.17186836613845832
+        },
+        "prior": {
+          "article_family_ci95": {
+            "average_precision": [
+              0.03475003757212823,
+              0.03877774211985467
+            ],
+            "brier": [
+              0.03366539013156848,
+              0.03732386000611853
+            ],
+            "calibration_gap": [
+              0.007059119646089206,
+              0.011086824193815644
+            ],
+            "mean_probability": [
+              0.04583686176594386,
+              0.04583686176594389
+            ],
+            "nll_nats": [
+              0.15241290707497165,
+              0.16463999525357842
+            ]
+          },
+          "average_precision": 0.036694211837376256,
+          "brier": 0.035431334702726344,
+          "calibration_gap": 0.009142649928567623,
+          "mean_probability": 0.04583686176594388,
+          "nll_nats": 0.15831492642472364
+        },
+        "qwen": {
+          "article_family_ci95": {
+            "average_precision": [
+              0.19828160744679132,
+              0.3484154957731082
+            ],
+            "brier": [
+              0.037330782103005646,
+              0.03987912771517282
+            ],
+            "calibration_gap": [
+              0.0718076028519773,
+              0.0779132176143735
+            ],
+            "mean_probability": [
+              0.10976911667463139,
+              0.11341868926469735
+            ],
+            "nll_nats": [
+              0.17715341322072564,
+              0.1837345215077576
+            ]
+          },
+          "average_precision": 0.2351269454478877,
+          "brier": 0.03856564697267211,
+          "calibration_gap": 0.07489006056794019,
+          "mean_probability": 0.11158427240531645,
+          "nll_nats": 0.1804091895247386
+        }
+      },
+      "negative": 104799,
+      "observed_stops": 2541,
+      "positive": 3992,
+      "qwen_calibration_gap": {
+        "difference": 0.07489006056794019,
+        "family_ci90": [
+          0.07228949291300767,
+          0.07742089943732912
+        ]
+      },
+      "qwen_minus_position_brier": {
+        "difference": 0.0014898804359357032,
+        "paired_family_ci95": [
+          0.0009247962095411212,
+          0.002042056724689026
+        ]
+      },
+      "trials": 108791
+    },
+    "single_word": {
+      "event_rate": 0.0098025805863311,
+      "families": 36,
+      "gates": {
+        "brier_superiority": false,
+        "calibration_equivalence": false
+      },
+      "methods": {
+        "position": {
+          "article_family_ci95": {
+            "average_precision": [
+              0.009333146417300377,
+              0.0701692783761514
+            ],
+            "brier": [
+              0.012826757298473601,
+              0.016308736181042675
+            ],
+            "calibration_gap": [
+              0.0660546065231357,
+              0.07138843186212111
+            ],
+            "mean_probability": [
+              0.0772793373256736,
+              0.07992692460531384
+            ],
+            "nll_nats": [
+              0.10099708412542094,
+              0.11101574090525393
+            ]
+          },
+          "average_precision": 0.02077611182943788,
+          "brier": 0.014462686740715252,
+          "calibration_gap": 0.06881707674910303,
+          "mean_probability": 0.07861965733543413,
+          "nll_nats": 0.10573863492291671
+        },
+        "prior": {
+          "article_family_ci95": {
+            "average_precision": [
+              0.007775420316092931,
+              0.012066193647760409
+            ],
+            "brier": [
+              0.009163636480241454,
+              0.013061058643763645
+            ],
+            "calibration_gap": [
+              0.033770668118183474,
+              0.03806144144985095
+            ],
+            "mean_probability": [
+              0.04583686176594386,
+              0.045836861765943884
+            ],
+            "nll_nats": [
+              0.07052481924095005,
+              0.08355051744175956
+            ]
+          },
+          "average_precision": 0.0098025805863311,
+          "brier": 0.01100495942031098,
+          "calibration_gap": 0.03603428117961278,
+          "mean_probability": 0.04583686176594388,
+          "nll_nats": 0.07667876302770614
+        },
+        "qwen": {
+          "article_family_ci95": {
+            "average_precision": [
+              0.05684955282928394,
+              0.3269292943094393
+            ],
+            "brier": [
+              0.013774056260332443,
+              0.016690157778731732
+            ],
+            "calibration_gap": [
+              0.07380150539550048,
+              0.07929871343101723
+            ],
+            "mean_probability": [
+              0.08470327277465611,
+              0.08811016850937127
+            ],
+            "nll_nats": [
+              0.10745396685885066,
+              0.11567359125114744
+            ]
+          },
+          "average_precision": 0.1934709126463382,
+          "brier": 0.01517273122275631,
+          "calibration_gap": 0.07664797250340784,
+          "mean_probability": 0.08645055308973895,
+          "nll_nats": 0.11147717609914425
+        }
+      },
+      "negative": 43436,
+      "observed_stops": 988,
+      "positive": 430,
+      "qwen_calibration_gap": {
+        "difference": 0.07664797250340784,
+        "family_ci90": [
+          0.07426714648408891,
+          0.07886087512511525
+        ]
+      },
+      "qwen_minus_position_brier": {
+        "difference": 0.0007100444820410581,
+        "paired_family_ci95": [
+          0.00020601340271456464,
+          0.0011220164833508346
+        ]
+      },
+      "trials": 43866
+    }
+  },
+  "population_unit": "observed trial opportunity",
+  "primary": {
+    "calibration_absolute_margin": 0.01,
+    "context_effect_absolute_margin": 0.01,
+    "effect_disambiguation": "rc",
+    "effect_scope": "critical",
+    "gates": {
+      "brier_superiority": false,
+      "calibration_equivalence": false,
+      "human_direction_confirmed": true,
+      "qwen_direction": false,
+      "qwen_human_equivalence": false
+    },
+    "passed_all": false,
+    "population_scope": "all"
+  },
+  "source_article": "https://doi.org/10.1016/j.jml.2026.104748",
+  "study": "Paape and Vasishth (2026)",
+  "unobserved_stops": 1
+}

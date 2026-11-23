@@ -1,0 +1,88 @@
+{
+  "scope": "OneStopQA five-fold replay with archived inputs, before any RACE prediction or scoring.",
+  "input_sha256": {
+    "design": "05e41dbfac748869dd696ebd671bdb17f8da7726a18c42b01d3b48c32b5ef680",
+    "features": "5fc0632af94a60f1be672910a81b1378c26ffab9764d5ab86d9cb48c3982ecaa",
+    "reference_predictions": "8ccd7af935dd26e8838f5ca1d932112c00b99b19a7b071c2e6383f3cbb129f08"
+  },
+  "weights_sha256": "f573d20e3639bfc45604c6cb6ae7e5f3d0501061f763bf810868ce8dfeccf335",
+  "oof_replay_sha256": "c28269e848b5857d9e50f3c67c6a7ae0737996ab838b6e292491e140934f4f2b",
+  "torch_version": "2.14.1",
+  "fit_dtype": "float64",
+  "ridge_penalty": 0.002,
+  "fold_count": 5,
+  "cpu_vs_l4_max_absolute_probability_error": 8.071804059872623e-07,
+  "cpu_vs_l4_max_error_by_method": {
+    "display_position_prior": 0.0,
+    "question_options": 8.071804059872623e-07,
+    "passage_question_options": 7.681245262070036e-08
+  },
+  "replay_tolerance": 1e-05,
+  "oof_replay_choice_nll": {
+    "display_position_prior": 1.3867005977123383,
+    "question_options": 1.3677129255747926,
+    "passage_question_options": 0.9844459388002536
+  },
+  "diagnostics": [
+    {
+      "fold": 0,
+      "method": "question_options",
+      "loss": 1.3669695514985485,
+      "max_gradient": 2.129670888381327e-08
+    },
+    {
+      "fold": 0,
+      "method": "passage_question_options",
+      "loss": 1.125938227503761,
+      "max_gradient": 3.179164312231211e-08
+    },
+    {
+      "fold": 1,
+      "method": "question_options",
+      "loss": 1.3692019314099477,
+      "max_gradient": 8.224686957533645e-09
+    },
+    {
+      "fold": 1,
+      "method": "passage_question_options",
+      "loss": 1.1264893024070408,
+      "max_gradient": 3.3594605431926453e-09
+    },
+    {
+      "fold": 2,
+      "method": "question_options",
+      "loss": 1.370400383415572,
+      "max_gradient": 1.927014882320728e-08
+    },
+    {
+      "fold": 2,
+      "method": "passage_question_options",
+      "loss": 1.1204778433314295,
+      "max_gradient": 1.6856000116527436e-08
+    },
+    {
+      "fold": 3,
+      "method": "question_options",
+      "loss": 1.3669038491683192,
+      "max_gradient": 1.2304861404010604e-08
+    },
+    {
+      "fold": 3,
+      "method": "passage_question_options",
+      "loss": 1.1105544005206138,
+      "max_gradient": 1.1719817897583307e-07
+    },
+    {
+      "fold": 4,
+      "method": "question_options",
+      "loss": 1.3642987276291123,
+      "max_gradient": 1.7769559721662193e-08
+    },
+    {
+      "fold": 4,
+      "method": "passage_question_options",
+      "loss": 1.1257040449912485,
+      "max_gradient": 1.7581954294808994e-08
+    }
+  ]
+}

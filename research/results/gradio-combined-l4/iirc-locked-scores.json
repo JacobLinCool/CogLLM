@@ -1,0 +1,108 @@
+{
+  "scope": "Predict a source span selected for an elicited question after reading a Wikipedia paragraph. IIRC annotators saw hyperlinks. Plain-text predictions lack that cue.",
+  "top_k": 5,
+  "character_iou_threshold": 0.5,
+  "paragraphs": 430,
+  "per_question_coverage": {
+    "means": {
+      "form": 0.28205128205128205,
+      "qwen": 0.3787878787878788
+    },
+    "qwen_minus_form": {
+      "difference": 0.09673659673659674,
+      "descriptive_paired_material_95_ci": [
+        0.05846432823769314,
+        0.13561368195619172
+      ],
+      "groups": 372
+    },
+    "observations": 858,
+    "article_families": 372
+  },
+  "distinct_same_stop_pair_coverage": {
+    "means": {
+      "form": 0.06038135593220339,
+      "qwen": 0.1271186440677966
+    },
+    "qwen_minus_form": {
+      "difference": 0.06673728813559322,
+      "descriptive_paired_material_95_ci": [
+        0.03513601276627329,
+        0.10127832665409803
+      ],
+      "groups": 216
+    },
+    "observations": 944,
+    "article_families": 216
+  },
+  "per_question_exact_coverage": {
+    "means": {
+      "form": 0.21794871794871795,
+      "qwen": 0.31934731934731936
+    },
+    "qwen_minus_form": {
+      "difference": 0.10139860139860139,
+      "descriptive_paired_material_95_ci": [
+        0.0665185118653429,
+        0.13651887089258904
+      ],
+      "groups": 372
+    },
+    "observations": 858,
+    "article_families": 372
+  },
+  "diagnostic_exact_hit_top_k_mass_brier": {
+    "means": {
+      "form": 0.18765403262632582,
+      "qwen": 0.2181383020479587
+    },
+    "qwen_minus_form": {
+      "difference": 0.030484269421632865,
+      "descriptive_paired_material_95_ci": [
+        0.006931439116092378,
+        0.0535333991127855
+      ],
+      "groups": 372
+    },
+    "observations": 858,
+    "article_families": 372
+  },
+  "diagnostic_exact_hit_top_k_mass_bias": {
+    "means": {
+      "form": -0.13047306381074766,
+      "qwen": -0.023587246862749274
+    },
+    "qwen_minus_form": {
+      "difference": 0.10688581694799838,
+      "descriptive_paired_material_95_ci": [
+        0.0699206965535792,
+        0.14431357481567894
+      ],
+      "groups": 372
+    },
+    "observations": 858,
+    "article_families": 372
+  },
+  "acceptance": {
+    "conditions": {
+      "coverage_superior_to_form": true,
+      "distinct_pair_coverage_superior_to_form": true
+    },
+    "all_conditions_passed": true
+  },
+  "bootstrap": {
+    "unit": "source article family",
+    "draws": 10000,
+    "seed": 43
+  },
+  "input_sha256": {
+    "stimuli": "e73474c2415a35238504d321f6a6e61a468ddd2295c38dae345b21ba1058f6de",
+    "anchors": "08a25bb0cc24f31e0f1ae3862b3c2d4e4d2cf3d56107ab55bd5aea31108e5b4a",
+    "questions": "f8619073af20feadd77c76833021a98410daf8917ad4d4879b1135d2acb315d5",
+    "pairs": "f7fd560905393b08262d0eac9b1fab63f9114da32b65f51135871751b4b97cb1",
+    "predictions": "c7ffd25147e44dfaad3146db1004677dfec1dc189a52d8a00c0f35256e95497d",
+    "heads": "c7f45af167c320e8f7065a3fb9a45d59aa4c2ff912f6f415f93500c028a90f18",
+    "seal": "8a9c87b4f831143fe373ded6e3d0a5fba57ffb75c67950395ca25161a1758bf7",
+    "scorer": "235d19a180aa2e96d203c3b0f70397cf96a5b86de1f3481af63b135cd77670a4"
+  }
+}

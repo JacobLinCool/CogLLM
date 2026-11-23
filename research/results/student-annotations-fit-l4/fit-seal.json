@@ -1,0 +1,359 @@
+{
+  "status": "fit_and_forecasts_locked_before_scoring",
+  "protocol_sha256": "e203668349fbc1f7b216ed0fafea9d195a3d6e5922a27226cd3e2d0569cd9e8f",
+  "design_protocol_sha256": "4fdf0c7f93425b6cbdeb0ac3a154493b47af47f86cb1997be2c889f07daccb83",
+  "fit_code_sha256": "4287018ed888c6718fb13619a5d1b032c244335783dbdc3c4b7d182202a34155",
+  "methods": [
+    "length_group",
+    "qwen_additive",
+    "qwen_interaction",
+    "blank_background"
+  ],
+  "grades": [
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "input_sha256": {
+    "preparation_receipt": "e9245766647a5ae24fb5347e39bea4d167da534380e44f7419d4464d7639fe97",
+    "extraction": "69f2c9bfd7cb6b51cf48c832f3d7c50ef7df2c32f2e7028b4c5f72509e601a1f",
+    "features": "f6b779bcf9a891866128101daf36189392586c8790f0caa0aa1190997fa3758b",
+    "causality": "b1ef51c560701e4c11021adc57d1e243c81c1e0a03494b85abb09ba65cc67c5a",
+    "trial_design": "457e3f8d441a1e348128a6bc05a79eef4df4bab9c88b13a9b18579ca40a80cdd",
+    "readers": "757bcd74778a90e713c48d893d39c0c522dd0515cb735e5272a48cc68bd94537",
+    "sentences": "910786ab7e549ee96c7b100573a9a171c0f922c8472ffd7393a14df0d6bea771",
+    "outcomes": "261a3505c3fa7ccbee5576f5cb3b19d198396cae8083395b32ff67f527a86ff1"
+  },
+  "forecasts_schema": "five ordered ordinal probabilities per method, keyed by prepared trial",
+  "predictions_sha256": "c23f1997b66433b1a3716ab16d0198e5c09c72b2998f4d1060ff436b5f869f42",
+  "fold_weights_sha256": "8b11e74ac80cab79c9b50ddd646a9b7618c5cc24187a9ad881968e7ca704da05",
+  "forecast_trials": 3160,
+  "folds": [
+    {
+      "reader_fold": 0,
+      "sentence_fold": 0,
+      "fit_trials": 1691,
+      "test_trials": 214,
+      "fit_stimuli": 746,
+      "group_fit_counts": [
+        775,
+        682,
+        234
+      ],
+      "length_center": [
+        4.741336606778096,
+        2.7514390776883597
+      ],
+      "length_scale": [
+        0.5056359638301765,
+        0.4290090226974364
+      ]
+    },
+    {
+      "reader_fold": 0,
+      "sentence_fold": 1,
+      "fit_trials": 1673,
+      "test_trials": 247,
+      "fit_stimuli": 739,
+      "group_fit_counts": [
+        807,
+        644,
+        222
+      ],
+      "length_center": [
+        4.743482993881999,
+        2.7526444485815302
+      ],
+      "length_scale": [
+        0.4910689165528455,
+        0.4238901345956226
+      ]
+    },
+    {
+      "reader_fold": 0,
+      "sentence_fold": 2,
+      "fit_trials": 1774,
+      "test_trials": 203,
+      "fit_stimuli": 753,
+      "group_fit_counts": [
+        851,
+        680,
+        243
+      ],
+      "length_center": [
+        4.750019845284484,
+        2.7616109070466583
+      ],
+      "length_scale": [
+        0.5006355274092383,
+        0.4276965131544419
+      ]
+    },
+    {
+      "reader_fold": 0,
+      "sentence_fold": 3,
+      "fit_trials": 1765,
+      "test_trials": 195,
+      "fit_stimuli": 756,
+      "group_fit_counts": [
+        822,
+        700,
+        243
+      ],
+      "length_center": [
+        4.7567761476877575,
+        2.7680632948099233
+      ],
+      "length_scale": [
+        0.5065090535110649,
+        0.43151955703252287
+      ]
+    },
+    {
+      "reader_fold": 1,
+      "sentence_fold": 0,
+      "fit_trials": 1750,
+      "test_trials": 181,
+      "fit_stimuli": 724,
+      "group_fit_counts": [
+        868,
+        649,
+        233
+      ],
+      "length_center": [
+        4.742086446825825,
+        2.7535651424095735
+      ],
+      "length_scale": [
+        0.4975846686628397,
+        0.4228627166278471
+      ]
+    },
+    {
+      "reader_fold": 1,
+      "sentence_fold": 1,
+      "fit_trials": 1736,
+      "test_trials": 218,
+      "fit_stimuli": 724,
+      "group_fit_counts": [
+        881,
+        641,
+        214
+      ],
+      "length_center": [
+        4.746457629276983,
+        2.7532058148810186
+      ],
+      "length_scale": [
+        0.4893814278807537,
+        0.42321892990644416
+      ]
+    },
+    {
+      "reader_fold": 1,
+      "sentence_fold": 2,
+      "fit_trials": 1854,
+      "test_trials": 191,
+      "fit_stimuli": 750,
+      "group_fit_counts": [
+        961,
+        655,
+        238
+      ],
+      "length_center": [
+        4.7572399552301565,
+        2.765770224233605
+      ],
+      "length_scale": [
+        0.5006906470573228,
+        0.427267093705825
+      ]
+    },
+    {
+      "reader_fold": 1,
+      "sentence_fold": 3,
+      "fit_trials": 1839,
+      "test_trials": 177,
+      "fit_stimuli": 745,
+      "group_fit_counts": [
+        941,
+        659,
+        239
+      ],
+      "length_center": [
+        4.757706945206313,
+        2.7686891973461925
+      ],
+      "length_scale": [
+        0.5091726448931082,
+        0.429710594116682
+      ]
+    },
+    {
+      "reader_fold": 2,
+      "sentence_fold": 0,
+      "fit_trials": 1743,
+      "test_trials": 228,
+      "fit_stimuli": 738,
+      "group_fit_counts": [
+        844,
+        651,
+        248
+      ],
+      "length_center": [
+        4.737250582489858,
+        2.748498902461253
+      ],
+      "length_scale": [
+        0.4993302596043014,
+        0.423899410625997
+      ]
+    },
+    {
+      "reader_fold": 2,
+      "sentence_fold": 1,
+      "fit_trials": 1692,
+      "test_trials": 228,
+      "fit_stimuli": 724,
+      "group_fit_counts": [
+        844,
+        617,
+        231
+      ],
+      "length_center": [
+        4.751522206736319,
+        2.760671574902783
+      ],
+      "length_scale": [
+        0.4971769613247582,
+        0.42963044452419563
+      ]
+    },
+    {
+      "reader_fold": 2,
+      "sentence_fold": 2,
+      "fit_trials": 1793,
+      "test_trials": 184,
+      "fit_stimuli": 755,
+      "group_fit_counts": [
+        887,
+        633,
+        273
+      ],
+      "length_center": [
+        4.750051204988455,
+        2.759121005583115
+      ],
+      "length_scale": [
+        0.49985354563060075,
+        0.4260411663331989
+      ]
+    },
+    {
+      "reader_fold": 2,
+      "sentence_fold": 3,
+      "fit_trials": 1789,
+      "test_trials": 181,
+      "fit_stimuli": 747,
+      "group_fit_counts": [
+        875,
+        640,
+        274
+      ],
+      "length_center": [
+        4.762155103222208,
+        2.7738900624206813
+      ],
+      "length_scale": [
+        0.5089169735964804,
+        0.43305265497878365
+      ]
+    },
+    {
+      "reader_fold": 3,
+      "sentence_fold": 0,
+      "fit_trials": 1824,
+      "test_trials": 201,
+      "fit_stimuli": 760,
+      "group_fit_counts": [
+        861,
+        691,
+        272
+      ],
+      "length_center": [
+        4.739982314755184,
+        2.7488856421955834
+      ],
+      "length_scale": [
+        0.49956619445828543,
+        0.4218960952364168
+      ]
+    },
+    {
+      "reader_fold": 3,
+      "sentence_fold": 1,
+      "fit_trials": 1754,
+      "test_trials": 182,
+      "fit_stimuli": 751,
+      "group_fit_counts": [
+        861,
+        648,
+        245
+      ],
+      "length_center": [
+        4.742419699746594,
+        2.748360187796762
+      ],
+      "length_scale": [
+        0.48884457092095795,
+        0.4205371857594874
+      ]
+    },
+    {
+      "reader_fold": 3,
+      "sentence_fold": 2,
+      "fit_trials": 1869,
+      "test_trials": 152,
+      "fit_stimuli": 781,
+      "group_fit_counts": [
+        925,
+        669,
+        275
+      ],
+      "length_center": [
+        4.748150609445431,
+        2.755571545637581
+      ],
+      "length_scale": [
+        0.5021805217620007,
+        0.42693283025511836
+      ]
+    },
+    {
+      "reader_fold": 3,
+      "sentence_fold": 3,
+      "fit_trials": 1894,
+      "test_trials": 178,
+      "fit_stimuli": 792,
+      "group_fit_counts": [
+        920,
+        698,
+        276
+      ],
+      "length_center": [
+        4.764108798992817,
+        2.7726565492666206
+      ],
+      "length_scale": [
+        0.5068256253076395,
+        0.4305828941620194
+      ]
+    }
+  ],
+  "numeric_runtime": {
+    "numpy": "2.4.6",
+    "scipy": "1.16.3"
+  }
+}

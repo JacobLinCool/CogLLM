@@ -1,0 +1,98 @@
+{
+  "cli_version": "0.7.4",
+  "endpoint_absent_after_stop": true,
+  "expected_projection_sha256": "8b0fcbc13c1b64ca0784741816e04fdf758d83e5fda95ee30e1d753c518dea91",
+  "operation": "frick-consistency-protocol",
+  "payload_members_sha256": {
+    "bundle.json": "ebf8686313c29642ce094e60da25e057a4b01a7350cd8cd2c202f71773a960f6",
+    "projection-inputs.tar.gz": "d8df2835a8b2d5755ca460dc3d7a871ec9abe7e1a19f9a4e4331e3f9f66ed102"
+  },
+  "payload_sha256": "011260dad3ac2f814617cd2178018a2e4e5ff229ee8d31f3d7191c4a9d5e03fc",
+  "phase": "finished",
+  "projection": {
+    "assay_sha256": "e294fef5e5c8f766600830253703062027fc05992427528c95ad3ab042daee96",
+    "candidate_id": "74c26ff02569b2b3bc28ed291bf15fd2f85db5b4c93a3ad7bfc34f6a5d333ea0",
+    "certified_stops": 956,
+    "encoded_documents": 372,
+    "input_tokens": 14085,
+    "preflight_sha256": "c471c331de138b8fd9377f8f2c766187083a1c8efa931866faef9997b1e451b8",
+    "protocol_sha256": "c710ec20933df7d32865b56ca160f473f890495db0819a2bc0e751d2d3f79032",
+    "raw_stops": true,
+    "source_code_sha256": "e5f3f8c94c3ae42162be741fdf79173672fdfc1d197e326ccec39764900d6960",
+    "stimuli_sha256": "12851b63014a17ba9ae8d62111ed42e1cdc275c3d0a711741d712392df01c531",
+    "verified_gradio_run_id": "cogllm-cuda-checks-20261120T230010Z-986002de",
+    "verified_gradio_sha256": "68220f4b705ff48cf20d5a27c0ac1c418de0a823e585ad6cb4e7be1dc085b11c"
+  },
+  "published_sha256": {
+    "causality.json": "b8f9690ab15b07bf68847d953d0b672f06972b9faa152f9c392e2355d8482fa5",
+    "coordinates.jsonl": "876ecc604e4a346c5aafda9b94b8c891a0b8a0793a0976dab4a3b7a61003ee7a",
+    "extraction.json": "36b486890b58b6b903408411f990bad6268411b254452452670f6d3384ff928f",
+    "extractor-preflight.json": "c471c331de138b8fd9377f8f2c766187083a1c8efa931866faef9997b1e451b8",
+    "fit_weights.npz": "a136fdd459480f91f343dc247e555d33b3431b052d0c78c1bcbcaa3bc0a031fc",
+    "fits.json": "b9e7f6ce90f9326f984213d8a9a6fcf854afe354f79730b86122d9f7e171ab38",
+    "forecast-seal.json": "503c353a276e7583e9121b5d10780dc246a694e1564b383d7e4eb154a5a3ff3d",
+    "forecasts.jsonl": "6acadb86758ee39a3c94ce159e15ca11a33e54e8e570bb87c677fa19cdc30d76",
+    "preflight.json": "e294fef5e5c8f766600830253703062027fc05992427528c95ad3ab042daee96",
+    "results.json": "a71b6bce4dd2496a16f6842139df389f5b1def18f6f97415183bf052eb76e4aa",
+    "runtime.json": "92f0cc71d7445d7bf40e4b48b2d1db259a836bfe1d3e56fb3685bdc7cddf259a",
+    "states.npy": "34f71b904afc2c3a9d5ae1111cc72baceea06f11d28909aabc257d3a2a75d15c",
+    "telemetry.jsonl": "5c4fc479a8ec64565ccf1cc47364582d82cfc1f2cbc6d9591d8710da59f524e5",
+    "terminal_states.npy": "afc6450cc533ee2e5c86da7c7c65b44947243adbe37ca6f01a416e24df4d7762",
+    "usage.jsonl": "0883617aaf6ba8c4b79c840bc2dcbdebe3e8690a4c06adb97d7ff34d17440d87",
+    "vectors.npy": "5f7c3ffba0a449b8f6f98c3220a3716733628ab07a0bd07bd674f4dc85b0de42"
+  },
+  "raw_states_verification": {
+    "dtype": "float32",
+    "max_projection_replay_l2": 0.0002633519470691681,
+    "rows": 956,
+    "width": 2048
+  },
+  "reference_run_id": "cogllm-cuda-checks-20261121T031119Z-5bc72d1f",
+  "release_usage_recorded": true,
+  "release_verified": true,
+  "requested_hardware": "NVIDIA L4",
+  "run_id": "cogllm-cuda-checks-20261121T041742Z-f6cc9d6e",
+  "stages": {
+    "projection": {
+      "archive_bytes": 10413702,
+      "archive_sha256": "5f66cda59ca8a7fda40e566ed4ad364dba1f0e7c4f8f4b80ab0bb1b269ae75f6",
+      "elapsed_s": 50.57072038200005,
+      "members": {
+        "causality.json": "b8f9690ab15b07bf68847d953d0b672f06972b9faa152f9c392e2355d8482fa5",
+        "coordinates.jsonl": "876ecc604e4a346c5aafda9b94b8c891a0b8a0793a0976dab4a3b7a61003ee7a",
+        "run.log": "d33471b4ea7e91befc39eaafc3d7cebfc69cb883b096a6eedb34321a7f38cf8e",
+        "seal.json": "36b486890b58b6b903408411f990bad6268411b254452452670f6d3384ff928f",
+        "states.npy": "34f71b904afc2c3a9d5ae1111cc72baceea06f11d28909aabc257d3a2a75d15c",
+        "telemetry.jsonl": "5c4fc479a8ec64565ccf1cc47364582d82cfc1f2cbc6d9591d8710da59f524e5",
+        "terminal_states.npy": "afc6450cc533ee2e5c86da7c7c65b44947243adbe37ca6f01a416e24df4d7762",
+        "vectors.npy": "5f7c3ffba0a449b8f6f98c3220a3716733628ab07a0bd07bd674f4dc85b0de42"
+      },
+      "state": "complete"
+    },
+    "setup": {
+      "archive_bytes": 663,
+      "archive_sha256": "c470e71a1f947b7690be4ad504366fafcf2e7e54a9c1bbec4c115d685f788d97",
+      "elapsed_s": 36.87697429999997,
+      "members": {
+        "run.log": "485974aecf06b32cc5c83033a3d92c0efa1442ca7d8fdda4e041620ae362ff44",
+        "runtime.json": "92f0cc71d7445d7bf40e4b48b2d1db259a836bfe1d3e56fb3685bdc7cddf259a"
+      },
+      "state": "complete"
+    }
+  },
+  "time_budget_s": 720,
+  "timeline": {
+    "allocated": "2026-11-21T04:18:40.131682+00:00",
+    "allocating": "2026-11-21T04:18:33.875094+00:00",
+    "finished": "2026-11-21T04:21:30.457986+00:00",
+    "prepared": "2026-11-21T04:17:42.932534+00:00",
+    "releasing": "2026-11-21T04:21:21.395871+00:00",
+    "remote-projection": "2026-11-21T04:19:34.000562+00:00",
+    "remote-setup": "2026-11-21T04:18:56.576608+00:00",
+    "retrieved-projection": "2026-11-21T04:21:21.355343+00:00",
+    "retrieved-setup": "2026-11-21T04:21:20.163895+00:00",
+    "worker-running": "2026-11-21T04:18:56.260398+00:00"
+  },
+  "verified_outputs": true,
+  "worker_sha256": "9635ada3154f9fd5bf7f0e2b61ab10e3d52e764e4aa8257dbb04135c4ecf2010"
+}

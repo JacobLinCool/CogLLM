@@ -1,0 +1,171 @@
+{
+  "paper": "https://doi.org/10.1017/langcog.2025.10057",
+  "project": "https://osf.io/m524v/",
+  "guidelines": "https://osf.io/download/h9mxg/",
+  "source_access": "Public OSF release. It lists CC BY-NC-SA 4.0 for depositor-licensed material.",
+  "supervision": "Numeric metadata of human-annotated question states only. The annotation line is the measurement unit.",
+  "measurement": "Trained teams entered the opening under guided annotation and selected the answer line on a second reading.",
+  "interval_rule": "One-based working-sheet text lines. An observed closure lies in (lower_line, upper_line]. Lower is the last confirmed open line. Upper is the first blank after the open or uncertain run. If the annotation has no following blank, censor at the last confirmed open line.",
+  "line_opportunities_rule": "Count lines after the opening through the observed upper bound or censor line. For a bounded multi-line interval, these include uncertain lines. Such opportunities are not independent binary labels for the closure event.",
+  "fields": [
+    "id",
+    "story",
+    "team",
+    "open_line",
+    "lower_line",
+    "upper_line",
+    "last_line",
+    "line_opportunities"
+  ],
+  "line_annotation_totals": {
+    "questions": 196,
+    "bounded_closures": 183,
+    "right_censored": 13,
+    "censored_before_story_end_due_to_uncertainty": 0,
+    "bounded_interval_width_counts": {
+      "1": 177,
+      "7": 2,
+      "8": 1,
+      "175": 1,
+      "282": 1,
+      "351": 1
+    },
+    "zero_line_opportunities": 0,
+    "line_opportunities": 14945,
+    "confirmed_open_lines_after_opening": 13938
+  },
+  "stories": {
+    "Auftrag": {
+      "questions": 48,
+      "bounded_closures": 45,
+      "right_censored": 3,
+      "censored_before_story_end_due_to_uncertainty": 0,
+      "bounded_interval_width_counts": {
+        "1": 45
+      },
+      "zero_line_opportunities": 0,
+      "line_opportunities": 2268,
+      "confirmed_open_lines_after_opening": 2223
+    },
+    "Katze": {
+      "questions": 99,
+      "bounded_closures": 94,
+      "right_censored": 5,
+      "censored_before_story_end_due_to_uncertainty": 0,
+      "bounded_interval_width_counts": {
+        "1": 88,
+        "7": 2,
+        "8": 1,
+        "175": 1,
+        "282": 1,
+        "351": 1
+      },
+      "zero_line_opportunities": 0,
+      "line_opportunities": 8805,
+      "confirmed_open_lines_after_opening": 7887
+    },
+    "Thomas": {
+      "questions": 49,
+      "bounded_closures": 44,
+      "right_censored": 5,
+      "censored_before_story_end_due_to_uncertainty": 0,
+      "bounded_interval_width_counts": {
+        "1": 44
+      },
+      "zero_line_opportunities": 0,
+      "line_opportunities": 3872,
+      "confirmed_open_lines_after_opening": 3828
+    }
+  },
+  "folds": {
+    "Auftrag": {
+      "training_stories": [
+        "Katze",
+        "Thomas"
+      ],
+      "held_out_stories": [
+        "Auftrag"
+      ]
+    },
+    "Katze": {
+      "training_stories": [
+        "Auftrag",
+        "Thomas"
+      ],
+      "held_out_stories": [
+        "Katze"
+      ]
+    },
+    "Thomas": {
+      "training_stories": [
+        "Auftrag",
+        "Katze"
+      ],
+      "held_out_stories": [
+        "Thomas"
+      ]
+    }
+  },
+  "unfall_diagnostic": {
+    "reason_not_pooled": "The released table expands original line states across author word indices. Those positions do not identify the original within-line event.",
+    "teams": {
+      "AA": {
+        "source_unit": "author_expanded_word_index",
+        "positions": 1291,
+        "questions": 17,
+        "closure_observed": 17,
+        "censored_at_last_position": 0,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 15,
+        "distinct_closing_positions": 10,
+        "closing_positions_with_more_than_one_closure": 3,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 8,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 5,
+        "max_simultaneously_open_after_position": 9,
+        "duration_from_open_to_first_confirmed_closing_median_units": 333
+      },
+      "JE": {
+        "source_unit": "author_expanded_word_index",
+        "positions": 1291,
+        "questions": 9,
+        "closure_observed": 8,
+        "censored_at_last_position": 1,
+        "questions_with_an_uncertain_span": 0,
+        "distinct_opening_positions": 9,
+        "distinct_closing_positions": 3,
+        "closing_positions_with_more_than_one_closure": 2,
+        "closing_positions_with_an_older_or_newer_alternative_still_open": 3,
+        "closing_positions_inconsistent_with_strict_lifo_even_after_resolving_ties": 3,
+        "max_simultaneously_open_after_position": 7,
+        "duration_from_open_to_first_confirmed_closing_median_units": 311.0
+      }
+    }
+  },
+  "input_files": {
+    "PITQ_Auftrag_AA_AA.xlsx": {
+      "download": "https://osf.io/download/d6v5j/",
+      "sha256": "45cfa2e6da7a8d6ea1dce6b75418abc62e93c8337ca1d2e0db37a43d2afeb61a"
+    },
+    "PITQ_Auftrag_JE_JE.xlsx": {
+      "download": "https://osf.io/download/k45vd/",
+      "sha256": "729aa7ee904b58e142e313796ee0e9434aaead50e9533e560ee1dba32c856e96"
+    },
+    "PITQ_Katze_AA_AA.xlsx": {
+      "download": "https://osf.io/download/k5wq4/",
+      "sha256": "c28db8c46d7d07b0f9dc3414a00108f3d44bb9d822ff25ed601dda92488aedd6"
+    },
+    "PITQ_Thomas_AA_AA.xlsx": {
+      "download": "https://osf.io/download/fza6p/",
+      "sha256": "79c11344e8c57a40c45853781392989056c0539c4e763733ac04444fa9124547"
+    },
+    "PITQ_Thomas_JE_JE.xlsx": {
+      "download": "https://osf.io/download/65f20cce852037102d880876/",
+      "sha256": "d758db86de461b08707aa0d13304dc57079469e647c5a1eaa3df65a3d352e8eb"
+    },
+    "Unfall_suspense_data.csv": {
+      "download": "https://osf.io/download/ec4tr/",
+      "sha256": "c81ed3ca4ad4e120b143958693762d524b9d036367a5e98bf03eef174978490a"
+    }
+  },
+  "intervals_sha256": "f682818e7a955a72b93391251a8033520f63c14e5bfe659552a58f8c7a81ee56"
+}

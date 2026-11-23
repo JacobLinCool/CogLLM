@@ -1,0 +1,50 @@
+{
+  "completed": true,
+  "phase": "complete",
+  "phase_seconds": {
+    "install": 12.843635489999997,
+    "extract": 89.38464176100024,
+    "joint-fit": 14.146596547999707
+  },
+  "device": {
+    "gpu": "NVIDIA L4",
+    "vram_bytes": 23659151360,
+    "cuda": "13.0",
+    "torch": "2.14.1+cu130",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "input_sha256": {
+    "data/closure-intervals.jsonl": "f682818e7a955a72b93391251a8033520f63c14e5bfe659552a58f8c7a81ee56",
+    "data/onset-eval.jsonl": "ca0c6bf9443b86e2eb6269b0b621e2a8b75849e59a1928f6c850e708e0171afd",
+    "data/onset-train.jsonl": "c73cba2623a8575ebf040c728348205d82bc779afcf916b70a5b0efcba5b50b2",
+    "data/source-eval.jsonl": "1d08abc550e7e56b59b5792c79b29768c70b606fd34b6b76b3db68baaea43fd8",
+    "data/source-train.jsonl": "7d0fb92b7d44381f7b87bb6ec56d39071e2a0e40dbd32c961b1e0e63884955bd",
+    "data/stimuli.jsonl": "2c2251f5e95519af784a06d85cbddc455e53d23d3265eebdb73db7c587154af9",
+    "research/core_features/extract.py": "e7d151311c3684191e2e01ca33265f0bbdbbf3bdf6f4491e87232265ee42360e",
+    "research/core_features/fit.py": "947149e5096cd2b7b4d08ca2ed4d797e5c17ed50fe8f799426a236a4ab259150",
+    "research/semantic_tracking/joint_fit.py": "2e09b52b4f16e4894aadfc6cac9b7806025cffd707aff8cfbf1a7608bc443802",
+    "research/semantic_tracking/joint_inputs.py": "f8ef6ef349f8ab8be36fe07dc54d820a7a30c2c4c7684b53043f7b3e49ed7195",
+    "research/semantic_tracking/joint_model.py": "4a872132928151e698eca504d3f7d834dbdb04da934124b18ef5aac5968c79d5",
+    "research/semantic_tracking/source_model.py": "9262c519e58f1360209c9eb94dce79d5c4276cc6361a3ecd482b844085102587",
+    "research/stage3/probe.py": "bb2bbb41d34292ef0e67fc4a876cf833a64e3fafe180f9eecd70086b2109009e",
+    "research/stage3/run.py": "3edc5740fa63c59b77aaacbeb809075f802623eff4c55d562cf855a9e822e282"
+  },
+  "payload_sha256": "ac0f236053be73467d3592c25049bd4e8bcecf71b82df2e8ee552feee2a4bed1",
+  "worker_sha256": "987d117bff3d303ca735b857473136412260a5524dd140bf941e312429f1a211",
+  "worker_elapsed_s": 120.95694740099998,
+  "output_sha256": {
+    "extract/causality.json": "d704095e298b02fe7e17638d4de6ac8397c60f4b2996289cf6e39b3bbafe3af3",
+    "extract/extraction.json": "d9b0e12d1a9e0672f0427e81ac25e967c7f8136f29edc0f9361df7576d25c436",
+    "extract/telemetry.jsonl": "8dd43e524e71c0f008cc5fc3705669e0e3bd6d0a63bc163cb6589a11b6e51602",
+    "joint/closure-predictions.jsonl": "893eae5664c017c181a80e4998f4b105903a004406142f1c1231a3e85458eee1",
+    "joint/joint-heads.npz": "2ecadb9b09feda82b4f99f127f1d6abc355161085431e9ac6ec45a72e5c72aeb",
+    "joint/joint-manifest.json": "fd745ee030d56916e342dc70249e3172a7ec8a98d394fd58bbe5db4493d49acb",
+    "joint/onset-predictions.jsonl": "fcf23e030903e61e5d42f67f6cead71052dba4b57cc830ca4c65f426b1477956",
+    "joint/source-predictions.jsonl": "d4efe96c84dd59cf95c4fd9d9fcfafbd56e3817e9025693f57a285dd943ae9c4",
+    "joint/trace-fixture.json": "1076bdd6b5f4ae441781c4fa1cbaec1a637ebe8e83ac0b593d3f2eb320499c19",
+    "worker.log": "ef9af1dcc44e06e9c22ae4e3cc5c6d2da615ad90f7b2fa5a155705a829512bdf"
+  }
+}

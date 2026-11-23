@@ -1,0 +1,124 @@
+{
+  "author_iirc": {
+    "url": "https://jamesf-incomplete-qa.s3.amazonaws.com/iirc.tar.gz",
+    "sha256": "efab875854691530a3bd55809244b0656dff1e15e98e4108bae5405c63e31a9b"
+  },
+  "author_context_articles": {
+    "url": "https://jamesf-incomplete-qa.s3.amazonaws.com/context_articles.tar.gz",
+    "sha256": "d239390a27ed3f4aa868afe126187e6d108990a7bcc2a3efb6cae5de917264c7",
+    "article_entries": 56550
+  },
+  "model": "Qwen/Qwen3.5-2B",
+  "revision": "15852e8c16360a2fea060d615a32b45270f8a8fc",
+  "transformers": "5.17.0",
+  "tokenizer_files_sha256": {
+    "tokenizer.json": "5f9e4d4901a92b997e463c1f46055088b6cca5ca61a6522d1b9f64c4bb81cb42",
+    "tokenizer_config.json": "49e2b6e395f959f077f1e992b338919c0d4a9732fc6e613995e06557f843500c",
+    "config.json": "ed1c1723241f23f7f4e23430759cbd7dcfb4103cbdfe052bfe7626b57c2615b4"
+  },
+  "annotation_protocol": "https://aclanthology.org/2020.emnlp-main.86.pdf#page=4",
+  "author_dataset_license": "https://github.com/allenai/allennlp-website/blob/master/iirc.html",
+  "source_text_terms": "https://foundation.wikimedia.org/w/index.php?title=Policy:Terms_of_Use&oldid=98524#7._Licensing_of_Content",
+  "source_overlap": {
+    "article_family": 0,
+    "paragraph_text": 0,
+    "paragraph_id": 0,
+    "question_id": 0,
+    "question_text": 0
+  },
+  "training_identity_filter": "Remove cases whose seed/linked titles or exact source text fingerprints occur among any official dev seed or visible linked title. Retain the full official dev split under the same per-case eligibility conditions.",
+  "overlap_after_filter": {
+    "article_title": 0,
+    "exact_source_text_sha256": 0
+  },
+  "primary_subset": "One authored question across the original dataset paragraph for one writer-selected visible link and one exactly aligned answer-annotator excerpt in that document.",
+  "path": {
+    "separator": "\n\n",
+    "linked_cutoff_unicode_characters": 8000,
+    "nominal_stop_stride_unicode_characters": 128,
+    "coordinates": "Half-open Unicode character offsets. Evidence uses original stripped linked-document coordinates. Query offsets and stimulus stops use joined path coordinates.",
+    "stop_selection": "Require exact independent retokenization at the anchor endpoint and each linked stop. Snap nominal checkpoints backwards and include the final character endpoint. The first stimulus stop is the supplied anchor and has no arrival label."
+  },
+  "inference_inputs": [
+    "dev/stimuli.jsonl",
+    "dev/queries.jsonl"
+  ],
+  "fit_only_additional_inputs": [
+    "train/stimuli.jsonl",
+    "train/queries.jsonl",
+    "train/locked-labels.jsonl"
+  ],
+  "restricted_before_dev_forecast_seal": [
+    "dev/locked-labels.jsonl",
+    "dev/locked-matched-swaps.jsonl"
+  ],
+  "input_validation": "Each joined model stimulus was verified character-for-character against the original seed paragraph, a fixed two-newline separator and the character-zero linked article prefix. No question, answer, evidence coordinates, link title or scoring label is provided as a feature.",
+  "outcome": "First certified linked-document stop that includes the entire selected context.indices excerpt, including right-censored cases. An unanswerable response, missing support or bad source alignment is counted separately and does not supply a time label. The endpoint is retrospective text coverage.",
+  "splits": {
+    "train": {
+      "answerable_without_linked_support": 42,
+      "answerer_reported_unanswerable": 1602,
+      "article_components": 2352,
+      "authored_questions": 10839,
+      "censored_source_starts_at_or_after_end_of_prefix": 178,
+      "censored_source_starts_before_end_of_prefix": 2,
+      "eligible_exact_after_family_guard": 3359,
+      "exact_one_authored_question_support": 3918,
+      "linked_documents": 3249,
+      "linked_stops_excluding_anchor": 164127,
+      "max_tokens": 3326,
+      "multiple_authored_questions_for_writer_link": 1116,
+      "multiple_or_differently_linked_supports": 355,
+      "no_single_uniquely_positioned_writer_link": 3644,
+      "observed_full_support": 3174,
+      "removed_by_dev_article_family_guard": 559,
+      "retained": 3354,
+      "right_censored_full_support": 180,
+      "same_document_swaps": 37,
+      "seed_paragraphs": 2474,
+      "source_excerpt_not_exactly_aligned": 162,
+      "support_end_at_or_before_requested_cap": 3179,
+      "tokens": 5869203,
+      "uncertified_anchor_character_boundary": 5
+    },
+    "dev": {
+      "answerable_without_linked_support": 5,
+      "answerer_reported_unanswerable": 171,
+      "article_components": 269,
+      "authored_questions": 1301,
+      "censored_source_starts_at_or_after_end_of_prefix": 36,
+      "censored_source_starts_before_end_of_prefix": 3,
+      "eligible_exact_after_family_guard": 453,
+      "exact_one_authored_question_support": 453,
+      "linked_documents": 447,
+      "linked_stops_excluding_anchor": 23820,
+      "max_tokens": 3209,
+      "multiple_authored_questions_for_writer_link": 169,
+      "multiple_or_differently_linked_supports": 38,
+      "no_single_uniquely_positioned_writer_link": 443,
+      "observed_full_support": 413,
+      "retained": 452,
+      "right_censored_full_support": 39,
+      "same_document_swaps": 0,
+      "seed_paragraphs": 274,
+      "source_excerpt_not_exactly_aligned": 22,
+      "support_end_at_or_before_requested_cap": 414,
+      "tokens": 835677,
+      "uncertified_anchor_character_boundary": 1
+    }
+  },
+  "files_sha256": {
+    "train/stimuli.jsonl": "1b6cebe855c50977352ae0ce10e9a287bea3e7699274410fa2bd6799d8dae79b",
+    "train/queries.jsonl": "ce537485e84fc8c4d17c951caacf41bb02eb35f937931d04f26e45d2d21672b1",
+    "train/seed-text.jsonl": "6f7004caeef2d364811d11e4bd286a051ba76cc1eeeea99a6534fde4e640cb8b",
+    "train/linked-prefix-text.jsonl": "0ad3fd0f41e26546bc3c4220e11aaa076da20a9a964c9e9e7e1d32c1535d3984",
+    "train/locked-labels.jsonl": "6dbbcc64306d9410a0f75b9f4613c2ad37c9032f4ec36811bb7d2f8eeec1f5b3",
+    "train/locked-matched-swaps.jsonl": "cc66cfa1f575ca6ae9294c21e62c90ea518f907cadb2ba94e4eea3dcac026a11",
+    "dev/stimuli.jsonl": "55761282923e72600636dd91609df6dbc729226b989bc0315b37f029840a59f5",
+    "dev/queries.jsonl": "6898636c4af9d5e759a4f6fff47850ccfabf26ab37b269cf49cd540aebb8db45",
+    "dev/seed-text.jsonl": "9218ec99ba7c096095b32e922a6b8b6a5582bf4583635668effe12f0f30d11b9",
+    "dev/linked-prefix-text.jsonl": "dff7e1a465a9d5dc5d60baf7af31e693ec618d39a5994171a8b69b241425795d",
+    "dev/locked-labels.jsonl": "02b3d673335bc19fb06c222d140f5b9185e2c96742e38cede4a9236c7a009187",
+    "dev/locked-matched-swaps.jsonl": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+  }
+}
